@@ -1,0 +1,221 @@
+.landingTitleFlex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.backgroundDiv_JanuaryA {
+  background: url(https://habits168-hurdaudio.s3.amazonaws.com/landing/january/aaron-burden-563554-unsplash.jpg);
+  background-size: 100%;
+  filter: brightness(150%);
+  height: 100%;
+  left: 0;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.landingLogo_JanuaryA {
+  height: 72px;
+  margin: 16px 4px 16px 48px;
+  opacity: 0.5;
+  width: 5%;
+}
+
+.landingTitleDiv_JanuaryA {
+  padding: 32px 4px 16px 24px;
+}
+
+.landingTitle_JanuaryA {
+  color: #012736;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 72px;
+  font-weight: bolder;
+}
+
+.landingTitleButtonsDiv_JanuaryA {
+  float: right;
+  padding: 36px 0 4px 24px;
+}
+
+.landingTitleButtonsDiv_JanuaryA button {
+  background: #6ea6cb;
+  border-color: transparent;
+  color: #012736;
+  cursor: pointer;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 30px;
+  margin: 8px 8px 8px 8px;
+  padding: 12px 0 8px 4px;
+  width: 128px;
+}
+
+.landingTitleButtonsDiv_JanuaryA button:hover {
+  background: #ccdcee;
+}
+
+.landingTitleButtonsDiv_JanuaryA button:active {
+  border-color: #1e3847;
+}
+
+.landingFooter_JanuaryA {
+  bottom: 20px;
+  color: #012736;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 30px;
+  left: 16px;
+  position: absolute;
+}
+
+@media only screen and (max-width: 1024px) {
+  .backgroundDiv_JanuaryA {
+    background-size: 180%;
+  }
+
+  .landingLogo_JanuaryA {
+    height: 78px;
+    margin: 16px 0 16px 16px;
+    width: 8%;
+  }
+
+  .landingTitleDiv_JanuaryA {
+    padding: 36px 0 16px 24px;
+  }
+
+  .landingTitle_JanuaryA {
+    font-size: 78px;
+    font-weight: bolder;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .backgroundDiv_JanuaryA {
+    background-size: 180%;
+  }
+
+  .landingLogo_JanuaryA {
+    height: 72px;
+    margin: 16px 4px 16px 16px;
+    width: 10%;
+  }
+
+  .landingTitleDiv_JanuaryA {
+    padding: 36px 4px 16px 24px;
+  }
+
+  .landingTitle_JanuaryA {
+    font-size: 72px;
+    font-weight: bolder;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .backgroundDiv_JanuaryA {
+    background-size: 240%;
+  }
+
+  .landingLogo_JanuaryA {
+    height: 72px;
+    margin: 16px 4px 16px 8px;
+    width: 15%;
+  }
+
+  .landingTitleDiv_JanuaryA {
+    padding: 48px 4px 16px 24px;
+  }
+
+  .landingTitle_JanuaryA {
+    font-size: 48px;
+    font-weight: bolder;
+  }
+
+  .landingFooter_JanuaryA {
+    font-size: 18px;
+  }
+
+  .landingTitleButtonsDiv_JanuaryA button {
+    font-size: 18px;
+    margin-left: 24px;
+    width: 74px;
+  }
+}
+
+@media only screen and (max-width: 411px) {
+  .backgroundDiv_JanuaryA {
+    background-size: 270%;
+  }
+
+  .landingLogo_JanuaryA {
+    height: 72px;
+    margin: 16px 4px 16px 8px;
+    width: 15%;
+  }
+
+  .landingTitleDiv_JanuaryA {
+    padding: 48px 4px 16px 24px;
+  }
+
+  .landingTitle_JanuaryA {
+    font-size: 48px;
+    font-weight: bolder;
+  }
+
+  .landingFooter_JanuaryA {
+    font-size: 18px;
+  }
+
+  .landingTitleButtonsDiv_JanuaryA button {
+    font-size: 18px;
+    margin-left: 32px;
+    width: 74px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .backgroundDiv_JanuaryA {
+    background-size: 290%;
+  }
+
+  .landingFooter_JanuaryA {
+    font-size: 18px;
+  }
+
+  .landingTitleButtonsDiv_JanuaryA button {
+    font-size: 18px;
+    margin-left: 12px;
+    width: 74px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .backgroundDiv_JanuaryA {
+    background-size: 290%;
+  }
+
+  .landingLogo_JanuaryA {
+    height: 72px;
+    margin: 16px 4px 16px 8px;
+    width: 15%;
+  }
+
+  .landingTitleDiv_JanuaryA {
+    padding: 56px 4px 16px 24px;
+  }
+
+  .landingTitle_JanuaryA {
+    font-size: 42px;
+    font-weight: bolder;
+  }
+
+  .landingFooter_JanuaryA {
+    font-size: 18px;
+  }
+
+  .landingTitleButtonsDiv_JanuaryA button {
+    font-size: 18px;
+    margin-left: 12px;
+    width: 74px;
+  }
+}

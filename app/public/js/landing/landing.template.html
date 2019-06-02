@@ -1,3 +1,25 @@
-<div id="theDiv">
-  <h1>168 Habits is LIT</h1>
+<div class="backgroundDiv{{$ctrl.monthSelect}}">
+
+</div>
+<div class="landingTitleFlex">
+
+  <img class="landingLogo{{$ctrl.monthSelect}}" src="https://habits168-hurdaudio.s3.amazonaws.com/img/robe-154808_640.png">
+
+  <div class="landingTitleDiv{{$ctrl.monthSelect}}">
+    <h1 class="landingTitle{{$ctrl.monthSelect}}">168 Habits</h1>
+  </div>
+  <div class="landingTitleButtonsDiv{{$ctrl.monthSelect}}">
+
+    <div ng-if="!$ctrl.userLoggedIn">
+
+      <button>log in</button>
+      <button>sign up</button>
+      <button>about</button>
+    </div>
+  </div>
+</div>
+
+<div class="landingFooter{{$ctrl.monthSelect}}">
+
+  <p class="landingFooterMessage{{$ctrl.monthSelect}}">{{$ctrl.footerMessage}}</p>
 </div>
