@@ -1,0 +1,31 @@
+{
+  "name": "habits168",
+  "version": "1.0.0",
+  "description": "A better model for consuming information on the internet.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HurdAudio/habits168.git"
+  },
+  "author": "Devin Hurd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HurdAudio/habits168/issues"
+  },
+  "homepage": "https://github.com/HurdAudio/habits168#readme",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
+    "cookie-session": "^1.3.3",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "knex": "^0.17.2",
+    "nanoid": "^2.0.3",
+    "nodemon": "^1.19.1",
+    "pg": "^7.11.0",
+    "request": "^2.88.0"
+  }
+}
