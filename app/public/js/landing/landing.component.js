@@ -15,6 +15,21 @@
       vm.$onInit = onInit;
       vm.monthSelect = '_JanuaryA';
       vm.userLoggedIn = false;
+      vm.userLoginActive = false;
+      vm.activateUserLogin = activateUserLogin;
+      vm.landingLoginBoxClass = 'landingLoginInactive' + vm.monthSelect;
+      vm.deactivateUserLogin = deactivateUserLogin;
+
+      function deactivateUserLogin() {
+        vm.userLoginActive = false;
+        vm.landingLoginBoxClass = 'landingLoginInactive' + vm.monthSelect;
+      }
+
+      function activateUserLogin() {
+        vm.userLoginActive = true;
+        vm.landingLoginBoxClass = 'landingLoginActive' + vm.monthSelect;
+        document.getElementById('landingLoginEmailField').focus();
+      }
 
       function setFooterMessage() {
         let today = new Date();
