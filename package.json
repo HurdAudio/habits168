@@ -2,7 +2,7 @@
   "name": "habits168",
   "version": "1.0.0",
   "description": "A better model for consuming information on the internet.",
-  "main": "index.js",
+  "main": "./app/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
