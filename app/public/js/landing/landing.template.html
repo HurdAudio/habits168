@@ -16,6 +16,16 @@
       <button ng-hide="$ctrl.userLoginActive">sign up</button>
       <button ng-hide="$ctrl.userLoginActive">about</button>
     </div>
+
+    <div ng-if="$ctrl.userLoggedIn">
+
+      <button>hub</button>
+      <button>profile</button>
+      <button>log out</button>
+
+
+      <p class="landingUserGreeting{{$ctrl.monthSelect}}">{{$ctrl.userGreetingMessage}}</p>
+    </div>
   </div>
 </div>
 

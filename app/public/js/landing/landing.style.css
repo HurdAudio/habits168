@@ -240,6 +240,7 @@ body {
 
 .landingRecentlySharedLinksTitle_JanuaryA {
   color: #012736;
+  cursor: pointer;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 30px;
   left: 15px;
@@ -247,6 +248,11 @@ body {
   position: relative;
   top: 10px;
   visibility: visible;
+  width: 25%;
+}
+
+.landingRecentlySharedLinksTitle_JanuaryA:hover {
+  color: #ccdcee;
 }
 
 .landingLinkShare_JanuaryA {
@@ -306,6 +312,12 @@ body {
   margin: 0 0 10px 15px;
   position: relative;
   visibility: visible;
+  width: 20%;
+}
+
+.landingRecentlySharedPostsTitle_JanuaryA:hover {
+  color: #ccdcee;
+  cursor: pointer;
 }
 
 .landingRecentlySharedPosts_JanuaryA {
@@ -316,6 +328,15 @@ body {
   padding: 17px;
   visibility: visible;
   width: 100%;
+}
+
+.landingUserGreeting_JanuaryA {
+  color: #012736;
+  display: initial;
+  float: right;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 30px;
+  margin: 24px 16px 24px 48px;
 }
 
 @media only screen and (max-width: 1366px) {
@@ -459,12 +480,17 @@ body {
     width: 80%;
   }
 
+  .landingRecentlySharedLinksTitle_JanuaryA {
+    visibility: visible;
+    width: 90%;
+  }
+
   .landingRecentlySharedPostsTitle_JanuaryA {
     visibility: visible;
   }
 
-  .landingRecentlySharedPosts_JanuaryA {
-    height: 480px;
+  .landingRecentlySharedLinks_JanuaryA {
+    height: 390px;
     margin-top: 25px;
 
   }
@@ -548,6 +574,10 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+  .landingUserGreeting_JanuaryA {
+    display: none;
+  }
+
   .backgroundDiv_JanuaryA {
     background-size: 180%;
   }
@@ -617,6 +647,11 @@ body {
 
   .landingShareLinkUserNotes_JanuaryA {
     width: 80%;
+  }
+
+  .landingRecentlySharedLinksTitle_JanuaryA {
+    visibility: visible;
+    width: 90%;
   }
 
   .landingRecentlySharedPostsTitle_JanuaryA {
@@ -929,6 +964,10 @@ body {
 }
 
 @media only screen and (max-width: 414px) {
+  .landingUserGreeting_JanuaryA {
+    display: none;
+  }
+
   .backgroundDiv_JanuaryA {
     background-size: 240%;
   }
@@ -1000,8 +1039,9 @@ body {
   }
 
   .landingRecentlySharedLinksTitle_JanuaryA {
-    visibility: visible;
     left: 10px;
+    visibility: visible;
+    width: 90%;
   }
 
   .landingRecentlySharedPostsTitle_JanuaryA {
@@ -1017,6 +1057,10 @@ body {
 }
 
 @media only screen and (max-width: 411px) {
+  .landingUserGreeting_JanuaryA {
+    display: none;
+  }
+
   .backgroundDiv_JanuaryA {
     background-size: 270%;
   }
@@ -1086,6 +1130,7 @@ body {
 
   .landingRecentlySharedLinksTitle_JanuaryA {
     visibility: visible;
+    width: 90%;
   }
 
   .landingRecentlySharedPostsTitle_JanuaryA {
@@ -1165,6 +1210,11 @@ body {
 }
 
 @media only screen and (max-width: 360px) {
+
+  .landingUserGreeting_JanuaryA {
+    display: none;
+  }
+
   .backgroundDiv_JanuaryA {
     background-size: 290%;
   }
@@ -1237,6 +1287,7 @@ body {
 
   .landingRecentlySharedLinksTitle_JanuaryA {
     visibility: visible;
+    width: 90%;
   }
 
   .landingLinkShareLink_JanuaryA {
