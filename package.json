@@ -4,7 +4,13 @@
   "description": "A better model for consuming information on the internet.",
   "main": "./app/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "knex": "knex",
+    "heroku-postbuild": "knex migrate:latest",
+    "start": "nodemon"
+  },
+  "engines": {
+    "node": "^8.9.0"
   },
   "repository": {
     "type": "git",
