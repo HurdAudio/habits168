@@ -106,6 +106,13 @@ body {
   z-index: 6;
 }
 
+.landingLoginActive_JanuaryA h3 {
+  color: #ff0000;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 24px;
+  margin: 8px 0 0 16px;
+}
+
 .landingLoginActive_JanuaryA h2 {
   color: #012736;
   font-family: 'Josefin Sans', sans-serif;
