@@ -1,3 +1,124 @@
-<div id="theDiv">
-  <h1>168 Habits is LIT</h1>
+<div class="backgroundDiv{{$ctrl.monthSelect}}">
+
+</div>
+<div class="landingTitleFlex">
+
+  <img class="landingLogo{{$ctrl.monthSelect}}" src="https://habits168-hurdaudio.s3.amazonaws.com/img/robe-154808_640.png">
+
+  <div class="landingTitleDiv{{$ctrl.monthSelect}}">
+    <h1 class="landingTitle{{$ctrl.monthSelect}}">168 Habits</h1>
+  </div>
+  <div class="landingTitleButtonsDiv{{$ctrl.monthSelect}}">
+
+    <div ng-if="!$ctrl.userLoggedIn">
+
+      <button ng-hide="$ctrl.userLoginActive" ng-click="$ctrl.activateUserLogin()">log in</button>
+      <button ng-hide="$ctrl.userLoginActive">sign up</button>
+      <button ng-hide="$ctrl.userLoginActive">about</button>
+    </div>
+
+    <div ng-if="$ctrl.userLoggedIn">
+
+      <button>hub</button>
+      <button>profile</button>
+      <button ng-click="$ctrl.userLogout()">log out</button>
+
+
+      <p class="landingUserGreeting{{$ctrl.monthSelect}}">{{$ctrl.userGreetingMessage}}</p>
+    </div>
+  </div>
+</div>
+
+<h2 class="landingRecentlySharedLinksTitle{{$ctrl.monthSelect}}">Recently Shared Links:</h2>
+<div class="landingRecentlySharedLinks{{$ctrl.monthSelect}}">
+
+
+  <div class="landingLinkShare{{$ctrl.monthSelect}}">
+
+    <img class="landingLinkShareProfilePic{{$ctrl.monthSelect}}" src="https://habits168-hurdaudio.s3.amazonaws.com/avatars/homerAvatar.jpg">
+    <p class="landingLinkShareUserName{{$ctrl.monthSelect}}">DJ Ipsum: </p>
+    <a class="landingLinkShareLink{{$ctrl.monthSelect}}" href="https://blog.acolyer.org/2019/05/31/lease-os/" target="_blank"><p>the morning paper: A case for lease-based, utilitarian resource management on mobile devices</p></a>
+    <p class="landingShareLinkUserNotes{{$ctrl.monthSelect}}">Wow. A proposal that just might reduce power wastage by 92%!</p>
+  </div>
+
+  <div class="landingLinkShare{{$ctrl.monthSelect}}">
+
+    <img class="landingLinkShareProfilePic{{$ctrl.monthSelect}}" src="https://habits168-hurdaudio.s3.amazonaws.com/avatars/lovecraftAvatar.jpg">
+    <p class="landingLinkShareUserName{{$ctrl.monthSelect}}">Lorem Dolor: </p>
+    <a class="landingLinkShareLink{{$ctrl.monthSelect}}" href="http://www.synthtopia.com/content/2019/05/29/leipzig-west-eurorack-modules-at-superbooth-2019/" target="_blank"><p>Synthtopia: Leipzig West Eurorack Modules At Superbooth 2019</p></a>
+    <p class="landingShareLinkUserNotes{{$ctrl.monthSelect}}">Even more Eurorack goodies to break my bank account.</p>
+  </div>
+
+  <div class="landingLinkShare{{$ctrl.monthSelect}}">
+
+    <img class="landingLinkShareProfilePic{{$ctrl.monthSelect}}" src="https://habits168-hurdaudio.s3.amazonaws.com/avatars/ashesAvatar.png">
+    <p class="landingLinkShareUserName{{$ctrl.monthSelect}}">Amet Tempor: </p>
+    <a class="landingLinkShareLink{{$ctrl.monthSelect}}" href="https://pinchofyum.com/5-ingredient-spicy-pork" target="_blank"><p>Pinch of Yum: 5 ingredient spicy pork</p></a>
+    <p class="landingShareLinkUserNotes{{$ctrl.monthSelect}}">This one was a hit with the fam last night.</p>
+  </div>
+
+  <div class="landingLinkShare{{$ctrl.monthSelect}}">
+
+    <img class="landingLinkShareProfilePic{{$ctrl.monthSelect}}" src="https://habits168-hurdaudio.s3.amazonaws.com/avatars/lovecraftAvatar.jpg">
+    <p class="landingLinkShareUserName{{$ctrl.monthSelect}}">Lorem Dolor: </p>
+    <a class="landingLinkShareLink{{$ctrl.monthSelect}}" href="https://www.gamechangeraudio.com/motor-synth/" target="_blank"><p>Gamechanger Audio: Motor Synth</p></a>
+    <p class="landingShareLinkUserNotes{{$ctrl.monthSelect}}">The world's first electro-mechanical desktop synthesizer.</p>
+  </div>
+</div>
+
+<h2 class="landingRecentlySharedPostsTitle{{$ctrl.monthSelect}}">Recently Posted:</h2>
+
+<div class="landingRecentlySharedPosts{{$ctrl.monthSelect}}">
+  <div class="landingLinkShare{{$ctrl.monthSelect}}">
+
+    <img class="landingLinkShareProfilePic{{$ctrl.monthSelect}}" src="https://habits168-hurdaudio.s3.amazonaws.com/avatars/homerAvatar.jpg">
+    <p class="landingLinkShareUserName{{$ctrl.monthSelect}}">DJ Ipsum: </p>
+    <a class="landingLinkShareLink{{$ctrl.monthSelect}}" href="" target="_blank"><p>Ipsum Spins Some: Everybody's a DJ and Why You Should Be Too</p></a>
+    <p class="landingShareLinkUserNotes{{$ctrl.monthSelect}}">Let's face it. Music is one of the two or three things that makes life bearable. A...</p>
+  </div>
+
+  <div class="landingLinkShare{{$ctrl.monthSelect}}">
+
+    <img class="landingLinkShareProfilePic{{$ctrl.monthSelect}}" src="https://habits168-hurdaudio.s3.amazonaws.com/avatars/digitalNomadAvatar.jpg">
+    <p class="landingLinkShareUserName{{$ctrl.monthSelect}}">Eva Codes: </p>
+    <a class="landingLinkShareLink{{$ctrl.monthSelect}}" href="" target="_blank"><p>Will Code for Chocolate: When Nested Callback Functions Go Too Far</p></a>
+    <p class="landingShareLinkUserNotes{{$ctrl.monthSelect}}">Let's just see how deep this rabbit hole goes, okay? I was tasked with...</p>
+  </div>
+
+  <div class="landingLinkShare{{$ctrl.monthSelect}}">
+
+    <img class="landingLinkShareProfilePic{{$ctrl.monthSelect}}" src="https://habits168-hurdaudio.s3.amazonaws.com/avatars/ashesAvatar.png">
+    <p class="landingLinkShareUserName{{$ctrl.monthSelect}}">Amet Tempor: </p>
+    <a class="landingLinkShareLink{{$ctrl.monthSelect}}" href="" target="_blank"><p>Garden of Tempor: Heirloom Tomatoes and You</p></a>
+    <p class="landingShareLinkUserNotes{{$ctrl.monthSelect}}">I scored some of the ugliest tomatoes at the farmer's market and I couldn't be happier...</p>
+  </div>
+
+  <div class="landingLinkShare{{$ctrl.monthSelect}}">
+
+    <img class="landingLinkShareProfilePic{{$ctrl.monthSelect}}" src="https://habits168-hurdaudio.s3.amazonaws.com/avatars/rumbleAvatar.png">
+    <p class="landingLinkShareUserName{{$ctrl.monthSelect}}">Ian M: </p>
+    <a class="landingLinkShareLink{{$ctrl.monthSelect}}" href="" target="_blank"><p>Ramblin' On: Root for the Laundry</p></a>
+    <p class="landingShareLinkUserNotes{{$ctrl.monthSelect}}">It's too easy to be the "fair weather" fan. Rooting for winners isn't a challenge...</p>
+  </div>
+
+</div>
+
+<div class="{{$ctrl.landingLoginBoxClass}}">
+  <h2>log in:</h2>
+  <h3 ng-if="$ctrl.loginError">{{$ctrl.loginErrorMessage}}</h3>
+
+  <form>
+
+    <input id="landingLoginEmailField" type="email" placeholder="email">
+    <input id="landingLoginPasswordField" type="password" placeholder="password">
+
+    <button ng-click="$ctrl.userLogin()">submit</button>
+    <button ng-click="$ctrl.deactivateUserLogin()">cancel</button>
+    <a href=""><p>forgot password</p></a>
+  </form>
+</div>
+
+<div class="landingFooter{{$ctrl.monthSelect}}">
+
+  <p class="landingFooterMessage{{$ctrl.monthSelect}}">{{$ctrl.footerMessage}}</p>
 </div>
