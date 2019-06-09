@@ -4,10 +4,157 @@ body {
   overflow-y: hidden;
 }
 
+.landingLinkShare_JanuaryA {
+  padding: 5px;
+  width: 96%;
+}
+
+.landingRecentlySharedLinksUncollapsed_JanuaryA {
+  background: silver;
+  float: left;
+  height: 570px;
+  opacity: 0.9;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  margin: 0 0 0 30px;
+  padding: 15px;
+  position: relative;
+  transition: all 0.4s linear;
+  width: 75%;
+}
+
+.landingRecentlySharedLinksCollapsed_JanuaryA {
+  background: transparent;
+  float: left;
+  height: 570px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  opacity: 0.9;
+  margin: 0 0 0 30px;
+  padding: 15px;
+  position: relative;
+  transition: all 0.4s linear;
+  width: 15%;
+}
+
+.landingRecentlySharedPostsUncollapsed_JanuaryA {
+  background: silver;
+  float: left;
+  height: 570px;
+  opacity: 0.9;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  margin: 0 0 0 0;
+  padding: 15px;
+  position: relative;
+  transition: all 0.4s linear;
+  width: 75%;
+}
+
+.landingRecentlySharedPostsCollapsed_JanuaryA {
+  background: transparent;
+  float: left;
+  height: 570px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  opacity: 0.9;
+  margin: 0 0 0 0;
+  padding: 15px;
+  position: relative;
+  transition: all 0.4s linear;
+  width: 15%;
+}
+
+.landingRecentlySharedLinksUncollapsed_JanuaryA img {
+  display: initial;
+  float: left;
+  height: 60px;
+  left: 1%;
+  padding: 4px 8px 4px 0;
+  position: relative;
+  width: 60px;
+}
+
+.landingRecentlySharedLinksCollapsed_JanuaryA img {
+  display: none;
+}
+
+.landingRecentlySharedPostsUncollapsed_JanuaryA img {
+  display: initial;
+  float: left;
+  height: 60px;
+  left: 1%;
+  padding: 4px 8px 4px 0;
+  position: relative;
+  width: 60px;
+}
+
+.landingRecentlySharedPostsCollapsed_JanuaryA img {
+  display: none;
+}
+
+.landingRecentlySharedLinksUncollapsed_JanuaryA p {
+  color: #012736;
+  display: intial;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+  padding: 4px;
+}
+
+.landingRecentlySharedLinksCollapsed_JanuaryA p {
+  display: none;
+}
+
+.landingRecentlySharedPostsUncollapsed_JanuaryA p {
+  color: #012736;
+  display: intial;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+  padding: 4px;
+}
+
+.landingRecentlySharedPostsCollapsed_JanuaryA p {
+  display: none;
+}
+
+.landingLinkShareUserName_JanuaryA {
+  float: left;
+  margin: 1px 0 0 0;
+  position: relative;
+  width: 13%;
+}
+
+.landingLinkShareLink_JanuaryA {
+  float: left;
+  margin: 1px 5px 20px 5px;
+  position: relative;
+  text-decoration: none;
+  width: 41%;
+}
+
+.landingLinkShareLink_JanuaryA:hover {
+  filter: brightness(250%);
+}
+
+.landingShareLinkUserNotes_JanuaryA {
+  float: left;
+  margin: 0 5px 20px 0;
+  position: relative;
+  width: 35%;
+}
+
+.landingRecentlySharedLinksTitle_JanuaryA {
+  color: #012736;
+  cursor: pointer;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 30px;
+}
+
 .landingTitleFlex {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: left;
 }
 
 .backgroundDiv_JanuaryA {
@@ -46,6 +193,7 @@ body {
 
 .landingTitleButtonsDiv_JanuaryA {
   float: right;
+  margin-left: 30%;
   padding: 36px 0 4px 24px;
 }
 
@@ -234,109 +382,6 @@ body {
   color: #ccdcee;
 }
 
-.landingRecentlySharedLinks_JanuaryA {
-
-  height: 250px;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  margin: 0 0 10px 0;
-  padding: 17px;
-  visibility: visible;
-  width: 100%;
-}
-
-.landingRecentlySharedLinksTitle_JanuaryA {
-  color: #012736;
-  cursor: pointer;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 30px;
-  left: 15px;
-  margin: 0 0 10px 15px;
-  position: relative;
-  top: 10px;
-  visibility: visible;
-  width: 25%;
-}
-
-.landingRecentlySharedLinksTitle_JanuaryA:hover {
-  color: #ccdcee;
-}
-
-.landingLinkShare_JanuaryA {
-  background: transparent;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.landingLinkShareProfilePic_JanuaryA {
-  cursor: pointer;
-  float: left;
-  height: 65px;
-  margin: 15px 5px 5px 16px;
-  width: 65px;
-}
-
-.landingLinkShareUserName_JanuaryA {
-  color: #012736;
-  cursor: pointer;
-  float: left;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 24px;
-  margin: 20px 5px 5px 16px;
-  width: 150px;
-}
-
-.landingLinkShareLink_JanuaryA {
-  color: #012736;
-  float: left;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 24px;
-  margin: 20px 5px 5px 16px;
-  text-decoration: none;
-  width: 40%;
-}
-
-.landingLinkShareLink_JanuaryA:hover {
-  color: #3d8baf;
-}
-
-.landingShareLinkUserNotes_JanuaryA {
-  color: #012736;
-  float: left;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 24px;
-  margin: 20px 5px 5px 16px;
-  width: 35%;
-}
-
-.landingRecentlySharedPostsTitle_JanuaryA {
-  color: #012736;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 30px;
-  left: 15px;
-  margin: 0 0 10px 15px;
-  position: relative;
-  visibility: visible;
-  width: 20%;
-}
-
-.landingRecentlySharedPostsTitle_JanuaryA:hover {
-  color: #ccdcee;
-  cursor: pointer;
-}
-
-.landingRecentlySharedPosts_JanuaryA {
-  height: 200px;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  margin: 0 0 0 0;
-  padding: 17px;
-  visibility: visible;
-  width: 100%;
-}
-
 .landingUserGreeting_JanuaryA {
   color: #012736;
   display: initial;
@@ -397,29 +442,6 @@ body {
     margin-top: 3%;
   }
 
-  .landingRecentlySharedLinks_JanuaryA {
-    visibility: visible;
-    height: 320px;
-  }
-
-  .landingRecentlySharedLinksTitle_JanuaryA {
-    visibility: visible;
-    margin-left: 25px;
-  }
-
-  .landingShareLinkUserNotes_JanuaryA {
-    width: 80%;
-  }
-
-  .landingRecentlySharedPostsTitle_JanuaryA {
-    visibility: visible;
-  }
-
-  .landingRecentlySharedPosts_JanuaryA {
-    height: 300px;
-    margin-top: 25px;
-
-  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -471,35 +493,6 @@ body {
     font-size: 36px;
     margin-left: 20%;
     margin-top: 3%;
-  }
-
-  .landingRecentlySharedLinks_JanuaryA {
-    visibility: visible;
-    height: 500px;
-  }
-
-  .landingRecentlySharedLinksTitle_JanuaryA {
-    visibility: visible;
-    margin-left: 25px;
-  }
-
-  .landingShareLinkUserNotes_JanuaryA {
-    width: 80%;
-  }
-
-  .landingRecentlySharedLinksTitle_JanuaryA {
-    visibility: visible;
-    width: 90%;
-  }
-
-  .landingRecentlySharedPostsTitle_JanuaryA {
-    visibility: visible;
-  }
-
-  .landingRecentlySharedLinks_JanuaryA {
-    height: 390px;
-    margin-top: 25px;
-
   }
 }
 
@@ -560,24 +553,6 @@ body {
     font-size: 24px;
   }
 
-  .landingRecentlySharedLinks_JanuaryA {
-    visibility: hidden;
-    height: 5px;
-  }
-
-  .landingRecentlySharedLinksTitle_JanuaryA {
-    visibility: hidden;
-  }
-
-  .landingRecentlySharedPostsTitle_JanuaryA {
-    visibility: hidden;
-    height: 1px;
-  }
-
-  .landingRecentlySharedPosts_JanuaryA {
-    visiblity: hidden;
-    height: 1px;
-  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -642,34 +617,6 @@ body {
     margin-top: 3%;
   }
 
-  .landingRecentlySharedLinks_JanuaryA {
-    visibility: visible;
-    height: 290px;
-  }
-
-  .landingRecentlySharedLinksTitle_JanuaryA {
-    visibility: visible;
-    margin-left: 25px;
-  }
-
-  .landingShareLinkUserNotes_JanuaryA {
-    width: 80%;
-  }
-
-  .landingRecentlySharedLinksTitle_JanuaryA {
-    visibility: visible;
-    width: 90%;
-  }
-
-  .landingRecentlySharedPostsTitle_JanuaryA {
-    visibility: visible;
-  }
-
-  .landingRecentlySharedPosts_JanuaryA {
-    height: 250px;
-    margin-top: 25px;
-
-  }
 }
 
 @media only screen and (max-width: 736px) {
@@ -728,24 +675,6 @@ body {
     font-size: 18px;
   }
 
-  .landingRecentlySharedLinks_JanuaryA {
-    visibility: hidden;
-    height: 5px;
-  }
-
-  .landingRecentlySharedLinksTitle_JanuaryA {
-    visibility: hidden;
-  }
-
-  .landingRecentlySharedPostsTitle_JanuaryA {
-    visibility: hidden;
-    height: 1px;
-  }
-
-  .landingRecentlySharedPosts_JanuaryA {
-    visiblity: hidden;
-    height: 1px;
-  }
 }
 
 @media only screen and (max-width: 731px) {
@@ -804,24 +733,6 @@ body {
     font-size: 24px;
   }
 
-  .landingRecentlySharedLinks_JanuaryA {
-    visibility: hidden;
-    height: 5px;
-  }
-
-  .landingRecentlySharedLinksTitle_JanuaryA {
-    visibility: hidden;
-  }
-
-  .landingRecentlySharedPostsTitle_JanuaryA {
-    visibility: hidden;
-    height: 1px;
-  }
-
-  .landingRecentlySharedPosts_JanuaryA {
-    visiblity: hidden;
-    height: 1px;
-  }
 }
 
 @media only screen and (max-width: 640px) {
@@ -881,24 +792,6 @@ body {
     font-size: 24px;
   }
 
-  .landingRecentlySharedLinks_JanuaryA {
-    visibility: hidden;
-    height: 5px;
-  }
-
-  .landingRecentlySharedLinksTitle_JanuaryA {
-    visibility: hidden;
-  }
-
-  .landingRecentlySharedPostsTitle_JanuaryA {
-    visibility: hidden;
-    height: 1px;
-  }
-
-  .landingRecentlySharedPosts_JanuaryA {
-    visiblity: hidden;
-    height: 1px;
-  }
 }
 
 @media only screen and (max-width: 568px) {
@@ -950,24 +843,6 @@ body {
     font-size: 18px;
   }
 
-  .landingRecentlySharedLinks_JanuaryA {
-    visibility: hidden;
-    height: 5px;
-  }
-
-  .landingRecentlySharedLinksTitle_JanuaryA {
-    visibility: hidden;
-  }
-
-  .landingRecentlySharedPostsTitle_JanuaryA {
-    visibility: hidden;
-    height: 1px;
-  }
-
-  .landingRecentlySharedPosts_JanuaryA {
-    visiblity: hidden;
-    height: 1px;
-  }
 }
 
 @media only screen and (max-width: 414px) {
@@ -1040,27 +915,6 @@ body {
     font-size: 24px;
   }
 
-  .landingRecentlySharedLinks_JanuaryA {
-    visibility: visible;
-    height: 400px;
-  }
-
-  .landingRecentlySharedLinksTitle_JanuaryA {
-    left: 10px;
-    visibility: visible;
-    width: 90%;
-  }
-
-  .landingRecentlySharedPostsTitle_JanuaryA {
-    visibility: hidden;
-    height: 1px;
-  }
-
-  .landingRecentlySharedPosts_JanuaryA {
-    visiblity: hidden;
-    height: 1px;
-  }
-
 }
 
 @media only screen and (max-width: 411px) {
@@ -1130,25 +984,6 @@ body {
     font-size: 24px;
   }
 
-  .landingRecentlySharedLinks_JanuaryA {
-    visibility: visible;
-    height: 410px;
-  }
-
-  .landingRecentlySharedLinksTitle_JanuaryA {
-    visibility: visible;
-    width: 90%;
-  }
-
-  .landingRecentlySharedPostsTitle_JanuaryA {
-    visibility: hidden;
-    height: 1px;
-  }
-
-  .landingRecentlySharedPosts_JanuaryA {
-    visiblity: hidden;
-    height: 1px;
-  }
 }
 
 @media only screen and (max-width: 375px) {
@@ -1195,25 +1030,6 @@ body {
     font-size: 24px;
   }
 
-  .landingRecentlySharedLinks_JanuaryA {
-    visibility: visible;
-    height: 340px;
-  }
-
-  .landingRecentlySharedLinksTitle_JanuaryA {
-    visibility: visible;
-    margin-left: 25px;
-  }
-
-  .landingRecentlySharedPostsTitle_JanuaryA {
-    visibility: hidden;
-    height: 1px;
-  }
-
-  .landingRecentlySharedPosts_JanuaryA {
-    visiblity: hidden;
-    height: 1px;
-  }
 }
 
 @media only screen and (max-width: 360px) {
@@ -1287,30 +1103,6 @@ body {
     font-size: 24px;
   }
 
-  .landingRecentlySharedLinks_JanuaryA {
-    visibility: visible;
-    height: 300px;
-  }
-
-  .landingRecentlySharedLinksTitle_JanuaryA {
-    visibility: visible;
-    width: 90%;
-  }
-
-  .landingLinkShareLink_JanuaryA {
-    width: 80%;
-  }
-
-  .landingRecentlySharedPostsTitle_JanuaryA {
-    visibility: hidden;
-    height: 1px;
-  }
-
-  .landingRecentlySharedPosts_JanuaryA {
-    visiblity: hidden;
-    height: 1px;
-  }
-
 }
 
 @media only screen and (max-width: 320px) {
@@ -1377,26 +1169,6 @@ body {
 
   .landingLoginActive_JanuaryA button {
     font-size: 24px;
-  }
-
-  .landingRecentlySharedLinks_JanuaryA {
-    visibility: visible;
-    height: 230px;
-  }
-
-  .landingRecentlySharedLinksTitle_JanuaryA {
-    visibility: visible;
-    margin-left: 1px;
-  }
-
-  .landingRecentlySharedPostsTitle_JanuaryA {
-    visibility: hidden;
-    height: 1px;
-  }
-
-  .landingRecentlySharedPosts_JanuaryA {
-    visiblity: hidden;
-    height: 1px;
   }
 
 }

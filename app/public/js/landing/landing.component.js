@@ -24,6 +24,22 @@
       vm.loginError = false;
       vm.loginErrorMessage = '';
       vm.userLogout = userLogout;
+      vm.linkShareCollapse = false;
+      vm.toggleLinkShareState = toggleLinkShareState;
+      vm.linkSharesClass = 'landingRecentlySharedLinksUncollapsed' + vm.monthSelect;
+      vm.postSharesClass = 'landingRecentlySharedPostsCollapsed' + vm.monthSelect;
+
+      function toggleLinkShareState() {
+        if (vm.linkShareCollapse) {
+          vm.linkShareCollapse = false;
+          vm.linkSharesClass = 'landingRecentlySharedLinksCollapsed' + vm.monthSelect;
+          vm.postSharesClass = 'landingRecentlySharedPostsUncollapsed' + vm.monthSelect;
+        } else {
+          vm.linkShareCollapse = true;
+          vm.linkSharesClass = 'landingRecentlySharedLinksUncollapsed' + vm.monthSelect;
+          vm.postSharesClass = 'landingRecentlySharedPostsCollapsed' + vm.monthSelect;
+        }
+      }
 
       function userLogout() {
         $http.post('/users/logout', {})
