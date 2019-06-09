@@ -389,10 +389,12 @@ body {
 .landingUserGreeting_JanuaryA {
   color: #012736;
   display: initial;
-  float: right;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 30px;
+  left: 655px;
+  top: 40px;
   margin: 24px 16px 24px 48px;
+  position: absolute;
 }
 
 @media only screen and (max-width: 1366px) {
