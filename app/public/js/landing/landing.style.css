@@ -11,6 +11,7 @@ body {
 
 .landingRecentlySharedLinksUncollapsed_JanuaryA {
   background: silver;
+  display: initial;
   float: left;
   height: 570px;
   opacity: 0.9;
@@ -25,6 +26,7 @@ body {
 
 .landingRecentlySharedLinksCollapsed_JanuaryA {
   background: transparent;
+  display: initial;
   float: left;
   height: 570px;
   overflow-x: hidden;
@@ -39,6 +41,7 @@ body {
 
 .landingRecentlySharedPostsUncollapsed_JanuaryA {
   background: silver;
+  display: initial;
   float: left;
   height: 570px;
   opacity: 0.9;
@@ -53,6 +56,7 @@ body {
 
 .landingRecentlySharedPostsCollapsed_JanuaryA {
   background: transparent;
+  display: initial;
   float: left;
   height: 570px;
   overflow-x: hidden;
@@ -494,6 +498,50 @@ body {
     margin-left: 20%;
     margin-top: 3%;
   }
+
+  .landingRecentlySharedLinksUncollapsed_JanuaryA {
+    height: 430px;
+  }
+
+  .landingRecentlySharedPostsUncollapsed_JanuaryA {
+    height: 430px;
+  }
+
+  .landingRecentlySharedLinksUncollapsed_JanuaryA {
+    height: 900px;
+    width: 90%;
+  }
+
+  .landingRecentlySharedLinksCollapsed_JanuaryA {
+    display: none;
+  }
+
+  .landingRecentlySharedPostsUncollapsed_JanuaryA {
+    height: 900px;
+    margin-left: 30px;
+    width: 90%;
+  }
+
+  .landingRecentlySharedPostsCollapsed_JanuaryA {
+    display: none;
+  }
+
+  .landingLinkShareUserName_JanuaryA {
+    width: 20%;
+  }
+
+  .landingLinkShareLink_JanuaryA {
+    margin: 1px 5px 10px 5px;
+    width: 55%;
+  }
+
+  .landingShareLinkUserNotes_JanuaryA {
+    width: 95%;
+  }
+
+  .landingRecentlySharedPostsCollapsed_JanuaryA {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 823px) {
@@ -505,6 +553,10 @@ body {
     height: 72px;
     margin: 16px 4px 16px 16px;
     width: 10%;
+  }
+
+  .landingTitleButtonsDiv_JanuaryA {
+    margin-left: 150px;
   }
 
   .landingTitleDiv_JanuaryA {
@@ -551,6 +603,14 @@ body {
 
   .landingLoginActive_JanuaryA button {
     font-size: 24px;
+  }
+
+  .landingRecentlySharedLinksUncollapsed_JanuaryA {
+    display: none;
+  }
+
+  .landingRecentlySharedPostsCollapsed_JanuaryA {
+    display: none;
   }
 
 }
@@ -617,6 +677,45 @@ body {
     margin-top: 3%;
   }
 
+  .landingRecentlySharedLinksUncollapsed_JanuaryA {
+    display: initial;
+    height: 700px;
+    margin: 0 0 0 5px;
+    width: 90%;
+  }
+
+  .landingRecentlySharedPostsUncollapsed_JanuaryA {
+    display: initial;
+    height: 700px;
+    margin: 0 0 0 5px;
+    width: 90%;
+  }
+
+  .landingRecentlySharedLinksCollapsed_JanuaryA {
+    display: none;
+  }
+
+  .landingRecentlySharedPostsCollapsed_JanuaryA {
+    display: none;
+  }
+
+  .landingLinkShareUserName_JanuaryA {
+    width: 20%;
+  }
+
+  .landingLinkShareLink_JanuaryA {
+    margin: 1px 5px 10px 5px;
+    width: 55%;
+  }
+
+  .landingShareLinkUserNotes_JanuaryA {
+    width: 95%;
+  }
+
+  .landingRecentlySharedPostsCollapsed_JanuaryA {
+    display: none;
+  }
+
 }
 
 @media only screen and (max-width: 736px) {
@@ -675,6 +774,14 @@ body {
     font-size: 18px;
   }
 
+  .landingRecentlySharedLinksUncollapsed_JanuaryA {
+    display: none;
+  }
+
+  .landingRecentlySharedPostsCollapsed_JanuaryA {
+    display: none;
+  }
+
 }
 
 @media only screen and (max-width: 731px) {
@@ -686,6 +793,10 @@ body {
     height: 72px;
     margin: 16px 4px 16px 16px;
     width: 10%;
+  }
+
+  .landingTitleButtonsDiv_JanuaryA {
+    margin-left: 100px;
   }
 
   .landingTitleDiv_JanuaryA {
@@ -733,6 +844,14 @@ body {
     font-size: 24px;
   }
 
+  .landingRecentlySharedLinksUncollapsed_JanuaryA {
+    display: none;
+  }
+
+  .landingRecentlySharedPostsCollapsed_JanuaryA {
+    display: none;
+  }
+
 }
 
 @media only screen and (max-width: 640px) {
@@ -753,6 +872,10 @@ body {
   .landingTitle_JanuaryA {
     font-size: 72px;
     font-weight: bolder;
+  }
+
+  .landingTitleButtonsDiv_JanuaryA {
+    margin-left: 60px;
   }
 
   .landingLoginActive_JanuaryA {
@@ -790,6 +913,14 @@ body {
 
   .landingLoginActive_JanuaryA button {
     font-size: 24px;
+  }
+
+  .landingRecentlySharedLinksUncollapsed_JanuaryA {
+    display: none;
+  }
+
+  .landingRecentlySharedPostsCollapsed_JanuaryA {
+    display: none;
   }
 
 }
@@ -915,6 +1046,45 @@ body {
     font-size: 24px;
   }
 
+  .landingRecentlySharedLinksUncollapsed_JanuaryA {
+    display: initial;
+    height: 450px;
+    margin: 0 0 0 5px;
+    width: 90%;
+  }
+
+  .landingRecentlySharedPostsUncollapsed_JanuaryA {
+    display: initial;
+    height: 450px;
+    margin: 0 0 0 5px;
+    width: 90%;
+  }
+
+  .landingRecentlySharedLinksCollapsed_JanuaryA {
+    display: none;
+  }
+
+  .landingRecentlySharedPostsCollapsed_JanuaryA {
+    display: none;
+  }
+
+  .landingLinkShareUserName_JanuaryA {
+    width: 20%;
+  }
+
+  .landingLinkShareLink_JanuaryA {
+    margin: 1px 5px 10px 5px;
+    width: 55%;
+  }
+
+  .landingShareLinkUserNotes_JanuaryA {
+    width: 95%;
+  }
+
+  .landingRecentlySharedPostsCollapsed_JanuaryA {
+    display: none;
+  }
+
 }
 
 @media only screen and (max-width: 411px) {
@@ -930,6 +1100,10 @@ body {
     height: 72px;
     margin: 16px 4px 16px 8px;
     width: 15%;
+  }
+
+  .landingTitleButtonsDiv_JanuaryA {
+    margin-left: 0;
   }
 
   .landingTitleDiv_JanuaryA {
@@ -984,6 +1158,45 @@ body {
     font-size: 24px;
   }
 
+  .landingRecentlySharedLinksUncollapsed_JanuaryA {
+    display: initial;
+    height: 440px;
+    margin: 0 0 0 5px;
+    width: 90%;
+  }
+
+  .landingRecentlySharedPostsUncollapsed_JanuaryA {
+    display: initial;
+    height: 440px;
+    margin: 0 0 0 5px;
+    width: 90%;
+  }
+
+  .landingRecentlySharedLinksCollapsed_JanuaryA {
+    display: none;
+  }
+
+  .landingRecentlySharedPostsCollapsed_JanuaryA {
+    display: none;
+  }
+
+  .landingLinkShareUserName_JanuaryA {
+    width: 20%;
+  }
+
+  .landingLinkShareLink_JanuaryA {
+    margin: 1px 5px 10px 5px;
+    width: 55%;
+  }
+
+  .landingShareLinkUserNotes_JanuaryA {
+    width: 95%;
+  }
+
+  .landingRecentlySharedPostsCollapsed_JanuaryA {
+    display: none;
+  }
+
 }
 
 @media only screen and (max-width: 375px) {
@@ -1030,6 +1243,45 @@ body {
     font-size: 24px;
   }
 
+  .landingRecentlySharedLinksUncollapsed_JanuaryA {
+    display: initial;
+    height: 380px;
+    margin: 0 0 0 5px;
+    width: 90%;
+  }
+
+  .landingRecentlySharedPostsUncollapsed_JanuaryA {
+    display: initial;
+    height: 380px;
+    margin: 0 0 0 5px;
+    width: 90%;
+  }
+
+  .landingRecentlySharedLinksCollapsed_JanuaryA {
+    display: none;
+  }
+
+  .landingRecentlySharedPostsCollapsed_JanuaryA {
+    display: none;
+  }
+
+  .landingLinkShareUserName_JanuaryA {
+    width: 20%;
+  }
+
+  .landingLinkShareLink_JanuaryA {
+    margin: 1px 5px 10px 5px;
+    width: 55%;
+  }
+
+  .landingShareLinkUserNotes_JanuaryA {
+    width: 95%;
+  }
+
+  .landingRecentlySharedPostsCollapsed_JanuaryA {
+    display: none;
+  }
+
 }
 
 @media only screen and (max-width: 360px) {
@@ -1059,6 +1311,10 @@ body {
 
   .landingFooter_JanuaryA {
     font-size: 18px;
+  }
+
+  .landingTitleButtonsDiv_JanuaryA {
+    margin-left: 0;
   }
 
   .landingTitleButtonsDiv_JanuaryA button {
@@ -1101,6 +1357,14 @@ body {
 
   .landingLoginActive_JanuaryA button {
     font-size: 24px;
+  }
+
+  .landingRecentlySharedLinksUncollapsed_JanuaryA {
+    display: none;
+  }
+
+  .landingRecentlySharedPostsCollapsed_JanuaryA {
+    display: none;
   }
 
 }
@@ -1169,6 +1433,45 @@ body {
 
   .landingLoginActive_JanuaryA button {
     font-size: 24px;
+  }
+
+  .landingRecentlySharedLinksUncollapsed_JanuaryA {
+    display: initial;
+    height: 280px;
+    margin: 0 0 0 5px;
+    width: 90%;
+  }
+
+  .landingRecentlySharedPostsUncollapsed_JanuaryA {
+    display: initial;
+    height: 280px;
+    margin: 0 0 0 5px;
+    width: 90%;
+  }
+
+  .landingRecentlySharedLinksCollapsed_JanuaryA {
+    display: none;
+  }
+
+  .landingRecentlySharedPostsCollapsed_JanuaryA {
+    display: none;
+  }
+
+  .landingLinkShareUserName_JanuaryA {
+    width: 20%;
+  }
+
+  .landingLinkShareLink_JanuaryA {
+    margin: 1px 5px 10px 5px;
+    width: 55%;
+  }
+
+  .landingShareLinkUserNotes_JanuaryA {
+    width: 95%;
+  }
+
+  .landingRecentlySharedPostsCollapsed_JanuaryA {
+    display: none;
   }
 
 }
