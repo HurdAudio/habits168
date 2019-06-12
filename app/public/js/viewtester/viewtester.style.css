@@ -23,7 +23,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   height: 11vh;
-  justify-content: left;
+  justify-content: flex-start;
   width: 99.6%;
 }
 
@@ -58,6 +58,7 @@
   background: transparent;
   color: #121a23;
   cursor: pointer;
+  display: initial;
   font-family: 'Signika', sans-serif;
   font-size: 66px;
   padding: 10px 15px 0 15px;
@@ -80,6 +81,7 @@
 .viewCurrentFeedDescription_JanuaryA {
   background: transparent;
   color: #121a23;
+  display: initial;
   justify-content: flex-end;
   font-family: 'Signika', sans-serif;
   font-size: 18px;
@@ -162,6 +164,8 @@
   height: 70vh;
   left: 10%;
   opacity: 0.99;
+  overflow-x: hidden;
+  overflow-y: scroll;
   position: absolute;
   top: 25%;
   transform: skewX(0deg);
@@ -274,4 +278,50 @@
   margin: 5% 0 0 0;
   width: 100%;
   z-index: -17;
+}
+
+@media only screen and (max-width: 736px) {
+
+  .viewCurrentFeedDescription_JanuaryA {
+    display: none;
+  }
+
+  .viewContentDiv_JanuaryA {
+    height: 140vh;
+  }
+
+  .viewToolbar_JanuaryA {
+    height: 16vh;
+  }
+
+  .viewCurrentFeedTitle_JanuaryA {
+    display: initial;
+    font-size: 48px;
+    padding: 20px 15px 0 15px;
+  }
+}
+
+@media only screen and (max-width: 667px) {
+
+  .viewCurrentFeedTitle_JanuaryA {
+    display: none;
+  }
+
+  .viewNavigation_JanuaryA {
+    font-size: 48px;
+    height: 50px;
+    width: 50px;
+  }
+
+  .viewCurrentFeedIcon_JanuaryA {
+    height: 50px;
+    width: 50px;
+  }
+
+  .viewShareSaveDialogueDisplayed_JanuaryA textarea {
+    margin: 5px 50px 5px 50px;
+    padding: 5px;
+    width: 58%;
+  }
+
 }
