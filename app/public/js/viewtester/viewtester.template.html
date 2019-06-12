@@ -1,0 +1,55 @@
+<div class="viewTesterTestDiv">
+  <div class="{{$ctrl.viewMask}}">
+    <div class="viewToolbar{{$ctrl.viewMonth}}">
+
+      <button class="viewNavigation{{$ctrl.viewMonth}}" ng-hide="$ctrl.feedStart" ng-click="$ctrl.navigationBack()">&#x2190;</button>
+      <button class="viewNavigation{{$ctrl.viewMonth}}" ng-hide="$ctrl.feedEnd" ng-click="$ctrl.navigationAdvance()">&#x2192;</button>
+      <button class="viewNavigation{{$ctrl.viewMonth}}" ng-click="$ctrl.refreshFeedList()">&#x21bb;</button>
+      <button class="viewNavigation{{$ctrl.viewMonth}}"><a href="{{$ctrl.feedLink}}" target="_blank"><img class="viewCurrentFeedIcon{{$ctrl.viewMonth}}" src="{{$ctrl.feedIcon}}"></a></button>
+      <div class="viewCurrentFeedTitle{{$ctrl.viewMonth}}"><a href="{{$ctrl.feedLink}}" target="_blank"><h1>{{$ctrl.feedTitle}}</h1></a></div>
+      <div class="viewCurrentFeedDescription{{$ctrl.viewMonth}}"><h3>{{$ctrl.feedDescription}}</h3></div>
+      <button class="viewNavigation{{$ctrl.viewMonth}} exit" ng-click="$ctrl.closeViewer()">X</button>
+    </div>
+
+    <div class="viewContentDiv{{$ctrl.viewMonth}}" id="viewContentDiv">
+
+      <main ng-repeat="post in $ctrl.feedItems">
+
+        <div class="viewIndividualItems{{$ctrl.viewMonth}}">
+
+          <img src="{{post.enclosure.link}}"><br><br>
+
+          <button ng-click="$ctrl.viewShareLink(post)">share link</button>
+          <button ng-click="$ctrl.viewSaveLink(post)">save link</button>
+
+          <a href="{{post.link}}" target="_blank"><p>{{post.title}}</p></a>
+          <p class="viewPostTimestamp{{$ctrl.viewMonth}}">{{post.cleanDate}}</p>
+          <p>{{post.author}}</p>
+          <p ng-bind-html="post.description"></p>
+          <!-- <p ng-bind-html="post.content"></p> -->
+          <br>
+        </div>
+      </main><br><br><br><br><br>
+    </div>
+
+  </div>
+
+  <div class="{{$ctrl.shareSaveLinkDisplay}}">
+
+    <h2 class="viewDialogHeadline{{$ctrl.viewMonth}}" id="viewSaveDialogHeadline">{{$ctrl.viewLinkShareOrSave}}</h2>
+
+    <img src="{{$ctrl.feedIcon}}">
+
+    <p>{{$ctrl.feedTitle}}: {{$ctrl.viewLinkShareSaveTitle}}</p>
+    <textarea id="viewShareSaveLinkUserNotes" placeholder="user comments" rows="5"></textarea><br><br>
+    <div class="viewRadioButtons{{$ctrl.viewMonth}}" ng-if="$ctrl.viewLinkShareOrSave === 'Share Link'">
+
+      share with:<input type="radio" name="shareStatus" value="public" checked>public
+      <input type="radio" name="shareStatus" value="friends">friends only
+      <input type="radio" name="shareStatus" value="private">private
+    </div>
+
+    <button ng-click="$ctrl.viewCancelShareSaveLink()">submit</button>
+    <button ng-click="$ctrl.viewCancelShareSaveLink()">cancel</button>
+  </div>
+</div>

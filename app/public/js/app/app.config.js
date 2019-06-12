@@ -21,7 +21,13 @@
         url: '/',
         parent: 'app',
         component: 'landing'
-      });
+      })
+      .state({
+        name: 'viewtester',
+        url: '/viewtester',
+        parent: 'app',
+        component: 'viewtester'
+      })
       // .state({
       //   name: 'emailconfirm',
       //   url: '/emailconfirm/:id',

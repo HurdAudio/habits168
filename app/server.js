@@ -30,6 +30,12 @@ app.use(express.static(path.join(__dirname, '/../', 'node_modules')));
 //   return request(queryString).pipe(res);
 // });
 
+app.get('/rss_reader/:rss', (req, res, next) => {
+  let newUrl = 'https://api.rss2json.com/v1/api.json?rss_url=' + req.params.rss;
+  newUrl += '&api_key=' + process.env.RSS2JSON_KEY + '&order_by=pubDate&order_dir=desc&count=50';
+  return request(newUrl).pipe(res);
+});
+
 app.get('/ipaddress', (req, res, next) => {
   let newUrl = 'https://jsonip.com/';
   return request(newUrl).pipe(res);
