@@ -1,0 +1,327 @@
+.viewTesterTestDiv {
+  background-color: #000000;
+  height: 950px;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 100%;
+  z-index: 1;
+}
+
+.viewContainer_JanuaryA {
+  background: url(https://habits168-hurdaudio.s3.amazonaws.com/viewer/stephan-henning-1074622-unsplash.jpg);
+  background-size: 100%;
+  filter: blur(0);
+  height: 95%;
+  margin: 5% 0 0 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.viewToolbar_JanuaryA {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 11vh;
+  justify-content: flex-start;
+  width: 99.6%;
+}
+
+.viewNavigation_JanuaryA {
+  background: transparent;
+  border-color: transparent;
+  color: #121a23;
+  cursor: pointer;
+  font-family: 'Signika', sans-serif;
+  font-size: 60px;
+  height: 85px;
+  padding: 1px;
+  width: 85px;
+}
+
+.viewNavigation_JanuaryA:hover {
+  background: #78b2d8;
+  color: #e0eff9;
+}
+
+.viewNavigation_JanuaryA:active {
+  background: #bcd9ec;
+  color: #3aa6d7;
+}
+
+.viewCurrentFeedIcon_JanuaryA {
+  height: 85px;
+  width: 85px;
+}
+
+.viewCurrentFeedTitle_JanuaryA {
+  background: transparent;
+  color: #121a23;
+  cursor: pointer;
+  display: initial;
+  font-family: 'Signika', sans-serif;
+  font-size: 66px;
+  padding: 10px 15px 0 15px;
+}
+
+.viewCurrentFeedTitle_JanuaryA:hover {
+  background: #78b2d8;
+  color: #121a23;
+}
+
+.viewCurrentFeedTitle_JanuaryA a {
+  color: #121a23;
+  text-decoration: none;
+}
+
+.viewCurrentFeedTitle_JanuaryA a:hover {
+  color: #e0eff9;
+}
+
+.viewCurrentFeedDescription_JanuaryA {
+  background: transparent;
+  color: #121a23;
+  display: initial;
+  justify-content: flex-end;
+  font-family: 'Signika', sans-serif;
+  font-size: 18px;
+  padding: 50px 0 0 50px;
+}
+
+.viewContentDiv_JanuaryA {
+  background: #e0eff9;
+  height: 79.5vh;
+  opacity: 0.9;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 2% 5% 75px 5%;
+  width: 100%;
+}
+
+.viewIndividualItems_JanuaryA {
+  color: #121a23;
+  font-family: 'Signika', sans-serif;
+}
+
+.viewIndividualItems_JanuaryA img {
+  width: 50%;
+}
+
+.viewIndividualItems_JanuaryA p {
+  font-size: 18px;
+  margin: 5px 5% 5px 1%;
+}
+
+.viewIndividualItems_JanuaryA a {
+  color: #121a23;
+  text-decoration: none;
+}
+
+.viewIndividualItems_JanuaryA a p {
+  font-size: 30px;
+  margin: 25px 4px 8px 0;
+}
+
+.viewIndividualItems_JanuaryA a:hover {
+  color: #174256;
+}
+
+.viewIndividualItems_JanuaryA a:visited {
+  color: #4c5961;
+}
+
+.viewIndividualItems_JanuaryA button {
+  background: #c4e8f8;
+  border: none;
+  color: #121a23;
+  cursor: pointer;
+  font-family: 'Signika', sans-serif;
+  font-size: 18px;
+  margin: 0 15px 0 0;
+  padding: 5px;
+}
+
+.viewIndividualItems_JanuaryA button:hover {
+  background: #78b2d8;
+  color: #e0eff9;
+}
+
+.viewPostTimestamp_JanuaryA {
+  margin: 5px 5px 5px 45% !important;
+}
+
+.exit {
+  align-self: flex-end;
+  float: right;
+  position: fixed;
+  right: 0;
+}
+
+.viewShareSaveDialogueDisplayed_JanuaryA {
+  background: #3aa6d7;
+  color: #121a23;
+  font-family: 'Signika', sans-serif;
+  height: 70vh;
+  left: 10%;
+  opacity: 0.99;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: absolute;
+  top: 25%;
+  transform: skewX(0deg);
+  transition: all 0.5s linear;
+  width: 80%;
+  z-index: 17;
+}
+
+.viewDialogHeadline_JanuaryA {
+  background: #bcd9ec;
+  font-size: 36px;
+  padding: 30px 0 10px 50px;
+}
+
+.viewShareSaveDialogueDisplayed_JanuaryA img {
+  height: 85px;
+  margin: 30px 0 15px 50px;
+  width: 85px;
+}
+
+.viewShareSaveDialogueHidden_JanuaryA img {
+  height: 85px;
+  margin: 30px 0 15px 50px;
+  width: 85px;
+}
+
+.viewShareSaveDialogueDisplayed_JanuaryA p {
+  font-size: 24px;
+  margin: 5px 50px 15px 50px;
+}
+
+.viewShareSaveDialogueHidden_JanuaryA p {
+  font-size: 24px;
+  margin: 5px 50px 15px 50px;
+}
+
+.viewShareSaveDialogueDisplayed_JanuaryA textarea {
+  color: #121a23;
+  display: initial;
+  font-family: 'Signika', sans-serif;
+  font-size: 18px;
+  margin: 5px 50px 5px 50px;
+  padding: 5px;
+  width: 88%;
+}
+
+.viewShareSaveDialogueHidden_JanuaryA textarea {
+  display: none;
+}
+
+.viewShareSaveDialogueDisplayed_JanuaryA button {
+  border: none;
+  border-radius: 0;
+  color: #121a23;
+  cursor: pointer;
+  font-family: 'Signika', sans-serif;
+  font-size: 24px;
+  margin: 15px 0 5px 50px;
+}
+
+.viewShareSaveDialogue_JanuaryA button {
+  border: none;
+  border-radius: 0;
+  color: #121a23;
+  cursor: pointer;
+  font-family: 'Signika', sans-serif;
+  font-size: 24px;
+  margin: 15px 0 5px 50px;
+}
+
+.viewShareSaveDialogueDisplayed_JanuaryA button:hover
+ {
+   background: #78b2d8;
+   color: #e0eff9;
+ }
+
+ .viewShareSaveDialogueDisplayed_JanuaryA button:active {
+   background: #bcd9ec;
+   color: #3aa6d7;
+ }
+
+.viewShareSaveDialogueHidden_JanuaryA {
+  background: #3aa6d7;
+  height: 0;
+  left: -100%;
+  opacity: 0.45;
+  position: absolute;
+  top: 25%;
+  transform: skewX(15deg);
+  transition: all 0.5s linear;
+  width: 80%;
+  z-index: -1;
+}
+
+.viewRadioButtons_JanuaryA {
+  font-family: 'Signika', sans-serif;
+  font-size: 24px;
+  margin: 0 0 20px 50px;
+}
+
+.viewRadioButtons_JanuaryA input[type=radio] {
+  margin: 0 5px 0 15px;
+}
+
+.viewContainerCloaked_JanuaryA {
+  background: url(https://habits168-hurdaudio.s3.amazonaws.com/viewer/stephan-henning-1074622-unsplash.jpg);
+  background-size: 100%;
+  filter: blur(5px);
+  height: 95%;
+  margin: 5% 0 0 0;
+  width: 100%;
+  z-index: -17;
+}
+
+@media only screen and (max-width: 736px) {
+
+  .viewCurrentFeedDescription_JanuaryA {
+    display: none;
+  }
+
+  .viewContentDiv_JanuaryA {
+    height: 140vh;
+  }
+
+  .viewToolbar_JanuaryA {
+    height: 16vh;
+  }
+
+  .viewCurrentFeedTitle_JanuaryA {
+    display: initial;
+    font-size: 48px;
+    padding: 20px 15px 0 15px;
+  }
+}
+
+@media only screen and (max-width: 667px) {
+
+  .viewCurrentFeedTitle_JanuaryA {
+    display: none;
+  }
+
+  .viewNavigation_JanuaryA {
+    font-size: 48px;
+    height: 50px;
+    width: 50px;
+  }
+
+  .viewCurrentFeedIcon_JanuaryA {
+    height: 50px;
+    width: 50px;
+  }
+
+  .viewShareSaveDialogueDisplayed_JanuaryA textarea {
+    margin: 5px 50px 5px 50px;
+    padding: 5px;
+    width: 58%;
+  }
+
+}
