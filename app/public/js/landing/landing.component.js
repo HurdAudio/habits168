@@ -28,6 +28,92 @@
       vm.toggleLinkShareState = toggleLinkShareState;
       vm.linkSharesClass = 'landingRecentlySharedLinksUncollapsed' + vm.monthSelect;
       vm.postSharesClass = 'landingRecentlySharedPostsCollapsed' + vm.monthSelect;
+      vm.userShareLinks = [
+        {
+          author: '',
+          cleanDate: 'Sunday 2019 June 23 4:19pm',
+          description: '<a href="https://news.ycombinator.com/item?id=20256226">Comments</a>',
+          enclosure: {},
+          image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/hacker-news-2-569388.png',
+          link: 'https://www.psytoolkit.org/experiment-library/',
+          sharer: {
+            avatar: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/homerAvatar.jpg',
+            comment: 'In case you\'ve ever wondered what I\'ve been up to in my copious spare time.',
+            name: 'DJ Ipsum'
+          },
+          siteDescriptor: 'Links for the intellectually curious, ranked by readers.',
+          title: 'PsyToolkit: Create and run cognitive psychological experiments in the browser',
+          via: 'Hacker News'
+        },
+        {
+          author: 'synthhead',
+          cleanDate: 'Saturday 2019 June 19 7:47pm',
+          description: 'The Vector synthesizer - a new digital hardware synthesizer hybrid, combining several synthesis methods - is now available.… <a class="more-link" href="http://www.synthtopia.com/content/2019/06/22/vector-synth-now-available-to-order/">Read More <span class="screen-reader-text">Vector Synth Now Available To Order</span></a>',
+          enclosure: {},
+          image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/press-synthtopia-logo.jpg',
+          link: 'http://www.synthtopia.com/content/2019/06/22/vector-synth-now-available-to-order/',
+          share: {
+            avatar: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/lovecraftAvatar.jpg',
+            comment: 'Have you ever wondered what a vector "sounds" like?',
+            name: 'Lorem Dolar'
+          },
+          siteDescriptor: 'Synthesizer and electronic music news, synth and music software reviews and more!',
+          title: 'Vector Synth Now Available To Order',
+          via: 'Synthopia'
+        },
+        {
+          author: 'Lindsay',
+          cleanDate: 'Friday 2019 June 21 5:40pm',
+          description: ' <p>Super easy Italian Pasta Salad - with pasta, tomatoes, fresh mozzarella, spicy salami, pepperoncini, olives, and easy Italian dressing. DANGEROUSLY GOOD.</p> <p>The post <a rel="nofollow" href="https://pinchofyum.com/pasta-salad">The Best Easy Italian Pasta Salad</a> appeared first on <a rel="nofollow" href="https://pinchofyum.com/">Pinch of Yum</a>.</p> ',
+          enclosure: {},
+          image: 'https://pinchofyum.com/wp-content/uploads/cropped-Pinch-of-Yum-Favicon-512-32x32.png',
+          link: 'https://pinchofyum.com/pasta-salad',
+          share: {
+            avatar: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/ashesAvatar.png',
+            comment: 'I can\'t resist a good pasta salad.',
+            name: 'Amet Tempor'
+          },
+          siteDescriptor: 'A food blog with simple and tasty recipes.',
+          title: 'The Best Easy Italian Pasta Salad',
+          via: 'Pinch of Yum'
+        },
+        {
+          author: 'Karen L Freund',
+          cleanDate: 'Sunday 2019 June 23 4:45pm',
+          description: ' <p>In June 2019, people around the world are marking and celebrating 50 years since the <a href="https://thestonewallinnnyc.com/the-stonewall-inn-story/2017/4/4/ntmsg5ni7iixxdjimmg16hz6dvsi4v">uprising at the Stonewall Inn</a> in New York City that ushered in the modern movement for LGBTQ rights. While the largest celebration will no doubt be the one in New York, which for the first time is also hosting <a href="https://2019-worldpride-stonewall50.nycpride.org/">WorldPride</a> events, Pride month celebrations are taking place across the country and the globe, in events large and small. LGBTQ communities in Alabama, while aware of the threats and attitudes they may face in their very conservative and often intolerant state, are joining in the celebration, reflecting on how far they’ve come, and looking to the future.</p> <p>Florence, Alabama, is a small city in the northwest of the state, located across the Tennessee River from Muscle Shoals. It is hosting a <a href="https://www.facebook.com/pg/equalityshoals/events/?ref=page_internal" title="">series of Pride events</a> this month, culminating in a parade on June 29. In May and again earlier this month, Florence event organizers <a href="https://www.facebook.com/ShoalsDiversityCenter/">Shoals Diversity Center</a> and <a href="https://www.facebook.com/equalityshoals/">Equality Shoals</a> requested permission from the city to paint chalk rainbows in crosswalks in honor of Pride month. The organizers say they thought they had that permission, and the project, <a href="https://www.facebook.com/ShoalsDiversityCenter/posts/2868780156472170">Paint for Pride</a>, went ahead, with volunteers painting the crosswalks on June 13. Immediately after they had finished, the city set about <a href="https://www.waaytv.com/content/news/Controversy-over-gay-pride-painted-crosswalk-in-the-Shoals-511260962.html" title="">removing the rainbows</a>, claiming that the organizers had not actually received permission for it.</p> <p>Happily, amidst outrage and distress over the city’s actions, Shoals Diversity Center and Equality Shoals wrote to the mayor and police chief, who both responded, and the final outcome of communication between the parties was a unanimous resolution of the city council approving repainting of the crosswalks for Pride month. The local TimesDaily <a href="https://www.timesdaily.com/news/local/council-allows-pride-chalk-rainbows-at-crosswalks/article_27ddcdba-33d0-5f20-aa91-dfc061cb57dd.html?fbclid=IwAR18yLiQMkgUrXYzPw_5u2BuKhLyfsZKm8xopHhhBXU8Zn7QOnv-271rpYo#utm_campaign=blox&amp;utm_source=facebook&amp;utm_medium=social">reported</a>, “The decision, which was greeted with applause from many attending the meeting, comes after the city of Florence had removed a Pride rainbow design last week that had been drawn in chalk at the intersection. ‘They righted a wrong and I\'m very appreciative of the common sense and just doing the right thing,’ said Stuart Ausbon, one of the people who coordinated the chalk project. [...]  Ausbon added he is not surprised by Tuesday\'s decision to allow the chalk work. ‘I knew that this wonderful and loving village that surrounds me and my family and friends would win out,’ he said. ‘That\'s the Florence I know and the Florence that we all love.’"</p> <img src="http://feeds.feedburner.com/~r/dailykosofficial/~4/NdeerZWKhz8" height="1" width="1" alt=""> ',
+          enclosure: {
+            link: 'https://images.dailykos.com/images/687584/story_image/MadCtyCthousePrideDisplay.jpg?1560964959'
+          },
+          image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/daily-kos-squarelogo-1517554340259.png',
+          link: 'http://feeds.dailykosmedia.com/~r/dailykosofficial/~3/NdeerZWKhz8/-Southern-Pride-Alabama-LGBTQ-communities-and-allies-celebrate-keep-moving-forward',
+          share: {
+            avatar: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/clark-kent.jpg',
+            comment: 'Love is love.',
+            name: 'Clarke the News Hound'
+          },
+          siteDescriptor: 'The main page.',
+          title: 'Southern Pride: Alabama LGBTQ communities and allies celebrate, keep moving forward',
+          via: 'Daily Kos'
+        },
+        {
+          author: 'Editorial',
+          cleanDate: 'Friday 2019 June 21 1:53pm',
+          description: 'The pre-Dead Moon group\'s third LP, reissued by Mississippi Records, is punk canon.',
+          enclosure: {
+            link: 'https://bandcampblog.files.wordpress.com/2019/06/a1587529418_10.jpg'
+          },
+          image: 'https://bandcampblog.files.wordpress.com/2017/03/bc-site-icon1.png',
+          link: 'https://daily.bandcamp.com/2019/06/21/rats-in-a-desperate-red-review/',
+          share: {
+            avatar: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/homerAvatar.jpg',
+            comment: 'Punk canon you say?',
+            name: 'DJ Ipsum'
+          },
+          siteDescriptor: '',
+          title: 'Album of the Day: The Rats, “In a Desperate Red”',
+          via: 'Bandcamp Daily'
+        }
+      ];
 
       function toggleLinkShareState() {
         if (vm.linkShareCollapse) {
