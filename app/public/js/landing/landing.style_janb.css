@@ -1,0 +1,282 @@
+.backgroundDiv_JanuaryB {
+  background: url(https://habits168-hurdaudio.s3.amazonaws.com/landing/january/matt-seymour-1348326-unsplash.jpg);
+  background-size: 100%;
+  filter: blur(5px) hue-rotate(180deg);
+  height: 100%;
+  left: 0;
+  opacity: 0.7;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.landingLogo_JanuaryB {
+  height: 150px;
+  margin: 10px 10px 20px 20px;
+  opacity: 0.8;
+  width: 100px;
+}
+
+.landingTitleDiv_JanuaryB {
+  color: #dce3e9;
+  font-family: 'Carme', sans-serif;
+  font-size: 120px;
+  padding: 30px;
+}
+
+.landingTitleButtonsDiv_JanuaryB {
+  padding: 60px 5px 5px 7%;
+  position: relative;
+}
+
+.landingTitleButtonsDiv_JanuaryB button{
+  background: #8baabc;
+  border: none;
+  color: #2d190e;
+  cursor: pointer;
+  filter: hue-rotate(0deg);
+  font-family: 'Carme', sans-serif;
+  font-size: 36px;
+  margin: 10px;
+  padding: 14px;
+  text-transform: uppercase;
+  transform: rotateY(0deg);
+  transition: all 0.8s linear;
+}
+
+.landingTitleButtonsDiv_JanuaryB button:hover {
+  filter: hue-rotate(180deg);
+  transform: rotateY(0deg);
+  transition: all 0.8s linear;
+}
+
+.landingLogo_JanuaryB {
+  cursor: none;
+  filter: hue-rotate(0deg);
+  transition: all 0.4s linear;
+}
+
+.landingLogo_JanuaryB:hover {
+  filter: hue-rotate(180deg);
+  transition: all 0.4s linear;
+}
+
+.landingRecentlySharedLinksCollapsed_JanuaryB {
+  background: #dce3e9;
+  color: #0c1414;
+  font-family: 'Carme', sans-serif;
+  font-size: 24px;
+  height: 500px;
+  margin: 50px 100px 50px 50px;
+  opacity: 0.9;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 10px 40px;
+  position: relative;
+  transform: translateX(-1200px) scale(0.5) skewX(-45deg);
+  transition: all 1.5s linear;
+}
+
+.landingRecentlySharedLinksUncollapsed_JanuaryB {
+  background: #dce3e9;
+  color: #0c1414;
+  font-family: 'Carme', sans-serif;
+  font-size: 24px;
+  height: 500px;
+  margin: 50px 100px 50px 50px;
+  opacity: 0.9;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 10px 40px;
+  position: relative;
+  transform: translateX(0px) translateY(0px) scale(1) skewX(0deg);
+  transition: all 0.5s linear;
+  width: 90%;
+}
+
+.landingRecentlySharedPostsUncollapsed_JanuaryB {
+  background: #dce3e9;
+  color: #0c1414;
+  font-family: 'Carme', sans-serif;
+  font-size: 24px;
+  height: 500px;
+  margin: 50px 100px 50px 50px;
+  opacity: 0.9;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 10px 40px;
+  position: relative;
+  transform: translateX(0px) translateY(-570px) scale(1);
+  transition: all 0.5s linear;
+  width: 90%;
+}
+
+.landingRecentlySharedPostsCollapsed_JanuaryB {
+  background: #dce3e9;
+  color: #0c1414;
+  font-family: 'Carme', sans-serif;
+  font-size: 24px;
+  height: 500px;
+  margin: 50px 100px 50px 50px;
+  opacity: 0.9;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 10px 40px;
+  position: relative;
+  transform: translateX(0px) translateY(0px) scale(0.5);
+  transition: all 1.5s linear;
+}
+
+.landingRecentlySharedLinksTitle_JanuaryB {
+  cursor: pointer;
+  font-size: 48px;
+  margin: 5px 0 15px 0;
+}
+
+.landingShareContainer_JanuaryB {
+  height: auto;
+  position: relative;
+  width: 100%;
+}
+
+.landingLinkShare_JanuaryB {
+  display: inline-block;
+}
+
+.landingShareSharerAvatar_JanuaryB {
+  left: 5px;
+  margin: 10px 0 10px 0;
+  position: relative;
+  top: 5px;
+  width: 20%;
+}
+
+.landingByline_JanuaryB {
+  border-right: solid 1px transparent;
+  float: left;
+  left: 0;
+  position: relative;
+  top: 0;
+  width: 20%;
+}
+
+.landingByline_JanuaryB p {
+  max-width: 80%;
+}
+
+.landingShareShare_JanuaryB {
+  float: left;
+  position: relative;
+  top: 0;
+  width: 78%;
+}
+
+.landingShareShare_JanuaryB a {
+  color: #0c1414;
+  text-decoration: none;
+}
+
+.landingShareShare_JanuaryB a:hover {
+  color: #88624d;
+}
+
+.landingShareShare_JanuaryB a:visited {
+  color: #26473c;
+}
+
+.shareSourceIcon_JanuaryB {
+  left: 0;
+  position: relative;
+  top: 5px;
+  width: 5%;
+}
+
+.shareViaCredit_JanuaryB {
+  display: inline-block;
+  margin: 5px 3px 10px 10px;
+  position: relative;
+  top: 0;
+  width: 80%;
+}
+
+.shareHeadline_JanuaryB {
+  font-size: 48px;
+  margin: 15px 15px 35px 5px;
+}
+
+.shareCleanDate_JanuaryB {
+  float: right;
+  font-size: 18px;
+  margin: 5px 25px 5px 0;
+}
+
+.shareDescription_JanuaryB {
+  margin: 100px 15px 130px 5px;
+  max-width: 980px;
+  line-height: 1.3em;
+}
+
+.shareAuthor_JanuaryB {
+  float: left;
+  font-size: 18px;
+}
+
+.shareShareEnclosurePhoto_JanuaryB {
+  max-width: 60%;
+}
+
+.shareShareBlogPhoto_JanuaryB {
+  max-width: 60%;
+}
+
+.shareBlogTitle_JanuaryB {
+  font-size: 36px;
+  margin: -40px 0 0 60px;
+}
+
+.landingFooter_JanuaryB {
+  bottom: 3px;
+  color: #0c1414;
+  font-family: 'Carme', sans-serif;
+  font-size: 18px;
+  left: 10px;
+  position: absolute;
+
+}
+
+.landingLoginActive_JanuaryB {
+  background: #ad998e;
+  border: solid 10px #dce3e9;
+  font-family: 'Carme', sans-serif;
+  font-size: 30px;
+  height: 400px;
+  opacity: 1;
+  padding: 32px;
+  position: absolute;
+  right: 30%;
+  top: 200px;
+  width: 40%;
+  transform: rotateZ(0deg) skewX(0deg) skewY(0deg);
+  transition: all 0.8s linear;
+  z-index: 6;
+}
+
+.landingLoginInactive_JanuaryB {
+  background: #ad998e;
+  font-family: 'Carme', sans-serif;
+  font-size: 30px;
+  height: 400px;
+  opacity: 0;
+  padding: 32px;
+  position: absolute;
+  right: 30%;
+  top: 200px;
+  width: 40%;
+  transform: rotateZ(0deg) skewX(0deg) skewY(0deg);
+  transition: all 0.8s linear;
+  z-index: -6;
+}

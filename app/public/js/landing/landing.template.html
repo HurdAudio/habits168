@@ -3,7 +3,7 @@
 </div>
 <div class="landingTitleFlex">
 
-  <img class="landingLogo{{$ctrl.monthSelect}}" src="https://habits168-hurdaudio.s3.amazonaws.com/img/robe-154808_640.png">
+  <img class="landingLogo{{$ctrl.monthSelect}}" src="{{$ctrl.logoPath}}">
 
   <div class="landingTitleDiv{{$ctrl.monthSelect}}">
     <h1 class="landingTitle{{$ctrl.monthSelect}}">168 Habits</h1>
@@ -29,9 +29,21 @@
   </div>
 </div>
 
+<div class="tabs{{$ctrl.monthSelect}}">
+
+  <div class="tabRecentShare{{$ctrl.monthSelect}}" ng-click="$ctrl.toggleToRecentShares()">
+
+    <p class="{{$ctrl.recentShareTabClass}}">Recently Shared</p>
+
+  </div>
+  <div class="tabRecentPost{{$ctrl.monthSelect}}" ng-click="$ctrl.toggleToRecentPosts()">
+
+    <p class="{{$ctrl.recentPostsTabClass}}">Recently Posted</p>
+  </div>
+</div>
+
 
 <div class="{{$ctrl.linkSharesClass}}">
-  <h2 class="landingRecentlySharedLinksTitle{{$ctrl.monthSelect}}" ng-click="$ctrl.toggleLinkShareState()">Recently Shared Links:</h2>
 
   <div class="landingLinkShare{{$ctrl.monthSelect}}">
 
@@ -40,7 +52,7 @@
       <div class="landingByline{{$ctrl.monthSelect}}">
 
         <img class="landingShareSharerAvatar{{$ctrl.monthSelect}}" src="https://habits168-hurdaudio.s3.amazonaws.com/avatars/homerAvatar.jpg"><br>
-        <p>DJ Ipsum:</p><br><br>
+        <p>DJ Ipsum</p><br><br><br><br>
 
         <p>In case you've ever wondered what I've been up to in my copious spare time.</p>
 
@@ -48,7 +60,7 @@
       <div class="landingShareShare{{$ctrl.monthSelect}}">
 
         <a href="https://news.ycombinator.com/" target="_blank"><img class="shareSourceIcon{{$ctrl.monthSelect}}" src="https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/hacker-news-2-569388.png">
-        <p class="shareViaCredit{{$ctrl.monthSelect}}">Hacker News: Links for the intellectually curious, ranked by readers.</p></a><br><br>
+        <p class="shareViaCredit{{$ctrl.monthSelect}}">Hacker News: Links for the intellectually curious, ranked by readers.</p></a><br><br><br>
         <a href="https://www.psytoolkit.org/experiment-library/" target="_blank"><h3 class="shareHeadline{{$ctrl.monthSelect}}">PsyToolkit: Create and run cognitive psychological experiments in the browser</h3></a>
         <p class="shareCleanDate{{$ctrl.monthSelect}}">Sunday 2019 June 23 4:19pm</p>
         <div class="shareDescription{{$ctrl.monthSelect}}"><a href="https://news.ycombinator.com/item?id=20256226">Comments</a></div>
@@ -61,7 +73,7 @@
       <div class="landingByline{{$ctrl.monthSelect}}">
 
         <img class="landingShareSharerAvatar{{$ctrl.monthSelect}}" src="https://habits168-hurdaudio.s3.amazonaws.com/avatars/lovecraftAvatar.jpg"><br>
-        <p>Lorem Dolar:</p><br><br>
+        <p>Lorem Dolar</p><br><br><br><br>
 
         <p>Have you ever wondered what a vector "sounds" like?</p>
 
@@ -69,7 +81,7 @@
       <div class="landingShareShare{{$ctrl.monthSelect}}">
 
         <a href="http://www.synthtopia.com/" target="_blank"><img class="shareSourceIcon{{$ctrl.monthSelect}}" src="https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/press-synthtopia-logo.jpg">
-        <p class="shareViaCredit{{$ctrl.monthSelect}}">Synthtopia: Synthesizer and electronic music news, synth and music software reviews and more!</p></a><br><br>
+        <p class="shareViaCredit{{$ctrl.monthSelect}}">Synthtopia: Synthesizer and electronic music news, synth and music software reviews and more!</p></a><br><br><br>
         <a href="http://www.synthtopia.com/content/2019/06/22/vector-synth-now-available-to-order/" target="_blank"><h3 class="shareHeadline{{$ctrl.monthSelect}}">Vector Synth Now Available To Order</h3></a>
         <p class="shareAuthor{{$ctrl.monthSelect}}">by synthhead</p>
         <p class="shareCleanDate{{$ctrl.monthSelect}}">Saturday 2019 June 19 7:47pm</p>
@@ -83,7 +95,7 @@
       <div class="landingByline{{$ctrl.monthSelect}}">
 
         <img class="landingShareSharerAvatar{{$ctrl.monthSelect}}" src="https://habits168-hurdaudio.s3.amazonaws.com/avatars/ashesAvatar.png"><br>
-        <p>Amet Tempor:</p><br><br>
+        <p>Amet Tempor</p><br><br><br><br>
 
         <p>I can't resist a good pasta salad.</p>
 
@@ -91,7 +103,7 @@
       <div class="landingShareShare{{$ctrl.monthSelect}}">
 
         <a href="http://www.pinchofyum.com/" target="_blank"><img class="shareSourceIcon{{$ctrl.monthSelect}}" src="https://pinchofyum.com/wp-content/uploads/cropped-Pinch-of-Yum-Favicon-512-32x32.png">
-        <p class="shareViaCredit{{$ctrl.monthSelect}}">Pinch of Yum: A food blog with simple and tasty recipes.</p></a><br><br>
+        <p class="shareViaCredit{{$ctrl.monthSelect}}">Pinch of Yum: A food blog with simple and tasty recipes.</p></a><br><br><br>
         <a href="https://pinchofyum.com/pasta-salad" target="_blank"><h3 class="shareHeadline{{$ctrl.monthSelect}}">The Best Easy Italian Pasta Salad</h3></a>
         <p class="shareAuthor{{$ctrl.monthSelect}}">by Lindsay</p>
         <p class="shareCleanDate{{$ctrl.monthSelect}}">Friday 2019 June 21 5:40pm</p>
@@ -105,7 +117,7 @@
       <div class="landingByline{{$ctrl.monthSelect}}">
 
         <img class="landingShareSharerAvatar{{$ctrl.monthSelect}}" src="https://habits168-hurdaudio.s3.amazonaws.com/avatars/clark-kent.jpg"><br>
-        <p>Clarke the News Hound:</p><br><br>
+        <p>Clarke the News Hound</p><br><br><br><br>
 
         <p>Love is love.</p>
 
@@ -113,7 +125,7 @@
       <div class="landingShareShare{{$ctrl.monthSelect}}">
 
         <a href="http://dailykos.com/" target="_blank"><img class="shareSourceIcon{{$ctrl.monthSelect}}" src="https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/daily-kos-squarelogo-1517554340259.png">
-        <p class="shareViaCredit{{$ctrl.monthSelect}}">Daily Kos: The main page.</p></a><br><br><br>
+        <p class="shareViaCredit{{$ctrl.monthSelect}}">Daily Kos: The main page.</p></a><br><br><br><br>
         <img class="shareShareEnclosurePhoto{{$ctrl.monthSelect}}" src="https://images.dailykos.com/images/687584/story_image/MadCtyCthousePrideDisplay.jpg?1560964959">
         <a href="http://feeds.dailykosmedia.com/~r/dailykosofficial/~3/NdeerZWKhz8/-Southern-Pride-Alabama-LGBTQ-communities-and-allies-celebrate-keep-moving-forward" target="_blank"><h3 class="shareHeadline{{$ctrl.monthSelect}}">Southern Pride: Alabama LGBTQ communities and allies celebrate, keep moving forward</h3></a>
         <p class="shareAuthor{{$ctrl.monthSelect}}">by Karen L Freund</p>
@@ -128,7 +140,7 @@
       <div class="landingByline{{$ctrl.monthSelect}}">
 
         <img class="landingShareSharerAvatar{{$ctrl.monthSelect}}" src="https://habits168-hurdaudio.s3.amazonaws.com/avatars/homerAvatar.jpg"><br>
-        <p>DJ Ipsum:</p><br><br>
+        <p>DJ Ipsum</p><br><br><br><br>
 
         <p>Punk canon you say?</p>
 
@@ -146,63 +158,16 @@
 
     </div><br><br><br>
 
-    <!-- <main ng-repeat="share in $ctrl.userShareLinks">
-      <div class="shareByline{{$ctrl.monthSelect}}">
-        <img class="landingLinkShareProfilePic{{$ctrl.monthSelect}}" src="{{share.sharer.avatar}}">
-        <p class="landingLinkShareUserName{{$ctrl.monthSelect}}">{{share.sharer.name}} shared:</p>
-        <p class="landingShareComments{{$ctrl.monthSelect}}">{{share.sharer.comment}}</p>
 
-
-
-
-      </div>
-      <div class="shareMain{{$ctrl.monthSelect}}">
-        <img src="{{share.enclosure.link}}">
-        <a href="{{share.link}}" target="_blank"><p>{{share.title}}</p></a>
-        <p>by: {{share.author}}</p>
-        <p>{{share.cleanDate}}</p>
-        <p ng-bind-html="share.description"></p>
-
-
-      </div>
-    </main> -->
   </div>
 
-    <!-- <img class="landingLinkShareProfilePic{{$ctrl.monthSelect}}" src="https://habits168-hurdaudio.s3.amazonaws.com/avatars/homerAvatar.jpg">
-    <p class="landingLinkShareUserName{{$ctrl.monthSelect}}">DJ Ipsum: </p>
-    <a class="landingLinkShareLink{{$ctrl.monthSelect}}" href="https://blog.acolyer.org/2019/05/31/lease-os/" target="_blank"><p>the morning paper: A case for lease-based, utilitarian resource management on mobile devices</p></a>
-    <p class="landingShareLinkUserNotes{{$ctrl.monthSelect}}">Wow. A proposal that just might reduce power wastage by 92%!</p>
-  </div><br><br><br><br><br>
 
-  <div class="landingLinkShare{{$ctrl.monthSelect}}">
-
-    <img class="landingLinkShareProfilePic{{$ctrl.monthSelect}}" src="https://habits168-hurdaudio.s3.amazonaws.com/avatars/lovecraftAvatar.jpg">
-    <p class="landingLinkShareUserName{{$ctrl.monthSelect}}">Lorem Dolor: </p>
-    <a class="landingLinkShareLink{{$ctrl.monthSelect}}" href="http://www.synthtopia.com/content/2019/05/29/leipzig-west-eurorack-modules-at-superbooth-2019/" target="_blank"><p>Synthtopia: Leipzig West Eurorack Modules At Superbooth 2019</p></a>
-    <p class="landingShareLinkUserNotes{{$ctrl.monthSelect}}">Even more Eurorack goodies to break my bank account.</p>
-  </div><br><br><br><br><br>
-
-  <div class="landingLinkShare{{$ctrl.monthSelect}}">
-
-    <img class="landingLinkShareProfilePic{{$ctrl.monthSelect}}" src="https://habits168-hurdaudio.s3.amazonaws.com/avatars/ashesAvatar.png">
-    <p class="landingLinkShareUserName{{$ctrl.monthSelect}}">Amet Tempor: </p>
-    <a class="landingLinkShareLink{{$ctrl.monthSelect}}" href="https://pinchofyum.com/5-ingredient-spicy-pork" target="_blank"><p>Pinch of Yum: 5 ingredient spicy pork</p></a>
-    <p class="landingShareLinkUserNotes{{$ctrl.monthSelect}}">This one was a hit with the fam last night.</p>
-  </div><br><br><br><br><br>
-
-  <div class="landingLinkShare{{$ctrl.monthSelect}}">
-
-    <img class="landingLinkShareProfilePic{{$ctrl.monthSelect}}" src="https://habits168-hurdaudio.s3.amazonaws.com/avatars/lovecraftAvatar.jpg">
-    <p class="landingLinkShareUserName{{$ctrl.monthSelect}}">Lorem Dolor: </p>
-    <a class="landingLinkShareLink{{$ctrl.monthSelect}}" href="https://www.gamechangeraudio.com/motor-synth/" target="_blank"><p>Gamechanger Audio: Motor Synth</p></a>
-    <p class="landingShareLinkUserNotes{{$ctrl.monthSelect}}">The world's first electro-mechanical desktop synthesizer.</p> -->
-  <!-- </div><br><br><br><br><br> -->
 </div>
 
 
 
 <div class="{{$ctrl.postSharesClass}}">
-  <h2 class="landingRecentlySharedLinksTitle{{$ctrl.monthSelect}}" ng-click="$ctrl.toggleLinkShareState()">Recently Posted:</h2>
+
   <div class="landingLinkShare{{$ctrl.monthSelect}}">
 
     <div class="landingShareContainer{{$ctrl.monthSelect}}">
@@ -289,36 +254,6 @@
 
     </div><br><br><br><br><br>
 
-
-
-    <!-- <img class="landingLinkShareProfilePic{{$ctrl.monthSelect}}" src="https://habits168-hurdaudio.s3.amazonaws.com/avatars/homerAvatar.jpg">
-    <p class="landingLinkShareUserName{{$ctrl.monthSelect}}">DJ Ipsum: </p>
-    <a class="landingLinkShareLink{{$ctrl.monthSelect}}" href="" target="_blank"><p>Ipsum Spins Some: Everybody's a DJ and Why You Should Be Too</p></a>
-    <p class="landingShareLinkUserNotes{{$ctrl.monthSelect}}">Let's face it. Music is one of the two or three things that makes life bearable. A...</p>
-  </div><br><br><br><br><br>
-
-  <div class="landingLinkShare{{$ctrl.monthSelect}}">
-
-    <img class="landingLinkShareProfilePic{{$ctrl.monthSelect}}" src="https://habits168-hurdaudio.s3.amazonaws.com/avatars/digitalNomadAvatar.jpg">
-    <p class="landingLinkShareUserName{{$ctrl.monthSelect}}">Eva Codes: </p>
-    <a class="landingLinkShareLink{{$ctrl.monthSelect}}" href="" target="_blank"><p>Will Code for Chocolate: When Nested Callback Functions Go Too Far</p></a>
-    <p class="landingShareLinkUserNotes{{$ctrl.monthSelect}}">Let's just see how deep this rabbit hole goes, okay? I was tasked with...</p>
-  </div><br><br><br><br><br>
-
-  <div class="landingLinkShare{{$ctrl.monthSelect}}">
-
-    <img class="landingLinkShareProfilePic{{$ctrl.monthSelect}}" src="https://habits168-hurdaudio.s3.amazonaws.com/avatars/ashesAvatar.png">
-    <p class="landingLinkShareUserName{{$ctrl.monthSelect}}">Amet Tempor: </p>
-    <a class="landingLinkShareLink{{$ctrl.monthSelect}}" href="" target="_blank"><p>Garden of Tempor: Heirloom Tomatoes and You</p></a>
-    <p class="landingShareLinkUserNotes{{$ctrl.monthSelect}}">I scored some of the ugliest tomatoes at the farmer's market and I couldn't be happier...</p>
-  </div><br><br><br><br><br>
-
-  <div class="landingLinkShare{{$ctrl.monthSelect}}">
-
-    <img class="landingLinkShareProfilePic{{$ctrl.monthSelect}}" src="https://habits168-hurdaudio.s3.amazonaws.com/avatars/rumbleAvatar.png">
-    <p class="landingLinkShareUserName{{$ctrl.monthSelect}}">Ian M: </p>
-    <a class="landingLinkShareLink{{$ctrl.monthSelect}}" href="" target="_blank"><p>Ramblin' On: Root for the Laundry</p></a>
-    <p class="landingShareLinkUserNotes{{$ctrl.monthSelect}}">It's too easy to be the "fair weather" fan. Rooting for winners isn't a challenge...</p> -->
   </div><br><br><br><br><br>
 
 </div>
