@@ -101,6 +101,8 @@
 .viewIndividualItems_JanuaryA {
   color: #121a23;
   font-family: 'Signika', sans-serif;
+  line-height: 1.5em;
+  max-width: 880px;
 }
 
 .viewIndividualItems_JanuaryA img {

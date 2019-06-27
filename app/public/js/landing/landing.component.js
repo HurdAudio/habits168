@@ -13,7 +13,7 @@
       const vm = this;
 
       vm.$onInit = onInit;
-      vm.monthSelect = '_JanuaryA';
+      vm.monthSelect = '_JanuaryB';
       vm.userLoggedIn = false;
       vm.userLoginActive = false;
       vm.activateUserLogin = activateUserLogin;
@@ -28,6 +28,26 @@
       vm.toggleLinkShareState = toggleLinkShareState;
       vm.linkSharesClass = 'landingRecentlySharedLinksUncollapsed' + vm.monthSelect;
       vm.postSharesClass = 'landingRecentlySharedPostsCollapsed' + vm.monthSelect;
+      vm.toggleToRecentPosts = toggleToRecentPosts;
+      vm.recentShareTabClass = 'tabActive' + vm.monthSelect;
+      vm.recentPostsTabClass = 'tabInactive' + vm.monthSelect;
+      vm.toggleToRecentShares = toggleToRecentShares;
+
+      function toggleToRecentPosts() {
+        vm.linkshareCollapse = false;
+        vm.linkSharesClass = 'landingRecentlySharedLinksCollapsed' + vm.monthSelect;
+        vm.postSharesClass = 'landingRecentlySharedPostsUncollapsed' + vm.monthSelect;
+        vm.recentShareTabClass = 'tabInactive' + vm.monthSelect;
+        vm.recentPostsTabClass = 'tabActive' + vm.monthSelect;
+      }
+
+      function toggleToRecentShares() {
+        vm.linkshareCollapse = true;
+        vm.linkSharesClass = 'landingRecentlySharedPostsUncollapsed' + vm.monthSelect;
+        vm.postSharesClass = 'landingRecentlySharedLinksCollapsed' + vm.monthSelect;
+        vm.recentShareTabClass = 'tabActive' + vm.monthSelect;
+        vm.recentPostsTabClass = 'tabInactive' + vm.monthSelect;
+      }
 
       function toggleLinkShareState() {
         if (vm.linkShareCollapse) {
@@ -384,6 +404,16 @@
 
       function onInit() {
         console.log("Landing is lit");
+        switch (vm.monthSelect) {
+          case('_JanuaryA'):
+            vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/robe-154808_640.png';
+            break;
+          case('_JanuaryB'):
+            vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/nun-4018982_1280.png'
+            break;
+          default:
+            alert('UNSUPPORTED MONTH SELECT for LOGO');
+        }
         setUserIPAddress();
         setFooterMessage();
         checkLoginStatus();
