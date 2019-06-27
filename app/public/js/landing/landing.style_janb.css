@@ -40,7 +40,7 @@
   cursor: pointer;
   filter: hue-rotate(0deg);
   font-family: 'Carme', sans-serif;
-  font-size: 36px;
+  font-size: 24px;
   margin: 10px;
   padding: 14px;
   text-transform: uppercase;
@@ -66,19 +66,7 @@
 }
 
 .landingRecentlySharedLinksCollapsed_JanuaryB {
-  background: #dce3e9;
-  color: #0c1414;
-  font-family: 'Carme', sans-serif;
-  font-size: 24px;
-  height: 500px;
-  margin: 50px 100px 50px 50px;
-  opacity: 0.9;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  padding: 10px 40px;
-  position: relative;
-  transform: translateX(-1200px) scale(0.5) skewX(-45deg);
-  transition: all 1.5s linear;
+  display: none;
 }
 
 .landingRecentlySharedLinksUncollapsed_JanuaryB {
@@ -86,16 +74,14 @@
   color: #0c1414;
   font-family: 'Carme', sans-serif;
   font-size: 24px;
-  height: 500px;
-  margin: 50px 100px 50px 50px;
+  height: 67vh;
+  margin: 0;
   opacity: 0.9;
   overflow-x: hidden;
   overflow-y: scroll;
   padding: 10px 40px;
   position: relative;
-  transform: translateX(0px) translateY(0px) scale(1) skewX(0deg);
-  transition: all 0.5s linear;
-  width: 90%;
+  width: 100%;
 }
 
 .landingRecentlySharedPostsUncollapsed_JanuaryB {
@@ -103,38 +89,18 @@
   color: #0c1414;
   font-family: 'Carme', sans-serif;
   font-size: 24px;
-  height: 500px;
-  margin: 50px 100px 50px 50px;
+  height: 67vh;
+  margin: 0;
   opacity: 0.9;
   overflow-x: hidden;
   overflow-y: scroll;
   padding: 10px 40px;
   position: relative;
-  transform: translateX(0px) translateY(-570px) scale(1);
-  transition: all 0.5s linear;
-  width: 90%;
+  width: 100%;
 }
 
 .landingRecentlySharedPostsCollapsed_JanuaryB {
-  background: #dce3e9;
-  color: #0c1414;
-  font-family: 'Carme', sans-serif;
-  font-size: 24px;
-  height: 500px;
-  margin: 50px 100px 50px 50px;
-  opacity: 0.9;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  padding: 10px 40px;
-  position: relative;
-  transform: translateX(0px) translateY(0px) scale(0.5);
-  transition: all 1.5s linear;
-}
-
-.landingRecentlySharedLinksTitle_JanuaryB {
-  cursor: pointer;
-  font-size: 48px;
-  margin: 5px 0 15px 0;
+  display: none;
 }
 
 .landingShareContainer_JanuaryB {
@@ -180,6 +146,10 @@
   text-decoration: none;
 }
 
+.landingShareShare_JanuaryB p {
+  max-width: 700px;
+}
+
 .landingShareShare_JanuaryB a:hover {
   color: #88624d;
 }
@@ -206,17 +176,18 @@
 .shareHeadline_JanuaryB {
   font-size: 48px;
   margin: 15px 15px 35px 5px;
+  max-width: 710px;
 }
 
 .shareCleanDate_JanuaryB {
   float: right;
   font-size: 18px;
-  margin: 5px 25px 5px 0;
+  margin: 5px 30% 5px 0;
 }
 
 .shareDescription_JanuaryB {
   margin: 100px 15px 130px 5px;
-  max-width: 980px;
+  max-width: 710px;
   line-height: 1.3em;
 }
 
@@ -230,7 +201,7 @@
 }
 
 .shareShareBlogPhoto_JanuaryB {
-  max-width: 60%;
+  max-width: 50%;
 }
 
 .shareBlogTitle_JanuaryB {
@@ -251,8 +222,9 @@
 .landingLoginActive_JanuaryB {
   background: #ad998e;
   border: solid 10px #dce3e9;
+  color: #0c1414;
   font-family: 'Carme', sans-serif;
-  font-size: 30px;
+  font-size: 36px;
   height: 400px;
   opacity: 1;
   padding: 32px;
@@ -260,13 +232,13 @@
   right: 30%;
   top: 200px;
   width: 40%;
-  transform: rotateZ(0deg) skewX(0deg) skewY(0deg);
   transition: all 0.8s linear;
   z-index: 6;
 }
 
 .landingLoginInactive_JanuaryB {
   background: #ad998e;
+  color: #0c1414;
   font-family: 'Carme', sans-serif;
   font-size: 30px;
   height: 400px;
@@ -276,7 +248,123 @@
   right: 30%;
   top: 200px;
   width: 40%;
-  transform: rotateZ(0deg) skewX(0deg) skewY(0deg);
   transition: all 0.8s linear;
   z-index: -6;
+}
+
+.landingLoginActive_JanuaryB input {
+  color: #0c1414;
+  font-family: 'Carme', sans-serif;
+  font-size: 24px;
+  padding: 1px 1px 1px 15px;
+  margin: 25px 5px 10px 45px;
+  width: 75%;
+}
+
+.landingLoginInactive_JanuaryB input {
+  color: #0c1414;
+  font-family: 'Carme', sans-serif;
+  font-size: 24px;
+  padding: 1px 1px 1px 15px;
+  margin: 25px 5px 10px 45px;
+  width: 75%;
+}
+
+.landingLoginActive_JanuaryB button {
+  background: #8baabc;
+  border: none;
+  color: #2d190e;
+  cursor: pointer;
+  filter: hue-rotate(0deg);
+  font-family: 'Carme', sans-serif;
+  font-size: 24px;
+  margin: 10px 20px 10px 80px;
+  padding: 14px;
+  text-transform: uppercase;
+  transform: rotateY(0deg);
+  transition: all 0.8s linear;
+}
+
+.landingLoginInactive_JanuaryB button {
+  background: #8baabc;
+  border: none;
+  color: #2d190e;
+  cursor: pointer;
+  filter: hue-rotate(0deg);
+  font-family: 'Carme', sans-serif;
+  font-size: 24px;
+  margin: 10px 20px 10px 80px;
+  padding: 14px;
+  text-transform: uppercase;
+  transform: rotateY(0deg);
+  transition: all 0.8s linear;
+}
+
+.landingLoginActive_JanuaryB a {
+  color: #2d190e;
+  cursor: pointer;
+  float: right;
+  font-family: 'Carme', sans-serif;
+  font-size: 12px;
+  margin: 160px 0 10px 0;
+  position: relative;
+  text-decoration: none;
+}
+
+.landingLoginInactive_JanuaryB a {
+  color: #2d190e;
+  cursor: pointer;
+  float: right;
+  font-family: 'Carme', sans-serif;
+  font-size: 12px;
+  margin: 110px 0 10px 0;
+  position: relative;
+  text-decoration: none;
+}
+
+.landingLoginActive_JanuaryB h3 {
+  color: #26473c;
+  margin: 20px 20px 1px 20px;
+}
+
+.tabs_JanuaryB {
+  display: flex;
+  flex-driection: row;
+  flex-wrap: wrap;
+  height: 30px;
+  justify-content: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.tabActive_JanuaryB {
+  background: #dce3e9;
+  color: #0c1414;
+  cursor: pointer;
+  font-family: 'Carme', sans-serif;
+  font-size: 24px;
+  margin: 0 5% 0 10%;
+  opacity: 1;
+  padding: 3px 15px;
+  width: 190px;
+}
+
+.tabInactive_JanuaryB {
+  background: #0c1414;
+  color: #dce3e9;
+  cursor: pointer;
+  font-family: 'Carme', sans-serif;
+  font-size: 24px;
+  margin: 0 5% 0 10%;
+  opacity: 0.5;
+  padding: 3px 15px;
+  width: 190px;
+}
+
+.landingUserGreeting_JanuaryB {
+  color: #dce3e9;
+  font-family: 'Carme', sans-serif;
+  font-size: 30px;
+  margin: 10px 5px 0 15px;
 }

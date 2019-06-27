@@ -13,7 +13,7 @@
       const vm = this;
 
       vm.$onInit = onInit;
-      vm.monthSelect = '_JanuaryA';
+      vm.monthSelect = '_JanuaryB';
       vm.userLoggedIn = false;
       vm.userLoginActive = false;
       vm.activateUserLogin = activateUserLogin;
