@@ -368,3 +368,720 @@
   font-size: 30px;
   margin: 10px 5px 0 15px;
 }
+
+@media only screen and (max-width: 1024px) {
+  .backgroundDiv_JanuaryB {
+    background-size: 400%;
+  }
+
+  .landingTitle_JanuaryB {
+    font-size: 18px;
+  }
+
+  .landingShareShare_JanuaryB {
+    width: 70%;
+  }
+
+  .landingRecentlySharedPostsUncollapsed_JanuaryB {
+    height: 75vh;
+  }
+
+  .landingRecentlySharedLinksUncollapsed_JanuaryB {
+    height: 75vh;
+  }
+}
+
+@media only screen and (max-width: 823px) {
+  .landingTitle_JanuaryB {
+    font-size: 18px;
+  }
+
+  .landingShareShare_JanuaryB {
+    width: 70%;
+  }
+
+  .landingRecentlySharedPostsUncollapsed_JanuaryB {
+    height: 75vh;
+  }
+
+  .landingRecentlySharedLinksUncollapsed_JanuaryB {
+    height: 75vh;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .landingTitle_JanuaryB {
+    font-size: 18px;
+  }
+
+  .landingShareShare_JanuaryB {
+    width: 70%;
+  }
+
+  .landingRecentlySharedPostsUncollapsed_JanuaryB {
+    height: 75vh;
+  }
+
+  .landingRecentlySharedLinksUncollapsed_JanuaryB {
+    height: 75vh;
+  }
+}
+
+@media only screen and (max-width: 736px) {
+  .backgroundDiv_JanuaryB {
+    background-size: 250%;
+  }
+
+  .landingTitle_JanuaryB {
+    font-size: 24px;
+  }
+
+  .landingTitleButtonsDiv_JanuaryB button {
+    font-size: 12px;
+    margin: -30px 10px 10px 10px;
+  }
+
+  .tabs_JanuaryB {
+    display: none;
+  }
+
+  .landingRecentlySharedLinksUncollapsed_JanuaryB {
+    display: none;
+  }
+
+  .landingLoginActive_JanuaryB {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 79%;
+  }
+
+  .landingLoginActive_JanuaryB a {
+    margin-top: 80px;
+  }
+
+  .landingLoginInactive_JanuaryB a {
+    margin-top: 80px;
+  }
+
+  .landingLoginActive_JanuaryB button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginInactive_JanuaryB button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginActive_JanuaryB h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginInactive_JanuaryB h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginActive_JanuaryB input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_JanuaryB input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_JanuaryB {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 79%;
+  }
+}
+
+@media only screen and (max-width: 731px) {
+  .backgroundDiv_JanuaryB {
+    background-size: 250%;
+  }
+
+  .landingTitle_JanuaryB {
+    font-size: 24px;
+  }
+
+  .landingTitleButtonsDiv_JanuaryB button {
+    font-size: 12px;
+    margin: -30px 10px 10px 10px;
+  }
+
+  .tabs_JanuaryB {
+    display: none;
+  }
+
+  .landingRecentlySharedLinksUncollapsed_JanuaryB {
+    display: none;
+  }
+
+  .landingLoginActive_JanuaryB {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 79%;
+  }
+
+  .landingLoginActive_JanuaryB a {
+    margin-top: 80px;
+  }
+
+  .landingLoginInactive_JanuaryB a {
+    margin-top: 80px;
+  }
+
+  .landingLoginActive_JanuaryB button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginInactive_JanuaryB button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginActive_JanuaryB h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginInactive_JanuaryB h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginActive_JanuaryB input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_JanuaryB input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_JanuaryB {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 79%;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .backgroundDiv_JanuaryB {
+    background-size: 250%;
+  }
+
+  .landingTitle_JanuaryB {
+    font-size: 24px;
+  }
+
+  .landingTitleButtonsDiv_JanuaryB button {
+    font-size: 12px;
+    margin: -30px 10px 10px 10px;
+  }
+
+  .tabs_JanuaryB {
+    display: none;
+  }
+
+  .landingRecentlySharedLinksUncollapsed_JanuaryB {
+    display: none;
+  }
+
+  .landingLoginActive_JanuaryB {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 79%;
+  }
+
+  .landingLoginActive_JanuaryB a {
+    margin-top: 80px;
+  }
+
+  .landingLoginInactive_JanuaryB a {
+    margin-top: 80px;
+  }
+
+  .landingLoginActive_JanuaryB button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginInactive_JanuaryB button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginActive_JanuaryB h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginInactive_JanuaryB h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginActive_JanuaryB input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_JanuaryB input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_JanuaryB {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 79%;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .backgroundDiv_JanuaryB {
+    background-size: 250%;
+  }
+
+  .landingTitle_JanuaryB {
+    font-size: 24px;
+  }
+
+  .landingTitleButtonsDiv_JanuaryB button {
+    font-size: 12px;
+    margin: -30px 15px 15px 15px;
+  }
+
+  .landingUserGreeting_JanuaryB {
+    margin-top: -120px;
+  }
+
+  .tabs_JanuaryB {
+    display: none;
+  }
+
+  .landingRecentlySharedLinksUncollapsed_JanuaryB {
+    display: none;
+  }
+
+  .landingLoginActive_JanuaryB {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 79%;
+  }
+
+  .landingLoginActive_JanuaryB a {
+    margin-top: 80px;
+  }
+
+  .landingLoginInactive_JanuaryB a {
+    margin-top: 80px;
+  }
+
+  .landingLoginActive_JanuaryB button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginInactive_JanuaryB button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginActive_JanuaryB h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginInactive_JanuaryB h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginActive_JanuaryB input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_JanuaryB input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_JanuaryB {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 79%;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .backgroundDiv_JanuaryB {
+    background-size: 250%;
+  }
+
+  .landingTitle_JanuaryB {
+    font-size: 24px;
+  }
+
+  .landingTitleButtonsDiv_JanuaryB button {
+    font-size: 12px;
+  }
+
+  .tabs_JanuaryB {
+    display: none;
+  }
+
+  .landingRecentlySharedLinksUncollapsed_JanuaryB {
+    display: none;
+  }
+
+  .landingLoginActive_JanuaryB {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 79%;
+  }
+
+  .landingLoginActive_JanuaryB a {
+    margin-top: 80px;
+  }
+
+  .landingLoginInactive_JanuaryB a {
+    margin-top: 80px;
+  }
+
+  .landingLoginActive_JanuaryB button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginInactive_JanuaryB button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginActive_JanuaryB h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginInactive_JanuaryB h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginActive_JanuaryB input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_JanuaryB input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_JanuaryB {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 79%;
+  }
+}
+
+@media only screen and (max-width: 411px) {
+  .backgroundDiv_JanuaryB {
+    background-size: 250%;
+  }
+
+  .landingTitle_JanuaryB {
+    font-size: 24px;
+  }
+
+  .landingTitleButtonsDiv_JanuaryB button {
+    font-size: 12px;
+  }
+
+  .tabs_JanuaryB {
+    display: none;
+  }
+
+  .landingRecentlySharedLinksUncollapsed_JanuaryB {
+    display: none;
+  }
+
+  .landingLoginActive_JanuaryB {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 79%;
+  }
+
+  .landingLoginActive_JanuaryB a {
+    margin-top: 80px;
+  }
+
+  .landingLoginInactive_JanuaryB a {
+    margin-top: 80px;
+  }
+
+  .landingLoginActive_JanuaryB button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginInactive_JanuaryB button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginActive_JanuaryB h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginInactive_JanuaryB h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginActive_JanuaryB input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_JanuaryB input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_JanuaryB {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 79%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .backgroundDiv_JanuaryB {
+    background-size: 250%;
+  }
+
+  .landingTitle_JanuaryB {
+    font-size: 24px;
+  }
+
+  .landingTitleButtonsDiv_JanuaryB button {
+    font-size: 12px;
+  }
+
+  .tabs_JanuaryB {
+    display: none;
+  }
+
+  .landingRecentlySharedLinksUncollapsed_JanuaryB {
+    display: none;
+  }
+
+  .landingLoginActive_JanuaryB {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 61.5%;
+  }
+
+  .landingLoginActive_JanuaryB a {
+    margin-top: 80px;
+  }
+
+  .landingLoginInactive_JanuaryB a {
+    margin-top: 80px;
+  }
+
+  .landingLoginActive_JanuaryB button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginInactive_JanuaryB button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginActive_JanuaryB h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginInactive_JanuaryB h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginActive_JanuaryB input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_JanuaryB input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_JanuaryB {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 61.5%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .backgroundDiv_JanuaryB {
+    background-size: 250%;
+  }
+
+  .landingTitle_JanuaryB {
+    font-size: 24px;
+  }
+
+  .landingTitleButtonsDiv_JanuaryB button {
+    font-size: 12px;
+  }
+
+  .tabs_JanuaryB {
+    display: none;
+  }
+
+  .landingRecentlySharedLinksUncollapsed_JanuaryB {
+    display: none;
+  }
+
+  .landingLoginActive_JanuaryB {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 77%;
+  }
+
+  .landingLoginActive_JanuaryB a {
+    margin-top: 80px;
+  }
+
+  .landingLoginInactive_JanuaryB a {
+    margin-top: 80px;
+  }
+
+  .landingLoginActive_JanuaryB button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginInactive_JanuaryB button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginActive_JanuaryB h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginInactive_JanuaryB h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginActive_JanuaryB input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_JanuaryB input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_JanuaryB {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 77%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .backgroundDiv_JanuaryB {
+    background-size: 250%;
+  }
+
+  .landingTitle_JanuaryB {
+    font-size: 24px;
+  }
+
+  .landingTitleButtonsDiv_JanuaryB button {
+    font-size: 12px;
+  }
+
+  .tabs_JanuaryB {
+    display: none;
+  }
+
+  .landingRecentlySharedLinksUncollapsed_JanuaryB {
+    display: none;
+  }
+
+  .landingLoginActive_JanuaryB {
+    left: -13%;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    transform: scale(0.8);
+    width: 320px;
+  }
+
+  .landingLoginActive_JanuaryB a {
+    margin-top: 80px;
+  }
+
+  .landingLoginInactive_JanuaryB a {
+    margin-top: 80px;
+  }
+
+  .landingLoginActive_JanuaryB button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginInactive_JanuaryB button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginActive_JanuaryB h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginInactive_JanuaryB h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginActive_JanuaryB input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_JanuaryB input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_JanuaryB {
+    left: -13%;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    transform: scale(0.8);
+    width: 320px;
+  }
+}
