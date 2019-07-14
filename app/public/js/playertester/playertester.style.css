@@ -1,0 +1,356 @@
+.playerTesterTestDiv {
+  background-color: #000000;
+  height: 950px;
+  left: 0;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+
+
+.playerContainer_JanuaryA {
+  background: url(https://habits168-hurdaudio.s3.amazonaws.com/player/v2osk-d-OQYiy1gQo-unsplash.jpg);
+  background-size: 100%;
+  filter: blur(0);
+  height: 95vh;
+  /* margin: 5% 0 0 0; */
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: absolute;
+  top: 5%;
+  width: 100%;
+  z-index: 1;
+}
+
+.scrollerDiv {
+  background: transparent;
+  height: 800px;
+  left: 0;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: relative;
+  top: 0;
+  width: 102%;
+  z-index: 1;
+}
+
+.playerDiv_JanuaryA {
+  background: #9eb4ba;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 41vh;
+  justify-content: flex-start;
+  left: 5%;
+  opacity: 0.9;
+  position: relative;
+  top: 5vh;
+  width: 88%;
+}
+
+.playerFeedIcon_JanuaryA {
+  height: 200px;
+  padding: 3%;
+  width: 200px;
+}
+
+.playerPodcastTitle_JanuaryA {
+  color: #040204;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 42px;
+  margin: 4% 15px 1px 15px;
+}
+
+.playerEpisodeTitle_JanuaryA {
+  color: #040204;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 24px;
+  margin: 4px 15px;
+}
+
+.playerEpisodeAuthor_JanuaryA {
+  color: #040204;
+  float: left;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 18px;
+  margin: 4px 0 5px 15px;
+}
+
+.playerTitlingDiv_JanuaryA {
+  color: #040204;
+  width: 70%;
+}
+
+.playerControlsDiv_JanuaryA {
+  margin: 50px 15px 4px 15px;
+  position: relative;
+  width: 100%;
+}
+
+.playerPlay_JanuaryA {
+  background: #aca2aa;
+  box-shadow: -3px -3px #402629;
+  border: none;
+  color: #0f4f59;
+  cursor: pointer;
+  float: left;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 54px;
+  padding: 10px 20px;
+  transition: all 0.4s linear;
+}
+
+.playerPlay_JanuaryA:hover {
+  background: #868385;
+  box-shadow: -3px -3px #231b22;
+  color: #061f23;
+  transition: all 0.4s linear;
+}
+
+.playerPlay_JanuaryA:active {
+  background: #061f23;
+  box-shadow: -3px -3px transparent;
+  color: #868385;
+  transition: all 0.1s linear;
+}
+
+.playerPause_JanuaryA {
+  background: #aca2aa;
+  box-shadow: -3px -3px #402629;
+  border: none;
+  color: #0f4f59;
+  cursor: pointer;
+  float: left;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 54px;
+  padding: 10px 20px;
+  transition: all 0.4s linear;
+}
+
+.playerPause_JanuaryA:hover {
+  background: #868385;
+  box-shadow: -3px -3px #231b22;
+  color: #061f23;
+  transition: all 0.4s linear;
+}
+
+.playerPause_JanuaryA:active {
+  background: #061f23;
+  box-shadow: -3px -3px transparent;
+  color: #868385;
+  transition: all 0.1s linear;
+}
+
+.playerNumericalProgressDisplay_JanuaryA {
+  color: #040204;
+  float: left;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 30px;
+  padding: 0 0 4px 15px;
+}
+
+.playerProgressSlider_JanuaryA {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: #0f4f59;
+  border: none;
+  box-shadow: -3px -3px #231b22;
+  float: left;
+  height: 3.8vh;
+  margin: 20px 0 10px 15px;
+  width: 54vw;
+}
+
+.playerProgressSlider_JanuaryA::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background: url(https://habits168-hurdaudio.s3.amazonaws.com/player/v2osk-d-OQYiy1gQo-unsplash.jpg);
+  background-size: 2000%;
+  border-radius: 15%;
+  height: 4.8vh;
+  width: 12px;
+}
+
+.tabsContainer_JanuaryA {
+  background: #9eb4ba;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: auto;
+  justify-content: flex-start;
+  left: 5%;
+  opacity: 0.9;
+  position: relative;
+  top: 54vh;
+  width: 88%;
+  z-index: 5;
+}
+
+.tabActive_JanuaryA {
+  border-right: solid 1px #040204;
+  color: #040204;
+  cursor: pointer;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 24px;
+  opacity: 1;
+  padding: 4px 0 4px 15px;
+  width: 15%;
+}
+
+.tabInactive_JanuaryA {
+  border-left: solid 1px #040204;
+  color: #040204;
+  cursor: pointer;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 24px;
+  opacity: 0.5;
+  padding: 4px 0 4px 15px;
+  width: 15%;
+}
+
+.aboutContainerActive_JanuaryA {
+  background: #9eb4ba;
+  border-top: solid 2px #231b22;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: auto;
+  justify-content: flex-start;
+  left: 5%;
+  opacity: 0.9;
+  padding: 15px;
+  position: relative;
+  top: 54vh;
+  width: 85.95%;
+  z-index: 8;
+}
+
+.aboutContainerInactive_JanuaryA {
+  display: none;
+}
+
+.episodeContainerActive_JanuaryA {
+  background: #9eb4ba;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: auto;
+  justify-content: flex-start;
+  left: 5%;
+  opacity: 0.9;
+  position: relative;
+  top: 54vh;
+  width: 88%;
+  z-index: 8;
+}
+
+.episodeContainerInactive_JanuaryA {
+  display: none;
+}
+
+.episodesTitleBar_JanuaryA {
+  /* border-bottom: solid 2px #040204; */
+  border-top: solid 2px #231b22;
+  color: #040204;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 30px;
+  height: auto;
+  padding: 15px 0 4px 25px;
+  width: 100%;
+}
+
+.episodeItems_JanuaryA {
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 4px;
+  width: 95%;
+}
+
+.episodeItemsCurrent_JanuaryA {
+  background: #594455;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 4px;
+  width: 95%;
+}
+
+.userEpisodeStatus_JanuaryA {
+  color: #211b1d;
+  float: left;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 24px;
+  padding: 8px 0 8px 16px;
+  position: relative;
+  width: 4vw;
+}
+
+.userEpisodeItemsTitle_JanuaryA {
+  float: left;
+  color: #040204;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 24px;
+  padding: 8px 0 8px 16px;
+  position: inherit;
+  width: 35vw;
+}
+
+.userEpisodeItemsAuthor_JanuaryA {
+  float: left;
+  color: #040204;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 18px;
+  padding: 10px 0 8px 16px;
+  position: inherit;
+  width: 30vw;
+}
+
+.userEpisodePosition_JanuaryA {
+  float: left;
+  color: #040204;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 18px;
+  padding: 10px 0 8px 16px;
+  position: inherit;
+  width: 13.5vw;
+}
+
+.aboutThisPodcastImage_JanuaryA {
+  float: left;
+  height: 100px;
+  width: 100px;
+}
+
+.aboutThisPodcastTitle_JanuaryA {
+  float: left;
+  color: #040204;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 30px;
+  height: 5vh;
+  margin: 0 5px 5px 15px;
+}
+
+.aboutThisPodcastAuthor_JanuaryA {
+  color: #040204;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 24px;
+  margin: 5px 50% 5px 15px;
+}
+
+.aboutThisPodcastDescription_JanuaryA {
+  color: #040204;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 18px;
+  margin: 16px 0 8px 115px;
+  max-width: 750px;
+}

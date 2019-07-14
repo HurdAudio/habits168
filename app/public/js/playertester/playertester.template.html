@@ -1,0 +1,55 @@
+<div class="playerTesterTestDiv"></div>
+  <div class="scrollerDiv">
+
+    <div class="{{$ctrl.playerMask}}">
+
+      <div class="playerDiv{{$ctrl.playerMonth}}">
+
+        <img class="playerFeedIcon{{$ctrl.playerMonth}}" src="{{$ctrl.feedIcon}}">
+        <div class="playerTitlingDiv{{$ctrl.playerMonth}}">
+          <h1 class="playerPodcastTitle{{$ctrl.playerMonth}}">{{$ctrl.podcastTitle}}</h1>
+          <p class="playerEpisodeTitle{{$ctrl.playerMonth}}">{{$ctrl.podcastEpisodeTitle}}</p>
+          <p class="playerEpisodeAuthor{{$ctrl.playerMonth}}">{{$ctrl.podcastEpisodeAuthorship}}</p>
+          <div class="playerControlsDiv{{$ctrl.playerMonth}}">
+
+            <button id="playerPlayPauseButton" class="{{$ctrl.playPause}}" ng-click="$ctrl.togglePlayPause()">&#9654;</button>
+            <p id="playerProgressNumericalDisplay" class="playerNumericalProgressDisplay{{$ctrl.playerMonth}}">{{$ctrl.playerCurrentPosition}} / {{$ctrl.playerTotalPlaytime}}</p>
+            <input id="playerProgressSlider" class="playerProgressSlider{{$ctrl.playerMonth}}" type="range" value="0" step="1" ng-mousemove="$ctrl.userSliderPosition()">
+          </div>
+        </div>
+
+        <audio id="playerAudioPlayer" src="{{$ctrl.feedAudio}}" data-duration="3673" type="{{$ctrl.feedAudioType}}"></audio>
+      </div>
+    </div>
+
+    <div class="tabsContainer{{$ctrl.playerMonth}}">
+
+      <div class="{{$ctrl.aboutTabStatus}}" ng-click="$ctrl.tabClick('about')"><p>about</p></div>
+
+      <div class="{{$ctrl.episodeTabStatus}}" ng-click="$ctrl.tabClick('episodes')"><p>episodes</p></div>
+    </div>
+    <div class="{{$ctrl.aboutContainer}}">
+
+      <img class="aboutThisPodcastImage{{$ctrl.playerMonth}}" src="{{$ctrl.aboutThisPodcastImage}}">
+      <div class="aboutThisPodcastTitle{{$ctrl.playerMonth}}"><p>{{$ctrl.podcastTitle}}</p></div>
+      <div class="aboutThisPodcastAuthor{{$ctrl.playerMonth}}"><p>{{$ctrl.aboutPodcastAuthor}}</p></div>
+      <div class="aboutThisPodcastDescription{{$ctrl.playerMonth}}"><p>Description: {{$ctrl.aboutPodcastDescription}}</p></div>
+    </div>
+
+    <div class="{{$ctrl.episodeContainer}}">
+
+      <div class="episodesTitleBar{{$ctrl.playerMonth}}"><p>{{$ctrl.podcastTitle}} episodes:</p></div>
+      <main class="episodesList{{$ctrl.playerMonth}}" ng-repeat="episode in $ctrl.episodesList">
+        <div ng-class="$ctrl.isCurrentEpisodeIndex(episode.index)" ng-click="$ctrl.userSwitchCurrentEpisode(episode.index)">
+          <div class="userEpisodeStatus{{$ctrl.playerMonth}}"><p>new</p></div>
+          <div class="userEpisodeItemsTitle{{$ctrl.playerMonth}}"><p>{{episode.title}}</p></div>
+          <div class="userEpisodeItemsAuthor{{$ctrl.playerMonth}}"><p>{{episode.author}}</p></div>
+          <div class="userEpisodePosition{{$ctrl.playerMonth}}"><p>{{episode.userCurrentTime}} / {{episode.durationInHumanReadableTime}}</p></div>
+
+        </div>
+
+
+      </main>
+    </div>
+
+  </div>
