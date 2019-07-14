@@ -1,25 +1,35 @@
 <div class="playerTesterTestDiv"></div>
+<div class="{{$ctrl.playerMask}}">
+
   <div class="scrollerDiv">
 
-    <div class="{{$ctrl.playerMask}}">
+    <div class="playerDiv{{$ctrl.playerMonth}}">
 
-      <div class="playerDiv{{$ctrl.playerMonth}}">
+      <a class="playerFeedIcon{{$ctrl.playerMonth}}" href="{{$ctrl.seriesLink}}" target="_blank"><img  src="{{$ctrl.feedIcon}}"></a>
+      <div class="playerTitlingDiv{{$ctrl.playerMonth}}">
+        <a href="{{$ctrl.seriesLink}}" target="_blank"><h1 class="playerPodcastTitle{{$ctrl.playerMonth}}">{{$ctrl.podcastTitle}}</h1></a>
+        <a href="{{$ctrl.episodeLink}}" target="_blank"><p class="playerEpisodeTitle{{$ctrl.playerMonth}}">{{$ctrl.podcastEpisodeTitle}}</p></a>
+        <p class="playerEpisodeAuthor{{$ctrl.playerMonth}}">{{$ctrl.podcastEpisodeAuthorship}}</p>
+        <div class="playerControlsDiv{{$ctrl.playerMonth}}">
 
-        <img class="playerFeedIcon{{$ctrl.playerMonth}}" src="{{$ctrl.feedIcon}}">
-        <div class="playerTitlingDiv{{$ctrl.playerMonth}}">
-          <h1 class="playerPodcastTitle{{$ctrl.playerMonth}}">{{$ctrl.podcastTitle}}</h1>
-          <p class="playerEpisodeTitle{{$ctrl.playerMonth}}">{{$ctrl.podcastEpisodeTitle}}</p>
-          <p class="playerEpisodeAuthor{{$ctrl.playerMonth}}">{{$ctrl.podcastEpisodeAuthorship}}</p>
-          <div class="playerControlsDiv{{$ctrl.playerMonth}}">
+          <button id="playerPlayPauseButton" class="{{$ctrl.playPause}}" ng-click="$ctrl.togglePlayPause()">&#9654;</button>
+          <p id="playerProgressNumericalDisplay" class="playerNumericalProgressDisplay{{$ctrl.playerMonth}}">{{$ctrl.playerCurrentPosition}} / {{$ctrl.playerTotalPlaytime}}</p>
+          <button id="playerRewindToBeginning" class="playerRewindToBeginning{{$ctrl.playerMonth}}" ng-click="$ctrl.rewindToStart()">&#9198;</button>
+          <button id="playerRewind15Seconds" class="playerRewind15Seconds{{$ctrl.playerMonth}}" ng-click="$ctrl.rewind15Seconds()">&#9194;</button>
+          <button id="playerForward15Seconds" class="playerForward15Seconds{{$ctrl.playerMonth}}" ng-click="$ctrl.fastForward15seconds()">&#9193;</button>
+          <button id="playerFastForwardEnd" class="playerFastForwardEnd{{$ctrl.playerMonth}}" ng-click="$ctrl.skipToEnd()">&#9197;</button>
+          <button id="playbackRateToggle" class="{{$ctrl.playbackRateStatus}}" ng-click="$ctrl.togglePlaybackRate()">1.00x</button>
 
-            <button id="playerPlayPauseButton" class="{{$ctrl.playPause}}" ng-click="$ctrl.togglePlayPause()">&#9654;</button>
-            <p id="playerProgressNumericalDisplay" class="playerNumericalProgressDisplay{{$ctrl.playerMonth}}">{{$ctrl.playerCurrentPosition}} / {{$ctrl.playerTotalPlaytime}}</p>
-            <input id="playerProgressSlider" class="playerProgressSlider{{$ctrl.playerMonth}}" type="range" value="0" step="1" ng-mousemove="$ctrl.userSliderPosition()">
-          </div>
+          <input id="playerProgressSlider" class="playerProgressSlider{{$ctrl.playerMonth}}" type="range" value="0" step="1" ng-mousemove="$ctrl.userSliderPosition()">
         </div>
+        <div class="playerShareSaveDiv{{$ctrl.playerMonth}}">
 
-        <audio id="playerAudioPlayer" src="{{$ctrl.feedAudio}}" data-duration="3673" type="{{$ctrl.feedAudioType}}"></audio>
+          <button id="playerShareButton" class="playerShareButton{{$ctrl.playerMonth}}" ng-click="$ctrl.shareSaveDialog('share')">share</button>
+          <button id="playerSaveButton" class="playerSaveButton{{$ctrl.playerMonth}}" ng-click="$ctrl.shareSaveDialog('save')">save</button>
+        </div>
       </div>
+
+      <audio id="playerAudioPlayer" src="{{$ctrl.feedAudio}}" data-duration="3673" type="{{$ctrl.feedAudioType}}"></audio>
     </div>
 
     <div class="tabsContainer{{$ctrl.playerMonth}}">
@@ -27,6 +37,8 @@
       <div class="{{$ctrl.aboutTabStatus}}" ng-click="$ctrl.tabClick('about')"><p>about</p></div>
 
       <div class="{{$ctrl.episodeTabStatus}}" ng-click="$ctrl.tabClick('episodes')"><p>episodes</p></div>
+
+      <div class="{{$ctrl.episodeDetailsTabStatus}}" ng-click="$ctrl.tabClick('details')"><p>episode details</p></div>
     </div>
     <div class="{{$ctrl.aboutContainer}}">
 
@@ -52,4 +64,32 @@
       </main>
     </div>
 
+    <div class="{{$ctrl.detailsContainer}}">
+
+      <div class="detailsTitle{{$ctrl.playerMonth}}"><p>{{$ctrl.podcastTitle}}: </p></div>
+
+      <div class="detailsEpisodeTitle{{$ctrl.playerMonth}}"><p>{{$ctrl.podcastEpisodeTitle}}</p></div>
+
+      <div class="detailsContent{{$ctrl.playerMonth}}"><p ng-bind-html="$ctrl.episodeContent"></p></div>
+
+    </div>
   </div>
+
+</div>
+
+<div class="{{$ctrl.shareSaveDialogStatus}}">
+
+  <p class="shareOrSaveStatus{{$ctrl.playerMonth}}">{{$ctrl.playerShareOrSaveStatus}}</p>
+  <p class="shareOrSaveContent{{$ctrl.playerMonth}}">{{$ctrl.podcastTitle}}: {{$ctrl.podcastEpisodeTitle}}</p>
+
+  <textarea class="playerShareSaveLinkUserNotes{{$ctrl.playerMonth}}" placeholder="user comments" rows="5"></textarea><br><br>
+  <div class="playerRadioButtons{{$ctrl.playerMonth}}" ng-if="$ctrl.playerShareOrSaveStatus === 'Share Episode:'">
+
+    share with:<input type="radio" name="shareStatus" value="public" checked>public
+    <input type="radio" name="shareStatus" value="friends">friends only
+    <input type="radio" name="shareStatus" value="private">private
+  </div>
+
+  <button ng-click="$ctrl.viewCancelShareSaveLink()">submit</button>
+  <button ng-click="$ctrl.viewCancelShareSaveLink()">cancel</button>
+</div>
