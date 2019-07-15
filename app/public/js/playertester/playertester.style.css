@@ -64,7 +64,7 @@
   left: 5%;
   opacity: 0.9;
   position: relative;
-  top: 5vh;
+  top: 0;
   width: 88%;
 }
 
@@ -216,7 +216,7 @@
   left: 5%;
   opacity: 0.9;
   position: relative;
-  top: 6vh;
+  top: 3vh;
   width: 88%;
   z-index: 5;
 }
@@ -254,7 +254,7 @@
   left: 5%;
   opacity: 0.9;
   position: relative;
-  top: 6vh;
+  top: 3vh;
   width: 88%;
   z-index: 8;
 }
@@ -273,7 +273,7 @@
   left: 5%;
   opacity: 0.9;
   position: relative;
-  top: 6vh;
+  top: 3vh;
   width: 88%;
   z-index: 8;
 }
@@ -293,7 +293,7 @@
   left: 5%;
   opacity: 0.9;
   position: relative;
-  top: 6vh;
+  top: 3vh;
   width: 88%;
   z-index: 8;
 }
@@ -655,7 +655,7 @@
 
 .playerShareSaveDiv_JanuaryA {
   position: relative;
-  transform: translateX(-52.4vw) translateY(15vh);
+  transform: translateX(7.4vw) translateY(15vh);
 }
 
 .playerShareButton_JanuaryA {
@@ -720,6 +720,7 @@
   position: absolute;
   top: 20%;
   transform: translateY(0px);
+  transition: all 0.5s linear;
   width: 60%;
   z-index: 17;
 }
@@ -732,6 +733,7 @@
   position: absolute;
   top: 20%;
   transform: translateY(-500px);
+  transition: all 0.5s linear;
   width: 60%;
   z-index: -17;
 }
@@ -793,4 +795,211 @@
   box-shadow: -3px -3px transparent;
   color: #868385;
   transition: all 0.1s linear;
+}
+
+.playerExit_JanuaryA {
+  background: transparent;
+  border: solid 1px transparent;
+  cursor: pointer;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 48px;
+  margin: 0 0 -10px 0;
+  position: relative;
+  left: 94%;
+  top: 0;
+  width: 5%;
+}
+
+@media only screen and (max-width: 360px) {
+  .playerFeedIcon_JanuaryA img {
+    height: 50px;
+    margin: 10px 5px;
+    width: 50px;
+  }
+
+  .playerPodcastTitle_JanuaryA {
+    font-size: 18px;
+    margin: 10px 0 10px 5px;
+  }
+
+  .playerEpisodeTitle_JanuaryA {
+    font-size: 18px;
+    margin: 4px 0 4px 5px;
+  }
+
+  .playerEpisodeAuthor_JanuaryA {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 12px;
+    margin: 4px 0 5px 5px;
+  }
+
+  .playerControlsDiv_JanuaryA {
+    margin: 35px 5px 4px -120px;
+    position: relative;
+    transform: scale(0.5);
+    width: 150%;
+  }
+
+  .playerShareSaveDiv_JanuaryA {
+    position: relative;
+    transform: scale(0.5) translateX(7.4vw) translateY(15vh);
+  }
+
+  .playerShareButton_JanuaryA {
+
+    margin-right: 1vh;
+
+  }
+
+  .playerShareButton_JanuaryA:active {
+    background: #061f23;
+    box-shadow: -3px -3px transparent;
+    color: #868385;
+    transition: all 0.1s linear;
+  }
+
+  .playerSaveButton_JanuaryA {
+
+    margin-right: 1vh;
+
+  }
+
+  .playerSaveButton_JanuaryA:active {
+    background: #061f23;
+    box-shadow: -3px -3px transparent;
+    color: #868385;
+    transition: all 0.1s linear;
+  }
+
+  .playerProgressSlider_JanuaryA {
+    margin: 17px 0 10px 5px;
+    width: 150%;
+  }
+
+  .tabActive_JanuaryA {
+    font-size: 18px;
+    padding: 4px 0 4px 3px;
+    width: 30%;
+  }
+
+  .tabInactive_JanuaryA {
+    font-size: 18px;
+    padding: 4px 0 4px 3px;
+    width: 30%;
+  }
+
+  .episodesTitleBar_JanuaryA {
+    font-size: 18px;
+    height: auto;
+
+  }
+
+  .userEpisodeStatus_JanuaryA {
+
+    font-size: 12px;
+    padding: 4px 1px 4px 4px;
+    position: relative;
+    width: 2vw;
+  }
+
+  .userEpisodeItemsTitle_JanuaryA {
+    font-size: 12px;
+    padding: 4px 1px 4px 20px;
+    position: inherit;
+    width: 35vw;
+  }
+
+  .userEpisodeItemsAuthor_JanuaryA {
+    display: none;
+  }
+
+  .userEpisodePosition_JanuaryA {
+
+    font-size: 12px;
+    padding: 10px 1px 4px 16px;
+    width: 19vw;
+  }
+
+  .aboutThisPodcastImage_JanuaryA {
+    height: 40px;
+    margin: 5px;
+    width: 40px;
+  }
+
+  .aboutThisPodcastTitle_JanuaryA {
+
+    font-size: 18px;
+
+  }
+
+  .aboutThisPodcastAuthor_JanuaryA {
+
+    font-size: 12px;
+  }
+
+  .aboutThisPodcastDescription_JanuaryA {
+
+    font-size: 12px;
+    margin: 5px 50px 100px 5px;
+    max-width: 750px;
+  }
+
+  .detailsTitle_JanuaryA {
+
+    font-size: 18px;
+    margin: 15px 15px 15px 15px;
+  }
+
+  .detailsEpisodeTitle_JanuaryA {
+
+    font-size: 18px;
+    margin: 15px;
+  }
+
+  .detailsContent_JanuaryA {
+
+    font-size: 12px;
+
+    max-width: 300px;
+    padding: 4px 16px 50px 5px;
+  }
+
+  .detailsContent_JanuaryA a {
+    color: #a75853;
+    text-decoration: underline;
+  }
+
+  .scrollerDiv {
+    height: 640px;
+  }
+
+  .playerExit_JanuaryA {
+
+    font-size: 24px;
+    margin: 0 0 -10px 0;
+    position: relative;
+    left: 91%;
+    top: 0;
+    width: 5%;
+  }
+
+  .shareSaveDivActive_JanuaryA {
+
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 17;
+  }
+
+  .shareSaveDivInactive_JanuaryA {
+    background: #868385;
+    height: auto;
+    left: 20%;
+    opacity: 0.2;
+    position: absolute;
+    top: 20%;
+    transform: translateY(-500px);
+    width: 60%;
+    z-index: -17;
+  }
 }
