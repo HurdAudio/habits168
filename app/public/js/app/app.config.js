@@ -28,6 +28,12 @@
         parent: 'app',
         component: 'viewtester'
       })
+      .state({
+        name: 'playertester',
+        url: '/playertester',
+        parent: 'app',
+        component: 'playertester'
+      });
       // .state({
       //   name: 'emailconfirm',
       //   url: '/emailconfirm/:id',
