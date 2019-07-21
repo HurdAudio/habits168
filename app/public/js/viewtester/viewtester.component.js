@@ -74,6 +74,7 @@
       vm.viewCancelShareSaveLink = viewCancelShareSaveLink;
       vm.viewSaveLink = viewSaveLink;
       vm.viewMask = 'viewContainer' + vm.viewMonth;
+      vm.spinner = false;
 
       function viewSaveLink(post) {
         vm.shareSaveLinkDisplay = 'viewShareSaveDialogueDisplayed' + vm.viewMonth;
@@ -155,8 +156,10 @@
             rssLink = rssLink.replace('/', '%2F');
           }
           console.log(rssLink);
+          vm.spinner = true;
           $http.get(`/rss_reader/${rssLink}`)
           .then(rssContentData => {
+            vm.spinner = false;
             let rssContent = rssContentData.data;
             console.log(rssContent);
             vm.feedsList[vm.feedsListIndex].items = rssContent.items;
@@ -177,6 +180,14 @@
 
       function onInit() {
         console.log("View Test is lit");
+        switch(vm.viewMonth) {
+          case('_JanuaryA'):
+            vm.viewerSpinnerPath = 'https://habits168-hurdaudio.s3.amazonaws.com/viewer/spinners/jana_spinner.gif'
+            break;
+          default:
+            alert('Error: unsupported viewMonth spinner set');
+            console.log('Error: unsupported viewMonth spinner set');
+        }
         vm.feedIcon = vm.feedsList[vm.feedsListIndex].image;
         vm.feedTitle = vm.feedsList[vm.feedsListIndex].title;
         vm.feedDescription = vm.feedsList[vm.feedsListIndex].description;
