@@ -1,0 +1,338 @@
+.viewContainer_JanuaryB {
+  background: url(https://habits168-hurdaudio.s3.amazonaws.com/viewer/fouad-ghazizadeh-5thwXpcAOw4-unsplash.jpg);
+  background-size: 100%;
+  filter: blur(0);
+  height: 95%;
+  margin: 5% 0 0 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.viewContainerCloaked_JanuaryB {
+  background: url(https://habits168-hurdaudio.s3.amazonaws.com/viewer/fouad-ghazizadeh-5thwXpcAOw4-unsplash.jpg);
+  background-size: 100%;
+  filter: blur(20px);
+  height: 95%;
+  margin: 5% 0 0 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.viewToolbar_JanuaryB {
+  background: #5881bf;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 11vh;
+  justify-content: flex-start;
+  opacity: 0.9;
+  width: 100%;
+}
+
+.viewNavigation_JanuaryB {
+  background: transparent;
+  border-color: transparent;
+  border-radius: 20%;
+  color: #010101;
+  cursor: pointer;
+  font-family: 'Karla', sans-serif;
+  font-size: 60px;
+  height: 85px;
+  padding: 1px;
+  transform: skewX(-15deg);
+  transition: all 0.2s linear;
+  width: 85px;
+}
+
+.viewNavigation_JanuaryB:hover {
+  background: #bdcaea;
+  color: #141824;
+  transform: skewX(-10deg);
+  transition: all 0.2s linear;
+}
+
+.viewNavigation_JanuaryB:active {
+  background: #486496;
+  color: #8a8c92;
+  transform: skewX(-15deg);
+  transition: all 0.1s linear;
+}
+
+.viewCurrentFeedIcon_JanuaryB {
+  height: 85px;
+  width: 85px;
+}
+
+.viewCurrentFeedTitle_JanuaryB {
+  background: transparent;
+  color: #08090e;
+  cursor: pointer;
+  display: initial;
+  font-family: 'Karla', sans-serif;
+  font-size: 66px;
+  opacity: 0.9;
+  padding: 10px 15px 0 15px;
+  text-shadow: -2px -2px 1px #3d4d6f;
+  transform: skewX(-15deg);
+}
+
+.viewCurrentFeedTitle_JanuaryB a:hover {
+  color: #bdcaea;
+  transition: all 0.3s linear;
+}
+
+.viewCurrentFeedTitle_JanuaryB a {
+  color: #010101;
+  text-decoration: none;
+  transition: all 0.3s linear;
+}
+
+.viewCurrentFeedDescription_JanuaryB {
+  background: transparent;
+  color: #010101;
+  display: initial;
+  justify-content: flex-end;
+  font-family: 'Karla', sans-serif;
+  font-size: 18px;
+  padding: 50px 0 0 50px;
+  text-shadow: -1px -1px 1px #3d4d6f;
+}
+
+.viewContentDiv_JanuaryB {
+  background: #b7bed4;
+  height: 79.5vh;
+  opacity: 0.9;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 2% 5% 75px 5%;
+  width: 100%;
+}
+
+.viewIndividualItems_JanuaryB {
+  color: #010101;
+  font-family: 'Karla', sans-serif;
+  line-height: 1.3em;
+  max-width: 880px;
+}
+
+.viewIndividualItems_JanuaryB img {
+  width: 50%;
+}
+
+.viewIndividualItems_JanuaryB p {
+  font-size: 18px;
+  line-height: 1.5em;
+  margin: 5px 5% 5px 1%;
+}
+
+.viewIndividualItems_JanuaryB a {
+  color: #010101;
+  text-decoration: none;
+}
+
+.viewIndividualItems_JanuaryB a p {
+  font-size: 30px;
+  margin: 25px 4px 8px 0;
+}
+
+.viewIndividualItems_JanuaryB a:hover {
+  color: #3d4d6f;
+}
+
+.viewIndividualItems_JanuaryB a:visited {
+  color: #6e7ca9;
+}
+
+.viewIndividualItems_JanuaryB button {
+  background: #5881bf;
+  border: solid 1px transparent;
+  color: #010101;
+  cursor: pointer;
+  font-family: 'Karla', sans-serif;
+  font-size: 18px;
+  margin: 0 15px 0 0;
+  padding: 5px;
+  transform: skewX(-15deg);
+  transition: all 0.4s linear;
+}
+
+.viewIndividualItems_JanuaryB button:hover {
+  background: #bdcaea;
+  border: solid 1px #010101;
+  color: #141824;
+  transform: skewX(-5deg);
+  transition: all 0.4s linear;
+}
+
+.viewPostTimestamp_JanuaryB {
+  margin: 5px 5px 5px 45% !important;
+}
+
+.viewShareSaveDialogueDisplayed_JanuaryB {
+  background: #a4b2cb;
+  color: #010101;
+  display: initial;
+  font-family: 'Karla', sans-serif;
+  height: 70vh;
+  left: 10%;
+  opacity: 0.99;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: absolute;
+  top: 15%;
+  transform: skewX(0deg);
+  transition: all 0.5s linear;
+  width: 80%;
+  z-index: 17;
+}
+
+.viewShareSaveDialogueHidden_JanuaryB {
+  background: #a4b2cb;
+  color: #010101;
+  font-family: 'Karla', sans-serif;
+  height: 70vh;
+  left: 10%;
+  opacity: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: absolute;
+  top: -35%;
+  transform: skewX(0deg);
+  transition: all 0.5s linear;
+  width: 80%;
+  z-index: -1;
+}
+
+.viewDialogHeadline_JanuaryB {
+  background: #7b94d4;
+  font-size: 36px;
+  padding: 30px 0 10px 50px;
+}
+
+.viewShareSaveDialogueDisplayed_JanuaryB img {
+  height: 75px;
+  margin: 30px 0 15px 150px;
+  width: 75px;
+}
+
+.viewShareSaveDialogueHidden_JanuaryB img {
+  height: 75px;
+  margin: 30px 0 15px 150px;
+  width: 75px;
+}
+
+.viewShareSaveDialogueDisplayed_JanuaryB p {
+  font-size: 24px;
+  margin: 5px 50px 15px 50px;
+}
+
+.viewShareSaveDialogueHidden_JanuaryB p {
+  font-size: 24px;
+  margin: 5px 50px 15px 50px;
+}
+
+.viewShareSaveDialogueDisplayed_JanuaryB textarea {
+  color: #010101;
+  display: initial;
+  font-family: 'Karla', sans-serif;
+  font-size: 18px;
+  margin: 5px 50px 5px 50px;
+  padding: 5px;
+  width: 88%;
+}
+
+.viewShareSaveDialogueHidden_JanuaryB textarea {
+  color: #010101;
+  display: initial;
+  font-family: 'Karla', sans-serif;
+  font-size: 18px;
+  margin: 5px 50px 5px 50px;
+  padding: 5px;
+  width: 88%;
+}
+
+.viewShareSaveDialogueDisplayed_JanuaryB button {
+  background: #5881bf;
+  border: solid 1px transparent;
+  color: #010101;
+  cursor: pointer;
+  font-family: 'Karla', sans-serif;
+  font-size: 18px;
+  margin: 15px 0 5px 50px;
+  padding: 5px;
+  transform: skewX(-15deg);
+  transition: all 0.4s linear;
+}
+
+.viewShareSaveDialogueHidden_JanuaryB button {
+  background: #5881bf;
+  border: solid 1px transparent;
+  color: #010101;
+  cursor: pointer;
+  font-family: 'Karla', sans-serif;
+  font-size: 18px;
+  margin: 15px 0 5px 50px;
+  padding: 5px;
+  transform: skewX(-15deg);
+  transition: all 0.4s linear;
+}
+
+.viewShareSaveDialogueDisplayed_JanuaryB button:hover {
+  background: #bdcaea;
+  border: solid 1px #010101;
+  color: #141824;
+  transform: skewX(-5deg);
+  transition: all 0.4s linear;
+}
+
+.viewRadioButtons_JanuaryB {
+  font-family: 'Karla', sans-serif;
+  font-size: 24px;
+  margin: 0 0 20px 50px;
+}
+
+@media only screen and (max-width: 736px) {
+
+  .viewCurrentFeedDescription_JanuaryB {
+    display: none;
+  }
+
+  .viewContentDiv_JanuaryB {
+    height: 140vh;
+  }
+
+  .viewToolbar_JanuaryB {
+    height: 16vh;
+  }
+
+  .viewCurrentFeedTitle_JanuaryB {
+    display: initial;
+    font-size: 48px;
+    padding: 20px 15px 0 15px;
+  }
+}
+
+@media only screen and (max-width: 667px) {
+
+  .viewCurrentFeedTitle_JanuaryB {
+    display: none;
+  }
+
+  .viewNavigation_JanuaryB {
+    font-size: 48px;
+    height: 50px;
+    width: 50px;
+  }
+
+  .viewCurrentFeedIcon_JanuaryB {
+    height: 50px;
+    width: 50px;
+  }
+
+  .viewShareSaveDialogueDisplayed_JanuaryB textarea {
+    margin: 5px 50px 5px 50px;
+    padding: 5px;
+    width: 58%;
+  }
+
+}
