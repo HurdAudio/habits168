@@ -29,7 +29,7 @@
 }
 
 .landingTitleButtonsDiv_JanuaryC {
-  padding: 30px 5px 5px 17%;
+  padding: 35px 5px 5px 7%;
   position: relative;
 }
 
@@ -247,8 +247,8 @@
   color: #121419;
   font-family: 'Sawarabi Mincho', sans-serif;
   font-size: 24px;
-  padding: 1px 1px 1px 15px;
   margin: 25px 5px 10px 45px;
+  padding: 1px 1px 1px 15px;
   width: 75%;
 }
 
@@ -256,8 +256,8 @@
   color: #121419;
   font-family: 'Sawarabi Mincho', sans-serif;
   font-size: 24px;
-  padding: 1px 1px 1px 15px;
   margin: 25px 5px 10px 45px;
+  padding: 1px 1px 1px 15px;
   width: 75%;
 }
 
@@ -317,7 +317,6 @@
   flex-direction: row;
   flex-wrap: wrap;
   height: 30px;
-  justify-content: left;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -352,4 +351,720 @@
   font-family: 'Sawarabi Mincho', sans-serif;
   font-size: 30px;
   margin: 10px 5px 0 15px;
+}
+@media only screen and (max-width: 1024px) {
+  .backgroundDiv_JanuaryC {
+    background-size: 400%;
+  }
+
+  .landingTitle_JanuaryC {
+    font-size: 18px;
+  }
+
+  .landingShareShare_JanuaryC {
+    width: 70%;
+  }
+
+  .landingRecentlySharedPostsUncollapsed_JanuaryC {
+    height: 75vh;
+  }
+
+  .landingRecentlySharedLinksUncollapsed_JanuaryC {
+    height: 75vh;
+  }
+}
+
+@media only screen and (max-width: 823px) {
+  .landingTitle_JanuaryC {
+    font-size: 18px;
+  }
+
+  .landingShareShare_JanuaryC {
+    width: 70%;
+  }
+
+  .landingRecentlySharedPostsUncollapsed_JanuaryC {
+    height: 75vh;
+  }
+
+  .landingRecentlySharedLinksUncollapsed_JanuaryC {
+    height: 75vh;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .landingTitle_JanuaryC {
+    font-size: 18px;
+  }
+
+  .landingShareShare_JanuaryC {
+    width: 70%;
+  }
+
+  .landingRecentlySharedPostsUncollapsed_JanuaryC {
+    height: 75vh;
+  }
+
+  .landingRecentlySharedLinksUncollapsed_JanuaryC {
+    height: 75vh;
+  }
+}
+
+@media only screen and (max-width: 736px) {
+  .backgroundDiv_JanuaryC {
+    background-size: 250%;
+  }
+
+  .landingTitle_JanuaryC {
+    font-size: 24px;
+  }
+
+  .landingTitleButtonsDiv_JanuaryC button {
+    font-size: 12px;
+    margin: -30px 10px 10px 10px;
+  }
+
+  .tabs_JanuaryC {
+    display: none;
+  }
+
+  .landingRecentlySharedLinksUncollapsed_JanuaryC {
+    display: none;
+  }
+
+  .landingLoginActive_JanuaryC {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 79%;
+  }
+
+  .landingLoginActive_JanuaryC a {
+    margin-top: 80px;
+  }
+
+  .landingLoginInactive_JanuaryC a {
+    margin-top: 80px;
+  }
+
+  .landingLoginActive_JanuaryC button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginInactive_JanuaryC button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginActive_JanuaryC h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginInactive_JanuaryC h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginActive_JanuaryC input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_JanuaryC input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_JanuaryC {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 79%;
+  }
+}
+
+@media only screen and (max-width: 731px) {
+  .backgroundDiv_JanuaryC {
+    background-size: 250%;
+  }
+
+  .landingTitle_JanuaryC {
+    font-size: 24px;
+  }
+
+  .landingTitleButtonsDiv_JanuaryC button {
+    font-size: 12px;
+    margin: -30px 10px 10px 10px;
+  }
+
+  .tabs_JanuaryC {
+    display: none;
+  }
+
+  .landingRecentlySharedLinksUncollapsed_JanuaryC {
+    display: none;
+  }
+
+  .landingLoginActive_JanuaryC {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 79%;
+  }
+
+  .landingLoginActive_JanuaryC a {
+    margin-top: 80px;
+  }
+
+  .landingLoginInactive_JanuaryC a {
+    margin-top: 80px;
+  }
+
+  .landingLoginActive_JanuaryC button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginInactive_JanuaryC button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginActive_JanuaryC h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginInactive_JanuaryC h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginActive_JanuaryC input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_JanuaryC input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_JanuaryC {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 79%;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .backgroundDiv_JanuaryC {
+    background-size: 250%;
+  }
+
+  .landingTitle_JanuaryC {
+    font-size: 24px;
+  }
+
+  .landingTitleButtonsDiv_JanuaryC button {
+    font-size: 12px;
+    margin: -30px 10px 10px 10px;
+  }
+
+  .tabs_JanuaryC {
+    display: none;
+  }
+
+  .landingRecentlySharedLinksUncollapsed_JanuaryC {
+    display: none;
+  }
+
+  .landingLoginActive_JanuaryC {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 79%;
+  }
+
+  .landingLoginActive_JanuaryC a {
+    margin-top: 80px;
+  }
+
+  .landingLoginInactive_JanuaryC a {
+    margin-top: 80px;
+  }
+
+  .landingLoginActive_JanuaryC button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginInactive_JanuaryC button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginActive_JanuaryC h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginInactive_JanuaryC h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginActive_JanuaryC input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_JanuaryC input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_JanuaryC {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 79%;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .backgroundDiv_JanuaryC {
+    background-size: 250%;
+  }
+
+  .landingTitle_JanuaryC {
+    font-size: 24px;
+  }
+
+  .landingTitleButtonsDiv_JanuaryC button {
+    font-size: 12px;
+    margin: -30px 15px 15px 15px;
+  }
+
+  .landingUserGreeting_JanuaryC {
+    margin-top: -120px;
+  }
+
+  .tabs_JanuaryC {
+    display: none;
+  }
+
+  .landingRecentlySharedLinksUncollapsed_JanuaryC {
+    display: none;
+  }
+
+  .landingLoginActive_JanuaryC {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 79%;
+  }
+
+  .landingLoginActive_JanuaryC a {
+    margin-top: 80px;
+  }
+
+  .landingLoginInactive_JanuaryC a {
+    margin-top: 80px;
+  }
+
+  .landingLoginActive_JanuaryC button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginInactive_JanuaryC button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginActive_JanuaryC h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginInactive_JanuaryC h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginActive_JanuaryC input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_JanuaryC input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_JanuaryC {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 79%;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .backgroundDiv_JanuaryC {
+    background-size: 250%;
+  }
+
+  .landingTitle_JanuaryC {
+    font-size: 24px;
+  }
+
+  .landingTitleButtonsDiv_JanuaryC button {
+    font-size: 12px;
+  }
+
+  .tabs_JanuaryC {
+    display: none;
+  }
+
+  .landingRecentlySharedLinksUncollapsed_JanuaryC {
+    display: none;
+  }
+
+  .landingLoginActive_JanuaryC {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 79%;
+  }
+
+  .landingLoginActive_JanuaryC a {
+    margin-top: 80px;
+  }
+
+  .landingLoginInactive_JanuaryC a {
+    margin-top: 80px;
+  }
+
+  .landingLoginActive_JanuaryC button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginInactive_JanuaryC button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginActive_JanuaryC h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginInactive_JanuaryC h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginActive_JanuaryC input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_JanuaryC input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_JanuaryC {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 79%;
+  }
+}
+
+@media only screen and (max-width: 411px) {
+  .backgroundDiv_JanuaryC {
+    background-size: 250%;
+  }
+
+  .landingTitle_JanuaryC {
+    font-size: 24px;
+  }
+
+  .landingTitleButtonsDiv_JanuaryC button {
+    font-size: 12px;
+  }
+
+  .tabs_JanuaryC {
+    display: none;
+  }
+
+  .landingRecentlySharedLinksUncollapsed_JanuaryC {
+    display: none;
+  }
+
+  .landingLoginActive_JanuaryC {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 79%;
+  }
+
+  .landingLoginActive_JanuaryC a {
+    margin-top: 80px;
+  }
+
+  .landingLoginInactive_JanuaryC a {
+    margin-top: 80px;
+  }
+
+  .landingLoginActive_JanuaryC button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginInactive_JanuaryC button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginActive_JanuaryC h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginInactive_JanuaryC h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginActive_JanuaryC input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_JanuaryC input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_JanuaryC {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 79%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .backgroundDiv_JanuaryC {
+    background-size: 250%;
+  }
+
+  .landingTitle_JanuaryC {
+    font-size: 24px;
+  }
+
+  .landingTitleButtonsDiv_JanuaryC button {
+    font-size: 12px;
+  }
+
+  .tabs_JanuaryC {
+    display: none;
+  }
+
+  .landingRecentlySharedLinksUncollapsed_JanuaryC {
+    display: none;
+  }
+
+  .landingLoginActive_JanuaryC {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 61.5%;
+  }
+
+  .landingLoginActive_JanuaryC a {
+    margin-top: 80px;
+  }
+
+  .landingLoginInactive_JanuaryC a {
+    margin-top: 80px;
+  }
+
+  .landingLoginActive_JanuaryC button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginInactive_JanuaryC button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginActive_JanuaryC h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginInactive_JanuaryC h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginActive_JanuaryC input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_JanuaryC input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_JanuaryC {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 61.5%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .backgroundDiv_JanuaryC {
+    background-size: 250%;
+  }
+
+  .landingTitle_JanuaryC {
+    font-size: 24px;
+  }
+
+  .landingTitleButtonsDiv_JanuaryC button {
+    font-size: 12px;
+  }
+
+  .tabs_JanuaryC {
+    display: none;
+  }
+
+  .landingRecentlySharedLinksUncollapsed_JanuaryC {
+    display: none;
+  }
+
+  .landingLoginActive_JanuaryC {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 77%;
+  }
+
+  .landingLoginActive_JanuaryC a {
+    margin-top: 80px;
+  }
+
+  .landingLoginInactive_JanuaryC a {
+    margin-top: 80px;
+  }
+
+  .landingLoginActive_JanuaryC button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginInactive_JanuaryC button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginActive_JanuaryC h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginInactive_JanuaryC h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginActive_JanuaryC input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_JanuaryC input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_JanuaryC {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 77%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .backgroundDiv_JanuaryC {
+    background-size: 250%;
+  }
+
+  .landingTitle_JanuaryC {
+    font-size: 24px;
+  }
+
+  .landingTitleButtonsDiv_JanuaryC button {
+    font-size: 12px;
+  }
+
+  .tabs_JanuaryC {
+    display: none;
+  }
+
+  .landingRecentlySharedLinksUncollapsed_JanuaryC {
+    display: none;
+  }
+
+  .landingLoginActive_JanuaryC {
+    left: -13%;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    transform: scale(0.8);
+    width: 320px;
+  }
+
+  .landingLoginActive_JanuaryC a {
+    margin-top: 80px;
+  }
+
+  .landingLoginInactive_JanuaryC a {
+    margin-top: 80px;
+  }
+
+  .landingLoginActive_JanuaryC button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginInactive_JanuaryC button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginActive_JanuaryC h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginInactive_JanuaryC h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginActive_JanuaryC input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_JanuaryC input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_JanuaryC {
+    left: -13%;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    transform: scale(0.8);
+    width: 320px;
+  }
 }
