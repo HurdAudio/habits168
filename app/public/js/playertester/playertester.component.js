@@ -36,9 +36,9 @@
       vm.aboutContainer = 'aboutContainerActive' + vm.playerMonth;
       vm.episodeContainer = 'episodeContainerInactive' + vm.playerMonth;
       vm.detailsContainer = 'detailsContainerInactive' + vm.playerMonth;
-      vm.aboutTabStatus = 'tabActive' + vm.playerMonth;
-      vm.episodeTabStatus = 'tabInactive' + vm.playerMonth;
-      vm.episodeDetailsTabStatus = 'tabInactive' + vm.playerMonth;
+      vm.aboutTabStatus = 'playerTabActive' + vm.playerMonth;
+      vm.episodeTabStatus = 'playerTabInactive' + vm.playerMonth;
+      vm.episodeDetailsTabStatus = 'playerTabInactive' + vm.playerMonth;
       vm.isCurrentEpisodeIndex = isCurrentEpisodeIndex;
       vm.userSwitchCurrentEpisode = userSwitchCurrentEpisode;
       vm.tabClick = tabClick;
@@ -154,10 +154,10 @@
       function tabClick(tab) {
         switch(tab) {
           case('about'):
-            if (vm.aboutTabStatus !== ('tabActive' + vm.playerMonth)) {
-              vm.aboutTabStatus = 'tabActive' + vm.playerMonth;
-              vm.episodeTabStatus = 'tabInactive' + vm.playerMonth;
-              vm.episodeDetailsTabStatus = 'tabInactive' + vm.playerMonth;
+            if (vm.aboutTabStatus !== ('playerTabActive' + vm.playerMonth)) {
+              vm.aboutTabStatus = 'playerTabActive' + vm.playerMonth;
+              vm.episodeTabStatus = 'playerTabInactive' + vm.playerMonth;
+              vm.episodeDetailsTabStatus = 'playerTabInactive' + vm.playerMonth;
               vm.aboutContainer = 'aboutContainerActive' + vm.playerMonth;
               vm.episodeContainer = 'episodeContainerInactive' + vm.playerMonth;
               vm.detailsContainer = 'detailsContainerInactive' + vm.playerMonth;
@@ -165,9 +165,9 @@
             break;
           case('episodes'):
             if (vm.episodeTabStatus !== ('tabAcitve' + vm.playerMonth)) {
-              vm.episodeTabStatus = 'tabActive' + vm.playerMonth;
-              vm.aboutTabStatus = 'tabInactive' + vm.playerMonth;
-              vm.episodeDetailsTabStatus = 'tabInactive' + vm.playerMonth;
+              vm.episodeTabStatus = 'playerTabActive' + vm.playerMonth;
+              vm.aboutTabStatus = 'playerTabInactive' + vm.playerMonth;
+              vm.episodeDetailsTabStatus = 'playerTabInactive' + vm.playerMonth;
               vm.aboutContainer = 'aboutContainerInactive' + vm.playerMonth;
               vm.episodeContainer = 'episodeContainerActive' + vm.playerMonth;
               vm.detailsContainer = 'detailsContainerInactive' + vm.playerMonth;
@@ -175,9 +175,9 @@
             break;
           case('details'):
             if (vm.episodeDetailsTabStatus !== ('tabAcitve' + vm.playerMonth)) {
-              vm.episodeDetailsTabStatus = 'tabActive' + vm.playerMonth;
-              vm.episodeTabStatus = 'tabInactive' + vm.playerMonth;
-              vm.aboutTabStatus = 'tabInactive' + vm.playerMonth;
+              vm.episodeDetailsTabStatus = 'playerTabActive' + vm.playerMonth;
+              vm.episodeTabStatus = 'playerTabInactive' + vm.playerMonth;
+              vm.aboutTabStatus = 'playerTabInactive' + vm.playerMonth;
               vm.aboutContainer = 'aboutContainerInactive' + vm.playerMonth;
               vm.episodeContainer = 'episodeContainerInactive' + vm.playerMonth;
               vm.detailsContainer = 'detailsContainerActive' + vm.playerMonth;

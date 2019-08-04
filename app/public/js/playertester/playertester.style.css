@@ -221,7 +221,7 @@
   z-index: 5;
 }
 
-.tabActive_JanuaryA {
+.playerTabActive_JanuaryA {
   border-right: solid 1px #040204;
   color: #040204;
   cursor: pointer;
@@ -232,7 +232,7 @@
   width: 15%;
 }
 
-.tabInactive_JanuaryA {
+.playerTabInactive_JanuaryA {
   border-left: solid 1px #040204;
   color: #040204;
   cursor: pointer;
@@ -908,13 +908,13 @@
     width: 150%;
   }
 
-  .tabActive_JanuaryA {
+  .playerTabActive_JanuaryA {
     font-size: 18px;
     padding: 4px 0 4px 3px;
     width: 30%;
   }
 
-  .tabInactive_JanuaryA {
+  .playerTabInactive_JanuaryA {
     font-size: 18px;
     padding: 4px 0 4px 3px;
     width: 30%;
@@ -1130,13 +1130,13 @@
     width: 150%;
   }
 
-  .tabActive_JanuaryA {
+  .playerTabActive_JanuaryA {
     font-size: 18px;
     padding: 4px 0 4px 3px;
     width: 30%;
   }
 
-  .tabInactive_JanuaryA {
+  .playerTabInactive_JanuaryA {
     font-size: 18px;
     padding: 4px 0 4px 3px;
     width: 30%;
@@ -1335,13 +1335,13 @@
     width: 150%;
   }
 
-  .tabActive_JanuaryA {
+  .playerTabActive_JanuaryA {
     font-size: 18px;
     padding: 4px 0 4px 3px;
     width: 30%;
   }
 
-  .tabInactive_JanuaryA {
+  .playerTabInactive_JanuaryA {
     font-size: 18px;
     padding: 4px 0 4px 3px;
     width: 30%;
@@ -1531,13 +1531,13 @@
     width: 150%;
   }
 
-  .tabActive_JanuaryA {
+  .playerTabActive_JanuaryA {
     font-size: 18px;
     padding: 4px 0 4px 3px;
     width: 30%;
   }
 
-  .tabInactive_JanuaryA {
+  .playerTabInactive_JanuaryA {
     font-size: 18px;
     padding: 4px 0 4px 3px;
     width: 30%;
@@ -1713,13 +1713,13 @@
     width: 150%;
   }
 
-  .tabActive_JanuaryA {
+  .playerTabActive_JanuaryA {
     font-size: 18px;
     padding: 4px 0 4px 3px;
     width: 30%;
   }
 
-  .tabInactive_JanuaryA {
+  .playerTabInactive_JanuaryA {
     font-size: 18px;
     padding: 4px 0 4px 3px;
     width: 30%;

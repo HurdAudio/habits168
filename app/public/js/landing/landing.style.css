@@ -190,7 +190,7 @@ body {
   cursor: pointer;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 30px;
-  width: 17%;
+  width: auto;
 }
 
 .tabRecentPost_JanuaryA {
@@ -198,7 +198,7 @@ body {
   cursor: pointer;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 30px;
-  width: 17%;
+  width: auto;
 }
 
 .tabActive_JanuaryA {
@@ -272,15 +272,21 @@ body {
   font-size: 30px;
   margin: 8px 8px 8px 8px;
   padding: 12px 0 8px 4px;
+  transform: skewX(-15deg);
+  transition: all 0.2s linear;
   width: 128px;
 }
 
 .landingTitleButtonsDiv_JanuaryA button:hover {
   background: #ccdcee;
+  transform: skewX(-10deg);
+  transition: all 0.2s linear;
 }
 
 .landingTitleButtonsDiv_JanuaryA button:active {
   border-color: #1e3847;
+  transform: skewX(-15deg);
+  transition: all 0.2s linear;
 }
 
 .landingFooter_JanuaryA {
@@ -387,8 +393,8 @@ body {
   margin: 8px 8px 8px 5%;
   opacity: 1;
   padding: 12px 0 8px 4px;
+  transform: scale(1) skew(-15deg);
   transition: all 0.8s linear;
-  transform: scale(1);
   width: 128px;
 }
 
@@ -402,16 +408,21 @@ body {
   margin: 8px 8px 8px 5%;
   opacity: 0;
   padding: 12px 0 8px 4px;
+  transform: scale(1) skew(-15deg);
   transition: all 0.8s linear;
   width: 128px;
 }
 
 .landingLoginActive_JanuaryA button:hover {
   filter: brightness(120%);
+  transform: skewX(-10deg);
+  transition: all 0.2s linear;
 }
 
 .landingLoginInactive_JanuaryA button:hover {
   filter: brightness(120%);
+  transform: skewX(-10deg);
+  transition: all 0.2s linear;
 }
 
 .landingLoginActive_JanuaryA a {
