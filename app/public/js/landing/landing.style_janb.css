@@ -15,9 +15,12 @@
 }
 
 .landingLogo_JanuaryB {
+  cursor: none;
+  filter: hue-rotate(0deg);
   height: 150px;
   margin: 10px 10px 20px 20px;
   opacity: 0.8;
+  transition: all 0.4s linear;
   width: 100px;
 }
 
@@ -44,20 +47,14 @@
   margin: 10px;
   padding: 14px;
   text-transform: uppercase;
-  transform: rotateY(0deg);
+  transform: rotateY(0deg) skewX(-15deg);
   transition: all 0.8s linear;
 }
 
 .landingTitleButtonsDiv_JanuaryB button:hover {
   filter: hue-rotate(180deg);
-  transform: rotateY(0deg);
+  transform: rotateY(0deg) skewX(-10deg);
   transition: all 0.8s linear;
-}
-
-.landingLogo_JanuaryB {
-  cursor: none;
-  filter: hue-rotate(0deg);
-  transition: all 0.4s linear;
 }
 
 .landingLogo_JanuaryB:hover {
@@ -261,15 +258,6 @@
   width: 75%;
 }
 
-.landingLoginInactive_JanuaryB input {
-  color: #0c1414;
-  font-family: 'Carme', sans-serif;
-  font-size: 24px;
-  padding: 1px 1px 1px 15px;
-  margin: 25px 5px 10px 45px;
-  width: 75%;
-}
-
 .landingLoginActive_JanuaryB button {
   background: #8baabc;
   border: none;
@@ -281,7 +269,13 @@
   margin: 10px 20px 10px 80px;
   padding: 14px;
   text-transform: uppercase;
-  transform: rotateY(0deg);
+  transform: rotateY(0deg) skewX(-15deg);
+  transition: all 0.8s linear;
+}
+
+.landingLoginActive_JanuaryB button:hover {
+  filter:    hue-rotate(180deg);
+  transform: rotateY(0deg) skewX(-10deg);
   transition: all 0.8s linear;
 }
 
@@ -296,7 +290,7 @@
   margin: 10px 20px 10px 80px;
   padding: 14px;
   text-transform: uppercase;
-  transform: rotateY(0deg);
+  transform: rotateY(0deg) skewX(-15deg);
   transition: all 0.8s linear;
 }
 
@@ -329,7 +323,7 @@
 
 .tabs_JanuaryB {
   display: flex;
-  flex-driection: row;
+  flex-direction: row;
   flex-wrap: wrap;
   height: 30px;
   justify-content: left;
