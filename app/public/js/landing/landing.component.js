@@ -32,6 +32,11 @@
       vm.recentShareTabClass = 'tabActive' + vm.monthSelect;
       vm.recentPostsTabClass = 'tabInactive' + vm.monthSelect;
       vm.toggleToRecentShares = toggleToRecentShares;
+      vm.navigateToUserHub = navigateToUserHub;
+
+      function navigateToUserHub() {
+        $state.go('userhub', {id: vm.user.uuid});
+      }
 
       function toggleToRecentPosts() {
         vm.linkshareCollapse = false;

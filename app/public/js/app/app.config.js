@@ -33,6 +33,12 @@
         url: '/playertester',
         parent: 'app',
         component: 'playertester'
+      })
+      .state({
+        name: 'userhub',
+        url: '/userhub/:id',
+        parent: 'app',
+        component: 'userhub'
       });
       // .state({
       //   name: 'emailconfirm',

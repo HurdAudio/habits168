@@ -420,7 +420,6 @@ router.post('/login', (req, res, next) => {
       }, '*')
       .then(()=>{
         res.send(result);
-        // TODO log successful login
         let logging = 'http://api.ipstack.com/' + ip + '?access_key=' + process.env.IPSTACK_KEY;
         request(logging, (err, _res, body) => {
           knex('logs')
@@ -440,6 +439,53 @@ router.post('/login', (req, res, next) => {
     }
   });
 
+});
+
+router.post('/resetsecurity', (req, res, next) => {
+  let key = nanoid();
+  let value = nanoid();
+  let expire = new Date();
+  expire.setDate(expire.getDate() + 3);
+
+  knex('users')
+  .where({uuid: req.body.uuid})
+  .first()
+  .update({
+    security: { "key": key, "value": value, "expire": expire},
+    email_reset: null
+  }, '*')
+  .then((result) => {
+    if (!result) {
+      let errorLogging = 'http://api.ipstack.com/' + req.body.ip + '?access_key=' +    process.env.IPSTACK_KEY;
+      request(errorLogging, (_error, _response, _body) => {
+        knex('logs')
+        .insert({
+          user_uuid: req.body.uuid,
+          action: 'FAIL: security variable reset denied: ' + req.body.uuid,
+          ip: req.body.ip,
+          ip_data: _body
+        }, '*')
+        .then(() => {
+          res.sendStatus(403);
+          return(next);
+        });
+      });
+    }
+    res.send(result);
+    let logging = 'http://api.ipstack.com/' + req.body.ip + '?access_key=' +    process.env.IPSTACK_KEY;
+    request(logging, (err, _res, body) => {
+      knex('logs')
+      .insert({
+        user_uuid: result.uuid,
+        action: 'Successful user reset security variables: ' + result[0].email,
+        ip: req.body.ip,
+        ip_data: body
+      }, '*')
+      .then(() => {
+        return(next);
+      });
+    })
+  })
 });
 
 router.get('/', (req, res, next) => {
