@@ -13,6 +13,590 @@
       const vm = this;
 
       vm.$onInit = onInit;
+      vm.monthSelect = '_JanuaryA';
+      vm.userLogout = userLogout;
+      vm.hubShareTabState = 'hubTabActive' + vm.monthSelect;
+      vm.hubReaderTabState = 'hubTabInactive' + vm.monthSelect;
+      vm.hubBloggerTabState = 'hubTabInactive' + vm.monthSelect;
+      vm.hubProfileTabState = 'hubTabInactive' + vm.monthSelect;
+      vm.hubTabStatus = 'hubShare' + vm.monthSelect;
+      vm.updateHubTab = updateHubTab;
+      vm.emojis = [
+        {
+          path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/001-zombie.svg',
+          value: '001-zombie'
+        },
+        {
+          path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/002-yelling.svg',
+          value: '002-yelling'
+        },
+        {
+          path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/003-muted.svg',
+          value: '003-muted'
+        },
+        {
+          path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/004-dead.svg',
+          value: '004-dead'
+        },
+        {
+          path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/005-surprised.svg',
+          value: '005-surprised'
+        },
+        {
+          path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/006-wondering.svg',
+          value: '006-wondering'
+        },
+        {
+          path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/007-wink-1.svg',
+          value: '007-wink-1'
+        },
+        {
+          path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/008-weird-1.svg',
+          value: '008-weird-1'
+        },
+        {
+          path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/009-weird.svg',
+          value: '009-weird'
+        },
+        {
+          path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/010-vomiting.svg',
+          value: '010-vomiting'
+        },
+        {
+          path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/011-alien.svg',
+          value: '011-alien'
+        },
+        {
+          path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/012-tongue.svg',
+          value: '012-tongue'
+        },
+        {
+          path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/013-sweating.svg',
+          value: '013-sweating'
+        },
+        {
+          path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/014-cool.svg',
+          value: '014-cool'
+        },
+        {
+          path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/015-straight.svg',
+          value: '015-straight'
+        },
+        {
+          path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/016-smile-1.svg',
+          value: '016-smile-1'
+        },
+        {
+          path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/017-sleeping.svg',
+          value: '017-sleeping'
+        },
+        {
+          path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/018-skull.svg',
+          value: '018-skull'
+        },
+        {
+          path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/019-shy.svg',
+          value: '019-shy'
+        },
+        {
+          path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/020-laughing-2.svg',
+          value: '020-laughing-2'
+        },
+        {
+          path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/021-quiet.svg',
+          value: '021-quiet'
+        },
+        {
+          path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/022-pirate.svg',
+          value: '022-pirate'
+        },
+        {
+          path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/023-nerd.svg',
+          value: '023-nerd'
+        },
+        {
+          path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/024-ninja.svg',
+          value: '024-ninja'
+        },
+        {
+          path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/025-money.svg',
+          value: '025-money'
+        },
+        {
+          path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/026-laughing-1.svg',
+          value: '026-laughing-1'
+        },
+        {
+          path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/027-sad.svg',
+          value: '027-sad'
+        },
+        {
+          path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/028-laughing.svg',
+          value: '028-laughing'
+        },
+        {
+          path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/029-kiss-1.svg',
+          value: '029-kiss-1'
+        },
+        {
+          path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/030-karate.svg',
+          value: '030-karate'
+        },
+          {
+          path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/031-in-love.svg',
+          value: '031-in-love'
+        },
+        {
+          path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/032-hipster.svg',
+          value: '032-hipster'
+        },
+        {
+          path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/033-hypnotized.svg',
+          value: '033-hypnotized'
+        },
+        {
+          path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/034-heart.svg',
+          value: '034-heart'
+        },
+        {
+          path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/035-headache.svg',
+          value: '035-headache'
+        },
+        {
+          path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/036-happy.svg',
+          value: '036-happy'
+        },
+        {
+          path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/037-wink.svg',
+          value: '037-wink'
+        },
+        {
+          path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/038-glitter.svg',
+          value: '038-glitter'
+        },
+        {
+          path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/039-kiss.svg',
+          value: '039-kiss'
+        },
+        {
+          path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/040-sick-1.svg',
+          value: '040-sick-1'
+        },
+        {
+        path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/041-sick.svg',
+        value: '041-sick'
+      },
+      {
+        path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/042-evil.svg',
+        value: '042-evil'
+      },
+      {
+        path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/043-drool.svg',
+        value: '043-drool'
+      },
+      {
+        path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/044-devil.svg',
+        value: '044-devil'
+      },
+      {
+        path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/045-cry-1.svg',
+        value: '045-cry-1'
+      },
+      {
+        path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/046-cry.svg',
+        value: '046-cry'
+      },
+      {
+        path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/047-broken-heart.svg',
+        value: '047-broken-heart'
+      },
+      {
+        path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/048-smile.svg',
+        value: '048-smile'
+      },
+      {
+        path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/049-confused.svg',
+        value: '049-confused'
+      },
+      {
+        path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/050-angel.svg',
+        value: '050-angel'
+      }
+      ];
+      vm.sharedContent = [
+        {
+          author: 'Walter Einenkel',
+          avatar_path: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/homerAvatar.jpg',
+          cleanDate: '2019 August 10 - 18:15:05',
+          comments: 'I guess "Greatest Healthcare System in the World" means liquidating lives in the name of profit.',
+          description: ' <p>Josh Wilkerson died on June 14, 2019, five days after suffering a series of strokes and slipping into a diabetic coma, at a North Virginia dog kennel where he worked as a manager making $16.50 an hour. Wilkerson was 27 years old. He and his fiancee, Rose Walters, were trying to save money to pay for their approaching wedding, and after aging out of eligibility for coverage under his father’s insurance, Wilkerson was having a terrible time trying to afford his insulin costs. According to his mother and his fiancee, Wilkerson had begun taking “human insulin,” a considerably cheaper, <a href="https://www.washingtonpost.com/local/he-lost-his-insurance-and-turned-to-cheaper-form-of-insulin-it-was-a-fatal-decision/2019/08/02/106ee79a-b24d-11e9-8f6c-7828e68cb15f_story.html" title="">“lower-grade medication.”</a></p> <p>The cost difference made the drug affordable for Wilkerson—the over-the-counter version of the drug is one-tenth the price of the more effective and unaffordable version. But doctors do not suggest it for all patients as a stopgap because it is less effective, and it is considerably slower at stabilizing one’s blood-sugar levels, taking hours longer to be effective than the prescription version.</p> <a href="http://www.dailykos.com/campaigns/petition/sign-the-petition-we-need-medicare-for-all" class="dk-action-link">Campaign Action</a> <p>Walters told The Washington Post that Wilkerson was working an overnight shift at the kennel to make more money. The two had FaceTimed one another before going to bed, at which point Wilkerson complained of stomach pains. Walters reminded him to take his medication, which he said he would do. Both Walters and Wilkerson have Type 1 diabetes, the genetically determined variant of the disease. When Wilkerson didn’t respond to a call the next morning, Walters ran over and found him unconscious on the floor, telling the paper, “I just remember smacking him on the face, saying, ‘Babe, wake up. You have to wake up.’”</p> <p>The tragedy of Josh Wilkerson’s death is that it was preventable. If Wilkerson had been able to afford his medicine, he would have been taking those lifesaving drugs. Wilkerson’s situation is not unique in our medicine-for-money country. At least <a href="https://www.dailykos.com/stories/2019/2/26/1837835/-t-least-25-of-diabetes-patients-rationing-insulin-as-drug-costs-continue-to-skyrocket" title="">25% of diabetes patients say that they ration their insulin medications</a> in order to make financial ends meet. This is a dangerous balance that people are forced to strike as the prices of<a href="https://www.dailykos.com/stories/2019/7/2/1868719/-Drug-prices-skyrocket-increasing-FIVE-TIMES-the-cost-of-inflation-in-2019" title=""> insulin (as well as most drug prices) in our country continue to skyrocket.</a></p> <p class="is-empty-p"></p> x<p>Cost of Insulin Pens:Ã¢Â€Â¢Norway: $0Ã¢Â€Â¢Scotland: $0Ã¢Â€Â¢Thailand: $5Ã¢Â€Â¢Australia: $28Ã¢Â€Â¢Mexico: $35Ã¢Â€Â¢Taiwan: $40Ã¢Â€Â¢Greece: $51Ã¢Â€Â¢Italy: $61Ã¢Â€Â¢Canada: $70Ã¢Â€Â¢Germany: $73.........Ã¢Â€Â¢United States: $700Americans are dying b/c politicians claim we can\'t afford <a href="https://twitter.com/hashtag/MedicareForAll?src=hash&amp;ref_src=twsrc%5Etfw">#MedicareForAll</a> <a href="https://t.co/dy1CgMnccL">https://t.co/dy1CgMnccL</a></p>Ã¢Â€Â” Qasim Rashid, Esq. (@QasimRashid) <a href="https://twitter.com/QasimRashid/status/1159115800848080896?ref_src=twsrc%5Etfw">August 7, 2019</a> <p>The fundamental issue is greed and a medical industry focused on profit over accessibility. Pharmaceutical companies <a href="https://www.dailykos.com/stories/2015/3/26/1373499/-Insulin-is-more-expensive-mostly-because-it-s-hard-to-make-money-on-the-cheaper-stuff" title="">cannot make money from cheap insulin, and stopped producing cheaper but effective alternatives decades ago.</a> This has led to the deaths of people such as Josh Wilkerson, trying to make ends meet and dying so that a company can show growing quarterly profits on its bank statements.</p> <p class="is-empty-p"></p> <img src="http://feeds.feedburner.com/~r/dailykosofficial/~4/LsTrrBPnK1w" height="1" width="1" alt=""> ',
+          enclosure: {
+            link: 'https://images.dailykos.com/images/704798/story_image/GettyImages-1127436186.jpg?1565195788'
+          },
+          first_name: 'DJ',
+          id: 0,
+          last_name: 'Ipsum',
+          link: 'http://feeds.dailykosmedia.com/~r/dailykosofficial/~3/LsTrrBPnK1w/-Young-man-dies-after-losing-his-insurance-and-turning-to-cheaper-form-of-insulin',
+          rss: 'https://news.ycombinator.com/rss',
+          select_reactions: false,
+          share_cleanDate: '2019 August 10 - 18:44:59',
+          share_comments: [
+            {
+              avatar: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/lovecraftAvatar.jpg',
+              cleanDate: '2019 August 11 - 09:02:04',
+              comment: 'Death by pharmacological greed. Disgusting.',
+              comment_reactions: [
+                {
+                  from: [ 'a48d70e3-005d-4def-a66e-afa5e2790670' ],
+                  hover_text: 'Bill Somebody',
+                  id: 0,
+                  hoverClass: 'hubShareReactionsHoverText' + vm.monthSelect,
+                  link: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/046-cry.svg',
+                  reaction: '046-cry',
+                  tally: 1,
+                  user_contributed: false
+                }
+              ],
+              id: 0,
+              name: 'Devin Hurd',
+              select_reactions: false
+            }
+          ],
+          share_reactions: [
+            {
+              from: [ '17917373-ee9c-46aa-a38a-cacc475abee7' ],
+              hover_text: 'Devin Hurd',
+              id: 0,
+              hoverClass: 'hubShareReactionsHoverText' + vm.monthSelect,
+              link: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/047-broken-heart.svg',
+              reaction: '047-broken-heart',
+              tally: 1,
+              user_contributed: true
+            },
+            {
+              from: [ '3df57491-588c-42df-8536-506722d08dd6', '1ae356b8-2cec-4106-8c31-2fd419939642', '83c4c779-d309-446f-8eb4-17fccb6bd2a8' ],
+              hover_text: 'DJ Ipsum, Craig Bell, Cheryl Pancake',
+              id: 1,
+              hoverClass: 'hubShareReactionsHoverText' + vm.monthSelect,
+              link: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/027-sad.svg',
+              reaction: '027-sad',
+              tally: 3,
+              user_contributed: false
+            },
+            {
+              from: [ '6283bf35-f38d-492e-b00f-474644a2f2b8', 'd779376f-828d-4c6d-98d8-afafdfb62311' ],
+              hover_text: 'Bill Smith, Everett Empathy',
+              id: 2,
+              hoverClass: 'hubShareReactionsHoverText' + vm.monthSelect,
+              link: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/004-dead.svg',
+              reaction: '004-dead',
+              tally: 2,
+              user_contributed: false
+            }
+          ],
+          source_description: 'Daily Kos: The Main Page.',
+          source_link: 'http://www.dailykos.com/blogs/main',
+          source_image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/daily-kos-squarelogo-1517554340259.png',
+          title: 'Young man dies after losing his insurance and turning to cheaper form of insulin',
+          updated_at: 'Sat Aug 10 2019 13:44:59 GMT-0600 (Mountain Daylight Time)'
+        },
+        {
+          author: '',
+          avatar_path: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/lovecraftAvatar.jpg',
+          cleanDate: '2019 August 11 - 17:15:06',
+          comments: 'Just in case you\'ve been wondering why I talk to myself all day... I mean I talk to Devin all day long.',
+          description: '<a href="https://news.ycombinator.com/item?id=20669171">Comments</a>',
+          enclosure: {
+            link: null
+          },
+          first_name: 'Devin',
+          id: 1,
+          last_name: 'Hurd',
+          link: 'https://aeon.co/ideas/why-speaking-to-yourself-in-the-third-person-makes-you-wiser',
+          rss: 'https://news.ycombinator.com/rss',
+          select_reactions: false,
+          share_cleanDate: '2019 August 11 - 12:29:20',
+          share_comments: [
+          ],
+          share_reactions: [
+          ],
+          source_description: 'Links for the intellectually curious, ranked by readers.',
+          source_link: 'https://news.ycombinator.com/',
+          source_image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/hacker-news-2-569388.png',
+          title: 'Speaking to yourself in the third person makes you wiser',
+          updated_at: 'Sat Aug 10 2019 13:44:59 GMT-0600 (Mountain Daylight Time)'
+        },
+        {
+          author: 'Elisabeth',
+          avatar_path: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/ashesAvatar.png',
+          cleanDate: '2019 August 10 - 21:33:50',
+          comments: 'Push Tar!!',
+          description: 'Dan Freeman, Director of the Brooklyn Digital Conservatory, uses a unique approach to performing with the Ableton Push.… <a class="more-link" href="http://www.synthtopia.com/content/2019/08/10/shredding-with-the-push-tar/">Read More <span class="screen-reader-text">Shredding With ‘The Push-tar’</span></a> ',
+          enclosure: {
+            link: null
+          },
+          first_name: 'Amet',
+          id: 2,
+          last_name: 'Tempor',
+          link: 'http://www.synthtopia.com/content/2019/08/10/shredding-with-the-push-tar/',
+          rss: 'http://www.synthtopia.com/feed',
+          select_reactions: false,
+          share_cleanDate: '2019 August 11 - 12:40:33',
+          share_comments: [
+          ],
+          share_reactions: [
+          ],
+          source_description: 'Synthesizer and electronic music news, synth and music software reviews and more!',
+          source_link: 'http://www.synthtopia.com/',
+          source_image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/press-synthtopia-logo.jpg',
+          title: 'Shredding With ‘The Push-tar’',
+          updated_at: 'Sat Aug 10 2019 13:44:59 GMT-0600 (Mountain Daylight Time)'
+        }
+      ];
+      vm.toggleEmojiSelector = toggleEmojiSelector;
+      vm.shareAddEmoji = shareAddEmoji;
+      vm.hubShareRemoveReaction = hubShareRemoveReaction;
+      vm.hubShareAdditionalReaction = hubShareAdditionalReaction;
+      vm.hoverOver = hoverOver;
+      vm.hoverOff = hoverOff;
+      vm.toggleCommentEmojiSelector = toggleCommentEmojiSelector;
+      vm.shareAddCommentEmoji = shareAddCommentEmoji;
+      vm.hubShareRemoveCommentReaction = hubShareRemoveCommentReaction;
+      vm.hubShareCommentAdditionalReaction = hubShareCommentAdditionalReaction;
+      vm.commentReactionHoverOver = commentReactionHoverOver;
+      vm.commentReactionHoverOff = commentReactionHoverOff;
+      vm.hubShareSubmitComment = hubShareSubmitComment;
+
+      function hubShareSubmitComment(articleIndex) {
+        let hubShareCommentTextArea = document.getElementById('hubShareCommentTextArea' + articleIndex);
+
+        if (hubShareCommentTextArea.value !== '') {
+          let months = [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ];
+          let index = vm.sharedContent[parseInt(articleIndex)].share_comments.length;
+          let now = new Date();
+          let minutes = '';
+          let seconds = '';
+          if (now.getMinutes() < 10) {
+            minutes = '0' + now.getMinutes();
+          } else {
+            minutes = now.getMinutes();
+          }
+          if (now.getSeconds() < 10) {
+            seconds = '0' + now.getSeconds();
+          } else {
+            seconds = now.getSeconds();
+          }
+          let cleanDate = now.getFullYear() + ' ' + months[now.getMonth()] + ' ' + now.getDate() + ' - ' + now.getHours() + ':' + minutes + ':' + seconds;
+          vm.sharedContent[parseInt(articleIndex)].share_comments.push({
+            avatar: vm.user.avatar_path,
+            cleanDate: cleanDate,
+            comment: hubShareCommentTextArea.value,
+            comment_reactions: [],
+            id: index,
+            name: vm.user.first_name + ' ' + vm.user.last_name,
+            select_reactions: false
+          });
+          hubShareCommentTextArea.value = '';
+        }
+      }
+
+      function commentReactionHoverOff(articleIndex, commentIndex, commentReactionIndex) {
+        vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[parseInt(commentReactionIndex)].hoverClass = 'hubShareReactionsHoverText' + vm.monthSelect;
+      }
+
+      function hoverOff(articleIndex, reactionIndex) {
+        vm.sharedContent[parseInt(articleIndex)].share_reactions[parseInt(reactionIndex)].hoverClass = 'hubShareReactionsHoverText' + vm.monthSelect;
+      }
+
+      function commentReactionHoverOver(articleIndex, commentIndex, commentReactionIndex) {
+        vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[parseInt(commentReactionIndex)].hoverClass = 'hubShareReactionsHoverTextHover' + vm.monthSelect;
+      }
+
+      function hoverOver(articleIndex, reactionIndex) {
+        vm.sharedContent[parseInt(articleIndex)].share_reactions[parseInt(reactionIndex)].hoverClass = 'hubShareReactionsHoverTextHover' + vm.monthSelect;
+      }
+
+      function hubShareCommentAdditionalReaction(articleIndex, commentIndex, commentReactionIndex) {
+        vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[parseInt(commentReactionIndex)].from.push(vm.user.uuid);
+        vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[parseInt(commentReactionIndex)].hover_text += ', ' + vm.user.first_name + ' ' + vm.user.last_name;
+        vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[parseInt(commentReactionIndex)].tally += 1;
+        vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[parseInt(commentReactionIndex)].user_contributed = true;
+      }
+
+      function hubShareAdditionalReaction(articleIndex, reactionIndex) {
+        vm.sharedContent[parseInt(articleIndex)].share_reactions[parseInt(reactionIndex)].from.push(vm.user.uuid);
+        vm.sharedContent[parseInt(articleIndex)].share_reactions[parseInt(reactionIndex)].hover_text += ', ' + vm.user.first_name + ' ' + vm.user.last_name;
+        vm.sharedContent[parseInt(articleIndex)].share_reactions[parseInt(reactionIndex)].tally += 1;
+        vm.sharedContent[parseInt(articleIndex)].share_reactions[parseInt(reactionIndex)].user_contributed = true;
+      }
+
+      function hubShareRemoveCommentReaction(articleIndex, commentIndex, commentReactionIndex) {
+        if (vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[parseInt(commentReactionIndex)].tally === 1) {
+          vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions.splice(parseInt(commentReactionIndex), 1);
+          for (let i = 0; i < m.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions.length; i++) {
+            m.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[i].id = i;
+          }
+        } else {
+          vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[parseInt(commentReactionIndex)].from.splice(vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[parseInt(commentReactionIndex)].from.indexOf(vm.user.uuid), 1);
+          vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[parseInt(commentReactionIndex)].tally -= 1;
+          vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[parseInt(commentReactionIndex)].user_contributed = false;
+          vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[parseInt(commentReactionIndex)].hover_text.replace(vm.user.first_name + ' ' + vm.user.last_name, '');
+        }
+      }
+
+      function hubShareRemoveReaction(articleIndex, path, value) {
+        let index = null;
+        for (let i = 0; i < vm.sharedContent[parseInt(articleIndex)].share_reactions.length; i++) {
+          if ((vm.sharedContent[parseInt(articleIndex)].share_reactions[i].link === path) && (vm.sharedContent[parseInt(articleIndex)].share_reactions[i].reaction === value)) {
+            index = i;
+          }
+        }
+        if (index !== null) {
+          if (vm.sharedContent[parseInt(articleIndex)].share_reactions[index].tally === 1) {
+            vm.sharedContent[parseInt(articleIndex)].share_reactions.splice(index, 1);
+            for (let j = 0; j < vm.sharedContent[parseInt(articleIndex)].share_reactions.length; j++) {
+              vm.sharedContent[parseInt(articleIndex)].share_reactions[j].id = j;
+            }
+          } else {
+            let nameString = vm.user.first_name + ' ' + vm.user.last_name;
+            vm.sharedContent[parseInt(articleIndex)].share_reactions[index].from.splice(vm.sharedContent[parseInt(articleIndex)].share_reactions[index].from.indexOf(vm.user.uuid), 1);
+            if (vm.sharedContent[parseInt(articleIndex)].share_reactions[index].hover_text.indexOf(nameString) === 0) {
+              vm.sharedContent[parseInt(articleIndex)].share_reactions[index].hover_text.replace(nameString, '');
+            } else {
+               vm.sharedContent[parseInt(articleIndex)].share_reactions[index].hover_text.replace(', ' + nameString, '');
+            }
+            vm.sharedContent[parseInt(articleIndex)].share_reactions[index].tally -= 1;
+            vm.sharedContent[parseInt(articleIndex)].share_reactions[index].user_contributed = false;
+          }
+        }
+      }
+
+      function shareAddCommentEmoji(articleIndex, commentIndex, path, value) {
+        let existing = false;
+
+        for (let i = 0; i < vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions.length; i++) {
+          if ((vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[i].link === path) && (vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[i].reaction === value)) {
+            existing = true;
+            if (vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[i].from.indexOf(vm.user.uuid) !== -1) {
+              toggleCommentEmojiSelector(articleIndex, commentIndex);
+              return;
+            }
+            vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[i].tally += 1;
+            vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[i].user_contributed = true;
+            vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[i].from.push(vm.user.uuid);
+            vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[i].hover_text += ', ' + vm.user.first_name + ' ' + vm.user.last_name;
+          }
+        }
+        if (!existing) {
+          let index = vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions.length;
+          vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions.push({
+            from: [ vm.user.uuid ],
+            hover_text: vm.user.first_name + ' ' + vm.user.last_name,
+            hoverClass: 'hubShareReactionsHoverText' + vm.monthSelect,
+            id: index,
+            link: path,
+            reaction: value,
+            tally: 1,
+            user_contributed: true
+          });
+        }
+        toggleCommentEmojiSelector(articleIndex, commentIndex);
+      }
+
+      function shareAddEmoji(articleIndex, path, value) {
+        let existing = false;
+
+        for (let i = 0; i < vm.sharedContent[parseInt(articleIndex)].share_reactions.length; i++) {
+          if ((vm.sharedContent[parseInt(articleIndex)].share_reactions[i].link === path) && (vm.sharedContent[parseInt(articleIndex)].share_reactions[i].reaction === value)) {
+            existing = true;
+            if (vm.sharedContent[parseInt(articleIndex)].share_reactions[i].from.indexOf(vm.user.uuid) !== -1) {
+              toggleEmojiSelector(articleIndex);
+              return;
+            }
+            vm.sharedContent[parseInt(articleIndex)].share_reactions[i].tally += 1;
+            vm.sharedContent[parseInt(articleIndex)].share_reactions[i].user_contributed = true;
+            vm.sharedContent[parseInt(articleIndex)].share_reactions[i].from.push(vm.user.uuid);
+            vm.sharedContent[parseInt(articleIndex)].share_reactions[i].hover_text += ', ' + vm.user.first_name + ' ' + vm.user.last_name;
+          }
+        }
+        if (!existing) {
+          let index = vm.sharedContent[parseInt(articleIndex)].share_reactions.length;
+          vm.sharedContent[parseInt(articleIndex)].share_reactions.push({
+            from: [ vm.user.uuid ],
+            hover_text: vm.user.first_name + ' ' + vm.user.last_name,
+            hoverClass: 'hubShareReactionsHoverText' + vm.monthSelect,
+            id: index,
+            link: path,
+            reaction: value,
+            tally: 1,
+            user_contributed: true
+          });
+        }
+        toggleEmojiSelector(articleIndex);
+      }
+
+      function toggleEmojiSelector(articleIndex) {
+        vm.sharedContent[parseInt(articleIndex)].select_reactions = !vm.sharedContent[parseInt(articleIndex)].select_reactions;
+      }
+
+      function toggleCommentEmojiSelector(articleIndex, commentIndex) {
+        vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].select_reactions = !vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].select_reactions;
+      }
+
+      function updateHubTab(state) {
+        if (state === 'shared') {
+          if (vm.hubTabStatus !== 'hubShare' + vm.monthSelect) {
+            vm.hubShareTabState = 'hubTabActive' + vm.monthSelect;
+            vm.hubReaderTabState = 'hubTabInactive' + vm.monthSelect;
+            vm.hubBloggerTabState = 'hubTabInactive' + vm.monthSelect;
+            vm.hubProfileTabState = 'hubTabInactive' + vm.monthSelect;
+            vm.hubTabStatus = 'hubShare' + vm.monthSelect;
+          }
+        }
+        if (state === 'reader') {
+          if (vm.hubTabStatus !== 'hubReader' + vm.monthSelect) {
+            vm.hubShareTabState = 'hubTabInactive' + vm.monthSelect;
+            vm.hubReaderTabState = 'hubTabActive' + vm.monthSelect;
+            vm.hubBloggerTabState = 'hubTabInactive' + vm.monthSelect;
+            vm.hubProfileTabState = 'hubTabInactive' + vm.monthSelect;
+            vm.hubTabStatus = 'hubReader' + vm.monthSelect;
+          }
+        }
+        if (state === 'blogs') {
+          if (vm.hubTabStatus !== 'hubBlogs' + vm.monthSelect) {
+            vm.hubShareTabState = 'hubTabInactive' + vm.monthSelect;
+            vm.hubReaderTabState = 'hubTabInactive' + vm.monthSelect;
+            vm.hubBloggerTabState = 'hubTabActive' + vm.monthSelect;
+            vm.hubProfileTabState = 'hubTabInactive' + vm.monthSelect;
+            vm.hubTabStatus = 'hubBlogs' + vm.monthSelect;
+          }
+        }
+        if (state === 'profile') {
+          if (vm.hubTabStatus !== 'hubProfile' + vm.monthSelect) {
+            vm.hubShareTabState = 'hubTabInactive' + vm.monthSelect;
+            vm.hubReaderTabState = 'hubTabInactive' + vm.monthSelect;
+            vm.hubBloggerTabState = 'hubTabInactive' + vm.monthSelect;
+            vm.hubProfileTabState = 'hubTabActive' + vm.monthSelect;
+            vm.hubTabStatus = 'hubProfile' + vm.monthSelect;
+          }
+        }
+      }
+
+      function userLogout() {
+        $http.post('/users/logout', {})
+        .then(resultData => {
+          let result = resultData.data;
+          if (result.session === 'cleared') {
+            let storage = window.localStorage;
+            storage.removeItem(vm.user.security.key);
+            document.cookie = vm.user.security.key + "=;expires=Thu, 01 Jan 1970 00:00:01 GMT;";
+            vm.user = null;
+            vm.userLoggedIn = false;
+            clearCookiesAndStorage();
+            $state.go('landing');
+          }
+        });
+      }
 
       function navigateToLanding() {
         $state.go('landing');
@@ -47,8 +631,6 @@
 
       function resetSecuritySettings() {
         let oldKey = vm.user.security.key;
-        let oldValue = vm.user.security.value;
-        let oldExpiration = vm.user.security.expire;
 
         let storage = window.localStorage;
         let now = new Date();
@@ -160,6 +742,20 @@
         console.log("User Hub is lit");
         console.log($stateParams.id);
         setUserIPAddress();
+
+        switch (vm.monthSelect) {
+          case('_JanuaryA'):
+            vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/robe-154808_640.png';
+            break;
+          case('_JanuaryB'):
+            vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/nun-4018982_1280.png'
+            break;
+          case('_JanuaryC'):
+          vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/job-3506038_1280.png';
+            break;
+          default:
+            alert('UNSUPPORTED MONTH SELECT for LOGO');
+        }
 
       }
 

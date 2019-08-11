@@ -1,0 +1,443 @@
+.hubBackgroundDiv_JanuaryA {
+  background: url(https://habits168-hurdaudio.s3.amazonaws.com/hub/january/daniel-born-4JLB7Bp8W_w-unsplash.jpg);
+  background-size: 100%;
+  filter: brightness(100%);
+  height: 100%;
+  left: 0;
+  opacity: 0.9;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.hubTitleFlex_JanuaryA {
+  background: #8aaeba;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: 'Markazi Text', serif;
+  height: 12vh;
+  justify-content: flex-start;
+  opacity: 0.9;
+  width: 100%;
+}
+
+.hubLogo_JanuaryA {
+  height: 72px;
+  margin: 16px 4px 16px 48px;
+  opacity: 0.5;
+  width: 5%;
+}
+
+.hubTitleDiv_JanuaryA {
+  padding: 32px 4px 16px 24px;
+}
+
+.hubTitle_JanuaryA {
+  color: #08252e;
+  font-family: 'Markazi Text', serif;
+  font-size: 72px;
+  font-weight: bolder;
+}
+
+.hubSignoutDiv_JanuaryA {
+  padding: 2vh 40px;
+  position: fixed;
+  right: 0;
+}
+
+.hubSignoutButton_JanuaryA {
+  background: #32728e;
+  border: none;
+  color: #e3e6eb;
+  cursor: pointer;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  transform: skewX(-15deg);
+  transition: all 0.4s linear;
+}
+
+.hubSignoutButton_JanuaryA:hover {
+  background: #cddbe7;
+  color: #08252e;
+  transform: skewX(-5deg);
+  transtion: all 0.4s linear;
+}
+
+.hubTabsBar_JanuaryA {
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: 'Markazi Text', serif;
+  height: 5vh;
+  justify-content: flex-start;
+  padding: 0 10%;
+  width: 100%;
+}
+
+.hubTabActive_JanuaryA {
+  color: #08252e;
+  padding: 0 0 0 15px;
+  width: 15%;
+  z-index: 0;
+}
+
+.hubTabInactive_JanuaryA {
+  color: #e3e6eb;
+  cursor: pointer;
+  padding: 0 0 0 15px;
+  width: 15%;
+  z-index: 10;
+}
+
+.hubTabLabel_JanuaryA {
+  font-family: 'Markazi Text', serif;
+  font-size: 36px;
+}
+
+.hubTabInactive_JanuaryA p {
+  cursor: pointer;
+  z-index: 8;
+}
+
+.hubTabActive_JanuaryA p {
+  cursor: none;
+  z-index: 0;
+}
+
+.hubShare_JanuaryA {
+  background: #8aaeba;
+  height: 5vh;
+  left: 10%;
+  position: absolute;
+  top: 12vh;
+  transition: all 0.6s;
+  transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+  width: 16%;
+}
+
+.hubReader_JanuaryA {
+  background: #8aaeba;
+  height: 5vh;
+  left: 26%;
+  position: absolute;
+  top: 12vh;
+  transition: all 0.6s;
+  transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+  width: 16%;
+}
+
+.hubBlogs_JanuaryA {
+  background: #8aaeba;
+  height: 5vh;
+  left: 42%;
+  position: absolute;
+  top: 12vh;
+  transition: all 0.6s;
+  transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+  width: 16%;
+}
+
+.hubProfile_JanuaryA {
+  background: #8aaeba;
+  height: 5vh;
+  left: 58%;
+  position: absolute;
+  top: 12vh;
+  transition: all 0.6s;
+  transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+  width: 16%;
+}
+
+.hubContentContainer_JanuaryA {
+  height: 81vh;
+  width: 100%;
+}
+
+.hubShareDashboard_JanuaryA {
+  background-image: radial-gradient(#c1d0da, #cddbe7, #e3e6eb);
+  height: 81vh;
+  opacity: 0.9;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 105%;
+}
+
+.hubReaderDashboard_JanuaryA {
+  background-image: radial-gradient(#263444, #142d38, #08252e);
+  height: 81vh;
+  opacity: 0.9;
+  width: 100%;
+}
+
+.hubBlogsDashboard_JanuaryA {
+  background-image: radial-gradient(#6182ab, #32728e, #155d75);
+  height: 81vh;
+  opacity: 0.9;
+  width: 100%;
+}
+
+.hubProfileDashboard_JanuaryA {
+  background-image: radial-gradient(#b0c1d5, #99b9c7, #8aaeba);
+  height: 81vh;
+  opacity: 0.9;
+  width: 100%;
+}
+
+.hubShareContainer_JanuaryA {
+  display: inline-block;
+  height: auto;
+  margin: 1vh 0;
+  width: 96%;
+}
+
+.hubShareByline_JanuaryA {
+  border-right: 1px solid #08252e;
+  float: left;
+  max-width: 20%;
+  padding: 5vh 3% 15px 3%;
+
+}
+
+.hubShareBylineAvatar_JanuaryA {
+  width: 20%;
+}
+
+.hubBylineName_JanuaryA {
+  color: #08252e;
+  font-family: 'Markazi Text', serif;
+  font-size: 30px;
+  margin: 5px 0 35px 0;
+}
+
+.hubShareComments_JanuaryA {
+  color: #08252e;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+}
+
+.hubShareBody_JanuaryA {
+  border-left: 1px solid #08252e;
+  float: left;
+  height: auto;
+  max-width: 750px;
+  padding: 0 1%;
+  width: 70%;
+}
+
+.hubShareSourceIcon_JanuaryA {
+  float: left;
+  max-width: 50px;
+}
+
+.hubShareViaDescription_JanuaryA {
+  float: left;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  margin: 30px 0 0 30px;
+}
+
+.hubShareBody_JanuaryA a {
+  color: #32728e;
+  text-decoration: none;
+}
+
+.hubShareBody_JanuaryA a:visited {
+  color: #4f5256;
+}
+
+.hubShareBody_JanuaryA a:hover {
+  color: #155d75;
+}
+
+.hubShareHeadline_JanuaryA {
+  font-family: 'Markazi Text', serif;
+  font-size: 48px;
+}
+
+.hubShareArticleImage_JanuaryA {
+  max-width: 60%;
+}
+
+.hubSharePostTimestamp_JanuaryA {
+  color: #08252e;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+}
+
+.hubShareAuthor_JanuaryA {
+  color: #08252e;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.hubShareDescription_JanuaryA {
+  color: #08252e;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  margin: 30px 0;
+}
+
+.hubSharedAt_JanuaryA {
+  color: #08252e;
+  font-family: 'Markazi Text', serif;
+  font-size: 18px;
+  margin: 0 0 5px 0;
+}
+
+.hubShareReactions_JanuaryA {
+  padding: 10px 5px;
+  width: 100%;
+}
+
+.hubShareReactionEmoji_JanuaryA {
+  float: left;
+  margin: 3px 10px 11px 2px;
+  width: 22%;
+}
+
+.hubShareReactionTally_JanuaryA {
+  color: #08252e;
+  float: left;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  margin: 3px 2px 11px 10px;
+}
+
+.hubShareReactionDelete_JanuaryA {
+  color: #08252e;
+  cursor: pointer;
+  /* float: left; */
+  font-family: 'Markazi Text', serif;
+  font-size: 18px;
+  margin: 3px 17px 11px 0;
+}
+
+.hubReactionGestalt_JanuaryA {
+  float: left;
+  margin: 5px;
+  width: 28%;
+}
+
+.hubShareAddReactionDiv_JanuaryA {
+  background: #c1d0da;
+  border: 2px solid #142d38;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: auto;
+  justify-content: flex-start;
+  position: relative;
+  width: 350px;
+}
+
+.hubShareAddReactionDiv_JanuaryA img {
+  cursor: pointer;
+  margin: 4px;
+  width: 30px;
+}
+
+.hubShareAddReactionsToggle_JanuaryA {
+  padding: 0 0 5px 45%;
+  width: 100%;
+}
+
+.hubShareAddReactionsToggle_JanuaryA p {
+  color: #08252e;
+  cursor: pointer;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+}
+
+.hubShareReactionsHoverText_JanuaryA {
+  background: #32728e;
+  bottom: 10%;
+  color: #e3e6eb;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  max-width: 180px;
+  opacity: 0;
+  padding: 3px;
+  position: absolute;
+  transform: translateX(-80px) translateY(-20px);
+  transition: all 0.5s linear;
+  z-index: -10;
+}
+
+.hubShareReactionsHoverTextHover_JanuaryA {
+  background: #32728e;
+  bottom: 10%;
+  color: #e3e6eb;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  max-width: 180px;
+  opacity: 1;
+  padding: 3px;
+  position: absolute;
+  transform: translateX(-80px) translateY(-20px);
+  transition: all 0.5s linear;
+  z-index: 10;
+}
+
+.hubShareCommentsLabel_JanuaryA {
+  color: #08252e;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  margin: 40px 80% 5px 0;
+}
+
+.hubShareCommenterAvatar_JanuaryA {
+  float: left;
+  max-width: 30px;
+}
+
+.hubShareCommenterName_JanuaryA {
+  color: #08252e;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  position: relative;
+  transform: translateX(7px) translateY(13px);
+
+}
+
+.hubShareCommentDateStamp_JanuaryA {
+  color: #08252e;
+  font-family: 'Markazi Text', serif;
+  font-size: 18px;
+}
+
+.hubShareCommentComment_JanuaryA {
+  color: #08252e;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+}
+
+.hubShareNewComments_JanuaryA p {
+  color: #08252e;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  margin: 40px 60% 5px 0;
+}
+
+.hubShareCommentTextArea_JanuaryA {
+  background: #b0c1d5;
+  border: none;
+  color: #08252e;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  width: 100%;
+}
+
+.hubShareNewComments_JanuaryA button {
+  margin: 1px 35% 1px 35%;
+}
+.hubShareCommenterFields_JanuaryA {
+  display: inline-block;
+  width: 100%;
+}
