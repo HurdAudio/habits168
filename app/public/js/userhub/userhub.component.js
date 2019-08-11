@@ -366,6 +366,108 @@
       vm.commentReactionHoverOver = commentReactionHoverOver;
       vm.commentReactionHoverOff = commentReactionHoverOff;
       vm.hubShareSubmitComment = hubShareSubmitComment;
+      vm.todayIs = '';
+      vm.weekToggle = 'off';
+      vm.hubWeekToggle = hubWeekToggle;
+      vm.subscriptionToggle = 'off';
+      vm.toggleSubscriptionManagement = toggleSubscriptionManagement;
+      vm.day1ToggleState = 'hubReaderDay1BlockInactive' + vm.monthSelect;
+      vm.day2ToggleState = 'hubReaderDay2BlockInactive' + vm.monthSelect;
+      vm.day3ToggleState = 'hubReaderDay3BlockInactive' + vm.monthSelect;
+      vm.day4ToggleState = 'hubReaderDay4BlockInactive' + vm.monthSelect;
+      vm.day5ToggleState = 'hubReaderDay5BlockInactive' + vm.monthSelect;
+      vm.day6ToggleState = 'hubReaderDay6BlockInactive' + vm.monthSelect;
+      vm.externalsBlockToggleStatus = 'hubReaderDay1BlockInactive' + vm.monthSelect;
+      vm.dailiesBlockToggleStatus = 'hubReaderDay2BlockInactive' + vm.monthSelect;
+      vm.browseFeedsBlockToggleStatus = 'hubReaderDay3BlockInactive' + vm.monthSelect;
+      vm.sharedBlockToggleStatus = 'hubReaderDay4BlockInactive' + vm.monthSelect;
+      vm.savedBlockToggleStatus = 'hubReaderDay5BlockInactive' + vm.monthSelect;
+      vm.miscBlockToggleStatus = 'hubReaderDay6BlockInactive' + vm.monthSelect;
+
+      function toggleSubscriptionManagement() {
+        if (vm.subscriptionToggle === 'off') {
+          vm.subscriptionToggle = 'on';
+          vm.externalsBlockToggleStatus = 'hubReaderDay1BlockActive' + vm.monthSelect;
+          vm.dailiesBlockToggleStatus = 'hubReaderDay2BlockActive' + vm.monthSelect;
+          vm.browseFeedsBlockToggleStatus = 'hubReaderDay3BlockActive' + vm.monthSelect;
+          vm.sharedBlockToggleStatus = 'hubReaderDay4BlockActive' + vm.monthSelect;
+          vm.savedBlockToggleStatus = 'hubReaderDay5BlockActive' + vm.monthSelect;
+          vm.miscBlockToggleStatus = 'hubReaderDay6BlockActive' + vm.monthSelect;
+        } else {
+          vm.subscriptionToggle = 'off';
+          vm.externalsBlockToggleStatus = 'hubReaderDay1BlockInactive' + vm.monthSelect;
+          vm.dailiesBlockToggleStatus = 'hubReaderDay2BlockInactive' + vm.monthSelect;
+          vm.browseFeedsBlockToggleStatus = 'hubReaderDay3BlockInactive' + vm.monthSelect;
+          vm.sharedBlockToggleStatus = 'hubReaderDay4BlockInactive' + vm.monthSelect;
+          vm.savedBlockToggleStatus = 'hubReaderDay5BlockInactive' + vm.monthSelect;
+          vm.miscBlockToggleStatus = 'hubReaderDay6BlockInactive' + vm.monthSelect;
+        }
+      }
+
+      function hubWeekToggle() {
+        if (vm.weekToggle === 'off') {
+          vm.weekToggle = 'on';
+          vm.day1ToggleState = 'hubReaderDay1BlockActive' + vm.monthSelect;
+          vm.day2ToggleState = 'hubReaderDay2BlockActive' + vm.monthSelect;
+          vm.day3ToggleState = 'hubReaderDay3BlockActive' + vm.monthSelect;
+          vm.day4ToggleState = 'hubReaderDay4BlockActive' + vm.monthSelect;
+          vm.day5ToggleState = 'hubReaderDay5BlockActive' + vm.monthSelect;
+          vm.day6ToggleState = 'hubReaderDay6BlockActive' + vm.monthSelect;
+        } else {
+          vm.weekToggle = 'off';
+          vm.day1ToggleState = 'hubReaderDay1BlockInactive' + vm.monthSelect;
+          vm.day2ToggleState = 'hubReaderDay2BlockInactive' + vm.monthSelect;
+          vm.day3ToggleState = 'hubReaderDay3BlockInactive' + vm.monthSelect;
+          vm.day4ToggleState = 'hubReaderDay4BlockInactive' + vm.monthSelect;
+          vm.day5ToggleState = 'hubReaderDay5BlockInactive' + vm.monthSelect;
+          vm.day6ToggleState = 'hubReaderDay6BlockInactive' + vm.monthSelect;
+        }
+      }
+
+      function setDaysRelativeToToday() {
+        let days = [ 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday' ];
+        let now = new Date();
+
+        vm.day0 = days[now.getDay()];
+        vm.day1 = days[(now.getDay() + 1) % 7];
+        vm.day2 = days[(now.getDay() + 2) % 7];
+        vm.day3 = days[(now.getDay() + 3) % 7];
+        vm.day4 = days[(now.getDay() + 4) % 7];
+        vm.day5 = days[(now.getDay() + 5) % 7];
+        vm.day6 = days[(now.getDay() + 6) % 7];
+      }
+
+      function setTodayString() {
+        let now = new Date();
+        let str = '';
+        let days = [ 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday' ];
+        let months = [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ];
+        let hour = '';
+        let minute = '';
+        let seconds = '';
+        if (now.getHours() < 10) {
+          hour += '0';
+        }
+        hour += now.getHours() + ':';
+        if (now.getMinutes() < 10) {
+          minute += '0';
+        }
+        minute += now.getMinutes() + ':';
+        if (now.getSeconds() < 10) {
+          seconds += '0';
+        }
+        seconds += now.getSeconds();
+        vm.todayIs = str + days[now.getDay()] + ', ' + now.getFullYear() + ' ' + months[now.getMonth()] + ' ' + now.getDate() + ' - ' + hour + minute + seconds;
+        if (document.getElementById('todayIs')) {
+          document.getElementById('todayIs').innerHTML = vm.todayIs;
+        }
+        setTimeout(() => {
+
+          if (vm.hubReaderTabState === ('hubTabActive' + vm.monthSelect)) {
+            setTodayString();
+          }
+        }, 1000);
+      }
 
       function hubShareSubmitComment(articleIndex) {
         let hubShareCommentTextArea = document.getElementById('hubShareCommentTextArea' + articleIndex);
@@ -560,6 +662,7 @@
             vm.hubBloggerTabState = 'hubTabInactive' + vm.monthSelect;
             vm.hubProfileTabState = 'hubTabInactive' + vm.monthSelect;
             vm.hubTabStatus = 'hubReader' + vm.monthSelect;
+            setTodayString();
           }
         }
         if (state === 'blogs') {
@@ -756,6 +859,8 @@
           default:
             alert('UNSUPPORTED MONTH SELECT for LOGO');
         }
+
+        setDaysRelativeToToday();
 
       }
 

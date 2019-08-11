@@ -127,7 +127,99 @@
 
   </div>
 
-  <div class="hubReaderDashboard{{$ctrl.monthSelect}}" ng-if="$ctrl.hubTabStatus === ('hubReader' + $ctrl.monthSelect)"></div>
+  <div class="hubReaderDashboard{{$ctrl.monthSelect}}" ng-if="$ctrl.hubTabStatus === ('hubReader' + $ctrl.monthSelect)">
+
+    <div class="hubTodayIsDiv{{$ctrl.monthSelect}}">
+
+      <p class="hubTodayIsDisplay{{$ctrl.monthSelect}}" id="todayIs">{{$ctrl.todayIs}}</p>
+    </div>
+    <div class="hubReaderWeekly{{$ctrl.monthSelect}}">
+      <div class="hubReaderTodayBlock{{$ctrl.monthSelect}}">
+
+        <p class="hubReaderTodayLabel{{$ctrl.monthSelect}}">Today</p>
+        <button class="hubReaderDayButton{{$ctrl.monthSelect}}">{{$ctrl.day0}}</button>
+        <button class="hubReaderWeekButton{{$ctrl.monthSelect}}" ng-click="$ctrl.hubWeekToggle()">week</button>
+      </div>
+      <div class="{{$ctrl.day1ToggleState}}">
+
+        <p class="hubReaderTodayLabel{{$ctrl.monthSelect}}">Tomorrow</p>
+        <button class="hubReaderDayButton{{$ctrl.monthSelect}}">{{$ctrl.day1}}</button>
+      </div>
+      <div class="{{$ctrl.day2ToggleState}}">
+
+        <p class="hubReaderBlankLabel{{$ctrl.monthSelect}}">blank</p>
+        <button class="hubReaderDayButton{{$ctrl.monthSelect}}">{{$ctrl.day2}}</button>
+      </div>
+      <div class="{{$ctrl.day3ToggleState}}">
+
+        <p class="hubReaderBlankLabel{{$ctrl.monthSelect}}">blank</p>
+        <button class="hubReaderDayButton{{$ctrl.monthSelect}}">{{$ctrl.day3}}</button>
+      </div>
+      <div class="{{$ctrl.day4ToggleState}}">
+
+        <p class="hubReaderBlankLabel{{$ctrl.monthSelect}}">blank</p>
+        <button class="hubReaderDayButton{{$ctrl.monthSelect}}">{{$ctrl.day4}}</button>
+      </div>
+      <div class="{{$ctrl.day5ToggleState}}">
+
+        <p class="hubReaderBlankLabel{{$ctrl.monthSelect}}">blank</p>
+        <button class="hubReaderDayButton{{$ctrl.monthSelect}}">{{$ctrl.day5}}</button>
+      </div>
+      <div class="{{$ctrl.day6ToggleState}}">
+
+        <p class="hubReaderBlankLabel{{$ctrl.monthSelect}}">blank</p>
+        <button class="hubReaderDayButton{{$ctrl.monthSelect}}">{{$ctrl.day6}}</button>
+      </div>
+
+    </div>
+
+    <div class="hubReaderManagementRow{{$ctrl.monthSelect}}">
+
+      <div class="hubReaderTodayBlock{{$ctrl.monthSelect}}">
+
+        <p class="hubReaderTodayLabel{{$ctrl.monthSelect}}">Subscriptions:</p>
+        <button class="hubReaderDayButton{{$ctrl.monthSelect}}">manage</button>
+        <button class="hubReaderWeekButton{{$ctrl.monthSelect}}" ng-click="$ctrl.toggleSubscriptionManagement()">more</button>
+      </div>
+
+      <div class="{{$ctrl.externalsBlockToggleStatus}}">
+
+        <p class="hubReaderBlankLabel{{$ctrl.monthSelect}}">Blank</p>
+        <button class="hubReaderDayButton{{$ctrl.monthSelect}}">externals</button>
+
+      </div>
+      <div class="{{$ctrl.dailiesBlockToggleStatus}}">
+
+        <p class="hubReaderBlankLabel{{$ctrl.monthSelect}}">Blank</p>
+        <button class="hubReaderDayButton{{$ctrl.monthSelect}}">dailies</button>
+
+      </div>
+      <div class="{{$ctrl.browseFeedsBlockToggleStatus}}">
+
+        <p class="hubReaderBlankLabel{{$ctrl.monthSelect}}">Blank</p>
+        <button class="hubReaderDayButton{{$ctrl.monthSelect}}">browse feeds</button>
+
+      </div>
+      <div class="{{$ctrl.sharedBlockToggleStatus}}">
+
+        <p class="hubReaderBlankLabel{{$ctrl.monthSelect}}">Blank</p>
+        <button class="hubReaderDayButton{{$ctrl.monthSelect}}">shared</button>
+
+      </div>
+      <div class="{{$ctrl.savedBlockToggleStatus}}">
+
+        <p class="hubReaderBlankLabel{{$ctrl.monthSelect}}">Blank</p>
+        <button class="hubReaderDayButton{{$ctrl.monthSelect}}">saved</button>
+
+      </div>
+      <div class="{{$ctrl.miscBlockToggleStatus}}">
+
+        <p class="hubReaderBlankLabel{{$ctrl.monthSelect}}">Blank</p>
+        <button class="hubReaderDayButton{{$ctrl.monthSelect}}">recommended</button>
+
+      </div>
+    </div>
+  </div>
 
   <div class="hubBlogsDashboard{{$ctrl.monthSelect}}" ng-if="$ctrl.hubTabStatus === ('hubBlogs' + $ctrl.monthSelect)"></div>
 
