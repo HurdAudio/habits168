@@ -1,227 +1,286 @@
 <div class="hubBackgroundDiv{{$ctrl.monthSelect}}"></div>
 
-<div class="hubTitleFlex{{$ctrl.monthSelect}}">
+<div class="{{$ctrl.backgroundStatus}}">
+  <div class="hubTitleFlex{{$ctrl.monthSelect}}">
 
-  <img class="hubLogo{{$ctrl.monthSelect}}" src="{{$ctrl.logoPath}}">
-  <div class="hubTitleDiv{{$ctrl.monthSelect}}">
-    <h1 class="hubTitle{{$ctrl.monthSelect}}">168 Habits : Hub</h1>
+    <img class="hubLogo{{$ctrl.monthSelect}}" src="{{$ctrl.logoPath}}">
+    <div class="hubTitleDiv{{$ctrl.monthSelect}}">
+      <h1 class="hubTitle{{$ctrl.monthSelect}}">168 Habits : Hub</h1>
+    </div>
+    <div class="hubSignoutDiv{{$ctrl.monthSelect}}">
+
+      <button class="hubSignoutButton{{$ctrl.monthSelect}}" ng-click="$ctrl.userLogout()">log out</button>
+    </div>
   </div>
-  <div class="hubSignoutDiv{{$ctrl.monthSelect}}">
 
-    <button class="hubSignoutButton{{$ctrl.monthSelect}}" ng-click="$ctrl.userLogout()">log out</button>
+  <div class="hubTabsBar{{$ctrl.monthSelect}}">
+    <span id="tabColour" class="{{$ctrl.hubTabStatus}}"></span>
+
+    <div class="{{$ctrl.hubShareTabState}}">
+
+      <p class="hubTabLabel{{$ctrl.monthSelect}}" ng-click="$ctrl.updateHubTab('shared')">shared</p>
+    </div>
+    <div class="{{$ctrl.hubReaderTabState}}">
+
+      <p class="hubTabLabel{{$ctrl.monthSelect}}" ng-click="$ctrl.updateHubTab('reader')">reader</p>
+    </div>
+    <div class="{{$ctrl.hubBloggerTabState}}">
+
+      <p class="hubTabLabel{{$ctrl.monthSelect}}" ng-click="$ctrl.updateHubTab('blogs')">blogs</p>
+    </div>
+    <div class="{{$ctrl.hubProfileTabState}}">
+
+      <p class="hubTabLabel{{$ctrl.monthSelect}}" ng-click="$ctrl.updateHubTab('profile')">profile</p>
+    </div>
   </div>
-</div>
+  <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"             title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+  <div class="hubContentContainer{{$ctrl.monthSelect}}">
 
-<div class="hubTabsBar{{$ctrl.monthSelect}}">
-  <span id="tabColour" class="{{$ctrl.hubTabStatus}}"></span>
+    <div class="hubShareDashboard{{$ctrl.monthSelect}}" ng-if="$ctrl.hubTabStatus === ('hubShare' + $ctrl.monthSelect)">
+      <main ng-repeat="article in $ctrl.sharedContent">
+        <div class="hubShareContainer{{$ctrl.monthSelect}}">
+          <div class="hubShareByline{{$ctrl.monthSelect}}">
 
-  <div class="{{$ctrl.hubShareTabState}}">
+            <img class="hubShareBylineAvatar{{$ctrl.monthSelect}}" src="{{article.avatar_path}}">
+            <p class="hubBylineName{{$ctrl.monthSelect}}">{{article.first_name}} {{article.last_name}}</p>
+            <p class="hubSharedAt{{$ctrl.monthSelect}}">{{article.share_cleanDate}}</p>
+            <p class="hubShareComments{{$ctrl.monthSelect}}">{{article.comments}}</p>
+            <div class="hubShareReactions{{$ctrl.monthSelect}}">
 
-    <p class="hubTabLabel{{$ctrl.monthSelect}}" ng-click="$ctrl.updateHubTab('shared')">shared</p>
-  </div>
-  <div class="{{$ctrl.hubReaderTabState}}">
+              <div class="hubShareAddReactionsToggle{{$ctrl.monthSelect}}" ng-if="!article.select_reactions">
 
-    <p class="hubTabLabel{{$ctrl.monthSelect}}" ng-click="$ctrl.updateHubTab('reader')">reader</p>
-  </div>
-  <div class="{{$ctrl.hubBloggerTabState}}">
-
-    <p class="hubTabLabel{{$ctrl.monthSelect}}" ng-click="$ctrl.updateHubTab('blogs')">blogs</p>
-  </div>
-  <div class="{{$ctrl.hubProfileTabState}}">
-
-    <p class="hubTabLabel{{$ctrl.monthSelect}}" ng-click="$ctrl.updateHubTab('profile')">profile</p>
-  </div>
-</div>
-<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"             title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
-<div class="hubContentContainer{{$ctrl.monthSelect}}">
-
-  <div class="hubShareDashboard{{$ctrl.monthSelect}}" ng-if="$ctrl.hubTabStatus === ('hubShare' + $ctrl.monthSelect)">
-    <main ng-repeat="article in $ctrl.sharedContent">
-      <div class="hubShareContainer{{$ctrl.monthSelect}}">
-        <div class="hubShareByline{{$ctrl.monthSelect}}">
-
-          <img class="hubShareBylineAvatar{{$ctrl.monthSelect}}" src="{{article.avatar_path}}">
-          <p class="hubBylineName{{$ctrl.monthSelect}}">{{article.first_name}} {{article.last_name}}</p>
-          <p class="hubSharedAt{{$ctrl.monthSelect}}">{{article.share_cleanDate}}</p>
-          <p class="hubShareComments{{$ctrl.monthSelect}}">{{article.comments}}</p>
-          <div class="hubShareReactions{{$ctrl.monthSelect}}">
-
-            <div class="hubShareAddReactionsToggle{{$ctrl.monthSelect}}" ng-if="!article.select_reactions">
-
-              <p ng-click="$ctrl.toggleEmojiSelector(article.id)">+ add reaction</p>
-            </div>
-
-            <div class="hubShareAddReactionDiv{{$ctrl.monthSelect}}" ng-if="article.select_reactions">
-              <main ng-repeat="emoji in $ctrl.emojis">
-
-                <img name="{{emoji.value}}" src="{{emoji.path}}" ng-click="$ctrl.shareAddEmoji(article.id, emoji.path, emoji.value)">
-              </main>
-
-            </div>
-
-            <main ng-repeat="reaction in article.share_reactions">
-              <div class="hubReactionGestalt{{$ctrl.monthSelect}}">
-
-                <p class="hubShareReactionTally{{$ctrl.monthSelect}}">{{reaction.tally}}</p>
-
-                <img class="hubShareReactionEmoji{{$ctrl.monthSelect}}" src="{{reaction.link}}" ng-mouseover="$ctrl.hoverOver(article.id, reaction.id)" ng-mouseleave="$ctrl.hoverOff(article.id, reaction.id)"><span class="{{reaction.hoverClass}}">{{reaction.hover_text}}</span>
-                <p ng-if="reaction.user_contributed" class="hubShareReactionDelete{{$ctrl.monthSelect}}" ng-click="$ctrl.hubShareRemoveReaction(article.id, reaction.link, reaction.reaction)">X</p>
-                <p ng-if="!reaction.user_contributed" class="hubShareReactionDelete{{$ctrl.monthSelect}}" ng-click="$ctrl.hubShareAdditionalReaction(article.id, reaction.id)">+</p>
-              </div>
-            </main>
-          </div>
-          <div class="hubShareComments{{$ctrl.monthSelect}}">
-            <p class="hubShareCommentsLabel{{$ctrl.monthSelect}}">comments:</p>
-
-            <main ng-repeat="comment in article.share_comments">
-
-              <div class="hubShareCommenterFields{{$ctrl.monthSelect}}"><img class="hubShareCommenterAvatar{{$ctrl.monthSelect}}" src="{{comment.avatar}}">
-              <p class="hubShareCommenterName{{$ctrl.monthSelect}}">{{comment.name}}</p></div><br>
-              <p class="hubShareCommentDateStamp{{$ctrl.monthSelect}}">{{comment.cleanDate}}</p><br>
-              <p class="hubShareCommentComment{{$ctrl.monthSelect}}">{{comment.comment}}</p>
-              <div class="hubShareAddReactionsToggle{{$ctrl.monthSelect}}" ng-if="!comment.select_reactions">
-
-                <p ng-click="$ctrl.toggleCommentEmojiSelector(article.id, comment.id)">+ add reaction</p>
+                <p ng-click="$ctrl.toggleEmojiSelector(article.id)">+ add reaction</p>
               </div>
 
-              <div class="hubShareAddReactionDiv{{$ctrl.monthSelect}}" ng-if="comment.select_reactions">
+              <div class="hubShareAddReactionDiv{{$ctrl.monthSelect}}" ng-if="article.select_reactions">
                 <main ng-repeat="emoji in $ctrl.emojis">
 
-                  <img name="{{emoji.value}}" src="{{emoji.path}}" ng-click="$ctrl.shareAddCommentEmoji(article.id, comment.id, emoji.path, emoji.value)">
+                  <img name="{{emoji.value}}" src="{{emoji.path}}" ng-click="$ctrl.shareAddEmoji(article.id, emoji.path, emoji.value)">
                 </main>
 
               </div>
-              <main ng-repeat="commentReaction in comment.comment_reactions">
+
+              <main ng-repeat="reaction in article.share_reactions">
                 <div class="hubReactionGestalt{{$ctrl.monthSelect}}">
 
-                  <p class="hubShareReactionTally{{$ctrl.monthSelect}}">{{commentReaction.tally}}</p>
+                  <p class="hubShareReactionTally{{$ctrl.monthSelect}}">{{reaction.tally}}</p>
 
-                  <img class="hubShareReactionEmoji{{$ctrl.monthSelect}}" src="{{commentReaction.link}}" ng-mouseover="$ctrl.commentReactionHoverOver(article.id, comment.id, commentReaction.id)" ng-mouseleave="$ctrl.commentReactionHoverOff(article.id, comment.id, commentReaction.id)"><span class="{{commentReaction.hoverClass}}">{{commentReaction.hover_text}}</span>
-                  <p ng-if="commentReaction.user_contributed" class="hubShareReactionDelete{{$ctrl.monthSelect}}" ng-click="$ctrl.hubShareRemoveCommentReaction(article.id, comment.id, commentReaction.id)">X</p>
-                  <p ng-if="!commentReaction.user_contributed" class="hubShareReactionDelete{{$ctrl.monthSelect}}" ng-click="$ctrl.hubShareCommentAdditionalReaction(article.id, comment.id, commentReaction.id)">+</p>
+                  <img class="hubShareReactionEmoji{{$ctrl.monthSelect}}" src="{{reaction.link}}" ng-mouseover="$ctrl.hoverOver(article.id, reaction.id)" ng-mouseleave="$ctrl.hoverOff(article.id, reaction.id)"><span class="{{reaction.hoverClass}}">{{reaction.hover_text}}</span>
+                  <p ng-if="reaction.user_contributed" class="hubShareReactionDelete{{$ctrl.monthSelect}}" ng-click="$ctrl.hubShareRemoveReaction(article.id, reaction.link, reaction.reaction)">X</p>
+                  <p ng-if="!reaction.user_contributed" class="hubShareReactionDelete{{$ctrl.monthSelect}}" ng-click="$ctrl.hubShareAdditionalReaction(article.id, reaction.id)">+</p>
+                </div>
+              </main>
+            </div>
+            <div class="hubShareComments{{$ctrl.monthSelect}}">
+              <p class="hubShareCommentsLabel{{$ctrl.monthSelect}}">comments:</p>
+
+              <main ng-repeat="comment in article.share_comments">
+
+                <div class="hubShareCommenterFields{{$ctrl.monthSelect}}"><img class="hubShareCommenterAvatar{{$ctrl.monthSelect}}" src="{{comment.avatar}}">
+                <p class="hubShareCommenterName{{$ctrl.monthSelect}}">{{comment.name}}</p></div><br>
+                <p class="hubShareCommentDateStamp{{$ctrl.monthSelect}}">{{comment.cleanDate}}</p><br>
+                <p class="hubShareCommentComment{{$ctrl.monthSelect}}">{{comment.comment}}</p>
+                <div class="hubShareAddReactionsToggle{{$ctrl.monthSelect}}" ng-if="!comment.select_reactions">
+
+                  <p ng-click="$ctrl.toggleCommentEmojiSelector(article.id, comment.id)">+ add reaction</p>
                 </div>
 
-              </main><br><br>
-            </main><br>
-            <div class="hubShareNewComments{{$ctrl.monthSelect}}">
+                <div class="hubShareAddReactionDiv{{$ctrl.monthSelect}}" ng-if="comment.select_reactions">
+                  <main ng-repeat="emoji in $ctrl.emojis">
 
-              <p>add comment:</p>
-              <textarea id="hubShareCommentTextArea{{article.id}}" class="hubShareCommentTextArea{{$ctrl.monthSelect}}" rows="5"></textarea>
-              <button class="hubSignoutButton{{$ctrl.monthSelect}}" ng-click="$ctrl.hubShareSubmitComment(article.id)">submit</button>
+                    <img name="{{emoji.value}}" src="{{emoji.path}}" ng-click="$ctrl.shareAddCommentEmoji(article.id, comment.id, emoji.path, emoji.value)">
+                  </main>
+
+                </div>
+                <main ng-repeat="commentReaction in comment.comment_reactions">
+                  <div class="hubReactionGestalt{{$ctrl.monthSelect}}">
+
+                    <p class="hubShareReactionTally{{$ctrl.monthSelect}}">{{commentReaction.tally}}</p>
+
+                    <img class="hubShareReactionEmoji{{$ctrl.monthSelect}}" src="{{commentReaction.link}}" ng-mouseover="$ctrl.commentReactionHoverOver(article.id, comment.id, commentReaction.id)" ng-mouseleave="$ctrl.commentReactionHoverOff(article.id, comment.id, commentReaction.id)"><span class="{{commentReaction.hoverClass}}">{{commentReaction.hover_text}}</span>
+                    <p ng-if="commentReaction.user_contributed" class="hubShareReactionDelete{{$ctrl.monthSelect}}" ng-click="$ctrl.hubShareRemoveCommentReaction(article.id, comment.id, commentReaction.id)">X</p>
+                    <p ng-if="!commentReaction.user_contributed" class="hubShareReactionDelete{{$ctrl.monthSelect}}" ng-click="$ctrl.hubShareCommentAdditionalReaction(article.id, comment.id, commentReaction.id)">+</p>
+                  </div>
+
+                </main><br><br>
+              </main><br>
+              <div class="hubShareNewComments{{$ctrl.monthSelect}}">
+
+                <p>add comment:</p>
+                <textarea id="hubShareCommentTextArea{{article.id}}" class="hubShareCommentTextArea{{$ctrl.monthSelect}}" rows="5"></textarea>
+                <button class="hubSignoutButton{{$ctrl.monthSelect}}" ng-click="$ctrl.hubShareSubmitComment(article.id)">submit</button>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="hubShareBody{{$ctrl.monthSelect}}">
-          <a href="{{article.source_link}}" target="_blank"><img class="hubShareSourceIcon{{$ctrl.monthSelect}}" src="{{article.source_image}}">
-          <p class="hubShareViaDescription{{$ctrl.monthSelect}}">{{article.source_description}}</p></a><br><br><br><br><br>
-          <img class="hubShareArticleImage{{$ctrl.monthSelect}}" src="{{article.enclosure.link}}">
-          <a href="{{article.link}}" target="_blank"><h3 class="hubShareHeadline{{$ctrl.monthSelect}}">{{article.title}}</h3></a>
-          <p class="hubSharePostTimestamp{{$ctrl.monthSelect}}">{{article.cleanDate}}</p>
-          <p class="hubShareAuthor{{$ctrl.monthSelect}}">{{article.author}}</p>
-          <p class="hubShareDescription{{$ctrl.monthSelect}}" ng-bind-html="article.description"></p>
+          <div class="hubShareBody{{$ctrl.monthSelect}}">
+            <a href="{{article.source_link}}" target="_blank"><img class="hubShareSourceIcon{{$ctrl.monthSelect}}" src="{{article.source_image}}">
+            <p class="hubShareViaDescription{{$ctrl.monthSelect}}">{{article.source_description}}</p></a><br><br><br><br><br>
+            <img class="hubShareArticleImage{{$ctrl.monthSelect}}" src="{{article.enclosure.link}}">
+            <div class="hubShareShareSaveButtonsDiv{{$ctrl.monthSelect}}">
+
+              <button ng-click="$ctrl.hubShareSave('share', article.source_image, article.source_title, article.title)">share</button>
+              <button ng-click="$ctrl.hubShareSave('save', article.source_image, article.source_title, article.title)">save</button>
+            </div>
+            <a href="{{article.link}}" target="_blank"><h3 class="hubShareHeadline{{$ctrl.monthSelect}}">{{article.title}}</h3></a>
+            <p class="hubSharePostTimestamp{{$ctrl.monthSelect}}">{{article.cleanDate}}</p>
+            <p class="hubShareAuthor{{$ctrl.monthSelect}}">{{article.author}}</p>
+            <p class="hubShareDescription{{$ctrl.monthSelect}}" ng-bind-html="article.description"></p>
+
+          </div>
 
         </div>
+      </main>
+
+    </div>
+
+    <div class="hubReaderDashboard{{$ctrl.monthSelect}}" ng-if="$ctrl.hubTabStatus === ('hubReader' + $ctrl.monthSelect)">
+
+      <div class="hubTodayIsDiv{{$ctrl.monthSelect}}">
+
+        <p class="hubTodayIsDisplay{{$ctrl.monthSelect}}" id="todayIs">{{$ctrl.todayIs}}</p>
+      </div>
+      <div class="hubReaderWeekly{{$ctrl.monthSelect}}">
+        <div class="hubReaderTodayBlock{{$ctrl.monthSelect}}">
+
+          <p class="hubReaderTodayLabel{{$ctrl.monthSelect}}">Today</p>
+          <button class="hubReaderDayButton{{$ctrl.monthSelect}}">{{$ctrl.day0}}</button>
+          <button class="hubReaderWeekButton{{$ctrl.monthSelect}}" ng-click="$ctrl.hubWeekToggle()">week</button>
+        </div>
+        <div class="{{$ctrl.day1ToggleState}}">
+
+          <p class="hubReaderTodayLabel{{$ctrl.monthSelect}}">Tomorrow</p>
+          <button class="hubReaderDayButton{{$ctrl.monthSelect}}">{{$ctrl.day1}}</button>
+        </div>
+        <div class="{{$ctrl.day2ToggleState}}">
+
+          <p class="hubReaderBlankLabel{{$ctrl.monthSelect}}">blank</p>
+          <button class="hubReaderDayButton{{$ctrl.monthSelect}}">{{$ctrl.day2}}</button>
+        </div>
+        <div class="{{$ctrl.day3ToggleState}}">
+
+          <p class="hubReaderBlankLabel{{$ctrl.monthSelect}}">blank</p>
+          <button class="hubReaderDayButton{{$ctrl.monthSelect}}">{{$ctrl.day3}}</button>
+        </div>
+        <div class="{{$ctrl.day4ToggleState}}">
+
+          <p class="hubReaderBlankLabel{{$ctrl.monthSelect}}">blank</p>
+          <button class="hubReaderDayButton{{$ctrl.monthSelect}}">{{$ctrl.day4}}</button>
+        </div>
+        <div class="{{$ctrl.day5ToggleState}}">
+
+          <p class="hubReaderBlankLabel{{$ctrl.monthSelect}}">blank</p>
+          <button class="hubReaderDayButton{{$ctrl.monthSelect}}">{{$ctrl.day5}}</button>
+        </div>
+        <div class="{{$ctrl.day6ToggleState}}">
+
+          <p class="hubReaderBlankLabel{{$ctrl.monthSelect}}">blank</p>
+          <button class="hubReaderDayButton{{$ctrl.monthSelect}}">{{$ctrl.day6}}</button>
+        </div>
 
       </div>
-    </main>
 
+      <div class="hubReaderManagementRow{{$ctrl.monthSelect}}">
+
+        <div class="hubReaderTodayBlock{{$ctrl.monthSelect}}">
+
+          <p class="hubReaderTodayLabel{{$ctrl.monthSelect}}">Subscriptions:</p>
+          <button class="hubReaderDayButton{{$ctrl.monthSelect}}">manage</button>
+          <button class="hubReaderWeekButton{{$ctrl.monthSelect}}" ng-click="$ctrl.toggleSubscriptionManagement()">more</button>
+        </div>
+
+        <div class="{{$ctrl.externalsBlockToggleStatus}}">
+
+          <p class="hubReaderBlankLabel{{$ctrl.monthSelect}}">Blank</p>
+          <button class="hubReaderDayButton{{$ctrl.monthSelect}}">externals</button>
+
+        </div>
+        <div class="{{$ctrl.dailiesBlockToggleStatus}}">
+
+          <p class="hubReaderBlankLabel{{$ctrl.monthSelect}}">Blank</p>
+          <button class="hubReaderDayButton{{$ctrl.monthSelect}}">dailies</button>
+
+        </div>
+        <div class="{{$ctrl.browseFeedsBlockToggleStatus}}">
+
+          <p class="hubReaderBlankLabel{{$ctrl.monthSelect}}">Blank</p>
+          <button class="hubReaderDayButton{{$ctrl.monthSelect}}">browse feeds</button>
+
+        </div>
+        <div class="{{$ctrl.sharedBlockToggleStatus}}">
+
+          <p class="hubReaderBlankLabel{{$ctrl.monthSelect}}">Blank</p>
+          <button class="hubReaderDayButton{{$ctrl.monthSelect}}">shared</button>
+
+        </div>
+        <div class="{{$ctrl.savedBlockToggleStatus}}">
+
+          <p class="hubReaderBlankLabel{{$ctrl.monthSelect}}">Blank</p>
+          <button class="hubReaderDayButton{{$ctrl.monthSelect}}">saved</button>
+
+        </div>
+        <div class="{{$ctrl.miscBlockToggleStatus}}">
+
+          <p class="hubReaderBlankLabel{{$ctrl.monthSelect}}">Blank</p>
+          <button class="hubReaderDayButton{{$ctrl.monthSelect}}">recommended</button>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="hubBlogsDashboard{{$ctrl.monthSelect}}" ng-if="$ctrl.hubTabStatus === ('hubBlogs' + $ctrl.monthSelect)">
+
+      <div class="hubUserBlogList{{$ctrl.monthSelect}}">
+
+        <h2 class="hubMyBlogsLabel{{$ctrl.monthSelect}}">My Blogs:</h2>
+        <main ng-repeat="blog in $ctrl.userBlogs">
+
+          <p class="hubBlogListEntry{{$ctrl.monthSelect}}" ng-click="$ctrl.hubDisplayBlogData(blog.id)">{{blog.blog}}</p>
+        </main>
+        <button class="hubNewBlogButton{{$ctrl.monthSelect}}">start new blog</button>
+      </div>
+      <div class="hubUserBlogData{{$ctrl.monthSelect}}">
+
+        <div class="hubBlogLogoTitleDescription{{$ctrl.monthSelect}}">
+
+          <img class="currentBlogLogoImage{{$ctrl.monthSelect}}" src="{{$ctrl.currentBlogLogo}}">
+          <p class="currentBlogName{{$ctrl.monthSelect}}">{{$ctrl.currentBlogName}}</p>
+        </div>
+        <p class="currentBlogTagline{{$ctrl.monthSelect}}">{{$ctrl.currentBlogDescription}}</p>
+        <div class="currentBlogContributersDiv{{$ctrl.monthSelect}}">
+          <p class="hubContributersLabel{{$ctrl.monthSelect}}">Contributers:</p>
+          <main ng-repeat="author in $ctrl.currentBlogContributers">
+
+            <div class="contributerInfo{{$ctrl.monthSelect}}"><img class="hubBlogContributerAvatar{{$ctrl.monthSelect}}" src="{{author.avatar}}">
+            <p class="hubBlogContributerName{{$ctrl.monthSelect}}">{{author.name}}</p></div><br><br><br><br><br>
+          </main>
+        </div>
+        <div class="hubBlogDataDiv{{$ctrl.monthSelect}}">
+
+          <p class="hubBlogDataPosts{{$ctrl.monthSelect}}">Posts: {{$ctrl.totalPosts}}</p>
+          <p class="hubBlogDataPosts{{$ctrl.monthSelect}}">Last Posted: {{$ctrl.lastPost}}</p>
+          <p class="hubBlogDataPosts{{$ctrl.monthSelect}}">Page Loads: {{$ctrl.totalPageLoads}}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hubProfileDashboard{{$ctrl.monthSelect}}" ng-if="$ctrl.hubTabStatus === ('hubProfile' + $ctrl.monthSelect)"></div>
+  </div>
+</div>
+<div class="{{$ctrl.shareSaveLinkDisplay}}">
+
+  <h2 class="hubDialogHeadline{{$ctrl.monthSelect}}" id="hubSaveDialogHeadline">{{$ctrl.hubLinkShareOrSave}}</h2>
+
+  <img src="{{$ctrl.feedIcon}}">
+
+  <p>{{$ctrl.feedTitle}}: {{$ctrl.hubLinkShareSaveTitle}}</p>
+  <textarea id="hubShareSaveLinkUserNotes" placeholder="user comments" rows="5"></textarea><br><br>
+  <div class="hubRadioButtons{{$ctrl.monthSelect}}" ng-if="$ctrl.hubLinkShareOrSave === 'Share Link'">
+
+    share with:<input type="radio" name="shareStatus" value="public" checked>public
+    <input type="radio" name="shareStatus" value="friends">friends only
+    <input type="radio" name="shareStatus" value="private">private
   </div>
 
-  <div class="hubReaderDashboard{{$ctrl.monthSelect}}" ng-if="$ctrl.hubTabStatus === ('hubReader' + $ctrl.monthSelect)">
-
-    <div class="hubTodayIsDiv{{$ctrl.monthSelect}}">
-
-      <p class="hubTodayIsDisplay{{$ctrl.monthSelect}}" id="todayIs">{{$ctrl.todayIs}}</p>
-    </div>
-    <div class="hubReaderWeekly{{$ctrl.monthSelect}}">
-      <div class="hubReaderTodayBlock{{$ctrl.monthSelect}}">
-
-        <p class="hubReaderTodayLabel{{$ctrl.monthSelect}}">Today</p>
-        <button class="hubReaderDayButton{{$ctrl.monthSelect}}">{{$ctrl.day0}}</button>
-        <button class="hubReaderWeekButton{{$ctrl.monthSelect}}" ng-click="$ctrl.hubWeekToggle()">week</button>
-      </div>
-      <div class="{{$ctrl.day1ToggleState}}">
-
-        <p class="hubReaderTodayLabel{{$ctrl.monthSelect}}">Tomorrow</p>
-        <button class="hubReaderDayButton{{$ctrl.monthSelect}}">{{$ctrl.day1}}</button>
-      </div>
-      <div class="{{$ctrl.day2ToggleState}}">
-
-        <p class="hubReaderBlankLabel{{$ctrl.monthSelect}}">blank</p>
-        <button class="hubReaderDayButton{{$ctrl.monthSelect}}">{{$ctrl.day2}}</button>
-      </div>
-      <div class="{{$ctrl.day3ToggleState}}">
-
-        <p class="hubReaderBlankLabel{{$ctrl.monthSelect}}">blank</p>
-        <button class="hubReaderDayButton{{$ctrl.monthSelect}}">{{$ctrl.day3}}</button>
-      </div>
-      <div class="{{$ctrl.day4ToggleState}}">
-
-        <p class="hubReaderBlankLabel{{$ctrl.monthSelect}}">blank</p>
-        <button class="hubReaderDayButton{{$ctrl.monthSelect}}">{{$ctrl.day4}}</button>
-      </div>
-      <div class="{{$ctrl.day5ToggleState}}">
-
-        <p class="hubReaderBlankLabel{{$ctrl.monthSelect}}">blank</p>
-        <button class="hubReaderDayButton{{$ctrl.monthSelect}}">{{$ctrl.day5}}</button>
-      </div>
-      <div class="{{$ctrl.day6ToggleState}}">
-
-        <p class="hubReaderBlankLabel{{$ctrl.monthSelect}}">blank</p>
-        <button class="hubReaderDayButton{{$ctrl.monthSelect}}">{{$ctrl.day6}}</button>
-      </div>
-
-    </div>
-
-    <div class="hubReaderManagementRow{{$ctrl.monthSelect}}">
-
-      <div class="hubReaderTodayBlock{{$ctrl.monthSelect}}">
-
-        <p class="hubReaderTodayLabel{{$ctrl.monthSelect}}">Subscriptions:</p>
-        <button class="hubReaderDayButton{{$ctrl.monthSelect}}">manage</button>
-        <button class="hubReaderWeekButton{{$ctrl.monthSelect}}" ng-click="$ctrl.toggleSubscriptionManagement()">more</button>
-      </div>
-
-      <div class="{{$ctrl.externalsBlockToggleStatus}}">
-
-        <p class="hubReaderBlankLabel{{$ctrl.monthSelect}}">Blank</p>
-        <button class="hubReaderDayButton{{$ctrl.monthSelect}}">externals</button>
-
-      </div>
-      <div class="{{$ctrl.dailiesBlockToggleStatus}}">
-
-        <p class="hubReaderBlankLabel{{$ctrl.monthSelect}}">Blank</p>
-        <button class="hubReaderDayButton{{$ctrl.monthSelect}}">dailies</button>
-
-      </div>
-      <div class="{{$ctrl.browseFeedsBlockToggleStatus}}">
-
-        <p class="hubReaderBlankLabel{{$ctrl.monthSelect}}">Blank</p>
-        <button class="hubReaderDayButton{{$ctrl.monthSelect}}">browse feeds</button>
-
-      </div>
-      <div class="{{$ctrl.sharedBlockToggleStatus}}">
-
-        <p class="hubReaderBlankLabel{{$ctrl.monthSelect}}">Blank</p>
-        <button class="hubReaderDayButton{{$ctrl.monthSelect}}">shared</button>
-
-      </div>
-      <div class="{{$ctrl.savedBlockToggleStatus}}">
-
-        <p class="hubReaderBlankLabel{{$ctrl.monthSelect}}">Blank</p>
-        <button class="hubReaderDayButton{{$ctrl.monthSelect}}">saved</button>
-
-      </div>
-      <div class="{{$ctrl.miscBlockToggleStatus}}">
-
-        <p class="hubReaderBlankLabel{{$ctrl.monthSelect}}">Blank</p>
-        <button class="hubReaderDayButton{{$ctrl.monthSelect}}">recommended</button>
-
-      </div>
-    </div>
-  </div>
-
-  <div class="hubBlogsDashboard{{$ctrl.monthSelect}}" ng-if="$ctrl.hubTabStatus === ('hubBlogs' + $ctrl.monthSelect)"></div>
-
-  <div class="hubProfileDashboard{{$ctrl.monthSelect}}" ng-if="$ctrl.hubTabStatus === ('hubProfile' + $ctrl.monthSelect)"></div>
+  <button ng-click="$ctrl.hubCancelShareSaveLink()">submit</button>
+  <button ng-click="$ctrl.hubCancelShareSaveLink()">cancel</button>
 </div>

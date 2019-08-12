@@ -179,7 +179,9 @@
   background-image: radial-gradient(#6182ab, #32728e, #155d75);
   height: 81vh;
   opacity: 0.9;
-  width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 104%;
 }
 
 .hubProfileDashboard_JanuaryA {
@@ -688,4 +690,280 @@
   height: auto;
   justify-content: flex-start;
   width: 100%;
+}
+
+.hubShareShareSaveButtonsDiv_JanuaryA {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 5px;
+  width: 100%;
+}
+
+.hubShareShareSaveButtonsDiv_JanuaryA button {
+  background: #32728e;
+  border: none;
+  color: #e3e6eb;
+  cursor: pointer;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  margin: 5px 35px;
+  transform: skewX(-15deg);
+  transition: all 0.4s linear;
+}
+
+.hubShareShareSaveButtonsDiv_JanuaryA button:hover {
+  background: #cddbe7;
+  color: #08252e;
+  transform: skewX(-5deg);
+  transition: all 0.4s linear;
+}
+
+.hubShareShareSaveModalActive_JanuaryA {
+  background: #99b9c7;
+  left: 35%;
+  opacity: 1;
+  padding: 1% 3%;
+  position: absolute;
+  transition: all 0.5s linear;
+  top: 5%;
+  width: 30%;
+  z-index: 55;
+}
+
+.hubShareShareSaveModalActive_JanuaryA img {
+  max-width: 15%;
+}
+
+.hubShareShareSaveModalActive_JanuaryA p {
+  color: #08252e;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  margin: 15px 0;
+}
+
+.hubShareShareSaveModalActive_JanuaryA textarea {
+  background: #e3e6eb;
+  border: none;
+  color: #08252e;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  width: 100%;
+}
+
+.hubShareShareSaveModalActive_JanuaryA button {
+  background: #32728e;
+  border: none;
+  color: #e3e6eb;
+  cursor: pointer;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  margin: 5px 35px;
+  transform: skewX(-15deg);
+  transition: all 0.4s linear;
+}
+
+.hubShareShareSaveModalActive_JanuaryA button:hover {
+  background: #cddbe7;
+  color: #08252e;
+  transform: skewX(-5deg);
+  transition: all 0.4s linear;
+}
+
+.hubShareShareSaveModalInactive_JanuaryA {
+  background: #99b9c7;
+  left: 35%;
+  opacity: 0;
+  padding: 1% 3%;
+  position: absolute;
+  transition: all 0.5s linear;
+  top: 5%;
+  width: 30%;
+  z-index: -55;
+}
+
+.hubShareShareSaveModalInactive_JanuaryA img {
+  max-width: 15%;
+}
+
+.hubShareShareSaveModalInactive_JanuaryA p {
+  color: #08252e;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  margin: 15px 0;
+}
+
+.hubShareShareSaveModalInactive_JanuaryA textarea {
+  background: #e3e6eb;
+  border: none;
+  color: #08252e;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  width: 100%;
+}
+
+.hubShareShareSaveModalInactive_JanuaryA button {
+  background: #32728e;
+  border: none;
+  color: #e3e6eb;
+  cursor: pointer;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  margin: 5px 35px;
+  transform: skewX(-15deg);
+  transition: all 0.4s linear;
+}
+
+.hubDialogHeadline_JanuaryA {
+  color: #08252e;
+  font-family: 'Markazi Text', serif;
+  font-size: 42px;
+}
+
+.hubRadioButtons_JanuaryA {
+  color: #08252e;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  margin: 5px 0 15px 0;
+}
+
+.hubContainer_JanuaryA {
+  filter: blur(0px);
+  transition: all 0.4s linear;
+}
+
+.hubContainerBlur_JanuaryA {
+  filter: blur(10px);
+  transition: all 0.4s linear;
+}
+
+.hubUserBlogList_JanuaryA {
+  border-right: 1px solid #c1d0da;
+  float: left;
+  height: 81vh;
+  padding: 50px 15px;
+  width: 30%;
+}
+
+.hubUserBlogData_JanuaryA {
+  border-left: 1px solid #c1d0da;
+  float: left;
+  height: 81vh;
+  width: 60%;
+}
+
+.hubMyBlogsLabel_JanuaryA {
+  color: #c1d0da;
+  font-family: 'Markazi Text', serif;
+  font-size: 56px;
+}
+
+.hubBlogListEntry_JanuaryA {
+  color: #8aaeba;
+  cursor: pointer;
+  font-family: 'Markazi Text', serif;
+  font-size: 42px;
+  margin: 30px;
+  transition: all 0.5s linear;
+}
+
+.hubBlogListEntry_JanuaryA:hover {
+  color: #c1d0da;
+  transition: all 0.5s linear;
+}
+
+.hubNewBlogButton_JanuaryA {
+  background: #cddbe7;
+  border: none;
+  color: #08252e;
+  cursor: pointer;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  margin: 35px 75px;
+  transform: skewX(-15deg);
+  transition: all 0.4s linear;
+}
+
+.hubNewBlogButton_JanuaryA:hover {
+  background: #32728e;
+  color: #e3e6eb;
+  transform: skewX(-5deg);
+  transition: all 0.4s linear;
+}
+
+.hubBlogLogoTitleDescription_JanuaryA {
+  cursor: pointer;
+  padding: 2vh 20px;
+  width: 100%;
+}
+
+.currentBlogLogoImage_JanuaryA {
+  float: left;
+  height: 100px;
+  max-width: 15%;
+}
+
+.currentBlogName_JanuaryA {
+  color: #e3e6eb;
+  float: left;
+  font-family: 'Markazi Text', serif;
+  font-size: 60px;
+  margin: 50px 0 0 40px;
+}
+
+.currentBlogTagline_JanuaryA {
+  color: #e3e6eb;
+  float: left;
+  font-family: 'Markazi Text', serif;
+  font-size: 36px;
+  margin: 0 0 0 22%;
+  position: relative;
+  width: 100%;
+}
+
+.currentBlogContributersDiv_JanuaryA {
+  float: left;
+  padding: 20px 0 0 50px;
+  width: 100%;
+}
+
+.contributerInfo_JanuaryA {
+  cursor: pointer;
+}
+
+.hubBlogContributerAvatar_JanuaryA {
+  float: left;
+  max-width: 7%;
+  margin: 1px 1px 1px 15px;
+  position: relative;
+}
+
+.hubContributersLabel_JanuaryA {
+  color: #e3e6eb;
+  font-family: 'Markazi Text', serif;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hubBlogContributerName_JanuaryA {
+  color: #e3e6eb;
+  float: left;
+  font-family: 'Markazi Text', serif;
+  font-size: 36px;
+  margin: 30px 1px 1px 30px;
+  width: 85%;
+}
+
+.hubBlogDataDiv_JanuaryA {
+  float: left;
+  padding: 150px 0 0 70px;
+  width: 100%;
+}
+
+.hubBlogDataPosts_JanuaryA {
+  color: #e3e6eb;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  width: 85%;
 }

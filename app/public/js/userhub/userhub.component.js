@@ -297,6 +297,7 @@
           source_description: 'Daily Kos: The Main Page.',
           source_link: 'http://www.dailykos.com/blogs/main',
           source_image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/daily-kos-squarelogo-1517554340259.png',
+          source_title: 'Daily Kos',
           title: 'Young man dies after losing his insurance and turning to cheaper form of insulin',
           updated_at: 'Sat Aug 10 2019 13:44:59 GMT-0600 (Mountain Daylight Time)'
         },
@@ -323,6 +324,7 @@
           source_description: 'Links for the intellectually curious, ranked by readers.',
           source_link: 'https://news.ycombinator.com/',
           source_image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/hacker-news-2-569388.png',
+          source_title: 'Hacker News',
           title: 'Speaking to yourself in the third person makes you wiser',
           updated_at: 'Sat Aug 10 2019 13:44:59 GMT-0600 (Mountain Daylight Time)'
         },
@@ -349,6 +351,7 @@
           source_description: 'Synthesizer and electronic music news, synth and music software reviews and more!',
           source_link: 'http://www.synthtopia.com/',
           source_image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/press-synthtopia-logo.jpg',
+          source_title: 'Synthtopia',
           title: 'Shredding With ‘The Push-tar’',
           updated_at: 'Sat Aug 10 2019 13:44:59 GMT-0600 (Mountain Daylight Time)'
         }
@@ -383,6 +386,119 @@
       vm.sharedBlockToggleStatus = 'hubReaderDay4BlockInactive' + vm.monthSelect;
       vm.savedBlockToggleStatus = 'hubReaderDay5BlockInactive' + vm.monthSelect;
       vm.miscBlockToggleStatus = 'hubReaderDay6BlockInactive' + vm.monthSelect;
+      vm.shareSaveLinkDisplay = 'hubShareShareSaveModalInactive' + vm.monthSelect;
+      vm.hubLinkShareOrSave = 'Share Link';
+      vm.hubShareSave = hubShareSave;
+      vm.backgroundStatus = 'hubContainer' + vm.monthSelect;
+      vm.hubCancelShareSaveLink = hubCancelShareSaveLink;
+      vm.userBlogs = [
+        {
+          blog: 'HurdAudio',
+          contributers: [
+            {
+              avatar: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/lovecraftAvatar.jpg',
+              name: 'Devin Hurd',
+              uuid: '17917373-ee9c-46aa-a38a-cacc475abee7'
+            }
+          ],
+          description: 'Musings on free jazz, just intonation and modular synthesis',
+          id: 0,
+          last_post: '2019 August 8 - 12:23:17',
+          logo: 'https://habits168-hurdaudio.s3.amazonaws.com/blog_logos/steve-harvey-xWiXi6wRLGo-unsplash.jpg',
+          page_loads: 100473,
+          total_posts: 473
+        },
+        {
+          blog: 'Leather, Runs & Repeat',
+          contributers: [
+            {
+              avatar: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/lovecraftAvatar.jpg',
+              name: 'Devin Hurd',
+              uuid: '17917373-ee9c-46aa-a38a-cacc475abee7'
+            }
+          ],
+          description: 'An agnostic baseball blog',
+          id: 1,
+          last_post: '2019 August 7 - 05:58:02',
+          logo: 'https://habits168-hurdaudio.s3.amazonaws.com/blog_logos/baseball-1339292_1920.jpg',
+          page_loads: 823,
+          total_posts: 54
+        },
+        {
+          blog: 'Muddle Class Kitchens',
+          contributers: [
+            {
+              avatar: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/lovecraftAvatar.jpg',
+              name: 'Devin Hurd',
+              uuid: '17917373-ee9c-46aa-a38a-cacc475abee7'
+            },
+            {
+              avatar: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/digitalNomadAvatar.jpg',
+              name: 'Eva Codes',
+              uuid: '03ad421c-aad5-47b1-88ab-d7822f6c3eb7'
+            }
+          ],
+          description: 'Cooking without skill',
+          id: 2,
+          last_post: '2019 July 28 - 17:43:40',
+          logo: 'https://habits168-hurdaudio.s3.amazonaws.com/blog_logos/egg-3086198_1920.jpg',
+          page_loads: 33,
+          total_posts: 302
+        },
+        {
+          blog: 'Weaponized Reading Glasses',
+          description: 'Things I read when I should be sleeping',
+          contributers: [
+            {
+              avatar: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/lovecraftAvatar.jpg',
+              name: 'Devin Hurd',
+              uuid: '17917373-ee9c-46aa-a38a-cacc475abee7'
+            }
+          ],
+          id: 3,
+          last_post: '2019 January 1 - 18:13:13',
+          logo: 'https://habits168-hurdaudio.s3.amazonaws.com/blog_logos/book-272691_1920.jpg',
+          page_loads: 4,
+          total_posts: 8325
+        }
+      ];
+      vm.currentBlogLogo = vm.userBlogs[0].logo;
+      vm.currentBlogName = vm.userBlogs[0].blog;
+      vm.currentBlogDescription = vm.userBlogs[0].description;
+      vm.currentBlogContributers = vm.userBlogs[0].contributers;
+      vm.totalPosts = vm.userBlogs[0].total_posts;
+      vm.lastPost = vm.userBlogs[0].last_post;
+      vm.totalPageLoads = vm.userBlogs[0].page_loads;
+      vm.hubDisplayBlogData = hubDisplayBlogData;
+
+      function hubDisplayBlogData(blogIndex) {
+        vm.currentBlogLogo = vm.userBlogs[parseInt(blogIndex)].logo;
+        vm.currentBlogName = vm.userBlogs[parseInt(blogIndex)].blog;
+        vm.currentBlogDescription = vm.userBlogs[parseInt(blogIndex)].description;
+        vm.currentBlogContributers = vm.userBlogs[parseInt(blogIndex)].contributers;
+        vm.totalPosts = vm.userBlogs[parseInt(blogIndex)].total_posts;
+        vm.lastPost = vm.userBlogs[parseInt(blogIndex)].last_post;
+        vm.totalPageLoads = vm.userBlogs[parseInt(blogIndex)].page_loads;
+      }
+
+      function hubCancelShareSaveLink() {
+        vm.backgroundStatus = 'hubContainer' + vm.monthSelect;
+        vm.shareSaveLinkDisplay = 'hubShareShareSaveModalInactive' + vm.monthSelect;
+        document.getElementById('hubShareSaveLinkUserNotes').value = '';
+      }
+
+      function hubShareSave(status, image, sourceName, sourceTitle) {
+        if (status === 'share') {
+          vm.hubLinkShareOrSave = 'Share Link';
+        } else {
+          vm.hubLinkShareOrSave = 'Save Link';
+        }
+        vm.backgroundStatus = 'hubContainerBlur' + vm.monthSelect;
+        vm.shareSaveLinkDisplay = 'hubShareShareSaveModalActive' + vm.monthSelect;
+        vm.feedIcon = image;
+        vm.feedTitle = sourceName;
+        vm.hubLinkShareSaveTitle = sourceTitle;
+      }
 
       function toggleSubscriptionManagement() {
         if (vm.subscriptionToggle === 'off') {
