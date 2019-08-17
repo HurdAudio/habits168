@@ -259,7 +259,8 @@
               ],
               id: 0,
               name: 'Devin Hurd',
-              select_reactions: false
+              select_reactions: false,
+              uuid: '17917373-ee9c-46aa-a38a-cacc475abee7'
             }
           ],
           share_reactions: [
@@ -299,7 +300,8 @@
           source_image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/daily-kos-squarelogo-1517554340259.png',
           source_title: 'Daily Kos',
           title: 'Young man dies after losing his insurance and turning to cheaper form of insulin',
-          updated_at: 'Sat Aug 10 2019 13:44:59 GMT-0600 (Mountain Daylight Time)'
+          updated_at: 'Sat Aug 10 2019 13:44:59 GMT-0600 (Mountain Daylight Time)',
+          uuid: '96770ff7-afa0-4c31-970e-905e8f28ccd0'
         },
         {
           author: '',
@@ -326,7 +328,8 @@
           source_image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/hacker-news-2-569388.png',
           source_title: 'Hacker News',
           title: 'Speaking to yourself in the third person makes you wiser',
-          updated_at: 'Sat Aug 10 2019 13:44:59 GMT-0600 (Mountain Daylight Time)'
+          updated_at: 'Sat Aug 10 2019 13:44:59 GMT-0600 (Mountain Daylight Time)',
+          uuid: '17917373-ee9c-46aa-a38a-cacc475abee7'
         },
         {
           author: 'Elisabeth',
@@ -353,7 +356,8 @@
           source_image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/press-synthtopia-logo.jpg',
           source_title: 'Synthtopia',
           title: 'Shredding With ‘The Push-tar’',
-          updated_at: 'Sat Aug 10 2019 13:44:59 GMT-0600 (Mountain Daylight Time)'
+          updated_at: 'Sat Aug 10 2019 13:44:59 GMT-0600 (Mountain Daylight Time)',
+          uuid: 'e0d83fb4-f7b5-492c-ba49-e3b1447567e6'
         }
       ];
       vm.toggleEmojiSelector = toggleEmojiSelector;
@@ -470,6 +474,637 @@
       vm.lastPost = vm.userBlogs[0].last_post;
       vm.totalPageLoads = vm.userBlogs[0].page_loads;
       vm.hubDisplayBlogData = hubDisplayBlogData;
+      vm.navigationPublicState = 'hubUserProfileNavigationActive' + vm.monthSelect;
+      vm.navigationPrivateState = 'hubUserProfileNavigationInactive' + vm.monthSelect;
+      vm.navigationMessagesState = 'hubUserProfileNavigationInactive' + vm.monthSelect;
+      vm.navigationFriendsState = 'hubUserProfileNavigationInactive' + vm.monthSelect;
+      vm.navigationContactState = 'hubUserProfileNavigationInactive' + vm.monthSelect;
+      vm.navigationSliderState = 'hubUserProfileNavigationSlidePublicState' + vm.monthSelect;
+      vm.navigateProfileViews = navigateProfileViews;
+      vm.profileNavState = 'public';
+      vm.userExtendedProfile = {
+        bio: {
+          bio: 'A man with 168 Habits. Some of them good.',
+          public: true
+        },
+        birthdate: {
+          birthdate: new Date('1970-03-08'),
+          cleanDate: '8 March',
+          public: false
+        },
+        description: {
+          description: 'Drone music composer and software engineer stranded in the desert.',
+          public: true
+        },
+        email: {
+          email: 'devin@devinhurd.com',
+          public: false
+        },
+        education: {
+          public: false,
+          schools: [
+            {
+              location: 'Toronto, Ontario, Canada',
+              name: 'York University'
+            },
+            {
+              location: 'Hanover, New Hampshire',
+              name: 'Dartmouth College'
+            },
+            {
+              location: 'Boulder, Colorado',
+              name: 'Galvanize'
+            }
+          ]
+        },
+        employer: {
+          employer: 'Hall of Justice, Inc.',
+          public: false
+        },
+        location: {
+          adminCode: 'NM',
+          country: 'US',
+          featureCode: 'PPLA2',
+          name: 'Albuquerque',
+          population: 545852,
+          public: true,
+          lat: 35.08449,
+          lon: -106.65114
+        },
+        occupation: {
+          occupation: 'Web Developer',
+          public: true
+        },
+        phone: {
+          phone: '(505)505-5050',
+          public: false
+        }
+      };
+      vm.userMessages = [
+        {
+          cleanDate: '2019 August 14 - 20:14:55',
+          created_at: new Date('2019-08-14 20:14:55'),
+          from: {
+            avatar: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/digitalNomadAvatar.jpg',
+            name: 'Eva Codes',
+            uuid: '03ad421c-aad5-47b1-88ab-d7822f6c3eb7'
+          },
+          message: '<p>You might want to hurry out to the Grower\'s Market for the current bumper crop of heirlooms.<br><br> They\'re damn impressive.</p>',
+          open: false,
+          opened: false,
+          replies: [],
+          subject: 'Heirloom Tomatoes',
+          to: {
+            avatar: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/lovecraftAvatar.jpg',
+            name: 'Devin Hurd',
+            uuid: '17917373-ee9c-46aa-a38a-cacc475abee7'
+          },
+          updated_at: new Date('2019-08-14 20:14:55'),
+          uuid: '794f37fb-57fb-4e76-a3f4-cb6a72ec68cf'
+        },
+        {
+          cleanDate: '2019 August 14 - 19:59:00',
+          created_at: new Date('2019-08-14 19:59:00'),
+          from: {
+            avatar: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/homerAvatar.jpg',
+            name: 'DJ Ipsum',
+            uuid: '96770ff7-afa0-4c31-970e-905e8f28ccd0'
+          },
+          message: '<p>When are you going to hook me up with all that sweet, sweet Sun Ra? I know you\'re sitting on a trove of Saturnian goodness.</p>',
+          open: false,
+          opened: true,
+          replies: [
+            {
+              cleanDate: '2019 August 14 - 20:06:33',
+              created_at: new Date('2019-08-04 20:06:33'),
+              from: {
+                avatar: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/lovecraftAvatar.jpg',
+                name: 'Devin Hurd',
+                uuid: '17917373-ee9c-46aa-a38a-cacc475abee7'
+              },
+              message: 'You aren\'t worthy of the Sun Ra, my friend.',
+              open: false,
+              opened: false,
+              subject: 'RE: Sun Ra on vinyl',
+              to: {
+                avatar: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/homerAvatar.jpg',
+                name: 'DJ Ipsum',
+                uuid: '96770ff7-afa0-4c31-970e-905e8f28ccd0'
+              },
+              updated_at: new Date('2019-08-04 20:06:33'),
+              uuid: '8efa4c37-989b-449f-b7aa-f7591675fd12'
+            }
+          ],
+          subject: 'Sun Ra on vinyl',
+          to: {
+            avatar: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/lovecraftAvatar.jpg',
+            name: 'Devin Hurd',
+            uuid: '17917373-ee9c-46aa-a38a-cacc475abee7'
+          },
+          updated_at: new Date('2019-08-14 19:59:00'),
+          uuid: '912eaafa-9d04-46db-8b53-d90367ae02d0'
+        }
+      ];
+      vm.unreadMailMarker = '';
+      vm.toggleMessageOpen = toggleMessageOpen;
+      vm.submitResponse = submitResponse;
+      vm.friendsList = [
+        {
+          avatar: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/digitalNomadAvatar.jpg',
+          blog_posts: 907,
+          extended_profile: {
+            bio: {
+              bio: 'Formerly well-adjusted daughter of two computer geeks.',
+              public: true
+            },
+            birthdate: {
+              birthdate: new Date('1980-02-28'),
+              cleanDate: '28 February',
+              public: false
+            },
+            description: {
+              description: 'Full time coder and all around badass.',
+              public: true
+            },
+            email: {
+              email: 'eva.codes@evacodes.com',
+              public: false
+            },
+            education: {
+              public: false,
+              schools: [
+                {
+                  location: 'Providence, Rhode Island',
+                  name: 'Brown University'
+                }
+              ]
+            },
+            employer: {
+              employer: 'NSA',
+              public: false
+            },
+            location: {
+              adminCode: 'MD',
+              country: 'US',
+              featureCode: 'PPLA',
+              name: 'Annapolis',
+              population: 38394,
+              public: true,
+              lat: 38.97845,
+              lon: -76.49218
+            },
+            occupation: {
+              occupation: 'Hacker for Hire',
+              public: true
+            },
+            phone: {
+              phone: '(505)505-5050',
+              public: false
+            }
+          },
+          first_name: 'Eva',
+          friends: 57,
+          last_name: 'Codes',
+          name: 'Eva Codes',
+          shared_items: 702,
+          uuid: '03ad421c-aad5-47b1-88ab-d7822f6c3eb7'
+        },
+        {
+          avatar: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/homerAvatar.jpg',
+          blog_posts: 207,
+          extended_profile: {
+            bio: {
+              bio: 'Frustrated DJ trapped in a day job.',
+              public: true
+            },
+            birthdate: {
+              birthdate: new Date('1982-08-08'),
+              cleanDate: '8 August',
+              public: false
+            },
+            description: {
+              description: 'Slave to the beat.',
+              public: true
+            },
+            email: {
+              email: 'ipsum.spinsum@djipsum.com',
+              public: false
+            },
+            education: {
+              public: false,
+              schools: [
+                {
+                  location: 'Portland, Oregon',
+                  name: 'Reed College'
+                }
+              ]
+            },
+            employer: {
+              employer: 'Wells Fargo',
+              public: false
+            },
+            location: {
+              adminCode: 'CA',
+              country: 'US',
+              featureCode: 'PPLA2',
+              name: 'San Rafael',
+              population: 57713,
+              public: true,
+              lat: 37.97353,
+              lon: -122.53109
+            },
+            occupation: {
+              occupation: 'DJ from the bank',
+              public: true
+            },
+            phone: {
+              phone: '(505)505-5050',
+              public: false
+            }
+          },
+          first_name: 'DJ',
+          friends: 44,
+          last_name: 'Ipsum',
+          name: 'DJ Ipsum',
+          shared_items: 1043,
+          uuid: '96770ff7-afa0-4c31-970e-905e8f28ccd0'
+        },
+        {
+          avatar: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/ashesAvatar.png',
+          blog_posts: 180,
+          extended_profile: {
+            bio: {
+              bio: 'Product of Detroit public education.',
+              public: true
+            },
+            birthdate: {
+              birthdate: new Date('1988-11-26'),
+              cleanDate: '26 November',
+              public: true
+            },
+            description: {
+              description: 'Wildly interested in everything.',
+              public: true
+            },
+            email: {
+              email: 'temporaneous@amettempor.com',
+              public: false
+            },
+            education: {
+              public: false,
+              schools: [
+                {
+                  location: 'Earth',
+                  name: 'School of Hard Knocks'
+                }
+              ]
+            },
+            employer: {
+              employer: 'self employed',
+              public: false
+            },
+            location: {
+              adminCode: 'NY',
+              country: 'US',
+              featureCode: 'PPL',
+              name: 'New York City',
+              population: 8175133,
+              public: true,
+              lat: 40.71427,
+              lon: -74.00597
+            },
+            occupation: {
+              occupation: 'Code Monkey',
+              public: true
+            },
+            phone: {
+              phone: '(505)505-5050',
+              public: false
+            }
+          },
+          first_name: 'Amet',
+          friends: 37,
+          last_name: 'Tempor',
+          name: 'Amet Tempor',
+          shared_items: 844,
+          uuid: 'e0d83fb4-f7b5-492c-ba49-e3b1447567e6'
+        }
+      ];
+      vm.filteredFriendsList = vm.friendsList;
+      vm.friendFiltering = friendFiltering;
+      vm.profileDisplayModal = 'hubProfileDisplayerInactive' + vm.monthSelect;
+      vm.displayFriend = displayFriend;
+      vm.profileDisplayClose = profileDisplayClose;
+      vm.messageModalState = 'hubDisplayMessageModalInactive' + vm.monthSelect;
+      vm.initiateMessage = initiateMessage;
+      vm.cancelMessageSender = cancelMessageSender;
+      vm.sendMessage = sendMessage;
+      vm.hubGuardrailState = 'hubRemoveGuardrailInactive' + vm.monthSelect;
+      vm.removeBadFriend = removeBadFriend;
+      vm.cancelFriendRemoval = cancelFriendRemoval;
+      vm.confirmFriendRemoval = confirmFriendRemoval;
+      vm.formSubmittable = false;
+      vm.checkSubmittability = checkSubmittability;
+      vm.hubContactSubmit = hubContactSubmit;
+
+      function hubContactSubmit() {
+        let hubContactSubjectInput = document.getElementById('hubContactSubjectInput');
+        let hubContactMessageInput = document.getElementById('hubContactMessageInput');
+
+        hubContactSubjectInput.value = '';
+        hubContactMessageInput.value = '';
+        vm.formSubmittable = false;
+      }
+
+      function checkSubmittability() {
+        let hubContactSubjectInput = document.getElementById('hubContactSubjectInput');
+        let hubContactMessageInput = document.getElementById('hubContactMessageInput');
+
+        if ((hubContactSubjectInput.value === '') || (hubContactMessageInput.value === '')) {
+          vm.formSubmittable = false;
+        } else {
+          vm.formSubmittable = true;
+        }
+      }
+
+      function setFooterMessage() {
+        let today = new Date();
+        if (today.getFullYear() > 2019) {
+          vm.footerMessage = '©2019 - ' + today.getFullYear() + ' HurdAudio';
+        } else {
+          vm.footerMessage = '©2019 HurdAudio'
+        }
+      }
+
+      function confirmFriendRemoval(uuid) {
+        for (let i = 0; i < vm.friendsList.length; i++) {
+          if (vm.friendsList[i].uuid === uuid) {
+            vm.friendsList.splice(i, 1);
+            cancelFriendRemoval();
+            return;
+          }
+        }
+      }
+
+      function cancelFriendRemoval() {
+        vm.hubGuardrailState = 'hubRemoveGuardrailInactive' + vm.monthSelect;
+        vm.backgroundStatus = 'hubContainer' + vm.monthSelect;
+      }
+
+      function removeBadFriend(badFriendUuid) {
+        profileDisplayClose();
+        vm.hubGuardrailState = 'hubRemoveGuardrailActive' + vm.monthSelect;
+        vm.backgroundStatus = 'hubContainerBlur' + vm.monthSelect;
+        let friend = vm.friendsList.filter(entry => {
+          return(entry.uuid === badFriendUuid)
+        });
+        vm.badFriend = friend[0];
+      }
+
+      function sendMessage(recipientUuid) {
+        let hubMessageModalSubjectInput = document.getElementById('hubMessageModalSubjectInput');
+        let hubMessageModalMessageInput = document.getElementById('hubMessageModalMessageInput');
+
+        if (hubMessageModalMessageInput.value !== '') {
+          let friend = vm.friendsList.filter(entry => {
+            return(entry.uuid === recipientUuid);
+          });
+          let now = new Date();
+          let hours = now.getHours().toString() +  ':';
+          let minutes = '';
+          let seconds = '';
+          let months = [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ];
+          if (now.getMinutes() < 10) {
+            minutes += '0';
+          }
+          minutes += now.getMinutes().toString() + ':';
+          if (now.getSeconds() < 10) {
+            seconds += '0';
+          }
+          seconds += now.getSeconds();
+          let cleanDate = now.getFullYear() + ' ' + months[now.getMonth()] + ' ' + now.getDate() + ' - ' + hours + minutes + seconds;
+          let message = {
+            cleanDate: cleanDate,
+            created_at: now,
+            from: {
+              avatar: vm.user.avatar_path,
+              name: vm.user.first_name + ' ' + vm.user.last_name,
+              uuid: vm.user.uuid
+            },
+            message: '<p>' + hubMessageModalMessageInput.value + '</p>',
+            open: false,
+            opened: false,
+            replies: [],
+            subject: hubMessageModalSubjectInput.value,
+            to: {
+              avatar: friend[0].avatar,
+              name: friend[0].name,
+              uuid: friend[0].uuid
+            }
+          };
+          vm.userMessages.push(message);
+          cancelMessageSender();
+        }
+      }
+
+      function cancelMessageSender() {
+        vm.messageModalState = 'hubDisplayMessageModalInactive' + vm.monthSelect;
+        vm.backgroundStatus = 'hubContainer' + vm.monthSelect;
+      }
+
+      function initiateMessage(recipientUuid) {
+        let hubMessageModalSubjectInput = document.getElementById('hubMessageModalSubjectInput');
+        let hubMessageModalMessageInput = document.getElementById('hubMessageModalMessageInput');
+
+        hubMessageModalSubjectInput.value = '';
+        hubMessageModalMessageInput.value = '';
+        profileDisplayClose();
+        vm.messageModalState = 'hubDisplayMessageModalActive' + vm.monthSelect;
+        vm.backgroundStatus = 'hubContainerBlur' + vm.monthSelect;
+        let friend = vm.friendsList.filter(entry => {
+          return(entry.uuid === recipientUuid);
+        });
+        vm.recipientAvatar = friend[0].avatar;
+        vm.recipientName = friend[0].name;
+        vm.recipientUuid = friend[0].uuid;
+        hubMessageModalSubjectInput.focus();
+      }
+
+      function profileDisplayClose() {
+        vm.profileDisplayModal = 'hubProfileDisplayerInactive' + vm.monthSelect;
+        vm.backgroundStatus = 'hubContainer' + vm.monthSelect;
+      }
+
+      function displayFriend(friendUuid) {
+        vm.profileDisplayModal = 'hubProfileDisplayerActive' + vm.monthSelect;
+        vm.backgroundStatus = 'hubContainerBlur' + vm.monthSelect;
+        vm.hubProfileDisplayerLocationImage = '';
+        vm.hubProfileDisplayerLocationAlt = '';
+        vm.hubProfileDisplayerImageAttribution = '';
+        if (friendUuid !== vm.user.uuid) {
+          vm.mayMessageRemove = true;
+          let friend = vm.friendsList.filter(entry => {
+            return(entry.uuid === friendUuid);
+          });
+          vm.profileDisplayer = friend[0];
+          $http.get(`/unsplashcity/${friend[0].extended_profile.location.name}`)
+          .then(locateData => {
+
+            let locate = locateData.data;
+            let index = Math.floor(Math.random() * locate.results.length);
+            vm.hubProfileDisplayerLocationImage = locate.results[index].urls.regular;
+            vm.hubProfileDisplayerLocationAlt = locate.results[index].alt_description;
+            vm.hubProfileDisplayerImageAttribution = locate.results[index].user.name;
+          });
+
+        } else {
+          vm.mayMessageRemove = false;
+          vm.profileDisplayer = vm.user;
+          vm.profileDisplayer.name = vm.user.first_name + ' ' + vm.user.last_name;
+          vm.profileDisplayer.extended_profile = vm.userExtendedProfile;
+          vm.hubProfileDisplayerLocationImage = vm.userLocationImage;
+          vm.hubProfileDisplayerLocationAlt = vm.userLocationAltText;
+          vm.hubProfileDisplayerImageAttribution = vm.locationAttribution
+
+        }
+      }
+
+      function friendFiltering() {
+        let hubFriendsFilter = document.getElementById('hubFriendsFilter');
+
+        if (hubFriendsFilter.value === '') {
+          vm.filteredFriendsList = vm.friendsList;
+        } else {
+          vm.filteredFriendsList = vm.friendsList.filter(entry => {
+            return(entry.name.toLowerCase().indexOf(hubFriendsFilter.value.toLowerCase()) !== -1);
+          });
+        }
+      }
+
+      function submitResponse(msgUuid) {
+        let hubResponseText = document.getElementById('hubResponseText' + msgUuid);
+        let now = new Date();
+        let months = [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'Decembter' ];
+        let hours = '';
+        let minutes = '';
+        let seconds = '';
+        if (now.getHours() < 10) {
+          hours += '0';
+        }
+        if (now.getMinutes() < 10) {
+          minutes += '0';
+        }
+        if (now.getSeconds() < 10) {
+          seconds += '0';
+        }
+        hours += now.getHours() + ':';
+        minutes += now.getMinutes() + ':';
+        seconds += now.getSeconds();
+        if (hubResponseText.value !== '') {
+          for (let i = 0; i < vm.userMessages.length; i++) {
+            if (vm.userMessages[i].uuid === msgUuid) {
+              vm.userMessages[i].replies.push({
+                  cleanDate: now.getFullYear() + ' ' + months[now.getMonth()] + ' ' + now.getDate() + ' - ' + hours + minutes + seconds,
+                  created_at: now,
+                  from: {
+                    avatar: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/lovecraftAvatar.jpg',
+                    name: 'Devin Hurd',
+                    uuid: '17917373-ee9c-46aa-a38a-cacc475abee7'
+                  },
+                  message: hubResponseText.value,
+                  open: false,
+                  opened: false,
+                  subject: 'RE: ' + vm.userMessages[i].subject,
+                  to: {
+                    avatar: vm.userMessages[i].from.avatar,
+                    name: vm.userMessages[i].from.name,
+                    uuid: vm.userMessages[i].from.uuid
+                  },
+                  updated_at: now,
+                  uuid: '8efa4c37-989b-449f-b7aa-f7591675fd12'
+                });
+              vm.userMessages[i].opened = false;
+              hubResponseText.value = '';
+            }
+          }
+        }
+      }
+
+      function toggleMessageOpen(uuid) {
+        for (let i = 0; i < vm.userMessages.length; i++) {
+          if (vm.userMessages[i].uuid === uuid) {
+            if (vm.userMessages[i].open) {
+              vm.userMessages[i].open = false;
+            } else {
+              vm.userMessages[i].opened = true;
+              vm.userMessages[i].open = true;
+            }
+          } else {
+            vm.userMessages[i].open = false;
+          }
+        }
+      }
+
+      function obtainUserLocationImage() {
+
+        $http.get(`/unsplashcity/${vm.userExtendedProfile.location.name}`)
+        .then(locateData => {
+
+          let locate = locateData.data;
+          let index = Math.floor(Math.random() * locate.results.length);
+          vm.userLocationImage = locate.results[index].urls.regular;
+          vm.userLocationAltText = locate.results[index].alt_description;
+          vm.locationAttribution = locate.results[index].user.name
+        });
+      }
+
+      function navigateProfileViews(state) {
+        if (state === 'public') {
+          vm.profileNavState = 'public';
+          vm.navigationPublicState = 'hubUserProfileNavigationActive' + vm.monthSelect;
+          vm.navigationPrivateState = 'hubUserProfileNavigationInactive' + vm.monthSelect;
+          vm.navigationMessagesState = 'hubUserProfileNavigationInactive' + vm.monthSelect;
+          vm.navigationFriendsState = 'hubUserProfileNavigationInactive' + vm.monthSelect;
+          vm.navigationContactState = 'hubUserProfileNavigationInactive' + vm.monthSelect;
+          vm.navigationSliderState = 'hubUserProfileNavigationSlidePublicState' + vm.monthSelect;
+        }
+        if (state === 'private') {
+          vm.profileNavState = 'private';
+          vm.navigationPublicState = 'hubUserProfileNavigationInactive' + vm.monthSelect;
+          vm.navigationPrivateState = 'hubUserProfileNavigationActive' + vm.monthSelect;
+          vm.navigationMessagesState = 'hubUserProfileNavigationInactive' + vm.monthSelect;
+          vm.navigationFriendsState = 'hubUserProfileNavigationInactive' + vm.monthSelect;
+          vm.navigationContactState = 'hubUserProfileNavigationInactive' + vm.monthSelect;
+          vm.navigationSliderState = 'hubUserProfileNavigationSlidePrivateState' + vm.monthSelect;
+        }
+        if (state === 'messages') {
+          vm.profileNavState = 'messages';
+          vm.navigationPublicState = 'hubUserProfileNavigationInactive' + vm.monthSelect;
+          vm.navigationPrivateState = 'hubUserProfileNavigationInactive' + vm.monthSelect;
+          vm.navigationMessagesState = 'hubUserProfileNavigationActive' + vm.monthSelect;
+          vm.navigationFriendsState = 'hubUserProfileNavigationInactive' + vm.monthSelect;
+          vm.navigationContactState = 'hubUserProfileNavigationInactive' + vm.monthSelect;
+          vm.navigationSliderState = 'hubUserProfileNavigationSlideMessagesState' + vm.monthSelect;
+        }
+        if (state === 'friends') {
+          vm.profileNavState = 'friends';
+          vm.navigationPublicState = 'hubUserProfileNavigationInactive' + vm.monthSelect;
+          vm.navigationPrivateState = 'hubUserProfileNavigationInactive' + vm.monthSelect;
+          vm.navigationMessagesState = 'hubUserProfileNavigationInactive' + vm.monthSelect;
+          vm.navigationFriendsState = 'hubUserProfileNavigationActive' + vm.monthSelect;
+          vm.navigationContactState = 'hubUserProfileNavigationInactive' + vm.monthSelect;
+          vm.navigationSliderState = 'hubUserProfileNavigationSlideFriendsState' + vm.monthSelect;
+        }
+        if (state === 'contact') {
+          vm.profileNavState = 'contact';
+          vm.navigationPublicState = 'hubUserProfileNavigationInactive' + vm.monthSelect;
+          vm.navigationPrivateState = 'hubUserProfileNavigationInactive' + vm.monthSelect;
+          vm.navigationMessagesState = 'hubUserProfileNavigationInactive' + vm.monthSelect;
+          vm.navigationFriendsState = 'hubUserProfileNavigationInactive' + vm.monthSelect;
+          vm.navigationContactState = 'hubUserProfileNavigationActive' + vm.monthSelect;
+          vm.navigationSliderState = 'hubUserProfileNavigationSlideContactState' + vm.monthSelect;
+        }
+      }
 
       function hubDisplayBlogData(blogIndex) {
         vm.currentBlogLogo = vm.userBlogs[parseInt(blogIndex)].logo;
@@ -977,6 +1612,8 @@
         }
 
         setDaysRelativeToToday();
+        setFooterMessage();
+        obtainUserLocationImage();
 
       }
 

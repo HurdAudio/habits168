@@ -284,6 +284,7 @@
               deactivateUserLogin();
               vm.userLoggedIn = true;
               setGreetingMessage();
+              navigateToUserHub();
             }
           });
         });
@@ -403,6 +404,7 @@
           }
           vm.userLoggedIn = true;
           setGreetingMessage();
+          navigateToUserHub();
         });
 
       }

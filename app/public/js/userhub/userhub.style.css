@@ -188,7 +188,7 @@
   background-image: radial-gradient(#b0c1d5, #99b9c7, #8aaeba);
   height: 81vh;
   opacity: 0.9;
-  width: 100%;
+  width: 103%;
 }
 
 .hubShareContainer_JanuaryA {
@@ -207,11 +207,13 @@
 }
 
 .hubShareBylineAvatar_JanuaryA {
+  cursor: pointer;
   width: 20%;
 }
 
 .hubBylineName_JanuaryA {
   color: #08252e;
+  cursor: pointer;
   font-family: 'Markazi Text', serif;
   font-size: 30px;
   margin: 5px 0 35px 0;
@@ -395,12 +397,14 @@
 }
 
 .hubShareCommenterAvatar_JanuaryA {
+  cursor: pointer;
   float: left;
   max-width: 30px;
 }
 
 .hubShareCommenterName_JanuaryA {
   color: #08252e;
+  cursor: pointer;
   font-family: 'Markazi Text', serif;
   font-size: 24px;
   position: relative;
@@ -466,6 +470,9 @@
 
 .hubReaderTodayBlock_JanuaryA {
   background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/robe-154808_640.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
   height: 25vh;
   margin: 1.2%;
   padding: 10px 15px;
@@ -528,6 +535,9 @@
 
 .hubReaderDay1BlockActive_JanuaryA {
   background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/robe-154808_640.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
   height: 25vh;
   margin: 1.2%;
   padding: 10px 15px;
@@ -541,6 +551,9 @@
 
 .hubReaderDay1BlockInactive_JanuaryA {
   background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/robe-154808_640.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
   height: 25vh;
   margin: 1.2%;
   opacity: 0;
@@ -554,6 +567,9 @@
 
 .hubReaderDay2BlockActive_JanuaryA {
   background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/robe-154808_640.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
   height: 25vh;
   margin: 1.2%;
   padding: 10px 15px;
@@ -567,6 +583,9 @@
 
 .hubReaderDay2BlockInactive_JanuaryA {
   background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/robe-154808_640.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
   height: 25vh;
   margin: 1.2%;
   opacity: 0;
@@ -580,6 +599,9 @@
 
 .hubReaderDay3BlockActive_JanuaryA {
   background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/robe-154808_640.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
   height: 25vh;
   margin: 1.2%;
   padding: 10px 15px;
@@ -593,6 +615,9 @@
 
 .hubReaderDay3BlockInactive_JanuaryA {
   background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/robe-154808_640.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
   height: 25vh;
   margin: 1.2%;
   opacity: 0;
@@ -606,6 +631,9 @@
 
 .hubReaderDay4BlockActive_JanuaryA {
   background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/robe-154808_640.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
   height: 25vh;
   margin: 1.2%;
   padding: 10px 15px;
@@ -619,6 +647,9 @@
 
 .hubReaderDay4BlockInactive_JanuaryA {
   background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/robe-154808_640.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
   height: 25vh;
   margin: 1.2%;
   opacity: 0;
@@ -632,6 +663,9 @@
 
 .hubReaderDay5BlockActive_JanuaryA {
   background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/robe-154808_640.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
   height: 25vh;
   margin: 1.2%;
   padding: 10px 15px;
@@ -645,6 +679,9 @@
 
 .hubReaderDay5BlockInactive_JanuaryA {
   background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/robe-154808_640.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
   height: 25vh;
   margin: 1.2%;
   opacity: 0;
@@ -658,6 +695,9 @@
 
 .hubReaderDay6BlockActive_JanuaryA {
   background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/robe-154808_640.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
   height: 25vh;
   margin: 1.2%;
   padding: 10px 15px;
@@ -671,6 +711,9 @@
 
 .hubReaderDay6BlockInactive_JanuaryA {
   background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/robe-154808_640.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
   height: 25vh;
   margin: 1.2%;
   opacity: 0;
@@ -966,4 +1009,848 @@
   font-family: 'Markazi Text', serif;
   font-size: 24px;
   width: 85%;
+}
+
+.hubUserProfileBasicsPane_JanuaryA {
+  border-right: 1px solid #08252e;
+  float: left;
+  height: 81vh;
+  width: 30%;
+}
+
+.hubPublicPrivateProfilePane_JanuaryA {
+  border-left: 1px solid #08252e;
+  float: left;
+  height: 81vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 68%;
+}
+
+.hubBasicUserData_JanuaryA {
+  height: 90%;
+  left: 5%;
+  position: relative;
+  top: 5%;
+  width: 88%;
+}
+
+.hubLoggedInAsLabel_JanuaryA {
+  color: #08252e;
+  font-family: 'Markazi Text', serif;
+  font-size: 30px;
+}
+
+.hubLoggedInAsAvatar_JanuaryA {
+  max-width: 150px;
+}
+
+.hubProfileUserName_JanuaryA {
+  color: #08252e;
+  font-family: 'Markazi Text', serif;
+  font-size: 30px;
+  margin: 0 0 25px 0;
+}
+
+.hubUserDatas_JanuaryA {
+  color: #08252e;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+}
+
+.hubEditProfileButton_JanuaryA {
+  background: #32728e;
+  border: none;
+  color: #e3e6eb;
+  cursor: pointer;
+  float: right;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  margin: 30px 15px;
+  transform: skewX(-15deg);
+  transition: all 0.4s linear;
+}
+
+.hubEditProfileButton_JanuaryA:hover {
+  background: #cddbe7;
+  color: #08252e;
+  transform: skewX(-5deg);
+  transition: all 0.4s linear;
+}
+
+.hubUserProfileNavigation_JanuaryA {
+  height: auto;
+  left: 60%;
+  position: relative;
+  top: 0;
+  width: 40%;
+}
+
+.hubUserProfileNavigationActive_JanuaryA {
+  filter: blur(0px);
+  height: 50px;
+  transition: all 1s linear;
+  width: 100%;
+  z-index: 11;
+}
+
+.hubUserProfileNavigationActive_JanuaryA p {
+  color: #08252e;
+  font-family: 'Markazi Text', serif;
+  font-size: 36px;
+  transform: translateX(15px) translateY(10px);
+  z-index: 111;
+}
+
+.hubUserProfileNavigationInactive_JanuaryA {
+  cursor: pointer;
+  filter: blur(1px);
+  height: 50px;
+  transition: all 1s linear;
+  width: 100%;
+}
+
+.hubUserProfileNavigationInactive_JanuaryA p {
+  color: #e3e6eb;
+  font-family: 'Markazi Text', serif;
+  font-size: 36px;
+  transform: translateX(15px) translateY(10px);
+  z-index: 11;
+}
+
+.hubUserProfileNavigationSlidePublicState_JanuaryA {
+  background: transparent;
+  border-bottom: 2px solid #155d75;
+  border-top: 2px solid #155d75;
+  height: 46px;
+  left: 0;
+  position: relative;
+  transform: translateY(-250px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+  width: 100%;
+  z-index: 1;
+}
+
+.hubUserProfileNavigationSlidePrivateState_JanuaryA {
+  background: transparent;
+  border-bottom: 2px solid #155d75;
+  border-top: 2px solid #155d75;
+  height: 46px;
+  left: 0;
+  position: relative;
+  transform: translateY(-200px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+  width: 100%;
+  z-index: 1;
+}
+
+.hubUserProfileNavigationSlideMessagesState_JanuaryA {
+  background: transparent;
+  border-bottom: 2px solid #155d75;
+  border-top: 2px solid #155d75;
+  height: 46px;
+  left: 0;
+  position: relative;
+  transform: translateY(-150px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+  width: 100%;
+  z-index: 1;
+}
+
+.hubUserProfileNavigationSlideFriendsState_JanuaryA {
+  background: transparent;
+  border-bottom: 2px solid #155d75;
+  border-top: 2px solid #155d75;
+  height: 46px;
+  left: 0;
+  position: relative;
+  transform: translateY(-100px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+  width: 100%;
+  z-index: 1;
+}
+
+.hubUserProfileNavigationSlideContactState_JanuaryA {
+  background: transparent;
+  border-bottom: 2px solid #155d75;
+  border-top: 2px solid #155d75;
+  height: 46px;
+  left: 0;
+  position: relative;
+  transform: translateY(-50px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+  width: 100%;
+  z-index: 1;
+}
+
+.hubPublicProfileDeets_JanuaryA {
+  height: auto;
+  width: 100%;
+}
+
+.hubUserPublicStats_JanuaryA {
+  max-width: 750px;
+  padding: 5%;
+}
+
+.hubUserLocationStat_JanuaryA {
+  color: #08252e;
+  font-family: 'Markazi Text', serif;
+  font-size: 30px;
+  margin: 9px 0;
+  max-width: 750px;
+}
+
+.hubUserLocationMap_JanuaryA {
+  max-width: 30%;
+}
+
+.hubPhotoAttribution_JanuaryA {
+  color: #08252e;
+  font-family: 'Markazi Text', serif;
+  font-size: 12px;
+}
+
+.hubUserDescriptionStat_JanuaryA {
+  color: #08252e;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  margin: 30px 0 0 0;
+}
+
+.hubUserOccupationStat_JanuaryA {
+  color: #08252e;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  margin: 50px 0 0 0;
+}
+
+.hubUserEmployerStat_JanuaryA {
+  color: #08252e;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  margin: 10px 0 0 0;
+}
+
+.hubUserEducationStatLabel_JanuaryA {
+  color: #08252e;
+  font-family: 'Markazi Text', serif;
+  font-size: 30px;
+  margin: 60px 0 0 0;
+}
+
+.hubUserEducationStat_JanuaryA {
+  color: #08252e;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  margin: 10px 0 0 0;
+}
+
+.hubUserEmailStat_JanuaryA {
+  color: #08252e;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  margin: 40px 0 0 0;
+}
+
+.hubUserPhoneStat_JanuaryA {
+  color: #08252e;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  margin: 10px 0 0 0;
+}
+
+.hubUserBirthdate_JanuaryA {
+  color: #08252e;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  margin: 10px 0 5px 0;
+}
+
+.hubMessageCenter_JanuaryA {
+  padding: 3%;
+  width: 100%;
+}
+
+.hubMessageScroll_JanuaryA {
+  height: 76vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+.hubMessageCenterLabel_JanuaryA {
+  color: #08252e;
+  font-family: 'Markazi Text', serif;
+  font-size: 36px;
+  margin: 15px 0 15px 0;
+}
+
+.hubMainMessageContainer_JanuaryA {
+  border-top: 3px solid #08252e;
+  color: #08252e;
+  cursor: pointer;
+  margin-top: 5px;
+  max-width: 750px;
+  width: 100%;
+}
+
+.unreadIcon_JanuaryA {
+  float: left;
+  font-size: 48px;
+  margin: 8px 0;
+}
+
+.hubMessageFromSubjectfalse_JanuaryA {
+  color: #08252e;
+  float: left;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  margin: 0 10px 0 5px;
+}
+
+/* .hubMessageFromSubjectfalse_JanuaryA:hover {
+  color: #e3e6eb;
+} */
+
+.hubMessageFromSubjecttrue_JanuaryA {
+  color: #08252e;
+  float: left;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  margin: 0 10px 0 5px;
+}
+
+/* .hubMessageFromSubjecttrue_JanuaryA:hover {
+  color: #e3e6eb;
+} */
+
+.hubExpandedMessageContainer_JanuaryA {
+  /* border-bottom: 1px solid #08252e; */
+  /* border-top: 1px solid #08252e; */
+  margin-left: 30px;
+}
+
+.hubMessageAvatar_JanuaryA {
+  float: left;
+  margin: 4px 1px 0 15px;
+  max-width: 3%;
+}
+
+.hubMessageMessage_JanuaryA {
+  color: #08252e;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  margin: 10px 0 5px 0;
+  max-width: 750px;
+}
+
+.hubReplyNameDate_JanuaryA {
+  color: #08252e;
+  float: left;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  margin: 3px 10px 0 5px;
+}
+
+.hubReplyText_JanuaryA {
+  background: #c1d0da;
+  border: none;
+  color: #08252e;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  margin-bottom: 35px;
+  max-width: 750px;
+  rows: 3;
+  width: 80%;
+}
+
+.hubReplyResponseText_JanuaryA {
+  background: #c1d0da;
+  border: none;
+  color: #08252e;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  max-width: 750px;
+  rows: 3;
+  width: 80%;
+}
+
+.hubReplySubmit_JanuaryA {
+  background: #32728e;
+  border: none;
+  color: #e3e6eb;
+  cursor: pointer;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  margin: 1px 2px 15px 5px;
+  transform: skewX(-15deg);
+  transition: all 0.4s linear;
+}
+
+.hubReplySubmit_JanuaryA:hover {
+  background: #cddbe7;
+  color: #08252e;
+  transform: skewX(-5deg);
+  transition: all 0.4s linear;
+}
+
+.hubFriendsCenter_JanuaryA {
+  padding: 3%;
+  width: 100%;
+}
+
+.hubFriendsCenterLabel_JanuaryA {
+  color: #08252e;
+  font-family: 'Markazi Text', serif;
+  font-size: 36px;
+  margin: 15px 0 15px 0;
+}
+
+.hubFriendsScroll_JanuaryA {
+  height: 76vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+.hubFriendsFilter_JanuaryA {
+  background: #b0c1d5;
+  border: none;
+  color: #08252e;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  outline-color: #32728e;
+  width: 50%;
+}
+
+.hubSearchIcon_JanuaryA {
+  color: #08252e;
+  font-size: 24px;
+  margin: 5px 15px 0 0;
+}
+
+.hubFriendRollEntry_JanuaryA {
+  cursor: pointer;
+  margin: 20px 0 0 50px;
+  max-width: 750px;
+}
+
+.hubFriendsRollAvatar_JanuaryA {
+  border-radius: 100%;
+  max-height: 50px;
+  max-width: 50px;
+}
+
+.hubFriendsNameListing_JanuaryA {
+  color: #08252e;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+}
+
+.hubFriendMessageButton_JanuaryA {
+  background: #32728e;
+  border: none;
+  color: #e3e6eb;
+  cursor: pointer;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  margin: 0 5px 15px 50px;
+  transform: skewX(-15deg);
+  transition: all 0.4s linear;
+}
+
+.hubFriendMessageButton_JanuaryA:hover {
+  background: #cddbe7;
+  color: #08252e;
+  transform: skewX(-5deg);
+  transition: all 0.4s linear;
+}
+
+.hubProfileDisplayerActive_JanuaryA {
+  background: #b0c1d5;
+  border: 4px solid #142d38;
+  height: auto;
+  left: 15%;
+  opacity: 1;
+  position: absolute;
+  top: 10%;
+  transition: all 0.4s linear;
+  width: 68%;
+  z-index: 100;
+}
+
+.hubProfileDisplayerInactive_JanuaryA {
+  background: #b0c1d5;
+  border: 4px solid #142d38;
+  height: auto;
+  left: -45%;
+  opacity: 0;
+  position: absolute;
+  top: 70%;
+  transition: all 0.4s linear;
+  width: 68%;
+  z-index: -6;
+}
+
+.hubProfileDisplayCloseButton_JanuaryA {
+  background: #32728e;
+  border: none;
+  color: #e3e6eb;
+  cursor: pointer;
+  float: right;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  margin: 15px;
+  outline-color: #32728e;
+  position: relative;
+  transform: skewX(-15deg);
+  transition: all 0.4s linear;
+}
+
+.hubProfileDisplayCloseButton_JanuaryA:hover {
+  background: #cddbe7;
+  color: #08252e;
+  transform: skewX(-5deg);
+  transition: all 0.4s linear;
+}
+
+.hubProfileDisplayAvatar_JanuaryA {
+  float: left;
+  margin: 15px;
+  max-width: 200px;
+}
+
+.hubProfileDisplayDataContainer_JanuaryA {
+  padding: 15px;
+}
+
+.hubProfileDisplayName_JanuaryA {
+  color: #08252e;
+  float: left;
+  font-family: 'Markazi Text', serif;
+  font-size: 48px;
+}
+
+.hubProfileDisplayDescritors_JanuaryA {
+  color: #08252e;
+  float: left;
+  font-family: 'Markazi Text', serif;
+  font-size: 30px;
+}
+
+.hubDisplayContainer2_JanuaryA {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.profileDisplayStats_JanuaryA {
+  color: #08252e;
+  float: left;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  width: 70%;
+}
+
+.hubProfileDisplayBioBlock_JanuaryA {
+  padding: 15px;
+  min-width: 215px;
+  width: 30%;
+
+}
+
+.hubProfileDisplayBioImage_JanuaryA {
+  max-width: 200px;
+}
+
+.hubProfileDisplayUserDatas_JanuaryA {
+  float: left;
+  padding: 15px;
+  width: 60%;
+}
+
+.hubProfileDisplayDescritors2_JanuaryA {
+  color: #08252e;
+  float: left;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  width: 70%;
+}
+
+.hubDisplayMessageButton_JanuaryA {
+  background: #32728e;
+  border: none;
+  color: #e3e6eb;
+  cursor: pointer;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  margin: 15px;
+  outline-color: #32728e;
+  position: relative;
+  transform: skewX(-15deg);
+  transition: all 0.4s linear;
+}
+
+.hubDisplayMessageButton_JanuaryA:hover {
+  background: #cddbe7;
+  color: #08252e;
+  transform: skewX(-5deg);
+  transition: all 0.4s linear;
+}
+
+.hubDisplayMessageModalActive_JanuaryA {
+  background: #b0c1d5;
+  border: 4px solid #142d38;
+  height: auto;
+  left: 15%;
+  opacity: 1;
+  position: absolute;
+  top: 10%;
+  transition: all 0.4s linear;
+  width: 68%;
+  z-index: 100;
+}
+
+.hubDisplayMessageModalInactive_JanuaryA {
+  background: #b0c1d5;
+  border: 4px solid #142d38;
+  height: auto;
+  left: -45%;
+  opacity: 0;
+  position: absolute;
+  top: 70%;
+  transition: all 0.4s linear;
+  width: 68%;
+  z-index: -6;
+}
+
+.hubMessageModalLabel_JanuaryA {
+  color: #08252e;
+  font-family: 'Markazi Text', serif;
+  font-size: 36px;
+  margin: 30px;
+}
+
+.hubMessageModalButtonFields_JanuaryA {
+  padding: 15px 0 45px 35%;
+}
+
+.hubMessageModalButton_JanuaryA {
+  background: #32728e;
+  border: none;
+  color: #e3e6eb;
+  cursor: pointer;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  margin: 0 30px;
+  outline-color: #32728e;
+  position: relative;
+  transform: skewX(-15deg);
+  transition: all 0.4s linear;
+}
+
+.hubMessageModalButton_JanuaryA:hover {
+  background: #cddbe7;
+  color: #08252e;
+  transform: skewX(-5deg);
+  transition: all 0.4s linear;
+}
+
+.hubMessageModalInputs_JanuaryA {
+  padding: 15px 45px 0 45px;
+}
+
+.hubMessageModalSubjectInput_JanuaryA {
+  background: #cddbe7;
+  border: none;
+  color: #08252e;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  margin: 0 0 0 8%;
+  outline-color: #32728e;
+  width: 80%;
+}
+
+.hubMessageModalMessageInput_JanuaryA {
+  background: #cddbe7;
+  border: none;
+  color: #08252e;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  margin: 5px 0 0 8%;
+  outline-color: #32728e;
+  width: 80%;
+}
+
+.hubMessageModalToFields_JanuaryA {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 20px 0 10px 12%;
+  width: 100%;
+}
+
+.hubRecipientAvatar_JanuaryA {
+  float: left;
+  max-width: 50px;
+}
+
+.hubRecipientName_JanuaryA {
+  float: left;
+  color: #08252e;
+  font-family: 'Markazi Text', serif;
+  font-size: 36px;
+  margin: 12px 0 8px 15px;
+}
+
+.hubRemoveGuardrailActive_JanuaryA {
+  background: #b0c1d5;
+  border: 4px solid #142d38;
+  height: auto;
+  left: 25%;
+  opacity: 1;
+  position: absolute;
+  top: 30%;
+  transition: all 0.4s linear;
+  width: 50%;
+  z-index: 100;
+}
+
+.hubRemoveGuardrailInactive_JanuaryA {
+  background: #b0c1d5;
+  border: 4px solid #142d38;
+  height: auto;
+  left: -45%;
+  opacity: 0;
+  position: absolute;
+  top: 70%;
+  transition: all 0.4s linear;
+  width: 68%;
+  z-index: -6;
+}
+
+.hubGuardrailText_JanuaryA {
+  color: #08252e;
+  font-family: 'Markazi Text', serif;
+  font-size: 36px;
+  margin: 24px 10% 8px 10%;
+}
+
+.hubGuardrailButton_JanuaryA {
+  background: #32728e;
+  border: none;
+  color: #e3e6eb;
+  cursor: pointer;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  margin: 20px 10px;
+  outline-color: #32728e;
+  position: relative;
+  transform: skewX(-15deg);
+  transition: all 0.4s linear;
+}
+
+.hubGuardrailButton_JanuaryA:hover {
+  background: #cddbe7;
+  color: #08252e;
+  transform: skewX(-5deg);
+  transition: all 0.4s linear;
+}
+
+.hubGuardrailButtonsDiv_JanuaryA {
+  margin: 5px 40%;
+}
+
+.hubOtherProfileEditButton_JanuaryA {
+  float: right;
+  padding: 30px 45px;
+}
+
+.pendingFriendRequests_JanuaryA {
+  color: #08252e;
+  float: right;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  left: 80%;
+  margin: 1%;
+  position: absolute;
+  top: 20%;
+}
+
+.hubContactCenter_JanuaryA {
+  padding: 10%;
+  width: 100%;
+}
+
+.hubContactLabel_JanuaryA {
+  color: #08252e;
+  font-family: 'Markazi Text', serif;
+  font-size: 48px;
+}
+
+.hubFooter_JanuaryA {
+  bottom: 3px;
+  color: #012736;
+  font-family: 'Markazi Text', serif;
+  font-size: 13px;
+  left: 26px;
+  position: absolute;
+}
+
+.hubContactFormField_JanuaryA {
+  margin: 25px 0;
+}
+
+.hubContactSubjectInput_JanuaryA {
+  background: #cddbe7;
+  border: none;
+  color: #08252e;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  margin: 5px 0 5px 0;
+  max-width: 750px;
+  outline-color: #32728e;
+  width: 80%;
+}
+
+.hubContactMessageInput_JanuaryA {
+  background: #cddbe7;
+  border: none;
+  color: #08252e;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  margin: 5px 0 5px 0;
+  max-width: 750px;
+  outline-color: #32728e;
+  width: 80%;
+}
+
+.hubContactAdminSubmitButton_JanuaryA {
+  background: #32728e;
+  border: none;
+  color: #e3e6eb;
+  cursor: pointer;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  margin: 5px 0;
+  outline-color: #32728e;
+  position: relative;
+  transform: skewX(-15deg);
+  transition: all 0.4s linear;
+  width: 76%;
+}
+.hubContactAdminSubmitButton_JanuaryA:hover {
+  background: #cddbe7;
+  color: #08252e;
+  transform: skewX(-5deg);
+  transition: all 0.4s linear;
 }
