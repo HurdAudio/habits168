@@ -348,7 +348,7 @@
 }
 
 .hubShareAddReactionsToggle_JanuaryA {
-  padding: 0 0 5px 45%;
+  padding: 0 0 5px 35%;
   width: 100%;
 }
 
@@ -476,7 +476,7 @@
   height: 25vh;
   margin: 1.2%;
   padding: 10px 15px;
-  width: 9%;
+  width: 8%;
 }
 
 .hubReaderTodayLabel_JanuaryA {
@@ -545,7 +545,7 @@
   transform: translateX(0px);
   transition: all 0.5s;
   transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
-  width: 9%;
+  width: 8%;
   z-index: 1;
 }
 
@@ -561,7 +561,7 @@
   transform: translateX(-115%);
   transition: all 0.5s;
   transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
-  width: 9%;
+  width: 8%;
   z-index: -1;
 }
 
@@ -577,7 +577,7 @@
   transform: translateX(0px);
   transition: all 0.5s;
   transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
-  width: 9%;
+  width: 8%;
   z-index: 1;
 }
 
@@ -593,7 +593,7 @@
   transform: translateX(-230%);
   transition: all 0.5s;
   transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
-  width: 9%;
+  width: 8%;
   z-index: -1;
 }
 
@@ -609,7 +609,7 @@
   transform: translateX(0px);
   transition: all 0.5s;
   transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
-  width: 9%;
+  width: 8%;
   z-index: 1;
 }
 
@@ -625,7 +625,7 @@
   transform: translateX(-345%);
   transition: all 0.5s;
   transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
-  width: 9%;
+  width: 8%;
   z-index: -1;
 }
 
@@ -641,7 +641,7 @@
   transform: translateX(0px);
   transition: all 0.5s;
   transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
-  width: 9%;
+  width: 8%;
   z-index: 1;
 }
 
@@ -657,7 +657,7 @@
   transform: translateX(-460%);
   transition: all 0.5s;
   transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
-  width: 9%;
+  width: 8%;
   z-index: -1;
 }
 
@@ -673,7 +673,7 @@
   transform: translateX(0px);
   transition: all 0.5s;
   transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
-  width: 9%;
+  width: 8%;
   z-index: 1;
 }
 
@@ -689,7 +689,7 @@
   transform: translateX(-575%);
   transition: all 0.5s;
   transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
-  width: 9%;
+  width: 8%;
   z-index: -1;
 }
 
@@ -705,7 +705,7 @@
   transform: translateX(0px);
   transition: all 0.5s;
   transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
-  width: 9%;
+  width: 8%;
   z-index: 1;
 }
 
@@ -721,7 +721,7 @@
   transform: translateX(-690%);
   transition: all 0.5s;
   transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
-  width: 9%;
+  width: 8%;
   z-index: -1;
 }
 
@@ -962,7 +962,7 @@
   font-size: 36px;
   margin: 0 0 0 22%;
   position: relative;
-  width: 100%;
+  width: 90%;
 }
 
 .currentBlogContributersDiv_JanuaryA {
@@ -1853,4 +1853,184 @@
   color: #08252e;
   transform: skewX(-5deg);
   transition: all 0.4s linear;
+}
+
+@media only screen and (max-width: 768px) {
+  .hubReactionGestalt_JanuaryA {
+    margin: 4px;
+    width: 25%;
+  }
+
+  .hubShareReactionTally_JanuaryA {
+    font-size: 18px;
+    margin: 3px 1px 10px 4px;
+  }
+
+  .hubShareReactionDelete_JanuaryA {
+    margin: 3px 4px 10px 0;
+  }
+
+  .hubReaderTodayBlock_JanuaryA {
+    width: 5%;
+  }
+
+  .currentBlogTagline_JanuaryA {
+    width: 80%;
+  }
+
+  .hubUserProfileNavigation_JanuaryA {
+    transform: scale(0.9) translateX(-25px);
+  }
+}
+
+@media only screen and (max-width: 414px) {
+
+  .hubBlogsDashboard_JanuaryA {
+    width: 99%;
+  }
+
+  .hubPublicPrivateProfilePane_JanuaryA {
+    width: 60%;
+  }
+
+  .hubTitleFlex_JanuaryA {
+    transform: scale(0.9);
+  }
+
+  .hubBylineName_JanuaryA {
+    font-size: 18px;
+  }
+
+  .hubShareComments_JanuaryA {
+    font-size: 18px;
+  }
+
+  .hubShareAddReactionsToggle_JanuaryA p {
+    font-size: 13px;
+    transform: translateX(-10px);
+  }
+
+  .hubReactionGestalt_JanuaryA {
+    width: 40%;
+  }
+
+  .hubShareReactionEmoji_JanuaryA {
+    width: 50%;
+  }
+
+  .hubTabLabel_JanuaryA {
+    font-size: 13px;
+  }
+
+  .hubShareCommentsLabel_JanuaryA {
+    font-size: 13px;
+  }
+
+  .hubShareCommenterName_JanuaryA {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .hubShareCommentComment_JanuaryA {
+    font-size: 13px;
+  }
+
+  .hubSignoutButton_JanuaryA {
+    transform: translateX(-30px);
+  }
+
+  .hubShareNewComments_JanuaryA {
+    font-size: 13px;
+  }
+
+  .hubShareHeadline_JanuaryA {
+    font-size: 30px;
+  }
+
+  .hubReaderDashboard_JanuaryA {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  .hubMyBlogsLabel_JanuaryA {
+    font-size: 30px;
+  }
+
+  .hubBlogListEntry_JanuaryA {
+    font-size: 18px;
+  }
+
+  .hubNewBlogButton_JanuaryA {
+    font-size: 12px;
+    transform: translateX(-20px);
+  }
+
+  .currentBlogLogoImage_JanuaryA {
+    max-width: 100px;
+  }
+
+  .currentBlogName_JanuaryA {
+    font-size: 30px;
+  }
+
+  .currentBlogTagline_JanuaryA {
+    font-size: 18px;
+  }
+
+  .hubContributersLabel_JanuaryA {
+    font-size: 18px;
+  }
+
+  .hubBlogContributerName_JanuaryA {
+    font-size: 18px;
+  }
+
+  .hubBlogDataPosts_JanuaryA {
+    font-size: 18px;
+  }
+
+  .hubBlogDataDiv_JanuaryA {
+    padding-left: 30px;
+  }
+
+  .hubLoggedInAsAvatar_JanuaryA {
+    max-width: 70px;
+  }
+
+  .hubUserProfileNavigation_JanuaryA {
+    transform: translateX(-70px) translateY(-50px) scale(0.6);
+  }
+
+  .hubMessageMessage_JanuaryA {
+    font-size: 18px;
+  }
+
+  .hubMessageFromSubjecttrue_JanuaryA {
+    font-size: 18px;
+  }
+
+  .hubMessageFromSubjectfalse_JanuaryA {
+    font-size: 18px;
+  }
+
+  .hubReplyText_JanuaryA {
+    font-size: 18px;
+  }
+
+  .hubReplyResponseText_JanuaryA {
+    font-size: 18px;
+  }
+
+  .hubProfileDisplayName_JanuaryA {
+    font-size: 18px;
+  }
+
+  .profileDisplayStats_JanuaryA {
+    font-size: 18px;
+  }
+
+  .hubProfileDisplayUserDatas_JanuaryA {
+    padding: 3px;
+    width: 80%;
+  }
 }
