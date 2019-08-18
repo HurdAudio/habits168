@@ -1,0 +1,505 @@
+<div class="hubBackgroundDiv{{$ctrl.monthSelect}}"></div>
+
+<div class="{{$ctrl.backgroundStatus}}">
+  <div class="hubTitleFlex{{$ctrl.monthSelect}}">
+
+    <img class="hubLogo{{$ctrl.monthSelect}}" src="{{$ctrl.logoPath}}">
+    <div class="hubTitleDiv{{$ctrl.monthSelect}}">
+      <h1 class="hubTitle{{$ctrl.monthSelect}}">168 Habits</h1>
+    </div>
+    <div class="hubSignoutDiv{{$ctrl.monthSelect}}">
+
+      <button class="hubSignoutButton{{$ctrl.monthSelect}}" ng-click="$ctrl.userLogout()">log out</button>
+    </div>
+  </div>
+
+  <div class="hubTabsBar{{$ctrl.monthSelect}}">
+    <span id="tabColour" class="{{$ctrl.hubTabStatus}}"></span>
+
+    <div class="{{$ctrl.hubShareTabState}}">
+
+      <p class="hubTabLabel{{$ctrl.monthSelect}}" ng-click="$ctrl.updateHubTab('shared')">shared</p>
+    </div>
+    <div class="{{$ctrl.hubReaderTabState}}">
+
+      <p class="hubTabLabel{{$ctrl.monthSelect}}" ng-click="$ctrl.updateHubTab('reader')">reader</p>
+    </div>
+    <div class="{{$ctrl.hubBloggerTabState}}">
+
+      <p class="hubTabLabel{{$ctrl.monthSelect}}" ng-click="$ctrl.updateHubTab('blogs')">blogs</p>
+    </div>
+    <div class="{{$ctrl.hubProfileTabState}}">
+
+      <p class="hubTabLabel{{$ctrl.monthSelect}}" ng-click="$ctrl.updateHubTab('profile')">profile</p>
+    </div>
+  </div>
+  <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"             title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+  <div class="hubContentContainer{{$ctrl.monthSelect}}">
+
+    <div class="hubShareDashboard{{$ctrl.monthSelect}}" ng-if="$ctrl.hubTabStatus === ('hubShare' + $ctrl.monthSelect)">
+      <main ng-repeat="article in $ctrl.sharedContent">
+        <div class="hubShareContainer{{$ctrl.monthSelect}}">
+          <div class="hubShareByline{{$ctrl.monthSelect}}">
+
+            <img class="hubShareBylineAvatar{{$ctrl.monthSelect}}" src="{{article.avatar_path}}" ng-click="$ctrl.displayFriend(article.uuid)">
+            <p class="hubBylineName{{$ctrl.monthSelect}}" ng-click="$ctrl.displayFriend(article.uuid)">{{article.first_name}} {{article.last_name}}</p>
+            <p class="hubSharedAt{{$ctrl.monthSelect}}">{{article.share_cleanDate}}</p>
+            <p class="hubShareComments{{$ctrl.monthSelect}}">{{article.comments}}</p>
+            <div class="hubShareReactions{{$ctrl.monthSelect}}">
+
+              <div class="hubShareAddReactionsToggle{{$ctrl.monthSelect}}" ng-if="!article.select_reactions">
+
+                <p ng-click="$ctrl.toggleEmojiSelector(article.id)">+ add reaction</p>
+              </div>
+
+              <div class="hubShareAddReactionDiv{{$ctrl.monthSelect}}" ng-if="article.select_reactions">
+                <main ng-repeat="emoji in $ctrl.emojis">
+
+                  <img name="{{emoji.value}}" src="{{emoji.path}}" ng-click="$ctrl.shareAddEmoji(article.id, emoji.path, emoji.value)">
+                </main>
+
+              </div>
+
+              <main ng-repeat="reaction in article.share_reactions">
+                <div class="hubReactionGestalt{{$ctrl.monthSelect}}">
+
+                  <p class="hubShareReactionTally{{$ctrl.monthSelect}}">{{reaction.tally}}</p>
+
+                  <img class="hubShareReactionEmoji{{$ctrl.monthSelect}}" src="{{reaction.link}}" ng-mouseover="$ctrl.hoverOver(article.id, reaction.id)" ng-mouseleave="$ctrl.hoverOff(article.id, reaction.id)"><span class="{{reaction.hoverClass}}">{{reaction.hover_text}}</span>
+                  <p ng-if="reaction.user_contributed" class="hubShareReactionDelete{{$ctrl.monthSelect}}" ng-click="$ctrl.hubShareRemoveReaction(article.id, reaction.link, reaction.reaction)">X</p>
+                  <p ng-if="!reaction.user_contributed" class="hubShareReactionDelete{{$ctrl.monthSelect}}" ng-click="$ctrl.hubShareAdditionalReaction(article.id, reaction.id)">+</p>
+                </div>
+              </main>
+            </div>
+            <div class="hubShareComments{{$ctrl.monthSelect}}">
+              <p class="hubShareCommentsLabel{{$ctrl.monthSelect}}">comments:</p>
+
+              <main ng-repeat="comment in article.share_comments">
+
+                <div class="hubShareCommenterFields{{$ctrl.monthSelect}}"><img class="hubShareCommenterAvatar{{$ctrl.monthSelect}}" src="{{comment.avatar}}" ng-click="$ctrl.displayFriend(comment.uuid)">
+                <p class="hubShareCommenterName{{$ctrl.monthSelect}}" ng-click="$ctrl.displayFriend(comment.uuid)">{{comment.name}}</p></div><br>
+                <p class="hubShareCommentDateStamp{{$ctrl.monthSelect}}">{{comment.cleanDate}}</p><br>
+                <p class="hubShareCommentComment{{$ctrl.monthSelect}}">{{comment.comment}}</p>
+                <div class="hubShareAddReactionsToggle{{$ctrl.monthSelect}}" ng-if="!comment.select_reactions">
+
+                  <p ng-click="$ctrl.toggleCommentEmojiSelector(article.id, comment.id)">+ add reaction</p>
+                </div>
+
+                <div class="hubShareAddReactionDiv{{$ctrl.monthSelect}}" ng-if="comment.select_reactions">
+                  <main ng-repeat="emoji in $ctrl.emojis">
+
+                    <img name="{{emoji.value}}" src="{{emoji.path}}" ng-click="$ctrl.shareAddCommentEmoji(article.id, comment.id, emoji.path, emoji.value)">
+                  </main>
+
+                </div>
+                <main ng-repeat="commentReaction in comment.comment_reactions">
+                  <div class="hubReactionGestalt{{$ctrl.monthSelect}}">
+
+                    <p class="hubShareReactionTally{{$ctrl.monthSelect}}">{{commentReaction.tally}}</p>
+
+                    <img class="hubShareReactionEmoji{{$ctrl.monthSelect}}" src="{{commentReaction.link}}" ng-mouseover="$ctrl.commentReactionHoverOver(article.id, comment.id, commentReaction.id)" ng-mouseleave="$ctrl.commentReactionHoverOff(article.id, comment.id, commentReaction.id)"><span class="{{commentReaction.hoverClass}}">{{commentReaction.hover_text}}</span>
+                    <p ng-if="commentReaction.user_contributed" class="hubShareReactionDelete{{$ctrl.monthSelect}}" ng-click="$ctrl.hubShareRemoveCommentReaction(article.id, comment.id, commentReaction.id)">X</p>
+                    <p ng-if="!commentReaction.user_contributed" class="hubShareReactionDelete{{$ctrl.monthSelect}}" ng-click="$ctrl.hubShareCommentAdditionalReaction(article.id, comment.id, commentReaction.id)">+</p>
+                  </div>
+
+                </main><br><br>
+              </main><br>
+              <div class="hubShareNewComments{{$ctrl.monthSelect}}">
+
+                <p>add comment:</p>
+                <textarea id="hubShareCommentTextArea{{article.id}}" class="hubShareCommentTextArea{{$ctrl.monthSelect}}" rows="5"></textarea>
+                <button class="hubSignoutButton{{$ctrl.monthSelect}}" ng-click="$ctrl.hubShareSubmitComment(article.id)">submit</button>
+              </div>
+            </div>
+          </div>
+          <div class="hubShareBody{{$ctrl.monthSelect}}">
+            <a href="{{article.source_link}}" target="_blank"><img class="hubShareSourceIcon{{$ctrl.monthSelect}}" src="{{article.source_image}}">
+            <p class="hubShareViaDescription{{$ctrl.monthSelect}}">{{article.source_description}}</p></a><br><br><br><br><br>
+            <img class="hubShareArticleImage{{$ctrl.monthSelect}}" src="{{article.enclosure.link}}">
+            <div class="hubShareShareSaveButtonsDiv{{$ctrl.monthSelect}}">
+
+              <button ng-click="$ctrl.hubShareSave('share', article.source_image, article.source_title, article.title)">share</button>
+              <button ng-click="$ctrl.hubShareSave('save', article.source_image, article.source_title, article.title)">save</button>
+            </div>
+            <a href="{{article.link}}" target="_blank"><h3 class="hubShareHeadline{{$ctrl.monthSelect}}">{{article.title}}</h3></a>
+            <p class="hubSharePostTimestamp{{$ctrl.monthSelect}}">{{article.cleanDate}}</p>
+            <p class="hubShareAuthor{{$ctrl.monthSelect}}">{{article.author}}</p>
+            <p class="hubShareDescription{{$ctrl.monthSelect}}" ng-bind-html="article.description"></p>
+
+          </div>
+
+        </div>
+      </main>
+
+    </div>
+
+    <div class="hubReaderDashboard{{$ctrl.monthSelect}}" ng-if="$ctrl.hubTabStatus === ('hubReader' + $ctrl.monthSelect)">
+
+      <div class="hubTodayIsDiv{{$ctrl.monthSelect}}">
+
+        <p class="hubTodayIsDisplay{{$ctrl.monthSelect}}" id="todayIs">{{$ctrl.todayIs}}</p>
+      </div>
+      <div class="hubReaderWeekly{{$ctrl.monthSelect}}">
+        <div class="hubReaderTodayBlock{{$ctrl.monthSelect}}">
+
+          <p class="hubReaderTodayLabel{{$ctrl.monthSelect}}">Today</p>
+          <button class="hubReaderDayButton{{$ctrl.monthSelect}}">{{$ctrl.day0}}</button>
+          <button class="hubReaderWeekButton{{$ctrl.monthSelect}}" ng-click="$ctrl.hubWeekToggle()">week</button>
+        </div>
+        <div class="{{$ctrl.day1ToggleState}}">
+
+          <p class="hubReaderTodayLabel{{$ctrl.monthSelect}}">Tomorrow</p>
+          <button class="hubReaderDayButton{{$ctrl.monthSelect}}">{{$ctrl.day1}}</button>
+        </div>
+        <div class="{{$ctrl.day2ToggleState}}">
+
+          <p class="hubReaderBlankLabel{{$ctrl.monthSelect}}">blank</p>
+          <button class="hubReaderDayButton{{$ctrl.monthSelect}}">{{$ctrl.day2}}</button>
+        </div>
+        <div class="{{$ctrl.day3ToggleState}}">
+
+          <p class="hubReaderBlankLabel{{$ctrl.monthSelect}}">blank</p>
+          <button class="hubReaderDayButton{{$ctrl.monthSelect}}">{{$ctrl.day3}}</button>
+        </div>
+        <div class="{{$ctrl.day4ToggleState}}">
+
+          <p class="hubReaderBlankLabel{{$ctrl.monthSelect}}">blank</p>
+          <button class="hubReaderDayButton{{$ctrl.monthSelect}}">{{$ctrl.day4}}</button>
+        </div>
+        <div class="{{$ctrl.day5ToggleState}}">
+
+          <p class="hubReaderBlankLabel{{$ctrl.monthSelect}}">blank</p>
+          <button class="hubReaderDayButton{{$ctrl.monthSelect}}">{{$ctrl.day5}}</button>
+        </div>
+        <div class="{{$ctrl.day6ToggleState}}">
+
+          <p class="hubReaderBlankLabel{{$ctrl.monthSelect}}">blank</p>
+          <button class="hubReaderDayButton{{$ctrl.monthSelect}}">{{$ctrl.day6}}</button>
+        </div>
+
+      </div>
+
+      <div class="hubReaderManagementRow{{$ctrl.monthSelect}}">
+
+        <div class="hubReaderTodayBlock{{$ctrl.monthSelect}}">
+
+          <p class="hubReaderTodayLabel{{$ctrl.monthSelect}}">Subscriptions:</p>
+          <button class="hubReaderDayButton{{$ctrl.monthSelect}}">manage</button>
+          <button class="hubReaderWeekButton{{$ctrl.monthSelect}}" ng-click="$ctrl.toggleSubscriptionManagement()">more</button>
+        </div>
+
+        <div class="{{$ctrl.externalsBlockToggleStatus}}">
+
+          <p class="hubReaderBlankLabel{{$ctrl.monthSelect}}">Blank</p>
+          <button class="hubReaderDayButton{{$ctrl.monthSelect}}">externals</button>
+
+        </div>
+        <div class="{{$ctrl.dailiesBlockToggleStatus}}">
+
+          <p class="hubReaderBlankLabel{{$ctrl.monthSelect}}">Blank</p>
+          <button class="hubReaderDayButton{{$ctrl.monthSelect}}">dailies</button>
+
+        </div>
+        <div class="{{$ctrl.browseFeedsBlockToggleStatus}}">
+
+          <p class="hubReaderBlankLabel{{$ctrl.monthSelect}}">Blank</p>
+          <button class="hubReaderDayButton{{$ctrl.monthSelect}}">browse feeds</button>
+
+        </div>
+        <div class="{{$ctrl.sharedBlockToggleStatus}}">
+
+          <p class="hubReaderBlankLabel{{$ctrl.monthSelect}}">Blank</p>
+          <button class="hubReaderDayButton{{$ctrl.monthSelect}}">shared</button>
+
+        </div>
+        <div class="{{$ctrl.savedBlockToggleStatus}}">
+
+          <p class="hubReaderBlankLabel{{$ctrl.monthSelect}}">Blank</p>
+          <button class="hubReaderDayButton{{$ctrl.monthSelect}}">saved</button>
+
+        </div>
+        <div class="{{$ctrl.miscBlockToggleStatus}}">
+
+          <p class="hubReaderBlankLabel{{$ctrl.monthSelect}}">Blank</p>
+          <button class="hubReaderDayButton{{$ctrl.monthSelect}}">recommended</button>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="hubBlogsDashboard{{$ctrl.monthSelect}}" ng-if="$ctrl.hubTabStatus === ('hubBlogs' + $ctrl.monthSelect)">
+
+      <div class="hubUserBlogList{{$ctrl.monthSelect}}">
+
+        <h2 class="hubMyBlogsLabel{{$ctrl.monthSelect}}">My Blogs:</h2>
+        <main ng-repeat="blog in $ctrl.userBlogs">
+
+          <p class="hubBlogListEntry{{$ctrl.monthSelect}}" ng-click="$ctrl.hubDisplayBlogData(blog.id)">{{blog.blog}}</p>
+        </main>
+        <button class="hubNewBlogButton{{$ctrl.monthSelect}}">start new blog</button>
+      </div>
+      <div class="hubUserBlogData{{$ctrl.monthSelect}}">
+
+        <div class="hubBlogLogoTitleDescription{{$ctrl.monthSelect}}">
+
+          <img class="currentBlogLogoImage{{$ctrl.monthSelect}}" src="{{$ctrl.currentBlogLogo}}">
+          <p class="currentBlogName{{$ctrl.monthSelect}}">{{$ctrl.currentBlogName}}</p>
+        </div>
+        <p class="currentBlogTagline{{$ctrl.monthSelect}}">{{$ctrl.currentBlogDescription}}</p>
+        <div class="currentBlogContributersDiv{{$ctrl.monthSelect}}">
+          <p class="hubContributersLabel{{$ctrl.monthSelect}}">Contributers:</p>
+          <main ng-repeat="author in $ctrl.currentBlogContributers">
+
+            <div class="contributerInfo{{$ctrl.monthSelect}}" ng-click="$ctrl.displayFriend(author.uuid)"><img class="hubBlogContributerAvatar{{$ctrl.monthSelect}}" src="{{author.avatar}}">
+            <p class="hubBlogContributerName{{$ctrl.monthSelect}}">{{author.name}}</p></div><br><br><br><br><br>
+          </main>
+        </div>
+        <div class="hubBlogDataDiv{{$ctrl.monthSelect}}">
+
+          <p class="hubBlogDataPosts{{$ctrl.monthSelect}}">Posts: {{$ctrl.totalPosts}}</p>
+          <p class="hubBlogDataPosts{{$ctrl.monthSelect}}">Last Posted: {{$ctrl.lastPost}}</p>
+          <p class="hubBlogDataPosts{{$ctrl.monthSelect}}">Page Loads: {{$ctrl.totalPageLoads}}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hubProfileDashboard{{$ctrl.monthSelect}}" ng-if="$ctrl.hubTabStatus === ('hubProfile' + $ctrl.monthSelect)">
+
+      <div class="hubUserProfileBasicsPane{{$ctrl.monthSelect}}">
+
+        <div class="hubBasicUserData{{$ctrl.monthSelect}}">
+          <button class="hubEditProfileButton{{$ctrl.monthSelect}}">edit</button>
+
+          <p class="hubLoggedInAsLabel{{$ctrl.monthSelect}}">Logged in as:</p>
+          <img class="hubLoggedInAsAvatar{{$ctrl.monthSelect}}" src="{{$ctrl.user.avatar_path}}">
+          <p class="hubProfileUserName{{$ctrl.monthSelect}}">{{$ctrl.user.first_name}} {{$ctrl.user.last_name}}</p>
+          <p class="hubUserDatas{{$ctrl.monthSelect}}">friends: {{$ctrl.friendsList.length}}</p>
+          <p class="hubUserDatas{{$ctrl.monthSelect}}">shared items: 17</p>
+          <p class="hubUserDatas{{$ctrl.monthSelect}}">blog posts: 8</p>
+
+          <div class="hubUserProfileNavigation{{$ctrl.monthSelect}}">
+
+            <div class="{{$ctrl.navigationPublicState}}" ng-click="$ctrl.navigateProfileViews('public')"><p>public</p></div>
+            <div class="{{$ctrl.navigationPrivateState}}" ng-click="$ctrl.navigateProfileViews('private')"><p>private</p></div>
+            <div class="{{$ctrl.navigationMessagesState}}" ng-click="$ctrl.navigateProfileViews('messages')"><p>messages</p></div>
+            <div class="{{$ctrl.navigationFriendsState}}" ng-click="$ctrl.navigateProfileViews('friends')"><p>friends</p></div>
+            <div class="{{$ctrl.navigationContactState}}" ng-click="$ctrl.navigateProfileViews('contact')"><p>contact</p></div>
+            <div class="{{$ctrl.navigationSliderState}}"></div>
+          </div>
+        </div>
+      </div>
+      <div class="hubPublicPrivateProfilePane{{$ctrl.monthSelect}}">
+
+        <div class="hubPublicProfileDeets{{$ctrl.monthSelect}}" ng-if="$ctrl.profileNavState === 'public'">
+            <div class="hubOtherProfileEditButton{{$ctrl.monthSelect}}">
+              <button class="hubEditProfileButton{{$ctrl.monthSelect}}">edit</button>
+            </div>
+
+          <div class="hubUserPublicStats{{$ctrl.monthSelect}}">
+            <p class="hubUserBirthdate{{$ctrl.monthSelect}}" ng-if="$ctrl.userExtendedProfile.birthdate.public">Birthdate: {{$ctrl.userExtendedProfile.birthdate.cleanDate}}</p>
+            <img class="hubUserLocationMap{{$ctrl.monthSelect}}" src="{{$ctrl.userLocationImage}}" alt="{{$ctrl.userLocationAltText}}" ng-if="$ctrl.userExtendedProfile.location.public"><p class="hubPhotoAttribution{{$ctrl.monthSelect}}" ng-if="$ctrl.userExtendedProfile.location.public">photo attribution: {{$ctrl.locationAttribution}}</p>
+            <p class="hubUserLocationStat{{$ctrl.monthSelect}}" ng-if="$ctrl.userExtendedProfile.location.public">Location: {{$ctrl.userExtendedProfile.location.name}}, {{$ctrl.userExtendedProfile.location.adminCode}}, {{$ctrl.userExtendedProfile.location.country}}</p>
+            <p class="hubUserDescriptionStat{{$ctrl.monthSelect}}" ng-if="$ctrl.userExtendedProfile.description.public"> {{$ctrl.userExtendedProfile.description.description}}<br></p>
+            <p class="hubUserDescriptionStat{{$ctrl.monthSelect}}" ng-if="$ctrl.userExtendedProfile.bio.public">{{$ctrl.userExtendedProfile.bio.bio}}<br></p>
+            <p class="hubUserOccupationStat{{$ctrl.monthSelect}}" ng-if="$ctrl.userExtendedProfile.occupation.public">Occupation: {{$ctrl.userExtendedProfile.occupation.occupation}}</p>
+            <p class="hubUserEmployerStat{{$ctrl.monthSelect}}" ng-if="$ctrl.userExtendedProfile.employer.public">Employer: {{$ctrl.userExtendedProfile.employer.employer}}</p>
+            <div ng-if="$ctrl.userExtendedProfile.education.public">
+              <p class="hubUserEducationStatLabel{{$ctrl.monthSelect}}">Education:</p>
+              <main ng-repeat="school in $ctrl.userExtendedProfile.education.schools">
+                <p class="hubUserEducationStat{{$ctrl.monthSelect}}">{{school.name}}: {{school.location}}</p>
+              </main>
+            </div>
+            <p class="hubUserEmailStat{{$ctrl.monthSelect}}" ng-if="$ctrl.userExtendedProfile.email.public">Email: {{$ctrl.userExtendedProfile.email.email}}</p>
+            <p class="hubUserPhoneStat{{$ctrl.monthSelect}}" ng-if="$ctrl.userExtendedProfile.phone.public">Phone: {{$ctrl.userExtendedProfile.phone.phone}}</p>
+
+          </div>
+        </div>
+
+        <div class="hubPublicProfileDeets{{$ctrl.monthSelect}}" ng-if="$ctrl.profileNavState === 'private'">
+
+          <div class="hubOtherProfileEditButton{{$ctrl.monthSelect}}">
+            <button class="hubEditProfileButton{{$ctrl.monthSelect}}">edit</button>
+          </div>
+
+          <div class="hubUserPublicStats{{$ctrl.monthSelect}}">
+            <p class="hubUserBirthdate{{$ctrl.monthSelect}}">Birthdate: {{$ctrl.userExtendedProfile.birthdate.cleanDate}}</p>
+            <img class="hubUserLocationMap{{$ctrl.monthSelect}}" src="{{$ctrl.userLocationImage}}" alt="{{$ctrl.userLocationAltText}}"><p class="hubPhotoAttribution{{$ctrl.monthSelect}}">photo attribution: {{$ctrl.locationAttribution}}</p>
+            <p class="hubUserLocationStat{{$ctrl.monthSelect}}">Location: {{$ctrl.userExtendedProfile.location.name}}, {{$ctrl.userExtendedProfile.location.adminCode}}, {{$ctrl.userExtendedProfile.location.country}}</p>
+            <p class="hubUserDescriptionStat{{$ctrl.monthSelect}}"> {{$ctrl.userExtendedProfile.description.description}}<br></p>
+            <p class="hubUserDescriptionStat{{$ctrl.monthSelect}}">{{$ctrl.userExtendedProfile.bio.bio}}<br></p>
+            <p class="hubUserOccupationStat{{$ctrl.monthSelect}}">Occupation: {{$ctrl.userExtendedProfile.occupation.occupation}}</p>
+            <p class="hubUserEmployerStat{{$ctrl.monthSelect}}">Employer: {{$ctrl.userExtendedProfile.employer.employer}}</p>
+            <div>
+              <p class="hubUserEducationStatLabel{{$ctrl.monthSelect}}">Education:</p>
+              <main ng-repeat="school in $ctrl.userExtendedProfile.education.schools">
+                <p class="hubUserEducationStat{{$ctrl.monthSelect}}">{{school.name}}: {{school.location}}</p>
+              </main>
+            </div>
+            <p class="hubUserEmailStat{{$ctrl.monthSelect}}">Email: {{$ctrl.userExtendedProfile.email.email}}</p>
+            <p class="hubUserPhoneStat{{$ctrl.monthSelect}}">Phone: {{$ctrl.userExtendedProfile.phone.phone}}</p>
+
+          </div>
+        </div>
+
+        <div class="hubMessageCenter{{$ctrl.monthSelect}}" ng-if="$ctrl.profileNavState === 'messages'">
+
+          <h2 class="hubMessageCenterLabel{{$ctrl.monthSelect}}">Message Center:</h2>
+          <div class="hubMessageScroll{{$ctrl.monthSelect}}">
+
+            <main ng-repeat="msg in $ctrl.userMessages">
+
+              <div class="hubMainMessageContainer{{$ctrl.monthSelect}}" ng-click="$ctrl.toggleMessageOpen(msg.uuid)">
+
+                <i class="fas fa-circle unreadIcon{{$ctrl.monthSelect}}" ng-if="!msg.opened"></i>
+
+                <p class="hubMessageFromSubject{{msg.opened}}{{$ctrl.monthSelect}}">from:</p>
+
+                <img class="hubMessageAvatar{{$ctrl.monthSelect}}" src="{{msg.from.avatar}}">
+                <p class="hubMessageFromSubject{{msg.opened}}{{$ctrl.monthSelect}}">{{msg.from.name}}</p><br><br>
+                <p class="hubMessageFromSubject{{msg.opened}}{{$ctrl.monthSelect}}">to:</p>
+
+                <img class="hubMessageAvatar{{$ctrl.monthSelect}}" src="{{msg.to.avatar}}">
+                <p class="hubMessageFromSubject{{msg.opened}}{{$ctrl.monthSelect}}">{{msg.to.name}}</p><br><br><br>
+                <p class="hubMessageFromSubject{{msg.opened}}{{$ctrl.monthSelect}}">subject: {{msg.subject}}</p>
+                <p class="hubMessageFromSubject{{msg.opened}}{{$ctrl.monthSelect}}">sent: {{msg.cleanDate}}</p><br><br>
+
+
+              </div>
+              <div class="hubExpandedMessageContainer{{$ctrl.monthSelect}}" ng-if="msg.open">
+                <p class="hubMessageMessage{{$ctrl.monthSelect}}" ng-bind-html="msg.message"></p>
+                <main ng-repeat="response in msg.replies">
+
+
+
+                  <img class="hubMessageAvatar{{$ctrl.monthSelect}}" src="{{response.from.avatar}}">
+                  <p class="hubReplyNameDate{{$ctrl.monthSelect}}">{{response.from.name}}</p>
+                  <p class="hubReplyNameDate{{$ctrl.monthSelect}}">Replied:  {{response.cleanDate}}</p><br><br><br>
+                  <textarea readonly class="hubReplyText{{$ctrl.monthSelect}}" ng-bind-html="response.message"></textarea>
+                </main>
+                <textarea class="hubReplyResponseText{{$ctrl.monthSelect}}" placeholder="add response" id="hubResponseText{{msg.uuid}}"></textarea><br>
+                <button class="hubReplySubmit{{$ctrl.monthSelect}}" ng-click="$ctrl.submitResponse(msg.uuid)">submit</button>
+
+              </div>
+              <p class="hubMessageFromSubject{{msg.opened}}{{$ctrl.monthSelect}}">responses: {{msg.replies.length}}</p><br><br><br><br>
+            </main>
+          </div>
+        </div>
+        <div class="hubFriendsCenter{{$ctrl.monthSelect}}" ng-if="$ctrl.profileNavState === 'friends'">
+
+          <div class="hubOtherProfileEditButton{{$ctrl.monthSelect}}">
+            <button class="hubEditProfileButton{{$ctrl.monthSelect}}">add friends</button>
+
+          </div>
+          <p class="pendingFriendRequests{{$ctrl.monthSelect}}">12 friend requests pending</p>
+
+          <h2 class="hubFriendsCenterLabel{{$ctrl.monthSelect}}">Friends:</h2>
+          <i class="fas fa-search hubSearchIcon{{$ctrl.monthSelect}}"></i><input id="hubFriendsFilter" class="hubFriendsFilter{{$ctrl.monthSelect}}" type="text" placeholder="search friends" ng-keyup="$ctrl.friendFiltering()">
+          <div class="hubFriendsScroll{{$ctrl.monthSelect}}">
+
+            <main ng-repeat="friend in $ctrl.filteredFriendsList">
+
+              <div class="hubFriendRollEntry{{$ctrl.monthSelect}}" ng-click="$ctrl.displayFriend(friend.uuid)">
+                <img class="hubFriendsRollAvatar{{$ctrl.monthSelect}}" src="{{friend.avatar}}">
+                <p class="hubFriendsNameListing{{$ctrl.monthSelect}}">{{friend.name}}</p>
+
+              </div>
+              <button class="hubFriendMessageButton{{$ctrl.monthSelect}}" ng-click="$ctrl.initiateMessage(friend.uuid)">message</button>
+              <button class="hubFriendMessageButton{{$ctrl.monthSelect}}" ng-click="$ctrl.removeBadFriend(friend.uuid)">remove</button>
+            </main>
+          </div>
+        </div>
+        <div class="hubContactCenter{{$ctrl.monthSelect}}" ng-if="$ctrl.profileNavState === 'contact'">
+
+          <h2 class="hubContactLabel{{$ctrl.monthSelect}}">Contact Site Admins:</h2>
+          <div class="hubContactFormField{{$ctrl.monthSelect}}">
+
+            <input id="hubContactSubjectInput" class="hubContactSubjectInput{{$ctrl.monthSelect}}" type="text" placeholder="subject" ng-keyup="$ctrl.checkSubmittability()"><br>
+            <textarea id="hubContactMessageInput" class="hubContactMessageInput{{$ctrl.monthSelect}}" rows="9" placeholder="message" ng-keyup="$ctrl.checkSubmittability()"></textarea><br>
+            <button class="hubContactAdminSubmitButton{{$ctrl.monthSelect}}" ng-if="$ctrl.formSubmittable" ng-click="$ctrl.hubContactSubmit()">submit</button>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="{{$ctrl.shareSaveLinkDisplay}}">
+
+  <h2 class="hubDialogHeadline{{$ctrl.monthSelect}}" id="hubSaveDialogHeadline">{{$ctrl.hubLinkShareOrSave}}</h2>
+
+  <img src="{{$ctrl.feedIcon}}">
+
+  <p>{{$ctrl.feedTitle}}: {{$ctrl.hubLinkShareSaveTitle}}</p>
+  <textarea id="hubShareSaveLinkUserNotes" placeholder="user comments" rows="5"></textarea><br><br>
+  <div class="hubRadioButtons{{$ctrl.monthSelect}}" ng-if="$ctrl.hubLinkShareOrSave === 'Share Link'">
+
+    share with:<input type="radio" name="shareStatus" value="public" checked>public
+    <input type="radio" name="shareStatus" value="friends">friends only
+    <input type="radio" name="shareStatus" value="private">private
+  </div>
+
+  <button ng-click="$ctrl.hubCancelShareSaveLink()">submit</button>
+  <button ng-click="$ctrl.hubCancelShareSaveLink()">cancel</button>
+</div>
+<div class="{{$ctrl.profileDisplayModal}}">
+
+  <button class="hubProfileDisplayCloseButton{{$ctrl.monthSelect}}" ng-click="$ctrl.profileDisplayClose()">close</button>
+  <div>
+    <img class="hubProfileDisplayAvatar{{$ctrl.monthSelect}}" src="{{$ctrl.profileDisplayer.avatar}}">
+    <div class="hubProfileDisplayDataContainer{{$ctrl.monthSelect}}">
+      <p class="hubProfileDisplayName{{$ctrl.monthSelect}}">{{$ctrl.profileDisplayer.name}}</p><br><br><br>
+      <p class="hubProfileDisplayDescritors{{$ctrl.monthSelect}}" ng-if="$ctrl.profileDisplayer.extended_profile.description.public">{{$ctrl.profileDisplayer.extended_profile.description.description}}</p><br><br><br>
+      <p class="profileDisplayStats{{$ctrl.monthSelect}}">Friends: {{$ctrl.profileDisplayer.friends}}</p>
+      <p class="profileDisplayStats{{$ctrl.monthSelect}}">Shared Items: {{$ctrl.profileDisplayer.shared_items}}</p>
+      <p class="profileDisplayStats{{$ctrl.monthSelect}}">Blog Posts: {{$ctrl.profileDisplayer.blog_posts}}</p>
+    </div><br><br>
+    <div class="hubDisplayContainer2{{$ctrl.monthSelect}}">
+      <div class="hubProfileDisplayBioBlock{{$ctrl.monthSelect}}">
+
+        <img class="hubProfileDisplayBioImage{{$ctrl.monthSelect}}" src="{{$ctrl.hubProfileDisplayerLocationImage}}" alt="{{$ctrl.hubProfileDisplayerLocationAlt}}">
+        <p class="hubPhotoAttribution{{$ctrl.month_select}}" ng-if="$ctrl.hubProfileDisplayerLocationImage">photo attribution: {{$ctrl.hubProfileDisplayerImageAttribution}}</p>
+        <p class="profileDisplayStats{{$ctrl.monthSelect}}">Location: {{$ctrl.profileDisplayer.extended_profile.location.name}}, {{$ctrl.profileDisplayer.extended_profile.location.adminCode}}, {{$ctrl.profileDisplayer.extended_profile.location.country}}</p>
+      </div>
+      <div class="hubProfileDisplayUserDatas{{$ctrl.monthSelect}}">
+
+        <p class="hubProfileDisplayDescritors2{{$ctrl.monthSelect}}" ng-if="$ctrl.profileDisplayer.extended_profile.birthdate.public">Birthdate: {{$ctrl.profileDisplayer.extended_profile.birthdate.cleanDate}}</p>
+        <p class="hubProfileDisplayDescritors2{{$ctrl.monthSelect}}" ng-if="$ctrl.profileDisplayer.extended_profile.bio.public">Bio:  {{$ctrl.profileDisplayer.extended_profile.bio.bio}}</p>
+        <p class="hubProfileDisplayDescritors2{{$ctrl.monthSelect}}" ng-if="$ctrl.profileDisplayer.extended_profile.occupation.public">Occupation:  {{$ctrl.profileDisplayer.extended_profile.occupation.occupation}}</p><br><br><br><br><br><br>
+        <button class="hubDisplayMessageButton{{$ctrl.monthSelect}}" ng-if="$ctrl.profileDisplayer.uuid !== $ctrl.user.uuid" ng-click="$ctrl.initiateMessage($ctrl.profileDisplayer.uuid)">message</button>
+        <button class="hubDisplayMessageButton{{$ctrl.monthSelect}}" ng-if="$ctrl.profileDisplayer.uuid !== $ctrl.user.uuid" ng-click="$ctrl.removeBadFriend($ctrl.profileDisplayer.uuid)">remove</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="{{$ctrl.messageModalState}}">
+  <p class="hubMessageModalLabel{{$ctrl.monthSelect}}">Message:</p>
+  <div class="hubMessageModalToFields{{$ctrl.monthSelect}}">
+
+    <img class="hubRecipientAvatar{{$ctrl.monthSelect}}" src="{{$ctrl.recipientAvatar}}">
+    <p class="hubRecipientName{{$ctrl.monthSelect}}">{{$ctrl.recipientName}}</p>
+  </div>
+  <div class="hubMessageModalInputs{{$ctrl.monthSelect}}">
+
+    <input class="hubMessageModalSubjectInput{{$ctrl.monthSelect}}" type="text" id="hubMessageModalSubjectInput" placeholder="subject">
+    <textarea class="hubMessageModalMessageInput{{$ctrl.monthSelect}}" id="hubMessageModalMessageInput" placeholder="message" rows="9"></textarea>
+  </div>
+  <div class="hubMessageModalButtonFields{{$ctrl.monthSelect}}">
+
+    <button class="hubMessageModalButton{{$ctrl.monthSelect}}" ng-click="$ctrl.sendMessage($ctrl.recipientUuid)">send</button>
+    <button class="hubMessageModalButton{{$ctrl.monthSelect}}" ng-click="$ctrl.cancelMessageSender()">cancel</button>
+  </div>
+
+</div>
+<div class="{{$ctrl.hubGuardrailState}}">
+
+  <p class="hubGuardrailText{{$ctrl.monthSelect}}">Remove {{$ctrl.badFriend.name}} from friends list?</p>
+  <div class="hubGuardrailButtonsDiv{{$ctrl.monthSelect}}">
+    <button class="hubGuardrailButton{{$ctrl.monthSelect}}" ng-click="$ctrl.confirmFriendRemoval($ctrl.badFriend.uuid)">yes</button>
+    <button class="hubGuardrailButton{{$ctrl.monthSelect}}" ng-click="$ctrl.cancelFriendRemoval()">no</button>
+  </div>
+</div>
+<div class="hubFooter{{$ctrl.monthSelect}}">
+
+  <p class="hubFooterMessage{{$ctrl.monthSelect}}">{{$ctrl.footerMessage}}</p>
+</div>
