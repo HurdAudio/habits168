@@ -115,54 +115,60 @@
 
 .playerPlay_JanuaryA {
   background: #aca2aa;
-  box-shadow: -3px -3px #402629;
+  /* box-shadow: -3px -3px #402629; */
   border: none;
   color: #0f4f59;
   cursor: pointer;
   float: left;
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 54px;
+  outline: #231b22;
   padding: 10px 20px;
+  transform: skewX(-15deg);
   transition: all 0.4s linear;
 }
 
 .playerPlay_JanuaryA:hover {
   background: #868385;
-  box-shadow: -3px -3px #231b22;
+  box-shadow: 1px 1px #231b22;
   color: #061f23;
+  transform: skewX(-5deg);
   transition: all 0.4s linear;
 }
 
 .playerPlay_JanuaryA:active {
   background: #061f23;
-  box-shadow: -3px -3px transparent;
+  /* box-shadow: -3px -3px transparent; */
   color: #868385;
   transition: all 0.1s linear;
 }
 
 .playerPause_JanuaryA {
   background: #aca2aa;
-  box-shadow: -3px -3px #402629;
+  /* box-shadow: -3px -3px #402629; */
   border: none;
   color: #0f4f59;
   cursor: pointer;
   float: left;
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 54px;
+  outline: #231b22;
   padding: 10px 20px;
+  transform: skewX(-15deg);
   transition: all 0.4s linear;
 }
 
 .playerPause_JanuaryA:hover {
   background: #868385;
-  box-shadow: -3px -3px #231b22;
+  box-shadow: 1px 1px #231b22;
   color: #061f23;
+  transform: skewX(-5deg);
   transition: all 0.4s linear;
 }
 
 .playerPause_JanuaryA:active {
   background: #061f23;
-  box-shadow: -3px -3px transparent;
+  /* box-shadow: -3px -3px transparent; */
   color: #868385;
   transition: all 0.1s linear;
 }
@@ -181,10 +187,12 @@
   -webkit-appearance: none;
   background: #0f4f59;
   border: none;
-  box-shadow: -3px -3px #231b22;
+  /* box-shadow: -3px -3px #231b22; */
+  cursor: pointer;
   float: left;
   height: 3.8vh;
   margin: 17px 0 10px 15px;
+  outline: #231b22;
   width: 50vw;
 }
 
@@ -434,221 +442,281 @@
 }
 
 .playerRewindToBeginning_JanuaryA {
-  background: transparent;
+  background: #aca2aa;
   border: none;
   color: #0f4f59;
   cursor: pointer;
   float: left;
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 30px;
-  padding: 0;
-  transform: translateX(50px);
+  outline: #231b22;
+  padding: 1px 6px;
+  transform: translateX(50px) skewX(-15deg);
   transition: all 0.4s linear;
+}
+
+.playerRewindToBeginning_JanuaryA:hover {
+  background: #868385;
+  box-shadow: 1px 1px #231b22;
+  color: #061f23;
+  transform: translateX(50px) skewX(-5deg);
+  transition: all 0.4s linear;
+}
+
+.playerRewindToBeginning_JanuaryA:active {
+  background: #061f23;
+  color: #868385;
+  transition: all 0.1s linear;
 }
 
 .playerRewind15Seconds_JanuaryA {
-  background: transparent;
+  background: #aca2aa;
   border: none;
   color: #0f4f59;
   cursor: pointer;
   float: left;
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 30px;
-  padding: 0;
-  transform: translateX(70px);
+  outline: #231b22;
+  padding: 1px 6px;
+  transform: translateX(70px) skewX(-15deg);
   transition: all 0.4s linear;
+}
+
+.playerRewind15Seconds_JanuaryA:hover {
+  background: #868385;
+  box-shadow: 1px 1px #231b22;
+  color: #061f23;
+  transform: translateX(70px) skewX(-5deg);
+  transition: all 0.4s linear;
+}
+
+.playerRewind15Seconds_JanuaryA:active {
+  background: #061f23;
+  color: #868385;
+  transition: all 0.1s linear;
 }
 
 .playerForward15Seconds_JanuaryA {
-  background: transparent;
+  background: #aca2aa;
   border: none;
   color: #0f4f59;
   cursor: pointer;
   float: left;
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 30px;
-  padding: 0;
-  transform: translateX(90px);
+  outline: #231b22;
+  padding: 1px 6px;
+  transform: translateX(90px) skewX(-15deg);
   transition: all 0.4s linear;
 }
 
+.playerForward15Seconds_JanuaryA:hover {
+  background: #868385;
+  box-shadow: 1px 1px #231b22;
+  color: #061f23;
+  transform: translateX(90px) skewX(-5deg);
+  transition: all 0.4s linear;
+}
+
+.playerForward15Seconds_JanuaryA:active {
+  background: #061f23;
+  color: #868385;
+  transition: all 0.1s linear;
+}
+
 .playerFastForwardEnd_JanuaryA {
-  background: transparent;
+  background: #aca2aa;
   border: none;
   color: #0f4f59;
   cursor: pointer;
   float: left;
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 30px;
-  padding: 0;
-  transform: translateX(110px);
+  outline: #231b22;
+  padding: 1px 6px;
+  transform: translateX(110px) skewX(-15deg);
   transition: all 0.4s linear;
+}
+
+.playerFastForwardEnd_JanuaryA:hover {
+  background: #868385;
+  box-shadow: 1px 1px #231b22;
+  color: #061f23;
+  transform: translateX(110px) skewX(-5deg);
+  transition: all 0.4s linear;
+}
+
+.playerFastForwardEnd_JanuaryA:active {
+  background: #061f23;
+  color: #868385;
+  transition: all 0.1s linear;
 }
 
 .playerAtSpeed1_JanuaryA {
   background: #aca2aa;
-  box-shadow: -3px -3px #402629;
   border: none;
   color: #0f4f59;
   cursor: pointer;
   float: left;
   font-family: 'Merriweather Sans', sans-serif;
-  font-size: 18px;
-  padding: 5px 5px;
-  transform: translateX(180px) translateY(2px);
+  font-size: 30px;
+  outline: #231b22;
+  padding: 1px 6px;
+  transform: translateX(180px) skewX(-15deg);
   transition: all 0.4s linear;
 }
 
 .playerAtSpeed1_JanuaryA:hover {
   background: #868385;
-  box-shadow: -3px -3px #231b22;
+  box-shadow: 1px 1px #231b22;
   color: #061f23;
+  transform: translateX(180px) skewX(-5deg);
   transition: all 0.4s linear;
 }
 
 .playerAtSpeed1_JanuaryA:active {
   background: #061f23;
-  box-shadow: -3px -3px transparent;
   color: #868385;
   transition: all 0.1s linear;
 }
 
 .playerAtSpeed1point25_JanuaryA {
   background: #aca2aa;
-  box-shadow: -3px -3px #402629;
   border: none;
   color: #0f4f59;
   cursor: pointer;
   float: left;
   font-family: 'Merriweather Sans', sans-serif;
-  font-size: 18px;
-  padding: 5px 5px;
-  transform: translateX(180px) translateY(2px);
+  font-size: 30px;
+  outline: #231b22;
+  padding: 1px 6px;
+  transform: translateX(180px) skewX(-15deg);
   transition: all 0.4s linear;
 }
 
 .playerAtSpeed1point25_JanuaryA:hover {
   background: #868385;
-  box-shadow: -3px -3px #231b22;
+  box-shadow: 1px 1px #231b22;
   color: #061f23;
+  transform: translateX(180px) skewX(-5deg);
   transition: all 0.4s linear;
 }
 
 .playerAtSpeed1point25_JanuaryA:active {
   background: #061f23;
-  box-shadow: -3px -3px transparent;
   color: #868385;
   transition: all 0.1s linear;
 }
 
 .playerAtSpeed1point5_JanuaryA {
   background: #aca2aa;
-  box-shadow: -3px -3px #402629;
   border: none;
   color: #0f4f59;
   cursor: pointer;
   float: left;
   font-family: 'Merriweather Sans', sans-serif;
-  font-size: 18px;
-  padding: 5px 5px;
-  transform: translateX(180px) translateY(2px);
+  font-size: 30px;
+  outline: #231b22;
+  padding: 1px 6px;
+  transform: translateX(180px) skewX(-15deg);
   transition: all 0.4s linear;
 }
 
 .playerAtSpeed1point5_JanuaryA:hover {
   background: #868385;
-  box-shadow: -3px -3px #231b22;
+  box-shadow: 1px 1px #231b22;
   color: #061f23;
+  transform: translateX(180px) skewX(-5deg);
   transition: all 0.4s linear;
 }
 
 .playerAtSpeed1point5_JanuaryA:active {
   background: #061f23;
-  box-shadow: -3px -3px transparent;
   color: #868385;
   transition: all 0.1s linear;
 }
 
 .playerAtSpeed2_JanuaryA {
   background: #aca2aa;
-  box-shadow: -3px -3px #402629;
   border: none;
   color: #0f4f59;
   cursor: pointer;
   float: left;
   font-family: 'Merriweather Sans', sans-serif;
-  font-size: 18px;
-  padding: 5px 5px;
-  transform: translateX(180px) translateY(2px);
+  font-size: 30px;
+  outline: #231b22;
+  padding: 1px 6px;
+  transform: translateX(180px) skewX(-15deg);
   transition: all 0.4s linear;
 }
 
 .playerAtSpeed2_JanuaryA:hover {
   background: #868385;
-  box-shadow: -3px -3px #231b22;
+  box-shadow: 1px 1px #231b22;
   color: #061f23;
+  transform: translateX(180px) skewX(-5deg);
   transition: all 0.4s linear;
 }
 
 .playerAtSpeed2_JanuaryA:active {
   background: #061f23;
-  box-shadow: -3px -3px transparent;
   color: #868385;
   transition: all 0.1s linear;
 }
 
 .playerAtSpeedPoint5_JanuaryA {
   background: #aca2aa;
-  box-shadow: -3px -3px #402629;
   border: none;
   color: #0f4f59;
   cursor: pointer;
   float: left;
   font-family: 'Merriweather Sans', sans-serif;
-  font-size: 18px;
-  padding: 5px 5px;
-  transform: translateX(180px) translateY(2px);
+  font-size: 30px;
+  outline: #231b22;
+  padding: 1px 6px;
+  transform: translateX(180px) skewX(-15deg);
   transition: all 0.4s linear;
 }
 
 .playerAtSpeedPoint5_JanuaryA:hover {
   background: #868385;
-  box-shadow: -3px -3px #231b22;
+  box-shadow: 1px 1px #231b22;
   color: #061f23;
+  transform: translateX(180px) skewX(-5deg);
   transition: all 0.4s linear;
 }
 
 .playerAtSpeedPoint5_JanuaryA:active {
   background: #061f23;
-  box-shadow: -3px -3px transparent;
   color: #868385;
   transition: all 0.1s linear;
 }
 
 .playerAtSpeedPoint75_JanuaryA {
   background: #aca2aa;
-  box-shadow: -3px -3px #402629;
   border: none;
   color: #0f4f59;
   cursor: pointer;
   float: left;
   font-family: 'Merriweather Sans', sans-serif;
-  font-size: 18px;
-  padding: 5px 5px;
-  transform: translateX(180px) translateY(2px);
+  font-size: 30px;
+  outline: #231b22;
+  padding: 1px 6px;
+  transform: translateX(180px) skewX(-15deg);
   transition: all 0.4s linear;
 }
 
 .playerAtSpeedPoint75_JanuaryA:hover {
   background: #868385;
-  box-shadow: -3px -3px #231b22;
+  box-shadow: 1px 1px #231b22;
   color: #061f23;
+  transform: translateX(180px) skewX(-5deg);
   transition: all 0.4s linear;
 }
 
 .playerAtSpeedPoint75_JanuaryA:active {
   background: #061f23;
-  box-shadow: -3px -3px transparent;
   color: #868385;
   transition: all 0.1s linear;
 }
@@ -660,54 +728,56 @@
 
 .playerShareButton_JanuaryA {
   background: #aca2aa;
-  box-shadow: -3px -3px #402629;
   border: none;
   color: #0f4f59;
   cursor: pointer;
+  float: left;
   font-family: 'Merriweather Sans', sans-serif;
-  font-size: 24px;
-  margin-right: 8vh;
-  padding: 5px 5px;
+  font-size: 30px;
+  outline: #231b22;
+  padding: 1px 6px;
+  transform: translateX(600px) translateY(-100px) skewX(-15deg);
   transition: all 0.4s linear;
 }
 
 .playerShareButton_JanuaryA:hover {
   background: #868385;
-  box-shadow: -3px -3px #231b22;
+  box-shadow: 1px 1px #231b22;
   color: #061f23;
+  transform: translateX(600px) translateY(-100px) skewX(-5deg);
   transition: all 0.4s linear;
 }
 
 .playerShareButton_JanuaryA:active {
   background: #061f23;
-  box-shadow: -3px -3px transparent;
   color: #868385;
   transition: all 0.1s linear;
 }
 
 .playerSaveButton_JanuaryA {
   background: #aca2aa;
-  box-shadow: -3px -3px #402629;
   border: none;
   color: #0f4f59;
   cursor: pointer;
+  float: left;
   font-family: 'Merriweather Sans', sans-serif;
-  font-size: 24px;
-  margin-right: 3vh;
-  padding: 5px 5px;
+  font-size: 30px;
+  outline: #231b22;
+  padding: 1px 6px;
+  transform: translateX(630px) translateY(-100px) skewX(-15deg);
   transition: all 0.4s linear;
 }
 
 .playerSaveButton_JanuaryA:hover {
   background: #868385;
-  box-shadow: -3px -3px #231b22;
+  box-shadow: 1px 1px #231b22;
   color: #061f23;
+  transform: translateX(630px) translateY(-100px) skewX(-5deg);
   transition: all 0.4s linear;
 }
 
 .playerSaveButton_JanuaryA:active {
   background: #061f23;
-  box-shadow: -3px -3px transparent;
   color: #868385;
   transition: all 0.1s linear;
 }
@@ -772,27 +842,29 @@
 
 .shareSaveDivActive_JanuaryA button {
   background: #aca2aa;
-  box-shadow: -3px -3px #402629;
   border: none;
   color: #0f4f59;
   cursor: pointer;
+  float: left;
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 24px;
   margin: 40px 150px 40px 150px;
+  outline: #231b22;
   padding: 5px 5px;
+  transform: skewX(-15deg);
   transition: all 0.4s linear;
 }
 
 .shareSaveDivActive_JanuaryA button:hover {
   background: #868385;
-  box-shadow: -3px -3px #231b22;
+  box-shadow: 1px 1px #231b22;
   color: #061f23;
+  transform: skewX(-5deg);
   transition: all 0.4s linear;
 }
 
 .shareSaveDivActive_JanuaryA button:active {
   background: #061f23;
-  box-shadow: -3px -3px transparent;
   color: #868385;
   transition: all 0.1s linear;
 }

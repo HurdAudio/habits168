@@ -13,7 +13,7 @@
       const vm = this;
 
       vm.$onInit = onInit;
-      vm.playerMonth = '_JanuaryA';
+      vm.playerMonth = '_JanuaryB';
       vm.playerFeeds = [
         {
           url: "https://feeds.buzzsprout.com/361115.rss",
@@ -21,7 +21,7 @@
           link: "https://www.esotericmodulation.com/",
           author: "Ed Ball",
           description: "From modular synthesis, standalone synthesizers and Eurorack, to unusual electronic instruments, Buchla, Ciat-Lonbarde and the arts. Esoteric Modulation is a fortnightly podcast that is about all the latest exciting gear and news of electronic music and the arts. We cover a wide array of interesting equipment, synths, modular and the slightly unusual esoteric side of electronic instruments. We have regular guests covering news, instruments, and art projects that merge sound and visual arts together in interesting ways! We answer listener questions, feature our favourite acts on Bandcamp, and look at the latest up-and-coming events not to be missed! So keep your finger on the pulse, and don't miss a show by subscribing to our Podcast on your favourite service or hit our website for more information!",
-          image: "https://storage.buzzsprout.com/variants/bwyxBwYFVXE1xhHbedzjQuqe/8d66eb17bb7d02ca4856ab443a78f2148cafbb129f58a3c81282007c6fe24ff2?.jpg"
+          image: "https://habits168-hurdaudio.s3.amazonaws.com/player/esotericModulation.jpeg"
         }
       ];
       vm.playerFeedsIndex = 0;

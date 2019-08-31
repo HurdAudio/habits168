@@ -16,10 +16,10 @@
 
           <button id="playerPlayPauseButton" class="{{$ctrl.playPause}}" ng-click="$ctrl.togglePlayPause()">&#9654;</button>
           <p id="playerProgressNumericalDisplay" class="playerNumericalProgressDisplay{{$ctrl.playerMonth}}">{{$ctrl.playerCurrentPosition}} / {{$ctrl.playerTotalPlaytime}}</p>
-          <button id="playerRewindToBeginning" class="playerRewindToBeginning{{$ctrl.playerMonth}}" ng-click="$ctrl.rewindToStart()">&#9198;</button>
-          <button id="playerRewind15Seconds" class="playerRewind15Seconds{{$ctrl.playerMonth}}" ng-click="$ctrl.rewind15Seconds()">&#9194;</button>
-          <button id="playerForward15Seconds" class="playerForward15Seconds{{$ctrl.playerMonth}}" ng-click="$ctrl.fastForward15seconds()">&#9193;</button>
-          <button id="playerFastForwardEnd" class="playerFastForwardEnd{{$ctrl.playerMonth}}" ng-click="$ctrl.skipToEnd()">&#9197;</button>
+          <button id="playerRewindToBeginning" class="playerRewindToBeginning{{$ctrl.playerMonth}}" ng-click="$ctrl.rewindToStart()"><i class="fas fa-fast-backward"></i></button>
+          <button id="playerRewind15Seconds" class="playerRewind15Seconds{{$ctrl.playerMonth}}" ng-click="$ctrl.rewind15Seconds()"><i class="fas fa-backward"></i></button>
+          <button id="playerForward15Seconds" class="playerForward15Seconds{{$ctrl.playerMonth}}" ng-click="$ctrl.fastForward15seconds()"><i class="fas fa-forward"></i></button>
+          <button id="playerFastForwardEnd" class="playerFastForwardEnd{{$ctrl.playerMonth}}" ng-click="$ctrl.skipToEnd()"><i class="fas fa-fast-forward"></i></button>
           <button id="playbackRateToggle" class="{{$ctrl.playbackRateStatus}}" ng-click="$ctrl.togglePlaybackRate()">1.00x</button>
 
           <input id="playerProgressSlider" class="playerProgressSlider{{$ctrl.playerMonth}}" type="range" value="0" step="1" ng-mousemove="$ctrl.userSliderPosition()">
