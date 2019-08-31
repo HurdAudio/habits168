@@ -145,27 +145,30 @@
 
 .playerPause_JanuaryA {
   background: #aca2aa;
-  box-shadow: -3px -3px #402629;
+  /* box-shadow: -3px -3px #402629; */
   border: none;
   color: #0f4f59;
   cursor: pointer;
   float: left;
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 54px;
+  outline: #231b22;
   padding: 10px 20px;
+  transform: skewX(-15deg);
   transition: all 0.4s linear;
 }
 
 .playerPause_JanuaryA:hover {
   background: #868385;
-  box-shadow: -3px -3px #231b22;
+  box-shadow: 1px 1px #231b22;
   color: #061f23;
+  transform: skewX(-5deg);
   transition: all 0.4s linear;
 }
 
 .playerPause_JanuaryA:active {
   background: #061f23;
-  box-shadow: -3px -3px transparent;
+  /* box-shadow: -3px -3px transparent; */
   color: #868385;
   transition: all 0.1s linear;
 }

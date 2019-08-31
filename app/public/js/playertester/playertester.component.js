@@ -13,7 +13,7 @@
       const vm = this;
 
       vm.$onInit = onInit;
-      vm.playerMonth = '_JanuaryA';
+      vm.playerMonth = '_JanuaryB';
       vm.playerFeeds = [
         {
           url: "https://feeds.buzzsprout.com/361115.rss",
