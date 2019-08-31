@@ -860,3 +860,1002 @@
   top: 0;
   width: 5%;
 }
+
+@media only screen and (max-width: 1400px) {
+  .playerShareButton_JanuaryB {
+
+    margin-right: 0;
+
+  }
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .playerDiv_JanuaryB {
+
+    height: 26vh;
+    justify-content: flex-start;
+    left: 5%;
+    opacity: 0.9;
+    position: relative;
+    top: 0;
+    width: 88%;
+  }
+
+  .playerFeedIcon_JanuaryB img {
+    height: 130px;
+    margin: 10px 10px;
+    width: 130px;
+  }
+
+  .playerPodcastTitle_JanuaryB {
+    font-size: 30px;
+    margin: 10px 0 10px 5px;
+  }
+
+  .playerEpisodeTitle_JanuaryB {
+    font-size: 24px;
+    margin: 4px 0 4px 5px;
+  }
+
+  .playerEpisodeAuthor_JanuaryB {
+    font-size: 18px;
+    margin: 4px 0 5px 5px;
+  }
+
+  .playerControlsDiv_JanuaryB {
+    margin: 35px 25px 4px -120px;
+    position: relative;
+    transform: scale(0.55);
+    width: 120%;
+  }
+
+  .playerProgressSlider_JanuaryB {
+
+    margin: 17px 0 10px 15px;
+    width: 50px;
+  }
+
+  .playerShareSaveDiv_JanuaryB {
+    position: relative;
+    transform: scale(0.5) translateX(-3vw) translateY(20vh);
+  }
+
+  .shareSaveDivActive_JanuaryB button {
+
+    margin: 40px 30px 40px 30px;
+    padding: 5px 5px;
+  }
+
+  .playerShareButton_JanuaryB {
+
+    margin-right: 0;
+
+  }
+
+  .playerShareButton_JanuaryB:active {
+    transition: all 0.1s linear;
+  }
+
+  .playerSaveButton_JanuaryB {
+
+    margin-right: 0;
+    transform: translateX(15px);
+  }
+
+  .playerSaveButton_JanuaryB:active {
+    transition: all 0.1s linear;
+  }
+
+  .playerProgressSlider_JanuaryB {
+    margin: 17px 0 10px 5px;
+    width: 150%;
+  }
+
+  .playerTabActive_JanuaryB {
+    font-size: 18px;
+    padding: 4px 0 4px 3px;
+    width: 30%;
+  }
+
+  .playerTabInactive_JanuaryB {
+    font-size: 18px;
+    padding: 4px 0 4px 3px;
+    width: 30%;
+  }
+
+  .episodesTitleBar_JanuaryB {
+    font-size: 18px;
+    height: auto;
+
+  }
+
+  .userEpisodeStatus_JanuaryB {
+
+    font-size: 12px;
+    padding: 4px 1px 4px 4px;
+    position: relative;
+    width: 2vw;
+  }
+
+  .userEpisodeItemsTitle_JanuaryB {
+    font-size: 12px;
+    padding: 4px 1px 4px 20px;
+    position: inherit;
+    width: 35vw;
+  }
+
+  .userEpisodeItemsAuthor_JanuaryB {
+    display: none;
+  }
+
+  .userEpisodePosition_JanuaryB {
+
+    font-size: 12px;
+    padding: 10px 1px 4px 16px;
+    width: 19vw;
+  }
+
+  .aboutThisPodcastImage_JanuaryB {
+    height: 40px;
+    margin: 5px;
+    width: 40px;
+  }
+
+  .aboutThisPodcastTitle_JanuaryB {
+
+    font-size: 18px;
+
+  }
+
+  .aboutThisPodcastAuthor_JanuaryB {
+
+    font-size: 12px;
+  }
+
+  .aboutThisPodcastDescription_JanuaryB {
+
+    font-size: 12px;
+    margin: 5px 50px 100px 5px;
+    max-width: 750px;
+  }
+
+  .detailsTitle_JanuaryB {
+
+    font-size: 18px;
+    margin: 15px 15px 15px 15px;
+  }
+
+  .detailsEpisodeTitle_JanuaryB {
+
+    font-size: 18px;
+    margin: 15px;
+  }
+
+  .detailsContent_JanuaryB {
+
+    font-size: 12px;
+
+    max-width: 300px;
+    padding: 4px 16px 50px 5px;
+  }
+
+  .detailsContent_JanuaryB a {
+    text-decoration: underline;
+  }
+
+  .scrollerDiv {
+    height: 1300px;
+  }
+
+  .playerExit_JanuaryB {
+
+    font-size: 24px;
+    margin: 0 0 -10px 0;
+    position: relative;
+    left: 91%;
+    top: 0;
+    width: 5%;
+  }
+
+  .shareSaveDivActive_JanuaryB {
+
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 17;
+  }
+
+  .shareSaveDivInactive_JanuaryB {
+    height: auto;
+    left: 20%;
+    opacity: 0.2;
+    position: absolute;
+    top: 20%;
+    transform: translateY(-500px);
+    width: 60%;
+    z-index: -17;
+  }
+
+  .scrollerDiv {
+    height: 950px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .playerDiv_JanuaryB {
+
+    height: 26vh;
+    justify-content: flex-start;
+    left: 5%;
+    opacity: 0.9;
+    position: relative;
+    top: 0;
+    width: 88%;
+  }
+
+  .playerFeedIcon_JanuaryB img {
+    height: 130px;
+    margin: 10px 10px;
+    width: 130px;
+  }
+
+  .playerPodcastTitle_JanuaryB {
+    font-size: 30px;
+    margin: 10px 0 10px 5px;
+  }
+
+  .playerEpisodeTitle_JanuaryB {
+    font-size: 24px;
+    margin: 4px 0 4px 5px;
+  }
+
+  .playerEpisodeAuthor_JanuaryB {
+    font-size: 18px;
+    margin: 4px 0 5px 5px;
+  }
+
+  .playerControlsDiv_JanuaryB {
+    margin: 35px 25px 4px -120px;
+    position: relative;
+    transform: scale(0.55);
+    width: 120%;
+  }
+
+  .playerProgressSlider_JanuaryB {
+
+    margin: 17px 0 10px 15px;
+    width: 50px;
+  }
+
+  .playerShareSaveDiv_JanuaryB {
+    position: relative;
+    transform: scale(0.5) translateX(-3vw) translateY(20vh);
+  }
+
+  .shareSaveDivActive_JanuaryB button {
+
+    margin: 40px 30px 40px 30px;
+    padding: 5px 5px;
+    transition: all 0.4s linear;
+  }
+
+  .playerShareButton_JanuaryB {
+
+    margin-right: 0;
+
+  }
+
+  .playerShareButton_JanuaryB:active {
+    transition: all 0.1s linear;
+  }
+
+  .playerSaveButton_JanuaryB {
+
+    margin-right: 0;
+    transform: translateX(15px);
+  }
+
+  .playerSaveButton_JanuaryB:active {
+    transition: all 0.1s linear;
+  }
+
+  .playerProgressSlider_JanuaryB {
+    margin: 17px 0 10px 5px;
+    width: 150%;
+  }
+
+  .playerTabActive_JanuaryB {
+    font-size: 18px;
+    padding: 4px 0 4px 3px;
+    width: 30%;
+  }
+
+  .playerTabInactive_JanuaryB {
+    font-size: 18px;
+    padding: 4px 0 4px 3px;
+    width: 30%;
+  }
+
+  .episodesTitleBar_JanuaryB {
+    font-size: 18px;
+    height: auto;
+
+  }
+
+  .userEpisodeStatus_JanuaryB {
+
+    font-size: 12px;
+    padding: 4px 1px 4px 4px;
+    position: relative;
+    width: 2vw;
+  }
+
+  .userEpisodeItemsTitle_JanuaryB {
+    font-size: 12px;
+    padding: 4px 1px 4px 20px;
+    position: inherit;
+    width: 35vw;
+  }
+
+  .userEpisodeItemsAuthor_JanuaryB {
+    display: none;
+  }
+
+  .userEpisodePosition_JanuaryB {
+
+    font-size: 12px;
+    padding: 10px 1px 4px 16px;
+    width: 19vw;
+  }
+
+  .aboutThisPodcastImage_JanuaryB {
+    height: 40px;
+    margin: 5px;
+    width: 40px;
+  }
+
+  .aboutThisPodcastTitle_JanuaryB {
+
+    font-size: 18px;
+
+  }
+
+  .aboutThisPodcastAuthor_JanuaryB {
+
+    font-size: 12px;
+  }
+
+  .aboutThisPodcastDescription_JanuaryB {
+
+    font-size: 12px;
+    margin: 5px 50px 100px 5px;
+    max-width: 750px;
+  }
+
+  .detailsTitle_JanuaryB {
+
+    font-size: 18px;
+    margin: 15px 15px 15px 15px;
+  }
+
+  .detailsEpisodeTitle_JanuaryB {
+
+    font-size: 18px;
+    margin: 15px;
+  }
+
+  .detailsContent_JanuaryB {
+
+    font-size: 12px;
+
+    max-width: 300px;
+    padding: 4px 16px 50px 5px;
+  }
+
+  .detailsContent_JanuaryB a {
+    text-decoration: underline;
+  }
+
+  .scrollerDiv {
+    height: 640px;
+  }
+
+  .playerExit_JanuaryB {
+
+    font-size: 24px;
+    margin: 0 0 -10px 0;
+    position: relative;
+    left: 91%;
+    top: 0;
+    width: 5%;
+  }
+
+  .shareSaveDivActive_JanuaryB {
+
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 17;
+  }
+
+  .shareSaveDivInactive_JanuaryB {
+    height: auto;
+    left: 20%;
+    opacity: 0.2;
+    position: absolute;
+    top: 20%;
+    transform: translateY(-500px);
+    width: 60%;
+    z-index: -17;
+  }
+
+  .scrollerDiv {
+    height: 950px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .playerFeedIcon_JanuaryB img {
+    height: 50px;
+    margin: 10px 5px;
+    width: 50px;
+  }
+
+  .playerPodcastTitle_JanuaryB {
+    font-size: 18px;
+    margin: 10px 0 10px 5px;
+  }
+
+  .playerEpisodeTitle_JanuaryB {
+    font-size: 18px;
+    margin: 4px 0 4px 5px;
+  }
+
+  .playerEpisodeAuthor_JanuaryB {
+    font-size: 12px;
+    margin: 4px 0 5px 5px;
+  }
+
+  .playerControlsDiv_JanuaryB {
+    margin: 35px 5px 4px -120px;
+    position: relative;
+    transform: scale(0.5);
+    width: 150%;
+  }
+
+  .playerShareSaveDiv_JanuaryB {
+    position: relative;
+    transform: scale(0.5) translateX(-3vw) translateY(15vh);
+  }
+
+  .shareSaveDivActive_JanuaryB button {
+
+    margin: 40px 30px 40px 30px;
+    padding: 5px 5px;
+    transition: all 0.4s linear;
+  }
+
+  .playerShareButton_JanuaryB {
+
+    margin-right: 0;
+
+  }
+
+  .playerShareButton_JanuaryB:active {
+    transition: all 0.1s linear;
+  }
+
+  .playerSaveButton_JanuaryB {
+
+    margin-right: 0;
+    transform: translateX(-190px) translateY(-53px);
+  }
+
+  .playerSaveButton_JanuaryB:active {
+    box-shadow: -3px -3px transparent;
+    transition: all 0.1s linear;
+  }
+
+  .playerProgressSlider_JanuaryB {
+    margin: 17px 0 10px 5px;
+    width: 150%;
+  }
+
+  .playerTabActive_JanuaryB {
+    font-size: 18px;
+    padding: 4px 0 4px 3px;
+    width: 30%;
+  }
+
+  .playerTabInactive_JanuaryB {
+    font-size: 18px;
+    padding: 4px 0 4px 3px;
+    width: 30%;
+  }
+
+  .episodesTitleBar_JanuaryB {
+    font-size: 18px;
+    height: auto;
+
+  }
+
+  .userEpisodeStatus_JanuaryB {
+
+    font-size: 12px;
+    padding: 4px 1px 4px 4px;
+    position: relative;
+    width: 2vw;
+  }
+
+  .userEpisodeItemsTitle_JanuaryB {
+    font-size: 12px;
+    padding: 4px 1px 4px 20px;
+    position: inherit;
+    width: 35vw;
+  }
+
+  .userEpisodeItemsAuthor_JanuaryB {
+    display: none;
+  }
+
+  .userEpisodePosition_JanuaryB {
+
+    font-size: 12px;
+    padding: 10px 1px 4px 16px;
+    width: 19vw;
+  }
+
+  .aboutThisPodcastImage_JanuaryB {
+    height: 40px;
+    margin: 5px;
+    width: 40px;
+  }
+
+  .aboutThisPodcastTitle_JanuaryB {
+
+    font-size: 18px;
+
+  }
+
+  .aboutThisPodcastAuthor_JanuaryB {
+
+    font-size: 12px;
+  }
+
+  .aboutThisPodcastDescription_JanuaryB {
+
+    font-size: 12px;
+    margin: 5px 50px 100px 5px;
+    max-width: 750px;
+  }
+
+  .detailsTitle_JanuaryB {
+
+    font-size: 18px;
+    margin: 15px 15px 15px 15px;
+  }
+
+  .detailsEpisodeTitle_JanuaryB {
+
+    font-size: 18px;
+    margin: 15px;
+  }
+
+  .detailsContent_JanuaryB {
+
+    font-size: 12px;
+
+    max-width: 300px;
+    padding: 4px 16px 50px 5px;
+  }
+
+  .detailsContent_JanuaryB a {
+    text-decoration: underline;
+  }
+
+  .scrollerDiv {
+    height: 640px;
+  }
+
+  .playerExit_JanuaryB {
+
+    font-size: 24px;
+    margin: 0 0 -10px 0;
+    position: relative;
+    left: 91%;
+    top: 0;
+    width: 5%;
+  }
+
+  .shareSaveDivActive_JanuaryB {
+
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 17;
+  }
+
+  .shareSaveDivInactive_JanuaryB {
+    height: auto;
+    left: 20%;
+    opacity: 0.2;
+    position: absolute;
+    top: 20%;
+    transform: translateY(-500px);
+    width: 60%;
+    z-index: -17;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+
+  .playerShareButton_JanuaryB {
+
+    margin-right: 1vh;
+
+  }
+
+  .playerSaveButton_JanuaryB {
+
+    margin-right: 1vh;
+    transform: translateX(50px);
+
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .playerFeedIcon_JanuaryB img {
+    height: 50px;
+    margin: 10px 5px;
+    width: 50px;
+  }
+
+  .playerPodcastTitle_JanuaryB {
+    font-size: 18px;
+    margin: 10px 0 10px 5px;
+  }
+
+  .playerEpisodeTitle_JanuaryB {
+    font-size: 18px;
+    margin: 4px 0 4px 5px;
+  }
+
+  .playerEpisodeAuthor_JanuaryB {
+    font-size: 12px;
+    margin: 4px 0 5px 5px;
+  }
+
+  .playerControlsDiv_JanuaryB {
+    margin: 35px 5px 4px -120px;
+    position: relative;
+    transform: scale(0.5);
+    width: 150%;
+  }
+
+  .playerShareSaveDiv_JanuaryB {
+    position: relative;
+    transform: scale(0.5) translateX(7.4vw) translateY(15vh);
+  }
+
+  .playerShareButton_JanuaryB {
+
+    margin-right: 1vh;
+
+  }
+
+  .playerSaveButton_JanuaryB {
+
+    margin-right: 1vh;
+
+  }
+
+  .playerProgressSlider_JanuaryB {
+    margin: 17px 0 10px 5px;
+    width: 150%;
+  }
+
+  .playerTabActive_JanuaryB {
+    font-size: 18px;
+    padding: 4px 0 4px 3px;
+    width: 30%;
+  }
+
+  .playerTabInactive_JanuaryB {
+    font-size: 18px;
+    padding: 4px 0 4px 3px;
+    width: 30%;
+  }
+
+  .episodesTitleBar_JanuaryB {
+    font-size: 18px;
+    height: auto;
+
+  }
+
+  .userEpisodeStatus_JanuaryB {
+
+    font-size: 12px;
+    padding: 4px 1px 4px 4px;
+    position: relative;
+    width: 2vw;
+  }
+
+  .userEpisodeItemsTitle_JanuaryB {
+    font-size: 12px;
+    padding: 4px 1px 4px 20px;
+    position: inherit;
+    width: 35vw;
+  }
+
+  .userEpisodeItemsAuthor_JanuaryB {
+    display: none;
+  }
+
+  .userEpisodePosition_JanuaryB {
+
+    font-size: 12px;
+    padding: 10px 1px 4px 16px;
+    width: 19vw;
+  }
+
+  .aboutThisPodcastImage_JanuaryB {
+    height: 40px;
+    margin: 5px;
+    width: 40px;
+  }
+
+  .aboutThisPodcastTitle_JanuaryB {
+
+    font-size: 18px;
+
+  }
+
+  .aboutThisPodcastAuthor_JanuaryB {
+
+    font-size: 12px;
+  }
+
+  .aboutThisPodcastDescription_JanuaryB {
+
+    font-size: 12px;
+    margin: 5px 50px 100px 5px;
+    max-width: 750px;
+  }
+
+  .detailsTitle_JanuaryB {
+
+    font-size: 18px;
+    margin: 15px 15px 15px 15px;
+  }
+
+  .detailsEpisodeTitle_JanuaryB {
+
+    font-size: 18px;
+    margin: 15px;
+  }
+
+  .detailsContent_JanuaryB {
+
+    font-size: 12px;
+
+    max-width: 300px;
+    padding: 4px 16px 50px 5px;
+  }
+
+  .detailsContent_JanuaryB a {
+    text-decoration: underline;
+  }
+
+  .scrollerDiv {
+    height: 640px;
+  }
+
+  .playerExit_JanuaryB {
+
+    font-size: 24px;
+    margin: 0 0 -10px 0;
+    position: relative;
+    left: 91%;
+    top: 0;
+    width: 5%;
+  }
+
+  .shareSaveDivActive_JanuaryB {
+
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 17;
+  }
+
+  .shareSaveDivInactive_JanuaryB {
+    height: auto;
+    left: 20%;
+    opacity: 0.2;
+    position: absolute;
+    top: 20%;
+    transform: translateY(-500px);
+    width: 60%;
+    z-index: -17;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .playerFeedIcon_JanuaryB img {
+    height: 50px;
+    margin: 10px 5px;
+    width: 50px;
+  }
+
+  .playerPodcastTitle_JanuaryB {
+    font-size: 18px;
+    margin: 10px 0 10px 5px;
+  }
+
+  .playerEpisodeTitle_JanuaryB {
+    font-size: 18px;
+    margin: 4px 0 4px 5px;
+  }
+
+  .playerEpisodeAuthor_JanuaryB {
+    font-size: 12px;
+    margin: 4px 0 5px 5px;
+  }
+
+  .playerControlsDiv_JanuaryB {
+    margin: 35px 5px 4px -120px;
+    position: relative;
+    transform: scale(0.5);
+    width: 150%;
+  }
+
+  .playerShareSaveDiv_JanuaryB {
+    position: relative;
+    transform: scale(0.5) translateX(1.4vw) translateY(10vh);
+  }
+
+  .playerShareButton_JanuaryB {
+
+    margin-right: 1vh;
+    transform: translateX(-30px) translateY(-8px);
+
+  }
+
+  .playerSaveButton_JanuaryB {
+
+    margin-right: 1vh;
+
+  }
+
+  .playerProgressSlider_JanuaryB {
+    margin: 17px 0 10px 5px;
+    width: 150%;
+  }
+
+  .playerTabActive_JanuaryB {
+    font-size: 18px;
+    padding: 4px 0 4px 3px;
+    width: 30%;
+  }
+
+  .playerTabInactive_JanuaryB {
+    font-size: 18px;
+    padding: 4px 0 4px 3px;
+    width: 30%;
+  }
+
+  .episodesTitleBar_JanuaryB {
+    font-size: 18px;
+    height: auto;
+
+  }
+
+  .userEpisodeStatus_JanuaryB {
+
+    font-size: 12px;
+    padding: 4px 1px 4px 4px;
+    position: relative;
+    width: 2vw;
+  }
+
+  .userEpisodeItemsTitle_JanuaryB {
+    font-size: 12px;
+    padding: 4px 1px 4px 20px;
+    position: inherit;
+    width: 35vw;
+  }
+
+  .userEpisodeItemsAuthor_JanuaryB {
+    display: none;
+  }
+
+  .userEpisodePosition_JanuaryB {
+
+    font-size: 12px;
+    padding: 10px 1px 4px 16px;
+    width: 19vw;
+  }
+
+  .aboutThisPodcastImage_JanuaryB {
+    height: 40px;
+    margin: 5px;
+    width: 40px;
+  }
+
+  .aboutThisPodcastTitle_JanuaryB {
+
+    font-size: 18px;
+
+  }
+
+  .aboutThisPodcastAuthor_JanuaryB {
+
+    font-size: 12px;
+  }
+
+  .aboutThisPodcastDescription_JanuaryB {
+
+    font-size: 12px;
+    margin: 5px 5px 100px 5px;
+    max-width: 300px;
+  }
+
+  .detailsTitle_JanuaryB {
+
+    font-size: 18px;
+    margin: 15px 15px 15px 15px;
+  }
+
+  .detailsEpisodeTitle_JanuaryB {
+
+    font-size: 18px;
+    margin: 15px;
+  }
+
+  .detailsContent_JanuaryB {
+
+    font-size: 12px;
+
+    max-width: 250px;
+    padding: 4px 16px 50px 5px;
+  }
+
+  .detailsContent_JanuaryB a {
+    color: #a75853;
+    text-decoration: underline;
+  }
+
+  .scrollerDiv {
+    height: 640px;
+  }
+
+  .playerExit_JanuaryB {
+
+    font-size: 24px;
+    margin: 0 0 -10px 0;
+    position: relative;
+    left: 91%;
+    top: 0;
+    width: 5%;
+  }
+
+  .shareSaveDivActive_JanuaryB {
+
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 17;
+  }
+
+  .shareSaveDivInactive_JanuaryB {
+    height: auto;
+    left: 20%;
+    opacity: 0.2;
+    position: absolute;
+    top: 20%;
+    transform: translateY(-500px);
+    width: 60%;
+    z-index: -17;
+  }
+}
