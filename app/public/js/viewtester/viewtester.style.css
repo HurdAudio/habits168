@@ -1,10 +1,11 @@
 #viewerSpinner {
-  background: transparent;
-  height: auto;
+  /* background: transparent; */
+  height: 150px;
   left: 40%;
   position: absolute;
   top: 40%;
   width: 20%;
+  z-index: 55;
 }
 
 #viewerSpinner img {
