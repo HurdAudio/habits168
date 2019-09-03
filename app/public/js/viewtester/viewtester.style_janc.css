@@ -1,0 +1,343 @@
+.viewContainer_JanuaryC {
+  background: url(https://habits168-hurdaudio.s3.amazonaws.com/viewer/sergey-pesterev-y-b_FOmJXdg-unsplash.jpg);
+  background-size: 100%;
+  filter: blur(0);
+  height: 95%;
+  margin: 5% 0 0 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.viewContainerCloaked_JanuaryC {
+  background: url(https://habits168-hurdaudio.s3.amazonaws.com/viewer/sergey-pesterev-y-b_FOmJXdg-unsplash.jpg);
+  background-size: 100%;
+  filter: blur(20px);
+  height: 95%;
+  margin: 5% 0 0 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.viewToolbar_JanuaryC {
+  background: #aeaeb3;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 11vh;
+  justify-content: flex-start;
+  opacity: 0.9;
+  width: 100%;
+}
+
+.viewNavigation_JanuaryC {
+  background: #afaba5;
+  border-color: transparent;
+  color: #020a0e;
+  cursor: pointer;
+  font-family: 'Red Hat Text', sans-serif;
+  font-size: 60px;
+  height: 85px;
+  outline: #263b56;
+  padding: 1px;
+  transform: skewX(-15deg);
+  transition: all 0.2s linear;
+  width: 85px;
+}
+
+.viewNavigation_JanuaryC:hover {
+  background: #80afd1;
+  color: #150b02;
+  transform: skewX(-5deg);
+  transition: all 0.2s linear;
+}
+
+.viewNavigation_JanuaryC:active {
+  background: #384349;
+  color: #e6c892;
+  transform: skewX(-15deg);
+  transition: all 0.1s linear;
+}
+
+.viewCurrentFeedIcon_JanuaryC {
+  height: 85px;
+  width: 85px;
+}
+
+.viewCurrentFeedTitle_JanuaryC {
+  background: transparent;
+  color: #020a0e;
+  cursor: pointer;
+  display: initial;
+  font-family: 'Red Hat Text', sans-serif;
+  font-size: 66px;
+  opacity: 0.9;
+  padding: 10px 15px 0 15px;
+  text-shadow: -2px -2px 1px #5f574a;
+  transform: skewX(-15deg);
+}
+
+.viewCurrentFeedTitle_JanuaryC a:hover {
+  color: #015ea3;
+  transform: skewX(-5deg);
+  transition: all 0.3s linear;
+}
+
+.viewCurrentFeedTitle_JanuaryC a {
+  color: #020a0e;
+  text-decoration: none;
+  transform: skewX(-15deg);
+  transition: all 0.3s linear;
+}
+
+.viewCurrentFeedDescription_JanuaryC {
+  background: transparent;
+  color: #020a0e;
+  display: initial;
+  justify-content: flex-end;
+  font-family: 'Red Hat Text', sans-serif;
+  font-size: 18px;
+  padding: 50px 0 0 10px;
+  text-shadow: -1px -1px 1px #5f574a;
+}
+
+.viewContentDiv_JanuaryC {
+  background: #8c9396;
+  height: 79.5vh;
+  opacity: 0.9;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 2% 5% 75px 5%;
+  width: 100%;
+}
+
+.viewIndividualItems_JanuaryC {
+  color: #020a0e;
+  font-family: 'Red Hat Text', sans-serif;
+  line-height: 1.3em;
+  max-width: 880px;
+}
+
+.viewIndividualItems_JanuaryC img {
+  width: 50%;
+}
+
+.viewIndividualItems_JanuaryC p {
+  font-size: 18px;
+  line-height: 1.3em;
+  margin: 5px 5% 5px 1%;
+}
+
+.viewIndividualItems_JanuaryC a {
+  color: #020a0e;
+  text-decoration: none;
+}
+
+.viewIndividualItems_JanuaryC a p {
+  font-size: 30px;
+  margin: 25px 4px 8px 0;
+}
+
+.viewIndividualItems_JanuaryC a:hover {
+  color: #015ea3;
+}
+
+.viewIndividualItems_JanuaryC a:visited {
+  color: #263b56;
+}
+
+.viewIndividualItems_JanuaryC button {
+  background: #afaba5;
+  border: solid 1px transparent;
+  color: #020a0e;
+  cursor: pointer;
+  font-family: 'Red Hat Text', sans-serif;
+  font-size: 18px;
+  margin: 0 15px 0 0;
+  padding: 5px;
+  transform: skewX(-15deg);
+  transition: all 0.4s linear;
+}
+
+.viewIndividualItems_JanuaryC button:hover {
+  background: #80afd1;
+  border: solid 1px transparent;
+  color: #150b02;
+  transform: skewX(-5deg);
+  transition: all 0.4s linear;
+}
+
+.viewPostTimestamp_JanuaryC {
+  margin: 5px 5px 5px 45% !important;
+}
+
+.viewShareSaveDialogueDisplayed_JanuaryC {
+  background: #051924;
+  color: #aeaeb3;
+  display: initial;
+  font-family: 'Red Hat Text', sans-serif;
+  height: 70vh;
+  left: 10%;
+  opacity: 0.99;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: absolute;
+  top: 15%;
+  transform: skewX(0deg);
+  transition: all 0.5s linear;
+  width: 80%;
+  z-index: 17;
+}
+
+.viewShareSaveDialogueHidden_JanuaryC {
+  background: #051924;
+  color: #aeaeb3;
+  font-family: 'Red Hat Text', sans-serif;
+  height: 70vh;
+  left: 10%;
+  opacity: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: absolute;
+  top: -45%;
+  transform: skewX(0deg);
+  transition: all 0.5s linear;
+  width: 80%;
+  z-index: -1;
+}
+
+.viewDialogHeadline_JanuaryC {
+  background: #8c9396;
+  color: #020a0e;
+  font-size: 36px;
+  padding: 30px 0 10px 50px;
+}
+
+.viewShareSaveDialogueDisplayed_JanuaryC img {
+  height: 75px;
+  margin: 30px 0 15px 150px;
+  width: 75px;
+}
+
+.viewShareSaveDialogueHidden_JanuaryC img {
+  height: 75px;
+  margin: 30px 0 15px 150px;
+  width: 75px;
+}
+
+.viewShareSaveDialogueDisplayed_JanuaryC p {
+  font-size: 24px;
+  margin: 5px 50px 15px 50px;
+}
+
+.viewShareSaveDialogueHidden_JanuaryC p {
+  font-size: 24px;
+  margin: 5px 50px 15px 50px;
+}
+
+.viewShareSaveDialogueDisplayed_JanuaryC textarea {
+  background: #c5dbf2;
+  color: #020a0e;
+  display: initial;
+  font-family: 'Red Hat Text', sans-serif;
+  font-size: 18px;
+  margin: 5px 50px 5px 50px;
+  padding: 5px;
+  width: 88%;
+}
+
+.viewShareSaveDialogueHidden_JanuaryC textarea {
+  background: #c5dbf2;
+  color: #020a0e;
+  display: initial;
+  font-family: 'Red Hat Text', sans-serif;
+  font-size: 18px;
+  margin: 5px 50px 5px 50px;
+  padding: 5px;
+  width: 88%;
+}
+
+.viewShareSaveDialogueDisplayed_JanuaryC button {
+  background: #afaba5;
+  border: solid 1px transparent;
+  color: #020a0e;
+  cursor: pointer;
+  font-family: 'Red Hat Text', sans-serif;
+  font-size: 18px;
+  margin: 15px 0 5px 50px;
+  padding: 5px;
+  transform: skewX(-15deg);
+  transition: all 0.4s linear;
+}
+
+.viewShareSaveDialogueHidden_JanuaryC button {
+  background: #afaba5;
+  border: solid 1px transparent;
+  color: #020a0e;
+  cursor: pointer;
+  font-family: 'Red Hat Text', sans-serif;
+  font-size: 18px;
+  margin: 15px 0 5px 50px;
+  padding: 5px;
+  transform: skewX(-15deg);
+  transition: all 0.4s linear;
+}
+
+.viewShareSaveDialogueDisplayed_JanuaryC button:hover {
+  background: #80afd1;
+  border: solid 1px transparent;
+  color: #150b02;
+  transform: skewX(-5deg);
+  transition: all 0.4s linear;
+}
+
+.viewRadioButtons_JanuaryC {
+  font-family: 'Red Hat Text', sans-serif;
+  font-size: 24px;
+  margin: 0 0 20px 50px;
+}
+
+@media only screen and (max-width: 736px) {
+
+  .viewCurrentFeedDescription_JanuaryC {
+    display: none;
+  }
+
+  .viewContentDiv_JanuaryC {
+    height: 140vh;
+  }
+
+  .viewToolbar_JanuaryC {
+    height: 16vh;
+  }
+
+  .viewCurrentFeedTitle_JanuaryC {
+    display: initial;
+    font-size: 48px;
+    padding: 20px 15px 0 15px;
+  }
+}
+
+@media only screen and (max-width: 667px) {
+
+  .viewCurrentFeedTitle_JanuaryC {
+    display: none;
+  }
+
+  .viewNavigation_JanuaryC {
+    font-size: 48px;
+    height: 50px;
+    width: 50px;
+  }
+
+  .viewCurrentFeedIcon_JanuaryC {
+    height: 50px;
+    width: 50px;
+  }
+
+  .viewShareSaveDialogueDisplayed_JanuaryC textarea {
+    margin: 5px 50px 5px 50px;
+    padding: 5px;
+    width: 58%;
+  }
+
+}
