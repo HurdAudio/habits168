@@ -6,7 +6,7 @@ const knex = require('../../knex');
 const router = express.Router();
 
 router.get('/', (req, res, next) => {
-  knex('blog_feeds')
+  knex('podcast_feeds')
   .select('*')
   .then((results) => {
     res.send(results);
@@ -18,7 +18,7 @@ router.get('/', (req, res, next) => {
 
 router.get('/:uuid', (req, res, next) => {
 
-  knex('blog_feeds')
+  knex('podcast_feeds')
     .select()
     .where('uuid', req.params.uuid)
     .first()
@@ -34,7 +34,7 @@ router.get('/:uuid', (req, res, next) => {
 });
 
 router.post('/title_search', (req, res, next) => {
-  knex('blog_feeds')
+  knex('podcast_feeds')
   .select('*')
   .then(result => {
     if (result) {
