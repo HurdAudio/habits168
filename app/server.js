@@ -13,6 +13,10 @@ require('dotenv').config();
 const app = express();
 const users = require('./routes/users.js');
 const logs = require('./routes/logs.js');
+const blog_feeds = require('./routes/blog_feeds.js');
+const podcast_feeds = require('./routes/podcast_feeds.js');
+const blog_shares = require('./routes/blog_shares.js');
+const podcast_shares = require('./routes/podcast_shares.js');
 // const financial_modules = require('./routes/financial_modules.js');
 
 const port = process.env.PORT || 3037;
@@ -24,6 +28,10 @@ app.use(express.static(path.join(__dirname, '/../', 'node_modules')));
 
  app.use('/users', users);
  app.use('/logs', logs);
+ app.use('/blog_feeds', blog_feeds);
+ app.use('/podcast_feeds', podcast_feeds);
+ app.use('/blog_shares', blog_shares);
+ app.use('/podcast_shares', podcast_shares);
 
 // app.get('/reuters_headlines/:country', (req, res, next) =>{
 //   let newUrl = 'https://newsapi.org/v2/top-headlines?country=';
