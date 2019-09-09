@@ -16,6 +16,7 @@ exports.up = function(knex, Promise) {
     table.text('content').notNullable().defaultTo('');
     table.json('enclosure').defaultTo(null);
     table.json('categories').defaultTo(null);
+    table.boolean('podcast').defaultTo(false);
     table.timestamps(true, true);
   });
 };
