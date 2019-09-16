@@ -21,13 +21,19 @@
 
     <div class="mondayContentContent{{$ctrl.mondayMonth}}" ng-if="content.active">
 
+      <div class="mondayReadAll{{$ctrl.mondayMonth}}" ng-if="!content.podcast"><p>Read All</p></div>
+
       <div class="mondayFeedsDiv{{$ctrl.mondayMonth}}">
 
-        <p class="mondayReadAll{{$ctrl.mondayMonth}}" ng-if="!content.podcast">Read All</p>
-        <main ng-repeat="subscription in content.subscriptions" class="mondaySubscriptions{{$ctrl.mondayMonth}}">
 
-          <img class="mondaySubIcon{{$ctrl.mondayMonth}}" src="{{subscription.image}}">
-          <p class="mondaySubscriptionTitle{{$ctrl.mondayMonth}}">{{subscription.title}}: {{subscription.description}}</p>
+        <main ng-repeat="subscription in content.subscriptions" class="mondaySubscriptions{{$ctrl.mondayMonth}}">
+          <div class="mondayFeedContainer{{$ctrl.mondayMonth}}">
+
+            <div class="mondayTrackProgress{{$ctrl.mondayMonth}}"><input type="checkbox" ng-checked="subscription.userRead"><span class="mondayCheckbox{{$ctrl.mondayMonth}}{{subscription.userRead}}" ng-click="$ctrl.toggleReadStatus(content.title, subscription.uuid)"><span class="mondaySwitchUnchecked{{$ctrl.mondayMonth}}{{subscription.userRead}}"></span></span></div>
+
+            <img class="mondaySubIcon{{$ctrl.mondayMonth}}" src="{{subscription.image}}">
+            <p class="mondaySubscriptionTitle{{$ctrl.mondayMonth}}">{{subscription.title}}: {{subscription.description}}</p>
+          </div>
         </main><br><br>
       </div>
     </div>

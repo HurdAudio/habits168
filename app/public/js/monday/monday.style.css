@@ -100,7 +100,16 @@
   width: 90%;
 }
 
+.mondayFeedContainer_JanuaryA {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 15px 50px;
+}
+
 .mondayReadAll_JanuaryA {
+  color: #12262d;
   cursor: pointer;
   font-family: 'Literata', serif;
   font-size: 24px;
@@ -109,19 +118,81 @@
 
 .mondaySubscriptions_JanuaryA {
   cursor: pointer;
-  max-width: 850px;
 }
 
 .mondaySubIcon_JanuaryA {
-  float: left;
   margin-right: 20px;
-  width: 75px;
+  width: 100px;
 }
 
 .mondaySubscriptionTitle_JanuaryA {
   font-family: 'Literata', serif;
   font-size: 21px;
-  float: left;
   margin: 25px 0 40px 0;
-  width: 85%;
+  width: 750px;
+}
+
+.mondayTrackProgress_JanuaryA {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  cursor: pointer;
+  display: block;
+  font-size: 48px;
+  margin: 15px 100px 15px 5px;
+  padding-left: 35px;
+  position: relative;
+  user-select: none;
+}
+
+.mondayTrackProgress_JanuaryA input {
+  cursor: pointer;
+  height: 0;
+  opacity: 0;
+  position: absolute;
+  width: 0;
+}
+
+.mondayCheckbox_JanuaryAfalse {
+  background-color: #899396;
+  height: 25px;
+  left: 0;
+  position: absolute;
+  top: 15px;
+  transition: all 0.3s linear;
+  width: 50px;
+}
+
+.mondayCheckbox_JanuaryAtrue {
+  background-color: #020405;
+  height: 25px;
+  left: 0;
+  position: absolute;
+  top: 15px;
+  transition: all 0.3s linear;
+  width: 50px;
+}
+
+.mondayCheckbox_JanuaryAfalse:hover {
+  background-color: #828587;
+}
+
+.mondaySwitchUnchecked_JanuaryAfalse {
+  background-color: #004461;
+  height: 30px;
+  left: 0px;
+  position: absolute;
+  top: -3px;
+  transition: all 0.2s linear;
+  width: 25px;
+}
+
+.mondaySwitchUnchecked_JanuaryAtrue {
+  background-color: #828587;
+  height: 30px;
+  left: 25px;
+  position: absolute;
+  top: -3px;
+  transition: all 0.2s linear;
+  width: 25px;
 }

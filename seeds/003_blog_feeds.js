@@ -244,6 +244,78 @@ exports.seed = function(knex, Promise) {
           title: 'Hullabaloo',
           created_at: new Date('2019-06-01 17:21:00.000 UTC'),
           updated_at: new Date('2019-06-01 17:21:00.000 UTC')
+        },
+        {
+          uuid: 'a10dc8ef-98ec-4b9e-b5f3-3c4705cb13f2',
+          author: null,
+          description: 'Node.js Support, Training and Consulting for the Enterprise, Worldwide',
+          link: 'https://nodesource.com/blog',
+          image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/nodesource-512x512.png',
+          items: null,
+          rss: 'https://nodesource.com/blog/rss',
+          title: 'The NodeSource Blog',
+          created_at: new Date('2019-06-01 17:21:00.000 UTC'),
+          updated_at: new Date('2019-06-01 17:21:00.000 UTC')
+        },
+        {
+          uuid: 'a4e7fedd-46fb-4d9f-9c17-e8593c0c949b',
+          author: null,
+          description: 'Curious Perversions in Information Technology',
+          link: 'http://thedailywtf.com',
+          image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/logoWTF.png',
+          items: null,
+          rss: 'http://syndication.thedailywtf.com/TheDailyWtf',
+          title: 'The Daily WTF',
+          created_at: new Date('2019-06-01 17:21:00.000 UTC'),
+          updated_at: new Date('2019-06-01 17:21:00.000 UTC')
+        },
+        {
+          uuid: '25243f5e-e861-4252-abc5-ccf7aa5c8f8b',
+          author: null,
+          description: 'Helping you become a better engineer',
+          link: 'https://swizec.com/blog',
+          image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/swiz.png',
+          items: null,
+          rss: 'http://swizec.com/blog/feed',
+          title: 'A geek with a hat',
+          created_at: new Date('2019-06-01 17:21:00.000 UTC'),
+          updated_at: new Date('2019-06-01 17:21:00.000 UTC')
+        },
+        {
+          uuid: 'f9bc3d9c-5960-4fa6-aa28-1b43a01cc73f',
+          author: null,
+          description: 'A blog featuring tutorials about JavaScript, HTML5, AJAX, PHP, CSS, WordPress, and everything else development.',
+          link: 'https://davidwalsh.name/',
+          image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/dwblogo.png',
+          items: null,
+          rss: 'https://davidwalsh.name/feed',
+          title: 'David Walsh Blog',
+          created_at: new Date('2019-06-01 17:21:00.000 UTC'),
+          updated_at: new Date('2019-06-01 17:21:00.000 UTC')
+        },
+        {
+          uuid: '99f6b8cc-dbde-4757-abb3-e46cf6a1ecb1',
+          author: null,
+          description: 'NodeJS Subreddit',
+          link: 'https://www.reddit.com/r/node/',
+          image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/nodejssubreddit.png',
+          items: null,
+          rss: 'https://reddit.com/r/node/.rss',
+          title: 'node.js',
+          created_at: new Date('2019-06-01 17:21:00.000 UTC'),
+          updated_at: new Date('2019-06-01 17:21:00.000 UTC')
+        },
+        {
+          uuid: 'e8249664-185f-444e-acd0-20928581bfb8',
+          author: null,
+          description: 'The latest news and tips from the Angular team - Medium',
+          link: 'https://blog.angular.io/',
+          image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/1_TGH72Nnw24QL3iV9IOm4VA.png',
+          items: null,
+          rss: 'https://blog.angular.io/rss',
+          title: 'Angular Blog - Medium',
+          created_at: new Date('2019-06-01 17:21:00.000 UTC'),
+          updated_at: new Date('2019-06-01 17:21:00.000 UTC')
         }
       ]);
     });

@@ -28,7 +28,8 @@
               image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/hacker-news-2-569388.png',
               items: null,
               rss: 'https://news.ycombinator.com/rss',
-              title: 'Hacker News'
+              title: 'Hacker News',
+              userRead: false
             },
             {
               uuid: 'b1c2eff2-81e8-4f19-a1ba-8fff123fb89a',
@@ -38,7 +39,8 @@
               image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/cropped-cropped-amnbanner1.jpg',
               items: null,
               rss: 'https://avantmusicnews.com/rss',
-              title: 'Avant Music News'
+              title: 'Avant Music News',
+              userRead: false
             },
             {
               uuid: '9546ff34-ff07-4e31-9332-786ea544ec47',
@@ -48,7 +50,8 @@
               image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/788443.png',
               items: null,
               rss: 'http://feeds2.feedburner.com/Baseballmusingscom',
-              title: 'Baseball Musings'
+              title: 'Baseball Musings',
+              userRead: false
             },
             {
               uuid: '321d2897-f108-45c1-96ca-3aa70ec46590',
@@ -58,7 +61,8 @@
               image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/daily-kos-squarelogo-1517554340259.png',
               items: null,
               rss: 'https://feeds.dailykos.com',
-              title: 'Daily Kos'
+              title: 'Daily Kos',
+              userRead: false
             },
             {
               uuid: '2e535aa1-d6d3-4741-9df7-e47ec5ac2260',
@@ -68,7 +72,8 @@
               image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/bc-site-icon1.png',
               items: null,
               rss: 'https://daily.bandcamp.com/feed',
-              title: 'Bandcamp Daily'
+              title: 'Bandcamp Daily',
+              userRead: false
             },
             {
               uuid: 'b081d79b-ff77-4586-83f3-e9eea5e22c9a',
@@ -78,7 +83,8 @@
               image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/tpm-sq.svg',
               items: null,
               rss: 'https://talkingpointsmemo.com/feed/all',
-              title: 'Talking Points Memo'
+              title: 'Talking Points Memo',
+              userRead: false
             },
             {
               uuid: '5eb65b5e-6896-4357-94af-e48fad7c64cc',
@@ -88,7 +94,8 @@
               image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/wonkette.jpg',
               items: null,
               rss: 'https://www.wonkette.com/feeds/feed.rss',
-              title: 'Wonkette'
+              title: 'Wonkette',
+              userRead: false
             }
           ],
           tab: 'mondayTabActive' + vm.mondayMonth,
@@ -106,7 +113,8 @@
               image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/newmusicbox.png',
               items: null,
               rss: 'https://nmbx.newmusicusa.org/rss',
-              title: 'NewMusicBox – NewMusicBox'
+              title: 'NewMusicBox – NewMusicBox',
+              userRead: false
             },
             {
               uuid: '4de05f59-d8df-49a0-9ad7-4cc9b80f15ae',
@@ -116,7 +124,8 @@
               image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/TvlOzOKS_400x400.jpg',
               items: null,
               rss: 'https://www.icareifyoulisten.com/rss',
-              title: 'I CARE IF YOU LISTEN'
+              title: 'I CARE IF YOU LISTEN',
+              userRead: false
             },
             {
               uuid: '79f05037-72d3-497e-a57a-54012a79407b',
@@ -126,7 +135,8 @@
               image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/41qc8pZFMcL._SL500_.jpg',
               items: null,
               rss: 'https://www.therestisnoise.com/atom.xml',
-              title: 'Alex Ross: The Rest Is Noise'
+              title: 'Alex Ross: The Rest Is Noise',
+              userRead: false
             },
             {
               uuid: '009b6c3f-14a2-4add-abc2-4ea3380ae67c',
@@ -136,7 +146,8 @@
               image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/RQxWDoWr_400x400.jpg',
               items: null,
               rss: 'http://www.freejazzblog.org/atom.xml',
-              title: 'The Free Jazz Collective'
+              title: 'The Free Jazz Collective',
+              userRead: false
             },
             {
               uuid: 'c1979d0e-d388-44ca-8ab0-a41d422c831a',
@@ -146,7 +157,8 @@
               image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/seq21logo1.jpg',
               items: null,
               rss: 'http://www.sequenza21.com/feed',
-              title: 'Sequenza21'
+              title: 'Sequenza21',
+              userRead: false
             }
           ],
           tab: 'mondayTabInactive' + vm.mondayMonth,
@@ -164,7 +176,8 @@
               image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/mtc_waaa_1400.png',
               items: null,
               rss: 'http://feeds.wnyc.org/wqxr-meetthecomposer',
-              title: 'Meet the Composer'
+              title: 'Meet the Composer',
+              userRead: false
             }
           ],
           tab: 'mondayTabInactive' + vm.mondayMonth,
@@ -182,7 +195,8 @@
               image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/slate.png',
               items: null,
               rss: 'https://slate.com/feeds/all.rss',
-              title: 'Slate Magazine'
+              title: 'Slate Magazine',
+              userRead: false
             },
             {
               uuid: '08030a4a-4d9c-4003-89cc-872ad78c8d89',
@@ -192,7 +206,8 @@
               image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/theHillLogo.png',
               items: null,
               rss: 'http://thehill.com/rss/syndicator/19109',
-              title: 'TheHill - The Hill News'
+              title: 'TheHill - The Hill News',
+              userRead: false
             },
             {
               uuid: '4c2a61cb-27a2-4c56-805a-8282bcf11221',
@@ -202,7 +217,8 @@
               image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/axios-vector-logo.png',
               items: null,
               rss: 'http://api.axios.com/feed/',
-              title: 'Axios'
+              title: 'Axios',
+              userRead: false
             },
             {
               uuid: '67063476-7716-49e8-8c10-122989636ccd',
@@ -212,7 +228,8 @@
               image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/MJ_cropped-favicon-512x512.png',
               items: null,
               rss: 'https://www.motherjones.com/politics/feed/',
-              title: 'Politics – Mother Jones'
+              title: 'Politics – Mother Jones',
+              userRead: false
             },
             {
               uuid: '67dce9dc-df80-4ce4-8516-cf79f3e2388e',
@@ -222,7 +239,8 @@
               image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/0660d8ba58b80eabbfa60e410d32ed7f.jpg',
               items: null,
               rss: 'http://fivethirtyeight.com/politics/feed',
-              title: 'Politics – FiveThirtyEight'
+              title: 'Politics – FiveThirtyEight',
+              userRead: false
             },
             {
               uuid: 'bb51cad9-ef52-4910-9184-559edd28647f',
@@ -232,7 +250,8 @@
               image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/network-howard-beal.jpg',
               items: null,
               rss: 'http://digbysblog.blogspot.com/feeds/posts/default',
-              title: 'Hullabaloo'
+              title: 'Hullabaloo',
+              userRead: false
             }
           ],
           tab: 'mondayTabInactive' + vm.mondayMonth,
@@ -241,12 +260,93 @@
         {
           active: false,
           podcast: false,
+          subscriptions: [
+            {
+              uuid: 'a10dc8ef-98ec-4b9e-b5f3-3c4705cb13f2',
+              author: null,
+              description: 'Node.js Support, Training and Consulting for the Enterprise, Worldwide',
+              link: 'https://nodesource.com/blog',
+              image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/nodesource-512x512.png',
+              items: null,
+              rss: 'https://nodesource.com/blog/rss',
+              title: 'The NodeSource Blog',
+              userRead: false
+            },
+            {
+              uuid: 'a4e7fedd-46fb-4d9f-9c17-e8593c0c949b',
+              author: null,
+              description: 'Curious Perversions in Information Technology',
+              link: 'http://thedailywtf.com,',
+              image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/logoWTF.png',
+              items: null,
+              rss: 'http://syndication.thedailywtf.com/TheDailyWtf',
+              title: 'The Daily WTF',
+              userRead: false
+            },
+            {
+              uuid: '25243f5e-e861-4252-abc5-ccf7aa5c8f8b',
+              author: null,
+              description: 'Helping you become a better engineer',
+              link: 'https://swizec.com/blog',
+              image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/swiz.png',
+              items: null,
+              rss: 'http://swizec.com/blog/feed',
+              title: 'A geek with a hat',
+              userRead: false
+            },
+            {
+              uuid: 'f9bc3d9c-5960-4fa6-aa28-1b43a01cc73f',
+              author: null,
+              description: 'A blog featuring tutorials about JavaScript, HTML5, AJAX, PHP, CSS, WordPress, and everything else development.',
+              link: 'https://davidwalsh.name/',
+              image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/dwblogo.png',
+              items: null,
+              rss: 'https://davidwalsh.name/feed',
+              title: 'David Walsh Blog',
+              userRead: false
+            },
+            {
+              uuid: '99f6b8cc-dbde-4757-abb3-e46cf6a1ecb1',
+              author: null,
+              description: 'NodeJS Subreddit',
+              link: 'https://www.reddit.com/r/node/',
+              image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/nodejssubreddit.png',
+              items: null,
+              rss: 'https://reddit.com/r/node/.rss',
+              title: 'node.js',
+              userRead: false
+            },
+            {
+              uuid: 'e8249664-185f-444e-acd0-20928581bfb8',
+              author: null,
+              description: 'The latest news and tips from the Angular team - Medium',
+              link: 'https://blog.angular.io/',
+              image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/1_TGH72Nnw24QL3iV9IOm4VA.png',
+              items: null,
+              rss: 'https://blog.angular.io/rss',
+              title: 'Angular Blog - Medium',
+              userRead: false
+            }
+          ],
           tab: 'mondayTabInactive' + vm.mondayMonth,
           title: 'Tech'
         },
         {
           active: false,
           podcast: true,
+          subscriptions: [
+            {
+              uuid: '7f5aca06-17bf-4c99-8c8f-af561999498c',
+              author: 'DevChat.tv',
+              description: 'Weekly podcast discussion about Javascript on the front and back ends. Also discuss programming practices, coding environments, and the communities related to the technology.',
+              link: 'http://javascriptjabber.com/',
+              image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/javascript_jabber_thumb.jpg',
+              items: null,
+              rss: 'https://feeds.feedwrench.com/js-jabber.rss',
+              title: 'JavaScript Jabber',
+              userRead: false
+            }
+          ],
           tab: 'mondayTabInactive' + vm.mondayMonth,
           title: 'Tech Podcasts'
         },
@@ -255,15 +355,22 @@
           podcast: true,
           tab: 'mondayTabInactive' + vm.mondayMonth,
           title: 'Externals'
-        },
-        {
-          active: false,
-          podcast: true,
-          tab: 'mondayTabInactive' + vm.mondayMonth,
-          title: 'Manage Tabs'
         }
       ];
       vm.toggleTabs = toggleTabs;
+      vm.toggleReadStatus = toggleReadStatus;
+
+      function toggleReadStatus(contentTitle, subUuid) {
+        for (let i = 0; i < vm.mondayTabs.length; i++) {
+          if (vm.mondayTabs[i].title === contentTitle) {
+            for (let j = 0; j < vm.mondayTabs[i].subscriptions.length; j++) {
+              if (vm.mondayTabs[i].subscriptions[j].uuid === subUuid) {
+                vm.mondayTabs[i].subscriptions[j].userRead = !vm.mondayTabs[i].subscriptions[j].userRead;
+              }
+            }
+          }
+        }
+      }
 
       function toggleTabs(tabTitle) {
         let activeTab = vm.mondayTabs.filter(tab => {
