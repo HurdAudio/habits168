@@ -806,6 +806,18 @@
       vm.formSubmittable = false;
       vm.checkSubmittability = checkSubmittability;
       vm.hubContactSubmit = hubContactSubmit;
+      vm.navigateToDay = navigateToDay;
+
+      function navigateToDay(day) {
+        switch(day) {
+          case('Monday'):
+            $state.go('monday', {userUuid: vm.user.uuid});
+            break;
+          default:
+            alert('Unsupported Day: ' + day);
+            console.log(day + " is unsupported.");
+        }
+      }
 
       function hubContactSubmit() {
         let hubContactSubjectInput = document.getElementById('hubContactSubjectInput');

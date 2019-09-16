@@ -39,6 +39,12 @@
         url: '/userhub/:id',
         parent: 'app',
         component: 'userhub'
+      })
+      .state({
+        name: 'monday',
+        url: '/monday/:userUuid',
+        parent: 'app',
+        component: 'monday'
       });
       // .state({
       //   name: 'emailconfirm',

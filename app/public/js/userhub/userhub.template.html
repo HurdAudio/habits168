@@ -143,38 +143,38 @@
         <div class="hubReaderTodayBlock{{$ctrl.monthSelect}}">
 
           <p class="hubReaderTodayLabel{{$ctrl.monthSelect}}">Today</p>
-          <button class="hubReaderDayButton{{$ctrl.monthSelect}}">{{$ctrl.day0}}</button>
+          <button class="hubReaderDayButton{{$ctrl.monthSelect}}" ng-click="$ctrl.navigateToDay($ctrl.day0)">{{$ctrl.day0}}</button>
           <button class="hubReaderWeekButton{{$ctrl.monthSelect}}" ng-click="$ctrl.hubWeekToggle()">week</button>
         </div>
         <div class="{{$ctrl.day1ToggleState}}">
 
           <p class="hubReaderTodayLabel{{$ctrl.monthSelect}}">Tomorrow</p>
-          <button class="hubReaderDayButton{{$ctrl.monthSelect}}">{{$ctrl.day1}}</button>
+          <button class="hubReaderDayButton{{$ctrl.monthSelect}}" ng-click="$ctrl.navigateToDay($ctrl.day1)">{{$ctrl.day1}}</button>
         </div>
         <div class="{{$ctrl.day2ToggleState}}">
 
           <p class="hubReaderBlankLabel{{$ctrl.monthSelect}}">blank</p>
-          <button class="hubReaderDayButton{{$ctrl.monthSelect}}">{{$ctrl.day2}}</button>
+          <button class="hubReaderDayButton{{$ctrl.monthSelect}}" ng-click="$ctrl.navigateToDay($ctrl.day2)">{{$ctrl.day2}}</button>
         </div>
         <div class="{{$ctrl.day3ToggleState}}">
 
           <p class="hubReaderBlankLabel{{$ctrl.monthSelect}}">blank</p>
-          <button class="hubReaderDayButton{{$ctrl.monthSelect}}">{{$ctrl.day3}}</button>
+          <button class="hubReaderDayButton{{$ctrl.monthSelect}}" ng-click="$ctrl.navigateToDay($ctrl.day3)">{{$ctrl.day3}}</button>
         </div>
         <div class="{{$ctrl.day4ToggleState}}">
 
           <p class="hubReaderBlankLabel{{$ctrl.monthSelect}}">blank</p>
-          <button class="hubReaderDayButton{{$ctrl.monthSelect}}">{{$ctrl.day4}}</button>
+          <button class="hubReaderDayButton{{$ctrl.monthSelect}}" ng-click="$ctrl.navigateToDay($ctrl.day4)">{{$ctrl.day4}}</button>
         </div>
         <div class="{{$ctrl.day5ToggleState}}">
 
           <p class="hubReaderBlankLabel{{$ctrl.monthSelect}}">blank</p>
-          <button class="hubReaderDayButton{{$ctrl.monthSelect}}">{{$ctrl.day5}}</button>
+          <button class="hubReaderDayButton{{$ctrl.monthSelect}}" ng-click="$ctrl.navigateToDay($ctrl.day5)">{{$ctrl.day5}}</button>
         </div>
         <div class="{{$ctrl.day6ToggleState}}">
 
           <p class="hubReaderBlankLabel{{$ctrl.monthSelect}}">blank</p>
-          <button class="hubReaderDayButton{{$ctrl.monthSelect}}">{{$ctrl.day6}}</button>
+          <button class="hubReaderDayButton{{$ctrl.monthSelect}}" ng-click="$ctrl.navigateToDay($ctrl.day6)">{{$ctrl.day6}}</button>
         </div>
 
       </div>

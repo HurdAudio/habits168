@@ -1,0 +1,35 @@
+<div class="mondayBackgroundDiv{{$ctrl.mondayMonth}}"></div>
+
+<div class="mondayTitleStrip{{$ctrl.mondayMonth}}">
+
+  <img class="mondayLogo{{$ctrl.mondayMonth}}" src="{{$ctrl.logoPath}}" ng-click="$ctrl.navigateToHub()">
+
+  <h1 class="mondayLabel{{$ctrl.mondayMonth}}">Monday</h1>
+</div>
+
+<div class="mondayTabsStrip{{$ctrl.mondayMonth}}">
+    <main ng-repeat="tab in $ctrl.mondayTabs">
+
+      <div class="{{tab.tab}}" ng-click="$ctrl.toggleTabs(tab.title)"><p>{{tab.title}}</p></div>
+    </main>
+
+</div>
+
+<div class="mondayContent{{$ctrl.mondayMonth}}">
+
+  <main ng-repeat="content in $ctrl.mondayTabs">
+
+    <div class="mondayContentContent{{$ctrl.mondayMonth}}" ng-if="content.active">
+
+      <div class="mondayFeedsDiv{{$ctrl.mondayMonth}}">
+
+        <p class="mondayReadAll{{$ctrl.mondayMonth}}" ng-if="!content.podcast">Read All</p>
+        <main ng-repeat="subscription in content.subscriptions" class="mondaySubscriptions{{$ctrl.mondayMonth}}">
+
+          <img class="mondaySubIcon{{$ctrl.mondayMonth}}" src="{{subscription.image}}">
+          <p class="mondaySubscriptionTitle{{$ctrl.mondayMonth}}">{{subscription.title}}: {{subscription.description}}</p>
+        </main><br><br>
+      </div>
+    </div>
+  </main>
+</div>

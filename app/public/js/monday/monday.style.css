@@ -1,0 +1,127 @@
+.mondayBackgroundDiv_JanuaryA {
+  background: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/january/alex-holzreiter-Ie-KYCurV8E-unsplash.jpg);
+  background-size: 100%;
+  /* filter: brightness(150%); */
+  height: 100%;
+  left: 0;
+  opacity: 0.6;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.mondayTitleStrip_JanuaryA {
+  background: #81c4d3;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: 'Literata', serif;
+  height: auto;
+  justify-content: flex-start;
+  opacity: 0.9;
+  padding: 2vh 4vw 1vh 4vw;
+  width: 100%;
+}
+
+.mondayLogo_JanuaryA {
+  cursor: pointer;
+  height: 72px;
+  margin: 16px 48px 16px 1px;
+  opacity: 0.5;
+  width: 5%;
+}
+
+.mondayLabel_JanuaryA {
+  color: #12262d;
+  font-family: 'Literata', serif;
+  font-size: 96px;
+}
+
+.mondayTabsStrip_JanuaryA {
+  background: #004461;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: 'Literata', serif;
+  height: auto;
+  justify-content: flex-start;
+  opacity: 0.9;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 100%;
+}
+
+.mondayTabActive_JanuaryA {
+  background: #81c4d3;
+  color: #12262d;
+  cursor: none;
+  font-family: 'Literata', serif;
+  font-size: 24px;
+  padding: 12px 24px 0 14px;
+  transform: rotateY(360deg);
+  transition: all 0.5s linear;
+  z-index: 5;
+}
+
+.mondayTabInactive_JanuaryA {
+  background: #004461;
+  color: #9bbdc2;
+  cursor: pointer;
+  font-family: 'Literata', serif;
+  font-size: 24px;
+  padding: 12px 20px 0 10px;
+  transform: rotateY(0deg);
+  transition: all 0.5s linear;
+  z-index: 5;
+}
+
+.mondayContent_JanuaryA {
+  background: transparent;
+  height: 80vh;
+  width: 100%;
+}
+
+.mondayContentContent_JanuaryA {
+  background: #98c5c5;
+  height: 80vh;
+  opacity: 0.9;
+  overflow-x: hidden;
+  overflow-Y: scroll;
+  width: 105%;
+}
+
+.mondayFeedsDiv_JanuaryA {
+  height: auto;
+  margin: 50px 50px 0 50px;
+  width: 90%;
+}
+
+.mondayReadAll_JanuaryA {
+  cursor: pointer;
+  font-family: 'Literata', serif;
+  font-size: 24px;
+  margin: 24px 0 24px 5%;
+}
+
+.mondaySubscriptions_JanuaryA {
+  cursor: pointer;
+  max-width: 850px;
+}
+
+.mondaySubIcon_JanuaryA {
+  float: left;
+  margin-right: 20px;
+  width: 75px;
+}
+
+.mondaySubscriptionTitle_JanuaryA {
+  font-family: 'Literata', serif;
+  font-size: 21px;
+  float: left;
+  margin: 25px 0 40px 0;
+  width: 85%;
+}
