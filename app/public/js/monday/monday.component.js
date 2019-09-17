@@ -14,23 +14,15 @@
 
       vm.$onInit = onInit;
       vm.mondayMonth = '_JanuaryA';
+      vm.mondayContainerState = 'mondayContainerActive' + vm.mondayMonth;
       vm.navigateToHub = navigateToHub;
       vm.mondayTabs = [
         {
           active: true,
+          allRead: false,
           podcast: false,
+          sort: 'up',
           subscriptions: [
-            {
-              uuid: '2c7be513-9083-439c-937f-42bbe95c0cb9',
-              author: null,
-              description: 'Links for the intellectually curious, ranked by readers.',
-              link: 'https://news.ycombinator.com/',
-              image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/hacker-news-2-569388.png',
-              items: null,
-              rss: 'https://news.ycombinator.com/rss',
-              title: 'Hacker News',
-              userRead: false
-            },
             {
               uuid: 'b1c2eff2-81e8-4f19-a1ba-8fff123fb89a',
               author: null,
@@ -40,6 +32,17 @@
               items: null,
               rss: 'https://avantmusicnews.com/rss',
               title: 'Avant Music News',
+              userRead: false
+            },
+            {
+              uuid: '2e535aa1-d6d3-4741-9df7-e47ec5ac2260',
+              author: null,
+              description: 'The latest from Bandcamp',
+              link: 'https://daily.bandcamp.com/',
+              image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/bc-site-icon1.png',
+              items: null,
+              rss: 'https://daily.bandcamp.com/feed',
+              title: 'Bandcamp Daily',
               userRead: false
             },
             {
@@ -65,14 +68,14 @@
               userRead: false
             },
             {
-              uuid: '2e535aa1-d6d3-4741-9df7-e47ec5ac2260',
+              uuid: '2c7be513-9083-439c-937f-42bbe95c0cb9',
               author: null,
-              description: 'The latest from Bandcamp',
-              link: 'https://daily.bandcamp.com/',
-              image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/bc-site-icon1.png',
+              description: 'Links for the intellectually curious, ranked by readers.',
+              link: 'https://news.ycombinator.com/',
+              image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/hacker-news-2-569388.png',
               items: null,
-              rss: 'https://daily.bandcamp.com/feed',
-              title: 'Bandcamp Daily',
+              rss: 'https://news.ycombinator.com/rss',
+              title: 'Hacker News',
               userRead: false
             },
             {
@@ -103,30 +106,10 @@
         },
         {
           active: false,
+          allRead: false,
           podcast: false,
+          sort: 'up',
           subscriptions: [
-            {
-              uuid: '09689d96-f0fb-4a3e-ad8c-1d71cb9545a8',
-              author: null,
-              description: 'Fostering connections, deepening knowledge, encouraging appreciation, and providing financial support for new music created in the United States',
-              link: 'https://www.newmusicusa.org/',
-              image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/newmusicbox.png',
-              items: null,
-              rss: 'https://nmbx.newmusicusa.org/rss',
-              title: 'NewMusicBox – NewMusicBox',
-              userRead: false
-            },
-            {
-              uuid: '4de05f59-d8df-49a0-9ad7-4cc9b80f15ae',
-              author: null,
-              description: 'New classical music, art, and technology',
-              link: 'https://www.icareifyoulisten.com/',
-              image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/TvlOzOKS_400x400.jpg',
-              items: null,
-              rss: 'https://www.icareifyoulisten.com/rss',
-              title: 'I CARE IF YOU LISTEN',
-              userRead: false
-            },
             {
               uuid: '79f05037-72d3-497e-a57a-54012a79407b',
               author: null,
@@ -150,6 +133,28 @@
               userRead: false
             },
             {
+              uuid: '4de05f59-d8df-49a0-9ad7-4cc9b80f15ae',
+              author: null,
+              description: 'New classical music, art, and technology',
+              link: 'https://www.icareifyoulisten.com/',
+              image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/TvlOzOKS_400x400.jpg',
+              items: null,
+              rss: 'https://www.icareifyoulisten.com/rss',
+              title: 'I CARE IF YOU LISTEN',
+              userRead: false
+            },
+            {
+              uuid: '09689d96-f0fb-4a3e-ad8c-1d71cb9545a8',
+              author: null,
+              description: 'Fostering connections, deepening knowledge, encouraging appreciation, and providing financial support for new music created in the United States',
+              link: 'https://www.newmusicusa.org/',
+              image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/newmusicbox.png',
+              items: null,
+              rss: 'https://nmbx.newmusicusa.org/rss',
+              title: 'NewMusicBox – NewMusicBox',
+              userRead: false
+            },
+            {
               uuid: 'c1979d0e-d388-44ca-8ab0-a41d422c831a',
               author: null,
               description: 'The Contemporary Classical Music Community',
@@ -157,7 +162,7 @@
               image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/seq21logo1.jpg',
               items: null,
               rss: 'http://www.sequenza21.com/feed',
-              title: 'Sequenza21',
+              title: 'Sequenza21/',
               userRead: false
             }
           ],
@@ -166,7 +171,9 @@
         },
         {
           active: false,
+          allRead: false,
           podcast: true,
+          sort: 'up',
           subscriptions: [
             {
               uuid: 'ec2f85e6-aa1d-4195-98f5-217e0525f714',
@@ -185,30 +192,10 @@
         },
         {
           active: false,
+          allRead: false,
           podcast: false,
+          sort: 'up',
           subscriptions: [
-            {
-              uuid: '972a2dbc-9441-4c12-a262-e3119559d47d',
-              author: null,
-              description: 'Slate RSS',
-              link: 'https://slate.com/',
-              image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/slate.png',
-              items: null,
-              rss: 'https://slate.com/feeds/all.rss',
-              title: 'Slate Magazine',
-              userRead: false
-            },
-            {
-              uuid: '08030a4a-4d9c-4003-89cc-872ad78c8d89',
-              author: null,
-              description: 'The latest news from TheHill.com',
-              link: 'https://thehill.com/',
-              image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/theHillLogo.png',
-              items: null,
-              rss: 'http://thehill.com/rss/syndicator/19109',
-              title: 'TheHill - The Hill News',
-              userRead: false
-            },
             {
               uuid: '4c2a61cb-27a2-4c56-805a-8282bcf11221',
               author: null,
@@ -221,14 +208,36 @@
               userRead: false
             },
             {
-              uuid: '67063476-7716-49e8-8c10-122989636ccd',
+              uuid: '08030a4a-4d9c-4003-89cc-872ad78c8d89',
               author: null,
-              description: 'Smart, fearless journalism',
-              link: 'https://www.motherjones.com/',
-              image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/MJ_cropped-favicon-512x512.png',
+              description: 'The latest news from TheHill.com',
+              link: 'https://thehill.com/',
+              image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/theHillLogo.png',
               items: null,
-              rss: 'https://www.motherjones.com/politics/feed/',
-              title: 'Politics – Mother Jones',
+              rss: 'http://thehill.com/rss/syndicator/19109',
+              title: 'The Hill - The Hill News',
+              userRead: false
+            },
+            {
+              uuid: 'bb51cad9-ef52-4910-9184-559edd28647f',
+              author: null,
+              description: '"We deal in illusions, man. None of it is true. But you people sit there day after day, night after night, all ages, colors, creeds. We\'re all you know. You\'re beginning to believe the illusions we\'re spinning here. You\'re beginning to think that the tube is reality and that your own lives are unreal. You do whatever the tube tells you. You dress like the tube. You eat like the tube. You even think like the tube. In God\'s name, you people are the real thing, WE are the illusion." -Howard Beale',
+              link: 'https://digbysblog.blogspot.com/',
+              image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/network-howard-beal.jpg',
+              items: null,
+              rss: 'http://digbysblog.blogspot.com/feeds/posts/default',
+              title: 'Hullabaloo',
+              userRead: false
+            },
+            {
+              uuid: '972a2dbc-9441-4c12-a262-e3119559d47d',
+              author: null,
+              description: 'Slate RSS',
+              link: 'https://slate.com/',
+              image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/slate.png',
+              items: null,
+              rss: 'https://slate.com/feeds/all.rss',
+              title: 'Slate Magazine',
               userRead: false
             },
             {
@@ -243,14 +252,14 @@
               userRead: false
             },
             {
-              uuid: 'bb51cad9-ef52-4910-9184-559edd28647f',
+              uuid: '67063476-7716-49e8-8c10-122989636ccd',
               author: null,
-              description: '"We deal in illusions, man. None of it is true. But you people sit there day after day, night after night, all ages, colors, creeds. We\'re all you know. You\'re beginning to believe the illusions we\'re spinning here. You\'re beginning to think that the tube is reality and that your own lives are unreal. You do whatever the tube tells you. You dress like the tube. You eat like the tube. You even think like the tube. In God\'s name, you people are the real thing, WE are the illusion." -Howard Beale',
-              link: 'https://digbysblog.blogspot.com/',
-              image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/network-howard-beal.jpg',
+              description: 'Smart, fearless journalism',
+              link: 'https://www.motherjones.com/',
+              image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/MJ_cropped-favicon-512x512.png',
               items: null,
-              rss: 'http://digbysblog.blogspot.com/feeds/posts/default',
-              title: 'Hullabaloo',
+              rss: 'https://www.motherjones.com/politics/feed/',
+              title: 'Politics – Mother Jones',
               userRead: false
             }
           ],
@@ -259,17 +268,19 @@
         },
         {
           active: false,
+          allRead: false,
           podcast: false,
+          sort: 'up',
           subscriptions: [
             {
-              uuid: 'a10dc8ef-98ec-4b9e-b5f3-3c4705cb13f2',
+              uuid: 'e8249664-185f-444e-acd0-20928581bfb8',
               author: null,
-              description: 'Node.js Support, Training and Consulting for the Enterprise, Worldwide',
-              link: 'https://nodesource.com/blog',
-              image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/nodesource-512x512.png',
+              description: 'The latest news and tips from the Angular team - Medium',
+              link: 'https://blog.angular.io/',
+              image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/1_TGH72Nnw24QL3iV9IOm4VA.png',
               items: null,
-              rss: 'https://nodesource.com/blog/rss',
-              title: 'The NodeSource Blog',
+              rss: 'https://blog.angular.io/rss',
+              title: 'Angular Blog - Medium',
               userRead: false
             },
             {
@@ -284,17 +295,6 @@
               userRead: false
             },
             {
-              uuid: '25243f5e-e861-4252-abc5-ccf7aa5c8f8b',
-              author: null,
-              description: 'Helping you become a better engineer',
-              link: 'https://swizec.com/blog',
-              image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/swiz.png',
-              items: null,
-              rss: 'http://swizec.com/blog/feed',
-              title: 'A geek with a hat',
-              userRead: false
-            },
-            {
               uuid: 'f9bc3d9c-5960-4fa6-aa28-1b43a01cc73f',
               author: null,
               description: 'A blog featuring tutorials about JavaScript, HTML5, AJAX, PHP, CSS, WordPress, and everything else development.',
@@ -303,6 +303,17 @@
               items: null,
               rss: 'https://davidwalsh.name/feed',
               title: 'David Walsh Blog',
+              userRead: false
+            },
+            {
+              uuid: '25243f5e-e861-4252-abc5-ccf7aa5c8f8b',
+              author: null,
+              description: 'Helping you become a better engineer',
+              link: 'https://swizec.com/blog',
+              image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/swiz.png',
+              items: null,
+              rss: 'http://swizec.com/blog/feed',
+              title: 'A geek with a hat',
               userRead: false
             },
             {
@@ -317,14 +328,14 @@
               userRead: false
             },
             {
-              uuid: 'e8249664-185f-444e-acd0-20928581bfb8',
+              uuid: 'a10dc8ef-98ec-4b9e-b5f3-3c4705cb13f2',
               author: null,
-              description: 'The latest news and tips from the Angular team - Medium',
-              link: 'https://blog.angular.io/',
-              image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/1_TGH72Nnw24QL3iV9IOm4VA.png',
+              description: 'Node.js Support, Training and Consulting for the Enterprise, Worldwide',
+              link: 'https://nodesource.com/blog',
+              image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/nodesource-512x512.png',
               items: null,
-              rss: 'https://blog.angular.io/rss',
-              title: 'Angular Blog - Medium',
+              rss: 'https://nodesource.com/blog/rss',
+              title: 'The NodeSource Blog',
               userRead: false
             }
           ],
@@ -333,7 +344,9 @@
         },
         {
           active: false,
+          allRead: false,
           podcast: true,
+          sort: 'up',
           subscriptions: [
             {
               uuid: '7f5aca06-17bf-4c99-8c8f-af561999498c',
@@ -352,13 +365,251 @@
         },
         {
           active: false,
-          podcast: true,
+          allRead: false,
+          podcast: false,
+          sort: 'up',
+          subscriptions: [
+            {
+              uuid: 'c2f53e34-5499-4015-80d5-b4fcea47c78b',
+              author: null,
+              description: 'War Is a Racket',
+              link: null,
+              image: 'https://habits168-hurdaudio.s3.amazonaws.com/externals/EDD_xVYXsAEtYxP.jpg',
+              items: null,
+              rss: null,
+              title: 'Jacobin Magazine - Summer 2019',
+              userRead: false
+            },
+            {
+              uuid: '2b7da266-f978-445f-8c5b-07da611f2464',
+              author: null,
+              description: 'Fair But Not Square',
+              link: null,
+              image: 'https://habits168-hurdaudio.s3.amazonaws.com/externals/v28_i37_Fair_But_Not_Square.jpg',
+              items: null,
+              rss: null,
+              title: 'Albuquerque Alibi - Thursday, September 12, 2019',
+              userRead: true
+            },
+            {
+              uuid: '174f6d0e-b7cd-4979-8177-61032be3fefe',
+              author: null,
+              description: 'All the News that\'s fit to print.',
+              link: null,
+              image: 'https://habits168-hurdaudio.s3.amazonaws.com/externals/scanNYT2019-09-15.jpg',
+              items: null,
+              rss: null,
+              title: 'New York Times - Sunday, September 15, 2019',
+              userRead: true
+            }
+          ],
           tab: 'mondayTabInactive' + vm.mondayMonth,
           title: 'Externals'
         }
       ];
       vm.toggleTabs = toggleTabs;
       vm.toggleReadStatus = toggleReadStatus;
+      vm.toggleAllReadStatus = toggleAllReadStatus;
+      vm.sortSubscriptions = sortSubscriptions;
+      vm.exitMondayManagerModal = exitMondayManagerModal;
+      vm.managerModalState = 'mondayManageTabsSubsModalInactive' + vm.mondayMonth;
+      vm.mondayManagerEngaged = mondayManagerEngaged;
+      vm.mondayManageTabber = mondayManageTabber;
+      vm.filterSearch = filterSearch;
+
+      function filterSearch() {
+        let query = document.getElementById('mondayManageSearch').value;
+        if (query === '') {
+          vm.availableFeeds = vm.allFeeds;
+        } else {
+          vm.availableFeeds = vm.allFeeds.filter(entry => {
+            return(entry.title.toLowerCase().indexOf(query.toLowerCase()) !== -1);
+          });
+        }
+      }
+
+      function filterSubscriptions(feedsList, subsList) {
+        let index = null;
+        let sorta, sortb;
+
+        for (let i = 0; i < feedsList.length; i++) {
+          index = null;
+          for (let j = 0; j < subsList.length; j++) {
+            if (feedsList[i].uuid === subsList[j].uuid) {
+              index = j;
+              j = subsList.length;
+            }
+          }
+          if (index !== null) {
+            subsList.splice(index, 1);
+          }
+        }
+
+        subsList = subsList.sort((a, b) => {
+          sorta = a.title.toLowerCase();
+          sortb = b.title.toLowerCase();
+          if (a.title.toLowerCase().slice(0, 4) === 'the ') {
+            sorta = a.title.toLowerCase().slice(4);
+          }
+          if (b.title.toLowerCase().slice(0, 4) === 'the ') {
+            sortb = b.title.toLowerCase().slice(4);
+          }
+          if (a.title.toLowerCase().slice(0, 2) === 'a ') {
+            sorta = a.title.toLowerCase().slice(2);
+          }
+          if (b.title.toLowerCase().slice(0, 2) === 'a ') {
+            sortb = b.title.toLowerCase().slice(2);
+          }
+          if (sorta < sortb) {
+            return -1;
+          } else if (sorta > sortb) {
+            return 1;
+          } else {
+            return 0;
+          }
+        });
+
+        return(subsList);
+      }
+
+      function mondayManageTabber(tabTitle) {
+        vm.mondayManageSelectedTab = tabTitle;
+        for (let i = 0; i < vm.mondayTabs.length; i++) {
+          if (vm.mondayTabs[i].title === tabTitle) {
+            vm.mondaySubs = vm.mondayTabs[i].subscriptions;
+            if (tabTitle !== 'Externals') {
+              if (vm.mondayTabs[i].podcast) {
+                $http.get('/podcast_feeds')
+                .then(blogFeedsData => {
+                  vm.allFeeds = filterSubscriptions(vm.mondaySubs, blogFeedsData.data);
+                  vm.availableFeeds = vm.allFeeds;
+                  filterSearch();
+                });
+              } else {
+                $http.get('/blog_feeds')
+                .then(blogFeedsData => {
+                  vm.allFeeds = filterSubscriptions(vm.mondaySubs, blogFeedsData.data);
+                  vm.availableFeeds = vm.allFeeds;
+                  filterSearch();
+                });
+              }
+            } else {
+              vm.allFeeds = [];
+              vm.availableFeeds = vm.allFeeds;
+            }
+          }
+        }
+      }
+
+      function mondayManagerEngaged() {
+        document.getElementById('mondayManageSearch').value = '';
+        vm.mondayManageSelectedTab = vm.mondayTabs[0].title;
+        vm.mondaySubs = vm.mondayTabs[0].subscriptions;
+        if (vm.mondayTabs[0].podcast) {
+          $http.get('/podcast_feeds')
+          .then(blogFeedsData => {
+            vm.allFeeds = filterSubscriptions(vm.mondaySubs, blogFeedsData.data);
+            vm.availableFeeds = vm.allFeeds;
+          });
+        } else {
+          $http.get('/blog_feeds')
+          .then(blogFeedsData => {
+            vm.allFeeds = filterSubscriptions(vm.mondaySubs, blogFeedsData.data);
+            vm.availableFeeds = vm.allFeeds;
+          });
+        }
+        vm.managerModalState = 'mondayManageTabsSubsModal' + vm.mondayMonth;
+        vm.mondayContainerState = 'mondayContainerInactive' + vm.mondayMonth;
+      }
+
+      function exitMondayManagerModal() {
+        vm.managerModalState = 'mondayManageTabsSubsModalInactive' + vm.mondayMonth;
+        vm.mondayContainerState = 'mondayContainerActive' + vm.mondayMonth;
+      }
+
+      function sortSubscriptions(contentTitle, direction) {
+        let sorta, sortb;
+        for (let i = 0; i < vm.mondayTabs.length; i++) {
+          if (vm.mondayTabs[i].title === contentTitle) {
+            vm.mondayTabs[i].sort = direction;
+            switch(direction) {
+              case('up'):
+                vm.mondayTabs[i].subscriptions = vm.mondayTabs[i].subscriptions.sort((a, b) => {
+                  sorta = a.title.toLowerCase();
+                  sortb = b.title.toLowerCase();
+                  if (a.title.toLowerCase().slice(0, 4) === 'the ') {
+                    sorta = a.title.toLowerCase().slice(4);
+                  }
+                  if (b.title.toLowerCase().slice(0, 4) === 'the ') {
+                    sortb = b.title.toLowerCase().slice(4);
+                  }
+                  if (a.title.toLowerCase().slice(0, 2) === 'a ') {
+                    sorta = a.title.toLowerCase().slice(2);
+                  }
+                  if (b.title.toLowerCase().slice(0, 2) === 'a ') {
+                    sortb = b.title.toLowerCase().slice(2);
+                  }
+                  if (sorta < sortb) {
+                    return -1;
+                  } else if (sorta > sortb) {
+                    return 1;
+                  } else {
+                    return 0;
+                  }
+                });
+                break;
+              case('down'):
+                vm.mondayTabs[i].subscriptions = vm.mondayTabs[i].subscriptions.sort((a, b) => {
+                  sorta = a.title.toLowerCase();
+                  sortb = b.title.toLowerCase();
+                  if (a.title.toLowerCase().slice(0, 4) === 'the ') {
+                    sorta = a.title.toLowerCase().slice(4);
+                  }
+                  if (b.title.toLowerCase().slice(0, 4) === 'the ') {
+                    sortb = b.title.toLowerCase().slice(4);
+                  }
+                  if (a.title.toLowerCase().slice(0, 2) === 'a ') {
+                    sorta = a.title.toLowerCase().slice(2);
+                  }
+                  if (b.title.toLowerCase().slice(0, 2) === 'a ') {
+                    sortb = b.title.toLowerCase().slice(2);
+                  }
+                  if (sorta < sortb) {
+                    return 1;
+                  } else if (sorta > sortb) {
+                    return -1;
+                  } else {
+                    return 0;
+                  }
+                });
+                break;
+              case('random'):
+                let index
+                for (let k = 0; k < (vm.mondayTabs[i].subscriptions.length * 10); k++) {
+                  for (let j = 0; j < vm.mondayTabs[i].subscriptions.length; j++) {
+                    index = Math.floor(Math.random() * vm.mondayTabs[i].subscriptions.length);
+                    [vm.mondayTabs[i].subscriptions[j], vm.mondayTabs[i].subscriptions[index]] = [vm.mondayTabs[i].subscriptions[index], vm.mondayTabs[i].subscriptions[j]];
+                  }
+                }
+                break;
+              default:
+                console.log(direction + ' is unsupported.');
+                alert('ERROR: ' + direction + ' failed.');
+            }
+          }
+        }
+      }
+
+      function toggleAllReadStatus(contentTitle) {
+        for (let i = 0; i < vm.mondayTabs.length; i++) {
+          if (vm.mondayTabs[i].title === contentTitle) {
+            vm.mondayTabs[i].allRead = !vm.mondayTabs[i].allRead;
+            for (let j = 0; j < vm.mondayTabs[i].subscriptions.length; j++) {
+              vm.mondayTabs[i].subscriptions[j].userRead = vm.mondayTabs[i].allRead;
+            }
+          }
+        }
+      }
 
       function toggleReadStatus(contentTitle, subUuid) {
         for (let i = 0; i < vm.mondayTabs.length; i++) {
@@ -557,6 +808,7 @@
           default:
             alert('UNSUPPORTED MONTH SELECT for LOGO');
         }
+        console.log(vm.mondayTabs);
 
         setUserIPAddress();
         setFooterMessage();

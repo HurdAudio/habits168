@@ -169,7 +169,7 @@ exports.seed = function(knex, Promise) {
           image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/seq21logo1.jpg',
           items: null,
           rss: 'http://www.sequenza21.com/feed',
-          title: 'Sequenza21',
+          title: 'Sequenza21/',
           created_at: new Date('2019-06-01 17:21:00.000 UTC'),
           updated_at: new Date('2019-06-01 17:21:00.000 UTC')
         },
@@ -193,7 +193,7 @@ exports.seed = function(knex, Promise) {
           image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/theHillLogo.png',
           items: null,
           rss: 'http://thehill.com/rss/syndicator/19109',
-          title: 'TheHill - The Hill News',
+          title: 'The Hill - The Hill News',
           created_at: new Date('2019-06-01 17:21:00.000 UTC'),
           updated_at: new Date('2019-06-01 17:21:00.000 UTC')
         },

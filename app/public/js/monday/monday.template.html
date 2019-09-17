@@ -1,41 +1,116 @@
 <div class="mondayBackgroundDiv{{$ctrl.mondayMonth}}"></div>
 
-<div class="mondayTitleStrip{{$ctrl.mondayMonth}}">
+<div class="{{$ctrl.mondayContainerState}}">
 
-  <img class="mondayLogo{{$ctrl.mondayMonth}}" src="{{$ctrl.logoPath}}" ng-click="$ctrl.navigateToHub()">
+  <div class="mondayTitleStrip{{$ctrl.mondayMonth}}">
 
-  <h1 class="mondayLabel{{$ctrl.mondayMonth}}">Monday</h1>
-</div>
+    <img class="mondayLogo{{$ctrl.mondayMonth}}" src="{{$ctrl.logoPath}}" ng-click="$ctrl.navigateToHub()">
 
-<div class="mondayTabsStrip{{$ctrl.mondayMonth}}">
-    <main ng-repeat="tab in $ctrl.mondayTabs">
+    <h1 class="mondayLabel{{$ctrl.mondayMonth}}">Monday</h1>
+    <button class="mondayManageTabsButton{{$ctrl.mondayMonth}}" ng-click="$ctrl.mondayManagerEngaged()">Manage Tabs/Subscriptions</button>
+  </div>
 
-      <div class="{{tab.tab}}" ng-click="$ctrl.toggleTabs(tab.title)"><p>{{tab.title}}</p></div>
-    </main>
+  <div class="mondayTabsStrip{{$ctrl.mondayMonth}}">
+      <main ng-repeat="tab in $ctrl.mondayTabs">
 
-</div>
+        <div class="{{tab.tab}}" ng-click="$ctrl.toggleTabs(tab.title)"><p>{{tab.title}}</p></div>
+      </main>
 
-<div class="mondayContent{{$ctrl.mondayMonth}}">
+  </div>
 
-  <main ng-repeat="content in $ctrl.mondayTabs">
+  <div class="mondayContent{{$ctrl.mondayMonth}}">
 
-    <div class="mondayContentContent{{$ctrl.mondayMonth}}" ng-if="content.active">
-
-      <div class="mondayReadAll{{$ctrl.mondayMonth}}" ng-if="!content.podcast"><p>Read All</p></div>
-
-      <div class="mondayFeedsDiv{{$ctrl.mondayMonth}}">
+    <main ng-repeat="content in $ctrl.mondayTabs">
 
 
-        <main ng-repeat="subscription in content.subscriptions" class="mondaySubscriptions{{$ctrl.mondayMonth}}">
-          <div class="mondayFeedContainer{{$ctrl.mondayMonth}}">
+      <div class="mondayContentContent{{$ctrl.mondayMonth}}" ng-if="content.active">
 
-            <div class="mondayTrackProgress{{$ctrl.mondayMonth}}"><input type="checkbox" ng-checked="subscription.userRead"><span class="mondayCheckbox{{$ctrl.mondayMonth}}{{subscription.userRead}}" ng-click="$ctrl.toggleReadStatus(content.title, subscription.uuid)"><span class="mondaySwitchUnchecked{{$ctrl.mondayMonth}}{{subscription.userRead}}"></span></span></div>
+        <div class="mondayReaderNavigationButtons{{$ctrl.mondayMonth}}" ng-if="content.title !== 'Externals'">
 
-            <img class="mondaySubIcon{{$ctrl.mondayMonth}}" src="{{subscription.image}}">
-            <p class="mondaySubscriptionTitle{{$ctrl.mondayMonth}}">{{subscription.title}}: {{subscription.description}}</p>
+          <p class="markAllReadText{{$ctrl.mondayMonth}}" ng-if="content.subscriptions.length > 1">Mark All Read/Unread:</p>
+          <div class="mondayTrackProgress{{$ctrl.mondayMonth}}" ng-if="content.subscriptions.length > 1"><input type="checkbox" ng-checked="content.allRead"><span class="mondayCheckbox{{$ctrl.mondayMonth}}{{content.allRead}}" ng-click="$ctrl.toggleAllReadStatus(content.title)"><span class="mondaySwitchUnchecked{{$ctrl.mondayMonth}}{{content.allRead}}"></span></span></div>
+
+          <p class="markAllReadText{{$ctrl.mondayMonth}}" ng-if="content.subscriptions.length > 1">Read All:</p>
+          <div class="mondayReadAll{{$ctrl.mondayMonth}}" ng-if="!content.podcast"><button class="mondayReadAllButton{{$ctrl.mondayMonth}}" ng-if="content.subscriptions.length > 1"><i class="fas fa-book-reader"></i></button></div>
+
+          <div class="mondaySorting{{$ctrl.mondayMonth}}" ng-if="content.subscriptions.length > 1">
+            <p>Sorting Order:</p>
+              <button class="mondayReadAllButton{{$ctrl.mondayMonth}} mondaySortingButton{{$ctrl.mondayMonth}}" ng-if="content.sort !== 'up'" ng-click="$ctrl.sortSubscriptions(content.title, 'up')"><i class="fas fa-sort-alpha-up"></i></button>
+              <button class="mondayReadAllButton{{$ctrl.mondayMonth}} mondaySortingButton{{$ctrl.mondayMonth}}" ng-if="content.sort !== 'down'" ng-click="$ctrl.sortSubscriptions(content.title, 'down')"><i class="fas fa-sort-alpha-down-alt"></i></button>
+              <button class="mondayReadAllButton{{$ctrl.mondayMonth}} mondaySortingButton{{$ctrl.mondayMonth}}" ng-click="$ctrl.sortSubscriptions(content.title, 'random')"><i class="fas fa-random"></i></button>
+
           </div>
-        </main><br><br>
+        </div>
+
+
+        <div class="mondayFeedsDiv{{$ctrl.mondayMonth}}">
+
+
+          <main ng-repeat="subscription in content.subscriptions" class="mondaySubscriptions{{$ctrl.mondayMonth}}">
+            <div class="mondayFeedContainer{{$ctrl.mondayMonth}}">
+
+              <div class="mondayTrackProgress{{$ctrl.mondayMonth}}"><input type="checkbox" ng-checked="subscription.userRead"><p class="mondayUnreadText{{$ctrl.mondayMonth}}" ng-if="(!subscription.userRead && !content.podcast)">unread</p><p class="mondayReadText{{$ctrl.mondayMonth}}" ng-if="(subscription.userRead && !content.podcast)">read</p><p class="mondayUnreadText{{$ctrl.mondayMonth}}" ng-if="(!subscription.userRead && content.podcast)">new</p><p class="mondayReadText{{$ctrl.mondayMonth}}" ng-if="(subscription.userRead && content.podcast)">completed</p><span class="mondayCheckbox{{$ctrl.mondayMonth}}{{subscription.userRead}}" ng-click="$ctrl.toggleReadStatus(content.title, subscription.uuid)"><span class="mondaySwitchUnchecked{{$ctrl.mondayMonth}}{{subscription.userRead}}"></span></span></div>
+
+              <img class="mondaySubIcon{{$ctrl.mondayMonth}}" src="{{subscription.image}}">
+              <p class="mondaySubscriptionTitle{{$ctrl.mondayMonth}}">{{subscription.title}}: {{subscription.description}}</p>
+            </div>
+          </main>
+          <div class="mondayBuffer{{$ctrl.mondayMonth}}"></div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+<div class="{{$ctrl.managerModalState}}">
+
+  <div class="mondayManageTitleBar{{$ctrl.mondayMonth}}">
+
+    <p class="mondayManageTitle{{$ctrl.mondayMonth}}">Monday Tabs/Subscription Management</p>
+    <p class="mondayModalExit{{$ctrl.mondayMonth}}" ng-click="$ctrl.exitMondayManagerModal()"><i class="fas fa-times"></i></p>
+  </div>
+  <div class="mondayManagerModalContainer{{$ctrl.mondayMonth}}">
+    <div class="mondayManagerTabsSection{{$ctrl.mondayMonth}}">
+
+      <p class="mondayTabsManageTitle{{$ctrl.mondayMonth}}">Tabs:</p>
+      <div class="mondayManageTabsContainer{{$ctrl.mondayMonth}}">
+
+        <main ng-repeat="tab in $ctrl.mondayTabs">
+
+          <p class="mondayTabManageTab{{$ctrl.mondayMonth}}" ng-click="$ctrl.mondayManageTabber(tab.title)"><i class="fas fa-arrow-right" ng-if="tab.title === $ctrl.mondayManageSelectedTab"></i>&nbsp;&nbsp;{{tab.title}}</p>
+          <p class="mondayTabManageSubTab{{$ctrl.mondayMonth}}" ng-if="tab.title === $ctrl.mondayManageSelectedTab"><span><i class="fas fa-edit"></i>&nbsp;edit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span ng-if="(tab.title !== 'Externals' && tab.title !== 'Dailies')"><i class="far fa-trash-alt"></i>&nbsp;&nbsp;delete&nbsp;</span></p>
+        </main>
+          <p class="mondayTabManageTab{{$ctrl.mondayMonth}}"><i class="far fa-plus-square"></i>&nbsp;&nbsp;Add Tab</p>
       </div>
     </div>
-  </main>
+    <div class="mondayManagerSubscriptionsSection{{$ctrl.mondayMonth}}">
+
+      <p class="mondayTabsSubscriptionTitle{{$ctrl.mondayMonth}}">Subscriptions:</p>
+      <div class="mondayManageTabsContainer{{$ctrl.mondayMonth}}">
+
+        <main ng-repeat="sub in $ctrl.mondaySubs">
+
+          <img class="mondayManageSubIcon{{$ctrl.mondayMonth}}" src="{{sub.image}}">
+          <p class="mondaySubManageSubTab{{$ctrl.mondayMonth}}"><span><i class="far fa-trash-alt"></i>&nbsp;&nbsp;delete&nbsp;</span></p>
+          <p class="mondayManageSubsTitles{{$ctrl.mondayMonth}}">{{sub.title}}: {{sub.description}}</p>
+        </main>
+      </div>
+    </div>
+    <div class="mondayManagerFeedsSection{{$ctrl.mondayMonth}}">
+
+      <p class="mondayManagerFeedsTitle{{$ctrl.mondayMonth}}">Feeds:</p>
+      <input id="mondayManageSearch" class="mondayManageSearch{{$ctrl.mondayMonth}}" type="text" placeholder="search" ng-keyup="$ctrl.filterSearch()">
+      <div class="mondayManageTabsContainer{{$ctrl.mondayMonth}}">
+
+
+
+        <main ng-repeat="feed in $ctrl.availableFeeds">
+
+          <img class="mondayManageSubIcon{{$ctrl.mondayMonth}}" src="{{feed.image}}">
+          <p class="mondaySubManageSubTab{{$ctrl.mondayMonth}}"><span><i class="far fa-plus-square"></i>&nbsp;&nbsp;add&nbsp;</span></p>
+          <p class="mondayManageSubsTitlesFeeds{{$ctrl.mondayMonth}}">{{feed.title}}: {{feed.description}}</p>
+        </main>
+      </div>
+    </div>
+
+  </div>
 </div>

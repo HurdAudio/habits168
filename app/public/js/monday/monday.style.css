@@ -52,6 +52,7 @@
   opacity: 0.9;
   overflow-x: hidden;
   overflow-y: hidden;
+  padding-left: 3%;
   width: 100%;
 }
 
@@ -61,7 +62,7 @@
   cursor: none;
   font-family: 'Literata', serif;
   font-size: 24px;
-  padding: 12px 24px 0 14px;
+  padding: 12px 44px 0 34px;
   transform: rotateY(360deg);
   transition: all 0.5s linear;
   z-index: 5;
@@ -96,7 +97,7 @@
 
 .mondayFeedsDiv_JanuaryA {
   height: auto;
-  margin: 50px 50px 0 50px;
+  margin: 90px 50px 0 50px;
   width: 90%;
 }
 
@@ -105,15 +106,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-  padding: 15px 50px;
-}
-
-.mondayReadAll_JanuaryA {
-  color: #12262d;
-  cursor: pointer;
-  font-family: 'Literata', serif;
-  font-size: 24px;
-  margin: 24px 0 24px 5%;
+  padding: 5px 50px;
 }
 
 .mondaySubscriptions_JanuaryA {
@@ -121,15 +114,27 @@
 }
 
 .mondaySubIcon_JanuaryA {
+  filter: invert(0%);
+  height: 65px;
   margin-right: 20px;
-  width: 100px;
+  transform: skewX(-15deg);
+  transition: all 0.5s linear;
+  width: 65px;
+}
+
+.mondaySubIcon_JanuaryA:hover {
+  filter: invert(100%);
+  transform: skewX(-5deg);
+  transition: all 0.5s linear;
 }
 
 .mondaySubscriptionTitle_JanuaryA {
+  color: #12262d;
   font-family: 'Literata', serif;
-  font-size: 21px;
-  margin: 25px 0 40px 0;
-  width: 750px;
+  font-size: 18px;
+  line-height: 1.2;
+  margin: 5px 0 10px 0;
+  width: 650px;
 }
 
 .mondayTrackProgress_JanuaryA {
@@ -155,7 +160,7 @@
 
 .mondayCheckbox_JanuaryAfalse {
   background-color: #899396;
-  height: 25px;
+  height: 20px;
   left: 0;
   position: absolute;
   top: 15px;
@@ -165,7 +170,7 @@
 
 .mondayCheckbox_JanuaryAtrue {
   background-color: #020405;
-  height: 25px;
+  height: 20px;
   left: 0;
   position: absolute;
   top: 15px;
@@ -179,20 +184,316 @@
 
 .mondaySwitchUnchecked_JanuaryAfalse {
   background-color: #004461;
+  filter: brightness(100%);
   height: 30px;
   left: 0px;
   position: absolute;
-  top: -3px;
+  top: -6px;
+  transform: skewX(-15deg);
   transition: all 0.2s linear;
   width: 25px;
 }
 
 .mondaySwitchUnchecked_JanuaryAtrue {
-  background-color: #828587;
+  background-color: #004461;
+  filter: brightness(1000%);
   height: 30px;
   left: 25px;
   position: absolute;
-  top: -3px;
+  top: -6px;
+  transform: skewX(0deg);
   transition: all 0.2s linear;
   width: 25px;
+}
+
+.mondayReadAllButton_JanuaryA {
+  background: #004461;
+  border: transparent;
+  color: #98c5c5;
+  cursor: pointer;
+  font-family: 'Literata', serif;
+  font-size: 36px;
+  height: 60px;
+  outline: #308a8b;
+  transform: skewX(-15deg);
+  transition: all 0.5s linear;
+  width: 60px;
+}
+
+.mondayReadAllButton_JanuaryA:hover {
+  background: #308a8b;
+  color: #12262d;
+  outline: #308a8b;
+  transform: skewX(-5deg);
+}
+
+.mondayReadAllButton_JanuaryA:active {
+  background: #020405;
+  color: #9bbdc2;
+  outline: #308a8b;
+}
+
+.mondayReaderNavigationButtons_JanuaryA {
+  background: #80a2b0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: auto;
+  justify-content: flex-start;
+  margin: 0 0 0 0;
+  position: fixed;
+  width: 100%;
+  z-index: 15;
+}
+
+.mondayReadAll_JanuaryA {
+  color: #12262d;
+  font-family: 'Literata', serif;
+  font-size: 24px;
+  margin: 14px 0 14px 25px;
+}
+
+.mondaySorting_JanuaryA {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 14px 0 14px 100px;
+}
+
+.mondaySorting_JanuaryA p {
+  color: #12262d;
+  font-family: 'Literata', serif;
+  font-size: 18px;
+  margin: 20px 20px 0 0;
+}
+
+.mondaySortingButton_JanuaryA {
+  margin-right: 20px;
+}
+
+.markAllReadText_JanuaryA {
+  color: #12262d;
+  font-family: 'Literata', serif;
+  font-size: 18px;
+  margin: 35px 10px 0 40px;
+}
+
+.mondayUnreadText_JanuaryA {
+  color: #12262d;
+  font-family: 'Literata', serif;
+  font-size: 18px;
+  margin: 10px 0 0 30px;
+  width: 35px;
+}
+
+.mondayReadText_JanuaryA {
+  color: #12262d;
+  font-family: 'Literata', serif;
+  font-size: 18px;
+  margin: 10px 0 0 30px;
+  width: 35px;
+}
+
+.mondayBuffer_JanuaryA {
+  height: 20px;
+  width: 100%;
+}
+
+.mondayManageTabsButton_JanuaryA {
+  background: #004461;
+  border: transparent;
+  color: #98c5c5;
+  cursor: pointer;
+  font-family: 'Literata', serif;
+  font-size: 18px;
+  height: 40px;
+  margin: 40px 0 0 40%;
+  outline: #308a8b;
+  padding: -20px 20px;
+  position: relative;
+  transform: skewX(-15deg);
+  transition: all 0.5s linear;
+  width: auto;
+}
+
+.mondayManageTabsButton_JanuaryA:hover {
+  background: #308a8b;
+  color: #12262d;
+  outline: #308a8b;
+  transform: skewX(-5deg);
+}
+
+.mondayManageTabsButton_JanuaryA:active {
+  background: #020405;
+  color: #9bbdc2;
+  outline: #308a8b;
+}
+
+.mondayContainerActive_JanuaryA {
+  filter: blur(0px);
+}
+
+.mondayContainerInactive_JanuaryA {
+  filter: blur(15px);
+}
+
+.mondayManageTabsSubsModal_JanuaryA {
+  background: #80a2b0;
+  border: solid 5px #377b84;
+  height: 90vh;
+  left: 2%;
+  opacity: 1;
+  position: absolute;
+  top: 5vh;
+  transition: all 0.4s linear;
+  width: 95%;
+  z-index: 50;
+}
+
+.mondayManageTitleBar_JanuaryA {
+  background: #001b26;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: 'Literata', serif;
+  height: auto;
+  justify-content: flex-start;
+  opacity: 0.9;
+  position: relative;
+  padding: 1vh 0 2vh 8vw;
+  width: 91.6%;
+}
+
+.mondayManageTitle_JanuaryA {
+  color: #9bbdc2;
+  font-family: 'Literata', serif;
+  font-size: 48px;
+}
+
+.mondayModalExit_JanuaryA {
+  color: #9bbdc2;
+  cursor: pointer;
+  font-family: 'Literata', serif;
+  font-size: 48px;
+  float: left;
+  margin: 5px 0 0 21.6%;
+}
+
+.mondayManageTabsSubsModalInactive_JanuaryA {
+  opacity: 0;
+  top: -80vh;
+  transition: all 0.4s linear;
+  z-index: -5;
+}
+
+.mondayManagerModalContainer_JanuaryA {
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  height: 80.1vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+.mondayManagerTabsSection_JanuaryA {
+  height: auto;
+  padding: 15px;
+  position: relative;
+  width: 30%;
+}
+
+.mondayTabsManageTitle_JanuaryA {
+  color: #050a0e;
+  font-family: 'Literata', serif;
+  font-size: 36px;
+}
+
+.mondayManagerSubscriptionsSection_JanuaryA {
+  height: auto;
+  padding: 15px;
+  position: relative;
+  width: 30%;
+}
+
+.mondayTabsSubscriptionTitle_JanuaryA {
+  color: #050a0e;
+  font-family: 'Literata', serif;
+  font-size: 36px;
+}
+
+.mondayManagerFeedsSection_JanuaryA {
+  height: auto;
+  padding: 15px;
+  position: relative;
+  width: 30%;
+}
+
+.mondayManagerFeedsTitle_JanuaryA {
+  color: #050a0e;
+  font-family: 'Literata', serif;
+  font-size: 36px;
+}
+
+.mondayManageTabsContainer_JanuaryA {
+  margin: 40px 8%;
+}
+
+.mondayTabManageTab_JanuaryA {
+  color: #050a0e;
+  cursor: pointer;
+  font-family: 'Literata', serif;
+  font-size: 30px;
+  margin: 15px 0 15px 10px;
+}
+
+.mondayManageSubIcon_JanuaryA {
+  height: 40px;
+  width: 40px;
+}
+
+.mondayManageSubsTitles_JanuaryA {
+  color: #050a0e;
+  font-family: 'Literata', serif;
+  font-size: 18px;
+  margin: -15px 0 30px 1px;
+}
+
+.mondayManageSearch_JanuaryA {
+  color: #050a0e;
+  float: left;
+  font-family: 'Literata', serif;
+  font-size: 18px;
+  margin-top: 3px;
+  outlilne: #0289a6;
+  width: 100%;
+}
+
+.mondayTabManageSubTab_JanuaryA {
+  color: #133737;
+  cursor: pointer;
+  font-family: 'Literata', serif;
+  font-size: 15px;
+  margin: 1px 0 30px 40px;
+  width: 10%;
+}
+
+.mondaySubManageSubTab_JanuaryA {
+  color: #133737;
+  cursor: pointer;
+  font-family: 'Literata', serif;
+  font-size: 15px;
+  margin: 4px 0 1px 10px;
+  transform: translateX(100px) translateY(-40px);
+  width: 10%;
+}
+
+.mondayManageSubsTitlesFeeds_JanuaryA {
+  color: #050a0e;
+  font-family: 'Literata', serif;
+  font-size: 18px;
+  margin: -15px 0 30px 1px;
 }
