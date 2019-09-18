@@ -79,7 +79,7 @@
           <p class="mondayTabManageTab{{$ctrl.mondayMonth}}" ng-click="$ctrl.mondayManageTabber(tab.title)"><i class="fas fa-arrow-right" ng-if="tab.title === $ctrl.mondayManageSelectedTab"></i>&nbsp;&nbsp;{{tab.title}}</p>
           <p class="mondayTabManageSubTab{{$ctrl.mondayMonth}}" ng-if="tab.title === $ctrl.mondayManageSelectedTab"><span><i class="fas fa-edit"></i>&nbsp;edit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span ng-if="(tab.title !== 'Externals' && tab.title !== 'Dailies')"><i class="far fa-trash-alt"></i>&nbsp;&nbsp;delete&nbsp;</span></p>
         </main>
-          <p class="mondayTabManageTab{{$ctrl.mondayMonth}}"><i class="far fa-plus-square"></i>&nbsp;&nbsp;Add Tab</p>
+          <p class="mondayTabManageTab{{$ctrl.mondayMonth}}" ng-click="$ctrl.addTabLogic()" ng-if="!$ctrl.tabCreateEditEngaged"><i class="far fa-plus-square"></i>&nbsp;&nbsp;Add Tab</p>
       </div>
     </div>
     <div class="mondayManagerSubscriptionsSection{{$ctrl.mondayMonth}}">
@@ -113,4 +113,46 @@
     </div>
 
   </div>
+</div>
+<div class="mondayCreateEditTabManagement{{$ctrl.mondayMonth}}" ng-if="$ctrl.tabCreateEditEngaged">
+  <p class="mondayCreateEditTabTitle{{$ctrl.mondayMonth}}">{{$ctrl.mondayCreateEditTabText}}</p>
+
+  <div class="mondayTabEditorFields{{$ctrl.mondayMonth}}">
+
+    <p class="mondayTabNameLabel{{$ctrl.mondayMonth}}">Tab Name:</p>
+    <input id="mondayTabNameInput" class="mondayTabNameInput{{$ctrl.mondayMonth}}" type="text">
+    <div id="mondayTabEditorPodcastBlogStatus{{$ctrl.mondayMonth}}" class="mondayTrackProgress{{$ctrl.mondayMonth}}"><input type="checkbox" ng-checked="false"><p class="mondayUnreadText{{$ctrl.mondayMonth}}" ng-if="!$ctrl.tabPodcast">blogs</p><p class="mondayReadText{{$ctrl.mondayMonth}}" ng-if="$ctrl.tabPodcast">podcasts</p><span class="mondayCheckbox{{$ctrl.mondayMonth}}{{$ctrl.tabPodcast}}" ng-click="$ctrl.togglePodcastFeedStatus()"><span class="mondaySwitchUnchecked{{$ctrl.mondayMonth}}{{$ctrl.tabPodcast}}"></span></span></div>
+
+  </div>
+
+  <div class="mondayTabEditorFields{{$ctrl.mondayMonth}}" ng-if="$ctrl.emptyTabNameError">
+
+    <p class="mondayTabEditorErrorMessage{{$ctrl.mondayMonth}}">Tab name cannot be blank.</p>
+
+  </div>
+
+  <div class="mondayTabEditorFields{{$ctrl.mondayMonth}}" ng-if="$ctrl.uniqueTabNameError">
+
+    <p class="mondayTabEditorErrorMessage{{$ctrl.mondayMonth}}">Tab name already exists.</p>
+
+  </div>
+
+  <div class="mondayTabEditorFields{{$ctrl.mondayMonth}}" ng-if="$ctrl.actionWillDeleteFeedsError">
+
+    <p class="mondayTabEditorErrorMessage{{$ctrl.mondayMonth}}">Existing subscriptions will be deleted. Continue?</p>
+    <button class="mondayManageTabsConfirmButton{{$ctrl.mondayMonth}}">yes</button>
+    <button class="mondayManageTabsConfirmButton{{$ctrl.mondayMonth}}">no</button>
+
+  </div>
+
+  <div class="mondayTabEditorFields{{$ctrl.mondayMonth}}">
+
+
+    <button class="mondayManageTabsSubmitCancelButton{{$ctrl.mondayMonth}}" ng-click="$ctrl.submitTabLogic()">Submit</button>
+    <button class="mondayManageTabsSubmitCancelButton{{$ctrl.mondayMonth}}" ng-click="$ctrl.cancelAddTabLogic()">Cancel</button>
+
+  </div>
+
+
+
 </div>

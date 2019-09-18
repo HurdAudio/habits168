@@ -341,9 +341,24 @@
 .mondayManageTabsSubsModal_JanuaryA {
   background: #80a2b0;
   border: solid 5px #377b84;
+  filter: blur(0px);
   height: 90vh;
   left: 2%;
   opacity: 1;
+  position: absolute;
+  top: 5vh;
+  transition: all 0.4s linear;
+  width: 95%;
+  z-index: 50;
+}
+
+.mondayManageTabsSubsModalBlur_JanuaryA {
+  background: #80a2b0;
+  border: solid 5px #377b84;
+  filter: blur(5px);
+  height: 90vh;
+  left: 2%;
+  opacity: 0.4;
   position: absolute;
   top: 5vh;
   transition: all 0.4s linear;
@@ -496,4 +511,124 @@
   font-family: 'Literata', serif;
   font-size: 18px;
   margin: -15px 0 30px 1px;
+}
+
+.mondayCreateEditTabManagement_JanuaryA {
+  background: #98c5c5;
+  border: solid 5px #80a2b0;
+  height: auto;
+  left: 22%;
+  opacity: 1;
+  padding: 45px;
+  position: absolute;
+  top: 25vh;
+  transition: all 0.4s linear;
+  width: 50%;
+  z-index: 60;
+}
+
+.mondayCreateEditTabTitle_JanuaryA {
+  color: #050a0e;
+  font-family: 'Literata', serif;
+  font-size: 30px;
+  margin: 15px 0 30px 25px;
+}
+
+.mondayTabEditorFields_JanuaryA {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  margin: 10px 0 0 60px;
+}
+
+.mondayTabNameLabel_JanuaryA {
+  color: #12262d;
+  font-family: 'Literata', serif;
+  font-size: 18px;
+  margin: 0 9px 0 0;
+}
+
+.mondayTabNameInput_JanuaryA {
+  background: #9bbdc2;
+  border: solid 1px #377b84;
+  color: #12262d;
+  font-family: 'Literata', serif;
+  font-size: 18px;
+  height: 21px;
+  margin: 0 9px;
+  outline: #377b84;
+  width: 350px;
+}
+
+#mondayTabEditorPodcastBlogStatus_JanuaryA {
+  margin: -13px 0 0 40px;
+}
+
+.mondayTabEditorErrorMessage_JanuaryA {
+  color: #a61f02;
+  font-family: 'Literata', serif;
+  font-size: 18px;
+  margin-left: 120px;
+  margin-top: 20px;
+}
+
+.mondayManageTabsConfirmButton_JanuaryA {
+  background: #004461;
+  border: transparent;
+  color: #98c5c5;
+  cursor: pointer;
+  font-family: 'Literata', serif;
+  font-size: 18px;
+  height: 40px;
+  margin: 10px 0 0 15px;
+  outline: #308a8b;
+  padding: -20px 20px;
+  position: relative;
+  transform: skewX(-15deg);
+  transition: all 0.5s linear;
+  width: auto;
+}
+
+.mondayManageTabsConfirmButton_JanuaryA:hover {
+  background: #308a8b;
+  color: #12262d;
+  outline: #308a8b;
+  transform: skewX(-5deg);
+}
+
+.mondayManageTabsConfirmButton_JanuaryA:active {
+  background: #020405;
+  color: #9bbdc2;
+  outline: #308a8b;
+}
+
+.mondayManageTabsSubmitCancelButton_JanuaryA {
+  background: #004461;
+  border: transparent;
+  color: #98c5c5;
+  cursor: pointer;
+  font-family: 'Literata', serif;
+  font-size: 30px;
+  height: 40px;
+  margin: 30px 0 0 70px;
+  outline: #308a8b;
+  padding: -20px 20px;
+  position: relative;
+  transform: skewX(-15deg);
+  transition: all 0.5s linear;
+  width: auto;
+}
+
+.mondayManageTabsSubmitCancelButton_JanuaryA:hover {
+  background: #308a8b;
+  color: #12262d;
+  outline: #308a8b;
+  transform: skewX(-5deg);
+}
+
+.mondayManageTabsSubmitCancelButton_JanuaryA:active {
+  background: #020405;
+  color: #9bbdc2;
+  outline: #308a8b;
 }

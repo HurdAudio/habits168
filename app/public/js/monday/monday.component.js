@@ -416,6 +416,99 @@
       vm.mondayManagerEngaged = mondayManagerEngaged;
       vm.mondayManageTabber = mondayManageTabber;
       vm.filterSearch = filterSearch;
+      vm.mondayCreateEditTabText = 'Create a new tab:';
+      vm.tabPodcast = false;
+      vm.togglePodcastFeedStatus = togglePodcastFeedStatus;
+      vm.uniqueTabNameError = false;
+      vm.actionWillDeleteFeedsError = false;
+      vm.emptyTabNameError = false;
+      vm.tabCreateEditEngaged = false;
+      vm.addTabLogic = addTabLogic;
+      vm.cancelAddTabLogic = cancelAddTabLogic;
+      vm.submitTabLogic = submitTabLogic;
+
+      function submitTabLogic() {
+        let mondayTabNameInput = document.getElementById('mondayTabNameInput');
+        if (vm.mondayCreateEditTabText === 'Create a new tab:') {
+          if (mondayTabNameInput.value === '') {
+            vm.emptyTabNameError = true;
+            return;
+          }
+          let duplicate = vm.mondayTabs.filter(entry => {
+            return(entry.title.toLowerCase() === mondayTabNameInput.value.toLowerCase().trim());
+          });
+          if (duplicate.length !== 0) {
+            vm.uniqueTabNameError = true;
+            return;
+          }
+          let sorta, sortb;
+          let daily = [];
+          daily.push(vm.mondayTabs[0]);
+          let external = [];
+          external.push(vm.mondayTabs[vm.mondayTabs.length - 1]);
+          let monSubs = vm.mondayTabs.slice(1, (vm.mondayTabs.length - 2));
+          let subObj = {
+            active: false,
+            allRead: false,
+            podcast: vm.tabPodcast,
+            sort: 'up',
+            subscriptions: [],
+            tab: 'mondayTabInactive' + vm.mondayMonth,
+            title: mondayTabNameInput.value
+          }
+          monSubs.push(subObj);
+          monSubs = monSubs.sort((a, b) => {
+            sorta = a.title.toLowerCase();
+            sortb = b.title.toLowerCase();
+            if (a.title.toLowerCase().slice(0, 4) === 'the ') {
+              sorta = a.title.toLowerCase().slice(4);
+            }
+            if (b.title.toLowerCase().slice(0, 4) === 'the ') {
+              sortb = b.title.toLowerCase().slice(4);
+            }
+            if (a.title.toLowerCase().slice(0, 2) === 'a ') {
+              sorta = a.title.toLowerCase().slice(2);
+            }
+            if (b.title.toLowerCase().slice(0, 2) === 'a ') {
+              sortb = b.title.toLowerCase().slice(2);
+            }
+            if (sorta < sortb) {
+              return -1;
+            } else if (sorta > sortb) {
+              return 1;
+            } else {
+              return 0;
+            }
+          });
+          let subs = daily.concat(monSubs);
+          vm.mondayTabs = subs.concat(external);
+          cancelAddTabLogic();
+        } else {
+
+        }
+      }
+
+      function cancelAddTabLogic() {
+        vm.tabCreateEditEngaged = false;
+        vm.managerModalState = 'mondayManageTabsSubsModal' + vm.mondayMonth;
+      }
+
+      function addTabLogic() {
+        vm.emptyTabNameError = false;
+        vm.uniqueTabNameError = false;
+        vm.tabCreateEditEngaged = true;
+        vm.managerModalState = 'mondayManageTabsSubsModalBlur' + vm.mondayMonth;
+        vm.mondayCreateEditTabText = 'Create a new tab:';
+        setTimeout(() => {
+          let mondayTabNameInput = document.getElementById('mondayTabNameInput');
+          mondayTabNameInput.value = '';
+          mondayTabNameInput.focus();
+        }, 100);
+      }
+
+      function togglePodcastFeedStatus() {
+        vm.tabPodcast = !vm.tabPodcast;
+      }
 
       function filterSearch() {
         let query = document.getElementById('mondayManageSearch').value;
