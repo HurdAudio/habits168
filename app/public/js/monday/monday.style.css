@@ -368,22 +368,19 @@
 
 .mondayManageTitleBar_JanuaryA {
   background: #001b26;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+
   font-family: 'Literata', serif;
-  height: auto;
-  justify-content: flex-start;
+  height: 6vh;
   opacity: 0.9;
   position: relative;
-  padding: 1vh 0 2vh 8vw;
-  width: 91.6%;
+  padding: 1vh 0 2vh 1vw;
+  width: 99%;
 }
 
 .mondayManageTitle_JanuaryA {
   color: #9bbdc2;
   font-family: 'Literata', serif;
-  font-size: 48px;
+  font-size: 30px;
 }
 
 .mondayModalExit_JanuaryA {
@@ -392,7 +389,9 @@
   font-family: 'Literata', serif;
   font-size: 48px;
   float: left;
-  margin: 5px 0 0 21.6%;
+  left: 94%;
+  position: relative;
+  top: 1%;
 }
 
 .mondayManageTabsSubsModalInactive_JanuaryA {
@@ -408,7 +407,7 @@
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: flex-start;
-  height: 80.1vh;
+  height: 81vh;
   overflow-x: hidden;
   overflow-y: scroll;
   width: 100%;

@@ -616,7 +616,7 @@
           daily.push(vm.mondayTabs[0]);
           let external = [];
           external.push(vm.mondayTabs[vm.mondayTabs.length - 1]);
-          let monSubs = vm.mondayTabs.slice(1, (vm.mondayTabs.length - 2));
+          let monSubs = vm.mondayTabs.slice(1, (vm.mondayTabs.length - 1));
           let subObj = {
             active: false,
             allRead: false,

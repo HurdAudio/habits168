@@ -63,11 +63,14 @@
 </div>
 <div class="{{$ctrl.managerModalState}}">
 
+
   <div class="mondayManageTitleBar{{$ctrl.mondayMonth}}">
+    <p class="mondayModalExit{{$ctrl.mondayMonth}}" ng-click="$ctrl.exitMondayManagerModal()"><i class="fas fa-times"></i></p>
 
     <p class="mondayManageTitle{{$ctrl.mondayMonth}}">Monday Tabs/Subscription Management</p>
-    <p class="mondayModalExit{{$ctrl.mondayMonth}}" ng-click="$ctrl.exitMondayManagerModal()"><i class="fas fa-times"></i></p>
+
   </div>
+
   <div class="mondayManagerModalContainer{{$ctrl.mondayMonth}}">
     <div class="mondayManagerTabsSection{{$ctrl.mondayMonth}}">
 
