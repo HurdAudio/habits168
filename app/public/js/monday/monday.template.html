@@ -77,7 +77,7 @@
         <main ng-repeat="tab in $ctrl.mondayTabs">
 
           <p class="mondayTabManageTab{{$ctrl.mondayMonth}}" ng-click="$ctrl.mondayManageTabber(tab.title)"><i class="fas fa-arrow-right" ng-if="tab.title === $ctrl.mondayManageSelectedTab"></i>&nbsp;&nbsp;{{tab.title}}</p>
-          <p class="mondayTabManageSubTab{{$ctrl.mondayMonth}}" ng-if="tab.title === $ctrl.mondayManageSelectedTab"><span><i class="fas fa-edit"></i>&nbsp;edit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span ng-if="(tab.title !== 'Externals' && tab.title !== 'Dailies')"><i class="far fa-trash-alt"></i>&nbsp;&nbsp;delete&nbsp;</span></p>
+          <p class="mondayTabManageSubTab{{$ctrl.mondayMonth}}" ng-if="tab.title === $ctrl.mondayManageSelectedTab"><span ng-if="(tab.title !== 'Externals' && tab.title !== 'Dailies' && !$ctrl.tabCreateEditEngaged && !$ctrl.mondayGuardRailEngaged)" ng-click="$ctrl.editTablogic(tab)"><i class="fas fa-edit"></i>&nbsp;edit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span ng-if="(tab.title !== 'Externals' && tab.title !== 'Dailies' && !$ctrl.mondayGuardRailEngaged && !$ctrl.tabCreateEditEngaged)" ng-click="$ctrl.deleteTabLogic(tab)"><i class="far fa-trash-alt"></i>&nbsp;&nbsp;delete&nbsp;</span></p>
         </main>
           <p class="mondayTabManageTab{{$ctrl.mondayMonth}}" ng-click="$ctrl.addTabLogic()" ng-if="!$ctrl.tabCreateEditEngaged"><i class="far fa-plus-square"></i>&nbsp;&nbsp;Add Tab</p>
       </div>
@@ -140,8 +140,8 @@
   <div class="mondayTabEditorFields{{$ctrl.mondayMonth}}" ng-if="$ctrl.actionWillDeleteFeedsError">
 
     <p class="mondayTabEditorErrorMessage{{$ctrl.mondayMonth}}">Existing subscriptions will be deleted. Continue?</p>
-    <button class="mondayManageTabsConfirmButton{{$ctrl.mondayMonth}}">yes</button>
-    <button class="mondayManageTabsConfirmButton{{$ctrl.mondayMonth}}">no</button>
+    <button class="mondayManageTabsConfirmButton{{$ctrl.mondayMonth}}" ng-click="$ctrl.overwriteSubscriptionsInTab()">yes</button>
+    <button class="mondayManageTabsConfirmButton{{$ctrl.mondayMonth}}" ng-click="$ctrl.cancelAddTabLogic()">no</button>
 
   </div>
 
@@ -152,7 +152,14 @@
     <button class="mondayManageTabsSubmitCancelButton{{$ctrl.mondayMonth}}" ng-click="$ctrl.cancelAddTabLogic()">Cancel</button>
 
   </div>
+</div>
 
+<div class="mondayGuardRail{{$ctrl.mondayMonth}}" ng-if="$ctrl.mondayGuardRailEngaged">
 
+  <p class="guardRailText{{$ctrl.mondayMonth}}">{{$ctrl.guardRailText}}</p>
+  <div class="guardRailButtons{{$ctrl.mondayMonth}}">
 
+    <button class="mondayManageTabsSubmitCancelButton{{$ctrl.mondayMonth}}" ng-click="$ctrl.guardrailAccepted()">yes</button>
+    <button class="mondayManageTabsSubmitCancelButton{{$ctrl.mondayMonth}}" ng-click="$ctrl.guardrailDenied()">no</button>
+  </div>
 </div>

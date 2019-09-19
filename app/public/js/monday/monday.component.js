@@ -426,21 +426,104 @@
       vm.addTabLogic = addTabLogic;
       vm.cancelAddTabLogic = cancelAddTabLogic;
       vm.submitTabLogic = submitTabLogic;
+      vm.editTablogic = editTablogic;
+      vm.overwriteSubscriptionsInTab = overwriteSubscriptionsInTab;
+      vm.mondayGuardRailEngaged = false;
+      vm.guardRailText = 'Delete tab: ';
+      vm.deleteTabLogic = deleteTabLogic;
+      vm.guardrailDenied = guardrailDenied;
+      vm.guardrailAccepted = guardrailAccepted;
+
+      function guardrailAccepted() {
+        for (let i = 0; i < vm.mondayTabs.length; i++) {
+          if (vm.mondayTabs[i].title === vm.editingTab.title) {
+            vm.mondayTabs.splice(i, 1);
+            guardrailDenied();
+            return;
+          }
+        }
+      }
+
+      function guardrailDenied() {
+        vm.mondayGuardRailEngaged = false;
+        vm.managerModalState = 'mondayManageTabsSubsModal' + vm.mondayMonth;
+      }
+
+      function deleteTabLogic(tab) {
+        vm.editingTab = tab;
+        vm.mondayGuardRailEngaged = true;
+        vm.guardRailText = 'Delete tab: ' + tab.title + '?';
+        vm.managerModalState = 'mondayManageTabsSubsModalBlur' + vm.mondayMonth;
+      }
+
+      function overwriteSubscriptionsInTab() {
+        let mondayTabNameInput = document.getElementById('mondayTabNameInput');
+        console.log(vm.editingTab.title);
+
+        for (let i = 0; i < vm.mondayTabs.length; i++) {
+          if (vm.mondayTabs[i].title === vm.editingTab.title) {
+            vm.mondayTabs[i].active = vm.editingTab.active;
+            vm.mondayTabs[i].allRead = false;
+            vm.mondayTabs[i].podcast = vm.tabPodcast;
+            vm.mondayTabs[i].sort = vm.editingTab.sort;
+            vm.mondayTabs[i].subscriptions = [];
+            vm.mondayTabs[i].tab = vm.editingTab.tab;
+            vm.mondayTabs[i].title = mondayTabNameInput.value;
+            vm.mondaySubs = [];
+            cancelAddTabLogic();
+          }
+        }
+        if (vm.tabPodcast) {
+          $http.get('/podcast_feeds')
+          .then(blogFeedsData => {
+            vm.allFeeds = filterSubscriptions(vm.mondaySubs, blogFeedsData.data);
+            vm.availableFeeds = vm.allFeeds;
+            filterSearch();
+          });
+        } else {
+          $http.get('/blog_feeds')
+          .then(blogFeedsData => {
+            vm.allFeeds = filterSubscriptions(vm.mondaySubs, blogFeedsData.data);
+            vm.availableFeeds = vm.allFeeds;
+            filterSearch();
+          });
+        }
+      }
+
+      function editTablogic(tab) {
+        vm.actionWillDeleteFeedsError = false;
+        vm.emptyTabNameError = false;
+        vm.uniqueTabNameError = false;
+        vm.tabCreateEditEngaged = true;
+        vm.tabPodcast = tab.podcast;
+        vm.editingTab = tab;
+        vm.managerModalState = 'mondayManageTabsSubsModalBlur' + vm.mondayMonth;
+        vm.mondayCreateEditTabText = 'Edit tab:';
+        setTimeout(() => {
+          let mondayTabNameInput = document.getElementById('mondayTabNameInput');
+          mondayTabNameInput.value = tab.title;
+          mondayTabNameInput.focus();
+        }, 100);
+      }
 
       function submitTabLogic() {
         let mondayTabNameInput = document.getElementById('mondayTabNameInput');
+        if (mondayTabNameInput.value === '') {
+          vm.emptyTabNameError = true;
+          vm.uniqueTabNameError = false;
+          vm.actionWillDeleteFeedsError = false;
+          return;
+        }
+        let duplicate = vm.mondayTabs.filter(entry => {
+          return(entry.title.toLowerCase() === mondayTabNameInput.value.toLowerCase().trim());
+        });
+        if ((duplicate.length !== 0) && vm.mondayCreateEditTabText === 'Create a new tab:') {
+          vm.uniqueTabNameError = true;
+          vm.emptyTabNameError = false;
+          vm.actionWillDeleteFeedsError = false;
+          return;
+        }
         if (vm.mondayCreateEditTabText === 'Create a new tab:') {
-          if (mondayTabNameInput.value === '') {
-            vm.emptyTabNameError = true;
-            return;
-          }
-          let duplicate = vm.mondayTabs.filter(entry => {
-            return(entry.title.toLowerCase() === mondayTabNameInput.value.toLowerCase().trim());
-          });
-          if (duplicate.length !== 0) {
-            vm.uniqueTabNameError = true;
-            return;
-          }
           let sorta, sortb;
           let daily = [];
           daily.push(vm.mondayTabs[0]);
@@ -483,8 +566,55 @@
           let subs = daily.concat(monSubs);
           vm.mondayTabs = subs.concat(external);
           cancelAddTabLogic();
+          return;
         } else {
+          if (mondayTabNameInput.value === vm.editingTab.title) {
+            if (vm.tabPodcast === vm.editingTab.podcast) {
+              cancelAddTabLogic();
+              return;
+            } else {
+              if (vm.editingTab.subscriptions.length > 0) {
+                vm.actionWillDeleteFeedsError = true;
+                vm.emptyTabNameError = false;
+                vm.uniqueTabNameError = false;
+                return;
+              } else {
+                for (let i = 0; i < vm.mondayTabs.length; i++) {
+                  if (vm.mondayTabs[i].title === vm.editingTab.title) {
+                    vm.mondayTabs[i].podcast = vm.tabPodcast;
+                    cancelAddTabLogic();
+                    return;
+                  }
+                }
+              }
+            }
+          } else {
+            if (vm.tabPodcast === vm.editingTab.podcast) {
+              for (let i = 0; i < vm.mondayTabs.length; i++) {
+                if (vm.mondayTabs[i].title === vm.editingTab.title) {
+                  vm.mondayTabs[i].title = mondayTabNameInput.value;
+                  cancelAddTabLogic();
+                  return;
+                }
+              }
+            } else {
+              if (vm.editingTab.subscriptions.length > 0) {
+                vm.actionWillDeleteFeedsError = true;
+                vm.emptyTabNameError = false;
+                vm.uniqueTabNameError = false;
+                return;
+              } else {
+                for (let i = 0; i < vm.mondayTabs.length; i++) {
+                  if (vm.mondayTabs[i].title === vm.editingTab.title) {
+                    vm.mondayTabs[i].title = mondayTabNameInput.value;
+                    vm.mondayTabs[i].podcast = vm.tabPodcast;
+                    return;
+                  }
+                }
+              }
+            }
 
+          }
         }
       }
 
@@ -494,6 +624,7 @@
       }
 
       function addTabLogic() {
+        vm.actionWillDeleteFeedsError = false;
         vm.emptyTabNameError = false;
         vm.uniqueTabNameError = false;
         vm.tabCreateEditEngaged = true;
