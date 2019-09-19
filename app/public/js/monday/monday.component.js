@@ -433,6 +433,93 @@
       vm.deleteTabLogic = deleteTabLogic;
       vm.guardrailDenied = guardrailDenied;
       vm.guardrailAccepted = guardrailAccepted;
+      vm.removeSubscription = removeSubscription;
+      vm.addSubscription = addSubscription;
+
+      function addSubscription(feed) {
+        let sorta, sortb;
+
+        for (let i = 0; i < vm.mondayTabs.length; i++) {
+          if (vm.mondayTabs[i].title === vm.mondayManageSelectedTab) {
+            feed.userRead = false;
+            vm.mondayTabs[i].subscriptions.push(feed);
+            if (vm.mondayTabs[i].sort === 'up') {
+              vm.mondayTabs[i].subscriptions = vm.mondayTabs[i].subscriptions.sort((a, b) => {
+                sorta = a.title.toLowerCase();
+                sortb = b.title.toLowerCase();
+                if (a.title.toLowerCase().slice(0, 4) === 'the ') {
+                  sorta = a.title.toLowerCase().slice(4);
+                }
+                if (b.title.toLowerCase().slice(0, 4) === 'the ') {
+                  sortb = b.title.toLowerCase().slice(4);
+                }
+                if (a.title.toLowerCase().slice(0, 2) === 'a ') {
+                  sorta = a.title.toLowerCase().slice(2);
+                }
+                if (b.title.toLowerCase().slice(0, 2) === 'a ') {
+                  sortb = b.title.toLowerCase().slice(2);
+                }
+                if (sorta < sortb) {
+                  return -1;
+                } else if (sorta > sortb) {
+                  return 1;
+                } else {
+                  return 0;
+                }
+              });
+            } else if (vm.mondayTabs[i].sort === 'down') {
+              vm.mondayTabs[i].subscriptions = vm.mondayTabs[i].subscriptions.sort((a, b) => {
+                sorta = a.title.toLowerCase();
+                sortb = b.title.toLowerCase();
+                if (a.title.toLowerCase().slice(0, 4) === 'the ') {
+                  sorta = a.title.toLowerCase().slice(4);
+                }
+                if (b.title.toLowerCase().slice(0, 4) === 'the ') {
+                  sortb = b.title.toLowerCase().slice(4);
+                }
+                if (a.title.toLowerCase().slice(0, 2) === 'a ') {
+                  sorta = a.title.toLowerCase().slice(2);
+                }
+                if (b.title.toLowerCase().slice(0, 2) === 'a ') {
+                  sortb = b.title.toLowerCase().slice(2);
+                }
+                if (sorta < sortb) {
+                  return 1;
+                } else if (sorta > sortb) {
+                  return -1;
+                } else {
+                  return 0;
+                }
+              });
+            }
+            vm.mondaySubs = vm.mondayTabs[i].subscriptions;
+            for (let k = 0; k < vm.availableFeeds.length; k++) {
+              if (vm.availableFeeds[k].uuid === feed.uuid) {
+                vm.availableFeeds.splice(k, 1);
+                return;
+              }
+            }
+          }
+        }
+      }
+
+      function removeSubscription(sub) {
+        for (let i = 0; i < vm.mondayTabs.length; i++) {
+          if (vm.mondayTabs[i].title === vm.mondayManageSelectedTab) {
+            for (let j = 0; j < vm.mondayTabs[i].subscriptions.length; j++) {
+              if (vm.mondayTabs[i].subscriptions[j].uuid === sub.uuid) {
+                vm.mondayTabs[i].subscriptions.splice(j, 1);
+                vm.mondaySubs = vm.mondaySubs.filter(entry => {
+                  return(entry.uuid !== sub.uuid);
+                });
+                vm.availableFeeds.push(sub);
+                filterSearch();
+                return;
+              }
+            }
+          }
+        }
+      }
 
       function guardrailAccepted() {
         for (let i = 0; i < vm.mondayTabs.length; i++) {

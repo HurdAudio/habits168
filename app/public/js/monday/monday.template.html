@@ -90,7 +90,7 @@
         <main ng-repeat="sub in $ctrl.mondaySubs">
 
           <img class="mondayManageSubIcon{{$ctrl.mondayMonth}}" src="{{sub.image}}">
-          <p class="mondaySubManageSubTab{{$ctrl.mondayMonth}}"><span><i class="far fa-trash-alt"></i>&nbsp;&nbsp;delete&nbsp;</span></p>
+          <p class="mondaySubManageSubTab{{$ctrl.mondayMonth}}"><span ng-click="$ctrl.removeSubscription(sub)"><i class="far fa-trash-alt"></i>&nbsp;&nbsp;delete&nbsp;</span></p>
           <p class="mondayManageSubsTitles{{$ctrl.mondayMonth}}">{{sub.title}}: {{sub.description}}</p>
         </main>
       </div>
@@ -106,7 +106,7 @@
         <main ng-repeat="feed in $ctrl.availableFeeds">
 
           <img class="mondayManageSubIcon{{$ctrl.mondayMonth}}" src="{{feed.image}}">
-          <p class="mondaySubManageSubTab{{$ctrl.mondayMonth}}"><span><i class="far fa-plus-square"></i>&nbsp;&nbsp;add&nbsp;</span></p>
+          <p class="mondaySubManageSubTab{{$ctrl.mondayMonth}}"><span ng-click="$ctrl.addSubscription(feed)"><i class="far fa-plus-square"></i>&nbsp;&nbsp;add&nbsp;</span></p>
           <p class="mondayManageSubsTitlesFeeds{{$ctrl.mondayMonth}}">{{feed.title}}: {{feed.description}}</p>
         </main>
       </div>
