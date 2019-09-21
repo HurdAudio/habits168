@@ -378,12 +378,6 @@
       vm.hubWeekToggle = hubWeekToggle;
       vm.subscriptionToggle = 'off';
       vm.toggleSubscriptionManagement = toggleSubscriptionManagement;
-      vm.day1ToggleState = 'hubReaderDay1BlockInactive' + vm.monthSelect;
-      vm.day2ToggleState = 'hubReaderDay2BlockInactive' + vm.monthSelect;
-      vm.day3ToggleState = 'hubReaderDay3BlockInactive' + vm.monthSelect;
-      vm.day4ToggleState = 'hubReaderDay4BlockInactive' + vm.monthSelect;
-      vm.day5ToggleState = 'hubReaderDay5BlockInactive' + vm.monthSelect;
-      vm.day6ToggleState = 'hubReaderDay6BlockInactive' + vm.monthSelect;
       vm.externalsBlockToggleStatus = 'hubReaderDay1BlockInactive' + vm.monthSelect;
       vm.dailiesBlockToggleStatus = 'hubReaderDay2BlockInactive' + vm.monthSelect;
       vm.browseFeedsBlockToggleStatus = 'hubReaderDay3BlockInactive' + vm.monthSelect;
@@ -806,6 +800,74 @@
       vm.formSubmittable = false;
       vm.checkSubmittability = checkSubmittability;
       vm.hubContactSubmit = hubContactSubmit;
+      vm.navigateToDay = navigateToDay;
+      vm.navigateToToday = navigateToToday;
+      vm.mondayMonth = '_JanuaryA';
+
+      function initializeDayCards() {
+        let days = [ 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday' ];
+        let now = new Date;
+        let day = days[now.getDay()];
+        if (day === 'Monday') {
+          vm.day1ToggleState = 'hubReaderDay1MondayInactive' + vm.mondayMonth;
+        } else {
+          vm.day1ToggleState = 'hubReaderDay1BlockInactive' + vm.monthSelect;
+        }
+        day = days[(now.getDay() + 1) % 7];
+        if (day === 'Monday') {
+          vm.day2ToggleState = 'hubReaderDay2MondayInactive' + vm.mondayMonth;
+        } else {
+          vm.day2ToggleState = 'hubReaderDay2BlockInactive' + vm.monthSelect;
+        }
+        day = days[(now.getDay() + 2) % 7];
+        if (day === 'Monday') {
+          vm.day3ToggleState = 'hubReaderDay3MondayInactive' + vm.mondayMonth;
+        } else {
+          vm.day3ToggleState = 'hubReaderDay3BlockInactive' + vm.monthSelect;
+        }
+        day = days[(now.getDay() + 3) % 7];
+        if (day === 'Monday') {
+          vm.day4ToggleState = 'hubReaderDay4MondayInactive' + vm.mondayMonth;
+        } else {
+          vm.day4ToggleState = 'hubReaderDay4BlockInactive' + vm.monthSelect;
+        }
+        day = days[(now.getDay() + 4) % 7];
+        if (day === 'Monday') {
+          vm.day5ToggleState = 'hubReaderDay5MondayInactive' + vm.mondayMonth;
+        } else {
+          vm.day5ToggleState = 'hubReaderDay5BlockInactive' + vm.monthSelect;
+        }
+        day = days[(now.getDay() + 5) % 7];
+        if (day === 'Monday') {
+          vm.day6ToggleState = 'hubReaderDay6MondayInactive' + vm.mondayMonth;
+        } else {
+          vm.day6ToggleState = 'hubReaderDay6BlockInactive' + vm.monthSelect;
+        }
+        day = days[(now.getDay() + 6) % 7];
+        if (day === 'Monday') {
+          vm.day7ToggleState = 'hubReaderDay7MondayInactive' + vm.mondayMonth;
+        } else {
+          vm.day7ToggleState = 'hubReaderDay7BlockInactive' + vm.monthSelect;
+        }
+      }
+
+      function navigateToToday() {
+        let days = [ 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday' ];
+        let now = new Date;
+
+        navigateToDay(days[now.getDay()]);
+      }
+
+      function navigateToDay(day) {
+        switch(day) {
+          case('Monday'):
+            $state.go('monday', {userUuid: vm.user.uuid});
+            break;
+          default:
+            alert('Unsupported Day: ' + day);
+            console.log(day + " is unsupported.");
+        }
+      }
 
       function hubContactSubmit() {
         let hubContactSubjectInput = document.getElementById('hubContactSubjectInput');
@@ -1156,22 +1218,96 @@
       }
 
       function hubWeekToggle() {
+        let days = [ 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday' ];
+        let now = new Date;
+        let day = days[now.getDay()];
+
         if (vm.weekToggle === 'off') {
           vm.weekToggle = 'on';
-          vm.day1ToggleState = 'hubReaderDay1BlockActive' + vm.monthSelect;
-          vm.day2ToggleState = 'hubReaderDay2BlockActive' + vm.monthSelect;
-          vm.day3ToggleState = 'hubReaderDay3BlockActive' + vm.monthSelect;
-          vm.day4ToggleState = 'hubReaderDay4BlockActive' + vm.monthSelect;
-          vm.day5ToggleState = 'hubReaderDay5BlockActive' + vm.monthSelect;
-          vm.day6ToggleState = 'hubReaderDay6BlockActive' + vm.monthSelect;
+          if (day === 'Monday') {
+            vm.day1ToggleState = 'hubReaderDay1MondayActive' + vm.mondayMonth;
+          } else {
+            vm.day1ToggleState = 'hubReaderDay1BlockActive' + vm.monthSelect;
+          }
+          day = days[(now.getDay() + 1) % 7];
+          if (day === 'Monday') {
+            vm.day2ToggleState = 'hubReaderDay2MondayActive' + vm.mondayMonth;
+          } else {
+            vm.day2ToggleState = 'hubReaderDay2BlockActive' + vm.monthSelect;
+          }
+          day = days[(now.getDay() + 2) % 7];
+          if (day === 'Monday') {
+            vm.day3ToggleState = 'hubReaderDay3MondayActive' + vm.mondayMonth;
+          } else {
+            vm.day3ToggleState = 'hubReaderDay3BlockActive' + vm.monthSelect;
+          }
+          day = days[(now.getDay() + 3) % 7];
+          if (day === 'Monday') {
+            vm.day4ToggleState = 'hubReaderDay4MondayActive' + vm.mondayMonth;
+          } else {
+            vm.day4ToggleState = 'hubReaderDay4BlockActive' + vm.monthSelect;
+          }
+          day = days[(now.getDay() + 4) % 7];
+          if (day === 'Monday') {
+            vm.day5ToggleState = 'hubReaderDay5MondayActive' + vm.mondayMonth;
+          } else {
+            vm.day5ToggleState = 'hubReaderDay5BlockActive' + vm.monthSelect;
+          }
+          day = days[(now.getDay() + 5) % 7];
+          if (day === 'Monday') {
+            vm.day6ToggleState = 'hubReaderDay6MondayActive' + vm.mondayMonth;
+          } else {
+            vm.day6ToggleState = 'hubReaderDay6BlockActive' + vm.monthSelect;
+          }
+          day = days[(now.getDay() + 6) % 7];
+          if (day === 'Monday') {
+            vm.day7ToggleState = 'hubReaderDay7MondayActive' + vm.mondayMonth;
+          } else {
+            vm.day7ToggleState = 'hubReaderDay7BlockActive' + vm.monthSelect;
+          }
         } else {
           vm.weekToggle = 'off';
-          vm.day1ToggleState = 'hubReaderDay1BlockInactive' + vm.monthSelect;
-          vm.day2ToggleState = 'hubReaderDay2BlockInactive' + vm.monthSelect;
-          vm.day3ToggleState = 'hubReaderDay3BlockInactive' + vm.monthSelect;
-          vm.day4ToggleState = 'hubReaderDay4BlockInactive' + vm.monthSelect;
-          vm.day5ToggleState = 'hubReaderDay5BlockInactive' + vm.monthSelect;
-          vm.day6ToggleState = 'hubReaderDay6BlockInactive' + vm.monthSelect;
+          if (day === 'Monday') {
+            vm.day1ToggleState = 'hubReaderDay1MondayInactive' + vm.mondayMonth;
+          } else {
+            vm.day1ToggleState = 'hubReaderDay1BlockInactive' + vm.monthSelect;
+          }
+          day = days[(now.getDay() + 1) % 7];
+          if (day === 'Monday') {
+            vm.day2ToggleState = 'hubReaderDay2MondayInactive' + vm.mondayMonth;
+          } else {
+            vm.day2ToggleState = 'hubReaderDay2BlockInactive' + vm.monthSelect;
+          }
+          day = days[(now.getDay() + 2) % 7];
+          if (day === 'Monday') {
+            vm.day3ToggleState = 'hubReaderDay3MondayInactive' + vm.mondayMonth;
+          } else {
+            vm.day3ToggleState = 'hubReaderDay3BlockInactive' + vm.monthSelect;
+          }
+          day = days[(now.getDay() + 3) % 7];
+          if (day === 'Monday') {
+            vm.day4ToggleState = 'hubReaderDay4MondayInactive' + vm.mondayMonth;
+          } else {
+            vm.day4ToggleState = 'hubReaderDay4BlockInactive' + vm.monthSelect;
+          }
+          day = days[(now.getDay() + 4) % 7];
+          if (day === 'Monday') {
+            vm.day5ToggleState = 'hubReaderDay5MondayInactive' + vm.mondayMonth;
+          } else {
+            vm.day5ToggleState = 'hubReaderDay5BlockInactive' + vm.monthSelect;
+          }
+          day = days[(now.getDay() + 5) % 7];
+          if (day === 'Monday') {
+            vm.day6ToggleState = 'hubReaderDay6MondayInactive' + vm.mondayMonth;
+          } else {
+            vm.day6ToggleState = 'hubReaderDay6BlockInactive' + vm.monthSelect;
+          }
+          day = days[(now.getDay() + 6) % 7];
+          if (day === 'Monday') {
+            vm.day7ToggleState = 'hubReaderDay7MondayInactive' + vm.mondayMonth;
+          } else {
+            vm.day7ToggleState = 'hubReaderDay7BlockInactive' + vm.monthSelect;
+          }
         }
       }
 
@@ -1614,6 +1750,7 @@
         setDaysRelativeToToday();
         setFooterMessage();
         obtainUserLocationImage();
+        initializeDayCards();
 
       }
 

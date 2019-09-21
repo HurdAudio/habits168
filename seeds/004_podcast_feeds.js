@@ -64,6 +64,18 @@ exports.seed = function(knex, Promise) {
           title: 'JavaScript Jabber',
           created_at: new Date('2019-06-01 17:21:00.000 UTC'),
           updated_at: new Date('2019-06-01 17:21:00.000 UTC')
+        },
+        {
+          uuid: 'ec2f85e6-aa1d-4195-98f5-217e0525f714',
+          author: 'WQXR',
+          description: 'Peabody Award-winning podcast that takes listeners into the minds of the composers making some of the most innovative and breathtakingly beautiful music today.',
+          link: 'https://www.newsounds.org/shows/meet-composer',
+          image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/mtc_waaa_1400.png',
+          items: null,
+          rss: 'http://feeds.wnyc.org/wqxr-meetthecomposer',
+          title: 'Meet the Composer',
+          created_at: new Date('2019-06-01 17:21:00.000 UTC'),
+          updated_at: new Date('2019-06-01 17:21:00.000 UTC')
         }
       ]);
     });

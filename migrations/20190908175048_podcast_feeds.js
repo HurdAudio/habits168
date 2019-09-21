@@ -5,7 +5,7 @@ exports.up = function(knex, Promise) {
     table.string('author').defaultTo(null);
     table.text('description').notNullable().defaultTo('');
     table.string('link').notNullable().defaultTo('');
-    table.string('image').notNullable().defaultTo('');
+    table.text('image').notNullable().defaultTo('');
     table.json('items').defaultTo(null);
     table.string('rss').notNullable().unique();
     table.string('title').notNullable().defaultTo('');

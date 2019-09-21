@@ -1,0 +1,942 @@
+.mondayBackgroundDiv_JanuaryA {
+  background: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/january/alex-holzreiter-Ie-KYCurV8E-unsplash.jpg);
+  background-size: 100%;
+  /* filter: brightness(150%); */
+  height: 100%;
+  left: 0;
+  opacity: 0.6;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.mondayTitleStrip_JanuaryA {
+  background: #81c4d3;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: 'Literata', serif;
+  height: auto;
+  justify-content: flex-start;
+  opacity: 0.9;
+  padding: 2vh 4vw 1vh 4vw;
+  width: 100%;
+}
+
+.mondayLogo_JanuaryA {
+  cursor: pointer;
+  height: 72px;
+  margin: 16px 48px 16px 1px;
+  opacity: 0.5;
+  width: 5%;
+}
+
+.mondayLabel_JanuaryA {
+  color: #12262d;
+  font-family: 'Literata', serif;
+  font-size: 48px;
+  margin: 42px 0 0 0;
+}
+
+.mondayTabsStrip_JanuaryA {
+  background: #004461;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: 'Literata', serif;
+  height: auto;
+  justify-content: flex-start;
+  opacity: 0.9;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding-left: 3%;
+  width: 100%;
+}
+
+.mondayTabActive_JanuaryA {
+  background: #81c4d3;
+  color: #12262d;
+  cursor: none;
+  font-family: 'Literata', serif;
+  font-size: 24px;
+  padding: 12px 44px 0 34px;
+  transform: rotateY(360deg);
+  transition: all 0.5s linear;
+  z-index: 5;
+}
+
+.mondayTabInactive_JanuaryA {
+  background: #004461;
+  color: #9bbdc2;
+  cursor: pointer;
+  font-family: 'Literata', serif;
+  font-size: 24px;
+  padding: 12px 20px 0 10px;
+  transform: rotateY(0deg);
+  transition: all 0.5s linear;
+  z-index: 5;
+}
+
+.mondayContent_JanuaryA {
+  background: transparent;
+  height: 80vh;
+  width: 100%;
+}
+
+.mondayContentContent_JanuaryA {
+  background: #98c5c5;
+  height: 80vh;
+  opacity: 0.9;
+  overflow-x: hidden;
+  overflow-Y: scroll;
+  width: 105%;
+}
+
+.mondayFeedsDiv_JanuaryA {
+  height: auto;
+  margin: 90px 50px 0 50px;
+  width: 90%;
+}
+
+.mondayFeedContainer_JanuaryA {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 5px 50px;
+}
+
+.mondaySubscriptions_JanuaryA {
+  cursor: pointer;
+}
+
+.mondaySubIcon_JanuaryA {
+  filter: invert(0%);
+  height: 65px;
+  margin-right: 20px;
+  transform: skewX(-15deg);
+  transition: all 0.5s linear;
+  width: 65px;
+}
+
+.mondaySubIcon_JanuaryA:hover {
+  filter: invert(100%);
+  transform: skewX(-5deg);
+  transition: all 0.5s linear;
+}
+
+.mondaySubscriptionTitle_JanuaryA {
+  color: #12262d;
+  font-family: 'Literata', serif;
+  font-size: 18px;
+  line-height: 1.2;
+  margin: 5px 0 10px 0;
+  width: 650px;
+}
+
+.mondayTrackProgress_JanuaryA {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  cursor: pointer;
+  display: block;
+  font-size: 48px;
+  margin: 15px 100px 15px 5px;
+  padding-left: 35px;
+  position: relative;
+  user-select: none;
+}
+
+.mondayTrackProgress_JanuaryA input {
+  cursor: pointer;
+  height: 0;
+  opacity: 0;
+  position: absolute;
+  width: 0;
+}
+
+.mondayCheckbox_JanuaryAfalse {
+  background-color: #899396;
+  height: 20px;
+  left: 0;
+  position: absolute;
+  top: 15px;
+  transition: all 0.3s linear;
+  width: 50px;
+}
+
+.mondayCheckbox_JanuaryAtrue {
+  background-color: #020405;
+  height: 20px;
+  left: 0;
+  position: absolute;
+  top: 15px;
+  transition: all 0.3s linear;
+  width: 50px;
+}
+
+.mondayCheckbox_JanuaryAfalse:hover {
+  background-color: #828587;
+}
+
+.mondaySwitchUnchecked_JanuaryAfalse {
+  background-color: #004461;
+  filter: brightness(100%);
+  height: 30px;
+  left: 0px;
+  position: absolute;
+  top: -6px;
+  transform: skewX(-15deg);
+  transition: all 0.2s linear;
+  width: 25px;
+}
+
+.mondaySwitchUnchecked_JanuaryAtrue {
+  background-color: #004461;
+  filter: brightness(1000%);
+  height: 30px;
+  left: 25px;
+  position: absolute;
+  top: -6px;
+  transform: skewX(0deg);
+  transition: all 0.2s linear;
+  width: 25px;
+}
+
+.mondayReadAllButton_JanuaryA {
+  background: #004461;
+  border: transparent;
+  color: #98c5c5;
+  cursor: pointer;
+  font-family: 'Literata', serif;
+  font-size: 36px;
+  height: 60px;
+  outline: #308a8b;
+  transform: skewX(-15deg);
+  transition: all 0.5s linear;
+  width: 60px;
+}
+
+.mondayReadAllButton_JanuaryA:hover {
+  background: #308a8b;
+  color: #12262d;
+  outline: #308a8b;
+  transform: skewX(-5deg);
+}
+
+.mondayReadAllButton_JanuaryA:active {
+  background: #020405;
+  color: #9bbdc2;
+  outline: #308a8b;
+}
+
+.mondayReaderNavigationButtons_JanuaryA {
+  background: #80a2b0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: auto;
+  justify-content: flex-start;
+  margin: 0 0 0 0;
+  position: fixed;
+  width: 100%;
+  z-index: 15;
+}
+
+.mondayReadAll_JanuaryA {
+  color: #12262d;
+  font-family: 'Literata', serif;
+  font-size: 24px;
+  margin: 14px 0 14px 25px;
+}
+
+.mondaySorting_JanuaryA {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 14px 0 14px 100px;
+}
+
+.mondaySorting_JanuaryA p {
+  color: #12262d;
+  font-family: 'Literata', serif;
+  font-size: 18px;
+  margin: 20px 20px 0 0;
+}
+
+.mondaySortingButton_JanuaryA {
+  margin-right: 20px;
+}
+
+.markAllReadText_JanuaryA {
+  color: #12262d;
+  font-family: 'Literata', serif;
+  font-size: 18px;
+  margin: 35px 10px 0 40px;
+}
+
+.mondayUnreadText_JanuaryA {
+  color: #12262d;
+  font-family: 'Literata', serif;
+  font-size: 18px;
+  margin: 10px 0 0 30px;
+  width: 35px;
+}
+
+.mondayReadText_JanuaryA {
+  color: #12262d;
+  font-family: 'Literata', serif;
+  font-size: 18px;
+  margin: 10px 0 0 30px;
+  width: 35px;
+}
+
+.mondayBuffer_JanuaryA {
+  height: 20px;
+  width: 100%;
+}
+
+.mondayManageTabsButton_JanuaryA {
+  background: #004461;
+  border: transparent;
+  color: #98c5c5;
+  cursor: pointer;
+  font-family: 'Literata', serif;
+  font-size: 18px;
+  height: 40px;
+  margin: 56px 0 0 20%;
+  outline: #308a8b;
+  padding: -20px 20px;
+  position: relative;
+  transform: skewX(-15deg);
+  transition: all 0.5s linear;
+  width: auto;
+}
+
+.mondayManageTabsButton_JanuaryA:hover {
+  background: #308a8b;
+  color: #12262d;
+  outline: #308a8b;
+  transform: skewX(-5deg);
+}
+
+.mondayManageTabsButton_JanuaryA:active {
+  background: #020405;
+  color: #9bbdc2;
+  outline: #308a8b;
+}
+
+.mondayContainerActive_JanuaryA {
+  filter: blur(0px);
+}
+
+.mondayContainerInactive_JanuaryA {
+  filter: blur(15px);
+}
+
+.mondayManageTabsSubsModal_JanuaryA {
+  background: #80a2b0;
+  border: solid 5px #377b84;
+  filter: blur(0px);
+  height: 90vh;
+  left: 2%;
+  opacity: 1;
+  position: absolute;
+  top: 5vh;
+  transition: all 0.4s linear;
+  width: 95%;
+  z-index: 50;
+}
+
+.mondayManageTabsSubsModalBlur_JanuaryA {
+  background: #80a2b0;
+  border: solid 5px #377b84;
+  filter: blur(5px);
+  height: 90vh;
+  left: 2%;
+  opacity: 0.4;
+  position: absolute;
+  top: 5vh;
+  transition: all 0.4s linear;
+  width: 95%;
+  z-index: 50;
+}
+
+.mondayManageTitleBar_JanuaryA {
+  background: #001b26;
+
+  font-family: 'Literata', serif;
+  height: 6vh;
+  opacity: 0.9;
+  position: relative;
+  padding: 1vh 0 2vh 1vw;
+  width: 99%;
+}
+
+.mondayManageTitle_JanuaryA {
+  color: #9bbdc2;
+  font-family: 'Literata', serif;
+  font-size: 30px;
+}
+
+.mondayModalExit_JanuaryA {
+  color: #9bbdc2;
+  cursor: pointer;
+  font-family: 'Literata', serif;
+  font-size: 48px;
+  float: left;
+  left: 94%;
+  position: relative;
+  top: 1%;
+}
+
+.mondayManageTabsSubsModalInactive_JanuaryA {
+  opacity: 0;
+  top: -80vh;
+  transition: all 0.4s linear;
+  z-index: -5;
+}
+
+.mondayManagerModalContainer_JanuaryA {
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  height: 81vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+.mondayManagerTabsSection_JanuaryA {
+  height: auto;
+  padding: 15px;
+  position: relative;
+  width: 30%;
+}
+
+.mondayTabsManageTitle_JanuaryA {
+  color: #050a0e;
+  font-family: 'Literata', serif;
+  font-size: 36px;
+}
+
+.mondayManagerSubscriptionsSection_JanuaryA {
+  height: auto;
+  padding: 15px;
+  position: relative;
+  width: 30%;
+}
+
+.mondayTabsSubscriptionTitle_JanuaryA {
+  color: #050a0e;
+  font-family: 'Literata', serif;
+  font-size: 36px;
+}
+
+.mondayManagerFeedsSection_JanuaryA {
+  height: auto;
+  padding: 15px;
+  position: relative;
+  width: 30%;
+}
+
+.mondayManagerFeedsTitle_JanuaryA {
+  color: #050a0e;
+  font-family: 'Literata', serif;
+  font-size: 36px;
+}
+
+.mondayManageTabsContainer_JanuaryA {
+  margin: 40px 8%;
+}
+
+.mondayTabManageTab_JanuaryA {
+  color: #050a0e;
+  cursor: pointer;
+  font-family: 'Literata', serif;
+  font-size: 30px;
+  margin: 15px 0 15px 10px;
+}
+
+.mondayManageSubIcon_JanuaryA {
+  height: 40px;
+  width: 40px;
+}
+
+.mondayManageSubsTitles_JanuaryA {
+  color: #050a0e;
+  font-family: 'Literata', serif;
+  font-size: 18px;
+  margin: -15px 0 30px 1px;
+}
+
+.mondayManageSearch_JanuaryA {
+  color: #050a0e;
+  float: left;
+  font-family: 'Literata', serif;
+  font-size: 18px;
+  margin-top: 3px;
+  outlilne: #0289a6;
+  width: 100%;
+}
+
+.mondayTabManageSubTab_JanuaryA {
+  color: #133737;
+  cursor: pointer;
+  font-family: 'Literata', serif;
+  font-size: 15px;
+  margin: 1px 0 30px 40px;
+  width: 10%;
+}
+
+.mondaySubManageSubTab_JanuaryA {
+  color: #133737;
+  cursor: pointer;
+  font-family: 'Literata', serif;
+  font-size: 15px;
+  margin: 4px 0 1px 10px;
+  transform: translateX(100px) translateY(-40px);
+  width: 10%;
+}
+
+.mondayManageSubsTitlesFeeds_JanuaryA {
+  color: #050a0e;
+  font-family: 'Literata', serif;
+  font-size: 18px;
+  margin: -15px 0 30px 1px;
+}
+
+.mondayCreateEditTabManagement_JanuaryA {
+  background: #98c5c5;
+  border: solid 5px #80a2b0;
+  height: auto;
+  left: 22%;
+  opacity: 1;
+  padding: 45px;
+  position: absolute;
+  top: 25vh;
+  transition: all 0.4s linear;
+  width: 50%;
+  z-index: 60;
+}
+
+.mondayCreateEditTabTitle_JanuaryA {
+  color: #050a0e;
+  font-family: 'Literata', serif;
+  font-size: 30px;
+  margin: 15px 0 30px 25px;
+}
+
+.mondayTabEditorFields_JanuaryA {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  margin: 10px 0 0 60px;
+}
+
+.mondayTabNameLabel_JanuaryA {
+  color: #12262d;
+  font-family: 'Literata', serif;
+  font-size: 18px;
+  margin: 0 9px 0 0;
+}
+
+.mondayTabNameInput_JanuaryA {
+  background: #9bbdc2;
+  border: solid 1px #377b84;
+  color: #12262d;
+  font-family: 'Literata', serif;
+  font-size: 18px;
+  height: 21px;
+  margin: 0 9px;
+  outline: #377b84;
+  width: 350px;
+}
+
+#mondayTabEditorPodcastBlogStatus_JanuaryA {
+  margin: -13px 0 0 40px;
+}
+
+.mondayTabEditorErrorMessage_JanuaryA {
+  color: #a61f02;
+  font-family: 'Literata', serif;
+  font-size: 18px;
+  margin-left: 120px;
+  margin-top: 20px;
+}
+
+.mondayManageTabsConfirmButton_JanuaryA {
+  background: #004461;
+  border: transparent;
+  color: #98c5c5;
+  cursor: pointer;
+  font-family: 'Literata', serif;
+  font-size: 18px;
+  height: 40px;
+  margin: 10px 0 0 15px;
+  outline: #308a8b;
+  padding: -20px 20px;
+  position: relative;
+  transform: skewX(-15deg);
+  transition: all 0.5s linear;
+  width: auto;
+}
+
+.mondayManageTabsConfirmButton_JanuaryA:hover {
+  background: #308a8b;
+  color: #12262d;
+  outline: #308a8b;
+  transform: skewX(-5deg);
+}
+
+.mondayManageTabsConfirmButton_JanuaryA:active {
+  background: #020405;
+  color: #9bbdc2;
+  outline: #308a8b;
+}
+
+.mondayManageTabsSubmitCancelButton_JanuaryA {
+  background: #004461;
+  border: transparent;
+  color: #98c5c5;
+  cursor: pointer;
+  font-family: 'Literata', serif;
+  font-size: 30px;
+  height: 50px;
+  margin: 30px 0 0 70px;
+  outline: #308a8b;
+  padding: -20px 20px;
+  position: relative;
+  transform: skewX(-15deg);
+  transition: all 0.5s linear;
+  width: auto;
+}
+
+.mondayManageTabsSubmitCancelButton_JanuaryA:hover {
+  background: #308a8b;
+  color: #12262d;
+  outline: #308a8b;
+  transform: skewX(-5deg);
+}
+
+.mondayManageTabsSubmitCancelButton_JanuaryA:active {
+  background: #020405;
+  color: #9bbdc2;
+  outline: #308a8b;
+}
+
+.mondayGuardRail_JanuaryA {
+  background: #98c5c5;
+  border: solid 5px #80a2b0;
+  height: auto;
+  left: 32%;
+  opacity: 1;
+  padding: 45px;
+  position: absolute;
+  top: 25vh;
+  transition: all 0.4s linear;
+  width: 30%;
+  z-index: 60;
+}
+
+.guardRailText_JanuaryA {
+  color: #050a0e;
+  font-family: 'Literata', serif;
+  font-size: 30px;
+  margin: 15px 0 30px 25px;
+}
+
+.guardRailButtons_JanuaryA {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  margin: 10px 0 0 60px;
+}
+
+.hubReaderDay1MondayActive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/january/alex-holzreiter-Ie-KYCurV8E-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay1MondayInactive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/january/alex-holzreiter-Ie-KYCurV8E-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-115%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay2MondayActive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/january/alex-holzreiter-Ie-KYCurV8E-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay2MondayInactive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/january/alex-holzreiter-Ie-KYCurV8E-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-230%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay3MondayActive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/january/alex-holzreiter-Ie-KYCurV8E-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay3MondayInactive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/january/alex-holzreiter-Ie-KYCurV8E-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-345%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay4MondayActive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/january/alex-holzreiter-Ie-KYCurV8E-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay4MondayInactive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/january/alex-holzreiter-Ie-KYCurV8E-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-460%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay5MondayActive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/january/alex-holzreiter-Ie-KYCurV8E-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 3;
+}
+
+.hubReaderDay5MondayInactive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/january/alex-holzreiter-Ie-KYCurV8E-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-575%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay6MondayActive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/january/alex-holzreiter-Ie-KYCurV8E-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay6MondayInactive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/january/alex-holzreiter-Ie-KYCurV8E-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-690%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay7MondayActive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/january/alex-holzreiter-Ie-KYCurV8E-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay7MondayInactive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/january/alex-holzreiter-Ie-KYCurV8E-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-705%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+@media only screen and (max-width: 414px) {
+
+  .mondayReaderNavigationButtons_JanuaryA {
+    display: none;
+  }
+
+  .mondayLabel_JanuaryA {
+    font-size: 24px;
+  }
+
+  .mondayTrackProgress_JanuaryA {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    cursor: pointer;
+    display: block;
+    font-size: 48px;
+    margin: 15px 1px 15px 5px;
+    padding-left: 35px;
+    position: relative;
+    user-select: none;
+  }
+
+  .mondaySorting_JanuaryA {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 14px 0 14px 10px;
+  }
+
+  .mondaySorting_JanuaryA p {
+    font-size: 12px;
+    margin: 5px 15px 0 0;
+  }
+
+  .mondayFeedContainer_JanuaryA {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 5px 5px 5px -15px;
+  }
+
+  .mondaySubIcon_JanuaryA {
+    filter: invert(0%);
+    height: 65px;
+    margin-right: 20px;
+    transform: skewX(-15deg) translateX(55px);
+    transition: all 0.5s linear;
+    width: 65px;
+  }
+
+}
