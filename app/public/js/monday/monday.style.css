@@ -38,7 +38,8 @@
 .mondayLabel_JanuaryA {
   color: #12262d;
   font-family: 'Literata', serif;
-  font-size: 96px;
+  font-size: 48px;
+  margin: 42px 0 0 0;
 }
 
 .mondayTabsStrip_JanuaryA {
@@ -308,7 +309,7 @@
   font-family: 'Literata', serif;
   font-size: 18px;
   height: 40px;
-  margin: 40px 0 0 40%;
+  margin: 56px 0 0 20%;
   outline: #308a8b;
   padding: -20px 20px;
   position: relative;
@@ -659,4 +660,228 @@
   flex-wrap: nowrap;
   justify-content: flex-start;
   margin: 10px 0 0 60px;
+}
+
+.hubReaderDay1MondayActive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/january/alex-holzreiter-Ie-KYCurV8E-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay1MondayInactive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/january/alex-holzreiter-Ie-KYCurV8E-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-115%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay2MondayActive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/january/alex-holzreiter-Ie-KYCurV8E-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay2MondayInactive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/january/alex-holzreiter-Ie-KYCurV8E-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-230%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay3MondayActive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/january/alex-holzreiter-Ie-KYCurV8E-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay3MondayInactive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/january/alex-holzreiter-Ie-KYCurV8E-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-345%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay4MondayActive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/january/alex-holzreiter-Ie-KYCurV8E-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay4MondayInactive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/january/alex-holzreiter-Ie-KYCurV8E-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-460%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay5MondayActive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/january/alex-holzreiter-Ie-KYCurV8E-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 3;
+}
+
+.hubReaderDay5MondayInactive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/january/alex-holzreiter-Ie-KYCurV8E-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-575%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay6MondayActive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/january/alex-holzreiter-Ie-KYCurV8E-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay6MondayInactive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/january/alex-holzreiter-Ie-KYCurV8E-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-690%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay7MondayActive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/january/alex-holzreiter-Ie-KYCurV8E-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay7MondayInactive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/january/alex-holzreiter-Ie-KYCurV8E-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-705%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
 }

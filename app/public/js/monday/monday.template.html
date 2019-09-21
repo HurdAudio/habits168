@@ -6,7 +6,7 @@
 
     <img class="mondayLogo{{$ctrl.mondayMonth}}" src="{{$ctrl.logoPath}}" ng-click="$ctrl.navigateToHub()">
 
-    <h1 class="mondayLabel{{$ctrl.mondayMonth}}">Monday</h1>
+    <h1 class="mondayLabel{{$ctrl.mondayMonth}}">Monday Reading/Playlist</h1>
     <button class="mondayManageTabsButton{{$ctrl.mondayMonth}}" ng-click="$ctrl.mondayManagerEngaged()">Manage Tabs/Subscriptions</button>
   </div>
 
@@ -30,7 +30,7 @@
           <p class="markAllReadText{{$ctrl.mondayMonth}}" ng-if="content.subscriptions.length > 1">Mark All Read/Unread:</p>
           <div class="mondayTrackProgress{{$ctrl.mondayMonth}}" ng-if="content.subscriptions.length > 1"><input type="checkbox" ng-checked="content.allRead"><span class="mondayCheckbox{{$ctrl.mondayMonth}}{{content.allRead}}" ng-click="$ctrl.toggleAllReadStatus(content.title)"><span class="mondaySwitchUnchecked{{$ctrl.mondayMonth}}{{content.allRead}}"></span></span></div>
 
-          <p class="markAllReadText{{$ctrl.mondayMonth}}" ng-if="content.subscriptions.length > 1">Read All:</p>
+          <p class="markAllReadText{{$ctrl.mondayMonth}}" ng-if="((content.subscriptions.length > 1) && (!content.podcast))">Read All:</p>
           <div class="mondayReadAll{{$ctrl.mondayMonth}}" ng-if="!content.podcast"><button class="mondayReadAllButton{{$ctrl.mondayMonth}}" ng-if="content.subscriptions.length > 1"><i class="fas fa-book-reader"></i></button></div>
 
           <div class="mondaySorting{{$ctrl.mondayMonth}}" ng-if="content.subscriptions.length > 1">
