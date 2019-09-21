@@ -885,3 +885,58 @@
   width: 8%;
   z-index: -1;
 }
+
+@media only screen and (max-width: 414px) {
+
+  .mondayReaderNavigationButtons_JanuaryA {
+    display: none;
+  }
+
+  .mondayLabel_JanuaryA {
+    font-size: 24px;
+  }
+
+  .mondayTrackProgress_JanuaryA {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    cursor: pointer;
+    display: block;
+    font-size: 48px;
+    margin: 15px 1px 15px 5px;
+    padding-left: 35px;
+    position: relative;
+    user-select: none;
+  }
+
+  .mondaySorting_JanuaryA {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 14px 0 14px 10px;
+  }
+
+  .mondaySorting_JanuaryA p {
+    font-size: 12px;
+    margin: 5px 15px 0 0;
+  }
+
+  .mondayFeedContainer_JanuaryA {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 5px 5px 5px -15px;
+  }
+
+  .mondaySubIcon_JanuaryA {
+    filter: invert(0%);
+    height: 65px;
+    margin-right: 20px;
+    transform: skewX(-15deg) translateX(55px);
+    transition: all 0.5s linear;
+    width: 65px;
+  }
+
+}
