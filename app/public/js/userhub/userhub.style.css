@@ -117,7 +117,7 @@
   position: absolute;
   top: 12vh;
   transition: all 0.6s;
-  transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
   width: 16%;
 }
 
@@ -128,7 +128,7 @@
   position: absolute;
   top: 12vh;
   transition: all 0.6s;
-  transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
   width: 16%;
 }
 
@@ -139,7 +139,7 @@
   position: absolute;
   top: 12vh;
   transition: all 0.6s;
-  transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
   width: 16%;
 }
 
@@ -150,7 +150,7 @@
   position: absolute;
   top: 12vh;
   transition: all 0.6s;
-  transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
   width: 16%;
 }
 
@@ -551,7 +551,7 @@
   opacity: 1;
   transform: translateX(0px);
   transition: all 0.5s;
-  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
   width: 8%;
   z-index: 1;
 }
@@ -567,7 +567,7 @@
   padding: 10px 15px;
   transform: translateX(-115%);
   transition: all 0.5s;
-  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
   width: 8%;
   z-index: -1;
 }
@@ -583,7 +583,7 @@
   opacity: 1;
   transform: translateX(0px);
   transition: all 0.5s;
-  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
   width: 8%;
   z-index: 1;
 }
@@ -599,7 +599,7 @@
   padding: 10px 15px;
   transform: translateX(-230%);
   transition: all 0.5s;
-  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
   width: 8%;
   z-index: -1;
 }
@@ -615,7 +615,7 @@
   opacity: 1;
   transform: translateX(0px);
   transition: all 0.5s;
-  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
   width: 8%;
   z-index: 1;
 }
@@ -631,7 +631,7 @@
   padding: 10px 15px;
   transform: translateX(-345%);
   transition: all 0.5s;
-  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
   width: 8%;
   z-index: -1;
 }
@@ -647,7 +647,7 @@
   opacity: 1;
   transform: translateX(0px);
   transition: all 0.5s;
-  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
   width: 8%;
   z-index: 1;
 }
@@ -663,7 +663,7 @@
   padding: 10px 15px;
   transform: translateX(-460%);
   transition: all 0.5s;
-  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
   width: 8%;
   z-index: -1;
 }
@@ -679,7 +679,7 @@
   opacity: 1;
   transform: translateX(0px);
   transition: all 0.5s;
-  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
   width: 8%;
   z-index: 1;
 }
@@ -695,7 +695,7 @@
   padding: 10px 15px;
   transform: translateX(-575%);
   transition: all 0.5s;
-  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
   width: 8%;
   z-index: -1;
 }
@@ -711,7 +711,7 @@
   opacity: 1;
   transform: translateX(0px);
   transition: all 0.5s;
-  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
   width: 8%;
   z-index: 1;
 }
@@ -727,7 +727,7 @@
   padding: 10px 15px;
   transform: translateX(-690%);
   transition: all 0.5s;
-  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
   width: 8%;
   z-index: -1;
 }
@@ -743,7 +743,7 @@
   opacity: 1;
   transform: translateX(0px);
   transition: all 0.5s;
-  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
   width: 8%;
   z-index: 1;
 }
@@ -759,7 +759,7 @@
   padding: 10px 15px;
   transform: translateX(-705%);
   transition: all 0.5s;
-  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
   width: 8%;
   z-index: -1;
 }
@@ -1166,7 +1166,7 @@
   position: relative;
   transform: translateY(-250px);
   transition: all 0.5s;
-  transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
   width: 100%;
   z-index: 1;
 }
@@ -1180,7 +1180,7 @@
   position: relative;
   transform: translateY(-200px);
   transition: all 0.5s;
-  transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
   width: 100%;
   z-index: 1;
 }
@@ -1194,7 +1194,7 @@
   position: relative;
   transform: translateY(-150px);
   transition: all 0.5s;
-  transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
   width: 100%;
   z-index: 1;
 }
@@ -1208,7 +1208,7 @@
   position: relative;
   transform: translateY(-100px);
   transition: all 0.5s;
-  transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
   width: 100%;
   z-index: 1;
 }
@@ -1222,7 +1222,7 @@
   position: relative;
   transform: translateY(-50px);
   transition: all 0.5s;
-  transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
   width: 100%;
   z-index: 1;
 }

@@ -22,7 +22,7 @@
     </div>
     <div class="{{$ctrl.hubReaderTabState}}">
 
-      <p class="hubTabLabel{{$ctrl.monthSelect}}" ng-click="$ctrl.updateHubTab('reader')">reader</p>
+      <p class="hubTabLabel{{$ctrl.monthSelect}}" ng-click="$ctrl.updateHubTab('reader')">subscriptions</p>
     </div>
     <div class="{{$ctrl.hubBloggerTabState}}">
 
@@ -190,8 +190,15 @@
         <div class="hubReaderTodayBlock{{$ctrl.monthSelect}}">
 
           <p class="hubReaderTodayLabel{{$ctrl.monthSelect}}">Subscriptions:</p>
-          <button class="hubReaderDayButton{{$ctrl.monthSelect}}">manage</button>
+          <button class="hubReaderDayButton{{$ctrl.monthSelect}}"></button>
           <button class="hubReaderWeekButton{{$ctrl.monthSelect}}" ng-click="$ctrl.toggleSubscriptionManagement()">more</button>
+        </div>
+
+        <div class="{{$ctrl.manageBlockToggleStatus}}">
+
+          <p class="hubReaderBlankLabel{{$ctrl.monthSelect}}">Blank</p>
+          <button class="hubReaderDayButton{{$ctrl.monthSelect}}">manage</button>
+
         </div>
 
         <div class="{{$ctrl.externalsBlockToggleStatus}}">

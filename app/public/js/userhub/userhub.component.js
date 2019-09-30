@@ -378,12 +378,13 @@
       vm.hubWeekToggle = hubWeekToggle;
       vm.subscriptionToggle = 'off';
       vm.toggleSubscriptionManagement = toggleSubscriptionManagement;
-      vm.externalsBlockToggleStatus = 'hubReaderDay1BlockInactive' + vm.monthSelect;
-      vm.dailiesBlockToggleStatus = 'hubReaderDay2BlockInactive' + vm.monthSelect;
-      vm.browseFeedsBlockToggleStatus = 'hubReaderDay3BlockInactive' + vm.monthSelect;
-      vm.sharedBlockToggleStatus = 'hubReaderDay4BlockInactive' + vm.monthSelect;
-      vm.savedBlockToggleStatus = 'hubReaderDay5BlockInactive' + vm.monthSelect;
-      vm.miscBlockToggleStatus = 'hubReaderDay6BlockInactive' + vm.monthSelect;
+      vm.manageBlockToggleStatus = 'hubReaderDay1BlockInactive' + vm.monthSelect;
+      vm.externalsBlockToggleStatus = 'hubReaderDay2BlockInactive' + vm.monthSelect;
+      vm.dailiesBlockToggleStatus = 'hubReaderDay3BlockInactive' + vm.monthSelect;
+      vm.browseFeedsBlockToggleStatus = 'hubReaderDay4BlockInactive' + vm.monthSelect;
+      vm.sharedBlockToggleStatus = 'hubReaderDay5BlockInactive' + vm.monthSelect;
+      vm.savedBlockToggleStatus = 'hubReaderDay6BlockInactive' + vm.monthSelect;
+      vm.miscBlockToggleStatus = 'hubReaderDay7BlockInactive' + vm.monthSelect;
       vm.shareSaveLinkDisplay = 'hubShareShareSaveModalInactive' + vm.monthSelect;
       vm.hubLinkShareOrSave = 'Share Link';
       vm.hubShareSave = hubShareSave;
@@ -1200,20 +1201,22 @@
       function toggleSubscriptionManagement() {
         if (vm.subscriptionToggle === 'off') {
           vm.subscriptionToggle = 'on';
-          vm.externalsBlockToggleStatus = 'hubReaderDay1BlockActive' + vm.monthSelect;
-          vm.dailiesBlockToggleStatus = 'hubReaderDay2BlockActive' + vm.monthSelect;
-          vm.browseFeedsBlockToggleStatus = 'hubReaderDay3BlockActive' + vm.monthSelect;
-          vm.sharedBlockToggleStatus = 'hubReaderDay4BlockActive' + vm.monthSelect;
-          vm.savedBlockToggleStatus = 'hubReaderDay5BlockActive' + vm.monthSelect;
-          vm.miscBlockToggleStatus = 'hubReaderDay6BlockActive' + vm.monthSelect;
+          vm.manageBlockToggleStatus = 'hubReaderDay1BlockActive' + vm.monthSelect;
+          vm.externalsBlockToggleStatus = 'hubReaderDay2BlockActive' + vm.monthSelect;
+          vm.dailiesBlockToggleStatus = 'hubReaderDay3BlockActive' + vm.monthSelect;
+          vm.browseFeedsBlockToggleStatus = 'hubReaderDay4BlockActive' + vm.monthSelect;
+          vm.sharedBlockToggleStatus = 'hubReaderDay5BlockActive' + vm.monthSelect;
+          vm.savedBlockToggleStatus = 'hubReaderDay6BlockActive' + vm.monthSelect;
+          vm.miscBlockToggleStatus = 'hubReaderDay7BlockActive' + vm.monthSelect;
         } else {
           vm.subscriptionToggle = 'off';
-          vm.externalsBlockToggleStatus = 'hubReaderDay1BlockInactive' + vm.monthSelect;
-          vm.dailiesBlockToggleStatus = 'hubReaderDay2BlockInactive' + vm.monthSelect;
-          vm.browseFeedsBlockToggleStatus = 'hubReaderDay3BlockInactive' + vm.monthSelect;
-          vm.sharedBlockToggleStatus = 'hubReaderDay4BlockInactive' + vm.monthSelect;
-          vm.savedBlockToggleStatus = 'hubReaderDay5BlockInactive' + vm.monthSelect;
-          vm.miscBlockToggleStatus = 'hubReaderDay6BlockInactive' + vm.monthSelect;
+          vm.manageBlockToggleStatus = 'hubReaderDay1BlockInactive' + vm.monthSelect;
+          vm.externalsBlockToggleStatus = 'hubReaderDay2BlockInactive' + vm.monthSelect;
+          vm.dailiesBlockToggleStatus = 'hubReaderDay3BlockInactive' + vm.monthSelect;
+          vm.browseFeedsBlockToggleStatus = 'hubReaderDay4BlockInactive' + vm.monthSelect;
+          vm.sharedBlockToggleStatus = 'hubReaderDay5BlockInactive' + vm.monthSelect;
+          vm.savedBlockToggleStatus = 'hubReaderDay6BlockInactive' + vm.monthSelect;
+          vm.miscBlockToggleStatus = 'hubReaderDay7BlockInactive' + vm.monthSelect;
         }
       }
 
