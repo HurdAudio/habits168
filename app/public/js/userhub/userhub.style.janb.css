@@ -1954,7 +1954,7 @@
   transition: all 0.4s linear;
 }
 
-/* @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .hubReactionGestalt_JanuaryB {
     margin: 4px;
     width: 25%;
@@ -2132,4 +2132,4 @@
     padding: 3px;
     width: 80%;
   }
-} */
+}
