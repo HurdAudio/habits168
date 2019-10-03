@@ -22,7 +22,7 @@
     </div>
     <div class="{{$ctrl.hubReaderTabState}}">
 
-      <p class="hubTabLabel{{$ctrl.monthSelect}}" ng-click="$ctrl.updateHubTab('reader')">reader</p>
+      <p class="hubTabLabel{{$ctrl.monthSelect}}" ng-click="$ctrl.updateHubTab('reader')">subscriptions</p>
     </div>
     <div class="{{$ctrl.hubBloggerTabState}}">
 
@@ -144,7 +144,7 @@
         <div class="hubReaderTodayBlock{{$ctrl.monthSelect}}">
 
           <p class="hubReaderBlankLabel{{$ctrl.monthSelect}}">Blank</p>
-          <button class="hubReaderDayButton{{$ctrl.monthSelect}}" ng-click="$ctrl.navigateToDay($ctrl.day0)"></button>
+
           <button class="hubReaderWeekButton{{$ctrl.monthSelect}}" ng-click="$ctrl.hubWeekToggle()">week</button>
         </div>
         <div class="{{$ctrl.day1ToggleState}}">
@@ -190,8 +190,15 @@
         <div class="hubReaderTodayBlock{{$ctrl.monthSelect}}">
 
           <p class="hubReaderTodayLabel{{$ctrl.monthSelect}}">Subscriptions:</p>
-          <button class="hubReaderDayButton{{$ctrl.monthSelect}}">manage</button>
+
           <button class="hubReaderWeekButton{{$ctrl.monthSelect}}" ng-click="$ctrl.toggleSubscriptionManagement()">more</button>
+        </div>
+
+        <div class="{{$ctrl.manageBlockToggleStatus}}">
+
+          <p class="hubReaderBlankLabel{{$ctrl.monthSelect}}">Blank</p>
+          <button class="hubReaderDayButton{{$ctrl.monthSelect}}">manage</button>
+
         </div>
 
         <div class="{{$ctrl.externalsBlockToggleStatus}}">
@@ -464,7 +471,7 @@
       <div class="hubProfileDisplayBioBlock{{$ctrl.monthSelect}}">
 
         <img class="hubProfileDisplayBioImage{{$ctrl.monthSelect}}" src="{{$ctrl.hubProfileDisplayerLocationImage}}" alt="{{$ctrl.hubProfileDisplayerLocationAlt}}">
-        <p class="hubPhotoAttribution{{$ctrl.month_select}}" ng-if="$ctrl.hubProfileDisplayerLocationImage">photo attribution: {{$ctrl.hubProfileDisplayerImageAttribution}}</p>
+        <p class="hubPhotoAttribution{{$ctrl.monthSelect}}" ng-if="$ctrl.hubProfileDisplayerLocationImage">photo attribution: {{$ctrl.hubProfileDisplayerImageAttribution}}</p>
         <p class="profileDisplayStats{{$ctrl.monthSelect}}">Location: {{$ctrl.profileDisplayer.extended_profile.location.name}}, {{$ctrl.profileDisplayer.extended_profile.location.adminCode}}, {{$ctrl.profileDisplayer.extended_profile.location.country}}</p>
       </div>
       <div class="hubProfileDisplayUserDatas{{$ctrl.monthSelect}}">
