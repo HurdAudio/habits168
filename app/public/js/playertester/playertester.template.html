@@ -11,7 +11,7 @@
       <div class="playerTitlingDiv{{$ctrl.playerMonth}}">
         <a href="{{$ctrl.seriesLink}}" target="_blank"><h1 class="playerPodcastTitle{{$ctrl.playerMonth}}">{{$ctrl.podcastTitle}}</h1></a>
         <a href="{{$ctrl.episodeLink}}" target="_blank"><p class="playerEpisodeTitle{{$ctrl.playerMonth}}">{{$ctrl.podcastEpisodeTitle}}</p></a>
-        <p class="playerEpisodeAuthor{{$ctrl.playerMonth}}">{{$ctrl.podcastEpisodeAuthorship}}</p>
+        <p class="playerEpisodeAuthor{{$ctrl.playerMonth}}" ng-bind-html="$ctrl.podcastEpisodeAuthorship"></p>
         <div class="playerControlsDiv{{$ctrl.playerMonth}}">
 
           <button id="playerPlayPauseButton" class="{{$ctrl.playPause}}" ng-click="$ctrl.togglePlayPause()">&#9654;</button>
