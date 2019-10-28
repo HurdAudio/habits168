@@ -17,6 +17,8 @@ const blog_feeds = require('./routes/blog_feeds.js');
 const podcast_feeds = require('./routes/podcast_feeds.js');
 const blog_shares = require('./routes/blog_shares.js');
 const podcast_shares = require('./routes/podcast_shares.js');
+const blog_saves = require('./routes/blog_saves.js');
+const podcast_saves = require('./routes/podcast_saves.js');
 // const financial_modules = require('./routes/financial_modules.js');
 
 const port = process.env.PORT || 3037;
@@ -32,6 +34,8 @@ app.use(express.static(path.join(__dirname, '/../', 'node_modules')));
  app.use('/podcast_feeds', podcast_feeds);
  app.use('/blog_shares', blog_shares);
  app.use('/podcast_shares', podcast_shares);
+ app.use('/blog_saves', blog_saves);
+ app.use('/podcast_saves', podcast_saves);
 
 // app.get('/reuters_headlines/:country', (req, res, next) =>{
 //   let newUrl = 'https://newsapi.org/v2/top-headlines?country=';
