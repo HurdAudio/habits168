@@ -1,0 +1,1115 @@
+.backgroundDiv_FebruaryA {
+  background: url(https://habits168-hurdaudio.s3.amazonaws.com/landing/february/fabric_design_1_by_adrymeijer_d7j6ol2-fullview.jpg);
+  background-size: 100%;
+  filter: saturate(200%) sepia(40%);
+  height: 100%;
+  left: 0;
+  opacity: 0.5;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+#container {
+  align-items: center;
+  display: grid;
+  grid-template-areas:
+      "header" "header" "header" "header" "header"
+      "tabs" "byline" "content" "content"
+      "tabs" "byline" "content" "content"
+      . "footer" "footer" "footer" "footer";
+  grid-template-columns: [first] 60px [second] 100px [third] 1fr [fourth] 1fr [fifth] 1fr [end];
+  grid-template-rows: [top] 150px [line2] 77vh [line3] 1fr [line4] 1fr [lineend];
+  justify-items: center;
+  width: 100%;
+}
+
+.landingTitleFlex {
+  grid-area: header;
+  grid-column: first / end;
+  grid-row: top / line2;
+  width: 100%;
+}
+
+.landingLogo_FebruaryA {
+  filter: drop-shadow(10px 15px 4px #000100);
+  grid-area: header;
+  grid-column: first / third;
+  grid-row: top / line2;
+  height: 150px;
+  margin: 20px 20px 0 0;
+  opacity: 1;
+  width: 150px;
+}
+
+.landingTitleDiv_FebruaryA {
+  align-self: center;
+  color: #0a0b09;
+  grid-column: 3 / span 2;
+  grid-row: 1/ 2;
+  font-family: 'Overpass', sans-serif;
+  font-size: 90px;
+  justify-self: center;
+  margin: 20px 20px 0 0;
+}
+
+
+.landingTitleButtonsDiv_FebruaryA {
+  align-self: stretch;
+  grid-area: header;
+  grid-column: 4/6;
+  grid-row: 1/2;
+  padding: 65px 5px 5px 25%;
+  width: auto;
+}
+
+.landingTitleButtonsDiv_FebruaryA button {
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/landing/february/buttons/fabric_texture_by_lyssi_d1o9dq1-fullview.jpg);
+  background-size: cover;
+  border: none;
+  color: #093343;
+  cursor: pointer;
+  filter: brightness(100%) drop-shadow(10px 15px 4px #000100);
+  font-family: 'Overpass', sans-serif;
+  font-size: 24px;
+  margin: 0 10px;
+  outline-color: #3d5933;
+  padding: 15px;
+  transition: all 0.1s linear;
+}
+
+.landingTitleButtonsDiv_FebruaryA button:hover {
+  filter: brightness(110%) drop-shadow(9px 14px 3px #000100);
+  transition: all 0.1s linear;
+}
+
+.landingTitleButtonsDiv_FebruaryA button:active {
+  filter: brightness(110%) drop-shadow(0 0 0 #000100);
+  transition: all 0.1s linear;
+}
+
+.landingRecentlySharedLinksCollapsed_FebruaryA {
+  display: none;
+}
+
+.landingRecentlySharedLinksUncollapsed_FebruaryA {
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/landing/february/buttons/fabric_texture_8_by_emothic_stock_d1uhmt4-fullview.jpg);
+  background-size: cover;
+  filter: brightness(70%);
+  grid-column: 2 / end;
+  grid-row: 2 / span 4;
+  height: 77vh;
+  opacity: 0.95;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+.landingRecentlySharedPostsUncollapsed_FebruaryA {
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/landing/february/buttons/fabric_texture_8_by_emothic_stock_d1uhmt4-fullview.jpg);
+  background-size: cover;
+  filter: brightness(70%);
+  grid-column: 2 / end;
+  grid-row: 2 / span 4;
+  height: 77vh;
+  opacity: 0.95;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+.landingRecentlySharedPostsCollapsed_FebruaryA {
+  display: none;
+}
+
+.landingShareContainer_FebruaryA {
+  color: #010300;
+  font-family: 'Overpass', sans-serif;
+  height: auto;
+  position: relative;
+  width: 100%;
+}
+
+.landingLinkShare_FebruaryA {
+  display: inline-block;
+}
+
+.landingShareSharerAvatar_FebruaryA {
+  filter: brightness(110%);
+  left: 15px;
+  margin: 20px 0 20px 0;
+  position: relative;
+  top: 10px;
+  width: 30%;
+}
+
+.landingByline_FebruaryA {
+  float: left;
+  left: 10px;
+  position: relative;
+  top: 0;
+  width: 20%;
+}
+
+.landingByline_FebruaryA p {
+  max-width: 75%;
+}
+
+.landingShareShare_FebruaryA {
+  border-left: solid 3px #010300;
+  float: left;
+  margin-bottom: 15px;
+  position: relative;
+  top: 0;
+  width: 78%;
+}
+
+.landingShareShare_FebruaryA a {
+  color: #314351;
+  text-decoration: none;
+}
+
+.landingShareShare_FebruaryA p {
+  max-width: 700px;
+}
+
+.landingShareShare_FebruaryA a:hover {
+  color: #9e1316;
+}
+
+.landingShareShare_FebruaryA a:visited {
+  color: #203c14;
+}
+
+.shareSourceIcon_FebruaryA {
+  left: 5px;
+  position: relative;
+  top: 5px;
+  width: 5%;
+}
+
+.shareViaCredit_FebruaryA {
+  display: inline-block;
+  font-size: 21px;
+  margin: -10px 3px 15px 10px;
+  position: relative;
+  top: 0;
+  width: 80%;
+}
+
+.shareHeadline_FebruaryA {
+  font-size: 36px;
+  margin: 15px 15px 35px 5px;
+  max-width: 710px;
+}
+
+.shareCleanDate_FebruaryA {
+  float: right;
+  font-size: 18px;
+  margin: 5px 30% 5px 0;
+}
+
+.shareDescription_FebruaryA {
+  line-height: 1.3em;
+  margin: 100px 15px 130px 5px;
+  max-width: 710px;
+}
+
+.shareAuthor_FebruaryA {
+  float: left;
+  font-size: 18px;
+  margin: 0 0 0 5px;
+}
+
+.shareShareEnclosurePhoto_FebruaryA {
+  margin: 0 0 0 5px;
+  max-width: 60%;
+}
+
+.shareShareBlogPhoto_FebruaryA {
+  margin: 0 0 0 5px;
+  max-width: 50%;
+}
+
+.shareBlogTitle_FebruaryA {
+  font-size: 36px;
+  margin: -40px 0 0 60px;
+}
+
+.landingFooter_FebruaryA {
+  bottom: 3px;
+  color: #010300;
+  font-family: 'Overpass', sans-serif;
+  font-size: 18px;
+  left: 10px;
+  position: absolute;
+
+}
+
+.landingLoginActive_FebruaryA {
+  display: none;
+  /* background: #121419;
+  color: #dddedb;
+  font-family: 'Overpass', sans-serif;
+  font-size: 42px;
+  height: 400px;
+  opacity: 1;
+  padding: 32px;
+  position: absolute;
+  right: 30%;
+  top: 200px;
+  transition: all 0.8s linear;
+  width: 40%;
+  z-index: 6; */
+}
+
+.landingLoginInactive_FebruaryA {
+  display: none;
+  /* background: #121419;
+  color: #dddedb;
+  font-family: 'Overpass', sans-serif;
+  font-size: 42px;
+  height: 400px;
+  opacity: 0;
+  padding: 32px;
+  position: absolute;
+  right: 60%;
+  top: 200px;
+  width: 2%;
+  transition: all 0.8s linear;
+  z-index: -6; */
+}
+
+.landingLoginActive_FebruaryA input {
+  /* color: #121419;
+  font-family: 'Overpass', sans-serif;
+  font-size: 24px;
+  margin: 25px 5px 10px 45px;
+  padding: 1px 1px 1px 15px;
+  width: 75%; */
+}
+
+.landingLoginInactive_FebruaryA input {
+  /* color: #121419;
+  font-family: 'Overpass', sans-serif;
+  font-size: 24px;
+  margin: 25px 5px 10px 45px;
+  padding: 1px 1px 1px 15px;
+  width: 75%; */
+}
+
+.landingLoginActive_FebruaryA button {
+  /* background: #bbbcb6;
+  border: none;
+  color: #1d1b20;
+  cursor: pointer;
+  font-family: 'Overpass', sans-serif;
+  font-size: 30px;
+  margin: 30px 20px 30px 90px;
+  padding: 14px;
+  transform: rotateY(0deg) skewX(-15deg);
+  transition: all 0.8s linear; */
+}
+
+.landingLoginActive_FebruaryA button:hover {
+  /* background: #222c36;
+  color: #dddedb;
+  transform: rotateY(0deg) skewX(-10deg);
+  transition: all 0.8s linear; */
+}
+
+.landingLoginInactive_FebruaryA button {
+  display: none;
+}
+
+.landingLoginActive_FebruaryA a {
+  /* color: #dddedb;
+  cursor: pointer;
+  float: right;
+  font-family: 'Overpass', sans-serif;
+  font-size: 18px;
+  margin: 30px 0 10px 0;
+  position: relative;
+  text-decoration: none; */
+}
+
+.landingLoginInactive_FebruaryA a {
+  /* color: #dddedb;
+  cursor: pointer;
+  float: right;
+  font-family: 'Overpass', sans-serif;
+  font-size: 18px;
+  margin: 30px 0 10px 0;
+  position: relative;
+  text-decoration: none; */
+}
+
+.landingLoginActive_FebruaryA h3 {
+  /* color: #cedce7;
+  margin: 35px 20px 1px 20px; */
+}
+
+.tabs_FebruaryA {
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/landing/february/buttons/fabric_by_karinsphotography_db95uhp-fullview.jpg);
+  background-size: cover;
+  grid-column: 1/2;
+  grid-row: 2, lineend;
+  height: 100%;
+  width: 100%;
+}
+
+.tabActive_FebruaryA {
+  color: #000100;
+  cursor: pointer;
+  filter: invert(0%) drop-shadow(-10px 15px 4px #000100);
+  font-family: 'Overpass', sans-serif;
+  font-size: 30px;
+  grid-area: tabs;
+  height: 50px;
+  margin: 15vh 0 10vh 0;
+  padding: 10px 0 0 0;
+  transform: rotateZ(-90deg);
+  transition: all 0.5s linear;
+  width: 40px;
+}
+
+.tabInactive_FebruaryA {
+  color: #000100;
+  cursor: pointer;
+  font-family: 'Overpass', sans-serif;
+  font-size: 30px;
+  grid-area: tabs;
+  height: 50px;
+  margin: 15vh 0 10vh 0;
+  padding: 10px 0 0 0;
+  transform: rotateZ(-90deg);
+  transition: all 0.5s linear;
+  width: 40px;
+}
+
+.landingUserGreeting_FebruaryA {
+  /* color: #1d1b20;
+  font-family: 'Overpass', sans-serif;
+  font-size: 30px;
+  margin: 10px 5px 0 15px; */
+}
+@media only screen and (max-width: 1024px) {
+  .backgroundDiv_FebruaryA {
+    background-size: 400%;
+  }
+
+  .landingTitle_FebruaryA {
+    font-size: 18px;
+  }
+
+  .landingShareShare_FebruaryA {
+    width: 70%;
+  }
+
+  .landingRecentlySharedPostsUncollapsed_FebruaryA {
+    height: 75vh;
+  }
+
+  .landingRecentlySharedLinksUncollapsed_FebruaryA {
+    height: 75vh;
+  }
+}
+
+@media only screen and (max-width: 823px) {
+  .landingTitle_FebruaryA {
+    font-size: 18px;
+  }
+
+  .landingShareShare_FebruaryA {
+    width: 70%;
+  }
+
+  .landingRecentlySharedPostsUncollapsed_FebruaryA {
+    height: 75vh;
+  }
+
+  .landingRecentlySharedLinksUncollapsed_FebruaryA {
+    height: 75vh;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .landingTitle_FebruaryA {
+    font-size: 18px;
+  }
+
+  .landingShareShare_FebruaryA {
+    width: 70%;
+  }
+
+  .landingRecentlySharedPostsUncollapsed_FebruaryA {
+    height: 75vh;
+  }
+
+  .landingRecentlySharedLinksUncollapsed_FebruaryA {
+    height: 75vh;
+  }
+}
+
+@media only screen and (max-width: 736px) {
+  .backgroundDiv_FebruaryA {
+    background-size: 250%;
+  }
+
+  .landingTitle_FebruaryA {
+    font-size: 24px;
+  }
+
+  .landingTitleButtonsDiv_FebruaryA button {
+    font-size: 12px;
+    margin: -30px 10px 10px 10px;
+  }
+
+  .tabs_FebruaryA {
+    display: none;
+  }
+
+  .landingRecentlySharedLinksUncollapsed_FebruaryA {
+    display: none;
+  }
+
+  .landingLoginActive_FebruaryA {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 79%;
+  }
+
+  .landingLoginActive_FebruaryA a {
+    margin-top: 80px;
+  }
+
+  .landingLoginInactive_FebruaryA a {
+    margin-top: 80px;
+  }
+
+  .landingLoginActive_FebruaryA button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginInactive_FebruaryA button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginActive_FebruaryA h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginInactive_FebruaryA h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginActive_FebruaryA input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_FebruaryA input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_FebruaryA {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 79%;
+  }
+}
+
+@media only screen and (max-width: 731px) {
+  .backgroundDiv_FebruaryA {
+    background-size: 250%;
+  }
+
+  .landingTitle_FebruaryA {
+    font-size: 24px;
+  }
+
+  .landingTitleButtonsDiv_FebruaryA button {
+    font-size: 12px;
+    margin: -30px 10px 10px 10px;
+  }
+
+  .tabs_FebruaryA {
+    display: none;
+  }
+
+  .landingRecentlySharedLinksUncollapsed_FebruaryA {
+    display: none;
+  }
+
+  .landingLoginActive_FebruaryA {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 79%;
+  }
+
+  .landingLoginActive_FebruaryA a {
+    margin-top: 80px;
+  }
+
+  .landingLoginInactive_FebruaryA a {
+    margin-top: 80px;
+  }
+
+  .landingLoginActive_FebruaryA button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginInactive_FebruaryA button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginActive_FebruaryA h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginInactive_FebruaryA h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginActive_FebruaryA input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_FebruaryA input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_FebruaryA {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 79%;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .backgroundDiv_FebruaryA {
+    background-size: 250%;
+  }
+
+  .landingTitle_FebruaryA {
+    font-size: 24px;
+  }
+
+  .landingTitleButtonsDiv_FebruaryA button {
+    font-size: 12px;
+    margin: -30px 10px 10px 10px;
+  }
+
+  .tabs_FebruaryA {
+    display: none;
+  }
+
+  .landingRecentlySharedLinksUncollapsed_FebruaryA {
+    display: none;
+  }
+
+  .landingLoginActive_FebruaryA {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 79%;
+  }
+
+  .landingLoginActive_FebruaryA a {
+    margin-top: 80px;
+  }
+
+  .landingLoginInactive_FebruaryA a {
+    margin-top: 80px;
+  }
+
+  .landingLoginActive_FebruaryA button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginInactive_FebruaryA button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginActive_FebruaryA h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginInactive_FebruaryA h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginActive_FebruaryA input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_FebruaryA input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_FebruaryA {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 79%;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .backgroundDiv_FebruaryA {
+    background-size: 250%;
+  }
+
+  .landingTitle_FebruaryA {
+    font-size: 24px;
+  }
+
+  .landingTitleButtonsDiv_FebruaryA button {
+    font-size: 12px;
+    margin: -30px 15px 15px 15px;
+  }
+
+  .landingUserGreeting_FebruaryA {
+    margin-top: -120px;
+  }
+
+  .tabs_FebruaryA {
+    display: none;
+  }
+
+  .landingRecentlySharedLinksUncollapsed_FebruaryA {
+    display: none;
+  }
+
+  .landingLoginActive_FebruaryA {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 79%;
+  }
+
+  .landingLoginActive_FebruaryA a {
+    margin-top: 80px;
+  }
+
+  .landingLoginInactive_FebruaryA a {
+    margin-top: 80px;
+  }
+
+  .landingLoginActive_FebruaryA button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginInactive_FebruaryA button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginActive_FebruaryA h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginInactive_FebruaryA h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginActive_FebruaryA input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_FebruaryA input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_FebruaryA {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 79%;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .backgroundDiv_FebruaryA {
+    background-size: 250%;
+  }
+
+  .landingTitle_FebruaryA {
+    font-size: 24px;
+  }
+
+  .landingTitleButtonsDiv_FebruaryA button {
+    font-size: 12px;
+  }
+
+  .tabs_FebruaryA {
+    display: none;
+  }
+
+  .landingRecentlySharedLinksUncollapsed_FebruaryA {
+    display: none;
+  }
+
+  .landingLoginActive_FebruaryA {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 79%;
+  }
+
+  .landingLoginActive_FebruaryA a {
+    margin-top: 80px;
+  }
+
+  .landingLoginInactive_FebruaryA a {
+    margin-top: 80px;
+  }
+
+  .landingLoginActive_FebruaryA button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginInactive_FebruaryA button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginActive_FebruaryA h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginInactive_FebruaryA h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginActive_FebruaryA input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_FebruaryA input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_FebruaryA {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 79%;
+  }
+}
+
+@media only screen and (max-width: 411px) {
+  .backgroundDiv_FebruaryA {
+    background-size: 250%;
+  }
+
+  .landingTitle_FebruaryA {
+    font-size: 24px;
+  }
+
+  .landingTitleButtonsDiv_FebruaryA button {
+    font-size: 12px;
+  }
+
+  .tabs_FebruaryA {
+    display: none;
+  }
+
+  .landingRecentlySharedLinksUncollapsed_FebruaryA {
+    display: none;
+  }
+
+  .landingLoginActive_FebruaryA {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 79%;
+  }
+
+  .landingLoginActive_FebruaryA a {
+    margin-top: 80px;
+  }
+
+  .landingLoginInactive_FebruaryA a {
+    margin-top: 80px;
+  }
+
+  .landingLoginActive_FebruaryA button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginInactive_FebruaryA button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginActive_FebruaryA h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginInactive_FebruaryA h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginActive_FebruaryA input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_FebruaryA input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_FebruaryA {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 79%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .backgroundDiv_FebruaryA {
+    background-size: 250%;
+  }
+
+  .landingTitle_FebruaryA {
+    font-size: 24px;
+  }
+
+  .landingTitleButtonsDiv_FebruaryA button {
+    font-size: 12px;
+  }
+
+  .tabs_FebruaryA {
+    display: none;
+  }
+
+  .landingRecentlySharedLinksUncollapsed_FebruaryA {
+    display: none;
+  }
+
+  .landingLoginActive_FebruaryA {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 61.5%;
+  }
+
+  .landingLoginActive_FebruaryA a {
+    margin-top: 80px;
+  }
+
+  .landingLoginInactive_FebruaryA a {
+    margin-top: 80px;
+  }
+
+  .landingLoginActive_FebruaryA button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginInactive_FebruaryA button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginActive_FebruaryA h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginInactive_FebruaryA h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginActive_FebruaryA input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_FebruaryA input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_FebruaryA {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 61.5%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .backgroundDiv_FebruaryA {
+    background-size: 250%;
+  }
+
+  .landingTitle_FebruaryA {
+    font-size: 24px;
+  }
+
+  .landingTitleButtonsDiv_FebruaryA button {
+    font-size: 12px;
+  }
+
+  .tabs_FebruaryA {
+    display: none;
+  }
+
+  .landingRecentlySharedLinksUncollapsed_FebruaryA {
+    display: none;
+  }
+
+  .landingLoginActive_FebruaryA {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 77%;
+  }
+
+  .landingLoginActive_FebruaryA a {
+    margin-top: 80px;
+  }
+
+  .landingLoginInactive_FebruaryA a {
+    margin-top: 80px;
+  }
+
+  .landingLoginActive_FebruaryA button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginInactive_FebruaryA button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginActive_FebruaryA h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginInactive_FebruaryA h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginActive_FebruaryA input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_FebruaryA input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_FebruaryA {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 77%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .backgroundDiv_FebruaryA {
+    background-size: 250%;
+  }
+
+  .landingTitle_FebruaryA {
+    font-size: 24px;
+  }
+
+  .landingTitleButtonsDiv_FebruaryA button {
+    font-size: 12px;
+  }
+
+  .tabs_FebruaryA {
+    display: none;
+  }
+
+  .landingRecentlySharedLinksUncollapsed_FebruaryA {
+    display: none;
+  }
+
+  .landingLoginActive_FebruaryA {
+    left: -13%;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    transform: scale(0.8);
+    width: 320px;
+  }
+
+  .landingLoginActive_FebruaryA a {
+    margin-top: 80px;
+  }
+
+  .landingLoginInactive_FebruaryA a {
+    margin-top: 80px;
+  }
+
+  .landingLoginActive_FebruaryA button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginInactive_FebruaryA button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .landingLoginActive_FebruaryA h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginInactive_FebruaryA h3 {
+    font-size: 18px;
+  }
+
+  .landingLoginActive_FebruaryA input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_FebruaryA input {
+    margin-left: 17px;
+  }
+
+  .landingLoginInactive_FebruaryA {
+    left: -13%;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    transform: scale(0.8);
+    width: 320px;
+  }
+}

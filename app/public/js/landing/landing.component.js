@@ -13,7 +13,7 @@
       const vm = this;
 
       vm.$onInit = onInit;
-      vm.monthSelect = '_JanuaryC';
+      vm.monthSelect = '_FebruaryA';
       vm.userLoggedIn = false;
       vm.userLoginActive = false;
       vm.activateUserLogin = activateUserLogin;
@@ -419,7 +419,10 @@
             vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/nun-4018982_1280.png'
             break;
           case('_JanuaryC'):
-          vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/job-3506038_1280.png';
+            vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/job-3506038_1280.png';
+            break;
+          case('_FebruaryA'):
+          vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_png_by_piccolapersempre_dbuithu-fullview.png';
             break;
           default:
             alert('UNSUPPORTED MONTH SELECT for LOGO');
