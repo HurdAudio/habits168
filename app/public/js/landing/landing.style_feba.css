@@ -391,6 +391,11 @@
   margin: 10px 5px 0 15px; */
 }
 @media only screen and (max-width: 1024px) {
+
+  .landingTitleButtonsDiv_FebruaryA {
+    padding: 65px 5px 5px 10%;
+  }
+
   .backgroundDiv_FebruaryA {
     background-size: 400%;
   }
@@ -413,6 +418,11 @@
 }
 
 @media only screen and (max-width: 823px) {
+
+  .landingTitleButtonsDiv_FebruaryA {
+    padding: 65px 5px 5px 10%;
+  }
+
   .landingTitle_FebruaryA {
     font-size: 18px;
   }
@@ -431,6 +441,15 @@
 }
 
 @media only screen and (max-width: 768px) {
+
+  .landingTitleButtonsDiv_FebruaryA {
+    padding: 65px 5px 5px 10%;
+  }
+  
+
+  .landingTitleButtonsDiv_FebruaryA {
+    padding: 65px 5px 5px 10%;
+  }
 
   .landingTitle_FebruaryA {
     font-size: 18px;
@@ -456,6 +475,10 @@
 
   .landingTitle_FebruaryA {
     font-size: 24px;
+  }
+
+  .landingTitleButtonsDiv_FebruaryA {
+    padding: 65px 5px 5px 10%;
   }
 
   .landingTitleButtonsDiv_FebruaryA button {
@@ -523,12 +546,21 @@
 }
 
 @media only screen and (max-width: 731px) {
+
+  .landingTitleButtonsDiv_FebruaryA {
+    padding: 65px 5px 5px 10%;
+  }
+
   .backgroundDiv_FebruaryA {
     background-size: 250%;
   }
 
   .landingTitle_FebruaryA {
     font-size: 24px;
+  }
+
+  .landingTitleButtonsDiv_FebruaryA {
+    padding: 65px 5px 5px 10%;
   }
 
   .landingTitleButtonsDiv_FebruaryA button {
@@ -596,12 +628,21 @@
 }
 
 @media only screen and (max-width: 640px) {
+
+  .landingTitleButtonsDiv_FebruaryA {
+    padding: 65px 5px 5px 10%;
+  }
+
   .backgroundDiv_FebruaryA {
     background-size: 250%;
   }
 
   .landingTitle_FebruaryA {
     font-size: 24px;
+  }
+
+  .landingTitleButtonsDiv_FebruaryA {
+    padding: 65px 5px 5px 10%;
   }
 
   .landingTitleButtonsDiv_FebruaryA button {
@@ -669,12 +710,20 @@
 }
 
 @media only screen and (max-width: 568px) {
+  .landingTitleButtonsDiv_FebruaryA {
+    padding: 65px 5px 5px 10%;
+  }
+
   .backgroundDiv_FebruaryA {
     background-size: 250%;
   }
 
   .landingTitle_FebruaryA {
     font-size: 24px;
+  }
+
+  .landingTitleButtonsDiv_FebruaryA {
+    padding: 65px 5px 5px 10%;
   }
 
   .landingTitleButtonsDiv_FebruaryA button {
@@ -754,6 +803,10 @@
     font-size: 24px;
   }
 
+  .landingTitleButtonsDiv_FebruaryA {
+    padding: 65px 5px 5px 10%;
+  }
+
   .landingTitleButtonsDiv_FebruaryA button {
     font-size: 12px;
   }
@@ -824,6 +877,10 @@
 
   .landingTitle_FebruaryA {
     font-size: 24px;
+  }
+
+  .landingTitleButtonsDiv_FebruaryA {
+    padding: 65px 5px 5px 10%;
   }
 
   .landingTitleButtonsDiv_FebruaryA button {
@@ -898,6 +955,10 @@
     font-size: 24px;
   }
 
+  .landingTitleButtonsDiv_FebruaryA {
+    padding: 65px 5px 5px 10%;
+  }
+
   .landingTitleButtonsDiv_FebruaryA button {
     font-size: 12px;
   }
@@ -970,6 +1031,10 @@
     font-size: 24px;
   }
 
+  .landingTitleButtonsDiv_FebruaryA {
+    padding: 65px 5px 5px 10%;
+  }
+
   .landingTitleButtonsDiv_FebruaryA button {
     font-size: 12px;
   }
@@ -1040,6 +1105,10 @@
 
   .landingTitle_FebruaryA {
     font-size: 24px;
+  }
+
+  .landingTitleButtonsDiv_FebruaryA {
+    padding: 65px 5px 5px 10%;
   }
 
   .landingTitleButtonsDiv_FebruaryA button {
