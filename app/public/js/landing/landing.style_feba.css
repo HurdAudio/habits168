@@ -251,9 +251,10 @@
 }
 
 .landingLoginActive_FebruaryA {
-  display: none;
-  /* background: #121419;
-  color: #dddedb;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/landing/february/buttons/fabric_5_by_bukashka_d4h4xq9-fullview.jpg);
+  background-size: cover;
+  color: #010300;
+  filter: drop-shadow(10px 15px 4px #000100);
   font-family: 'Overpass', sans-serif;
   font-size: 42px;
   height: 400px;
@@ -264,93 +265,85 @@
   top: 200px;
   transition: all 0.8s linear;
   width: 40%;
-  z-index: 6; */
+  z-index: 6;
 }
 
 .landingLoginInactive_FebruaryA {
-  display: none;
-  /* background: #121419;
-  color: #dddedb;
-  font-family: 'Overpass', sans-serif;
-  font-size: 42px;
-  height: 400px;
-  opacity: 0;
-  padding: 32px;
+  height: 0;
   position: absolute;
-  right: 60%;
-  top: 200px;
-  width: 2%;
   transition: all 0.8s linear;
-  z-index: -6; */
+  width: 0;
+  z-index: -6;
 }
 
 .landingLoginActive_FebruaryA input {
-  /* color: #121419;
+  color: #010300;
   font-family: 'Overpass', sans-serif;
   font-size: 24px;
   margin: 25px 5px 10px 45px;
+  outline: #909e8a;
   padding: 1px 1px 1px 15px;
-  width: 75%; */
+  width: 75%;
 }
 
 .landingLoginInactive_FebruaryA input {
-  /* color: #121419;
-  font-family: 'Overpass', sans-serif;
-  font-size: 24px;
-  margin: 25px 5px 10px 45px;
-  padding: 1px 1px 1px 15px;
-  width: 75%; */
+  display: none;
 }
 
 .landingLoginActive_FebruaryA button {
-  /* background: #bbbcb6;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/landing/february/buttons/fabric_texture_by_lyssi_d1o9dq1-fullview.jpg);
+  background-size: cover;
   border: none;
-  color: #1d1b20;
+  color: #093343;
   cursor: pointer;
+  filter: brightness(100%) drop-shadow(10px 15px 4px #000100);
   font-family: 'Overpass', sans-serif;
-  font-size: 30px;
-  margin: 30px 20px 30px 90px;
-  padding: 14px;
-  transform: rotateY(0deg) skewX(-15deg);
-  transition: all 0.8s linear; */
+  font-size: 24px;
+  margin: 20px 70px;
+  outline-color: #3d5933;
+  padding: 15px;
+  transform: scale(1);
+  transition: all 0.1s linear;
 }
 
 .landingLoginActive_FebruaryA button:hover {
-  /* background: #222c36;
-  color: #dddedb;
-  transform: rotateY(0deg) skewX(-10deg);
-  transition: all 0.8s linear; */
+  filter: brightness(110%) drop-shadow(9px 14px 3px #000100);
+  transition: all 0.1s linear;
+}
+
+.landingLoginActive_FebruaryA button:active {
+  filter: brightness(110%) drop-shadow(0 0 0 #000100);
+  transition: all 0.1s linear;
 }
 
 .landingLoginInactive_FebruaryA button {
   display: none;
+  transform: scale(0.1);
+  transition: all 0.1s linear;
 }
 
 .landingLoginActive_FebruaryA a {
-  /* color: #dddedb;
+  color: #093343;
   cursor: pointer;
   float: right;
   font-family: 'Overpass', sans-serif;
-  font-size: 18px;
+  font-size: 24px;
   margin: 30px 0 10px 0;
   position: relative;
-  text-decoration: none; */
+  text-decoration: none;
 }
 
 .landingLoginInactive_FebruaryA a {
-  /* color: #dddedb;
-  cursor: pointer;
-  float: right;
-  font-family: 'Overpass', sans-serif;
-  font-size: 18px;
-  margin: 30px 0 10px 0;
-  position: relative;
-  text-decoration: none; */
+  display: none;
 }
 
-.landingLoginActive_FebruaryA h3 {
-  /* color: #cedce7;
-  margin: 35px 20px 1px 20px; */
+.landingLoginActive_FebruaryA h2 {
+  color: #010300;
+  margin: 25px 20px 1px 20px;
+}
+
+.landingLoginInactive_FebruaryA h2 {
+  display: none;
 }
 
 .tabs_FebruaryA {
