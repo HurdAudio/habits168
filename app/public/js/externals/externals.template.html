@@ -1,0 +1,36 @@
+<div class="externalsBackgroundDiv{{$ctrl.externalsMonth}}"></div>
+<div class="{{$ctrl.externalsContainerState}}">
+    <div class="externalsTitleBar{{$ctrl.externalsMonth}}">
+
+      <img class="externalsLogo{{$ctrl.externalsMonth}}" src="{{$ctrl.externalsLogoPath}}" ng-click="$ctrl.navigateToHub()">
+      <h3 class="externalsTitle{{$ctrl.externalsMonth}}">Externals Management</h3>
+    </div>
+    <div class="externalsBody{{$ctrl.externalsMonth}}">
+
+      <h3 class="externalsIssuesHeader{{$ctrl.externalsMonth}}">Physical Subscriptions/Issues:</h3>
+
+      <main class="externalManagementContainer{{$ctrl.externalsMonth}}" ng-repeat="issue in $ctrl.userExternals.subscriptions">
+
+        <!-- <div class="externalsEntryDiv{{$ctrl.externalsMonth}}"> -->
+
+        <i class="fas fa-trash-alt externalsDelete{{$ctrl.externalsMonth}}"></i>
+
+          <label class="externalsSwitch{{issue.userRead}}{{$ctrl.externalsMonth}}" ng-click="$ctrl.toggleReadStatus(issue.uuid)">
+            <p class="externalsSwitchText{{$ctrl.externalsMonth}}" ng-if="issue.userRead">Read</p>
+            <p class="externalsSwitchText{{$ctrl.externalsMonth}}" ng-if="!issue.userRead">Unread</p>
+            <span class="externalsSwitchHandle{{issue.userRead}}{{$ctrl.externalsMonth}}"></span>
+
+          </label>
+          <img class="externalsImage{{$ctrl.externalsMonth}}" src="{{issue.image}}">
+
+          <p class="externalsReadingDatas{{$ctrl.externalsMonth}}">{{issue.title}}: {{issue.description}}</p>
+        <!-- </div> -->
+      </main>
+      <div class="externalsAddNewContentDiv{{$ctrl.externalsMonth}}">
+
+        <i class="fas fa-plus externalsAddContentIcon{{$ctrl.externalsMonth}}"></i>
+        <p class="externalsAddNewText{{$ctrl.externalsMonth}}">Add New</p>
+      </div>
+    </div>
+
+</div>

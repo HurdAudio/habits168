@@ -1,0 +1,185 @@
+.externalsBackgroundDiv_JanuaryA {
+  background: url(https://habits168-hurdaudio.s3.amazonaws.com/externals/backdrop/ice_by_mrschibi_d8iojyp-fullview.jpg);
+  background-size: cover;
+  height: 100%;
+  left: 0;
+  opacity: 0.6;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.externalsContainerActive_JanuaryA {
+  filter: blur(0px);
+}
+
+.externalsTitleBar_JanuaryA {
+  background: #dcd6d8;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: 'Poppins', sans-serif;
+  height: 12vh;
+  justify-content: flex-start;
+  opacity: 0.9;
+  top: 0;
+  width: 100%;
+}
+
+.externalsLogo_JanuaryA {
+  cursor: pointer;
+  height: 72px;
+  margin: 16px 48px 16px 26px;
+  opacity: 0.5;
+  width: 5%;
+}
+
+.externalsTitle_JanuaryA {
+  color: #1b0c07;
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  transform: translateX(0.5vw) translateY(6.5vh);
+}
+
+.externalsBody_JanuaryA {
+  background: #515150;
+  height: 87vh;
+  opacity: 0.9;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 24px;
+  width: 100%;
+}
+
+.externalsIssuesHeader_JanuaryA {
+  color: #dcd6d8;
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+}
+
+.externalManagementContainer_JanuaryA {
+  display: grid;
+  grid-template-columns: [leftBuffer] 10px [deleteColumn] 50px [readColumn] 120px [imageColumn] 150px [issueColumn] 1fr [rightBuffer] 10px;
+  grid-template-rows: [externalContent] auto [addNewContent] auto;
+  height: auto;
+  margin: 30px 0 15px 0;
+  width: 100%;
+}
+
+.externalsSwitchtrue_JanuaryA {
+  background: #a28f89;
+  border-radius: 41%;
+  cursor: pointer;
+  display: inline-block;
+  grid-column: readColumn / imageColumn;
+  grid-row: externalContent;
+  height: 25px;
+  margin: 35px 0 0 15px;
+  position: relative;
+  transition: all 0.3s linear;
+  width: 60px;
+}
+
+.externalsSwitchfalse_JanuaryA {
+  background: #dcd6d8;
+  border-radius: 41%;
+  cursor: pointer;
+  display: inline-block;
+  grid-column: readColumn / imageColumn;
+  grid-row: externalContent;
+  height: 25px;
+  margin: 35px 0 0 15px;
+  position: relative;
+  transition: all 0.3s linear;
+  width: 60px;
+}
+
+.externalsSwitchHandletrue_JanuaryA {
+  background: #451f12;
+  border-radius: 100%;
+  bottom: 0;
+  height: 25px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 0.3s linear;
+  width: 30px;
+}
+
+.externalsSwitchHandlefalse_JanuaryA {
+  background: #451f12;
+  border-radius: 100%;
+  bottom: 0;
+  height: 25px;
+  left: 30px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 0.3s linear;
+  width: 30px;
+}
+
+.externalsSwitchText_JanuaryA {
+  color: #dcd6d8;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  margin: 40px 0 0 0;
+}
+
+.externalsImage_JanuaryA {
+  grid-column: imageColumn / issueColumn;
+  grid-row: externalContent;
+  max-height: 100px;
+  width: 80px;
+}
+
+.externalsReadingDatas_JanuaryA {
+  color: #dcd6d8;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  grid-column: issueColumn / rightBuffer;
+  grid-row: externalContent;
+  margin: 25px 0 0 0;
+}
+
+.externalsDelete_JanuaryA {
+  align-self: center;
+  color: #dcd6d8;
+  cursor: pointer;
+  font-size: 30px;
+  grid-column: deleteColumn / readColumn;
+  grid-row: externalContent;
+  justify-content: center;
+  transition: all 0.3s linear;
+}
+
+.externalsDelete_JanuaryA:hover {
+  color: #451f12;
+  transition: all 0.3s linear;
+}
+
+.externalsAddNewContentDiv_JanuaryA {
+  color: #dcd6d8;
+  cursor: pointer;
+  margin: 70px 0 0 330px;
+  width: auto;
+}
+
+.externalsAddContentIcon_JanuaryA {
+  float: left;
+  font-size: 42px;
+  margin: 0 30px 0 0;
+  position: float;
+}
+
+.externalsAddNewText_JanuaryA {
+  float: left;
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  margin: 5px 0 0 0;
+}
