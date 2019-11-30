@@ -487,3 +487,80 @@
   width: 8%;
   z-index: 1;
 }
+
+@media only screen and (max-width: 414px) {
+
+  .externalsTitle_JanuaryA {
+    font-size: 24px;
+  }
+
+  .externalsIssuesHeader_JanuaryA {
+    font-size: 18px;
+  }
+
+  .externalManagementContainer_JanuaryA {
+    grid-template-columns: [leftBuffer] 1px [deleteColumn] 25px [readColumn] 60px [imageColumn] 80px [issueColumn] 50% [rightBuffer] 14px;
+    grid-template-rows: [externalContent] auto [addNewContent] auto;
+    margin: 15px 0 7px 0;
+  }
+
+  .externalsDelete_JanuaryA {
+    font-size: 18px;
+  }
+
+  .externalsImage_JanuaryA {
+    margin-left: 15px;
+    max-height: 50px;
+    width: 40px;
+  }
+
+  .externalsSwitchfalse_JanuaryA {
+    height: 25px;
+    margin: 15px 15px 0 5px;
+    transform: scale(0.5);
+    width: 60px;
+  }
+
+  .externalsSwitchtrue_JanuaryA {
+    height: 25px;
+    margin: 15px 15px 0 5px;
+    transform: scale(0.5);
+    width: 60px;
+  }
+
+  .externalsReadingDatas_JanuaryA {
+    font-size: 12px;
+    margin: 25px 0 0 0;
+  }
+
+  .externalsAddNewContentDiv_JanuaryA {
+    margin: 70px 0 0 10px;
+  }
+
+  .externalsDeleteGuardrailActive_JanuaryA {
+    left: 0;
+    width: 100%;
+  }
+
+  .externalsAddNewExternalsDialogActive_JanuaryA {
+    left: 0;
+    width: 100%;
+  }
+
+  .externalsAddImage_JanuaryA {
+    margin: 0 0 0 36px;
+    max-height: 120px;
+    width: 75px;
+  }
+
+  .externalsAddUserForm_JanuaryA textarea {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+
+  .externalsTitle_JanuaryA {
+    font-size: 18px;
+  }
+}
