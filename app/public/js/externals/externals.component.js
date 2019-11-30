@@ -60,6 +60,109 @@
         title: 'Externals'
       };
       vm.toggleReadStatus = toggleReadStatus;
+      vm.deleteGuardrail = deleteGuardrail;
+      vm.externalsGuardrailState = 'externalsDeleteGuardrailInactive' + vm.externalsMonth;
+      vm.cancelGuardrail = cancelGuardrail;
+      vm.confirmGuardrail = confirmGuardrail;
+      vm.externalAddErrorMessage = '';
+      vm.addCandidateImage = 'https://habits168-hurdaudio.s3.amazonaws.com/externals/magazine-33602_1280.png';
+      vm.addCandidateTitle = '';
+      vm.addCandidateDescription = '';
+      vm.updateTitle = updateTitle;
+      vm.updateDescription = updateDescription;
+      vm.updateImage = updateImage;
+      vm.externalsAddCancel = externalsAddCancel;
+      vm.externalsAddDialogState = 'externalsAddNewExternalsDialogInactive' + vm.externalsMonth;
+      vm.activateAddDialog = activateAddDialog;
+      vm.externalsAddSubmit = externalsAddSubmit;
+
+      function externalsAddSubmit() {
+        const title = document.getElementById('inputTitle').value;
+        const description = document.getElementById('inputDescription').value;
+        let link = document.getElementById('inputImage').value;
+
+        if ((title.trim() === '') && (description.trim() === '') && (link.trim() === '')) {
+          vm.externalAddErrorMessage = "Please enter external reading data.";
+          return;
+        }
+        if (title.trim() === '') {
+          vm.externalAddErrorMessage = "Please enter a title";
+          return;
+        }
+        if (link.trim() === '') {
+          link = 'https://habits168-hurdaudio.s3.amazonaws.com/externals/magazine-33602_1280.png';
+        }
+        vm.userExternals.subscriptions.push({
+          uuid: ((Math.random() * 1000000) + 1),
+          author: null,
+          description: description,
+          link: null,
+          image: link,
+          items: null,
+          rss: null,
+          title: title,
+          userRead: false
+        });
+        externalsAddCancel();
+
+      }
+
+      function activateAddDialog() {
+        vm.externalsAddDialogState = 'externalsAddNewExternalsDialogActive' + vm.externalsMonth;
+        vm.externalsContainerState = "externalsContainerInactive" + vm.externalsMonth;
+      }
+
+      function externalsAddCancel() {
+        vm.addCandidateImage = 'https://habits168-hurdaudio.s3.amazonaws.com/externals/magazine-33602_1280.png';
+        vm.addCandidateTitle = '';
+        vm.addCandidateDescription = '';
+        document.getElementById('inputImage').value = '';
+        document.getElementById('inputTitle').value = '';
+        document.getElementById('inputDescription').value = '';
+        vm.externalAddErrorMessage = '';
+        vm.externalsAddDialogState = 'externalsAddNewExternalsDialogInactive' + vm.externalsMonth;
+        vm.externalsContainerState = "externalsContainerActive" + vm.externalsMonth;
+      }
+
+      function updateImage() {
+        let link = document.getElementById('inputImage').value;
+
+        if (link === '') {
+          vm.addCandidateImage = 'https://habits168-hurdaudio.s3.amazonaws.com/externals/magazine-33602_1280.png';
+        } else {
+          vm.addCandidateImage = link;
+        }
+      }
+
+      function updateTitle() {
+        vm.addCandidateTitle = document.getElementById('inputTitle').value;
+      }
+
+      function updateDescription() {
+        vm.addCandidateDescription = document.getElementById('inputDescription').value;
+      }
+
+      function confirmGuardrail() {
+        cancelGuardrail();
+        for (let i = 0; i < vm.userExternals.subscriptions.length; i++) {
+          if (vm.userExternals.subscriptions[i].uuid === vm.externalsDeleteCandidate.uuid) {
+            vm.userExternals.subscriptions.splice(i, 1);
+            return;
+          }
+        }
+      }
+
+      function cancelGuardrail() {
+        vm.externalsGuardrailState = 'externalsDeleteGuardrailInactive' + vm.externalsMonth;
+        vm.externalsContainerState = "externalsContainerActive" + vm.externalsMonth;
+      }
+
+      function deleteGuardrail(issue) {
+        console.log(issue);
+        vm.externalsDeleteCandidate = issue;
+        vm.externalsGuardrailState = 'externalsDeleteGuardrailActive' + vm.externalsMonth;
+        vm.externalsContainerState = "externalsContainerInactive" + vm.externalsMonth;
+      }
 
       function toggleReadStatus(uuid) {
         for (let i = 0; i < vm.userExternals.subscriptions.length; i++) {

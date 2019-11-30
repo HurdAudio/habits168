@@ -14,7 +14,13 @@
 }
 
 .externalsContainerActive_JanuaryA {
-  filter: blur(0px);
+  filter: blur(0px) hue-rotate(0deg);
+  transform: all 0.5s linear;
+}
+
+.externalsContainerInactive_JanuaryA {
+  filter: blur(5px) hue-rotate(180deg);
+  transform: all 0.5s linear;
 }
 
 .externalsTitleBar_JanuaryA {
@@ -182,4 +188,269 @@
   font-family: 'Poppins', sans-serif;
   font-size: 30px;
   margin: 5px 0 0 0;
+}
+
+.externalsDeleteGuardrailActive_JanuaryA {
+  background: #9b9d92;
+  border: 1px solid #2c2d22;
+  height: auto;
+  left: 25%;
+  opacity: 1;
+  position: absolute;
+  top: 15%;
+  transform: scale(1);
+  transition: all 0.3s linear;
+  width: auto;
+  z-index: 10;
+}
+
+.externalsDeleteGuardrailInactive_JanuaryA {
+  background: #9b9d92;
+  border: 1px solid #2c2d22;
+  height: auto;
+  left: -25%;
+  opacity: 0;
+  position: absolute;
+  top: 15%;
+  transform: scale(0.01);
+  transition: all 0.3s linear;
+  width: auto;
+  z-index: -10;
+}
+
+.externalsDeleteGuardrailTitleBar_JanuaryA {
+  background: #a28f89;
+  border-bottom: 1px solid #2c2d22;
+  height: auto;
+  padding: 6px 0;
+  width: 100%;
+}
+
+.externalsDeleteGuardrailTitle_JanuaryA {
+  color: #1b0c07;
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  margin-left: 40px;
+}
+
+.externalsGuardrailContainer_JanuaryA {
+  background: transparent;
+  display: grid;
+  grid-template-columns: [leftB] 10px [imgColumn] 120px [infoColumn] 1fr [rightB] 10px;
+  grid-template-rows: [title] auto [query] auto [buttons] auto;
+  height: auto;
+  padding: 12px;
+  width: 100%;
+}
+
+.externalsGuardrailBodyText_JanuaryA {
+  color: #1b0c07;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  grid-column: imgColumn / rightB;
+  grid-row: title;
+}
+
+.externalsGuardrailImage_JanuaryA {
+  grid-column: imgColumn / infoColumn;
+  grid-row: query;
+  margin: 20px 0;
+  width: 80px;
+}
+
+.externalsGuardrailInfos_JanuaryA {
+  color: #1b0c07;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  grid-column: infoColumn / rightB;
+  grid-row: query;
+  margin: 40px 0 20px 0;
+}
+
+.externalsGuardrailButtons_JanuaryA {
+  background: transparent;
+  grid-column: infoColumn / rightB;
+  grid-row: buttons;
+  height: auto;
+  justify-content: center;
+  margin: 0 0 0 16%;
+}
+
+.externalsGuardrailButtons_JanuaryA button {
+  background: #cdcec9;
+  color: #1b0c07;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  margin: 10px 40px 20px 0;
+  outline: #2c2d22;
+  transform: skewX(-15deg);
+  transition: all 0.6s linear;
+  width: 70px;
+}
+
+.externalsGuardrailButtons_JanuaryA button:hover {
+  background: #451f12;
+  color: #e5e5e4;
+  transform: skewX(-5deg);
+  transition: all 0.6s linear;
+}
+
+.externalsGuardrailButtons_JanuaryA button:active {
+  background: #494546;
+  transition: all 0.1s linear;
+}
+
+.externalsAddNewExternalsDialogActive_JanuaryA {
+  background: #9b9d92;
+  border: 1px solid #2c2d22;
+  height: auto;
+  left: 10%;
+  opacity: 1;
+  position: absolute;
+  top: 0.5%;
+  transform: scale(1);
+  transition: all 0.6s linear;
+  width: 80%;
+  z-index: 10;
+}
+
+.externalsAddNewExternalsDialogInactive_JanuaryA {
+  background: #9b9d92;
+  border: 1px solid #2c2d22;
+  height: auto;
+  left: -90%;
+  opacity: 0;
+  position: absolute;
+  top: 0.5%;
+  transform: scale(0.01);
+  transition: all 0.6s linear;
+  width: 80%;
+  z-index: -10;
+}
+
+.externalsAddNewTitleBar_JanuaryA {
+  background: #a28f89;
+  border-bottom: 1px solid #2c2d22;
+  height: auto;
+  padding: 6px 0;
+  width: 100%;
+}
+
+.externalsAddNewTitle_JanuaryA {
+  color: #1b0c07;
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  margin-left: 40px;
+}
+
+.externalsAddNewBodyContainer_JanuaryA {
+  display: grid;
+  grid-template-columns: [leftAdd] 10px [formInput] 1fr [displayAdd] 1fr [rightAdd] 10px;
+  grid-template-rows: [errorMessaging] auto [userAdds] auto [buttonsAdds] auto;
+  height: auto;
+}
+
+.externalsAddErrorField_JanuaryA {
+  color: #451f12;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  grid-column: formInput / rightAdd;
+  grid-row: errorMessaging;
+  margin: 15px 30px;
+}
+
+.externalsAddUserForm_JanuaryA {
+  background: #dcd6d8;
+  grid-column: formInput / displayAdd;
+  grid-row: userAdds;
+  height: auto;
+  margin: 0 0 30px 0;
+  padding: 24px 0;
+}
+
+.externalsAddUserForm_JanuaryA label {
+  color: #1b0c07;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  margin: 15px 24px;
+}
+
+.externalsAddUserForm_JanuaryA input[type="text"] {
+  background: #dcd6d8;
+  border: 1px solid #1f210e;
+  color: #1b0c07;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  margin: 5px 24px;
+  outline: #1f210e;
+  padding: 0 5px;
+  width: 90%;
+}
+
+.externalsAddUserForm_JanuaryA textarea {
+  background: #dcd6d8;
+  border: 1px solid #1f210e;
+  color: #1b0c07;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  margin: 5px 24px;
+  outline: #1f210e;
+  padding: 0 5px;
+  width: 90%;
+}
+
+.externalsDisplayNewAddition_JanuaryA {
+  background: transparent;
+  grid-column: displayAdd / rightAdd;
+  grid-row: userAdds;
+  height: auto;
+  margin: 0 0 30px 0;
+  padding: 24px 0;
+}
+
+.externalsAddImage_JanuaryA {
+  margin: 0 0 0 36px;
+  max-height: 240px;
+  width: 150px;
+}
+
+.externalsAddCandidateTitle_JanuaryA {
+  color: #1b0c07;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  margin: 24px;
+}
+
+.externalsAddExternalsButtons_JanuaryA {
+  background: transparent;
+  height: auto;
+  grid-column: formInput / rightAdd;
+  grid-row: buttonsAdds;
+  margin: 0 0 30px 0;
+}
+
+.externalsAddExternalsButtons_JanuaryA button {
+  background: #cdcec9;
+  color: #1b0c07;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  margin: 10px 40px 20px 6%;
+  outline: #2c2d22;
+  transform: skewX(-15deg);
+  transition: all 0.6s linear;
+  width: 160px;
+}
+
+.externalsAddExternalsButtons_JanuaryA button:hover {
+  background: #451f12;
+  color: #e5e5e4;
+  transform: skewX(-5deg);
+  transition: all 0.6s linear;
+}
+
+.externalsAddExternalsButtons_JanuaryA button:active {
+  background: #494546;
+  transition: all 0.1s linear;
 }
