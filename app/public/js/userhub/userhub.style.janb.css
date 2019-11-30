@@ -497,9 +497,10 @@
 }
 
 .hubReaderTodayLabel_JanuaryB {
+  background: #4b8eb8;
   color: #dfdde8;
   font-family: 'Nanum Gothic', serif;
-  font-size: 12px;
+  font-size: 18px;
 }
 
 .hubReaderDayButton_JanuaryB {

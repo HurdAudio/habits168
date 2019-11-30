@@ -489,7 +489,7 @@
 .hubReaderTodayLabel_JanuaryA {
   color: #08252e;
   font-family: 'Markazi Text', serif;
-  font-size: 30px;
+  font-size: 24px;
 }
 
 .hubReaderDayButton_JanuaryA {
@@ -603,6 +603,8 @@
   width: 8%;
   z-index: -1;
 }
+
+
 
 .hubReaderDay3BlockActive_JanuaryA {
   background: #82a1b5;

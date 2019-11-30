@@ -454,3 +454,36 @@
   background: #494546;
   transition: all 0.1s linear;
 }
+
+.hubReaderExternalsDay2BlockInactive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/externals/backdrop/ice_by_mrschibi_d8iojyp-fullview.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-230%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderExternalsDay2BlockActive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/externals/backdrop/ice_by_mrschibi_d8iojyp-fullview.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+  width: 8%;
+  z-index: 1;
+}
