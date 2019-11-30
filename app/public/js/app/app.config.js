@@ -45,6 +45,12 @@
         url: '/monday/:userUuid',
         parent: 'app',
         component: 'monday'
+      })
+      .state({
+        name: 'externals',
+        url: '/externals/:userUuid',
+        parent: 'app',
+        component: 'externals'
       });
       // .state({
       //   name: 'emailconfirm',

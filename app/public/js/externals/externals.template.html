@@ -1,0 +1,97 @@
+<div class="externalsBackgroundDiv{{$ctrl.externalsMonth}}"></div>
+<div class="{{$ctrl.externalsContainerState}}">
+    <div class="externalsTitleBar{{$ctrl.externalsMonth}}">
+
+      <img class="externalsLogo{{$ctrl.externalsMonth}}" src="{{$ctrl.externalsLogoPath}}" ng-click="$ctrl.navigateToHub()">
+      <h3 class="externalsTitle{{$ctrl.externalsMonth}}">Externals Management</h3>
+    </div>
+    <div class="externalsBody{{$ctrl.externalsMonth}}">
+
+      <h3 class="externalsIssuesHeader{{$ctrl.externalsMonth}}">Physical Subscriptions/Issues:</h3>
+
+      <main class="externalManagementContainer{{$ctrl.externalsMonth}}" ng-repeat="issue in $ctrl.userExternals.subscriptions">
+
+        <!-- <div class="externalsEntryDiv{{$ctrl.externalsMonth}}"> -->
+
+        <i class="fas fa-trash-alt externalsDelete{{$ctrl.externalsMonth}}" ng-click="$ctrl.deleteGuardrail(issue)"></i>
+
+          <label class="externalsSwitch{{issue.userRead}}{{$ctrl.externalsMonth}}" ng-click="$ctrl.toggleReadStatus(issue.uuid)">
+            <p class="externalsSwitchText{{$ctrl.externalsMonth}}" ng-if="issue.userRead">Read</p>
+            <p class="externalsSwitchText{{$ctrl.externalsMonth}}" ng-if="!issue.userRead">Unread</p>
+            <span class="externalsSwitchHandle{{issue.userRead}}{{$ctrl.externalsMonth}}"></span>
+
+          </label>
+          <img class="externalsImage{{$ctrl.externalsMonth}}" src="{{issue.image}}">
+
+          <p class="externalsReadingDatas{{$ctrl.externalsMonth}}">{{issue.title}}: {{issue.description}}</p>
+        <!-- </div> -->
+      </main>
+      <div class="externalsAddNewContentDiv{{$ctrl.externalsMonth}}" ng-click="$ctrl.activateAddDialog()">
+
+        <i class="fas fa-plus externalsAddContentIcon{{$ctrl.externalsMonth}}"></i>
+        <p class="externalsAddNewText{{$ctrl.externalsMonth}}">Add New</p>
+      </div>
+    </div>
+
+</div>
+
+<div class="{{$ctrl.externalsGuardrailState}}">
+
+  <div class="externalsDeleteGuardrailTitleBar{{$ctrl.externalsMonth}}">
+
+    <p class="externalsDeleteGuardrailTitle{{$ctrl.externalsMonth}}">Confirm Delete</p>
+  </div>
+  <div class="externalsGuardrailContainer{{$ctrl.externalsMonth}}">
+
+    <p class="externalsGuardrailBodyText{{$ctrl.externalsMonth}}">Are you sure you want to delete? </p>
+    <img class="externalsGuardrailImage{{$ctrl.externalsMonth}}" src="{{$ctrl.externalsDeleteCandidate.image}}">
+    <p class="externalsGuardrailInfos{{$ctrl.externalsMonth}}">{{$ctrl.externalsDeleteCandidate.title}}: {{$ctrl.externalsDeleteCandidate.description}}</p>
+
+    <div class="externalsGuardrailButtons{{$ctrl.externalsMonth}}">
+
+      <button ng-click="$ctrl.confirmGuardrail()">yes</button>
+      <button ng-click="$ctrl.cancelGuardrail()">no</button>
+    </div>
+  </div>
+</div>
+
+<div class="{{$ctrl.externalsAddDialogState}}">
+
+  <div class="externalsAddNewTitleBar{{$ctrl.externalsMonth}}">
+
+    <p class="externalsAddNewTitle{{$ctrl.externalsMonth}}">Add New External Reading</p>
+  </div>
+
+  <div class="externalsAddNewBodyContainer{{$ctrl.externalsMonth}}">
+
+    <p class="externalsAddErrorField{{$ctrl.externalsMonth}}">{{$ctrl.externalAddErrorMessage}}</p>
+
+    <form class="externalsAddUserForm{{$ctrl.externalsMonth}}">
+
+      <label>Title:
+        <textarea id="inputTitle" placeholder="example: The New Yorker - Dec. 4, 2019" rows="3" ng-keyup="$ctrl.updateTitle()"></textarea>
+      </label>
+
+      <label>Description:
+        <textarea id="inputDescription" placeholder="example: The Fiction Issue" rows="3" ng-keyup="$ctrl.updateDescription()"></textarea>
+      </label>
+
+      <label>Image Link:
+        <textarea id="inputImage" placeholder="example: https://upload.wikimedia.org/wikipedia/en/thumb/b/b1/TV_Guide_magazine_cover.png/225px-TV_Guide_magazine_cover.png" rows="5" ng-keyup="$ctrl.updateImage()"></textarea>
+      </label>
+    </form>
+    <div class="externalsDisplayNewAddition{{$ctrl.externalsMonth}}">
+
+      <img class="externalsAddImage{{$ctrl.externalsMonth}}" src="{{$ctrl.addCandidateImage}}">
+      <p class="externalsAddCandidateTitle{{$ctrl.externalsMonth}}">{{$ctrl.addCandidateTitle}}</p>
+      <p class="externalsAddCandidateTitle{{$ctrl.externalsMonth}}">{{$ctrl.addCandidateDescription}}</p>
+    </div>
+    <div class="externalsAddExternalsButtons{{$ctrl.externalsMonth}}">
+
+      <button ng-click="$ctrl.externalsAddSubmit()">submit</button>
+      <button ng-click="$ctrl.externalsAddCancel()">cancel</button>
+    </div>
+  </div>
+
+
+</div>

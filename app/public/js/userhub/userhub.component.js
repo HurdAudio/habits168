@@ -13,7 +13,7 @@
       const vm = this;
 
       vm.$onInit = onInit;
-      vm.monthSelect = '_JanuaryB';
+      vm.monthSelect = '_JanuaryA';
       vm.userLogout = userLogout;
       vm.hubShareTabState = 'hubTabActive' + vm.monthSelect;
       vm.hubReaderTabState = 'hubTabInactive' + vm.monthSelect;
@@ -379,7 +379,7 @@
       vm.subscriptionToggle = 'off';
       vm.toggleSubscriptionManagement = toggleSubscriptionManagement;
       vm.manageBlockToggleStatus = 'hubReaderDay1BlockInactive' + vm.monthSelect;
-      vm.externalsBlockToggleStatus = 'hubReaderDay2BlockInactive' + vm.monthSelect;
+      vm.externalsBlockToggleStatus = 'hubReaderExternalsDay2BlockInactive' + vm.externalsMonth;
       vm.dailiesBlockToggleStatus = 'hubReaderDay3BlockInactive' + vm.monthSelect;
       vm.browseFeedsBlockToggleStatus = 'hubReaderDay4BlockInactive' + vm.monthSelect;
       vm.sharedBlockToggleStatus = 'hubReaderDay5BlockInactive' + vm.monthSelect;
@@ -804,6 +804,18 @@
       vm.navigateToDay = navigateToDay;
       vm.navigateToToday = navigateToToday;
       vm.mondayMonth = '_JanuaryA';
+      vm.navigateToExternals = navigateToExternals;
+      vm.externalsMonth = '_JanuaryA';
+
+      function initializeSubscriptionCards() {
+        vm.manageBlockToggleStatus = 'hubReaderDay1BlockInactive' + vm.monthSelect;
+        vm.externalsBlockToggleStatus = 'hubReaderExternalsDay2BlockInactive' + vm.externalsMonth;
+        vm.dailiesBlockToggleStatus = 'hubReaderDay3BlockInactive' + vm.monthSelect;
+        vm.browseFeedsBlockToggleStatus = 'hubReaderDay4BlockInactive' + vm.monthSelect;
+        vm.sharedBlockToggleStatus = 'hubReaderDay5BlockInactive' + vm.monthSelect;
+        vm.savedBlockToggleStatus = 'hubReaderDay6BlockInactive' + vm.monthSelect;
+        vm.miscBlockToggleStatus = 'hubReaderDay7BlockInactive' + vm.monthSelect;
+      }
 
       function initializeDayCards() {
         let days = [ 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday' ];
@@ -857,6 +869,10 @@
         let now = new Date;
 
         navigateToDay(days[now.getDay()]);
+      }
+
+      function navigateToExternals() {
+        $state.go('externals', {userUuid: vm.user.uuid});
       }
 
       function navigateToDay(day) {
@@ -1202,7 +1218,7 @@
         if (vm.subscriptionToggle === 'off') {
           vm.subscriptionToggle = 'on';
           vm.manageBlockToggleStatus = 'hubReaderDay1BlockActive' + vm.monthSelect;
-          vm.externalsBlockToggleStatus = 'hubReaderDay2BlockActive' + vm.monthSelect;
+          vm.externalsBlockToggleStatus = 'hubReaderExternalsDay2BlockActive' + vm.externalsMonth;
           vm.dailiesBlockToggleStatus = 'hubReaderDay3BlockActive' + vm.monthSelect;
           vm.browseFeedsBlockToggleStatus = 'hubReaderDay4BlockActive' + vm.monthSelect;
           vm.sharedBlockToggleStatus = 'hubReaderDay5BlockActive' + vm.monthSelect;
@@ -1211,7 +1227,7 @@
         } else {
           vm.subscriptionToggle = 'off';
           vm.manageBlockToggleStatus = 'hubReaderDay1BlockInactive' + vm.monthSelect;
-          vm.externalsBlockToggleStatus = 'hubReaderDay2BlockInactive' + vm.monthSelect;
+          vm.externalsBlockToggleStatus = 'hubReaderExternalsDay2BlockInactive' + vm.externalsMonth;
           vm.dailiesBlockToggleStatus = 'hubReaderDay3BlockInactive' + vm.monthSelect;
           vm.browseFeedsBlockToggleStatus = 'hubReaderDay4BlockInactive' + vm.monthSelect;
           vm.sharedBlockToggleStatus = 'hubReaderDay5BlockInactive' + vm.monthSelect;
@@ -1754,6 +1770,7 @@
         setFooterMessage();
         obtainUserLocationImage();
         initializeDayCards();
+        initializeSubscriptionCards();
 
       }
 

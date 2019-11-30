@@ -1,0 +1,566 @@
+.externalsBackgroundDiv_JanuaryA {
+  background: url(https://habits168-hurdaudio.s3.amazonaws.com/externals/backdrop/ice_by_mrschibi_d8iojyp-fullview.jpg);
+  background-size: cover;
+  height: 100%;
+  left: 0;
+  opacity: 0.6;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.externalsContainerActive_JanuaryA {
+  filter: blur(0px) hue-rotate(0deg);
+  transform: all 0.5s linear;
+}
+
+.externalsContainerInactive_JanuaryA {
+  filter: blur(5px) hue-rotate(180deg);
+  transform: all 0.5s linear;
+}
+
+.externalsTitleBar_JanuaryA {
+  background: #dcd6d8;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: 'Poppins', sans-serif;
+  height: 12vh;
+  justify-content: flex-start;
+  opacity: 0.9;
+  top: 0;
+  width: 100%;
+}
+
+.externalsLogo_JanuaryA {
+  cursor: pointer;
+  height: 72px;
+  margin: 16px 48px 16px 26px;
+  opacity: 0.5;
+  width: 5%;
+}
+
+.externalsTitle_JanuaryA {
+  color: #1b0c07;
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  transform: translateX(0.5vw) translateY(6.5vh);
+}
+
+.externalsBody_JanuaryA {
+  background: #515150;
+  height: 87vh;
+  opacity: 0.9;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 24px;
+  width: 100%;
+}
+
+.externalsIssuesHeader_JanuaryA {
+  color: #dcd6d8;
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+}
+
+.externalManagementContainer_JanuaryA {
+  display: grid;
+  grid-template-columns: [leftBuffer] 10px [deleteColumn] 50px [readColumn] 120px [imageColumn] 150px [issueColumn] 1fr [rightBuffer] 10px;
+  grid-template-rows: [externalContent] auto [addNewContent] auto;
+  height: auto;
+  margin: 30px 0 15px 0;
+  width: 100%;
+}
+
+.externalsSwitchtrue_JanuaryA {
+  background: #a28f89;
+  border-radius: 41%;
+  cursor: pointer;
+  display: inline-block;
+  grid-column: readColumn / imageColumn;
+  grid-row: externalContent;
+  height: 25px;
+  margin: 35px 0 0 15px;
+  position: relative;
+  transition: all 0.3s linear;
+  width: 60px;
+}
+
+.externalsSwitchfalse_JanuaryA {
+  background: #dcd6d8;
+  border-radius: 41%;
+  cursor: pointer;
+  display: inline-block;
+  grid-column: readColumn / imageColumn;
+  grid-row: externalContent;
+  height: 25px;
+  margin: 35px 0 0 15px;
+  position: relative;
+  transition: all 0.3s linear;
+  width: 60px;
+}
+
+.externalsSwitchHandletrue_JanuaryA {
+  background: #451f12;
+  border-radius: 100%;
+  bottom: 0;
+  height: 25px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 0.3s linear;
+  width: 30px;
+}
+
+.externalsSwitchHandlefalse_JanuaryA {
+  background: #451f12;
+  border-radius: 100%;
+  bottom: 0;
+  height: 25px;
+  left: 30px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 0.3s linear;
+  width: 30px;
+}
+
+.externalsSwitchText_JanuaryA {
+  color: #dcd6d8;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  margin: 40px 0 0 0;
+}
+
+.externalsImage_JanuaryA {
+  grid-column: imageColumn / issueColumn;
+  grid-row: externalContent;
+  max-height: 100px;
+  width: 80px;
+}
+
+.externalsReadingDatas_JanuaryA {
+  color: #dcd6d8;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  grid-column: issueColumn / rightBuffer;
+  grid-row: externalContent;
+  margin: 25px 0 0 0;
+}
+
+.externalsDelete_JanuaryA {
+  align-self: center;
+  color: #dcd6d8;
+  cursor: pointer;
+  font-size: 30px;
+  grid-column: deleteColumn / readColumn;
+  grid-row: externalContent;
+  justify-content: center;
+  transition: all 0.3s linear;
+}
+
+.externalsDelete_JanuaryA:hover {
+  color: #451f12;
+  transition: all 0.3s linear;
+}
+
+.externalsAddNewContentDiv_JanuaryA {
+  color: #dcd6d8;
+  cursor: pointer;
+  margin: 70px 0 0 330px;
+  width: auto;
+}
+
+.externalsAddContentIcon_JanuaryA {
+  float: left;
+  font-size: 42px;
+  margin: 0 30px 0 0;
+  position: float;
+}
+
+.externalsAddNewText_JanuaryA {
+  float: left;
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  margin: 5px 0 0 0;
+}
+
+.externalsDeleteGuardrailActive_JanuaryA {
+  background: #9b9d92;
+  border: 1px solid #2c2d22;
+  height: auto;
+  left: 25%;
+  opacity: 1;
+  position: absolute;
+  top: 15%;
+  transform: scale(1);
+  transition: all 0.3s linear;
+  width: auto;
+  z-index: 10;
+}
+
+.externalsDeleteGuardrailInactive_JanuaryA {
+  background: #9b9d92;
+  border: 1px solid #2c2d22;
+  height: auto;
+  left: -25%;
+  opacity: 0;
+  position: absolute;
+  top: 15%;
+  transform: scale(0.01);
+  transition: all 0.3s linear;
+  width: auto;
+  z-index: -10;
+}
+
+.externalsDeleteGuardrailTitleBar_JanuaryA {
+  background: #a28f89;
+  border-bottom: 1px solid #2c2d22;
+  height: auto;
+  padding: 6px 0;
+  width: 100%;
+}
+
+.externalsDeleteGuardrailTitle_JanuaryA {
+  color: #1b0c07;
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  margin-left: 40px;
+}
+
+.externalsGuardrailContainer_JanuaryA {
+  background: transparent;
+  display: grid;
+  grid-template-columns: [leftB] 10px [imgColumn] 120px [infoColumn] 1fr [rightB] 10px;
+  grid-template-rows: [title] auto [query] auto [buttons] auto;
+  height: auto;
+  padding: 12px;
+  width: 100%;
+}
+
+.externalsGuardrailBodyText_JanuaryA {
+  color: #1b0c07;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  grid-column: imgColumn / rightB;
+  grid-row: title;
+}
+
+.externalsGuardrailImage_JanuaryA {
+  grid-column: imgColumn / infoColumn;
+  grid-row: query;
+  margin: 20px 0;
+  width: 80px;
+}
+
+.externalsGuardrailInfos_JanuaryA {
+  color: #1b0c07;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  grid-column: infoColumn / rightB;
+  grid-row: query;
+  margin: 40px 0 20px 0;
+}
+
+.externalsGuardrailButtons_JanuaryA {
+  background: transparent;
+  grid-column: infoColumn / rightB;
+  grid-row: buttons;
+  height: auto;
+  justify-content: center;
+  margin: 0 0 0 16%;
+}
+
+.externalsGuardrailButtons_JanuaryA button {
+  background: #cdcec9;
+  color: #1b0c07;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  margin: 10px 40px 20px 0;
+  outline: #2c2d22;
+  transform: skewX(-15deg);
+  transition: all 0.6s linear;
+  width: 70px;
+}
+
+.externalsGuardrailButtons_JanuaryA button:hover {
+  background: #451f12;
+  color: #e5e5e4;
+  transform: skewX(-5deg);
+  transition: all 0.6s linear;
+}
+
+.externalsGuardrailButtons_JanuaryA button:active {
+  background: #494546;
+  transition: all 0.1s linear;
+}
+
+.externalsAddNewExternalsDialogActive_JanuaryA {
+  background: #9b9d92;
+  border: 1px solid #2c2d22;
+  height: auto;
+  left: 10%;
+  opacity: 1;
+  position: absolute;
+  top: 0.5%;
+  transform: scale(1);
+  transition: all 0.6s linear;
+  width: 80%;
+  z-index: 10;
+}
+
+.externalsAddNewExternalsDialogInactive_JanuaryA {
+  background: #9b9d92;
+  border: 1px solid #2c2d22;
+  height: auto;
+  left: -90%;
+  opacity: 0;
+  position: absolute;
+  top: 0.5%;
+  transform: scale(0.01);
+  transition: all 0.6s linear;
+  width: 80%;
+  z-index: -10;
+}
+
+.externalsAddNewTitleBar_JanuaryA {
+  background: #a28f89;
+  border-bottom: 1px solid #2c2d22;
+  height: auto;
+  padding: 6px 0;
+  width: 100%;
+}
+
+.externalsAddNewTitle_JanuaryA {
+  color: #1b0c07;
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  margin-left: 40px;
+}
+
+.externalsAddNewBodyContainer_JanuaryA {
+  display: grid;
+  grid-template-columns: [leftAdd] 10px [formInput] 1fr [displayAdd] 1fr [rightAdd] 10px;
+  grid-template-rows: [errorMessaging] auto [userAdds] auto [buttonsAdds] auto;
+  height: auto;
+}
+
+.externalsAddErrorField_JanuaryA {
+  color: #451f12;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  grid-column: formInput / rightAdd;
+  grid-row: errorMessaging;
+  margin: 15px 30px;
+}
+
+.externalsAddUserForm_JanuaryA {
+  background: #dcd6d8;
+  grid-column: formInput / displayAdd;
+  grid-row: userAdds;
+  height: auto;
+  margin: 0 0 30px 0;
+  padding: 24px 0;
+}
+
+.externalsAddUserForm_JanuaryA label {
+  color: #1b0c07;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  margin: 15px 24px;
+}
+
+.externalsAddUserForm_JanuaryA input[type="text"] {
+  background: #dcd6d8;
+  border: 1px solid #1f210e;
+  color: #1b0c07;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  margin: 5px 24px;
+  outline: #1f210e;
+  padding: 0 5px;
+  width: 90%;
+}
+
+.externalsAddUserForm_JanuaryA textarea {
+  background: #dcd6d8;
+  border: 1px solid #1f210e;
+  color: #1b0c07;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  margin: 5px 24px;
+  outline: #1f210e;
+  padding: 0 5px;
+  width: 90%;
+}
+
+.externalsDisplayNewAddition_JanuaryA {
+  background: transparent;
+  grid-column: displayAdd / rightAdd;
+  grid-row: userAdds;
+  height: auto;
+  margin: 0 0 30px 0;
+  padding: 24px 0;
+}
+
+.externalsAddImage_JanuaryA {
+  margin: 0 0 0 36px;
+  max-height: 240px;
+  width: 150px;
+}
+
+.externalsAddCandidateTitle_JanuaryA {
+  color: #1b0c07;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  margin: 24px;
+}
+
+.externalsAddExternalsButtons_JanuaryA {
+  background: transparent;
+  height: auto;
+  grid-column: formInput / rightAdd;
+  grid-row: buttonsAdds;
+  margin: 0 0 30px 0;
+}
+
+.externalsAddExternalsButtons_JanuaryA button {
+  background: #cdcec9;
+  color: #1b0c07;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  margin: 10px 40px 20px 6%;
+  outline: #2c2d22;
+  transform: skewX(-15deg);
+  transition: all 0.6s linear;
+  width: 160px;
+}
+
+.externalsAddExternalsButtons_JanuaryA button:hover {
+  background: #451f12;
+  color: #e5e5e4;
+  transform: skewX(-5deg);
+  transition: all 0.6s linear;
+}
+
+.externalsAddExternalsButtons_JanuaryA button:active {
+  background: #494546;
+  transition: all 0.1s linear;
+}
+
+.hubReaderExternalsDay2BlockInactive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/externals/backdrop/ice_by_mrschibi_d8iojyp-fullview.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-230%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderExternalsDay2BlockActive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/externals/backdrop/ice_by_mrschibi_d8iojyp-fullview.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+  width: 8%;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 414px) {
+
+  .externalsTitle_JanuaryA {
+    font-size: 24px;
+  }
+
+  .externalsIssuesHeader_JanuaryA {
+    font-size: 18px;
+  }
+
+  .externalManagementContainer_JanuaryA {
+    grid-template-columns: [leftBuffer] 1px [deleteColumn] 25px [readColumn] 60px [imageColumn] 80px [issueColumn] 50% [rightBuffer] 14px;
+    grid-template-rows: [externalContent] auto [addNewContent] auto;
+    margin: 15px 0 7px 0;
+  }
+
+  .externalsDelete_JanuaryA {
+    font-size: 18px;
+  }
+
+  .externalsImage_JanuaryA {
+    margin-left: 15px;
+    max-height: 50px;
+    width: 40px;
+  }
+
+  .externalsSwitchfalse_JanuaryA {
+    height: 25px;
+    margin: 15px 15px 0 5px;
+    transform: scale(0.5);
+    width: 60px;
+  }
+
+  .externalsSwitchtrue_JanuaryA {
+    height: 25px;
+    margin: 15px 15px 0 5px;
+    transform: scale(0.5);
+    width: 60px;
+  }
+
+  .externalsReadingDatas_JanuaryA {
+    font-size: 12px;
+    margin: 25px 0 0 0;
+  }
+
+  .externalsAddNewContentDiv_JanuaryA {
+    margin: 70px 0 0 10px;
+  }
+
+  .externalsDeleteGuardrailActive_JanuaryA {
+    left: 0;
+    width: 100%;
+  }
+
+  .externalsAddNewExternalsDialogActive_JanuaryA {
+    left: 0;
+    width: 100%;
+  }
+
+  .externalsAddImage_JanuaryA {
+    margin: 0 0 0 36px;
+    max-height: 120px;
+    width: 75px;
+  }
+
+  .externalsAddUserForm_JanuaryA textarea {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+
+  .externalsTitle_JanuaryA {
+    font-size: 18px;
+  }
+}
