@@ -13,7 +13,7 @@
       const vm = this;
 
       vm.$onInit = onInit;
-      vm.monthSelect = '_JanuaryA';
+      vm.monthSelect = '_JanuaryB';
       vm.userLogout = userLogout;
       vm.hubShareTabState = 'hubTabActive' + vm.monthSelect;
       vm.hubReaderTabState = 'hubTabInactive' + vm.monthSelect;
@@ -803,7 +803,7 @@
       vm.hubContactSubmit = hubContactSubmit;
       vm.navigateToDay = navigateToDay;
       vm.navigateToToday = navigateToToday;
-      vm.mondayMonth = '_JanuaryA';
+      vm.mondayMonth = '_JanuaryB';
       vm.navigateToExternals = navigateToExternals;
       vm.externalsMonth = '_JanuaryA';
 
