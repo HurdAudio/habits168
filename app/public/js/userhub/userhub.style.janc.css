@@ -1110,16 +1110,14 @@
 }
 
 .hubUserProfileBasicsPane_JanuaryC {
-    display: none;
-    border-right: 1px solid #c3d6ea;
+    border-right: 1px solid #9a9fa0;
     float: left;
     height: 81vh;
     width: 30%;
 }
 
 .hubPublicPrivateProfilePane_JanuaryC {
-    display: none;
-    border-left: 1px solid #89c3d9;
+    border-left: 1px solid #9a9fa0;
     float: left;
     height: 81vh;
     overflow-x: hidden;
@@ -1128,7 +1126,6 @@
 }
 
 .hubBasicUserData_JanuaryC {
-    display: none;
     height: 90%;
     left: 5%;
     position: relative;
@@ -1137,55 +1134,52 @@
 }
 
 .hubLoggedInAsLabel_JanuaryC {
-    display: none;
-    color: #dfdde8;
+    color: #9ca4a9;
     font-family: 'Gothic A1', serif;
     font-size: 24px;
 }
 
 .hubLoggedInAsAvatar_JanuaryC {
-    display: none;
+    border-radius: 5px;
+    margin-top: 5px;
     max-width: 150px;
 }
 
 .hubProfileUserName_JanuaryC {
-    display: none;
-    color: #dfdde8;
+    color: #9ca4a9;
     font-family: 'Gothic A1', serif;
     font-size: 24px;
-    margin: 0 0 25px 0;
+    margin: 5px 0 25px 0;
 }
 
 .hubUserDatas_JanuaryC {
-    display: none;
-    color: #dfdde8;
+    color: #9ca4a9;
     font-family: 'Gothic A1', serif;
     font-size: 18px;
 }
 
 .hubEditProfileButton_JanuaryC {
-    display: none;
-    background: #4b8eb8;
+    background: #161d21;
     border: none;
-    color: #dfdde8;
+    color: #9ba5a8;
     cursor: pointer;
     float: right;
     font-family: 'Gothic A1', serif;
     font-size: 18px;
     margin: 30px 15px;
+    outline-color: #9ba5a8;
     transform: skewX(-15deg);
     transition: all 0.4s linear;
 }
 
 .hubEditProfileButton_JanuaryC:hover {
-    background: #35475f;
-    color: #bebad1;
+    background: #af9f95;
+    color: #020201;
     transform: skewX(-5deg);
     transition: all 0.4s linear;
 }
 
 .hubUserProfileNavigation_JanuaryC {
-    display: none;
     height: auto;
     left: 60%;
     position: relative;
@@ -1194,8 +1188,7 @@
 }
 
 .hubUserProfileNavigationActive_JanuaryC {
-    display: none;
-    filter: brightness(300%);
+    filter: brightness(350%);
     height: 50px;
     transition: all 1s linear;
     width: 100%;
@@ -1203,41 +1196,37 @@
 }
 
 .hubUserProfileNavigationActive_JanuaryC p {
-    display: none;
-    color: #dfdde8;
+    color: #9ca4a9;
     font-family: 'Gothic A1', serif;
-    font-size: 30px;
+    font-size: 24px;
     transform: translateX(15px) translateY(10px);
     z-index: 111;
 }
 
 .hubUserProfileNavigationInactive_JanuaryC {
-    display: none;
     cursor: pointer;
-    filter: brightness(40%);
+    filter: brightness(75%);
     height: 50px;
     transition: all 1s linear;
     width: 100%;
 }
 
 .hubUserProfileNavigationInactive_JanuaryC p {
-    display: none;
-    color: #dfdde8;
+    color: #9ca4a9;
     font-family: 'Gothic A1', serif;
-    font-size: 30px;
+    font-size: 24px;
     transform: translateX(15px) translateY(10px);
     z-index: 11;
 }
 
 .hubUserProfileNavigationSlidePublicState_JanuaryC {
-    display: none;
     background: transparent;
-    border-left: 2px solid #ecc0db;
-    border-top: 2px solid #ecc0db;
+    border-bottom: 2px solid #f0a459;
+    border-top: 2px solid #f0a459;
     height: 46px;
     left: 0;
     position: relative;
-    transform: translateY(-250px);
+    transform: rotateY(360deg) translateY(-250px);
     transition: all 0.5s;
     transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
     width: 100%;
@@ -1245,14 +1234,13 @@
 }
 
 .hubUserProfileNavigationSlidePrivateState_JanuaryC {
-    display: none;
     background: transparent;
-    border-left: 2px solid #ecc0db;
-    border-top: 2px solid #ecc0db;
+    border-bottom: 2px solid #f0a459;
+    border-top: 2px solid #f0a459;
     height: 46px;
     left: 0;
     position: relative;
-    transform: translateY(-200px);
+    transform: rotateY(180deg) translateY(-200px);
     transition: all 0.5s;
     transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
     width: 100%;
@@ -1260,14 +1248,13 @@
 }
 
 .hubUserProfileNavigationSlideMessagesState_JanuaryC {
-    display: none;
     background: transparent;
-    border-left: 2px solid #ecc0db;
-    border-top: 2px solid #ecc0db;
+    border-bottom: 2px solid #f0a459;
+    border-top: 2px solid #f0a459;
     height: 46px;
     left: 0;
     position: relative;
-    transform: translateY(-150px);
+    transform: rotateY(0deg) translateY(-150px);
     transition: all 0.5s;
     transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
     width: 100%;
@@ -1275,14 +1262,13 @@
 }
 
 .hubUserProfileNavigationSlideFriendsState_JanuaryC {
-    display: none;
     background: transparent;
-    border-left: 2px solid #ecc0db;
-    border-top: 2px solid #ecc0db;
+    border-bottom: 2px solid #f0a459;
+    border-top: 2px solid #f0a459;
     height: 46px;
     left: 0;
     position: relative;
-    transform: translateY(-100px);
+    transform: rotateY(-180deg) translateY(-100px);
     transition: all 0.5s;
     transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
     width: 100%;
@@ -1290,14 +1276,13 @@
 }
 
 .hubUserProfileNavigationSlideContactState_JanuaryC {
-    display: none;
     background: transparent;
-    border-left: 2px solid #ecc0db;
-    border-top: 2px solid #ecc0db;
+    border-bottom: 2px solid #f0a459;
+    border-top: 2px solid #f0a459;
     height: 46px;
     left: 0;
     position: relative;
-    transform: translateY(-50px);
+    transform: rotateY(-360deg) translateY(-50px);
     transition: all 0.5s;
     transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
     width: 100%;
@@ -1305,20 +1290,18 @@
 }
 
 .hubPublicProfileDeets_JanuaryC {
-    display: none;
     height: auto;
     width: 100%;
 }
 
 .hubUserPublicStats_JanuaryC {
-    display: none;
     max-width: 750px;
     padding: 5%;
 }
 
 .hubUserLocationStat_JanuaryC {
-    display: none;
-    color: #dfdde8;
+    color: #9ca4a9;
+    filter: brightness(350%);
     font-family: 'Gothic A1', serif;
     font-size: 18px;
     margin: 9px 0;
@@ -1326,89 +1309,88 @@
 }
 
 .hubUserLocationMap_JanuaryC {
-    display: none;
-    max-width: 30%;
+    border-radius: 5px;
+    max-width: 50%;
 }
 
 .hubPhotoAttribution_JanuaryC {
-    display: none;
-    color: #dfdde8;
+    color: #9ca4a9;
+    filter: brightness(350%);
     font-family: 'Gothic A1', serif;
     font-size: 12px;
+    margin: 5px 0;
 }
 
 .hubUserDescriptionStat_JanuaryC {
-    display: none;
-    color: #dfdde8;
+    color: #9ca4a9;
+    filter: brightness(350%);
     font-family: 'Gothic A1', serif;
     font-size: 18px;
     margin: 30px 0 0 0;
 }
 
 .hubUserOccupationStat_JanuaryC {
-    display: none;
-    color: #dfdde8;
+    color: #9ca4a9;
+    filter: brightness(350%);
     font-family: 'Gothic A1', serif;
     font-size: 18px;
     margin: 50px 0 0 0;
 }
 
 .hubUserEmployerStat_JanuaryC {
-    display: none;
-    color: #dfdde8;
+    color: #9ca4a9;
+    filter: brightness(350%);
     font-family: 'Gothic A1', serif;
     font-size: 18px;
     margin: 10px 0 0 0;
 }
 
 .hubUserEducationStatLabel_JanuaryC {
-    display: none;
-    color: #dfdde8;
+    color: #9ca4a9;
+    filter: brightness(350%);
     font-family: 'Gothic A1', serif;
     font-size: 24px;
     margin: 60px 0 0 0;
 }
 
 .hubUserEducationStat_JanuaryC {
-    display: none;
-    color: #dfdde8;
+    color: #9ca4a9;
+    filter: brightness(350%);
     font-family: 'Gothic A1', serif;
     font-size: 18px;
     margin: 10px 0 0 0;
 }
 
 .hubUserEmailStat_JanuaryC {
-    display: none;
-    color: #dfdde8;
+    color: #9ca4a9;
+    filter: brightness(350%);
     font-family: 'Gothic A1', serif;
     font-size: 18px;
     margin: 40px 0 0 0;
 }
 
 .hubUserPhoneStat_JanuaryC {
-    display: none;
-    color: #dfdde8;
+    color: #9ca4a9;
+    filter: brightness(350%);
     font-family: 'Gothic A1', serif;
     font-size: 18px;
     margin: 10px 0 0 0;
 }
 
 .hubUserBirthdate_JanuaryC {
-    display: none;
-    color: #dfdde8;
+    color: #9ca4a9;
+    filter: brightness(350%);
     font-family: 'Gothic A1', serif;
     font-size: 18px;
     margin: 10px 0 5px 0;
 }
 
 .hubMessageCenter_JanuaryC {
-    display: none;
     padding: 3%;
     width: 100%;
 }
 
 .hubMessageScroll_JanuaryC {
-    display: none;
     height: 76vh;
     overflow-x: hidden;
     overflow-y: scroll;
@@ -1416,33 +1398,33 @@
 }
 
 .hubMessageCenterLabel_JanuaryC {
-    display: none;
-    color: #dfdde8;
+    color: #9ca4a9;
+    filter: brightness(350%);
     font-family: 'Gothic A1', serif;
     font-size: 30px;
     margin: 15px 0 15px 0;
 }
 
 .hubMainMessageContainer_JanuaryC {
-    display: none;
-    border-top: 3px solid #dfdde8;
-    color: #dfdde8;
+    border-top: 3px solid #9ca4a9;
+    color: #9ca4a9;
+/*    filter: brightness(350%);*/
     cursor: pointer;
     margin-top: 5px;
     max-width: 750px;
+    padding-top: 10px;
     width: 100%;
 }
 
 .unreadIcon_JanuaryC {
-    display: none;
     float: left;
     font-size: 42px;
     margin: 8px 0;
 }
 
 .hubMessageFromSubjectfalse_JanuaryC {
-    display: none;
-    color: #dfdde8;
+    color: #9ca4a9;
+    filter: brightness(350%);
     float: left;
     font-family: 'Gothic A1', serif;
     font-size: 18px;
@@ -1454,12 +1436,11 @@
 } */
 
 .hubMessageFromSubjecttrue_JanuaryC {
-    display: none;
-    color: #dfdde8;
+    color: #9ca4a9;
     float: left;
     font-family: 'Gothic A1', serif;
     font-size: 18px;
-    margin: 0 10px 0 5px;
+    margin: 10px 10px 0 10px;
 }
 
 /* .hubMessageFromSubjecttrue_JanuaryC:hover {
@@ -1467,22 +1448,21 @@
 } */
 
 .hubExpandedMessageContainer_JanuaryC {
-    display: none;
     /* border-bottom: 1px solid #08252e; */
     /* border-top: 1px solid #08252e; */
     margin-left: 30px;
 }
 
 .hubMessageAvatar_JanuaryC {
-    display: none;
+    border-radius: 5px;
     float: left;
     margin: 4px 1px 0 15px;
     max-width: 3%;
 }
 
 .hubMessageMessage_JanuaryC {
-    display: none;
-    color: #dfdde8;
+    color: #9ca4a9;
+    filter: brightness(300%);
     font-family: 'Gothic A1', serif;
     font-size: 18px;
     margin: 10px 0 5px 0;
@@ -1490,8 +1470,7 @@
 }
 
 .hubReplyNameDate_JanuaryC {
-    display: none;
-    color: #dfdde8;
+    color: #9ca4a9;
     float: left;
     font-family: 'Gothic A1', serif;
     font-size: 18px;
@@ -1499,10 +1478,9 @@
 }
 
 .hubReplyText_JanuaryC {
-    display: none;
-    background: #30739d;
+    background: #9ba5a8;
     border: none;
-    color: #dfdde8;
+    color: #020201;
     font-family: 'Gothic A1', serif;
     font-size: 18px;
     margin-bottom: 35px;
@@ -1512,10 +1490,9 @@
 }
 
 .hubReplyResponseText_JanuaryC {
-    display: none;
-    background: #30739d;
+    background: #9ba5a8;
     border: none;
-    color: #dfdde8;
+    color: #020201;
     font-family: 'Gothic A1', serif;
     font-size: 18px;
     max-width: 750px;
@@ -1524,40 +1501,33 @@
 }
 
 .hubReplyResponseText_JanuaryC::-webkit-input-placeholder {
-    display: none;
-    color: #dfdde8;
+    color: #020201;
 }
 
 .hubReplyResponseText_JanuaryC:-moz-placeholder {
-    display: none;
-    color: #dfdde8;
+    color: #020201;
 }
 
 .hubReplyResponseText_JanuaryC::-moz-placeholder {
-    display: none;
-    color: #dfdde8;
+    color: #020201;
 }
 
 .hubReplyResponseText_JanuaryC::-moz-placeholder {
-    display: none;
-    color: #dfdde8;
+    color: #020201;
 }
 
 .hubReplyResponseText_JanuaryC:-ms-input-placeholder {
-    display: none;
-    color: #dfdde8;
+    color: #020201;
 }
 
 .hubReplyResponseText_JanuaryC::placeholder {
-    display: none;
-    color: #dfdde8;
+    color: #020201;
 }
 
 .hubReplySubmit_JanuaryC {
-    display: none;
-    background: #4b8eb8;
+    background: #161d21;
     border: none;
-    color: #dfdde8;
+    color: #9ba5a8;
     cursor: pointer;
     font-family: 'Gothic A1', serif;
     font-size: 18px;
@@ -1567,28 +1537,26 @@
 }
 
 .hubReplySubmit_JanuaryC:hover {
-    background: #35475f;
-    color: #bebad1;
+    background: #af9f95;
+    color: #020201;
     transform: skewX(-5deg);
     transition: all 0.4s linear;
 }
 
 .hubFriendsCenter_JanuaryC {
-    display: none;
     padding: 3%;
     width: 100%;
 }
 
 .hubFriendsCenterLabel_JanuaryC {
-    display: none;
-    color: #dfdde8;
+    color: #9ca4a9;
+    filter: brightness(350%);
     font-family: 'Gothic A1', serif;
     font-size: 30px;
     margin: 15px 0 15px 0;
 }
 
 .hubFriendsScroll_JanuaryC {
-    display: none;
     height: 76vh;
     overflow-x: hidden;
     overflow-y: scroll;
@@ -1596,79 +1564,68 @@
 }
 
 .hubFriendsFilter_JanuaryC {
-    display: none;
-    background: #30739d;
+    background: #9ba5a8;
     border: none;
-    color: #dfdde8;
+    color: #020201;
     font-family: 'Gothic A1', serif;
     font-size: 18px;
-    outline-color: #bebad1;
+    outline-color: #020201;
     width: 50%;
 }
 
 .hubFriendsFilter_JanuaryC::-webkit-input-placeholder {
-    display: none;
-    color: #dfdde8;
+    color: #020201;
 }
 
 .hubFriendsFilter_JanuaryC:-moz-placeholder {
-    display: none;
-    color: #dfdde8;
+    color: #020201;
 }
 
 .hubFriendsFilter_JanuaryC::-moz-placeholder {
-    display: none;
-    color: #dfdde8;
+    color: #020201;
 }
 
 .hubFriendsFilter_JanuaryC::-moz-placeholder {
-    display: none;
-    color: #dfdde8;
+    color: #020201;
 }
 
 .hubFriendsFilter_JanuaryC:-ms-input-placeholder {
-    display: none;
-    color: #dfdde8;
+    color: #020201;
 }
 
 .hubFriendsFilter_JanuaryC::placeholder {
-    display: none;
-    color: #dfdde8;
+    color: #020201;
 }
 
 .hubSearchIcon_JanuaryC {
-    display: none;
-    color: #dfdde8;
+    color: #020201;
     font-size: 18px;
     margin: 5px 15px 0 0;
 }
 
 .hubFriendRollEntry_JanuaryC {
-    display: none;
     cursor: pointer;
     margin: 20px 0 0 50px;
     max-width: 750px;
 }
 
 .hubFriendsRollAvatar_JanuaryC {
-    display: none;
     border-radius: 100%;
     max-height: 50px;
     max-width: 50px;
 }
 
 .hubFriendsNameListing_JanuaryC {
-    display: none;
-    color: #dfdde8;
+    color: #9ca4a9;
+    filter: brightness(350%);
     font-family: 'Gothic A1', serif;
     font-size: 18px;
 }
 
 .hubFriendMessageButton_JanuaryC {
-    display: none;
-    background: #4b8eb8;
+    background: #161d21;
     border: none;
-    color: #dfdde8;
+    color: #9ba5a8;
     cursor: pointer;
     font-family: 'Gothic A1', serif;
     font-size: 24px;
@@ -1678,16 +1635,15 @@
 }
 
 .hubFriendMessageButton_JanuaryC:hover {
-    background: #35475f;
-    color: #bebad1;
+    background: #af9f95;
+    color: #020201;
     transform: skewX(-5deg);
     transition: all 0.4s linear;
 }
 
 .hubProfileDisplayerActive_JanuaryC {
-    display: none;
-    background: #9aa3af;
-    border: 4px solid #151c26;
+    background: #af9f95;
+    border: 2px solid #6a2e14;
     height: auto;
     left: 15%;
     opacity: 1;
@@ -1699,9 +1655,8 @@
 }
 
 .hubProfileDisplayerInactive_JanuaryC {
-    display: none;
-    background: #9aa3af;
-    border: 4px solid #151c26;
+    background: #af9f95;
+    border: 2px solid #6a2e14;
     height: auto;
     left: 145%;
     opacity: 0;
@@ -1713,10 +1668,9 @@
 }
 
 .hubProfileDisplayCloseButton_JanuaryC {
-    display: none;
-    background: #4b8eb8;
+    background: #161d21;
     border: none;
-    color: #dfdde8;
+    color: #9ba5a8;
     cursor: pointer;
     float: right;
     font-family: 'Gothic A1', serif;
@@ -1729,43 +1683,39 @@
 }
 
 .hubProfileDisplayCloseButton_JanuaryC:hover {
-    background: #35475f;
-    color: #bebad1;
+    background: #af9f95;
+    color: #020201;
     transform: skewX(-5deg);
     transition: all 0.4s linear;
 }
 
 .hubProfileDisplayAvatar_JanuaryC {
-    display: none;
+    border-radius: 5px;
     float: left;
     margin: 15px;
     max-width: 200px;
 }
 
 .hubProfileDisplayDataContainer_JanuaryC {
-    display: none;
     padding: 15px;
 }
 
 .hubProfileDisplayName_JanuaryC {
-    display: none;
-    color: #151c26;
+    color: #050503;
     float: left;
     font-family: 'Gothic A1', serif;
-    font-size: 42px;
+    font-size: 36px;
 }
 
 .hubProfileDisplayDescritors_JanuaryC {
-    display: none;
-    color: #151c26;
+    color: #050503;
     float: left;
     font-family: 'Gothic A1', serif;
     font-size: 24px;
 }
 
 .hubDisplayContainer2_JanuaryC {
-    display: none;
-/*    display: flex;*/
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -1773,8 +1723,7 @@
 }
 
 .profileDisplayStats_JanuaryC {
-    display: none;
-    color: #151c26;
+    color: #050503;
     float: left;
     font-family: 'Gothic A1', serif;
     font-size: 18px;
@@ -1782,7 +1731,6 @@
 }
 
 .hubProfileDisplayBioBlock_JanuaryC {
-    display: none;
     padding: 15px;
     min-width: 215px;
     width: 30%;
@@ -1790,20 +1738,18 @@
 }
 
 .hubProfileDisplayBioImage_JanuaryC {
-    display: none;
+    border-radius: 5px;
     max-width: 200px;
 }
 
 .hubProfileDisplayUserDatas_JanuaryC {
-    display: none;
     float: left;
     padding: 15px;
     width: 60%;
 }
 
 .hubProfileDisplayDescritors2_JanuaryC {
-    display: none;
-    color: #151c26;
+    color: #050503;
     float: left;
     font-family: 'Gothic A1', serif;
     font-size: 18px;
@@ -1811,10 +1757,9 @@
 }
 
 .hubDisplayMessageButton_JanuaryC {
-    display: none;
-    background: #4b8eb8;
+    background: #161d21;
     border: none;
-    color: #dfdde8;
+    color: #9ba5a8;
     cursor: pointer;
     font-family: 'Gothic A1', serif;
     font-size: 18px;
@@ -1826,16 +1771,15 @@
 }
 
 .hubDisplayMessageButton_JanuaryC:hover {
-    background: #35475f;
-    color: #bebad1;
+    background: #af9f95;
+    color: #020201;
     transform: skewX(-5deg);
     transition: all 0.4s linear;
 }
 
 .hubDisplayMessageModalActive_JanuaryC {
-    display: none;
-    background: #294d65;
-    border: 4px solid #bebad1;
+    background: #af9f95;
+    border: 2px solid #6a2e14;
     height: auto;
     left: 15%;
     opacity: 1;
@@ -1847,9 +1791,8 @@
 }
 
 .hubDisplayMessageModalInactive_JanuaryC {
-    display: none;
-    background: #294d65;
-    border: 4px solid #bebad1;
+    background: #af9f95;
+    border: 2px solid #6a2e14;
     height: auto;
     left: -45%;
     opacity: 0;
@@ -1861,23 +1804,20 @@
 }
 
 .hubMessageModalLabel_JanuaryC {
-    display: none;
-    color: #dfdde8;
+    color: #020201;
     font-family: 'Gothic A1', serif;
-    font-size: 30px;
+    font-size: 24px;
     margin: 30px;
 }
 
 .hubMessageModalButtonFields_JanuaryC {
-    display: none;
     padding: 15px 0 45px 35%;
 }
 
 .hubMessageModalButton_JanuaryC {
-    display: none;
-    background: #4b8eb8;
+    background: #161d21;
     border: none;
-    color: #dfdde8;
+    color: #9ba5a8;
     cursor: pointer;
     font-family: 'Gothic A1', serif;
     font-size: 18px;
@@ -1889,44 +1829,40 @@
 }
 
 .hubMessageModalButton_JanuaryC:hover {
-    background: #35475f;
-    color: #bebad1;
+    background: #af9f95;
+    color: #020201;
     transform: skewX(-5deg);
     transition: all 0.4s linear;
 }
 
 .hubMessageModalInputs_JanuaryC {
-    display: none;
     padding: 15px 45px 0 45px;
 }
 
 .hubMessageModalSubjectInput_JanuaryC {
-    display: none;
     background: #c3d6ea;
     border: none;
-    color: #151c26;
+    color: #020201;
     font-family: 'Gothic A1', serif;
     font-size: 18px;
     margin: 0 0 0 8%;
-    outline-color: #35475f;
+    outline-color: #020201;
     width: 80%;
 }
 
 .hubMessageModalMessageInput_JanuaryC {
-    display: none;
     background: #c3d6ea;
     border: none;
-    color: #151c26;
+    color: #020201;
     font-family: 'Gothic A1', serif;
     font-size: 18px;
     margin: 5px 0 0 8%;
-    outline-color: #35475f;
+    outline-color: #020201;
     width: 80%;
 }
 
 .hubMessageModalToFields_JanuaryC {
-    display: none;
-/*    display: flex;*/
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -1935,24 +1871,22 @@
 }
 
 .hubRecipientAvatar_JanuaryC {
-    display: none;
+    border-radius: 5px;
     float: left;
     max-width: 50px;
 }
 
 .hubRecipientName_JanuaryC {
-    display: none;
     float: left;
-    color: #dfdde8;
+    color: #020201;
     font-family: 'Gothic A1', serif;
     font-size: 24px;
     margin: 12px 0 8px 15px;
 }
 
 .hubRemoveGuardrailActive_JanuaryC {
-    display: none;
-    background: #c3d6ea;
-    border: 4px solid #151c26;
+    background: #af9f95;
+    border: 2px solid #6a2e14;
     height: auto;
     left: 25%;
     opacity: 1;
@@ -1964,9 +1898,8 @@
 }
 
 .hubRemoveGuardrailInactive_JanuaryC {
-    display: none;
-    background: #c3d6ea;
-    border: 4px solid #151c26;
+    background: #af9f95;
+    border: 2px solid #6a2e14;
     height: auto;
     left: -45%;
     opacity: 0;
@@ -1978,18 +1911,16 @@
 }
 
 .hubGuardrailText_JanuaryC {
-    display: none;
-    color: #151c26;
+    color: #020201;
     font-family: 'Gothic A1', serif;
     font-size: 24px;
     margin: 24px 10% 8px 10%;
 }
 
 .hubGuardrailButton_JanuaryC {
-    display: none;
-    background: #4b8eb8;
+    background: #161d21;
     border: none;
-    color: #dfdde8;
+    color: #9ba5a8;
     cursor: pointer;
     font-family: 'Gothic A1', serif;
     font-size: 18px;
@@ -2001,26 +1932,24 @@
 }
 
 .hubGuardrailButton_JanuaryC:hover {
-    background: #35475f;
-    color: #bebad1;
+    background: #af9f95;
+    color: #020201;
     transform: skewX(-5deg);
     transition: all 0.4s linear;
 }
 
 .hubGuardrailButtonsDiv_JanuaryC {
-    display: none;
     margin: 5px 40%;
 }
 
 .hubOtherProfileEditButton_JanuaryC {
-    display: none;
     float: right;
     padding: 30px 45px;
 }
 
 .pendingFriendRequests_JanuaryC {
-    display: none;
-    color: #dfdde8;
+    color: #9ca4a9;
+    filter: brightness(350%);
     float: right;
     font-family: 'Gothic A1', serif;
     font-size: 18px;
@@ -2031,64 +1960,59 @@
 }
 
 .hubContactCenter_JanuaryC {
-    display: none;
     padding: 10%;
     width: 100%;
 }
 
 .hubContactLabel_JanuaryC {
-    display: none;
-    color: #dfdde8;
+    color: #9ca4a9;
+    filter: brightness(150%);
     font-family: 'Gothic A1', serif;
-    font-size: 42px;
+    font-size: 30px;
 }
 
 .hubFooter_JanuaryC {
-    display: none;
     bottom: 3px;
-    color: #dfdde8;
+    color: #9ca4a9;
+    filter: brightness(350%);
     font-family: 'Gothic A1', serif;
     font-size: 13px;
-    left: 26px;
+    left: 80%;
     position: absolute;
 }
 
 .hubContactFormField_JanuaryC {
-    display: none;
     margin: 25px 0;
 }
 
 .hubContactSubjectInput_JanuaryC {
-    display: none;
-    background: #a5c7dc;
+    background: #c3d6ea;
     border: none;
-    color: #151c26;
+    color: #020201;
     font-family: 'Gothic A1', serif;
     font-size: 18px;
     margin: 5px 0 5px 0;
     max-width: 750px;
-    outline-color: #fecdeb;
+    outline-color: #020201;
     width: 80%;
 }
 
 .hubContactMessageInput_JanuaryC {
-    display: none;
-    background: #a5c7dc;
+    background: #c3d6ea;
     border: none;
-    color: #151c26;
+    color: #020201;
     font-family: 'Gothic A1', serif;
     font-size: 18px;
     margin: 5px 0 5px 0;
     max-width: 750px;
-    outline-color: #fecdeb;
+    outline-color: #020201;
     width: 80%;
 }
 
 .hubContactAdminSubmitButton_JanuaryC {
-    display: none;
-    background: #4b8eb8;
+    background: #161d21;
     border: none;
-    color: #dfdde8;
+    color: #9ba5a8;
     cursor: pointer;
     font-family: 'Gothic A1', serif;
     font-size: 18px;
@@ -2101,8 +2025,8 @@
 }
 
 .hubContactAdminSubmitButton_JanuaryC:hover {
-    background: #35475f;
-    color: #bebad1;
+    background: #af9f95;
+    color: #020201;
     transform: skewX(-5deg);
     transition: all 0.4s linear;
 }
