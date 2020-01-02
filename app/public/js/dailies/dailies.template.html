@@ -1,0 +1,33 @@
+<div class="{{$ctrl.dailiesContainer}}">
+    <div class="dailiesImageDiv{{$ctrl.dailiesMonth}}"></div>
+
+    <div class="dailiesNavbar{{$ctrl.dailiesMonth}}">
+        <img class="dailiesLogoNav{{$ctrl.dailiesMonth}}" src="{{$ctrl.logoPath}}" ng-click="$ctrl.navigateToHub()">
+        <h1 class="dailiesTitle{{$ctrl.dailiesMonth}}">Dailies</h1>
+    </div>
+    <div class="dailiesSubsManagementContainer{{$ctrl.dailiesMonth}}">
+        <div class="dailiesSubscriptions{{$ctrl.dailiesMonth}}">
+            <p class="dailiesCurrentSubsTitle{{$ctrl.dailiesMonth}}">Current Subscriptions:</p>
+            <main ng-repeat="sub in $ctrl.dailySubs">
+                <div class="dailyDeleter{{$ctrl.dailiesMonth}}" ng-click="$ctrl.removeSubscription(sub)"><i class="far fa-trash-alt"></i>&nbsp;&nbsp;delete&nbsp;</div>
+                <img class="dailySubIcon{{$ctrl.dailiesMonth}}" src="{{sub.image}}">
+                <p class="dailySubTitleDescription{{$ctrl.dailiesMonth}}">{{sub.title}}: {{sub.description}}</p>
+                <br><br><br><br><br><br>
+            </main>
+            <br><br><br><br><br>
+        </div>
+        <div class="dailiesAvailableFeeds{{$ctrl.dailiesMonth}}">
+            <p class="dailiesAvailableSubsTitle{{$ctrl.dailiesMonth}}">Available Subscriptions:</p>
+            <i class="fas fa-search"></i>
+            <input id="dailiesFeedsSearchInput" class="dailiesFeedsSearchInput{{$ctrl.dailiesMonth}}" type="text" placeholder="search" ng-keyup="$ctrl.filterAvailables()">
+            <br><br><br><br>    
+            <main ng-repeat="avail in $ctrl.availableSubs">
+                <div class="dailyAdder{{$ctrl.dailiesMonth}}" ng-click="$ctrl.addSubscription(avail)"><i class="far fa-plus-square"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add&nbsp;</div>
+                <img class="dailyAvailSubIcon{{$ctrl.dailiesMonth}}" src="{{avail.image}}">
+                <p class="dailyAvailSubTitleDescription{{$ctrl.dailiesMonth}}">{{avail.title}}: {{avail.description}}</p>
+                <br><br><br><br><br><br><br><br><br>
+            </main>
+            <br><br><br><br><br>
+        </div>
+    </div>
+</div>
