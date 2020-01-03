@@ -807,6 +807,7 @@
         vm.navigateToExternals = navigateToExternals;
         vm.externalsMonth = '_JanuaryA';
         vm.navigateToDailies = navigateToDailies;
+        vm.dailiesMonth = '_JanuaryA';
 
         function initializeSubscriptionCards() {
             vm.manageBlockToggleStatus = 'hubReaderDay1BlockInactive' + vm.monthSelect;
@@ -1072,7 +1073,7 @@
         function submitResponse(msgUuid) {
             let hubResponseText = document.getElementById('hubResponseText' + msgUuid);
             let now = new Date();
-            let months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'Decembter'];
+            let months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
             let hours = '';
             let minutes = '';
             let seconds = '';
@@ -1228,7 +1229,7 @@
                 vm.subscriptionToggle = 'on';
                 vm.manageBlockToggleStatus = 'hubReaderDay1BlockActive' + vm.monthSelect;
                 vm.externalsBlockToggleStatus = 'hubReaderExternalsDay2BlockActive' + vm.externalsMonth;
-                vm.dailiesBlockToggleStatus = 'hubReaderDay3BlockActive' + vm.monthSelect;
+                vm.dailiesBlockToggleStatus = 'hubReaderDay3BlockActive' + vm.dailiesMonth;
                 vm.browseFeedsBlockToggleStatus = 'hubReaderDay4BlockActive' + vm.monthSelect;
                 vm.sharedBlockToggleStatus = 'hubReaderDay5BlockActive' + vm.monthSelect;
                 vm.savedBlockToggleStatus = 'hubReaderDay6BlockActive' + vm.monthSelect;
@@ -1237,7 +1238,7 @@
                 vm.subscriptionToggle = 'off';
                 vm.manageBlockToggleStatus = 'hubReaderDay1BlockInactive' + vm.monthSelect;
                 vm.externalsBlockToggleStatus = 'hubReaderExternalsDay2BlockInactive' + vm.externalsMonth;
-                vm.dailiesBlockToggleStatus = 'hubReaderDay3BlockInactive' + vm.monthSelect;
+                vm.dailiesBlockToggleStatus = 'hubReaderDay3BlockInactive' + vm.dailiesMonth;
                 vm.browseFeedsBlockToggleStatus = 'hubReaderDay4BlockInactive' + vm.monthSelect;
                 vm.sharedBlockToggleStatus = 'hubReaderDay5BlockInactive' + vm.monthSelect;
                 vm.savedBlockToggleStatus = 'hubReaderDay6BlockInactive' + vm.monthSelect;
