@@ -176,7 +176,7 @@ body {
 
 .tabs_JanuaryA {
   display: flex;
-  flex-driection: row;
+  flex-direction: row;
   flex-wrap: wrap;
   height: 30px;
   justify-content: left;
