@@ -1,0 +1,563 @@
+.externalsBackgroundDiv_JanuaryB {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/externals/backdrop/thomas-dE7csWSE05w-unsplash.jpg);
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.externalsContainerActive_JanuaryB {
+    filter: blur(0px) hue-rotate(0deg);
+    transform: all 0.5s linear;
+}
+
+.externalsContainerInactive_JanuaryB {
+    filter: blur(5px) hue-rotate(180deg);
+    transform: all 0.5s linear;
+}
+
+.externalsTitleBar_JanuaryB {
+    background: #b5aca2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Kulim Park', sans-serif;
+    height: 12vh;
+    justify-content: flex-start;
+    opacity: 0.8;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.externalsLogo_JanuaryB {
+    cursor: pointer;
+    height: 72px;
+    margin: 16px 48px 16px 26px;
+    width: 5%;
+}
+
+.externalsTitle_JanuaryB {
+    color: #010101;
+    font-family: 'Kulim Park', sans-serif;
+    font-size: 36px;
+    transform: translateX(0.5vw) translateY(6.5vh);
+}
+
+.externalsBody_JanuaryB {
+    background: #191d28;
+    height: 87vh;
+    opacity: 0.9;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 24px;
+    width: 100%;
+}
+
+.externalsIssuesHeader_JanuaryB {
+    color: #cac9c9;
+    font-family: 'Kulim Park', sans-serif;
+    font-size: 30px;
+}
+
+.externalManagementContainer_JanuaryB {
+    display: grid;
+    grid-template-columns: [leftBuffer] 10px [deleteColumn] 50px [readColumn] 120px [imageColumn] 150px [issueColumn] 1fr [rightBuffer] 10px;
+    grid-template-rows: [externalContent] auto [addNewContent] auto;
+    height: auto;
+    margin: 30px 0 15px 0;
+    width: 100%;
+}
+
+.externalsSwitchtrue_JanuaryB {
+    background: #ffe16f;
+    cursor: pointer;
+    display: inline-block;
+    filter: brightness(100%);
+    grid-column: readColumn / imageColumn;
+    grid-row: externalContent;
+    height: 25px;
+    margin: 35px 0 0 15px;
+    position: relative;
+    transition: all 0.3s linear;
+    width: 60px;
+}
+
+.externalsSwitchfalse_JanuaryB {
+    background: #ffe16f;
+    cursor: pointer;
+    display: inline-block;
+    filter: brightness(50%);
+    grid-column: readColumn / imageColumn;
+    grid-row: externalContent;
+    height: 25px;
+    margin: 35px 0 0 15px;
+    position: relative;
+    transition: all 0.3s linear;
+    width: 60px;
+}
+
+.externalsSwitchHandletrue_JanuaryB {
+    background: #0a0b10;
+    bottom: 2px;
+    height: 21px;
+    left: 2px;
+    position: absolute;
+    right: 0;
+    top: 2px;
+    transition: all 0.3s linear;
+    width: 30px;
+}
+
+.externalsSwitchHandlefalse_JanuaryB {
+    background: #0a0b10;
+    bottom: 2px;
+    height: 21px;
+    left: 30px;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    transition: all 0.3s linear;
+    width: 28px;
+}
+
+.externalsSwitchText_JanuaryB {
+    color: #e0d8ce;
+    font-family: 'Kulim Park', sans-serif;
+    font-size: 24px;
+    margin: 40px 0 0 0;
+}
+
+.externalsImage_JanuaryB {
+    grid-column: imageColumn / issueColumn;
+    grid-row: externalContent;
+    max-height: 100px;
+    width: 80px;
+}
+
+.externalsReadingDatas_JanuaryB {
+    color: #e0d8ce;
+    font-family: 'Kulim Park', sans-serif;
+    font-size: 24px;
+    grid-column: issueColumn / rightBuffer;
+    grid-row: externalContent;
+    margin: 25px 0 0 0;
+}
+
+.externalsDelete_JanuaryB {
+    align-self: center;
+    color: #e0d8ce;
+    cursor: pointer;
+    font-size: 30px;
+    grid-column: deleteColumn / readColumn;
+    grid-row: externalContent;
+    justify-content: center;
+    transition: all 0.3s linear;
+}
+
+.externalsDelete_JanuaryB:hover {
+    color: #ffe16f;
+    transition: all 0.3s linear;
+}
+
+.externalsAddNewContentDiv_JanuaryB {
+    color: #e0d8ce;
+    cursor: pointer;
+    margin: 70px 0 0 330px;
+    width: auto;
+}
+
+.externalsAddContentIcon_JanuaryB {
+    float: left;
+    font-size: 42px;
+    margin: 0 30px 0 0;
+    position: float;
+}
+
+.externalsAddNewText_JanuaryB {
+    float: left;
+    font-family: 'Kulim Park', sans-serif;
+    font-size: 30px;
+    margin: 5px 0 0 0;
+}
+
+.externalsDeleteGuardrailActive_JanuaryB {
+    background: #cac9c9;
+    border: 1px solid #7c7a7b;
+    height: auto;
+    left: 25%;
+    opacity: 1;
+    position: absolute;
+    top: 15%;
+    transition: all 0.3s linear;
+    width: auto;
+    z-index: 10;
+}
+
+.externalsDeleteGuardrailInactive_JanuaryB {
+    background: #cac9c9;
+    border: 1px solid #7c7a7b;
+    height: auto;
+    left: 175%;
+    opacity: 0;
+    position: absolute;
+    top: 105%;
+    transition: all 0.3s linear;
+    width: auto;
+    z-index: -10;
+}
+
+.externalsDeleteGuardrailTitleBar_JanuaryB {
+    background: #191d28;
+    border-bottom: 1px solid #e0d8ce;
+    height: auto;
+    padding: 6px 0;
+    width: 100%;
+}
+
+.externalsDeleteGuardrailTitle_JanuaryB {
+    color: #e0d8ce;
+    font-family: 'Kulim Park', sans-serif;
+    font-size: 30px;
+    margin-left: 40px;
+}
+
+.externalsGuardrailContainer_JanuaryB {
+    background: transparent;
+    display: grid;
+    grid-template-columns: [leftB] 10px [imgColumn] 120px [infoColumn] 1fr [rightB] 10px;
+    grid-template-rows: [title] auto [query] auto [buttons] auto;
+    height: auto;
+    padding: 12px;
+    width: 100%;
+}
+
+.externalsGuardrailBodyText_JanuaryB {
+    color: #010101;
+    font-family: 'Kulim Park', sans-serif;
+    font-size: 18px;
+    grid-column: imgColumn / rightB;
+    grid-row: title;
+}
+
+.externalsGuardrailImage_JanuaryB {
+    grid-column: imgColumn / infoColumn;
+    grid-row: query;
+    margin: 20px 0;
+    width: 80px;
+}
+
+.externalsGuardrailInfos_JanuaryB {
+    color: #010101;
+    font-family: 'Kulim Park', sans-serif;
+    font-size: 18px;
+    grid-column: infoColumn / rightB;
+    grid-row: query;
+    margin: 40px 0 20px 0;
+}
+
+.externalsGuardrailButtons_JanuaryB {
+    background: transparent;
+    grid-column: infoColumn / rightB;
+    grid-row: buttons;
+    height: auto;
+    justify-content: center;
+    margin: 0 0 0 16%;
+}
+
+.externalsGuardrailButtons_JanuaryB button {
+    background: #bebdbd;
+    color: #010101;
+    cursor: pointer;
+    font-family: 'Kulim Park', sans-serif;
+    font-size: 24px;
+    margin: 10px 40px 20px 0;
+    outline-color: #010101;
+    transform: skewX(-15deg);
+    transition: all 0.6s linear;
+    width: 70px;
+}
+
+.externalsGuardrailButtons_JanuaryB button:hover {
+    background: #191d28;
+    color: #e0d8ce;
+    transform: skewX(-5deg);
+    transition: all 0.6s linear;
+}
+
+.externalsGuardrailButtons_JanuaryB button:active {
+    background: #e0d8ce;
+    color: #191d28;
+    transition: all 0.1s linear;
+}
+
+.externalsAddNewExternalsDialogActive_JanuaryB {
+    background: #cac9c9;
+    border: 1px solid #7c7a7b;
+    height: auto;
+    left: 10%;
+    opacity: 1;
+    position: absolute;
+    top: 0.5%;
+    transform: scale(1);
+    transition: all 0.6s linear;
+    width: 80%;
+    z-index: 10;
+}
+
+.externalsAddNewExternalsDialogInactive_JanuaryB {
+    background: #cac9c9;
+    border: 1px solid #7c7a7b;
+    height: auto;
+    left: -90%;
+    opacity: 0;
+    position: absolute;
+    top: 0.5%;
+    transform: scale(0.01);
+    transition: all 0.6s linear;
+    width: 80%;
+    z-index: -10;
+}
+
+.externalsAddNewTitleBar_JanuaryB {
+    background: #191d28;
+    border-bottom: 1px solid #e0d8ce;
+    height: auto;
+    padding: 6px 0;
+    width: 100%;
+}
+
+.externalsAddNewTitle_JanuaryB {
+    color: #e0d8ce;
+    font-family: 'Kulim Park', sans-serif;
+    font-size: 30px;
+    margin-left: 40px;
+}
+
+.externalsAddNewBodyContainer_JanuaryB {
+    display: grid;
+    grid-template-columns: [leftAdd] 10px [formInput] 1fr [displayAdd] 1fr [rightAdd] 10px;
+    grid-template-rows: [errorMessaging] auto [userAdds] auto [buttonsAdds] auto;
+    height: auto;
+}
+
+.externalsAddErrorField_JanuaryB {
+    color: #ff0000;
+    font-family: 'Kulim Park', sans-serif;
+    font-size: 18px;
+    grid-column: formInput / rightAdd;
+    grid-row: errorMessaging;
+    margin: 15px 30px;
+}
+
+.externalsAddUserForm_JanuaryB {
+    background: #cac9c9;
+    grid-column: formInput / displayAdd;
+    grid-row: userAdds;
+    height: auto;
+    margin: 0 0 30px 0;
+    padding: 24px 0;
+}
+
+.externalsAddUserForm_JanuaryB label {
+    color: #010101;
+    font-family: 'Kulim Park', sans-serif;
+    font-size: 24px;
+    margin: 15px 24px;
+}
+
+.externalsAddUserForm_JanuaryB input[type="text"] {
+    background: #e0d8ce;
+    border: 1px solid #c0b19c;
+    color: #010101;
+    font-family: 'Kulim Park', sans-serif;
+    font-size: 24px;
+    margin: 5px 24px;
+    outline-color: #ffe16f;
+    padding: 0 5px;
+    width: 90%;
+}
+
+.externalsAddUserForm_JanuaryB textarea {
+    background: #e0d8ce;
+    border: 1px solid #c0b19c;
+    color: #010101;
+    font-family: 'Kulim Park', sans-serif;
+    font-size: 24px;
+    margin: 5px 24px;
+    outline-color: #ffe16f;
+    padding: 0 5px;
+    width: 90%;
+}
+
+.externalsDisplayNewAddition_JanuaryB {
+    background: transparent;
+    grid-column: displayAdd / rightAdd;
+    grid-row: userAdds;
+    height: auto;
+    margin: 0 0 30px 0;
+    padding: 24px 0;
+}
+
+.externalsAddImage_JanuaryB {
+    margin: 0 0 0 36px;
+    max-height: 240px;
+    width: 150px;
+}
+
+.externalsAddCandidateTitle_JanuaryB {
+    color: #010101;
+    font-family: 'Kulim Park', sans-serif;
+    font-size: 24px;
+    margin: 24px;
+}
+
+.externalsAddExternalsButtons_JanuaryB {
+    background: transparent;
+    height: auto;
+    grid-column: formInput / rightAdd;
+    grid-row: buttonsAdds;
+    margin: 0 0 30px 0;
+}
+
+.externalsAddExternalsButtons_JanuaryB button {
+    background: #bebdbd;
+    color: #010101;
+    cursor: pointer;
+    font-family: 'Kulim Park', sans-serif;
+    font-size: 24px;
+    margin: 10px 40px 20px 6%;
+    outline-color: #010101;
+    transform: skewX(-15deg);
+    transition: all 0.6s linear;
+    width: auto;
+}
+
+.externalsAddExternalsButtons_JanuaryB button:hover {
+    background: #191d28;
+    color: #e0d8ce;
+    transform: skewX(-5deg);
+    transition: all 0.6s linear;
+}
+
+.externalsAddExternalsButtons_JanuaryB button:active {
+    background: #e0d8ce;
+    color: #191d28;
+    transition: all 0.1s linear;
+}
+
+.hubReaderExternalsDay2BlockInactive_JanuaryB {
+    background: #82a1b5;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/externals/backdrop/thomas-dE7csWSE05w-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(-230%);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: -1;
+}
+
+.hubReaderExternalsDay2BlockActive_JanuaryB {
+    background: #82a1b5;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/externals/backdrop/thomas-dE7csWSE05w-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 414px) {
+
+    .externalsTitle_JanuaryB {
+        font-size: 24px;
+    }
+
+    .externalsIssuesHeader_JanuaryB {
+        font-size: 18px;
+    }
+
+    .externalManagementContainer_JanuaryB {
+        grid-template-columns: [leftBuffer] 1px [deleteColumn] 25px [readColumn] 60px [imageColumn] 80px [issueColumn] 50% [rightBuffer] 14px;
+        grid-template-rows: [externalContent] auto [addNewContent] auto;
+        margin: 15px 0 7px 0;
+    }
+
+    .externalsDelete_JanuaryB {
+        font-size: 18px;
+    }
+
+    .externalsImage_JanuaryB {
+        margin-left: 15px;
+        max-height: 50px;
+        width: 40px;
+    }
+
+    .externalsSwitchfalse_JanuaryB {
+        height: 25px;
+        margin: 15px 15px 0 5px;
+        transform: scale(0.5);
+        width: 60px;
+    }
+
+    .externalsSwitchtrue_JanuaryB {
+        height: 25px;
+        margin: 15px 15px 0 5px;
+        transform: scale(0.5);
+        width: 60px;
+    }
+
+    .externalsReadingDatas_JanuaryB {
+        font-size: 12px;
+        margin: 25px 0 0 0;
+    }
+
+    .externalsAddNewContentDiv_JanuaryB {
+        margin: 70px 0 0 10px;
+    }
+
+    .externalsDeleteGuardrailActive_JanuaryB {
+        left: 0;
+        width: 100%;
+    }
+
+    .externalsAddNewExternalsDialogActive_JanuaryB {
+        left: 0;
+        width: 100%;
+    }
+
+    .externalsAddImage_JanuaryB {
+        margin: 0 0 0 36px;
+        max-height: 120px;
+        width: 75px;
+    }
+
+    .externalsAddUserForm_JanuaryB textarea {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+
+    .externalsTitle_JanuaryB {
+        font-size: 18px;
+    }
+}
