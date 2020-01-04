@@ -805,7 +805,7 @@
         vm.navigateToToday = navigateToToday;
         vm.mondayMonth = '_JanuaryB';
         vm.navigateToExternals = navigateToExternals;
-        vm.externalsMonth = '_JanuaryA';
+        vm.externalsMonth = '_JanuaryB';
         vm.navigateToDailies = navigateToDailies;
         vm.dailiesMonth = '_JanuaryA';
 

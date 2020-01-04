@@ -13,7 +13,7 @@
       const vm = this;
 
       vm.$onInit = onInit;
-      vm.externalsMonth = "_JanuaryA";
+      vm.externalsMonth = "_JanuaryB";
       vm.externalsContainerState = "externalsContainerActive" + vm.externalsMonth;
       vm.navigateToHub = navigateToHub;
       vm.userExternals = {
@@ -185,7 +185,7 @@
             vm.externalsLogoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/robe-154808_640.png';
             break;
           case('_JanuaryB'):
-            vm.externalsLogoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/nun-4018982_1280.png'
+            vm.externalsLogoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/nun-4018982_1280.png';
             break;
           case('_JanuaryC'):
           vm.externalsLogoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/job-3506038_1280.png';
