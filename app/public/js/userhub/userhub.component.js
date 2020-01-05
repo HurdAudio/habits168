@@ -803,7 +803,7 @@
         vm.hubContactSubmit = hubContactSubmit;
         vm.navigateToDay = navigateToDay;
         vm.navigateToToday = navigateToToday;
-        vm.mondayMonth = '_JanuaryB';
+        vm.mondayMonth = '_JanuaryC';
         vm.navigateToExternals = navigateToExternals;
         vm.externalsMonth = '_JanuaryB';
         vm.navigateToDailies = navigateToDailies;

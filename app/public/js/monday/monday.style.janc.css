@@ -1,0 +1,946 @@
+.mondayBackgroundDiv_JanuaryC {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/january/ice_cave_by_saitouuryuuji_d8ci0k1-fullview.jpg);
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    opacity: 0.8;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.mondayTitleStrip_JanuaryC {
+    background: #d9dae3;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Jomolhari', serif;
+    height: auto;
+    justify-content: flex-start;
+    opacity: 0.75;
+    padding: 1vh 3vw 0.1vh 3vw;
+    width: 100%;
+    z-index: 1;
+}
+
+.mondayLogo_JanuaryC {
+    cursor: pointer;
+    height: 92px;
+    margin: 8px 48px 2px 1px;
+    opacity: 1;
+    width: 5%;
+}
+
+.mondayLabel_JanuaryC {
+    color: #050507;
+    font-family: 'Jomolhari', serif;
+    font-size: 36px;
+    margin: 32px 0 0 0;
+}
+
+.mondayTabsStrip_JanuaryC {
+    background: #d9dae3;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Jomolhari', serif;
+    height: auto;
+    justify-content: flex-start;
+    opacity: 0.9;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-left: 3%;
+    width: 100%;
+}
+
+.mondayTabActive_JanuaryC {
+    background: #100e11;
+    color: #d9dae3;
+    cursor: none;
+    font-family: 'Jomolhari', serif;
+    font-size: 24px;
+    padding: 6px 74px 4px 4px;
+    perspective: 5.5cm;
+    transition: all 0.5s linear;
+    z-index: 5;
+}
+
+.mondayTabInactive_JanuaryC {
+    background: #d9dae3;
+    color: #868489;
+    cursor: pointer;
+    font-family: 'Jomolhari', serif;
+    font-size: 24px;
+    padding: 6px 20px 4px 10px;
+    perspective: none;
+    transition: all 0.5s linear;
+    z-index: 5;
+}
+
+.mondayContent_JanuaryC {
+    background: transparent;
+    height: 80vh;
+    width: 100%;
+}
+
+.mondayContentContent_JanuaryC {
+    background: #b2b5c6;
+    height: 80vh;
+    opacity: 0.8;
+    overflow-x: hidden;
+    overflow-Y: scroll;
+    width: 105%;
+}
+
+.mondayFeedsDiv_JanuaryC {
+    height: auto;
+    margin: 90px 50px 0 50px;
+    width: 90%;
+}
+
+.mondayFeedContainer_JanuaryC {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 5px 50px;
+}
+
+.mondaySubscriptions_JanuaryC {
+    cursor: pointer;
+}
+
+.mondaySubIcon_JanuaryC {
+    filter: grayscale(0%);
+    height: 65px;
+    margin-right: 20px;
+    transform: skewX(-15deg);
+    transition: all 0.5s linear;
+    width: 65px;
+}
+
+.mondaySubIcon_JanuaryC:hover {
+    filter: grayscale(100%);
+    transform: skewX(-5deg);
+    transition: all 0.5s linear;
+}
+
+.mondaySubscriptionTitle_JanuaryC {
+    color: #050507;
+    font-family: 'Jomolhari', serif;
+    font-size: 21px;
+    line-height: 1.2;
+    margin: 5px 0 10px 0;
+    width: 750px;
+}
+
+.mondayTrackProgress_JanuaryC {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    cursor: pointer;
+    display: block;
+    font-size: 48px;
+    margin: 15px 100px 15px 5px;
+    padding-left: 35px;
+    position: relative;
+    user-select: none;
+}
+
+.mondayTrackProgress_JanuaryC input {
+    cursor: pointer;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    width: 0;
+}
+
+.mondayCheckbox_JanuaryCfalse {
+    background-color: #504f54;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    top: 15px;
+    transition: all 0.3s linear;
+    width: 50px;
+}
+
+.mondayCheckbox_JanuaryCtrue {
+    background-color: #9c9aa5;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    top: 15px;
+    transition: all 0.3s linear;
+    width: 50px;
+}
+
+.mondayCheckbox_JanuaryCfalse:hover {
+    background-color: #0e0d12;
+}
+
+.mondayCheckbox_JanuaryCtrue:hover {
+    background-color: #0e0d12;
+}
+
+.mondaySwitchUnchecked_JanuaryCfalse {
+    background-color: #2a2a2a;
+    height: 30px;
+    left: 0px;
+    position: absolute;
+    top: -6px;
+    transition: all 0.2s linear;
+    width: 25px;
+}
+
+.mondaySwitchUnchecked_JanuaryCtrue {
+    background-color: #2a2a2a;
+    height: 30px;
+    left: 25px;
+    position: absolute;
+    top: -6px;
+    transition: all 0.2s linear;
+    width: 25px;
+}
+
+.mondayReadAllButton_JanuaryC {
+    background: #050507;
+    border: transparent;
+    color: #d9dae3;
+    cursor: pointer;
+    font-family: 'Jomolhari', serif;
+    font-size: 36px;
+    height: 60px;
+    outline-color: #d9dae3;
+    transform: skewX(-15deg);
+    transition: all 0.5s linear;
+    width: 60px;
+}
+
+.mondayReadAllButton_JanuaryC i {
+    transform: translateY(-4px);
+}
+
+.mondayReadAllButton_JanuaryC:hover {
+    background: #47484f;
+    color: #0e0d12;
+    outline-color: #0e0d12;
+    transform: skewX(-5deg);
+}
+
+.mondayReadAllButton_JanuaryC:active {
+    filter: hue-rotate(90deg);
+    outline-color: #0e0d12;
+    transform: skew(-5deg);
+}
+
+.mondayReaderNavigationButtons_JanuaryC {
+    background: #868489;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: flex-start;
+    margin: 0 0 0 0;
+    position: fixed;
+    width: 100%;
+    z-index: 15;
+}
+
+.mondayReadAll_JanuaryC {
+    color: #0f1c25;
+    font-family: 'Jomolhari', serif;
+    font-size: 24px;
+    margin: 14px 0 14px 25px;
+}
+
+.mondaySorting_JanuaryC {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 14px 0 14px 100px;
+}
+
+.mondaySorting_JanuaryC p {
+    color: #050507;
+    font-family: 'Jomolhari', serif;
+    font-size: 21px;
+    margin: 20px 20px 0 0;
+}
+
+.mondaySortingButton_JanuaryC {
+    margin-right: 20px;
+}
+
+.markAllReadText_JanuaryC {
+    color: #050507;
+    font-family: 'Jomolhari', serif;
+    font-size: 21px;
+    margin: 35px 10px 0 40px;
+}
+
+.mondayUnreadText_JanuaryC {
+    color: #050507;
+    font-family: 'Jomolhari', serif;
+    font-size: 21px;
+    margin: 10px 0 0 30px;
+    width: 35px;
+}
+
+.mondayReadText_JanuaryC {
+    color: #050507;
+    font-family: 'Jomolhari', serif;
+    font-size: 21px;
+    margin: 10px 0 0 30px;
+    width: 35px;
+}
+
+.mondayBuffer_JanuaryC {
+    height: 20px;
+    width: 100%;
+}
+
+.mondayManageTabsButton_JanuaryC {
+    background: #050507;
+    border: transparent;
+    color: #d9dae3;
+    cursor: pointer;
+    font-family: 'Jomolhari', serif;
+    font-size: 18px;
+    height: auto;
+    margin: 56px 0 0 20%;
+    outline-color: #d9dae3;
+    padding: -30px 20px;
+    position: relative;
+    transform: skewX(-15deg) translateY(-20px);
+    transition: all 0.5s linear;
+    width: auto;
+}
+
+.mondayManageTabsButton_JanuaryC:hover {
+    background: #47484f;
+    color: #0e0d12;
+    outline-color: #0e0d12;
+    transform: skewX(-5deg) translateY(-20px);
+}
+
+.mondayManageTabsButton_JanuaryC:active {
+    filter: hue-rotate(90deg);
+    outline-color: #0e0d12;
+    transform: skew(-5deg) translateY(-20px);
+}
+
+.mondayContainerActive_JanuaryC {
+    filter: blur(0px);
+}
+
+.mondayContainerInactive_JanuaryC {
+    filter: blur(15px);
+}
+
+.mondayManageTabsSubsModal_JanuaryC {
+    background: #b2b5c6;
+    border: solid 5px #050507;
+    filter: blur(0px);
+    height: 90vh;
+    left: 2%;
+    opacity: 1;
+    position: absolute;
+    top: 5vh;
+    transition: all 0.4s linear;
+    width: 95%;
+    z-index: 50;
+}
+
+.mondayManageTabsSubsModalBlur_JanuaryC {
+    background: #b2b5c6;
+    border: solid 5px #b2b5c6;
+    filter: blur(5px);
+    height: 90vh;
+    left: 2%;
+    opacity: 0.4;
+    position: absolute;
+    top: 5vh;
+    transition: all 0.4s linear;
+    width: 95%;
+    z-index: 50;
+}
+
+.mondayManageTitleBar_JanuaryC {
+    background: #2a2a2a;
+    font-family: 'Jomolhari', serif;
+    height: 4vh;
+    opacity: 0.9;
+    position: relative;
+    padding: 1vh 0 2vh 1vw;
+    width: 99%;
+}
+
+.mondayManageTitle_JanuaryC {
+    color: #d9dae3;
+    font-family: 'Jomolhari', serif;
+    font-size: 30px;
+}
+
+.mondayModalExit_JanuaryC {
+    color: #d9dae3;
+    cursor: pointer;
+    font-family: 'Jomolhari', serif;
+    font-size: 48px;
+    float: left;
+    left: 95%;
+    position: relative;
+    top: -1%;
+    transform: translateY(-5px);
+}
+
+.mondayManageTabsSubsModalInactive_JanuaryC {
+    top: -90vh;
+    transition: all 0.4s linear;
+}
+
+.mondayManagerModalContainer_JanuaryC {
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    height: 82.7vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
+}
+
+.mondayManagerTabsSection_JanuaryC {
+    height: auto;
+    padding: 15px;
+    position: relative;
+    width: 30%;
+}
+
+.mondayTabsManageTitle_JanuaryC {
+    color: #050507;
+    font-family: 'Jomolhari', serif;
+    font-size: 30px;
+}
+
+.mondayManagerSubscriptionsSection_JanuaryC {
+    height: auto;
+    padding: 15px;
+    position: relative;
+    width: 30%;
+}
+
+.mondayTabsSubscriptionTitle_JanuaryC {
+    color: #050507;
+    font-family: 'Jomolhari', serif;
+    font-size: 30px;
+}
+
+.mondayManagerFeedsSection_JanuaryC {
+    height: auto;
+    padding: 15px;
+    position: relative;
+    width: 30%;
+}
+
+.mondayManagerFeedsTitle_JanuaryC {
+    color: #050507;
+    font-family: 'Jomolhari', serif;
+    font-size: 30px;
+}
+
+.mondayManageTabsContainer_JanuaryC {
+    margin: 40px 8%;
+}
+
+.mondayTabManageTab_JanuaryC {
+    color: #050507;
+    cursor: pointer;
+    font-family: 'Jomolhari', serif;
+    font-size: 30px;
+    margin: 15px 0 15px 10px;
+}
+
+.mondayManageSubIcon_JanuaryC {
+    height: 40px;
+    width: 40px;
+}
+
+.mondayManageSubsTitles_JanuaryC {
+    color: #050507;
+    font-family: 'Jomolhari', serif;
+    font-size: 18px;
+    margin: 1px 0 30px 1px;
+}
+
+.mondayManageSearch_JanuaryC {
+    color: #050507;
+    float: left;
+    font-family: 'Jomolhari', serif;
+    font-size: 18px;
+    height: 21px;
+    margin-top: 3px;
+    outline-color: #bfc7e1;
+    width: 100%;
+}
+
+.mondayTabManageSubTab_JanuaryC {
+    color: #050507;
+    cursor: pointer;
+    font-family: 'Jomolhari', serif;
+    font-size: 15px;
+    margin: 1px 0 30px 40px;
+    width: 10%;
+}
+
+.mondaySubManageSubTab_JanuaryC {
+    color: #050507;
+    cursor: pointer;
+    font-family: 'Jomolhari', serif;
+    font-size: 15px;
+    margin: 4px 0 1px 10px;
+    transform: translateX(100px) translateY(-40px);
+    width: 10%;
+}
+
+.mondayManageSubsTitlesFeeds_JanuaryC {
+    color: #050507;
+    font-family: 'Jomolhari', serif;
+    font-size: 18px;
+    margin: -15px 0 30px 1px;
+}
+
+.mondayCreateEditTabManagement_JanuaryC {
+    background: #9c9aa5;
+    border: solid 5px #d9dae3;
+    height: auto;
+    left: 22%;
+    opacity: 1;
+    padding: 45px;
+    position: absolute;
+    top: 25vh;
+    transition: all 0.4s linear;
+    width: 50%;
+    z-index: 60;
+}
+
+.mondayCreateEditTabTitle_JanuaryC {
+    color: #050507;
+    font-family: 'Jomolhari', serif;
+    font-size: 24px;
+    margin: 15px 0 30px 25px;
+}
+
+.mondayTabEditorFields_JanuaryC {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin: 10px 0 0 60px;
+}
+
+.mondayTabNameLabel_JanuaryC {
+    color: #050507;
+    font-family: 'Jomolhari', serif;
+    font-size: 18px;
+    margin: 0 9px 0 0;
+}
+
+.mondayTabNameInput_JanuaryC {
+    background: #d9dae3;
+    border: solid 1px #050507;
+    color: #050507;
+    font-family: 'Jomolhari', serif;
+    font-size: 18px;
+    height: 21px;
+    margin: 0 9px;
+    outline-color: #050507;
+    width: 350px;
+}
+
+#mondayTabEditorPodcastBlogStatus_JanuaryC {
+    margin: -13px 0 0 40px;
+}
+
+.mondayTabEditorErrorMessage_JanuaryC {
+    color: #ff0000;
+    font-family: 'Jomolhari', serif;
+    font-size: 21px;
+    margin-left: 120px;
+    margin-top: 20px;
+}
+
+.mondayManageTabsConfirmButton_JanuaryC {
+    background: #050507;
+    border: transparent;
+    color: #d9dae3;
+    cursor: pointer;
+    font-family: 'Jomolhari', serif;
+    font-size: 18px;
+    height: 40px;
+    margin: 10px 0 0 15px;
+    outline: #012e50;
+    padding: -20px 20px;
+    position: relative;
+    transform: skewX(-15deg);
+    transition: all 0.5s linear;
+    width: auto;
+}
+
+
+.mondayManageTabsConfirmButton_JanuaryC:hover {
+    background: #0474c8;
+    color: #0f1c25;
+    outline: #012e50;
+    transform: skewX(-5deg);
+}
+
+.mondayManageTabsConfirmButton_JanuaryC:active {
+    filter: hue-rotate(90deg);
+    outline: #012e50;
+    transform: skew(-5deg);
+}
+
+.mondayManageTabsSubmitCancelButton_JanuaryC {
+    background: #050507;
+    border: transparent;
+    color: #d9dae3;
+    cursor: pointer;
+    font-family: 'Jomolhari', serif;
+    font-size: 30px;
+    height: auto;
+    margin: 30px 0 0 70px;
+    outline: #012e50;
+    padding: -40px 20px;
+    position: relative;
+    transform: skewX(-15deg);
+    transition: all 0.5s linear;
+    width: auto;
+}
+
+.mondayManageTabsSubmitCancelButton_JanuaryC:hover {
+    background: #47484f;
+    color: #0e0d12;
+    outline-color: #0e0d12;
+    transform: skewX(-5deg);
+}
+
+.mondayManageTabsSubmitCancelButton_JanuaryC:active {
+    filter: hue-rotate(90deg);
+    outline-color: #0e0d12;
+    transform: skew(-5deg);
+}
+
+.mondayGuardRail_JanuaryC {
+    background: #c3c2c4;
+    border: solid 5px #201f21;
+    height: auto;
+    left: 32%;
+    opacity: 1;
+    padding: 45px;
+    position: absolute;
+    top: 25vh;
+    transition: all 0.4s linear;
+    width: 30%;
+    z-index: 60;
+}
+
+.guardRailText_JanuaryC {
+    color: #050507;
+    font-family: 'Jomolhari', serif;
+    font-size: 24px;
+    margin: 15px 0 30px 25px;
+}
+
+.guardRailButtons_JanuaryC {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin: 10px 0 0 60px;
+}
+
+.hubReaderDay1MondayActive_JanuaryC {
+    background: #0474c8;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/january/ice_cave_by_saitouuryuuji_d8ci0k1-fullview.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+    width: 8%;
+    z-index: 1;
+}
+
+.hubReaderDay1MondayInactive_JanuaryC {
+    background: #0474c8;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/january/ice_cave_by_saitouuryuuji_d8ci0k1-fullview.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(-115%);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+    width: 8%;
+    z-index: -1;
+}
+
+.hubReaderDay2MondayActive_JanuaryC {
+    background: #0474c8;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/january/ice_cave_by_saitouuryuuji_d8ci0k1-fullview.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+    width: 8%;
+    z-index: 1;
+}
+
+.hubReaderDay2MondayInactive_JanuaryC {
+    background: #0474c8;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/january/ice_cave_by_saitouuryuuji_d8ci0k1-fullview.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(-230%);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+    width: 8%;
+    z-index: -1;
+}
+
+.hubReaderDay3MondayActive_JanuaryC {
+    background: #0474c8;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/january/ice_cave_by_saitouuryuuji_d8ci0k1-fullview.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+    width: 8%;
+    z-index: 1;
+}
+
+.hubReaderDay3MondayInactive_JanuaryC {
+    background: #0474c8;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/january/ice_cave_by_saitouuryuuji_d8ci0k1-fullview.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(-345%);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+    width: 8%;
+    z-index: -1;
+}
+
+.hubReaderDay4MondayActive_JanuaryC {
+    background: #0474c8;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/january/ice_cave_by_saitouuryuuji_d8ci0k1-fullview.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+    width: 8%;
+    z-index: 1;
+}
+
+.hubReaderDay4MondayInactive_JanuaryC {
+    background: #0474c8;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/january/ice_cave_by_saitouuryuuji_d8ci0k1-fullview.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(-460%);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+    width: 8%;
+    z-index: -1;
+}
+
+.hubReaderDay5MondayActive_JanuaryC {
+    background: #0474c8;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/january/ice_cave_by_saitouuryuuji_d8ci0k1-fullview.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+    width: 8%;
+    z-index: 3;
+}
+
+.hubReaderDay5MondayInactive_JanuaryC {
+    background: #0474c8;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/january/ice_cave_by_saitouuryuuji_d8ci0k1-fullview.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(-575%);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+    width: 8%;
+    z-index: -1;
+}
+
+.hubReaderDay6MondayActive_JanuaryC {
+    background: #0474c8;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/january/ice_cave_by_saitouuryuuji_d8ci0k1-fullview.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+    width: 8%;
+    z-index: 1;
+}
+
+.hubReaderDay6MondayInactive_JanuaryC {
+    background: #0474c8;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/january/ice_cave_by_saitouuryuuji_d8ci0k1-fullview.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(-690%);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+    width: 8%;
+    z-index: -1;
+}
+
+.hubReaderDay7MondayActive_JanuaryC {
+    background: #0474c8;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/january/ice_cave_by_saitouuryuuji_d8ci0k1-fullview.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+    width: 8%;
+    z-index: 1;
+}
+
+.hubReaderDay7MondayInactive_JanuaryC {
+    background: #0474c8;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/january/ice_cave_by_saitouuryuuji_d8ci0k1-fullview.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(-705%);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+    width: 8%;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 414px) {
+
+    .mondayReaderNavigationButtons_JanuaryC {
+        display: none;
+    }
+
+    .mondayLabel_JanuaryC {
+        font-size: 24px;
+    }
+
+    .mondayTrackProgress_JanuaryC {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        cursor: pointer;
+        display: block;
+        font-size: 48px;
+        margin: 15px 1px 15px 5px;
+        padding-left: 35px;
+        position: relative;
+        user-select: none;
+    }
+
+    .mondaySorting_JanuaryC {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin: 14px 0 14px 10px;
+    }
+
+    .mondaySorting_JanuaryC p {
+        font-size: 12px;
+        margin: 5px 15px 0 0;
+    }
+
+    .mondayFeedContainer_JanuaryC {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 5px 5px 5px -15px;
+    }
+
+    .mondaySubIcon_JanuaryC {
+        filter: invert(0%);
+        height: 65px;
+        margin-right: 20px;
+        transform: skewX(-15deg) translateX(55px);
+        transition: all 0.5s linear;
+        width: 65px;
+    }
+
+}
