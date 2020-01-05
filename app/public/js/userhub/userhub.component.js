@@ -1762,7 +1762,6 @@
 
         function onInit() {
             console.log("User Hub is lit");
-            console.log($stateParams.id);
             setUserIPAddress();
 
             switch (vm.monthSelect) {
