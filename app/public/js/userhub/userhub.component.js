@@ -21,208 +21,6 @@
         vm.hubProfileTabState = 'hubTabInactive' + vm.monthSelect;
         vm.hubTabStatus = 'hubShare' + vm.monthSelect;
         vm.updateHubTab = updateHubTab;
-        vm.emojis = [
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/001-zombie.svg',
-                value: '001-zombie'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/002-yelling.svg',
-                value: '002-yelling'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/003-muted.svg',
-                value: '003-muted'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/004-dead.svg',
-                value: '004-dead'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/005-surprised.svg',
-                value: '005-surprised'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/006-wondering.svg',
-                value: '006-wondering'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/007-wink-1.svg',
-                value: '007-wink-1'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/008-weird-1.svg',
-                value: '008-weird-1'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/009-weird.svg',
-                value: '009-weird'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/010-vomiting.svg',
-                value: '010-vomiting'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/011-alien.svg',
-                value: '011-alien'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/012-tongue.svg',
-                value: '012-tongue'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/013-sweating.svg',
-                value: '013-sweating'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/014-cool.svg',
-                value: '014-cool'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/015-straight.svg',
-                value: '015-straight'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/016-smile-1.svg',
-                value: '016-smile-1'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/017-sleeping.svg',
-                value: '017-sleeping'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/018-skull.svg',
-                value: '018-skull'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/019-shy.svg',
-                value: '019-shy'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/020-laughing-2.svg',
-                value: '020-laughing-2'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/021-quiet.svg',
-                value: '021-quiet'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/022-pirate.svg',
-                value: '022-pirate'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/023-nerd.svg',
-                value: '023-nerd'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/024-ninja.svg',
-                value: '024-ninja'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/025-money.svg',
-                value: '025-money'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/026-laughing-1.svg',
-                value: '026-laughing-1'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/027-sad.svg',
-                value: '027-sad'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/028-laughing.svg',
-                value: '028-laughing'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/029-kiss-1.svg',
-                value: '029-kiss-1'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/030-karate.svg',
-                value: '030-karate'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/031-in-love.svg',
-                value: '031-in-love'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/032-hipster.svg',
-                value: '032-hipster'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/033-hypnotized.svg',
-                value: '033-hypnotized'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/034-heart.svg',
-                value: '034-heart'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/035-headache.svg',
-                value: '035-headache'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/036-happy.svg',
-                value: '036-happy'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/037-wink.svg',
-                value: '037-wink'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/038-glitter.svg',
-                value: '038-glitter'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/039-kiss.svg',
-                value: '039-kiss'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/040-sick-1.svg',
-                value: '040-sick-1'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/041-sick.svg',
-                value: '041-sick'
-      },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/042-evil.svg',
-                value: '042-evil'
-      },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/043-drool.svg',
-                value: '043-drool'
-      },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/044-devil.svg',
-                value: '044-devil'
-      },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/045-cry-1.svg',
-                value: '045-cry-1'
-      },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/046-cry.svg',
-                value: '046-cry'
-      },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/047-broken-heart.svg',
-                value: '047-broken-heart'
-      },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/048-smile.svg',
-                value: '048-smile'
-      },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/049-confused.svg',
-                value: '049-confused'
-      },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/050-angel.svg',
-                value: '050-angel'
-      }
-      ];
         vm.sharedContent = [
             {
                 author: 'Walter Einenkel',
@@ -872,9 +670,11 @@
 
             navigateToDay(days[now.getDay()]);
         }
-        
+
         function navigateToDailies() {
-            $state.go('dailies', {userUuid: vm.user.uuid});
+            $state.go('dailies', {
+                userUuid: vm.user.uuid
+            });
         }
 
         function navigateToExternals() {
@@ -1759,6 +1559,13 @@
 
         }
 
+        function populateEmojis() {
+            $http.get('/emojis')
+                .then(emojisData => {
+                    vm.emojis = emojisData.data;
+                });
+        }
+
 
         function onInit() {
             console.log("User Hub is lit");
@@ -1783,6 +1590,7 @@
             obtainUserLocationImage();
             initializeDayCards();
             initializeSubscriptionCards();
+            populateEmojis();
 
         }
 

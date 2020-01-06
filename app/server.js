@@ -21,6 +21,8 @@ const blog_saves = require('./routes/blog_saves.js');
 const podcast_saves = require('./routes/podcast_saves.js');
 const user_player_data = require('./routes/user_player_data.js');
 const emojis = require('./routes/emojis.js');
+const assemble_shared_content = require('./routes/assemble_shared_content.js');
+const share_reactions = require('./routes/share_reactions.js');
 // const financial_modules = require('./routes/financial_modules.js');
 
 const port = process.env.PORT || 3037;
@@ -42,6 +44,8 @@ app.use('/blog_saves', blog_saves);
 app.use('/podcast_saves', podcast_saves);
 app.use('/user_player_data', user_player_data);
 app.use('/emojis', emojis);
+app.use('/assemble_shared_content', assemble_shared_content);
+app.use('/share_reactions', share_reactions);
 
 // app.get('/reuters_headlines/:country', (req, res, next) =>{
 //   let newUrl = 'https://newsapi.org/v2/top-headlines?country=';
