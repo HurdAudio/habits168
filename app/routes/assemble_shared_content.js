@@ -48,6 +48,70 @@ router.get('/:uuid', (req, res, next) => {
             });
     }
 
+    function setReactionsData(index, feedUuid, userUuid) {
+        let share_reactions = [];
+        let unique = true;
+        let emoj;
+        let emoti;
+
+        knex('share_reactions')
+            .select()
+            .where('share_uuid', feedUuid)
+            .then((reactions) => {
+                if ((!reactions) || (reactions.length === 0)) {
+                    return;
+                }
+                for (let i = 0; i < reactions.length; i++) {
+                    unique = true;
+                    for (let j = 0; j < share_reactions.length; j++) {
+                        if (share_reactions[j].reaction_uuid === reactions[i].reaction_uuid) {
+                            unique = false;
+                            share_reactions[j].from.push(reactions[i].user_uuid);
+                        }
+                    }
+                    if (unique) {
+                        share_reactions.push({
+                            from: [reactions[i].user_uuid],
+                            reaction_uuid: reactions[i].reaction_uuid
+                        });
+                    }
+                }
+                knex('emojis')
+                    .then((emojis) => {
+                        for (let i = 0; i < share_reactions.length; i++) {
+                            share_reactions[i].id = i;
+                            emoj = emojis.filter((emo) => {
+                                return (emo.uuid === share_reactions[i].reaction_uuid);
+                            });
+                            share_reactions[i].link = emoj[0].path;
+                            share_reactions[i].reaction = emoj[0].value;
+                        }
+                        knex('users')
+                            .then((users) => {
+                                for (let i = 0; i < share_reactions.length; i++) {
+                                    for (let j = 0; j < share_reactions[i].from.length; j++) {
+                                        emoti = users.filter((u) => {
+                                            return (u.uuid === share_reactions[i].from[j]);
+                                        });
+                                        if ((share_reactions[i].hover_text === undefined) || (share_reactions[i].hover_text.length === 0)) {
+                                            share_reactions[i].hover_text = emoti[0].first_name + ' ' + emoti[0].last_name;
+                                        } else {
+                                            share_reactions[i].hover_text += ', ' + emoti[0].first_name + ' ' + emoti[0].last_name;
+                                        }
+                                    }
+                                    share_reactions[i].tally = share_reactions[i].from.length;
+                                    if (share_reactions[i].from.indexOf(userUuid) === -1) {
+                                        share_reactions[i].user_contributed = false;
+                                    } else {
+                                        share_reactions[i].user_contributed = true;
+                                    }
+                                }
+                                result[index].share_reactions = share_reactions;
+                            });
+                    });
+            });
+    }
+
     knex('users')
         .select()
         .where('uuid', req.params.uuid)
@@ -110,7 +174,7 @@ router.get('/:uuid', (req, res, next) => {
                                     setUserData(i, shares[i].user_uuid);
                                 }
                                 setFeedData(i, shares[i].blogOrPodcast, shares[i].feed_uuid);
-
+                                setReactionsData(i, shares[i].uuid, user.uuid);
                                 // TODO obtain comments from comment tables
                                 // TODO obtain reactions from reactions tables
                             }

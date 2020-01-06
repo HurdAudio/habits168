@@ -33,8 +33,8 @@ exports.seed = function (knex, Promise) {
                 },
                 {
                     uuid: '20b1f2cd-e90b-4c0e-8273-b3ce8d8f764e',
-                    user_uuid: '03ad421c-aad5-47b1-88ab-d7822f6c3eb7',
-                    reaction_uuid: '70887015-be67-456c-940c-c19a623efe1b',
+                    user_uuid: 'e0d83fb4-f7b5-492c-ba49-e3b1447567e6',
+                    reaction_uuid: '37029257-605a-4938-827c-31600fa6484a',
                     share_uuid: '1ff13dbd-579d-4415-bf94-93a2e67f6659',
                     blogOrPodcast: 'blog',
                     created_at: new Date('2019-06-01 17:21:00.000 UTC'),
@@ -43,7 +43,7 @@ exports.seed = function (knex, Promise) {
                 {
                     uuid: '6977bde8-41ce-4f0e-8f57-aa71d82c3400',
                     user_uuid: '03ad421c-aad5-47b1-88ab-d7822f6c3eb7',
-                    reaction_uuid: '328b0607-0dd3-4f7a-84af-57db09182877',
+                    reaction_uuid: '37029257-605a-4938-827c-31600fa6484a',
                     share_uuid: '1ff13dbd-579d-4415-bf94-93a2e67f6659',
                     blogOrPodcast: 'blog',
                     created_at: new Date('2019-06-01 17:21:00.000 UTC'),
@@ -52,7 +52,7 @@ exports.seed = function (knex, Promise) {
                 {
                     uuid: 'ecadbe38-9ea0-4c7f-8064-835698bbcae4',
                     user_uuid: '96770ff7-afa0-4c31-970e-905e8f28ccd0',
-                    reaction_uuid: '328b0607-0dd3-4f7a-84af-57db09182877',
+                    reaction_uuid: '37029257-605a-4938-827c-31600fa6484a',
                     share_uuid: '1ff13dbd-579d-4415-bf94-93a2e67f6659',
                     blogOrPodcast: 'blog',
                     created_at: new Date('2019-06-01 17:21:00.000 UTC'),

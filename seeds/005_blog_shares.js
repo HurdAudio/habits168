@@ -104,7 +104,49 @@ exports.seed = function (knex, Promise) {
                     categories: {},
                     created_at: new Date('2019-08-11 17:21:00.000 UTC'),
                     updated_at: new Date('2019-08-11 17:21:00.000 UTC')
-        }
+        },
+                {
+                    uuid: '1e77cf73-4ef9-48a4-9e43-d2f09ddb3209',
+                    user_uuid: '17917373-ee9c-46aa-a38a-cacc475abee7',
+                    feed_uuid: '2c7be513-9083-439c-937f-42bbe95c0cb9',
+                    share_status: 'public',
+                    comment: 'Just in case you\'ve been wondering why I talk to myself all day... I mean I talk to Devin all day long.',
+                    title: 'Speaking to yourself in the third person makes you wiser',
+                    pubDate: '2019-08-11 18:15:05',
+                    link: 'https://aeon.co/ideas/why-speaking-to-yourself-in-the-third-person-makes-you-wiser',
+                    guid: '22342d8c4cea492b9803608deeb448da',
+                    author: '',
+                    thumbnail: '',
+                    description: '<a href="https://news.ycombinator.com/item?id=20669171">Comments</a>',
+                    content: '<a href="https://news.ycombinator.com/item?id=20669171">Comments</a>',
+                    enclosure: {
+                        "link": null
+                    },
+                    categories: {},
+                    created_at: new Date('2019-08-12 17:21:00.000 UTC'),
+                    updated_at: new Date('2019-08-12 17:21:00.000 UTC')
+        },
+                {
+                    uuid: '0288264e-721e-47fe-8508-604859ac3667',
+                    user_uuid: '03ad421c-aad5-47b1-88ab-d7822f6c3eb7',
+                    feed_uuid: '8555fac3-8c0a-42c7-b71a-9ae836a615a9',
+                    share_status: 'public',
+                    comment: 'Push Tar!!',
+                    title: 'Shredding With ‘The Push-tar’',
+                    pubDate: '2019-08-10 18:15:05',
+                    link: 'http://www.synthtopia.com/content/2019/08/10/shredding-with-the-push-tar/',
+                    guid: '7234id8c4cea492b9803608deeb448da',
+                    author: 'Elisabeth',
+                    thumbnail: '',
+                    description: 'Dan Freeman, Director of the Brooklyn Digital Conservatory, uses a unique approach to performing with the Ableton Push.… <a class="more-link" href="http://www.synthtopia.com/content/2019/08/10/shredding-with-the-push-tar/">Read More <span class="screen-reader-text">Shredding With ‘The Push-tar’</span></a> ',
+                    content: 'Dan Freeman, Director of the Brooklyn Digital Conservatory, uses a unique approach to performing with the Ableton Push.… <a class="more-link" href="http://www.synthtopia.com/content/2019/08/10/shredding-with-the-push-tar/">Read More <span class="screen-reader-text">Shredding With ‘The Push-tar’</span></a> ',
+                    enclosure: {
+                        "link": null
+                    },
+                    categories: {},
+                    created_at: new Date('2019-08-15 17:21:00.000 UTC'),
+                    updated_at: new Date('2019-08-15 17:21:00.000 UTC')
+                }
       ]);
         });
 };
