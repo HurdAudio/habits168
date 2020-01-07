@@ -48,6 +48,69 @@ router.get('/:uuid', (req, res, next) => {
             });
     }
 
+    function setCommentReactionsData(index, commentIndex, commentUuid, userUuid) {
+        let comment_reactions = [];
+        let unique, emoj, emoti;
+
+        knex('share_comment_reactions')
+            .select()
+            .where('comment_uuid', commentUuid)
+            .then((reactions) => {
+                if ((!reactions) || (reactions.length === 0)) {
+                    result[index].share_comments[commentIndex].comment_reactions = comment_reactions;
+                    return;
+                }
+                for (let i = 0; i < reactions.length; i++) {
+                    unique = true;
+                    for (let j = 0; j < comment_reactions.length; j++) {
+                        if (comment_reactions[j].reaction_uuid === reactions[i].reaction_uuid) {
+                            unique = false;
+                            comment_reactions[j].from.push(reactions[i].user_uuid);
+                        }
+                    }
+                    if (unique) {
+                        comment_reactions.push({
+                            from: [reactions[i].user_uuid],
+                            reaction_uuid: reactions[i].reaction_uuid
+                        });
+                    }
+                }
+                knex('emojis')
+                    .then((emojis) => {
+                        for (let i = 0; i < comment_reactions.length; i++) {
+                            comment_reactions[i].id = i;
+                            emoj = emojis.filter((emo) => {
+                                return (emo.uuid === comment_reactions[i].reaction_uuid);
+                            });
+                            comment_reactions[i].link = emoj[0].path;
+                            comment_reactions[i].reaction = emoj[0].value;
+                        }
+                        knex('users')
+                            .then((users) => {
+                                for (let i = 0; i < comment_reactions.length; i++) {
+                                    for (let j = 0; j < comment_reactions[i].from.length; j++) {
+                                        emoti = users.filter((u) => {
+                                            return (u.uuid === comment_reactions[i].from[j]);
+                                        });
+                                        if ((comment_reactions[i].hover_text === undefined) || (comment_reactions[i].hover_text.length === 0)) {
+                                            comment_reactions[i].hover_text = emoti[0].first_name + ' ' + emoti[0].last_name;
+                                        } else {
+                                            comment_reactions[i].hover_text += ', ' + emoti[0].first_name + ' ' + emoti[0].last_name;
+                                        }
+                                    }
+                                    comment_reactions[i].tally = comment_reactions[i].from.length;
+                                    if (comment_reactions[i].from.indexOf(userUuid) === -1) {
+                                        comment_reactions[i].user_contributed = false;
+                                    } else {
+                                        comment_reactions[i].user_contributed = true;
+                                    }
+                                }
+                                result[index].share_comments[commentIndex].comment_reactions = comment_reactions;
+                            });
+                    });
+            });
+    }
+
     function setCommentsData(index, feedUuid, userUuid) {
         let share_comments = [];
         let aDate, bDate;
@@ -91,8 +154,10 @@ router.get('/:uuid', (req, res, next) => {
                                 created_at: comments[i].created_at,
                                 updated_at: comments[i].updated_at
                             });
+                            setCommentReactionsData(index, i, comments[i].uuid, userUuid);
                         }
                         result[index].share_comments = share_comments;
+
                     });
             });
     }

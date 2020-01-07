@@ -24,6 +24,7 @@ const emojis = require('./routes/emojis.js');
 const assemble_shared_content = require('./routes/assemble_shared_content.js');
 const share_reactions = require('./routes/share_reactions.js');
 const share_comments = require('./routes/share_comments.js');
+const share_comment_reactions = require('./routes/share_comment_reactions.js');
 // const financial_modules = require('./routes/financial_modules.js');
 
 const port = process.env.PORT || 3037;
@@ -48,6 +49,7 @@ app.use('/emojis', emojis);
 app.use('/assemble_shared_content', assemble_shared_content);
 app.use('/share_reactions', share_reactions);
 app.use('/share_comments', share_comments);
+app.use('/share_comment_reactions', share_comment_reactions);
 
 // app.get('/reuters_headlines/:country', (req, res, next) =>{
 //   let newUrl = 'https://newsapi.org/v2/top-headlines?country=';
