@@ -48,6 +48,55 @@ router.get('/:uuid', (req, res, next) => {
             });
     }
 
+    function setCommentsData(index, feedUuid, userUuid) {
+        let share_comments = [];
+        let aDate, bDate;
+        let usr;
+
+        knex('share_comments')
+            .select()
+            .where('share_uuid', feedUuid)
+            .then((shareComments) => {
+                if ((!shareComments) || (shareComments.length === 0)) {
+                    result[index].share_comments = share_comments;
+                    return;
+                }
+                let comments = shareComments.sort((a, b) => {
+                    aDate = new Date(a.created_at);
+                    bDate = new Date(b.created_at);
+                    if (aDate.getTime() > bDate.getTime()) {
+                        return 1;
+                    } else if (aDate.getTime() < bDate.getTime()) {
+                        return -1;
+                    } else {
+                        return 0;
+                    }
+                });
+                knex('users')
+                    .then((users) => {
+                        for (let i = 0; i < comments.length; i++) {
+                            usr = users.filter((u) => {
+                                return (u.uuid === comments[i].user_uuid);
+                            });
+                            share_comments.push({
+                                avatar: usr[0].avatar_path,
+                                blogOrPodcast: comments[i].blogOrPodcast,
+                                comment: comments[i].comment,
+                                id: i,
+                                name: usr[0].first_name + ' ' + usr[0].last_name,
+                                select_reactions: false,
+                                share_uuid: comments[i].share_uuid,
+                                user_uuid: comments[i].user_uuid,
+                                uuid: comments[i].uuid,
+                                created_at: comments[i].created_at,
+                                updated_at: comments[i].updated_at
+                            });
+                        }
+                        result[index].share_comments = share_comments;
+                    });
+            });
+    }
+
     function setReactionsData(index, feedUuid, userUuid) {
         let share_reactions = [];
         let unique = true;
@@ -175,6 +224,7 @@ router.get('/:uuid', (req, res, next) => {
                                 }
                                 setFeedData(i, shares[i].blogOrPodcast, shares[i].feed_uuid);
                                 setReactionsData(i, shares[i].uuid, user.uuid);
+                                setCommentsData(i, shares[i].uuid, user.uuid);
                                 // TODO obtain comments from comment tables
                                 // TODO obtain reactions from reactions tables
                             }
