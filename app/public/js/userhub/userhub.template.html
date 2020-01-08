@@ -115,7 +115,8 @@
           <div class="hubShareBody{{$ctrl.monthSelect}}">
             <a href="{{article.source_link}}" target="_blank"><img class="hubShareSourceIcon{{$ctrl.monthSelect}}" src="{{article.source_image}}">
             <p class="hubShareViaDescription{{$ctrl.monthSelect}}">{{article.source_description}}</p></a><br><br><br><br><br>
-            <img class="hubShareArticleImage{{$ctrl.monthSelect}}" src="{{article.enclosure.link}}">
+            <img class="hubShareArticleImage{{$ctrl.monthSelect}}" src="{{article.enclosure.link}}" ng-if="article.blogOrPodcast === 'blog'">
+              <img class="hubShareArticleImage{{$ctrl.monthSelect}}" src="{{article.source_image}}" ng-if="article.blogOrPodcast === 'podcast'">
             <div class="hubShareShareSaveButtonsDiv{{$ctrl.monthSelect}}">
 
               <button ng-click="$ctrl.hubShareSave('share', article.source_image, article.source_title, article.title)">share</button>

@@ -173,6 +173,7 @@ router.get('/:uuid', (req, res, next) => {
             .where('share_uuid', feedUuid)
             .then((reactions) => {
                 if ((!reactions) || (reactions.length === 0)) {
+                    result[index].share_reactions = share_reactions;
                     return;
                 }
                 for (let i = 0; i < reactions.length; i++) {
@@ -290,12 +291,10 @@ router.get('/:uuid', (req, res, next) => {
                                 setFeedData(i, shares[i].blogOrPodcast, shares[i].feed_uuid);
                                 setReactionsData(i, shares[i].uuid, user.uuid);
                                 setCommentsData(i, shares[i].uuid, user.uuid);
-                                // TODO obtain comments from comment tables
-                                // TODO obtain reactions from reactions tables
                             }
                             setTimeout(() => {
                                 res.send(result);
-                            }, 5000);
+                            }, (result.length * 100));
 
                         })
                         .catch((err) => {

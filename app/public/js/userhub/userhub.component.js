@@ -21,143 +21,6 @@
         vm.hubProfileTabState = 'hubTabInactive' + vm.monthSelect;
         vm.hubTabStatus = 'hubShare' + vm.monthSelect;
         vm.updateHubTab = updateHubTab;
-        vm.sharedContent = [
-            {
-                author: 'Walter Einenkel',
-                avatar_path: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/homerAvatar.jpg',
-                cleanDate: '2019 August 10 - 18:15:05',
-                comments: 'I guess "Greatest Healthcare System in the World" means liquidating lives in the name of profit.',
-                description: ' <p>Josh Wilkerson died on June 14, 2019, five days after suffering a series of strokes and slipping into a diabetic coma, at a North Virginia dog kennel where he worked as a manager making $16.50 an hour. Wilkerson was 27 years old. He and his fiancee, Rose Walters, were trying to save money to pay for their approaching wedding, and after aging out of eligibility for coverage under his father’s insurance, Wilkerson was having a terrible time trying to afford his insulin costs. According to his mother and his fiancee, Wilkerson had begun taking “human insulin,” a considerably cheaper, <a href="https://www.washingtonpost.com/local/he-lost-his-insurance-and-turned-to-cheaper-form-of-insulin-it-was-a-fatal-decision/2019/08/02/106ee79a-b24d-11e9-8f6c-7828e68cb15f_story.html" title="">“lower-grade medication.”</a></p> <p>The cost difference made the drug affordable for Wilkerson—the over-the-counter version of the drug is one-tenth the price of the more effective and unaffordable version. But doctors do not suggest it for all patients as a stopgap because it is less effective, and it is considerably slower at stabilizing one’s blood-sugar levels, taking hours longer to be effective than the prescription version.</p> <a href="http://www.dailykos.com/campaigns/petition/sign-the-petition-we-need-medicare-for-all" class="dk-action-link">Campaign Action</a> <p>Walters told The Washington Post that Wilkerson was working an overnight shift at the kennel to make more money. The two had FaceTimed one another before going to bed, at which point Wilkerson complained of stomach pains. Walters reminded him to take his medication, which he said he would do. Both Walters and Wilkerson have Type 1 diabetes, the genetically determined variant of the disease. When Wilkerson didn’t respond to a call the next morning, Walters ran over and found him unconscious on the floor, telling the paper, “I just remember smacking him on the face, saying, ‘Babe, wake up. You have to wake up.’”</p> <p>The tragedy of Josh Wilkerson’s death is that it was preventable. If Wilkerson had been able to afford his medicine, he would have been taking those lifesaving drugs. Wilkerson’s situation is not unique in our medicine-for-money country. At least <a href="https://www.dailykos.com/stories/2019/2/26/1837835/-t-least-25-of-diabetes-patients-rationing-insulin-as-drug-costs-continue-to-skyrocket" title="">25% of diabetes patients say that they ration their insulin medications</a> in order to make financial ends meet. This is a dangerous balance that people are forced to strike as the prices of<a href="https://www.dailykos.com/stories/2019/7/2/1868719/-Drug-prices-skyrocket-increasing-FIVE-TIMES-the-cost-of-inflation-in-2019" title=""> insulin (as well as most drug prices) in our country continue to skyrocket.</a></p> <p class="is-empty-p"></p> x<p>Cost of Insulin Pens:Ã¢Â€Â¢Norway: $0Ã¢Â€Â¢Scotland: $0Ã¢Â€Â¢Thailand: $5Ã¢Â€Â¢Australia: $28Ã¢Â€Â¢Mexico: $35Ã¢Â€Â¢Taiwan: $40Ã¢Â€Â¢Greece: $51Ã¢Â€Â¢Italy: $61Ã¢Â€Â¢Canada: $70Ã¢Â€Â¢Germany: $73.........Ã¢Â€Â¢United States: $700Americans are dying b/c politicians claim we can\'t afford <a href="https://twitter.com/hashtag/MedicareForAll?src=hash&amp;ref_src=twsrc%5Etfw">#MedicareForAll</a> <a href="https://t.co/dy1CgMnccL">https://t.co/dy1CgMnccL</a></p>Ã¢Â€Â” Qasim Rashid, Esq. (@QasimRashid) <a href="https://twitter.com/QasimRashid/status/1159115800848080896?ref_src=twsrc%5Etfw">August 7, 2019</a> <p>The fundamental issue is greed and a medical industry focused on profit over accessibility. Pharmaceutical companies <a href="https://www.dailykos.com/stories/2015/3/26/1373499/-Insulin-is-more-expensive-mostly-because-it-s-hard-to-make-money-on-the-cheaper-stuff" title="">cannot make money from cheap insulin, and stopped producing cheaper but effective alternatives decades ago.</a> This has led to the deaths of people such as Josh Wilkerson, trying to make ends meet and dying so that a company can show growing quarterly profits on its bank statements.</p> <p class="is-empty-p"></p> <img src="http://feeds.feedburner.com/~r/dailykosofficial/~4/LsTrrBPnK1w" height="1" width="1" alt=""> ',
-                enclosure: {
-                    link: 'https://images.dailykos.com/images/704798/story_image/GettyImages-1127436186.jpg?1565195788'
-                },
-                first_name: 'DJ',
-                id: 0,
-                last_name: 'Ipsum',
-                link: 'http://feeds.dailykosmedia.com/~r/dailykosofficial/~3/LsTrrBPnK1w/-Young-man-dies-after-losing-his-insurance-and-turning-to-cheaper-form-of-insulin',
-                rss: 'https://news.ycombinator.com/rss',
-                select_reactions: false,
-                share_cleanDate: '2019 August 10 - 18:44:59',
-                share_comments: [
-                    {
-                        avatar: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/lovecraftAvatar.jpg',
-                        cleanDate: '2019 August 11 - 09:02:04',
-                        comment: 'Death by pharmacological greed. Disgusting.',
-                        comment_reactions: [
-                            {
-                                from: ['a48d70e3-005d-4def-a66e-afa5e2790670'],
-                                hover_text: 'Bill Somebody',
-                                id: 0,
-                                hoverClass: 'hubShareReactionsHoverText' + vm.monthSelect,
-                                link: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/046-cry.svg',
-                                reaction: '046-cry',
-                                tally: 1,
-                                user_contributed: false
-                }
-              ],
-                        id: 0,
-                        name: 'Devin Hurd',
-                        select_reactions: false,
-                        uuid: '17917373-ee9c-46aa-a38a-cacc475abee7'
-            }
-          ],
-                share_reactions: [
-                    {
-                        from: ['17917373-ee9c-46aa-a38a-cacc475abee7'],
-                        hover_text: 'Devin Hurd',
-                        id: 0,
-                        hoverClass: 'hubShareReactionsHoverText' + vm.monthSelect,
-                        link: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/047-broken-heart.svg',
-                        reaction: '047-broken-heart',
-                        tally: 1,
-                        user_contributed: true
-            },
-                    {
-                        from: ['3df57491-588c-42df-8536-506722d08dd6', '1ae356b8-2cec-4106-8c31-2fd419939642', '83c4c779-d309-446f-8eb4-17fccb6bd2a8'],
-                        hover_text: 'DJ Ipsum, Craig Bell, Cheryl Pancake',
-                        id: 1,
-                        hoverClass: 'hubShareReactionsHoverText' + vm.monthSelect,
-                        link: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/027-sad.svg',
-                        reaction: '027-sad',
-                        tally: 3,
-                        user_contributed: false
-            },
-                    {
-                        from: ['6283bf35-f38d-492e-b00f-474644a2f2b8', 'd779376f-828d-4c6d-98d8-afafdfb62311'],
-                        hover_text: 'Bill Smith, Everett Empathy',
-                        id: 2,
-                        hoverClass: 'hubShareReactionsHoverText' + vm.monthSelect,
-                        link: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/004-dead.svg',
-                        reaction: '004-dead',
-                        tally: 2,
-                        user_contributed: false
-            }
-          ],
-                source_description: 'Daily Kos: The Main Page.',
-                source_link: 'http://www.dailykos.com/blogs/main',
-                source_image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/daily-kos-squarelogo-1517554340259.png',
-                source_title: 'Daily Kos',
-                title: 'Young man dies after losing his insurance and turning to cheaper form of insulin',
-                updated_at: 'Sat Aug 10 2019 13:44:59 GMT-0600 (Mountain Daylight Time)',
-                uuid: '96770ff7-afa0-4c31-970e-905e8f28ccd0'
-        },
-            {
-                author: '',
-                avatar_path: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/lovecraftAvatar.jpg',
-                cleanDate: '2019 August 11 - 17:15:06',
-                comments: 'Just in case you\'ve been wondering why I talk to myself all day... I mean I talk to Devin all day long.',
-                description: '<a href="https://news.ycombinator.com/item?id=20669171">Comments</a>',
-                enclosure: {
-                    link: null
-                },
-                first_name: 'Devin',
-                id: 1,
-                last_name: 'Hurd',
-                link: 'https://aeon.co/ideas/why-speaking-to-yourself-in-the-third-person-makes-you-wiser',
-                rss: 'https://news.ycombinator.com/rss',
-                select_reactions: false,
-                share_cleanDate: '2019 August 11 - 12:29:20',
-                share_comments: [
-          ],
-                share_reactions: [
-          ],
-                source_description: 'Links for the intellectually curious, ranked by readers.',
-                source_link: 'https://news.ycombinator.com/',
-                source_image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/hacker-news-2-569388.png',
-                source_title: 'Hacker News',
-                title: 'Speaking to yourself in the third person makes you wiser',
-                updated_at: 'Sat Aug 10 2019 13:44:59 GMT-0600 (Mountain Daylight Time)',
-                uuid: '17917373-ee9c-46aa-a38a-cacc475abee7'
-        },
-            {
-                author: 'Elisabeth',
-                avatar_path: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/ashesAvatar.png',
-                cleanDate: '2019 August 10 - 21:33:50',
-                comments: 'Push Tar!!',
-                description: 'Dan Freeman, Director of the Brooklyn Digital Conservatory, uses a unique approach to performing with the Ableton Push.… <a class="more-link" href="http://www.synthtopia.com/content/2019/08/10/shredding-with-the-push-tar/">Read More <span class="screen-reader-text">Shredding With ‘The Push-tar’</span></a> ',
-                enclosure: {
-                    link: null
-                },
-                first_name: 'Amet',
-                id: 2,
-                last_name: 'Tempor',
-                link: 'http://www.synthtopia.com/content/2019/08/10/shredding-with-the-push-tar/',
-                rss: 'http://www.synthtopia.com/feed',
-                select_reactions: false,
-                share_cleanDate: '2019 August 11 - 12:40:33',
-                share_comments: [
-          ],
-                share_reactions: [
-          ],
-                source_description: 'Synthesizer and electronic music news, synth and music software reviews and more!',
-                source_link: 'http://www.synthtopia.com/',
-                source_image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/press-synthtopia-logo.jpg',
-                source_title: 'Synthtopia',
-                title: 'Shredding With ‘The Push-tar’',
-                updated_at: 'Sat Aug 10 2019 13:44:59 GMT-0600 (Mountain Daylight Time)',
-                uuid: 'e0d83fb4-f7b5-492c-ba49-e3b1447567e6'
-        }
-      ];
         vm.toggleEmojiSelector = toggleEmojiSelector;
         vm.shareAddEmoji = shareAddEmoji;
         vm.hubShareRemoveReaction = hubShareRemoveReaction;
@@ -1566,6 +1429,40 @@
                 });
         }
 
+        function assembleShareFeed(uuid) {
+            const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+            $http.get(`/assemble_shared_content/${uuid}`)
+                .then(shareFeedData => {
+                    let shareFeed = shareFeedData.data;
+                    let createDate;
+
+                    for (let i = 0; i < shareFeed.length; i++) {
+                        createDate = new Date(shareFeed[i].pubDate);
+                        shareFeed[i].cleanDate = createDate.getFullYear() + ' ' + months[createDate.getMonth()] + ' ' + createDate.getDate() + ' - ' + createDate.toLocaleTimeString('en-GB');
+                        createDate = new Date(shareFeed[i].created_at);
+                        shareFeed[i].share_cleanDate = createDate.getFullYear() + ' ' + months[createDate.getMonth()] + ' ' + createDate.getDate() + ' - ' + createDate.toLocaleTimeString('en-GB');
+
+                        if (shareFeed[i].share_reactions.length > 0) {
+                            for (let j = 0; j < shareFeed[i].share_reactions.length; j++) {
+                                shareFeed[i].share_reactions[j].hoverClass = 'hubShareReactionsHoverText' + vm.monthSelect;
+                            }
+                        }
+                        if (shareFeed[i].share_comments.length > 0) {
+                            for (let k = 0; k < shareFeed[i].share_comments.length; k++) {
+                                if (shareFeed[i].share_comments[k].comment_reactions.length > 0) {
+                                    for (let l = 0; l < shareFeed[i].share_comments[k].comment_reactions.length; l++) {
+                                        shareFeed[i].share_comments[k].comment_reactions[l].hoverClass = 'hubShareReactionsHoverText' + vm.monthSelect;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                vm.sharedContent = shareFeed;
+                console.log(vm.sharedContent);
+                });
+        }
+
 
         function onInit() {
             console.log("User Hub is lit");
@@ -1591,6 +1488,7 @@
             initializeDayCards();
             initializeSubscriptionCards();
             populateEmojis();
+            assembleShareFeed($stateParams.id);
 
         }
 
