@@ -55,7 +55,7 @@
               <div class="hubShareAddReactionDiv{{$ctrl.monthSelect}}" ng-if="article.select_reactions">
                 <main ng-repeat="emoji in $ctrl.emojis">
 
-                  <img name="{{emoji.value}}" src="{{emoji.path}}" ng-click="$ctrl.shareAddEmoji(article.id, emoji.path, emoji.value)">
+                  <img name="{{emoji.value}}" src="{{emoji.path}}" ng-click="$ctrl.shareAddEmoji(article.id, emoji.path, emoji.value, article, emoji.uuid)">
                 </main>
 
               </div>
@@ -66,8 +66,8 @@
                   <p class="hubShareReactionTally{{$ctrl.monthSelect}}">{{reaction.tally}}</p>
 
                   <img class="hubShareReactionEmoji{{$ctrl.monthSelect}}" src="{{reaction.link}}" ng-mouseover="$ctrl.hoverOver(article.id, reaction.id)" ng-mouseleave="$ctrl.hoverOff(article.id, reaction.id)"><span class="{{reaction.hoverClass}}">{{reaction.hover_text}}</span>
-                  <p ng-if="reaction.user_contributed" class="hubShareReactionDelete{{$ctrl.monthSelect}}" ng-click="$ctrl.hubShareRemoveReaction(article.id, reaction.link, reaction.reaction)">X</p>
-                  <p ng-if="!reaction.user_contributed" class="hubShareReactionDelete{{$ctrl.monthSelect}}" ng-click="$ctrl.hubShareAdditionalReaction(article.id, reaction.id)">+</p>
+                  <p ng-if="reaction.user_contributed" class="hubShareReactionDelete{{$ctrl.monthSelect}}" ng-click="$ctrl.hubShareRemoveReaction(article.id, reaction.link, reaction.reaction, article, reaction)">X</p>
+                  <p ng-if="!reaction.user_contributed" class="hubShareReactionDelete{{$ctrl.monthSelect}}" ng-click="$ctrl.hubShareAdditionalReaction(article.id, reaction.id, article, reaction)">+</p>
                 </div>
               </main>
             </div>
@@ -88,7 +88,7 @@
                 <div class="hubShareAddReactionDiv{{$ctrl.monthSelect}}" ng-if="comment.select_reactions">
                   <main ng-repeat="emoji in $ctrl.emojis">
 
-                    <img name="{{emoji.value}}" src="{{emoji.path}}" ng-click="$ctrl.shareAddCommentEmoji(article.id, comment.id, emoji.path, emoji.value)">
+                    <img name="{{emoji.value}}" src="{{emoji.path}}" ng-click="$ctrl.shareAddCommentEmoji(article.id, comment.id, emoji.path, emoji.value, article, comment, emoji)">
                   </main>
 
                 </div>
@@ -98,8 +98,8 @@
                     <p class="hubShareReactionTally{{$ctrl.monthSelect}}">{{commentReaction.tally}}</p>
 
                     <img class="hubShareReactionEmoji{{$ctrl.monthSelect}}" src="{{commentReaction.link}}" ng-mouseover="$ctrl.commentReactionHoverOver(article.id, comment.id, commentReaction.id)" ng-mouseleave="$ctrl.commentReactionHoverOff(article.id, comment.id, commentReaction.id)"><span class="{{commentReaction.hoverClass}}">{{commentReaction.hover_text}}</span>
-                    <p ng-if="commentReaction.user_contributed" class="hubShareReactionDelete{{$ctrl.monthSelect}}" ng-click="$ctrl.hubShareRemoveCommentReaction(article.id, comment.id, commentReaction.id)">X</p>
-                    <p ng-if="!commentReaction.user_contributed" class="hubShareReactionDelete{{$ctrl.monthSelect}}" ng-click="$ctrl.hubShareCommentAdditionalReaction(article.id, comment.id, commentReaction.id)">+</p>
+                    <p ng-if="commentReaction.user_contributed" class="hubShareReactionDelete{{$ctrl.monthSelect}}" ng-click="$ctrl.hubShareRemoveCommentReaction(article.id, comment.id, commentReaction.id, article, comment, commentReaction)">X</p>
+                    <p ng-if="!commentReaction.user_contributed" class="hubShareReactionDelete{{$ctrl.monthSelect}}" ng-click="$ctrl.hubShareCommentAdditionalReaction(article.id, comment.id, commentReaction.id, article, comment, commentReaction)">+</p>
                   </div>
 
                 </main><br><br>
@@ -108,7 +108,7 @@
 
                 <p>add comment:</p>
                 <textarea id="hubShareCommentTextArea{{article.id}}" class="hubShareCommentTextArea{{$ctrl.monthSelect}}" rows="5"></textarea>
-                <button class="hubSignoutButton{{$ctrl.monthSelect}}" ng-click="$ctrl.hubShareSubmitComment(article.id)">submit</button>
+                <button class="hubSignoutButton{{$ctrl.monthSelect}}" ng-click="$ctrl.hubShareSubmitComment(article.id, article)">submit</button>
               </div>
             </div>
           </div>

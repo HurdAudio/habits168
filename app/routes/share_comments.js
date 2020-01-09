@@ -2,6 +2,7 @@
 
 const express = require('express');
 const knex = require('../../knex');
+const uuid4 = require('uuid4');
 
 const router = express.Router();
 
@@ -31,6 +32,24 @@ router.get('/:uuid', (req, res, next) => {
     .catch((err) => {
       next(err);
     });
+});
+
+router.post('/', (req, res, next) => {
+    const uuid = uuid4();
+    knex('share_comments')
+        .insert({
+            uuid: uuid,
+            user_uuid: req.body.user_uuid,
+            share_uuid: req.body.share_uuid,
+            comment: req.body.comment,
+            blogOrPodcast: req.body.blogOrPodcast
+        }, '*')
+        .then((result) => {
+            res.status(200).send(result);
+        })
+        .catch((err) => {
+            next(err);
+        });
 });
 
 

@@ -1048,7 +1048,7 @@
             }, 1000);
         }
 
-        function hubShareSubmitComment(articleIndex) {
+        function hubShareSubmitComment(articleIndex, article) {
             let hubShareCommentTextArea = document.getElementById('hubShareCommentTextArea' + articleIndex);
 
             if (hubShareCommentTextArea.value !== '') {
@@ -1077,7 +1077,15 @@
                     name: vm.user.first_name + ' ' + vm.user.last_name,
                     select_reactions: false
                 });
+
+                let subObj = {
+                    user_uuid: vm.user.uuid,
+                    share_uuid: article.uuid,
+                    blogOrPodcast: article.blogOrPodcast,
+                    comment: hubShareCommentTextArea.value
+                };
                 hubShareCommentTextArea.value = '';
+                $http.post('/share_comments', subObj);
             }
         }
 
@@ -1097,25 +1105,40 @@
             vm.sharedContent[parseInt(articleIndex)].share_reactions[parseInt(reactionIndex)].hoverClass = 'hubShareReactionsHoverTextHover' + vm.monthSelect;
         }
 
-        function hubShareCommentAdditionalReaction(articleIndex, commentIndex, commentReactionIndex) {
+        function hubShareCommentAdditionalReaction(articleIndex, commentIndex, commentReactionIndex, article, comment, commentReaction) {
             vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[parseInt(commentReactionIndex)].from.push(vm.user.uuid);
             vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[parseInt(commentReactionIndex)].hover_text += ', ' + vm.user.first_name + ' ' + vm.user.last_name;
             vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[parseInt(commentReactionIndex)].tally += 1;
             vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[parseInt(commentReactionIndex)].user_contributed = true;
+
+            let subObj = {
+                user_uuid: vm.user.uuid,
+                reaction_uuid: commentReaction.reaction_uuid,
+                comment_uuid: comment.uuid,
+                blogOrPodcast: article.blogOrPodcast
+            };
+            $http.post('/share_comment_reactions', subObj);
         }
 
-        function hubShareAdditionalReaction(articleIndex, reactionIndex) {
+        function hubShareAdditionalReaction(articleIndex, reactionIndex, article, reaction) {
             vm.sharedContent[parseInt(articleIndex)].share_reactions[parseInt(reactionIndex)].from.push(vm.user.uuid);
             vm.sharedContent[parseInt(articleIndex)].share_reactions[parseInt(reactionIndex)].hover_text += ', ' + vm.user.first_name + ' ' + vm.user.last_name;
             vm.sharedContent[parseInt(articleIndex)].share_reactions[parseInt(reactionIndex)].tally += 1;
             vm.sharedContent[parseInt(articleIndex)].share_reactions[parseInt(reactionIndex)].user_contributed = true;
+            let subObj = {
+                user_uuid: vm.user.uuid,
+                reaction_uuid: reaction.reaction_uuid,
+                share_uuid: article.uuid,
+                blogOrPodcast: article.blogOrPodcast
+            };
+            $http.post('/share_reactions', subObj);
         }
 
-        function hubShareRemoveCommentReaction(articleIndex, commentIndex, commentReactionIndex) {
+        function hubShareRemoveCommentReaction(articleIndex, commentIndex, commentReactionIndex, article, comment, commentReaction) {
             if (vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[parseInt(commentReactionIndex)].tally === 1) {
                 vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions.splice(parseInt(commentReactionIndex), 1);
-                for (let i = 0; i < m.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions.length; i++) {
-                    m.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[i].id = i;
+                for (let i = 0; i < vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions.length; i++) {
+                    vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[i].id = i;
                 }
             } else {
                 vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[parseInt(commentReactionIndex)].from.splice(vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[parseInt(commentReactionIndex)].from.indexOf(vm.user.uuid), 1);
@@ -1123,9 +1146,16 @@
                 vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[parseInt(commentReactionIndex)].user_contributed = false;
                 vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[parseInt(commentReactionIndex)].hover_text.replace(vm.user.first_name + ' ' + vm.user.last_name, '');
             }
+            $http.get('/share_comment_reactions')
+            .then(allShareCommentReactions => {
+                let targ = allShareCommentReactions.data.filter(entry => {
+                    return((entry.user_uuid === vm.user.uuid) && (entry.reaction_uuid === commentReaction.reaction_uuid) && (entry.comment_uuid === comment.uuid));
+                });
+                $http.delete(`/share_comment_reactions/${targ[0].uuid}`);
+            });
         }
 
-        function hubShareRemoveReaction(articleIndex, path, value) {
+        function hubShareRemoveReaction(articleIndex, path, value, article, reaction) {
             let index = null;
             for (let i = 0; i < vm.sharedContent[parseInt(articleIndex)].share_reactions.length; i++) {
                 if ((vm.sharedContent[parseInt(articleIndex)].share_reactions[i].link === path) && (vm.sharedContent[parseInt(articleIndex)].share_reactions[i].reaction === value)) {
@@ -1150,9 +1180,16 @@
                     vm.sharedContent[parseInt(articleIndex)].share_reactions[index].user_contributed = false;
                 }
             }
+            $http.get('/share_reactions')
+            .then(allReactionsData => {
+                let targ = allReactionsData.data.filter(react => {
+                    return((react.user_uuid === vm.user.uuid) && (react.reaction_uuid === reaction.reaction_uuid) && (react.share_uuid === article.uuid));
+                });                
+                $http.delete(`/share_reactions/${targ[0].uuid}`);
+            });
         }
 
-        function shareAddCommentEmoji(articleIndex, commentIndex, path, value) {
+        function shareAddCommentEmoji(articleIndex, commentIndex, path, value, article, comment, emoji) {
             let existing = false;
 
             for (let i = 0; i < vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions.length; i++) {
@@ -1182,10 +1219,18 @@
                 });
             }
             toggleCommentEmojiSelector(articleIndex, commentIndex);
+            let subObj = {
+                user_uuid: vm.user.uuid,
+                reaction_uuid: emoji.uuid,
+                comment_uuid: comment.uuid,
+                blogOrPodcast: article.blogOrPodcast
+            };
+            $http.post('/share_comment_reactions', subObj);
         }
 
-        function shareAddEmoji(articleIndex, path, value) {
+        function shareAddEmoji(articleIndex, path, value, article, emojiUuid) {
             let existing = false;
+            console.log(article);
 
             for (let i = 0; i < vm.sharedContent[parseInt(articleIndex)].share_reactions.length; i++) {
                 if ((vm.sharedContent[parseInt(articleIndex)].share_reactions[i].link === path) && (vm.sharedContent[parseInt(articleIndex)].share_reactions[i].reaction === value)) {
@@ -1214,6 +1259,13 @@
                 });
             }
             toggleEmojiSelector(articleIndex);
+            let subObj = {
+                user_uuid: vm.user.uuid,
+                reaction_uuid: emojiUuid,
+                share_uuid: article.uuid,
+                blogOrPodcast: article.blogOrPodcast
+            };
+            $http.post('/share_reactions', subObj);
         }
 
         function toggleEmojiSelector(articleIndex) {
@@ -1458,8 +1510,8 @@
                             }
                         }
                     }
-                vm.sharedContent = shareFeed;
-                console.log(vm.sharedContent);
+                    vm.sharedContent = shareFeed;
+                    console.log(vm.sharedContent);
                 });
         }
 
