@@ -868,13 +868,45 @@
             vm.totalPageLoads = vm.userBlogs[parseInt(blogIndex)].page_loads;
         }
 
-        function hubCancelShareSaveLink() {
+        function hubCancelShareSaveLink(submitStatus) {
+            const commentContent = document.getElementById('hubShareSaveLinkUserNotes').value;
+            let shareSaveTable = '';
+            console.log(vm.activeArticle);
+            if (submitStatus === 'submit') {
+                let subObj = {
+                    user_uuid: vm.user.uuid,
+                    feed_uuid: vm.activeArticle.feed_uuid,
+                    comment: commentContent,
+                    title: vm.activeArticle.title,
+                    pubDate: vm.activeArticle.pubDate,
+                    link: vm.activeArticle.link,
+                    guid: vm.activeArticle.guid,
+                    author: vm.activeArticle.author,
+                    thumbnail: vm.activeArticle.thumbnail,
+                    description: vm.activeArticle.description,
+                    content: vm.activeArticle.content,
+                    enclosure: vm.activeArticle.enclosure,
+                    categories: vm.activeArticle.categories
+                };
+                if (vm.activeArticle.blogOrPodcast === 'blog') {
+                    shareSaveTable = '/blog_';
+                } else {
+                    shareSaveTable = '/podcast_'
+                }
+                if (vm.hubLinkShareOrSave === 'Share Link') {
+                    shareSaveTable += 'shares';
+                    subObj.share_status = document.querySelector('input[name="shareStatus"]:checked').value;
+                } else {
+                    shareSaveTable += 'saves';
+                }
+                $http.post(shareSaveTable, subObj);
+            }
             vm.backgroundStatus = 'hubContainer' + vm.monthSelect;
             vm.shareSaveLinkDisplay = 'hubShareShareSaveModalInactive' + vm.monthSelect;
             document.getElementById('hubShareSaveLinkUserNotes').value = '';
         }
 
-        function hubShareSave(status, image, sourceName, sourceTitle) {
+        function hubShareSave(status, image, sourceName, sourceTitle, article) {
             if (status === 'share') {
                 vm.hubLinkShareOrSave = 'Share Link';
             } else {
@@ -885,6 +917,7 @@
             vm.feedIcon = image;
             vm.feedTitle = sourceName;
             vm.hubLinkShareSaveTitle = sourceTitle;
+            vm.activeArticle = article;
         }
 
         function toggleSubscriptionManagement() {

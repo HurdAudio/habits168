@@ -117,10 +117,10 @@
             <p class="hubShareViaDescription{{$ctrl.monthSelect}}">{{article.source_description}}</p></a><br><br><br><br><br>
             <img class="hubShareArticleImage{{$ctrl.monthSelect}}" src="{{article.enclosure.link}}" ng-if="article.blogOrPodcast === 'blog'">
               <img class="hubShareArticleImage{{$ctrl.monthSelect}}" src="{{article.source_image}}" ng-if="article.blogOrPodcast === 'podcast'">
-            <div class="hubShareShareSaveButtonsDiv{{$ctrl.monthSelect}}">
+            <div class="hubShareShareSaveButtonsDiv{{$ctrl.monthSelect}}" ng-if="article.user_uuid !== $ctrl.user.uuid">
 
-              <button ng-click="$ctrl.hubShareSave('share', article.source_image, article.source_title, article.title)">share</button>
-              <button ng-click="$ctrl.hubShareSave('save', article.source_image, article.source_title, article.title)">save</button>
+              <button ng-click="$ctrl.hubShareSave('share', article.source_image, article.source_title, article.title, article)">share</button>
+              <button ng-click="$ctrl.hubShareSave('save', article.source_image, article.source_title, article.title, article)">save</button>
             </div>
             <a href="{{article.link}}" target="_blank"><h3 class="hubShareHeadline{{$ctrl.monthSelect}}">{{article.title}}</h3></a>
             <p class="hubSharePostTimestamp{{$ctrl.monthSelect}}">{{article.cleanDate}}</p>
@@ -453,8 +453,8 @@
     <input type="radio" name="shareStatus" value="private">private
   </div>
 
-  <button ng-click="$ctrl.hubCancelShareSaveLink()">submit</button>
-  <button ng-click="$ctrl.hubCancelShareSaveLink()">cancel</button>
+  <button ng-click="$ctrl.hubCancelShareSaveLink('submit')">submit</button>
+  <button ng-click="$ctrl.hubCancelShareSaveLink('cancel')">cancel</button>
 </div>
 <div class="{{$ctrl.profileDisplayModal}}">
 

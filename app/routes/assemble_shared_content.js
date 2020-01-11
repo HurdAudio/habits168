@@ -238,7 +238,7 @@ router.get('/:uuid', (req, res, next) => {
             knex('blog_shares')
                 .then(allBlogShares => {
                     let blogShares = allBlogShares.filter(blog => {
-                        return ((blog.public) || (blog.user_uuid === user.uuid) || (user.associates.friends.indexOf(blog.user_uuid) !== -1) || (user.associates.following.indexOf(blog.user_uuid) !== -1));
+                        return ((blog.share_status !== 'private') && ((blog.user_uuid === user.uuid) || (user.associates.friends.indexOf(blog.user_uuid) !== -1) || (user.associates.following.indexOf(blog.user_uuid) !== -1)));
                     });
                     for (let i = 0; i < blogShares.length; i++) {
                         blogShares[i].blogOrPodcast = 'blog';
@@ -246,7 +246,7 @@ router.get('/:uuid', (req, res, next) => {
                     knex('podcast_shares')
                         .then(allPodcastShares => {
                             let podcastShares = allPodcastShares.filter(podcast => {
-                                return ((podcast.public) || (podcast.user_uuid === user.uuid) || (user.associates.friends.indexOf(podcast.user_uuid) !== -1) || (user.associates.following.indexOf(podcast.user_uuid) !== -1));
+                                return ((podcast.share_status !== 'private') && ((podcast.user_uuid === user.uuid) || (user.associates.friends.indexOf(podcast.user_uuid) !== -1) || (user.associates.following.indexOf(podcast.user_uuid) !== -1)));
                             });
                             for (let i = 0; i < podcastShares.length; i++) {
                                 podcastShares[i].blogOrPodcast = 'podcast';
@@ -268,14 +268,18 @@ router.get('/:uuid', (req, res, next) => {
                                     uuid: shares[i].uuid,
                                     author: shares[i].author,
                                     blogOrPodcast: shares[i].blogOrPodcast,
+                                    categories: shares[i].categories,
                                     comments: shares[i].comment,
+                                    content: shares[i].content,
                                     description: shares[i].description,
                                     enclosure: shares[i].enclosure,
                                     feed_uuid: shares[i].feed_uuid,
+                                    guid: shares[i].guid,
                                     id: i,
                                     link: shares[i].link,
                                     pubDate: shares[i].pubDate,
                                     select_reactions: false,
+                                    thumbnail: shares[i].thumbnail,
                                     title: shares[i].title,
                                     user_uuid: shares[i].user_uuid,
                                     created_at: shares[i].created_at,
