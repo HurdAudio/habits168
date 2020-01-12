@@ -44,7 +44,7 @@
 
                         <img class="hubShareBylineAvatar{{$ctrl.monthSelect}}" src="{{article.avatar_path}}" ng-click="$ctrl.displayFriend(article.uuid)">
                         <p class="hubBylineName{{$ctrl.monthSelect}}" ng-click="$ctrl.displayFriend(article.uuid)">{{article.first_name}} {{article.last_name}}</p>
-                        <i class="fas fa-edit editComment{{$ctrl.monthSelect}}" ng-if="article.user_uuid === $ctrl.user.uuid"></i>
+                        <i class="fas fa-edit editComment{{$ctrl.monthSelect}}" ng-if="article.user_uuid === $ctrl.user.uuid" ng-click="$ctrl.editShareComment(article)"></i>
                         <p class="hubSharedAt{{$ctrl.monthSelect}}">{{article.share_cleanDate}}</p>
                         <p class="hubShareComments{{$ctrl.monthSelect}}">{{article.comments}}</p>
                         <div class="hubShareReactions{{$ctrl.monthSelect}}">
@@ -542,4 +542,19 @@
         <button class="hubGuardrailButton{{$ctrl.monthSelect}}" ng-click="$ctrl.positiveDeleteShare()">yes</button>
         <button class="hubGuardrailButton{{$ctrl.monthSelect}}" ng-click="$ctrl.negativeDeleteShare()">no</button>
     </div>
+</div>
+<div class="{{$ctrl.editCommentModalState}}">
+    
+    <h2 class="hubDialogHeadline{{$ctrl.monthSelect}}">Edit comment:</h2>
+
+    <textarea id="hubShareSaveLinkUserEditNotes" placeholder="user comments" rows="5"></textarea><br><br>
+    <div class="hubRadioButtons{{$ctrl.monthSelect}}" >
+
+        share with:<input type="radio" name="shareStatusPatch" value="public" ng-checked="$ctrl.patchCandidate.share_status === 'public'">public
+        <input type="radio" name="shareStatusPatch" value="friends" ng-checked="$ctrl.patchCandidate.share_status === 'friends'">friends only
+        <input type="radio" name="shareStatusPatch" value="private" ng-checked="$ctrl.patchCandidate.share_status === 'private'">private
+    </div>
+
+    <button ng-click="$ctrl.hubCancelSharePatchLink('submit')">submit</button>
+    <button ng-click="$ctrl.hubCancelSharePatchLink('cancel')">cancel</button>
 </div>

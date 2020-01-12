@@ -2071,6 +2071,116 @@
     font-size: 18px;
 }
 
+.hubEditMessageInactive_JanuaryC {
+    background: #9ca4a9;
+    left: -35%;
+    opacity: 0;
+    padding: 1% 3%;
+    position: absolute;
+    transition: all 0.5s linear;
+    top: -55%;
+    width: 30%;
+    z-index: -55;
+}
+
+.hubEditMessageActive_JanuaryC {
+    background: #9ca4a9;
+    left: 35%;
+    opacity: 1;
+    padding: 1% 3%;
+    position: absolute;
+    transition: all 0.5s linear;
+    top: 5%;
+    width: 30%;
+    z-index: 55;
+}
+
+.hubEditMessageActive_JanuaryC img {
+    border-radius: 5px;
+    max-width: 15%;
+}
+
+.hubEditMessageActive_JanuaryC p {
+    color: #020201;
+    font-family: 'Gothic A1', serif;
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.hubEditMessageActive_JanuaryC textarea {
+    background: #b5978a;
+    border: none;
+    color: #020201;
+    font-family: 'Gothic A1', serif;
+    font-size: 18px;
+    outline-color: #020201;
+    width: 100%;
+}
+
+.hubEditMessageActive_JanuaryC button {
+    background: #161d21;
+    border: none;
+    color: #9ba5a8;
+    cursor: pointer;
+    font-family: 'Gothic A1', serif;
+    font-size: 18px;
+    margin: 5px 35px;
+    transform: skewX(-15deg);
+    transition: all 0.4s linear;
+}
+
+.hubEditMessageActive_JanuaryC button:hover {
+    background: #af9f95;
+    color: #020201;
+    transform: skewX(-5deg);
+    transition: all 0.4s linear;
+}
+
+.hubEditMessageInactive_JanuaryC {
+    background: #9ca4a9;
+    left: -135%;
+    opacity: 0;
+    padding: 1% 3%;
+    position: absolute;
+    transition: all 0.5s linear;
+    top: 15%;
+    width: 30%;
+    z-index: -55;
+}
+
+.hubEditMessageInactive_JanuaryC img {
+    max-width: 15%;
+}
+
+.hubEditMessageInactive_JanuaryC p {
+    color: #020201;
+    font-family: 'Gothic A1', serif;
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.hubEditMessageInactive_JanuaryC textarea {
+    background: #b5978a;
+    border: none;
+    color: #020201;
+    font-family: 'Gothic A1', serif;
+    font-size: 18px;
+    outline-color: #020201;
+    width: 100%;
+}
+
+.hubEditMessageInactive_JanuaryC button {
+    background: #161d21;
+    border: none;
+    color: #9ba5a8;
+    cursor: pointer;
+    font-family: 'Gothic A1', serif;
+    font-size: 18px;
+    margin: 5px 35px;
+    transform: skewX(-15deg);
+    transition: all 0.4s linear;
+}
+
 @media only screen and (max-width: 768px) {
     .hubReactionGestalt_JanuaryC {
         margin: 4px;

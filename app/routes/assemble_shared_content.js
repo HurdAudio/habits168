@@ -238,7 +238,10 @@ router.get('/:uuid', (req, res, next) => {
             knex('blog_shares')
                 .then(allBlogShares => {
                     let blogShares = allBlogShares.filter(blog => {
-                        return ((blog.share_status !== 'private') && ((blog.user_uuid === user.uuid) || (user.associates.friends.indexOf(blog.user_uuid) !== -1) || (user.associates.following.indexOf(blog.user_uuid) !== -1)));
+                        return ((blog.user_uuid === user.uuid) || (user.associates.friends.indexOf(blog.user_uuid) !== -1) || (user.associates.following.indexOf(blog.user_uuid) !== -1));
+                    });
+                    blogShares = blogShares.filter(share => {
+                        return (((share.share_status === 'private') && (share.user_uuid === user.uuid)) || (share.share_status !== 'private'));
                     });
                     for (let i = 0; i < blogShares.length; i++) {
                         blogShares[i].blogOrPodcast = 'blog';
@@ -247,6 +250,9 @@ router.get('/:uuid', (req, res, next) => {
                         .then(allPodcastShares => {
                             let podcastShares = allPodcastShares.filter(podcast => {
                                 return ((podcast.share_status !== 'private') && ((podcast.user_uuid === user.uuid) || (user.associates.friends.indexOf(podcast.user_uuid) !== -1) || (user.associates.following.indexOf(podcast.user_uuid) !== -1)));
+                            });
+                            podcastShares = podcastShares.filter(share => {
+                                return (((share.share_status === 'private') && (share.user_uuid === user.uuid)) || (share.share_status !== 'private'));
                             });
                             for (let i = 0; i < podcastShares.length; i++) {
                                 podcastShares[i].blogOrPodcast = 'podcast';
@@ -279,6 +285,7 @@ router.get('/:uuid', (req, res, next) => {
                                     link: shares[i].link,
                                     pubDate: shares[i].pubDate,
                                     select_reactions: false,
+                                    share_status: shares[i].share_status,
                                     thumbnail: shares[i].thumbnail,
                                     title: shares[i].title,
                                     user_uuid: shares[i].user_uuid,

@@ -13,7 +13,7 @@
         const vm = this;
 
         vm.$onInit = onInit;
-        vm.monthSelect = '_JanuaryA';
+        vm.monthSelect = '_JanuaryC';
         vm.userLogout = userLogout;
         vm.hubShareTabState = 'hubTabActive' + vm.monthSelect;
         vm.hubReaderTabState = 'hubTabInactive' + vm.monthSelect;
@@ -473,6 +473,42 @@
         vm.removeShareModal = removeShareModal;
         vm.negativeDeleteShare = negativeDeleteShare;
         vm.positiveDeleteShare = positiveDeleteShare;
+        vm.editCommentModalState = 'hubEditMessageInactive' + vm.monthSelect;
+        vm.editShareComment = editShareComment;
+        vm.hubCancelSharePatchLink = hubCancelSharePatchLink;
+
+        function hubCancelSharePatchLink(action) {
+            let table = '';
+            if (action === 'submit') {
+                let now = new Date();
+                if (vm.patchCandidate.blogOrPodcast === 'blog') {
+                    table = '/blog_shares/' + vm.patchCandidate.uuid;
+                } else {
+                    table = '/podcast_shares/' + vm.patchCandidate.uuid;
+                }
+                $http.patch(table, {
+                    comment: document.getElementById('hubShareSaveLinkUserEditNotes').value,
+                    share_status: document.querySelector('input[name="shareStatusPatch"]:checked').value,
+                    updated_at: now
+                });
+                vm.sharedContent[vm.patchCandidate.id].comments = document.getElementById('hubShareSaveLinkUserEditNotes').value;
+                vm.sharedContent[vm.patchCandidate.id].share_status = document.querySelector('input[name="shareStatusPatch"]:checked').value;
+                if (vm.sharedContent[vm.patchCandidate.id].share_cleanDate.indexOf('edited') === -1) {
+                    vm.sharedContent[vm.patchCandidate.id].share_cleanDate += ' (edited)';
+                }
+                console.log(vm.patchCandidate);
+            }
+            vm.editCommentModalState = 'hubEditMessageInactive' + vm.monthSelect;
+            vm.backgroundStatus = 'hubContainer' + vm.monthSelect;
+        }
+
+        function editShareComment(article) {
+            vm.patchCandidate = article;
+            vm.editCommentModalState = 'hubEditMessageActive' + vm.monthSelect;
+            vm.backgroundStatus = 'hubContainerBlur' + vm.monthSelect;
+            document.getElementById('hubShareSaveLinkUserEditNotes').value = article.comments;
+            document.getElementById('hubShareSaveLinkUserEditNotes').focus();
+        }
 
         function positiveDeleteShare() {
             let table = '';
@@ -483,7 +519,10 @@
             }
             $http.delete(table);
             vm.sharedContent.splice(vm.deleteCandidate.id, 1);
-            
+            for (let i = 0; i < vm.sharedContent.length; i++) {
+                vm.sharedContent[i].id = i;
+            }
+
             vm.deleteShareGuardrailState = 'deleteGuardrailInactive' + vm.monthSelect;
             vm.backgroundStatus = 'hubContainer' + vm.monthSelect;
         }
@@ -1549,13 +1588,17 @@
             $http.get(`/assemble_shared_content/${uuid}`)
                 .then(shareFeedData => {
                     let shareFeed = shareFeedData.data;
-                    let createDate;
+                    let createDate, updateDate;
 
                     for (let i = 0; i < shareFeed.length; i++) {
                         createDate = new Date(shareFeed[i].pubDate);
+                        updateDate = new Date(shareFeed[i].updated_at);
                         shareFeed[i].cleanDate = createDate.getFullYear() + ' ' + months[createDate.getMonth()] + ' ' + createDate.getDate() + ' - ' + createDate.toLocaleTimeString('en-GB');
                         createDate = new Date(shareFeed[i].created_at);
                         shareFeed[i].share_cleanDate = createDate.getFullYear() + ' ' + months[createDate.getMonth()] + ' ' + createDate.getDate() + ' - ' + createDate.toLocaleTimeString('en-GB');
+                        if (updateDate.getTime() > createDate.getTime()) {
+                            shareFeed[i].share_cleanDate += ' (edited)';
+                        }
 
                         if (shareFeed[i].share_reactions.length > 0) {
                             for (let j = 0; j < shareFeed[i].share_reactions.length; j++) {

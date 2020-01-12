@@ -62,6 +62,23 @@ router.post('/', (req, res, next) => {
         });
 });
 
+router.patch('/:uuid', (req, res, next) => {
+    knex('blog_shares')
+        .where('uuid', req.params.uuid)
+        .update({
+            share_status: req.body.share_status,
+            comment: req.body.comment,
+            updated_at: req.body.updated_at
+        }, '*')
+        .then((results) => {
+            res.status(200).send(results[0]);
+        })
+        .catch((err) => {
+            next(err);
+        });
+
+});
+
 router.delete('/:uuid', (req, res, next) => {
     let record;
 
