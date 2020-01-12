@@ -62,5 +62,53 @@ router.post('/', (req, res, next) => {
         });
 });
 
+router.delete('/:uuid', (req, res, next) => {
+    let record;
+
+    knex('podcast_shares')
+        .where('uuid', req.params.uuid)
+        .first()
+        .then((row) => {
+            if (!row) {
+                return next();
+            }
+
+            record = row;
+
+            return knex('podcast_shares')
+                .del()
+                .where('uuid', req.params.uuid);
+        })
+        .then(() => {
+            var holder = record.uuid;
+            delete record.uuid;
+
+            var obj = {
+                uuid: record.uuid,
+                user_uuid: record.user_uuid,
+                feed_uuid: record.feed_uuid,
+                share_status: record.share_status,
+                comment: record.comment,
+                title: record.title,
+                pubDate: record.pubDate,
+                link: record.link,
+                guid: record.guid,
+                author: record.author,
+                thumbnail: record.thumbnail,
+                description: record.description,
+                content: record.content,
+                enclosure: record.enclosure,
+                categories: record.categories,
+                created_at: record.created_at,
+                updated_at: record.updated_at
+            };
+
+            res.send(obj);
+        })
+        .catch((err) => {
+            next(err);
+        });
+});
+
 
 module.exports = router;

@@ -13,7 +13,7 @@
         const vm = this;
 
         vm.$onInit = onInit;
-        vm.monthSelect = '_JanuaryC';
+        vm.monthSelect = '_JanuaryA';
         vm.userLogout = userLogout;
         vm.hubShareTabState = 'hubTabActive' + vm.monthSelect;
         vm.hubReaderTabState = 'hubTabInactive' + vm.monthSelect;
@@ -456,6 +456,7 @@
         vm.cancelMessageSender = cancelMessageSender;
         vm.sendMessage = sendMessage;
         vm.hubGuardrailState = 'hubRemoveGuardrailInactive' + vm.monthSelect;
+        vm.deleteShareGuardrailState = 'deleteGuardrailInactive' + vm.monthSelect;
         vm.removeBadFriend = removeBadFriend;
         vm.cancelFriendRemoval = cancelFriendRemoval;
         vm.confirmFriendRemoval = confirmFriendRemoval;
@@ -469,6 +470,34 @@
         vm.externalsMonth = '_JanuaryB';
         vm.navigateToDailies = navigateToDailies;
         vm.dailiesMonth = '_JanuaryA';
+        vm.removeShareModal = removeShareModal;
+        vm.negativeDeleteShare = negativeDeleteShare;
+        vm.positiveDeleteShare = positiveDeleteShare;
+
+        function positiveDeleteShare() {
+            let table = '';
+            if (vm.deleteCandidate.blogOrPodcast === 'blog') {
+                table = '/blog_shares/' + vm.deleteCandidate.uuid;
+            } else {
+                table = '/podcast_shares/' + vm.deleteCandidate.uuid;
+            }
+            $http.delete(table);
+            vm.sharedContent.splice(vm.deleteCandidate.id, 1);
+            
+            vm.deleteShareGuardrailState = 'deleteGuardrailInactive' + vm.monthSelect;
+            vm.backgroundStatus = 'hubContainer' + vm.monthSelect;
+        }
+
+        function negativeDeleteShare() {
+            vm.deleteShareGuardrailState = 'deleteGuardrailInactive' + vm.monthSelect;
+            vm.backgroundStatus = 'hubContainer' + vm.monthSelect;
+        }
+
+        function removeShareModal(article) {
+            vm.deleteShareGuardrailState = 'deleteGuardrailActive' + vm.monthSelect;
+            vm.deleteCandidate = article;
+            vm.backgroundStatus = 'hubContainerBlur' + vm.monthSelect;
+        }
 
         function initializeSubscriptionCards() {
             vm.manageBlockToggleStatus = 'hubReaderDay1BlockInactive' + vm.monthSelect;
@@ -1180,12 +1209,12 @@
                 vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[parseInt(commentReactionIndex)].hover_text.replace(vm.user.first_name + ' ' + vm.user.last_name, '');
             }
             $http.get('/share_comment_reactions')
-            .then(allShareCommentReactions => {
-                let targ = allShareCommentReactions.data.filter(entry => {
-                    return((entry.user_uuid === vm.user.uuid) && (entry.reaction_uuid === commentReaction.reaction_uuid) && (entry.comment_uuid === comment.uuid));
+                .then(allShareCommentReactions => {
+                    let targ = allShareCommentReactions.data.filter(entry => {
+                        return ((entry.user_uuid === vm.user.uuid) && (entry.reaction_uuid === commentReaction.reaction_uuid) && (entry.comment_uuid === comment.uuid));
+                    });
+                    $http.delete(`/share_comment_reactions/${targ[0].uuid}`);
                 });
-                $http.delete(`/share_comment_reactions/${targ[0].uuid}`);
-            });
         }
 
         function hubShareRemoveReaction(articleIndex, path, value, article, reaction) {
@@ -1214,12 +1243,12 @@
                 }
             }
             $http.get('/share_reactions')
-            .then(allReactionsData => {
-                let targ = allReactionsData.data.filter(react => {
-                    return((react.user_uuid === vm.user.uuid) && (react.reaction_uuid === reaction.reaction_uuid) && (react.share_uuid === article.uuid));
-                });                
-                $http.delete(`/share_reactions/${targ[0].uuid}`);
-            });
+                .then(allReactionsData => {
+                    let targ = allReactionsData.data.filter(react => {
+                        return ((react.user_uuid === vm.user.uuid) && (react.reaction_uuid === reaction.reaction_uuid) && (react.share_uuid === article.uuid));
+                    });
+                    $http.delete(`/share_reactions/${targ[0].uuid}`);
+                });
         }
 
         function shareAddCommentEmoji(articleIndex, commentIndex, path, value, article, comment, emoji) {
@@ -1544,7 +1573,6 @@
                         }
                     }
                     vm.sharedContent = shareFeed;
-                    console.log(vm.sharedContent);
                 });
         }
 

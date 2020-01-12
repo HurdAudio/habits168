@@ -1954,6 +1954,46 @@
   transition: all 0.4s linear;
 }
 
+.removeShare_JanuaryB {
+    color: #151c26;
+    cursor: pointer;
+    float: right;
+    font-size: 30px;
+}
+
+.editComment_JanuaryB {
+    color: #151c26;
+    cursor: pointer;
+    float: right;
+    font-size: 18px;
+}
+
+.deleteGuardrailActive_JanuaryB {
+  background: #c3d6ea;
+  border: 4px solid #151c26;
+  height: auto;
+  left: 25%;
+  opacity: 1;
+  position: absolute;
+  top: 30%;
+  transition: all 0.4s linear;
+  width: 50%;
+  z-index: 100;
+}
+
+.deleteGuardrailInactive_JanuaryB {
+  background: #c3d6ea;
+  border: 4px solid #151c26;
+  height: auto;
+  left: -45%;
+  opacity: 0;
+  position: absolute;
+  top: 70%;
+  transition: all 0.4s linear;
+  width: 68%;
+  z-index: -6;
+}
+
 @media only screen and (max-width: 768px) {
   .hubReactionGestalt_JanuaryB {
     margin: 4px;
