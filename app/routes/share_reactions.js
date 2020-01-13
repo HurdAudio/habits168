@@ -34,6 +34,27 @@ router.get('/:uuid', (req, res, next) => {
         });
 });
 
+router.post('/update_hovertext', (req, res, next) => {
+    let candidate;
+    let hover = '';
+    let from = req.body.from;
+    
+    knex('users')
+    .then(users => {
+        for (let i = 0; i < from.length; i++) {
+            candidate = users.filter(usr => {
+                return(usr.uuid === from[i]);
+            });
+            if (hover === '') {
+                hover += candidate[0].first_name + ' ' + candidate[0].last_name;
+            } else {
+                hover += ', ' + candidate[0].first_name + ' ' + candidate[0].last_name;
+            }
+        }
+        res.status(200).send(hover);
+    });
+});
+
 router.post('/', (req, res, next) => {
     const uuid = uuid4();
     knex('share_reactions')

@@ -482,7 +482,7 @@
         vm.positiveDeleteShareComment = positiveDeleteShareComment;
         vm.editShareCommentEnable = editShareCommentEnable;
         vm.hubShareSubmitCommentEdit = hubShareSubmitCommentEdit;
-        
+
         function hubShareSubmitCommentEdit(article, comment) {
             let now = new Date;
             const hubShareEditCommentTextArea = document.getElementById('hubShareEditCommentTextArea' + comment.uuid);
@@ -1250,10 +1250,10 @@
                 };
                 hubShareCommentTextArea.value = '';
                 $http.post('/share_comments', subObj)
-                .then(posted => {
-                    console.log(posted);
-                    vm.sharedContent[parseInt(articleIndex)].share_comments[index].uuid = posted.data[0].uuid;
-                });
+                    .then(posted => {
+                        console.log(posted);
+                        vm.sharedContent[parseInt(articleIndex)].share_comments[index].uuid = posted.data[0].uuid;
+                    });
             }
         }
 
@@ -1310,9 +1310,16 @@
                 }
             } else {
                 vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[parseInt(commentReactionIndex)].from.splice(vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[parseInt(commentReactionIndex)].from.indexOf(vm.user.uuid), 1);
+
+                $http.post('/share_reactions/update_hovertext', {
+                        from: vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[parseInt(commentReactionIndex)].from
+                    })
+                    .then(updateTextData => {
+                        vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[parseInt(commentReactionIndex)].hover_text = updateTextData.data;
+                    });
                 vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[parseInt(commentReactionIndex)].tally -= 1;
                 vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[parseInt(commentReactionIndex)].user_contributed = false;
-                vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[parseInt(commentReactionIndex)].hover_text.replace(vm.user.first_name + ' ' + vm.user.last_name, '');
+
             }
             $http.get('/share_comment_reactions')
                 .then(allShareCommentReactions => {
@@ -1337,13 +1344,15 @@
                         vm.sharedContent[parseInt(articleIndex)].share_reactions[j].id = j;
                     }
                 } else {
-                    let nameString = vm.user.first_name + ' ' + vm.user.last_name;
                     vm.sharedContent[parseInt(articleIndex)].share_reactions[index].from.splice(vm.sharedContent[parseInt(articleIndex)].share_reactions[index].from.indexOf(vm.user.uuid), 1);
-                    if (vm.sharedContent[parseInt(articleIndex)].share_reactions[index].hover_text.indexOf(nameString) === 0) {
-                        vm.sharedContent[parseInt(articleIndex)].share_reactions[index].hover_text.replace(nameString, '');
-                    } else {
-                        vm.sharedContent[parseInt(articleIndex)].share_reactions[index].hover_text.replace(', ' + nameString, '');
-                    }
+
+                    $http.post('/share_reactions/update_hovertext', {
+                            from: vm.sharedContent[parseInt(articleIndex)].share_reactions[index].from
+                        })
+                        .then(updateTextData => {
+                            vm.sharedContent[parseInt(articleIndex)].share_reactions[index].hover_text = updateTextData.data;
+                        });
+
                     vm.sharedContent[parseInt(articleIndex)].share_reactions[index].tally -= 1;
                     vm.sharedContent[parseInt(articleIndex)].share_reactions[index].user_contributed = false;
                 }
