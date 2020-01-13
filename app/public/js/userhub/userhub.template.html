@@ -263,7 +263,7 @@
                 <h2 class="hubMyBlogsLabel{{$ctrl.monthSelect}}">My Blogs:</h2>
                 <main ng-repeat="blog in $ctrl.userBlogs">
 
-                    <p class="hubBlogListEntry{{$ctrl.monthSelect}}" ng-click="$ctrl.hubDisplayBlogData(blog.id)">{{blog.blog}}</p>
+                    <p class="hubBlogListEntry{{$ctrl.monthSelect}}" ng-click="$ctrl.hubDisplayBlogData(blog.id)">{{blog.blog_name}}</p>
                 </main>
                 <button class="hubNewBlogButton{{$ctrl.monthSelect}}">start new blog</button>
             </div>
