@@ -1994,6 +1994,32 @@
   z-index: -6;
 }
 
+.deleteCommentGuardrailInactive_JanuaryB {
+    background: #c3d6ea;
+  border: 4px solid #151c26;
+  height: auto;
+  left: -45%;
+  opacity: 0;
+  position: absolute;
+  top: 70%;
+  transition: all 0.4s linear;
+  width: 68%;
+  z-index: -6;
+}
+
+.deleteCommentGuardrailActive_JanuaryB {
+    background: #c3d6ea;
+  border: 4px solid #151c26;
+  height: auto;
+  left: 25%;
+  opacity: 1;
+  position: absolute;
+  top: 30%;
+  transition: all 0.4s linear;
+  width: 50%;
+  z-index: 100;
+}
+
 .hubEditMessageActive_JanuaryB {
   background: #9aa3af;
   left: 35%;
@@ -2100,6 +2126,12 @@
   margin: 5px 35px;
   transform: skewX(-15deg);
   transition: all 0.4s linear;
+}
+
+.removeShareComment_JanuaryB {
+    cursor: pointer;
+    float: right;
+    margin: 0 5px;
 }
 
 @media only screen and (max-width: 768px) {

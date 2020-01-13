@@ -13,7 +13,7 @@
         const vm = this;
 
         vm.$onInit = onInit;
-        vm.monthSelect = '_JanuaryA';
+        vm.monthSelect = '_JanuaryC';
         vm.userLogout = userLogout;
         vm.hubShareTabState = 'hubTabActive' + vm.monthSelect;
         vm.hubReaderTabState = 'hubTabInactive' + vm.monthSelect;
@@ -457,6 +457,7 @@
         vm.sendMessage = sendMessage;
         vm.hubGuardrailState = 'hubRemoveGuardrailInactive' + vm.monthSelect;
         vm.deleteShareGuardrailState = 'deleteGuardrailInactive' + vm.monthSelect;
+        vm.deleteShareCommentGuardrailState = 'deleteCommentGuardrailInactive' + vm.monthSelect;
         vm.removeBadFriend = removeBadFriend;
         vm.cancelFriendRemoval = cancelFriendRemoval;
         vm.confirmFriendRemoval = confirmFriendRemoval;
@@ -476,6 +477,34 @@
         vm.editCommentModalState = 'hubEditMessageInactive' + vm.monthSelect;
         vm.editShareComment = editShareComment;
         vm.hubCancelSharePatchLink = hubCancelSharePatchLink;
+        vm.removeShareCommentModal = removeShareCommentModal;
+        vm.negativeDeleteShareComment = negativeDeleteShareComment;
+        vm.positiveDeleteShareComment = positiveDeleteShareComment;
+
+        function positiveDeleteShareComment() {
+            
+            $http.delete(`/share_comments/${vm.deleteCommentCandidate.uuid}`);
+            vm.sharedContent[vm.deleteCommentCandidateArticle.id].share_comments.splice(vm.deleteCommentCandidate.id, 1);
+            if (vm.sharedContent[vm.deleteCommentCandidateArticle.id].share_comments.length > 0) {
+                for (let i = 0; i < vm.sharedContent[vm.deleteCommentCandidateArticle.id].share_comments.length; i++) {
+                    vm.sharedContent[vm.deleteCommentCandidateArticle.id].share_comments[i].id = i;
+                }
+            }
+            vm.deleteShareCommentGuardrailState = 'deleteCommentGuardrailInactive' + vm.monthSelect;
+            vm.backgroundStatus = 'hubContainer' + vm.monthSelect;
+        }
+
+        function negativeDeleteShareComment() {
+            vm.deleteShareCommentGuardrailState = 'deleteCommentGuardrailInactive' + vm.monthSelect;
+            vm.backgroundStatus = 'hubContainer' + vm.monthSelect;
+        }
+
+        function removeShareCommentModal(article, comment) {
+            vm.deleteCommentCandidate = comment;
+            vm.deleteCommentCandidateArticle = article;
+            vm.deleteShareCommentGuardrailState = 'deleteCommentGuardrailActive' + vm.monthSelect;
+            vm.backgroundStatus = 'hubContainerBlur' + vm.monthSelect;
+        }
 
         function hubCancelSharePatchLink(action) {
             let table = '';
@@ -1607,6 +1636,12 @@
                         }
                         if (shareFeed[i].share_comments.length > 0) {
                             for (let k = 0; k < shareFeed[i].share_comments.length; k++) {
+                                createDate = new Date(shareFeed[i].share_comments[k].created_at);
+                                updateDate = new Date(shareFeed[i].share_comments[k].updated_at);
+                                shareFeed[i].share_comments[k].cleanDate = createDate.getFullYear() + ' ' + months[createDate.getMonth()] + ' ' + createDate.getDate() + ' - ' + createDate.toLocaleTimeString('en-GB');
+                                if (updateDate.getTime() > createDate.getTime()) {
+                                    shareFeed[i].share_comments[k].cleanDate += ' (edited)';
+                                }
                                 if (shareFeed[i].share_comments[k].comment_reactions.length > 0) {
                                     for (let l = 0; l < shareFeed[i].share_comments[k].comment_reactions.length; l++) {
                                         shareFeed[i].share_comments[k].comment_reactions[l].hoverClass = 'hubShareReactionsHoverText' + vm.monthSelect;

@@ -81,7 +81,10 @@
                                 <div class="hubShareCommenterFields{{$ctrl.monthSelect}}"><img class="hubShareCommenterAvatar{{$ctrl.monthSelect}}" src="{{comment.avatar}}" ng-click="$ctrl.displayFriend(comment.uuid)">
                                     <p class="hubShareCommenterName{{$ctrl.monthSelect}}" ng-click="$ctrl.displayFriend(comment.uuid)">{{comment.name}}</p>
                                 </div><br>
-                                <p class="hubShareCommentDateStamp{{$ctrl.monthSelect}}">{{comment.cleanDate}}</p><br>
+                                <i class="fas fa-trash-alt removeShareComment{{$ctrl.monthSelect}}" ng-if="(comment.user_uuid === $ctrl.user.uuid) || (article.user_uuid === $ctrl.user.uuid)" ng-click="$ctrl.removeShareCommentModal(article, comment)"></i>
+                                <i class="fas fa-edit removeShareComment{{$ctrl.monthSelect}}" ng-if="comment.user_uuid === $ctrl.user.uuid" ng-click="$ctrl.editShareCommentModal(article, comment)"></i>
+                                <p class="hubShareCommentDateStamp{{$ctrl.monthSelect}}">
+                                    {{comment.cleanDate}}</p><br>
                                 <p class="hubShareCommentComment{{$ctrl.monthSelect}}">{{comment.comment}}</p>
                                 <div class="hubShareAddReactionsToggle{{$ctrl.monthSelect}}" ng-if="!comment.select_reactions">
 
@@ -557,4 +560,11 @@
 
     <button ng-click="$ctrl.hubCancelSharePatchLink('submit')">submit</button>
     <button ng-click="$ctrl.hubCancelSharePatchLink('cancel')">cancel</button>
+</div>
+<div class="{{$ctrl.deleteShareCommentGuardrailState}}">
+    <p class="hubGuardrailText{{$ctrl.monthSelect}}">Delete comment?</p>
+    <div class="hubGuardrailButtonsDiv{{$ctrl.monthSelect}}">
+        <button class="hubGuardrailButton{{$ctrl.monthSelect}}" ng-click="$ctrl.positiveDeleteShareComment()">yes</button>
+        <button class="hubGuardrailButton{{$ctrl.monthSelect}}" ng-click="$ctrl.negativeDeleteShareComment()">no</button>
+    </div>
 </div>
