@@ -1994,6 +1994,114 @@
   z-index: -6;
 }
 
+.hubEditMessageActive_JanuaryB {
+  background: #9aa3af;
+  left: 35%;
+  opacity: 1;
+  padding: 1% 3%;
+  position: absolute;
+  transition: all 0.5s linear;
+  top: 5%;
+  width: 30%;
+  z-index: 55;
+}
+
+.hubEditMessageInactive_JanuaryB {
+  background: #9aa3af;
+  left: 35%;
+  opacity: 0;
+  padding: 1% 3%;
+  position: absolute;
+  transition: all 0.5s linear;
+  top: 5%;
+  width: 30%;
+  z-index: -55;
+}
+
+.hubEditMessageActive_JanuaryB img {
+  max-width: 15%;
+}
+
+.hubEditMessageActive_JanuaryB p {
+  color: #151c26;
+  font-family: 'Nanum Gothic', serif;
+  font-size: 18px;
+  margin: 15px 0;
+}
+
+.hubEditMessageActive_JanuaryB textarea {
+  background: #fecdeb;
+  border: none;
+  color: #151c26;
+  font-family: 'Nanum Gothic', serif;
+  font-size: 18px;
+  outline-color: #ffe0e6;
+  width: 100%;
+}
+
+.hubEditMessageActive_JanuaryB button {
+  background: #4b8eb8;
+  border: none;
+  color: #dfdde8;
+  cursor: pointer;
+  font-family: 'Nanum Gothic', serif;
+  font-size: 18px;
+  margin: 5px 35px;
+  transform: skewX(-15deg);
+  transition: all 0.4s linear;
+}
+
+.hubEditMessageActive_JanuaryB button:hover {
+  background: #35475f;
+  color: #bebad1;
+  transform: skewX(-5deg);
+  transition: all 0.4s linear;
+}
+
+.hubEditMessageInactive_JanuaryB {
+  background: #9aa3af;
+  left: 35%;
+  opacity: 0;
+  padding: 1% 3%;
+  position: absolute;
+  transition: all 0.5s linear;
+  top: 5%;
+  width: 30%;
+  z-index: -55;
+}
+
+.hubEditMessageInactive_JanuaryB img {
+  max-width: 15%;
+}
+
+.hubEditMessageInactive_JanuaryB p {
+  color: #08252e;
+  font-family: 'Nanum Gothic', serif;
+  font-size: 18px;
+  margin: 15px 0;
+}
+
+.hubEditMessageInactive_JanuaryB textarea {
+  background: #e3e6eb;
+  border: none;
+  color: #08252e;
+  font-family: 'Nanum Gothic', serif;
+  font-size: 18px;
+  width: 100%;
+}
+
+.hubEditMessageInactive_JanuaryB button {
+  background: #32728e;
+  border: none;
+  color: #e3e6eb;
+  cursor: pointer;
+  font-family: 'Nanum Gothic', serif;
+  font-size: 18px;
+  margin: 5px 35px;
+  transform: skewX(-15deg);
+  transition: all 0.4s linear;
+}
+
 @media only screen and (max-width: 768px) {
   .hubReactionGestalt_JanuaryB {
     margin: 4px;

@@ -1939,6 +1939,101 @@
   z-index: -6;
 }
 
+.hubEditMessageActive_JanuaryA {
+  background: #99b9c7;
+  left: 35%;
+  opacity: 1;
+  padding: 1% 3%;
+  position: absolute;
+  transition: all 0.5s linear;
+  top: 5%;
+  width: 30%;
+  z-index: 55;
+}
+
+.hubEditMessageInactive_JanuaryA {
+  background: #99b9c7;
+  left: 35%;
+  opacity: 0;
+  padding: 1% 3%;
+  position: absolute;
+  transition: all 0.5s linear;
+  top: 5%;
+  width: 30%;
+  z-index: -55;
+}
+
+.hubEditMessageActive_JanuaryA img {
+  max-width: 15%;
+}
+
+.hubEditMessageActive_JanuaryA p {
+  color: #08252e;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  margin: 15px 0;
+}
+
+.hubEditMessageActive_JanuaryA textarea {
+  background: #e3e6eb;
+  border: none;
+  color: #08252e;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  width: 100%;
+}
+
+.hubEditMessageActive_JanuaryA button {
+  background: #32728e;
+  border: none;
+  color: #e3e6eb;
+  cursor: pointer;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  margin: 5px 35px;
+  transform: skewX(-15deg);
+  transition: all 0.4s linear;
+}
+
+.hubEditMessageActive_JanuaryA button:hover {
+  background: #cddbe7;
+  color: #08252e;
+  transform: skewX(-5deg);
+  transition: all 0.4s linear;
+}
+
+.hubEditMessageInactive_JanuaryA img {
+  max-width: 15%;
+}
+
+.hubEditMessageInactive_JanuaryA p {
+  color: #08252e;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  margin: 15px 0;
+}
+
+.hubEditMessageInactive_JanuaryA textarea {
+  background: #e3e6eb;
+  border: none;
+  color: #08252e;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  width: 100%;
+}
+
+.hubEditMessageInactive_JanuaryA button {
+  background: #32728e;
+  border: none;
+  color: #e3e6eb;
+  cursor: pointer;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  margin: 5px 35px;
+  transform: skewX(-15deg);
+  transition: all 0.4s linear;
+}
+
 @media only screen and (max-width: 768px) {
   .hubReactionGestalt_JanuaryA {
     margin: 4px;
