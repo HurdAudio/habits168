@@ -81,11 +81,17 @@
                                 <div class="hubShareCommenterFields{{$ctrl.monthSelect}}"><img class="hubShareCommenterAvatar{{$ctrl.monthSelect}}" src="{{comment.avatar}}" ng-click="$ctrl.displayFriend(comment.uuid)">
                                     <p class="hubShareCommenterName{{$ctrl.monthSelect}}" ng-click="$ctrl.displayFriend(comment.uuid)">{{comment.name}}</p>
                                 </div><br>
-                                <i class="fas fa-trash-alt removeShareComment{{$ctrl.monthSelect}}" ng-if="(comment.user_uuid === $ctrl.user.uuid) || (article.user_uuid === $ctrl.user.uuid)" ng-click="$ctrl.removeShareCommentModal(article, comment)"></i>
-                                <i class="fas fa-edit removeShareComment{{$ctrl.monthSelect}}" ng-if="comment.user_uuid === $ctrl.user.uuid" ng-click="$ctrl.editShareCommentModal(article, comment)"></i>
-                                <p class="hubShareCommentDateStamp{{$ctrl.monthSelect}}">
-                                    {{comment.cleanDate}}</p><br>
-                                <p class="hubShareCommentComment{{$ctrl.monthSelect}}">{{comment.comment}}</p>
+                                <div ng-if="!comment.editMode">
+                                    <i class="fas fa-trash-alt removeShareComment{{$ctrl.monthSelect}}" ng-if="(comment.user_uuid === $ctrl.user.uuid) || (article.user_uuid === $ctrl.user.uuid)" ng-click="$ctrl.removeShareCommentModal(article, comment)"></i>
+                                    <i class="fas fa-edit removeShareComment{{$ctrl.monthSelect}}" ng-if="comment.user_uuid === $ctrl.user.uuid" ng-click="$ctrl.editShareCommentEnable(article, comment)"></i>
+                                    <p class="hubShareCommentDateStamp{{$ctrl.monthSelect}}">
+                                        {{comment.cleanDate}}</p><br>
+                                    <p class="hubShareCommentComment{{$ctrl.monthSelect}}">{{comment.comment}}</p>
+                                </div>
+                                <div ng-if="comment.editMode">
+                                    <textarea id="hubShareEditCommentTextArea{{comment.uuid}}" class="hubShareCommentTextArea{{$ctrl.monthSelect}}" rows="5"></textarea>
+                                    <button class="hubSignoutButton{{$ctrl.monthSelect}}" ng-click="$ctrl.hubShareSubmitCommentEdit(article, comment)">done</button>
+                                </div>
                                 <div class="hubShareAddReactionsToggle{{$ctrl.monthSelect}}" ng-if="!comment.select_reactions">
 
                                     <p ng-click="$ctrl.toggleCommentEmojiSelector(article.id, comment.id)">+ add reaction</p>
@@ -547,11 +553,11 @@
     </div>
 </div>
 <div class="{{$ctrl.editCommentModalState}}">
-    
+
     <h2 class="hubDialogHeadline{{$ctrl.monthSelect}}">Edit comment:</h2>
 
     <textarea id="hubShareSaveLinkUserEditNotes" placeholder="user comments" rows="5"></textarea><br><br>
-    <div class="hubRadioButtons{{$ctrl.monthSelect}}" >
+    <div class="hubRadioButtons{{$ctrl.monthSelect}}">
 
         share with:<input type="radio" name="shareStatusPatch" value="public" ng-checked="$ctrl.patchCandidate.share_status === 'public'">public
         <input type="radio" name="shareStatusPatch" value="friends" ng-checked="$ctrl.patchCandidate.share_status === 'friends'">friends only

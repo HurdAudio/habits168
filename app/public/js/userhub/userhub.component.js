@@ -480,9 +480,40 @@
         vm.removeShareCommentModal = removeShareCommentModal;
         vm.negativeDeleteShareComment = negativeDeleteShareComment;
         vm.positiveDeleteShareComment = positiveDeleteShareComment;
+        vm.editShareCommentEnable = editShareCommentEnable;
+        vm.hubShareSubmitCommentEdit = hubShareSubmitCommentEdit;
+        
+        function hubShareSubmitCommentEdit(article, comment) {
+            let now = new Date;
+            const hubShareEditCommentTextArea = document.getElementById('hubShareEditCommentTextArea' + comment.uuid);
+            const editedComment = hubShareEditCommentTextArea.value;
+            if ((comment.comment !== editedComment) && (editedComment !== '')) {
+                $http.patch(`/share_comments/${comment.uuid}`, {
+                    comment: editedComment,
+                    updated_at: now
+                });
+                vm.sharedContent[article.id].share_comments[comment.id].comment = editedComment;
+                if (vm.sharedContent[article.id].share_comments[comment.id].cleanDate.indexOf('edited') === -1) {
+                    vm.sharedContent[article.id].share_comments[comment.id].cleanDate += ' (edited)';
+                }
+            }
+            vm.sharedContent[article.id].share_comments[comment.id].editMode = false;
+        }
+
+        function editShareCommentEnable(article, comment) {
+            console.log(comment);
+            vm.sharedContent[article.id].share_comments[comment.id].editMode = true;
+            setTimeout(() => {
+                const hubShareEditCommentTextArea = document.getElementById('hubShareEditCommentTextArea' + comment.uuid);
+
+                hubShareEditCommentTextArea.value = comment.comment;
+                hubShareEditCommentTextArea.focus();
+            }, 100);
+
+        }
 
         function positiveDeleteShareComment() {
-            
+
             $http.delete(`/share_comments/${vm.deleteCommentCandidate.uuid}`);
             vm.sharedContent[vm.deleteCommentCandidateArticle.id].share_comments.splice(vm.deleteCommentCandidate.id, 1);
             if (vm.sharedContent[vm.deleteCommentCandidateArticle.id].share_comments.length > 0) {
@@ -1205,7 +1236,10 @@
                     comment_reactions: [],
                     id: index,
                     name: vm.user.first_name + ' ' + vm.user.last_name,
-                    select_reactions: false
+                    select_reactions: false,
+                    user_uuid: vm.user.uuid,
+                    share_uuid: article.uuid,
+                    blogOrPodcast: article.blogOrPodcast
                 });
 
                 let subObj = {
@@ -1215,7 +1249,11 @@
                     comment: hubShareCommentTextArea.value
                 };
                 hubShareCommentTextArea.value = '';
-                $http.post('/share_comments', subObj);
+                $http.post('/share_comments', subObj)
+                .then(posted => {
+                    console.log(posted);
+                    vm.sharedContent[parseInt(articleIndex)].share_comments[index].uuid = posted.data[0].uuid;
+                });
             }
         }
 

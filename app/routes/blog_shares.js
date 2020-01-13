@@ -101,7 +101,7 @@ router.delete('/:uuid', (req, res, next) => {
             delete record.uuid;
 
             var obj = {
-                uuid: record.uuid,
+                uuid: holder,
                 user_uuid: record.user_uuid,
                 feed_uuid: record.feed_uuid,
                 share_status: record.share_status,

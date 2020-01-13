@@ -145,6 +145,7 @@ router.get('/:uuid', (req, res, next) => {
                                 avatar: usr[0].avatar_path,
                                 blogOrPodcast: comments[i].blogOrPodcast,
                                 comment: comments[i].comment,
+                                editMode: false,
                                 id: i,
                                 name: usr[0].first_name + ' ' + usr[0].last_name,
                                 select_reactions: false,
