@@ -60,64 +60,6 @@
         vm.navigationSliderState = 'hubUserProfileNavigationSlidePublicState' + vm.monthSelect;
         vm.navigateProfileViews = navigateProfileViews;
         vm.profileNavState = 'public';
-        vm.userExtendedProfile = {
-            bio: {
-                bio: 'A man with 168 Habits. Some of them good.',
-                public: true
-            },
-            birthdate: {
-                birthdate: new Date('1970-03-08'),
-                cleanDate: '8 March',
-                public: false
-            },
-            description: {
-                description: 'Drone music composer and software engineer stranded in the desert.',
-                public: true
-            },
-            email: {
-                email: 'devin@devinhurd.com',
-                public: false
-            },
-            education: {
-                public: false,
-                schools: [
-                    {
-                        location: 'Toronto, Ontario, Canada',
-                        name: 'York University'
-            },
-                    {
-                        location: 'Hanover, New Hampshire',
-                        name: 'Dartmouth College'
-            },
-                    {
-                        location: 'Boulder, Colorado',
-                        name: 'Galvanize'
-            }
-          ]
-            },
-            employer: {
-                employer: 'Hall of Justice, Inc.',
-                public: false
-            },
-            location: {
-                adminCode: 'NM',
-                country: 'US',
-                featureCode: 'PPLA2',
-                name: 'Albuquerque',
-                population: 545852,
-                public: true,
-                lat: 35.08449,
-                lon: -106.65114
-            },
-            occupation: {
-                occupation: 'Web Developer',
-                public: true
-            },
-            phone: {
-                phone: '(505)505-5050',
-                public: false
-            }
-        };
         vm.userMessages = [
             {
                 cleanDate: '2019 August 14 - 20:14:55',
@@ -186,189 +128,6 @@
         vm.unreadMailMarker = '';
         vm.toggleMessageOpen = toggleMessageOpen;
         vm.submitResponse = submitResponse;
-        vm.friendsList = [
-            {
-                avatar: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/digitalNomadAvatar.jpg',
-                blog_posts: 907,
-                extended_profile: {
-                    bio: {
-                        bio: 'Formerly well-adjusted daughter of two computer geeks.',
-                        public: true
-                    },
-                    birthdate: {
-                        birthdate: new Date('1980-02-28'),
-                        cleanDate: '28 February',
-                        public: false
-                    },
-                    description: {
-                        description: 'Full time coder and all around badass.',
-                        public: true
-                    },
-                    email: {
-                        email: 'eva.codes@evacodes.com',
-                        public: false
-                    },
-                    education: {
-                        public: false,
-                        schools: [
-                            {
-                                location: 'Providence, Rhode Island',
-                                name: 'Brown University'
-                }
-              ]
-                    },
-                    employer: {
-                        employer: 'NSA',
-                        public: false
-                    },
-                    location: {
-                        adminCode: 'MD',
-                        country: 'US',
-                        featureCode: 'PPLA',
-                        name: 'Annapolis',
-                        population: 38394,
-                        public: true,
-                        lat: 38.97845,
-                        lon: -76.49218
-                    },
-                    occupation: {
-                        occupation: 'Hacker for Hire',
-                        public: true
-                    },
-                    phone: {
-                        phone: '(505)505-5050',
-                        public: false
-                    }
-                },
-                first_name: 'Eva',
-                friends: 57,
-                last_name: 'Codes',
-                name: 'Eva Codes',
-                shared_items: 702,
-                uuid: '03ad421c-aad5-47b1-88ab-d7822f6c3eb7'
-        },
-            {
-                avatar: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/homerAvatar.jpg',
-                blog_posts: 207,
-                extended_profile: {
-                    bio: {
-                        bio: 'Frustrated DJ trapped in a day job.',
-                        public: true
-                    },
-                    birthdate: {
-                        birthdate: new Date('1982-08-08'),
-                        cleanDate: '8 August',
-                        public: false
-                    },
-                    description: {
-                        description: 'Slave to the beat.',
-                        public: true
-                    },
-                    email: {
-                        email: 'ipsum.spinsum@djipsum.com',
-                        public: false
-                    },
-                    education: {
-                        public: false,
-                        schools: [
-                            {
-                                location: 'Portland, Oregon',
-                                name: 'Reed College'
-                }
-              ]
-                    },
-                    employer: {
-                        employer: 'Wells Fargo',
-                        public: false
-                    },
-                    location: {
-                        adminCode: 'CA',
-                        country: 'US',
-                        featureCode: 'PPLA2',
-                        name: 'San Rafael',
-                        population: 57713,
-                        public: true,
-                        lat: 37.97353,
-                        lon: -122.53109
-                    },
-                    occupation: {
-                        occupation: 'DJ from the bank',
-                        public: true
-                    },
-                    phone: {
-                        phone: '(505)505-5050',
-                        public: false
-                    }
-                },
-                first_name: 'DJ',
-                friends: 44,
-                last_name: 'Ipsum',
-                name: 'DJ Ipsum',
-                shared_items: 1043,
-                uuid: '96770ff7-afa0-4c31-970e-905e8f28ccd0'
-        },
-            {
-                avatar: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/ashesAvatar.png',
-                blog_posts: 180,
-                extended_profile: {
-                    bio: {
-                        bio: 'Product of Detroit public education.',
-                        public: true
-                    },
-                    birthdate: {
-                        birthdate: new Date('1988-11-26'),
-                        cleanDate: '26 November',
-                        public: true
-                    },
-                    description: {
-                        description: 'Wildly interested in everything.',
-                        public: true
-                    },
-                    email: {
-                        email: 'temporaneous@amettempor.com',
-                        public: false
-                    },
-                    education: {
-                        public: false,
-                        schools: [
-                            {
-                                location: 'Earth',
-                                name: 'School of Hard Knocks'
-                }
-              ]
-                    },
-                    employer: {
-                        employer: 'self employed',
-                        public: false
-                    },
-                    location: {
-                        adminCode: 'NY',
-                        country: 'US',
-                        featureCode: 'PPL',
-                        name: 'New York City',
-                        population: 8175133,
-                        public: true,
-                        lat: 40.71427,
-                        lon: -74.00597
-                    },
-                    occupation: {
-                        occupation: 'Code Monkey',
-                        public: true
-                    },
-                    phone: {
-                        phone: '(505)505-5050',
-                        public: false
-                    }
-                },
-                first_name: 'Amet',
-                friends: 37,
-                last_name: 'Tempor',
-                name: 'Amet Tempor',
-                shared_items: 844,
-                uuid: 'e0d83fb4-f7b5-492c-ba49-e3b1447567e6'
-        }
-      ];
-        vm.filteredFriendsList = vm.friendsList;
         vm.friendFiltering = friendFiltering;
         vm.profileDisplayModal = 'hubProfileDisplayerInactive' + vm.monthSelect;
         vm.displayFriend = displayFriend;
@@ -1483,6 +1242,7 @@
                     document.cookie = vm.user.security.key + "=" + vm.user.security.value;
                     document.cookie = "habitualOffender=" + vm.user.uuid;
                     document.cookie = "habitualRelease=" + vm.user.security.expire;
+                    populateFriends();
                 });
         }
 
@@ -1647,6 +1407,49 @@
                     vm.totalPageLoads = vm.userBlogs[0].page_loads;
                 });
         }
+        
+        function setUserExtendedProfile(userId) {
+            $http.get(`/user_expanded_profiles/byuseruuid/${userId}`)
+            .then(userExpandedData => {
+                vm.userExtendedProfile = userExpandedData.data;
+                obtainUserLocationImage();
+            });
+        }
+        
+        function populateFriends() {
+            vm.friendsList = [];
+            vm.filteredFriendsList = vm.friendsList;
+            
+            function populate(index) {
+                $http.get(`/user_expanded_profiles/byuseruuid/${vm.user.associates.friends[index]}`)
+                .then(friendData => {
+                    let friend = friendData.data;
+                    vm.friendsList[index] = {};
+                    $http.get(`/users/${vm.user.associates.friends[index]}`)
+                    .then(friendBasicData => {
+                        let friendBasic = friendBasicData.data;
+                        vm.friendsList[index].avatar = friendBasic.avatar_path;
+                        vm.friendsList[index].extended_profile = friend;
+                        vm.friendsList[index].blog_posts = friend.blog_posts;
+                        vm.friendsList[index].first_name = friendBasic.first_name;
+                        vm.friendsList[index].friends = friend.friends;
+                        vm.friendsList[index].last_name = friendBasic.last_name;
+                        vm.friendsList[index].name = friendBasic.first_name + ' ' + friendBasic.last_name;
+                        vm.friendsList[index].shared_items = friend.shared_items;
+                        vm.friendsList[index].uuid = vm.user.associates.friends[index];
+                    });
+                });
+            }
+            
+            if (!vm.user.associates.friends) {
+                return;
+            }
+            
+            for (let i = 0; i < vm.user.associates.friends.length; i++) {
+                populate(i)
+            }
+            
+        }
 
 
         function onInit() {
@@ -1669,13 +1472,12 @@
 
             setDaysRelativeToToday();
             setFooterMessage();
-            obtainUserLocationImage();
             initializeDayCards();
             initializeSubscriptionCards();
             populateEmojis();
             assembleShareFeed($stateParams.id);
             setUserBlogs($stateParams.id);
-
+            setUserExtendedProfile($stateParams.id);
         }
 
     }

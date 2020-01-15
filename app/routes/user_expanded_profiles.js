@@ -38,6 +38,7 @@ router.get('/byuseruuid/:uuid', (req, res, next) => {
     knex('user_expanded_profiles')
         .select()
         .where('user_uuid', req.params.uuid)
+        .first()
         .then((feed) => {
             if (!feed) {
                 return next();
