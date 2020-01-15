@@ -42,8 +42,8 @@
                     <div class="hubShareByline{{$ctrl.monthSelect}}">
                         <i class="fas fa-trash-alt removeShare{{$ctrl.monthSelect}}" ng-if="article.user_uuid === $ctrl.user.uuid" ng-click="$ctrl.removeShareModal(article)"></i>
 
-                        <img class="hubShareBylineAvatar{{$ctrl.monthSelect}}" src="{{article.avatar_path}}" ng-click="$ctrl.displayFriend(article.uuid)">
-                        <p class="hubBylineName{{$ctrl.monthSelect}}" ng-click="$ctrl.displayFriend(article.uuid)">{{article.first_name}} {{article.last_name}}</p>
+                        <img class="hubShareBylineAvatar{{$ctrl.monthSelect}}" src="{{article.avatar_path}}" ng-click="$ctrl.displayFriend(article.user_uuid)">
+                        <p class="hubBylineName{{$ctrl.monthSelect}}" ng-click="$ctrl.displayFriend(article.user_uuid)">{{article.first_name}} {{article.last_name}}</p>
                         <i class="fas fa-edit editComment{{$ctrl.monthSelect}}" ng-if="article.user_uuid === $ctrl.user.uuid" ng-click="$ctrl.editShareComment(article)"></i>
                         <p class="hubSharedAt{{$ctrl.monthSelect}}">{{article.share_cleanDate}}</p>
                         <p class="hubShareComments{{$ctrl.monthSelect}}">{{article.comments}}</p>
@@ -78,8 +78,8 @@
 
                             <main ng-repeat="comment in article.share_comments">
 
-                                <div class="hubShareCommenterFields{{$ctrl.monthSelect}}"><img class="hubShareCommenterAvatar{{$ctrl.monthSelect}}" src="{{comment.avatar}}" ng-click="$ctrl.displayFriend(comment.uuid)">
-                                    <p class="hubShareCommenterName{{$ctrl.monthSelect}}" ng-click="$ctrl.displayFriend(comment.uuid)">{{comment.name}}</p>
+                                <div class="hubShareCommenterFields{{$ctrl.monthSelect}}"><img class="hubShareCommenterAvatar{{$ctrl.monthSelect}}" src="{{comment.avatar}}" ng-click="$ctrl.displayFriend(comment.user_uuid)">
+                                    <p class="hubShareCommenterName{{$ctrl.monthSelect}}" ng-click="$ctrl.displayFriend(comment.user_uuid)">{{comment.name}}</p>
                                 </div><br>
                                 <div ng-if="!comment.editMode">
                                     <i class="fas fa-trash-alt removeShareComment{{$ctrl.monthSelect}}" ng-if="(comment.user_uuid === $ctrl.user.uuid) || (article.user_uuid === $ctrl.user.uuid)" ng-click="$ctrl.removeShareCommentModal(article, comment)"></i>

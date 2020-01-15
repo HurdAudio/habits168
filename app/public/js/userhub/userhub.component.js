@@ -511,11 +511,13 @@
                 $http.get(`/unsplashcity/${friend[0].extended_profile.location.name}`)
                     .then(locateData => {
 
-                        let locate = locateData.data;
-                        let index = Math.floor(Math.random() * locate.results.length);
-                        vm.hubProfileDisplayerLocationImage = locate.results[index].urls.regular;
-                        vm.hubProfileDisplayerLocationAlt = locate.results[index].alt_description;
-                        vm.hubProfileDisplayerImageAttribution = locate.results[index].user.name;
+                        if (locateData.data.results.length > 0) {
+                            let locate = locateData.data;
+                            let index = Math.floor(Math.random() * locate.results.length);
+                            vm.hubProfileDisplayerLocationImage = locate.results[index].urls.regular;
+                            vm.hubProfileDisplayerLocationAlt = locate.results[index].alt_description;
+                            vm.hubProfileDisplayerImageAttribution = locate.results[index].user.name;
+                        }
                     });
 
             } else {
@@ -1407,48 +1409,48 @@
                     vm.totalPageLoads = vm.userBlogs[0].page_loads;
                 });
         }
-        
+
         function setUserExtendedProfile(userId) {
             $http.get(`/user_expanded_profiles/byuseruuid/${userId}`)
-            .then(userExpandedData => {
-                vm.userExtendedProfile = userExpandedData.data;
-                obtainUserLocationImage();
-            });
+                .then(userExpandedData => {
+                    vm.userExtendedProfile = userExpandedData.data;
+                    obtainUserLocationImage();
+                });
         }
-        
+
         function populateFriends() {
             vm.friendsList = [];
             vm.filteredFriendsList = vm.friendsList;
-            
+
             function populate(index) {
                 $http.get(`/user_expanded_profiles/byuseruuid/${vm.user.associates.friends[index]}`)
-                .then(friendData => {
-                    let friend = friendData.data;
-                    vm.friendsList[index] = {};
-                    $http.get(`/users/${vm.user.associates.friends[index]}`)
-                    .then(friendBasicData => {
-                        let friendBasic = friendBasicData.data;
-                        vm.friendsList[index].avatar = friendBasic.avatar_path;
-                        vm.friendsList[index].extended_profile = friend;
-                        vm.friendsList[index].blog_posts = friend.blog_posts;
-                        vm.friendsList[index].first_name = friendBasic.first_name;
-                        vm.friendsList[index].friends = friend.friends;
-                        vm.friendsList[index].last_name = friendBasic.last_name;
-                        vm.friendsList[index].name = friendBasic.first_name + ' ' + friendBasic.last_name;
-                        vm.friendsList[index].shared_items = friend.shared_items;
-                        vm.friendsList[index].uuid = vm.user.associates.friends[index];
+                    .then(friendData => {
+                        let friend = friendData.data;
+                        vm.friendsList[index] = {};
+                        $http.get(`/users/${vm.user.associates.friends[index]}`)
+                            .then(friendBasicData => {
+                                let friendBasic = friendBasicData.data;
+                                vm.friendsList[index].avatar = friendBasic.avatar_path;
+                                vm.friendsList[index].extended_profile = friend;
+                                vm.friendsList[index].blog_posts = friend.blog_posts;
+                                vm.friendsList[index].first_name = friendBasic.first_name;
+                                vm.friendsList[index].friends = friend.friends;
+                                vm.friendsList[index].last_name = friendBasic.last_name;
+                                vm.friendsList[index].name = friendBasic.first_name + ' ' + friendBasic.last_name;
+                                vm.friendsList[index].shared_items = friend.shared_items;
+                                vm.friendsList[index].uuid = vm.user.associates.friends[index];
+                            });
                     });
-                });
             }
-            
+
             if (!vm.user.associates.friends) {
                 return;
             }
-            
+
             for (let i = 0; i < vm.user.associates.friends.length; i++) {
                 populate(i)
             }
-            
+
         }
 
 
