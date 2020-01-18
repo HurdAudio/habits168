@@ -1,1368 +1,1372 @@
 .hubBackgroundDiv_JanuaryB {
-  background: url(https://habits168-hurdaudio.s3.amazonaws.com/hub/january/d4t5gxb-b69b8eb4-7802-42f7-b6a1-e3bac20d7733.jpg);
-  background-size: cover;
-  filter: brightness(100%);
-  height: 100%;
-  left: 0;
-  opacity: 1;
-  overflow: hidden;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: -1;
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/hub/january/d4t5gxb-b69b8eb4-7802-42f7-b6a1-e3bac20d7733.jpg);
+    background-size: cover;
+    filter: brightness(100%);
+    height: 100%;
+    left: 0;
+    opacity: 1;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
 }
 
 .hubTitleFlex_JanuaryB {
-  background: #ffe0e6;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  font-family: 'Nanum Gothic', serif;
-  height: 12vh;
-  justify-content: flex-start;
-  opacity: 0.9;
-  width: 100%;
+    background: #ffe0e6;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Nanum Gothic', serif;
+    height: 12vh;
+    justify-content: flex-start;
+    opacity: 0.9;
+    width: 100%;
 }
 
 .hubLogo_JanuaryB {
-  height: 72px;
-  margin: 16px 4px 16px 36px;
-  opacity: 0.9;
-  width: 5%;
+    height: 72px;
+    margin: 16px 4px 16px 36px;
+    opacity: 0.9;
+    width: 5%;
 }
 
 .hubTitleDiv_JanuaryB {
-  padding: 20px 4px 16px 28px;
+    padding: 20px 4px 16px 28px;
 }
 
 .hubTitle_JanuaryB {
-  color: #151c26;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 72px;
-  font-weight: bolder;
+    color: #151c26;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 72px;
+    font-weight: bolder;
 }
 
 .hubSignoutDiv_JanuaryB {
-  padding: 4vh 40px;
-  position: fixed;
-  right: 4%;
+    padding: 4vh 40px;
+    position: fixed;
+    right: 4%;
 }
 
 .hubSignoutButton_JanuaryB {
-  background: #4b8eb8;
-  border: none;
-  color: #dfdde8;
-  cursor: pointer;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 30px;
-  transform: skewX(-15deg);
-  transition: all 0.4s linear;
+    background: #4b8eb8;
+    border: none;
+    color: #dfdde8;
+    cursor: pointer;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 30px;
+    transform: skewX(-15deg);
+    transition: all 0.4s linear;
 }
 
 .hubSignoutButton_JanuaryB:hover {
-  background: #35475f;
-  color: #bebad1;
-  transform: skewX(-5deg);
-  transition: all 0.4s linear;
+    background: #35475f;
+    color: #bebad1;
+    transform: skewX(-5deg);
+    transition: all 0.4s linear;
 }
 
 .hubTabsBar_JanuaryB {
-  background: transparent;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  font-family: 'Nanum Gothic', serif;
-  height: 5vh;
-  justify-content: flex-start;
-  padding: 0 1%;
-  width: 100%;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Nanum Gothic', serif;
+    height: 5vh;
+    justify-content: flex-start;
+    padding: 0 1%;
+    width: 100%;
 }
 
 .hubTabActive_JanuaryB {
-  color: #a5c7dc;
-  padding: 0 0 0 15px;
-  width: 17%;
-  z-index: 0;
+    color: #a5c7dc;
+    padding: 0 0 0 15px;
+    width: 17%;
+    z-index: 0;
 }
 
 .hubTabInactive_JanuaryB {
-  color: #4c4a53;
-  cursor: pointer;
-  padding: 0 0 0 15px;
-  width: 17%;
-  z-index: 10;
+    color: #4c4a53;
+    cursor: pointer;
+    padding: 0 0 0 15px;
+    width: 17%;
+    z-index: 10;
 }
 
 .hubTabLabel_JanuaryB {
-  font-family: 'Nanum Gothic', serif;
-  font-size: 36px;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 36px;
 }
 
 .hubTabInactive_JanuaryB p {
-  cursor: pointer;
-  z-index: 8;
+    cursor: pointer;
+    z-index: 8;
 }
 
 .hubTabActive_JanuaryB p {
-  cursor: none;
-  z-index: 0;
+    cursor: none;
+    z-index: 0;
 }
 
 .hubShare_JanuaryB {
-  background: #073647;
-  height: 5vh;
-  left: 0;
-  position: absolute;
-  top: 12vh;
-  transition: all 0.6s;
-  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
-  width: 18%;
+    background: #073647;
+    height: 5vh;
+    left: 0;
+    position: absolute;
+    top: 12vh;
+    transition: all 0.6s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 18%;
 }
 
 .hubReader_JanuaryB {
-  background: #073647;
-  height: 5vh;
-  left: 19%;
-  position: absolute;
-  top: 12vh;
-  transition: all 0.6s;
-  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
-  width: 18%;
+    background: #073647;
+    height: 5vh;
+    left: 19%;
+    position: absolute;
+    top: 12vh;
+    transition: all 0.6s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 18%;
 }
 
 .hubBlogs_JanuaryB {
-  background: #073647;
-  height: 5vh;
-  left: 36%;
-  position: absolute;
-  top: 12vh;
-  transition: all 0.6s;
-  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
-  width: 18%;
+    background: #073647;
+    height: 5vh;
+    left: 36%;
+    position: absolute;
+    top: 12vh;
+    transition: all 0.6s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 18%;
 }
 
 .hubProfile_JanuaryB {
-  background: #073647;
-  height: 5vh;
-  left: 54%;
-  position: absolute;
-  top: 12vh;
-  transition: all 0.6s;
-  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
-  width: 18%;
+    background: #073647;
+    height: 5vh;
+    left: 54%;
+    position: absolute;
+    top: 12vh;
+    transition: all 0.6s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 18%;
 }
 
 .hubContentContainer_JanuaryB {
-  height: 81vh;
-  width: 100%;
+    height: 81vh;
+    width: 100%;
 }
 
 .hubShareDashboard_JanuaryB {
-  background-image: radial-gradient(#dfdde8, #c3d6ea, #a5c7dc);
-  height: 81vh;
-  opacity: 0.9;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  width: 105%;
+    background-image: radial-gradient(#dfdde8, #c3d6ea, #a5c7dc);
+    height: 81vh;
+    opacity: 0.9;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 105%;
 }
 
 .hubReaderDashboard_JanuaryB {
-  background-image: radial-gradient(#4b8eb8, #86add4, #bebad1);
-  height: 81vh;
-  opacity: 0.9;
-  width: 100%;
+    background-image: radial-gradient(#4b8eb8, #86add4, #bebad1);
+    height: 81vh;
+    opacity: 0.9;
+    width: 100%;
 }
 
 .hubBlogsDashboard_JanuaryB {
-  background-image: radial-gradient(#f6ecea, #ffeded, #fee8ea);
-  height: 81vh;
-  opacity: 0.9;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  width: 104%;
+    background-image: radial-gradient(#f6ecea, #ffeded, #fee8ea);
+    height: 81vh;
+    opacity: 0.9;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 104%;
 }
 
 .hubProfileDashboard_JanuaryB {
-  background-image: radial-gradient(#132e3e, #002737, #151c26);
-  height: 81vh;
-  opacity: 0.9;
-  width: 103%;
+    background-image: radial-gradient(#132e3e, #002737, #151c26);
+    height: 81vh;
+    opacity: 0.9;
+    width: 103%;
 }
 
 .hubShareContainer_JanuaryB {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: no-wrap;
-  height: auto;
-  justify-content: flex-start;
-  margin: 1vh 0;
-  width: 96%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    height: auto;
+    justify-content: flex-start;
+    margin: 1vh 0;
+    width: 96%;
 }
 
 .hubShareByline_JanuaryB {
-  border-right: 2px solid #132e3e;
-  float: left;
-  padding: 5vh 3% 15px 3%;
-  width: 20%;
+    border-right: 2px solid #132e3e;
+    float: left;
+    padding: 5vh 3% 15px 3%;
+    width: 20%;
 
 }
 
 .hubShareBylineAvatar_JanuaryB {
-  cursor: pointer;
-  width: 20%;
+    cursor: pointer;
+    width: 20%;
 }
 
 .hubBylineName_JanuaryB {
-  color: #151c26;
-  cursor: pointer;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
-  margin: 5px 0 35px 0;
+    color: #151c26;
+    cursor: pointer;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    margin: 5px 0 35px 0;
 }
 
 .hubShareComments_JanuaryB {
-  color: #151c26;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
-  line-height: 1.3;
+    color: #151c26;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    line-height: 1.3;
 }
 
 .hubShareBody_JanuaryB {
-  border-left: 2px solid #132e3e;
-  float: left;
-  height: auto;
-  /* max-width: 75%; */
-  padding: 0 1%;
-  width: 70%;
+    border-left: 2px solid #132e3e;
+    float: left;
+    height: auto;
+    /* max-width: 75%; */
+    padding: 0 1%;
+    width: 70%;
 }
 
 .hubShareSourceIcon_JanuaryB {
-  float: left;
-  max-width: 50px;
+    float: left;
+    max-width: 50px;
 }
 
 .hubShareViaDescription_JanuaryB {
-  float: left;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 24px;
-  margin: 30px 0 0 30px;
+    float: left;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 24px;
+    margin: 30px 0 0 30px;
 }
 
 .hubShareBody_JanuaryB a {
-  color: #151c26;
-  text-decoration: none;
+    color: #151c26;
+    text-decoration: none;
 }
 
 .hubShareBody_JanuaryB a:visited {
-  color: #4b8eb8;
+    color: #4b8eb8;
 }
 
 .hubShareBody_JanuaryB a:hover {
-  color: #02628a;
+    color: #02628a;
 }
 
 .hubShareHeadline_JanuaryB {
-  font-family: 'Nanum Gothic', serif;
-  font-size: 42px;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 42px;
 }
 
 .hubShareArticleImage_JanuaryB {
-  max-width: 60%;
+    max-width: 60%;
 }
 
 .hubSharePostTimestamp_JanuaryB {
-  color: #151c26;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
-  margin: 4px 0 0 24px;
+    color: #151c26;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    margin: 4px 0 0 24px;
 }
 
 .hubShareAuthor_JanuaryB {
-  color: #151c26;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
-  margin: 10px 0 0 24px;
+    color: #151c26;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    margin: 10px 0 0 24px;
 }
 
 .hubShareDescription_JanuaryB {
-  color: #151c26;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
-  line-height: 1.5;
-  margin: 30px 0;
-  max-width: 750px;
+    color: #151c26;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 30px 0;
+    max-width: 750px;
 }
 
 .hubSharedAt_JanuaryB {
-  color: #151c26;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 12px;
-  margin: 0 0 10px 0;
+    color: #151c26;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 12px;
+    margin: 0 0 10px 0;
 }
 
 .hubShareReactions_JanuaryB {
-  padding: 10px 5px;
-  width: 100%;
+    padding: 10px 5px;
+    width: 100%;
 }
 
 .hubShareReactionEmoji_JanuaryB {
-  float: left;
-  margin: 3px 10px 11px 2px;
-  width: 22%;
+    float: left;
+    margin: 3px 10px 11px 2px;
+    width: 22%;
 }
 
 .hubShareReactionTally_JanuaryB {
-  color: #151c26;
-  float: left;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
-  margin: 3px 2px 11px 10px;
+    color: #151c26;
+    float: left;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    margin: 3px 2px 11px 10px;
 }
 
 .hubShareReactionDelete_JanuaryB {
-  color: #151c26;
-  cursor: pointer;
-  /* float: left; */
-  font-family: 'Nanum Gothic', serif;
-  font-size: 12px;
-  margin: 3px 17px 11px 0;
+    color: #151c26;
+    cursor: pointer;
+    /* float: left; */
+    font-family: 'Nanum Gothic', serif;
+    font-size: 12px;
+    margin: 3px 17px 11px 0;
 }
 
 .hubReactionGestalt_JanuaryB {
-  float: left;
-  margin: 5px;
-  width: 28%;
+    float: left;
+    margin: 5px;
+    width: 28%;
 }
 
 .hubShareAddReactionDiv_JanuaryB {
-  background: #bebad1;
-  border: 2px solid #073647;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  height: auto;
-  justify-content: flex-start;
-  position: relative;
-  width: 350px;
+    background: #bebad1;
+    border: 2px solid #073647;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: flex-start;
+    position: relative;
+    width: 350px;
 }
 
 .hubShareAddReactionDiv_JanuaryB img {
-  cursor: pointer;
-  margin: 4px;
-  width: 30px;
+    cursor: pointer;
+    margin: 4px;
+    width: 30px;
 }
 
 .hubShareAddReactionsToggle_JanuaryB {
-  padding: 0 0 5px 35%;
-  width: 100%;
+    padding: 0 0 5px 35%;
+    width: 100%;
 }
 
 .hubShareAddReactionsToggle_JanuaryB p {
-  color: #151c26;
-  cursor: pointer;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
+    color: #151c26;
+    cursor: pointer;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
 }
 
 .hubShareReactionsHoverText_JanuaryB {
-  background: #bebad1;
-  bottom: 10%;
-  color: #151c26;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
-  max-width: 180px;
-  opacity: 0;
-  padding: 3px;
-  position: absolute;
-  transform: translateX(-80px) translateY(-20px);
-  transition: all 0.5s linear;
-  z-index: -10;
+    background: #bebad1;
+    bottom: 10%;
+    color: #151c26;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    max-width: 180px;
+    opacity: 0;
+    padding: 3px;
+    position: absolute;
+    transform: translateX(-80px) translateY(-20px);
+    transition: all 0.5s linear;
+    z-index: -10;
 }
 
 .hubShareReactionsHoverTextHover_JanuaryB {
-  background: #bebad1;
-  bottom: 10%;
-  color: #151c26;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
-  max-width: 180px;
-  opacity: 1;
-  padding: 3px;
-  position: absolute;
-  transform: translateX(-80px) translateY(-20px);
-  transition: all 0.5s linear;
-  z-index: 10;
+    background: #bebad1;
+    bottom: 10%;
+    color: #151c26;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    max-width: 180px;
+    opacity: 1;
+    padding: 3px;
+    position: absolute;
+    transform: translateX(-80px) translateY(-20px);
+    transition: all 0.5s linear;
+    z-index: 10;
 }
 
 .hubShareCommentsLabel_JanuaryB {
-  color: #151c26;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
-  margin: 40px 80% 5px 0;
+    color: #151c26;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    margin: 40px 80% 5px 0;
 }
 
 .hubShareCommenterAvatar_JanuaryB {
-  cursor: pointer;
-  float: left;
-  max-width: 30px;
+    cursor: pointer;
+    float: left;
+    max-width: 30px;
 }
 
 .hubShareCommenterName_JanuaryB {
-  color: #151c26;
-  cursor: pointer;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
-  position: relative;
-  transform: translateX(7px) translateY(13px);
+    color: #151c26;
+    cursor: pointer;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    position: relative;
+    transform: translateX(7px) translateY(13px);
 
 }
 
 .hubShareCommentDateStamp_JanuaryB {
-  color: #151c26;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 12px;
-  margin: 24px 0 24px 0;
+    color: #151c26;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 12px;
+    margin: 24px 0 24px 0;
 }
 
 .hubShareCommentComment_JanuaryB {
-  color: #151c26;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
+    color: #151c26;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
 }
 
 .hubShareNewComments_JanuaryB p {
-  color: #151c26;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
-  margin: 40px 60% 5px 0;
+    color: #151c26;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    margin: 40px 60% 5px 0;
 }
 
 .hubShareCommentTextArea_JanuaryB {
-  background: #bebad1;
-  border: none;
-  color: #151c26;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
-  outline: #fecdeb;
-  width: 100%;
+    background: #bebad1;
+    border: none;
+    color: #151c26;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    outline: #fecdeb;
+    width: 100%;
 }
 
 .hubShareNewComments_JanuaryB button {
-  margin: 4px 35% 1px 35%;
+    margin: 4px 35% 1px 35%;
 }
 
 .hubShareCommenterFields_JanuaryB {
-  display: inline-block;
-  width: 100%;
+    display: inline-block;
+    width: 100%;
 }
 
 .hubTodayIsDisplay_JanuaryB {
-  color: #151c26;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 36px;
-  margin-right: 50px;
-  width: 60%;
+    color: #151c26;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 36px;
+    margin-right: 50px;
+    width: 60%;
 }
 
 .hubTodayIsDiv_JanuaryB {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  margin-right: 50px;
-  padding: 1% 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-right: 50px;
+    padding: 1% 5%;
 }
 
 .hubReaderWeekly_JanuaryB {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  font-family: 'Nanum Gothic', serif;
-  height: auto;
-  justify-content: flex-start;
-  width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Nanum Gothic', serif;
+    height: auto;
+    justify-content: flex-start;
+    width: 100%;
 }
 
 .hubReaderTodayBlock_JanuaryB {
-  background: #82a1b5;
-  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/nun-4018982_1280.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 25vh;
-  margin: 1.2%;
-  padding: 10px 15px;
-  width: 8%;
+    background: #82a1b5;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/nun-4018982_1280.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    width: 8%;
 }
 
 .hubReaderTodayLabel_JanuaryB {
-  background: #4b8eb8;
-  color: #dfdde8;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
+    background: #4b8eb8;
+    color: #dfdde8;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
 }
 
 .hubReaderDayButton_JanuaryB {
-  background: #4b8eb8;
-  border: none;
-  color: #dfdde8;
-  cursor: pointer;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 24px;
-  left: 12%;
-  position: relative;
-  transform: skewX(-15deg) translateY(50px) translateX(0px);
-  transition: all 0.4s linear;
-  z-index: 20;
+    background: #4b8eb8;
+    border: none;
+    color: #dfdde8;
+    cursor: pointer;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 24px;
+    left: 12%;
+    position: relative;
+    transform: skewX(-15deg) translateY(50px) translateX(0px);
+    transition: all 0.4s linear;
+    z-index: 20;
 }
 
 .hubReaderDayButton_JanuaryB:hover {
-  background: #35475f;
-  color: #bebad1;
-  transform: skewX(-5deg) translateY(50px) translateX(-5px);
-  transition: all 0.4s linear;
+    background: #35475f;
+    color: #bebad1;
+    transform: skewX(-5deg) translateY(50px) translateX(-5px);
+    transition: all 0.4s linear;
 }
 
 .hubReaderWeekButton_JanuaryB {
-  background: #4b8eb8;
-  border: none;
-  color: #dfdde8;
-  cursor: pointer;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 24px;
-  left: 25%;
-  position: relative;
-  top: 60%;
-  transform: skewX(-15deg) translateY(110px) translateX(0px);
-  transition: all 0.4s linear;
+    background: #4b8eb8;
+    border: none;
+    color: #dfdde8;
+    cursor: pointer;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 24px;
+    left: 25%;
+    position: relative;
+    top: 60%;
+    transform: skewX(-15deg) translateY(110px) translateX(0px);
+    transition: all 0.4s linear;
 }
 
 .hubReaderWeekButton_JanuaryB:hover {
-  background: #35475f;
-  color: #bebad1;
-  transform: skewX(-5deg) translateY(110px) translateX(-15px);
-  transition: all 0.4s linear;
+    background: #35475f;
+    color: #bebad1;
+    transform: skewX(-5deg) translateY(110px) translateX(-15px);
+    transition: all 0.4s linear;
 }
 
 .hubReaderBlankLabel_JanuaryB {
-  color: transparent;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 30px;
+    color: transparent;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 30px;
 }
 
 .hubReaderDay1BlockActive_JanuaryB {
-  background: #82a1b5;
-  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/nun-4018982_1280.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 25vh;
-  margin: 1.2%;
-  padding: 10px 15px;
-  opacity: 1;
-  transform: translateX(0px);
-  transition: all 0.5s;
-  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
-  width: 8%;
-  z-index: 1;
+    background: #82a1b5;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/nun-4018982_1280.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: 1;
 }
 
 .hubReaderDay1BlockInactive_JanuaryB {
-  background: #82a1b5;
-  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/nun-4018982_1280.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 25vh;
-  margin: 1.2%;
-  opacity: 0;
-  padding: 10px 15px;
-  transform: translateX(-115%);
-  transition: all 0.5s;
-  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
-  width: 8%;
-  z-index: -1;
+    background: #82a1b5;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/nun-4018982_1280.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(-115%);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: -1;
 }
 
 .hubReaderDay2BlockActive_JanuaryB {
-  background: #82a1b5;
-  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/nun-4018982_1280.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 25vh;
-  margin: 1.2%;
-  padding: 10px 15px;
-  opacity: 1;
-  transform: translateX(0px);
-  transition: all 0.5s;
-  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
-  width: 8%;
-  z-index: 1;
+    background: #82a1b5;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/nun-4018982_1280.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: 1;
 }
 
 .hubReaderDay2BlockInactive_JanuaryB {
-  background: #82a1b5;
-  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/nun-4018982_1280.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 25vh;
-  margin: 1.2%;
-  opacity: 0;
-  padding: 10px 15px;
-  transform: translateX(-230%);
-  transition: all 0.5s;
-  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
-  width: 8%;
-  z-index: -1;
+    background: #82a1b5;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/nun-4018982_1280.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(-230%);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: -1;
 }
 
 .hubReaderDay3BlockActive_JanuaryB {
-  background: #82a1b5;
-  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/nun-4018982_1280.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 25vh;
-  margin: 1.2%;
-  padding: 10px 15px;
-  opacity: 1;
-  transform: translateX(0px);
-  transition: all 0.5s;
-  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
-  width: 8%;
-  z-index: 1;
+    background: #82a1b5;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/nun-4018982_1280.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: 1;
 }
 
 .hubReaderDay3BlockInactive_JanuaryB {
-  background: #82a1b5;
-  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/nun-4018982_1280.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 25vh;
-  margin: 1.2%;
-  opacity: 0;
-  padding: 10px 15px;
-  transform: translateX(-345%);
-  transition: all 0.5s;
-  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
-  width: 8%;
-  z-index: -1;
+    background: #82a1b5;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/nun-4018982_1280.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(-345%);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: -1;
 }
 
 .hubReaderDay4BlockActive_JanuaryB {
-  background: #82a1b5;
-  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/nun-4018982_1280.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 25vh;
-  margin: 1.2%;
-  padding: 10px 15px;
-  opacity: 1;
-  transform: translateX(0px);
-  transition: all 0.5s;
-  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
-  width: 8%;
-  z-index: 1;
+    background: #82a1b5;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/nun-4018982_1280.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: 1;
 }
 
 .hubReaderDay4BlockInactive_JanuaryB {
-  background: #82a1b5;
-  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/nun-4018982_1280.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 25vh;
-  margin: 1.2%;
-  opacity: 0;
-  padding: 10px 15px;
-  transform: translateX(-460%);
-  transition: all 0.5s;
-  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
-  width: 8%;
-  z-index: -1;
+    background: #82a1b5;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/nun-4018982_1280.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(-460%);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: -1;
 }
 
 .hubReaderDay5BlockActive_JanuaryB {
-  background: #82a1b5;
-  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/nun-4018982_1280.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 25vh;
-  margin: 1.2%;
-  padding: 10px 15px;
-  opacity: 1;
-  transform: translateX(0px);
-  transition: all 0.5s;
-  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
-  width: 8%;
-  z-index: 1;
+    background: #82a1b5;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/nun-4018982_1280.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: 1;
 }
 
 .hubReaderDay5BlockInactive_JanuaryB {
-  background: #82a1b5;
-  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/nun-4018982_1280.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 25vh;
-  margin: 1.2%;
-  opacity: 0;
-  padding: 10px 15px;
-  transform: translateX(-575%);
-  transition: all 0.5s;
-  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
-  width: 8%;
-  z-index: -1;
+    background: #82a1b5;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/nun-4018982_1280.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(-575%);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: -1;
 }
 
 .hubReaderDay6BlockActive_JanuaryB {
-  background: #82a1b5;
-  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/nun-4018982_1280.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 25vh;
-  margin: 1.2%;
-  padding: 10px 15px;
-  opacity: 1;
-  transform: translateX(0px);
-  transition: all 0.5s;
-  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
-  width: 8%;
-  z-index: 1;
+    background: #82a1b5;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/nun-4018982_1280.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: 1;
 }
 
 .hubReaderDay6BlockInactive_JanuaryB {
-  background: #82a1b5;
-  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/nun-4018982_1280.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 25vh;
-  margin: 1.2%;
-  opacity: 0;
-  padding: 10px 15px;
-  transform: translateX(-690%);
-  transition: all 0.5s;
-  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
-  width: 8%;
-  z-index: -1;
+    background: #82a1b5;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/nun-4018982_1280.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(-690%);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: -1;
 }
 
 .hubReaderDay7BlockActive_JanuaryB {
-  background: #82a1b5;
-  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/nun-4018982_1280.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 25vh;
-  margin: 1.2%;
-  padding: 10px 15px;
-  opacity: 1;
-  transform: translateX(0px);
-  transition: all 0.5s;
-  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
-  width: 8%;
-  z-index: 1;
+    background: #82a1b5;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/nun-4018982_1280.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: 1;
 }
 
 .hubReaderDay7BlockInactive_JanuaryB {
-  background: #82a1b5;
-  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/nun-4018982_1280.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 25vh;
-  margin: 1.2%;
-  opacity: 0;
-  padding: 10px 15px;
-  transform: translateX(-705%);
-  transition: all 0.5s;
-  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
-  width: 8%;
-  z-index: -1;
+    background: #82a1b5;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/nun-4018982_1280.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(-705%);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: -1;
 }
 
 .hubReaderManagementRow_JanuaryB {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  font-family: 'Nanum Gothic', serif;
-  height: auto;
-  justify-content: flex-start;
-  width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Nanum Gothic', serif;
+    height: auto;
+    justify-content: flex-start;
+    width: 100%;
 }
 
 .hubShareShareSaveButtonsDiv_JanuaryB {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  padding: 5px;
-  width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 5px;
+    width: 100%;
 }
 
 .hubShareShareSaveButtonsDiv_JanuaryB button {
-  background: #4b8eb8;
-  border: none;
-  color: #dfdde8;
-  cursor: pointer;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
-  margin: 5px 35px;
-  transform: skewX(-15deg);
-  transition: all 0.4s linear;
+    background: #4b8eb8;
+    border: none;
+    color: #dfdde8;
+    cursor: pointer;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    margin: 5px 35px;
+    transform: skewX(-15deg);
+    transition: all 0.4s linear;
 }
 
 .hubShareShareSaveButtonsDiv_JanuaryB button:hover {
-  background: #35475f;
-  color: #bebad1;
-  transform: skewX(-5deg);
-  transition: all 0.4s linear;
+    background: #35475f;
+    color: #bebad1;
+    transform: skewX(-5deg);
+    transition: all 0.4s linear;
 }
 
 .hubShareShareSaveModalActive_JanuaryB {
-  background: #9aa3af;
-  left: 35%;
-  opacity: 1;
-  padding: 1% 3%;
-  position: absolute;
-  transition: all 0.5s linear;
-  top: 5%;
-  width: 30%;
-  z-index: 55;
+    background: #9aa3af;
+    left: 35%;
+    opacity: 1;
+    padding: 1% 3%;
+    position: absolute;
+    transition: all 0.5s linear;
+    top: 5%;
+    width: 30%;
+    z-index: 55;
 }
 
 .hubShareShareSaveModalActive_JanuaryB img {
-  max-width: 15%;
+    max-width: 15%;
 }
 
 .hubShareShareSaveModalActive_JanuaryB p {
-  color: #151c26;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
-  margin: 15px 0;
+    color: #151c26;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    margin: 15px 0;
 }
 
 .hubShareShareSaveModalActive_JanuaryB textarea {
-  background: #fecdeb;
-  border: none;
-  color: #151c26;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
-  outline-color: #ffe0e6;
-  width: 100%;
+    background: #fecdeb;
+    border: none;
+    color: #151c26;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    outline-color: #ffe0e6;
+    width: 100%;
 }
 
 .hubShareShareSaveModalActive_JanuaryB button {
-  background: #4b8eb8;
-  border: none;
-  color: #dfdde8;
-  cursor: pointer;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
-  margin: 5px 35px;
-  transform: skewX(-15deg);
-  transition: all 0.4s linear;
+    background: #4b8eb8;
+    border: none;
+    color: #dfdde8;
+    cursor: pointer;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    margin: 5px 35px;
+    transform: skewX(-15deg);
+    transition: all 0.4s linear;
 }
 
 .hubShareShareSaveModalActive_JanuaryB button:hover {
-  background: #35475f;
-  color: #bebad1;
-  transform: skewX(-5deg);
-  transition: all 0.4s linear;
+    background: #35475f;
+    color: #bebad1;
+    transform: skewX(-5deg);
+    transition: all 0.4s linear;
 }
 
 .hubShareShareSaveModalInactive_JanuaryB {
-  background: #9aa3af;
-  left: 35%;
-  opacity: 0;
-  padding: 1% 3%;
-  position: absolute;
-  transition: all 0.5s linear;
-  top: 5%;
-  width: 30%;
-  z-index: -55;
+    background: #9aa3af;
+    left: 35%;
+    opacity: 0;
+    padding: 1% 3%;
+    position: absolute;
+    transition: all 0.5s linear;
+    top: 5%;
+    width: 30%;
+    z-index: -55;
 }
 
 .hubShareShareSaveModalInactive_JanuaryB img {
-  max-width: 15%;
+    max-width: 15%;
 }
 
 .hubShareShareSaveModalInactive_JanuaryB p {
-  color: #08252e;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
-  margin: 15px 0;
+    color: #08252e;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    margin: 15px 0;
 }
 
 .hubShareShareSaveModalInactive_JanuaryB textarea {
-  background: #e3e6eb;
-  border: none;
-  color: #08252e;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
-  width: 100%;
+    background: #e3e6eb;
+    border: none;
+    color: #08252e;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    width: 100%;
 }
 
 .hubShareShareSaveModalInactive_JanuaryB button {
-  background: #32728e;
-  border: none;
-  color: #e3e6eb;
-  cursor: pointer;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
-  margin: 5px 35px;
-  transform: skewX(-15deg);
-  transition: all 0.4s linear;
+    background: #32728e;
+    border: none;
+    color: #e3e6eb;
+    cursor: pointer;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    margin: 5px 35px;
+    transform: skewX(-15deg);
+    transition: all 0.4s linear;
 }
 
 .hubDialogHeadline_JanuaryB {
-  color: #151c26;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 36px;
+    color: #151c26;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 36px;
 }
 
 .hubRadioButtons_JanuaryB {
-  color: #08252e;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
-  margin: 5px 0 15px 0;
+    color: #08252e;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    margin: 5px 0 15px 0;
 }
 
 .hubContainer_JanuaryB {
-  filter: blur(0px);
-  transition: all 0.4s linear;
+    filter: blur(0px);
+    transition: all 0.4s linear;
 }
 
 .hubContainerBlur_JanuaryB {
-  filter: blur(10px);
-  transition: all 0.4s linear;
+    filter: blur(10px);
+    transition: all 0.4s linear;
 }
 
 .hubUserBlogList_JanuaryB {
-  border-right: 1px solid #073647;
-  float: left;
-  height: 81vh;
-  padding: 50px 15px;
-  width: 30%;
+    border-right: 1px solid #073647;
+    float: left;
+    height: 81vh;
+    padding: 50px 15px;
+    width: 30%;
 }
 
 .hubUserBlogData_JanuaryB {
-  border-left: 1px solid #4b8eb8;
-  float: left;
-  height: 81vh;
-  width: 60%;
+    border-left: 1px solid #4b8eb8;
+    float: left;
+    height: 81vh;
+    width: 60%;
 }
 
 .hubMyBlogsLabel_JanuaryB {
-  color: #151c26;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 50px;
+    color: #151c26;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 50px;
 }
 
 .hubBlogListEntry_JanuaryB {
-  color: #151c26;
-  cursor: pointer;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 36px;
-  margin: 30px;
-  transition: all 0.5s linear;
+    color: #151c26;
+    cursor: pointer;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 36px;
+    margin: 30px;
+    transition: all 0.5s linear;
 }
 
 .hubBlogListEntry_JanuaryB:hover {
-  color: #02628a;
-  transition: all 0.5s linear;
+    color: #02628a;
+    transition: all 0.5s linear;
 }
 
 .hubNewBlogButton_JanuaryB {
-  background: #4b8eb8;
-  border: none;
-  color: #dfdde8;
-  cursor: pointer;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
-  margin: 35px 75px;
-  transform: skewX(-15deg);
-  transition: all 0.4s linear;
+    background: #4b8eb8;
+    border: none;
+    color: #dfdde8;
+    cursor: pointer;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    margin: 35px 75px;
+    transform: skewX(-15deg);
+    transition: all 0.4s linear;
 }
 
 .hubNewBlogButton_JanuaryB:hover {
-  background: #35475f;
-  color: #bebad1;
-  transform: skewX(-5deg);
-  transition: all 0.4s linear;
+    background: #35475f;
+    color: #bebad1;
+    transform: skewX(-5deg);
+    transition: all 0.4s linear;
 }
 
 .hubBlogLogoTitleDescription_JanuaryB {
-  cursor: pointer;
-  padding: 2vh 20px;
-  width: 100%;
+    cursor: pointer;
+    padding: 2vh 20px;
+    width: 100%;
 }
 
 .currentBlogLogoImage_JanuaryB {
-  float: left;
-  height: 100px;
-  max-width: 15%;
+    float: left;
+    height: 100px;
+    max-width: 15%;
 }
 
 .currentBlogName_JanuaryB {
-  color: #151c26;
-  float: left;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 48px;
-  margin: 50px 0 0 40px;
+    color: #151c26;
+    float: left;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 48px;
+    margin: 50px 0 0 40px;
 }
 
 .currentBlogTagline_JanuaryB {
-  color: #151c26;
-  float: left;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 24px;
-  margin: 0 0 0 22%;
-  position: relative;
-  width: 90%;
+    color: #151c26;
+    float: left;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 24px;
+    margin: 0 0 0 22%;
+    position: relative;
+    width: 90%;
 }
 
 .currentBlogContributersDiv_JanuaryB {
-  float: left;
-  padding: 20px 0 0 50px;
-  width: 100%;
+    float: left;
+    padding: 20px 0 0 50px;
+    width: 100%;
 }
 
 .contributerInfo_JanuaryB {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .hubBlogContributerAvatar_JanuaryB {
-  float: left;
-  max-width: 7%;
-  margin: 1px 1px 1px 15px;
-  position: relative;
+    float: left;
+    max-width: 7%;
+    margin: 1px 1px 1px 15px;
+    position: relative;
 }
 
 .hubContributersLabel_JanuaryB {
-  color: #151c26;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 30px;
-  margin-bottom: 10px;
+    color: #151c26;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 30px;
+    margin-bottom: 10px;
 }
 
 .hubBlogContributerName_JanuaryB {
-  color: #151c26;
-  float: left;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 30px;
-  margin: 30px 1px 1px 30px;
-  width: 85%;
+    color: #151c26;
+    float: left;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 30px;
+    margin: 30px 1px 1px 30px;
+    width: 85%;
 }
 
 .hubBlogDataDiv_JanuaryB {
-  float: left;
-  padding: 150px 0 0 70px;
-  width: 100%;
+    float: left;
+    padding: 150px 0 0 70px;
+    width: 100%;
 }
 
 .hubBlogDataPosts_JanuaryB {
-  color: #151c26;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
-  width: 85%;
+    color: #151c26;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    width: 85%;
 }
 
 .hubUserProfileBasicsPane_JanuaryB {
-  border-right: 1px solid #c3d6ea;
-  float: left;
-  height: 81vh;
-  width: 30%;
+    border-right: 1px solid #c3d6ea;
+    float: left;
+    height: 81vh;
+    width: 30%;
 }
 
 .hubPublicPrivateProfilePane_JanuaryB {
-  border-left: 1px solid #89c3d9;
-  float: left;
-  height: 81vh;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  width: 68%;
+    border-left: 1px solid #89c3d9;
+    float: left;
+    height: 81vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 68%;
 }
 
 .hubBasicUserData_JanuaryB {
-  height: 90%;
-  left: 5%;
-  position: relative;
-  top: 5%;
-  width: 88%;
+    height: 90%;
+    left: 5%;
+    position: relative;
+    top: 5%;
+    width: 88%;
 }
 
 .hubLoggedInAsLabel_JanuaryB {
-  color: #dfdde8;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 24px;
+    color: #dfdde8;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 24px;
 }
 
 .hubLoggedInAsAvatar_JanuaryB {
-  max-width: 150px;
+    max-width: 150px;
 }
 
 .hubProfileUserName_JanuaryB {
-  color: #dfdde8;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 24px;
-  margin: 0 0 25px 0;
+    color: #dfdde8;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 24px;
+    margin: 0 0 25px 0;
 }
 
 .hubUserDatas_JanuaryB {
-  color: #dfdde8;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
+    color: #dfdde8;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
 }
 
 .hubEditProfileButton_JanuaryB {
-  background: #4b8eb8;
-  border: none;
-  color: #dfdde8;
-  cursor: pointer;
-  float: right;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
-  margin: 30px 15px;
-  transform: skewX(-15deg);
-  transition: all 0.4s linear;
+    background: #4b8eb8;
+    border: none;
+    color: #dfdde8;
+    cursor: pointer;
+    float: right;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    margin: 30px 15px;
+    transform: skewX(-15deg);
+    transition: all 0.4s linear;
 }
 
 .hubEditProfileButton_JanuaryB:hover {
-  background: #35475f;
-  color: #bebad1;
-  transform: skewX(-5deg);
-  transition: all 0.4s linear;
+    background: #35475f;
+    color: #bebad1;
+    transform: skewX(-5deg);
+    transition: all 0.4s linear;
 }
 
 .hubUserProfileNavigation_JanuaryB {
-  height: auto;
-  left: 60%;
-  position: relative;
-  top: 0;
-  width: 40%;
+    height: auto;
+    left: 60%;
+    position: relative;
+    top: 0;
+    width: 40%;
 }
 
 .hubUserProfileNavigationActive_JanuaryB {
-  filter: brightness(300%);
-  height: 50px;
-  transition: all 1s linear;
-  width: 100%;
-  z-index: 11;
+    filter: brightness(300%);
+    height: 50px;
+    transition: all 1s linear;
+    width: 100%;
+    z-index: 11;
 }
 
 .hubUserProfileNavigationActive_JanuaryB p {
-  color: #dfdde8;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 30px;
-  transform: translateX(15px) translateY(10px);
-  z-index: 111;
+    color: #dfdde8;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 30px;
+    transform: translateX(15px) translateY(10px);
+    z-index: 111;
 }
 
 .hubUserProfileNavigationInactive_JanuaryB {
-  cursor: pointer;
-  filter: brightness(40%);
-  height: 50px;
-  transition: all 1s linear;
-  width: 100%;
+    cursor: pointer;
+    filter: brightness(40%);
+    height: 50px;
+    transition: all 1s linear;
+    width: 100%;
 }
 
 .hubUserProfileNavigationInactive_JanuaryB p {
-  color: #dfdde8;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 30px;
-  transform: translateX(15px) translateY(10px);
-  z-index: 11;
+    color: #dfdde8;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 30px;
+    transform: translateX(15px) translateY(10px);
+    z-index: 11;
 }
 
 .hubUserProfileNavigationSlidePublicState_JanuaryB {
-  background: transparent;
-  border-left: 2px solid #ecc0db;
-  border-top: 2px solid #ecc0db;
-  height: 46px;
-  left: 0;
-  position: relative;
-  transform: translateY(-250px);
-  transition: all 0.5s;
-  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
-  width: 100%;
-  z-index: 1;
+    background: transparent;
+    border-left: 2px solid #ecc0db;
+    border-top: 2px solid #ecc0db;
+    height: 46px;
+    left: 0;
+    position: relative;
+    transform: translateY(-250px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 100%;
+    z-index: 1;
 }
 
 .hubUserProfileNavigationSlidePrivateState_JanuaryB {
-  background: transparent;
-  border-left: 2px solid #ecc0db;
-  border-top: 2px solid #ecc0db;
-  height: 46px;
-  left: 0;
-  position: relative;
-  transform: translateY(-200px);
-  transition: all 0.5s;
-  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
-  width: 100%;
-  z-index: 1;
+    background: transparent;
+    border-left: 2px solid #ecc0db;
+    border-top: 2px solid #ecc0db;
+    height: 46px;
+    left: 0;
+    position: relative;
+    transform: translateY(-200px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 100%;
+    z-index: 1;
 }
 
 .hubUserProfileNavigationSlideMessagesState_JanuaryB {
-  background: transparent;
-  border-left: 2px solid #ecc0db;
-  border-top: 2px solid #ecc0db;
-  height: 46px;
-  left: 0;
-  position: relative;
-  transform: translateY(-150px);
-  transition: all 0.5s;
-  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
-  width: 100%;
-  z-index: 1;
+    background: transparent;
+    border-left: 2px solid #ecc0db;
+    border-top: 2px solid #ecc0db;
+    height: 46px;
+    left: 0;
+    position: relative;
+    transform: translateY(-150px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 100%;
+    z-index: 1;
 }
 
 .hubUserProfileNavigationSlideFriendsState_JanuaryB {
-  background: transparent;
-  border-left: 2px solid #ecc0db;
-  border-top: 2px solid #ecc0db;
-  height: 46px;
-  left: 0;
-  position: relative;
-  transform: translateY(-100px);
-  transition: all 0.5s;
-  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
-  width: 100%;
-  z-index: 1;
+    background: transparent;
+    border-left: 2px solid #ecc0db;
+    border-top: 2px solid #ecc0db;
+    height: 46px;
+    left: 0;
+    position: relative;
+    transform: translateY(-100px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 100%;
+    z-index: 1;
 }
 
 .hubUserProfileNavigationSlideContactState_JanuaryB {
-  background: transparent;
-  border-left: 2px solid #ecc0db;
-  border-top: 2px solid #ecc0db;
-  height: 46px;
-  left: 0;
-  position: relative;
-  transform: translateY(-50px);
-  transition: all 0.5s;
-  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
-  width: 100%;
-  z-index: 1;
+    background: transparent;
+    border-left: 2px solid #ecc0db;
+    border-top: 2px solid #ecc0db;
+    height: 46px;
+    left: 0;
+    position: relative;
+    transform: translateY(-50px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 100%;
+    z-index: 1;
 }
 
 .hubPublicProfileDeets_JanuaryB {
-  height: auto;
-  width: 100%;
+    height: auto;
+    width: 100%;
 }
 
 .hubUserPublicStats_JanuaryB {
-  max-width: 750px;
-  padding: 5%;
+    max-width: 750px;
+    padding: 5%;
 }
 
 .hubUserLocationStat_JanuaryB {
-  color: #dfdde8;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
-  margin: 9px 0;
-  max-width: 750px;
+    color: #dfdde8;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    margin: 9px 0;
+    max-width: 750px;
 }
 
 .hubUserLocationMap_JanuaryB {
-  max-width: 30%;
+    max-width: 30%;
 }
 
 .hubPhotoAttribution_JanuaryB {
-  color: #dfdde8;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 12px;
+    color: #dfdde8;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 12px;
 }
 
 .hubUserDescriptionStat_JanuaryB {
-  color: #dfdde8;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
-  margin: 30px 0 0 0;
+    color: #dfdde8;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    margin: 30px 0 0 0;
 }
 
 .hubUserOccupationStat_JanuaryB {
-  color: #dfdde8;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
-  margin: 50px 0 0 0;
+    color: #dfdde8;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    margin: 50px 0 0 0;
 }
 
 .hubUserEmployerStat_JanuaryB {
-  color: #dfdde8;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
-  margin: 10px 0 0 0;
+    color: #dfdde8;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    margin: 10px 0 0 0;
 }
 
 .hubUserEducationStatLabel_JanuaryB {
-  color: #dfdde8;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 24px;
-  margin: 60px 0 0 0;
+    color: #dfdde8;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 24px;
+    margin: 60px 0 0 0;
 }
 
 .hubUserEducationStat_JanuaryB {
-  color: #dfdde8;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
-  margin: 10px 0 0 0;
+    color: #dfdde8;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    margin: 10px 0 0 0;
 }
 
 .hubUserEmailStat_JanuaryB {
-  color: #dfdde8;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
-  margin: 40px 0 0 0;
+    color: #dfdde8;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    margin: 40px 0 0 0;
 }
 
 .hubUserPhoneStat_JanuaryB {
-  color: #dfdde8;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
-  margin: 10px 0 0 0;
+    color: #dfdde8;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    margin: 10px 0 0 0;
 }
 
 .hubUserBirthdate_JanuaryB {
-  color: #dfdde8;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
-  margin: 10px 0 5px 0;
+    color: #dfdde8;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    margin: 10px 0 5px 0;
 }
 
 .hubMessageCenter_JanuaryB {
-  padding: 3%;
-  width: 100%;
+    padding: 3%;
+    width: 100%;
+}
+
+.hubMessageCenter_JanuaryB i {
+   color: #dfdde8; 
 }
 
 .hubMessageScroll_JanuaryB {
-  height: 76vh;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  width: 100%;
+    height: 76vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
 }
 
 .hubMessageCenterLabel_JanuaryB {
-  color: #dfdde8;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 30px;
-  margin: 15px 0 15px 0;
+    color: #dfdde8;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 30px;
+    margin: 15px 0 15px 0;
 }
 
 .hubMainMessageContainer_JanuaryB {
-  border-top: 3px solid #dfdde8;
-  color: #dfdde8;
-  cursor: pointer;
-  margin-top: 5px;
-  max-width: 750px;
-  width: 100%;
+    border-top: 3px solid #dfdde8;
+    color: #dfdde8;
+    cursor: pointer;
+    margin-top: 5px;
+    max-width: 750px;
+    width: 100%;
 }
 
 .unreadIcon_JanuaryB {
-  float: left;
-  font-size: 42px;
-  margin: 8px 0;
+    float: left;
+    font-size: 42px;
+    margin: 8px 0;
 }
 
 .hubMessageFromSubjectfalse_JanuaryB {
-  color: #dfdde8;
-  float: left;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
-  margin: 0 10px 0 5px;
+    color: #dfdde8;
+    float: left;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    margin: 0 10px 0 5px;
 }
 
 /* .hubMessageFromSubjectfalse_JanuaryB:hover {
@@ -1370,11 +1374,11 @@
 } */
 
 .hubMessageFromSubjecttrue_JanuaryB {
-  color: #dfdde8;
-  float: left;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
-  margin: 0 10px 0 5px;
+    color: #dfdde8;
+    float: left;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    margin: 0 10px 0 5px;
 }
 
 /* .hubMessageFromSubjecttrue_JanuaryB:hover {
@@ -1382,754 +1386,936 @@
 } */
 
 .hubExpandedMessageContainer_JanuaryB {
-  /* border-bottom: 1px solid #08252e; */
-  /* border-top: 1px solid #08252e; */
-  margin-left: 30px;
+    /* border-bottom: 1px solid #08252e; */
+    /* border-top: 1px solid #08252e; */
+    margin-left: 30px;
+    max-width: 900px;
 }
 
 .hubMessageAvatar_JanuaryB {
-  float: left;
-  margin: 4px 1px 0 15px;
-  max-width: 3%;
+    float: left;
+    margin: 4px 1px 0 15px;
+    max-width: 3%;
 }
 
 .hubMessageMessage_JanuaryB {
-  color: #dfdde8;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
-  margin: 10px 0 5px 0;
-  max-width: 750px;
+    color: #dfdde8;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    margin: 10px 0 5px 0;
+    max-width: 750px;
 }
 
 .hubReplyNameDate_JanuaryB {
-  color: #dfdde8;
-  float: left;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
-  margin: 3px 10px 0 5px;
+    color: #dfdde8;
+    float: left;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    margin: 3px 10px 0 5px;
 }
 
 .hubReplyText_JanuaryB {
-  background: #30739d;
-  border: none;
-  color: #dfdde8;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
-  margin-bottom: 35px;
-  max-width: 750px;
-  rows: 3;
-  width: 80%;
+    background: #30739d;
+    border: none;
+    color: #dfdde8;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    margin-bottom: 35px;
+    max-width: 750px;
+    rows: 3;
+    width: 80%;
 }
 
 .hubReplyResponseText_JanuaryB {
-  background: #30739d;
-  border: none;
-  color: #dfdde8;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
-  max-width: 750px;
-  rows: 3;
-  width: 80%;
+    background: #30739d;
+    border: none;
+    color: #dfdde8;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    max-width: 750px;
+    rows: 3;
+    width: 80%;
 }
 
 .hubReplyResponseText_JanuaryB::-webkit-input-placeholder {
-  color: #dfdde8;
+    color: #dfdde8;
 }
 
 .hubReplyResponseText_JanuaryB:-moz-placeholder {
-  color: #dfdde8;
+    color: #dfdde8;
 }
 
 .hubReplyResponseText_JanuaryB::-moz-placeholder {
-  color: #dfdde8;
+    color: #dfdde8;
 }
 
 .hubReplyResponseText_JanuaryB::-moz-placeholder {
-  color: #dfdde8;
+    color: #dfdde8;
 }
 
 .hubReplyResponseText_JanuaryB:-ms-input-placeholder {
-  color: #dfdde8;
+    color: #dfdde8;
 }
 
 .hubReplyResponseText_JanuaryB::placeholder {
-  color: #dfdde8;
+    color: #dfdde8;
 }
 
 .hubReplySubmit_JanuaryB {
-  background: #4b8eb8;
-  border: none;
-  color: #dfdde8;
-  cursor: pointer;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
-  margin: 1px 2px 15px 5px;
-  transform: skewX(-15deg);
-  transition: all 0.4s linear;
+    background: #4b8eb8;
+    border: none;
+    color: #dfdde8;
+    cursor: pointer;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    margin: 1px 2px 15px 5px;
+    transform: skewX(-15deg);
+    transition: all 0.4s linear;
 }
 
 .hubReplySubmit_JanuaryB:hover {
-  background: #35475f;
-  color: #bebad1;
-  transform: skewX(-5deg);
-  transition: all 0.4s linear;
+    background: #35475f;
+    color: #bebad1;
+    transform: skewX(-5deg);
+    transition: all 0.4s linear;
 }
 
 .hubFriendsCenter_JanuaryB {
-  padding: 3%;
-  width: 100%;
+    padding: 3%;
+    width: 100%;
 }
 
 .hubFriendsCenterLabel_JanuaryB {
-  color: #dfdde8;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 30px;
-  margin: 15px 0 15px 0;
+    color: #dfdde8;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 30px;
+    margin: 15px 0 15px 0;
 }
 
 .hubFriendsScroll_JanuaryB {
-  height: 76vh;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  width: 100%;
+    height: 76vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
 }
 
 .hubFriendsFilter_JanuaryB {
-  background: #30739d;
-  border: none;
-  color: #dfdde8;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
-  outline-color: #bebad1;
-  width: 50%;
+    background: #30739d;
+    border: none;
+    color: #dfdde8;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    outline-color: #bebad1;
+    width: 50%;
 }
 
 .hubFriendsFilter_JanuaryB::-webkit-input-placeholder {
-  color: #dfdde8;
+    color: #dfdde8;
 }
 
 .hubFriendsFilter_JanuaryB:-moz-placeholder {
-  color: #dfdde8;
+    color: #dfdde8;
 }
 
 .hubFriendsFilter_JanuaryB::-moz-placeholder {
-  color: #dfdde8;
+    color: #dfdde8;
 }
 
 .hubFriendsFilter_JanuaryB::-moz-placeholder {
-  color: #dfdde8;
+    color: #dfdde8;
 }
 
 .hubFriendsFilter_JanuaryB:-ms-input-placeholder {
-  color: #dfdde8;
+    color: #dfdde8;
 }
 
 .hubFriendsFilter_JanuaryB::placeholder {
-  color: #dfdde8;
+    color: #dfdde8;
 }
 
 .hubSearchIcon_JanuaryB {
-  color: #dfdde8;
-  font-size: 18px;
-  margin: 5px 15px 0 0;
+    color: #dfdde8;
+    font-size: 18px;
+    margin: 5px 15px 0 0;
 }
 
 .hubFriendRollEntry_JanuaryB {
-  cursor: pointer;
-  margin: 20px 0 0 50px;
-  max-width: 750px;
+    cursor: pointer;
+    margin: 20px 0 0 50px;
+    max-width: 750px;
 }
 
 .hubFriendsRollAvatar_JanuaryB {
-  border-radius: 100%;
-  max-height: 50px;
-  max-width: 50px;
+    border-radius: 100%;
+    max-height: 50px;
+    max-width: 50px;
 }
 
 .hubFriendsNameListing_JanuaryB {
-  color: #dfdde8;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
+    color: #dfdde8;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
 }
 
 .hubFriendMessageButton_JanuaryB {
-  background: #4b8eb8;
-  border: none;
-  color: #dfdde8;
-  cursor: pointer;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 24px;
-  margin: 0 5px 15px 50px;
-  transform: skewX(-15deg);
-  transition: all 0.4s linear;
+    background: #4b8eb8;
+    border: none;
+    color: #dfdde8;
+    cursor: pointer;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 24px;
+    margin: 0 5px 15px 50px;
+    transform: skewX(-15deg);
+    transition: all 0.4s linear;
 }
 
 .hubFriendMessageButton_JanuaryB:hover {
-  background: #35475f;
-  color: #bebad1;
-  transform: skewX(-5deg);
-  transition: all 0.4s linear;
+    background: #35475f;
+    color: #bebad1;
+    transform: skewX(-5deg);
+    transition: all 0.4s linear;
 }
 
 .hubProfileDisplayerActive_JanuaryB {
-  background: #9aa3af;
-  border: 4px solid #151c26;
-  height: auto;
-  left: 15%;
-  opacity: 1;
-  position: absolute;
-  top: 10%;
-  transition: all 0.4s linear;
-  width: 68%;
-  z-index: 100;
+    background: #9aa3af;
+    border: 4px solid #151c26;
+    height: auto;
+    left: 15%;
+    opacity: 1;
+    position: absolute;
+    top: 10%;
+    transition: all 0.4s linear;
+    width: 68%;
+    z-index: 100;
 }
 
 .hubProfileDisplayerInactive_JanuaryB {
-  background: #9aa3af;
-  border: 4px solid #151c26;
-  height: auto;
-  left: 145%;
-  opacity: 0;
-  position: absolute;
-  top: -70%;
-  transition: all 0.4s linear;
-  width: 68%;
-  z-index: -6;
+    background: #9aa3af;
+    border: 4px solid #151c26;
+    height: auto;
+    left: 145%;
+    opacity: 0;
+    position: absolute;
+    top: -70%;
+    transition: all 0.4s linear;
+    width: 68%;
+    z-index: -6;
 }
 
 .hubProfileDisplayCloseButton_JanuaryB {
-  background: #4b8eb8;
-  border: none;
-  color: #dfdde8;
-  cursor: pointer;
-  float: right;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
-  margin: 15px;
-  outline-color: #bebad1;
-  position: relative;
-  transform: skewX(-15deg);
-  transition: all 0.4s linear;
+    background: #4b8eb8;
+    border: none;
+    color: #dfdde8;
+    cursor: pointer;
+    float: right;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    margin: 15px;
+    outline-color: #bebad1;
+    position: relative;
+    transform: skewX(-15deg);
+    transition: all 0.4s linear;
 }
 
 .hubProfileDisplayCloseButton_JanuaryB:hover {
-  background: #35475f;
-  color: #bebad1;
-  transform: skewX(-5deg);
-  transition: all 0.4s linear;
+    background: #35475f;
+    color: #bebad1;
+    transform: skewX(-5deg);
+    transition: all 0.4s linear;
 }
 
 .hubProfileDisplayAvatar_JanuaryB {
-  float: left;
-  margin: 15px;
-  max-width: 200px;
+    float: left;
+    margin: 15px;
+    max-width: 200px;
 }
 
 .hubProfileDisplayDataContainer_JanuaryB {
-  padding: 15px;
+    padding: 15px;
 }
 
 .hubProfileDisplayName_JanuaryB {
-  color: #151c26;
-  float: left;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 42px;
+    color: #151c26;
+    float: left;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 42px;
 }
 
 .hubProfileDisplayDescritors_JanuaryB {
-  color: #151c26;
-  float: left;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 24px;
+    color: #151c26;
+    float: left;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 24px;
 }
 
 .hubDisplayContainer2_JanuaryB {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
 }
 
 .profileDisplayStats_JanuaryB {
-  color: #151c26;
-  float: left;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
-  width: 70%;
+    color: #151c26;
+    float: left;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    width: 70%;
 }
 
 .hubProfileDisplayBioBlock_JanuaryB {
-  padding: 15px;
-  min-width: 215px;
-  width: 30%;
+    padding: 15px;
+    min-width: 215px;
+    width: 30%;
 
 }
 
 .hubProfileDisplayBioImage_JanuaryB {
-  max-width: 200px;
+    max-width: 200px;
 }
 
 .hubProfileDisplayUserDatas_JanuaryB {
-  float: left;
-  padding: 15px;
-  width: 60%;
+    float: left;
+    padding: 15px;
+    width: 60%;
 }
 
 .hubProfileDisplayDescritors2_JanuaryB {
-  color: #151c26;
-  float: left;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
-  width: 70%;
+    color: #151c26;
+    float: left;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    width: 70%;
 }
 
 .hubDisplayMessageButton_JanuaryB {
-  background: #4b8eb8;
-  border: none;
-  color: #dfdde8;
-  cursor: pointer;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
-  margin: 15px;
-  outline-color: #ecc0db;
-  position: relative;
-  transform: skewX(-15deg);
-  transition: all 0.4s linear;
+    background: #4b8eb8;
+    border: none;
+    color: #dfdde8;
+    cursor: pointer;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    margin: 15px;
+    outline-color: #ecc0db;
+    position: relative;
+    transform: skewX(-15deg);
+    transition: all 0.4s linear;
 }
 
 .hubDisplayMessageButton_JanuaryB:hover {
-  background: #35475f;
-  color: #bebad1;
-  transform: skewX(-5deg);
-  transition: all 0.4s linear;
+    background: #35475f;
+    color: #bebad1;
+    transform: skewX(-5deg);
+    transition: all 0.4s linear;
 }
 
 .hubDisplayMessageModalActive_JanuaryB {
-  background: #294d65;
-  border: 4px solid #bebad1;
-  height: auto;
-  left: 15%;
-  opacity: 1;
-  position: absolute;
-  top: 10%;
-  transition: all 0.4s linear;
-  width: 68%;
-  z-index: 100;
+    background: #294d65;
+    border: 4px solid #bebad1;
+    height: auto;
+    left: 15%;
+    opacity: 1;
+    position: absolute;
+    top: 10%;
+    transition: all 0.4s linear;
+    width: 68%;
+    z-index: 100;
 }
 
 .hubDisplayMessageModalInactive_JanuaryB {
-  background: #294d65;
-  border: 4px solid #bebad1;
-  height: auto;
-  left: -45%;
-  opacity: 0;
-  position: absolute;
-  top: 70%;
-  transition: all 0.4s linear;
-  width: 68%;
-  z-index: -6;
+    background: #294d65;
+    border: 4px solid #bebad1;
+    height: auto;
+    left: -45%;
+    opacity: 0;
+    position: absolute;
+    top: 70%;
+    transition: all 0.4s linear;
+    width: 68%;
+    z-index: -6;
 }
 
 .hubMessageModalLabel_JanuaryB {
-  color: #dfdde8;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 30px;
-  margin: 30px;
+    color: #dfdde8;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 30px;
+    margin: 30px;
 }
 
 .hubMessageModalButtonFields_JanuaryB {
-  padding: 15px 0 45px 35%;
+    padding: 15px 0 45px 35%;
 }
 
 .hubMessageModalButton_JanuaryB {
-  background: #4b8eb8;
-  border: none;
-  color: #dfdde8;
-  cursor: pointer;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
-  margin: 0 30px;
-  outline-color: #35475f;
-  position: relative;
-  transform: skewX(-15deg);
-  transition: all 0.4s linear;
+    background: #4b8eb8;
+    border: none;
+    color: #dfdde8;
+    cursor: pointer;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    margin: 0 30px;
+    outline-color: #35475f;
+    position: relative;
+    transform: skewX(-15deg);
+    transition: all 0.4s linear;
 }
 
 .hubMessageModalButton_JanuaryB:hover {
-  background: #35475f;
-  color: #bebad1;
-  transform: skewX(-5deg);
-  transition: all 0.4s linear;
+    background: #35475f;
+    color: #bebad1;
+    transform: skewX(-5deg);
+    transition: all 0.4s linear;
 }
 
 .hubMessageModalInputs_JanuaryB {
-  padding: 15px 45px 0 45px;
+    padding: 15px 45px 0 45px;
 }
 
 .hubMessageModalSubjectInput_JanuaryB {
-  background: #c3d6ea;
-  border: none;
-  color: #151c26;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
-  margin: 0 0 0 8%;
-  outline-color: #35475f;
-  width: 80%;
+    background: #c3d6ea;
+    border: none;
+    color: #151c26;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    margin: 0 0 0 8%;
+    outline-color: #35475f;
+    width: 80%;
 }
 
 .hubMessageModalMessageInput_JanuaryB {
-  background: #c3d6ea;
-  border: none;
-  color: #151c26;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
-  margin: 5px 0 0 8%;
-  outline-color: #35475f;
-  width: 80%;
+    background: #c3d6ea;
+    border: none;
+    color: #151c26;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    margin: 5px 0 0 8%;
+    outline-color: #35475f;
+    width: 80%;
 }
 
 .hubMessageModalToFields_JanuaryB {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  padding: 20px 0 10px 12%;
-  width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 20px 0 10px 12%;
+    width: 100%;
 }
 
 .hubRecipientAvatar_JanuaryB {
-  float: left;
-  max-width: 50px;
+    float: left;
+    max-width: 50px;
 }
 
 .hubRecipientName_JanuaryB {
-  float: left;
-  color: #dfdde8;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 24px;
-  margin: 12px 0 8px 15px;
+    float: left;
+    color: #dfdde8;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 24px;
+    margin: 12px 0 8px 15px;
 }
 
 .hubRemoveGuardrailActive_JanuaryB {
-  background: #c3d6ea;
-  border: 4px solid #151c26;
-  height: auto;
-  left: 25%;
-  opacity: 1;
-  position: absolute;
-  top: 30%;
-  transition: all 0.4s linear;
-  width: 50%;
-  z-index: 100;
+    background: #c3d6ea;
+    border: 4px solid #151c26;
+    height: auto;
+    left: 25%;
+    opacity: 1;
+    position: absolute;
+    top: 30%;
+    transition: all 0.4s linear;
+    width: 50%;
+    z-index: 100;
 }
 
 .hubRemoveGuardrailInactive_JanuaryB {
-  background: #c3d6ea;
-  border: 4px solid #151c26;
-  height: auto;
-  left: -45%;
-  opacity: 0;
-  position: absolute;
-  top: 70%;
-  transition: all 0.4s linear;
-  width: 68%;
-  z-index: -6;
+    background: #c3d6ea;
+    border: 4px solid #151c26;
+    height: auto;
+    left: -45%;
+    opacity: 0;
+    position: absolute;
+    top: 70%;
+    transition: all 0.4s linear;
+    width: 68%;
+    z-index: -6;
 }
 
 .hubGuardrailText_JanuaryB {
-  color: #151c26;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 24px;
-  margin: 24px 10% 8px 10%;
+    color: #151c26;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 24px;
+    margin: 24px 10% 8px 10%;
 }
 
 .hubGuardrailButton_JanuaryB {
-  background: #4b8eb8;
-  border: none;
-  color: #dfdde8;
-  cursor: pointer;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
-  margin: 20px 10px;
-  outline-color: #fecdeb;
-  position: relative;
-  transform: skewX(-15deg);
-  transition: all 0.4s linear;
+    background: #4b8eb8;
+    border: none;
+    color: #dfdde8;
+    cursor: pointer;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    margin: 20px 10px;
+    outline-color: #fecdeb;
+    position: relative;
+    transform: skewX(-15deg);
+    transition: all 0.4s linear;
 }
 
 .hubGuardrailButton_JanuaryB:hover {
-  background: #35475f;
-  color: #bebad1;
-  transform: skewX(-5deg);
-  transition: all 0.4s linear;
+    background: #35475f;
+    color: #bebad1;
+    transform: skewX(-5deg);
+    transition: all 0.4s linear;
 }
 
 .hubGuardrailButtonsDiv_JanuaryB {
-  margin: 5px 40%;
+    margin: 5px 40%;
 }
 
 .hubOtherProfileEditButton_JanuaryB {
-  float: right;
-  padding: 30px 45px;
+    float: right;
+    padding: 30px 45px;
 }
 
 .pendingFriendRequests_JanuaryB {
-  color: #dfdde8;
-  float: right;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
-  left: 80%;
-  margin: 1%;
-  position: absolute;
-  top: 20%;
+    color: #dfdde8;
+    float: right;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    left: 80%;
+    margin: 1%;
+    position: absolute;
+    top: 20%;
 }
 
 .hubContactCenter_JanuaryB {
-  padding: 10%;
-  width: 100%;
+    padding: 10%;
+    width: 100%;
 }
 
 .hubContactLabel_JanuaryB {
-  color: #dfdde8;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 42px;
+    color: #dfdde8;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 42px;
 }
 
 .hubFooter_JanuaryB {
-  bottom: 3px;
-  color: #dfdde8;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 13px;
-  left: 26px;
-  position: absolute;
+    bottom: 3px;
+    color: #dfdde8;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 13px;
+    left: 26px;
+    position: absolute;
 }
 
 .hubContactFormField_JanuaryB {
-  margin: 25px 0;
+    margin: 25px 0;
 }
 
 .hubContactSubjectInput_JanuaryB {
-  background: #a5c7dc;
-  border: none;
-  color: #151c26;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
-  margin: 5px 0 5px 0;
-  max-width: 750px;
-  outline-color: #fecdeb;
-  width: 80%;
+    background: #a5c7dc;
+    border: none;
+    color: #151c26;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    margin: 5px 0 5px 0;
+    max-width: 750px;
+    outline-color: #fecdeb;
+    width: 80%;
 }
 
 .hubContactMessageInput_JanuaryB {
-  background: #a5c7dc;
-  border: none;
-  color: #151c26;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
-  margin: 5px 0 5px 0;
-  max-width: 750px;
-  outline-color: #fecdeb;
-  width: 80%;
+    background: #a5c7dc;
+    border: none;
+    color: #151c26;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    margin: 5px 0 5px 0;
+    max-width: 750px;
+    outline-color: #fecdeb;
+    width: 80%;
 }
 
 .hubContactAdminSubmitButton_JanuaryB {
-  background: #4b8eb8;
-  border: none;
-  color: #dfdde8;
-  cursor: pointer;
-  font-family: 'Nanum Gothic', serif;
-  font-size: 18px;
-  margin: 5px 0;
-  outline-color: #fecdeb;
-  position: relative;
-  transform: skewX(-15deg);
-  transition: all 0.4s linear;
-  width: 76%;
+    background: #4b8eb8;
+    border: none;
+    color: #dfdde8;
+    cursor: pointer;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    margin: 5px 0;
+    outline-color: #fecdeb;
+    position: relative;
+    transform: skewX(-15deg);
+    transition: all 0.4s linear;
+    width: 76%;
 }
+
 .hubContactAdminSubmitButton_JanuaryB:hover {
-  background: #35475f;
-  color: #bebad1;
-  transform: skewX(-5deg);
-  transition: all 0.4s linear;
+    background: #35475f;
+    color: #bebad1;
+    transform: skewX(-5deg);
+    transition: all 0.4s linear;
+}
+
+.removeShare_JanuaryB {
+    color: #151c26;
+    cursor: pointer;
+    float: right;
+    font-size: 30px;
+}
+
+.editComment_JanuaryB {
+    color: #151c26;
+    cursor: pointer;
+    float: right;
+    font-size: 18px;
+}
+
+.deleteGuardrailActive_JanuaryB {
+    background: #c3d6ea;
+    border: 4px solid #151c26;
+    height: auto;
+    left: 25%;
+    opacity: 1;
+    position: absolute;
+    top: 30%;
+    transition: all 0.4s linear;
+    width: 50%;
+    z-index: 100;
+}
+
+.deleteGuardrailInactive_JanuaryB {
+    background: #c3d6ea;
+    border: 4px solid #151c26;
+    height: auto;
+    left: -45%;
+    opacity: 0;
+    position: absolute;
+    top: 70%;
+    transition: all 0.4s linear;
+    width: 68%;
+    z-index: -6;
+}
+
+.deleteCommentGuardrailInactive_JanuaryB {
+    background: #c3d6ea;
+    border: 4px solid #151c26;
+    height: auto;
+    left: -45%;
+    opacity: 0;
+    position: absolute;
+    top: 70%;
+    transition: all 0.4s linear;
+    width: 68%;
+    z-index: -6;
+}
+
+.deleteCommentGuardrailActive_JanuaryB {
+    background: #c3d6ea;
+    border: 4px solid #151c26;
+    height: auto;
+    left: 25%;
+    opacity: 1;
+    position: absolute;
+    top: 30%;
+    transition: all 0.4s linear;
+    width: 50%;
+    z-index: 100;
+}
+
+.hubEditMessageActive_JanuaryB {
+    background: #9aa3af;
+    left: 35%;
+    opacity: 1;
+    padding: 1% 3%;
+    position: absolute;
+    transition: all 0.5s linear;
+    top: 5%;
+    width: 30%;
+    z-index: 55;
+}
+
+.hubEditMessageInactive_JanuaryB {
+    background: #9aa3af;
+    left: 35%;
+    opacity: 0;
+    padding: 1% 3%;
+    position: absolute;
+    transition: all 0.5s linear;
+    top: 5%;
+    width: 30%;
+    z-index: -55;
+}
+
+.hubEditMessageActive_JanuaryB img {
+    max-width: 15%;
+}
+
+.hubEditMessageActive_JanuaryB p {
+    color: #151c26;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.hubEditMessageActive_JanuaryB textarea {
+    background: #fecdeb;
+    border: none;
+    color: #151c26;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    outline-color: #ffe0e6;
+    width: 100%;
+}
+
+.hubEditMessageActive_JanuaryB button {
+    background: #4b8eb8;
+    border: none;
+    color: #dfdde8;
+    cursor: pointer;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    margin: 5px 35px;
+    transform: skewX(-15deg);
+    transition: all 0.4s linear;
+}
+
+.hubEditMessageActive_JanuaryB button:hover {
+    background: #35475f;
+    color: #bebad1;
+    transform: skewX(-5deg);
+    transition: all 0.4s linear;
+}
+
+.hubEditMessageInactive_JanuaryB {
+    background: #9aa3af;
+    left: 35%;
+    opacity: 0;
+    padding: 1% 3%;
+    position: absolute;
+    transition: all 0.5s linear;
+    top: 5%;
+    width: 30%;
+    z-index: -55;
+}
+
+.hubEditMessageInactive_JanuaryB img {
+    max-width: 15%;
+}
+
+.hubEditMessageInactive_JanuaryB p {
+    color: #08252e;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.hubEditMessageInactive_JanuaryB textarea {
+    background: #e3e6eb;
+    border: none;
+    color: #08252e;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    width: 100%;
+}
+
+.hubEditMessageInactive_JanuaryB button {
+    background: #32728e;
+    border: none;
+    color: #e3e6eb;
+    cursor: pointer;
+    font-family: 'Nanum Gothic', serif;
+    font-size: 18px;
+    margin: 5px 35px;
+    transform: skewX(-15deg);
+    transition: all 0.4s linear;
+}
+
+.removeShareComment_JanuaryB {
+    cursor: pointer;
+    float: right;
+    margin: 0 5px;
 }
 
 @media only screen and (max-width: 768px) {
-  .hubReactionGestalt_JanuaryB {
-    margin: 4px;
-    width: 25%;
-  }
+    .hubReactionGestalt_JanuaryB {
+        margin: 4px;
+        width: 25%;
+    }
 
-  .hubShareReactionTally_JanuaryB {
-    font-size: 18px;
-    margin: 3px 1px 10px 4px;
-  }
+    .hubShareReactionTally_JanuaryB {
+        font-size: 18px;
+        margin: 3px 1px 10px 4px;
+    }
 
-  .hubShareReactionDelete_JanuaryB {
-    margin: 3px 4px 10px 0;
-  }
+    .hubShareReactionDelete_JanuaryB {
+        margin: 3px 4px 10px 0;
+    }
 
-  .hubReaderTodayBlock_JanuaryB {
-    width: 5%;
-  }
+    .hubReaderTodayBlock_JanuaryB {
+        width: 5%;
+    }
 
-  .currentBlogTagline_JanuaryB {
-    width: 80%;
-  }
+    .currentBlogTagline_JanuaryB {
+        width: 80%;
+    }
 
-  .hubUserProfileNavigation_JanuaryB {
-    transform: scale(0.9) translateX(-25px);
-  }
+    .hubUserProfileNavigation_JanuaryB {
+        transform: scale(0.9) translateX(-25px);
+    }
 }
 
 @media only screen and (max-width: 414px) {
 
-  .hubBlogsDashboard_JanuaryB {
-    width: 99%;
-  }
+    .hubBlogsDashboard_JanuaryB {
+        width: 99%;
+    }
 
-  .hubPublicPrivateProfilePane_JanuaryB {
-    width: 60%;
-  }
+    .hubPublicPrivateProfilePane_JanuaryB {
+        width: 60%;
+    }
 
-  .hubTitleFlex_JanuaryB {
-    transform: scale(0.9);
-  }
+    .hubTitleFlex_JanuaryB {
+        transform: scale(0.9);
+    }
 
-  .hubBylineName_JanuaryB {
-    font-size: 18px;
-  }
+    .hubBylineName_JanuaryB {
+        font-size: 18px;
+    }
 
-  .hubShareComments_JanuaryB {
-    font-size: 18px;
-  }
+    .hubShareComments_JanuaryB {
+        font-size: 18px;
+    }
 
-  .hubShareAddReactionsToggle_JanuaryB p {
-    font-size: 13px;
-    transform: translateX(-10px);
-  }
+    .hubShareAddReactionsToggle_JanuaryB p {
+        font-size: 13px;
+        transform: translateX(-10px);
+    }
 
-  .hubReactionGestalt_JanuaryB {
-    width: 40%;
-  }
+    .hubReactionGestalt_JanuaryB {
+        width: 40%;
+    }
 
-  .hubShareReactionEmoji_JanuaryB {
-    width: 50%;
-  }
+    .hubShareReactionEmoji_JanuaryB {
+        width: 50%;
+    }
 
-  .hubTabLabel_JanuaryB {
-    font-size: 13px;
-  }
+    .hubTabLabel_JanuaryB {
+        font-size: 13px;
+    }
 
-  .hubShareCommentsLabel_JanuaryB {
-    font-size: 13px;
-  }
+    .hubShareCommentsLabel_JanuaryB {
+        font-size: 13px;
+    }
 
-  .hubShareCommenterName_JanuaryB {
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
+    .hubShareCommenterName_JanuaryB {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
 
-  .hubShareCommentComment_JanuaryB {
-    font-size: 13px;
-  }
+    .hubShareCommentComment_JanuaryB {
+        font-size: 13px;
+    }
 
-  .hubSignoutButton_JanuaryB {
-    transform: translateX(-30px);
-  }
+    .hubSignoutButton_JanuaryB {
+        transform: translateX(-30px);
+    }
 
-  .hubShareNewComments_JanuaryB {
-    font-size: 13px;
-  }
+    .hubShareNewComments_JanuaryB {
+        font-size: 13px;
+    }
 
-  .hubShareHeadline_JanuaryB {
-    font-size: 30px;
-  }
+    .hubShareHeadline_JanuaryB {
+        font-size: 30px;
+    }
 
-  .hubReaderDashboard_JanuaryB {
-    overflow-x: hidden;
-    overflow-y: scroll;
-  }
+    .hubReaderDashboard_JanuaryB {
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
 
-  .hubMyBlogsLabel_JanuaryB {
-    font-size: 30px;
-  }
+    .hubMyBlogsLabel_JanuaryB {
+        font-size: 30px;
+    }
 
-  .hubBlogListEntry_JanuaryB {
-    font-size: 18px;
-  }
+    .hubBlogListEntry_JanuaryB {
+        font-size: 18px;
+    }
 
-  .hubNewBlogButton_JanuaryB {
-    font-size: 12px;
-    transform: translateX(-20px);
-  }
+    .hubNewBlogButton_JanuaryB {
+        font-size: 12px;
+        transform: translateX(-20px);
+    }
 
-  .currentBlogLogoImage_JanuaryB {
-    max-width: 100px;
-  }
+    .currentBlogLogoImage_JanuaryB {
+        max-width: 100px;
+    }
 
-  .currentBlogName_JanuaryB {
-    font-size: 30px;
-  }
+    .currentBlogName_JanuaryB {
+        font-size: 30px;
+    }
 
-  .currentBlogTagline_JanuaryB {
-    font-size: 18px;
-  }
+    .currentBlogTagline_JanuaryB {
+        font-size: 18px;
+    }
 
-  .hubContributersLabel_JanuaryB {
-    font-size: 18px;
-  }
+    .hubContributersLabel_JanuaryB {
+        font-size: 18px;
+    }
 
-  .hubBlogContributerName_JanuaryB {
-    font-size: 18px;
-  }
+    .hubBlogContributerName_JanuaryB {
+        font-size: 18px;
+    }
 
-  .hubBlogDataPosts_JanuaryB {
-    font-size: 18px;
-  }
+    .hubBlogDataPosts_JanuaryB {
+        font-size: 18px;
+    }
 
-  .hubBlogDataDiv_JanuaryB {
-    padding-left: 30px;
-  }
+    .hubBlogDataDiv_JanuaryB {
+        padding-left: 30px;
+    }
 
-  .hubLoggedInAsAvatar_JanuaryB {
-    max-width: 70px;
-  }
+    .hubLoggedInAsAvatar_JanuaryB {
+        max-width: 70px;
+    }
 
-  .hubUserProfileNavigation_JanuaryB {
-    transform: translateX(-70px) translateY(-50px) scale(0.6);
-  }
+    .hubUserProfileNavigation_JanuaryB {
+        transform: translateX(-70px) translateY(-50px) scale(0.6);
+    }
 
-  .hubMessageMessage_JanuaryB {
-    font-size: 18px;
-  }
+    .hubMessageMessage_JanuaryB {
+        font-size: 18px;
+    }
 
-  .hubMessageFromSubjecttrue_JanuaryB {
-    font-size: 18px;
-  }
+    .hubMessageFromSubjecttrue_JanuaryB {
+        font-size: 18px;
+    }
 
-  .hubMessageFromSubjectfalse_JanuaryB {
-    font-size: 18px;
-  }
+    .hubMessageFromSubjectfalse_JanuaryB {
+        font-size: 18px;
+    }
 
-  .hubReplyText_JanuaryB {
-    font-size: 18px;
-  }
+    .hubReplyText_JanuaryB {
+        font-size: 18px;
+    }
 
-  .hubReplyResponseText_JanuaryB {
-    font-size: 18px;
-  }
+    .hubReplyResponseText_JanuaryB {
+        font-size: 18px;
+    }
 
-  .hubProfileDisplayName_JanuaryB {
-    font-size: 18px;
-  }
+    .hubProfileDisplayName_JanuaryB {
+        font-size: 18px;
+    }
 
-  .profileDisplayStats_JanuaryB {
-    font-size: 18px;
-  }
+    .profileDisplayStats_JanuaryB {
+        font-size: 18px;
+    }
 
-  .hubProfileDisplayUserDatas_JanuaryB {
-    padding: 3px;
-    width: 80%;
-  }
+    .hubProfileDisplayUserDatas_JanuaryB {
+        padding: 3px;
+        width: 80%;
+    }
 }

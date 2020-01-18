@@ -7,7 +7,7 @@ const uuid4 = require('uuid4');
 const router = express.Router();
 
 router.get('/', (req, res, next) => {
-    knex('blog_shares')
+    knex('share_reactions')
         .select('*')
         .then((results) => {
             res.send(results);
@@ -19,7 +19,7 @@ router.get('/', (req, res, next) => {
 
 router.get('/:uuid', (req, res, next) => {
 
-    knex('blog_shares')
+    knex('share_reactions')
         .select()
         .where('uuid', req.params.uuid)
         .first()
@@ -34,25 +34,36 @@ router.get('/:uuid', (req, res, next) => {
         });
 });
 
+router.post('/update_hovertext', (req, res, next) => {
+    let candidate;
+    let hover = '';
+    let from = req.body.from;
+    
+    knex('users')
+    .then(users => {
+        for (let i = 0; i < from.length; i++) {
+            candidate = users.filter(usr => {
+                return(usr.uuid === from[i]);
+            });
+            if (hover === '') {
+                hover += candidate[0].first_name + ' ' + candidate[0].last_name;
+            } else {
+                hover += ', ' + candidate[0].first_name + ' ' + candidate[0].last_name;
+            }
+        }
+        res.status(200).send(hover);
+    });
+});
+
 router.post('/', (req, res, next) => {
     const uuid = uuid4();
-    knex('blog_shares')
+    knex('share_reactions')
         .insert({
             uuid: uuid,
             user_uuid: req.body.user_uuid,
-            feed_uuid: req.body.feed_uuid,
-            share_status: req.body.share_status,
-            comment: req.body.comment,
-            title: req.body.title,
-            pubDate: req.body.pubDate,
-            link: req.body.link,
-            guid: req.body.guid,
-            author: req.body.author,
-            thumbnail: req.body.thumbnail,
-            description: req.body.description,
-            content: req.body.content,
-            enclosure: req.body.enclosure,
-            categories: req.body.categories
+            reaction_uuid: req.body.reaction_uuid,
+            share_uuid: req.body.share_uuid,
+            blogOrPodcast: req.body.blogOrPodcast
         }, '*')
         .then((result) => {
             res.status(200).send(result);
@@ -62,27 +73,10 @@ router.post('/', (req, res, next) => {
         });
 });
 
-router.patch('/:uuid', (req, res, next) => {
-    knex('blog_shares')
-        .where('uuid', req.params.uuid)
-        .update({
-            share_status: req.body.share_status,
-            comment: req.body.comment,
-            updated_at: req.body.updated_at
-        }, '*')
-        .then((results) => {
-            res.status(200).send(results[0]);
-        })
-        .catch((err) => {
-            next(err);
-        });
-
-});
-
 router.delete('/:uuid', (req, res, next) => {
     let record;
 
-    knex('blog_shares')
+    knex('share_reactions')
         .where('uuid', req.params.uuid)
         .first()
         .then((row) => {
@@ -92,7 +86,8 @@ router.delete('/:uuid', (req, res, next) => {
 
             record = row;
 
-            return knex('blog_shares')
+
+            return knex('share_reactions')
                 .del()
                 .where('uuid', req.params.uuid);
         })
@@ -103,21 +98,12 @@ router.delete('/:uuid', (req, res, next) => {
             var obj = {
                 uuid: holder,
                 user_uuid: record.user_uuid,
-                feed_uuid: record.feed_uuid,
-                share_status: record.share_status,
-                comment: record.comment,
-                title: record.title,
-                pubDate: record.pubDate,
-                link: record.link,
-                guid: record.guid,
-                author: record.author,
-                thumbnail: record.thumbnail,
-                description: record.description,
-                content: record.content,
-                enclosure: record.enclosure,
-                categories: record.categories,
+                reaction_uuid: record.reaction_uuid,
+                share_uuid: record.share_uuid,
+                blogOrPodcast: record.blogOrPodcast,
                 created_at: record.created_at,
                 updated_at: record.updated_at
+
             };
 
             res.send(obj);

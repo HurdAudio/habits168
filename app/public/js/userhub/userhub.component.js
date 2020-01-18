@@ -21,345 +21,6 @@
         vm.hubProfileTabState = 'hubTabInactive' + vm.monthSelect;
         vm.hubTabStatus = 'hubShare' + vm.monthSelect;
         vm.updateHubTab = updateHubTab;
-        vm.emojis = [
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/001-zombie.svg',
-                value: '001-zombie'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/002-yelling.svg',
-                value: '002-yelling'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/003-muted.svg',
-                value: '003-muted'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/004-dead.svg',
-                value: '004-dead'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/005-surprised.svg',
-                value: '005-surprised'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/006-wondering.svg',
-                value: '006-wondering'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/007-wink-1.svg',
-                value: '007-wink-1'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/008-weird-1.svg',
-                value: '008-weird-1'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/009-weird.svg',
-                value: '009-weird'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/010-vomiting.svg',
-                value: '010-vomiting'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/011-alien.svg',
-                value: '011-alien'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/012-tongue.svg',
-                value: '012-tongue'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/013-sweating.svg',
-                value: '013-sweating'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/014-cool.svg',
-                value: '014-cool'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/015-straight.svg',
-                value: '015-straight'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/016-smile-1.svg',
-                value: '016-smile-1'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/017-sleeping.svg',
-                value: '017-sleeping'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/018-skull.svg',
-                value: '018-skull'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/019-shy.svg',
-                value: '019-shy'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/020-laughing-2.svg',
-                value: '020-laughing-2'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/021-quiet.svg',
-                value: '021-quiet'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/022-pirate.svg',
-                value: '022-pirate'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/023-nerd.svg',
-                value: '023-nerd'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/024-ninja.svg',
-                value: '024-ninja'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/025-money.svg',
-                value: '025-money'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/026-laughing-1.svg',
-                value: '026-laughing-1'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/027-sad.svg',
-                value: '027-sad'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/028-laughing.svg',
-                value: '028-laughing'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/029-kiss-1.svg',
-                value: '029-kiss-1'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/030-karate.svg',
-                value: '030-karate'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/031-in-love.svg',
-                value: '031-in-love'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/032-hipster.svg',
-                value: '032-hipster'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/033-hypnotized.svg',
-                value: '033-hypnotized'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/034-heart.svg',
-                value: '034-heart'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/035-headache.svg',
-                value: '035-headache'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/036-happy.svg',
-                value: '036-happy'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/037-wink.svg',
-                value: '037-wink'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/038-glitter.svg',
-                value: '038-glitter'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/039-kiss.svg',
-                value: '039-kiss'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/040-sick-1.svg',
-                value: '040-sick-1'
-        },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/041-sick.svg',
-                value: '041-sick'
-      },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/042-evil.svg',
-                value: '042-evil'
-      },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/043-drool.svg',
-                value: '043-drool'
-      },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/044-devil.svg',
-                value: '044-devil'
-      },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/045-cry-1.svg',
-                value: '045-cry-1'
-      },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/046-cry.svg',
-                value: '046-cry'
-      },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/047-broken-heart.svg',
-                value: '047-broken-heart'
-      },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/048-smile.svg',
-                value: '048-smile'
-      },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/049-confused.svg',
-                value: '049-confused'
-      },
-            {
-                path: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/050-angel.svg',
-                value: '050-angel'
-      }
-      ];
-        vm.sharedContent = [
-            {
-                author: 'Walter Einenkel',
-                avatar_path: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/homerAvatar.jpg',
-                cleanDate: '2019 August 10 - 18:15:05',
-                comments: 'I guess "Greatest Healthcare System in the World" means liquidating lives in the name of profit.',
-                description: ' <p>Josh Wilkerson died on June 14, 2019, five days after suffering a series of strokes and slipping into a diabetic coma, at a North Virginia dog kennel where he worked as a manager making $16.50 an hour. Wilkerson was 27 years old. He and his fiancee, Rose Walters, were trying to save money to pay for their approaching wedding, and after aging out of eligibility for coverage under his father’s insurance, Wilkerson was having a terrible time trying to afford his insulin costs. According to his mother and his fiancee, Wilkerson had begun taking “human insulin,” a considerably cheaper, <a href="https://www.washingtonpost.com/local/he-lost-his-insurance-and-turned-to-cheaper-form-of-insulin-it-was-a-fatal-decision/2019/08/02/106ee79a-b24d-11e9-8f6c-7828e68cb15f_story.html" title="">“lower-grade medication.”</a></p> <p>The cost difference made the drug affordable for Wilkerson—the over-the-counter version of the drug is one-tenth the price of the more effective and unaffordable version. But doctors do not suggest it for all patients as a stopgap because it is less effective, and it is considerably slower at stabilizing one’s blood-sugar levels, taking hours longer to be effective than the prescription version.</p> <a href="http://www.dailykos.com/campaigns/petition/sign-the-petition-we-need-medicare-for-all" class="dk-action-link">Campaign Action</a> <p>Walters told The Washington Post that Wilkerson was working an overnight shift at the kennel to make more money. The two had FaceTimed one another before going to bed, at which point Wilkerson complained of stomach pains. Walters reminded him to take his medication, which he said he would do. Both Walters and Wilkerson have Type 1 diabetes, the genetically determined variant of the disease. When Wilkerson didn’t respond to a call the next morning, Walters ran over and found him unconscious on the floor, telling the paper, “I just remember smacking him on the face, saying, ‘Babe, wake up. You have to wake up.’”</p> <p>The tragedy of Josh Wilkerson’s death is that it was preventable. If Wilkerson had been able to afford his medicine, he would have been taking those lifesaving drugs. Wilkerson’s situation is not unique in our medicine-for-money country. At least <a href="https://www.dailykos.com/stories/2019/2/26/1837835/-t-least-25-of-diabetes-patients-rationing-insulin-as-drug-costs-continue-to-skyrocket" title="">25% of diabetes patients say that they ration their insulin medications</a> in order to make financial ends meet. This is a dangerous balance that people are forced to strike as the prices of<a href="https://www.dailykos.com/stories/2019/7/2/1868719/-Drug-prices-skyrocket-increasing-FIVE-TIMES-the-cost-of-inflation-in-2019" title=""> insulin (as well as most drug prices) in our country continue to skyrocket.</a></p> <p class="is-empty-p"></p> x<p>Cost of Insulin Pens:Ã¢Â€Â¢Norway: $0Ã¢Â€Â¢Scotland: $0Ã¢Â€Â¢Thailand: $5Ã¢Â€Â¢Australia: $28Ã¢Â€Â¢Mexico: $35Ã¢Â€Â¢Taiwan: $40Ã¢Â€Â¢Greece: $51Ã¢Â€Â¢Italy: $61Ã¢Â€Â¢Canada: $70Ã¢Â€Â¢Germany: $73.........Ã¢Â€Â¢United States: $700Americans are dying b/c politicians claim we can\'t afford <a href="https://twitter.com/hashtag/MedicareForAll?src=hash&amp;ref_src=twsrc%5Etfw">#MedicareForAll</a> <a href="https://t.co/dy1CgMnccL">https://t.co/dy1CgMnccL</a></p>Ã¢Â€Â” Qasim Rashid, Esq. (@QasimRashid) <a href="https://twitter.com/QasimRashid/status/1159115800848080896?ref_src=twsrc%5Etfw">August 7, 2019</a> <p>The fundamental issue is greed and a medical industry focused on profit over accessibility. Pharmaceutical companies <a href="https://www.dailykos.com/stories/2015/3/26/1373499/-Insulin-is-more-expensive-mostly-because-it-s-hard-to-make-money-on-the-cheaper-stuff" title="">cannot make money from cheap insulin, and stopped producing cheaper but effective alternatives decades ago.</a> This has led to the deaths of people such as Josh Wilkerson, trying to make ends meet and dying so that a company can show growing quarterly profits on its bank statements.</p> <p class="is-empty-p"></p> <img src="http://feeds.feedburner.com/~r/dailykosofficial/~4/LsTrrBPnK1w" height="1" width="1" alt=""> ',
-                enclosure: {
-                    link: 'https://images.dailykos.com/images/704798/story_image/GettyImages-1127436186.jpg?1565195788'
-                },
-                first_name: 'DJ',
-                id: 0,
-                last_name: 'Ipsum',
-                link: 'http://feeds.dailykosmedia.com/~r/dailykosofficial/~3/LsTrrBPnK1w/-Young-man-dies-after-losing-his-insurance-and-turning-to-cheaper-form-of-insulin',
-                rss: 'https://news.ycombinator.com/rss',
-                select_reactions: false,
-                share_cleanDate: '2019 August 10 - 18:44:59',
-                share_comments: [
-                    {
-                        avatar: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/lovecraftAvatar.jpg',
-                        cleanDate: '2019 August 11 - 09:02:04',
-                        comment: 'Death by pharmacological greed. Disgusting.',
-                        comment_reactions: [
-                            {
-                                from: ['a48d70e3-005d-4def-a66e-afa5e2790670'],
-                                hover_text: 'Bill Somebody',
-                                id: 0,
-                                hoverClass: 'hubShareReactionsHoverText' + vm.monthSelect,
-                                link: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/046-cry.svg',
-                                reaction: '046-cry',
-                                tally: 1,
-                                user_contributed: false
-                }
-              ],
-                        id: 0,
-                        name: 'Devin Hurd',
-                        select_reactions: false,
-                        uuid: '17917373-ee9c-46aa-a38a-cacc475abee7'
-            }
-          ],
-                share_reactions: [
-                    {
-                        from: ['17917373-ee9c-46aa-a38a-cacc475abee7'],
-                        hover_text: 'Devin Hurd',
-                        id: 0,
-                        hoverClass: 'hubShareReactionsHoverText' + vm.monthSelect,
-                        link: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/047-broken-heart.svg',
-                        reaction: '047-broken-heart',
-                        tally: 1,
-                        user_contributed: true
-            },
-                    {
-                        from: ['3df57491-588c-42df-8536-506722d08dd6', '1ae356b8-2cec-4106-8c31-2fd419939642', '83c4c779-d309-446f-8eb4-17fccb6bd2a8'],
-                        hover_text: 'DJ Ipsum, Craig Bell, Cheryl Pancake',
-                        id: 1,
-                        hoverClass: 'hubShareReactionsHoverText' + vm.monthSelect,
-                        link: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/027-sad.svg',
-                        reaction: '027-sad',
-                        tally: 3,
-                        user_contributed: false
-            },
-                    {
-                        from: ['6283bf35-f38d-492e-b00f-474644a2f2b8', 'd779376f-828d-4c6d-98d8-afafdfb62311'],
-                        hover_text: 'Bill Smith, Everett Empathy',
-                        id: 2,
-                        hoverClass: 'hubShareReactionsHoverText' + vm.monthSelect,
-                        link: 'https://habits168-hurdaudio.s3.amazonaws.com/emojis/004-dead.svg',
-                        reaction: '004-dead',
-                        tally: 2,
-                        user_contributed: false
-            }
-          ],
-                source_description: 'Daily Kos: The Main Page.',
-                source_link: 'http://www.dailykos.com/blogs/main',
-                source_image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/daily-kos-squarelogo-1517554340259.png',
-                source_title: 'Daily Kos',
-                title: 'Young man dies after losing his insurance and turning to cheaper form of insulin',
-                updated_at: 'Sat Aug 10 2019 13:44:59 GMT-0600 (Mountain Daylight Time)',
-                uuid: '96770ff7-afa0-4c31-970e-905e8f28ccd0'
-        },
-            {
-                author: '',
-                avatar_path: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/lovecraftAvatar.jpg',
-                cleanDate: '2019 August 11 - 17:15:06',
-                comments: 'Just in case you\'ve been wondering why I talk to myself all day... I mean I talk to Devin all day long.',
-                description: '<a href="https://news.ycombinator.com/item?id=20669171">Comments</a>',
-                enclosure: {
-                    link: null
-                },
-                first_name: 'Devin',
-                id: 1,
-                last_name: 'Hurd',
-                link: 'https://aeon.co/ideas/why-speaking-to-yourself-in-the-third-person-makes-you-wiser',
-                rss: 'https://news.ycombinator.com/rss',
-                select_reactions: false,
-                share_cleanDate: '2019 August 11 - 12:29:20',
-                share_comments: [
-          ],
-                share_reactions: [
-          ],
-                source_description: 'Links for the intellectually curious, ranked by readers.',
-                source_link: 'https://news.ycombinator.com/',
-                source_image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/hacker-news-2-569388.png',
-                source_title: 'Hacker News',
-                title: 'Speaking to yourself in the third person makes you wiser',
-                updated_at: 'Sat Aug 10 2019 13:44:59 GMT-0600 (Mountain Daylight Time)',
-                uuid: '17917373-ee9c-46aa-a38a-cacc475abee7'
-        },
-            {
-                author: 'Elisabeth',
-                avatar_path: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/ashesAvatar.png',
-                cleanDate: '2019 August 10 - 21:33:50',
-                comments: 'Push Tar!!',
-                description: 'Dan Freeman, Director of the Brooklyn Digital Conservatory, uses a unique approach to performing with the Ableton Push.… <a class="more-link" href="http://www.synthtopia.com/content/2019/08/10/shredding-with-the-push-tar/">Read More <span class="screen-reader-text">Shredding With ‘The Push-tar’</span></a> ',
-                enclosure: {
-                    link: null
-                },
-                first_name: 'Amet',
-                id: 2,
-                last_name: 'Tempor',
-                link: 'http://www.synthtopia.com/content/2019/08/10/shredding-with-the-push-tar/',
-                rss: 'http://www.synthtopia.com/feed',
-                select_reactions: false,
-                share_cleanDate: '2019 August 11 - 12:40:33',
-                share_comments: [
-          ],
-                share_reactions: [
-          ],
-                source_description: 'Synthesizer and electronic music news, synth and music software reviews and more!',
-                source_link: 'http://www.synthtopia.com/',
-                source_image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/press-synthtopia-logo.jpg',
-                source_title: 'Synthtopia',
-                title: 'Shredding With ‘The Push-tar’',
-                updated_at: 'Sat Aug 10 2019 13:44:59 GMT-0600 (Mountain Daylight Time)',
-                uuid: 'e0d83fb4-f7b5-492c-ba49-e3b1447567e6'
-        }
-      ];
         vm.toggleEmojiSelector = toggleEmojiSelector;
         vm.shareAddEmoji = shareAddEmoji;
         vm.hubShareRemoveReaction = hubShareRemoveReaction;
@@ -390,84 +51,6 @@
         vm.hubShareSave = hubShareSave;
         vm.backgroundStatus = 'hubContainer' + vm.monthSelect;
         vm.hubCancelShareSaveLink = hubCancelShareSaveLink;
-        vm.userBlogs = [
-            {
-                blog: 'HurdAudio',
-                contributers: [
-                    {
-                        avatar: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/lovecraftAvatar.jpg',
-                        name: 'Devin Hurd',
-                        uuid: '17917373-ee9c-46aa-a38a-cacc475abee7'
-            }
-          ],
-                description: 'Musings on free jazz, just intonation and modular synthesis',
-                id: 0,
-                last_post: '2019 August 8 - 12:23:17',
-                logo: 'https://habits168-hurdaudio.s3.amazonaws.com/blog_logos/steve-harvey-xWiXi6wRLGo-unsplash.jpg',
-                page_loads: 100473,
-                total_posts: 473
-        },
-            {
-                blog: 'Leather, Runs & Repeat',
-                contributers: [
-                    {
-                        avatar: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/lovecraftAvatar.jpg',
-                        name: 'Devin Hurd',
-                        uuid: '17917373-ee9c-46aa-a38a-cacc475abee7'
-            }
-          ],
-                description: 'An agnostic baseball blog',
-                id: 1,
-                last_post: '2019 August 7 - 05:58:02',
-                logo: 'https://habits168-hurdaudio.s3.amazonaws.com/blog_logos/baseball-1339292_1920.jpg',
-                page_loads: 823,
-                total_posts: 54
-        },
-            {
-                blog: 'Muddle Class Kitchens',
-                contributers: [
-                    {
-                        avatar: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/lovecraftAvatar.jpg',
-                        name: 'Devin Hurd',
-                        uuid: '17917373-ee9c-46aa-a38a-cacc475abee7'
-            },
-                    {
-                        avatar: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/digitalNomadAvatar.jpg',
-                        name: 'Eva Codes',
-                        uuid: '03ad421c-aad5-47b1-88ab-d7822f6c3eb7'
-            }
-          ],
-                description: 'Cooking without skill',
-                id: 2,
-                last_post: '2019 July 28 - 17:43:40',
-                logo: 'https://habits168-hurdaudio.s3.amazonaws.com/blog_logos/egg-3086198_1920.jpg',
-                page_loads: 33,
-                total_posts: 302
-        },
-            {
-                blog: 'Weaponized Reading Glasses',
-                description: 'Things I read when I should be sleeping',
-                contributers: [
-                    {
-                        avatar: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/lovecraftAvatar.jpg',
-                        name: 'Devin Hurd',
-                        uuid: '17917373-ee9c-46aa-a38a-cacc475abee7'
-            }
-          ],
-                id: 3,
-                last_post: '2019 January 1 - 18:13:13',
-                logo: 'https://habits168-hurdaudio.s3.amazonaws.com/blog_logos/book-272691_1920.jpg',
-                page_loads: 4,
-                total_posts: 8325
-        }
-      ];
-        vm.currentBlogLogo = vm.userBlogs[0].logo;
-        vm.currentBlogName = vm.userBlogs[0].blog;
-        vm.currentBlogDescription = vm.userBlogs[0].description;
-        vm.currentBlogContributers = vm.userBlogs[0].contributers;
-        vm.totalPosts = vm.userBlogs[0].total_posts;
-        vm.lastPost = vm.userBlogs[0].last_post;
-        vm.totalPageLoads = vm.userBlogs[0].page_loads;
         vm.hubDisplayBlogData = hubDisplayBlogData;
         vm.navigationPublicState = 'hubUserProfileNavigationActive' + vm.monthSelect;
         vm.navigationPrivateState = 'hubUserProfileNavigationInactive' + vm.monthSelect;
@@ -477,315 +60,9 @@
         vm.navigationSliderState = 'hubUserProfileNavigationSlidePublicState' + vm.monthSelect;
         vm.navigateProfileViews = navigateProfileViews;
         vm.profileNavState = 'public';
-        vm.userExtendedProfile = {
-            bio: {
-                bio: 'A man with 168 Habits. Some of them good.',
-                public: true
-            },
-            birthdate: {
-                birthdate: new Date('1970-03-08'),
-                cleanDate: '8 March',
-                public: false
-            },
-            description: {
-                description: 'Drone music composer and software engineer stranded in the desert.',
-                public: true
-            },
-            email: {
-                email: 'devin@devinhurd.com',
-                public: false
-            },
-            education: {
-                public: false,
-                schools: [
-                    {
-                        location: 'Toronto, Ontario, Canada',
-                        name: 'York University'
-            },
-                    {
-                        location: 'Hanover, New Hampshire',
-                        name: 'Dartmouth College'
-            },
-                    {
-                        location: 'Boulder, Colorado',
-                        name: 'Galvanize'
-            }
-          ]
-            },
-            employer: {
-                employer: 'Hall of Justice, Inc.',
-                public: false
-            },
-            location: {
-                adminCode: 'NM',
-                country: 'US',
-                featureCode: 'PPLA2',
-                name: 'Albuquerque',
-                population: 545852,
-                public: true,
-                lat: 35.08449,
-                lon: -106.65114
-            },
-            occupation: {
-                occupation: 'Web Developer',
-                public: true
-            },
-            phone: {
-                phone: '(505)505-5050',
-                public: false
-            }
-        };
-        vm.userMessages = [
-            {
-                cleanDate: '2019 August 14 - 20:14:55',
-                created_at: new Date('2019-08-14 20:14:55'),
-                from: {
-                    avatar: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/digitalNomadAvatar.jpg',
-                    name: 'Eva Codes',
-                    uuid: '03ad421c-aad5-47b1-88ab-d7822f6c3eb7'
-                },
-                message: '<p>You might want to hurry out to the Grower\'s Market for the current bumper crop of heirlooms.<br><br> They\'re damn impressive.</p>',
-                open: false,
-                opened: false,
-                replies: [],
-                subject: 'Heirloom Tomatoes',
-                to: {
-                    avatar: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/lovecraftAvatar.jpg',
-                    name: 'Devin Hurd',
-                    uuid: '17917373-ee9c-46aa-a38a-cacc475abee7'
-                },
-                updated_at: new Date('2019-08-14 20:14:55'),
-                uuid: '794f37fb-57fb-4e76-a3f4-cb6a72ec68cf'
-        },
-            {
-                cleanDate: '2019 August 14 - 19:59:00',
-                created_at: new Date('2019-08-14 19:59:00'),
-                from: {
-                    avatar: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/homerAvatar.jpg',
-                    name: 'DJ Ipsum',
-                    uuid: '96770ff7-afa0-4c31-970e-905e8f28ccd0'
-                },
-                message: '<p>When are you going to hook me up with all that sweet, sweet Sun Ra? I know you\'re sitting on a trove of Saturnian goodness.</p>',
-                open: false,
-                opened: true,
-                replies: [
-                    {
-                        cleanDate: '2019 August 14 - 20:06:33',
-                        created_at: new Date('2019-08-04 20:06:33'),
-                        from: {
-                            avatar: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/lovecraftAvatar.jpg',
-                            name: 'Devin Hurd',
-                            uuid: '17917373-ee9c-46aa-a38a-cacc475abee7'
-                        },
-                        message: 'You aren\'t worthy of the Sun Ra, my friend.',
-                        open: false,
-                        opened: false,
-                        subject: 'RE: Sun Ra on vinyl',
-                        to: {
-                            avatar: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/homerAvatar.jpg',
-                            name: 'DJ Ipsum',
-                            uuid: '96770ff7-afa0-4c31-970e-905e8f28ccd0'
-                        },
-                        updated_at: new Date('2019-08-04 20:06:33'),
-                        uuid: '8efa4c37-989b-449f-b7aa-f7591675fd12'
-            }
-          ],
-                subject: 'Sun Ra on vinyl',
-                to: {
-                    avatar: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/lovecraftAvatar.jpg',
-                    name: 'Devin Hurd',
-                    uuid: '17917373-ee9c-46aa-a38a-cacc475abee7'
-                },
-                updated_at: new Date('2019-08-14 19:59:00'),
-                uuid: '912eaafa-9d04-46db-8b53-d90367ae02d0'
-        }
-      ];
         vm.unreadMailMarker = '';
         vm.toggleMessageOpen = toggleMessageOpen;
         vm.submitResponse = submitResponse;
-        vm.friendsList = [
-            {
-                avatar: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/digitalNomadAvatar.jpg',
-                blog_posts: 907,
-                extended_profile: {
-                    bio: {
-                        bio: 'Formerly well-adjusted daughter of two computer geeks.',
-                        public: true
-                    },
-                    birthdate: {
-                        birthdate: new Date('1980-02-28'),
-                        cleanDate: '28 February',
-                        public: false
-                    },
-                    description: {
-                        description: 'Full time coder and all around badass.',
-                        public: true
-                    },
-                    email: {
-                        email: 'eva.codes@evacodes.com',
-                        public: false
-                    },
-                    education: {
-                        public: false,
-                        schools: [
-                            {
-                                location: 'Providence, Rhode Island',
-                                name: 'Brown University'
-                }
-              ]
-                    },
-                    employer: {
-                        employer: 'NSA',
-                        public: false
-                    },
-                    location: {
-                        adminCode: 'MD',
-                        country: 'US',
-                        featureCode: 'PPLA',
-                        name: 'Annapolis',
-                        population: 38394,
-                        public: true,
-                        lat: 38.97845,
-                        lon: -76.49218
-                    },
-                    occupation: {
-                        occupation: 'Hacker for Hire',
-                        public: true
-                    },
-                    phone: {
-                        phone: '(505)505-5050',
-                        public: false
-                    }
-                },
-                first_name: 'Eva',
-                friends: 57,
-                last_name: 'Codes',
-                name: 'Eva Codes',
-                shared_items: 702,
-                uuid: '03ad421c-aad5-47b1-88ab-d7822f6c3eb7'
-        },
-            {
-                avatar: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/homerAvatar.jpg',
-                blog_posts: 207,
-                extended_profile: {
-                    bio: {
-                        bio: 'Frustrated DJ trapped in a day job.',
-                        public: true
-                    },
-                    birthdate: {
-                        birthdate: new Date('1982-08-08'),
-                        cleanDate: '8 August',
-                        public: false
-                    },
-                    description: {
-                        description: 'Slave to the beat.',
-                        public: true
-                    },
-                    email: {
-                        email: 'ipsum.spinsum@djipsum.com',
-                        public: false
-                    },
-                    education: {
-                        public: false,
-                        schools: [
-                            {
-                                location: 'Portland, Oregon',
-                                name: 'Reed College'
-                }
-              ]
-                    },
-                    employer: {
-                        employer: 'Wells Fargo',
-                        public: false
-                    },
-                    location: {
-                        adminCode: 'CA',
-                        country: 'US',
-                        featureCode: 'PPLA2',
-                        name: 'San Rafael',
-                        population: 57713,
-                        public: true,
-                        lat: 37.97353,
-                        lon: -122.53109
-                    },
-                    occupation: {
-                        occupation: 'DJ from the bank',
-                        public: true
-                    },
-                    phone: {
-                        phone: '(505)505-5050',
-                        public: false
-                    }
-                },
-                first_name: 'DJ',
-                friends: 44,
-                last_name: 'Ipsum',
-                name: 'DJ Ipsum',
-                shared_items: 1043,
-                uuid: '96770ff7-afa0-4c31-970e-905e8f28ccd0'
-        },
-            {
-                avatar: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/ashesAvatar.png',
-                blog_posts: 180,
-                extended_profile: {
-                    bio: {
-                        bio: 'Product of Detroit public education.',
-                        public: true
-                    },
-                    birthdate: {
-                        birthdate: new Date('1988-11-26'),
-                        cleanDate: '26 November',
-                        public: true
-                    },
-                    description: {
-                        description: 'Wildly interested in everything.',
-                        public: true
-                    },
-                    email: {
-                        email: 'temporaneous@amettempor.com',
-                        public: false
-                    },
-                    education: {
-                        public: false,
-                        schools: [
-                            {
-                                location: 'Earth',
-                                name: 'School of Hard Knocks'
-                }
-              ]
-                    },
-                    employer: {
-                        employer: 'self employed',
-                        public: false
-                    },
-                    location: {
-                        adminCode: 'NY',
-                        country: 'US',
-                        featureCode: 'PPL',
-                        name: 'New York City',
-                        population: 8175133,
-                        public: true,
-                        lat: 40.71427,
-                        lon: -74.00597
-                    },
-                    occupation: {
-                        occupation: 'Code Monkey',
-                        public: true
-                    },
-                    phone: {
-                        phone: '(505)505-5050',
-                        public: false
-                    }
-                },
-                first_name: 'Amet',
-                friends: 37,
-                last_name: 'Tempor',
-                name: 'Amet Tempor',
-                shared_items: 844,
-                uuid: 'e0d83fb4-f7b5-492c-ba49-e3b1447567e6'
-        }
-      ];
-        vm.filteredFriendsList = vm.friendsList;
         vm.friendFiltering = friendFiltering;
         vm.profileDisplayModal = 'hubProfileDisplayerInactive' + vm.monthSelect;
         vm.displayFriend = displayFriend;
@@ -795,6 +72,8 @@
         vm.cancelMessageSender = cancelMessageSender;
         vm.sendMessage = sendMessage;
         vm.hubGuardrailState = 'hubRemoveGuardrailInactive' + vm.monthSelect;
+        vm.deleteShareGuardrailState = 'deleteGuardrailInactive' + vm.monthSelect;
+        vm.deleteShareCommentGuardrailState = 'deleteCommentGuardrailInactive' + vm.monthSelect;
         vm.removeBadFriend = removeBadFriend;
         vm.cancelFriendRemoval = cancelFriendRemoval;
         vm.confirmFriendRemoval = confirmFriendRemoval;
@@ -808,6 +87,158 @@
         vm.externalsMonth = '_JanuaryB';
         vm.navigateToDailies = navigateToDailies;
         vm.dailiesMonth = '_JanuaryA';
+        vm.removeShareModal = removeShareModal;
+        vm.negativeDeleteShare = negativeDeleteShare;
+        vm.positiveDeleteShare = positiveDeleteShare;
+        vm.editCommentModalState = 'hubEditMessageInactive' + vm.monthSelect;
+        vm.editShareComment = editShareComment;
+        vm.hubCancelSharePatchLink = hubCancelSharePatchLink;
+        vm.removeShareCommentModal = removeShareCommentModal;
+        vm.negativeDeleteShareComment = negativeDeleteShareComment;
+        vm.positiveDeleteShareComment = positiveDeleteShareComment;
+        vm.editShareCommentEnable = editShareCommentEnable;
+        vm.hubShareSubmitCommentEdit = hubShareSubmitCommentEdit;
+        vm.removeMessage = removeMessage;
+        vm.removeMessageReply = removeMessageReply;
+
+        function removeMessageReply(message, response) {
+            $http.delete(`/message_responses/${response.uuid}`);
+            for (let i = 0; i < vm.userMessages.length; i++) {
+                if (vm.userMessages[i].uuid === message.uuid) {
+                    for (let j = 0; j < vm.userMessages[i].replies.length; j++) {
+                        if (vm.userMessages[i].replies[j].uuid === response.uuid) {
+                            vm.userMessages[i].replies.splice(j, 1);
+                            return;
+                        }
+                    }
+                }
+            }
+        }
+
+        function removeMessage(message) {
+            $http.delete(`/messages/${message.uuid}`);
+            for (let i = 0; i < vm.userMessages.length; i++) {
+                if (vm.userMessages[i].uuid === message.uuid) {
+                    vm.userMessages.splice(i, 1);
+                    return;
+                }
+            }
+        }
+
+        function hubShareSubmitCommentEdit(article, comment) {
+            let now = new Date;
+            const hubShareEditCommentTextArea = document.getElementById('hubShareEditCommentTextArea' + comment.uuid);
+            const editedComment = hubShareEditCommentTextArea.value;
+            if ((comment.comment !== editedComment) && (editedComment !== '')) {
+                $http.patch(`/share_comments/${comment.uuid}`, {
+                    comment: editedComment,
+                    updated_at: now
+                });
+                vm.sharedContent[article.id].share_comments[comment.id].comment = editedComment;
+                if (vm.sharedContent[article.id].share_comments[comment.id].cleanDate.indexOf('edited') === -1) {
+                    vm.sharedContent[article.id].share_comments[comment.id].cleanDate += ' (edited)';
+                }
+            }
+            vm.sharedContent[article.id].share_comments[comment.id].editMode = false;
+        }
+
+        function editShareCommentEnable(article, comment) {
+            console.log(comment);
+            vm.sharedContent[article.id].share_comments[comment.id].editMode = true;
+            setTimeout(() => {
+                const hubShareEditCommentTextArea = document.getElementById('hubShareEditCommentTextArea' + comment.uuid);
+
+                hubShareEditCommentTextArea.value = comment.comment;
+                hubShareEditCommentTextArea.focus();
+            }, 100);
+
+        }
+
+        function positiveDeleteShareComment() {
+
+            $http.delete(`/share_comments/${vm.deleteCommentCandidate.uuid}`);
+            vm.sharedContent[vm.deleteCommentCandidateArticle.id].share_comments.splice(vm.deleteCommentCandidate.id, 1);
+            if (vm.sharedContent[vm.deleteCommentCandidateArticle.id].share_comments.length > 0) {
+                for (let i = 0; i < vm.sharedContent[vm.deleteCommentCandidateArticle.id].share_comments.length; i++) {
+                    vm.sharedContent[vm.deleteCommentCandidateArticle.id].share_comments[i].id = i;
+                }
+            }
+            vm.deleteShareCommentGuardrailState = 'deleteCommentGuardrailInactive' + vm.monthSelect;
+            vm.backgroundStatus = 'hubContainer' + vm.monthSelect;
+        }
+
+        function negativeDeleteShareComment() {
+            vm.deleteShareCommentGuardrailState = 'deleteCommentGuardrailInactive' + vm.monthSelect;
+            vm.backgroundStatus = 'hubContainer' + vm.monthSelect;
+        }
+
+        function removeShareCommentModal(article, comment) {
+            vm.deleteCommentCandidate = comment;
+            vm.deleteCommentCandidateArticle = article;
+            vm.deleteShareCommentGuardrailState = 'deleteCommentGuardrailActive' + vm.monthSelect;
+            vm.backgroundStatus = 'hubContainerBlur' + vm.monthSelect;
+        }
+
+        function hubCancelSharePatchLink(action) {
+            let table = '';
+            if (action === 'submit') {
+                let now = new Date();
+                if (vm.patchCandidate.blogOrPodcast === 'blog') {
+                    table = '/blog_shares/' + vm.patchCandidate.uuid;
+                } else {
+                    table = '/podcast_shares/' + vm.patchCandidate.uuid;
+                }
+                $http.patch(table, {
+                    comment: document.getElementById('hubShareSaveLinkUserEditNotes').value,
+                    share_status: document.querySelector('input[name="shareStatusPatch"]:checked').value,
+                    updated_at: now
+                });
+                vm.sharedContent[vm.patchCandidate.id].comments = document.getElementById('hubShareSaveLinkUserEditNotes').value;
+                vm.sharedContent[vm.patchCandidate.id].share_status = document.querySelector('input[name="shareStatusPatch"]:checked').value;
+                if (vm.sharedContent[vm.patchCandidate.id].share_cleanDate.indexOf('edited') === -1) {
+                    vm.sharedContent[vm.patchCandidate.id].share_cleanDate += ' (edited)';
+                }
+                console.log(vm.patchCandidate);
+            }
+            vm.editCommentModalState = 'hubEditMessageInactive' + vm.monthSelect;
+            vm.backgroundStatus = 'hubContainer' + vm.monthSelect;
+        }
+
+        function editShareComment(article) {
+            vm.patchCandidate = article;
+            vm.editCommentModalState = 'hubEditMessageActive' + vm.monthSelect;
+            vm.backgroundStatus = 'hubContainerBlur' + vm.monthSelect;
+            document.getElementById('hubShareSaveLinkUserEditNotes').value = article.comments;
+            document.getElementById('hubShareSaveLinkUserEditNotes').focus();
+        }
+
+        function positiveDeleteShare() {
+            let table = '';
+            if (vm.deleteCandidate.blogOrPodcast === 'blog') {
+                table = '/blog_shares/' + vm.deleteCandidate.uuid;
+            } else {
+                table = '/podcast_shares/' + vm.deleteCandidate.uuid;
+            }
+            $http.delete(table);
+            vm.sharedContent.splice(vm.deleteCandidate.id, 1);
+            for (let i = 0; i < vm.sharedContent.length; i++) {
+                vm.sharedContent[i].id = i;
+            }
+
+            vm.deleteShareGuardrailState = 'deleteGuardrailInactive' + vm.monthSelect;
+            vm.backgroundStatus = 'hubContainer' + vm.monthSelect;
+        }
+
+        function negativeDeleteShare() {
+            vm.deleteShareGuardrailState = 'deleteGuardrailInactive' + vm.monthSelect;
+            vm.backgroundStatus = 'hubContainer' + vm.monthSelect;
+        }
+
+        function removeShareModal(article) {
+            vm.deleteShareGuardrailState = 'deleteGuardrailActive' + vm.monthSelect;
+            vm.deleteCandidate = article;
+            vm.backgroundStatus = 'hubContainerBlur' + vm.monthSelect;
+        }
 
         function initializeSubscriptionCards() {
             vm.manageBlockToggleStatus = 'hubReaderDay1BlockInactive' + vm.monthSelect;
@@ -872,9 +303,11 @@
 
             navigateToDay(days[now.getDay()]);
         }
-        
+
         function navigateToDailies() {
-            $state.go('dailies', {userUuid: vm.user.uuid});
+            $state.go('dailies', {
+                userUuid: vm.user.uuid
+            });
         }
 
         function navigateToExternals() {
@@ -899,10 +332,18 @@
         function hubContactSubmit() {
             let hubContactSubjectInput = document.getElementById('hubContactSubjectInput');
             let hubContactMessageInput = document.getElementById('hubContactMessageInput');
+            $http.post('/contact_messages', {
+                    user_uuid: vm.user.uuid,
+                    subject: hubContactSubjectInput.value,
+                    message: hubContactMessageInput.value
+                })
+                .then(() => {
+                    hubContactSubjectInput.value = '';
+                    hubContactMessageInput.value = '';
+                    vm.formSubmittable = false;
+                });
 
-            hubContactSubjectInput.value = '';
-            hubContactMessageInput.value = '';
-            vm.formSubmittable = false;
+
         }
 
         function checkSubmittability() {
@@ -991,7 +432,16 @@
                         uuid: friend[0].uuid
                     }
                 };
-                vm.userMessages.push(message);
+                //                vm.userMessages.push(message);
+
+                let msg = message.message.replace(/(?:\r\n|\r|\n)/g, '<br>');
+                $http.post('/messages', {
+                    cleanDate: cleanDate,
+                    from: vm.user.uuid,
+                    message: msg,
+                    subject: message.subject,
+                    to: recipientUuid
+                });
                 cancelMessageSender();
             }
         }
@@ -1039,11 +489,13 @@
                 $http.get(`/unsplashcity/${friend[0].extended_profile.location.name}`)
                     .then(locateData => {
 
-                        let locate = locateData.data;
-                        let index = Math.floor(Math.random() * locate.results.length);
-                        vm.hubProfileDisplayerLocationImage = locate.results[index].urls.regular;
-                        vm.hubProfileDisplayerLocationAlt = locate.results[index].alt_description;
-                        vm.hubProfileDisplayerImageAttribution = locate.results[index].user.name;
+                        if (locateData.data.results.length > 0) {
+                            let locate = locateData.data;
+                            let index = Math.floor(Math.random() * locate.results.length);
+                            vm.hubProfileDisplayerLocationImage = locate.results[index].urls.regular;
+                            vm.hubProfileDisplayerLocationAlt = locate.results[index].alt_description;
+                            vm.hubProfileDisplayerImageAttribution = locate.results[index].user.name;
+                        }
                     });
 
             } else {
@@ -1077,6 +529,7 @@
             let hours = '';
             let minutes = '';
             let seconds = '';
+            let index;
             if (now.getHours() < 10) {
                 hours += '0';
             }
@@ -1092,6 +545,7 @@
             if (hubResponseText.value !== '') {
                 for (let i = 0; i < vm.userMessages.length; i++) {
                     if (vm.userMessages[i].uuid === msgUuid) {
+                        index = i;
                         vm.userMessages[i].replies.push({
                             cleanDate: now.getFullYear() + ' ' + months[now.getMonth()] + ' ' + now.getDate() + ' - ' + hours + minutes + seconds,
                             created_at: now,
@@ -1113,15 +567,35 @@
                             uuid: '8efa4c37-989b-449f-b7aa-f7591675fd12'
                         });
                         vm.userMessages[i].opened = false;
-                        hubResponseText.value = '';
                     }
                 }
+                $http.post('/message_responses', {
+                        message_uuid: msgUuid,
+                        cleanDate: now.getFullYear() + ' ' + months[now.getMonth()] + ' ' + now.getDate() + ' - ' + hours + minutes + seconds,
+                        from: vm.user.uuid,
+                        message: hubResponseText.value,
+                        subject: 'RE ' + vm.userMessages[index].subject,
+                        to: vm.userMessages[index].from.uuid
+                    })
+                    .then(() => {
+                        hubResponseText.value = '';
+                    });
+
             }
         }
 
         function toggleMessageOpen(uuid) {
+            let index;
+
+            function persistClosedMessage(location) {
+                $http.patch(`/messages/${vm.userMessages[location].uuid}`, {
+                    open: false
+                });
+            }
+
             for (let i = 0; i < vm.userMessages.length; i++) {
                 if (vm.userMessages[i].uuid === uuid) {
+                    index = i;
                     if (vm.userMessages[i].open) {
                         vm.userMessages[i].open = false;
                     } else {
@@ -1130,6 +604,15 @@
                     }
                 } else {
                     vm.userMessages[i].open = false;
+                }
+            }
+            $http.patch(`/messages/${vm.userMessages[index].uuid}`, {
+                open: vm.userMessages[index].open,
+                opened: vm.userMessages[index].opened
+            });
+            for (let i = 0; i < vm.userMessages.length; i++) {
+                if (i !== index) {
+                    persistClosedMessage(i);
                 }
             }
         }
@@ -1156,6 +639,9 @@
                 vm.navigationFriendsState = 'hubUserProfileNavigationInactive' + vm.monthSelect;
                 vm.navigationContactState = 'hubUserProfileNavigationInactive' + vm.monthSelect;
                 vm.navigationSliderState = 'hubUserProfileNavigationSlidePublicState' + vm.monthSelect;
+                $http.patch(`/userhub_state/${vm.userhubState.uuid}`, {
+                    profile_state: 'public'
+                });
             }
             if (state === 'private') {
                 vm.profileNavState = 'private';
@@ -1165,6 +651,9 @@
                 vm.navigationFriendsState = 'hubUserProfileNavigationInactive' + vm.monthSelect;
                 vm.navigationContactState = 'hubUserProfileNavigationInactive' + vm.monthSelect;
                 vm.navigationSliderState = 'hubUserProfileNavigationSlidePrivateState' + vm.monthSelect;
+                $http.patch(`/userhub_state/${vm.userhubState.uuid}`, {
+                    profile_state: 'private'
+                });
             }
             if (state === 'messages') {
                 vm.profileNavState = 'messages';
@@ -1174,6 +663,9 @@
                 vm.navigationFriendsState = 'hubUserProfileNavigationInactive' + vm.monthSelect;
                 vm.navigationContactState = 'hubUserProfileNavigationInactive' + vm.monthSelect;
                 vm.navigationSliderState = 'hubUserProfileNavigationSlideMessagesState' + vm.monthSelect;
+                $http.patch(`/userhub_state/${vm.userhubState.uuid}`, {
+                    profile_state: 'messages'
+                });
             }
             if (state === 'friends') {
                 vm.profileNavState = 'friends';
@@ -1183,6 +675,9 @@
                 vm.navigationFriendsState = 'hubUserProfileNavigationActive' + vm.monthSelect;
                 vm.navigationContactState = 'hubUserProfileNavigationInactive' + vm.monthSelect;
                 vm.navigationSliderState = 'hubUserProfileNavigationSlideFriendsState' + vm.monthSelect;
+                $http.patch(`/userhub_state/${vm.userhubState.uuid}`, {
+                    profile_state: 'friends'
+                });
             }
             if (state === 'contact') {
                 vm.profileNavState = 'contact';
@@ -1192,26 +687,61 @@
                 vm.navigationFriendsState = 'hubUserProfileNavigationInactive' + vm.monthSelect;
                 vm.navigationContactState = 'hubUserProfileNavigationActive' + vm.monthSelect;
                 vm.navigationSliderState = 'hubUserProfileNavigationSlideContactState' + vm.monthSelect;
+                $http.patch(`/userhub_state/${vm.userhubState.uuid}`, {
+                    profile_state: 'contact'
+                });
             }
         }
 
         function hubDisplayBlogData(blogIndex) {
             vm.currentBlogLogo = vm.userBlogs[parseInt(blogIndex)].logo;
-            vm.currentBlogName = vm.userBlogs[parseInt(blogIndex)].blog;
+            vm.currentBlogName = vm.userBlogs[parseInt(blogIndex)].blog_name;
             vm.currentBlogDescription = vm.userBlogs[parseInt(blogIndex)].description;
-            vm.currentBlogContributers = vm.userBlogs[parseInt(blogIndex)].contributers;
+            vm.currentBlogContributers = vm.userBlogs[parseInt(blogIndex)].contributors.contributors;
             vm.totalPosts = vm.userBlogs[parseInt(blogIndex)].total_posts;
             vm.lastPost = vm.userBlogs[parseInt(blogIndex)].last_post;
             vm.totalPageLoads = vm.userBlogs[parseInt(blogIndex)].page_loads;
         }
 
-        function hubCancelShareSaveLink() {
+        function hubCancelShareSaveLink(submitStatus) {
+            const commentContent = document.getElementById('hubShareSaveLinkUserNotes').value;
+            let shareSaveTable = '';
+            console.log(vm.activeArticle);
+            if (submitStatus === 'submit') {
+                let subObj = {
+                    user_uuid: vm.user.uuid,
+                    feed_uuid: vm.activeArticle.feed_uuid,
+                    comment: commentContent,
+                    title: vm.activeArticle.title,
+                    pubDate: vm.activeArticle.pubDate,
+                    link: vm.activeArticle.link,
+                    guid: vm.activeArticle.guid,
+                    author: vm.activeArticle.author,
+                    thumbnail: vm.activeArticle.thumbnail,
+                    description: vm.activeArticle.description,
+                    content: vm.activeArticle.content,
+                    enclosure: vm.activeArticle.enclosure,
+                    categories: vm.activeArticle.categories
+                };
+                if (vm.activeArticle.blogOrPodcast === 'blog') {
+                    shareSaveTable = '/blog_';
+                } else {
+                    shareSaveTable = '/podcast_'
+                }
+                if (vm.hubLinkShareOrSave === 'Share Link') {
+                    shareSaveTable += 'shares';
+                    subObj.share_status = document.querySelector('input[name="shareStatus"]:checked').value;
+                } else {
+                    shareSaveTable += 'saves';
+                }
+                $http.post(shareSaveTable, subObj);
+            }
             vm.backgroundStatus = 'hubContainer' + vm.monthSelect;
             vm.shareSaveLinkDisplay = 'hubShareShareSaveModalInactive' + vm.monthSelect;
             document.getElementById('hubShareSaveLinkUserNotes').value = '';
         }
 
-        function hubShareSave(status, image, sourceName, sourceTitle) {
+        function hubShareSave(status, image, sourceName, sourceTitle, article) {
             if (status === 'share') {
                 vm.hubLinkShareOrSave = 'Share Link';
             } else {
@@ -1222,6 +752,7 @@
             vm.feedIcon = image;
             vm.feedTitle = sourceName;
             vm.hubLinkShareSaveTitle = sourceTitle;
+            vm.activeArticle = article;
         }
 
         function toggleSubscriptionManagement() {
@@ -1234,6 +765,9 @@
                 vm.sharedBlockToggleStatus = 'hubReaderDay5BlockActive' + vm.monthSelect;
                 vm.savedBlockToggleStatus = 'hubReaderDay6BlockActive' + vm.monthSelect;
                 vm.miscBlockToggleStatus = 'hubReaderDay7BlockActive' + vm.monthSelect;
+                $http.patch(`/userhub_state/${vm.userhubState.uuid}`, {
+                    sub_management: true
+                });
             } else {
                 vm.subscriptionToggle = 'off';
                 vm.manageBlockToggleStatus = 'hubReaderDay1BlockInactive' + vm.monthSelect;
@@ -1243,6 +777,9 @@
                 vm.sharedBlockToggleStatus = 'hubReaderDay5BlockInactive' + vm.monthSelect;
                 vm.savedBlockToggleStatus = 'hubReaderDay6BlockInactive' + vm.monthSelect;
                 vm.miscBlockToggleStatus = 'hubReaderDay7BlockInactive' + vm.monthSelect;
+                $http.patch(`/userhub_state/${vm.userhubState.uuid}`, {
+                    sub_management: false
+                });
             }
         }
 
@@ -1294,6 +831,9 @@
                 } else {
                     vm.day7ToggleState = 'hubReaderDay7BlockActive' + vm.monthSelect;
                 }
+                $http.patch(`/userhub_state/${vm.userhubState.uuid}`, {
+                    sub_week: true
+                });
             } else {
                 vm.weekToggle = 'off';
                 if (day === 'Monday') {
@@ -1337,6 +877,9 @@
                 } else {
                     vm.day7ToggleState = 'hubReaderDay7BlockInactive' + vm.monthSelect;
                 }
+                $http.patch(`/userhub_state/${vm.userhubState.uuid}`, {
+                    sub_week: false
+                });
             }
         }
 
@@ -1385,7 +928,7 @@
             }, 1000);
         }
 
-        function hubShareSubmitComment(articleIndex) {
+        function hubShareSubmitComment(articleIndex, article) {
             let hubShareCommentTextArea = document.getElementById('hubShareCommentTextArea' + articleIndex);
 
             if (hubShareCommentTextArea.value !== '') {
@@ -1412,9 +955,24 @@
                     comment_reactions: [],
                     id: index,
                     name: vm.user.first_name + ' ' + vm.user.last_name,
-                    select_reactions: false
+                    select_reactions: false,
+                    user_uuid: vm.user.uuid,
+                    share_uuid: article.uuid,
+                    blogOrPodcast: article.blogOrPodcast
                 });
+
+                let subObj = {
+                    user_uuid: vm.user.uuid,
+                    share_uuid: article.uuid,
+                    blogOrPodcast: article.blogOrPodcast,
+                    comment: hubShareCommentTextArea.value
+                };
                 hubShareCommentTextArea.value = '';
+                $http.post('/share_comments', subObj)
+                    .then(posted => {
+                        console.log(posted);
+                        vm.sharedContent[parseInt(articleIndex)].share_comments[index].uuid = posted.data[0].uuid;
+                    });
             }
         }
 
@@ -1434,35 +992,64 @@
             vm.sharedContent[parseInt(articleIndex)].share_reactions[parseInt(reactionIndex)].hoverClass = 'hubShareReactionsHoverTextHover' + vm.monthSelect;
         }
 
-        function hubShareCommentAdditionalReaction(articleIndex, commentIndex, commentReactionIndex) {
+        function hubShareCommentAdditionalReaction(articleIndex, commentIndex, commentReactionIndex, article, comment, commentReaction) {
             vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[parseInt(commentReactionIndex)].from.push(vm.user.uuid);
             vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[parseInt(commentReactionIndex)].hover_text += ', ' + vm.user.first_name + ' ' + vm.user.last_name;
             vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[parseInt(commentReactionIndex)].tally += 1;
             vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[parseInt(commentReactionIndex)].user_contributed = true;
+
+            let subObj = {
+                user_uuid: vm.user.uuid,
+                reaction_uuid: commentReaction.reaction_uuid,
+                comment_uuid: comment.uuid,
+                blogOrPodcast: article.blogOrPodcast
+            };
+            $http.post('/share_comment_reactions', subObj);
         }
 
-        function hubShareAdditionalReaction(articleIndex, reactionIndex) {
+        function hubShareAdditionalReaction(articleIndex, reactionIndex, article, reaction) {
             vm.sharedContent[parseInt(articleIndex)].share_reactions[parseInt(reactionIndex)].from.push(vm.user.uuid);
             vm.sharedContent[parseInt(articleIndex)].share_reactions[parseInt(reactionIndex)].hover_text += ', ' + vm.user.first_name + ' ' + vm.user.last_name;
             vm.sharedContent[parseInt(articleIndex)].share_reactions[parseInt(reactionIndex)].tally += 1;
             vm.sharedContent[parseInt(articleIndex)].share_reactions[parseInt(reactionIndex)].user_contributed = true;
+            let subObj = {
+                user_uuid: vm.user.uuid,
+                reaction_uuid: reaction.reaction_uuid,
+                share_uuid: article.uuid,
+                blogOrPodcast: article.blogOrPodcast
+            };
+            $http.post('/share_reactions', subObj);
         }
 
-        function hubShareRemoveCommentReaction(articleIndex, commentIndex, commentReactionIndex) {
+        function hubShareRemoveCommentReaction(articleIndex, commentIndex, commentReactionIndex, article, comment, commentReaction) {
             if (vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[parseInt(commentReactionIndex)].tally === 1) {
                 vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions.splice(parseInt(commentReactionIndex), 1);
-                for (let i = 0; i < m.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions.length; i++) {
-                    m.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[i].id = i;
+                for (let i = 0; i < vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions.length; i++) {
+                    vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[i].id = i;
                 }
             } else {
                 vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[parseInt(commentReactionIndex)].from.splice(vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[parseInt(commentReactionIndex)].from.indexOf(vm.user.uuid), 1);
+
+                $http.post('/share_reactions/update_hovertext', {
+                        from: vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[parseInt(commentReactionIndex)].from
+                    })
+                    .then(updateTextData => {
+                        vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[parseInt(commentReactionIndex)].hover_text = updateTextData.data;
+                    });
                 vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[parseInt(commentReactionIndex)].tally -= 1;
                 vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[parseInt(commentReactionIndex)].user_contributed = false;
-                vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions[parseInt(commentReactionIndex)].hover_text.replace(vm.user.first_name + ' ' + vm.user.last_name, '');
+
             }
+            $http.get('/share_comment_reactions')
+                .then(allShareCommentReactions => {
+                    let targ = allShareCommentReactions.data.filter(entry => {
+                        return ((entry.user_uuid === vm.user.uuid) && (entry.reaction_uuid === commentReaction.reaction_uuid) && (entry.comment_uuid === comment.uuid));
+                    });
+                    $http.delete(`/share_comment_reactions/${targ[0].uuid}`);
+                });
         }
 
-        function hubShareRemoveReaction(articleIndex, path, value) {
+        function hubShareRemoveReaction(articleIndex, path, value, article, reaction) {
             let index = null;
             for (let i = 0; i < vm.sharedContent[parseInt(articleIndex)].share_reactions.length; i++) {
                 if ((vm.sharedContent[parseInt(articleIndex)].share_reactions[i].link === path) && (vm.sharedContent[parseInt(articleIndex)].share_reactions[i].reaction === value)) {
@@ -1476,20 +1063,29 @@
                         vm.sharedContent[parseInt(articleIndex)].share_reactions[j].id = j;
                     }
                 } else {
-                    let nameString = vm.user.first_name + ' ' + vm.user.last_name;
                     vm.sharedContent[parseInt(articleIndex)].share_reactions[index].from.splice(vm.sharedContent[parseInt(articleIndex)].share_reactions[index].from.indexOf(vm.user.uuid), 1);
-                    if (vm.sharedContent[parseInt(articleIndex)].share_reactions[index].hover_text.indexOf(nameString) === 0) {
-                        vm.sharedContent[parseInt(articleIndex)].share_reactions[index].hover_text.replace(nameString, '');
-                    } else {
-                        vm.sharedContent[parseInt(articleIndex)].share_reactions[index].hover_text.replace(', ' + nameString, '');
-                    }
+
+                    $http.post('/share_reactions/update_hovertext', {
+                            from: vm.sharedContent[parseInt(articleIndex)].share_reactions[index].from
+                        })
+                        .then(updateTextData => {
+                            vm.sharedContent[parseInt(articleIndex)].share_reactions[index].hover_text = updateTextData.data;
+                        });
+
                     vm.sharedContent[parseInt(articleIndex)].share_reactions[index].tally -= 1;
                     vm.sharedContent[parseInt(articleIndex)].share_reactions[index].user_contributed = false;
                 }
             }
+            $http.get('/share_reactions')
+                .then(allReactionsData => {
+                    let targ = allReactionsData.data.filter(react => {
+                        return ((react.user_uuid === vm.user.uuid) && (react.reaction_uuid === reaction.reaction_uuid) && (react.share_uuid === article.uuid));
+                    });
+                    $http.delete(`/share_reactions/${targ[0].uuid}`);
+                });
         }
 
-        function shareAddCommentEmoji(articleIndex, commentIndex, path, value) {
+        function shareAddCommentEmoji(articleIndex, commentIndex, path, value, article, comment, emoji) {
             let existing = false;
 
             for (let i = 0; i < vm.sharedContent[parseInt(articleIndex)].share_comments[parseInt(commentIndex)].comment_reactions.length; i++) {
@@ -1519,10 +1115,18 @@
                 });
             }
             toggleCommentEmojiSelector(articleIndex, commentIndex);
+            let subObj = {
+                user_uuid: vm.user.uuid,
+                reaction_uuid: emoji.uuid,
+                comment_uuid: comment.uuid,
+                blogOrPodcast: article.blogOrPodcast
+            };
+            $http.post('/share_comment_reactions', subObj);
         }
 
-        function shareAddEmoji(articleIndex, path, value) {
+        function shareAddEmoji(articleIndex, path, value, article, emojiUuid) {
             let existing = false;
+            console.log(article);
 
             for (let i = 0; i < vm.sharedContent[parseInt(articleIndex)].share_reactions.length; i++) {
                 if ((vm.sharedContent[parseInt(articleIndex)].share_reactions[i].link === path) && (vm.sharedContent[parseInt(articleIndex)].share_reactions[i].reaction === value)) {
@@ -1551,6 +1155,13 @@
                 });
             }
             toggleEmojiSelector(articleIndex);
+            let subObj = {
+                user_uuid: vm.user.uuid,
+                reaction_uuid: emojiUuid,
+                share_uuid: article.uuid,
+                blogOrPodcast: article.blogOrPodcast
+            };
+            $http.post('/share_reactions', subObj);
         }
 
         function toggleEmojiSelector(articleIndex) {
@@ -1569,6 +1180,10 @@
                     vm.hubBloggerTabState = 'hubTabInactive' + vm.monthSelect;
                     vm.hubProfileTabState = 'hubTabInactive' + vm.monthSelect;
                     vm.hubTabStatus = 'hubShare' + vm.monthSelect;
+                    vm.userhubState.tabs = 'public';
+                    $http.patch(`/userhub_state/${vm.userhubState.uuid}`, {
+                        tabs: 'public'
+                    });
                 }
             }
             if (state === 'reader') {
@@ -1579,6 +1194,10 @@
                     vm.hubProfileTabState = 'hubTabInactive' + vm.monthSelect;
                     vm.hubTabStatus = 'hubReader' + vm.monthSelect;
                     setTodayString();
+                    vm.userhubState.tabs = 'subscriptions';
+                    $http.patch(`/userhub_state/${vm.userhubState.uuid}`, {
+                        tabs: 'subscriptions'
+                    });
                 }
             }
             if (state === 'blogs') {
@@ -1588,6 +1207,10 @@
                     vm.hubBloggerTabState = 'hubTabActive' + vm.monthSelect;
                     vm.hubProfileTabState = 'hubTabInactive' + vm.monthSelect;
                     vm.hubTabStatus = 'hubBlogs' + vm.monthSelect;
+                    vm.userhubState.tabs = 'blogs';
+                    $http.patch(`/userhub_state/${vm.userhubState.uuid}`, {
+                        tabs: 'blogs'
+                    });
                 }
             }
             if (state === 'profile') {
@@ -1597,6 +1220,10 @@
                     vm.hubBloggerTabState = 'hubTabInactive' + vm.monthSelect;
                     vm.hubProfileTabState = 'hubTabActive' + vm.monthSelect;
                     vm.hubTabStatus = 'hubProfile' + vm.monthSelect;
+                    vm.userhubState.tabs = 'profile';
+                    $http.patch(`/userhub_state/${vm.userhubState.uuid}`, {
+                        tabs: 'profile'
+                    });
                 }
             }
         }
@@ -1669,6 +1296,7 @@
                     document.cookie = vm.user.security.key + "=" + vm.user.security.value;
                     document.cookie = "habitualOffender=" + vm.user.uuid;
                     document.cookie = "habitualRelease=" + vm.user.security.expire;
+                    populateFriends();
                 });
         }
 
@@ -1759,10 +1387,183 @@
 
         }
 
+        function populateEmojis() {
+            $http.get('/emojis')
+                .then(emojisData => {
+                    vm.emojis = emojisData.data;
+                });
+        }
+
+        function assembleShareFeed(uuid) {
+            const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+            $http.get(`/assemble_shared_content/${uuid}`)
+                .then(shareFeedData => {
+                    let shareFeed = shareFeedData.data;
+                    let createDate, updateDate;
+
+                    for (let i = 0; i < shareFeed.length; i++) {
+                        createDate = new Date(shareFeed[i].pubDate);
+                        updateDate = new Date(shareFeed[i].updated_at);
+                        shareFeed[i].cleanDate = createDate.getFullYear() + ' ' + months[createDate.getMonth()] + ' ' + createDate.getDate() + ' - ' + createDate.toLocaleTimeString('en-GB');
+                        createDate = new Date(shareFeed[i].created_at);
+                        shareFeed[i].share_cleanDate = createDate.getFullYear() + ' ' + months[createDate.getMonth()] + ' ' + createDate.getDate() + ' - ' + createDate.toLocaleTimeString('en-GB');
+                        if (updateDate.getTime() > createDate.getTime()) {
+                            shareFeed[i].share_cleanDate += ' (edited)';
+                        }
+
+                        if (shareFeed[i].share_reactions.length > 0) {
+                            for (let j = 0; j < shareFeed[i].share_reactions.length; j++) {
+                                shareFeed[i].share_reactions[j].hoverClass = 'hubShareReactionsHoverText' + vm.monthSelect;
+                            }
+                        }
+                        if (shareFeed[i].share_comments.length > 0) {
+                            for (let k = 0; k < shareFeed[i].share_comments.length; k++) {
+                                createDate = new Date(shareFeed[i].share_comments[k].created_at);
+                                updateDate = new Date(shareFeed[i].share_comments[k].updated_at);
+                                shareFeed[i].share_comments[k].cleanDate = createDate.getFullYear() + ' ' + months[createDate.getMonth()] + ' ' + createDate.getDate() + ' - ' + createDate.toLocaleTimeString('en-GB');
+                                if (updateDate.getTime() > createDate.getTime()) {
+                                    shareFeed[i].share_comments[k].cleanDate += ' (edited)';
+                                }
+                                if (shareFeed[i].share_comments[k].comment_reactions.length > 0) {
+                                    for (let l = 0; l < shareFeed[i].share_comments[k].comment_reactions.length; l++) {
+                                        shareFeed[i].share_comments[k].comment_reactions[l].hoverClass = 'hubShareReactionsHoverText' + vm.monthSelect;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    vm.sharedContent = shareFeed;
+                });
+        }
+
+        function setUserBlogs(userId) {
+            $http.get(`/user_blogs/byuseruuid/${userId}`)
+                .then(userBlogsData => {
+                    vm.userBlogs = userBlogsData.data.sort((a, b) => {
+                        if (a.blog_name.toLowerCase() < b.blog_name.toLowerCase()) {
+                            return -1;
+                        } else if (a.blog_name.toLowerCase() > b.blog_name.toLowerCase()) {
+                            return 1;
+                        } else {
+                            return 0;
+                        }
+                    });
+                    for (let i = 0; i < vm.userBlogs.length; i++) {
+                        vm.userBlogs[i].id = i;
+                    }
+                    vm.currentBlogLogo = vm.userBlogs[0].logo;
+                    vm.currentBlogName = vm.userBlogs[0].blog_name;
+                    vm.currentBlogDescription = vm.userBlogs[0].description;
+                    vm.currentBlogContributers = vm.userBlogs[0].contributors.contributors;
+                    vm.totalPosts = vm.userBlogs[0].total_posts;
+                    vm.lastPost = vm.userBlogs[0].last_post;
+                    vm.totalPageLoads = vm.userBlogs[0].page_loads;
+                });
+        }
+
+        function setUserExtendedProfile(userId) {
+            $http.get(`/user_expanded_profiles/byuseruuid/${userId}`)
+                .then(userExpandedData => {
+                    vm.userExtendedProfile = userExpandedData.data;
+                    obtainUserLocationImage();
+                });
+        }
+
+        function populateFriends() {
+            vm.friendsList = [];
+            vm.filteredFriendsList = vm.friendsList;
+
+            function populate(index) {
+                $http.get(`/user_expanded_profiles/byuseruuid/${vm.user.associates.friends[index]}`)
+                    .then(friendData => {
+                        let friend = friendData.data;
+                        vm.friendsList[index] = {};
+                        $http.get(`/users/${vm.user.associates.friends[index]}`)
+                            .then(friendBasicData => {
+                                let friendBasic = friendBasicData.data;
+                                vm.friendsList[index].avatar = friendBasic.avatar_path;
+                                vm.friendsList[index].extended_profile = friend;
+                                vm.friendsList[index].blog_posts = friend.blog_posts;
+                                vm.friendsList[index].first_name = friendBasic.first_name;
+                                vm.friendsList[index].friends = friend.friends;
+                                vm.friendsList[index].last_name = friendBasic.last_name;
+                                vm.friendsList[index].name = friendBasic.first_name + ' ' + friendBasic.last_name;
+                                vm.friendsList[index].shared_items = friend.shared_items;
+                                vm.friendsList[index].uuid = vm.user.associates.friends[index];
+                            });
+                    });
+            }
+
+            if (!vm.user.associates.friends) {
+                return;
+            }
+
+            for (let i = 0; i < vm.user.associates.friends.length; i++) {
+                populate(i)
+            }
+
+        }
+
+        function setUserMessages(uuid) {
+            $http.get(`/messages/assemble/${uuid}`)
+                .then(userMessagesData => {
+                    vm.userMessages = userMessagesData.data;
+                });
+        }
+
+        function setUserHubState(uuid) {
+            $http.get(`/userhub_state/byuseruuid/${uuid}`)
+                .then(userHubStateData => {
+                    vm.userhubState = userHubStateData.data;
+                    switch (vm.userhubState.tabs) {
+                        case ('shared'):
+                            updateHubTab('shared');
+                            break;
+                        case ('subscriptions'):
+                            updateHubTab('reader');
+                            break;
+                        case ('blogs'):
+                            updateHubTab('blogs');
+                            break;
+                        case ('profile'):
+                            updateHubTab('profile');
+                            break;
+                        default:
+                            console.log('ERROR: Tab State Invalid in Userhub State');
+                    }
+                    if (vm.userhubState.sub_week) {
+                        hubWeekToggle();
+                    }
+                    if (vm.userhubState.sub_management) {
+                        toggleSubscriptionManagement();
+                    }
+                    switch (vm.userhubState.profile_state) {
+                        case ('public'):
+                            navigateProfileViews('public');
+                            break;
+                        case ('private'):
+                            navigateProfileViews('private');
+                            break;
+                        case ('messages'):
+                            navigateProfileViews('messages');
+                            break;
+                        case ('friends'):
+                            navigateProfileViews('friends');
+                            break;
+                        case ('contact'):
+                            navigateProfileViews('contact');
+                            break;
+                        default:
+                            console.log('ERROR: Profile State Invalid in Public tab of Userhub State');
+                    }
+                });
+
+        }
+
 
         function onInit() {
             console.log("User Hub is lit");
-            console.log($stateParams.id);
             setUserIPAddress();
 
             switch (vm.monthSelect) {
@@ -1781,10 +1582,14 @@
 
             setDaysRelativeToToday();
             setFooterMessage();
-            obtainUserLocationImage();
             initializeDayCards();
             initializeSubscriptionCards();
-
+            populateEmojis();
+            assembleShareFeed($stateParams.id);
+            setUserBlogs($stateParams.id);
+            setUserExtendedProfile($stateParams.id);
+            setUserMessages($stateParams.id);
+            setUserHubState($stateParams.id);
         }
 
     }

@@ -24,8 +24,8 @@ exports.seed = function(knex, Promise) {
             "type": "audio/mpeg"
           },
           categories: {},
-          created_at: new Date('2019-06-01 17:21:00.000 UTC'),
-          updated_at: new Date('2019-06-01 17:21:00.000 UTC')
+          created_at: new Date('2019-08-01 17:21:00.000 UTC'),
+          updated_at: new Date('2019-08-01 17:21:00.000 UTC')
         },
         {
           uuid: '2ef33505-838a-459d-bd66-20c50d923a0e',
@@ -52,8 +52,8 @@ exports.seed = function(knex, Promise) {
             }
           },
           categories: {},
-          created_at: new Date('2019-06-01 17:21:00.000 UTC'),
-          updated_at: new Date('2019-06-01 17:21:00.000 UTC')
+          created_at: new Date('2019-05-29 17:21:00.000 UTC'),
+          updated_at: new Date('2019-05-29 17:21:00.000 UTC')
         },
         {
           uuid: '6d93facf-dac3-40af-9e43-86eab15e0382',
@@ -80,8 +80,8 @@ exports.seed = function(knex, Promise) {
             }
           },
           categories: {},
-          created_at: new Date('2019-06-01 17:21:00.000 UTC'),
-          updated_at: new Date('2019-06-01 17:21:00.000 UTC')
+          created_at: new Date('2019-09-01 17:21:00.000 UTC'),
+          updated_at: new Date('2019-09-01 17:21:00.000 UTC')
         }
       ]);
     });
