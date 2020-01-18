@@ -2,6 +2,7 @@
 
 const express = require('express');
 const knex = require('../../knex');
+const uuid4 = require('uuid4');
 
 const router = express.Router();
 
@@ -31,6 +32,51 @@ router.get('/:uuid', (req, res, next) => {
         .catch((err) => {
             next(err);
         });
+});
+
+router.post('/', (req, res, next) => {
+    const uuid = uuid4();
+    knex('users')
+        .select()
+        .where('uuid', req.body.from)
+        .first()
+        .then(fromUser => {
+            const from = {
+                avatar: fromUser.avatar_path,
+                name: fromUser.first_name + ' ' + fromUser.last_name,
+                uuid: fromUser.uuid
+            };
+            knex('users')
+                .select()
+                .where('uuid', req.body.to)
+                .first()
+                .then(toUser => {
+                    const to = {
+                        avatar: toUser.avatar_path,
+                        name: toUser.first_name + ' ' + toUser.last_name,
+                        uuid: toUser.uuid
+                    };
+                    knex('message_responses')
+                        .insert({
+                            uuid: uuid,
+                            message_uuid: req.body.message_uuid,
+                            cleanDate: req.body.cleanDate,
+                            from: from,
+                            message: req.body.message,
+                            open: false,
+                            opened: false,
+                            subject: req.body.subject,
+                            to: to
+                        }, '*')
+                        .then((result) => {
+                            res.status(200).send(result);
+                        })
+                        .catch((err) => {
+                            next(err);
+                        });
+                });
+        });
+
 });
 
 router.patch('/:uuid', (req, res, next) => {

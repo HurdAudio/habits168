@@ -495,6 +495,7 @@
             let hours = '';
             let minutes = '';
             let seconds = '';
+            let index;
             if (now.getHours() < 10) {
                 hours += '0';
             }
@@ -510,6 +511,7 @@
             if (hubResponseText.value !== '') {
                 for (let i = 0; i < vm.userMessages.length; i++) {
                     if (vm.userMessages[i].uuid === msgUuid) {
+                        index = i;
                         vm.userMessages[i].replies.push({
                             cleanDate: now.getFullYear() + ' ' + months[now.getMonth()] + ' ' + now.getDate() + ' - ' + hours + minutes + seconds,
                             created_at: now,
@@ -531,9 +533,20 @@
                             uuid: '8efa4c37-989b-449f-b7aa-f7591675fd12'
                         });
                         vm.userMessages[i].opened = false;
-                        hubResponseText.value = '';
                     }
                 }
+                $http.post('/message_responses', {
+                   message_uuid: msgUuid,
+                    cleanDate: now.getFullYear() + ' ' + months[now.getMonth()] + ' ' + now.getDate() + ' - ' + hours + minutes + seconds,
+                    from: vm.user.uuid,
+                    message: hubResponseText.value,
+                    subject: 'RE ' + vm.userMessages[index].subject,
+                    to: vm.userMessages[index].from.uuid
+                })
+                .then(() => {
+                    hubResponseText.value = '';
+                });
+                
             }
         }
 
