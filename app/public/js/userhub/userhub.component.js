@@ -100,7 +100,7 @@
         vm.hubShareSubmitCommentEdit = hubShareSubmitCommentEdit;
         vm.removeMessage = removeMessage;
         vm.removeMessageReply = removeMessageReply;
-        
+
         function removeMessageReply(message, response) {
             $http.delete(`/message_responses/${response.uuid}`);
             for (let i = 0; i < vm.userMessages.length; i++) {
@@ -114,7 +114,7 @@
                 }
             }
         }
-        
+
         function removeMessage(message) {
             $http.delete(`/messages/${message.uuid}`);
             for (let i = 0; i < vm.userMessages.length; i++) {
@@ -332,10 +332,18 @@
         function hubContactSubmit() {
             let hubContactSubjectInput = document.getElementById('hubContactSubjectInput');
             let hubContactMessageInput = document.getElementById('hubContactMessageInput');
+            $http.post('/contact_messages', {
+                    user_uuid: vm.user.uuid,
+                    subject: hubContactSubjectInput.value,
+                    message: hubContactMessageInput.value
+                })
+                .then(() => {
+                    hubContactSubjectInput.value = '';
+                    hubContactMessageInput.value = '';
+                    vm.formSubmittable = false;
+                });
 
-            hubContactSubjectInput.value = '';
-            hubContactMessageInput.value = '';
-            vm.formSubmittable = false;
+
         }
 
         function checkSubmittability() {
@@ -424,8 +432,8 @@
                         uuid: friend[0].uuid
                     }
                 };
-//                vm.userMessages.push(message);
-                
+                //                vm.userMessages.push(message);
+
                 let msg = message.message.replace(/(?:\r\n|\r|\n)/g, '<br>');
                 $http.post('/messages', {
                     cleanDate: cleanDate,
@@ -562,29 +570,29 @@
                     }
                 }
                 $http.post('/message_responses', {
-                   message_uuid: msgUuid,
-                    cleanDate: now.getFullYear() + ' ' + months[now.getMonth()] + ' ' + now.getDate() + ' - ' + hours + minutes + seconds,
-                    from: vm.user.uuid,
-                    message: hubResponseText.value,
-                    subject: 'RE ' + vm.userMessages[index].subject,
-                    to: vm.userMessages[index].from.uuid
-                })
-                .then(() => {
-                    hubResponseText.value = '';
-                });
-                
+                        message_uuid: msgUuid,
+                        cleanDate: now.getFullYear() + ' ' + months[now.getMonth()] + ' ' + now.getDate() + ' - ' + hours + minutes + seconds,
+                        from: vm.user.uuid,
+                        message: hubResponseText.value,
+                        subject: 'RE ' + vm.userMessages[index].subject,
+                        to: vm.userMessages[index].from.uuid
+                    })
+                    .then(() => {
+                        hubResponseText.value = '';
+                    });
+
             }
         }
 
         function toggleMessageOpen(uuid) {
             let index;
-            
+
             function persistClosedMessage(location) {
                 $http.patch(`/messages/${vm.userMessages[location].uuid}`, {
                     open: false
                 });
             }
-            
+
             for (let i = 0; i < vm.userMessages.length; i++) {
                 if (vm.userMessages[i].uuid === uuid) {
                     index = i;
@@ -1457,8 +1465,8 @@
         function setUserMessages(uuid) {
             $http.get(`/messages/assemble/${uuid}`)
                 .then(userMessagesData => {
-                vm.userMessages = userMessagesData.data;
-            });
+                    vm.userMessages = userMessagesData.data;
+                });
         }
 
 
