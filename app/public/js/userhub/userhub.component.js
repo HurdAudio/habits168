@@ -639,6 +639,9 @@
                 vm.navigationFriendsState = 'hubUserProfileNavigationInactive' + vm.monthSelect;
                 vm.navigationContactState = 'hubUserProfileNavigationInactive' + vm.monthSelect;
                 vm.navigationSliderState = 'hubUserProfileNavigationSlidePublicState' + vm.monthSelect;
+                $http.patch(`/userhub_state/${vm.userhubState.uuid}`, {
+                    profile_state: 'public'
+                });
             }
             if (state === 'private') {
                 vm.profileNavState = 'private';
@@ -648,6 +651,9 @@
                 vm.navigationFriendsState = 'hubUserProfileNavigationInactive' + vm.monthSelect;
                 vm.navigationContactState = 'hubUserProfileNavigationInactive' + vm.monthSelect;
                 vm.navigationSliderState = 'hubUserProfileNavigationSlidePrivateState' + vm.monthSelect;
+                $http.patch(`/userhub_state/${vm.userhubState.uuid}`, {
+                    profile_state: 'private'
+                });
             }
             if (state === 'messages') {
                 vm.profileNavState = 'messages';
@@ -657,6 +663,9 @@
                 vm.navigationFriendsState = 'hubUserProfileNavigationInactive' + vm.monthSelect;
                 vm.navigationContactState = 'hubUserProfileNavigationInactive' + vm.monthSelect;
                 vm.navigationSliderState = 'hubUserProfileNavigationSlideMessagesState' + vm.monthSelect;
+                $http.patch(`/userhub_state/${vm.userhubState.uuid}`, {
+                    profile_state: 'messages'
+                });
             }
             if (state === 'friends') {
                 vm.profileNavState = 'friends';
@@ -666,6 +675,9 @@
                 vm.navigationFriendsState = 'hubUserProfileNavigationActive' + vm.monthSelect;
                 vm.navigationContactState = 'hubUserProfileNavigationInactive' + vm.monthSelect;
                 vm.navigationSliderState = 'hubUserProfileNavigationSlideFriendsState' + vm.monthSelect;
+                $http.patch(`/userhub_state/${vm.userhubState.uuid}`, {
+                    profile_state: 'friends'
+                });
             }
             if (state === 'contact') {
                 vm.profileNavState = 'contact';
@@ -675,6 +687,9 @@
                 vm.navigationFriendsState = 'hubUserProfileNavigationInactive' + vm.monthSelect;
                 vm.navigationContactState = 'hubUserProfileNavigationActive' + vm.monthSelect;
                 vm.navigationSliderState = 'hubUserProfileNavigationSlideContactState' + vm.monthSelect;
+                $http.patch(`/userhub_state/${vm.userhubState.uuid}`, {
+                    profile_state: 'contact'
+                });
             }
         }
 
@@ -750,6 +765,9 @@
                 vm.sharedBlockToggleStatus = 'hubReaderDay5BlockActive' + vm.monthSelect;
                 vm.savedBlockToggleStatus = 'hubReaderDay6BlockActive' + vm.monthSelect;
                 vm.miscBlockToggleStatus = 'hubReaderDay7BlockActive' + vm.monthSelect;
+                $http.patch(`/userhub_state/${vm.userhubState.uuid}`, {
+                    sub_management: true
+                });
             } else {
                 vm.subscriptionToggle = 'off';
                 vm.manageBlockToggleStatus = 'hubReaderDay1BlockInactive' + vm.monthSelect;
@@ -759,6 +777,9 @@
                 vm.sharedBlockToggleStatus = 'hubReaderDay5BlockInactive' + vm.monthSelect;
                 vm.savedBlockToggleStatus = 'hubReaderDay6BlockInactive' + vm.monthSelect;
                 vm.miscBlockToggleStatus = 'hubReaderDay7BlockInactive' + vm.monthSelect;
+                $http.patch(`/userhub_state/${vm.userhubState.uuid}`, {
+                    sub_management: false
+                });
             }
         }
 
@@ -810,6 +831,9 @@
                 } else {
                     vm.day7ToggleState = 'hubReaderDay7BlockActive' + vm.monthSelect;
                 }
+                $http.patch(`/userhub_state/${vm.userhubState.uuid}`, {
+                    sub_week: true
+                });
             } else {
                 vm.weekToggle = 'off';
                 if (day === 'Monday') {
@@ -853,6 +877,9 @@
                 } else {
                     vm.day7ToggleState = 'hubReaderDay7BlockInactive' + vm.monthSelect;
                 }
+                $http.patch(`/userhub_state/${vm.userhubState.uuid}`, {
+                    sub_week: false
+                });
             }
         }
 
@@ -1153,6 +1180,10 @@
                     vm.hubBloggerTabState = 'hubTabInactive' + vm.monthSelect;
                     vm.hubProfileTabState = 'hubTabInactive' + vm.monthSelect;
                     vm.hubTabStatus = 'hubShare' + vm.monthSelect;
+                    vm.userhubState.tabs = 'public';
+                    $http.patch(`/userhub_state/${vm.userhubState.uuid}`, {
+                        tabs: 'public'
+                    });
                 }
             }
             if (state === 'reader') {
@@ -1163,6 +1194,10 @@
                     vm.hubProfileTabState = 'hubTabInactive' + vm.monthSelect;
                     vm.hubTabStatus = 'hubReader' + vm.monthSelect;
                     setTodayString();
+                    vm.userhubState.tabs = 'subscriptions';
+                    $http.patch(`/userhub_state/${vm.userhubState.uuid}`, {
+                        tabs: 'subscriptions'
+                    });
                 }
             }
             if (state === 'blogs') {
@@ -1172,6 +1207,10 @@
                     vm.hubBloggerTabState = 'hubTabActive' + vm.monthSelect;
                     vm.hubProfileTabState = 'hubTabInactive' + vm.monthSelect;
                     vm.hubTabStatus = 'hubBlogs' + vm.monthSelect;
+                    vm.userhubState.tabs = 'blogs';
+                    $http.patch(`/userhub_state/${vm.userhubState.uuid}`, {
+                        tabs: 'blogs'
+                    });
                 }
             }
             if (state === 'profile') {
@@ -1181,6 +1220,10 @@
                     vm.hubBloggerTabState = 'hubTabInactive' + vm.monthSelect;
                     vm.hubProfileTabState = 'hubTabActive' + vm.monthSelect;
                     vm.hubTabStatus = 'hubProfile' + vm.monthSelect;
+                    vm.userhubState.tabs = 'profile';
+                    $http.patch(`/userhub_state/${vm.userhubState.uuid}`, {
+                        tabs: 'profile'
+                    });
                 }
             }
         }
@@ -1469,6 +1512,55 @@
                 });
         }
 
+        function setUserHubState(uuid) {
+            $http.get(`/userhub_state/byuseruuid/${uuid}`)
+                .then(userHubStateData => {
+                    vm.userhubState = userHubStateData.data;
+                    switch (vm.userhubState.tabs) {
+                        case ('shared'):
+                            updateHubTab('shared');
+                            break;
+                        case ('subscriptions'):
+                            updateHubTab('reader');
+                            break;
+                        case ('blogs'):
+                            updateHubTab('blogs');
+                            break;
+                        case ('profile'):
+                            updateHubTab('profile');
+                            break;
+                        default:
+                            console.log('ERROR: Tab State Invalid in Userhub State');
+                    }
+                    if (vm.userhubState.sub_week) {
+                        hubWeekToggle();
+                    }
+                    if (vm.userhubState.sub_management) {
+                        toggleSubscriptionManagement();
+                    }
+                    switch (vm.userhubState.profile_state) {
+                        case ('public'):
+                            navigateProfileViews('public');
+                            break;
+                        case ('private'):
+                            navigateProfileViews('private');
+                            break;
+                        case ('messages'):
+                            navigateProfileViews('messages');
+                            break;
+                        case ('friends'):
+                            navigateProfileViews('friends');
+                            break;
+                        case ('contact'):
+                            navigateProfileViews('contact');
+                            break;
+                        default:
+                            console.log('ERROR: Profile State Invalid in Public tab of Userhub State');
+                    }
+                });
+
+        }
+
 
         function onInit() {
             console.log("User Hub is lit");
@@ -1497,6 +1589,7 @@
             setUserBlogs($stateParams.id);
             setUserExtendedProfile($stateParams.id);
             setUserMessages($stateParams.id);
+            setUserHubState($stateParams.id);
         }
 
     }

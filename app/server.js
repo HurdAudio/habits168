@@ -30,6 +30,7 @@ const user_expanded_profiles = require('./routes/user_expanded_profiles.js');
 const messages = require('./routes/messages.js');
 const message_responses = require('./routes/message_responses.js');
 const contact_messages = require('./routes/contact_messages.js');
+const userhub_state = require('./routes/userhub_state.js');
 // const financial_modules = require('./routes/financial_modules.js');
 
 const port = process.env.PORT || 3037;
@@ -60,6 +61,7 @@ app.use('/user_expanded_profiles', user_expanded_profiles);
 app.use('/messages', messages);
 app.use('/message_responses', message_responses);
 app.use('/contact_messages', contact_messages);
+app.use('/userhub_state', userhub_state);
 
 // app.get('/reuters_headlines/:country', (req, res, next) =>{
 //   let newUrl = 'https://newsapi.org/v2/top-headlines?country=';
