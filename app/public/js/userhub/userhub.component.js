@@ -60,71 +60,6 @@
         vm.navigationSliderState = 'hubUserProfileNavigationSlidePublicState' + vm.monthSelect;
         vm.navigateProfileViews = navigateProfileViews;
         vm.profileNavState = 'public';
-        vm.userMessages = [
-            {
-                cleanDate: '2019 August 14 - 20:14:55',
-                created_at: new Date('2019-08-14 20:14:55'),
-                from: {
-                    avatar: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/digitalNomadAvatar.jpg',
-                    name: 'Eva Codes',
-                    uuid: '03ad421c-aad5-47b1-88ab-d7822f6c3eb7'
-                },
-                message: '<p>You might want to hurry out to the Grower\'s Market for the current bumper crop of heirlooms.<br><br> They\'re damn impressive.</p>',
-                open: false,
-                opened: false,
-                replies: [],
-                subject: 'Heirloom Tomatoes',
-                to: {
-                    avatar: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/lovecraftAvatar.jpg',
-                    name: 'Devin Hurd',
-                    uuid: '17917373-ee9c-46aa-a38a-cacc475abee7'
-                },
-                updated_at: new Date('2019-08-14 20:14:55'),
-                uuid: '794f37fb-57fb-4e76-a3f4-cb6a72ec68cf'
-        },
-            {
-                cleanDate: '2019 August 14 - 19:59:00',
-                created_at: new Date('2019-08-14 19:59:00'),
-                from: {
-                    avatar: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/homerAvatar.jpg',
-                    name: 'DJ Ipsum',
-                    uuid: '96770ff7-afa0-4c31-970e-905e8f28ccd0'
-                },
-                message: '<p>When are you going to hook me up with all that sweet, sweet Sun Ra? I know you\'re sitting on a trove of Saturnian goodness.</p>',
-                open: false,
-                opened: true,
-                replies: [
-                    {
-                        cleanDate: '2019 August 14 - 20:06:33',
-                        created_at: new Date('2019-08-04 20:06:33'),
-                        from: {
-                            avatar: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/lovecraftAvatar.jpg',
-                            name: 'Devin Hurd',
-                            uuid: '17917373-ee9c-46aa-a38a-cacc475abee7'
-                        },
-                        message: 'You aren\'t worthy of the Sun Ra, my friend.',
-                        open: false,
-                        opened: false,
-                        subject: 'RE: Sun Ra on vinyl',
-                        to: {
-                            avatar: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/homerAvatar.jpg',
-                            name: 'DJ Ipsum',
-                            uuid: '96770ff7-afa0-4c31-970e-905e8f28ccd0'
-                        },
-                        updated_at: new Date('2019-08-04 20:06:33'),
-                        uuid: '8efa4c37-989b-449f-b7aa-f7591675fd12'
-            }
-          ],
-                subject: 'Sun Ra on vinyl',
-                to: {
-                    avatar: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/lovecraftAvatar.jpg',
-                    name: 'Devin Hurd',
-                    uuid: '17917373-ee9c-46aa-a38a-cacc475abee7'
-                },
-                updated_at: new Date('2019-08-14 19:59:00'),
-                uuid: '912eaafa-9d04-46db-8b53-d90367ae02d0'
-        }
-      ];
         vm.unreadMailMarker = '';
         vm.toggleMessageOpen = toggleMessageOpen;
         vm.submitResponse = submitResponse;
@@ -1453,6 +1388,13 @@
 
         }
 
+        function setUserMessages(uuid) {
+            $http.get(`/messages/assemble/${uuid}`)
+                .then(userMessagesData => {
+                vm.userMessages = userMessagesData.data;
+            });
+        }
+
 
         function onInit() {
             console.log("User Hub is lit");
@@ -1480,6 +1422,7 @@
             assembleShareFeed($stateParams.id);
             setUserBlogs($stateParams.id);
             setUserExtendedProfile($stateParams.id);
+            setUserMessages($stateParams.id);
         }
 
     }
