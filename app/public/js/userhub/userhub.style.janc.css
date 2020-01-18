@@ -1390,6 +1390,10 @@
     width: 100%;
 }
 
+.hubMessageCenter_JanuaryC i {
+    color: #9ca4a9;
+}
+
 .hubMessageScroll_JanuaryC {
     height: 76vh;
     overflow-x: hidden;
@@ -1451,6 +1455,7 @@
     /* border-bottom: 1px solid #08252e; */
     /* border-top: 1px solid #08252e; */
     margin-left: 30px;
+    max-width: 900px;
 }
 
 .hubMessageAvatar_JanuaryC {
@@ -1468,6 +1473,7 @@
     margin: 10px 0 5px 0;
     max-width: 750px;
 }
+
 
 .hubReplyNameDate_JanuaryC {
     color: #9ca4a9;

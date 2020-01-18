@@ -208,4 +208,45 @@ router.patch('/:uuid', (req, res, next) => {
 
 });
 
+router.delete('/:uuid', (req, res, next) => {
+    let record;
+
+    knex('messages')
+        .where('uuid', req.params.uuid)
+        .first()
+        .then((row) => {
+            if (!row) {
+                return next();
+            }
+
+            record = row;
+
+            return knex('messages')
+                .del()
+                .where('uuid', req.params.uuid);
+        })
+        .then(() => {
+            var holder = record.uuid;
+            delete record.uuid;
+
+            var obj = {
+                uuid: holder,
+                cleanDate: record.cleanDate,
+                from: record.from,
+                message: record.message,
+                open: record.open,
+                opened: record.opened,
+                subject: record.subject,
+                to: record.to,
+                created_at: record.created_at,
+                updated_at: record.updated_at
+            };
+
+            res.send(obj);
+        })
+        .catch((err) => {
+            next(err);
+        });
+});
+
 module.exports = router;

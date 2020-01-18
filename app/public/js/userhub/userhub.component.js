@@ -98,6 +98,32 @@
         vm.positiveDeleteShareComment = positiveDeleteShareComment;
         vm.editShareCommentEnable = editShareCommentEnable;
         vm.hubShareSubmitCommentEdit = hubShareSubmitCommentEdit;
+        vm.removeMessage = removeMessage;
+        vm.removeMessageReply = removeMessageReply;
+        
+        function removeMessageReply(message, response) {
+            $http.delete(`/message_responses/${response.uuid}`);
+            for (let i = 0; i < vm.userMessages.length; i++) {
+                if (vm.userMessages[i].uuid === message.uuid) {
+                    for (let j = 0; j < vm.userMessages[i].replies.length; j++) {
+                        if (vm.userMessages[i].replies[j].uuid === response.uuid) {
+                            vm.userMessages[i].replies.splice(j, 1);
+                            return;
+                        }
+                    }
+                }
+            }
+        }
+        
+        function removeMessage(message) {
+            $http.delete(`/messages/${message.uuid}`);
+            for (let i = 0; i < vm.userMessages.length; i++) {
+                if (vm.userMessages[i].uuid === message.uuid) {
+                    vm.userMessages.splice(i, 1);
+                    return;
+                }
+            }
+        }
 
         function hubShareSubmitCommentEdit(article, comment) {
             let now = new Date;

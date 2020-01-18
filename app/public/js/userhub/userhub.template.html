@@ -391,6 +391,7 @@
                         <main ng-repeat="msg in $ctrl.userMessages">
 
                             <div class="hubMainMessageContainer{{$ctrl.monthSelect}}" ng-click="$ctrl.toggleMessageOpen(msg.uuid)">
+                                <i class="fas fa-trash-alt removeShare{{$ctrl.monthSelect}}" ng-if="msg.open" ng-click="$ctrl.removeMessage(msg)" aria-hidden="true"></i>
 
                                 <i class="fas fa-circle unreadIcon{{$ctrl.monthSelect}}" ng-if="!msg.opened"></i>
 
@@ -411,7 +412,7 @@
                                 <p class="hubMessageMessage{{$ctrl.monthSelect}}" ng-bind-html="msg.message"></p>
                                 <main ng-repeat="response in msg.replies">
 
-
+                                    <i class="fas fa-trash-alt removeShare{{$ctrl.month_select}}" ng-if="response.from.uuid === $ctrl.user.uuid" ng-click="$ctrl.removeMessageReply(msg, response)" aria-hidden="true" style="cursor: pointer;"></i>
 
                                     <img class="hubMessageAvatar{{$ctrl.monthSelect}}" src="{{response.from.avatar}}">
                                     <p class="hubReplyNameDate{{$ctrl.monthSelect}}">{{response.from.name}}</p>
