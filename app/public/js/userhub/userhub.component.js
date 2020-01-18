@@ -398,7 +398,16 @@
                         uuid: friend[0].uuid
                     }
                 };
-                vm.userMessages.push(message);
+//                vm.userMessages.push(message);
+                
+                let msg = message.message.replace(/(?:\r\n|\r|\n)/g, '<br>');
+                $http.post('/messages', {
+                    cleanDate: cleanDate,
+                    from: vm.user.uuid,
+                    message: msg,
+                    subject: message.subject,
+                    to: recipientUuid
+                });
                 cancelMessageSender();
             }
         }
@@ -529,8 +538,17 @@
         }
 
         function toggleMessageOpen(uuid) {
+            let index;
+            
+            function persistClosedMessage(location) {
+                $http.patch(`/messages/${vm.userMessages[location].uuid}`, {
+                    open: false
+                });
+            }
+            
             for (let i = 0; i < vm.userMessages.length; i++) {
                 if (vm.userMessages[i].uuid === uuid) {
+                    index = i;
                     if (vm.userMessages[i].open) {
                         vm.userMessages[i].open = false;
                     } else {
@@ -539,6 +557,15 @@
                     }
                 } else {
                     vm.userMessages[i].open = false;
+                }
+            }
+            $http.patch(`/messages/${vm.userMessages[index].uuid}`, {
+                open: vm.userMessages[index].open,
+                opened: vm.userMessages[index].opened
+            });
+            for (let i = 0; i < vm.userMessages.length; i++) {
+                if (i !== index) {
+                    persistClosedMessage(i);
                 }
             }
         }
