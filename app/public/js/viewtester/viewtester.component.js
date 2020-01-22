@@ -13,7 +13,7 @@
         const vm = this;
 
         vm.$onInit = onInit;
-        vm.viewMonth = '_FebruaryA';
+        vm.viewMonth = '_FebruaryB';
         vm.href = 'https://news.ycombinator.com/';
         vm.feedsList = [
             {
@@ -192,6 +192,9 @@
                     break;
                 case ('_FebruaryA'):
                     vm.viewerSpinnerPath = 'https://habits168-hurdaudio.s3.amazonaws.com/viewer/spinners/feba_loader.gif';
+                    break;
+                case('_FebruaryB'):
+                    vm.viewSpinnerPath = 'https://habits168-hurdaudio.s3.amazonaws.com/viewer/spinners/green_style.gif';
                     break;
                 default:
                     alert('Error: unsupported viewMonth spinner set');

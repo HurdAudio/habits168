@@ -1,0 +1,358 @@
+.viewContainer_FebruaryB {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/viewer/west_african_wax_resist_cloth_texture_03_by_thrwm_dcubr7o-pre.jpg);
+    background-size: 100%;
+    filter: blur(0);
+    height: 95%;
+    margin: 5% 0 0 0;
+    transition: all 0.5s linear;
+    width: 100%;
+    z-index: 1;
+}
+
+.viewContainerCloaked_FebruaryB {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/viewer/west_african_wax_resist_cloth_texture_03_by_thrwm_dcubr7o-pre.jpg);
+    background-size: 100%;
+    filter: blur(20px);
+    height: 95%;
+    margin: 5% 0 0 0;
+    transition: all 0.5s linear;
+    width: 100%;
+    z-index: 1;
+}
+
+.viewToolbar_FebruaryB {
+    backdrop-filter: blur(10px) hue-rotate(90deg);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 11vh;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.viewNavigation_FebruaryB {
+    background: transparent;
+    border-color: #95978a;
+    color: #7b8a2f;
+    cursor: pointer;
+    filter: drop-shadow(10px 15px 4px #24261a);
+    font-family: 'Alata', sans-serif;
+    font-size: 60px;
+    height: 85px;
+    margin: 0 10px;
+    outline-color: #7b8a2f;
+    padding: 1px;
+    transition: all 0.2s linear;
+    width: 85px;
+}
+
+.viewNavigation_FebruaryB:hover {
+    background: #5c6143;
+    color: #bdc597;
+    transition: all 0.2s linear;
+}
+
+.viewNavigation_FebruaryB:active {
+    background: #7b8a2f;
+    color: #111208;
+    filter: drop-shadow(0 0 0 #24261a);
+    transition: all 0.1s linear;
+}
+
+.viewCurrentFeedIcon_FebruaryB {
+    height: 85px;
+    width: 85px;
+}
+
+.viewCurrentFeedTitle_FebruaryB {
+    background: transparent;
+    color: #111208;
+    cursor: pointer;
+    display: initial;
+    filter: drop-shadow(10px 15px 4px #24261a);
+    font-family: 'Alata', sans-serif;
+    font-size: 66px;
+    font-weight: 900;
+    padding: 10px 15px 0 15px;
+}
+
+.viewCurrentFeedTitle_FebruaryB a:hover {
+    color: #7b8a2f;
+    transition: all 0.3s linear;
+}
+
+.viewCurrentFeedTitle_FebruaryB a {
+    color: #24261a;
+    text-decoration: none;
+    transition: all 0.3s linear;
+}
+
+.viewCurrentFeedDescription_FebruaryB {
+    background: transparent;
+    color: #111208;
+    display: initial;
+    justify-content: flex-end;
+    filter: drop-shadow(10px 15px 4px #24261a);
+    font-family: 'Alata', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    padding: 50px 0 0 10px;
+}
+
+.viewContentDiv_FebruaryB {
+    backdrop-filter: blur(12px) hue-rotate(180deg);
+    filter: brightness(80%);
+    height: 79.5vh;
+    opacity: 0.95;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 1% 5%;
+    width: 100%;
+}
+
+.viewIndividualItems_FebruaryB {
+    color: #111208;
+    font-family: 'Alata', sans-serif;
+    line-height: 1.3em;
+    max-width: 880px;
+}
+
+.viewIndividualItems_FebruaryB img {
+    max-width: 70%;
+}
+
+.viewIndividualItems_FebruaryB p {
+    font-size: 18px;
+    line-height: 1.3em;
+    margin: 5px 5% 5px 1%;
+}
+
+.viewIndividualItems_FebruaryB a {
+    color: #24261a;
+    text-decoration: none;
+}
+
+.viewIndividualItems_FebruaryB a p {
+    font-size: 30px;
+    margin: 25px 4px 8px 0;
+}
+
+.viewIndividualItems_FebruaryB a:hover {
+    color: #313712;
+}
+
+.viewIndividualItems_FebruaryB a:visited {
+    color: #353928;
+}
+
+.viewIndividualItems_FebruaryB button {
+    background: transparent;
+    border-color: #95978a;
+    color: #111208;
+    cursor: pointer;
+    filter: drop-shadow(10px 15px 4px #24261a);
+    font-family: 'Alata', sans-serif;
+    font-size: 18px;
+    margin: 0 15px 0 0;
+    padding: 5px;
+    transition: all 0.4s linear;
+}
+
+.viewIndividualItems_FebruaryB button:hover {
+    background: #5c6143;
+    color: #bdc597;
+    transition: all 0.2s linear;
+}
+
+.viewIndividualItems_FebruaryB button:active {
+    background: #7b8a2f;
+    color: #111208;
+    filter: drop-shadow(0 0 0 #24261a);
+    transition: all 0.1s linear;
+}
+
+.viewPostTimestamp_FebruaryB {
+    margin: 5px 5px 5px 45% !important;
+}
+
+.viewShareSaveDialogueDisplayed_FebruaryB {
+    background: #babbae;
+    color: #111208;
+    display: initial;
+    font-family: 'Alata', sans-serif;
+    height: 70vh;
+    left: 10%;
+    opacity: 0.99;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: absolute;
+    top: 15%;
+    transform: skewX(0deg);
+    transition: all 0.5s linear;
+    width: 80%;
+    z-index: 17;
+}
+
+.viewShareSaveDialogueHidden_FebruaryB {
+    background: #babbae;
+    color: #111208;
+    font-family: 'Alata', sans-serif;
+    height: 70vh;
+    left: 10%;
+    opacity: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: absolute;
+    top: -45%;
+    transform: skewX(0deg);
+    transition: all 0.5s linear;
+    width: 80%;
+    z-index: -1;
+}
+
+.viewDialogHeadline_FebruaryB {
+    background: #3a4018;
+    color: #bdc597;
+    font-size: 48px;
+    padding: 30px 0 10px 50px;
+}
+
+.viewShareSaveDialogueDisplayed_FebruaryB img {
+    border-radius: 5px;
+    height: 75px;
+    margin: 30px 0 15px 150px;
+    width: 75px;
+}
+
+.viewShareSaveDialogueHidden_FebruaryB img {
+    border-radius: 5px;
+    height: 75px;
+    margin: 30px 0 15px 150px;
+    width: 75px;
+}
+
+.viewShareSaveDialogueDisplayed_FebruaryB p {
+    font-size: 24px;
+    margin: 5px 50px 15px 50px;
+}
+
+.viewShareSaveDialogueHidden_FebruaryB p {
+    font-size: 24px;
+    margin: 5px 50px 15px 50px;
+}
+
+.viewShareSaveDialogueDisplayed_FebruaryB textarea {
+    background: #aaa8ae;
+    color: #111208;
+    display: initial;
+    font-family: 'Alata', sans-serif;
+    font-size: 18px;
+    margin: 5px 50px 5px 50px;
+    outline-color: #111208;
+    padding: 5px;
+    width: 88%;
+}
+
+.viewShareSaveDialogueHidden_FebruaryB textarea {
+    background: #aaa8ae;
+    color: #111208;
+    display: initial;
+    font-family: 'Alata', sans-serif;
+    font-size: 18px;
+    margin: 5px 50px 5px 50px;
+    outline-color: #111208;
+    padding: 5px;
+    width: 88%;
+}
+
+.viewShareSaveDialogueDisplayed_FebruaryB button {
+    background: transparent;
+    border-color: #95978a;
+    color: #111208;
+    cursor: pointer;
+    filter: drop-shadow(10px 15px 4px #24261a);
+    font-family: 'Alata', sans-serif;
+    font-size: 18px;
+    margin: 15px 0 5px 50px;
+    padding: 5px;
+    transition: all 0.4s linear;
+
+}
+
+.viewShareSaveDialogueHidden_FebruaryB button {
+    background: transparent;
+    border-color: #95978a;
+    color: #111208;
+    cursor: pointer;
+    filter: drop-shadow(10px 15px 4px #24261a);
+    font-family: 'Alata', sans-serif;
+    font-size: 18px;
+    margin: 15px 0 5px 50px;
+    padding: 5px;
+    transition: all 0.4s linear;
+}
+
+.viewShareSaveDialogueDisplayed_FebruaryB button:hover {
+    background: #5c6143;
+    color: #bdc597;
+    transition: all 0.2s linear;
+}
+
+.viewShareSaveDialogueDisplayed_FebruaryB button:active {
+    background: #7b8a2f;
+    color: #111208;
+    filter: drop-shadow(0 0 0 #24261a);
+    transition: all 0.1s linear;
+}
+
+.viewRadioButtons_FebruaryB {
+    font-family: 'Alata', sans-serif;
+    font-size: 24px;
+    margin: 0 0 20px 50px;
+}
+
+@media only screen and (max-width: 736px) {
+
+    .viewCurrentFeedDescription_FebruaryB {
+        display: none;
+    }
+
+    .viewContentDiv_FebruaryB {
+        height: 140vh;
+    }
+
+    .viewToolbar_FebruaryB {
+        height: 16vh;
+    }
+
+    .viewCurrentFeedTitle_FebruaryB {
+        display: initial;
+        font-size: 48px;
+        padding: 20px 15px 0 15px;
+    }
+}
+
+@media only screen and (max-width: 667px) {
+
+    .viewCurrentFeedTitle_FebruaryB {
+        display: none;
+    }
+
+    .viewNavigation_FebruaryB {
+        font-size: 48px;
+        height: 50px;
+        width: 50px;
+    }
+
+    .viewCurrentFeedIcon_FebruaryB {
+        height: 50px;
+        width: 50px;
+    }
+
+    .viewShareSaveDialogueDisplayed_FebruaryB textarea {
+        margin: 5px 50px 5px 50px;
+        padding: 5px;
+        width: 58%;
+    }
+
+}
