@@ -1,10 +1,8 @@
-.backgroundDiv_FebruaryA {
-    background: url(https://habits168-hurdaudio.s3.amazonaws.com/landing/february/fabric_design_1_by_adrymeijer_d7j6ol2-fullview.jpg);
+.backgroundDiv_FebruaryC {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/landing/february/boudewijn-huysmans-G9MCi6tNRiI-unsplash.jpg);
     background-size: 100%;
-    filter: saturate(200%) sepia(40%);
     height: 100%;
     left: 0;
-    opacity: 0.5;
     overflow: hidden;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -14,7 +12,7 @@
     z-index: -1;
 }
 
-#landingContainer_FebruaryA {
+#landingContainer_FebruaryC {
     align-items: center;
     display: grid;
     grid-template-areas:
@@ -28,39 +26,44 @@
     width: 100%;
 }
 
-.landingTitleFlex_FebruaryA {
+.landingTitleFlex_FebruaryC {
+    backdrop-filter: invert(100%);
     grid-area: header;
     grid-column: first / end;
     grid-row: top / line2;
     width: 100%;
 }
 
-.landingLogo_FebruaryA {
-    filter: drop-shadow(10px 15px 4px #000100);
+.landingLogo_FebruaryC {
+    filter: drop-shadow(10px 15px 4px #935177);
     float: left;
     grid-area: header;
     grid-column: first / third;
     grid-row: top / line2;
-    height: 150px;
-    margin: -10px 20px 0 0;
+    height: 130px;
+    margin: 10px 20px 10px 20px;
     opacity: 1;
-    width: 150px;
+    width: 130px;
 }
 
-.landingTitleDiv_FebruaryA {
+.landingTitleDiv_FebruaryC {
     align-self: center;
-    color: #0a0b09;
+    color: #1a0202;
     float: left;
     grid-column: 3 / span 2;
     grid-row: 1/ 2;
-    font-family: 'Overpass', sans-serif;
+    font-family: 'Ibarra Real Nova', serif;
     font-size: 90px;
     justify-self: center;
     margin: 20px 20px 0 0;
 }
 
+.landingTitleDiv_FebruaryC h1 {
+    filter: drop-shadow(10px 15px 4px #935177);
+}
 
-.landingTitleButtonsDiv_FebruaryA {
+
+.landingTitleButtonsDiv_FebruaryC {
     align-self: stretch;
     float: left;
     grid-area: header;
@@ -70,87 +73,81 @@
     width: auto;
 }
 
-.landingTitleButtonsDiv_FebruaryA button {
-    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/landing/february/buttons/fabric_texture_by_lyssi_d1o9dq1-fullview.jpg);
-    background-size: cover;
+.landingTitleButtonsDiv_FebruaryC button {
+    background: #c0af8c;
     border: none;
-    color: #093343;
+    color: #1a0202;
     cursor: pointer;
-    filter: brightness(100%) drop-shadow(10px 15px 4px #000100);
-    font-family: 'Overpass', sans-serif;
-    font-size: 24px;
+    filter: brightness(100%) drop-shadow(10px 15px 4px #935177);
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 30px;
     margin: 0 10px;
-    outline-color: #3d5933;
-    padding: 15px;
+    outline-color: #1a0202;
+    padding: 5px 15px;
     transition: all 0.1s linear;
 }
 
-.landingTitleButtonsDiv_FebruaryA button:hover {
-    filter: brightness(110%) drop-shadow(9px 14px 3px #000100);
+.landingTitleButtonsDiv_FebruaryC button:hover {
+    filter: brightness(110%) drop-shadow(9px 14px 3px #935177);
     transition: all 0.1s linear;
 }
 
-.landingTitleButtonsDiv_FebruaryA button:active {
-    filter: brightness(110%) drop-shadow(0 0 0 #000100);
+.landingTitleButtonsDiv_FebruaryC button:active {
+    filter: brightness(110%) drop-shadow(0 0 0 #935177);
     transition: all 0.1s linear;
 }
 
-.landingRecentlySharedLinksCollapsed_FebruaryA {
+.landingRecentlySharedLinksCollapsed_FebruaryC {
     display: none;
 }
 
-.landingRecentlySharedLinksUncollapsed_FebruaryA {
-    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/landing/february/buttons/fabric_texture_8_by_emothic_stock_d1uhmt4-fullview.jpg);
-    background-size: cover;
-    filter: brightness(70%);
+.landingRecentlySharedLinksUncollapsed_FebruaryC {
+    background: #c0af8c;
     grid-column: 2 / end;
     grid-row: 2 / span 4;
-    height: 77vh;
+    height: 79vh;
+    opacity: 0.9;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
+}
+
+.landingRecentlySharedPostsUncollapsed_FebruaryC {
+    background: #c0af8c;
+    grid-column: 2 / end;
+    grid-row: 2 / span 4;
+    height: 79vh;
     opacity: 0.95;
     overflow-x: hidden;
     overflow-y: scroll;
     width: 100%;
 }
 
-.landingRecentlySharedPostsUncollapsed_FebruaryA {
-    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/landing/february/buttons/fabric_texture_8_by_emothic_stock_d1uhmt4-fullview.jpg);
-    background-size: cover;
-    filter: brightness(70%);
-    grid-column: 2 / end;
-    grid-row: 2 / span 4;
-    height: 77vh;
-    opacity: 0.95;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    width: 100%;
-}
-
-.landingRecentlySharedPostsCollapsed_FebruaryA {
+.landingRecentlySharedPostsCollapsed_FebruaryC {
     display: none;
 }
 
-.landingShareContainer_FebruaryA {
-    color: #010300;
-    font-family: 'Overpass', sans-serif;
+.landingShareContainer_FebruaryC {
+    color: #1a0202;
+    font-family: 'Ibarra Real Nova', serif;
     height: auto;
     position: relative;
     width: 100%;
 }
 
-.landingLinkShare_FebruaryA {
+.landingLinkShare_FebruaryC {
     display: inline-block;
 }
 
-.landingShareSharerAvatar_FebruaryA {
-    filter: brightness(110%);
+.landingShareSharerAvatar_FebruaryC {
     left: 15px;
     margin: 20px 0 20px 0;
     position: relative;
     top: 10px;
-    width: 30%;
+    width: 50%;
 }
 
-.landingByline_FebruaryA {
+.landingByline_FebruaryC {
     float: left;
     left: 10px;
     position: relative;
@@ -158,12 +155,15 @@
     width: 20%;
 }
 
-.landingByline_FebruaryA p {
-    max-width: 75%;
+.landingByline_FebruaryC p {
+    font-size: 18px;
+    font-weight: 900;
+    margin-left: 20px;
+    max-width: 220px;
 }
 
-.landingShareShare_FebruaryA {
-    border-left: solid 3px #010300;
+.landingShareShare_FebruaryC {
+    border-left: solid 1px #1a0202;
     float: left;
     margin-bottom: 15px;
     position: relative;
@@ -171,94 +171,94 @@
     width: 78%;
 }
 
-.landingShareShare_FebruaryA a {
-    color: #314351;
+.landingShareShare_FebruaryC a {
+    color: #6c1712;
     text-decoration: none;
 }
 
-.landingShareShare_FebruaryA p {
+.landingShareShare_FebruaryC p {
     max-width: 700px;
 }
 
-.landingShareShare_FebruaryA a:hover {
-    color: #9e1316;
+.landingShareShare_FebruaryC a:hover {
+    color: #893743;
 }
 
-.landingShareShare_FebruaryA a:visited {
-    color: #203c14;
+.landingShareShare_FebruaryC a:visited {
+    color: #3a202f;
 }
 
-.shareSourceIcon_FebruaryA {
+.shareSourceIcon_FebruaryC {
     left: 5px;
     position: relative;
     top: 5px;
-    width: 5%;
+    width: 10%;
 }
 
-.shareViaCredit_FebruaryA {
+.shareViaCredit_FebruaryC {
     display: inline-block;
-    font-size: 21px;
-    margin: -10px 3px 15px 10px;
+    font-size: 24px;
+    margin: -20px 3px 15px 10px;
     position: relative;
     top: 0;
     width: 80%;
 }
 
-.shareHeadline_FebruaryA {
+.shareHeadline_FebruaryC {
     font-size: 36px;
-    margin: 15px 15px 35px 5px;
+    margin: 15px 15px 35px 15px;
     max-width: 710px;
 }
 
-.shareCleanDate_FebruaryA {
+.shareCleanDate_FebruaryC {
     float: right;
     font-size: 18px;
     margin: 5px 30% 5px 0;
 }
 
-.shareDescription_FebruaryA {
+.shareDescription_FebruaryC {
+    font-size: 18px;
     line-height: 1.3em;
-    margin: 100px 15px 130px 5px;
+    margin: 100px 15px 130px 15px;
     max-width: 710px;
 }
 
-.shareAuthor_FebruaryA {
+.shareAuthor_FebruaryC {
     float: left;
     font-size: 18px;
     margin: 0 0 0 5px;
 }
 
-.shareShareEnclosurePhoto_FebruaryA {
+.shareShareEnclosurePhoto_FebruaryC {
     margin: 0 0 0 5px;
-    max-width: 60%;
+    max-width: 40%;
 }
 
-.shareShareBlogPhoto_FebruaryA {
-    margin: 0 0 0 5px;
+.shareShareBlogPhoto_FebruaryC {
+    margin: 0 0 0 15px;
     max-width: 50%;
 }
 
-.shareBlogTitle_FebruaryA {
+.shareBlogTitle_FebruaryC {
     font-size: 36px;
-    margin: -40px 0 0 60px;
+    margin: -40px 0 0 120px;
 }
 
-.landingFooter_FebruaryA {
-    bottom: 3px;
-    color: #010300;
-    font-family: 'Overpass', sans-serif;
-    font-size: 18px;
+.landingFooter_FebruaryC {
+    bottom: 2px;
+    color: #c0af8c;
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 12px;
     left: 10px;
     position: absolute;
 
 }
 
-.landingLoginActive_FebruaryA {
-    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/landing/february/buttons/fabric_5_by_bukashka_d4h4xq9-fullview.jpg);
-    background-size: cover;
-    color: #010300;
-    filter: drop-shadow(10px 15px 4px #000100);
-    font-family: 'Overpass', sans-serif;
+.landingLoginActive_FebruaryC {
+    background: #36161a;
+    color: #c9a8bb;
+    filter: drop-shadow(10px 15px 4px #935177);
+    font-family: 'Ibarra Real Nova', serif;
     font-size: 42px;
     height: 400px;
     opacity: 1;
@@ -271,7 +271,7 @@
     z-index: 6;
 }
 
-.landingLoginInactive_FebruaryA {
+.landingLoginInactive_FebruaryC {
     height: 0;
     position: absolute;
     transition: all 0.8s linear;
@@ -279,90 +279,89 @@
     z-index: -6;
 }
 
-.landingLoginActive_FebruaryA input {
-    color: #010300;
-    font-family: 'Overpass', sans-serif;
+.landingLoginActive_FebruaryC input {
+    background: #b5a685;
+    color: #1a0202;
+    font-family: 'Ibarra Real Nova', serif;
     font-size: 24px;
     margin: 25px 5px 10px 45px;
-    outline: #909e8a;
+    outline-color: #1a0202;
     padding: 1px 1px 1px 15px;
     width: 75%;
 }
 
-.landingLoginInactive_FebruaryA input {
+.landingLoginInactive_FebruaryC input {
     display: none;
 }
 
-.landingLoginActive_FebruaryA button {
-    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/landing/february/buttons/fabric_texture_by_lyssi_d1o9dq1-fullview.jpg);
-    background-size: cover;
+.landingLoginActive_FebruaryC button {
+    background: #c0af8c;
     border: none;
-    color: #093343;
+    color: #1a0202;
     cursor: pointer;
-    filter: brightness(100%) drop-shadow(10px 15px 4px #000100);
-    font-family: 'Overpass', sans-serif;
-    font-size: 24px;
+    filter: brightness(100%) drop-shadow(10px 15px 4px #935177);
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 30px;
     margin: 20px 70px;
-    outline-color: #3d5933;
-    padding: 15px;
-    transform: scale(1);
+    outline-color: #1a0202;
+    padding: 5px 15px;
     transition: all 0.1s linear;
 }
 
-.landingLoginActive_FebruaryA button:hover {
-    filter: brightness(110%) drop-shadow(9px 14px 3px #000100);
+.landingLoginActive_FebruaryC button:hover {
+    filter: brightness(110%) drop-shadow(9px 14px 3px #935177);
     transition: all 0.1s linear;
 }
 
-.landingLoginActive_FebruaryA button:active {
-    filter: brightness(110%) drop-shadow(0 0 0 #000100);
+.landingLoginActive_FebruaryC button:active {
+    filter: brightness(110%) drop-shadow(0 0 0 #935177);
     transition: all 0.1s linear;
 }
 
-.landingLoginInactive_FebruaryA button {
-    display: none;
+.landingLoginInactive_FebruaryC button {
     transform: scale(0.1);
     transition: all 0.1s linear;
 }
 
-.landingLoginActive_FebruaryA a {
-    color: #093343;
+.landingLoginActive_FebruaryC a {
+    color: #c9a8bb;
     cursor: pointer;
     float: right;
-    font-family: 'Overpass', sans-serif;
+    font-family: 'Ibarra Real Nova', serif;
     font-size: 24px;
     margin: 30px 0 10px 0;
     position: relative;
     text-decoration: none;
 }
 
-.landingLoginInactive_FebruaryA a {
+.landingLoginInactive_FebruaryC a {
     display: none;
 }
 
-.landingLoginActive_FebruaryA h2 {
-    color: #010300;
+.landingLoginActive_FebruaryC h2 {
+    color: #c9a8bb;
     margin: 25px 20px 1px 20px;
 }
 
-.landingLoginInactive_FebruaryA h2 {
+.landingLoginInactive_FebruaryC h2 {
     display: none;
 }
 
-.tabs_FebruaryA {
-    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/landing/february/buttons/fabric_by_karinsphotography_db95uhp-fullview.jpg);
-    background-size: cover;
+.tabs_FebruaryC {
+    background: #c9a8bb;
     grid-column: 1/2;
     grid-row: 2, lineend;
-    height: 100%;
+    height: 79vh;
+    opacity: 0.9;
+    transform: translatey(1vh);
     width: 100%;
 }
 
-.tabActive_FebruaryA {
-    color: #000100;
+.tabActive_FebruaryC {
+    color: #1a0202;
     cursor: pointer;
-    filter: invert(0%) drop-shadow(-10px 15px 4px #000100);
-    font-family: 'Overpass', sans-serif;
+    filter: invert(0%) drop-shadow(-10px 15px 4px #935177);
+    font-family: 'Ibarra Real Nova', serif;
     font-size: 30px;
     grid-area: tabs;
     height: 50px;
@@ -373,10 +372,10 @@
     width: 40px;
 }
 
-.tabInactive_FebruaryA {
-    color: #000100;
+.tabInactive_FebruaryC {
+    color: #1a0202;
     cursor: pointer;
-    font-family: 'Overpass', sans-serif;
+    font-family: 'Ibarra Real Nova', serif;
     font-size: 30px;
     grid-area: tabs;
     height: 50px;
@@ -387,118 +386,118 @@
     width: 40px;
 }
 
-.landingUserGreeting_FebruaryA {
+.landingUserGreeting_FebruaryC {
     /* color: #1d1b20;
-  font-family: 'Overpass', sans-serif;
+  font-family: 'Ibarra Real Nova', serif;
   font-size: 30px;
   margin: 10px 5px 0 15px; */
 }
 
 @media only screen and (max-width: 1024px) {
 
-    .landingTitleButtonsDiv_FebruaryA {
+    .landingTitleButtonsDiv_FebruaryC {
         padding: 65px 5px 5px 10%;
     }
 
-    .backgroundDiv_FebruaryA {
+    .backgroundDiv_FebruaryC {
         background-size: 400%;
     }
 
-    .landingTitle_FebruaryA {
+    .landingTitle_FebruaryC {
         font-size: 18px;
     }
 
-    .landingShareShare_FebruaryA {
+    .landingShareShare_FebruaryC {
         width: 70%;
     }
 
-    .landingRecentlySharedPostsUncollapsed_FebruaryA {
+    .landingRecentlySharedPostsUncollapsed_FebruaryC {
         height: 75vh;
     }
 
-    .landingRecentlySharedLinksUncollapsed_FebruaryA {
+    .landingRecentlySharedLinksUncollapsed_FebruaryC {
         height: 75vh;
     }
 }
 
 @media only screen and (max-width: 823px) {
 
-    .landingTitleButtonsDiv_FebruaryA {
+    .landingTitleButtonsDiv_FebruaryC {
         padding: 65px 5px 5px 10%;
     }
 
-    .landingTitle_FebruaryA {
+    .landingTitle_FebruaryC {
         font-size: 18px;
     }
 
-    .landingShareShare_FebruaryA {
+    .landingShareShare_FebruaryC {
         width: 70%;
     }
 
-    .landingRecentlySharedPostsUncollapsed_FebruaryA {
+    .landingRecentlySharedPostsUncollapsed_FebruaryC {
         height: 75vh;
     }
 
-    .landingRecentlySharedLinksUncollapsed_FebruaryA {
+    .landingRecentlySharedLinksUncollapsed_FebruaryC {
         height: 75vh;
     }
 }
 
 @media only screen and (max-width: 768px) {
 
-    .landingTitleButtonsDiv_FebruaryA {
+    .landingTitleButtonsDiv_FebruaryC {
         padding: 65px 5px 5px 10%;
     }
 
 
-    .landingTitleButtonsDiv_FebruaryA {
+    .landingTitleButtonsDiv_FebruaryC {
         padding: 65px 5px 5px 10%;
     }
 
-    .landingTitle_FebruaryA {
+    .landingTitle_FebruaryC {
         font-size: 18px;
     }
 
-    .landingShareShare_FebruaryA {
+    .landingShareShare_FebruaryC {
         width: 70%;
     }
 
-    .landingRecentlySharedPostsUncollapsed_FebruaryA {
+    .landingRecentlySharedPostsUncollapsed_FebruaryC {
         height: 75vh;
     }
 
-    .landingRecentlySharedLinksUncollapsed_FebruaryA {
+    .landingRecentlySharedLinksUncollapsed_FebruaryC {
         height: 75vh;
     }
 }
 
 @media only screen and (max-width: 736px) {
-    .backgroundDiv_FebruaryA {
+    .backgroundDiv_FebruaryC {
         background-size: 250%;
     }
 
-    .landingTitle_FebruaryA {
+    .landingTitle_FebruaryC {
         font-size: 24px;
     }
 
-    .landingTitleButtonsDiv_FebruaryA {
+    .landingTitleButtonsDiv_FebruaryC {
         padding: 65px 5px 5px 10%;
     }
 
-    .landingTitleButtonsDiv_FebruaryA button {
+    .landingTitleButtonsDiv_FebruaryC button {
         font-size: 12px;
         margin: -30px 10px 10px 10px;
     }
 
-    .tabs_FebruaryA {
+    .tabs_FebruaryC {
         display: none;
     }
 
-    .landingRecentlySharedLinksUncollapsed_FebruaryA {
+    .landingRecentlySharedLinksUncollapsed_FebruaryC {
         display: none;
     }
 
-    .landingLoginActive_FebruaryA {
+    .landingLoginActive_FebruaryC {
         left: 0;
         margin: 0;
         position: absolute;
@@ -506,41 +505,41 @@
         width: 79%;
     }
 
-    .landingLoginActive_FebruaryA a {
+    .landingLoginActive_FebruaryC a {
         margin-top: 80px;
     }
 
-    .landingLoginInactive_FebruaryA a {
+    .landingLoginInactive_FebruaryC a {
         margin-top: 80px;
     }
 
-    .landingLoginActive_FebruaryA button {
+    .landingLoginActive_FebruaryC button {
         margin-left: 15px;
         margin-right: 15px;
     }
 
-    .landingLoginInactive_FebruaryA button {
+    .landingLoginInactive_FebruaryC button {
         margin-left: 15px;
         margin-right: 15px;
     }
 
-    .landingLoginActive_FebruaryA h3 {
+    .landingLoginActive_FebruaryC h3 {
         font-size: 18px;
     }
 
-    .landingLoginInactive_FebruaryA h3 {
+    .landingLoginInactive_FebruaryC h3 {
         font-size: 18px;
     }
 
-    .landingLoginActive_FebruaryA input {
+    .landingLoginActive_FebruaryC input {
         margin-left: 17px;
     }
 
-    .landingLoginInactive_FebruaryA input {
+    .landingLoginInactive_FebruaryC input {
         margin-left: 17px;
     }
 
-    .landingLoginInactive_FebruaryA {
+    .landingLoginInactive_FebruaryC {
         left: 0;
         margin: 0;
         position: absolute;
@@ -551,36 +550,36 @@
 
 @media only screen and (max-width: 731px) {
 
-    .landingTitleButtonsDiv_FebruaryA {
+    .landingTitleButtonsDiv_FebruaryC {
         padding: 65px 5px 5px 10%;
     }
 
-    .backgroundDiv_FebruaryA {
+    .backgroundDiv_FebruaryC {
         background-size: 250%;
     }
 
-    .landingTitle_FebruaryA {
+    .landingTitle_FebruaryC {
         font-size: 24px;
     }
 
-    .landingTitleButtonsDiv_FebruaryA {
+    .landingTitleButtonsDiv_FebruaryC {
         padding: 65px 5px 5px 10%;
     }
 
-    .landingTitleButtonsDiv_FebruaryA button {
+    .landingTitleButtonsDiv_FebruaryC button {
         font-size: 12px;
         margin: -30px 10px 10px 10px;
     }
 
-    .tabs_FebruaryA {
+    .tabs_FebruaryC {
         display: none;
     }
 
-    .landingRecentlySharedLinksUncollapsed_FebruaryA {
+    .landingRecentlySharedLinksUncollapsed_FebruaryC {
         display: none;
     }
 
-    .landingLoginActive_FebruaryA {
+    .landingLoginActive_FebruaryC {
         left: 0;
         margin: 0;
         position: absolute;
@@ -588,41 +587,41 @@
         width: 79%;
     }
 
-    .landingLoginActive_FebruaryA a {
+    .landingLoginActive_FebruaryC a {
         margin-top: 80px;
     }
 
-    .landingLoginInactive_FebruaryA a {
+    .landingLoginInactive_FebruaryC a {
         margin-top: 80px;
     }
 
-    .landingLoginActive_FebruaryA button {
+    .landingLoginActive_FebruaryC button {
         margin-left: 15px;
         margin-right: 15px;
     }
 
-    .landingLoginInactive_FebruaryA button {
+    .landingLoginInactive_FebruaryC button {
         margin-left: 15px;
         margin-right: 15px;
     }
 
-    .landingLoginActive_FebruaryA h3 {
+    .landingLoginActive_FebruaryC h3 {
         font-size: 18px;
     }
 
-    .landingLoginInactive_FebruaryA h3 {
+    .landingLoginInactive_FebruaryC h3 {
         font-size: 18px;
     }
 
-    .landingLoginActive_FebruaryA input {
+    .landingLoginActive_FebruaryC input {
         margin-left: 17px;
     }
 
-    .landingLoginInactive_FebruaryA input {
+    .landingLoginInactive_FebruaryC input {
         margin-left: 17px;
     }
 
-    .landingLoginInactive_FebruaryA {
+    .landingLoginInactive_FebruaryC {
         left: 0;
         margin: 0;
         position: absolute;
@@ -633,36 +632,36 @@
 
 @media only screen and (max-width: 640px) {
 
-    .landingTitleButtonsDiv_FebruaryA {
+    .landingTitleButtonsDiv_FebruaryC {
         padding: 65px 5px 5px 10%;
     }
 
-    .backgroundDiv_FebruaryA {
+    .backgroundDiv_FebruaryC {
         background-size: 250%;
     }
 
-    .landingTitle_FebruaryA {
+    .landingTitle_FebruaryC {
         font-size: 24px;
     }
 
-    .landingTitleButtonsDiv_FebruaryA {
+    .landingTitleButtonsDiv_FebruaryC {
         padding: 65px 5px 5px 10%;
     }
 
-    .landingTitleButtonsDiv_FebruaryA button {
+    .landingTitleButtonsDiv_FebruaryC button {
         font-size: 12px;
         margin: -30px 10px 10px 10px;
     }
 
-    .tabs_FebruaryA {
+    .tabs_FebruaryC {
         display: none;
     }
 
-    .landingRecentlySharedLinksUncollapsed_FebruaryA {
+    .landingRecentlySharedLinksUncollapsed_FebruaryC {
         display: none;
     }
 
-    .landingLoginActive_FebruaryA {
+    .landingLoginActive_FebruaryC {
         left: 0;
         margin: 0;
         position: absolute;
@@ -670,41 +669,41 @@
         width: 79%;
     }
 
-    .landingLoginActive_FebruaryA a {
+    .landingLoginActive_FebruaryC a {
         margin-top: 80px;
     }
 
-    .landingLoginInactive_FebruaryA a {
+    .landingLoginInactive_FebruaryC a {
         margin-top: 80px;
     }
 
-    .landingLoginActive_FebruaryA button {
+    .landingLoginActive_FebruaryC button {
         margin-left: 15px;
         margin-right: 15px;
     }
 
-    .landingLoginInactive_FebruaryA button {
+    .landingLoginInactive_FebruaryC button {
         margin-left: 15px;
         margin-right: 15px;
     }
 
-    .landingLoginActive_FebruaryA h3 {
+    .landingLoginActive_FebruaryC h3 {
         font-size: 18px;
     }
 
-    .landingLoginInactive_FebruaryA h3 {
+    .landingLoginInactive_FebruaryC h3 {
         font-size: 18px;
     }
 
-    .landingLoginActive_FebruaryA input {
+    .landingLoginActive_FebruaryC input {
         margin-left: 17px;
     }
 
-    .landingLoginInactive_FebruaryA input {
+    .landingLoginInactive_FebruaryC input {
         margin-left: 17px;
     }
 
-    .landingLoginInactive_FebruaryA {
+    .landingLoginInactive_FebruaryC {
         left: 0;
         margin: 0;
         position: absolute;
@@ -714,40 +713,40 @@
 }
 
 @media only screen and (max-width: 568px) {
-    .landingTitleButtonsDiv_FebruaryA {
+    .landingTitleButtonsDiv_FebruaryC {
         padding: 65px 5px 5px 10%;
     }
 
-    .backgroundDiv_FebruaryA {
+    .backgroundDiv_FebruaryC {
         background-size: 250%;
     }
 
-    .landingTitle_FebruaryA {
+    .landingTitle_FebruaryC {
         font-size: 24px;
     }
 
-    .landingTitleButtonsDiv_FebruaryA {
+    .landingTitleButtonsDiv_FebruaryC {
         padding: 65px 5px 5px 10%;
     }
 
-    .landingTitleButtonsDiv_FebruaryA button {
+    .landingTitleButtonsDiv_FebruaryC button {
         font-size: 12px;
         margin: -30px 15px 15px 15px;
     }
 
-    .landingUserGreeting_FebruaryA {
+    .landingUserGreeting_FebruaryC {
         margin-top: -120px;
     }
 
-    .tabs_FebruaryA {
+    .tabs_FebruaryC {
         display: none;
     }
 
-    .landingRecentlySharedLinksUncollapsed_FebruaryA {
+    .landingRecentlySharedLinksUncollapsed_FebruaryC {
         display: none;
     }
 
-    .landingLoginActive_FebruaryA {
+    .landingLoginActive_FebruaryC {
         left: 0;
         margin: 0;
         position: absolute;
@@ -755,41 +754,41 @@
         width: 79%;
     }
 
-    .landingLoginActive_FebruaryA a {
+    .landingLoginActive_FebruaryC a {
         margin-top: 80px;
     }
 
-    .landingLoginInactive_FebruaryA a {
+    .landingLoginInactive_FebruaryC a {
         margin-top: 80px;
     }
 
-    .landingLoginActive_FebruaryA button {
+    .landingLoginActive_FebruaryC button {
         margin-left: 15px;
         margin-right: 15px;
     }
 
-    .landingLoginInactive_FebruaryA button {
+    .landingLoginInactive_FebruaryC button {
         margin-left: 15px;
         margin-right: 15px;
     }
 
-    .landingLoginActive_FebruaryA h3 {
+    .landingLoginActive_FebruaryC h3 {
         font-size: 18px;
     }
 
-    .landingLoginInactive_FebruaryA h3 {
+    .landingLoginInactive_FebruaryC h3 {
         font-size: 18px;
     }
 
-    .landingLoginActive_FebruaryA input {
+    .landingLoginActive_FebruaryC input {
         margin-left: 17px;
     }
 
-    .landingLoginInactive_FebruaryA input {
+    .landingLoginInactive_FebruaryC input {
         margin-left: 17px;
     }
 
-    .landingLoginInactive_FebruaryA {
+    .landingLoginInactive_FebruaryC {
         left: 0;
         margin: 0;
         position: absolute;
@@ -799,31 +798,31 @@
 }
 
 @media only screen and (max-width: 414px) {
-    .backgroundDiv_FebruaryA {
+    .backgroundDiv_FebruaryC {
         background-size: 250%;
     }
 
-    .landingTitle_FebruaryA {
+    .landingTitle_FebruaryC {
         font-size: 24px;
     }
 
-    .landingTitleButtonsDiv_FebruaryA {
+    .landingTitleButtonsDiv_FebruaryC {
         padding: 65px 5px 5px 10%;
     }
 
-    .landingTitleButtonsDiv_FebruaryA button {
+    .landingTitleButtonsDiv_FebruaryC button {
         font-size: 12px;
     }
 
-    .tabs_FebruaryA {
+    .tabs_FebruaryC {
         display: none;
     }
 
-    .landingRecentlySharedLinksUncollapsed_FebruaryA {
+    .landingRecentlySharedLinksUncollapsed_FebruaryC {
         display: none;
     }
 
-    .landingLoginActive_FebruaryA {
+    .landingLoginActive_FebruaryC {
         left: 0;
         margin: 0;
         position: absolute;
@@ -831,41 +830,41 @@
         width: 79%;
     }
 
-    .landingLoginActive_FebruaryA a {
+    .landingLoginActive_FebruaryC a {
         margin-top: 80px;
     }
 
-    .landingLoginInactive_FebruaryA a {
+    .landingLoginInactive_FebruaryC a {
         margin-top: 80px;
     }
 
-    .landingLoginActive_FebruaryA button {
+    .landingLoginActive_FebruaryC button {
         margin-left: 15px;
         margin-right: 15px;
     }
 
-    .landingLoginInactive_FebruaryA button {
+    .landingLoginInactive_FebruaryC button {
         margin-left: 15px;
         margin-right: 15px;
     }
 
-    .landingLoginActive_FebruaryA h3 {
+    .landingLoginActive_FebruaryC h3 {
         font-size: 18px;
     }
 
-    .landingLoginInactive_FebruaryA h3 {
+    .landingLoginInactive_FebruaryC h3 {
         font-size: 18px;
     }
 
-    .landingLoginActive_FebruaryA input {
+    .landingLoginActive_FebruaryC input {
         margin-left: 17px;
     }
 
-    .landingLoginInactive_FebruaryA input {
+    .landingLoginInactive_FebruaryC input {
         margin-left: 17px;
     }
 
-    .landingLoginInactive_FebruaryA {
+    .landingLoginInactive_FebruaryC {
         left: 0;
         margin: 0;
         position: absolute;
@@ -875,31 +874,31 @@
 }
 
 @media only screen and (max-width: 411px) {
-    .backgroundDiv_FebruaryA {
+    .backgroundDiv_FebruaryC {
         background-size: 250%;
     }
 
-    .landingTitle_FebruaryA {
+    .landingTitle_FebruaryC {
         font-size: 24px;
     }
 
-    .landingTitleButtonsDiv_FebruaryA {
+    .landingTitleButtonsDiv_FebruaryC {
         padding: 65px 5px 5px 10%;
     }
 
-    .landingTitleButtonsDiv_FebruaryA button {
+    .landingTitleButtonsDiv_FebruaryC button {
         font-size: 12px;
     }
 
-    .tabs_FebruaryA {
+    .tabs_FebruaryC {
         display: none;
     }
 
-    .landingRecentlySharedLinksUncollapsed_FebruaryA {
+    .landingRecentlySharedLinksUncollapsed_FebruaryC {
         display: none;
     }
 
-    .landingLoginActive_FebruaryA {
+    .landingLoginActive_FebruaryC {
         left: 0;
         margin: 0;
         position: absolute;
@@ -907,41 +906,41 @@
         width: 79%;
     }
 
-    .landingLoginActive_FebruaryA a {
+    .landingLoginActive_FebruaryC a {
         margin-top: 80px;
     }
 
-    .landingLoginInactive_FebruaryA a {
+    .landingLoginInactive_FebruaryC a {
         margin-top: 80px;
     }
 
-    .landingLoginActive_FebruaryA button {
+    .landingLoginActive_FebruaryC button {
         margin-left: 15px;
         margin-right: 15px;
     }
 
-    .landingLoginInactive_FebruaryA button {
+    .landingLoginInactive_FebruaryC button {
         margin-left: 15px;
         margin-right: 15px;
     }
 
-    .landingLoginActive_FebruaryA h3 {
+    .landingLoginActive_FebruaryC h3 {
         font-size: 18px;
     }
 
-    .landingLoginInactive_FebruaryA h3 {
+    .landingLoginInactive_FebruaryC h3 {
         font-size: 18px;
     }
 
-    .landingLoginActive_FebruaryA input {
+    .landingLoginActive_FebruaryC input {
         margin-left: 17px;
     }
 
-    .landingLoginInactive_FebruaryA input {
+    .landingLoginInactive_FebruaryC input {
         margin-left: 17px;
     }
 
-    .landingLoginInactive_FebruaryA {
+    .landingLoginInactive_FebruaryC {
         left: 0;
         margin: 0;
         position: absolute;
@@ -951,31 +950,31 @@
 }
 
 @media only screen and (max-width: 375px) {
-    .backgroundDiv_FebruaryA {
+    .backgroundDiv_FebruaryC {
         background-size: 250%;
     }
 
-    .landingTitle_FebruaryA {
+    .landingTitle_FebruaryC {
         font-size: 24px;
     }
 
-    .landingTitleButtonsDiv_FebruaryA {
+    .landingTitleButtonsDiv_FebruaryC {
         padding: 65px 5px 5px 10%;
     }
 
-    .landingTitleButtonsDiv_FebruaryA button {
+    .landingTitleButtonsDiv_FebruaryC button {
         font-size: 12px;
     }
 
-    .tabs_FebruaryA {
+    .tabs_FebruaryC {
         display: none;
     }
 
-    .landingRecentlySharedLinksUncollapsed_FebruaryA {
+    .landingRecentlySharedLinksUncollapsed_FebruaryC {
         display: none;
     }
 
-    .landingLoginActive_FebruaryA {
+    .landingLoginActive_FebruaryC {
         left: 0;
         margin: 0;
         position: absolute;
@@ -983,41 +982,41 @@
         width: 61.5%;
     }
 
-    .landingLoginActive_FebruaryA a {
+    .landingLoginActive_FebruaryC a {
         margin-top: 80px;
     }
 
-    .landingLoginInactive_FebruaryA a {
+    .landingLoginInactive_FebruaryC a {
         margin-top: 80px;
     }
 
-    .landingLoginActive_FebruaryA button {
+    .landingLoginActive_FebruaryC button {
         margin-left: 15px;
         margin-right: 15px;
     }
 
-    .landingLoginInactive_FebruaryA button {
+    .landingLoginInactive_FebruaryC button {
         margin-left: 15px;
         margin-right: 15px;
     }
 
-    .landingLoginActive_FebruaryA h3 {
+    .landingLoginActive_FebruaryC h3 {
         font-size: 18px;
     }
 
-    .landingLoginInactive_FebruaryA h3 {
+    .landingLoginInactive_FebruaryC h3 {
         font-size: 18px;
     }
 
-    .landingLoginActive_FebruaryA input {
+    .landingLoginActive_FebruaryC input {
         margin-left: 17px;
     }
 
-    .landingLoginInactive_FebruaryA input {
+    .landingLoginInactive_FebruaryC input {
         margin-left: 17px;
     }
 
-    .landingLoginInactive_FebruaryA {
+    .landingLoginInactive_FebruaryC {
         left: 0;
         margin: 0;
         position: absolute;
@@ -1027,31 +1026,31 @@
 }
 
 @media only screen and (max-width: 360px) {
-    .backgroundDiv_FebruaryA {
+    .backgroundDiv_FebruaryC {
         background-size: 250%;
     }
 
-    .landingTitle_FebruaryA {
+    .landingTitle_FebruaryC {
         font-size: 24px;
     }
 
-    .landingTitleButtonsDiv_FebruaryA {
+    .landingTitleButtonsDiv_FebruaryC {
         padding: 65px 5px 5px 10%;
     }
 
-    .landingTitleButtonsDiv_FebruaryA button {
+    .landingTitleButtonsDiv_FebruaryC button {
         font-size: 12px;
     }
 
-    .tabs_FebruaryA {
+    .tabs_FebruaryC {
         display: none;
     }
 
-    .landingRecentlySharedLinksUncollapsed_FebruaryA {
+    .landingRecentlySharedLinksUncollapsed_FebruaryC {
         display: none;
     }
 
-    .landingLoginActive_FebruaryA {
+    .landingLoginActive_FebruaryC {
         left: 0;
         margin: 0;
         position: absolute;
@@ -1059,41 +1058,41 @@
         width: 77%;
     }
 
-    .landingLoginActive_FebruaryA a {
+    .landingLoginActive_FebruaryC a {
         margin-top: 80px;
     }
 
-    .landingLoginInactive_FebruaryA a {
+    .landingLoginInactive_FebruaryC a {
         margin-top: 80px;
     }
 
-    .landingLoginActive_FebruaryA button {
+    .landingLoginActive_FebruaryC button {
         margin-left: 15px;
         margin-right: 15px;
     }
 
-    .landingLoginInactive_FebruaryA button {
+    .landingLoginInactive_FebruaryC button {
         margin-left: 15px;
         margin-right: 15px;
     }
 
-    .landingLoginActive_FebruaryA h3 {
+    .landingLoginActive_FebruaryC h3 {
         font-size: 18px;
     }
 
-    .landingLoginInactive_FebruaryA h3 {
+    .landingLoginInactive_FebruaryC h3 {
         font-size: 18px;
     }
 
-    .landingLoginActive_FebruaryA input {
+    .landingLoginActive_FebruaryC input {
         margin-left: 17px;
     }
 
-    .landingLoginInactive_FebruaryA input {
+    .landingLoginInactive_FebruaryC input {
         margin-left: 17px;
     }
 
-    .landingLoginInactive_FebruaryA {
+    .landingLoginInactive_FebruaryC {
         left: 0;
         margin: 0;
         position: absolute;
@@ -1103,31 +1102,31 @@
 }
 
 @media only screen and (max-width: 320px) {
-    .backgroundDiv_FebruaryA {
+    .backgroundDiv_FebruaryC {
         background-size: 250%;
     }
 
-    .landingTitle_FebruaryA {
+    .landingTitle_FebruaryC {
         font-size: 24px;
     }
 
-    .landingTitleButtonsDiv_FebruaryA {
+    .landingTitleButtonsDiv_FebruaryC {
         padding: 65px 5px 5px 10%;
     }
 
-    .landingTitleButtonsDiv_FebruaryA button {
+    .landingTitleButtonsDiv_FebruaryC button {
         font-size: 12px;
     }
 
-    .tabs_FebruaryA {
+    .tabs_FebruaryC {
         display: none;
     }
 
-    .landingRecentlySharedLinksUncollapsed_FebruaryA {
+    .landingRecentlySharedLinksUncollapsed_FebruaryC {
         display: none;
     }
 
-    .landingLoginActive_FebruaryA {
+    .landingLoginActive_FebruaryC {
         left: -13%;
         margin: 0;
         position: absolute;
@@ -1136,41 +1135,41 @@
         width: 320px;
     }
 
-    .landingLoginActive_FebruaryA a {
+    .landingLoginActive_FebruaryC a {
         margin-top: 80px;
     }
 
-    .landingLoginInactive_FebruaryA a {
+    .landingLoginInactive_FebruaryC a {
         margin-top: 80px;
     }
 
-    .landingLoginActive_FebruaryA button {
+    .landingLoginActive_FebruaryC button {
         margin-left: 15px;
         margin-right: 15px;
     }
 
-    .landingLoginInactive_FebruaryA button {
+    .landingLoginInactive_FebruaryC button {
         margin-left: 15px;
         margin-right: 15px;
     }
 
-    .landingLoginActive_FebruaryA h3 {
+    .landingLoginActive_FebruaryC h3 {
         font-size: 18px;
     }
 
-    .landingLoginInactive_FebruaryA h3 {
+    .landingLoginInactive_FebruaryC h3 {
         font-size: 18px;
     }
 
-    .landingLoginActive_FebruaryA input {
+    .landingLoginActive_FebruaryC input {
         margin-left: 17px;
     }
 
-    .landingLoginInactive_FebruaryA input {
+    .landingLoginInactive_FebruaryC input {
         margin-left: 17px;
     }
 
-    .landingLoginInactive_FebruaryA {
+    .landingLoginInactive_FebruaryC {
         left: -13%;
         margin: 0;
         position: absolute;
