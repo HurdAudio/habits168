@@ -1,10 +1,10 @@
 .backgroundDiv_FebruaryB {
     background: url(https://habits168-hurdaudio.s3.amazonaws.com/landing/february/fabric_stock_13_by_ox3artstock_d8i6dak-fullview.jpg);
     background-size: 100%;
-/*    filter: saturate(200%) sepia(40%);*/
+    filter: saturate(200%) sepia(40%);
     height: 100%;
     left: 0;
-/*    opacity: 0.5;*/
+    opacity: 0.5;
     overflow: hidden;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -14,7 +14,7 @@
     z-index: -1;
 }
 
-#container {
+#landingContainer_FebruaryB {
     align-items: center;
     display: grid;
     grid-template-areas:
@@ -28,7 +28,7 @@
     width: 100%;
 }
 
-.landingTitleFlex {
+.landingTitleFlex_FebruaryB {
     backdrop-filter: invert(100%);
     grid-area: header;
     grid-column: first / end;
@@ -38,6 +38,7 @@
 
 .landingLogo_FebruaryB {
     filter: drop-shadow(10px 15px 4px #383515);
+    float: left;
     grid-area: header;
     grid-column: first / third;
     grid-row: top / line2;
@@ -50,6 +51,7 @@
 .landingTitleDiv_FebruaryB {
     align-self: center;
     color: #121211;
+    float: left;
     grid-column: 3 / span 2;
     grid-row: 1/ 2;
     font-family: 'Padauk', sans-serif;
@@ -65,6 +67,7 @@
 
 .landingTitleButtonsDiv_FebruaryB {
     align-self: stretch;
+    float: left;
     grid-area: header;
     grid-column: 4/6;
     grid-row: 1/2;
