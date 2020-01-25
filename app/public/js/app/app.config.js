@@ -63,7 +63,7 @@
                 url: '/userprofileeditor/:userUuid',
                 parent: 'app',
                 component: 'userprofileeditor'
-        });
+            });
         // .state({
         //   name: 'emailconfirm',
         //   url: '/emailconfirm/:id',

@@ -100,6 +100,11 @@
         vm.hubShareSubmitCommentEdit = hubShareSubmitCommentEdit;
         vm.removeMessage = removeMessage;
         vm.removeMessageReply = removeMessageReply;
+        vm.navigateToProfileEditor = navigateToProfileEditor;
+        
+        function navigateToProfileEditor() {
+            $state.go('userprofileeditor', {userUuid: vm.user.uuid});
+        }
 
         function removeMessageReply(message, response) {
             $http.delete(`/message_responses/${response.uuid}`);
