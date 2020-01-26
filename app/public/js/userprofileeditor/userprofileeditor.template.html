@@ -1,0 +1,163 @@
+<div class="profileBackgroundDiv{{$ctrl.profileMonth}}">
+</div>
+
+<div class="{{$ctrl.profileEditorContentStatus}}">
+    <div class="profileBanner{{$ctrl.profileMonth}}">
+        <img class="profileIcon{{$ctrl.profileMonth}}" src="{{$ctrl.profileLogo}}" ng-click="$ctrl.navigateToHub()">
+        <p class="profileBannerTitle{{$ctrl.profileMonth}}">Edit Profile</p>
+    </div>
+
+    <div class="profileEditorContentContainer{{$ctrl.profileMonth}}">
+        <div class="profileBasicContentContainer{{$ctrl.profileMonth}}">
+            <img class="profileEditorAvatarDisplay{{$ctrl.profileMonth}}" src="{{$ctrl.user.avatar_path}}">
+            <button class="profileAvatarChangeButton{{$ctrl.profileMonth}}" ng-click="$ctrl.openChangeAvatarModal()">change avatar</button><br>
+            <label class="profileEditLabel{{$ctrl.profileMonth}}">first name:
+                <input class="profileEditNameInput{{$ctrl.profileMonth}}" type="text" value="{{$ctrl.user.first_name}}" id="profileEditNameInput" ng-keyup="$ctrl.updateFirstName()"></label><br>
+            <label class="profileEditLabel{{$ctrl.profileMonth}}">last name:
+                <input class="profileEditNameInput{{$ctrl.profileMonth}}" type="text" value="{{$ctrl.user.last_name}}" id="profileEditLastNameInput" ng-keyup="$ctrl.updateLastName()"></label><br><br>
+            <button class="profileAvatarChangeButton{{$ctrl.profileMonth}}">change password</button>
+        </div>
+
+        <div class="profileExpandedContentContainer{{$ctrl.profileMonth}}">
+            <div class="profileEditorBioDiv{{$ctrl.profileMonth}}">
+                <label class="profileEditLabel{{$ctrl.profileMonth}}">description:</label>
+                <div class="profileEditorPublicSwitch{{$ctrl.profileMonth}}" ng-click="$ctrl.toggleDescriptionPublicPrivate()">
+                    <div class="profileEditorPublicSwitchSlotOn{{$ctrl.profileMonth}}" ng-if="$ctrl.user.expanded.description.public"></div>
+                    <div class="profileEditorPublicSwitchSlotOff{{$ctrl.profileMonth}}" ng-if="!$ctrl.user.expanded.description.public"></div>
+                    <p class="profileEditorPublicPrivateLabel{{$ctrl.profileMonth}}" ng-if="$ctrl.user.expanded.description.public">public</p>
+                    <p class="profileEditorPublicPrivateLabel{{$ctrl.profileMonth}}" ng-if="!$ctrl.user.expanded.description.public">private</p>
+                </div><br>
+                <textarea class="profileEditorBioInput{{$ctrl.profileMonth}}" id="profileEditorDescriptionInput" rows="3" ng-keyup="$ctrl.updateProfileDescription()"></textarea>
+            </div>
+            <div class="profileEditorBirthdateDiv{{$ctrl.profileMonth}}">
+                <label class="profileEditLabel{{$ctrl.profileMonth}}">birthdate:<br>
+                    <input class="profileEditBirthdateInput{{$ctrl.profileMonth}}" id="profileEditorBirthdateInput" type="date" ng-blur="$ctrl.updateBirthdate()">
+                </label>
+                <div class="profileEditorPublicSwitch{{$ctrl.profileMonth}}" ng-click="$ctrl.toggleBirthdatePublicPrivate()">
+                    <div class="profileEditorPublicSwitchSlotOn{{$ctrl.profileMonth}}" ng-if="$ctrl.user.expanded.birthdate.public"></div>
+                    <div class="profileEditorPublicSwitchSlotOff{{$ctrl.profileMonth}}" ng-if="!$ctrl.user.expanded.birthdate.public"></div>
+                    <p class="profileEditorPublicPrivateLabel{{$ctrl.profileMonth}}" ng-if="$ctrl.user.expanded.birthdate.public">public</p>
+                    <p class="profileEditorPublicPrivateLabel{{$ctrl.profileMonth}}" ng-if="!$ctrl.user.expanded.birthdate.public">private</p>
+                </div>
+            </div>
+            <div class="profileEditorBioDiv{{$ctrl.profileMonth}}">
+                <label class="profileEditLabel{{$ctrl.profileMonth}}">bio:</label>
+                <div class="profileEditorPublicSwitch{{$ctrl.profileMonth}}" ng-click="$ctrl.toggleBioPublicPrivate()">
+                    <div class="profileEditorPublicSwitchSlotOn{{$ctrl.profileMonth}}" ng-if="$ctrl.user.expanded.bio.public"></div>
+                    <div class="profileEditorPublicSwitchSlotOff{{$ctrl.profileMonth}}" ng-if="!$ctrl.user.expanded.bio.public"></div>
+                    <p class="profileEditorPublicPrivateLabel{{$ctrl.profileMonth}}" ng-if="$ctrl.user.expanded.bio.public">public</p>
+                    <p class="profileEditorPublicPrivateLabel{{$ctrl.profileMonth}}" ng-if="!$ctrl.user.expanded.bio.public">private</p>
+                </div><br>
+                <textarea class="profileEditorBioInput{{$ctrl.profileMonth}}" id="profileEditorBioInput" rows="3" ng-keyup="$ctrl.updateProfileBio()"></textarea>
+            </div>
+            <div class="profileEditorLocationDiv{{$ctrl.profileMonth}}">
+                <label class="profileEditLabel{{$ctrl.profileMonth}}">location:</label>
+                <div class="profileEditorPublicSwitch{{$ctrl.profileMonth}}" ng-click="$ctrl.toggleBioLocationPrivate()">
+                    <div class="profileEditorPublicSwitchSlotOn{{$ctrl.profileMonth}}" ng-if="$ctrl.user.expanded.location.public"></div>
+                    <div class="profileEditorPublicSwitchSlotOff{{$ctrl.profileMonth}}" ng-if="!$ctrl.user.expanded.location.public"></div>
+                    <p class="profileEditorPublicPrivateLabel{{$ctrl.profileMonth}}" ng-if="$ctrl.user.expanded.location.public">public</p>
+                    <p class="profileEditorPublicPrivateLabel{{$ctrl.profileMonth}}" ng-if="!$ctrl.user.expanded.location.public">private</p>
+                </div><br>
+                <div class="profileEditorChangeLocationButtonDiv{{$ctrl.profileMonth}}">
+                    <button class="profileEditorChangeLocationButton{{$ctrl.profileMonth}}" ng-click="$ctrl.changeLocationModal()">change</button>
+                </div><br>
+                <div class="profileEditorLocationDatas{{$ctrl.profileMonth}}">
+
+                    <p class="profileEditorLocationName{{$ctrl.profileMonth}}">{{$ctrl.user.expanded.location.name}}, {{$ctrl.user.expanded.location.adminCode}}, {{$ctrl.user.expanded.location.country}}</p>
+                    <p class="profileEditorLocationDatapoint{{$ctrl.profileMonth}}">Population: {{$ctrl.user.expanded.location.population}}</p>
+                    <p class="profileEditorLocationDatapoint{{$ctrl.profileMonth}}">{{$ctrl.user.expanded.location.lat}} {{$ctrl.user.expanded.location.lon}}</p>
+
+
+
+                </div>
+
+            </div>
+            <div class="profileEditorBioDiv{{$ctrl.profileMonth}}">
+                <label class="profileEditLabel{{$ctrl.profileMonth}}">occupation:</label>
+                <div class="profileEditorPublicSwitch{{$ctrl.profileMonth}}" ng-click="$ctrl.toggleBioOccupationPrivate()">
+                    <div class="profileEditorPublicSwitchSlotOn{{$ctrl.profileMonth}}" ng-if="$ctrl.user.expanded.occupation.public"></div>
+                    <div class="profileEditorPublicSwitchSlotOff{{$ctrl.profileMonth}}" ng-if="!$ctrl.user.expanded.occupation.public"></div>
+                    <p class="profileEditorPublicPrivateLabel{{$ctrl.profileMonth}}" ng-if="$ctrl.user.expanded.occupation.public">public</p>
+                    <p class="profileEditorPublicPrivateLabel{{$ctrl.profileMonth}}" ng-if="!$ctrl.user.expanded.occupation.public">private</p>
+                </div><br>
+                <input class="profileEditorBioInput{{$ctrl.profileMonth}}" id="profileEditorOccupationInput" type="text" ng-keyup="$ctrl.updateProfileOccupation()">
+            </div>
+            <div class="profileEditorBioDiv{{$ctrl.profileMonth}}">
+                <label class="profileEditLabel{{$ctrl.profileMonth}}">employer:</label>
+                <div class="profileEditorPublicSwitch{{$ctrl.profileMonth}}" ng-click="$ctrl.toggleBioEmployerPrivate()">
+                    <div class="profileEditorPublicSwitchSlotOn{{$ctrl.profileMonth}}" ng-if="$ctrl.user.expanded.employer.public"></div>
+                    <div class="profileEditorPublicSwitchSlotOff{{$ctrl.profileMonth}}" ng-if="!$ctrl.user.expanded.employer.public"></div>
+                    <p class="profileEditorPublicPrivateLabel{{$ctrl.profileMonth}}" ng-if="$ctrl.user.expanded.employer.public">public</p>
+                    <p class="profileEditorPublicPrivateLabel{{$ctrl.profileMonth}}" ng-if="!$ctrl.user.expanded.employer.public">private</p>
+                </div><br>
+                <input class="profileEditorBioInput{{$ctrl.profileMonth}}" id="profileEditorEmployerInput" type="text" ng-keyup="$ctrl.updateProfileEmployer()">
+            </div>
+            <div class="profileEditorBioDiv{{$ctrl.profileMonth}}">
+                <label class="profileEditLabel{{$ctrl.profileMonth}}">education:</label>
+                <div class="profileEditorPublicSwitch{{$ctrl.profileMonth}}" ng-click="$ctrl.toggleEducationPrivate()">
+                    <div class="profileEditorPublicSwitchSlotOn{{$ctrl.profileMonth}}" ng-if="$ctrl.user.expanded.education.public"></div>
+                    <div class="profileEditorPublicSwitchSlotOff{{$ctrl.profileMonth}}" ng-if="!$ctrl.user.expanded.education.public"></div>
+                    <p class="profileEditorPublicPrivateLabel{{$ctrl.profileMonth}}" ng-if="$ctrl.user.expanded.education.public">public</p>
+                    <p class="profileEditorPublicPrivateLabel{{$ctrl.profileMonth}}" ng-if="!$ctrl.user.expanded.education.public">private</p>
+                </div><br>
+                <main ng-repeat="school in $ctrl.user.expanded.education.schools">
+                    <br>
+                    <div class="profileEditorSchoolDeleter{{$ctrl.profileMonth}}" ng-click="$ctrl.removeSchool(school.id)"><i class="far fa-trash-alt"></i></div><br><br>
+                    <input class="profileEditorBioInput{{$ctrl.profileMonth}}" id="schoolNameInput{{school.id}}" value="{{school.name}}" ng-keyup="$ctrl.updateSchoolName(school.id)">
+                    <input class="profileEditorBioInput{{$ctrl.profileMonth}}" id="schoolLocationInput{{school.id}}" value="{{school.location}}" ng-keyup="$ctrl.updateSchoolLocation(school.id)"><br><br>
+                </main><br><br>
+                <input class="profileEditorBioInput{{$ctrl.profileMonth}}" id="profileEditorSchoolNameInput" placeholder="school" ng-keyup="$ctrl.inputSchoolFields()">
+                <input class="profileEditorBioInput{{$ctrl.profileMonth}}" id="profileEditorSchoolLocationInput" placeholder="location" ng-keyup="$ctrl.inputSchoolFields()">
+                <button class="profileAvatarChangeButton{{$ctrl.profileMonth}}" ng-if="$ctrl.shoolInputValid" ng-click="$ctrl.addSchoolEntry()">add school</button>
+            </div>
+            <div class="profileEditorBioDiv{{$ctrl.profileMonth}}">
+                <label class="profileEditLabel{{$ctrl.profileMonth}}">email:</label>
+                <div class="profileEditorPublicSwitch{{$ctrl.profileMonth}}" ng-click="$ctrl.toggleBioEmailPrivate()">
+                    <div class="profileEditorPublicSwitchSlotOn{{$ctrl.profileMonth}}" ng-if="$ctrl.user.expanded.email.public"></div>
+                    <div class="profileEditorPublicSwitchSlotOff{{$ctrl.profileMonth}}" ng-if="!$ctrl.user.expanded.email.public"></div>
+                    <p class="profileEditorPublicPrivateLabel{{$ctrl.profileMonth}}" ng-if="$ctrl.user.expanded.email.public">public</p>
+                    <p class="profileEditorPublicPrivateLabel{{$ctrl.profileMonth}}" ng-if="!$ctrl.user.expanded.email.public">private</p>
+                </div><br>
+                <input class="profileEditorBioInput{{$ctrl.profileMonth}}" id="profileEditorEmailInput" type="email" ng-keyup="$ctrl.updateEmail()">
+            </div>
+            <div class="profileEditorBioDiv{{$ctrl.profileMonth}}">
+                <label class="profileEditLabel{{$ctrl.profileMonth}}">phone:</label>
+                <div class="profileEditorPublicSwitch{{$ctrl.profileMonth}}" ng-click="$ctrl.togglePhonePrivate()">
+                    <div class="profileEditorPublicSwitchSlotOn{{$ctrl.profileMonth}}" ng-if="$ctrl.user.expanded.phone.public"></div>
+                    <div class="profileEditorPublicSwitchSlotOff{{$ctrl.profileMonth}}" ng-if="!$ctrl.user.expanded.phone.public"></div>
+                    <p class="profileEditorPublicPrivateLabel{{$ctrl.profileMonth}}" ng-if="$ctrl.user.expanded.phone.public">public</p>
+                    <p class="profileEditorPublicPrivateLabel{{$ctrl.profileMonth}}" ng-if="!$ctrl.user.expanded.phone.public">private</p>
+                </div><br>
+                <input class="profileEditorBioInput{{$ctrl.profileMonth}}" id="profileEditorPhoneInput" type="input" ng-keyup="$ctrl.updatePhone()">
+            </div>
+            <div class="profileEditorBioDiv{{$ctrl.profileMonth}}"></div>
+
+        </div>
+    </div>
+</div>
+
+<div class="{{$ctrl.avatarModalStatus}}">
+    <div class="profileAvatarModalListDiv{{$ctrl.profileMonth}}">
+        <main ng-repeat="avatar in $ctrl.avatarList">
+            <img class="profileModalAvatarListModals{{$ctrl.profileMonth}}" src="{{avatar.link}}" ng-click="$ctrl.selectAvatarFromList(avatar)">
+        </main>
+    </div>
+    <img class="profileEditorAvatarDisplay{{$ctrl.profileMonth}}" src="{{$ctrl.avatar}}">
+    <br><br>
+    <input class="profileEditorAvatarPathInput{{$ctrl.profileMonth}}" id="profileEditorAvatarPathInput" placeholder="image url" type="text" ng-keyup="$ctrl.linkToAvatar()">
+    <br><br>
+    <button class="profileAvatarModalButton{{$ctrl.profileMonth}}" ng-if="$ctrl.user.avatar_path !== $ctrl.avatar" ng-click="$ctrl.submitProfileAvatar()">submit</button>
+    <button class="profileAvatarModalButton{{$ctrl.profileMonth}}" ng-click="$ctrl.cancelProfileAvatarModal()">cancel</button>
+</div>
+<div class="{{$ctrl.cityModalStatus}}">
+    <input class="profileEditorCitySearchInput{{$ctrl.profileMonth}}" id="profileEditorCitySearchInput" placeholder="city name" type="text">
+    <button class="profileAvatarModalButton{{$ctrl.profileMonth}}" id="profileEditorFilterButton{{$ctrl.profileMonth}}" ng-click="$ctrl.filterCitiesList()">search</button>
+    <div class="profileEditorCityList{{$ctrl.profileMonth}}">
+        <main ng-repeat="city in $ctrl.citiesList">
+            <div class="profileEditorCityEntryDiv{{$ctrl.profileMonth}}" ng-click="$ctrl.selectCity(city)">
+                <p class="profileCityData{{$ctrl.profileMonth}}">{{city.name}}, {{city.adminCode}}, {{city.country}}</p>
+            </div>
+        </main>
+    </div>
+    <button class="profileAvatarModalButton{{$ctrl.profileMonth}}" id="profileEditorCloseButton{{$ctrl.profileMonth}}" ng-click="$ctrl.closeCitySelect()">close</button>
+</div>

@@ -298,7 +298,7 @@
             <div class="hubUserProfileBasicsPane{{$ctrl.monthSelect}}">
 
                 <div class="hubBasicUserData{{$ctrl.monthSelect}}">
-                    <button class="hubEditProfileButton{{$ctrl.monthSelect}}">edit</button>
+                    <button class="hubEditProfileButton{{$ctrl.monthSelect}}" ng-click="$ctrl.navigateToProfileEditor()">edit</button>
 
                     <p class="hubLoggedInAsLabel{{$ctrl.monthSelect}}">Logged in as:</p>
                     <img class="hubLoggedInAsAvatar{{$ctrl.monthSelect}}" src="{{$ctrl.user.avatar_path}}">
@@ -332,7 +332,7 @@
 
                 <div class="hubPublicProfileDeets{{$ctrl.monthSelect}}" ng-if="$ctrl.profileNavState === 'public'">
                     <div class="hubOtherProfileEditButton{{$ctrl.monthSelect}}">
-                        <button class="hubEditProfileButton{{$ctrl.monthSelect}}">edit</button>
+                        <button class="hubEditProfileButton{{$ctrl.monthSelect}}" ng-click="$ctrl.navigateToProfileEditor()">edit</button>
                     </div>
 
                     <div class="hubUserPublicStats{{$ctrl.monthSelect}}">
@@ -359,7 +359,7 @@
                 <div class="hubPublicProfileDeets{{$ctrl.monthSelect}}" ng-if="$ctrl.profileNavState === 'private'">
 
                     <div class="hubOtherProfileEditButton{{$ctrl.monthSelect}}">
-                        <button class="hubEditProfileButton{{$ctrl.monthSelect}}">edit</button>
+                        <button class="hubEditProfileButton{{$ctrl.monthSelect}}" ng-click="$ctrl.navigateToProfileEditor()">edit</button>
                     </div>
 
                     <div class="hubUserPublicStats{{$ctrl.monthSelect}}">

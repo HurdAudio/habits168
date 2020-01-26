@@ -57,6 +57,12 @@
                 url: '/dailies/:userUuid',
                 parent: 'app',
                 component: 'dailies'
+            })
+            .state({
+                name: 'userprofileeditor',
+                url: '/userprofileeditor/:userUuid',
+                parent: 'app',
+                component: 'userprofileeditor'
             });
         // .state({
         //   name: 'emailconfirm',
