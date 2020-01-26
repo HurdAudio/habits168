@@ -29,6 +29,170 @@
         vm.addSchoolEntry = addSchoolEntry;
         vm.toggleBioEmailPrivate = toggleBioEmailPrivate;
         vm.togglePhonePrivate = togglePhonePrivate;
+        vm.avatarList = [
+            {
+                link: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/lovecraftAvatar.jpg'
+            },
+            {
+                link: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/digitalNomadAvatar.jpg'
+            },
+            {
+                link: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/homerAvatar.jpg'
+            },
+            {
+                link: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/ashesAvatar.png'
+            }
+        ];
+        vm.selectAvatarFromList = selectAvatarFromList;
+        vm.linkToAvatar = linkToAvatar;
+        vm.avatarModalStatus = 'profileEditorAvatarModalInactive' + vm.profileMonth;
+        vm.openChangeAvatarModal = openChangeAvatarModal;
+        vm.profileEditorContentStatus = 'profileEditorContent' + vm.profileMonth;
+        vm.cancelProfileAvatarModal = cancelProfileAvatarModal;
+        vm.submitProfileAvatar = submitProfileAvatar;
+        vm.updateFirstName = updateFirstName;
+        vm.updateLastName = updateLastName;
+        vm.updateProfileBio = updateProfileBio;
+        vm.updateBirthdate = updateBirthdate;
+        vm.updateProfileDescription = updateProfileDescription;
+        vm.citiesList = [];
+        vm.filterCitiesList = filterCitiesList;
+        vm.cityModalStatus = 'profileCityModalInactive' + vm.profileMonth;
+        vm.changeLocationModal = changeLocationModal;
+        vm.closeCitySelect = closeCitySelect;
+        vm.selectCity = selectCity;
+        vm.updateProfileOccupation = updateProfileOccupation;
+        vm.updateProfileEmployer = updateProfileEmployer;
+        vm.updateSchoolName = updateSchoolName;
+        vm.updateSchoolLocation = updateSchoolLocation;
+        vm.updateEmail = updateEmail;
+        vm.updatePhone = updatePhone;
+        
+        function updatePhone() {
+            vm.user.expanded.phone.phone = document.getElementById('profileEditorPhoneInput').value;
+        }
+        
+        function updateEmail() {
+            vm.user.expanded.email.email = document.getElementById('profileEditorEmailInput').value;
+        }
+        
+        function updateSchoolLocation(index) {
+            vm.user.expanded.education.schools[index].location = document.getElementById('schoolLocationInput' + index).value;
+        }
+        
+        function updateSchoolName(index) {
+            vm.user.expanded.education.schools[index].name = document.getElementById('schoolNameInput' + index).value;
+        }
+        
+        function updateProfileEmployer() {
+            vm.user.expanded.employer.employer = document.getElementById('profileEditorEmployerInput').value;
+        }
+        
+        function updateProfileOccupation() {
+            vm.user.expanded.occupation.occupation = document.getElementById('profileEditorOccupationInput').value;
+        }
+        
+        function selectCity(city) {
+            vm.user.expanded.location.name = city.name;
+            vm.user.expanded.location.country = city.country;
+            vm.user.expanded.location.featureCode = city.featureCode;
+            vm.user.expanded.location.adminCode = city.adminCode;
+            vm.user.expanded.location.population = city.population;
+            vm.user.expanded.location.lat = city.lat;
+            vm.user.expanded.location.lon = city.lon;
+            closeCitySelect();
+        }
+        
+        function closeCitySelect() {
+            vm.cityModalStatus = 'profileCityModalInactive' + vm.profileMonth;
+            vm.profileEditorContentStatus = 'profileEditorContent' + vm.profileMonth;
+            document.getElementById('profileEditorCitySearchInput').value = '';
+            vm.citiesList = [];
+        }
+        
+        function changeLocationModal() {
+            vm.cityModalStatus = 'profileCityModal' + vm.profileMonth;
+            vm.profileEditorContentStatus = 'profileEditorContentBlur' + vm.profileMonth;
+        }
+        
+        function filterCitiesList() {
+            const filter = document.getElementById('profileEditorCitySearchInput').value;
+            
+            if (filter === '') {
+                vm.citiesList = [];
+            } else {
+                $http.get(`/citylist/${filter}`)
+                .then(listData => {
+                    vm.citiesList = listData.data.sort((a, b) => {
+                        if (a.name.toLowerCase() < b.name.toLowerCase()) {
+                            return -1;
+                        } else if (a.name.toLowerCase() > b.name.toLowerCase()){
+                            return 1;
+                        } else {
+                            return 0;
+                        }
+                    });
+                });
+            }
+        }
+        
+        function updateFirstName() {
+            if (document.getElementById('profileEditNameInput').value === '') {
+                vm.user.first_name = 'anonymous';
+            } else {
+                vm.user.first_name = (document.getElementById('profileEditNameInput').value);
+            }
+            
+        }
+        
+        function updateLastName() {
+            vm.user.last_name = (document.getElementById('profileEditLastNameInput').value);
+        }
+        
+        function updateProfileBio() {
+            vm.user.expanded.bio.bio = document.getElementById('profileEditorBioInput').value;
+        }
+        
+        function updateProfileDescription() {
+            vm.user.expanded.description.description = document.getElementById('profileEditorDescriptionInput').value;
+        }
+        
+        function updateBirthdate() {
+            const months = [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ];
+            let bDay = new Date(document.getElementById('profileEditorBirthdateInput').value);
+            const offset = bDay.getTimezoneOffset();
+            bDay.setDate(bDay.getDate() + 1);
+            console.log(bDay);
+            
+            vm.user.expanded.birthdate.birthdate = new Date(bDay);
+            vm.user.expanded.birthdate.cleanDate = vm.user.expanded.birthdate.birthdate.getDate().toString() + ' ' + months[vm.user.expanded.birthdate.birthdate.getMonth()];
+        }
+        
+        function submitProfileAvatar() {
+            vm.user.avatar_path = vm.avatar;
+            cancelProfileAvatarModal();
+        }
+        
+        function cancelProfileAvatarModal() {
+            vm.avatarModalStatus = 'profileEditorAvatarModalInactive' + vm.profileMonth;
+            vm.profileEditorContentStatus = 'profileEditorContent' + vm.profileMonth;
+            document.getElementById('profileEditorAvatarPathInput').value = '';
+        }
+        
+        function openChangeAvatarModal() {
+            vm.avatarModalStatus = 'profileEditorAvatarModal' + vm.profileMonth;
+            vm.profileEditorContentStatus = 'profileEditorContentBlur' + vm.profileMonth;
+        }
+        
+        function linkToAvatar() {
+            if (document.getElementById('profileEditorAvatarPathInput').value !== '') {
+                vm.avatar = document.getElementById('profileEditorAvatarPathInput').value;
+            }
+        }
+        
+        function selectAvatarFromList(avatar) {
+            vm.avatar = avatar.link;
+        }
 
         function addSchoolEntry() {
             const index = vm.user.expanded.education.schools.length;
@@ -123,7 +287,7 @@
                 vm.user.expanded.email.public = !vm.user.expanded.email.public;
             }
         }
-        
+
         function togglePhonePrivate() {
             if (vm.user.expanded === undefined) {
                 extendedProfileData('phone');
@@ -158,6 +322,7 @@
                     vm.schools = vm.user.expanded.education.schools;
                     document.getElementById('profileEditorEmailInput').value = vm.user.expanded.email.email;
                     document.getElementById('profileEditorPhoneInput').value = vm.user.expanded.phone.phone;
+                    vm.avatar = vm.user.avatar_path;
                     if (call) {
                         switch (call) {
                             case ('birthdate'):
@@ -336,6 +501,7 @@
 
         function onInit() {
             console.log("User Profile Editor is lit");
+            
             setUserIPAddress();
 
             switch (vm.profileMonth) {

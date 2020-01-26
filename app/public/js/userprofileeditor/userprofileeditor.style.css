@@ -12,6 +12,15 @@
     z-index: -1;
 }
 
+.profileEditorContent_JanuaryA {
+    transition: all 0.4s linear;
+}
+
+.profileEditorContentBlur_JanuaryA {
+    filter: blur(15px);
+    transition: all 0.4s linear;
+}
+
 .profileBanner_JanuaryA {
     background: #274e3c;
     height: 13vh;
@@ -259,4 +268,157 @@
     cursor: pointer;
     float: left;
     margin: 0 0 0 60px;
+}
+
+.profileEditorAvatarModal_JanuaryA {
+    background: #8c9490;
+    border: 2px solid #6b0300;
+    height: auto;
+    left: 10%;
+    padding: 30px;
+    position: absolute;
+    top: 5%;
+    transition: all 0.4s linear;
+    transform: scale(1);
+    width: 80%;
+}
+
+.profileEditorAvatarModalInactive_JanuaryA {
+    background: #8c9490;
+    border: 2px solid #6b0300;
+    height: auto;
+    left: 20%;
+    padding: 30px;
+    position: absolute;
+    top: 5%;
+    transition: all 0.4s linear;
+    transform: scale(0.0001);
+    width: 80%;
+}
+
+.profileEditorAvatarPathInput_JanuaryA {
+    background: #e1e7e5;
+    border: none;
+    color: #000502;
+    font-family: 'Mukta Mahee', sans-serif;
+    font-size: 18px;
+    outline-color: #6b0300;
+    padding: 4px 0 4px 4px;
+    width: 300px;
+}
+
+.profileAvatarModalButton_JanuaryA {
+    background: #274e3c;
+    border: none;
+    color: #a4abac;
+    cursor: pointer;
+    font-family: 'Mukta Mahee', sans-serif;
+    font-size: 18px;
+    margin: 15px 15px 15px 45px;
+    outline-color: #a4abac;
+    transform: skewX(-15deg);
+    transition: all 0.4s linear;
+}
+
+.profileAvatarModalButton_JanuaryA:hover {
+    background: #b19c90;
+    color: #6b0300;
+    transform: skewX(-5deg);
+    transition: all 0.4s linear;
+}
+
+.profileAvatarModalButton_JanuaryA:active {
+    background: #000502;
+    color: #b19c90;
+    transition: all 0.1s linear;
+}
+
+.profileAvatarModalListDiv_JanuaryA {
+    background: transparent;
+    float: right;
+    height: 450px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 60%;
+}
+
+.profileModalAvatarListModals_JanuaryA {
+    cursor: pointer;
+    float: left;
+    height: 80px;
+    width: 80px;
+}
+
+.profileCityModal_JanuaryA {
+    background: #b19c90;
+    border: 2px solid #274e3c;
+    height: auto;
+    left: 25%;
+    padding: 30px;
+    position: absolute;
+    top: 2%;
+    transition: all 0.4s linear;
+    transform: rotateX(0) scale(1) skew(0);
+    width: 50%;
+}
+
+.profileCityModalInactive_JanuaryA {
+    background: #b19c90;
+    border: 2px solid #274e3c;
+    height: auto;
+    left: 125%;
+    padding: 30px;
+    position: absolute;
+    top: 2%;
+    transition: all 0.4s linear;
+    transform: rotateX(180deg) scale(0.0001) skew(90deg);
+    width: 50%;
+}
+
+.profileEditorCitySearchInput_JanuaryA {
+    background: #e1e7e5;
+    border: none;
+    color: #000502;
+    font-family: 'Mukta Mahee', sans-serif;
+    font-size: 18px;
+    margin: 0 20% 10px 20%;
+    outline-color: #6b0300;
+    padding: 4px 0 4px 4px;
+    width: 60%;
+}
+
+.profileEditorCityList_JanuaryA {
+    background: #e1e7e5;
+    height: 65vh;
+    margin: 0 20% 10px 20%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 2px;
+    width: 60%;
+}
+
+#profileEditorCloseButton_JanuaryA {
+    margin-left: 45%;
+}
+
+#profileEditorFilterButton_JanuaryA {
+    margin-bottom: 8px;
+    margin-left: 45%;
+    margin-top: 0;
+}
+
+.profileCityData_JanuaryA {
+    color: #000502;
+    cursor: pointer;
+    font-family: 'Mukta Mahee', sans-serif;
+    font-size: 18px;
+    margin: 5px;
+}
+
+.profileEditorCityEntryDiv_JanuaryA {
+    padding 2px 4px;
+}
+
+.profileEditorCityEntryDiv_JanuaryA:hover {
+    background: #939e99;
 }
