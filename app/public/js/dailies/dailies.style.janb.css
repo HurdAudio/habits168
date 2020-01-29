@@ -1,0 +1,250 @@
+.dailiesContainerActive_JanuaryB {
+    display: initial;
+    filter: blur(0);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: all 0.3s linear;
+    width: 100%;
+}
+
+.dailiesImageDiv_JanuaryB {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/dailies/january/shin-roran-bnKj-mJQZZs-unsplash.jpg);
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.dailiesNavbar_JanuaryB {
+    backdrop-filter: brightness(30%);
+    border-bottom: 2px solid #2d242a;
+    color: #bcd3de;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Literata', serif;
+    height: 12vh;
+    justify-content: left;
+    left: 0;
+    padding-left: 25px;
+    padding-top: 1vh;
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+
+.dailiesLogoNav_JanuaryB {
+    cursor: pointer;
+    filter: brightness(100%);
+    max-height: 11vh;
+    max-width: 85px;
+}
+
+.dailiesTitle_JanuaryB {
+    color: #bcd3de;
+    font-family: 'Literata', serif;
+    font-size: 42px;
+    margin: 3vh 0 6vh 65px;
+}
+
+.dailiesSubsManagementContainer_JanuaryB {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 88.7vh;
+    justify-content: left;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100%;
+}
+
+.dailiesSubscriptions_JanuaryB {
+    backdrop-filter: blur(12px);
+    border-right: 3px solid #263959;
+    float: left;
+    height: 88.7vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 30px 15px;
+    position: relative;
+    width: 60%;
+}
+
+.dailiesAvailableFeeds_JanuaryB {
+    backdrop-filter: invert(60%);
+    float: left;
+    height: 88.7vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 30px 15px;
+    position: relative;
+    width: 40%;
+}
+
+.dailiesCurrentSubsTitle_JanuaryB {
+    color: #0f1623;
+    font-family: 'Literata', serif;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.dailySubIcon_JanuaryB {
+    float: left;
+    max-height: 75px;
+    max-width: 75px;
+    width: 10%;
+}
+
+.dailiesSubscriptions_JanuaryB i {
+    color: #0f1623;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.dailyDeleter_JanuaryB {
+    color: #0f1623;
+    cursor: pointer;
+    float: left;
+    font-family: 'Literata', serif;
+    font-size: 18px;
+    margin: 10px 0;
+    width: 20%;
+    transform: translateY(7px);
+}
+
+.dailySubTitleDescription_JanuaryB {
+    color: #0f1623;
+    float: left;
+    font-family: 'Literata', serif;
+    font-size: 18px;
+    margin: 2vh 15px 25px 15px;
+    max-width: 750px;
+    width: 65%;
+}
+
+.dailiesAvailableSubsTitle_JanuaryB {
+    color: #0f1623;
+    font-family: 'Literata', serif;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.dailiesAvailableFeeds_JanuaryB i {
+    color: #0f1623;
+    float: left;
+    font-size: 24px;
+    transform: translateX(10px) translateY(2px);
+    margin-right: 8px;
+    width: 10%;
+}
+
+.dailiesFeedsSearchInput_JanuaryB {
+    background: #b8d0de;
+    border: none;
+    color: #0f1623;
+    float: left;
+    font-family: 'Literata', serif;
+    font-size: 24px;
+    outline-color: #0f1623;
+    width: 75%;
+}
+
+.dailyAdder_JanuaryB {
+    color: #0f1623;
+    cursor: pointer;
+    float: left;
+    font-family: 'Literata', serif;
+    font-size: 18px;
+    width: 15%;
+}
+
+.dailyAvailSubIcon_JanuaryB {
+    float: left;
+    margin-left: 10px;
+    max-height: 55px;
+    max-width: 55px;
+    width: 15%;
+}
+
+.dailyAvailSubTitleDescription_JanuaryB {
+    color: #0f1623;
+    float: left;
+    font-family: 'Literata', serif;
+    font-size: 18px;
+    margin: 0.5vh 15px 25px 15px;
+    max-width: 300px;
+    width: 70%;
+}
+
+.dailiesSubsManagementContainer_JanuaryB main {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.dailiesAvailableFeeds_JanuaryB main {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.hubReaderDay3BlockActive_JanuaryB {
+    background: #82a1b5;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/dailies/january/shin-roran-bnKj-mJQZZs-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: 1;
+}
+
+.hubReaderDay3BlockInactive_JanuaryB {
+    background: #82a1b5;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/dailies/january/shin-roran-bnKj-mJQZZs-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(-345%);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 1025px) {
+    .dailySubTitleDescription_JanuaryB {
+        max-width: 550px;
+        width: 100%;
+    }
+
+    .dailyAvailSubTitleDescription_JanuaryB {
+        max-width: 350px;
+        width: 100%;
+    }
+
+    .dailyAvailSubIcon_JanuaryB {
+        margin-left: 40px;
+    }
+}
