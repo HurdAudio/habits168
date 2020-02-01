@@ -241,4 +241,20 @@ router.get('/assembled/:user_uuid', (req, res, next) => {
         });
 });
 
+router.patch('/:userUuid', (req, res, next) => {
+    knex('monday_subscriptions')
+        .where('user_uuid', req.params.userUuid)
+        .update({
+            tabs: req.body.tabs,
+            updated_at: req.body.updated_at
+        }, '*')
+        .then((results) => {
+            res.status(200).send(results[0]);
+        })
+        .catch((err) => {
+            next(err);
+        });
+
+});
+
 module.exports = router;
