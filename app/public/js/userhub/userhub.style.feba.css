@@ -478,8 +478,7 @@
 }
 
 .hubTodayIsDisplay_FebruaryA {
-    display: none;
-    color: #050503;
+    color: #a7a39d;
     font-family: 'Spectral', serif;
     font-size: 36px;
     margin-right: 50px;
@@ -487,8 +486,7 @@
 }
 
 .hubTodayIsDiv_FebruaryA {
-    display: none;
-/*    display: flex;*/
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -497,8 +495,7 @@
 }
 
 .hubReaderWeekly_FebruaryA {
-    display: none;
-/*    display: flex;*/
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     font-family: 'Spectral', serif;
@@ -508,13 +505,11 @@
 }
 
 .hubReaderTodayBlock_FebruaryA {
-    display: none;
-    background: #425050;
-    background-image: url();
+    background: #84868b;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_png_by_piccolapersempre_dbuithu-fullview.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100%;
-    border-radius: 5px;
     height: 25vh;
     margin: 1.2%;
     padding: 10px 15px;
@@ -522,16 +517,14 @@
 }
 
 .hubReaderTodayLabel_FebruaryA {
-    display: none;
-    background: #161d21;
+    background: #253e5d;
     border: none;
-    color: #9ba5a8;
+    color: #a7a39d;
     font-family: 'Spectral', serif;
     font-size: 18px;
 }
 
 .hubReaderDayButton_FebruaryA {
-    display: none;
     background: #161d21;
     border: none;
     color: #9ba5a8;
@@ -540,7 +533,6 @@
     font-size: 24px;
     left: 12%;
     position: relative;
-    transform: skewX(-15deg) translateY(50px) translateX(0px);
     transition: all 0.4s linear;
     z-index: 20;
 }
@@ -548,12 +540,10 @@
 .hubReaderDayButton_FebruaryA:hover {
     background: #af9f95;
     color: #020201;
-    transform: skewX(-5deg) translateY(50px) translateX(-5px);
     transition: all 0.4s linear;
 }
 
 .hubReaderWeekButton_FebruaryA {
-    display: none;
     background: #161d21;
     border: none;
     color: #9ba5a8;
@@ -563,37 +553,32 @@
     left: 25%;
     position: relative;
     top: 60%;
-    transform: skewX(-15deg) translateY(50px) translateX(0px);
     transition: all 0.4s linear;
 }
 
 .hubReaderWeekButton_FebruaryA:hover {
     background: #af9f95;
     color: #020201;
-    transform: skewX(-5deg) translateY(50px) translateX(-5px);
     transition: all 0.4s linear;
 }
 
 .hubReaderBlankLabel_FebruaryA {
-    display: none;
     color: transparent;
     font-family: 'Spectral', serif;
     font-size: 30px;
 }
 
 .hubReaderDay1BlockActive_FebruaryA {
-    display: none;
-    background: #425050;
-    background-image: url();
+    background: #84868b;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_png_by_piccolapersempre_dbuithu-fullview.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100%;
-    border-radius: 5px;
     height: 25vh;
     margin: 1.2%;
     padding: 10px 15px;
     opacity: 1;
-    transform: translateX(0px);
+    transform: translateX(0px) translateY(0px);
     transition: all 0.5s;
     transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
     width: 8%;
@@ -601,18 +586,16 @@
 }
 
 .hubReaderDay1BlockInactive_FebruaryA {
-    display: none;
-    background: #425050;
-    background-image: url();
+    background: #84868b;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_png_by_piccolapersempre_dbuithu-fullview.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100%;
-    border-radius: 5px;
     height: 25vh;
     margin: 1.2%;
     opacity: 0;
     padding: 10px 15px;
-    transform: translateX(-115%);
+    transform: translateX(-115%) translateY(-200%);
     transition: all 0.5s;
     transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
     width: 8%;
@@ -620,18 +603,16 @@
 }
 
 .hubReaderDay2BlockActive_FebruaryA {
-    display: none;
-    background: #425050;
-    background-image: url();
+    background: #84868b;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_png_by_piccolapersempre_dbuithu-fullview.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100%;
-    border-radius: 5px;
     height: 25vh;
     margin: 1.2%;
     padding: 10px 15px;
     opacity: 1;
-    transform: translateX(0px);
+    transform: translateX(0px) translateY(0px);
     transition: all 0.5s;
     transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
     width: 8%;
@@ -639,18 +620,16 @@
 }
 
 .hubReaderDay2BlockInactive_FebruaryA {
-    display: none;
-    background: #425050;
-    background-image: url();
+    background: #84868b;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_png_by_piccolapersempre_dbuithu-fullview.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100%;
-    border-radius: 5px;
     height: 25vh;
     margin: 1.2%;
     opacity: 0;
     padding: 10px 15px;
-    transform: translateX(-230%);
+    transform: translateX(250%) translateY(500%);
     transition: all 0.5s;
     transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
     width: 8%;
@@ -658,18 +637,16 @@
 }
 
 .hubReaderDay3BlockActive_FebruaryA {
-    display: none;
-    background: #425050;
-    background-image: url();
+    background: #84868b;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_png_by_piccolapersempre_dbuithu-fullview.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100%;
-    border-radius: 5px;
     height: 25vh;
     margin: 1.2%;
     padding: 10px 15px;
     opacity: 1;
-    transform: translateX(0px);
+    transform: translateX(0px) translateY(0px);
     transition: all 0.5s;
     transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
     width: 8%;
@@ -677,18 +654,16 @@
 }
 
 .hubReaderDay3BlockInactive_FebruaryA {
-    display: none;
-    background: #425050;
-    background-image: url();
+    background: #84868b;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_png_by_piccolapersempre_dbuithu-fullview.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100%;
-    border-radius: 5px;
     height: 25vh;
     margin: 1.2%;
     opacity: 0;
     padding: 10px 15px;
-    transform: translateX(-345%);
+    transform: translateX(800%) translateY(50%);
     transition: all 0.5s;
     transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
     width: 8%;
@@ -696,18 +671,16 @@
 }
 
 .hubReaderDay4BlockActive_FebruaryA {
-    display: none;
-    background: #425050;
-    background-image: url();
+    background: #84868b;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_png_by_piccolapersempre_dbuithu-fullview.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100%;
-    border-radius: 5px;
     height: 25vh;
     margin: 1.2%;
     padding: 10px 15px;
     opacity: 1;
-    transform: translateX(0px);
+    transform: translateX(0px) translateY(0px);
     transition: all 0.5s;
     transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
     width: 8%;
@@ -715,18 +688,16 @@
 }
 
 .hubReaderDay4BlockInactive_FebruaryA {
-    display: none;
-    background: #425050;
-    background-image: url();
+    background: #84868b;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_png_by_piccolapersempre_dbuithu-fullview.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100%;
-    border-radius: 5px;
     height: 25vh;
     margin: 1.2%;
     opacity: 0;
     padding: 10px 15px;
-    transform: translateX(-460%);
+    transform: translateX(-460%) translateY(550%);
     transition: all 0.5s;
     transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
     width: 8%;
@@ -734,18 +705,16 @@
 }
 
 .hubReaderDay5BlockActive_FebruaryA {
-    display: none;
-    background: #425050;
-    background-image: url();
+    background: #84868b;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_png_by_piccolapersempre_dbuithu-fullview.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100%;
-    border-radius: 5px;
     height: 25vh;
     margin: 1.2%;
     padding: 10px 15px;
     opacity: 1;
-    transform: translateX(0px);
+    transform: translateX(0px) translateY(0px);
     transition: all 0.5s;
     transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
     width: 8%;
@@ -753,18 +722,16 @@
 }
 
 .hubReaderDay5BlockInactive_FebruaryA {
-    display: none;
-    background: #425050;
-    background-image: url();
+    background: #84868b;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_png_by_piccolapersempre_dbuithu-fullview.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100%;
-    border-radius: 5px;
     height: 25vh;
     margin: 1.2%;
     opacity: 0;
     padding: 10px 15px;
-    transform: translateX(-575%);
+    transform: translateX(575%) translateY(-1000%);
     transition: all 0.5s;
     transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
     width: 8%;
@@ -772,18 +739,16 @@
 }
 
 .hubReaderDay6BlockActive_FebruaryA {
-    display: none;
-    background: #425050;
-    background-image: url();
+    background: #84868b;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_png_by_piccolapersempre_dbuithu-fullview.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100%;
-    border-radius: 5px;
     height: 25vh;
     margin: 1.2%;
     padding: 10px 15px;
     opacity: 1;
-    transform: translateX(0px);
+    transform: translateX(0px) translateY(0px);
     transition: all 0.5s;
     transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
     width: 8%;
@@ -791,18 +756,16 @@
 }
 
 .hubReaderDay6BlockInactive_FebruaryA {
-    display: none;
-    background: #425050;
-    background-image: url();
+    background: #84868b;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_png_by_piccolapersempre_dbuithu-fullview.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100%;
-    border-radius: 5px;
     height: 25vh;
     margin: 1.2%;
     opacity: 0;
     padding: 10px 15px;
-    transform: translateX(-690%);
+    transform: translateX(690%) translateY(200%);
     transition: all 0.5s;
     transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
     width: 8%;
@@ -810,18 +773,16 @@
 }
 
 .hubReaderDay7BlockActive_FebruaryA {
-    display: none;
-    background: #425050;
-    background-image: url();
+    background: #84868b;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_png_by_piccolapersempre_dbuithu-fullview.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100%;
-    border-radius: 5px;
     height: 25vh;
     margin: 1.2%;
     padding: 10px 15px;
     opacity: 1;
-    transform: translateX(0px);
+    transform: translateX(0px) translateY(0px);
     transition: all 0.5s;
     transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
     width: 8%;
@@ -829,18 +790,16 @@
 }
 
 .hubReaderDay7BlockInactive_FebruaryA {
-    display: none;
-    background: #425050;
-    background-image: url();
+    background: #84868b;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_png_by_piccolapersempre_dbuithu-fullview.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100%;
-    border-radius: 5px;
     height: 25vh;
     margin: 1.2%;
     opacity: 0;
     padding: 10px 15px;
-    transform: translateX(-705%);
+    transform: translateX(-15%) translateY(433%);
     transition: all 0.5s;
     transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
     width: 8%;
@@ -848,8 +807,7 @@
 }
 
 .hubReaderManagementRow_FebruaryA {
-    display: none;
-/*    display: flex;*/
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     font-family: 'Spectral', serif;
@@ -859,8 +817,7 @@
 }
 
 .hubShareShareSaveButtonsDiv_FebruaryA {
-    display: none;
-/*    display: flex;*/
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -869,28 +826,32 @@
 }
 
 .hubShareShareSaveButtonsDiv_FebruaryA button {
-    display: none;
-    background: #161d21;
+    background: #97a9bf;
     border: none;
-    color: #9ba5a8;
+    color: #0d0e11;
     cursor: pointer;
+    filter: drop-shadow(10px 15px 4px #0e1825);
     font-family: 'Spectral', serif;
     font-size: 18px;
-    margin: 5px 35px;
-    transform: skewX(-15deg);
+    margin: 10px 35px;
+    outline-color: #0d0e11;
     transition: all 0.4s linear;
 }
 
 .hubShareShareSaveButtonsDiv_FebruaryA button:hover {
-    background: #af9f95;
-    color: #020201;
-    transform: skewX(-5deg);
+    background: #366184;
+    color: #929fae;
+    filter: brightness(110%) drop-shadow(9px 14px 3px #0e1825);
+    transition: all 0.4s linear;
+}
+
+.hubShareShareSaveButtonsDiv_FebruaryA button:active {
+    filter: brightness(110%) drop-shadow(0 0 0 #0e1825);
     transition: all 0.4s linear;
 }
 
 .hubShareShareSaveModalActive_FebruaryA {
-    display: none;
-    background: #9ca4a9;
+    background: #222323;
     left: 35%;
     opacity: 1;
     padding: 1% 3%;
@@ -902,24 +863,21 @@
 }
 
 .hubShareShareSaveModalActive_FebruaryA img {
-    display: none;
     border-radius: 5px;
-    max-width: 15%;
+    max-width: 20%;
 }
 
 .hubShareShareSaveModalActive_FebruaryA p {
-    display: none;
-    color: #020201;
+    color: #9bb0c2;
     font-family: 'Spectral', serif;
     font-size: 18px;
     margin: 15px 0;
 }
 
 .hubShareShareSaveModalActive_FebruaryA textarea {
-    display: none;
-    background: #b5978a;
+    background: #aaacac;
     border: none;
-    color: #020201;
+    color: #030508;
     font-family: 'Spectral', serif;
     font-size: 18px;
     outline-color: #020201;
@@ -927,28 +885,32 @@
 }
 
 .hubShareShareSaveModalActive_FebruaryA button {
-    display: none;
-    background: #161d21;
+    background: #97a9bf;
     border: none;
-    color: #9ba5a8;
+    color: #0d0e11;
     cursor: pointer;
+    filter: drop-shadow(10px 15px 4px #0e1825);
     font-family: 'Spectral', serif;
     font-size: 18px;
-    margin: 5px 35px;
-    transform: skewX(-15deg);
+    margin: 5px 45px;
+    outline-color: #0d0e11;
     transition: all 0.4s linear;
 }
 
 .hubShareShareSaveModalActive_FebruaryA button:hover {
-    background: #af9f95;
-    color: #020201;
-    transform: skewX(-5deg);
+    background: #366184;
+    color: #929fae;
+    filter: brightness(110%) drop-shadow(9px 14px 3px #0e1825);
+    transition: all 0.4s linear;
+}
+
+.hubShareShareSaveModalActive_FebruaryA button:active {
+    filter: brightness(110%) drop-shadow(0 0 0 #0e1825);
     transition: all 0.4s linear;
 }
 
 .hubShareShareSaveModalInactive_FebruaryA {
-    display: none;
-    background: #9ca4a9;
+    background: #222323;
     left: -135%;
     opacity: 0;
     padding: 1% 3%;
@@ -960,23 +922,20 @@
 }
 
 .hubShareShareSaveModalInactive_FebruaryA img {
-    display: none;
-    max-width: 15%;
+    max-width: 20%;
 }
 
 .hubShareShareSaveModalInactive_FebruaryA p {
-    display: none;
-    color: #020201;
+    color: #9bb0c2;
     font-family: 'Spectral', serif;
     font-size: 18px;
     margin: 15px 0;
 }
 
 .hubShareShareSaveModalInactive_FebruaryA textarea {
-    display: none;
-    background: #b5978a;
+    background: #aaacac;
     border: none;
-    color: #020201;
+    color: #030508;
     font-family: 'Spectral', serif;
     font-size: 18px;
     outline-color: #020201;
@@ -984,29 +943,27 @@
 }
 
 .hubShareShareSaveModalInactive_FebruaryA button {
-    display: none;
-    background: #161d21;
+    background: #97a9bf;
     border: none;
-    color: #9ba5a8;
+    color: #0d0e11;
     cursor: pointer;
+    filter: drop-shadow(10px 15px 4px #0e1825);
     font-family: 'Spectral', serif;
     font-size: 18px;
-    margin: 5px 35px;
-    transform: skewX(-15deg);
+    margin: 5px 45px;
+    outline-color: #0d0e11;
     transition: all 0.4s linear;
 }
 
 .hubDialogHeadline_FebruaryA {
-    display: none;
-    color: #020201;
+    color: #9bb0c2;
     font-family: 'Spectral', serif;
     font-size: 24px;
     margin: 0 0 20px 0;
 }
 
 .hubRadioButtons_FebruaryA {
-    display: none;
-    color: #020201;
+    color: #9bb0c2;
     font-family: 'Spectral', serif;
     font-size: 18px;
     margin: 5px 5px 15px 5px;
@@ -1023,8 +980,7 @@
 }
 
 .hubUserBlogList_FebruaryA {
-    display: none;
-    border-right: 1px solid #af9f95;
+    border-right: 1px solid #97a9bf;
     float: left;
     height: 81vh;
     padding: 50px 15px;
@@ -1032,23 +988,20 @@
 }
 
 .hubUserBlogData_FebruaryA {
-    display: none;
-    border-left: 1px solid #af9f95;
+    border-left: 1px solid #97a9bf;
     float: left;
     height: 81vh;
     width: 60%;
 }
 
 .hubMyBlogsLabel_FebruaryA {
-    display: none;
-    color: #9ba5a8;
+    color: #030508;
     font-family: 'Spectral', serif;
     font-size: 36px;
 }
 
 .hubBlogListEntry_FebruaryA {
-    display: none;
-    color: #9ba5a8;
+    color: #030508;
     cursor: pointer;
     font-family: 'Spectral', serif;
     font-size: 30px;
@@ -1057,80 +1010,78 @@
 }
 
 .hubBlogListEntry_FebruaryA:hover {
-    color: #f0a459;
+    color: #aaacac;
     transition: all 0.5s linear;
 }
 
 .hubNewBlogButton_FebruaryA {
-    display: none;
-    background: #161d21;
+    background: #97a9bf;
     border: none;
-    color: #9ba5a8;
+    color: #0d0e11;
     cursor: pointer;
+    filter: drop-shadow(10px 15px 4px #0e1825);
     font-family: 'Spectral', serif;
     font-size: 18px;
     margin: 35px 75px;
-    transform: skewX(-15deg);
+    outline-color: #0d0e11;
     transition: all 0.4s linear;
 }
 
 .hubNewBlogButton_FebruaryA:hover {
-    background: #af9f95;
-    color: #020201;
-    transform: skewX(-5deg);
+    background: #366184;
+    color: #929fae;
+    filter: brightness(110%) drop-shadow(9px 14px 3px #0e1825);
+    transition: all 0.4s linear;
+}
+
+.hubNewBlogButton_FebruaryA:active {
+    filter: brightness(110%) drop-shadow(0 0 0 #0e1825);
     transition: all 0.4s linear;
 }
 
 .hubBlogLogoTitleDescription_FebruaryA {
-    display: none;
     cursor: pointer;
     padding: 2vh 20px;
     width: 100%;
 }
 
 .currentBlogLogoImage_FebruaryA {
-    display: none;
-    border-radius: 5px;
+    filter: drop-shadow(5px 5px 2px #0e1825);
     float: left;
-    height: 100px;
-    max-width: 15%;
+    height: 120px;
+    max-width: 25%;
 }
 
 .currentBlogName_FebruaryA {
-    display: none;
-    color: #9ba5a8;
+    color: #030508;
     float: left;
     font-family: 'Spectral', serif;
-    font-size: 42px;
-    margin: 60px 0 0 40px;
+    font-size: 48px;
+    margin: 72px 0 0 40px;
 }
 
 .currentBlogTagline_FebruaryA {
-    display: none;
-    color: #9ba5a8;
+    color: #030508;
     float: left;
     font-family: 'Spectral', serif;
     font-size: 18px;
-    margin: 10px 0 0 22%;
+    margin: 10px 0 0 28.5%;
     position: relative;
     width: 90%;
 }
 
 .currentBlogContributersDiv_FebruaryA {
-    display: none;
     float: left;
     padding: 20px 0 0 50px;
     width: 100%;
 }
 
 .contributerInfo_FebruaryA {
-    display: none;
     cursor: pointer;
 }
 
 .hubBlogContributerAvatar_FebruaryA {
-    display: none;
-    border-radius: 5px;
+    filter: drop-shadow(5px 5px 2px #0e1825);
     float: left;
     max-width: 7%;
     margin: 1px 1px 1px 15px;
@@ -1138,49 +1089,43 @@
 }
 
 .hubContributersLabel_FebruaryA {
-    display: none;
-    color: #9ba5a8;
+    color: #030508;
     font-family: 'Spectral', serif;
     font-size: 24px;
     margin-bottom: 10px;
 }
 
 .hubBlogContributerName_FebruaryA {
-    display: none;
-    color: #9ba5a8;
+    color: #030508;
     float: left;
     font-family: 'Spectral', serif;
-    font-size: 18px;
+    font-size: 24px;
     margin: 30px 1px 1px 30px;
     width: 85%;
 }
 
 .hubBlogDataDiv_FebruaryA {
-    display: none;
     float: left;
     padding: 150px 0 0 70px;
     width: 100%;
 }
 
 .hubBlogDataPosts_FebruaryA {
-    display: none;
-    color: #9ba5a8;
+    color: #030508;
     font-family: 'Spectral', serif;
     font-size: 18px;
     width: 85%;
 }
 
 .hubUserProfileBasicsPane_FebruaryA {
-    display: none;
-    border-right: 1px solid #9a9fa0;
+    border-right: 1px solid #030508;
     float: left;
     height: 81vh;
     width: 30%;
 }
 
 .hubPublicPrivateProfilePane_FebruaryA {
-    display: none;
-    border-left: 1px solid #9a9fa0;
+    border-left: 1px solid #030508;
     float: left;
     height: 81vh;
     overflow-x: hidden;
@@ -1189,7 +1134,6 @@
 }
 
 .hubBasicUserData_FebruaryA {
-    display: none;
     height: 90%;
     left: 5%;
     position: relative;
@@ -1198,58 +1142,57 @@
 }
 
 .hubLoggedInAsLabel_FebruaryA {
-    display: none;
-    color: #9ca4a9;
+    color: #030508;
     font-family: 'Spectral', serif;
     font-size: 24px;
 }
 
 .hubLoggedInAsAvatar_FebruaryA {
-    display: none;
-    border-radius: 5px;
+    filter: drop-shadow(5px 5px 2px #0e1825);
     margin-top: 5px;
     max-width: 150px;
 }
 
 .hubProfileUserName_FebruaryA {
-    display: none;
-    color: #9ca4a9;
+    color: #030508;
     font-family: 'Spectral', serif;
     font-size: 24px;
     margin: 5px 0 25px 0;
 }
 
 .hubUserDatas_FebruaryA {
-    display: none;
-    color: #9ca4a9;
+    color: #030508;
     font-family: 'Spectral', serif;
     font-size: 18px;
 }
 
 .hubEditProfileButton_FebruaryA {
-    display: none;
-    background: #161d21;
+    background: #97a9bf;
     border: none;
-    color: #9ba5a8;
+    color: #0d0e11;
     cursor: pointer;
+    filter: drop-shadow(10px 15px 4px #0e1825);
     float: right;
     font-family: 'Spectral', serif;
     font-size: 18px;
-    margin: 30px 15px;
-    outline-color: #9ba5a8;
-    transform: skewX(-15deg);
+    margin: 5px 15px;
+    outline-color: #0d0e11;
     transition: all 0.4s linear;
 }
 
 .hubEditProfileButton_FebruaryA:hover {
-    background: #af9f95;
-    color: #020201;
-    transform: skewX(-5deg);
+    background: #366184;
+    color: #929fae;
+    filter: brightness(110%) drop-shadow(9px 14px 3px #0e1825);
+    transition: all 0.4s linear;
+}
+
+.hubEditProfileButton_FebruaryA:active {
+    filter: brightness(110%) drop-shadow(0 0 0 #0e1825);
     transition: all 0.4s linear;
 }
 
 .hubUserProfileNavigation_FebruaryA {
-    display: none;
     height: auto;
     left: 60%;
     position: relative;
@@ -1258,8 +1201,7 @@
 }
 
 .hubUserProfileNavigationActive_FebruaryA {
-    display: none;
-    filter: brightness(350%);
+    filter: blur(0px) opacity(1);
     height: 50px;
     transition: all 1s linear;
     width: 100%;
@@ -1267,8 +1209,7 @@
 }
 
 .hubUserProfileNavigationActive_FebruaryA p {
-    display: none;
-    color: #9ca4a9;
+    color: #030508;
     font-family: 'Spectral', serif;
     font-size: 24px;
     transform: translateX(15px) translateY(10px);
@@ -1276,17 +1217,15 @@
 }
 
 .hubUserProfileNavigationInactive_FebruaryA {
-    display: none;
     cursor: pointer;
-    filter: brightness(75%);
+    filter: blur(1px) opacity(0.4);
     height: 50px;
     transition: all 1s linear;
     width: 100%;
 }
 
 .hubUserProfileNavigationInactive_FebruaryA p {
-    display: none;
-    color: #9ca4a9;
+    color: #030508;
     font-family: 'Spectral', serif;
     font-size: 24px;
     transform: translateX(15px) translateY(10px);
@@ -1294,95 +1233,82 @@
 }
 
 .hubUserProfileNavigationSlidePublicState_FebruaryA {
-    display: none;
-    background: transparent;
-    border-bottom: 2px solid #f0a459;
-    border-top: 2px solid #f0a459;
+    background: #929fae;
+    border-bottom: 2px solid #2e537f;
     height: 46px;
     left: 0;
     position: relative;
-    transform: rotateY(360deg) translateY(-250px);
+    transform: translateY(-250px);
     transition: all 0.5s;
     transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
     width: 100%;
-    z-index: 1;
+    z-index: -1;
 }
 
 .hubUserProfileNavigationSlidePrivateState_FebruaryA {
-    display: none;
-    background: transparent;
-    border-bottom: 2px solid #f0a459;
-    border-top: 2px solid #f0a459;
+    background: #929fae;
+    border-bottom: 2px solid #2e537f;
     height: 46px;
     left: 0;
     position: relative;
-    transform: rotateY(180deg) translateY(-200px);
+    transform: translateY(-200px);
     transition: all 0.5s;
     transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
     width: 100%;
-    z-index: 1;
+    z-index: -1;
 }
 
 .hubUserProfileNavigationSlideMessagesState_FebruaryA {
-    display: none;
-    background: transparent;
-    border-bottom: 2px solid #f0a459;
-    border-top: 2px solid #f0a459;
+    background: #929fae;
+    border-bottom: 2px solid #2e537f;
     height: 46px;
     left: 0;
     position: relative;
-    transform: rotateY(0deg) translateY(-150px);
+    transform: translateY(-150px);
     transition: all 0.5s;
     transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
     width: 100%;
-    z-index: 1;
+    z-index: -1;
 }
 
 .hubUserProfileNavigationSlideFriendsState_FebruaryA {
-    display: none;
-    background: transparent;
-    border-bottom: 2px solid #f0a459;
-    border-top: 2px solid #f0a459;
+    background: #929fae;
+    border-bottom: 2px solid #2e537f;
     height: 46px;
     left: 0;
     position: relative;
-    transform: rotateY(-180deg) translateY(-100px);
+    transform: translateY(-100px);
     transition: all 0.5s;
     transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
     width: 100%;
-    z-index: 1;
+    z-index: -1;
 }
 
 .hubUserProfileNavigationSlideContactState_FebruaryA {
-    display: none;
-    background: transparent;
-    border-bottom: 2px solid #f0a459;
-    border-top: 2px solid #f0a459;
+    background: #929fae;
+    border-bottom: 2px solid #2e537f;
     height: 46px;
     left: 0;
     position: relative;
-    transform: rotateY(-360deg) translateY(-50px);
+    transform: translateY(-50px);
     transition: all 0.5s;
     transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
     width: 100%;
-    z-index: 1;
+    z-index: -1;
 }
 
 .hubPublicProfileDeets_FebruaryA {
-    display: none;
     height: auto;
     width: 100%;
 }
 
 .hubUserPublicStats_FebruaryA {
-    display: none;
     max-width: 750px;
     padding: 5%;
 }
 
 .hubUserLocationStat_FebruaryA {
-    display: none;
-    color: #9ca4a9;
+    color: #030508;
     filter: brightness(350%);
     font-family: 'Spectral', serif;
     font-size: 18px;
@@ -1391,125 +1317,99 @@
 }
 
 .hubUserLocationMap_FebruaryA {
-    display: none;
-    border-radius: 5px;
+    filter: drop-shadow(5px 5px 2px #0e1825);
     max-width: 50%;
 }
 
 .hubPhotoAttribution_FebruaryA {
-    display: none;
-    color: #9ca4a9;
-    filter: brightness(350%);
+    color: #030508;
     font-family: 'Spectral', serif;
     font-size: 12px;
     margin: 5px 0;
 }
 
 .hubUserDescriptionStat_FebruaryA {
-    display: none;
-    color: #9ca4a9;
-    filter: brightness(350%);
+    color: #030508;
     font-family: 'Spectral', serif;
     font-size: 18px;
     margin: 30px 0 0 0;
 }
 
 .hubUserOccupationStat_FebruaryA {
-    display: none;
-    color: #9ca4a9;
-    filter: brightness(350%);
+    color: #030508;
     font-family: 'Spectral', serif;
     font-size: 18px;
     margin: 50px 0 0 0;
 }
 
 .hubUserEmployerStat_FebruaryA {
-    display: none;
-    color: #9ca4a9;
-    filter: brightness(350%);
+    color: #030508;
     font-family: 'Spectral', serif;
     font-size: 18px;
     margin: 10px 0 0 0;
 }
 
 .hubUserEducationStatLabel_FebruaryA {
-    display: none;
-    color: #9ca4a9;
-    filter: brightness(350%);
+    color: #030508;
     font-family: 'Spectral', serif;
     font-size: 24px;
     margin: 60px 0 0 0;
 }
 
 .hubUserEducationStat_FebruaryA {
-    display: none;
-    color: #9ca4a9;
-    filter: brightness(350%);
+    color: #030508;
     font-family: 'Spectral', serif;
     font-size: 18px;
     margin: 10px 0 0 0;
 }
 
 .hubUserEmailStat_FebruaryA {
-    display: none;
-    color: #9ca4a9;
-    filter: brightness(350%);
+    color: #030508;
     font-family: 'Spectral', serif;
     font-size: 18px;
     margin: 40px 0 0 0;
 }
 
 .hubUserPhoneStat_FebruaryA {
-    display: none;
-    color: #9ca4a9;
-    filter: brightness(350%);
+    color: #030508;
     font-family: 'Spectral', serif;
     font-size: 18px;
     margin: 10px 0 0 0;
 }
 
 .hubUserBirthdate_FebruaryA {
-    display: none;
-    color: #9ca4a9;
-    filter: brightness(350%);
+    color: #030508;
     font-family: 'Spectral', serif;
     font-size: 18px;
     margin: 10px 0 5px 0;
 }
 
 .hubMessageCenter_FebruaryA {
-    display: none;
     padding: 3%;
     width: 100%;
 }
 
 .hubMessageCenter_FebruaryA i {
-    display: none;
-    color: #9ca4a9;
+    color: #030508;
 }
 
 .hubMessageScroll_FebruaryA {
-    display: none;
     height: 76vh;
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: auto;
     width: 100%;
 }
 
 .hubMessageCenterLabel_FebruaryA {
-    display: none;
-    color: #9ca4a9;
-    filter: brightness(350%);
+    color: #030508;
     font-family: 'Spectral', serif;
     font-size: 30px;
     margin: 15px 0 15px 0;
 }
 
 .hubMainMessageContainer_FebruaryA {
-    display: none;
-    border-top: 3px solid #9ca4a9;
-    color: #9ca4a9;
-/*    filter: brightness(350%);*/
+    border-top: 3px solid #030508;
+    color: #030508;
     cursor: pointer;
     margin-top: 5px;
     max-width: 750px;
@@ -1518,16 +1418,13 @@
 }
 
 .unreadIcon_FebruaryA {
-    display: none;
     float: left;
     font-size: 42px;
     margin: 8px 0;
 }
 
 .hubMessageFromSubjectfalse_FebruaryA {
-    display: none;
-    color: #9ca4a9;
-    filter: brightness(350%);
+    color: #030508;
     float: left;
     font-family: 'Spectral', serif;
     font-size: 18px;
@@ -1539,8 +1436,7 @@
 } */
 
 .hubMessageFromSubjecttrue_FebruaryA {
-    display: none;
-    color: #9ca4a9;
+    color: #030508;
     float: left;
     font-family: 'Spectral', serif;
     font-size: 18px;
@@ -1552,15 +1448,11 @@
 } */
 
 .hubExpandedMessageContainer_FebruaryA {
-    display: none;
-    /* border-bottom: 1px solid #08252e; */
-    /* border-top: 1px solid #08252e; */
     margin-left: 30px;
     max-width: 900px;
 }
 
 .hubMessageAvatar_FebruaryA {
-    display: none;
     border-radius: 5px;
     float: left;
     margin: 4px 1px 0 15px;
@@ -1568,9 +1460,7 @@
 }
 
 .hubMessageMessage_FebruaryA {
-    display: none;
-    color: #9ca4a9;
-    filter: brightness(300%);
+    color: #030508;
     font-family: 'Spectral', serif;
     font-size: 18px;
     margin: 10px 0 5px 0;
@@ -1579,8 +1469,7 @@
 
 
 .hubReplyNameDate_FebruaryA {
-    display: none;
-    color: #9ca4a9;
+    color: #030508;
     float: left;
     font-family: 'Spectral', serif;
     font-size: 18px;
@@ -1588,10 +1477,9 @@
 }
 
 .hubReplyText_FebruaryA {
-    display: none;
-    background: #9ba5a8;
+    background: #a7a39d;
     border: none;
-    color: #020201;
+    color: #030508;
     font-family: 'Spectral', serif;
     font-size: 18px;
     margin-bottom: 35px;
@@ -1601,10 +1489,9 @@
 }
 
 .hubReplyResponseText_FebruaryA {
-    display: none;
-    background: #9ba5a8;
+    background: #a7a39d;
     border: none;
-    color: #020201;
+    color: #030508;
     font-family: 'Spectral', serif;
     font-size: 18px;
     max-width: 750px;
@@ -1613,160 +1500,159 @@
 }
 
 .hubReplyResponseText_FebruaryA::-webkit-input-placeholder {
-    color: #020201;
+    color: #22252c;
 }
 
 .hubReplyResponseText_FebruaryA:-moz-placeholder {
-    color: #020201;
+    color: #22252c;
 }
 
 .hubReplyResponseText_FebruaryA::-moz-placeholder {
-    color: #020201;
+    color: #22252c;
 }
 
 .hubReplyResponseText_FebruaryA::-moz-placeholder {
-    color: #020201;
+    color: #22252c;
 }
 
 .hubReplyResponseText_FebruaryA:-ms-input-placeholder {
-    color: #020201;
+    color: #22252c;
 }
 
 .hubReplyResponseText_FebruaryA::placeholder {
-    color: #020201;
+    color: #22252c;
 }
 
 .hubReplySubmit_FebruaryA {
-    display: none;
-    background: #161d21;
+    background: #97a9bf;
     border: none;
-    color: #9ba5a8;
+    color: #0d0e11;
     cursor: pointer;
+    filter: drop-shadow(10px 15px 4px #0e1825);
     font-family: 'Spectral', serif;
     font-size: 18px;
     margin: 1px 2px 15px 5px;
-    transform: skewX(-15deg);
+    outline-color: #0d0e11;
     transition: all 0.4s linear;
 }
 
 .hubReplySubmit_FebruaryA:hover {
-    background: #af9f95;
-    color: #020201;
-    transform: skewX(-5deg);
+    background: #366184;
+    color: #929fae;
+    filter: brightness(110%) drop-shadow(9px 14px 3px #0e1825);
+    transition: all 0.4s linear;
+}
+
+.hubReplySubmit_FebruaryA:active {
+    filter: brightness(110%) drop-shadow(0 0 0 #0e1825);
     transition: all 0.4s linear;
 }
 
 .hubFriendsCenter_FebruaryA {
-    display: none;
     padding: 3%;
     width: 100%;
 }
 
 .hubFriendsCenterLabel_FebruaryA {
-    display: none;
-    color: #9ca4a9;
-    filter: brightness(350%);
+    color: #030508;
     font-family: 'Spectral', serif;
     font-size: 30px;
     margin: 15px 0 15px 0;
 }
 
 .hubFriendsScroll_FebruaryA {
-    display: none;
     height: 76vh;
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: auto;
     width: 100%;
 }
 
 .hubFriendsFilter_FebruaryA {
-    display: none;
-    background: #9ba5a8;
+    background: #a7a39d;
     border: none;
-    color: #020201;
+    color: #030508;
     font-family: 'Spectral', serif;
     font-size: 18px;
-    outline-color: #020201;
+    outline-color: #030508;
     width: 50%;
 }
 
 .hubFriendsFilter_FebruaryA::-webkit-input-placeholder {
-    color: #020201;
+    color: #22252c;
 }
 
 .hubFriendsFilter_FebruaryA:-moz-placeholder {
-    color: #020201;
+    color: #22252c;
 }
 
 .hubFriendsFilter_FebruaryA::-moz-placeholder {
-    color: #020201;
+    color: #22252c;
 }
 
 .hubFriendsFilter_FebruaryA::-moz-placeholder {
-    color: #020201;
+    color: #22252c;
 }
 
 .hubFriendsFilter_FebruaryA:-ms-input-placeholder {
-    color: #020201;
+    color: #22252c;
 }
 
 .hubFriendsFilter_FebruaryA::placeholder {
-    color: #020201;
+    color: #22252c;
 }
 
 .hubSearchIcon_FebruaryA {
-    display: none;
-    color: #020201;
+    color: #030508;
     font-size: 18px;
     margin: 5px 15px 0 0;
 }
 
 .hubFriendRollEntry_FebruaryA {
-    display: none;
     cursor: pointer;
     margin: 20px 0 0 50px;
     max-width: 750px;
 }
 
 .hubFriendsRollAvatar_FebruaryA {
-    display: none;
-    border-radius: 100%;
+    filter: drop-shadow(5px 5px 2px #0e1825);
+    margin-bottom: 7px;
     max-height: 50px;
     max-width: 50px;
 }
 
 .hubFriendsNameListing_FebruaryA {
-    display: none;
-    color: #9ca4a9;
-    filter: brightness(350%);
+    color: #030508;
     font-family: 'Spectral', serif;
     font-size: 18px;
 }
 
 .hubFriendMessageButton_FebruaryA {
-    display: none;
-    background: #161d21;
+    background: #97a9bf;
     border: none;
-    color: #9ba5a8;
+    color: #0d0e11;
     cursor: pointer;
+    filter: drop-shadow(10px 15px 4px #0e1825);
     font-family: 'Spectral', serif;
     font-size: 24px;
     margin: 0 5px 15px 50px;
-    transform: skewX(-15deg);
+    outline-color: #0d0e11;
     transition: all 0.4s linear;
 }
 
 .hubFriendMessageButton_FebruaryA:hover {
-    background: #af9f95;
-    color: #020201;
-    transform: skewX(-5deg);
+    background: #366184;
+    color: #929fae;
+    filter: brightness(110%) drop-shadow(9px 14px 3px #0e1825);
+    transition: all 0.4s linear;
+}
+
+.hubFriendMessageButton_FebruaryA:active {
+    filter: brightness(110%) drop-shadow(0 0 0 #0e1825);
     transition: all 0.4s linear;
 }
 
 .hubProfileDisplayerActive_FebruaryA {
-    display: none;
-    background: #af9f95;
-    border: 2px solid #6a2e14;
+    background: #929fae;
     height: auto;
     left: 15%;
     opacity: 1;
@@ -1778,9 +1664,7 @@
 }
 
 .hubProfileDisplayerInactive_FebruaryA {
-    display: none;
-    background: #af9f95;
-    border: 2px solid #6a2e14;
+    background: #929fae;
     height: auto;
     left: 145%;
     opacity: 0;
@@ -1792,60 +1676,59 @@
 }
 
 .hubProfileDisplayCloseButton_FebruaryA {
-    display: none;
-    background: #161d21;
+    background: #97a9bf;
     border: none;
-    color: #9ba5a8;
+    color: #0d0e11;
     cursor: pointer;
+    filter: drop-shadow(10px 15px 4px #0e1825);
     float: right;
     font-family: 'Spectral', serif;
     font-size: 18px;
     margin: 15px;
-    outline-color: #bebad1;
+    outline-color: #0d0e11;
     position: relative;
-    transform: skewX(-15deg);
     transition: all 0.4s linear;
 }
 
 .hubProfileDisplayCloseButton_FebruaryA:hover {
-    background: #af9f95;
-    color: #020201;
-    transform: skewX(-5deg);
+    background: #366184;
+    color: #929fae;
+    filter: brightness(110%) drop-shadow(9px 14px 3px #0e1825);
+    transition: all 0.4s linear;
+}
+
+.hubProfileDisplayCloseButton_FebruaryA:active {
+    filter: brightness(110%) drop-shadow(0 0 0 #0e1825);
     transition: all 0.4s linear;
 }
 
 .hubProfileDisplayAvatar_FebruaryA {
-    display: none;
-    border-radius: 5px;
+    filter: drop-shadow(10px 15px 4px #0e1825);
     float: left;
     margin: 15px;
     max-width: 200px;
 }
 
 .hubProfileDisplayDataContainer_FebruaryA {
-    display: none;
     padding: 15px;
 }
 
 .hubProfileDisplayName_FebruaryA {
-    display: none;
-    color: #050503;
+    color: #030508;
     float: left;
     font-family: 'Spectral', serif;
     font-size: 36px;
 }
 
 .hubProfileDisplayDescritors_FebruaryA {
-    display: none;
-    color: #050503;
+    color: #030508;
     float: left;
     font-family: 'Spectral', serif;
     font-size: 24px;
 }
 
 .hubDisplayContainer2_FebruaryA {
-    display: none;
-/*    display: flex;*/
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -1853,8 +1736,7 @@
 }
 
 .profileDisplayStats_FebruaryA {
-    display: none;
-    color: #050503;
+    color: #030508;
     float: left;
     font-family: 'Spectral', serif;
     font-size: 18px;
@@ -1862,7 +1744,6 @@
 }
 
 .hubProfileDisplayBioBlock_FebruaryA {
-    display: none;
     padding: 15px;
     min-width: 215px;
     width: 30%;
@@ -1870,21 +1751,18 @@
 }
 
 .hubProfileDisplayBioImage_FebruaryA {
-    display: none;
-    border-radius: 5px;
+    filter: drop-shadow(10px 15px 4px #0e1825);
     max-width: 200px;
 }
 
 .hubProfileDisplayUserDatas_FebruaryA {
-    display: none;
     float: left;
     padding: 15px;
     width: 60%;
 }
 
 .hubProfileDisplayDescritors2_FebruaryA {
-    display: none;
-    color: #050503;
+    color: #030508;
     float: left;
     font-family: 'Spectral', serif;
     font-size: 18px;
@@ -1892,31 +1770,32 @@
 }
 
 .hubDisplayMessageButton_FebruaryA {
-    display: none;
-    background: #161d21;
+    background: #97a9bf;
     border: none;
-    color: #9ba5a8;
+    color: #0d0e11;
     cursor: pointer;
+    filter: drop-shadow(10px 15px 4px #0e1825);
     font-family: 'Spectral', serif;
     font-size: 18px;
     margin: 15px;
-    outline-color: #ecc0db;
-    position: relative;
-    transform: skewX(-15deg);
+    outline-color: #0d0e11;
     transition: all 0.4s linear;
 }
 
 .hubDisplayMessageButton_FebruaryA:hover {
-    background: #af9f95;
-    color: #020201;
-    transform: skewX(-5deg);
+    background: #366184;
+    color: #929fae;
+    filter: brightness(110%) drop-shadow(9px 14px 3px #0e1825);
+    transition: all 0.4s linear;
+}
+
+.hubDisplayMessageButton_FebruaryA:active {
+    filter: brightness(110%) drop-shadow(0 0 0 #0e1825);
     transition: all 0.4s linear;
 }
 
 .hubDisplayMessageModalActive_FebruaryA {
-    display: none;
-    background: #af9f95;
-    border: 2px solid #6a2e14;
+    background: #919296;
     height: auto;
     left: 15%;
     opacity: 1;
@@ -1928,9 +1807,7 @@
 }
 
 .hubDisplayMessageModalInactive_FebruaryA {
-    display: none;
-    background: #af9f95;
-    border: 2px solid #6a2e14;
+    background: #919296;
     height: auto;
     left: -45%;
     opacity: 0;
@@ -1942,72 +1819,70 @@
 }
 
 .hubMessageModalLabel_FebruaryA {
-    display: none;
-    color: #020201;
+    color: #030508;
     font-family: 'Spectral', serif;
     font-size: 24px;
     margin: 30px;
 }
 
 .hubMessageModalButtonFields_FebruaryA {
-    display: none;
     padding: 15px 0 45px 35%;
 }
 
 .hubMessageModalButton_FebruaryA {
-    display: none;
-    background: #161d21;
+    background: #97a9bf;
     border: none;
-    color: #9ba5a8;
+    color: #0d0e11;
     cursor: pointer;
+    filter: drop-shadow(10px 15px 4px #0e1825);
     font-family: 'Spectral', serif;
     font-size: 18px;
     margin: 0 30px;
-    outline-color: #35475f;
+    outline-color: #0d0e11;
     position: relative;
-    transform: skewX(-15deg);
     transition: all 0.4s linear;
 }
 
 .hubMessageModalButton_FebruaryA:hover {
-    background: #af9f95;
-    color: #020201;
-    transform: skewX(-5deg);
+    background: #366184;
+    color: #929fae;
+    filter: brightness(110%) drop-shadow(9px 14px 3px #0e1825);
+    transition: all 0.4s linear;
+}
+
+.hubMessageModalButton_FebruaryA:active {
+    filter: brightness(110%) drop-shadow(0 0 0 #0e1825);
     transition: all 0.4s linear;
 }
 
 .hubMessageModalInputs_FebruaryA {
-    display: none;
     padding: 15px 45px 0 45px;
 }
 
 .hubMessageModalSubjectInput_FebruaryA {
-    display: none;
-    background: #c3d6ea;
+    background: #9bb0c2;
     border: none;
-    color: #020201;
+    color: #030508;
     font-family: 'Spectral', serif;
     font-size: 18px;
     margin: 0 0 0 8%;
-    outline-color: #020201;
+    outline-color: #030508;
     width: 80%;
 }
 
 .hubMessageModalMessageInput_FebruaryA {
-    display: none;
-    background: #c3d6ea;
+    background: #9bb0c2;
     border: none;
-    color: #020201;
+    color: #030508;
     font-family: 'Spectral', serif;
     font-size: 18px;
     margin: 5px 0 0 8%;
-    outline-color: #020201;
+    outline-color: #030508;
     width: 80%;
 }
 
 .hubMessageModalToFields_FebruaryA {
-    display: none;
-/*    display: flex;*/
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -2016,25 +1891,21 @@
 }
 
 .hubRecipientAvatar_FebruaryA {
-    display: none;
-    border-radius: 5px;
+    filter: drop-shadow(10px 15px 4px #0e1825);
     float: left;
     max-width: 50px;
 }
 
 .hubRecipientName_FebruaryA {
-    display: none;
     float: left;
-    color: #020201;
+    color: #030508;
     font-family: 'Spectral', serif;
     font-size: 24px;
     margin: 12px 0 8px 15px;
 }
 
 .hubRemoveGuardrailActive_FebruaryA {
-    display: none;
-    background: #af9f95;
-    border: 2px solid #6a2e14;
+    background: #2e537f;
     height: auto;
     left: 25%;
     opacity: 1;
@@ -2046,9 +1917,7 @@
 }
 
 .hubRemoveGuardrailInactive_FebruaryA {
-    display: none;
-    background: #af9f95;
-    border: 2px solid #6a2e14;
+    background: #2e537f;
     height: auto;
     left: -45%;
     opacity: 0;
@@ -2060,50 +1929,49 @@
 }
 
 .hubGuardrailText_FebruaryA {
-    display: none;
-    color: #020201;
+    color: #aaacac;
     font-family: 'Spectral', serif;
     font-size: 24px;
     margin: 24px 10% 8px 10%;
 }
 
 .hubGuardrailButton_FebruaryA {
-    display: none;
-    background: #161d21;
+    background: #97a9bf;
     border: none;
-    color: #9ba5a8;
+    color: #0d0e11;
     cursor: pointer;
+    filter: drop-shadow(10px 15px 4px #0e1825);
     font-family: 'Spectral', serif;
-    font-size: 18px;
+    font-size: 24px;
     margin: 20px 10px;
-    outline-color: #fecdeb;
+    outline-color: #0d0e11;
     position: relative;
-    transform: skewX(-15deg);
     transition: all 0.4s linear;
 }
 
 .hubGuardrailButton_FebruaryA:hover {
-    background: #af9f95;
-    color: #020201;
-    transform: skewX(-5deg);
+    background: #366184;
+    color: #929fae;
+    filter: brightness(110%) drop-shadow(9px 14px 3px #0e1825);
+    transition: all 0.4s linear;
+}
+
+.hubGuardrailButton_FebruaryA:active {
+    filter: brightness(110%) drop-shadow(0 0 0 #0e1825);
     transition: all 0.4s linear;
 }
 
 .hubGuardrailButtonsDiv_FebruaryA {
-    display: none;
     margin: 5px 40%;
 }
 
 .hubOtherProfileEditButton_FebruaryA {
-    display: none;
     float: right;
     padding: 30px 45px;
 }
 
 .pendingFriendRequests_FebruaryA {
-    display: none;
-    color: #9ca4a9;
-    filter: brightness(350%);
+    color: #030508;
     float: right;
     font-family: 'Spectral', serif;
     font-size: 18px;
@@ -2114,24 +1982,19 @@
 }
 
 .hubContactCenter_FebruaryA {
-    display: none;
     padding: 10%;
     width: 100%;
 }
 
 .hubContactLabel_FebruaryA {
-    display: none;
-    color: #9ca4a9;
-    filter: brightness(150%);
+    color: #030508;
     font-family: 'Spectral', serif;
     font-size: 30px;
 }
 
 .hubFooter_FebruaryA {
-    display: none;
-    bottom: 3px;
-    color: #9ca4a9;
-    filter: brightness(350%);
+    bottom: 2px;
+    color: #030508;
     font-family: 'Spectral', serif;
     font-size: 13px;
     left: 80%;
@@ -2139,71 +2002,69 @@
 }
 
 .hubContactFormField_FebruaryA {
-    display: none;
     margin: 25px 0;
 }
 
 .hubContactSubjectInput_FebruaryA {
-    display: none;
-    background: #c3d6ea;
+    background: #a7a39d;
     border: none;
-    color: #020201;
+    color: #030508;
     font-family: 'Spectral', serif;
     font-size: 18px;
     margin: 5px 0 5px 0;
     max-width: 750px;
-    outline-color: #020201;
+    outline-color: #030508;
     width: 80%;
 }
 
 .hubContactMessageInput_FebruaryA {
-    display: none;
-    background: #c3d6ea;
+    background: #a7a39d;
     border: none;
-    color: #020201;
+    color: #030508;
     font-family: 'Spectral', serif;
     font-size: 18px;
     margin: 5px 0 5px 0;
     max-width: 750px;
-    outline-color: #020201;
+    outline-color: #030508;
     width: 80%;
 }
 
 .hubContactAdminSubmitButton_FebruaryA {
-    display: none;
-    background: #161d21;
+    background: #97a9bf;
     border: none;
-    color: #9ba5a8;
+    color: #0d0e11;
     cursor: pointer;
+    filter: drop-shadow(10px 15px 4px #0e1825);
     font-family: 'Spectral', serif;
     font-size: 18px;
     margin: 5px 0;
-    outline-color: #fecdeb;
+    outline-color: #0d0e11;
     position: relative;
-    transform: skewX(-15deg);
     transition: all 0.4s linear;
     width: 76%;
 }
 
 .hubContactAdminSubmitButton_FebruaryA:hover {
-    background: #af9f95;
-    color: #020201;
-    transform: skewX(-5deg);
+    background: #366184;
+    color: #929fae;
+    filter: brightness(110%) drop-shadow(9px 14px 3px #0e1825);
+    transition: all 0.4s linear;
+}
+
+.hubContactAdminSubmitButton_FebruaryA:active {
+    filter: brightness(110%) drop-shadow(0 0 0 #0e1825);
     transition: all 0.4s linear;
 }
 
 .removeShare_FebruaryA {
-    display: none;
-    color: #9ba5a8;
+    color: #030508;
     cursor: pointer;
     float: right;
     font-size: 30px;
 }
 
 .deleteGuardrailActive_FebruaryA {
-    display: none;
-    background: #af9f95;
-    border: 2px solid #6a2e14;
+    background: #366184;
     height: auto;
     left: 25%;
     opacity: 1;
@@ -2215,9 +2076,7 @@
 }
 
 .deleteGuardrailInactive_FebruaryA {
-    display: none;
-    background: #af9f95;
-    border: 2px solid #6a2e14;
+    background: #366184;
     height: auto;
     left: -45%;
     opacity: 0;
@@ -2229,9 +2088,7 @@
 }
 
 .deleteCommentGuardrailActive_FebruaryA {
-    display: none;
-    background: #af9f95;
-    border: 2px solid #6a2e14;
+    background: #366184;
     height: auto;
     left: 25%;
     opacity: 1;
@@ -2243,9 +2100,7 @@
 }
 
 .deleteCommentGuardrailInactive_FebruaryA {
-    display: none;
-    background: #af9f95;
-    border: 2px solid #6a2e14;
+    background: #366184;
     height: auto;
     left: -45%;
     opacity: 0;
@@ -2257,16 +2112,14 @@
 }
 
 .editComment_FebruaryA {
-    display: none;
-    color: #9ba5a8;
+    color: #030508;
     cursor: pointer;
     float: right;
     font-size: 18px;
 }
 
 .hubEditMessageInactive_FebruaryA {
-    display: none;
-    background: #9ca4a9;
+    background: #366184;
     left: -35%;
     opacity: 0;
     padding: 1% 3%;
@@ -2278,8 +2131,7 @@
 }
 
 .hubEditMessageActive_FebruaryA {
-    display: none;
-    background: #9ca4a9;
+    background: #366184;
     left: 35%;
     opacity: 1;
     padding: 1% 3%;
@@ -2291,53 +2143,55 @@
 }
 
 .hubEditMessageActive_FebruaryA img {
-    display: none;
     border-radius: 5px;
+    filter: drop-shadow(10px 15px 4px #0e1825);
     max-width: 15%;
 }
 
 .hubEditMessageActive_FebruaryA p {
-    display: none;
-    color: #020201;
+    color: #030508;
     font-family: 'Spectral', serif;
     font-size: 18px;
     margin: 15px 0;
 }
 
 .hubEditMessageActive_FebruaryA textarea {
-    display: none;
-    background: #b5978a;
+    background: #a7a39d;
     border: none;
-    color: #020201;
+    color: #030508;
     font-family: 'Spectral', serif;
     font-size: 18px;
-    outline-color: #020201;
+    outline-color: #030508;
     width: 100%;
 }
 
 .hubEditMessageActive_FebruaryA button {
-    display: none;
-    background: #161d21;
+    background: #97a9bf;
     border: none;
-    color: #9ba5a8;
+    color: #0d0e11;
     cursor: pointer;
+    filter: drop-shadow(10px 15px 4px #0e1825);
     font-family: 'Spectral', serif;
-    font-size: 18px;
-    margin: 5px 35px;
-    transform: skewX(-15deg);
+    font-size: 24px;
+    margin: 5px 45px;
+    outline-color: #0d0e11;
     transition: all 0.4s linear;
 }
 
 .hubEditMessageActive_FebruaryA button:hover {
-    background: #af9f95;
-    color: #020201;
-    transform: skewX(-5deg);
+    background: #366184;
+    color: #929fae;
+    filter: brightness(110%) drop-shadow(9px 14px 3px #0e1825);
+    transition: all 0.4s linear;
+}
+
+.hubEditMessageActive_FebruaryA button:active {
+    filter: brightness(110%) drop-shadow(0 0 0 #0e1825);
     transition: all 0.4s linear;
 }
 
 .hubEditMessageInactive_FebruaryA {
-    display: none;
-    background: #9ca4a9;
+    background: #366184;
     left: -135%;
     opacity: 0;
     padding: 1% 3%;
@@ -2349,44 +2203,40 @@
 }
 
 .hubEditMessageInactive_FebruaryA img {
-    display: none;
     max-width: 15%;
 }
 
 .hubEditMessageInactive_FebruaryA p {
-    display: none;
-    color: #020201;
+    color: #030508;
     font-family: 'Spectral', serif;
     font-size: 18px;
     margin: 15px 0;
 }
 
 .hubEditMessageInactive_FebruaryA textarea {
-    display: none;
-    background: #b5978a;
+    background: #a7a39d;
     border: none;
-    color: #020201;
+    color: #030508;
     font-family: 'Spectral', serif;
     font-size: 18px;
-    outline-color: #020201;
+    outline-color: #030508;
     width: 100%;
 }
 
 .hubEditMessageInactive_FebruaryA button {
-    display: none;
-    background: #161d21;
+    background: #97a9bf;
     border: none;
-    color: #9ba5a8;
+    color: #0d0e11;
     cursor: pointer;
+    filter: drop-shadow(10px 15px 4px #0e1825);
     font-family: 'Spectral', serif;
-    font-size: 18px;
-    margin: 5px 35px;
-    transform: skewX(-15deg);
+    font-size: 24px;
+    margin: 5px 45px;
+    outline-color: #0d0e11;
     transition: all 0.4s linear;
 }
 
 .removeShareComment_FebruaryA {
-    display: none;
     cursor: pointer;
     float: right;
     margin: 0 5px;
