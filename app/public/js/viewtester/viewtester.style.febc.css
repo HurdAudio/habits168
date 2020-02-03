@@ -1,0 +1,360 @@
+.viewContainer_FebruaryC {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/viewer/zaszlo-3619285_1920.jpg);
+    background-size: cover;
+    filter: blur(0);
+    height: 95%;
+    margin: 5% 0 0 0;
+    transition: all 0.5s linear;
+    width: 100%;
+    z-index: 1;
+}
+
+.viewContainerCloaked_FebruaryC {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/viewer/zaszlo-3619285_1920.jpg);
+    background-size: cover;
+    filter: blur(20px);
+    height: 95%;
+    margin: 5% 0 0 0;
+    transition: all 0.5s linear;
+    width: 100%;
+    z-index: 1;
+}
+
+.viewToolbar_FebruaryC {
+    backdrop-filter: blur(10px) saturate(200%);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 11vh;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.viewNavigation_FebruaryC {
+    background: #b8b8a8;
+    border-color: #b8b8a8;
+    color: #020203;
+    cursor: pointer;
+    filter: drop-shadow(10px 15px 4px #0c2407);
+    font-family: 'Noto Serif SC', serif;
+    font-size: 60px;
+    height: 85px;
+    margin: 0 10px;
+    outline-color: #020203;
+    padding: 1px;
+    transition: all 0.2s linear;
+    width: 85px;
+}
+
+.viewNavigation_FebruaryC:hover {
+    background: #0a3307;
+    color: #b4b2cf;
+    transition: all 0.2s linear;
+}
+
+.viewNavigation_FebruaryC:active {
+    background: #b4b2cf;
+    color: #0a3307;
+    filter: drop-shadow(0 0 0 #0c2407);
+    transition: all 0.1s linear;
+}
+
+.viewCurrentFeedIcon_FebruaryC {
+    height: 85px;
+    width: 85px;
+}
+
+.viewCurrentFeedTitle_FebruaryC {
+    background: transparent;
+    color: #b8b8a8;
+    cursor: pointer;
+    display: initial;
+    filter: drop-shadow(10px 15px 4px #0c2407);
+    font-family: 'Noto Serif SC', serif;
+    font-size: 66px;
+    font-weight: 900;
+    padding: 10px 15px 0 15px;
+}
+
+.viewCurrentFeedTitle_FebruaryC a:hover {
+    color: #198112;
+    transition: all 0.3s linear;
+}
+
+.viewCurrentFeedTitle_FebruaryC a {
+    color: #b8b8a8;
+    text-decoration: none;
+    transition: all 0.3s linear;
+}
+
+.viewCurrentFeedDescription_FebruaryC {
+    background: transparent;
+    color: #b8b8a8;
+    display: initial;
+    justify-content: flex-end;
+    filter: drop-shadow(10px 15px 4px #0c2407);
+    font-family: 'Noto Serif SC', serif;
+    font-size: 18px;
+    font-weight: 900;
+    padding: 50px 0 0 10px;
+}
+
+.viewContentDiv_FebruaryC {
+    backdrop-filter: blur(4px) brightness(80%);
+    background: #a49f98;
+    height: 79.5vh;
+    opacity: 0.95;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 1% 5%;
+    width: 100%;
+}
+
+.viewIndividualItems_FebruaryC {
+    color: #020203;
+    font-family: 'Noto Serif SC', serif;
+    line-height: 1.3em;
+    max-width: 880px;
+}
+
+.viewIndividualItems_FebruaryC img {
+    max-width: 70%;
+}
+
+.viewIndividualItems_FebruaryC p {
+    font-size: 18px;
+    line-height: 1.3em;
+    margin: 5px 5% 5px 1%;
+}
+
+.viewIndividualItems_FebruaryC a {
+    color: #020203;
+    text-decoration: none;
+}
+
+.viewIndividualItems_FebruaryC a p {
+    font-size: 30px;
+    margin: 25px 4px 8px 0;
+}
+
+.viewIndividualItems_FebruaryC a:hover {
+    color: #1e5c13;
+}
+
+.viewIndividualItems_FebruaryC a:visited {
+    color: #4e7208;
+}
+
+.viewIndividualItems_FebruaryC button {
+    background: #b8b8a8;
+    border-color: #b8b8a8;
+    color: #020203;
+    cursor: pointer;
+    filter: drop-shadow(10px 15px 4px #0c2407);
+    font-family: 'Noto Serif SC', serif;
+    font-size: 18px;
+    margin: 0 15px 0 0;
+    outline-color: #020203;
+    padding: 3px 5px;
+    transition: all 0.4s linear;
+}
+
+.viewIndividualItems_FebruaryC button:hover {
+    background: #0a3307;
+    color: #b4b2cf;
+    transition: all 0.2s linear;
+}
+
+.viewIndividualItems_FebruaryC button:active {
+    background: #b4b2cf;
+    color: #0a3307;
+    filter: drop-shadow(0 0 0 #0c2407);
+    transition: all 0.1s linear;
+}
+
+.viewPostTimestamp_FebruaryC {
+    margin: 5px 5px 5px 45% !important;
+}
+
+.viewShareSaveDialogueDisplayed_FebruaryC {
+    background: #b4b2cf;
+    color: #020203;
+    display: initial;
+    font-family: 'Noto Serif SC', serif;
+    height: 70vh;
+    left: 10%;
+    opacity: 0.99;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    top: 15%;
+    transform: skewX(0deg);
+    transition: all 0.5s linear;
+    width: 80%;
+    z-index: 17;
+}
+
+.viewShareSaveDialogueHidden_FebruaryC {
+    background: #b4b2cf;
+    color: #020203;
+    font-family: 'Noto Serif SC', serif;
+    height: 70vh;
+    left: 10%;
+    opacity: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    top: -45%;
+    transform: skewX(0deg);
+    transition: all 0.5s linear;
+    width: 80%;
+    z-index: -1;
+}
+
+.viewDialogHeadline_FebruaryC {
+    background: #2a283f;
+    color: #b8b8a8;
+    font-size: 48px;
+    padding: 30px 0 10px 50px;
+}
+
+.viewShareSaveDialogueDisplayed_FebruaryC img {
+    border-radius: 5px;
+    height: 75px;
+    margin: 30px 0 15px 150px;
+    width: 75px;
+}
+
+.viewShareSaveDialogueHidden_FebruaryC img {
+    border-radius: 5px;
+    height: 75px;
+    margin: 30px 0 15px 150px;
+    width: 75px;
+}
+
+.viewShareSaveDialogueDisplayed_FebruaryC p {
+    font-size: 24px;
+    margin: 5px 50px 15px 50px;
+}
+
+.viewShareSaveDialogueHidden_FebruaryC p {
+    font-size: 24px;
+    margin: 5px 50px 15px 50px;
+}
+
+.viewShareSaveDialogueDisplayed_FebruaryC textarea {
+    background: #b8b8a8;
+    color: #020203;
+    display: initial;
+    font-family: 'Noto Serif SC', serif;
+    font-size: 18px;
+    margin: 5px 50px 5px 50px;
+    outline-color: #020203;
+    padding: 5px;
+    width: 88%;
+}
+
+.viewShareSaveDialogueHidden_FebruaryC textarea {
+    background: #b8b8a8;
+    color: #020203;
+    display: initial;
+    font-family: 'Noto Serif SC', serif;
+    font-size: 18px;
+    margin: 5px 50px 5px 50px;
+    outline-color: #020203;
+    padding: 5px;
+    width: 88%;
+}
+
+.viewShareSaveDialogueDisplayed_FebruaryC button {
+    background: #b8b8a8;
+    border-color: #b8b8a8;
+    color: #020203;
+    cursor: pointer;
+    filter: drop-shadow(10px 15px 4px #0c2407);
+    font-family: 'Noto Serif SC', serif;
+    font-size: 18px;
+    margin: 0 15px 0 0;
+    margin: 15px 0 5px 50px;
+    padding: 5px;
+    transition: all 0.4s linear;
+}
+
+.viewShareSaveDialogueHidden_FebruaryC button {
+    background: #b8b8a8;
+    border-color: #b8b8a8;
+    color: #020203;
+    cursor: pointer;
+    filter: drop-shadow(10px 15px 4px #0c2407);
+    font-family: 'Noto Serif SC', serif;
+    font-size: 18px;
+    margin: 0 15px 0 0;
+    margin: 15px 0 5px 50px;
+    padding: 5px;
+    transition: all 0.4s linear;
+}
+
+.viewShareSaveDialogueDisplayed_FebruaryC button:hover {
+    background: #0a3307;
+    color: #b4b2cf;
+    transition: all 0.2s linear;
+}
+
+.viewShareSaveDialogueDisplayed_FebruaryC button:active {
+    background: #b4b2cf;
+    color: #0a3307;
+    filter: drop-shadow(0 0 0 #0c2407);
+    transition: all 0.1s linear;
+}
+
+.viewRadioButtons_FebruaryC {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 24px;
+    margin: 0 0 20px 50px;
+}
+
+@media only screen and (max-width: 736px) {
+
+    .viewCurrentFeedDescription_FebruaryC {
+        display: none;
+    }
+
+    .viewContentDiv_FebruaryC {
+        height: 140vh;
+    }
+
+    .viewToolbar_FebruaryC {
+        height: 16vh;
+    }
+
+    .viewCurrentFeedTitle_FebruaryC {
+        display: initial;
+        font-size: 48px;
+        padding: 20px 15px 0 15px;
+    }
+}
+
+@media only screen and (max-width: 667px) {
+
+    .viewCurrentFeedTitle_FebruaryC {
+        display: none;
+    }
+
+    .viewNavigation_FebruaryC {
+        font-size: 48px;
+        height: 50px;
+        width: 50px;
+    }
+
+    .viewCurrentFeedIcon_FebruaryC {
+        height: 50px;
+        width: 50px;
+    }
+
+    .viewShareSaveDialogueDisplayed_FebruaryC textarea {
+        margin: 5px 50px 5px 50px;
+        padding: 5px;
+        width: 58%;
+    }
+
+}
