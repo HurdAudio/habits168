@@ -13,11 +13,9 @@
         const vm = this;
 
         vm.$onInit = onInit;
-        vm.monthSelect = '_FebruaryC';
         vm.userLoggedIn = false;
         vm.userLoginActive = false;
         vm.activateUserLogin = activateUserLogin;
-        vm.landingLoginBoxClass = 'landingLoginInactive' + vm.monthSelect;
         vm.deactivateUserLogin = deactivateUserLogin;
         vm.userGreetingMessage = 'Hello, User';
         vm.userLogin = userLogin;
@@ -26,11 +24,7 @@
         vm.userLogout = userLogout;
         vm.linkShareCollapse = false;
         vm.toggleLinkShareState = toggleLinkShareState;
-        vm.linkSharesClass = 'landingRecentlySharedLinksUncollapsed' + vm.monthSelect;
-        vm.postSharesClass = 'landingRecentlySharedPostsCollapsed' + vm.monthSelect;
         vm.toggleToRecentPosts = toggleToRecentPosts;
-        vm.recentShareTabClass = 'tabActive' + vm.monthSelect;
-        vm.recentPostsTabClass = 'tabInactive' + vm.monthSelect;
         vm.toggleToRecentShares = toggleToRecentShares;
         vm.navigateToUserHub = navigateToUserHub;
 
@@ -411,30 +405,49 @@
 
         }
 
+        function setSkin() {
+            $http.get('/skins/landing')
+                .then(skinData => {
+                    let skin = skinData.data;
+                    vm.monthSelect = skin.landing;
+                    vm.landingLoginBoxClass = 'landingLoginInactive' + vm.monthSelect;
+                    vm.linkSharesClass = 'landingRecentlySharedLinksUncollapsed' + vm.monthSelect;
+                    vm.postSharesClass = 'landingRecentlySharedPostsCollapsed' + vm.monthSelect;
+                    vm.recentShareTabClass = 'tabActive' + vm.monthSelect;
+                    vm.recentPostsTabClass = 'tabInactive' + vm.monthSelect;
+                    switch (vm.monthSelect) {
+                        case ('_JanuaryA'):
+                            vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/robe-154808_640.png';
+                            break;
+                        case ('_JanuaryB'):
+                            vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/nun-4018982_1280.png'
+                            break;
+                        case ('_JanuaryC'):
+                            vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/job-3506038_1280.png';
+                            break;
+                        case ('_FebruaryA'):
+                            vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_png_by_piccolapersempre_dbuithu-fullview.png';
+                            break;
+                        case ('_FebruaryB'):
+                            vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/digital_painting__liquid_sleep_by_ukulelemoon_d888syz-pre.jpg';
+                            break;
+                        case ('_FebruaryC'):
+                            vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_cup_by_lashonda1980_dazsks6-pre.png';
+                            break;
+                        default:
+                            alert('UNSUPPORTED MONTH SELECT for LOGO');
+                    }
+                    setTimeout(() => {
+                        document.getElementById('fullLandingContainer').setAttribute("style", "opacity: 1; transition: all 0.3s linear;");
+                    }, 300);
+
+                });
+        }
+
         function onInit() {
             console.log("Landing is lit");
-            switch (vm.monthSelect) {
-                case ('_JanuaryA'):
-                    vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/robe-154808_640.png';
-                    break;
-                case ('_JanuaryB'):
-                    vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/nun-4018982_1280.png'
-                    break;
-                case ('_JanuaryC'):
-                    vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/job-3506038_1280.png';
-                    break;
-                case ('_FebruaryA'):
-                    vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_png_by_piccolapersempre_dbuithu-fullview.png';
-                    break;
-                case ('_FebruaryB'):
-                    vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/digital_painting__liquid_sleep_by_ukulelemoon_d888syz-pre.jpg';
-                    break;
-                case ('_FebruaryC'):
-                    vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_cup_by_lashonda1980_dazsks6-pre.png';
-                    break;
-                default:
-                    alert('UNSUPPORTED MONTH SELECT for LOGO');
-            }
+
+            setSkin();
             setUserIPAddress();
             setFooterMessage();
             checkLoginStatus();
