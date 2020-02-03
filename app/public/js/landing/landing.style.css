@@ -1,72 +1,77 @@
 body {
-  overflow: hidden;
-  overflow-x: hidden;
-  overflow-y: hidden;
+    background: #000000;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#fullLandingContainer {
+    opacity: 0;
 }
 
 .landingLinkShare_JanuaryA {
-  padding: 5px;
-  width: 96%;
+    padding: 5px;
+    width: 96%;
 }
 
 .landingRecentlySharedLinksUncollapsed_JanuaryA {
-  background: #c4d8f3;
-  display: initial;
-  float: left;
-  height: 75vh;
-  opacity: 0.9;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  margin: 0 0 0 0;
-  padding: 15px;
-  position: relative;
-  transition: all 0.4s linear;
-  width: 100%;
+    background: #c4d8f3;
+    display: initial;
+    float: left;
+    height: 75vh;
+    opacity: 0.9;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin: 0 0 0 0;
+    padding: 15px;
+    position: relative;
+    transition: all 0.4s linear;
+    width: 100%;
 }
 
 .landingRecentlySharedLinksCollapsed_JanuaryA {
-  background: transparent;
-  display: none;
-  float: left;
-  height: 75vh;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  opacity: 0.9;
-  margin: 0 0 0 0;
-  padding: 15px;
-  position: relative;
-  transition: all 0.4s linear;
-  width: 0;
+    background: transparent;
+    display: none;
+    float: left;
+    height: 75vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    opacity: 0.9;
+    margin: 0 0 0 0;
+    padding: 15px;
+    position: relative;
+    transition: all 0.4s linear;
+    width: 0;
 }
 
 .landingRecentlySharedPostsUncollapsed_JanuaryA {
-  background: #c4d8f3;
-  display: initial;
-  float: left;
-  height: 75vh;
-  opacity: 0.9;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  margin: 0 0 0 0;
-  padding: 15px;
-  position: relative;
-  transition: all 0.4s linear;
-  width: 100%;
+    background: #c4d8f3;
+    display: initial;
+    float: left;
+    height: 75vh;
+    opacity: 0.9;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin: 0 0 0 0;
+    padding: 15px;
+    position: relative;
+    transition: all 0.4s linear;
+    width: 100%;
 }
 
 .landingRecentlySharedPostsCollapsed_JanuaryA {
-  background: transparent;
-  display: none;
-  float: left;
-  height: 75vh;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  opacity: 0.9;
-  margin: 0 0 0 0;
-  padding: 15px;
-  position: relative;
-  transition: all 0.4s linear;
-  width: 0%;
+    background: transparent;
+    display: none;
+    float: left;
+    height: 75vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    opacity: 0.9;
+    margin: 0 0 0 0;
+    padding: 15px;
+    position: relative;
+    transition: all 0.4s linear;
+    width: 0%;
 }
 
 /* .landingRecentlySharedLinksUncollapsed_JanuaryA img {
@@ -80,1543 +85,1543 @@ body {
 } */
 
 .landingRecentlySharedLinksCollapsed_JanuaryA img {
-  display: none;
+    display: none;
 }
 
 .landingRecentlySharedLinksCollapsed_JanuaryA .shareDescription_JanuaryA {
-  display: none;
+    display: none;
 }
 
 .landingRecentlySharedPostsCollapsed_JanuaryA .shareDescription_JanuaryA {
-  display: none;
+    display: none;
 }
 
 .landingRecentlySharedLinksCollapsed_JanuaryA h3 {
-  display: none;
+    display: none;
 }
 
 .landingRecentlySharedPostsCollapsed_JanuaryA h3 {
-  display: none;
+    display: none;
 }
 
 .landingRecentlySharedLinksCollapsed_JanuaryA a {
-  display: none;
+    display: none;
 }
 
 .landingRecentlySharedPostsUncollapsed_JanuaryA img {
-  display: initial;
-  float: left;
-  left: 1%;
-  padding: 4px 8px 4px 0;
-  position: relative;
-  max-height: 30vh;
-  max-width: 80%;
+    display: initial;
+    float: left;
+    left: 1%;
+    padding: 4px 8px 4px 0;
+    position: relative;
+    max-height: 30vh;
+    max-width: 80%;
 }
 
 .landingRecentlySharedPostsCollapsed_JanuaryA img {
-  display: none;
+    display: none;
 }
 
 .landingRecentlySharedLinksUncollapsed_JanuaryA p {
-  color: #012736;
-  display: intial;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 18px;
-  padding: 4px;
+    color: #012736;
+    display: intial;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    padding: 4px;
 }
 
 .landingRecentlySharedLinksCollapsed_JanuaryA p {
-  display: none;
+    display: none;
 }
 
 .landingRecentlySharedPostsUncollapsed_JanuaryA p {
-  color: #012736;
-  display: intial;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 18px;
-  padding: 4px;
+    color: #012736;
+    display: intial;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    padding: 4px;
 }
 
 .landingRecentlySharedPostsCollapsed_JanuaryA p {
-  display: none;
+    display: none;
 }
 
 .landingLinkShareUserName_JanuaryA {
-  float: left;
-  margin: 1px 0 0 0;
-  position: relative;
-  width: 13%;
+    float: left;
+    margin: 1px 0 0 0;
+    position: relative;
+    width: 13%;
 }
 
 .landingLinkShareLink_JanuaryA {
-  float: left;
-  margin: 1px 5px 20px 5px;
-  position: relative;
-  text-decoration: none;
-  width: 41%;
+    float: left;
+    margin: 1px 5px 20px 5px;
+    position: relative;
+    text-decoration: none;
+    width: 41%;
 }
 
 .landingLinkShareLink_JanuaryA:hover {
-  filter: brightness(250%);
+    filter: brightness(250%);
 }
 
 .landingShareLinkUserNotes_JanuaryA {
-  float: left;
-  margin: 0 5px 20px 0;
-  position: relative;
-  width: 35%;
+    float: left;
+    margin: 0 5px 20px 0;
+    position: relative;
+    width: 35%;
 }
 
 .landingRecentlySharedLinksTitle_JanuaryA {
-  color: #012736;
-  cursor: pointer;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 24px;
+    color: #012736;
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px;
 }
 
 .tabs_JanuaryA {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  height: 30px;
-  justify-content: left;
-  margin: 0;
-  padding: 0;
-  width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 30px;
+    justify-content: left;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 .tabRecentShare_JanuaryA {
-  color: #012736;
-  cursor: pointer;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 30px;
-  width: auto;
+    color: #012736;
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    width: auto;
 }
 
 .tabRecentPost_JanuaryA {
-  color: #012736;
-  cursor: pointer;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 30px;
-  width: auto;
+    color: #012736;
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    width: auto;
 }
 
 .tabActive_JanuaryA {
-  background: #c4d8f3;
-  border: solid 3px transparent;
-  float: left;
-  opacity: 1;
+    background: #c4d8f3;
+    border: solid 3px transparent;
+    float: left;
+    opacity: 1;
 }
 
 .tabInactive_JanuaryA {
-  background: transparent;
-  border: solid 3px #c4d8f3;
-  float: left;
-  opacity: 0.5;
+    background: transparent;
+    border: solid 3px #c4d8f3;
+    float: left;
+    opacity: 0.5;
 }
 
 .landingTitleFlex {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: left;
-  width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    width: 100%;
 }
 
 .backgroundDiv_JanuaryA {
-  background: url(https://habits168-hurdaudio.s3.amazonaws.com/landing/january/aaron-burden-563554-unsplash.jpg);
-  background-size: 100%;
-  filter: brightness(150%);
-  height: 100%;
-  left: 0;
-  opacity: 0.6;
-  overflow: hidden;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: -1;
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/landing/january/aaron-burden-563554-unsplash.jpg);
+    background-size: 100%;
+    filter: brightness(150%);
+    height: 100%;
+    left: 0;
+    opacity: 0.6;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
 }
 
 .landingLogo_JanuaryA {
-  height: 72px;
-  margin: 16px 4px 16px 48px;
-  opacity: 0.5;
-  width: 5%;
+    height: 72px;
+    margin: 16px 4px 16px 48px;
+    opacity: 0.5;
+    width: 5%;
 }
 
 .landingTitleDiv_JanuaryA {
-  padding: 32px 4px 16px 24px;
+    padding: 32px 4px 16px 24px;
 }
 
 .landingTitle_JanuaryA {
-  color: #012736;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 72px;
-  font-weight: bolder;
+    color: #012736;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 72px;
+    font-weight: bolder;
 }
 
 .landingTitleButtonsDiv_JanuaryA {
-  float: right;
-  margin-left: 30%;
-  padding: 36px 0 4px 24px;
+    float: right;
+    margin-left: 30%;
+    padding: 36px 0 4px 24px;
 }
 
 .landingTitleButtonsDiv_JanuaryA button {
-  background: #6ea6cb;
-  border-color: transparent;
-  color: #012736;
-  cursor: pointer;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 30px;
-  margin: 8px 8px 8px 8px;
-  padding: 12px 0 8px 4px;
-  transform: skewX(-15deg);
-  transition: all 0.2s linear;
-  width: 128px;
+    background: #6ea6cb;
+    border-color: transparent;
+    color: #012736;
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    margin: 8px 8px 8px 8px;
+    padding: 12px 0 8px 4px;
+    transform: skewX(-15deg);
+    transition: all 0.2s linear;
+    width: 128px;
 }
 
 .landingTitleButtonsDiv_JanuaryA button:hover {
-  background: #ccdcee;
-  transform: skewX(-10deg);
-  transition: all 0.2s linear;
+    background: #ccdcee;
+    transform: skewX(-10deg);
+    transition: all 0.2s linear;
 }
 
 .landingTitleButtonsDiv_JanuaryA button:active {
-  border-color: #1e3847;
-  transform: skewX(-15deg);
-  transition: all 0.2s linear;
+    border-color: #1e3847;
+    transform: skewX(-15deg);
+    transition: all 0.2s linear;
 }
 
 .landingFooter_JanuaryA {
-  bottom: 3px;
-  color: #012736;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 12px;
-  left: 26px;
-  position: absolute;
+    bottom: 3px;
+    color: #012736;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 12px;
+    left: 26px;
+    position: absolute;
 }
 
 .landingLoginInactive_JanuaryA {
-  background: #6ea6cb;
-  height: 400px;
-  opacity: 0;
-  padding: 32px;
-  position: absolute;
-  right: 100%;
-  top: 270px;
-  width: 1%;
-  transform: rotateZ(90deg) skewX(12deg) skewY(12deg);
-  transition: all 0.8s linear;
-  z-index: 6;
+    background: #6ea6cb;
+    height: 400px;
+    opacity: 0;
+    padding: 32px;
+    position: absolute;
+    right: 100%;
+    top: 270px;
+    width: 1%;
+    transform: rotateZ(90deg) skewX(12deg) skewY(12deg);
+    transition: all 0.8s linear;
+    z-index: 6;
 }
 
 .landingLoginActive_JanuaryA {
-  background: #6ea6cb;
-  height: 400px;
-  opacity: 1;
-  padding: 32px;
-  position: absolute;
-  right: 33%;
-  top: 170px;
-  width: 33%;
-  transform: rotateZ(0deg) skewX(0deg) skewY(0deg);
-  transition: all 0.8s linear;
-  z-index: 6;
+    background: #6ea6cb;
+    height: 400px;
+    opacity: 1;
+    padding: 32px;
+    position: absolute;
+    right: 33%;
+    top: 170px;
+    width: 33%;
+    transform: rotateZ(0deg) skewX(0deg) skewY(0deg);
+    transition: all 0.8s linear;
+    z-index: 6;
 }
 
 .landingLoginActive_JanuaryA h3 {
-  color: #ff0000;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 24px;
-  margin: 8px 0 0 16px;
+    color: #ff0000;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px;
+    margin: 8px 0 0 16px;
 }
 
 .landingLoginActive_JanuaryA h2 {
-  color: #012736;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 36px;
-  opacity: 1;
-  transition: all 0.8s linear;
+    color: #012736;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 36px;
+    opacity: 1;
+    transition: all 0.8s linear;
 }
 
 .landingLoginInactive_JanuaryA h2 {
-  color: #012736;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 36px;
-  opacity: 0;
-  transition: all 0.8s linear;
+    color: #012736;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 36px;
+    opacity: 0;
+    transition: all 0.8s linear;
 }
 
 .landingLoginActive_JanuaryA form {
-  opacity: 1;
-  padding: 84px;
-  transition: all 0.8s linear;
+    opacity: 1;
+    padding: 84px;
+    transition: all 0.8s linear;
 }
 
 .landingLoginInactive_JanuaryA form {
-  opacity: 0;
-  padding: 84px;
-  transition: all 0.8s linear;
+    opacity: 0;
+    padding: 84px;
+    transition: all 0.8s linear;
 }
 
 .landingLoginActive_JanuaryA input {
-  background: #ccdcee;
-  color: #012736;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 24px;
-  margin: 4px 0 16px 0;
-  opacity: 1;
-  transition: all 0.8s linear;
-  width: 100%;
+    background: #ccdcee;
+    color: #012736;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px;
+    margin: 4px 0 16px 0;
+    opacity: 1;
+    transition: all 0.8s linear;
+    width: 100%;
 }
 
 .landingLoginInactive_JanuaryA input {
-  background: #ccdcee;
-  color: #012736;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 24px;
-  margin: 4px 0 16px 0;
-  opacity: 0;
-  transition: all 0.8s linear;
-  width: 100%;
+    background: #ccdcee;
+    color: #012736;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px;
+    margin: 4px 0 16px 0;
+    opacity: 0;
+    transition: all 0.8s linear;
+    width: 100%;
 }
 
 .landingLoginActive_JanuaryA button {
-  background: #ccdcee;
-  border-color: transparent;
-  color: #012736;
-  cursor: pointer;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 30px;
-  margin: 8px 8px 8px 5%;
-  opacity: 1;
-  padding: 12px 0 8px 4px;
-  transform: scale(1) skew(-15deg);
-  transition: all 0.8s linear;
-  width: 128px;
+    background: #ccdcee;
+    border-color: transparent;
+    color: #012736;
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    margin: 8px 8px 8px 5%;
+    opacity: 1;
+    padding: 12px 0 8px 4px;
+    transform: scale(1) skew(-15deg);
+    transition: all 0.8s linear;
+    width: 128px;
 }
 
 .landingLoginInactive_JanuaryA button {
-  background: #ccdcee;
-  border-color: transparent;
-  color: #012736;
-  cursor: pointer;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 30px;
-  margin: 8px 8px 8px 5%;
-  opacity: 0;
-  padding: 12px 0 8px 4px;
-  transform: scale(1) skew(-15deg);
-  transition: all 0.8s linear;
-  width: 128px;
+    background: #ccdcee;
+    border-color: transparent;
+    color: #012736;
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    margin: 8px 8px 8px 5%;
+    opacity: 0;
+    padding: 12px 0 8px 4px;
+    transform: scale(1) skew(-15deg);
+    transition: all 0.8s linear;
+    width: 128px;
 }
 
 .landingLoginActive_JanuaryA button:hover {
-  filter: brightness(120%);
-  transform: skewX(-10deg);
-  transition: all 0.2s linear;
+    filter: brightness(120%);
+    transform: skewX(-10deg);
+    transition: all 0.2s linear;
 }
 
 .landingLoginInactive_JanuaryA button:hover {
-  filter: brightness(120%);
-  transform: skewX(-10deg);
-  transition: all 0.2s linear;
+    filter: brightness(120%);
+    transform: skewX(-10deg);
+    transition: all 0.2s linear;
 }
 
 .landingLoginActive_JanuaryA a {
-  bottom: 10%;
-  color: #012736;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 24px;
-  opacity: 1;
-  position: absolute;
-  right: 10%;
-  text-decoration: none;
-  transition: all 0.8s linear;
+    bottom: 10%;
+    color: #012736;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px;
+    opacity: 1;
+    position: absolute;
+    right: 10%;
+    text-decoration: none;
+    transition: all 0.8s linear;
 
 }
 
 .landingLoginInactive_JanuaryA a {
-  bottom: 10%;
-  color: #012736;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 24px;
-  opacity: 1;
-  position: absolute;
-  right: 10%;
-  text-decoration: none;
-  transition: all 0.8s linear;
+    bottom: 10%;
+    color: #012736;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px;
+    opacity: 1;
+    position: absolute;
+    right: 10%;
+    text-decoration: none;
+    transition: all 0.8s linear;
 
 }
 
 .landingLoginActive_JanuaryA a:hover {
-  color: #ccdcee;
+    color: #ccdcee;
 }
 
 .landingLoginInactive_JanuaryA a:hover {
-  color: #ccdcee;
+    color: #ccdcee;
 }
 
 .landingUserGreeting_JanuaryA {
-  color: #012736;
-  display: initial;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 30px;
-  left: 655px;
-  top: 40px;
-  margin: 24px 16px 24px 48px;
-  position: absolute;
+    color: #012736;
+    display: initial;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    left: 655px;
+    top: 40px;
+    margin: 24px 16px 24px 48px;
+    position: absolute;
 }
 
 .landingShareContainer_JanuaryA {
-  display: inline-block;
-  left: 0;
-  position: relative;
-  width: 100%;
+    display: inline-block;
+    left: 0;
+    position: relative;
+    width: 100%;
 }
 
 .landingByline_JanuaryA {
-  border-right: solid 1px #012736;
-  float: left;
-  position: relative;
-  width: 20%;
+    border-right: solid 1px #012736;
+    float: left;
+    position: relative;
+    width: 20%;
 }
 
 .landingShareShare_JanuaryA {
-  float: left;
-  margin: 5px 0 25px 25px;
-  max-width: 720px;
-  padding: 0;
-  position: relative;
-  top: 0;
-  /* width: 79%; */
+    float: left;
+    margin: 5px 0 25px 25px;
+    max-width: 720px;
+    padding: 0;
+    position: relative;
+    top: 0;
+    /* width: 79%; */
 }
 
 .landingShareShare_JanuaryA a {
-  color: #012736;
-  text-decoration: none;
+    color: #012736;
+    text-decoration: none;
 }
 
 .landingShareSharerAvatar_JanuaryA {
-  /* max-height: 8vh; */
-  max-width: 50px !important;
+    /* max-height: 8vh; */
+    max-width: 50px !important;
 }
 
 .shareSourceIcon_JanuaryA {
-  float: left;
-  margin: 0 5px 0 0;
-  position: relative;
-  width: 5%;
+    float: left;
+    margin: 0 5px 0 0;
+    position: relative;
+    width: 5%;
 }
 
 .shareViaCredit_JanuaryA {
-  display: inline-block;
-  float: left;
-  margin: 15px 0 0 0;
+    display: inline-block;
+    float: left;
+    margin: 15px 0 0 0;
 }
 
 .shareHeadline_JanuaryA {
-  color: #012736;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 36px;
-  margin: 20px 15px 8px 8px;
-  text-decoration: none;
+    color: #012736;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 36px;
+    margin: 20px 15px 8px 8px;
+    text-decoration: none;
 }
 
 .shareCleanDate_JanuaryA {
-  float: right;
+    float: right;
 }
 
 .shareDescription_JanuaryA {
-  color: #012736;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 24px;
-  line-height: 1.3em;
-  margin: 60px 15px 10px 15px;
-  max-width: 880px;
+    color: #012736;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px;
+    line-height: 1.3em;
+    margin: 60px 15px 10px 15px;
+    max-width: 880px;
 }
 
 .shareAuthor_JanuaryA {
-  float: left;
+    float: left;
 }
 
 .shareShareEnclosurePhoto_JanuaryA {
-  width: 50%;
+    width: 50%;
 }
 
 .shareBlogTitle_JanuaryA {
-  color: #012736;
-  display: inline-block;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 24px !important;
-  margin: 10px 0 0 15px;
+    color: #012736;
+    display: inline-block;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px !important;
+    margin: 10px 0 0 15px;
 }
 
 .shareShareBlogPhoto_JanuaryA {
-  float: right;
-  display: inline-block !important;
-  height: auto !important;
-  margin: 15px 50% 10px 15px !important;
-  width: 50% !important;
+    float: right;
+    display: inline-block !important;
+    height: auto !important;
+    margin: 15px 50% 10px 15px !important;
+    width: 50% !important;
 }
 
 @media only screen and (max-width: 1366px) {
-  .backgroundDiv_JanuaryA {
-    background-size: 180%;
-  }
+    .backgroundDiv_JanuaryA {
+        background-size: 180%;
+    }
 
-  .landingLogo_JanuaryA {
-    height: 78px;
-    margin: 16px 0 16px 16px;
-    width: 8%;
-  }
+    .landingLogo_JanuaryA {
+        height: 78px;
+        margin: 16px 0 16px 16px;
+        width: 8%;
+    }
 
-  .landingTitleDiv_JanuaryA {
-    padding: 36px 0 16px 24px;
-  }
+    .landingTitleDiv_JanuaryA {
+        padding: 36px 0 16px 24px;
+    }
 
-  .landingTitle_JanuaryA {
-    font-size: 78px;
-    font-weight: bolder;
-  }
+    .landingTitle_JanuaryA {
+        font-size: 78px;
+        font-weight: bolder;
+    }
 
-  .landingLoginActive_JanuaryA {
-    height: 80%;
-    opacity: 1;
-    padding: 1px;
-    position: absolute;
-    right: 10%;
-    top: 10%;
-    width: 80%;
-    transition: all 0.8s linear;
-  }
+    .landingLoginActive_JanuaryA {
+        height: 80%;
+        opacity: 1;
+        padding: 1px;
+        position: absolute;
+        right: 10%;
+        top: 10%;
+        width: 80%;
+        transition: all 0.8s linear;
+    }
 
-  .landingLoginActive_JanuaryA h2 {
-    font-size: 48px;
-    margin: 35px 0 0 35px;
-  }
+    .landingLoginActive_JanuaryA h2 {
+        font-size: 48px;
+        margin: 35px 0 0 35px;
+    }
 
-  .landingLoginActive_JanuaryA form {
-    margin: 64px 0 0 0;
-    padding: 48px;
-  }
+    .landingLoginActive_JanuaryA form {
+        margin: 64px 0 0 0;
+        padding: 48px;
+    }
 
-  .landingLoginActive_JanuaryA input {
-    font-size: 42px;
-  }
+    .landingLoginActive_JanuaryA input {
+        font-size: 42px;
+    }
 
-  .landingLoginActive_JanuaryA button {
-    font-size: 36px;
-    margin-left: 20%;
-    margin-top: 3%;
-  }
+    .landingLoginActive_JanuaryA button {
+        font-size: 36px;
+        margin-left: 20%;
+        margin-top: 3%;
+    }
 
 }
 
 @media only screen and (max-width: 1024px) {
-  .backgroundDiv_JanuaryA {
-    background-size: 180%;
-  }
+    .backgroundDiv_JanuaryA {
+        background-size: 180%;
+    }
 
-  .landingLogo_JanuaryA {
-    height: 78px;
-    margin: 16px 0 16px 16px;
-    width: 8%;
-  }
+    .landingLogo_JanuaryA {
+        height: 78px;
+        margin: 16px 0 16px 16px;
+        width: 8%;
+    }
 
-  .landingTitleDiv_JanuaryA {
-    padding: 36px 0 16px 24px;
-  }
+    .landingTitleDiv_JanuaryA {
+        padding: 36px 0 16px 24px;
+    }
 
-  .landingTitle_JanuaryA {
-    font-size: 78px;
-    font-weight: bolder;
-  }
+    .landingTitle_JanuaryA {
+        font-size: 78px;
+        font-weight: bolder;
+    }
 
-  .landingLoginActive_JanuaryA {
-    height: 80%;
-    opacity: 1;
-    padding: 1px;
-    position: absolute;
-    right: 10%;
-    top: 10%;
-    width: 80%;
-    transition: all 0.8s linear;
-  }
+    .landingLoginActive_JanuaryA {
+        height: 80%;
+        opacity: 1;
+        padding: 1px;
+        position: absolute;
+        right: 10%;
+        top: 10%;
+        width: 80%;
+        transition: all 0.8s linear;
+    }
 
-  .landingLoginActive_JanuaryA h2 {
-    font-size: 48px;
-    margin: 35px 0 0 35px;
-  }
+    .landingLoginActive_JanuaryA h2 {
+        font-size: 48px;
+        margin: 35px 0 0 35px;
+    }
 
-  .landingLoginActive_JanuaryA form {
-    margin: 64px 0 0 0;
-    padding: 48px;
-  }
+    .landingLoginActive_JanuaryA form {
+        margin: 64px 0 0 0;
+        padding: 48px;
+    }
 
-  .landingLoginActive_JanuaryA input {
-    font-size: 42px;
-  }
+    .landingLoginActive_JanuaryA input {
+        font-size: 42px;
+    }
 
-  .landingLoginActive_JanuaryA button {
-    font-size: 36px;
-    margin-left: 20%;
-    margin-top: 3%;
-  }
+    .landingLoginActive_JanuaryA button {
+        font-size: 36px;
+        margin-left: 20%;
+        margin-top: 3%;
+    }
 
-  .landingRecentlySharedPostsUncollapsed_JanuaryA {
-    height: 76vh;
-    margin: 0;
-    width: 100%;
-  }
+    .landingRecentlySharedPostsUncollapsed_JanuaryA {
+        height: 76vh;
+        margin: 0;
+        width: 100%;
+    }
 
-  .landingRecentlySharedLinksUncollapsed_JanuaryA {
-    height: 76vh;
-    margin: 0;
-    width: 100%;
-  }
+    .landingRecentlySharedLinksUncollapsed_JanuaryA {
+        height: 76vh;
+        margin: 0;
+        width: 100%;
+    }
 
-  .landingRecentlySharedLinksCollapsed_JanuaryA {
-    display: none;
-  }
+    .landingRecentlySharedLinksCollapsed_JanuaryA {
+        display: none;
+    }
 
-  .landingRecentlySharedPostsUncollapsed_JanuaryA {
-    height: 76vh;
-    width: 100%;
-  }
+    .landingRecentlySharedPostsUncollapsed_JanuaryA {
+        height: 76vh;
+        width: 100%;
+    }
 
-  .landingRecentlySharedPostsCollapsed_JanuaryA {
-    display: none;
-  }
+    .landingRecentlySharedPostsCollapsed_JanuaryA {
+        display: none;
+    }
 
-  .landingLinkShareUserName_JanuaryA {
-    width: 20%;
-  }
+    .landingLinkShareUserName_JanuaryA {
+        width: 20%;
+    }
 
-  .landingLinkShareLink_JanuaryA {
-    margin: 1px 5px 10px 5px;
-    width: 55%;
-  }
+    .landingLinkShareLink_JanuaryA {
+        margin: 1px 5px 10px 5px;
+        width: 55%;
+    }
 
-  .landingShareLinkUserNotes_JanuaryA {
-    width: 95%;
-  }
+    .landingShareLinkUserNotes_JanuaryA {
+        width: 95%;
+    }
 
-  .landingRecentlySharedPostsCollapsed_JanuaryA {
-    display: none;
-  }
+    .landingRecentlySharedPostsCollapsed_JanuaryA {
+        display: none;
+    }
 
-  .tabRecentShare_JanuaryA {
+    .tabRecentShare_JanuaryA {
 
-    font-size: 24px;
-    width: 27%;
-  }
+        font-size: 24px;
+        width: 27%;
+    }
 
-  .tabRecentPost_JanuaryA {
+    .tabRecentPost_JanuaryA {
 
-    font-size: 24px;
-    width: 27%;
-  }
+        font-size: 24px;
+        width: 27%;
+    }
 }
 
 @media only screen and (max-width: 823px) {
-  .backgroundDiv_JanuaryA {
-    background-size: 180%;
-  }
+    .backgroundDiv_JanuaryA {
+        background-size: 180%;
+    }
 
-  .tabs_JanuaryA {
-    display: none;
-  }
+    .tabs_JanuaryA {
+        display: none;
+    }
 
-  .landingLogo_JanuaryA {
-    height: 72px;
-    margin: 16px 4px 16px 16px;
-    width: 10%;
-  }
+    .landingLogo_JanuaryA {
+        height: 72px;
+        margin: 16px 4px 16px 16px;
+        width: 10%;
+    }
 
-  .landingTitleButtonsDiv_JanuaryA {
-    margin-left: 150px;
-  }
+    .landingTitleButtonsDiv_JanuaryA {
+        margin-left: 150px;
+    }
 
-  .landingTitleDiv_JanuaryA {
-    padding: 36px 4px 16px 24px;
-  }
+    .landingTitleDiv_JanuaryA {
+        padding: 36px 4px 16px 24px;
+    }
 
-  .landingTitle_JanuaryA {
-    font-size: 72px;
-    font-weight: bolder;
-  }
+    .landingTitle_JanuaryA {
+        font-size: 72px;
+        font-weight: bolder;
+    }
 
-  .landingLoginActive_JanuaryA {
-    display: initial;
-    height: 100%;
-    opacity: 1;
-    padding: 1px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-    transition: all 0.8s linear;
-  }
+    .landingLoginActive_JanuaryA {
+        display: initial;
+        height: 100%;
+        opacity: 1;
+        padding: 1px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        transition: all 0.8s linear;
+    }
 
-  .landingLoginInactive_JanuaryA {
-    display: none;
-    height: 1%;
-    width: 1%;
-  }
+    .landingLoginInactive_JanuaryA {
+        display: none;
+        height: 1%;
+        width: 1%;
+    }
 
-  .landingLoginActive_JanuaryA h2 {
-    font-size: 36px;
-    margin: 15px 0 0 20px;
-  }
+    .landingLoginActive_JanuaryA h2 {
+        font-size: 36px;
+        margin: 15px 0 0 20px;
+    }
 
-  .landingLoginActive_JanuaryA form {
-    margin: 24px 0 0 0;
-    padding: 24px;
-  }
+    .landingLoginActive_JanuaryA form {
+        margin: 24px 0 0 0;
+        padding: 24px;
+    }
 
-  .landingLoginActive_JanuaryA input {
-    font-size: 30px;
-    height: auto;
-  }
+    .landingLoginActive_JanuaryA input {
+        font-size: 30px;
+        height: auto;
+    }
 
-  .landingLoginActive_JanuaryA button {
-    font-size: 24px;
-  }
+    .landingLoginActive_JanuaryA button {
+        font-size: 24px;
+    }
 
-  .landingRecentlySharedLinksUncollapsed_JanuaryA {
-    display: none;
-  }
+    .landingRecentlySharedLinksUncollapsed_JanuaryA {
+        display: none;
+    }
 
-  .landingRecentlySharedPostsCollapsed_JanuaryA {
-    display: none;
-  }
+    .landingRecentlySharedPostsCollapsed_JanuaryA {
+        display: none;
+    }
 
 }
 
 @media only screen and (max-width: 768px) {
-  .landingUserGreeting_JanuaryA {
-    display: none;
-  }
+    .landingUserGreeting_JanuaryA {
+        display: none;
+    }
 
-  .backgroundDiv_JanuaryA {
-    background-size: 180%;
-  }
+    .backgroundDiv_JanuaryA {
+        background-size: 180%;
+    }
 
-  .landingLogo_JanuaryA {
-    height: 72px;
-    margin: 16px 4px 16px 16px;
-    width: 10%;
-  }
+    .landingLogo_JanuaryA {
+        height: 72px;
+        margin: 16px 4px 16px 16px;
+        width: 10%;
+    }
 
-  .landingTitleDiv_JanuaryA {
-    padding: 36px 4px 16px 24px;
-  }
+    .landingTitleDiv_JanuaryA {
+        padding: 36px 4px 16px 24px;
+    }
 
-  .landingTitle_JanuaryA {
-    font-size: 72px;
-    font-weight: bolder;
-  }
+    .landingTitle_JanuaryA {
+        font-size: 72px;
+        font-weight: bolder;
+    }
 
-  .landingLoginActive_JanuaryA {
-    display: initial;
-    height: 80%;
-    opacity: 1;
-    padding: 1px;
-    position: absolute;
-    right: 10%;
-    top: 10%;
-    width: 80%;
-    transition: all 0.8s linear;
-  }
+    .landingLoginActive_JanuaryA {
+        display: initial;
+        height: 80%;
+        opacity: 1;
+        padding: 1px;
+        position: absolute;
+        right: 10%;
+        top: 10%;
+        width: 80%;
+        transition: all 0.8s linear;
+    }
 
-  .landingLoginInactive_JanuaryA {
-    display: initial;
-    height: 1%;
-    width: 1%;
-  }
+    .landingLoginInactive_JanuaryA {
+        display: initial;
+        height: 1%;
+        width: 1%;
+    }
 
-  .landingLoginActive_JanuaryA h2 {
-    font-size: 36px;
-    margin: 35px 0 0 35px;
-  }
+    .landingLoginActive_JanuaryA h2 {
+        font-size: 36px;
+        margin: 35px 0 0 35px;
+    }
 
-  .landingLoginActive_JanuaryA form {
-    margin: 64px 0 0 0;
-    padding: 48px;
-  }
+    .landingLoginActive_JanuaryA form {
+        margin: 64px 0 0 0;
+        padding: 48px;
+    }
 
-  .landingLoginActive_JanuaryA input {
-    font-size: 36px;
-  }
+    .landingLoginActive_JanuaryA input {
+        font-size: 36px;
+    }
 
-  .landingLoginActive_JanuaryA button {
-    font-size: 30px;
-    margin-left: 15%;
-    margin-top: 3%;
-  }
+    .landingLoginActive_JanuaryA button {
+        font-size: 30px;
+        margin-left: 15%;
+        margin-top: 3%;
+    }
 
-  .landingRecentlySharedLinksUncollapsed_JanuaryA {
-    display: initial;
-    height: 69vh;
-    margin: 0 0 0 0;
-    width: 100%;
-  }
+    .landingRecentlySharedLinksUncollapsed_JanuaryA {
+        display: initial;
+        height: 69vh;
+        margin: 0 0 0 0;
+        width: 100%;
+    }
 
-  .landingRecentlySharedPostsUncollapsed_JanuaryA {
-    display: initial;
-    height: 69vh;
-    margin: 0 0 0 0;
-    width: 100%;
-  }
+    .landingRecentlySharedPostsUncollapsed_JanuaryA {
+        display: initial;
+        height: 69vh;
+        margin: 0 0 0 0;
+        width: 100%;
+    }
 
-  .landingRecentlySharedLinksCollapsed_JanuaryA {
-    display: none;
-  }
+    .landingRecentlySharedLinksCollapsed_JanuaryA {
+        display: none;
+    }
 
-  .landingRecentlySharedPostsCollapsed_JanuaryA {
-    display: none;
-  }
+    .landingRecentlySharedPostsCollapsed_JanuaryA {
+        display: none;
+    }
 
-  .landingLinkShareUserName_JanuaryA {
-    width: 20%;
-  }
+    .landingLinkShareUserName_JanuaryA {
+        width: 20%;
+    }
 
-  .landingLinkShareLink_JanuaryA {
-    margin: 1px 5px 10px 5px;
-    width: 55%;
-  }
+    .landingLinkShareLink_JanuaryA {
+        margin: 1px 5px 10px 5px;
+        width: 55%;
+    }
 
-  .landingShareLinkUserNotes_JanuaryA {
-    width: 95%;
-  }
+    .landingShareLinkUserNotes_JanuaryA {
+        width: 95%;
+    }
 
-  .landingRecentlySharedPostsCollapsed_JanuaryA {
-    display: none;
-  }
+    .landingRecentlySharedPostsCollapsed_JanuaryA {
+        display: none;
+    }
 
-  .tabRecentShare_JanuaryA {
+    .tabRecentShare_JanuaryA {
 
-    font-size: 24px;
-    width: 27%;
-  }
+        font-size: 24px;
+        width: 27%;
+    }
 
-  .tabRecentPost_JanuaryA {
+    .tabRecentPost_JanuaryA {
 
-    font-size: 24px;
-    width: 27%;
-  }
+        font-size: 24px;
+        width: 27%;
+    }
 
 }
 
 @media only screen and (max-width: 736px) {
-  .backgroundDiv_JanuaryA {
-    background-size: 180%;
-  }
+    .backgroundDiv_JanuaryA {
+        background-size: 180%;
+    }
 
-  .tabs_JanuaryA {
-    display: none;
-  }
+    .tabs_JanuaryA {
+        display: none;
+    }
 
-  .landingLogo_JanuaryA {
-    height: 72px;
-    margin: 16px 4px 16px 16px;
-    width: 10%;
-  }
+    .landingLogo_JanuaryA {
+        height: 72px;
+        margin: 16px 4px 16px 16px;
+        width: 10%;
+    }
 
-  .landingTitleDiv_JanuaryA {
-    padding: 36px 4px 16px 24px;
-  }
+    .landingTitleDiv_JanuaryA {
+        padding: 36px 4px 16px 24px;
+    }
 
-  .landingTitle_JanuaryA {
-    font-size: 72px;
-    font-weight: bolder;
-  }
+    .landingTitle_JanuaryA {
+        font-size: 72px;
+        font-weight: bolder;
+    }
 
-  .landingLoginActive_JanuaryA {
-    display: initial;
-    height: 100%;
-    opacity: 1;
-    padding: 1px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-    transition: all 0.8s linear;
-  }
+    .landingLoginActive_JanuaryA {
+        display: initial;
+        height: 100%;
+        opacity: 1;
+        padding: 1px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        transition: all 0.8s linear;
+    }
 
-  .landingLoginInactive_JanuaryA {
-    display: none;
-    height: 1%;
-    width: 1%;
-  }
+    .landingLoginInactive_JanuaryA {
+        display: none;
+        height: 1%;
+        width: 1%;
+    }
 
-  .landingLoginActive_JanuaryA h2 {
-    font-size: 36px;
-    margin: 15px 0 0 20px;
-  }
+    .landingLoginActive_JanuaryA h2 {
+        font-size: 36px;
+        margin: 15px 0 0 20px;
+    }
 
-  .landingLoginActive_JanuaryA form {
-    margin: 48px 0 0 0;
-    padding: 24px;
-  }
+    .landingLoginActive_JanuaryA form {
+        margin: 48px 0 0 0;
+        padding: 24px;
+    }
 
-  .landingLoginActive_JanuaryA input {
-    font-size: 30px;
-  }
+    .landingLoginActive_JanuaryA input {
+        font-size: 30px;
+    }
 
-  .landingLoginActive_JanuaryA button {
-    font-size: 18px;
-  }
+    .landingLoginActive_JanuaryA button {
+        font-size: 18px;
+    }
 
-  .landingRecentlySharedLinksUncollapsed_JanuaryA {
-    display: none;
-  }
+    .landingRecentlySharedLinksUncollapsed_JanuaryA {
+        display: none;
+    }
 
-  .landingRecentlySharedPostsCollapsed_JanuaryA {
-    display: none;
-  }
+    .landingRecentlySharedPostsCollapsed_JanuaryA {
+        display: none;
+    }
 
 }
 
 @media only screen and (max-width: 731px) {
-  .backgroundDiv_JanuaryA {
-    background-size: 180%;
-  }
+    .backgroundDiv_JanuaryA {
+        background-size: 180%;
+    }
 
-  .tabs_JanuaryA {
-    display: none;
-  }
+    .tabs_JanuaryA {
+        display: none;
+    }
 
-  .landingLogo_JanuaryA {
-    height: 72px;
-    margin: 16px 4px 16px 16px;
-    width: 10%;
-  }
+    .landingLogo_JanuaryA {
+        height: 72px;
+        margin: 16px 4px 16px 16px;
+        width: 10%;
+    }
 
-  .landingTitleButtonsDiv_JanuaryA {
-    margin-left: 100px;
-  }
+    .landingTitleButtonsDiv_JanuaryA {
+        margin-left: 100px;
+    }
 
-  .landingTitleDiv_JanuaryA {
-    padding: 36px 4px 16px 24px;
-  }
+    .landingTitleDiv_JanuaryA {
+        padding: 36px 4px 16px 24px;
+    }
 
-  .landingTitle_JanuaryA {
-    font-size: 72px;
-    font-weight: bolder;
-  }
+    .landingTitle_JanuaryA {
+        font-size: 72px;
+        font-weight: bolder;
+    }
 
-  .landingLoginActive_JanuaryA {
-    display: initial;
-    height: 100%;
-    opacity: 1;
-    padding: 1px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-    transition: all 0.8s linear;
-  }
+    .landingLoginActive_JanuaryA {
+        display: initial;
+        height: 100%;
+        opacity: 1;
+        padding: 1px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        transition: all 0.8s linear;
+    }
 
-  .landingLoginInactive_JanuaryA {
-    display: none;
-    height: 1%;
-    width: 1%;
-  }
+    .landingLoginInactive_JanuaryA {
+        display: none;
+        height: 1%;
+        width: 1%;
+    }
 
-  .landingLoginActive_JanuaryA h2 {
-    font-size: 36px;
-    margin: 15px 0 0 20px;
-  }
+    .landingLoginActive_JanuaryA h2 {
+        font-size: 36px;
+        margin: 15px 0 0 20px;
+    }
 
-  .landingLoginActive_JanuaryA form {
-    margin: 24px 0 0 0;
-    padding: 24px;
-  }
+    .landingLoginActive_JanuaryA form {
+        margin: 24px 0 0 0;
+        padding: 24px;
+    }
 
-  .landingLoginActive_JanuaryA input {
-    font-size: 30px;
-  }
+    .landingLoginActive_JanuaryA input {
+        font-size: 30px;
+    }
 
-  .landingLoginActive_JanuaryA button {
-    font-size: 24px;
-  }
+    .landingLoginActive_JanuaryA button {
+        font-size: 24px;
+    }
 
-  .landingRecentlySharedLinksUncollapsed_JanuaryA {
-    display: none;
-  }
+    .landingRecentlySharedLinksUncollapsed_JanuaryA {
+        display: none;
+    }
 
-  .landingRecentlySharedPostsCollapsed_JanuaryA {
-    display: none;
-  }
+    .landingRecentlySharedPostsCollapsed_JanuaryA {
+        display: none;
+    }
 
 }
 
 @media only screen and (max-width: 640px) {
-  .backgroundDiv_JanuaryA {
-    background-size: 180%;
-  }
+    .backgroundDiv_JanuaryA {
+        background-size: 180%;
+    }
 
-  .tabs_JanuaryA {
-    display: none;
-  }
+    .tabs_JanuaryA {
+        display: none;
+    }
 
-  .landingLogo_JanuaryA {
-    height: 72px;
-    margin: 16px 4px 16px 16px;
-    width: 10%;
-  }
+    .landingLogo_JanuaryA {
+        height: 72px;
+        margin: 16px 4px 16px 16px;
+        width: 10%;
+    }
 
-  .landingTitleDiv_JanuaryA {
-    padding: 36px 4px 16px 24px;
-  }
+    .landingTitleDiv_JanuaryA {
+        padding: 36px 4px 16px 24px;
+    }
 
-  .landingTitle_JanuaryA {
-    font-size: 72px;
-    font-weight: bolder;
-  }
+    .landingTitle_JanuaryA {
+        font-size: 72px;
+        font-weight: bolder;
+    }
 
-  .landingTitleButtonsDiv_JanuaryA {
-    margin-left: 60px;
-  }
+    .landingTitleButtonsDiv_JanuaryA {
+        margin-left: 60px;
+    }
 
-  .landingLoginActive_JanuaryA {
-    display: initial;
-    height: 100%;
-    opacity: 1;
-    padding: 1px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-    transition: all 0.8s linear;
-  }
+    .landingLoginActive_JanuaryA {
+        display: initial;
+        height: 100%;
+        opacity: 1;
+        padding: 1px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        transition: all 0.8s linear;
+    }
 
-  .landingLoginInactive_JanuaryA {
-    display: none;
-    height: 1%;
-    right: 100%;
-    width: 1%;
-  }
+    .landingLoginInactive_JanuaryA {
+        display: none;
+        height: 1%;
+        right: 100%;
+        width: 1%;
+    }
 
-  .landingLoginActive_JanuaryA h2 {
-    font-size: 36px;
-    margin: 15px 0 0 20px;
-  }
+    .landingLoginActive_JanuaryA h2 {
+        font-size: 36px;
+        margin: 15px 0 0 20px;
+    }
 
-  .landingLoginActive_JanuaryA form {
-    margin: 24px 0 0 0;
-    padding: 24px;
-  }
+    .landingLoginActive_JanuaryA form {
+        margin: 24px 0 0 0;
+        padding: 24px;
+    }
 
-  .landingLoginActive_JanuaryA input {
-    font-size: 30px;
-  }
+    .landingLoginActive_JanuaryA input {
+        font-size: 30px;
+    }
 
-  .landingLoginActive_JanuaryA button {
-    font-size: 24px;
-  }
+    .landingLoginActive_JanuaryA button {
+        font-size: 24px;
+    }
 
-  .landingRecentlySharedLinksUncollapsed_JanuaryA {
-    display: none;
-  }
+    .landingRecentlySharedLinksUncollapsed_JanuaryA {
+        display: none;
+    }
 
-  .landingRecentlySharedPostsCollapsed_JanuaryA {
-    display: none;
-  }
+    .landingRecentlySharedPostsCollapsed_JanuaryA {
+        display: none;
+    }
 
 }
 
 @media only screen and (max-width: 568px) {
-  .backgroundDiv_JanuaryA {
-    background-size: 180%;
-  }
+    .backgroundDiv_JanuaryA {
+        background-size: 180%;
+    }
 
-  .tabs_JanuaryA {
-    display: none;
-  }
+    .tabs_JanuaryA {
+        display: none;
+    }
 
-  .landingLogo_JanuaryA {
-    height: 72px;
-    margin: 16px 4px 16px 16px;
-    width: 10%;
-  }
+    .landingLogo_JanuaryA {
+        height: 72px;
+        margin: 16px 4px 16px 16px;
+        width: 10%;
+    }
 
-  .landingTitleDiv_JanuaryA {
-    padding: 36px 4px 16px 24px;
-  }
+    .landingTitleDiv_JanuaryA {
+        padding: 36px 4px 16px 24px;
+    }
 
-  .landingTitle_JanuaryA {
-    font-size: 72px;
-    font-weight: bolder;
-  }
+    .landingTitle_JanuaryA {
+        font-size: 72px;
+        font-weight: bolder;
+    }
 
-  .landingLoginActive_JanuaryA {
-    height: 100%;
-    opacity: 1;
-    padding: 1px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-    transition: all 0.8s linear;
-  }
+    .landingLoginActive_JanuaryA {
+        height: 100%;
+        opacity: 1;
+        padding: 1px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        transition: all 0.8s linear;
+    }
 
-  .landingLoginActive_JanuaryA h2 {
-    font-size: 36px;
-    margin: 15px 0 0 20px;
-  }
+    .landingLoginActive_JanuaryA h2 {
+        font-size: 36px;
+        margin: 15px 0 0 20px;
+    }
 
-  .landingLoginActive_JanuaryA form {
-    margin: 4px 0 0 0;
-    padding: 24px;
-  }
+    .landingLoginActive_JanuaryA form {
+        margin: 4px 0 0 0;
+        padding: 24px;
+    }
 
-  .landingLoginActive_JanuaryA input {
-    font-size: 30px;
-  }
+    .landingLoginActive_JanuaryA input {
+        font-size: 30px;
+    }
 
-  .landingLoginActive_JanuaryA button {
-    font-size: 18px;
-  }
+    .landingLoginActive_JanuaryA button {
+        font-size: 18px;
+    }
 
 }
 
 @media only screen and (max-width: 414px) {
-  .landingUserGreeting_JanuaryA {
-    display: none;
-  }
+    .landingUserGreeting_JanuaryA {
+        display: none;
+    }
 
-  .backgroundDiv_JanuaryA {
-    background-size: 240%;
-  }
+    .backgroundDiv_JanuaryA {
+        background-size: 240%;
+    }
 
-  .landingLogo_JanuaryA {
-    height: 72px;
-    margin: 16px 4px 16px 8px;
-    width: 15%;
-  }
+    .landingLogo_JanuaryA {
+        height: 72px;
+        margin: 16px 4px 16px 8px;
+        width: 15%;
+    }
 
-  .landingTitleDiv_JanuaryA {
-    padding: 48px 4px 16px 24px;
-  }
+    .landingTitleDiv_JanuaryA {
+        padding: 48px 4px 16px 24px;
+    }
 
-  .landingTitle_JanuaryA {
-    font-size: 48px;
-    font-weight: bolder;
-  }
+    .landingTitle_JanuaryA {
+        font-size: 48px;
+        font-weight: bolder;
+    }
 
-  .landingFooter_JanuaryA {
-    font-size: 18px;
-  }
+    .landingFooter_JanuaryA {
+        font-size: 18px;
+    }
 
-  .landingTitleButtonsDiv_JanuaryA button {
-    font-size: 18px;
-    margin-left: 24px;
-    width: 74px;
-  }
+    .landingTitleButtonsDiv_JanuaryA button {
+        font-size: 18px;
+        margin-left: 24px;
+        width: 74px;
+    }
 
-  .landingLoginActive_JanuaryA {
-    display: initial;
-    height: 100%;
-    opacity: 1;
-    padding: 1px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-    transition: all 0.8s linear;
-  }
+    .landingLoginActive_JanuaryA {
+        display: initial;
+        height: 100%;
+        opacity: 1;
+        padding: 1px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        transition: all 0.8s linear;
+    }
 
-  .landingLoginInactive_JanuaryA {
-    display: initial;
-    height: 1%;
-    width: 1%;
-  }
+    .landingLoginInactive_JanuaryA {
+        display: initial;
+        height: 1%;
+        width: 1%;
+    }
 
-  .landingLoginActive_JanuaryA h2 {
-    font-size: 36px;
-    margin: 15px 0 0 20px;
-  }
+    .landingLoginActive_JanuaryA h2 {
+        font-size: 36px;
+        margin: 15px 0 0 20px;
+    }
 
-  .landingLoginActive_JanuaryA form {
-    margin: 64px 0 0 0;
-    padding: 24px;
-  }
+    .landingLoginActive_JanuaryA form {
+        margin: 64px 0 0 0;
+        padding: 24px;
+    }
 
-  .landingLoginActive_JanuaryA input {
-    font-size: 30px;
-  }
+    .landingLoginActive_JanuaryA input {
+        font-size: 30px;
+    }
 
-  .landingLoginActive_JanuaryA button {
-    font-size: 24px;
-  }
+    .landingLoginActive_JanuaryA button {
+        font-size: 24px;
+    }
 
-  .tabs_JanuaryA {
-    display: none;
-  }
+    .tabs_JanuaryA {
+        display: none;
+    }
 
-  .landingRecentlySharedLinksUncollapsed_JanuaryA {
-    display: none;
-  }
+    .landingRecentlySharedLinksUncollapsed_JanuaryA {
+        display: none;
+    }
 
-  .landingRecentlySharedPostsUncollapsed_JanuaryA {
-    display: none;
-  }
+    .landingRecentlySharedPostsUncollapsed_JanuaryA {
+        display: none;
+    }
 
-  .landingRecentlySharedLinksCollapsed_JanuaryA {
-    display: none;
-  }
+    .landingRecentlySharedLinksCollapsed_JanuaryA {
+        display: none;
+    }
 
-  .landingRecentlySharedPostsCollapsed_JanuaryA {
-    display: none;
-  }
+    .landingRecentlySharedPostsCollapsed_JanuaryA {
+        display: none;
+    }
 
-  .landingRecentlySharedPostsCollapsed_JanuaryA {
-    display: none;
-  }
+    .landingRecentlySharedPostsCollapsed_JanuaryA {
+        display: none;
+    }
 
 }
 
 @media only screen and (max-width: 411px) {
-  .landingUserGreeting_JanuaryA {
-    display: none;
-  }
+    .landingUserGreeting_JanuaryA {
+        display: none;
+    }
 
-  .backgroundDiv_JanuaryA {
-    background-size: 270%;
-  }
+    .backgroundDiv_JanuaryA {
+        background-size: 270%;
+    }
 
-  .landingLogo_JanuaryA {
-    height: 72px;
-    margin: 16px 4px 16px 8px;
-    width: 15%;
-  }
+    .landingLogo_JanuaryA {
+        height: 72px;
+        margin: 16px 4px 16px 8px;
+        width: 15%;
+    }
 
-  .landingTitleButtonsDiv_JanuaryA {
-    margin-left: 0;
-  }
+    .landingTitleButtonsDiv_JanuaryA {
+        margin-left: 0;
+    }
 
-  .landingTitleDiv_JanuaryA {
-    padding: 48px 4px 16px 24px;
-  }
+    .landingTitleDiv_JanuaryA {
+        padding: 48px 4px 16px 24px;
+    }
 
-  .landingTitle_JanuaryA {
-    font-size: 48px;
-    font-weight: bolder;
-  }
+    .landingTitle_JanuaryA {
+        font-size: 48px;
+        font-weight: bolder;
+    }
 
-  .landingFooter_JanuaryA {
-    font-size: 13px;
-  }
+    .landingFooter_JanuaryA {
+        font-size: 13px;
+    }
 
-  .landingTitleButtonsDiv_JanuaryA button {
-    font-size: 18px;
-    margin-left: 32px;
-    width: 74px;
-  }
+    .landingTitleButtonsDiv_JanuaryA button {
+        font-size: 18px;
+        margin-left: 32px;
+        width: 74px;
+    }
 
-  .landingLoginActive_JanuaryA {
-    height: 100%;
-    opacity: 1;
-    padding: 1px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-    transition: all 0.8s linear;
-  }
+    .landingLoginActive_JanuaryA {
+        height: 100%;
+        opacity: 1;
+        padding: 1px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        transition: all 0.8s linear;
+    }
 
-  .landingLoginInactive_JanuaryA {
-    display: initial;
-  }
+    .landingLoginInactive_JanuaryA {
+        display: initial;
+    }
 
-  .landingLoginActive_JanuaryA h2 {
-    font-size: 36px;
-    margin: 15px 0 0 20px;
-  }
+    .landingLoginActive_JanuaryA h2 {
+        font-size: 36px;
+        margin: 15px 0 0 20px;
+    }
 
-  .landingLoginActive_JanuaryA form {
-    margin: 64px 0 0 0;
-    padding: 24px;
-  }
+    .landingLoginActive_JanuaryA form {
+        margin: 64px 0 0 0;
+        padding: 24px;
+    }
 
-  .landingLoginActive_JanuaryA input {
-    font-size: 30px;
-  }
+    .landingLoginActive_JanuaryA input {
+        font-size: 30px;
+    }
 
-  .landingLoginActive_JanuaryA button {
-    font-size: 24px;
-  }
+    .landingLoginActive_JanuaryA button {
+        font-size: 24px;
+    }
 
-  .landingRecentlySharedLinksUncollapsed_JanuaryA {
-    display: none;
-  }
+    .landingRecentlySharedLinksUncollapsed_JanuaryA {
+        display: none;
+    }
 
-  .tabs_JanuaryA {
-    display: none;
-  }
+    .tabs_JanuaryA {
+        display: none;
+    }
 
-  .landingRecentlySharedPostsUncollapsed_JanuaryA {
-    display: none;
-  }
+    .landingRecentlySharedPostsUncollapsed_JanuaryA {
+        display: none;
+    }
 
-  .landingRecentlySharedLinksCollapsed_JanuaryA {
-    display: none;
-  }
+    .landingRecentlySharedLinksCollapsed_JanuaryA {
+        display: none;
+    }
 
-  .landingRecentlySharedPostsCollapsed_JanuaryA {
-    display: none;
-  }
+    .landingRecentlySharedPostsCollapsed_JanuaryA {
+        display: none;
+    }
 
-  .landingRecentlySharedPostsCollapsed_JanuaryA {
-    display: none;
-  }
+    .landingRecentlySharedPostsCollapsed_JanuaryA {
+        display: none;
+    }
 
 }
 
 @media only screen and (max-width: 375px) {
-  .backgroundDiv_JanuaryA {
-    background-size: 290%;
-  }
+    .backgroundDiv_JanuaryA {
+        background-size: 290%;
+    }
 
-  .landingFooter_JanuaryA {
-    font-size: 18px;
-  }
+    .landingFooter_JanuaryA {
+        font-size: 18px;
+    }
 
-  .landingTitleButtonsDiv_JanuaryA button {
-    font-size: 18px;
-    margin-left: 12px;
-    width: 74px;
-  }
+    .landingTitleButtonsDiv_JanuaryA button {
+        font-size: 18px;
+        margin-left: 12px;
+        width: 74px;
+    }
 
-  .landingLoginActive_JanuaryA {
-    height: 100%;
-    opacity: 1;
-    padding: 1px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-    transition: all 0.8s linear;
-  }
+    .landingLoginActive_JanuaryA {
+        height: 100%;
+        opacity: 1;
+        padding: 1px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        transition: all 0.8s linear;
+    }
 
-  .landingLoginActive_JanuaryA h2 {
-    font-size: 36px;
-    margin: 15px 0 0 20px;
-  }
+    .landingLoginActive_JanuaryA h2 {
+        font-size: 36px;
+        margin: 15px 0 0 20px;
+    }
 
-  .landingLoginActive_JanuaryA form {
-    margin: 64px 0 0 0;
-    padding: 24px;
-  }
+    .landingLoginActive_JanuaryA form {
+        margin: 64px 0 0 0;
+        padding: 24px;
+    }
 
-  .landingLoginActive_JanuaryA input {
-    font-size: 30px;
-  }
+    .landingLoginActive_JanuaryA input {
+        font-size: 30px;
+    }
 
-  .landingLoginActive_JanuaryA button {
-    font-size: 24px;
-  }
+    .landingLoginActive_JanuaryA button {
+        font-size: 24px;
+    }
 
-  .landingRecentlySharedLinksUncollapsed_JanuaryA {
-    display: none;
-  }
+    .landingRecentlySharedLinksUncollapsed_JanuaryA {
+        display: none;
+    }
 
-  .landingRecentlySharedPostsUncollapsed_JanuaryA {
-    display: none;
-  }
+    .landingRecentlySharedPostsUncollapsed_JanuaryA {
+        display: none;
+    }
 
-  .landingRecentlySharedLinksCollapsed_JanuaryA {
-    display: none;
-  }
+    .landingRecentlySharedLinksCollapsed_JanuaryA {
+        display: none;
+    }
 
-  .landingRecentlySharedPostsCollapsed_JanuaryA {
-    display: none;
-  }
+    .landingRecentlySharedPostsCollapsed_JanuaryA {
+        display: none;
+    }
 
-  .tabs_JanuaryA {
-    display: none;
-  }
+    .tabs_JanuaryA {
+        display: none;
+    }
 
 }
 
 @media only screen and (max-width: 360px) {
 
-  .landingUserGreeting_JanuaryA {
-    display: none;
-  }
+    .landingUserGreeting_JanuaryA {
+        display: none;
+    }
 
-  .backgroundDiv_JanuaryA {
-    background-size: 290%;
-  }
+    .backgroundDiv_JanuaryA {
+        background-size: 290%;
+    }
 
-  .landingLogo_JanuaryA {
-    height: 72px;
-    margin: 16px 4px 16px 8px;
-    width: 15%;
-  }
+    .landingLogo_JanuaryA {
+        height: 72px;
+        margin: 16px 4px 16px 8px;
+        width: 15%;
+    }
 
-  .landingTitleDiv_JanuaryA {
-    padding: 56px 4px 16px 24px;
-  }
+    .landingTitleDiv_JanuaryA {
+        padding: 56px 4px 16px 24px;
+    }
 
-  .landingTitle_JanuaryA {
-    font-size: 42px;
-    font-weight: bolder;
-  }
+    .landingTitle_JanuaryA {
+        font-size: 42px;
+        font-weight: bolder;
+    }
 
-  .landingFooter_JanuaryA {
-    font-size: 18px;
-  }
+    .landingFooter_JanuaryA {
+        font-size: 18px;
+    }
 
-  .landingTitleButtonsDiv_JanuaryA {
-    margin-left: 0;
-  }
+    .landingTitleButtonsDiv_JanuaryA {
+        margin-left: 0;
+    }
 
-  .landingTitleButtonsDiv_JanuaryA button {
-    font-size: 18px;
-    margin-left: 12px;
-    width: 74px;
-  }
+    .landingTitleButtonsDiv_JanuaryA button {
+        font-size: 18px;
+        margin-left: 12px;
+        width: 74px;
+    }
 
-  .landingLoginActive_JanuaryA {
-    display: intial;
-    height: 100%;
-    opacity: 1;
-    padding: 1px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-    transition: all 0.8s linear;
-  }
+    .landingLoginActive_JanuaryA {
+        display: intial;
+        height: 100%;
+        opacity: 1;
+        padding: 1px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        transition: all 0.8s linear;
+    }
 
-  .landingLoginInactive_JanuaryA {
-    display: initial;
-    height: 1%;
-    width: 1%;
-  }
+    .landingLoginInactive_JanuaryA {
+        display: initial;
+        height: 1%;
+        width: 1%;
+    }
 
-  .landingLoginActive_JanuaryA h2 {
-    font-size: 36px;
-    margin: 15px 0 0 20px;
-  }
+    .landingLoginActive_JanuaryA h2 {
+        font-size: 36px;
+        margin: 15px 0 0 20px;
+    }
 
-  .landingLoginActive_JanuaryA form {
-    margin: 64px 0 0 0;
-    padding: 24px;
-  }
+    .landingLoginActive_JanuaryA form {
+        margin: 64px 0 0 0;
+        padding: 24px;
+    }
 
-  .landingLoginActive_JanuaryA input {
-    font-size: 30px;
-  }
+    .landingLoginActive_JanuaryA input {
+        font-size: 30px;
+    }
 
-  .landingLoginActive_JanuaryA button {
-    font-size: 24px;
-  }
+    .landingLoginActive_JanuaryA button {
+        font-size: 24px;
+    }
 
-  .landingRecentlySharedLinksUncollapsed_JanuaryA {
-    display: none;
-  }
+    .landingRecentlySharedLinksUncollapsed_JanuaryA {
+        display: none;
+    }
 
-  .landingRecentlySharedPostsCollapsed_JanuaryA {
-    display: none;
-  }
+    .landingRecentlySharedPostsCollapsed_JanuaryA {
+        display: none;
+    }
 
-  .tabs_JanuaryA {
-    display: none;
-  }
+    .tabs_JanuaryA {
+        display: none;
+    }
 
 }
 
 @media only screen and (max-width: 320px) {
-  .backgroundDiv_JanuaryA {
-    background-size: 290%;
-  }
+    .backgroundDiv_JanuaryA {
+        background-size: 290%;
+    }
 
-  .landingLogo_JanuaryA {
-    height: 72px;
-    margin: 16px 4px 16px 8px;
-    width: 15%;
-  }
+    .landingLogo_JanuaryA {
+        height: 72px;
+        margin: 16px 4px 16px 8px;
+        width: 15%;
+    }
 
-  .landingTitleDiv_JanuaryA {
-    padding: 56px 4px 16px 24px;
-  }
+    .landingTitleDiv_JanuaryA {
+        padding: 56px 4px 16px 24px;
+    }
 
-  .landingTitle_JanuaryA {
-    font-size: 42px;
-    font-weight: bolder;
-  }
+    .landingTitle_JanuaryA {
+        font-size: 42px;
+        font-weight: bolder;
+    }
 
-  .landingFooter_JanuaryA {
-    font-size: 18px;
-  }
+    .landingFooter_JanuaryA {
+        font-size: 18px;
+    }
 
-  .landingTitleButtonsDiv_JanuaryA button {
-    font-size: 18px;
-    margin-left: 12px;
-    width: 74px;
-  }
+    .landingTitleButtonsDiv_JanuaryA button {
+        font-size: 18px;
+        margin-left: 12px;
+        width: 74px;
+    }
 
-  .landingLoginActive_JanuaryA {
-    display: intial;
-    height: 100%;
-    opacity: 1;
-    padding: 1px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-    transition: all 0.8s linear;
-  }
+    .landingLoginActive_JanuaryA {
+        display: intial;
+        height: 100%;
+        opacity: 1;
+        padding: 1px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        transition: all 0.8s linear;
+    }
 
-  .landingLoginInactive_JanuaryA {
-    display: initial;
-    height: 1%;
-    width: 1%;
-  }
+    .landingLoginInactive_JanuaryA {
+        display: initial;
+        height: 1%;
+        width: 1%;
+    }
 
-  .landingLoginActive_JanuaryA h2 {
-    font-size: 36px;
-    margin: 15px 0 0 20px;
-  }
+    .landingLoginActive_JanuaryA h2 {
+        font-size: 36px;
+        margin: 15px 0 0 20px;
+    }
 
-  .landingLoginActive_JanuaryA form {
-    margin: 64px 0 0 0;
-    padding: 24px;
-  }
+    .landingLoginActive_JanuaryA form {
+        margin: 64px 0 0 0;
+        padding: 24px;
+    }
 
-  .landingLoginActive_JanuaryA input {
-    font-size: 30px;
-  }
+    .landingLoginActive_JanuaryA input {
+        font-size: 30px;
+    }
 
-  .landingLoginActive_JanuaryA button {
-    font-size: 24px;
-  }
+    .landingLoginActive_JanuaryA button {
+        font-size: 24px;
+    }
 
-  .landingRecentlySharedLinksUncollapsed_JanuaryA {
-    display: none;
-  }
+    .landingRecentlySharedLinksUncollapsed_JanuaryA {
+        display: none;
+    }
 
-  .landingRecentlySharedPostsUncollapsed_JanuaryA {
-    display: none;
-  }
+    .landingRecentlySharedPostsUncollapsed_JanuaryA {
+        display: none;
+    }
 
-  .landingRecentlySharedLinksCollapsed_JanuaryA {
-    display: none;
-  }
+    .landingRecentlySharedLinksCollapsed_JanuaryA {
+        display: none;
+    }
 
-  .landingRecentlySharedPostsCollapsed_JanuaryA {
-    display: none;
-  }
+    .landingRecentlySharedPostsCollapsed_JanuaryA {
+        display: none;
+    }
 
-  .tabs_JanuaryA {
-    display: none;
-  }
+    .tabs_JanuaryA {
+        display: none;
+    }
 
 }
