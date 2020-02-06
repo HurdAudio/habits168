@@ -63,73 +63,13 @@
                 url: '/userprofileeditor/:userUuid',
                 parent: 'app',
                 component: 'userprofileeditor'
+            })
+            .state({
+                name: 'tuesday',
+                url: '/tuesday/:userUuid',
+                parent: 'app',
+                component: 'tuesday'
             });
-        // .state({
-        //   name: 'emailconfirm',
-        //   url: '/emailconfirm/:id',
-        //   parent: 'app',
-        //   component: 'emailconfirm'
-        // })
-        // .state({
-        //   name: 'passwordreset',
-        //   url: '/passwordreset/:id',
-        //   parent: 'app',
-        //   component: 'passwordreset'
-        // })
-        // .state({
-        //   name: 'userhub',
-        //   url: '/userhub/:id',
-        //   parent: 'app',
-        //   component: 'userhub'
-        // })
-        // .state({
-        //   name: 'userprofile',
-        //   url: '/userprofile/:id',
-        //   parent: 'app',
-        //   component: 'userprofile'
-        // })
-        // .state({
-        //   name: 'info',
-        //   url: '/info/:id',
-        //   parent: 'app',
-        //   component: 'info'
-        // })
-        // .state({
-        //   name: 'airlinemoduletest',
-        //   url: '/airlinemoduletest',
-        //   parent: 'app',
-        //   component: 'airlinemoduletest'
-        // })
-        // .state({
-        //   name: 'rendertest',
-        //   url: '/rendertest',
-        //   parent: 'app',
-        //   component: 'rendertest'
-        // })
-        // .state({
-        //   name: 'mixer',
-        //   url: '/mixer/:id',
-        //   parent: 'app',
-        //   component: 'mixer'
-        // })
-        // .state({
-        //   name: 'financialmoduletest',
-        //   url: '/financialmoduletest',
-        //   parent: 'app',
-        //   component: 'financialmoduletest'
-        // })
-        // .state({
-        //   name: 'patcheditor',
-        //   url: '/patcheditor/:id',
-        //   parent: 'app',
-        //   component: 'patcheditor'
-        // })
-        // .state({
-        //   name: 'signaltestsuite',
-        //   url: '/signaltestsuite/:id',
-        //   parend: 'app',
-        //   component: 'signaltestsuite'
-        // });
     }
 
 }());

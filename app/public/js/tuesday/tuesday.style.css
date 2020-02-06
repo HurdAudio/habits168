@@ -1,0 +1,47 @@
+.tuesdayBackgroundDiv_JanuaryA {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/january/ice-cubes-1224804_1920.jpg);
+    background-size: 100%;
+    height: 100%;
+    left: 0;
+    opacity: 0.6;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.tuesdayContainerActive_JanuaryA {
+    filter: blur(0px);
+}
+
+.tuesdayContainerInactive_JanuaryA {
+    filter: blur(15px);
+}
+
+.tuesdayTitleStrip_JanuaryA {
+    background: #3f4a60;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Sura', serif;
+    height: auto;
+    justify-content: flex-start;
+    opacity: 0.9;
+    padding: 4px 2vw 4px 2vw;
+    width: 100%;
+}
+
+.tuesdayLogo_JanuaryA {
+    cursor: pointer;
+    filter: brightness(50%);
+    max-width: 75px;
+}
+
+.tuesdayReadingPlaylistTitle_JanuaryA {
+    color: #cfd3da;
+    font-size: 42px;
+    margin: 30px 0 0 96px;
+}
