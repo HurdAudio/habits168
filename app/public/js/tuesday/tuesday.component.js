@@ -407,25 +407,556 @@
                 title: 'Externals'
                 }
               ];
+        vm.toggleTabs = toggleTabs;
+        vm.toggleAllReadStatus = toggleAllReadStatus;
+        vm.sortSubscriptions = sortSubscriptions;
+        vm.toggleReadStatus = toggleReadStatus;
+        vm.tuesdayManagerEngaged = tuesdayManagerEngaged;
+        vm.managerModalState = 'tuesdayManageTabsSubsModalInactive' + vm.tuesdayMonth;
+        vm.exitTuesdayManagerModal = exitTuesdayManagerModal;
+        vm.tuesdayManageTabber = tuesdayManageTabber;
+        vm.filterSearch = filterSearch;
+        vm.removeSubscription = removeSubscription;
+        vm.addSubscription = addSubscription;
+        vm.tabCreateEditEngaged = false;
+        vm.uniqueTabNameError = false;
+        vm.actionWillDeleteFeedsError = false;
+        vm.editTablogic = editTablogic;
+        vm.togglePodcastFeedStatus = togglePodcastFeedStatus;
+        vm.cancelAddTabLogic = cancelAddTabLogic;
+        vm.submitTabLogic = submitTabLogic;
+        vm.overwriteSubscriptionsInTab = overwriteSubscriptionsInTab;
+        vm.addTabLogic = addTabLogic;
+        vm.tuesdayGuardRailEngaged = false;
+        vm.deleteTabLogic = deleteTabLogic;
+        vm.guardrailDenied = guardrailDenied;
+        vm.guardrailAccepted = guardrailAccepted;
+        
+        function guardrailAccepted() {
+            for (let i = 0; i < vm.tuesdayTabs.length; i++) {
+                if (vm.tuesdayTabs[i].title === vm.editingTab.title) {
+                    vm.tuesdayTabs.splice(i, 1);
+                    guardrailDenied();
+                    return;
+                }
+            }
+        }
+        
+        function guardrailDenied() {
+            vm.tuesdayGuardRailEngaged = false;
+            vm.managerModalState = 'tuesdayManageTabsSubsModal' + vm.tuesdayMonth;
+        }
+        
+        function deleteTabLogic(tab) {
+            vm.editingTab = tab;
+            vm.tuesdayGuardRailEngaged = true;
+            vm.guardRailText = 'Delete tab: ' + tab.title + '?';
+            vm.managerModalState = 'tuesdayManageTabsSubsModalBlur' + vm.tuesdayMonth;
+        }
+        
+        function addTabLogic() {
+            vm.actionWillDeleteFeedsError = false;
+            vm.emptyTabNameError = false;
+            vm.uniqueTabNameError = false;
+            vm.tabCreateEditEngaged = true;
+            vm.managerModalState = 'tuesdayManageTabsSubsModalBlur' + vm.tuesdayMonth;
+            vm.tuesdayCreateEditTabText = 'Create a new tab:';
+            setTimeout(() => {
+                let tuesdayTabNameInput = document.getElementById('tuesdayTabNameInput');
+                tuesdayTabNameInput.value = '';
+                tuesdayTabNameInput.focus();
+            }, 100);
+        }
+        
+        function overwriteSubscriptionsInTab() {
+            let tuesdayTabNameInput = document.getElementById('tuesdayTabNameInput');
 
+            for (let i = 0; i < vm.tuesdayTabs.length; i++) {
+                if (vm.tuesdayTabs[i].title === vm.editingTab.title) {
+                    vm.tuesdayTabs[i].active = vm.editingTab.active;
+                    vm.tuesdayTabs[i].allRead = false;
+                    vm.tuesdayTabs[i].podcast = vm.tabPodcast;
+                    vm.tuesdayTabs[i].sort = vm.editingTab.sort;
+                    vm.tuesdayTabs[i].subscriptions = [];
+                    vm.tuesdayTabs[i].tab = vm.editingTab.tab;
+                    vm.tuesdayTabs[i].title = tuesdayTabNameInput.value;
+                    vm.tuesdaySubs = [];
+                    cancelAddTabLogic();
+                }
+            }
+            if (vm.tabPodcast) {
+                $http.get('/podcast_feeds')
+                    .then(blogFeedsData => {
+                        vm.allFeeds = filterSubscriptions(vm.tuesdaySubs, blogFeedsData.data);
+                        vm.availableFeeds = vm.allFeeds;
+                        filterSearch();
+                    });
+            } else {
+                $http.get('/blog_feeds')
+                    .then(blogFeedsData => {
+                        vm.allFeeds = filterSubscriptions(vm.tuesdaySubs, blogFeedsData.data);
+                        vm.availableFeeds = vm.allFeeds;
+                        filterSearch();
+                    });
+            }
+        }
 
+        function submitTabLogic() {
+            let tuesdayTabNameInput = document.getElementById('tuesdayTabNameInput');
+            if (tuesdayTabNameInput.value === '') {
+                vm.emptyTabNameError = true;
+                vm.uniqueTabNameError = false;
+                vm.actionWillDeleteFeedsError = false;
+                return;
+            }
+            let duplicate = vm.tuesdayTabs.filter(entry => {
+                return (entry.title.toLowerCase() === tuesdayTabNameInput.value.toLowerCase().trim());
+            });
+            if ((duplicate.length !== 0) && (vm.tuesdayCreateEditTabText === 'Create a new tab:')) {
+                vm.uniqueTabNameError = true;
+                vm.emptyTabNameError = false;
+                vm.actionWillDeleteFeedsError = false;
+                return;
+            }
+            if (vm.tuesdayCreateEditTabText === 'Create a new tab:') {
+                let sorta, sortb;
+                let daily = [];
+                daily.push(vm.tuesdayTabs[0]);
+                let external = [];
+                external.push(vm.tuesdayTabs[vm.tuesdayTabs.length - 1]);
+                let tueSubs = vm.tuesdayTabs.slice(1, (vm.tuesdayTabs.length - 1));
+                let subObj = {
+                    active: false,
+                    allRead: false,
+                    podcast: vm.tabPodcast,
+                    sort: 'up',
+                    subscriptions: [],
+                    tab: 'tuesdayTabInactive' + vm.mondayMonth,
+                    title: tuesdayTabNameInput.value
+                }
+                tueSubs.push(subObj);
+                tueSubs = tueSubs.sort((a, b) => {
+                    sorta = a.title.toLowerCase();
+                    sortb = b.title.toLowerCase();
+                    if (a.title.toLowerCase().slice(0, 4) === 'the ') {
+                        sorta = a.title.toLowerCase().slice(4);
+                    }
+                    if (b.title.toLowerCase().slice(0, 4) === 'the ') {
+                        sortb = b.title.toLowerCase().slice(4);
+                    }
+                    if (a.title.toLowerCase().slice(0, 2) === 'a ') {
+                        sorta = a.title.toLowerCase().slice(2);
+                    }
+                    if (b.title.toLowerCase().slice(0, 2) === 'a ') {
+                        sortb = b.title.toLowerCase().slice(2);
+                    }
+                    if (sorta < sortb) {
+                        return -1;
+                    } else if (sorta > sortb) {
+                        return 1;
+                    } else {
+                        return 0;
+                    }
+                });
+                let subs = daily.concat(tueSubs);
+                vm.tuesdayTabs = subs.concat(external);
+                cancelAddTabLogic();
+                return;
+            } else {
+                if (tuesdayTabNameInput.value === vm.editingTab.title) {
+                    if (vm.tabPodcast === vm.editingTab.podcast) {
+                        cancelAddTabLogic();
+                        return;
+                    } else {
+                        if (vm.editingTab.subscriptions.length > 0) {
+                            vm.actionWillDeleteFeedsError = true;
+                            vm.emptyTabNameError = false;
+                            vm.uniqueTabNameError = false;
+                            return;
+                        } else {
+                            for (let i = 0; i < vm.tuesdayTabs.length; i++) {
+                                if (vm.tuesdayTabs[i].title === vm.editingTab.title) {
+                                    vm.tuesdayTabs[i].podcast = vm.tabPodcast;
+                                    cancelAddTabLogic();
+                                    return;
+                                }
+                            }
+                        }
+                    }
+                } else {
+                    if (vm.tabPodcast === vm.editingTab.podcast) {
+                        for (let i = 0; i < vm.tuesdayTabs.length; i++) {
+                            if (vm.tuesdayTabs[i].title === vm.editingTab.title) {
+                                vm.tuesdayTabs[i].title = tuesdayTabNameInput.value;
+                                cancelAddTabLogic();
+                                return;
+                            }
+                        }
+                    } else {
+                        if (vm.editingTab.subscriptions.length > 0) {
+                            vm.actionWillDeleteFeedsError = true;
+                            vm.emptyTabNameError = false;
+                            vm.uniqueTabNameError = false;
+                            return;
+                        } else {
+                            for (let i = 0; i < vm.tuesdayTabs.length; i++) {
+                                if (vm.tuesdayTabs[i].title === vm.editingTab.title) {
+                                    vm.tuesdayTabs[i].title = tuesdayTabNameInput.value;
+                                    vm.tuesdayTabs[i].podcast = vm.tabPodcast;
+                                    return;
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+        function cancelAddTabLogic() {
+            vm.tabCreateEditEngaged = false;
+            vm.managerModalState = 'tuesdayManageTabsSubsModal' + vm.tuesdayMonth;
+        }
+
+        function togglePodcastFeedStatus() {
+            vm.tabPodcast = !vm.tabPodcast;
+        }
+
+        function editTablogic(tab) {
+            vm.actionWillDeleteFeedsError = false;
+            vm.emptyTabNameError = false;
+            vm.uniqueTabNameError = false;
+            vm.tabCreateEditEngaged = true;
+            vm.tabPodcast = tab.podcast;
+            vm.editingTab = tab;
+            vm.managerModalState = 'mondayManageTabsSubsModalBlur' + vm.tuesdayMonth;
+            vm.tuesdayCreateEditTabText = 'Edit tab:';
+            setTimeout(() => {
+                let tuesdayTabNameInput = document.getElementById('tuesdayTabNameInput');
+                tuesdayTabNameInput.value = tab.title;
+                tuesdayTabNameInput.focus();
+            }, 100);
+        }
+
+        function addSubscription(feed) {
+            let sorta, sortb;
+
+            for (let i = 0; i < vm.tuesdayTabs.length; i++) {
+                if (vm.tuesdayTabs[i].title === vm.tuesdayManageSelectedTab) {
+                    feed.userRead = false;
+                    vm.tuesdayTabs[i].subscriptions.push(feed);
+                    if (vm.tuesdayTabs[i].sort === 'up') {
+                        vm.tuesdayTabs[i].subscriptions = vm.tuesdayTabs[i].subscriptions.sort((a, b) => {
+                            sorta = a.title.toLowerCase();
+                            sortb = b.title.toLowerCase();
+                            if (a.title.toLowerCase().slice(0, 4) === 'the ') {
+                                sorta = a.title.toLowerCase().slice(4);
+                            }
+                            if (b.title.toLowerCase().slice(0, 4) === 'the ') {
+                                sortb = b.title.toLowerCase().slice(4);
+                            }
+                            if (a.title.toLowerCase().slice(0, 2) === 'a ') {
+                                sorta = a.title.toLowerCase().slice(2);
+                            }
+                            if (b.title.toLowerCase().slice(0, 2) === 'a ') {
+                                sortb = b.title.toLowerCase().slice(2);
+                            }
+                            if (sorta < sortb) {
+                                return -1;
+                            } else if (sorta > sortb) {
+                                return 1;
+                            } else {
+                                return 0;
+                            }
+                        });
+                    } else if (vm.tuesdayTabs[i].sort === 'down') {
+                        vm.tuesdayTabs[i].subscriptions = vm.tuesdayTabs[i].subscriptions.sort((a, b) => {
+                            sorta = a.title.toLowerCase();
+                            sortb = b.title.toLowerCase();
+                            if (a.title.toLowerCase().slice(0, 4) === 'the ') {
+                                sorta = a.title.toLowerCase().slice(4);
+                            }
+                            if (b.title.toLowerCase().slice(0, 4) === 'the ') {
+                                sortb = b.title.toLowerCase().slice(4);
+                            }
+                            if (a.title.toLowerCase().slice(0, 2) === 'a ') {
+                                sorta = a.title.toLowerCase().slice(2);
+                            }
+                            if (b.title.toLowerCase().slice(0, 2) === 'a ') {
+                                sortb = b.title.toLowerCase().slice(2);
+                            }
+                            if (sorta < sortb) {
+                                return 1;
+                            } else if (sorta > sortb) {
+                                return -1;
+                            } else {
+                                return 0;
+                            }
+                        });
+                    }
+                    vm.tuesdaySubs = vm.tuesdayTabs[i].subscriptions;
+                    for (let k = 0; k < vm.availableFeeds.length; k++) {
+                        if (vm.availableFeeds[k].uuid === feed.uuid) {
+                            vm.availableFeeds.splice(k, 1);
+                            return;
+                        }
+                    }
+                }
+            }
+        }
+
+        function removeSubscription(sub) {
+            for (let i = 0; i < vm.tuesdayTabs.length; i++) {
+                if (vm.tuesdayTabs[i].title === vm.tuesdayManageSelectedTab) {
+                    for (let j = 0; j < vm.tuesdayTabs[i].subscriptions.length; j++) {
+                        if (vm.tuesdayTabs[i].subscriptions[j].uuid === sub.uuid) {
+                            vm.tuesdayTabs[i].subscriptions.splice(j, 1);
+                            vm.tuesdaySubs = vm.tuesdaySubs.filter(entry => {
+                                return (entry.uuid !== sub.uuid);
+                            });
+                            vm.availableFeeds.push(sub);
+                            filterSearch();
+                            return;
+                        }
+                    }
+                }
+            }
+        }
+
+        function filterSearch() {
+            let query = document.getElementById('tuesdayManageSearch').value;
+            if (query === '') {
+                vm.availableFeeds = vm.allFeeds;
+            } else {
+                vm.availableFeeds = vm.allFeeds.filter(entry => {
+                    return (entry.title.toLowerCase().indexOf(query.toLowerCase()) !== -1);
+                });
+            }
+        }
+
+        function filterSubscriptions(feedsList, subsList) {
+            let index = null;
+            let sorta, sortb;
+
+            for (let i = 0; i < feedsList.length; i++) {
+                index = null;
+                for (let j = 0; j < subsList.length; j++) {
+                    if (feedsList[i].uuid === subsList[j].uuid) {
+                        index = j;
+                        j = subsList.length;
+                    }
+                }
+                if (index !== null) {
+                    subsList.splice(index, 1);
+                }
+            }
+
+            subsList = subsList.sort((a, b) => {
+                sorta = a.title.toLowerCase();
+                sortb = b.title.toLowerCase();
+                if (a.title.toLowerCase().slice(0, 4) === 'the ') {
+                    sorta = a.title.toLowerCase().slice(4);
+                }
+                if (b.title.toLowerCase().slice(0, 4) === 'the ') {
+                    sortb = b.title.toLowerCase().slice(4);
+                }
+                if (a.title.toLowerCase().slice(0, 2) === 'a ') {
+                    sorta = a.title.toLowerCase().slice(2);
+                }
+                if (b.title.toLowerCase().slice(0, 2) === 'a ') {
+                    sortb = b.title.toLowerCase().slice(2);
+                }
+                if (sorta < sortb) {
+                    return -1;
+                } else if (sorta > sortb) {
+                    return 1;
+                } else {
+                    return 0;
+                }
+            });
+
+            return (subsList);
+        }
+
+        function tuesdayManageTabber(tabTitle) {
+            vm.tuesdayManageSelectedTab = tabTitle;
+            for (let i = 0; i < vm.tuesdayTabs.length; i++) {
+                if (vm.tuesdayTabs[i].title === tabTitle) {
+                    vm.tuesdaySubs = vm.tuesdayTabs[i].subscriptions;
+                    if (tabTitle !== 'Externals') {
+                        if (vm.tuesdayTabs[i].podcast) {
+                            $http.get('/podcast_feeds')
+                                .then(blogFeedsData => {
+                                    vm.allFeeds = filterSubscriptions(vm.tuesdaySubs, blogFeedsData.data);
+                                    vm.availableFeeds = vm.allFeeds;
+                                    filterSearch();
+                                });
+                        } else {
+                            $http.get('/blog_feeds')
+                                .then(blogFeedsData => {
+                                    vm.allFeeds = filterSubscriptions(vm.tuesdaySubs, blogFeedsData.data);
+                                    vm.availableFeeds = vm.allFeeds;
+                                    filterSearch();
+                                });
+                        }
+                    } else {
+                        vm.allFeeds = [];
+                        vm.availableFeeds = vm.allFeeds;
+                    }
+                }
+            }
+        }
+
+        function exitTuesdayManagerModal() {
+            vm.managerModalState = 'tuesdayManageTabsSubsModalInactive' + vm.tuesdayMonth;
+            vm.tuesdayContainerState = 'tuesdayContainerActive' + vm.tuesdayMonth;
+        }
+
+        function tuesdayManagerEngaged() {
+            //            document.getElementById('tuesdayManageSearch').value = '';
+            vm.tuesdayManageSelectedTab = vm.tuesdayTabs[0].title;
+            vm.tuesdaySubs = vm.tuesdayTabs[0].subscriptions;
+            if (vm.tuesdayTabs[0].podcast) {
+                $http.get('/podcast_feeds')
+                    .then(blogFeedsData => {
+                        vm.allFeeds = filterSubscriptions(vm.tuesdaySubs, blogFeedsData.data);
+                        vm.availableFeeds = vm.allFeeds;
+                    });
+            } else {
+                $http.get('/blog_feeds')
+                    .then(blogFeedsData => {
+                        vm.allFeeds = filterSubscriptions(vm.tuesdaySubs, blogFeedsData.data);
+                        vm.availableFeeds = vm.allFeeds;
+                    });
+            }
+            vm.managerModalState = 'tuesdayManageTabsSubsModal' + vm.tuesdayMonth;
+            vm.tuesdayContainerState = 'tuesdayContainerInactive' + vm.tuesdayMonth;
+        }
+
+        function toggleReadStatus(contentTitle, subUuid) {
+            for (let i = 0; i < vm.tuesdayTabs.length; i++) {
+                if (vm.tuesdayTabs[i].title === contentTitle) {
+                    for (let j = 0; j < vm.tuesdayTabs[i].subscriptions.length; j++) {
+                        if (vm.tuesdayTabs[i].subscriptions[j].uuid === subUuid) {
+                            vm.tuesdayTabs[i].subscriptions[j].userRead = !vm.tuesdayTabs[i].subscriptions[j].userRead;
+                        }
+                    }
+                }
+            }
+        }
+
+        function sortSubscriptions(contentTitle, direction) {
+            let sorta, sortb;
+            for (let i = 0; i < vm.tuesdayTabs.length; i++) {
+                if (vm.tuesdayTabs[i].title === contentTitle) {
+                    vm.tuesdayTabs[i].sort = direction;
+                    switch (direction) {
+                        case ('up'):
+                            vm.tuesdayTabs[i].subscriptions = vm.tuesdayTabs[i].subscriptions.sort((a, b) => {
+                                sorta = a.title.toLowerCase();
+                                sortb = b.title.toLowerCase();
+                                if (a.title.toLowerCase().slice(0, 4) === 'the ') {
+                                    sorta = a.title.toLowerCase().slice(4);
+                                }
+                                if (b.title.toLowerCase().slice(0, 4) === 'the ') {
+                                    sortb = b.title.toLowerCase().slice(4);
+                                }
+                                if (a.title.toLowerCase().slice(0, 2) === 'a ') {
+                                    sorta = a.title.toLowerCase().slice(2);
+                                }
+                                if (b.title.toLowerCase().slice(0, 2) === 'a ') {
+                                    sortb = b.title.toLowerCase().slice(2);
+                                }
+                                if (sorta < sortb) {
+                                    return -1;
+                                } else if (sorta > sortb) {
+                                    return 1;
+                                } else {
+                                    return 0;
+                                }
+                            });
+                            break;
+                        case ('down'):
+                            vm.tuesdayTabs[i].subscriptions = vm.tuesdayTabs[i].subscriptions.sort((a, b) => {
+                                sorta = a.title.toLowerCase();
+                                sortb = b.title.toLowerCase();
+                                if (a.title.toLowerCase().slice(0, 4) === 'the ') {
+                                    sorta = a.title.toLowerCase().slice(4);
+                                }
+                                if (b.title.toLowerCase().slice(0, 4) === 'the ') {
+                                    sortb = b.title.toLowerCase().slice(4);
+                                }
+                                if (a.title.toLowerCase().slice(0, 2) === 'a ') {
+                                    sorta = a.title.toLowerCase().slice(2);
+                                }
+                                if (b.title.toLowerCase().slice(0, 2) === 'a ') {
+                                    sortb = b.title.toLowerCase().slice(2);
+                                }
+                                if (sorta < sortb) {
+                                    return 1;
+                                } else if (sorta > sortb) {
+                                    return -1;
+                                } else {
+                                    return 0;
+                                }
+                            });
+                            break;
+                        case ('random'):
+                            let index
+                            for (let k = 0; k < (vm.tuesdayTabs[i].subscriptions.length * 10); k++) {
+                                for (let j = 0; j < vm.tuesdayTabs[i].subscriptions.length; j++) {
+                                    index = Math.floor(Math.random() * vm.tuesdayTabs[i].subscriptions.length);
+                    [vm.tuesdayTabs[i].subscriptions[j], vm.tuesdayTabs[i].subscriptions[index]] = [vm.tuesdayTabs[i].subscriptions[index], vm.tuesdayTabs[i].subscriptions[j]];
+                                }
+                            }
+                            break;
+                        default:
+                            console.log(direction + ' is unsupported.');
+                            alert('ERROR: ' + direction + ' failed.');
+                    }
+                }
+            }
+        }
+
+        function toggleAllReadStatus(contentTitle) {
+            for (let i = 0; i < vm.tuesdayTabs.length; i++) {
+                if (vm.tuesdayTabs[i].title === contentTitle) {
+                    vm.tuesdayTabs[i].allRead = !vm.tuesdayTabs[i].allRead;
+                    for (let j = 0; j < vm.tuesdayTabs[i].subscriptions.length; j++) {
+                        vm.tuesdayTabs[i].subscriptions[j].userRead = vm.tuesdayTabs[i].allRead;
+                    }
+                }
+            }
+        }
+
+        function toggleTabs(tabTitle) {
+            for (let i = 0; i < vm.tuesdayTabs.length; i++) {
+                if (vm.tuesdayTabs[i].title === tabTitle) {
+                    vm.tuesdayTabs[i].active = true;
+                    vm.tuesdayTabs[i].tab = 'tuesdayTabActive' + vm.tuesdayMonth;
+                } else {
+                    vm.tuesdayTabs[i].active = false;
+                    vm.tuesdayTabs[i].tab = 'tuesdayTabInactive' + vm.tuesdayMonth;
+                }
+            }
+        }
 
 
         function navigateToHub() {
-            let tabs = vm.mondayTabs.filter(entry => {
-                return ((entry.title !== 'Dailies') && (entry.title !== 'Externals'));
+            //            let tabs = vm.tuesdayTabs.filter(entry => {
+            //                return ((entry.title !== 'Dailies') && (entry.title !== 'Externals'));
+            //            });
+            //            $http.patch(`/monday_subscriptions/${vm.user.uuid}`, {
+            //                    tabs: {
+            //                        tabs: tabs
+            //                    },
+            //                    updated_at: new Date()
+            //                })
+            //                .then(() => {
+            $state.go('userhub', {
+                id: vm.user.uuid
             });
-            $http.patch(`/monday_subscriptions/${vm.user.uuid}`, {
-                    tabs: {
-                        tabs: tabs
-                    },
-                    updated_at: new Date()
-                })
-                .then(() => {
-                    $state.go('userhub', {
-                        id: vm.user.uuid
-                    });
-                });
+            //                });
 
         }
 
@@ -599,7 +1130,7 @@
 
             setUserIPAddress();
             setFooterMessage();
-            // populateMondayTabs($stateParams.userUuid);
+            // populateTuesdayTabs($stateParams.userUuid);
             // checkLoginStatus();
 
         }
