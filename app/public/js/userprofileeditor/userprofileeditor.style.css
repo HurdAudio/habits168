@@ -48,7 +48,7 @@
     align-items: center;
     display: grid;
     grid-template-columns: [leftMargin] 60px [first] 300px [second] 1fr [third] 1fr [fourth] 1fr [fifth] 1fr [sixth] 1fr [seventh] 1fr [fin] 0;
-    grid-template-rows: [top] 60px [line2] 300px [line3] 1fr [line4] 1fr [line5] 1fr [lineend] 0;
+    grid-template-rows: [thetop] 60px [line2] 300px [line3] 1fr [line4] 1fr [line5] 1fr [lineend] 0;
     justify-items: center;
     width: 100%;
 }
