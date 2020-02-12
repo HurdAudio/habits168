@@ -7,7 +7,7 @@ exports.up = function (knex, Promise) {
         table.string('author').defaultTo(null);
         table.string('link').defaultTo(null);
         table.string('items').defaultTo(null);
-        table.string('rss').defaultTo(null)
+        table.string('rss').defaultTo(null);
         table.string('title').notNullable().defaultTo('');
         table.text('description').notNullable().defaultTo('');
         table.string('image_link').notNullable().defaultTo('https://habits168-hurdaudio.s3.amazonaws.com/externals/magazine-33602_1280.png');
