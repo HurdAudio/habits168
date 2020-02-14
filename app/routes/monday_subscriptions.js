@@ -52,187 +52,158 @@ router.get('/assembled/:user_uuid', (req, res, next) => {
             if ((now.getTime() - lastAccessed.getTime()) > 86400000) {
                 reset = true;
             }
-            knex('blog_feeds')
-                .select('*')
-                .then(blogFeeds => {
-                    knex('podcast_feeds')
+            knex('externals')
+                .select()
+                .where('user_uuid', req.params.user_uuid)
+                .then(externals => {
+                    knex('blog_feeds')
                         .select('*')
-                        .then(podcastFeeds => {
-                            //TODO hard code dailies to be first object in result array - to be replaced when dailies table is engineered
-                            result.push({
-                                active: true,
-                                allRead: false,
-                                podcast: false,
-                                sort: 'up',
-                                subscriptions: [
-                                    {
-                                        uuid: 'b1c2eff2-81e8-4f19-a1ba-8fff123fb89a',
-                                        author: null,
-                                        description: 'A source for news on music that is challenging, interesting, different, progressive, introspective, or just plain weird',
-                                        link: 'https://avantmusicnews.com/',
-                                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/cropped-cropped-amnbanner1.jpg',
-                                        items: null,
-                                        rss: 'https://avantmusicnews.com/rss',
-                                        title: 'Avant Music News',
-                                        userRead: false
-            },
-                                    {
-                                        uuid: '2e535aa1-d6d3-4741-9df7-e47ec5ac2260',
-                                        author: null,
-                                        description: 'The latest from Bandcamp',
-                                        link: 'https://daily.bandcamp.com/',
-                                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/bc-site-icon1.png',
-                                        items: null,
-                                        rss: 'https://daily.bandcamp.com/feed',
-                                        title: 'Bandcamp Daily',
-                                        userRead: false
-            },
-                                    {
-                                        uuid: '9546ff34-ff07-4e31-9332-786ea544ec47',
-                                        author: null,
-                                        description: 'A blog about Major League Baseball',
-                                        link: 'https://www.baseballmusings.com/',
-                                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/788443.png',
-                                        items: null,
-                                        rss: 'http://feeds2.feedburner.com/Baseballmusingscom',
-                                        title: 'Baseball Musings',
-                                        userRead: false
-            },
-                                    {
-                                        uuid: '321d2897-f108-45c1-96ca-3aa70ec46590',
-                                        author: null,
-                                        description: 'The main page.',
-                                        link: 'http://www.dailykos.com/blogs/main',
-                                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/daily-kos-squarelogo-1517554340259.png',
-                                        items: null,
-                                        rss: 'https://feeds.dailykos.com',
-                                        title: 'Daily Kos',
-                                        userRead: false
-            },
-                                    {
-                                        uuid: '2c7be513-9083-439c-937f-42bbe95c0cb9',
-                                        author: null,
-                                        description: 'Links for the intellectually curious, ranked by readers.',
-                                        link: 'https://news.ycombinator.com/',
-                                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/hacker-news-2-569388.png',
-                                        items: null,
-                                        rss: 'https://news.ycombinator.com/rss',
-                                        title: 'Hacker News',
-                                        userRead: false
-            },
-                                    {
-                                        uuid: 'b081d79b-ff77-4586-83f3-e9eea5e22c9a',
-                                        author: null,
-                                        description: 'The news according to John Marshall',
-                                        link: 'https://talkingpointsmemo.com/',
-                                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/tpm-sq.svg',
-                                        items: null,
-                                        rss: 'https://talkingpointsmemo.com/feed/all',
-                                        title: 'Talking Points Memo',
-                                        userRead: false
-            },
-                                    {
-                                        uuid: '5eb65b5e-6896-4357-94af-e48fad7c64cc',
-                                        author: null,
-                                        description: 'Wonkette',
-                                        link: 'https://www.wonkette.com/',
-                                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/wonkette.jpg',
-                                        items: null,
-                                        rss: 'https://www.wonkette.com/feeds/feed.rss',
-                                        title: 'Wonkette',
-                                        userRead: false
-            }
-          ],
-                                title: 'Dailies'
-                            });
-                            //TODO copy userMondayFeeds.tabs.tabs into remaining array with added details to fit needed object
-                            for (let i = 0; i < userMondayFeeds.tabs.tabs.length; i++) {
-                                result[i + 1] = {
-                                    active: userMondayFeeds.tabs.tabs[i].active,
-                                    allRead: userMondayFeeds.tabs.tabs[i].allRead,
-                                    podcast: userMondayFeeds.tabs.tabs[i].podcast,
-                                    sort: userMondayFeeds.tabs.tabs[i].sort,
-                                    subscriptions: [],
-                                    title: userMondayFeeds.tabs.tabs[i].title
-                                };
-                                for (let j = 0; j < userMondayFeeds.tabs.tabs[i].subscriptions.length; j++) {
-                                    if (userMondayFeeds.tabs.tabs[i].podcast) {
-                                        sub = podcastFeeds.filter(pod => {
-                                            return (pod.uuid === userMondayFeeds.tabs.tabs[i].subscriptions[j].uuid);
-                                        });
-                                    } else {
-                                        sub = blogFeeds.filter(blo => {
-                                            return (blo.uuid === userMondayFeeds.tabs.tabs[i].subscriptions[j].uuid);
-                                        });
-                                    }
-                                    result[i + 1].subscriptions.push({
-                                        uuid: userMondayFeeds.tabs.tabs[i].subscriptions[j].uuid,
-                                        author: sub[0].author,
-                                        description: sub[0].description,
-                                        link: sub[0].link,
-                                        image: sub[0].image,
-                                        items: sub[0].items,
-                                        rss: sub[0].rss,
-                                        title: sub[0].title,
-                                        userRead: userMondayFeeds.tabs.tabs[i].subscriptions[j].userRead
+                        .then(blogFeeds => {
+                            knex('podcast_feeds')
+                                .select('*')
+                                .then(podcastFeeds => {
+                                    //TODO hard code dailies to be first object in result array - to be replaced when dailies table is engineered
+                                    result.push({
+                                        active: true,
+                                        allRead: false,
+                                        podcast: false,
+                                        sort: 'up',
+                                        subscriptions: [
+                                            {
+                                                uuid: 'b1c2eff2-81e8-4f19-a1ba-8fff123fb89a',
+                                                author: null,
+                                                description: 'A source for news on music that is challenging, interesting, different, progressive, introspective, or just plain weird',
+                                                link: 'https://avantmusicnews.com/',
+                                                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/cropped-cropped-amnbanner1.jpg',
+                                                items: null,
+                                                rss: 'https://avantmusicnews.com/rss',
+                                                title: 'Avant Music News',
+                                                userRead: false
+                },
+                                            {
+                                                uuid: '2e535aa1-d6d3-4741-9df7-e47ec5ac2260',
+                                                author: null,
+                                                description: 'The latest from Bandcamp',
+                                                link: 'https://daily.bandcamp.com/',
+                                                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/bc-site-icon1.png',
+                                                items: null,
+                                                rss: 'https://daily.bandcamp.com/feed',
+                                                title: 'Bandcamp Daily',
+                                                userRead: false
+                },
+                                            {
+                                                uuid: '9546ff34-ff07-4e31-9332-786ea544ec47',
+                                                author: null,
+                                                description: 'A blog about Major League Baseball',
+                                                link: 'https://www.baseballmusings.com/',
+                                                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/788443.png',
+                                                items: null,
+                                                rss: 'http://feeds2.feedburner.com/Baseballmusingscom',
+                                                title: 'Baseball Musings',
+                                                userRead: false
+                },
+                                            {
+                                                uuid: '321d2897-f108-45c1-96ca-3aa70ec46590',
+                                                author: null,
+                                                description: 'The main page.',
+                                                link: 'http://www.dailykos.com/blogs/main',
+                                                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/daily-kos-squarelogo-1517554340259.png',
+                                                items: null,
+                                                rss: 'https://feeds.dailykos.com',
+                                                title: 'Daily Kos',
+                                                userRead: false
+                },
+                                            {
+                                                uuid: '2c7be513-9083-439c-937f-42bbe95c0cb9',
+                                                author: null,
+                                                description: 'Links for the intellectually curious, ranked by readers.',
+                                                link: 'https://news.ycombinator.com/',
+                                                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/hacker-news-2-569388.png',
+                                                items: null,
+                                                rss: 'https://news.ycombinator.com/rss',
+                                                title: 'Hacker News',
+                                                userRead: false
+                },
+                                            {
+                                                uuid: 'b081d79b-ff77-4586-83f3-e9eea5e22c9a',
+                                                author: null,
+                                                description: 'The news according to John Marshall',
+                                                link: 'https://talkingpointsmemo.com/',
+                                                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/tpm-sq.svg',
+                                                items: null,
+                                                rss: 'https://talkingpointsmemo.com/feed/all',
+                                                title: 'Talking Points Memo',
+                                                userRead: false
+                },
+                                            {
+                                                uuid: '5eb65b5e-6896-4357-94af-e48fad7c64cc',
+                                                author: null,
+                                                description: 'Wonkette',
+                                                link: 'https://www.wonkette.com/',
+                                                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/wonkette.jpg',
+                                                items: null,
+                                                rss: 'https://www.wonkette.com/feeds/feed.rss',
+                                                title: 'Wonkette',
+                                                userRead: false
+                }
+              ],
+                                        title: 'Dailies'
                                     });
-                                }
-                            }
-                            //TODO hard code externals to be last object in result array - to be replaced when externals table is engineered
-                            result.push({
-                                active: false,
-                                allRead: false,
-                                podcast: false,
-                                sort: 'up',
-                                subscriptions: [
-                                    {
-                                        uuid: 'c2f53e34-5499-4015-80d5-b4fcea47c78b',
-                                        author: null,
-                                        description: 'War Is a Racket',
-                                        link: null,
-                                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/externals/EDD_xVYXsAEtYxP.jpg',
-                                        items: null,
-                                        rss: null,
-                                        title: 'Jacobin Magazine - Summer 2019',
-                                        userRead: false
-            },
-                                    {
-                                        uuid: '2b7da266-f978-445f-8c5b-07da611f2464',
-                                        author: null,
-                                        description: 'Fair But Not Square',
-                                        link: null,
-                                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/externals/v28_i37_Fair_But_Not_Square.jpg',
-                                        items: null,
-                                        rss: null,
-                                        title: 'Albuquerque Alibi - Thursday, September 12, 2019',
-                                        userRead: true
-            },
-                                    {
-                                        uuid: '174f6d0e-b7cd-4979-8177-61032be3fefe',
-                                        author: null,
-                                        description: 'All the News that\'s fit to print.',
-                                        link: null,
-                                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/externals/scanNYT2019-09-15.jpg',
-                                        items: null,
-                                        rss: null,
-                                        title: 'New York Times - Sunday, September 15, 2019',
-                                        userRead: true
-            }
-          ],
-                                title: 'Externals'
-                            });
-                            //TODO update userRead status
-                        if (reset) {
-                            for (let i = 0; i < (result.length - 1); i++) {
-                                result[i].allRead = false;
-                                for (let j = 0; j< result[i].subscriptions.length; j++) {
-                                    result[i].subscriptions[j].userRead = false;
-                                }
-                            }
-                        }
-                            res.send(result);
-                        });
+                                    //TODO copy userMondayFeeds.tabs.tabs into remaining array with added details to fit needed object
+                                    for (let i = 0; i < userMondayFeeds.tabs.tabs.length; i++) {
+                                        result[i + 1] = {
+                                            active: userMondayFeeds.tabs.tabs[i].active,
+                                            allRead: userMondayFeeds.tabs.tabs[i].allRead,
+                                            podcast: userMondayFeeds.tabs.tabs[i].podcast,
+                                            sort: userMondayFeeds.tabs.tabs[i].sort,
+                                            subscriptions: [],
+                                            title: userMondayFeeds.tabs.tabs[i].title
+                                        };
+                                        for (let j = 0; j < userMondayFeeds.tabs.tabs[i].subscriptions.length; j++) {
+                                            if (userMondayFeeds.tabs.tabs[i].podcast) {
+                                                sub = podcastFeeds.filter(pod => {
+                                                    return (pod.uuid === userMondayFeeds.tabs.tabs[i].subscriptions[j].uuid);
+                                                });
+                                            } else {
+                                                sub = blogFeeds.filter(blo => {
+                                                    return (blo.uuid === userMondayFeeds.tabs.tabs[i].subscriptions[j].uuid);
+                                                });
+                                            }
+                                            result[i + 1].subscriptions.push({
+                                                uuid: userMondayFeeds.tabs.tabs[i].subscriptions[j].uuid,
+                                                author: sub[0].author,
+                                                description: sub[0].description,
+                                                link: sub[0].link,
+                                                image: sub[0].image,
+                                                items: sub[0].items,
+                                                rss: sub[0].rss,
+                                                title: sub[0].title,
+                                                userRead: userMondayFeeds.tabs.tabs[i].subscriptions[j].userRead
+                                            });
+                                        }
+                                    }
+                                    //TODO hard code externals to be last object in result array - to be replaced when externals table is engineered
+                                    result.push({
+                                        active: false,
+                                        allRead: false,
+                                        podcast: false,
+                                        sort: 'up',
+                                        subscriptions: externals,
+                                        title: 'Externals'
+                                    });
+                                    //TODO update userRead status
+                                    if (reset) {
+                                        for (let i = 0; i < (result.length - 1); i++) {
+                                            result[i].allRead = false;
+                                            for (let j = 0; j < result[i].subscriptions.length; j++) {
+                                                result[i].subscriptions[j].userRead = false;
+                                            }
+                                        }
+                                    }
+                                    res.send(result);
+                                });
 
+                        });
                 });
 
         })
