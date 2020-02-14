@@ -493,6 +493,7 @@
                         });
                     }
                     vm.mondaySubs = vm.mondayTabs[i].subscriptions;
+
                     for (let k = 0; k < vm.availableFeeds.length; k++) {
                         if (vm.availableFeeds[k].uuid === feed.uuid) {
                             vm.availableFeeds.splice(k, 1);
@@ -502,17 +503,26 @@
                 }
             }
         }
+        
+        function removeExternal(uuid) {
+            $http.delete(`/externals/${uuid}`);
+        }
 
         function removeSubscription(sub) {
             for (let i = 0; i < vm.mondayTabs.length; i++) {
                 if (vm.mondayTabs[i].title === vm.mondayManageSelectedTab) {
                     for (let j = 0; j < vm.mondayTabs[i].subscriptions.length; j++) {
                         if (vm.mondayTabs[i].subscriptions[j].uuid === sub.uuid) {
+                            if (vm.mondayTabs[i].title === 'Externals') {
+                                removeExternal(sub.uuid);
+                            }
                             vm.mondayTabs[i].subscriptions.splice(j, 1);
                             vm.mondaySubs = vm.mondaySubs.filter(entry => {
                                 return (entry.uuid !== sub.uuid);
                             });
-                            vm.availableFeeds.push(sub);
+                            if (vm.mondayTabs[i].title !== 'Externals') {
+                               vm.availableFeeds.push(sub); 
+                            }
                             filterSearch();
                             return;
                         }
@@ -805,6 +815,9 @@
                                 });
                         }
                     } else {
+                        for (let i = 0; i < vm.mondaySubs.length; i++) {
+                            vm.mondaySubs[i].title = 'Externals';
+                        }
                         vm.allFeeds = [];
                         vm.availableFeeds = vm.allFeeds;
                     }
@@ -953,7 +966,7 @@
 
         function navigateToHub() {
             let tabs = vm.mondayTabs.filter(entry => {
-                return((entry.title !== 'Dailies') && (entry.title !== 'Externals'));
+                return ((entry.title !== 'Dailies') && (entry.title !== 'Externals'));
             });
             $http.patch(`/monday_subscriptions/${vm.user.uuid}`, {
                     tabs: {

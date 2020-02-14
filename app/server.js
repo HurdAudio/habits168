@@ -33,6 +33,7 @@ const contact_messages = require('./routes/contact_messages.js');
 const userhub_state = require('./routes/userhub_state.js');
 const monday_subscriptions = require('./routes/monday_subscriptions.js');
 const skins = require('./routes/skins.js');
+const externals = require('./routes/externals.js');
 // const financial_modules = require('./routes/financial_modules.js');
 
 const port = process.env.PORT || 3037;
@@ -66,6 +67,7 @@ app.use('/contact_messages', contact_messages);
 app.use('/userhub_state', userhub_state);
 app.use('/monday_subscriptions', monday_subscriptions);
 app.use('/skins', skins);
+app.use('/externals', externals);
 
 // app.get('/reuters_headlines/:country', (req, res, next) =>{
 //   let newUrl = 'https://newsapi.org/v2/top-headlines?country=';
