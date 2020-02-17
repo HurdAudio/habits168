@@ -13,7 +13,6 @@
         const vm = this;
 
         vm.$onInit = onInit;
-        vm.viewMonth = '_FebruaryC';
         vm.href = 'https://news.ycombinator.com/';
         vm.feedsList = [
             {
@@ -69,11 +68,9 @@
         vm.navigationAdvance = navigationAdvance;
         vm.navigationBack = navigationBack;
         vm.refreshFeedList = refreshFeedList;
-        vm.shareSaveLinkDisplay = 'viewShareSaveDialogueHidden' + vm.viewMonth;
         vm.viewShareLink = viewShareLink;
         vm.viewCancelShareSaveLink = viewCancelShareSaveLink;
         vm.viewSaveLink = viewSaveLink;
-        vm.viewMask = 'viewContainer' + vm.viewMonth;
         vm.spinner = false;
 
         function viewSaveLink(post) {
@@ -178,31 +175,42 @@
             }
         }
 
+        function getSkins() {
+            $http.get('/skins/viewer')
+                .then(viewerResultData => {
+                    vm.viewMonth = viewerResultData.data.viewer;
+                    switch (vm.viewMonth) {
+                        case ('_JanuaryA'):
+                            vm.viewerSpinnerPath = 'https://habits168-hurdaudio.s3.amazonaws.com/viewer/spinners/jana_spinner.gif';
+                            break;
+                        case ('_JanuaryB'):
+                            vm.viewerSpinnerPath = 'https://habits168-hurdaudio.s3.amazonaws.com/viewer/spinners/dna-preloader.gif';
+                            break;
+                        case ('_JanuaryC'):
+                            vm.viewerSpinnerPath = 'https://habits168-hurdaudio.s3.amazonaws.com/viewer/spinners/janCloading.gif';
+                            break;
+                        case ('_FebruaryA'):
+                            vm.viewerSpinnerPath = 'https://habits168-hurdaudio.s3.amazonaws.com/viewer/spinners/feba_loader.gif';
+                            break;
+                        case ('_FebruaryB'):
+                            vm.viewerSpinnerPath = 'https://habits168-hurdaudio.s3.amazonaws.com/viewer/spinners/green_style.gif';
+                            break;
+                        case ('_FebruaryC'):
+                            vm.viewerSpinnerPath = 'https://habits168-hurdaudio.s3.amazonaws.com/viewer/spinners/nested_spinners.gif';
+                            break;
+                        default:
+                            alert('Error: unsupported viewMonth spinner set');
+                            console.log('Error: unsupported viewMonth spinner set');
+                    }
+                    vm.shareSaveLinkDisplay = 'viewShareSaveDialogueHidden' + vm.viewMonth;
+                    vm.viewMask = 'viewContainer' + vm.viewMonth;
+                });
+        }
+
         function onInit() {
             console.log("View Test is lit");
-            switch (vm.viewMonth) {
-                case ('_JanuaryA'):
-                    vm.viewerSpinnerPath = 'https://habits168-hurdaudio.s3.amazonaws.com/viewer/spinners/jana_spinner.gif';
-                    break;
-                case ('_JanuaryB'):
-                    vm.viewerSpinnerPath = 'https://habits168-hurdaudio.s3.amazonaws.com/viewer/spinners/dna-preloader.gif';
-                    break;
-                case ('_JanuaryC'):
-                    vm.viewerSpinnerPath = 'https://habits168-hurdaudio.s3.amazonaws.com/viewer/spinners/janCloading.gif';
-                    break;
-                case ('_FebruaryA'):
-                    vm.viewerSpinnerPath = 'https://habits168-hurdaudio.s3.amazonaws.com/viewer/spinners/feba_loader.gif';
-                    break;
-                case('_FebruaryB'):
-                    vm.viewerSpinnerPath = 'https://habits168-hurdaudio.s3.amazonaws.com/viewer/spinners/green_style.gif';
-                    break;
-                case('_FebruaryC'):
-                    vm.viewerSpinnerPath = 'https://habits168-hurdaudio.s3.amazonaws.com/viewer/spinners/nested_spinners.gif';
-                    break;
-                default:
-                    alert('Error: unsupported viewMonth spinner set');
-                    console.log('Error: unsupported viewMonth spinner set');
-            }
+
+            getSkins();
             vm.feedIcon = vm.feedsList[vm.feedsListIndex].image;
             vm.feedTitle = vm.feedsList[vm.feedsListIndex].title;
             vm.feedDescription = vm.feedsList[vm.feedsListIndex].description;
