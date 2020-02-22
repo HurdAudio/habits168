@@ -1,0 +1,1187 @@
+.backgroundDiv_MarchA {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/landing/march/glass_treasures_by_0rangeleaves_ddpw0zm-pre.jpg);
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+#landingContainer_MarchA {
+    align-items: center;
+    display: grid;
+    grid-template-areas:
+        "header""header""header""header""header"
+        "tabs""byline""content""content"
+        "tabs""byline""content""content"
+        . "footer""footer""footer""footer";
+    grid-template-columns: [first] 60px [second] 100px [third] 1fr [fourth] 1fr [fifth] 1fr [end];
+    grid-template-rows: [top] 150px [line2] 50px [line3] 50px [line4] 1fr [lineend];
+    justify-items: center;
+    width: 100%;
+}
+
+.landingTitleFlex_MarchA {
+    backdrop-filter: blur(13px) saturate(210%);
+    grid-area: header;
+    grid-column: first / end;
+    grid-row: top / line2;
+    width: 100%;
+}
+
+.landingLogo_MarchA {
+    border-radius: 25px 0;
+    filter: brightness(70%);
+    float: left;
+    grid-area: header;
+    grid-column: first / third;
+    grid-row: top / line2;
+    height: 130px;
+    margin: 10px 20px 10px 30px;
+    opacity: 1;
+    transform: skew(-15deg);
+    width: 130px;
+}
+
+.landingTitleDiv_MarchA {
+    align-self: center;
+    color: #270900;
+    float: left;
+    grid-column: 3 / span 2;
+    grid-row: 1/ 2;
+    font-family: 'Barlow', serif;
+    font-size: 90px;
+    justify-self: center;
+    margin: 20px 20px 0 10px;
+}
+
+.landingTitleButtonsDiv_MarchA {
+    align-self: stretch;
+    float: left;
+    grid-area: header;
+    grid-column: 4/6;
+    grid-row: 1/2;
+    padding: 65px 5px 5px 25%;
+    width: auto;
+}
+
+.landingTitleButtonsDiv_MarchA button {
+    background: transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/landing/march/glass_treasures_by_0rangeleaves_ddpw0zm-pre.jpg) 15% stretch;
+    box-shadow: 8px 8px 16px #621700;
+    color: #030303;
+    cursor: pointer;
+    filter: brightness(100%);
+    font-family: 'Barlow', serif;
+    font-size: 30px;
+    margin: 0 10px;
+    outline-color: transparent;
+    padding: 5px 15px;
+    perspective: 50px;
+    transition: all 0.3s linear;
+}
+
+.landingTitleButtonsDiv_MarchA button:hover {
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/landing/march/glass_treasures_by_0rangeleaves_ddpw0zm-pre.jpg) 25% stretch;
+    box-shadow: 8px 8px 20px #621700;
+    filter: brightness(130%);
+    transition: all 0.3s linear;
+}
+
+.landingTitleButtonsDiv_MarchA button:active {
+    box-shadow: 0 0 0 #000000;
+    outline-color: transparent;
+    transition: all 0.1s linear;
+}
+
+.landingRecentlySharedLinksCollapsed_MarchA {
+    display: none;
+}
+
+.landingRecentlySharedLinksUncollapsed_MarchA {
+    background: #b5afb4;
+    grid-column: 1 / end;
+    grid-row: 3 / span 4;
+    height: 73vh;
+    opacity: 0.9;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.landingRecentlySharedPostsUncollapsed_MarchA {
+    background: #b5afb4;
+    grid-column: 1 / end;
+    grid-row: 3 / span 4;
+    height: 73vh;
+    opacity: 0.9;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.landingRecentlySharedPostsCollapsed_MarchA {
+    display: none;
+}
+
+.landingShareContainer_MarchA {
+    color: #030303;
+    font-family: 'Barlow', serif;
+    height: auto;
+    position: relative;
+    width: 100%;
+}
+
+.landingLinkShare_MarchA {
+    display: inline-block;
+}
+
+.landingShareSharerAvatar_MarchA {
+    border-radius: 15px 0;
+    left: 15px;
+    margin: 20px 0 20px 0;
+    position: relative;
+    top: 10px;
+    transform: skew(-15deg);
+    width: 70px;
+}
+
+.landingByline_MarchA {
+    float: left;
+    left: 10px;
+    position: relative;
+    top: 0;
+    width: 20%;
+}
+
+.landingByline_MarchA p {
+    font-size: 18px;
+    font-weight: 900;
+    margin-left: 20px;
+    max-width: 220px;
+}
+
+.landingShareShare_MarchA {
+    border-left: solid 1px #1a0202;
+    float: left;
+    margin-bottom: 15px;
+    position: relative;
+    top: 0;
+    width: 78%;
+}
+
+.landingShareShare_MarchA a {
+    color: #621700;
+    text-decoration: none;
+}
+
+.landingShareShare_MarchA p {
+    max-width: 700px;
+}
+
+.landingShareShare_MarchA a:hover {
+    color: #975b1f;
+}
+
+.landingShareShare_MarchA a:visited {
+    color: #251f1f;
+}
+
+.shareSourceIcon_MarchA {
+    left: 5px;
+    position: relative;
+    top: 5px;
+    width: 10%;
+}
+
+.shareViaCredit_MarchA {
+    display: inline-block;
+    font-size: 24px;
+    margin: -20px 3px 15px 10px;
+    position: relative;
+    top: 0;
+    width: 80%;
+}
+
+.shareHeadline_MarchA {
+    font-size: 36px;
+    margin: 15px 15px 35px 15px;
+    max-width: 710px;
+}
+
+.shareCleanDate_MarchA {
+    float: right;
+    font-size: 18px;
+    margin: 5px 30% 5px 0;
+}
+
+.shareDescription_MarchA {
+    font-size: 18px;
+    line-height: 1.3em;
+    margin: 100px 15px 130px 15px;
+    max-width: 710px;
+}
+
+.shareAuthor_MarchA {
+    float: left;
+    font-size: 18px;
+    margin: 0 0 0 5px;
+}
+
+.shareShareEnclosurePhoto_MarchA {
+    margin: 0 0 0 5px;
+    max-width: 40%;
+}
+
+.shareShareBlogPhoto_MarchA {
+    margin: 0 0 0 15px;
+    max-width: 50%;
+}
+
+.shareBlogTitle_MarchA {
+    font-size: 36px;
+    margin: -40px 0 0 120px;
+}
+
+.landingFooter_MarchA {
+    bottom: 1px;
+    color: #b5afb4;
+    font-family: 'Barlow', serif;
+    font-size: 12px;
+    left: 10px;
+    position: absolute;
+
+}
+
+.landingLoginActive_MarchA {
+    background: linear-gradient(145deg, #b79c81, #d9b999);
+    box-shadow:  36px 36px 49px #8c7763, 
+             -36px -36px 49px #ffe3bb;
+    color: #030303;
+    font-family: 'Barlow', serif;
+    font-size: 42px;
+    height: 400px;
+    opacity: 1;
+    padding: 32px;
+    position: absolute;
+    right: 30%;
+    top: 200px;
+    transition: all 0.8s linear;
+    width: 40%;
+    z-index: 6;
+}
+
+.landingLoginInactive_MarchA {
+    height: 0;
+    position: absolute;
+    transition: all 0.8s linear;
+    width: 0;
+    z-index: -6;
+}
+
+.landingLoginActive_MarchA input {
+    background: #928f8f;
+    border: none;
+    color: #030303;
+    font-family: 'Barlow', serif;
+    font-size: 24px;
+    margin: 25px 5px 10px 45px;
+    outline-color: #030303;
+    padding: 1px 1px 1px 15px;
+    width: 75%;
+}
+
+.landingLoginInactive_MarchA input {
+    display: none;
+}
+
+.landingLoginActive_MarchA button {
+    background: transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/landing/march/glass_treasures_by_0rangeleaves_ddpw0zm-pre.jpg) 15% stretch;
+    box-shadow: 8px 8px 16px #621700;
+    color: #030303;
+    cursor: pointer;
+    filter: brightness(100%);
+    font-family: 'Barlow', serif;
+    font-size: 30px;
+    margin: 20px 70px;
+    outline-color: transparent;
+    padding: 5px 15px;
+    perspective: 50px;
+    transition: all 0.3s linear;
+}
+
+.landingLoginActive_MarchA button:hover {
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/landing/march/glass_treasures_by_0rangeleaves_ddpw0zm-pre.jpg) 25% stretch;
+    box-shadow: 8px 8px 20px #621700;
+    filter: brightness(130%);
+    transition: all 0.3s linear;
+}
+
+.landingLoginActive_MarchA button:active {
+    box-shadow: 0 0 0 #000000;
+    outline-color: transparent;
+    transition: all 0.1s linear;
+}
+
+.landingLoginInactive_MarchA button {
+    transform: scale(0.1);
+    transition: all 0.1s linear;
+}
+
+.landingLoginActive_MarchA a {
+    color: #090909;
+    cursor: pointer;
+    float: right;
+    font-family: 'Barlow', serif;
+    font-size: 24px;
+    margin: 30px 0 10px 0;
+    position: relative;
+    text-decoration: none;
+}
+
+.landingLoginInactive_MarchA a {
+    display: none;
+}
+
+.landingLoginActive_MarchA h2 {
+    color: #030303;
+    margin: 25px 20px 1px 20px;
+}
+
+.landingLoginInactive_MarchA h2 {
+    display: none;
+}
+
+.tabs_MarchA {
+    backdrop-filter: brightness(150%);
+    border-top: 2px solid #621700;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-column: 1/end;
+    grid-row: line2/ line3;
+    height: 50px;
+    justify-content: flex-start;
+    opacity: 0.9;
+    width: 100%;
+}
+
+.tabActive_MarchA {
+    background: #bfa794;
+    color: #090909;
+    cursor: pointer;
+    font-family: 'Barlow', serif;
+    font-size: 30px;
+    grid-area: tabs;
+    height: 30px;
+    margin: 0 0 0 25px;
+    opacity: 0.8;
+    padding: 10px 6px;
+    transition: all 0.5s linear;
+}
+
+.tabInactive_MarchA {
+    background: #928f8f;
+    color: #975b1f;
+    cursor: pointer;
+    font-family: 'Barlow', serif;
+    font-size: 30px;
+    grid-area: tabs;
+    height: 30px;
+    margin: 0 0 0 25px;
+    opacity: 0.5;
+    padding: 10px 6px;
+    transition: all 0.5s linear;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .landingTitleButtonsDiv_MarchA {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .backgroundDiv_MarchA {
+        background-size: 400%;
+    }
+
+    .landingTitle_MarchA {
+        font-size: 18px;
+    }
+
+    .landingShareShare_MarchA {
+        width: 70%;
+    }
+
+    .landingRecentlySharedPostsUncollapsed_MarchA {
+        height: 75vh;
+    }
+
+    .landingRecentlySharedLinksUncollapsed_MarchA {
+        height: 75vh;
+    }
+}
+
+@media only screen and (max-width: 823px) {
+
+    .landingTitleButtonsDiv_MarchA {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .landingTitle_MarchA {
+        font-size: 18px;
+    }
+
+    .landingShareShare_MarchA {
+        width: 70%;
+    }
+
+    .landingRecentlySharedPostsUncollapsed_MarchA {
+        height: 75vh;
+    }
+
+    .landingRecentlySharedLinksUncollapsed_MarchA {
+        height: 75vh;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .landingTitleButtonsDiv_MarchA {
+        padding: 65px 5px 5px 10%;
+    }
+
+
+    .landingTitleButtonsDiv_MarchA {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .landingTitle_MarchA {
+        font-size: 18px;
+    }
+
+    .landingShareShare_MarchA {
+        width: 70%;
+    }
+
+    .landingRecentlySharedPostsUncollapsed_MarchA {
+        height: 75vh;
+    }
+
+    .landingRecentlySharedLinksUncollapsed_MarchA {
+        height: 75vh;
+    }
+}
+
+@media only screen and (max-width: 736px) {
+    .backgroundDiv_MarchA {
+        background-size: 250%;
+    }
+
+    .landingTitle_MarchA {
+        font-size: 24px;
+    }
+
+    .landingTitleButtonsDiv_MarchA {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .landingTitleButtonsDiv_MarchA button {
+        font-size: 12px;
+        margin: -30px 10px 10px 10px;
+    }
+
+    .tabs_MarchA {
+        display: none;
+    }
+
+    .landingRecentlySharedLinksUncollapsed_MarchA {
+        display: none;
+    }
+
+    .landingLoginActive_MarchA {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 79%;
+    }
+
+    .landingLoginActive_MarchA a {
+        margin-top: 80px;
+    }
+
+    .landingLoginInactive_MarchA a {
+        margin-top: 80px;
+    }
+
+    .landingLoginActive_MarchA button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginInactive_MarchA button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginActive_MarchA h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginInactive_MarchA h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginActive_MarchA input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchA input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchA {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 79%;
+    }
+}
+
+@media only screen and (max-width: 731px) {
+
+    .landingTitleButtonsDiv_MarchA {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .backgroundDiv_MarchA {
+        background-size: 250%;
+    }
+
+    .landingTitle_MarchA {
+        font-size: 24px;
+    }
+
+    .landingTitleButtonsDiv_MarchA {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .landingTitleButtonsDiv_MarchA button {
+        font-size: 12px;
+        margin: -30px 10px 10px 10px;
+    }
+
+    .tabs_MarchA {
+        display: none;
+    }
+
+    .landingRecentlySharedLinksUncollapsed_MarchA {
+        display: none;
+    }
+
+    .landingLoginActive_MarchA {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 79%;
+    }
+
+    .landingLoginActive_MarchA a {
+        margin-top: 80px;
+    }
+
+    .landingLoginInactive_MarchA a {
+        margin-top: 80px;
+    }
+
+    .landingLoginActive_MarchA button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginInactive_MarchA button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginActive_MarchA h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginInactive_MarchA h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginActive_MarchA input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchA input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchA {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 79%;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+
+    .landingTitleButtonsDiv_MarchA {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .backgroundDiv_MarchA {
+        background-size: 250%;
+    }
+
+    .landingTitle_MarchA {
+        font-size: 24px;
+    }
+
+    .landingTitleButtonsDiv_MarchA {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .landingTitleButtonsDiv_MarchA button {
+        font-size: 12px;
+        margin: -30px 10px 10px 10px;
+    }
+
+    .tabs_MarchA {
+        display: none;
+    }
+
+    .landingRecentlySharedLinksUncollapsed_MarchA {
+        display: none;
+    }
+
+    .landingLoginActive_MarchA {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 79%;
+    }
+
+    .landingLoginActive_MarchA a {
+        margin-top: 80px;
+    }
+
+    .landingLoginInactive_MarchA a {
+        margin-top: 80px;
+    }
+
+    .landingLoginActive_MarchA button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginInactive_MarchA button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginActive_MarchA h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginInactive_MarchA h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginActive_MarchA input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchA input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchA {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 79%;
+    }
+}
+
+@media only screen and (max-width: 568px) {
+    .landingTitleButtonsDiv_MarchA {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .backgroundDiv_MarchA {
+        background-size: 250%;
+    }
+
+    .landingTitle_MarchA {
+        font-size: 24px;
+    }
+
+    .landingTitleButtonsDiv_MarchA {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .landingTitleButtonsDiv_MarchA button {
+        font-size: 12px;
+        margin: -30px 15px 15px 15px;
+    }
+
+    .landingUserGreeting_MarchA {
+        margin-top: -120px;
+    }
+
+    .tabs_MarchA {
+        display: none;
+    }
+
+    .landingRecentlySharedLinksUncollapsed_MarchA {
+        display: none;
+    }
+
+    .landingLoginActive_MarchA {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 79%;
+    }
+
+    .landingLoginActive_MarchA a {
+        margin-top: 80px;
+    }
+
+    .landingLoginInactive_MarchA a {
+        margin-top: 80px;
+    }
+
+    .landingLoginActive_MarchA button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginInactive_MarchA button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginActive_MarchA h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginInactive_MarchA h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginActive_MarchA input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchA input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchA {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 79%;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .backgroundDiv_MarchA {
+        background-size: 250%;
+    }
+
+    .landingTitle_MarchA {
+        font-size: 24px;
+    }
+
+    .landingTitleButtonsDiv_MarchA {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .landingTitleButtonsDiv_MarchA button {
+        font-size: 12px;
+    }
+
+    .tabs_MarchA {
+        display: none;
+    }
+
+    .landingRecentlySharedLinksUncollapsed_MarchA {
+        display: none;
+    }
+
+    .landingLoginActive_MarchA {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 79%;
+    }
+
+    .landingLoginActive_MarchA a {
+        margin-top: 80px;
+    }
+
+    .landingLoginInactive_MarchA a {
+        margin-top: 80px;
+    }
+
+    .landingLoginActive_MarchA button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginInactive_MarchA button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginActive_MarchA h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginInactive_MarchA h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginActive_MarchA input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchA input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchA {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 79%;
+    }
+}
+
+@media only screen and (max-width: 411px) {
+    .backgroundDiv_MarchA {
+        background-size: 250%;
+    }
+
+    .landingTitle_MarchA {
+        font-size: 24px;
+    }
+
+    .landingTitleButtonsDiv_MarchA {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .landingTitleButtonsDiv_MarchA button {
+        font-size: 12px;
+    }
+
+    .tabs_MarchA {
+        display: none;
+    }
+
+    .landingRecentlySharedLinksUncollapsed_MarchA {
+        display: none;
+    }
+
+    .landingLoginActive_MarchA {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 79%;
+    }
+
+    .landingLoginActive_MarchA a {
+        margin-top: 80px;
+    }
+
+    .landingLoginInactive_MarchA a {
+        margin-top: 80px;
+    }
+
+    .landingLoginActive_MarchA button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginInactive_MarchA button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginActive_MarchA h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginInactive_MarchA h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginActive_MarchA input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchA input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchA {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 79%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .backgroundDiv_MarchA {
+        background-size: 250%;
+    }
+
+    .landingTitle_MarchA {
+        font-size: 24px;
+    }
+
+    .landingTitleButtonsDiv_MarchA {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .landingTitleButtonsDiv_MarchA button {
+        font-size: 12px;
+    }
+
+    .tabs_MarchA {
+        display: none;
+    }
+
+    .landingRecentlySharedLinksUncollapsed_MarchA {
+        display: none;
+    }
+
+    .landingLoginActive_MarchA {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 61.5%;
+    }
+
+    .landingLoginActive_MarchA a {
+        margin-top: 80px;
+    }
+
+    .landingLoginInactive_MarchA a {
+        margin-top: 80px;
+    }
+
+    .landingLoginActive_MarchA button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginInactive_MarchA button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginActive_MarchA h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginInactive_MarchA h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginActive_MarchA input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchA input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchA {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 61.5%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .backgroundDiv_MarchA {
+        background-size: 250%;
+    }
+
+    .landingTitle_MarchA {
+        font-size: 24px;
+    }
+
+    .landingTitleButtonsDiv_MarchA {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .landingTitleButtonsDiv_MarchA button {
+        font-size: 12px;
+    }
+
+    .tabs_MarchA {
+        display: none;
+    }
+
+    .landingRecentlySharedLinksUncollapsed_MarchA {
+        display: none;
+    }
+
+    .landingLoginActive_MarchA {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 77%;
+    }
+
+    .landingLoginActive_MarchA a {
+        margin-top: 80px;
+    }
+
+    .landingLoginInactive_MarchA a {
+        margin-top: 80px;
+    }
+
+    .landingLoginActive_MarchA button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginInactive_MarchA button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginActive_MarchA h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginInactive_MarchA h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginActive_MarchA input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchA input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchA {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 77%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .backgroundDiv_MarchA {
+        background-size: 250%;
+    }
+
+    .landingTitle_MarchA {
+        font-size: 24px;
+    }
+
+    .landingTitleButtonsDiv_MarchA {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .landingTitleButtonsDiv_MarchA button {
+        font-size: 12px;
+    }
+
+    .tabs_MarchA {
+        display: none;
+    }
+
+    .landingRecentlySharedLinksUncollapsed_MarchA {
+        display: none;
+    }
+
+    .landingLoginActive_MarchA {
+        left: -13%;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        transform: scale(0.8);
+        width: 320px;
+    }
+
+    .landingLoginActive_MarchA a {
+        margin-top: 80px;
+    }
+
+    .landingLoginInactive_MarchA a {
+        margin-top: 80px;
+    }
+
+    .landingLoginActive_MarchA button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginInactive_MarchA button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginActive_MarchA h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginInactive_MarchA h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginActive_MarchA input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchA input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchA {
+        left: -13%;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        transform: scale(0.8);
+        width: 320px;
+    }
+}
