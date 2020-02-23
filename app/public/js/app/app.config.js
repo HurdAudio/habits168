@@ -69,6 +69,12 @@
                 url: '/tuesday/:userUuid',
                 parent: 'app',
                 component: 'tuesday'
+            })
+            .state({
+                name: 'browse',
+                url: '/browse/:userUuid',
+                parent: 'app',
+                component: 'browse'
             });
     }
 

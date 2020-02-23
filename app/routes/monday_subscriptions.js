@@ -20,7 +20,7 @@ router.get('/:uuid', (req, res, next) => {
 
     knex('monday_subscriptions')
         .select()
-        .where('uuid', req.params.uuid)
+        .where('user_uuid', req.params.uuid)
         .first()
         .then((feed) => {
             if (!feed) {

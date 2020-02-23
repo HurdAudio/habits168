@@ -15,6 +15,7 @@
         vm.$onInit = onInit;
         vm.monthSelect = '_FebruaryB';
         vm.userLogout = userLogout;
+        vm.browseMonth = '_JanuaryA'
         vm.hubShareTabState = 'hubTabActive' + vm.monthSelect;
         vm.hubReaderTabState = 'hubTabInactive' + vm.monthSelect;
         vm.hubBloggerTabState = 'hubTabInactive' + vm.monthSelect;
@@ -42,7 +43,7 @@
         vm.manageBlockToggleStatus = 'hubReaderDay1BlockInactive' + vm.monthSelect;
         vm.externalsBlockToggleStatus = 'hubReaderExternalsDay2BlockInactive' + vm.externalsMonth;
         vm.dailiesBlockToggleStatus = 'hubReaderDay3BlockInactive' + vm.monthSelect;
-        vm.browseFeedsBlockToggleStatus = 'hubReaderDay4BlockInactive' + vm.monthSelect;
+        vm.browseFeedsBlockToggleStatus = 'hubReaderBrowseBlockInactive' + vm.browseMonth;
         vm.sharedBlockToggleStatus = 'hubReaderDay5BlockInactive' + vm.monthSelect;
         vm.savedBlockToggleStatus = 'hubReaderDay6BlockInactive' + vm.monthSelect;
         vm.miscBlockToggleStatus = 'hubReaderDay7BlockInactive' + vm.monthSelect;
@@ -102,6 +103,13 @@
         vm.removeMessageReply = removeMessageReply;
         vm.navigateToProfileEditor = navigateToProfileEditor;
         vm.tuesdayMonth = '_JanuaryA';
+        vm.navigateToBrowse = navigateToBrowse;
+        
+        function navigateToBrowse() {
+            $state.go('browse', {
+                userUuid: vm.user.uuid
+            });
+        }
 
         function navigateToProfileEditor() {
             $state.go('userprofileeditor', {
@@ -252,7 +260,7 @@
             vm.manageBlockToggleStatus = 'hubReaderDay1BlockInactive' + vm.monthSelect;
             vm.externalsBlockToggleStatus = 'hubReaderExternalsDay2BlockInactive' + vm.externalsMonth;
             vm.dailiesBlockToggleStatus = 'hubReaderDay3BlockInactive' + vm.monthSelect;
-            vm.browseFeedsBlockToggleStatus = 'hubReaderDay4BlockInactive' + vm.monthSelect;
+            vm.browseFeedsBlockToggleStatus = 'hubReaderBrowseBlockInactive' + vm.browseMonth;
             vm.sharedBlockToggleStatus = 'hubReaderDay5BlockInactive' + vm.monthSelect;
             vm.savedBlockToggleStatus = 'hubReaderDay6BlockInactive' + vm.monthSelect;
             vm.miscBlockToggleStatus = 'hubReaderDay7BlockInactive' + vm.monthSelect;
@@ -788,7 +796,7 @@
                 vm.manageBlockToggleStatus = 'hubReaderDay1BlockActive' + vm.monthSelect;
                 vm.externalsBlockToggleStatus = 'hubReaderExternalsDay2BlockActive' + vm.externalsMonth;
                 vm.dailiesBlockToggleStatus = 'hubReaderDay3BlockActive' + vm.dailiesMonth;
-                vm.browseFeedsBlockToggleStatus = 'hubReaderDay4BlockActive' + vm.monthSelect;
+                vm.browseFeedsBlockToggleStatus = 'hubReaderBrowseBlockActive' + vm.browseMonth;
                 vm.sharedBlockToggleStatus = 'hubReaderDay5BlockActive' + vm.monthSelect;
                 vm.savedBlockToggleStatus = 'hubReaderDay6BlockActive' + vm.monthSelect;
                 vm.miscBlockToggleStatus = 'hubReaderDay7BlockActive' + vm.monthSelect;
@@ -800,7 +808,7 @@
                 vm.manageBlockToggleStatus = 'hubReaderDay1BlockInactive' + vm.monthSelect;
                 vm.externalsBlockToggleStatus = 'hubReaderExternalsDay2BlockInactive' + vm.externalsMonth;
                 vm.dailiesBlockToggleStatus = 'hubReaderDay3BlockInactive' + vm.dailiesMonth;
-                vm.browseFeedsBlockToggleStatus = 'hubReaderDay4BlockInactive' + vm.monthSelect;
+                vm.browseFeedsBlockToggleStatus = 'hubReaderBrowseBlockInactive' + vm.browseMonth;
                 vm.sharedBlockToggleStatus = 'hubReaderDay5BlockInactive' + vm.monthSelect;
                 vm.savedBlockToggleStatus = 'hubReaderDay6BlockInactive' + vm.monthSelect;
                 vm.miscBlockToggleStatus = 'hubReaderDay7BlockInactive' + vm.monthSelect;

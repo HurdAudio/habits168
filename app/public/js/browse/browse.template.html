@@ -1,0 +1,80 @@
+<div class="{{$ctrl.browseContainer}}">
+    <div class="browseImageDiv{{$ctrl.browseMonth}}"></div>
+    <div class="browseNavbar{{$ctrl.browseMonth}}">
+        <img class="browseLogoNav{{$ctrl.browseMonth}}" src="{{$ctrl.logoPath}}" ng-click="$ctrl.navigateToHub()">
+        <h1 class="browseTitle{{$ctrl.browseMonth}}">Browse Feeds</h1>
+    </div>
+    <div class="browseTabs{{$ctrl.browseMonth}}">
+        <div class="{{$ctrl.blogFeedTabState}}" ng-click="$ctrl.toggleTabs()">
+            <p>Blogs</p>
+        </div>
+        <div class="{{$ctrl.podcastFeedTabState}}" ng-click="$ctrl.toggleTabs()">
+            <p>Podcasts</p>
+        </div>
+    </div>
+    <div class="{{$ctrl.browseBlogsContainerState}}">
+        <div class="browseBlogsByCategory{{$ctrl.browseMonth}}">
+            <h4 class="browseBlogsCategoryLabel{{$ctrl.browseMonth}}">category:</h4>
+            <select class="browseCategorySelect{{$ctrl.browseMonth}}" id="browseCategorySelect">
+                <option value="_generic">all feeds</option>
+            </select>
+            <button class="browseViewFeedsButton{{$ctrl.browseMonth}}" ng-click="$ctrl.clickBrowseViewFeedsButton()">view</button>
+        </div>
+        <div class="browseCategoricalFeeds{{$ctrl.currentView}}{{$ctrl.browseMonth}}">
+            <main ng-repeat="feed in $ctrl.viewBlogFeeds">
+                
+                <div class="browseFeedsContainer{{$ctrl.currentView}}{{$ctrl.browseMonth}}" ng-click="$ctrl.browseIndividualFeed(feed)">
+                    <img src={{feed.image}}>
+                    <div class="browseFeedsTitleDiv{{$ctrl.currentView}}{{$ctrl.browseMonth}}">
+                        <p ng-bind-html="feed.title"></p>
+                    </div>
+                    
+                </div>
+                
+            </main>
+        </div>
+        <div class="browseIndividualFeedData{{$ctrl.currentView}}{{$ctrl.browseMonth}}">
+            <img src={{$ctrl.currentFeed.image}}>
+            <h3 ng-bind-html="$ctrl.currentFeed.title"></h3>
+            <p ng-bind-html="$ctrl.currentFeed.author"></p>
+            <p ng-bind-html="$ctrl.currentFeed.description"></p>
+            <br>
+            <p ng-if="$ctrl.currentFeed.subscribed">{{$ctrl.currentFeed.subscriptionString}}</p>
+            <button ng-if="($ctrl.currentFeed.subscribed && (!$ctrl.currentFeed.noFeed))" ng-click="$ctrl.removeSubscription()">unsubscribe</button>
+            <button ng-if="!$ctrl.currentFeed.subscribed" ng-click="$ctrl.addSubscription()">subscribe</button>
+        </div>
+        
+    </div>
+    <div class="{{$ctrl.browsePodcastContainerState}}">
+    </div>
+</div>
+<div class="{{$ctrl.browseSubscriptionModalState}}">
+    <p class="blogSubscriptionModalLabel{{$ctrl.browseMonth}}">Add Subscription</p>
+    <img class="blogSubscriptionMondalImage{{$ctrl.browseMonth}}" src={{$ctrl.currentFeed.image}}>
+    <p class="blogSubscriptionModalTitle{{$ctrl.browseMonth}}" ng-bind-html="$ctrl.currentFeed.title"></p>
+    <div class="browseModalSelectors{{$ctrl.browseMonth}}">
+        <select class="blogSubscriptionDaySelector{{$ctrl.browseMonth}}" id="blogSubscriptionDaySelector" ng-blur="$ctrl.updateBlogSubscriptionDestination()">
+            <option value="dailies">Dailies</option>
+            <option value="monday">Monday</option>
+            <option value="tuesday">Tuesday</option>
+            <option value="wednesday">Wednesday</option>
+            <option value="thursday">Thursday</option>
+            <option value="friday">Friday</option>
+            <option value="saturday">Saturday</option>
+            <option value="sunday">Sunday</option>
+        </select>
+        <select class="blogSubscriptionDaySelector{{$ctrl.browseMonth}}" ng-if="$ctrl.subDestination !== 'dailies'" id="browseTabSelector" ng-blur="$ctrl.updateBlogSubscriptionTab()">
+            <div >
+                <option ng-repeat="tab in $ctrl.blogSubTabs" value="{{tab.title}}">{{tab.title}}</option>
+            </div>
+            
+        </select>
+        <input class="blogSubscriptionDaySelector{{$ctrl.browseMonth}}" id="browseTabAdder" ng-if="(($ctrl.subDestination !== 'dailies') && $ctrl.newBlogTabInput)" placeholder="new tab title" type="text" ng-blur="$ctrl.updateNewTabTitle()">
+    </div>
+    
+    <div class="browseModalSelectors{{$ctrl.browseMonth}}">
+        <button ng-if="(($ctrl.subDestination === 'dailies') || (!$ctrl.newBlogTabInput) || (($ctrl.newBlogTabInput) && ($ctrl.addedTabTitle !== '')))" ng-click="$ctrl.blogSubscriptionSubmit()">submit</button>
+        <button ng-click="$ctrl.blogSubscriptionCancel()">cancel</button>
+    </div>
+    <div class="browseModalSpacer{{$ctrl.browseMonth}}"></div>
+</div>
