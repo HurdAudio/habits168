@@ -1,0 +1,888 @@
+.tuesdayBackgroundDiv_JanuaryB {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/january/xu-haiwei-RDLQMrWY5WA-unsplash.jpg);
+    background-size: 100%;
+    height: 100%;
+    left: 0;
+    opacity: 0.6;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.tuesdayContainerActive_JanuaryB {
+    filter: blur(0px);
+}
+
+.tuesdayContainerInactive_JanuaryB {
+    filter: blur(15px);
+}
+
+.tuesdayTitleStrip_JanuaryB {
+    background: #4e565e;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Crimson Pro', serif;
+    height: auto;
+    justify-content: flex-start;
+    opacity: 0.9;
+    padding: 4px 2vw 4px 2vw;
+    width: 100%;
+}
+
+.tuesdayLogo_JanuaryB {
+    cursor: pointer;
+    filter: brightness(80%);
+    max-width: 75px;
+}
+
+.tuesdayReadingPlaylistTitle_JanuaryB {
+    color: #e2ecf6;
+    font-size: 42px;
+    margin: 30px 0 0 96px;
+}
+
+.tuesdayTabStrip_JanuaryB {
+    background: #0e4358;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Crimson Pro', serif;
+    height: auto;
+    opacity: 0.7;
+    padding: 0 15px;
+    width: 100%;
+}
+
+.tuesdayTabActive_JanuaryB {
+    background: #80b9d6;
+    color: #002e44;
+    cursor: none;
+    font-size: 30px;
+    padding: 2px 45px 2px 5px;
+    transition: all 0.5s linear;
+}
+
+.tuesdayTabInactive_JanuaryB {
+    background: #0e4358;
+    color: #4e565e;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 2px 25px 2px 15px;
+    transition: all 0.5s linear;
+}
+
+.tuesdayContent_JanuaryB {
+    background: transparent;
+    height: 80vh;
+    width: 100%;
+}
+
+.tuesdayContentContent_JanuaryB {
+    background: #cce2f3;
+    height: 80vh;
+    opacity: 0.85;
+    overflow-x: hidden;
+    overflow-Y: auto;
+    width: 105%;
+}
+
+.tuesdayReaderNavigationButtons_JanuaryB {
+    background: #98c5e6;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: flex-start;
+    margin: 0 0 0 0;
+    position: fixed;
+    width: 100%;
+    z-index: 15;
+}
+
+.markAllReadTextTuesday_JanuaryB {
+    color: #002e44;
+    font-family: 'Crimson Pro', serif;
+    font-size: 24px;
+    margin: 35px 10px 0 40px;
+}
+
+.tuesdayTrackProgress_JanuaryB {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    cursor: pointer;
+    display: block;
+    font-size: 48px;
+    margin: 15px 1px 15px 5px;
+    padding-left: 35px;
+    position: relative;
+    user-select: none;
+}
+
+.tuesdayTrackProgress_JanuaryB input {
+    cursor: pointer;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    width: 0;
+}
+
+.tuesdayCheckbox_JanuaryBtrue {
+    background-color: #25a8dc;
+    border: none;
+    height: 10px;
+    left: 0;
+    position: absolute;
+    top: 15px;
+    transform: translateX(0) translateY(5px);
+    transition: all 0.3s linear;
+    width: 50px;
+}
+
+.tuesdayCheckbox_JanuaryBfalse {
+    background-color: #0e4358;
+    border: none;
+    height: 10px;
+    left: 0;
+    position: absolute;
+    top: 15px;
+    transform: translateX(0px) translateY(5px);
+    transition: all 0.3s linear;
+    width: 50px;
+}
+
+.tuesdaySwitchUnchecked_JanuaryBtrue {
+    background-color: #002e44;
+    border-radius: 100%;
+    height: 25px;
+    left: 25px;
+    position: absolute;
+    top: 0;
+    transform: translateY(-7px);
+    transition: all 0.2s linear;
+    width: 25px;
+}
+
+.tuesdaySwitchUnchecked_JanuaryBfalse {
+    background-color: #4e565e;
+    border-radius: 100%;
+    height: 25px;
+    left: 0px;
+    position: absolute;
+    top: 0;
+    transform: translateY(-7px);
+    transition: all 0.2s linear;
+    width: 25px;
+}
+
+.tuesdayReadAll_JanuaryB {
+    color: #002e44;
+    font-family: 'Crimson Pro', serif;
+    font-size: 24px;
+    margin: 14px 0 14px 25px;
+}
+
+.tuesdayReadAllButton_JanuaryB {
+    background: #3c4e5c;
+    border: transparent;
+    color: #b1d9ed;
+    cursor: pointer;
+    font-family: 'Crimson Pro', serif;
+    font-size: 36px;
+    height: 60px;
+    outline-color: #b1d9ed;
+    transform: skewX(-15deg);
+    transition: all 0.5s linear;
+    width: 60px;
+}
+
+.tuesdayReadAllButton_JanuaryB:hover {
+    background: #0073ac;
+    color: #002e44;
+    outline-color: #002e44;
+    transform: skewX(-5deg);
+    transition: all 0.5s linear;
+}
+
+.tuesdayReadAllButton_JanuaryB:active {
+    background: #002e44;
+    color: #0073ac;
+    outline-color: #0073ac;
+}
+
+.tuesdaySorting_JanuaryB {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 14px 0 14px 100px;
+}
+
+.tuesdaySorting_JanuaryB p {
+    color: #002e44;
+    font-family: 'Crimson Pro', serif;
+    font-size: 18px;
+    margin: 20px 20px 0 0;
+}
+
+.tuesdaySorting_JanuaryB button {
+    margin: 0 5px;
+}
+
+.tuesdayFeedsDiv_JanuaryB {
+    height: auto;
+    margin: 90px 50px 0 50px;
+    width: 90%;
+}
+
+.tuesdaySubscriptions_JanuaryB {
+    cursor: pointer;
+    margin: 10px;
+}
+
+.tuesdayBuffer_JanuaryB {
+    height: 20px;
+    width: 100%;
+}
+
+.tuesdayFeedContainer_JanuaryB {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 5px 5px 5px -15px;
+}
+
+.tuesdaySubIcon_JanuaryB {
+    height: 65px;
+    margin-right: 20px;
+    transition: all 0.5s linear;
+    width: 65px;
+}
+
+.tuesdaySubscriptionTitle_JanuaryB {
+    color: #002e44;
+    font-family: 'Crimson Pro', serif;
+    font-size: 18px;
+    line-height: 1.2;
+    margin: 5px 0 10px 0;
+    width: 650px;
+}
+
+.tuesdayUnreadText_JanuaryB {
+    color: #002e44;
+    font-family: 'Crimson Pro', serif;
+    font-size: 18px;
+    margin: 10px 40px 0 30px;
+    width: 35px;
+}
+
+.tuesdayReadText_JanuaryB {
+    color: #002e44;
+    font-family: 'Crimson Pro', serif;
+    font-size: 18px;
+    margin: 10px 40px 0 30px;
+    width: 35px;
+}
+
+.tuesdayManageTabsButton_JanuaryB {
+    background: #3c4e5c;
+    border: transparent;
+    color: #b1d9ed;
+    cursor: pointer;
+    font-family: 'Crimson Pro', serif;
+    font-size: 24px;
+    height: 40px;
+    margin: 56px 0 0 20%;
+    outline-color: #b1d9ed;
+    position: relative;
+    transform: skewX(-15deg);
+    transition: all 0.5s linear;
+    width: auto;
+}
+
+.tuesdayManageTabsButton_JanuaryB:hover {
+    background: #0073ac;
+    color: #002e44;
+    outline-color: #002e44;
+    transform: skewX(-5deg);
+    transition: all 0.5s linear;
+}
+
+.tuesdayManageTabsButton_JanuaryB:active {
+    background: #002e44;
+    color: #0073ac;
+    outline-color: #0073ac;
+}
+
+.tuesdayManageTabsSubsModal_JanuaryB {
+    background: #e2ecf6;
+    border: solid 5px #63b2db;
+    filter: blur(0px);
+    height: 90vh;
+    left: 2%;
+    opacity: 1;
+    position: absolute;
+    top: 5vh;
+    transition: all 0.4s linear;
+    width: 95%;
+    z-index: 50;
+}
+
+.tuesdayManageTabsSubsModalBlur_JanuaryB {
+    background: #e2ecf6;
+    border: solid 5px #63b2db;
+    filter: blur(5px);
+    height: 90vh;
+    left: 2%;
+    opacity: 0.4;
+    position: absolute;
+    top: 5vh;
+    transition: all 0.4s linear;
+    width: 95%;
+    z-index: 50;
+}
+
+.tuesdayManageTabsSubsModalInactive_JanuaryB {
+    opacity: 0;
+    top: -80vh;
+    transition: all 0.4s linear;
+    z-index: -5;
+}
+
+.tuesdayManageTitleBar_JanuaryB {
+    background: #002e44;
+    color: #e2ecf6;
+    font-family: 'Crimson Pro', serif;
+    height: 6vh;
+    opacity: 0.9;
+    position: relative;
+    padding: 1vh 0 2vh 1vw;
+    width: 99%;
+}
+
+.tuesdayModalExit_JanuaryB {
+    color: #e2ecf6;
+    cursor: pointer;
+    font-family: 'Crimson Pro', serif;
+    font-size: 48px;
+    float: left;
+    left: 94%;
+    position: relative;
+    top: 1%;
+}
+
+.tuesdayManageTitle_JanuaryB {
+    color: #e2ecf6;
+    font-family: 'Crimson Pro', serif;
+    font-size: 30px;
+    margin: 20px 0 0 0;
+}
+
+.tuesdayManagerModalContainer_JanuaryB {
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    height: 81vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.tuesdayManagerTabsSection_JanuaryB {
+    height: auto;
+    padding: 15px;
+    position: relative;
+    width: 30%;
+}
+
+.tuesdayTabsManageTitle_JanuaryB {
+    color: #002e44;
+    font-family: 'Crimson Pro', serif;
+    font-size: 24px;
+}
+
+.tuesdayManageTabsContainer_JanuaryB {
+    margin: 40px 8%;
+}
+
+.tuesdayTabManageTab_JanuaryB {
+    color: #002e44;
+    cursor: pointer;
+    font-family: 'Crimson Pro', serif;
+    font-size: 24px;
+    margin: 15px 0 15px 10px;
+}
+
+.tuesdayTabManageSubTab_JanuaryB {
+    color: #002e44;
+    cursor: pointer;
+    font-family: 'Crimson Pro', serif;
+    font-size: 15px;
+    margin: 1px 0 30px 40px;
+    width: 10%;
+}
+
+.tuesdayManagerSubscriptionsSection_JanuaryB {
+    height: auto;
+    padding: 15px;
+    position: relative;
+    width: 30%;
+}
+
+.tuesdayTabsSubscriptionTitle_JanuaryB {
+    color: #002e44;
+    font-family: 'Crimson Pro', serif;
+    font-size: 24px;
+}
+
+.tuesdayManageSubIcon_JanuaryB {
+    height: 40px;
+    width: 40px;
+}
+
+.tuesdaySubManageSubTab_JanuaryB {
+    color: #002e44;
+    cursor: pointer;
+    font-family: 'Crimson Pro', serif;
+    font-size: 15px;
+    margin: 4px 0 1px 10px;
+    transform: translateX(100px) translateY(-40px);
+    width: 10%;
+}
+
+.tuesdayManageSubsTitles_JanuaryB {
+    color: #002e44;
+    font-family: 'Crimson Pro', serif;
+    font-size: 18px;
+    margin: -15px 0 30px 1px;
+}
+
+.tuesdayManagerFeedsSection_JanuaryB {
+    height: auto;
+    padding: 15px;
+    position: relative;
+    width: 30%;
+}
+
+.tuesdayManagerFeedsTitle_JanuaryB {
+    color: #002e44;
+    font-family: 'Crimson Pro', serif;
+    font-size: 24px;
+}
+
+.tuesdayManageSearch_JanuaryB {
+    background: #92d4ee;
+    border: none;
+    color: #002e44;
+    float: left;
+    font-family: 'Crimson Pro', serif;
+    font-size: 18px;
+    margin-top: 3px;
+    outline-color: #002e44;
+    padding-left: 5px;
+    width: 100%;
+}
+
+.tuesdayManageSubsTitlesFeeds_JanuaryB {
+    color: #002e44;
+    font-family: 'Crimson Pro', serif;
+    font-size: 18px;
+    margin: -15px 0 30px 1px;
+}
+
+.tuesdayCreateEditTabManagement_JanuaryB {
+    background: #80b9d6;
+    border: solid 5px #4e565e;
+    height: auto;
+    left: 22%;
+    opacity: 1;
+    padding: 45px;
+    position: absolute;
+    top: 25vh;
+    transition: all 0.4s linear;
+    width: 50%;
+    z-index: 60;
+}
+
+.tuesdayCreateEditTabTitle_JanuaryB {
+    color: #002e44;
+    font-family: 'Crimson Pro', serif;
+    font-size: 24px;
+    margin: 15px 0 30px 25px;
+}
+
+.tuesdayTabEditorFields_JanuaryB {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin: 10px 0 0 60px;
+}
+
+.tuesdayTabNameLabel_JanuaryB {
+    color: #002e44;
+    font-family: 'Crimson Pro', serif;
+    font-size: 18px;
+    margin: 0 9px 0 0;
+}
+
+.tuesdayTabNameInput_JanuaryB {
+    background: #e2ecf6;
+    border: none;
+    color: #002e44;
+    font-family: 'Crimson Pro', serif;
+    font-size: 18px;
+    height: 21px;
+    margin: 0 9px;
+    outline: #002e44;
+    width: 350px;
+}
+
+.tuesdayTabEditorPodcastBlogStatus_JanuaryB {
+    margin: -13px 0 0 40px;
+}
+
+#tuesdayUnreadText_JanuaryB {
+    color: #002e44;
+}
+
+#tuesdayReadText_JanuaryB {
+    color: #002e44;
+}
+
+.tuesdayTabEditorFields_JanuaryB {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin: 10px 0 0 60px;
+}
+
+.tuesdayTabEditorErrorMessage_JanuaryB {
+    color: #0073ac;
+    font-family: 'Crimson Pro', serif;
+    font-size: 18px;
+    margin-left: 120px;
+    margin-top: 20px;
+}
+
+.tuesdayManageTabsConfirmButton_JanuaryB {
+    background: #3c4e5c;
+    border: transparent;
+    color: #b1d9ed;
+    cursor: pointer;
+    font-family: 'Crimson Pro', serif;
+    font-size: 18px;
+    height: 40px;
+    margin: 56px 0 0 5%;
+    outline-color: #b1d9ed;
+    position: relative;
+    transform: skewX(-15deg);
+    transition: all 0.5s linear;
+    width: auto;
+}
+
+.tuesdayManageTabsConfirmButton_JanuaryB:hover {
+    background: #0073ac;
+    color: #002e44;
+    outline-color: #002e44;
+    transform: skewX(-5deg);
+    transition: all 0.5s linear;
+}
+
+.tuesdayManageTabsConfirmButton_JanuaryB:active {
+    background: #002e44;
+    color: #0073ac;
+    outline-color: #0073ac;
+}
+
+.tuesdayManageTabsSubmitCancelButton_JanuaryB {
+    background: #3c4e5c;
+    border: transparent;
+    color: #b1d9ed;
+    cursor: pointer;
+    font-family: 'Crimson Pro', serif;
+    font-size: 18px;
+    height: 40px;
+    margin: 56px 0 0 20%;
+    outline-color: #b1d9ed;
+    position: relative;
+    transform: skewX(-15deg);
+    transition: all 0.5s linear;
+    width: auto;
+}
+
+.tuesdayManageTabsSubmitCancelButton_JanuaryB:hover {
+    background: #0073ac;
+    color: #002e44;
+    outline-color: #002e44;
+    transform: skewX(-5deg);
+    transition: all 0.5s linear;
+}
+
+.tuesdayManageTabsSubmitCancelButton_JanuaryB:active {
+    background: #002e44;
+    color: #0073ac;
+    outline-color: #0073ac;
+}
+
+.tuesdayGuardRail_JanuaryB {
+    background: #98c5e6;
+    border: solid 5px #274757;
+    height: auto;
+    left: 32%;
+    opacity: 1;
+    padding: 45px;
+    position: absolute;
+    top: 25vh;
+    transition: all 0.4s linear;
+    width: 30%;
+    z-index: 60;
+}
+
+.tuesdayGuardRailText_JanuaryB {
+    color: #002e44;
+    font-family: 'Crimson Pro', serif;
+    font-size: 24px;
+    margin: 15px 0 30px 25px;
+}
+
+.tuesdayGuardRailButtons_JanuaryB {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin: 10px 0 0 60px;
+}
+
+.hubReaderDay1TuesdayActive_JanuaryB {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/january/xu-haiwei-RDLQMrWY5WA-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay1TuesdayInactive_JanuaryB {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/january/xu-haiwei-RDLQMrWY5WA-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-115%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay2TuesdayActive_JanuaryB {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/january/xu-haiwei-RDLQMrWY5WA-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay2TuesdayInactive_JanuaryB {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/january/xu-haiwei-RDLQMrWY5WA-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-230%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay3TuesdayActive_JanuaryB {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/january/xu-haiwei-RDLQMrWY5WA-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay3TuesdayInactive_JanuaryB {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/january/xu-haiwei-RDLQMrWY5WA-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-345%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay4TuesdayActive_JanuaryB {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/january/xu-haiwei-RDLQMrWY5WA-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay4TuesdayInactive_JanuaryB {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/january/xu-haiwei-RDLQMrWY5WA-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-460%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay5TuesdayActive_JanuaryB {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/january/xu-haiwei-RDLQMrWY5WA-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 3;
+}
+
+.hubReaderDay5TuesdayInactive_JanuaryB {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/january/xu-haiwei-RDLQMrWY5WA-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-575%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay6TuesdayActive_JanuaryB {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/january/xu-haiwei-RDLQMrWY5WA-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay6TuesdayInactive_JanuaryB {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/january/xu-haiwei-RDLQMrWY5WA-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-690%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay7TuesdayActive_JanuaryB {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/january/xu-haiwei-RDLQMrWY5WA-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay7TuesdayInactive_JanuaryB {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/january/xu-haiwei-RDLQMrWY5WA-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-705%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
