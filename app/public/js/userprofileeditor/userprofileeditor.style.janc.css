@@ -1,5 +1,5 @@
-.profileBackgroundDiv_JanuaryB {
-    background: url(https://habits168-hurdaudio.s3.amazonaws.com/user_profile_editor/january/ice-2631373_1920.jpg);
+.profileBackgroundDiv_JanuaryC {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/user_profile_editor/january/greenland-889764_1920.jpg);
     background-size: 100%;
     height: 100%;
     left: 0;
@@ -12,39 +12,38 @@
     z-index: -1;
 }
 
-.profileEditorContent_JanuaryB {
+.profileEditorContent_JanuaryC {
     transition: all 0.4s linear;
 }
 
-.profileEditorContentBlur_JanuaryB {
+.profileEditorContentBlur_JanuaryC {
     filter: blur(15px);
     transition: all 0.4s linear;
 }
 
-.profileBanner_JanuaryB {
-    backdrop-filter: blur(10px) hue-rotate(5deg);
-    height: 15vh;
+.profileBanner_JanuaryC {
+    backdrop-filter: blur(10px) hue-rotate(90deg);
+    height: 12vh;
     width: 100%;
 }
 
-.profileIcon_JanuaryB {
+.profileIcon_JanuaryC {
     cursor: pointer;
-    filter: brightness(80%);
     float: left;
-    margin: 5px 25px;
+    margin: 25px 25px;
     max-height: 15vh;
     max-width: 5%;
 }
 
-.profileBannerTitle_JanuaryB {
-    color: #22060d;
+.profileBannerTitle_JanuaryC {
+    color: #10181f;
     float: left;
-    font-family: 'Sarabun', sans-serif;
+    font-family: 'Caladea', sans-serif;
     font-size: 54px;
     margin: 25px 0 4px 50px;
 }
 
-.profileEditorContentContainer_JanuaryB {
+.profileEditorContentContainer_JanuaryC {
     align-items: center;
     display: grid;
     grid-template-columns: [leftMargin] 60px [first] 300px [second] 1fr [third] 1fr [fourth] 1fr [fifth] 1fr [sixth] 1fr [seventh] 1fr [fin] 0;
@@ -53,10 +52,10 @@
     width: 100%;
 }
 
-.profileBasicContentContainer_JanuaryB {
+.profileBasicContentContainer_JanuaryC {
     backdrop-filter: hue-rotate(180deg);
     display: initial;
-    font-family: 'Sarabun', sans-serif;
+    font-family: 'Caladea', sans-serif;
     font-size: 18px;
     grid-column: first / second;
     grid-row: line2 / line5;
@@ -64,59 +63,59 @@
     width: 100%;
 }
 
-.profileEditorAvatarDisplay_JanuaryB {
+.profileEditorAvatarDisplay_JanuaryC {
     height: 300px;
     width: 300px;
 }
 
-.profileAvatarChangeButton_JanuaryB {
-    background: #4d5c31;
+.profileAvatarChangeButton_JanuaryC {
+    background: #2a3d4e;
     border: none;
-    color: #242a2d;
+    color: #10181f;
     cursor: pointer;
-    font-family: 'Sarabun', sans-serif;
+    font-family: 'Caladea', sans-serif;
     font-size: 18px;
     margin: 15px 0 15px 29%;
-    outline-color: #242a2d;
+    outline-color: #10181f;
     transform: skewX(-15deg);
     transition: all 0.4s linear;
 }
 
-.profileAvatarChangeButton_JanuaryB:hover {
-    background: #abb690;
-    color: #22060d;
-    outline-color: #22060d;
+.profileAvatarChangeButton_JanuaryC:hover {
+    background: #bcb8af;
+    color: #302d25;
+    outline-color: #302d25;
     transform: skewX(-5deg);
     transition: all 0.4s linear;
 }
 
-.profileAvatarChangeButton_JanuaryB:active {
-    background: #22060d;
-    color: #abb690;
-    outline-color: #abb690;
+.profileAvatarChangeButton_JanuaryC:active {
+    background: #302d25;
+    color: #bcb8af;
+    outline-color: #bcb8af;
     transition: all 0.1s linear;
 }
 
-.profileEditLabel_JanuaryB {
-    color: #22060d;
+.profileEditLabel_JanuaryC {
+    color: #10181f;
     margin: 65px;
 }
 
-.profileEditNameInput_JanuaryB {
-    background: #8c9aa3;
+.profileEditNameInput_JanuaryC {
+    background: #acb7c5;
     border: none;
-    color: #1e2413;
-    font-family: 'Sarabun', sans-serif;
+    color: #10181f;
+    font-family: 'Caladea', sans-serif;
     font-size: 18px;
     margin: 5px 65px;
-    outline-color: #1e2413;
+    outline-color: #10181f;
     padding: 0 0 0 15px;
 }
 
-.profileExpandedContentContainer_JanuaryB {
+.profileExpandedContentContainer_JanuaryC {
     backdrop-filter: blur(4px) hue-rotate(35deg);
     display: initial;
-    font-family: 'Sarabun', sans-serif;
+    font-family: 'Caladea', sans-serif;
     font-size: 18px;
     grid-column: third / seventh;
     grid-row: line2 / line5;
@@ -126,97 +125,93 @@
     width: 100%;
 }
 
-.profileEditorBirthdateDiv_JanuaryB {
-    background: #c6cdd1;
-    border-bottom: 1px solid #560f21;
+.profileEditorBirthdateDiv_JanuaryC {
+    background: #a1a99c;
+    border-bottom: 1px solid #302d25;
     opacity: 0.6;
     padding: 12px;
     transition: all 0.1s linear;
 }
 
-.profileEditorBirthdateDiv_JanuaryB:hover {
+.profileEditorBirthdateDiv_JanuaryC:hover {
     opacity: 1;
     transition: all 0.1s linear;
 }
 
-.profileEditBirthdateInput_JanuaryB {
+.profileEditBirthdateInput_JanuaryC {
     background: transparent;
     border: none;
-    color: #1e2413;
-    font-family: 'Sarabun', sans-serif;
+    color: #10181f;
+    font-family: 'Caladea', sans-serif;
     font-size: 18px;
     margin: 7px 0 7px 80px;
-    outline-color: #1e2413;
+    outline-color: #10181f;
     padding: 0 0 0 5px;
 }
 
-.profileEditorPublicSwitch_JanuaryB {
+.profileEditorPublicSwitch_JanuaryC {
     cursor: pointer;
     float: right;
     margin-right: 20%;
     width: 19%;
 }
 
-.profileEditorPublicSwitchSlotOn_JanuaryB {
-    background: #576c21;
-    border-radius: 15px 2px 15px 2px;
+.profileEditorPublicSwitchSlotOn_JanuaryC {
+    background: #38507c;
     filter: brightness(150%);
-    height: 45px;
+    height: 35px;
     right: 5px;
     perspective: 100px;
     position: sticky;
     top: 4px;
-    transform: rotateX(45deg) rotateY(45deg);
-    width: 45px;
+    width: 35px;
 }
 
-.profileEditorPublicSwitchSlotOff_JanuaryB {
-    background: #560f21;
-    border-radius: 2px 15px 2px 15px;
+.profileEditorPublicSwitchSlotOff_JanuaryC {
+    background: #40433e;
     filter: brightness(80%);
-    height: 45px;
+    height: 35px;
     right: 5px;
     perspective: 0;
     position: sticky;
     top: 4px;
-    transform: rotateX(45deg) rotateY(-45deg);
-    width: 45px;
+    width: 35px;
 }
 
-.profileEditorPublicPrivateLabel_JanuaryB {
+.profileEditorPublicPrivateLabel_JanuaryC {
     float: right;
-    font-family: 'Sarabun', sans-serif;
+    font-family: 'Caladea', sans-serif;
     font-size: 30px;
-    transform: translateX(30px) translateY(-50px);
+    transform: translateX(30px) translateY(-30px);
 }
 
-.profileEditorBioDiv_JanuaryB {
-    background: #c6cdd1;
-    border-bottom: 1px solid #560f21;
+.profileEditorBioDiv_JanuaryC {
+    background: #a1a99c;
+    border-bottom: 1px solid #302d25;
     opacity: 0.6;
     padding: 12px;
     transition: all 0.1s linear;
 }
 
-.profileEditorBioDiv_JanuaryB:hover {
+.profileEditorBioDiv_JanuaryC:hover {
     opacity: 1;
     transition: all 0.1s linear;
 }
 
-.profileEditorBioInput_JanuaryB {
-    background: #8c9aa3;
+.profileEditorBioInput_JanuaryC {
+    background: #acb7c5;
     border: none;
-    color: #1e2413;
-    font-family: 'Sarabun', sans-serif;
+    color: #10181f;
+    font-family: 'Caladea', sans-serif;
     font-size: 18px;
     margin: 0 30px 4px 80px;
-    outline-color: #1e2413;
+    outline-color: #10181f;
     padding: 0 0 0 15px;
     position: relative;
     width: 70%;
 }
 
-.profileEditorLocationDiv_JanuaryB {
+.profileEditorLocationDiv_JanuaryC {
     background: #c6cdd1;
     border-bottom: 1px solid #560f21;
     opacity: 0.6;
@@ -224,71 +219,71 @@
     transition: all 0.1s linear;
 }
 
-.profileEditorLocationDiv_JanuaryB:hover {
+.profileEditorLocationDiv_JanuaryC:hover {
     opacity: 1;
     transition: all 0.1s linear;
 }
 
-.profileEditorChangeLocationButtonDiv_JanuaryB {
+.profileEditorChangeLocationButtonDiv_JanuaryC {
     float: right;
     margin: 50px 0 0 10px;
     left: 15%;
 }
 
-.profileEditorChangeLocationButton_JanuaryB {
-    background: #4d5c31;
+.profileEditorChangeLocationButton_JanuaryC {
+    background: #2a3d4e;
     border: none;
-    color: #242a2d;
+    color: #10181f;
     cursor: pointer;
-    font-family: 'Sarabun', sans-serif;
+    font-family: 'Caladea', sans-serif;
     font-size: 18px;
     margin: 15px 0 15px 29%;
-    outline-color: #242a2d;
+    outline-color: #10181f;
     transform: skewX(-15deg);
     transition: all 0.4s linear;
 }
 
-.profileEditorChangeLocationButton_JanuaryB:hover {
-    background: #abb690;
-    color: #22060d;
-    outline-color: #22060d;
+.profileEditorChangeLocationButton_JanuaryC:hover {
+    background: #bcb8af;
+    color: #302d25;
+    outline-color: #302d25;
     transform: skewX(-5deg);
     transition: all 0.4s linear;
 }
 
-.profileEditorChangeLocationButton_JanuaryB:active {
-    background: #22060d;
-    color: #abb690;
-    outline-color: #abb690;
+.profileEditorChangeLocationButton_JanuaryC:active {
+    background: #302d25;
+    color: #bcb8af;
+    outline-color: #bcb8af;
     transition: all 0.1s linear;
 }
 
-.profileEditorLocationDatas_JanuaryB {
+.profileEditorLocationDatas_JanuaryC {
     padding: 10px 0 10px 90px;
     width: 90%;
 }
 
-.profileEditorLocationName_JanuaryB {
-    font-family: 'Sarabun', sans-serif;
+.profileEditorLocationName_JanuaryC {
+    font-family: 'Caladea', sans-serif;
     font-size: 24px;
 }
 
-.profileEditorLocationDatapoint_JanuaryB {
-    font-family: 'Sarabun', sans-serif;
+.profileEditorLocationDatapoint_JanuaryC {
+    font-family: 'Caladea', sans-serif;
     font-size: 18px;
     margin: 5px 0 5px 30px;
 }
 
-.profileEditorSchoolDeleter_JanuaryB {
+.profileEditorSchoolDeleter_JanuaryC {
     color: #22060d;
     cursor: pointer;
     float: left;
     margin: 0 0 0 60px;
 }
 
-.profileEditorAvatarModal_JanuaryB {
-    background: #8c9aa3;
-    border: 2px solid #560f21;
+.profileEditorAvatarModal_JanuaryC {
+    background: #959ea7;
+    border: 2px solid #302d25;
     height: auto;
     left: 10%;
     padding: 30px;
@@ -299,9 +294,9 @@
     width: 80%;
 }
 
-.profileEditorAvatarModalInactive_JanuaryB {
-    background: #8c9aa3;
-    border: 2px solid #560f21;
+.profileEditorAvatarModalInactive_JanuaryC {
+    background: #959ea7;
+    border: 2px solid #302d25;
     height: auto;
     left: 20%;
     padding: 30px;
@@ -312,46 +307,46 @@
     width: 80%;
 }
 
-.profileEditorAvatarPathInput_JanuaryB {
-    background: #bac0c5;
+.profileEditorAvatarPathInput_JanuaryC {
+    background: #acb7c5;
     border: none;
-    color: #1e2413;
-    font-family: 'Sarabun', sans-serif;
+    color: #10181f;
+    font-family: 'Caladea', sans-serif;
     font-size: 18px;
-    outline-color: #1e2413;
+    outline-color: #10181f;
     padding: 4px 0 4px 4px;
     width: 300px;
 }
 
-.profileAvatarModalButton_JanuaryB {
-    background: #4d5c31;
+.profileAvatarModalButton_JanuaryC {
+    background: #2a3d4e;
     border: none;
-    color: #242a2d;
+    color: #10181f;
     cursor: pointer;
-    font-family: 'Sarabun', sans-serif;
+    font-family: 'Caladea', sans-serif;
     font-size: 18px;
     margin: 15px 0 15px 29%;
-    outline-color: #242a2d;
+    outline-color: #10181f;
     transform: skewX(-15deg);
     transition: all 0.4s linear;
 }
 
-.profileAvatarModalButton_JanuaryB:hover {
-    background: #abb690;
-    color: #22060d;
-    outline-color: #22060d;
+.profileAvatarModalButton_JanuaryC:hover {
+    background: #bcb8af;
+    color: #302d25;
+    outline-color: #302d25;
     transform: skewX(-5deg);
     transition: all 0.4s linear;
 }
 
-.profileAvatarModalButton_JanuaryB:active {
-    background: #22060d;
-    color: #abb690;
-    outline-color: #abb690;
-    transition: all 0.1s linear;
+.profileAvatarModalButton_JanuaryC:active {
+    background: #302d25;
+    color: #bcb8af;
+    outline-color: #bcb8af;
+    transition: all 0.1s linear;88
 }
 
-.profileAvatarModalListDiv_JanuaryB {
+.profileAvatarModalListDiv_JanuaryC {
     background: transparent;
     float: right;
     height: 450px;
@@ -360,16 +355,16 @@
     width: 60%;
 }
 
-.profileModalAvatarListModals_JanuaryB {
+.profileModalAvatarListModals_JanuaryC {
     cursor: pointer;
     float: left;
     height: 80px;
     width: 80px;
 }
 
-.profileCityModal_JanuaryB {
-    background: #5c6971;
-    border: 2px solid #576c21;
+.profileCityModal_JanuaryC {
+    background: #ffebc2;
+    border: 2px solid #38507c;
     height: auto;
     left: 25%;
     padding: 30px;
@@ -380,9 +375,9 @@
     width: 50%;
 }
 
-.profileCityModalInactive_JanuaryB {
-    background: #5c6971;
-    border: 2px solid #576c21;
+.profileCityModalInactive_JanuaryC {
+    background: #ffebc2;
+    border: 2px solid #38507c;
     height: auto;
     left: 125%;
     padding: 30px;
@@ -393,20 +388,20 @@
     width: 50%;
 }
 
-.profileEditorCitySearchInput_JanuaryB {
-    background: #c6cdd1;
+.profileEditorCitySearchInput_JanuaryC {
+    background: #959ea7;
     border: none;
-    color: #22060d;
-    font-family: 'Sarabun', sans-serif;
+    color: #10181f;
+    font-family: 'Caladea', sans-serif;
     font-size: 18px;
     margin: 0 20% 10px 20%;
-    outline-color: #22060d;
+    outline-color: #10181f;
     padding: 4px 0 4px 4px;
     width: 60%;
 }
 
-.profileEditorCityList_JanuaryB {
-    background: #c6cdd1;
+.profileEditorCityList_JanuaryC {
+    background: #acb7c5;
     height: 65vh;
     margin: 0 20% 10px 20%;
     overflow-x: hidden;
@@ -415,28 +410,28 @@
     width: 60%;
 }
 
-#profileEditorCloseButton_JanuaryB {
+#profileEditorCloseButton_JanuaryC {
     margin-left: 45%;
 }
 
-#profileEditorFilterButton_JanuaryB {
+#profileEditorFilterButton_JanuaryC {
     margin-bottom: 8px;
     margin-left: 45%;
     margin-top: 0;
 }
 
-.profileCityData_JanuaryB {
-    color: #1e2413;
+.profileCityData_JanuaryC {
+    color: #10181f;
     cursor: pointer;
-    font-family: 'Sarabun', sans-serif;
+    font-family: 'Caladea', sans-serif;
     font-size: 18px;
     margin: 5px;
 }
 
-.profileEditorCityEntryDiv_JanuaryB {
+.profileEditorCityEntryDiv_JanuaryC {
     padding 2px 4px;
 }
 
-.profileEditorCityEntryDiv_JanuaryB:hover {
-    background: #8c9aa3;
+.profileEditorCityEntryDiv_JanuaryC:hover {
+    background: #a1a99c;
 }
