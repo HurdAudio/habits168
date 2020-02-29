@@ -1,0 +1,574 @@
+.externalsBackgroundDiv_FebruaryA {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/externals/backdrop/cherry_blossom_rainbow_by_jessicathamilton_dcjsfap-fullview.jpg);
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.externalsContainerActive_FebruaryA {
+    filter: blur(0px) hue-rotate(0deg);
+    transform: all 0.5s linear;
+}
+
+.externalsContainerInactive_FebruaryA {
+    filter: blur(5px) hue-rotate(180deg);
+    transform: all 0.5s linear;
+}
+
+.externalsTitleBar_FebruaryA {
+    background: linear-gradient(145deg, #cf9a88, #c2a9a2);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Be Vietnam', serif;
+    height: 12vh;
+    justify-content: flex-start;
+    opacity: 0.9;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.externalsLogo_FebruaryA {
+    cursor: pointer;
+    filter: drop-shadow(12px 8px 4px #34211b);
+    height: 100px;
+    margin: 1px 48px 1px 13px;
+    width: 100px;
+}
+
+.externalsTitle_FebruaryA {
+    color: #141217;
+    font-family: 'Be Vietnam', serif;
+    font-size: 42px;
+    transform: translateX(0.5vw) translateY(3.5vh);
+}
+
+.externalsBody_FebruaryA {
+    background: linear-gradient(145deg, #6380ce, #987000);
+    height: 87vh;
+    opacity: 0.9;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 24px;
+    width: 100%;
+}
+
+.externalsIssuesHeader_FebruaryA {
+    color: #080709;
+    font-family: 'Be Vietnam', serif;
+    font-size: 30px;
+}
+
+.externalManagementContainer_FebruaryA {
+    display: grid;
+    grid-template-columns: [leftBuffer] 10px [deleteColumn] 50px [readColumn] 120px [imageColumn] 150px [issueColumn] 1fr [rightBuffer] 10px;
+    grid-template-rows: [externalContent] auto [addNewContent] auto;
+    height: auto;
+    margin: 30px 0 15px 0;
+    width: 100%;
+}
+
+.externalsSwitchtrue_FebruaryA {
+    background: linear-gradient(145deg, #351c4d, #8547c2);
+    cursor: pointer;
+    display: inline-block;
+    filter: brightness(100%);
+    grid-column: readColumn / imageColumn;
+    grid-row: externalContent;
+    height: 15px;
+    margin: 35px 0 0 15px;
+    position: relative;
+    transition: all 0.3s linear;
+    width: 60px;
+}
+
+.externalsSwitchfalse_FebruaryA {
+    background: linear-gradient(145deg, #141217, #9f3410);
+    cursor: pointer;
+    display: inline-block;
+    filter: brightness(90%);
+    grid-column: readColumn / imageColumn;
+    grid-row: externalContent;
+    height: 15px;
+    margin: 35px 0 0 15px;
+    position: relative;
+    transition: all 0.3s linear;
+    width: 60px;
+}
+
+.externalsSwitchHandletrue_FebruaryA {
+    background: linear-gradient(145deg, #987000, #ccb880);
+    bottom: 2px;
+    border: 1px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/externals/backdrop/cherry_blossom_rainbow_by_jessicathamilton_dcjsfap-fullview.jpg) 30 round;
+    height: 35px;
+    left: 0;
+    position: absolute;
+    right: 2px;
+    top: -10px;
+    transition: all 0.3s linear;
+    width: 15px;
+}
+
+.externalsSwitchHandlefalse_FebruaryA {
+    background: linear-gradient(145deg, #3f1406, #34211b);
+    bottom: 2px;
+    border: 1px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/externals/backdrop/cherry_blossom_rainbow_by_jessicathamilton_dcjsfap-fullview.jpg) 30 round;
+    height: 35px;
+    left: 45px;
+    position: absolute;
+    right: 2px;
+    top: -10px;
+    transition: all 0.3s linear;
+    width: 15px;
+}
+
+.externalsSwitchText_FebruaryA {
+    color: #141217;
+    font-family: 'Be Vietnam', serif;
+    font-size: 18px;
+    margin: 28px 0 0 0;
+}
+
+.externalsImage_FebruaryA {
+    grid-column: imageColumn / issueColumn;
+    grid-row: externalContent;
+    max-height: 120px;
+    width: 100px;
+}
+
+.externalsReadingDatas_FebruaryA {
+    color: #080709;
+    font-family: 'Be Vietnam', serif;
+    font-size: 18px;
+    grid-column: issueColumn / rightBuffer;
+    grid-row: externalContent;
+    margin: 25px 0 0 0;
+}
+
+.externalsDelete_FebruaryA {
+    align-self: center;
+    color: #080709;
+    cursor: pointer;
+    font-size: 30px;
+    grid-column: deleteColumn / readColumn;
+    grid-row: externalContent;
+    justify-content: center;
+    transition: all 0.3s linear;
+}
+
+.externalsDelete_FebruaryA:hover {
+    color: #9f3410;
+    transition: all 0.3s linear;
+}
+
+.externalsAddNewContentDiv_FebruaryA {
+    color: #080709;
+    cursor: pointer;
+    margin: 70px 0 0 330px;
+    width: auto;
+}
+
+.externalsAddContentIcon_FebruaryA {
+    float: left;
+    font-size: 42px;
+    margin: 0 30px 0 0;
+    position: float;
+}
+
+.externalsAddNewText_FebruaryA {
+    float: left;
+    font-family: 'Be Vietnam', serif;
+    font-size: 24px;
+    margin: 5px 0 0 0;
+}
+
+.externalsDeleteGuardrailActive_FebruaryA {
+    background: #c2a9a2;
+    border: 1px solid #845345;
+    height: auto;
+    left: 25%;
+    opacity: 1;
+    position: absolute;
+    top: 15%;
+    transition: all 0.3s linear;
+    width: auto;
+    z-index: 10;
+}
+
+.externalsDeleteGuardrailInactive_FebruaryA {
+    background: #c2a9a2;
+    border: 1px solid #845345;
+    height: auto;
+    left: 175%;
+    opacity: 0;
+    position: absolute;
+    top: 105%;
+    transition: all 0.3s linear;
+    width: auto;
+    z-index: -10;
+}
+
+.externalsDeleteGuardrailTitleBar_FebruaryA {
+    background: #3c2c00;
+    border-bottom: 1px solid #080709;
+    height: auto;
+    padding: 6px 0;
+    width: 100%;
+}
+
+.externalsDeleteGuardrailTitle_FebruaryA {
+    color: #c2a9a2;
+    font-family: 'Be Vietnam', serif;
+    font-size: 30px;
+    margin-left: 40px;
+}
+
+.externalsGuardrailContainer_FebruaryA {
+    background: transparent;
+    display: grid;
+    grid-template-columns: [leftB] 10px [imgColumn] 120px [infoColumn] 1fr [rightB] 10px;
+    grid-template-rows: [title] auto [query] auto [buttons] auto;
+    height: auto;
+    padding: 12px;
+    width: 100%;
+}
+
+.externalsGuardrailBodyText_FebruaryA {
+    color: #080709;
+    font-family: 'Be Vietnam', serif;
+    font-size: 18px;
+    grid-column: imgColumn / rightB;
+    grid-row: title;
+}
+
+.externalsGuardrailImage_FebruaryA {
+    grid-column: imgColumn / infoColumn;
+    grid-row: query;
+    margin: 20px 0;
+    width: 100px;
+}
+
+.externalsGuardrailInfos_FebruaryA {
+    color: #080709;
+    font-family: 'Be Vietnam', serif;
+    font-size: 18px;
+    grid-column: infoColumn / rightB;
+    grid-row: query;
+    margin: 40px 0 20px 0;
+}
+
+.externalsGuardrailButtons_FebruaryA {
+    background: transparent;
+    grid-column: infoColumn / rightB;
+    grid-row: buttons;
+    height: auto;
+    justify-content: center;
+    margin: 0 0 0 16%;
+}
+
+.externalsGuardrailButtons_FebruaryA button {
+    background: linear-gradient(145deg, #9f6bb3, #cfb5d9);
+    border: none;
+    color: #3f2a47;
+    cursor: pointer;
+    filter: drop-shadow(10px 15px 4px #3f1406);
+    font-family: 'Be Vietnam', serif;
+    font-size: 24px;
+    margin: 10px 40px 20px 0;
+    outline-color: #3f2a47;
+    transition: all 0.6s linear;
+    width: 70px;
+}
+
+.externalsGuardrailButtons_FebruaryA button:hover {
+    background: linear-gradient(145deg, #3f1406, #9f3410);
+    color: #cf9a88;
+    filter: drop-shadow(9px 14px 3px #3f1406);
+    outline-color: #cf9a88;
+    transition: all 0.6s linear;
+}
+
+.externalsGuardrailButtons_FebruaryA button:active {
+    background: linear-gradient(145deg, #cf9a88, #9f3410);
+    color: #3f1406;
+    filter: drop-shadow(0 0 0 #3f1406);
+    transition: all 0.1s linear;
+}
+
+.externalsAddNewExternalsDialogActive_FebruaryA {
+    background: linear-gradient(145deg, #c2a9a2, #845345);
+    border: 1px solid #9f3410;
+    height: auto;
+    left: 10%;
+    opacity: 1;
+    position: absolute;
+    top: 0.5%;
+    transform: scale(1);
+    transition: all 0.6s linear;
+    width: 80%;
+    z-index: 10;
+}
+
+.externalsAddNewExternalsDialogInactive_FebruaryA {
+    background: linear-gradient(145deg, #c2a9a2, #845345);
+    border: 1px solid #9f3410;
+    height: auto;
+    left: -90%;
+    opacity: 0;
+    position: absolute;
+    top: 0.5%;
+    transform: scale(0.01);
+    transition: all 0.6s linear;
+    width: 80%;
+    z-index: -10;
+}
+
+.externalsAddNewTitleBar_FebruaryA {
+    background: linear-gradient(145deg, #34211b, #845345);
+    border-bottom: 1px solid #9f3410;
+    height: auto;
+    padding: 6px 0;
+    width: 100%;
+}
+
+.externalsAddNewTitle_FebruaryA {
+    color: #c2a9a2;
+    font-family: 'Be Vietnam', serif;
+    font-size: 30px;
+    margin-left: 40px;
+}
+
+.externalsAddNewBodyContainer_FebruaryA {
+    display: grid;
+    grid-template-columns: [leftAdd] 10px [formInput] 1fr [displayAdd] 1fr [rightAdd] 10px;
+    grid-template-rows: [errorMessaging] auto [userAdds] auto [buttonsAdds] auto;
+    height: auto;
+}
+
+.externalsAddErrorField_FebruaryA {
+    color: #ff0000;
+    font-family: 'Be Vietnam', serif;
+    font-size: 18px;
+    grid-column: formInput / rightAdd;
+    grid-row: errorMessaging;
+    margin: 15px 30px;
+}
+
+.externalsAddUserForm_FebruaryA {
+    background: transparent;
+    grid-column: formInput / displayAdd;
+    grid-row: userAdds;
+    height: auto;
+    margin: 0 0 30px 0;
+    padding: 24px 0;
+}
+
+.externalsAddUserForm_FebruaryA label {
+    color: #080709;
+    font-family: 'Be Vietnam', serif;
+    font-size: 18px;
+    margin: 15px 24px;
+}
+
+.externalsAddUserForm_FebruaryA input[type="text"] {
+    background: #cfb5d9;
+    border: 1px solid #3f2a47;
+    color: #080709;
+    font-family: 'Be Vietnam', serif;
+    font-size: 18px;
+    margin: 5px 24px;
+    outline-color: #080709;
+    padding: 0 5px;
+    width: 90%;
+}
+
+.externalsAddUserForm_FebruaryA textarea {
+    background: #cfb5d9;
+    border: 1px solid #3f2a47;
+    color: #080709;
+    font-family: 'Be Vietnam', serif;
+    font-size: 18px;
+    margin: 5px 24px;
+    outline-color: #080709;
+    padding: 0 5px;
+    width: 90%;
+}
+
+.externalsDisplayNewAddition_FebruaryA {
+    background: transparent;
+    grid-column: displayAdd / rightAdd;
+    grid-row: userAdds;
+    height: auto;
+    margin: 0 0 30px 0;
+    padding: 24px 0;
+}
+
+.externalsAddImage_FebruaryA {
+    margin: 0 0 0 36px;
+    max-height: 240px;
+    width: 150px;
+}
+
+.externalsAddCandidateTitle_FebruaryA {
+    color: #080709;
+    font-family: 'Be Vietnam', serif;
+    font-size: 24px;
+    margin: 24px;
+}
+
+.externalsAddExternalsButtons_FebruaryA {
+    background: transparent;
+    height: auto;
+    grid-column: formInput / rightAdd;
+    grid-row: buttonsAdds;
+    margin: 0 0 30px 0;
+}
+
+.externalsAddExternalsButtons_FebruaryA button {
+    background: linear-gradient(145deg, #9f6bb3, #cfb5d9);
+    border: none;
+    color: #3f2a47;
+    cursor: pointer;
+    filter: drop-shadow(10px 15px 4px #3f1406);
+    font-family: 'Be Vietnam', serif;
+    font-size: 24px;
+    margin: 10px 40px 20px 6%;
+    outline-color: #3f2a47;
+    transition: all 0.6s linear;
+    width: auto;
+}
+
+.externalsAddExternalsButtons_FebruaryA button:hover {
+    background: linear-gradient(145deg, #3f1406, #9f3410);
+    color: #cf9a88;
+    filter: drop-shadow(9px 14px 3px #3f1406);
+    outline-color: #cf9a88;
+    transition: all 0.6s linear;
+}
+
+.externalsAddExternalsButtons_FebruaryA button:active {
+    background: linear-gradient(145deg, #cf9a88, #9f3410);
+    color: #3f1406;
+    filter: drop-shadow(0 0 0 #3f1406);
+    transition: all 0.1s linear;
+}
+
+.hubReaderExternalsDay2BlockInactive_FebruaryA {
+    background: #82a1b5;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/externals/backdrop/cherry_blossom_rainbow_by_jessicathamilton_dcjsfap-fullview.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(250%) translateY(500%);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: -1;
+}
+
+.hubReaderExternalsDay2BlockActive_FebruaryA {
+    background: #82a1b5;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/externals/backdrop/cherry_blossom_rainbow_by_jessicathamilton_dcjsfap-fullview.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px) translateY(0px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 414px) {
+
+    .externalsTitle_FebruaryA {
+        font-size: 24px;
+    }
+
+    .externalsIssuesHeader_FebruaryA {
+        font-size: 18px;
+    }
+
+    .externalManagementContainer_FebruaryA {
+        grid-template-columns: [leftBuffer] 1px [deleteColumn] 25px [readColumn] 60px [imageColumn] 80px [issueColumn] 50% [rightBuffer] 14px;
+        grid-template-rows: [externalContent] auto [addNewContent] auto;
+        margin: 15px 0 7px 0;
+    }
+
+    .externalsDelete_FebruaryA {
+        font-size: 18px;
+    }
+
+    .externalsImage_FebruaryA {
+        margin-left: 15px;
+        max-height: 50px;
+        width: 40px;
+    }
+
+    .externalsSwitchfalse_FebruaryA {
+        height: 25px;
+        margin: 15px 15px 0 5px;
+        transform: scale(0.5);
+        width: 60px;
+    }
+
+    .externalsSwitchtrue_FebruaryA {
+        height: 25px;
+        margin: 15px 15px 0 5px;
+        transform: scale(0.5);
+        width: 60px;
+    }
+
+    .externalsReadingDatas_FebruaryA {
+        font-size: 12px;
+        margin: 25px 0 0 0;
+    }
+
+    .externalsAddNewContentDiv_FebruaryA {
+        margin: 70px 0 0 10px;
+    }
+
+    .externalsDeleteGuardrailActive_FebruaryA {
+        left: 0;
+        width: 100%;
+    }
+
+    .externalsAddNewExternalsDialogActive_FebruaryA {
+        left: 0;
+        width: 100%;
+    }
+
+    .externalsAddImage_FebruaryA {
+        margin: 0 0 0 36px;
+        max-height: 120px;
+        width: 75px;
+    }
+
+    .externalsAddUserForm_FebruaryA textarea {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+
+    .externalsTitle_FebruaryA {
+        font-size: 18px;
+    }
+}
