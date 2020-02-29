@@ -963,11 +963,29 @@
                 }
             }
         }
+        
+        function updateExternalsReadStatus(sub) {
+            let now = new Date();
+            $http.patch(`/externals/${sub.uuid}`, {
+                userRead: sub.userRead,
+                updated_at: now
+            });
+        }
 
         function navigateToHub() {
+            let now = new Date();
             let tabs = vm.mondayTabs.filter(entry => {
                 return ((entry.title !== 'Dailies') && (entry.title !== 'Externals'));
             });
+            let dailyTab = vm.mondayTabs.filter(entry => {
+                return (entry.title === 'Dailies');
+            });
+            let externalTab = vm.mondayTabs.filter(entry => {
+                return(entry.title === 'Externals');
+            });
+            for (let i = 0; i < externalTab[0].subscriptions.length; i++) {
+                updateExternalsReadStatus(externalTab[0].subscriptions[i]);
+            }
             $http.patch(`/monday_subscriptions/${vm.user.uuid}`, {
                     tabs: {
                         tabs: tabs
@@ -975,9 +993,18 @@
                     updated_at: new Date()
                 })
                 .then(() => {
-                    $state.go('userhub', {
-                        id: vm.user.uuid
-                    });
+                    $http.get(`/dailies/byuser/${vm.user.uuid}`)
+                        .then(userDailyData => {
+                            let userDaily = userDailyData.data;
+                            userDaily.dailies.dailies = dailyTab[0];
+                            userDaily.updated_at = now;
+                            $http.patch(`/dailies/${userDaily.uuid}`, userDaily)
+                                .then(() => {
+                                    $state.go('userhub', {
+                                        id: vm.user.uuid
+                                    });
+                                });
+                        });
                 });
 
         }
