@@ -13,7 +13,7 @@
         const vm = this;
 
         vm.$onInit = onInit;
-        vm.mondayMonth = '_FebruaryA';
+        vm.mondayMonth = '_FebruaryB';
         vm.mondayContainerState = 'mondayContainerActive' + vm.mondayMonth;
         vm.navigateToHub = navigateToHub;
         //        vm.mondayTabs = [

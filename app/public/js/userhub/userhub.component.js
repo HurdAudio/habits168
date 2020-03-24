@@ -83,7 +83,7 @@
         vm.hubContactSubmit = hubContactSubmit;
         vm.navigateToDay = navigateToDay;
         vm.navigateToToday = navigateToToday;
-        vm.mondayMonth = '_FebruaryA';
+        vm.mondayMonth = '_FebruaryB';
         vm.navigateToExternals = navigateToExternals;
         vm.externalsMonth = '_FebruaryA';
         vm.navigateToDailies = navigateToDailies;
