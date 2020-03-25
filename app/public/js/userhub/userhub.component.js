@@ -13,7 +13,7 @@
         const vm = this;
 
         vm.$onInit = onInit;
-        vm.monthSelect = '_FebruaryB';
+        vm.monthSelect = '_FebruaryC';
         vm.userLogout = userLogout;
         vm.browseMonth = '_JanuaryA'
         vm.hubShareTabState = 'hubTabActive' + vm.monthSelect;
