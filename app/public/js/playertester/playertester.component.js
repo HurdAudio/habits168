@@ -13,7 +13,6 @@
       const vm = this;
 
       vm.$onInit = onInit;
-      vm.playerMonth = '_FebruaryC';
       vm.playerFeeds = [
         {
           url: "https://feeds.buzzsprout.com/361115.rss",
@@ -29,20 +28,14 @@
       vm.aboutThisPodcastImage = vm.playerFeeds[vm.playerFeedsIndex].image;
       vm.aboutPodcastAuthor = ' - ' + vm.playerFeeds[vm.playerFeedsIndex].author;
       vm.aboutPodcastDescription = vm.playerFeeds[vm.playerFeedsIndex].description;
-      vm.playerMask = 'playerContainer' + vm.playerMonth;
-      vm.playPause = 'playerPlay' + vm.playerMonth;
+      
       vm.togglePlayPause = togglePlayPause;
       vm.userSliderPosition = userSliderPosition;
-      vm.aboutContainer = 'aboutContainerActive' + vm.playerMonth;
-      vm.episodeContainer = 'episodeContainerInactive' + vm.playerMonth;
-      vm.detailsContainer = 'detailsContainerInactive' + vm.playerMonth;
-      vm.aboutTabStatus = 'playerTabActive' + vm.playerMonth;
-      vm.episodeTabStatus = 'playerTabInactive' + vm.playerMonth;
-      vm.episodeDetailsTabStatus = 'playerTabInactive' + vm.playerMonth;
+      
       vm.isCurrentEpisodeIndex = isCurrentEpisodeIndex;
       vm.userSwitchCurrentEpisode = userSwitchCurrentEpisode;
       vm.tabClick = tabClick;
-      vm.playbackRateStatus = "playerAtSpeed1" + vm.playerMonth;
+      
       vm.rewindToStart = rewindToStart;
       vm.rewind15Seconds = rewind15Seconds;
       vm.fastForward15seconds = fastForward15seconds;
@@ -50,7 +43,7 @@
       vm.togglePlaybackRate = togglePlaybackRate;
       vm.updateRate = 1000;
       vm.playerShareOrSaveStatus = 'Share Episode:';
-      vm.shareSaveDialogStatus = 'shareSaveDivInactive' + vm.playerMonth;
+      
       vm.shareSaveDialog = shareSaveDialog;
       vm.viewCancelShareSaveLink = viewCancelShareSaveLink;
 
@@ -223,7 +216,7 @@
         let playerPlayPauseButton = document.getElementById('playerPlayPauseButton');
 
         playerAudioPlayer.currentTime = playerProgressSlider.value;
-        if (playerPlayPauseButton.className === 'playerPlay' +    vm.playerMonth) {
+        if (playerPlayPauseButton.className === 'playerPlay' + vm.playerMonth) {
           updateNumericalProgressDisplay();
         }
       }
@@ -329,16 +322,36 @@
           vm.currentEpisodeIndex = 0;
         });
       }
+        
+      function getSkins() {
+          $http.get('/skins/player')
+                .then(playerResultData => {
+                    vm.playerMonth = playerResultData.data.player;
+                    vm.playerMask = 'playerContainer' + vm.playerMonth;
+                    vm.playPause = 'playerPlay' + vm.playerMonth;
+                    vm.aboutContainer = 'aboutContainerActive' + vm.playerMonth;
+                    vm.episodeContainer = 'episodeContainerInactive' + vm.playerMonth;
+                    vm.detailsContainer = 'detailsContainerInactive' + vm.playerMonth;
+                    vm.aboutTabStatus = 'playerTabActive' + vm.playerMonth;
+                    vm.episodeTabStatus = 'playerTabInactive' + vm.playerMonth;
+                    vm.episodeDetailsTabStatus = 'playerTabInactive' + vm.playerMonth;
+                    vm.playbackRateStatus = "playerAtSpeed1" + vm.playerMonth;
+                    vm.shareSaveDialogStatus = 'shareSaveDivInactive' + vm.playerMonth;
+                });
+      }
 
 
       function onInit() {
         console.log("Player Test is lit");
+        getSkins();
         let playerProgressSlider = document.getElementById('playerProgressSlider');
         vm.feedIcon = vm.playerFeeds[vm.playerFeedsIndex].image;
         vm.podcastTitle = vm.playerFeeds[vm.playerFeedsIndex].title;
         vm.playerCurrentPosition = secondsConversion(0);
-
-        feedDatas();
+          
+        setTimeout(() => {
+           feedDatas(); 
+        }, 500);
 
       }
 
