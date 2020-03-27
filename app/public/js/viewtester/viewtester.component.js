@@ -178,7 +178,8 @@
         function getSkins() {
             $http.get('/skins/viewer')
                 .then(viewerResultData => {
-                    vm.viewMonth = viewerResultData.data.viewer;
+//                    vm.viewMonth = viewerResultData.data.viewer;
+                      vm.viewMonth = '_MarchA';
                     switch (vm.viewMonth) {
                         case ('_JanuaryA'):
                             vm.viewerSpinnerPath = 'https://habits168-hurdaudio.s3.amazonaws.com/viewer/spinners/jana_spinner.gif';
@@ -197,6 +198,9 @@
                             break;
                         case ('_FebruaryC'):
                             vm.viewerSpinnerPath = 'https://habits168-hurdaudio.s3.amazonaws.com/viewer/spinners/nested_spinners.gif';
+                            break;
+                        case ('_MarchA'):
+                            vm.viewerSpinnerPath = 'https://habits168-hurdaudio.s3.amazonaws.com/viewer/spinners/dc86e54ceca03be4-loading-spinner-animated-gif-83320-mediabin.gif';
                             break;
                         default:
                             alert('Error: unsupported viewMonth spinner set');
