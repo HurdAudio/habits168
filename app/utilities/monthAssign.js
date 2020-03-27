@@ -19,8 +19,8 @@ function generate(arr) {
     }
 }
 
-const days = 29;
-
+//const days = 31;
+//
 //let arr = ['_JanuaryA'];
 //
 //for (let i = 0; i < 10; i++) {
@@ -28,6 +28,8 @@ const days = 29;
 //    arr.push('_JanuaryB');
 //    arr.push('_JanuaryA')
 //}
+
+const days = 29
 
 let arr = [];
 
