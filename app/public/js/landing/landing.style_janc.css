@@ -15,6 +15,7 @@
 }
 
 .landingLogo_JanuaryC {
+  float: left;
   height: 100px;
   margin: 15px 10px 20px 20px;
   opacity: 0.8;
@@ -23,6 +24,7 @@
 
 .landingTitleDiv_JanuaryC {
   color: #1d1b20;
+  float: left;
   font-family: 'Sawarabi Mincho', sans-serif;
   font-size: 90px;
   padding: 30px;
