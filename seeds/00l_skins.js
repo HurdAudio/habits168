@@ -8,7 +8,7 @@ exports.seed = function (knex, Promise) {
                     uuid: '9fc176e3-91f8-4864-a996-01a101f88893',
                     skins: {
                         "landing": {
-                            "available": ['_JanuaryA', '_JanuaryB', '_JanuaryC', '_FebruaryA', '_FebruaryB', '_FebruaryC', '_MarchA'],
+                            "available": ['_JanuaryA', '_JanuaryB', '_JanuaryC', '_FebruaryA', '_FebruaryB', '_FebruaryC', '_MarchA', '_MarchB'],
                             "january": [31, '_JanuaryA', '_JanuaryB', '_JanuaryC', '_JanuaryA', '_JanuaryC', '_JanuaryC', '_JanuaryC', '_JanuaryC', '_JanuaryB', '_JanuaryB', '_JanuaryC', '_JanuaryB', '_JanuaryA', '_JanuaryB', '_JanuaryC', '_JanuaryB', '_JanuaryB', '_JanuaryB', '_JanuaryA', '_JanuaryA', '_JanuaryA', '_JanuaryC', '_JanuaryB', '_JanuaryB', '_JanuaryA', '_JanuaryA', '_JanuaryC', '_JanuaryA', '_JanuaryA', '_JanuaryC', '_JanuaryA'],
                             "february": [29, '_FebruaryC', '_FebruaryB', '_FebruaryC', '_FebruaryB', '_FebruaryA', '_FebruaryC', '_FebruaryA', '_FebruaryC', '_FebruaryA', '_FebruaryB', '_FebruaryB', '_FebruaryB', '_FebruaryB', '_FebruaryC', '_FebruaryA', '_FebruaryB', '_FebruaryB', '_FebruaryA', '_FebruaryB', '_FebruaryA', '_FebruaryC', '_FebruaryC', '_FebruaryB', '_FebruaryC', '_FebruaryA', '_FebruaryA', '_FebruaryC', '_FebruaryC', '_FebruaryA'],
                             "march": [31],

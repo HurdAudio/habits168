@@ -17,6 +17,7 @@
 .landingLogo_JanuaryB {
   cursor: none;
   filter: hue-rotate(0deg);
+  float: left;
   height: 150px;
   margin: 10px 10px 20px 20px;
   opacity: 0.8;
@@ -26,12 +27,14 @@
 
 .landingTitleDiv_JanuaryB {
   color: #dce3e9;
+  float: right;
   font-family: 'Carme', sans-serif;
   font-size: 120px;
   padding: 30px;
 }
 
 .landingTitleButtonsDiv_JanuaryB {
+  float: right;
   padding: 60px 5px 5px 7%;
   position: relative;
 }

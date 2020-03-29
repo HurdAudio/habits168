@@ -1,0 +1,1184 @@
+.backgroundDiv_MarchB {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/landing/march/michael-48yI_ZyzuLo-unsplash.jpg);
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+#landingContainer_MarchB {
+    align-items: center;
+    display: grid;
+    grid-template-areas:
+        "header""header""header""header""header"
+        "tabs""byline""content""content"
+        "tabs""byline""content""content"
+        . "footer""footer""footer""footer";
+    grid-template-columns: [first] 60px [second] 100px [third] 1fr [fourth] 1fr [fifth] 1fr [end];
+    grid-template-rows: [top] 150px [line2] 50px [line3] 50px [line4] 1fr [lineend];
+    justify-items: center;
+    width: 100%;
+}
+
+.landingTitleFlex_MarchB {
+    backdrop-filter: blur(13px) saturate(110%);
+    grid-area: header;
+    grid-column: first / end;
+    grid-row: top / line2;
+    width: 100%;
+}
+
+.landingLogo_MarchB {
+    filter: drop-shadow(8px 8px 16px #182b29);
+    float: left;
+    grid-area: header;
+    grid-column: first / third;
+    grid-row: top / line2;
+    height: 130px;
+    margin: 0 20px 0 30px;
+    max-width: 130px;
+    opacity: 0.9;
+}
+
+.landingTitleDiv_MarchB {
+    align-self: center;
+    color: #040302;
+    float: left;
+    grid-column: 3 / span 2;
+    grid-row: 1/ 2;
+    font-family: 'Faustina', serif;
+    font-size: 90px;
+    justify-self: center;
+    margin: 20px 20px 0 10px;
+}
+
+.landingTitleButtonsDiv_MarchB {
+    align-self: stretch;
+    float: left;
+    grid-area: header;
+    grid-column: 4/6;
+    grid-row: 1/2;
+    padding: 65px 5px 5px 25%;
+    width: auto;
+}
+
+.landingTitleButtonsDiv_MarchB button {
+    background: transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/landing/march/michael-48yI_ZyzuLo-unsplash.jpg) 15% stretch;
+    box-shadow: 8px 8px 16px #182b29;
+    color: #002036;
+    cursor: pointer;
+    filter: brightness(100%);
+    font-family: 'Faustina', serif;
+    font-size: 30px;
+    margin: 0 10px;
+    outline-color: transparent;
+    padding: 5px 15px;
+    perspective: 50px;
+    transition: all 0.3s linear;
+}
+
+.landingTitleButtonsDiv_MarchB button:hover {
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/landing/march/michael-48yI_ZyzuLo-unsplash.jpg) 25% stretch;
+    box-shadow: 8px 8px 20px #015089;
+    filter: brightness(130%);
+    transition: all 0.3s linear;
+}
+
+.landingTitleButtonsDiv_MarchB button:active {
+    box-shadow: 0 0 0 #000000;
+    outline-color: transparent;
+    transition: all 0.1s linear;
+}
+
+.landingRecentlySharedLinksCollapsed_MarchB {
+    display: none;
+}
+
+.landingRecentlySharedLinksUncollapsed_MarchB {
+    background: #a8bac7;
+    grid-column: 1 / end;
+    grid-row: 3 / span 4;
+    height: 73vh;
+    opacity: 0.9;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.landingRecentlySharedPostsUncollapsed_MarchB {
+    background: #a8bac7;
+    grid-column: 1 / end;
+    grid-row: 3 / span 4;
+    height: 73vh;
+    opacity: 0.9;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.landingRecentlySharedPostsCollapsed_MarchB {
+    display: none;
+}
+
+.landingShareContainer_MarchB {
+    color: #040302;
+    font-family: 'Faustina', serif;
+    height: auto;
+    position: relative;
+    width: 100%;
+}
+
+.landingLinkShare_MarchB {
+    display: inline-block;
+}
+
+.landingShareSharerAvatar_MarchB {
+    filter: drop-shadow(8px 8px 16px #182b29);
+    left: 15px;
+    margin: 20px 0 20px 0;
+    position: relative;
+    top: 10px;
+    width: 70px;
+}
+
+.landingByline_MarchB {
+    float: left;
+    left: 10px;
+    position: relative;
+    top: 0;
+    width: 20%;
+}
+
+.landingByline_MarchB p {
+    font-size: 18px;
+    font-weight: 900;
+    margin-left: 20px;
+    max-width: 220px;
+}
+
+.landingShareShare_MarchB {
+    border-left: solid 1px #182b29;
+    float: left;
+    margin-bottom: 15px;
+    position: relative;
+    top: 0;
+    width: 78%;
+}
+
+.landingShareShare_MarchB a {
+    color: #002036;
+    text-decoration: none;
+}
+
+.landingShareShare_MarchB p {
+    max-width: 700px;
+}
+
+.landingShareShare_MarchB a:hover {
+    color: #0f454f;
+}
+
+.landingShareShare_MarchB a:visited {
+    color: #202e39;
+}
+
+.shareSourceIcon_MarchB {
+    left: 5px;
+    position: relative;
+    top: 5px;
+    width: 10%;
+}
+
+.shareViaCredit_MarchB {
+    display: inline-block;
+    font-size: 24px;
+    margin: -20px 3px 15px 10px;
+    position: relative;
+    top: 0;
+    width: 80%;
+}
+
+.shareHeadline_MarchB {
+    font-size: 36px;
+    margin: 15px 15px 35px 15px;
+    max-width: 710px;
+}
+
+.shareCleanDate_MarchB {
+    float: right;
+    font-size: 18px;
+    margin: 5px 30% 5px 0;
+}
+
+.shareDescription_MarchB {
+    font-size: 18px;
+    line-height: 1.3em;
+    margin: 100px 15px 130px 15px;
+    max-width: 710px;
+}
+
+.shareAuthor_MarchB {
+    float: left;
+    font-size: 18px;
+    margin: 0 0 0 5px;
+}
+
+.shareShareEnclosurePhoto_MarchB {
+    margin: 0 0 0 5px;
+    max-width: 40%;
+}
+
+.shareShareBlogPhoto_MarchB {
+    margin: 0 0 0 15px;
+    max-width: 50%;
+}
+
+.shareBlogTitle_MarchB {
+    font-size: 36px;
+    margin: -40px 0 0 120px;
+}
+
+.landingFooter_MarchB {
+    background: #858483;
+    bottom: 1px;
+    color: #040302;
+    font-family: 'Faustina', serif;
+    font-size: 12px;
+    left: 10px;
+    position: absolute;
+
+}
+
+.landingLoginActive_MarchB {
+    background: linear-gradient(145deg, #88bccf, #9fb5b0);
+    box-shadow:  36px 36px 49px #182b29, 
+             -36px -36px 49px #06303f;
+    color: #030303;
+    font-family: 'Faustina', serif;
+    font-size: 42px;
+    height: 400px;
+    opacity: 1;
+    padding: 32px;
+    position: absolute;
+    right: 30%;
+    top: 200px;
+    transition: all 0.8s linear;
+    width: 40%;
+    z-index: 6;
+}
+
+.landingLoginInactive_MarchB {
+    height: 0;
+    position: absolute;
+    transition: all 0.8s linear;
+    width: 0;
+    z-index: -6;
+}
+
+.landingLoginActive_MarchB input {
+    background: #9fb5b0;
+    border: none;
+    color: #091110;
+    font-family: 'Faustina', serif;
+    font-size: 24px;
+    margin: 25px 5px 10px 45px;
+    outline-color: #091110;
+    padding: 1px 1px 1px 15px;
+    width: 75%;
+}
+
+.landingLoginInactive_MarchB input {
+    display: none;
+}
+
+.landingLoginActive_MarchB button {
+    background: transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/landing/march/michael-48yI_ZyzuLo-unsplash.jpg) 15% stretch;
+    box-shadow: 8px 8px 16px #182b29;
+    color: #002036;
+    cursor: pointer;
+    filter: brightness(100%);
+    font-family: 'Faustina', serif;
+    font-size: 30px;
+    margin: 20px 70px;
+    outline-color: transparent;
+    padding: 5px 15px;
+    perspective: 50px;
+    transition: all 0.3s linear;
+}
+
+.landingLoginActive_MarchB button:hover {
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/landing/march/michael-48yI_ZyzuLo-unsplash.jpg) 25% stretch;
+    box-shadow: 8px 8px 20px #015089;
+    filter: brightness(130%);
+    transition: all 0.3s linear;
+}
+
+.landingLoginActive_MarchB button:active {
+    box-shadow: 0 0 0 #000000;
+    outline-color: transparent;
+    transition: all 0.1s linear;
+}
+
+.landingLoginInactive_MarchB button {
+    display: none;
+}
+
+.landingLoginActive_MarchB a {
+    color: #040302;
+    cursor: pointer;
+    float: right;
+    font-family: 'Faustina', serif;
+    font-size: 24px;
+    margin: 30px 0 10px 0;
+    position: relative;
+    text-decoration: none;
+}
+
+.landingLoginInactive_MarchB a {
+    display: none;
+}
+
+.landingLoginActive_MarchB h2 {
+    color: #040302;
+    margin: 25px 20px 1px 20px;
+}
+
+.landingLoginInactive_MarchB h2 {
+    display: none;
+}
+
+.tabs_MarchB {
+    backdrop-filter: brightness(150%);
+    border-top: 2px solid #015089;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-column: 1/end;
+    grid-row: line2/ line3;
+    height: auto;
+    justify-content: flex-start;
+    opacity: 0.9;
+    width: 100%;
+}
+
+.tabActive_MarchB {
+    background: #88bccf;
+    color: #040302;
+    cursor: pointer;
+    font-family: 'Faustina', serif;
+    font-size: 30px;
+    grid-area: tabs;
+    height: 30px;
+    margin: 0 0 0 25px;
+    opacity: 1;
+    padding: 10px 16px;
+    transition: all 0.5s linear;
+}
+
+.tabInactive_MarchB {
+    background: #50758f;
+    color: #002036;
+    cursor: pointer;
+    font-family: 'Faustina', serif;
+    font-size: 30px;
+    grid-area: tabs;
+    height: 30px;
+    margin: 0 0 0 25px;
+    opacity: 0.5;
+    padding: 10px 6px;
+    transition: all 0.5s linear;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .landingTitleButtonsDiv_MarchB {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .backgroundDiv_MarchB {
+        background-size: 400%;
+    }
+
+    .landingTitle_MarchB {
+        font-size: 18px;
+    }
+
+    .landingShareShare_MarchB {
+        width: 70%;
+    }
+
+    .landingRecentlySharedPostsUncollapsed_MarchB {
+        height: 75vh;
+    }
+
+    .landingRecentlySharedLinksUncollapsed_MarchB {
+        height: 75vh;
+    }
+}
+
+@media only screen and (max-width: 823px) {
+
+    .landingTitleButtonsDiv_MarchB {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .landingTitle_MarchB {
+        font-size: 18px;
+    }
+
+    .landingShareShare_MarchB {
+        width: 70%;
+    }
+
+    .landingRecentlySharedPostsUncollapsed_MarchB {
+        height: 75vh;
+    }
+
+    .landingRecentlySharedLinksUncollapsed_MarchB {
+        height: 75vh;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .landingTitleButtonsDiv_MarchB {
+        padding: 65px 5px 5px 10%;
+    }
+
+
+    .landingTitleButtonsDiv_MarchB {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .landingTitle_MarchB {
+        font-size: 18px;
+    }
+
+    .landingShareShare_MarchB {
+        width: 70%;
+    }
+
+    .landingRecentlySharedPostsUncollapsed_MarchB {
+        height: 75vh;
+    }
+
+    .landingRecentlySharedLinksUncollapsed_MarchB {
+        height: 75vh;
+    }
+}
+
+@media only screen and (max-width: 736px) {
+    .backgroundDiv_MarchB {
+        background-size: 250%;
+    }
+
+    .landingTitle_MarchB {
+        font-size: 24px;
+    }
+
+    .landingTitleButtonsDiv_MarchB {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .landingTitleButtonsDiv_MarchB button {
+        font-size: 12px;
+        margin: -30px 10px 10px 10px;
+    }
+
+    .tabs_MarchB {
+        display: none;
+    }
+
+    .landingRecentlySharedLinksUncollapsed_MarchB {
+        display: none;
+    }
+
+    .landingLoginActive_MarchB {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 79%;
+    }
+
+    .landingLoginActive_MarchB a {
+        margin-top: 80px;
+    }
+
+    .landingLoginInactive_MarchB a {
+        margin-top: 80px;
+    }
+
+    .landingLoginActive_MarchB button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginInactive_MarchB button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginActive_MarchB h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginInactive_MarchB h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginActive_MarchB input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchB input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchB {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 79%;
+    }
+}
+
+@media only screen and (max-width: 731px) {
+
+    .landingTitleButtonsDiv_MarchB {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .backgroundDiv_MarchB {
+        background-size: 250%;
+    }
+
+    .landingTitle_MarchB {
+        font-size: 24px;
+    }
+
+    .landingTitleButtonsDiv_MarchB {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .landingTitleButtonsDiv_MarchB button {
+        font-size: 12px;
+        margin: -30px 10px 10px 10px;
+    }
+
+    .tabs_MarchB {
+        display: none;
+    }
+
+    .landingRecentlySharedLinksUncollapsed_MarchB {
+        display: none;
+    }
+
+    .landingLoginActive_MarchB {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 79%;
+    }
+
+    .landingLoginActive_MarchB a {
+        margin-top: 80px;
+    }
+
+    .landingLoginInactive_MarchB a {
+        margin-top: 80px;
+    }
+
+    .landingLoginActive_MarchB button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginInactive_MarchB button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginActive_MarchB h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginInactive_MarchB h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginActive_MarchB input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchB input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchB {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 79%;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+
+    .landingTitleButtonsDiv_MarchB {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .backgroundDiv_MarchB {
+        background-size: 250%;
+    }
+
+    .landingTitle_MarchB {
+        font-size: 24px;
+    }
+
+    .landingTitleButtonsDiv_MarchB {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .landingTitleButtonsDiv_MarchB button {
+        font-size: 12px;
+        margin: -30px 10px 10px 10px;
+    }
+
+    .tabs_MarchB {
+        display: none;
+    }
+
+    .landingRecentlySharedLinksUncollapsed_MarchB {
+        display: none;
+    }
+
+    .landingLoginActive_MarchB {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 79%;
+    }
+
+    .landingLoginActive_MarchB a {
+        margin-top: 80px;
+    }
+
+    .landingLoginInactive_MarchB a {
+        margin-top: 80px;
+    }
+
+    .landingLoginActive_MarchB button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginInactive_MarchB button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginActive_MarchB h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginInactive_MarchB h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginActive_MarchB input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchB input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchB {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 79%;
+    }
+}
+
+@media only screen and (max-width: 568px) {
+    .landingTitleButtonsDiv_MarchB {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .backgroundDiv_MarchB {
+        background-size: 250%;
+    }
+
+    .landingTitle_MarchB {
+        font-size: 24px;
+    }
+
+    .landingTitleButtonsDiv_MarchB {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .landingTitleButtonsDiv_MarchB button {
+        font-size: 12px;
+        margin: -30px 15px 15px 15px;
+    }
+
+    .landingUserGreeting_MarchB {
+        margin-top: -120px;
+    }
+
+    .tabs_MarchB {
+        display: none;
+    }
+
+    .landingRecentlySharedLinksUncollapsed_MarchB {
+        display: none;
+    }
+
+    .landingLoginActive_MarchB {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 79%;
+    }
+
+    .landingLoginActive_MarchB a {
+        margin-top: 80px;
+    }
+
+    .landingLoginInactive_MarchB a {
+        margin-top: 80px;
+    }
+
+    .landingLoginActive_MarchB button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginInactive_MarchB button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginActive_MarchB h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginInactive_MarchB h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginActive_MarchB input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchB input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchB {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 79%;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .backgroundDiv_MarchB {
+        background-size: 250%;
+    }
+
+    .landingTitle_MarchB {
+        font-size: 24px;
+    }
+
+    .landingTitleButtonsDiv_MarchB {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .landingTitleButtonsDiv_MarchB button {
+        font-size: 12px;
+    }
+
+    .tabs_MarchB {
+        display: none;
+    }
+
+    .landingRecentlySharedLinksUncollapsed_MarchB {
+        display: none;
+    }
+
+    .landingLoginActive_MarchB {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 79%;
+    }
+
+    .landingLoginActive_MarchB a {
+        margin-top: 80px;
+    }
+
+    .landingLoginInactive_MarchB a {
+        margin-top: 80px;
+    }
+
+    .landingLoginActive_MarchB button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginInactive_MarchB button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginActive_MarchB h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginInactive_MarchB h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginActive_MarchB input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchB input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchB {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 79%;
+    }
+}
+
+@media only screen and (max-width: 411px) {
+    .backgroundDiv_MarchB {
+        background-size: 250%;
+    }
+
+    .landingTitle_MarchB {
+        font-size: 24px;
+    }
+
+    .landingTitleButtonsDiv_MarchB {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .landingTitleButtonsDiv_MarchB button {
+        font-size: 12px;
+    }
+
+    .tabs_MarchB {
+        display: none;
+    }
+
+    .landingRecentlySharedLinksUncollapsed_MarchB {
+        display: none;
+    }
+
+    .landingLoginActive_MarchB {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 79%;
+    }
+
+    .landingLoginActive_MarchB a {
+        margin-top: 80px;
+    }
+
+    .landingLoginInactive_MarchB a {
+        margin-top: 80px;
+    }
+
+    .landingLoginActive_MarchB button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginInactive_MarchB button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginActive_MarchB h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginInactive_MarchB h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginActive_MarchB input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchB input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchB {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 79%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .backgroundDiv_MarchB {
+        background-size: 250%;
+    }
+
+    .landingTitle_MarchB {
+        font-size: 24px;
+    }
+
+    .landingTitleButtonsDiv_MarchB {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .landingTitleButtonsDiv_MarchB button {
+        font-size: 12px;
+    }
+
+    .tabs_MarchB {
+        display: none;
+    }
+
+    .landingRecentlySharedLinksUncollapsed_MarchB {
+        display: none;
+    }
+
+    .landingLoginActive_MarchB {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 61.5%;
+    }
+
+    .landingLoginActive_MarchB a {
+        margin-top: 80px;
+    }
+
+    .landingLoginInactive_MarchB a {
+        margin-top: 80px;
+    }
+
+    .landingLoginActive_MarchB button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginInactive_MarchB button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginActive_MarchB h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginInactive_MarchB h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginActive_MarchB input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchB input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchB {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 61.5%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .backgroundDiv_MarchB {
+        background-size: 250%;
+    }
+
+    .landingTitle_MarchB {
+        font-size: 24px;
+    }
+
+    .landingTitleButtonsDiv_MarchB {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .landingTitleButtonsDiv_MarchB button {
+        font-size: 12px;
+    }
+
+    .tabs_MarchB {
+        display: none;
+    }
+
+    .landingRecentlySharedLinksUncollapsed_MarchB {
+        display: none;
+    }
+
+    .landingLoginActive_MarchB {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 77%;
+    }
+
+    .landingLoginActive_MarchB a {
+        margin-top: 80px;
+    }
+
+    .landingLoginInactive_MarchB a {
+        margin-top: 80px;
+    }
+
+    .landingLoginActive_MarchB button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginInactive_MarchB button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginActive_MarchB h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginInactive_MarchB h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginActive_MarchB input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchB input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchB {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 77%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .backgroundDiv_MarchB {
+        background-size: 250%;
+    }
+
+    .landingTitle_MarchB {
+        font-size: 24px;
+    }
+
+    .landingTitleButtonsDiv_MarchB {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .landingTitleButtonsDiv_MarchB button {
+        font-size: 12px;
+    }
+
+    .tabs_MarchB {
+        display: none;
+    }
+
+    .landingRecentlySharedLinksUncollapsed_MarchB {
+        display: none;
+    }
+
+    .landingLoginActive_MarchB {
+        left: -13%;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        transform: scale(0.8);
+        width: 320px;
+    }
+
+    .landingLoginActive_MarchB a {
+        margin-top: 80px;
+    }
+
+    .landingLoginInactive_MarchB a {
+        margin-top: 80px;
+    }
+
+    .landingLoginActive_MarchB button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginInactive_MarchB button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginActive_MarchB h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginInactive_MarchB h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginActive_MarchB input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchB input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchB {
+        left: -13%;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        transform: scale(0.8);
+        width: 320px;
+    }
+}
