@@ -22,10 +22,15 @@
         vm.browseBlogsContainerState = 'browseContainerActive' + vm.browseMonth;
         vm.browsePodcastContainerState = 'browseContainerInactive' + vm.browseMonth;
         vm.clickBrowseViewFeedsButton = clickBrowseViewFeedsButton;
+        vm.clickBrowseViewPodcastFeedsButton = clickBrowseViewPodcastFeedsButton;
         vm.currentView = "_generic";
         vm.viewBlogFeeds = [];
         vm.browseIndividualFeed = browseIndividualFeed;
         vm.currentFeed = {
+            noFeed: true,
+            subscribed: true
+        };
+        vm.currentPodcastFeed = {
             noFeed: true,
             subscribed: true
         };
@@ -42,10 +47,22 @@
         vm.addedTabTitle = '';
         vm.blogSubscriptionSubmit = blogSubscriptionSubmit;
         vm.removeSubscription = removeSubscription;
+        vm.browseIndividualPodcastFeed = browseIndividualPodcastFeed;
+        vm.removePodSubscription = removePodSubscription;
+        vm.addPodSubscription = addPodSubscription;
+        vm.currentAdder = null;
 
         function removeSubscription() {
             // TODO: wire subscription removal into the backend
             vm.currentFeed = {
+                noFeed: true,
+                subscribed: true
+            };
+        }
+        
+        function removePodSubscription() {
+            // TODO: wire subscription removal into the backend
+            vm.currentPodcastFeed = {
                 noFeed: true,
                 subscribed: true
             };
@@ -58,6 +75,10 @@
                 noFeed: true,
                 subscribed: true
             };
+            vm.currentPodcastFeed = {
+                noFeed: true,
+                subscribed: true 
+            }
         }
 
         function updateNewTabTitle() {
@@ -88,13 +109,12 @@
                                 vm.currentSubTab = null;
                             }
                         } else {
-                            if (!mondaySubs[i].podcast) {
-                                vm.blogSubTabs.push({
-                                    title: mondaySubs[i].title
-                                });
-                                if (i === 0) {
-                                    vm.currentSubTab = mondaySubs[i].title;
-                                }
+                            vm.blogSubTabs.push({
+                                title: mondaySubs[i].title,
+                                podcast: mondaySubs[i].podcast
+                            });
+                            if (i === 0) {
+                                vm.currentSubTab = mondaySubs[i].title;
                             }
                         }
                     }
@@ -123,6 +143,13 @@
         function addSubscription() {
             vm.browseContainer = 'browseInactive' + vm.browseMonth;
             vm.browseSubscriptionModalState = 'browseSubscriptionModalActive' + vm.browseMonth;
+            vm.currentAdder = 'blog';
+        }
+        
+        function addPodSubscription() {
+            vm.browseContainer = 'browseInactive' + vm.browseMonth;
+            vm.browseSubscriptionModalState = 'browseSubscriptionModalActive' + vm.browseMonth;
+            vm.currentAdder = 'podcast';
         }
 
         function checkMondaySubscriptions() {
@@ -131,12 +158,20 @@
                     const mondaySubs = mondaySubsData.data;
                     for (let i = 0; i < mondaySubs.length; i++) {
                         for (let j = 0; j < mondaySubs[i].subscriptions.length; j++) {
-                            if (mondaySubs[i].subscriptions[j].uuid === vm.currentFeed.uuid) {
-                                vm.currentFeed.subscribed = true;
+                            if ((mondaySubs[i].subscriptions[j].uuid === vm.currentFeed.uuid) || (mondaySubs[i].subscriptions[j].uuid === vm.currentPodcastFeed.uuid)) {
+                                if (mondaySubs[i].podcast) {
+                                    vm.currentPodcastFeed.subscribed = true;
+                                } else {
+                                    vm.currentFeed.subscribed = true;
+                                }
                                 if (mondaySubs[i].title === 'Dailies') {
                                     vm.currentFeed.subscriptionString = 'Currently subscribed as a Dailies subscription.'
                                 } else {
-                                    vm.currentFeed.subscriptionString = `Currently subscribed for Monday: ${mondaySubs[i].title} tab.`;
+                                    if (mondaySubs[i].podcast) {
+                                        vm.currentPodcastFeed.subscriptionString = `Currently subscribed for Monday: ${mondaySubs[i].title} tab.`;
+                                    } else {
+                                        vm.currentFeed.subscriptionString = `Currently subscribed for Monday: ${mondaySubs[i].title} tab.`;
+                                    }
                                 }
                             }
                         }
@@ -150,6 +185,57 @@
             vm.currentFeed.subscriptionString = null;
             checkMondaySubscriptions();
 
+        }
+        
+        function browseIndividualPodcastFeed(feed) {
+            vm.currentPodcastFeed = feed;
+            vm.currentPodcastFeed.subscribed = false;
+            vm.currentPodcastFeed.subscriptionString = null;
+            checkMondaySubscriptions();
+        }
+        
+        function clickBrowseViewPodcastFeedsButton() {
+            let tableName = '';
+            let first, second;
+            vm.viewPodcastFeeds = [];
+            vm.currentPodcastFeed = {
+                noFeed: true,
+                subscribed: true
+            };
+            vm.currentPodView = document.getElementById('browsePodcastCategorySelect').value;
+            switch (vm.currentPodView) {
+                case('_generic'):
+                    tableName = 'podcast_feeds';
+                    break;
+                default:
+                    alert('non-supported podcast category');
+            }
+            if (tableName !== '') {
+                $http.get(`/${tableName}`)
+                .then(allFeeds => {
+                    vm.viewPodcastFeeds = allFeeds.data.sort((a, b) => {
+                        first = a.title.toLowerCase();
+                        second = b.title.toLowerCase();
+                        if (first.slice(0, 4) === 'the ') {
+                            first = first.slice(4);
+                        } else if (first.slice(0, 2) === 'a ') {
+                            first = first.slice(2);
+                        }
+                        if (second.slice(0, 4) === 'the ') {
+                            second = second.slice(4);
+                        } else if (second.slice(0, 2) === 'a ') {
+                            second = second.slice(2);
+                        }
+                        if (first < second) {
+                            return -1;
+                        } else if (first > second) {
+                            return 1;
+                        } else {
+                            return 0;
+                        }
+                    });
+                });
+            }
         }
 
         function clickBrowseViewFeedsButton() {
