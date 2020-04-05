@@ -1,0 +1,558 @@
+.browseActive_JanuaryB {
+    filter: blur(0);
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.browseInactive_JanuaryB {
+    filter: blur(19px);
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.browseImageDiv_JanuaryB {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/january/icicle-649805_1920.jpg);
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.browseNavbar_JanuaryB {
+    backdrop-filter: blur(8px);
+    border-bottom: 2px solid #5d8baf;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Inter', sans-serif;
+    height: 12vh;
+    justify-content: left;
+    left: 0;
+    padding-left: 25px;
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+
+.browseLogoNav_JanuaryB {
+    cursor: pointer;
+    filter: brightness(110%);
+    margin: 0.5vh 0;
+    max-height: 11vh;
+    max-width: 85px;
+}
+
+.browseTitle_JanuaryB {
+    color: #0a101d;
+    font-family: 'Inter', sans-serif;
+    font-size: 42px;
+    margin: 4vh 0 0 65px;
+}
+
+.browseTabs_JanuaryB {
+    backdrop-filter: hue-rotate(-90deg);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Inter', sans-serif;
+    height: 6vh;
+    justify-content: center;
+}
+
+.browseTabActive_JanuaryB {
+    background: #586f91;
+    color: 0a101d;
+    cursor: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    height: 100%;
+    opacity: 0.9;
+    padding: 0 10%;
+    pointer-events: none;
+}
+
+.browseTabActive_JanuaryB p {
+    color: #0a101d;
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    margin: 1vh 0;
+}
+
+.browseTabInactive_JanuaryB {
+    background: transparent;
+    color: 8b807c;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    height: 100%;
+    padding: 0 10%;
+}
+
+.browseTabInactive_JanuaryB p {
+    color: #8b807c;
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    margin: 1vh 0;
+}
+
+.browseContainerActive_JanuaryB {
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 80vh;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.browseContainerInactive_JanuaryB {
+    display: none;
+}
+
+.browseBlogsByCategory_JanuaryB {
+    backdrop-filter: blur(4px);
+    background: #9dadbb;
+    border-right: 2px solid #2a3b4c;
+    height: 77vh;
+    margin: 15px;
+    opacity: 0.8;
+    width: 19%;
+}
+
+.browsePodcastsByCategory_JanuaryB {
+    display: none;
+    backdrop-filter: brightness(50%);
+    background: #aedbdf;
+    height: 77vh;
+    margin: 15px;
+    opacity: 0.8;
+    width: 19%;
+}
+
+.browseBlogsCategoryLabel_JanuaryB {
+    color: #0a101d;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    margin: 27px 27px 5px 27px;
+}
+
+.browseCategorySelect_JanuaryB {
+    background: #aec5d7;
+    border: none;
+    color: #0a101d;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    margin: 10px 15%;
+    min-width: 70%;
+    outline-color: #c5c0be;
+    padding: 2px 17px;
+}
+
+.browseViewFeedsButton_JanuaryB {
+    background: #968c83;
+    border: none;
+    color: #17242f;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    margin: 30px 35%;
+    outline-color: #c5c0be;
+    transform: skew(-15deg);
+    transition: all 0.4s linear;
+}
+
+.browseViewFeedsButton_JanuaryB:hover {
+    background: #19294a;
+    color: #b4cadf;
+    outline-color: #c5c0be;
+    transform: skew(-5deg);
+    transition: all 0.4s linear;
+}
+
+.browseViewFeedsButton_JanuaryB:active {
+    background: #b4cadf;
+    color: #19294a;
+    transition: all 0.4s linear;
+}
+
+.browseCategoricalFeeds_generic_JanuaryB {
+    backdrop-filter: blur(38px);
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/january/icicle-649805_1920.jpg) 10 stretch;
+    box-sizing: border-box;
+    height: 77vh;
+    margin: 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 34%;
+}
+
+.browsePodCategoricalFeeds_generic_JanuaryB {
+    display: none;
+    backdrop-filter: blur(38px);
+    border: 2px solid transparent;
+    border-image: url() 10 stretch;
+    box-sizing: border-box;
+    height: 77vh;
+    margin: 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 34%;
+}
+
+.browsePodCategoricalFeeds_JanuaryB {
+    display: none;
+    backdrop-filter: blur(38px);
+    border: 2px solid transparent;
+    border-image: url() 10 stretch;
+    box-sizing: border-box;
+    height: 77vh;
+    margin: 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 34%;
+}
+
+.browseFeedsContainer_generic_JanuaryB {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 5px 15px;
+}
+
+.browseFeedsPodcastContainer_generic_JanuaryB {
+    display: none;
+    cursor: pointer;
+/*    display: flex;*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 5px 15px;
+}
+
+.browseFeedsPodcastContainer_generic_JanuaryB img {
+    height: 50px;
+    margin: 0 15px 0 0;
+    width: 50px;
+}
+
+.browseFeedsContainer_generic_JanuaryB img {
+    height: 50px;
+    margin: 0 15px 0 0;
+    width: 50px;
+}
+
+.browsePodCategoricalFeeds_generic_JanuaryB p {
+    display: none;
+    color: #050605;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+}
+
+.browseFeedsTitleDiv_generic_JanuaryB {
+    width: 75%;
+}
+
+.browseFeedsTitleDiv_generic_JanuaryB p {
+    color: #0a101d;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+}
+
+.browseIndividualFeedData_generic_JanuaryB {
+    backdrop-filter: blur(38px);
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/january/icicle-649805_1920.jpg) 10 stretch;
+    box-sizing: border-box;
+    height: 77vh;
+    margin: 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 34%;
+}
+
+.browseIndividualFeedData_generic_JanuaryB img {
+    margin: 10px 15%;
+    width: 70%;
+}
+
+.browseIndividualFeedData_generic_JanuaryB h3 {
+    color: #0a101d;
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    margin: 5px 10%;
+    width: 80%;
+}
+
+.browseIndividualFeedData_generic_JanuaryB p {
+    color: #0a101d;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    margin: 15px 10%;
+    width: 80%;
+}
+
+.browseIndividualFeedData_generic_JanuaryB button {
+    background: #968c83;
+    border: none;
+    color: #17242f;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    margin: 30px 35%;
+    outline-color: #c5c0be;
+    transform: skew(-15deg);
+    transition: all 0.4s linear;
+}
+
+.browseIndividualFeedData_generic_JanuaryB button:hover {
+    background: #19294a;
+    color: #b4cadf;
+    outline-color: #c5c0be;
+    transform: skew(-5deg);
+    transition: all 0.4s linear;
+}
+
+.browseIndividualFeedData_generic_JanuaryB button:active {
+    background: #b4cadf;
+    color: #19294a;
+    transition: all 0.4s linear;
+}
+
+.browseIndividualPodFeedData_generic_JanuaryB {
+    display: none;
+    backdrop-filter: blur(38px);
+    border: 2px solid transparent;
+    border-image: url() 10 stretch;
+    box-sizing: border-box;
+    height: 77vh;
+    margin: 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 34%;
+}
+
+.browseIndividualPodFeedData_generic_JanuaryB img {
+    display: none;
+    margin: 10px 15%;
+    width: 70%;
+}
+
+.browseIndividualPodFeedData_generic_JanuaryB h3 {
+    display: none;
+    color: #050605;
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    margin: 5px 10%;
+    width: 80%;
+}
+
+.browseIndividualPodFeedData_generic_JanuaryB p {
+    display: none;
+    color: #050605;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    margin: 15px 10%;
+    width: 80%;
+}
+
+.browseIndividualPodFeedData_generic_JanuaryB button {
+    display: none;
+    background: #3c5375;
+    border: none;
+    color: #aedbdf;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    margin: 30px 35%;
+    outline-color: #aedbdf;
+    transform: skew(-15deg);
+    transition: all 0.4s linear;
+}
+
+.browseIndividualPodFeedData_generic_JanuaryB button:hover {
+    background: #878886;
+    color: #050605;
+    outline-color: #050605;
+    transform: skew(-5deg);
+    transition: all 0.4s linear;
+}
+
+.browseIndividualPodFeedData_generic_JanuaryB button:active {
+    background: #050605;
+    color: #878886;
+    outline-color: #878886;
+    transition: all 0.4s linear;
+}
+
+.browseSubscriptionModalActive_JanuaryB {
+    background: #8c94a5;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/january/icicle-649805_1920.jpg) 10 stretch;
+    box-sizing: border-box;
+    filter: saturate(100%);
+    height: auto;
+    left: 25%;
+    top: 10vh;
+    width: 50%;
+    position: absolute;
+    transform: scale(1);
+    transition: all 0.5s linear;
+}
+
+.browseSubscriptionModalInactive_JanuaryB {
+    background: #8c94a5;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/january/icicle-649805_1920.jpg) 10 stretch;
+    box-sizing: border-box;
+    filter: saturate(300%);
+    height: auto;
+    left: 25%;
+    top: 100vh;
+    width: 50%;
+    position: absolute;
+    transform: scale(0.4);
+    transition: all 0.5s linear;
+}
+
+.blogSubscriptionModalLabel_JanuaryB {
+    color: #0a101d;
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    margin: 5px 0 15px 5px;
+}
+
+.browseSubscriptionModalActive_JanuaryB button {
+    background: #3c5375;
+    border: none;
+    color: #aedbdf;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    margin: 5px -10% 5px 25%;
+    outline-color: #aedbdf;
+    transform: skew(-15deg);
+    transition: all 0.4s linear;
+}
+
+.browseSubscriptionModalActive_JanuaryB button:hover {
+    background: #878886;
+    color: #050605;
+    outline-color: #050605;
+    transform: skew(-5deg);
+    transition: all 0.4s linear;
+}
+
+.browseSubscriptionModalActive_JanuaryB button:active {
+    background: #050605;
+    color: #878886;
+    outline-color: #878886;
+    transition: all 0.4s linear;
+}
+
+.browseSubscriptionModalInactive_JanuaryB button {
+    background: #3c5375;
+    border: none;
+    color: #aedbdf;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    margin: 5px -10% 5px 25%;
+    outline-color: #aedbdf;
+    transform: skew(-15deg);
+    transition: all 0.4s linear;
+}
+
+.blogSubscriptionMondalImage_JanuaryB {
+    float: left;
+    margin: 15px;
+    max-height: 100px;
+    max-width: 100px;
+}
+
+.blogSubscriptionModalTitle_JanuaryB {
+    color: #0a101d;
+    float: left;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    margin: 15px;
+    width: 50%;
+}
+
+.browseModalSelectors_JanuaryB {
+    width: 100%;
+    float: left;
+}
+
+.blogSubscriptionDaySelector_JanuaryB {
+    background: #aec5d7;
+    border: none;
+    color: #0a101d;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    margin: 30px 15px 70px 15px;
+    outline-color: #c5c0be;
+    width: 25%;
+}
+
+.browseModalSpacer_JanuaryB {
+    bottom: 0;
+    height: 350px;
+    position: relative;
+    width: 100%;
+    z-index: -4;
+}
+
+/*
+.hubReaderBrowseBlockActive_JanuaryB {
+    background: #82a1b5;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: 1;
+}
+
+.hubReaderBrowseBlockInactive_JanuaryB {
+    background: #82a1b5;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(-460%);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: -1;
+}
+*/
