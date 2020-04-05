@@ -46,6 +46,36 @@
         
     </div>
     <div class="{{$ctrl.browsePodcastContainerState}}">
+        <div class="browsePodcastsByCategory{{$ctrl.browseMonth}}">
+            <h4 class="browseBlogsCategoryLabel{{$ctrl.browseMonth}}">category:</h4>
+            <select class="browseCategorySelect{{$ctrl.browseMonth}}" id="browsePodcastCategorySelect">
+                <option value="_generic">all feeds</option>
+            </select>
+            <button class="browseViewFeedsButton{{$ctrl.browseMonth}}" ng-click="$ctrl.clickBrowseViewPodcastFeedsButton()">view</button>
+        </div>
+        <div class="browsePodCategoricalFeeds{{$ctrl.currentPodView}}{{$ctrl.browseMonth}}">
+            <main ng-repeat="feed in $ctrl.viewPodcastFeeds">
+                
+                <div class="browseFeedsPodcastContainer{{$ctrl.currentPodView}}{{$ctrl.browseMonth}}" ng-click="$ctrl.browseIndividualPodcastFeed(feed)">
+                    <img src={{feed.image}}>
+                    <div class="browsePodcastFeedsTitleDiv{{$ctrl.currentPodView}}{{$ctrl.browseMonth}}">
+                        <p ng-bind-html="feed.title"></p>
+                    </div>
+                    
+                </div>
+                
+            </main>
+        </div>
+        <div class="browseIndividualPodFeedData{{$ctrl.currentView}}{{$ctrl.browseMonth}}">
+            <img src={{$ctrl.currentPodcastFeed.image}}>
+            <h3 ng-bind-html="$ctrl.currentPodcastFeed.title"></h3>
+            <p ng-bind-html="$ctrl.currentPodcastFeed.author"></p>
+            <p ng-bind-html="$ctrl.currentPodcastFeed.description"></p>
+            <br>
+            <p ng-if="$ctrl.currentPodcastFeed.subscribed">{{$ctrl.currentPodcastFeed.subscriptionString}}</p>
+            <button ng-if="($ctrl.currentPodcastFeed.subscribed && (!$ctrl.currentPodcastFeed.noFeed))" ng-click="$ctrl.removePodSubscription()">unsubscribe</button>
+            <button ng-if="!$ctrl.currentPodcastFeed.subscribed" ng-click="$ctrl.addPodSubscription()">subscribe</button>
+        </div>
     </div>
 </div>
 <div class="{{$ctrl.browseSubscriptionModalState}}">
@@ -54,7 +84,7 @@
     <p class="blogSubscriptionModalTitle{{$ctrl.browseMonth}}" ng-bind-html="$ctrl.currentFeed.title"></p>
     <div class="browseModalSelectors{{$ctrl.browseMonth}}">
         <select class="blogSubscriptionDaySelector{{$ctrl.browseMonth}}" id="blogSubscriptionDaySelector" ng-blur="$ctrl.updateBlogSubscriptionDestination()">
-            <option value="dailies">Dailies</option>
+            <option value="dailies" ng-if="$ctrl.currentAdder === 'blog'">Dailies</option>
             <option value="monday">Monday</option>
             <option value="tuesday">Tuesday</option>
             <option value="wednesday">Wednesday</option>
@@ -65,7 +95,7 @@
         </select>
         <select class="blogSubscriptionDaySelector{{$ctrl.browseMonth}}" ng-if="$ctrl.subDestination !== 'dailies'" id="browseTabSelector" ng-blur="$ctrl.updateBlogSubscriptionTab()">
             <div >
-                <option ng-repeat="tab in $ctrl.blogSubTabs" value="{{tab.title}}">{{tab.title}}</option>
+                <option ng-repeat="tab in $ctrl.blogSubTabs" value="{{tab.title}}" ng-if="($ctrl.currentAdder === 'blog' && !tab.podcast) || ($ctrl.currentAdder === 'podcast' && tab.podcast)">{{tab.title}}</option>
             </div>
             
         </select>

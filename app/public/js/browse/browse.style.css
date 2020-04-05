@@ -136,6 +136,15 @@
     width: 19%;
 }
 
+.browsePodcastsByCategory_JanuaryA {
+    backdrop-filter: brightness(50%);
+    background: #aedbdf;
+    height: 77vh;
+    margin: 15px;
+    opacity: 0.8;
+    width: 19%;
+}
+
 .browseBlogsCategoryLabel_JanuaryA {
     color: #050605;
     font-family: 'Blinker', serif;
@@ -195,6 +204,30 @@
     width: 34%;
 }
 
+.browsePodCategoricalFeeds_generic_JanuaryA {
+    backdrop-filter: blur(38px);
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/january/d360wre-547d2e30-1c0c-4bb0-9f2c-88de8fbf5879.jpg) 10 stretch;
+    box-sizing: border-box;
+    height: 77vh;
+    margin: 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 34%;
+}
+
+.browsePodCategoricalFeeds_JanuaryA {
+    backdrop-filter: blur(38px);
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/january/d360wre-547d2e30-1c0c-4bb0-9f2c-88de8fbf5879.jpg) 10 stretch;
+    box-sizing: border-box;
+    height: 77vh;
+    margin: 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 34%;
+}
+
 .browseFeedsContainer_generic_JanuaryA {
     cursor: pointer;
     display: flex;
@@ -204,10 +237,31 @@
     padding: 5px 15px;
 }
 
+.browseFeedsPodcastContainer_generic_JanuaryA {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 5px 15px;
+}
+
+.browseFeedsPodcastContainer_generic_JanuaryA img {
+    height: 50px;
+    margin: 0 15px 0 0;
+    width: 50px;
+}
+
 .browseFeedsContainer_generic_JanuaryA img {
     height: 50px;
     margin: 0 15px 0 0;
     width: 50px;
+}
+
+.browsePodCategoricalFeeds_generic_JanuaryA p {
+    color: #050605;
+    font-family: 'Blinker', serif;
+    font-size: 18px;
 }
 
 .browseFeedsTitleDiv_generic_JanuaryA {
@@ -275,6 +329,67 @@
 }
 
 .browseIndividualFeedData_generic_JanuaryA button:active {
+    background: #050605;
+    color: #878886;
+    outline-color: #878886;
+    transition: all 0.4s linear;
+}
+
+.browseIndividualPodFeedData_generic_JanuaryA {
+    backdrop-filter: blur(38px);
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/january/d360wre-547d2e30-1c0c-4bb0-9f2c-88de8fbf5879.jpg) 10 stretch;
+    box-sizing: border-box;
+    height: 77vh;
+    margin: 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 34%;
+}
+
+.browseIndividualPodFeedData_generic_JanuaryA img {
+    margin: 10px 15%;
+    width: 70%;
+}
+
+.browseIndividualPodFeedData_generic_JanuaryA h3 {
+    color: #050605;
+    font-family: 'Blinker', serif;
+    font-size: 36px;
+    margin: 5px 10%;
+    width: 80%;
+}
+
+.browseIndividualPodFeedData_generic_JanuaryA p {
+    color: #050605;
+    font-family: 'Blinker', serif;
+    font-size: 18px;
+    margin: 15px 10%;
+    width: 80%;
+}
+
+.browseIndividualPodFeedData_generic_JanuaryA button {
+    background: #3c5375;
+    border: none;
+    color: #aedbdf;
+    cursor: pointer;
+    font-family: 'Blinker', serif;
+    font-size: 24px;
+    margin: 30px 35%;
+    outline-color: #aedbdf;
+    transform: skew(-15deg);
+    transition: all 0.4s linear;
+}
+
+.browseIndividualPodFeedData_generic_JanuaryA button:hover {
+    background: #878886;
+    color: #050605;
+    outline-color: #050605;
+    transform: skew(-5deg);
+    transition: all 0.4s linear;
+}
+
+.browseIndividualPodFeedData_generic_JanuaryA button:active {
     background: #050605;
     color: #878886;
     outline-color: #878886;
