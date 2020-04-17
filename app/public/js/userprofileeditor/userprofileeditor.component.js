@@ -29,20 +29,6 @@
         vm.addSchoolEntry = addSchoolEntry;
         vm.toggleBioEmailPrivate = toggleBioEmailPrivate;
         vm.togglePhonePrivate = togglePhonePrivate;
-        vm.avatarList = [
-            {
-                link: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/lovecraftAvatar.jpg'
-            },
-            {
-                link: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/digitalNomadAvatar.jpg'
-            },
-            {
-                link: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/homerAvatar.jpg'
-            },
-            {
-                link: 'https://habits168-hurdaudio.s3.amazonaws.com/avatars/ashesAvatar.png'
-            }
-        ];
         vm.selectAvatarFromList = selectAvatarFromList;
         vm.linkToAvatar = linkToAvatar;
         vm.avatarModalStatus = 'profileEditorAvatarModalInactive' + vm.profileMonth;
@@ -67,13 +53,58 @@
         vm.updateSchoolLocation = updateSchoolLocation;
         vm.updateEmail = updateEmail;
         vm.updatePhone = updatePhone;
+        vm.patchFirstName = patchFirstName;
+        vm.patchLastName = patchLastName;
+        vm.patchProfileDescription = patchProfileDescription;
+        vm.patchUserBio = patchUserBio;
+        vm.patchOccupation = patchOccupation;
+        vm.patchEmployer = patchEmployer;
+        vm.patchEducation = patchEducation;
+        vm.patchEmail = patchEmail;
+        vm.patchPhone = patchPhone;
+        
+        function patchLastName() {
+            $http.patch(`/users/${vm.user.uuid}`, { last_name: vm.user.last_name} )
+            .then(patchedUserData => {
+                if (vm.user.last_name !== patchUserData.data.last_name) {
+                    alert('ERROR: Failed to save user last name.');
+                }
+            });
+        }
+        
+        function patchFirstName() {
+            $http.patch(`/users/${vm.user.uuid}`, { first_name: vm.user.first_name} )
+            .then(patchedUserData => {
+                if (vm.user.first_name !== patchUserData.data.first_name) {
+                    alert('ERROR: Failed to save user first name.');
+                }
+            });
+        }
         
         function updatePhone() {
             vm.user.expanded.phone.phone = document.getElementById('profileEditorPhoneInput').value;
         }
         
+        function patchPhone() {
+            $http.patch(`/user_expanded_profiles/${vm.user.expanded.uuid}`, { phone: vm.user.expanded.phone })
+            .then(patchedExpandedData => {
+                if ((patchedExpandedData.data.phone.phone !== vm.user.expanded.phone.phone) || (patchedExpandedData.data.phone.public !== vm.user.expanded.phone.public)) {
+                    alert('ERROR: user phone not saved');
+                }
+            });
+        }
+        
         function updateEmail() {
             vm.user.expanded.email.email = document.getElementById('profileEditorEmailInput').value;
+        }
+        
+        function patchEmail() {
+            $http.patch(`/user_expanded_profiles/${vm.user.expanded.uuid}`, { email: vm.user.expanded.email })
+            .then(patchedExpandedProfileData => {
+                if ((patchedExpandedProfileData.data.email.email !== vm.user.expanded.email.email) || (patchedExpandedProfileData.data.email.public !== vm.user.expanded.email.public)) {
+                    alert('ERROR: user email not saved');
+                }
+            });
         }
         
         function updateSchoolLocation(index) {
@@ -84,12 +115,39 @@
             vm.user.expanded.education.schools[index].name = document.getElementById('schoolNameInput' + index).value;
         }
         
+        function patchEducation() {
+            $http.patch(`/user_expanded_profiles/${vm.user.expanded.uuid}`, { education: vm.user.expanded.education })
+            .then(patchedExpandedProfileData => {
+                if ((patchedExpandedProfileData.data.education.schools.length !== vm.user.expanded.education.schools.length) || (patchedExpandedProfileData.data.education.public !== vm.user.expanded.education.public)) {
+                    alert('ERROR: user education not saved');
+                }
+            });
+        }
+        
         function updateProfileEmployer() {
             vm.user.expanded.employer.employer = document.getElementById('profileEditorEmployerInput').value;
         }
         
+        function patchEmployer() {
+            $http.patch(`/user_expanded_profiles/${vm.user.expanded.uuid}`, { employer: vm.user.expanded.employer })
+            .then(patchedExpandedProfileData => {
+                if ((patchedExpandedProfileData.data.employer.employer !== vm.user.expanded.employer.employer) || (patchedExpandedProfileData.data.employer.public !== vm.user.expanded.employer.public)) {
+                    alert('ERROR: user employer not saved');
+                }
+            });
+        }
+        
         function updateProfileOccupation() {
             vm.user.expanded.occupation.occupation = document.getElementById('profileEditorOccupationInput').value;
+        }
+        
+        function patchOccupation() {
+            $http.patch(`/user_expanded_profiles/${vm.user.expanded.uuid}`, { occupation: vm.user.expanded.occupation })
+            .then(patchedExpandedProfileData => {
+                if ((patchedExpandedProfileData.data.occupation.occupation !== vm.user.expanded.occupation.occupation) || (patchedExpandedProfileData.data.occupation.public !== vm.user.expanded.occupation.public)) {
+                    alert('ERROR: user occupation not saved');
+                }
+            });
         }
         
         function selectCity(city) {
@@ -100,7 +158,15 @@
             vm.user.expanded.location.population = city.population;
             vm.user.expanded.location.lat = city.lat;
             vm.user.expanded.location.lon = city.lon;
-            closeCitySelect();
+            $http.patch(`/user_expanded_profiles/${vm.user.expanded.uuid}`, { location: vm.user.expanded.location })
+            .then(patchedExtendedUserProfileData => {
+                if ((patchedExtendedUserProfileData.data.location.name === vm.user.expanded.location.name) && (patchedExtendedUserProfileData.data.location.country === vm.user.expanded.location.country) && (patchedExtendedUserProfileData.data.location.featureCode === vm.user.expanded.location.featureCode) && (patchedExtendedUserProfileData.data.location.adminCode === vm.user.expanded.location.adminCode) && (patchedExtendedUserProfileData.data.location.population === vm.user.expanded.location.population) && (patchedExtendedUserProfileData.data.location.lat === vm.user.expanded.location.lat) && (patchedExtendedUserProfileData.data.location.lon === vm.user.expanded.location.lon)) {
+                    closeCitySelect();
+                } else {
+                    alert('ERROR: user location not saved');
+                }
+            });
+            
         }
         
         function closeCitySelect() {
@@ -153,24 +219,55 @@
             vm.user.expanded.bio.bio = document.getElementById('profileEditorBioInput').value;
         }
         
+        function patchUserBio() {
+            $http.patch(`/user_expanded_profiles/${vm.user.expanded.uuid}`, { bio: vm.user.expanded.bio })
+            .then(patchedExpandedUserData => {
+                if ((patchedExpandedUserData.data.bio.bio !== vm.user.expanded.bio.bio) || (patchedExpandedUserData.data.bio.public !== vm.user.expanded.bio.public)) {
+                    alert('ERROR: failed to save user bio');
+                }
+            });
+        }
+        
         function updateProfileDescription() {
             vm.user.expanded.description.description = document.getElementById('profileEditorDescriptionInput').value;
+        }
+        
+        function patchProfileDescription() {
+            $http.patch(`/user_expanded_profiles/${vm.user.expanded.uuid}`, { description: vm.user.expanded.description })
+            .then(patchedExpandedProfileData => {
+                if ((patchedExpandedProfileData.data.description.description !== vm.user.expanded.description.description) || (patchedExpandedProfileData.data.description.public !== vm.user.expanded.description.public)) {
+                    alert('ERROR: User description not saved');
+                }
+            });
         }
         
         function updateBirthdate() {
             const months = [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ];
             let bDay = new Date(document.getElementById('profileEditorBirthdateInput').value);
             const offset = bDay.getTimezoneOffset();
-            bDay.setDate(bDay.getDate() + 1);
-            console.log(bDay);
+            bDay = new Date(bDay.getTime() + (offset * 60 * 1000));
             
-            vm.user.expanded.birthdate.birthdate = new Date(bDay);
+            vm.user.expanded.birthdate.birthdate = bDay;
             vm.user.expanded.birthdate.cleanDate = vm.user.expanded.birthdate.birthdate.getDate().toString() + ' ' + months[vm.user.expanded.birthdate.birthdate.getMonth()];
+            $http.patch(`/user_expanded_profiles/${vm.user.expanded.uuid}`, { birthdate: vm.user.expanded.birthdate })
+            .then(patchedExpandedUserData => {
+                if ((patchedExpandedUserData.data.birthdate.cleanDate !== vm.user.expanded.birthdate.cleanDate) || (patchedExpandedUserData.data.birthdate.public !== vm.user.expanded.birthdate.public)) {
+                    alert('ERROR: failed to save user birthdate');
+                }
+            });
         }
         
         function submitProfileAvatar() {
             vm.user.avatar_path = vm.avatar;
-            cancelProfileAvatarModal();
+            $http.patch(`/users/${vm.user.uuid}`, { avatar_path: vm.avatar })
+            .then(patchedUserData => {
+                if (vm.user.avatar_path === patchedUserData.data.avatar_path) {
+                   cancelProfileAvatarModal(); 
+                } else {
+                    alert('ERROR: avatar change not saved');
+                }
+            });
+            
         }
         
         function cancelProfileAvatarModal() {
@@ -204,6 +301,7 @@
             document.getElementById('profileEditorSchoolNameInput').value = '';
             document.getElementById('profileEditorSchoolLocationInput').value = '';
             vm.shoolInputValid = false;
+            patchEducation();
         }
 
         function inputSchoolFields() {
@@ -221,6 +319,7 @@
                     vm.user.expanded.education.schools[i].id = i;
                 }
             }
+            patchEducation();
         }
 
         function toggleBirthdatePublicPrivate() {
@@ -229,6 +328,12 @@
             } else {
                 vm.user.expanded.birthdate.public = !vm.user.expanded.birthdate.public;
             }
+            $http.patch(`/user_expanded_profiles/${vm.user.expanded.uuid}`, { birthdate: vm.user.expanded.birthdate })
+            .then(patchedExpandedUserData => {
+                if ((patchedExpandedUserData.data.birthdate.cleanDate !== vm.user.expanded.birthdate.cleanDate) || (patchedExpandedUserData.data.birthdate.public !== vm.user.expanded.birthdate.public)) {
+                    alert('ERROR: failed to save user birthdate');
+                }
+            });
 
         }
 
@@ -237,6 +342,7 @@
                 extendedProfileData('bio');
             } else {
                 vm.user.expanded.bio.public = !vm.user.expanded.bio.public;
+                patchUserBio();
             }
         }
 
@@ -245,6 +351,14 @@
                 extendedProfileData('location');
             } else {
                 vm.user.expanded.location.public = !vm.user.expanded.location.public;
+                $http.patch(`/user_expanded_profiles/${vm.user.expanded.uuid}`, { location: vm.user.expanded.location })
+                .then(patchedExtendedUserProfileData => {
+                    if ((patchedExtendedUserProfileData.data.location.name === vm.user.expanded.location.name) && (patchedExtendedUserProfileData.data.location.country === vm.user.expanded.location.country) && (patchedExtendedUserProfileData.data.location.featureCode === vm.user.expanded.location.featureCode) && (patchedExtendedUserProfileData.data.location.adminCode === vm.user.expanded.location.adminCode) && (patchedExtendedUserProfileData.data.location.population === vm.user.expanded.location.population) && (patchedExtendedUserProfileData.data.location.lat === vm.user.expanded.location.lat) && (patchedExtendedUserProfileData.data.location.lon === vm.user.expanded.location.lon)) {
+                        closeCitySelect();
+                    } else {
+                        alert('ERROR: user location not saved');
+                    }
+                });
             }
         }
 
@@ -254,6 +368,7 @@
             } else {
                 vm.user.expanded.description.public = !vm.user.expanded.description.public;
             }
+            patchProfileDescription();
         }
 
         function toggleBioOccupationPrivate() {
@@ -261,6 +376,7 @@
                 extendedProfileData('occupation');
             } else {
                 vm.user.expanded.occupation.public = !vm.user.expanded.occupation.public;
+                patchOccupation();
             }
         }
 
@@ -269,6 +385,7 @@
                 extendedProfileData('employer');
             } else {
                 vm.user.expanded.employer.public = !vm.user.expanded.employer.public;
+                patchEmployer();
             }
         }
 
@@ -277,6 +394,7 @@
                 extendedProfileData('education');
             } else {
                 vm.user.expanded.education.public = !vm.user.expanded.education.public;
+                patchEducation();
             }
         }
 
@@ -285,6 +403,7 @@
                 extendedProfileData('email');
             } else {
                 vm.user.expanded.email.public = !vm.user.expanded.email.public;
+                patchEmail();
             }
         }
 
@@ -293,6 +412,7 @@
                 extendedProfileData('phone');
             } else {
                 vm.user.expanded.phone.public = !vm.user.expanded.phone.public;
+                patchPhone();
             }
         }
 
@@ -496,6 +616,13 @@
                     checkLoginStatus($stateParams.userUuid);
                 });
         }
+        
+        function setAvatarList() {
+            $http.get('/avatars')
+            .then(avatarsData => {
+                vm.avatarList = avatarsData.data;
+            });
+        }
 
 
 
@@ -503,6 +630,8 @@
             console.log("User Profile Editor is lit");
             
             setUserIPAddress();
+            
+            setAvatarList();
 
             switch (vm.profileMonth) {
                 case ('_JanuaryA'):

@@ -12,9 +12,9 @@
             <img class="profileEditorAvatarDisplay{{$ctrl.profileMonth}}" src="{{$ctrl.user.avatar_path}}">
             <button class="profileAvatarChangeButton{{$ctrl.profileMonth}}" ng-click="$ctrl.openChangeAvatarModal()">change avatar</button><br>
             <label class="profileEditLabel{{$ctrl.profileMonth}}">first name:
-                <input class="profileEditNameInput{{$ctrl.profileMonth}}" type="text" value="{{$ctrl.user.first_name}}" id="profileEditNameInput" ng-keyup="$ctrl.updateFirstName()"></label><br>
+                <input class="profileEditNameInput{{$ctrl.profileMonth}}" type="text" value="{{$ctrl.user.first_name}}" id="profileEditNameInput" ng-keyup="$ctrl.updateFirstName()" ng-blur="$ctrl.patchFirstName()"></label><br>
             <label class="profileEditLabel{{$ctrl.profileMonth}}">last name:
-                <input class="profileEditNameInput{{$ctrl.profileMonth}}" type="text" value="{{$ctrl.user.last_name}}" id="profileEditLastNameInput" ng-keyup="$ctrl.updateLastName()"></label><br><br>
+                <input class="profileEditNameInput{{$ctrl.profileMonth}}" type="text" value="{{$ctrl.user.last_name}}" id="profileEditLastNameInput" ng-keyup="$ctrl.updateLastName()" ng-blur="$ctrl.patchLastName()"></label><br><br>
             <button class="profileAvatarChangeButton{{$ctrl.profileMonth}}">change password</button>
         </div>
 
@@ -27,7 +27,7 @@
                     <p class="profileEditorPublicPrivateLabel{{$ctrl.profileMonth}}" ng-if="$ctrl.user.expanded.description.public">public</p>
                     <p class="profileEditorPublicPrivateLabel{{$ctrl.profileMonth}}" ng-if="!$ctrl.user.expanded.description.public">private</p>
                 </div><br>
-                <textarea class="profileEditorBioInput{{$ctrl.profileMonth}}" id="profileEditorDescriptionInput" rows="3" ng-keyup="$ctrl.updateProfileDescription()"></textarea>
+                <textarea class="profileEditorBioInput{{$ctrl.profileMonth}}" id="profileEditorDescriptionInput" rows="3" ng-keyup="$ctrl.updateProfileDescription()" ng-blur="$ctrl.patchProfileDescription()"></textarea>
             </div>
             <div class="profileEditorBirthdateDiv{{$ctrl.profileMonth}}">
                 <label class="profileEditLabel{{$ctrl.profileMonth}}">birthdate:<br>
@@ -48,7 +48,7 @@
                     <p class="profileEditorPublicPrivateLabel{{$ctrl.profileMonth}}" ng-if="$ctrl.user.expanded.bio.public">public</p>
                     <p class="profileEditorPublicPrivateLabel{{$ctrl.profileMonth}}" ng-if="!$ctrl.user.expanded.bio.public">private</p>
                 </div><br>
-                <textarea class="profileEditorBioInput{{$ctrl.profileMonth}}" id="profileEditorBioInput" rows="3" ng-keyup="$ctrl.updateProfileBio()"></textarea>
+                <textarea class="profileEditorBioInput{{$ctrl.profileMonth}}" id="profileEditorBioInput" rows="3" ng-keyup="$ctrl.updateProfileBio()" ng-blur="$ctrl.patchUserBio()"></textarea>
             </div>
             <div class="profileEditorLocationDiv{{$ctrl.profileMonth}}">
                 <label class="profileEditLabel{{$ctrl.profileMonth}}">location:</label>
@@ -80,7 +80,7 @@
                     <p class="profileEditorPublicPrivateLabel{{$ctrl.profileMonth}}" ng-if="$ctrl.user.expanded.occupation.public">public</p>
                     <p class="profileEditorPublicPrivateLabel{{$ctrl.profileMonth}}" ng-if="!$ctrl.user.expanded.occupation.public">private</p>
                 </div><br>
-                <input class="profileEditorBioInput{{$ctrl.profileMonth}}" id="profileEditorOccupationInput" type="text" ng-keyup="$ctrl.updateProfileOccupation()">
+                <input class="profileEditorBioInput{{$ctrl.profileMonth}}" id="profileEditorOccupationInput" type="text" ng-keyup="$ctrl.updateProfileOccupation()" ng-blur="$ctrl.patchOccupation()">
             </div>
             <div class="profileEditorBioDiv{{$ctrl.profileMonth}}">
                 <label class="profileEditLabel{{$ctrl.profileMonth}}">employer:</label>
@@ -90,7 +90,7 @@
                     <p class="profileEditorPublicPrivateLabel{{$ctrl.profileMonth}}" ng-if="$ctrl.user.expanded.employer.public">public</p>
                     <p class="profileEditorPublicPrivateLabel{{$ctrl.profileMonth}}" ng-if="!$ctrl.user.expanded.employer.public">private</p>
                 </div><br>
-                <input class="profileEditorBioInput{{$ctrl.profileMonth}}" id="profileEditorEmployerInput" type="text" ng-keyup="$ctrl.updateProfileEmployer()">
+                <input class="profileEditorBioInput{{$ctrl.profileMonth}}" id="profileEditorEmployerInput" type="text" ng-keyup="$ctrl.updateProfileEmployer()" ng-blur="$ctrl.patchEmployer()">
             </div>
             <div class="profileEditorBioDiv{{$ctrl.profileMonth}}">
                 <label class="profileEditLabel{{$ctrl.profileMonth}}">education:</label>
@@ -103,8 +103,8 @@
                 <main ng-repeat="school in $ctrl.user.expanded.education.schools">
                     <br>
                     <div class="profileEditorSchoolDeleter{{$ctrl.profileMonth}}" ng-click="$ctrl.removeSchool(school.id)"><i class="far fa-trash-alt"></i></div><br><br>
-                    <input class="profileEditorBioInput{{$ctrl.profileMonth}}" id="schoolNameInput{{school.id}}" value="{{school.name}}" ng-keyup="$ctrl.updateSchoolName(school.id)">
-                    <input class="profileEditorBioInput{{$ctrl.profileMonth}}" id="schoolLocationInput{{school.id}}" value="{{school.location}}" ng-keyup="$ctrl.updateSchoolLocation(school.id)"><br><br>
+                    <input class="profileEditorBioInput{{$ctrl.profileMonth}}" id="schoolNameInput{{school.id}}" value="{{school.name}}" ng-keyup="$ctrl.updateSchoolName(school.id)" ng-blur="$ctrl.patchEducation()">
+                    <input class="profileEditorBioInput{{$ctrl.profileMonth}}" id="schoolLocationInput{{school.id}}" value="{{school.location}}" ng-keyup="$ctrl.updateSchoolLocation(school.id)" ng-blur="$ctrl.patchEducation()"><br><br>
                 </main><br><br>
                 <input class="profileEditorBioInput{{$ctrl.profileMonth}}" id="profileEditorSchoolNameInput" placeholder="school" ng-keyup="$ctrl.inputSchoolFields()">
                 <input class="profileEditorBioInput{{$ctrl.profileMonth}}" id="profileEditorSchoolLocationInput" placeholder="location" ng-keyup="$ctrl.inputSchoolFields()">
@@ -118,7 +118,7 @@
                     <p class="profileEditorPublicPrivateLabel{{$ctrl.profileMonth}}" ng-if="$ctrl.user.expanded.email.public">public</p>
                     <p class="profileEditorPublicPrivateLabel{{$ctrl.profileMonth}}" ng-if="!$ctrl.user.expanded.email.public">private</p>
                 </div><br>
-                <input class="profileEditorBioInput{{$ctrl.profileMonth}}" id="profileEditorEmailInput" type="email" ng-keyup="$ctrl.updateEmail()">
+                <input class="profileEditorBioInput{{$ctrl.profileMonth}}" id="profileEditorEmailInput" type="email" ng-keyup="$ctrl.updateEmail()" ng-blur="$ctrl.patchEmail()">
             </div>
             <div class="profileEditorBioDiv{{$ctrl.profileMonth}}">
                 <label class="profileEditLabel{{$ctrl.profileMonth}}">phone:</label>
@@ -128,7 +128,7 @@
                     <p class="profileEditorPublicPrivateLabel{{$ctrl.profileMonth}}" ng-if="$ctrl.user.expanded.phone.public">public</p>
                     <p class="profileEditorPublicPrivateLabel{{$ctrl.profileMonth}}" ng-if="!$ctrl.user.expanded.phone.public">private</p>
                 </div><br>
-                <input class="profileEditorBioInput{{$ctrl.profileMonth}}" id="profileEditorPhoneInput" type="input" ng-keyup="$ctrl.updatePhone()">
+                <input class="profileEditorBioInput{{$ctrl.profileMonth}}" id="profileEditorPhoneInput" type="input" ng-keyup="$ctrl.updatePhone()" ng-blur="$ctrl.patchPhone()">
             </div>
             <div class="profileEditorBioDiv{{$ctrl.profileMonth}}"></div>
 

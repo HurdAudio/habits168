@@ -662,23 +662,27 @@ router.patch('/passwordchange/:id', (req, res, next)=>{
     });
 });
 
-router.patch('/:id', (req, res, next) => {
+router.patch('/:uuid', (req, res, next) => {
   var hashed_password = '';
+  let now = new Date();
   if (!req.session.isChanged) {
     if (req.body.password) {
       var salt = bcrypt.genSaltSync(parseInt(process.env.SALT_ROUNDS));
       var hash = bcrypt.hashSync(process.env.SALT_PASSWORD + req.body.password, salt);
       knex('users')
-      .where('id', req.params.id)
+      .where('uuid', req.params.uuid)
       .update({
-        name: req.body.name,
         email: req.body.email,
+        first_name: req.body.first_name,
+        last_name: req.body.last_name,
         hashed_password: hash,
         is_admin: req.body.is_admin,
-        user_avatar_url: req.body.user_avatar_url,
+        email_confirmed: req.body.email_confirmed,
+        avatar_path: req.body.avatar_path,
         associates: req.body.associates,
         security: req.body.security,
-        email_reset: req.body.email_reset
+        email_reset: req.body.email_reset,
+        updated_at: now
       }, '*')
         .then((results)=>{
            res.status(200).send(results[0]);
@@ -688,15 +692,18 @@ router.patch('/:id', (req, res, next) => {
         });
     } else {
       knex('users')
-      .where('id', req.params.id)
+      .where('uuid', req.params.uuid)
       .update({
-        name: req.body.name,
         email: req.body.email,
+        first_name: req.body.first_name,
+        last_name: req.body.last_name,
         is_admin: req.body.is_admin,
-        user_avatar_url: req.body.user_avatar_url,
+        email_confirmed: req.body.email_confirmed,
+        avatar_path: req.body.avatar_path,
         associates: req.body.associates,
         security: req.body.security,
-        email_reset: req.body.email_reset
+        email_reset: req.body.email_reset,
+        updated_at: now
       }, '*')
         .then((results)=>{
            res.status(200).send(results[0]);
