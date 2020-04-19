@@ -1,0 +1,570 @@
+.externalsBackgroundDiv_FebruaryB {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/externals/backdrop/priscilla-du-preez-2anH6XaTc2A-unsplash.jpg);
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.externalsContainerActive_FebruaryB {
+    filter: blur(0px) hue-rotate(0deg);
+    transform: all 0.5s linear;
+}
+
+.externalsContainerInactive_FebruaryB {
+    filter: blur(5px) hue-rotate(180deg);
+    transform: all 0.5s linear;
+}
+
+.externalsTitleBar_FebruaryB {
+    background: linear-gradient(-145deg, #9c8c84, #adbdc2);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'IM Fell French Canon', serif;
+    height: 12vh;
+    justify-content: flex-start;
+    opacity: 0.9;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.externalsLogo_FebruaryB {
+    cursor: pointer;
+    filter: drop-shadow(12px 8px 4px #2b322b);
+    height: 90px;
+    margin: 1px 48px 1px 13px;
+    max-width: 90px;
+}
+
+.externalsTitle_FebruaryB {
+    color: #000100;
+    font-family: 'IM Fell French Canon', serif;
+    font-size: 42px;
+    transform: translateX(0.5vw) translateY(3.5vh);
+}
+
+.externalsBody_FebruaryB {
+    background: linear-gradient(145deg, #77939e, #9c8c84);
+    height: 87vh;
+    opacity: 0.9;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 24px;
+    width: 100%;
+}
+
+.externalsIssuesHeader_FebruaryB {
+    color: #000100;
+    font-family: 'IM Fell French Canon', serif;
+    font-size: 30px;
+}
+
+.externalManagementContainer_FebruaryB {
+    display: grid;
+    grid-template-columns: [leftBuffer] 10px [deleteColumn] 50px [readColumn] 120px [imageColumn] 150px [issueColumn] 1fr [rightBuffer] 10px;
+    grid-template-rows: [externalContent] auto [addNewContent] auto;
+    height: auto;
+    margin: 30px 0 15px 0;
+    width: 100%;
+}
+
+.externalsSwitchtrue_FebruaryB {
+    background: linear-gradient(145deg, #2b322b, #cfd9dd);
+    cursor: pointer;
+    display: inline-block;
+    filter: brightness(100%);
+    grid-column: readColumn / imageColumn;
+    grid-row: externalContent;
+    height: 15px;
+    margin: 35px 0 0 15px;
+    position: relative;
+    transition: all 0.3s linear;
+    width: 60px;
+}
+
+.externalsSwitchfalse_FebruaryB {
+    background: linear-gradient(145deg, #77939e, #160903);
+    cursor: pointer;
+    display: inline-block;
+    filter: brightness(90%);
+    grid-column: readColumn / imageColumn;
+    grid-row: externalContent;
+    height: 15px;
+    margin: 35px 0 0 15px;
+    position: relative;
+    transition: all 0.3s linear;
+    width: 60px;
+}
+
+.externalsSwitchHandletrue_FebruaryB {
+    background: linear-gradient(145deg, #4c5b58, #1e2423);
+    bottom: 2px;
+    height: 35px;
+    left: 0;
+    position: absolute;
+    right: 2px;
+    top: -10px;
+    transition: all 0.3s linear;
+    width: 15px;
+}
+
+.externalsSwitchHandlefalse_FebruaryB {
+    background: linear-gradient(145deg, #1e2423, #4c5b58);
+    bottom: 2px;
+    height: 35px;
+    left: 45px;
+    position: absolute;
+    right: 2px;
+    top: -10px;
+    transition: all 0.3s linear;
+    width: 15px;
+}
+
+.externalsSwitchText_FebruaryB {
+    color: #000100;
+    font-family: 'IM Fell French Canon', serif;
+    font-size: 18px;
+    margin: 28px 0 0 0;
+}
+
+.externalsImage_FebruaryB {
+    grid-column: imageColumn / issueColumn;
+    grid-row: externalContent;
+    max-height: 120px;
+    width: 100px;
+}
+
+.externalsReadingDatas_FebruaryB {
+    color: #000100;
+    font-family: 'IM Fell French Canon', serif;
+    font-size: 18px;
+    grid-column: issueColumn / rightBuffer;
+    grid-row: externalContent;
+    margin: 25px 0 0 0;
+}
+
+.externalsDelete_FebruaryB {
+    align-self: center;
+    color: #000100;
+    cursor: pointer;
+    font-size: 30px;
+    grid-column: deleteColumn / readColumn;
+    grid-row: externalContent;
+    justify-content: center;
+    transition: all 0.3s linear;
+}
+
+.externalsDelete_FebruaryB:hover {
+    color: #391809;
+    transition: all 0.3s linear;
+}
+
+.externalsAddNewContentDiv_FebruaryB {
+    color: #000100;
+    cursor: pointer;
+    margin: 70px 0 0 330px;
+    width: auto;
+}
+
+.externalsAddContentIcon_FebruaryB {
+    float: left;
+    font-size: 42px;
+    margin: 0 30px 0 0;
+    position: float;
+}
+
+.externalsAddNewText_FebruaryB {
+    float: left;
+    font-family: 'IM Fell French Canon', serif;
+    font-size: 24px;
+    margin: 5px 0 0 0;
+}
+
+.externalsDeleteGuardrailActive_FebruaryB {
+    background: #bbc9cf;
+    border: 1px solid #000100;
+    height: auto;
+    left: 25%;
+    opacity: 1;
+    position: absolute;
+    top: 15%;
+    transition: all 0.3s linear;
+    width: auto;
+    z-index: 10;
+}
+
+.externalsDeleteGuardrailInactive_FebruaryB {
+    background: #bbc9cf;
+    border: 1px solid #000100;
+    height: auto;
+    left: 175%;
+    opacity: 0;
+    position: absolute;
+    top: 105%;
+    transition: all 0.3s linear;
+    width: auto;
+    z-index: -10;
+}
+
+.externalsDeleteGuardrailTitleBar_FebruaryB {
+    background: #5a7b84;
+    border-bottom: 1px solid #000100;
+    height: auto;
+    padding: 6px 0;
+    width: 100%;
+}
+
+.externalsDeleteGuardrailTitle_FebruaryB {
+    color: #000100;
+    font-family: 'IM Fell French Canon', serif;
+    font-size: 30px;
+    margin-left: 40px;
+}
+
+.externalsGuardrailContainer_FebruaryB {
+    background: transparent;
+    display: grid;
+    grid-template-columns: [leftB] 10px [imgColumn] 120px [infoColumn] 1fr [rightB] 10px;
+    grid-template-rows: [title] auto [query] auto [buttons] auto;
+    height: auto;
+    padding: 12px;
+    width: 100%;
+}
+
+.externalsGuardrailBodyText_FebruaryB {
+    color: #080709;
+    font-family: 'IM Fell French Canon', serif;
+    font-size: 18px;
+    grid-column: imgColumn / rightB;
+    grid-row: title;
+}
+
+.externalsGuardrailImage_FebruaryB {
+    grid-column: imgColumn / infoColumn;
+    grid-row: query;
+    margin: 20px 0;
+    width: 90px;
+}
+
+.externalsGuardrailInfos_FebruaryB {
+    color: #000100;
+    font-family: 'IM Fell French Canon', serif;
+    font-size: 18px;
+    grid-column: infoColumn / rightB;
+    grid-row: query;
+    margin: 40px 0 20px 0;
+}
+
+.externalsGuardrailButtons_FebruaryB {
+    background: transparent;
+    grid-column: infoColumn / rightB;
+    grid-row: buttons;
+    height: auto;
+    justify-content: center;
+    margin: 0 0 0 16%;
+}
+
+.externalsGuardrailButtons_FebruaryB button {
+    background: linear-gradient(145deg, #4c5b58, #bbc9cf);
+    border: none;
+    color: #000100;
+    cursor: pointer;
+    filter: drop-shadow(10px 15px 4px #2b322b);
+    font-family: 'IM Fell French Canon', serif;
+    font-size: 24px;
+    margin: 10px 40px 20px 0;
+    outline-color: #959995;
+    transition: all 0.6s linear;
+    width: 70px;
+}
+
+.externalsGuardrailButtons_FebruaryB button:hover {
+    background: linear-gradient(145deg, #9c8c84, #243134);
+    color: #cfd9dd;
+    filter: drop-shadow(9px 14px 3px #2b322b);
+    outline-color: #959995;
+    transition: all 0.6s linear;
+}
+
+.externalsGuardrailButtons_FebruaryB button:active {
+    background: linear-gradient(145deg, #111411, #77939e);
+    color: #959995;
+    filter: drop-shadow(0 0 0 #2b322b);
+    transition: all 0.1s linear;
+}
+
+.externalsAddNewExternalsDialogActive_FebruaryB {
+    background: linear-gradient(145deg, #adbdc2, #9eb2bb);
+    border: 1px solid #000100;
+    height: auto;
+    left: 10%;
+    opacity: 1;
+    position: absolute;
+    top: 0.5%;
+    transform: scale(1);
+    transition: all 0.6s linear;
+    width: 80%;
+    z-index: 10;
+}
+
+.externalsAddNewExternalsDialogInactive_FebruaryB {
+    background: linear-gradient(145deg, #adbdc2, #9eb2bb);
+    border: 1px solid #000100;
+    height: auto;
+    left: -90%;
+    opacity: 0;
+    position: absolute;
+    top: 0.5%;
+    transform: scale(0.01);
+    transition: all 0.6s linear;
+    width: 80%;
+    z-index: -10;
+}
+
+.externalsAddNewTitleBar_FebruaryB {
+    background: linear-gradient(145deg, #808180, #cfd9dd);
+    border-bottom: 1px solid #000100;
+    height: auto;
+    padding: 6px 0;
+    width: 100%;
+}
+
+.externalsAddNewTitle_FebruaryB {
+    color: #000100;
+    font-family: 'IM Fell French Canon', serif;
+    font-size: 30px;
+    margin-left: 40px;
+}
+
+.externalsAddNewBodyContainer_FebruaryB {
+    display: grid;
+    grid-template-columns: [leftAdd] 10px [formInput] 1fr [displayAdd] 1fr [rightAdd] 10px;
+    grid-template-rows: [errorMessaging] auto [userAdds] auto [buttonsAdds] auto;
+    height: auto;
+}
+
+.externalsAddErrorField_FebruaryB {
+    color: #ff0000;
+    font-family: 'IM Fell French Canon', serif;
+    font-size: 18px;
+    grid-column: formInput / rightAdd;
+    grid-row: errorMessaging;
+    margin: 15px 30px;
+}
+
+.externalsAddUserForm_FebruaryB {
+    background: transparent;
+    grid-column: formInput / displayAdd;
+    grid-row: userAdds;
+    height: auto;
+    margin: 0 0 30px 0;
+    padding: 24px 0;
+}
+
+.externalsAddUserForm_FebruaryB label {
+    color: #000100;
+    font-family: 'IM Fell French Canon', serif;
+    font-size: 18px;
+    margin: 15px 24px;
+}
+
+.externalsAddUserForm_FebruaryB input[type="text"] {
+    background: #a6adac;
+    border: none;
+    color: #000100;
+    font-family: 'IM Fell French Canon', serif;
+    font-size: 18px;
+    margin: 5px 24px;
+    outline-color: #9c8c84;
+    padding: 0 5px;
+    width: 90%;
+}
+
+.externalsAddUserForm_FebruaryB textarea {
+    background: #a6adac;
+    border: none;
+    color: #000100;
+    font-family: 'IM Fell French Canon', serif;
+    font-size: 18px;
+    margin: 5px 24px;
+    outline-color: #9c8c84;
+    padding: 0 5px;
+    width: 90%;
+}
+
+.externalsDisplayNewAddition_FebruaryB {
+    background: transparent;
+    grid-column: displayAdd / rightAdd;
+    grid-row: userAdds;
+    height: auto;
+    margin: 0 0 30px 0;
+    padding: 24px 0;
+}
+
+.externalsAddImage_FebruaryB {
+    margin: 0 0 0 36px;
+    max-height: 240px;
+    width: 150px;
+}
+
+.externalsAddCandidateTitle_FebruaryB {
+    color: #000100;
+    font-family: 'IM Fell French Canon', serif;
+    font-size: 24px;
+    margin: 24px;
+}
+
+.externalsAddExternalsButtons_FebruaryB {
+    background: transparent;
+    height: auto;
+    grid-column: formInput / rightAdd;
+    grid-row: buttonsAdds;
+    margin: 0 0 30px 0;
+}
+
+.externalsAddExternalsButtons_FebruaryB button {
+    background: linear-gradient(145deg, #4c5b58, #bbc9cf);
+    border: none;
+    color: #000100;
+    cursor: pointer;
+    filter: drop-shadow(10px 15px 4px #2b322b);
+    font-family: 'IM Fell French Canon', serif;
+    font-size: 24px;
+    margin: 10px 40px 20px 6%;
+    outline-color: #959995;
+    transition: all 0.6s linear;
+    width: auto;
+}
+
+.externalsAddExternalsButtons_FebruaryB button:hover {
+    background: linear-gradient(145deg, #9c8c84, #243134);
+    color: #cfd9dd;
+    filter: drop-shadow(9px 14px 3px #2b322b);
+    outline-color: #959995;
+    transition: all 0.6s linear;
+}
+
+.externalsAddExternalsButtons_FebruaryB button:active {
+    background: linear-gradient(145deg, #111411, #77939e);
+    color: #959995;
+    filter: drop-shadow(0 0 0 #2b322b);
+    transition: all 0.1s linear;
+}
+
+.hubReaderExternalsDay2BlockInactive_FebruaryB {
+    background: #82a1b5;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/externals/backdrop/priscilla-du-preez-2anH6XaTc2A-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(250%) translateY(500%);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: -1;
+}
+
+.hubReaderExternalsDay2BlockActive_FebruaryB {
+    background: #82a1b5;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/externals/backdrop/priscilla-du-preez-2anH6XaTc2A-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px) translateY(0px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 414px) {
+
+    .externalsTitle_FebruaryB {
+        font-size: 24px;
+    }
+
+    .externalsIssuesHeader_FebruaryB {
+        font-size: 18px;
+    }
+
+    .externalManagementContainer_FebruaryB {
+        grid-template-columns: [leftBuffer] 1px [deleteColumn] 25px [readColumn] 60px [imageColumn] 80px [issueColumn] 50% [rightBuffer] 14px;
+        grid-template-rows: [externalContent] auto [addNewContent] auto;
+        margin: 15px 0 7px 0;
+    }
+
+    .externalsDelete_FebruaryB {
+        font-size: 18px;
+    }
+
+    .externalsImage_FebruaryB {
+        margin-left: 15px;
+        max-height: 50px;
+        width: 40px;
+    }
+
+    .externalsSwitchfalse_FebruaryB {
+        height: 25px;
+        margin: 15px 15px 0 5px;
+        transform: scale(0.5);
+        width: 60px;
+    }
+
+    .externalsSwitchtrue_FebruaryB {
+        height: 25px;
+        margin: 15px 15px 0 5px;
+        transform: scale(0.5);
+        width: 60px;
+    }
+
+    .externalsReadingDatas_FebruaryB {
+        font-size: 12px;
+        margin: 25px 0 0 0;
+    }
+
+    .externalsAddNewContentDiv_FebruaryB {
+        margin: 70px 0 0 10px;
+    }
+
+    .externalsDeleteGuardrailActive_FebruaryB {
+        left: 0;
+        width: 100%;
+    }
+
+    .externalsAddNewExternalsDialogActive_FebruaryB {
+        left: 0;
+        width: 100%;
+    }
+
+    .externalsAddImage_FebruaryB {
+        margin: 0 0 0 36px;
+        max-height: 120px;
+        width: 75px;
+    }
+
+    .externalsAddUserForm_FebruaryB textarea {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+
+    .externalsTitle_FebruaryB {
+        font-size: 18px;
+    }
+}
