@@ -1,0 +1,1875 @@
+.playerContainer_MarchA {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/player/haley-owens-zoDmUrA0bE0-unsplash.jpg);
+    background-size: cover;
+    filter: blur(0);
+    height: 95vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    z-index: 1;
+}
+
+.playerContainerBlur_MarchA {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/player/haley-owens-zoDmUrA0bE0-unsplash.jpg);
+    background-size: cover;
+    filter: blur(10px);
+    height: 95vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    z-index: 1;
+}
+
+.playerDiv_MarchA {
+    backdrop-filter: blur(4px) brightness(40%) hue-rotate(-90deg) saturate(100%);
+    border: 3px solid #1a4a1a;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 41vh;
+    justify-content: flex-start;
+    left: 5%;
+    position: relative;
+    top: 0;
+    width: 88%;
+}
+
+.playerFeedIcon_MarchA img {
+    height: 200px;
+    margin: 30px 10%;
+    width: 200px;
+}
+
+.playerPodcastTitle_MarchA {
+    color: #f9fffd;
+    font-family: 'Arimo', sans-serif;
+    font-size: 42px;
+}
+
+.playerEpisodeTitle_MarchA {
+    color: #f9fffd;
+    font-family: 'Arimo', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.playerEpisodeAuthor_MarchA {
+    color: #f9fffd;
+    float: left;
+    font-family: 'Arimo', sans-serif;
+    font-size: 18px;
+    margin: 10px 0 5px 0;
+}
+
+.playerTitlingDiv_MarchA {
+    padding: 25px 15px 1px 40px;
+    width: 70%;
+}
+
+.playerContainer_MarchA a {
+    text-decoration: none;
+}
+
+.playerControlsDiv_MarchA {
+    margin: 50px 15px 4px 15px;
+    position: relative;
+    width: 100%;
+}
+
+.playerPlay_MarchA {
+    background: transparent;
+    border: 3px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/player/haley-owens-zoDmUrA0bE0-unsplash.jpg) 30% stretch;
+    box-sizing: border-box;
+    color: #1b120b;
+    cursor: pointer;
+    filter: drop-shadow(10px 15px 4px #0a1d0a);
+    float: left;
+    font-family: 'Arimo', sans-serif;
+    font-size: 54px;
+    outline-color: #8d8985;
+    padding: 6px 20px;
+    transition: all 0.4s linear;
+}
+
+.playerPlay_MarchA:hover {
+    color: #1a4a1a;
+    filter: drop-shadow(7px 7px 4px #0a1d0a);
+    transition: all 0.3s linear;
+}
+
+.playerPlay_MarchA:active {
+    filter: brightness(120%) drop-shadow(0 0 0 #0a1d0a);
+    transition: all 0.1s linear;
+}
+
+.playerPause_MarchA {
+    background: transparent;
+    border: 3px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/player/haley-owens-zoDmUrA0bE0-unsplash.jpg) 30% stretch;
+    box-sizing: border-box;
+    color: #1b120b;
+    cursor: pointer;
+    filter: drop-shadow(10px 15px 4px #0a1d0a);
+    float: left;
+    font-family: 'Arimo', sans-serif;
+    font-size: 54px;
+    outline-color: #8d8985;
+    padding: 6px 20px;
+    transition: all 0.4s linear;
+}
+
+.playerPause_MarchA:hover {
+    color: #1a4a1a;
+    filter: drop-shadow(7px 7px 4px #0a1d0a);
+    transition: all 0.3s linear;
+}
+
+.playerPause_MarchA:active {
+    filter: brightness(120%) drop-shadow(0 0 0 #0a1d0a);
+    transition: all 0.1s linear;
+}
+
+.playerNumericalProgressDisplay_MarchA {
+    color: #f9fffd;
+    float: left;
+    font-family: 'Arimo', sans-serif;
+    font-size: 30px;
+    padding: 0 0 4px 30px;
+    width: 17vw;
+}
+
+.playerProgressSlider_MarchA {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: #10004d;
+    border: 3px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/player/haley-owens-zoDmUrA0bE0-unsplash.jpg) 30% stretch;
+    box-sizing: border-box;
+    cursor: pointer;
+    filter: brightness(80%) drop-shadow(10px 15px 4px #0a1d0a);
+    float: left;
+    height: 2.2vh;
+    margin: 22px 0 10px 15px;
+    outline-color: #9f9294;
+    perspective: 500px;
+    transition: all 0.1s linear;
+    width: 50vw;
+}
+
+.playerProgressSlider_MarchA:hover {
+    filter: brightness(150%) drop-shadow(7px 7px 4px #0a1d0a);
+    transition: all 0.1s linear;
+}
+
+.playerProgressSlider_MarchA::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background: #8da58d;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/player/haley-owens-zoDmUrA0bE0-unsplash.jpg) 30% stretch;
+    box-sizing: border-box;
+    height: 4.8vh;
+    perspective: 500px;
+    width: 17px;
+}
+
+.playerProgressSlider_MarchA::-moz-range-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background: #8da58d;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/player/haley-owens-zoDmUrA0bE0-unsplash.jpg) 30% stretch;
+    box-sizing: border-box;
+    height: 4.8vh;
+    perspective: 500px;
+    width: 17px;
+}
+
+.tabsContainer_MarchA {
+    backdrop-filter: blur(4px) hue-rotate(-90deg);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: auto;
+    justify-content: flex-start;
+    left: 5%;
+    opacity: 0.9;
+    position: relative;
+    transition: all 0.5s linear;
+    top: 3vh;
+    width: 88%;
+    z-index: 5;
+}
+
+.playerTabActive_MarchA {
+    background: #10004d;
+    color: #f9fffd;
+    cursor: none;
+    font-family: 'Arimo', sans-serif;
+    font-size: 24px;
+    padding: 8px 180px;
+    transition: all 0.5s linear;
+    width: auto;
+}
+
+.playerTabInactive_MarchA {
+    background: transparent;
+    color: #8da58d;
+    cursor: pointer;
+    font-family: 'Arimo', sans-serif;
+    font-size: 24px;
+    padding: 8px 70px;
+    transition: all 0.5s linear;
+    width: auto;
+}
+
+.aboutContainerActive_MarchA {
+    backdrop-filter: blur(16px) hue-rotate(45deg);
+    background: #9f9294;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: flex-start;
+    left: 5%;
+    opacity: 0.85;
+    position: relative;
+    top: 3vh;
+    width: 88%;
+    z-index: 8;
+}
+
+.aboutContainerInactive_MarchA {
+    display: none;
+}
+
+.episodeContainerActive_MarchA {
+    backdrop-filter: blur(16px) hue-rotate(90deg);
+    background: #9f9294;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: flex-start;
+    left: 5%;
+    margin-bottom: 8vh;
+    opacity: 0.85;
+    position: relative;
+    top: 3vh;
+    width: 88%;
+    z-index: 8;
+}
+
+.episodeContainerInactive_MarchA {
+    display: none;
+}
+
+.detailsContainerActive_MarchA {
+    backdrop-filter: blur(16px) hue-rotate(135deg);
+    background: #9f9294;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: flex-start;
+    left: 5%;
+    margin-bottom: 5vh;
+    opacity: 0.95;
+    position: relative;
+    top: 3vh;
+    width: 88%;
+    z-index: 8;
+}
+
+.detailsContainerInactive_MarchA {
+    display: none;
+}
+
+.episodesTitleBar_MarchA {
+    color: #000000;
+    font-family: 'Arimo', sans-serif;
+    font-size: 30px;
+    height: auto;
+    padding: 15px 0 4px 25px;
+    width: 100%;
+}
+
+.episodeItems_MarchA {
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 4px;
+    width: 95%;
+}
+
+.episodeItemsCurrent_MarchA {
+    background: #8880a6;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 4px;
+    width: 95%;
+}
+
+.userEpisodeStatus_MarchA {
+    color: #000000;
+    float: left;
+    font-family: 'Arimo', sans-serif;
+    font-size: 24px;
+    padding: 8px 0 8px 16px;
+    position: relative;
+    width: 4vw;
+}
+
+.userEpisodeItemsTitle_MarchA {
+    float: left;
+    color: #000000;
+    font-family: 'Arimo', sans-serif;
+    font-size: 24px;
+    padding: 8px 0 8px 16px;
+    position: inherit;
+    width: 35vw;
+}
+
+.userEpisodeItemsAuthor_MarchA {
+    color: #000000;
+    float: left;
+    font-family: 'Arimo', sans-serif;
+    font-size: 18px;
+    padding: 10px 0 8px 16px;
+    position: inherit;
+    width: 30vw;
+}
+
+.userEpisodePosition_MarchA {
+    color: #000000;
+    float: left;
+    font-family: 'Arimo', sans-serif;
+    font-size: 18px;
+    padding: 10px 0 8px 16px;
+    position: inherit;
+    width: 13.5vw;
+}
+
+.aboutThisPodcastImage_MarchA {
+    filter: brightness(100%);
+    float: left;
+    height: 100px;
+    margin: 15px;
+    width: 100px;
+}
+
+.aboutThisPodcastTitle_MarchA {
+    color: #000000;
+    float: left;
+    font-family: 'Arimo', sans-serif;
+    font-size: 30px;
+    height: 5vh;
+    margin: 15px 5px 5px 15px;
+}
+
+.aboutThisPodcastAuthor_MarchA {
+    color: #000000;
+    font-family: 'Arimo', sans-serif;
+    font-size: 24px;
+    margin: 18px 5px 5px 15px;
+}
+
+.aboutThisPodcastDescription_MarchA {
+    color: #000000;
+    font-family: 'Arimo', sans-serif;
+    font-size: 18px;
+    line-height: 1.4em;
+    margin: 5px 0 100px 115px;
+    max-width: 750px;
+}
+
+.detailsTitle_MarchA {
+    color: #000000;
+    font-family: 'Arimo', sans-serif;
+    font-size: 30px;
+    margin: 15px 15px 15px 80px;
+}
+
+.detailsEpisodeTitle_MarchA {
+    color: #000000;
+    font-family: 'Arimo', sans-serif;
+    font-size: 30px;
+    margin: 15px;
+}
+
+.detailsContent_MarchA {
+    color: #000000;
+    font-family: 'Arimo', sans-serif;
+    font-size: 18px;
+    line-height: 1.4em;
+    max-width: 700px;
+    padding: 35px 35px 100px 115px;
+}
+
+.detailsContent_MarchA a {
+    color: #10004d;
+    text-decoration: underline;
+}
+
+.detailsContent_MarchA a:visited {
+    color: #1a4a1a;
+}
+
+.detailsContent_MarchA a:hover {
+    color: #3f2528;
+}
+
+.playerRewindToBeginning_MarchA {
+    background: transparent;
+    border: 3px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/player/haley-owens-zoDmUrA0bE0-unsplash.jpg) 30% stretch;
+    box-sizing: border-box;
+    color: #1b120b;
+    cursor: pointer;
+    filter: drop-shadow(10px 15px 4px #0a1d0a);
+    float: left;
+    font-family: 'Arimo', sans-serif;
+    font-size: 24px;
+    margin: 0 6px;
+    outline-color: #8d8985;
+    padding: 6px 10px;
+    transition: all 0.4s linear;
+}
+
+.playerRewindToBeginning_MarchA:hover {
+    color: #1a4a1a;
+    filter: brightness(150%) drop-shadow(7px 7px 4px #0a1d0a);
+    transition: all 0.1s linear;
+}
+
+.playerRewindToBeginning_MarchA:active {
+    filter: brightness(120%) drop-shadow(0 0 0 #0a1d0a);
+    transition: all 0.1s linear;
+}
+
+.playerRewind15Seconds_MarchA {
+    background: transparent;
+    border: 3px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/player/haley-owens-zoDmUrA0bE0-unsplash.jpg) 30% stretch;
+    box-sizing: border-box;
+    color: #1b120b;
+    cursor: pointer;
+    filter: drop-shadow(10px 15px 4px #0a1d0a);
+    float: left;
+    font-family: 'Arimo', sans-serif;
+    font-size: 24px;
+    margin: 0 6px;
+    outline-color: #8d8985;
+    padding: 6px 10px;
+    transition: all 0.4s linear;
+}
+
+.playerRewind15Seconds_MarchA:hover {
+    color: #1a4a1a;
+    filter: brightness(150%) drop-shadow(7px 7px 4px #0a1d0a);
+    transition: all 0.1s linear;
+}
+
+.playerRewind15Seconds_MarchA:active {
+    filter: brightness(120%) drop-shadow(0 0 0 #0a1d0a);
+    transition: all 0.1s linear;
+}
+
+.playerForward15Seconds_MarchA {
+    background: transparent;
+    border: 3px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/player/haley-owens-zoDmUrA0bE0-unsplash.jpg) 30% stretch;
+    box-sizing: border-box;
+    color: #1b120b;
+    cursor: pointer;
+    filter: drop-shadow(10px 15px 4px #0a1d0a);
+    float: left;
+    font-family: 'Arimo', sans-serif;
+    font-size: 24px;
+    margin: 0 6px;
+    outline-color: #8d8985;
+    padding: 6px 10px;
+    transition: all 0.4s linear;
+}
+
+.playerForward15Seconds_MarchA:hover {
+    color: #1a4a1a;
+    filter: brightness(150%) drop-shadow(7px 7px 4px #0a1d0a);
+    transition: all 0.1s linear;
+}
+
+.playerForward15Seconds_MarchA:active {
+    filter: brightness(120%) drop-shadow(0 0 0 #0a1d0a);
+    transition: all 0.1s linear;
+}
+
+.playerFastForwardEnd_MarchA {
+    background: transparent;
+    border: 3px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/player/haley-owens-zoDmUrA0bE0-unsplash.jpg) 30% stretch;
+    box-sizing: border-box;
+    color: #1b120b;
+    cursor: pointer;
+    filter: drop-shadow(10px 15px 4px #0a1d0a);
+    float: left;
+    font-family: 'Arimo', sans-serif;
+    font-size: 24px;
+    margin: 0 6px;
+    outline-color: #8d8985;
+    padding: 6px 10px;
+    transition: all 0.4s linear;
+}
+
+.playerFastForwardEnd_MarchA:hover {
+    color: #1a4a1a;
+    filter: brightness(150%) drop-shadow(7px 7px 4px #0a1d0a);
+    transition: all 0.1s linear;
+}
+
+.playerFastForwardEnd_MarchA:active {
+    filter: brightness(120%) drop-shadow(0 0 0 #0a1d0a);
+    transition: all 0.1s linear;
+}
+
+.playerAtSpeed1_MarchA {
+    background: transparent;
+    border: 3px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/player/haley-owens-zoDmUrA0bE0-unsplash.jpg) 30% stretch;
+    box-sizing: border-box;
+    color: #1b120b;
+    cursor: pointer;
+    filter: drop-shadow(10px 15px 4px #0a1d0a);
+    float: left;
+    font-family: 'Arimo', sans-serif;
+    font-size: 24px;
+    margin: 0 6px;
+    outline-color: #8d8985;
+    padding: 6px 10px;
+    transition: all 0.4s linear;
+}
+
+.playerAtSpeed1_MarchA:hover {
+    color: #1a4a1a;
+    filter: brightness(150%) drop-shadow(7px 7px 4px #0a1d0a);
+    transition: all 0.1s linear;
+}
+
+.playerAtSpeed1_MarchA:active {
+    filter: brightness(120%) drop-shadow(0 0 0 #0a1d0a);
+    transition: all 0.1s linear;
+}
+
+.playerAtSpeed1point25_MarchA {
+    background: transparent;
+    border: 3px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/player/haley-owens-zoDmUrA0bE0-unsplash.jpg) 30% stretch;
+    box-sizing: border-box;
+    color: #1b120b;
+    cursor: pointer;
+    filter: drop-shadow(10px 15px 4px #0a1d0a);
+    float: left;
+    font-family: 'Arimo', sans-serif;
+    font-size: 24px;
+    margin: 0 6px;
+    outline-color: #8d8985;
+    padding: 6px 10px;
+    transition: all 0.4s linear;
+}
+
+.playerAtSpeed1point25_MarchA:hover {
+    color: #1a4a1a;
+    filter: brightness(150%) drop-shadow(7px 7px 4px #0a1d0a);
+    transition: all 0.1s linear;
+}
+
+.playerAtSpeed1point25_MarchA:active {
+    filter: brightness(120%) drop-shadow(0 0 0 #0a1d0a);
+    transition: all 0.1s linear;
+}
+
+.playerAtSpeed1point5_MarchA {
+    background: transparent;
+    border: 3px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/player/haley-owens-zoDmUrA0bE0-unsplash.jpg) 30% stretch;
+    box-sizing: border-box;
+    color: #1b120b;
+    cursor: pointer;
+    filter: drop-shadow(10px 15px 4px #0a1d0a);
+    float: left;
+    font-family: 'Arimo', sans-serif;
+    font-size: 24px;
+    margin: 0 6px;
+    outline-color: #8d8985;
+    padding: 6px 10px;
+    transition: all 0.4s linear;
+}
+
+.playerAtSpeed1point5_MarchA:hover {
+    color: #1a4a1a;
+    filter: brightness(150%) drop-shadow(7px 7px 4px #0a1d0a);
+    transition: all 0.1s linear;
+}
+
+.playerAtSpeed1point5_MarchA:active {
+    filter: brightness(120%) drop-shadow(0 0 0 #0a1d0a);
+    transition: all 0.1s linear;
+}
+
+.playerAtSpeed2_MarchA {
+    background: transparent;
+    border: 3px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/player/haley-owens-zoDmUrA0bE0-unsplash.jpg) 30% stretch;
+    box-sizing: border-box;
+    color: #1b120b;
+    cursor: pointer;
+    filter: drop-shadow(10px 15px 4px #0a1d0a);
+    float: left;
+    font-family: 'Arimo', sans-serif;
+    font-size: 24px;
+    margin: 0 6px;
+    outline-color: #8d8985;
+    padding: 6px 10px;
+    transition: all 0.4s linear;
+}
+
+.playerAtSpeed2_MarchA:hover {
+    color: #1a4a1a;
+    filter: brightness(150%) drop-shadow(7px 7px 4px #0a1d0a);
+    transition: all 0.1s linear;
+}
+
+.playerAtSpeed2_MarchA:active {
+    filter: brightness(120%) drop-shadow(0 0 0 #0a1d0a);
+    transition: all 0.1s linear;
+}
+
+.playerAtSpeedPoint5_MarchA {
+    background: transparent;
+    border: 3px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/player/haley-owens-zoDmUrA0bE0-unsplash.jpg) 30% stretch;
+    box-sizing: border-box;
+    color: #1b120b;
+    cursor: pointer;
+    filter: drop-shadow(10px 15px 4px #0a1d0a);
+    float: left;
+    font-family: 'Arimo', sans-serif;
+    font-size: 24px;
+    margin: 0 6px;
+    outline-color: #8d8985;
+    padding: 6px 10px;
+    transition: all 0.4s linear;
+}
+
+.playerAtSpeedPoint5_MarchA:hover {
+    color: #1a4a1a;
+    filter: brightness(150%) drop-shadow(7px 7px 4px #0a1d0a);
+    transition: all 0.1s linear;
+}
+
+.playerAtSpeedPoint5_MarchA:active {
+    filter: brightness(120%) drop-shadow(0 0 0 #0a1d0a);
+    transition: all 0.1s linear;
+}
+
+.playerAtSpeedPoint75_MarchA {
+    background: transparent;
+    border: 3px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/player/haley-owens-zoDmUrA0bE0-unsplash.jpg) 30% stretch;
+    box-sizing: border-box;
+    color: #1b120b;
+    cursor: pointer;
+    filter: drop-shadow(10px 15px 4px #0a1d0a);
+    float: left;
+    font-family: 'Arimo', sans-serif;
+    font-size: 24px;
+    margin: 0 6px;
+    outline-color: #8d8985;
+    padding: 6px 10px;
+    transition: all 0.4s linear;
+}
+
+.playerAtSpeedPoint75_MarchA:hover {
+    color: #1a4a1a;
+    filter: brightness(150%) drop-shadow(7px 7px 4px #0a1d0a);
+    transition: all 0.1s linear;
+}
+
+.playerAtSpeedPoint75_MarchA:active {
+    filter: brightness(120%) drop-shadow(0 0 0 #0a1d0a);
+    transition: all 0.1s linear;
+}
+
+.playerShareSaveDiv_MarchA {
+    position: relative;
+    transform: translateX(7.4vw) translateY(15vh);
+}
+
+.playerShareButton_MarchA {
+    background: transparent;
+    border: 3px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/player/haley-owens-zoDmUrA0bE0-unsplash.jpg) 30% stretch;
+    box-sizing: border-box;
+    color: #1b120b;
+    cursor: pointer;
+    filter: drop-shadow(10px 15px 4px #0a1d0a);
+    float: left;
+    font-family: 'Arimo', sans-serif;
+    font-size: 30px;
+    margin: 0 6px;
+    outline-color: #8d8985;
+    padding: 1px 6px;
+    transition: all 0.4s linear;
+    transform: translateX(450px) translateY(-100px);
+}
+
+.playerShareButton_MarchA:hover {
+    color: #1a4a1a;
+    filter: brightness(150%) drop-shadow(7px 7px 4px #0a1d0a);
+    transition: all 0.1s linear;
+}
+
+.playerShareButton_MarchA:active {
+    filter: brightness(120%) drop-shadow(0 0 0 #0a1d0a);
+    transition: all 0.1s linear;
+}
+
+.playerSaveButton_MarchA {
+    background: transparent;
+    border: 3px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/player/haley-owens-zoDmUrA0bE0-unsplash.jpg) 30% stretch;
+    box-sizing: border-box;
+    color: #1b120b;
+    cursor: pointer;
+    filter: drop-shadow(10px 15px 4px #0a1d0a);
+    float: left;
+    font-family: 'Arimo', sans-serif;
+    font-size: 30px;
+    margin: 0 16px;
+    outline-color: #8d8985;
+    padding: 1px 6px;
+    transition: all 0.4s linear;
+    transform: translateX(450px) translateY(-100px);
+}
+
+.playerSaveButton_MarchA:hover {
+    color: #1a4a1a;
+    filter: brightness(150%) drop-shadow(7px 7px 4px #0a1d0a);
+    transition: all 0.1s linear;
+}
+
+.playerSaveButton_MarchA:active {
+    filter: brightness(120%) drop-shadow(0 0 0 #0a1d0a);
+    transition: all 0.1s linear;
+}
+
+.shareSaveDivActive_MarchA {
+    background: #8880a6;
+    height: auto;
+    left: 20%;
+    opacity: 1;
+    position: absolute;
+    top: 20%;
+    transform: translateY(0px);
+    transition: all 0.5s linear;
+    width: 60%;
+    z-index: 17;
+}
+
+.shareSaveDivInactive_MarchA {
+    background: #8880a6;
+    height: auto;
+    left: 20%;
+    opacity: 0.2;
+    position: absolute;
+    top: 20%;
+    transform: translateY(2500px);
+    transition: all 0.5s linear;
+    width: 60%;
+    z-index: -17;
+}
+
+.shareOrSaveStatus_MarchA {
+    color: #000000;
+    font-family: 'Arimo', sans-serif;
+    font-size: 24px;
+    margin: 30px 5px 15px 30px;
+    transition: all 0.5s linear;
+}
+
+.shareOrSaveContent_MarchA {
+    color: #000000;
+    font-family: 'Arimo', sans-serif;
+    font-size: 24px;
+    margin: 30px 5px 15px 60px;
+}
+
+.playerShareSaveLinkUserNotes_MarchA {
+    background: #8d8985;
+    border: solid 1px transparent;
+    color: #000000;
+    font-family: 'Arimo', sans-serif;
+    font-size: 18px;
+    margin: 5px 60px 5px 60px;
+    outline-color: #8880a6;
+    width: 80%;
+}
+
+.playerRadioButtons_MarchA {
+    color: #000000;
+    font-family: 'Arimo', sans-serif;
+    font-size: 18px;
+    margin: 5px 60px 5px 60px;
+}
+
+.shareSaveDivActive_MarchA button {
+    background: transparent;
+    border: 3px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/player/haley-owens-zoDmUrA0bE0-unsplash.jpg) 30% stretch;
+    box-sizing: border-box;
+    color: #1b120b;
+    cursor: pointer;
+    filter: drop-shadow(10px 15px 4px #0a1d0a);
+    float: left;
+    font-family: 'Arimo', sans-serif;
+    font-size: 30px;
+    margin: 40px 150px 40px 150px;
+    outline-color: #8d8985;
+    padding: 5px 5px;
+    transition: all 0.4s linear;
+}
+
+.shareSaveDivActive_MarchA button:hover {
+    color: #1a4a1a;
+    filter: brightness(150%) drop-shadow(7px 7px 4px #0a1d0a);
+    transition: all 0.1s linear;
+}
+
+.shareSaveDivActive_MarchA button:active {
+    filter: brightness(120%) drop-shadow(0 0 0 #0a1d0a);
+    transition: all 0.1s linear;
+}
+
+.playerExit_MarchA {
+    background: transparent;
+    border: solid 1px transparent;
+    color: #f9fffd;
+    cursor: pointer;
+    font-family: 'Arimo', sans-serif;
+    font-size: 48px;
+    left: 94%;
+    margin: 0 0 -10px 0;
+    position: relative;
+    top: 0;
+    width: 5%;
+}
+
+@media only screen and (max-width: 1400px) {
+    .playerShareButton_MarchA {
+
+        margin-right: 0;
+
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .playerDiv_MarchA {
+
+        height: 26vh;
+        justify-content: flex-start;
+        left: 5%;
+        opacity: 0.9;
+        position: relative;
+        top: 0;
+        width: 88%;
+    }
+
+    .playerFeedIcon_MarchA img {
+        height: 130px;
+        margin: 10px 10px;
+        width: 130px;
+    }
+
+    .playerPodcastTitle_MarchA {
+        font-size: 30px;
+        margin: 10px 0 10px 5px;
+    }
+
+    .playerEpisodeTitle_MarchA {
+        font-size: 24px;
+        margin: 4px 0 4px 5px;
+    }
+
+    .playerEpisodeAuthor_MarchA {
+        font-size: 18px;
+        margin: 4px 0 5px 5px;
+    }
+
+    .playerControlsDiv_MarchA {
+        margin: 35px 25px 4px -120px;
+        position: relative;
+        transform: scale(0.55);
+        width: 120%;
+    }
+
+    .playerProgressSlider_MarchA {
+
+        margin: 17px 0 10px 15px;
+        width: 50px;
+    }
+
+    .playerShareSaveDiv_MarchA {
+        position: relative;
+        transform: scale(0.5) translateX(-3vw) translateY(20vh);
+    }
+
+    .shareSaveDivActive_MarchA button {
+
+        margin: 40px 30px 40px 30px;
+        padding: 5px 5px;
+    }
+
+    .playerShareButton_MarchA {
+
+        margin-right: 0;
+
+    }
+
+    .playerShareButton_MarchA:active {
+        transition: all 0.1s linear;
+    }
+
+    .playerSaveButton_MarchA {
+
+        margin-right: 0;
+        transform: translateX(15px);
+    }
+
+    .playerSaveButton_MarchA:active {
+        transition: all 0.1s linear;
+    }
+
+    .playerProgressSlider_MarchA {
+        margin: 17px 0 10px 5px;
+        width: 150%;
+    }
+
+    .playerTabActive_MarchA {
+        font-size: 18px;
+        padding: 4px 0 4px 3px;
+        width: 30%;
+    }
+
+    .playerTabInactive_MarchA {
+        font-size: 18px;
+        padding: 4px 0 4px 3px;
+        width: 30%;
+    }
+
+    .episodesTitleBar_MarchA {
+        font-size: 18px;
+        height: auto;
+
+    }
+
+    .userEpisodeStatus_MarchA {
+
+        font-size: 12px;
+        padding: 4px 1px 4px 4px;
+        position: relative;
+        width: 2vw;
+    }
+
+    .userEpisodeItemsTitle_MarchA {
+        font-size: 12px;
+        padding: 4px 1px 4px 20px;
+        position: inherit;
+        width: 35vw;
+    }
+
+    .userEpisodeItemsAuthor_MarchA {
+        display: none;
+    }
+
+    .userEpisodePosition_MarchA {
+
+        font-size: 12px;
+        padding: 10px 1px 4px 16px;
+        width: 19vw;
+    }
+
+    .aboutThisPodcastImage_MarchA {
+        height: 40px;
+        margin: 5px;
+        width: 40px;
+    }
+
+    .aboutThisPodcastTitle_MarchA {
+
+        font-size: 18px;
+
+    }
+
+    .aboutThisPodcastAuthor_MarchA {
+
+        font-size: 12px;
+    }
+
+    .aboutThisPodcastDescription_MarchA {
+
+        font-size: 12px;
+        margin: 5px 50px 100px 5px;
+        max-width: 750px;
+    }
+
+    .detailsTitle_MarchA {
+
+        font-size: 18px;
+        margin: 15px 15px 15px 15px;
+    }
+
+    .detailsEpisodeTitle_MarchA {
+
+        font-size: 18px;
+        margin: 15px;
+    }
+
+    .detailsContent_MarchA {
+
+        font-size: 12px;
+
+        max-width: 300px;
+        padding: 4px 16px 50px 5px;
+    }
+
+    .detailsContent_MarchA a {
+        text-decoration: underline;
+    }
+
+    .scrollerDiv {
+        height: 1300px;
+    }
+
+    .playerExit_MarchA {
+
+        font-size: 24px;
+        margin: 0 0 -10px 0;
+        position: relative;
+        left: 91%;
+        top: 0;
+        width: 5%;
+    }
+
+    .shareSaveDivActive_MarchA {
+
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 17;
+    }
+
+    .shareSaveDivInactive_MarchA {
+        height: auto;
+        left: 20%;
+        opacity: 0.2;
+        position: absolute;
+        top: 20%;
+        transform: translateY(-500px);
+        width: 60%;
+        z-index: -17;
+    }
+
+    .scrollerDiv {
+        height: 950px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .playerDiv_MarchA {
+
+        height: 26vh;
+        justify-content: flex-start;
+        left: 5%;
+        opacity: 0.9;
+        position: relative;
+        top: 0;
+        width: 88%;
+    }
+
+    .playerFeedIcon_MarchA img {
+        height: 130px;
+        margin: 10px 10px;
+        width: 130px;
+    }
+
+    .playerPodcastTitle_MarchA {
+        font-size: 30px;
+        margin: 10px 0 10px 5px;
+    }
+
+    .playerEpisodeTitle_MarchA {
+        font-size: 24px;
+        margin: 4px 0 4px 5px;
+    }
+
+    .playerEpisodeAuthor_MarchA {
+        font-size: 18px;
+        margin: 4px 0 5px 5px;
+    }
+
+    .playerControlsDiv_MarchA {
+        margin: 35px 25px 4px -120px;
+        position: relative;
+        transform: scale(0.55);
+        width: 120%;
+    }
+
+    .playerProgressSlider_MarchA {
+
+        margin: 17px 0 10px 15px;
+        width: 50px;
+    }
+
+    .playerShareSaveDiv_MarchA {
+        position: relative;
+        transform: scale(0.5) translateX(-3vw) translateY(20vh);
+    }
+
+    .shareSaveDivActive_MarchA button {
+
+        margin: 40px 30px 40px 30px;
+        padding: 5px 5px;
+        transition: all 0.4s linear;
+    }
+
+    .playerShareButton_MarchA {
+
+        margin-right: 0;
+
+    }
+
+    .playerShareButton_MarchA:active {
+        transition: all 0.1s linear;
+    }
+
+    .playerSaveButton_MarchA {
+
+        margin-right: 0;
+        transform: translateX(15px);
+    }
+
+    .playerSaveButton_MarchA:active {
+        transition: all 0.1s linear;
+    }
+
+    .playerProgressSlider_MarchA {
+        margin: 17px 0 10px 5px;
+        width: 150%;
+    }
+
+    .playerTabActive_MarchA {
+        font-size: 18px;
+        padding: 4px 0 4px 3px;
+        width: 30%;
+    }
+
+    .playerTabInactive_MarchA {
+        font-size: 18px;
+        padding: 4px 0 4px 3px;
+        width: 30%;
+    }
+
+    .episodesTitleBar_MarchA {
+        font-size: 18px;
+        height: auto;
+
+    }
+
+    .userEpisodeStatus_MarchA {
+
+        font-size: 12px;
+        padding: 4px 1px 4px 4px;
+        position: relative;
+        width: 2vw;
+    }
+
+    .userEpisodeItemsTitle_MarchA {
+        font-size: 12px;
+        padding: 4px 1px 4px 20px;
+        position: inherit;
+        width: 35vw;
+    }
+
+    .userEpisodeItemsAuthor_MarchA {
+        display: none;
+    }
+
+    .userEpisodePosition_MarchA {
+
+        font-size: 12px;
+        padding: 10px 1px 4px 16px;
+        width: 19vw;
+    }
+
+    .aboutThisPodcastImage_MarchA {
+        height: 40px;
+        margin: 5px;
+        width: 40px;
+    }
+
+    .aboutThisPodcastTitle_MarchA {
+
+        font-size: 18px;
+
+    }
+
+    .aboutThisPodcastAuthor_MarchA {
+
+        font-size: 12px;
+    }
+
+    .aboutThisPodcastDescription_MarchA {
+
+        font-size: 12px;
+        margin: 5px 50px 100px 5px;
+        max-width: 750px;
+    }
+
+    .detailsTitle_MarchA {
+
+        font-size: 18px;
+        margin: 15px 15px 15px 15px;
+    }
+
+    .detailsEpisodeTitle_MarchA {
+
+        font-size: 18px;
+        margin: 15px;
+    }
+
+    .detailsContent_MarchA {
+
+        font-size: 12px;
+
+        max-width: 300px;
+        padding: 4px 16px 50px 5px;
+    }
+
+    .detailsContent_MarchA a {
+        text-decoration: underline;
+    }
+
+    .scrollerDiv {
+        height: 640px;
+    }
+
+    .playerExit_MarchA {
+
+        font-size: 24px;
+        margin: 0 0 -10px 0;
+        position: relative;
+        left: 91%;
+        top: 0;
+        width: 5%;
+    }
+
+    .shareSaveDivActive_MarchA {
+
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 17;
+    }
+
+    .shareSaveDivInactive_MarchA {
+        height: auto;
+        left: 20%;
+        opacity: 0.2;
+        position: absolute;
+        top: 20%;
+        transform: translateY(-500px);
+        width: 60%;
+        z-index: -17;
+    }
+
+    .scrollerDiv {
+        height: 950px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .playerFeedIcon_MarchA img {
+        height: 50px;
+        margin: 10px 5px;
+        width: 50px;
+    }
+
+    .playerPodcastTitle_MarchA {
+        font-size: 18px;
+        margin: 10px 0 10px 5px;
+    }
+
+    .playerEpisodeTitle_MarchA {
+        font-size: 18px;
+        margin: 4px 0 4px 5px;
+    }
+
+    .playerEpisodeAuthor_MarchA {
+        font-size: 12px;
+        margin: 4px 0 5px 5px;
+    }
+
+    .playerControlsDiv_MarchA {
+        margin: 35px 5px 4px -120px;
+        position: relative;
+        transform: scale(0.5);
+        width: 150%;
+    }
+
+    .playerShareSaveDiv_MarchA {
+        position: relative;
+        transform: scale(0.5) translateX(-3vw) translateY(15vh);
+    }
+
+    .shareSaveDivActive_MarchA button {
+
+        margin: 40px 30px 40px 30px;
+        padding: 5px 5px;
+        transition: all 0.4s linear;
+    }
+
+    .playerShareButton_MarchA {
+
+        margin-right: 0;
+
+    }
+
+    .playerShareButton_MarchA:active {
+        transition: all 0.1s linear;
+    }
+
+    .playerSaveButton_MarchA {
+
+        margin-right: 0;
+        transform: translateX(-190px) translateY(-53px);
+    }
+
+    .playerSaveButton_MarchA:active {
+        box-shadow: -3px -3px transparent;
+        transition: all 0.1s linear;
+    }
+
+    .playerProgressSlider_MarchA {
+        margin: 17px 0 10px 5px;
+        width: 150%;
+    }
+
+    .playerTabActive_MarchA {
+        font-size: 18px;
+        padding: 4px 0 4px 3px;
+        width: 30%;
+    }
+
+    .playerTabInactive_MarchA {
+        font-size: 18px;
+        padding: 4px 0 4px 3px;
+        width: 30%;
+    }
+
+    .episodesTitleBar_MarchA {
+        font-size: 18px;
+        height: auto;
+
+    }
+
+    .userEpisodeStatus_MarchA {
+
+        font-size: 12px;
+        padding: 4px 1px 4px 4px;
+        position: relative;
+        width: 2vw;
+    }
+
+    .userEpisodeItemsTitle_MarchA {
+        font-size: 12px;
+        padding: 4px 1px 4px 20px;
+        position: inherit;
+        width: 35vw;
+    }
+
+    .userEpisodeItemsAuthor_MarchA {
+        display: none;
+    }
+
+    .userEpisodePosition_MarchA {
+
+        font-size: 12px;
+        padding: 10px 1px 4px 16px;
+        width: 19vw;
+    }
+
+    .aboutThisPodcastImage_MarchA {
+        height: 40px;
+        margin: 5px;
+        width: 40px;
+    }
+
+    .aboutThisPodcastTitle_MarchA {
+
+        font-size: 18px;
+
+    }
+
+    .aboutThisPodcastAuthor_MarchA {
+
+        font-size: 12px;
+    }
+
+    .aboutThisPodcastDescription_MarchA {
+
+        font-size: 12px;
+        margin: 5px 50px 100px 5px;
+        max-width: 750px;
+    }
+
+    .detailsTitle_MarchA {
+
+        font-size: 18px;
+        margin: 15px 15px 15px 15px;
+    }
+
+    .detailsEpisodeTitle_MarchA {
+
+        font-size: 18px;
+        margin: 15px;
+    }
+
+    .detailsContent_MarchA {
+
+        font-size: 12px;
+
+        max-width: 300px;
+        padding: 4px 16px 50px 5px;
+    }
+
+    .detailsContent_MarchA a {
+        text-decoration: underline;
+    }
+
+    .scrollerDiv {
+        height: 640px;
+    }
+
+    .playerExit_MarchA {
+
+        font-size: 24px;
+        margin: 0 0 -10px 0;
+        position: relative;
+        left: 91%;
+        top: 0;
+        width: 5%;
+    }
+
+    .shareSaveDivActive_MarchA {
+
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 17;
+    }
+
+    .shareSaveDivInactive_MarchA {
+        height: auto;
+        left: 20%;
+        opacity: 0.2;
+        position: absolute;
+        top: 20%;
+        transform: translateY(-500px);
+        width: 60%;
+        z-index: -17;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+
+    .playerShareButton_MarchA {
+
+        margin-right: 1vh;
+
+    }
+
+    .playerSaveButton_MarchA {
+
+        margin-right: 1vh;
+        transform: translateX(50px);
+
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .playerFeedIcon_MarchA img {
+        height: 50px;
+        margin: 10px 5px;
+        width: 50px;
+    }
+
+    .playerPodcastTitle_MarchA {
+        font-size: 18px;
+        margin: 10px 0 10px 5px;
+    }
+
+    .playerEpisodeTitle_MarchA {
+        font-size: 18px;
+        margin: 4px 0 4px 5px;
+    }
+
+    .playerEpisodeAuthor_MarchA {
+        font-size: 12px;
+        margin: 4px 0 5px 5px;
+    }
+
+    .playerControlsDiv_MarchA {
+        margin: 35px 5px 4px -120px;
+        position: relative;
+        transform: scale(0.5);
+        width: 150%;
+    }
+
+    .playerShareSaveDiv_MarchA {
+        position: relative;
+        transform: scale(0.5) translateX(7.4vw) translateY(15vh);
+    }
+
+    .playerShareButton_MarchA {
+
+        margin-right: 1vh;
+
+    }
+
+    .playerSaveButton_MarchA {
+
+        margin-right: 1vh;
+
+    }
+
+    .playerProgressSlider_MarchA {
+        margin: 17px 0 10px 5px;
+        width: 150%;
+    }
+
+    .playerTabActive_MarchA {
+        font-size: 18px;
+        padding: 4px 0 4px 3px;
+        width: 30%;
+    }
+
+    .playerTabInactive_MarchA {
+        font-size: 18px;
+        padding: 4px 0 4px 3px;
+        width: 30%;
+    }
+
+    .episodesTitleBar_MarchA {
+        font-size: 18px;
+        height: auto;
+
+    }
+
+    .userEpisodeStatus_MarchA {
+
+        font-size: 12px;
+        padding: 4px 1px 4px 4px;
+        position: relative;
+        width: 2vw;
+    }
+
+    .userEpisodeItemsTitle_MarchA {
+        font-size: 12px;
+        padding: 4px 1px 4px 20px;
+        position: inherit;
+        width: 35vw;
+    }
+
+    .userEpisodeItemsAuthor_MarchA {
+        display: none;
+    }
+
+    .userEpisodePosition_MarchA {
+
+        font-size: 12px;
+        padding: 10px 1px 4px 16px;
+        width: 19vw;
+    }
+
+    .aboutThisPodcastImage_MarchA {
+        height: 40px;
+        margin: 5px;
+        width: 40px;
+    }
+
+    .aboutThisPodcastTitle_MarchA {
+
+        font-size: 18px;
+
+    }
+
+    .aboutThisPodcastAuthor_MarchA {
+
+        font-size: 12px;
+    }
+
+    .aboutThisPodcastDescription_MarchA {
+
+        font-size: 12px;
+        margin: 5px 50px 100px 5px;
+        max-width: 750px;
+    }
+
+    .detailsTitle_MarchA {
+
+        font-size: 18px;
+        margin: 15px 15px 15px 15px;
+    }
+
+    .detailsEpisodeTitle_MarchA {
+
+        font-size: 18px;
+        margin: 15px;
+    }
+
+    .detailsContent_MarchA {
+
+        font-size: 12px;
+
+        max-width: 300px;
+        padding: 4px 16px 50px 5px;
+    }
+
+    .detailsContent_MarchA a {
+        text-decoration: underline;
+    }
+
+    .scrollerDiv {
+        height: 640px;
+    }
+
+    .playerExit_MarchA {
+
+        font-size: 24px;
+        margin: 0 0 -10px 0;
+        position: relative;
+        left: 91%;
+        top: 0;
+        width: 5%;
+    }
+
+    .shareSaveDivActive_MarchA {
+
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 17;
+    }
+
+    .shareSaveDivInactive_MarchA {
+        height: auto;
+        left: 20%;
+        opacity: 0.2;
+        position: absolute;
+        top: 20%;
+        transform: translateY(-500px);
+        width: 60%;
+        z-index: -17;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .playerFeedIcon_MarchA img {
+        height: 50px;
+        margin: 10px 5px;
+        width: 50px;
+    }
+
+    .playerPodcastTitle_MarchA {
+        font-size: 18px;
+        margin: 10px 0 10px 5px;
+    }
+
+    .playerEpisodeTitle_MarchA {
+        font-size: 18px;
+        margin: 4px 0 4px 5px;
+    }
+
+    .playerEpisodeAuthor_MarchA {
+        font-size: 12px;
+        margin: 4px 0 5px 5px;
+    }
+
+    .playerControlsDiv_MarchA {
+        margin: 35px 5px 4px -120px;
+        position: relative;
+        transform: scale(0.5);
+        width: 150%;
+    }
+
+    .playerShareSaveDiv_MarchA {
+        position: relative;
+        transform: scale(0.5) translateX(1.4vw) translateY(10vh);
+    }
+
+    .playerShareButton_MarchA {
+
+        margin-right: 1vh;
+        transform: translateX(-30px) translateY(-8px);
+
+    }
+
+    .playerSaveButton_MarchA {
+
+        margin-right: 1vh;
+
+    }
+
+    .playerProgressSlider_MarchA {
+        margin: 17px 0 10px 5px;
+        width: 150%;
+    }
+
+    .playerTabActive_MarchA {
+        font-size: 18px;
+        padding: 4px 0 4px 3px;
+        width: 30%;
+    }
+
+    .playerTabInactive_MarchA {
+        font-size: 18px;
+        padding: 4px 0 4px 3px;
+        width: 30%;
+    }
+
+    .episodesTitleBar_MarchA {
+        font-size: 18px;
+        height: auto;
+
+    }
+
+    .userEpisodeStatus_MarchA {
+
+        font-size: 12px;
+        padding: 4px 1px 4px 4px;
+        position: relative;
+        width: 2vw;
+    }
+
+    .userEpisodeItemsTitle_MarchA {
+        font-size: 12px;
+        padding: 4px 1px 4px 20px;
+        position: inherit;
+        width: 35vw;
+    }
+
+    .userEpisodeItemsAuthor_MarchA {
+        display: none;
+    }
+
+    .userEpisodePosition_MarchA {
+
+        font-size: 12px;
+        padding: 10px 1px 4px 16px;
+        width: 19vw;
+    }
+
+    .aboutThisPodcastImage_MarchA {
+        height: 40px;
+        margin: 5px;
+        width: 40px;
+    }
+
+    .aboutThisPodcastTitle_MarchA {
+
+        font-size: 18px;
+
+    }
+
+    .aboutThisPodcastAuthor_MarchA {
+
+        font-size: 12px;
+    }
+
+    .aboutThisPodcastDescription_MarchA {
+
+        font-size: 12px;
+        margin: 5px 5px 100px 5px;
+        max-width: 300px;
+    }
+
+    .detailsTitle_MarchA {
+
+        font-size: 18px;
+        margin: 15px 15px 15px 15px;
+    }
+
+    .detailsEpisodeTitle_MarchA {
+
+        font-size: 18px;
+        margin: 15px;
+    }
+
+    .detailsContent_MarchA {
+
+        font-size: 12px;
+
+        max-width: 250px;
+        padding: 4px 16px 50px 5px;
+    }
+
+    .detailsContent_MarchA a {
+        color: #a75853;
+        text-decoration: underline;
+    }
+
+    .scrollerDiv {
+        height: 640px;
+    }
+
+    .playerExit_MarchA {
+
+        font-size: 24px;
+        margin: 0 0 -10px 0;
+        position: relative;
+        left: 91%;
+        top: 0;
+        width: 5%;
+    }
+
+    .shareSaveDivActive_MarchA {
+
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 17;
+    }
+
+    .shareSaveDivInactive_MarchA {
+        height: auto;
+        left: 20%;
+        opacity: 0.2;
+        position: absolute;
+        top: 20%;
+        transform: translateY(-500px);
+        width: 60%;
+        z-index: -17;
+    }
+}
