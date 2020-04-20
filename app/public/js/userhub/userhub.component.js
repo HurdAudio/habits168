@@ -13,14 +13,8 @@
         const vm = this;
 
         vm.$onInit = onInit;
-        vm.monthSelect = '_FebruaryC';
         vm.userLogout = userLogout;
         vm.browseMonth = '_JanuaryA'
-        vm.hubShareTabState = 'hubTabActive' + vm.monthSelect;
-        vm.hubReaderTabState = 'hubTabInactive' + vm.monthSelect;
-        vm.hubBloggerTabState = 'hubTabInactive' + vm.monthSelect;
-        vm.hubProfileTabState = 'hubTabInactive' + vm.monthSelect;
-        vm.hubTabStatus = 'hubShare' + vm.monthSelect;
         vm.updateHubTab = updateHubTab;
         vm.toggleEmojiSelector = toggleEmojiSelector;
         vm.shareAddEmoji = shareAddEmoji;
@@ -40,41 +34,23 @@
         vm.hubWeekToggle = hubWeekToggle;
         vm.subscriptionToggle = 'off';
         vm.toggleSubscriptionManagement = toggleSubscriptionManagement;
-        vm.manageBlockToggleStatus = 'hubReaderDay1BlockInactive' + vm.monthSelect;
         vm.externalsBlockToggleStatus = 'hubReaderExternalsDay2BlockInactive' + vm.externalsMonth;
-        vm.dailiesBlockToggleStatus = 'hubReaderDay3BlockInactive' + vm.monthSelect;
         vm.browseFeedsBlockToggleStatus = 'hubReaderBrowseBlockInactive' + vm.browseMonth;
-        vm.sharedBlockToggleStatus = 'hubReaderDay5BlockInactive' + vm.monthSelect;
-        vm.savedBlockToggleStatus = 'hubReaderDay6BlockInactive' + vm.monthSelect;
-        vm.miscBlockToggleStatus = 'hubReaderDay7BlockInactive' + vm.monthSelect;
-        vm.shareSaveLinkDisplay = 'hubShareShareSaveModalInactive' + vm.monthSelect;
         vm.hubLinkShareOrSave = 'Share Link';
         vm.hubShareSave = hubShareSave;
-        vm.backgroundStatus = 'hubContainer' + vm.monthSelect;
         vm.hubCancelShareSaveLink = hubCancelShareSaveLink;
         vm.hubDisplayBlogData = hubDisplayBlogData;
-        vm.navigationPublicState = 'hubUserProfileNavigationActive' + vm.monthSelect;
-        vm.navigationPrivateState = 'hubUserProfileNavigationInactive' + vm.monthSelect;
-        vm.navigationMessagesState = 'hubUserProfileNavigationInactive' + vm.monthSelect;
-        vm.navigationFriendsState = 'hubUserProfileNavigationInactive' + vm.monthSelect;
-        vm.navigationContactState = 'hubUserProfileNavigationInactive' + vm.monthSelect;
-        vm.navigationSliderState = 'hubUserProfileNavigationSlidePublicState' + vm.monthSelect;
         vm.navigateProfileViews = navigateProfileViews;
         vm.profileNavState = 'public';
         vm.unreadMailMarker = '';
         vm.toggleMessageOpen = toggleMessageOpen;
         vm.submitResponse = submitResponse;
         vm.friendFiltering = friendFiltering;
-        vm.profileDisplayModal = 'hubProfileDisplayerInactive' + vm.monthSelect;
         vm.displayFriend = displayFriend;
         vm.profileDisplayClose = profileDisplayClose;
-        vm.messageModalState = 'hubDisplayMessageModalInactive' + vm.monthSelect;
         vm.initiateMessage = initiateMessage;
         vm.cancelMessageSender = cancelMessageSender;
         vm.sendMessage = sendMessage;
-        vm.hubGuardrailState = 'hubRemoveGuardrailInactive' + vm.monthSelect;
-        vm.deleteShareGuardrailState = 'deleteGuardrailInactive' + vm.monthSelect;
-        vm.deleteShareCommentGuardrailState = 'deleteCommentGuardrailInactive' + vm.monthSelect;
         vm.removeBadFriend = removeBadFriend;
         vm.cancelFriendRemoval = cancelFriendRemoval;
         vm.confirmFriendRemoval = confirmFriendRemoval;
@@ -91,7 +67,6 @@
         vm.removeShareModal = removeShareModal;
         vm.negativeDeleteShare = negativeDeleteShare;
         vm.positiveDeleteShare = positiveDeleteShare;
-        vm.editCommentModalState = 'hubEditMessageInactive' + vm.monthSelect;
         vm.editShareComment = editShareComment;
         vm.hubCancelSharePatchLink = hubCancelSharePatchLink;
         vm.removeShareCommentModal = removeShareCommentModal;
@@ -1623,34 +1598,70 @@
                 });
 
         }
+        
+        function setMonthSelect() {
+            $http.get('/skins/user_hub')
+            .then(hubSkinResponseData => {
+                const hubSkinResponse = hubSkinResponseData.data;
+                vm.monthSelect = hubSkinResponse.user_hub;
+                
+                vm.hubShareTabState = 'hubTabActive' + vm.monthSelect;
+                vm.hubReaderTabState = 'hubTabInactive' + vm.monthSelect;
+                vm.hubBloggerTabState = 'hubTabInactive' + vm.monthSelect;
+                vm.hubProfileTabState = 'hubTabInactive' + vm.monthSelect;
+                vm.hubTabStatus = 'hubShare' + vm.monthSelect;
+                vm.manageBlockToggleStatus = 'hubReaderDay1BlockInactive' + vm.monthSelect;
+                vm.dailiesBlockToggleStatus = 'hubReaderDay3BlockInactive' + vm.monthSelect;
+                vm.sharedBlockToggleStatus = 'hubReaderDay5BlockInactive' + vm.monthSelect;
+                vm.savedBlockToggleStatus = 'hubReaderDay6BlockInactive' + vm.monthSelect;
+                vm.miscBlockToggleStatus = 'hubReaderDay7BlockInactive' + vm.monthSelect;
+                vm.shareSaveLinkDisplay = 'hubShareShareSaveModalInactive' + vm.monthSelect;
+                vm.backgroundStatus = 'hubContainer' + vm.monthSelect;
+                vm.navigationPublicState = 'hubUserProfileNavigationActive' + vm.monthSelect;
+                vm.navigationPrivateState = 'hubUserProfileNavigationInactive' + vm.monthSelect;
+                vm.navigationMessagesState = 'hubUserProfileNavigationInactive' + vm.monthSelect;
+                vm.navigationFriendsState = 'hubUserProfileNavigationInactive' + vm.monthSelect;
+                vm.navigationContactState = 'hubUserProfileNavigationInactive' + vm.monthSelect;
+                vm.navigationSliderState = 'hubUserProfileNavigationSlidePublicState' + vm.monthSelect;
+                vm.profileDisplayModal = 'hubProfileDisplayerInactive' + vm.monthSelect;
+                vm.messageModalState = 'hubDisplayMessageModalInactive' + vm.monthSelect;
+                vm.hubGuardrailState = 'hubRemoveGuardrailInactive' + vm.monthSelect;
+                vm.deleteShareGuardrailState = 'deleteGuardrailInactive' + vm.monthSelect;
+                vm.deleteShareCommentGuardrailState = 'deleteCommentGuardrailInactive' + vm.monthSelect;
+                vm.editCommentModalState = 'hubEditMessageInactive' + vm.monthSelect;
+                
+                switch (vm.monthSelect) {
+                    case ('_JanuaryA'):
+                        vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/robe-154808_640.png';
+                        break;
+                    case ('_JanuaryB'):
+                        vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/nun-4018982_1280.png'
+                        break;
+                    case ('_JanuaryC'):
+                        vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/job-3506038_1280.png';
+                        break;
+                    case ('_FebruaryA'):
+                        vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_png_by_piccolapersempre_dbuithu-fullview.png';
+                        break;
+                    case ('_FebruaryB'):
+                        vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/digital_painting__liquid_sleep_by_ukulelemoon_d888syz-pre.jpg';
+                        break;
+                    case ('_FebruaryC'):
+                        vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_cup_by_lashonda1980_dazsks6-pre.png';
+                        break;
+                    default:
+                        alert('UNSUPPORTED MONTH SELECT for LOGO');
+                        alert(vm.monthSelect);
+                }
+            });
+        }
 
 
         function onInit() {
             console.log("User Hub is lit");
             setUserIPAddress();
-
-            switch (vm.monthSelect) {
-                case ('_JanuaryA'):
-                    vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/robe-154808_640.png';
-                    break;
-                case ('_JanuaryB'):
-                    vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/nun-4018982_1280.png'
-                    break;
-                case ('_JanuaryC'):
-                    vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/job-3506038_1280.png';
-                    break;
-                case ('_FebruaryA'):
-                    vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_png_by_piccolapersempre_dbuithu-fullview.png';
-                    break;
-                case ('_FebruaryB'):
-                    vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/digital_painting__liquid_sleep_by_ukulelemoon_d888syz-pre.jpg';
-                    break;
-                case ('_FebruaryC'):
-                    vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_cup_by_lashonda1980_dazsks6-pre.png';
-                    break;
-                default:
-                    alert('UNSUPPORTED MONTH SELECT for LOGO');
-            }
+            
+            setMonthSelect();
 
             setDaysRelativeToToday();
             setFooterMessage();
