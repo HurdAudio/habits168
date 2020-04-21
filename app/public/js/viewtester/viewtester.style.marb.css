@@ -1,0 +1,379 @@
+.viewContainer_MarchB {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/viewer/cristi-goia-JgDUVGAXsso-unsplash.jpg);
+    background-size: cover;
+    filter: blur(0);
+    height: 95%;
+    margin: 5% 0 0 0;
+    transition: all 0.5s linear;
+    width: 100%;
+    z-index: 1;
+}
+
+.viewContainerCloaked_MarchB {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/viewer/cristi-goia-JgDUVGAXsso-unsplash.jpg);
+    background-size: cover;
+    filter: blur(20px);
+    height: 95%;
+    margin: 5% 0 0 0;
+    transition: all 0.5s linear;
+    width: 100%;
+    z-index: 1;
+}
+
+.viewToolbar_MarchB {
+    backdrop-filter: blur(10px) saturate(200%);
+    border-bottom: 1px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/viewer/cristi-goia-JgDUVGAXsso-unsplash.jpg) 25% stretch;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 11vh;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.viewNavigation_MarchB {
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/viewer/cristi-goia-JgDUVGAXsso-unsplash.jpg) 15% stretch;
+    box-sizing: border-box;
+    color: #020b0e;
+    cursor: pointer;
+    filter: drop-shadow(10px 15px 4px #223138);
+    font-family: 'Gentium Book Basic', serif;
+    font-size: 60px;
+    height: 80px;
+    margin: 3px 10px;
+    outline-color: #a89f93;
+    padding: 1px;
+    transition: all 0.2s linear;
+    width: 85px;
+}
+
+.viewNavigation_MarchB:hover {
+    color: #482000;
+    filter: drop-shadow(6px 15px 4px #223138);
+    transition: all 0.2s linear;
+}
+
+.viewNavigation_MarchB:active {
+    color: #344a48;
+    filter: drop-shadow(0 0 0 #223138);
+    transition: all 0.1s linear;
+}
+
+.viewCurrentFeedIcon_MarchB {
+    height: 75px;
+    width: 75px;
+}
+
+.viewCurrentFeedTitle_MarchB {
+    background: transparent;
+    color: #020b0e;
+    cursor: pointer;
+    display: initial;
+    filter: drop-shadow(10px 15px 4px #223138);
+    font-family: 'Gentium Book Basic', serif;
+    font-size: 66px;
+    font-weight: 900;
+    padding: 10px 15px 0 15px;
+    transition: all 0.2s linear;
+}
+
+.viewCurrentFeedTitle_MarchB:hover {
+    color: #061d23;
+    filter: drop-shadow(6px 15px 4px #223138);
+    transition: all 0.2s linear;
+}
+
+.viewCurrentFeedTitle_MarchB a:hover {
+    color: #482000;
+    filter: drop-shadow(6px 15px 4px #223138);
+    transition: all 0.2s linear;
+}
+
+.viewCurrentFeedTitle_MarchB a {
+    color: #20180f;
+    text-decoration: none;
+    transition: all 0.3s linear;
+}
+
+.viewCurrentFeedDescription_MarchB {
+    background: transparent;
+    color: #020b0e;
+    display: initial;
+    justify-content: flex-end;
+    filter: drop-shadow(10px 15px 4px #223138);
+    font-family: 'Gentium Book Basic', serif;
+    font-size: 18px;
+    font-weight: 900;
+    padding: 50px 0 0 10px;
+}
+
+.viewContentDiv_MarchB {
+    backdrop-filter: blur(4px) brightness(80%);
+    background: #b3a08c;
+    height: 79.5vh;
+    opacity: 0.85;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 1% 5%;
+    width: 100%;
+}
+
+.viewIndividualItems_MarchB {
+    color: #020b0e;
+    font-family: 'Gentium Book Basic', serif;
+    line-height: 1.3em;
+    max-width: 880px;
+}
+
+.viewIndividualItems_MarchB img {
+    max-width: 70%;
+}
+
+.viewIndividualItems_MarchB p {
+    font-size: 18px;
+    line-height: 1.3em;
+    margin: 5px 5% 5px 1%;
+}
+
+.viewIndividualItems_MarchB a {
+    color: #20180f;
+    text-decoration: none;
+}
+
+.viewIndividualItems_MarchB a p {
+    font-size: 30px;
+    margin: 25px 4px 8px 0;
+}
+
+.viewIndividualItems_MarchB a:hover {
+    color: #482000;
+}
+
+.viewIndividualItems_MarchB a:visited {
+    color: #344a48;
+}
+
+.viewIndividualItems_MarchB button {
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/viewer/cristi-goia-JgDUVGAXsso-unsplash.jpg) 15% stretch;
+    box-sizing: border-box;
+    color: #020b0e;
+    cursor: pointer;
+    filter: drop-shadow(10px 15px 4px #223138);
+    font-family: 'Gentium Book Basic', serif;
+    font-size: 18px;
+    height: auto;
+    margin: 0 0 0 0;
+    outline-color: #a89f93;
+    padding: 3px;
+    transition: all 0.4s linear;
+}
+
+.viewIndividualItems_MarchB button:hover {
+    color: #482000;
+    filter: drop-shadow(6px 15px 4px #223138);
+    transition: all 0.2s linear;
+}
+
+.viewIndividualItems_MarchB button:active {
+    color: #344a48;
+    filter: drop-shadow(0 0 0 #223138);
+    transition: all 0.1s linear;
+}
+
+.viewPostTimestamp_MarchB {
+    margin: 5px 5px 5px 45% !important;
+}
+
+.viewShareSaveDialogueDisplayed_MarchB {
+    background: #91989c;
+    color: #020b0e;
+    display: initial;
+    filter: drop-shadow(10px 15px 4px #223138);
+    font-family: 'Gentium Book Basic', serif;
+    height: 70vh;
+    left: 10%;
+    opacity: 0.99;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    top: 15%;
+    transform: skewX(0deg);
+    transition: all 0.5s linear;
+    width: 80%;
+    z-index: 17;
+}
+
+.viewShareSaveDialogueHidden_MarchB {
+    background: #91989c;
+    color: #020b0e;
+    filter: drop-shadow(10px 15px 4px #223138);
+    font-family: 'Gentium Book Basic', serif;
+    height: 70vh;
+    left: 10%;
+    opacity: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    top: -45%;
+    transform: skewX(0deg);
+    transition: all 0.5s linear;
+    width: 80%;
+    z-index: -1;
+}
+
+.viewDialogHeadline_MarchB {
+    background: #344a48;
+    color: #a7a6a2;
+    font-size: 48px;
+    padding: 30px 0 10px 50px;
+}
+
+.viewShareSaveDialogueDisplayed_MarchB img {
+    height: 75px;
+    margin: 30px 0 15px 150px;
+    width: 75px;
+}
+
+.viewShareSaveDialogueHidden_MarchB img {
+    height: 75px;
+    margin: 30px 0 15px 150px;
+    width: 75px;
+}
+
+.viewShareSaveDialogueDisplayed_MarchB p {
+    font-size: 24px;
+    margin: 5px 50px 15px 50px;
+}
+
+.viewShareSaveDialogueHidden_MarchB p {
+    font-size: 24px;
+    margin: 5px 50px 15px 50px;
+}
+
+.viewShareSaveDialogueDisplayed_MarchB textarea {
+    background: #a7a6a2;
+    color: #020b0e;
+    display: initial;
+    font-family: 'Gentium Book Basic', serif;
+    font-size: 18px;
+    margin: 5px 50px 5px 50px;
+    outline-color: #91989c;
+    padding: 5px;
+    width: 88%;
+}
+
+.viewShareSaveDialogueHidden_MarchB textarea {
+    background: #a7a6a2;
+    color: #020b0e;
+    display: initial;
+    font-family: 'Gentium Book Basic', serif;
+    font-size: 18px;
+    margin: 5px 50px 5px 50px;
+    outline-color: #91989c;
+    padding: 5px;
+    width: 88%;
+}
+
+.viewShareSaveDialogueDisplayed_MarchB button {
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/viewer/cristi-goia-JgDUVGAXsso-unsplash.jpg) 15% stretch;
+    box-sizing: border-box;
+    color: #020b0e;
+    cursor: pointer;
+    filter: drop-shadow(10px 15px 4px #223138);
+    font-family: 'Gentium Book Basic', serif;
+    font-size: 18px;
+    height: auto;
+    margin: 15px 15px 5px 50px;
+    outline-color: #a89f93;
+    padding: 5px;
+    transition: all 0.4s linear;
+}
+
+.viewShareSaveDialogueHidden_MarchB button {
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/viewer/cristi-goia-JgDUVGAXsso-unsplash.jpg) 15% stretch;
+    box-sizing: border-box;
+    color: #020b0e;
+    cursor: pointer;
+    filter: drop-shadow(10px 15px 4px #223138);
+    font-family: 'Gentium Book Basic', serif;
+    font-size: 18px;
+    height: auto;
+    margin: 15px 15px 5px 50px;
+    outline-color: #a89f93;
+    padding: 5px;
+    transition: all 0.4s linear;
+}
+
+.viewShareSaveDialogueDisplayed_MarchB button:hover {
+    color: #482000;
+    filter: drop-shadow(6px 15px 4px #223138);
+    transition: all 0.2s linear;
+}
+
+.viewShareSaveDialogueDisplayed_MarchB button:active {
+    color: #344a48;
+    filter: drop-shadow(0 0 0 #223138);
+    transition: all 0.1s linear;
+}
+
+.viewRadioButtons_MarchB {
+    font-family: 'Gentium Book Basic', serif;
+    font-size: 24px;
+    margin: 0 0 20px 50px;
+}
+
+@media only screen and (max-width: 736px) {
+
+    .viewCurrentFeedDescription_MarchB {
+        display: none;
+    }
+
+    .viewContentDiv_MarchB {
+        height: 140vh;
+    }
+
+    .viewToolbar_MarchB {
+        height: 16vh;
+    }
+
+    .viewCurrentFeedTitle_MarchB {
+        display: initial;
+        font-size: 48px;
+        padding: 20px 15px 0 15px;
+    }
+}
+
+@media only screen and (max-width: 667px) {
+
+    .viewCurrentFeedTitle_MarchB {
+        display: none;
+    }
+
+    .viewNavigation_MarchB {
+        font-size: 48px;
+        height: 50px;
+        width: 50px;
+    }
+
+    .viewCurrentFeedIcon_MarchB {
+        height: 50px;
+        width: 50px;
+    }
+
+    .viewShareSaveDialogueDisplayed_MarchB textarea {
+        margin: 5px 50px 5px 50px;
+        padding: 5px;
+        width: 58%;
+    }
+
+}

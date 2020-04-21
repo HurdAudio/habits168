@@ -23,14 +23,6 @@
                 rss: 'https://reddit.com/r/angularjs/.rss',
                 title: 'angular.js'
         },
-//        {
-//          description: 'The latest from Bandcamp',
-//          link: 'https://daily.bandcamp.com/',
-//          image: 'https://bandcampblog.files.wordpress.com/2017/03/bc-site-icon1.png',
-//          items: [],
-//          rss: 'https://daily.bandcamp.com/feed',
-//          title: 'Bandcamp Daily'
-//        },
             {
                 description: 'A blog about Major League Baseball',
                 link: 'https://www.baseballmusings.com/',
@@ -178,7 +170,8 @@
         function getSkins() {
             $http.get('/skins/viewer')
                 .then(viewerResultData => {
-                    vm.viewMonth = viewerResultData.data.viewer;
+//                    vm.viewMonth = viewerResultData.data.viewer;
+                      vm.viewMonth = '_MarchB';
                     switch (vm.viewMonth) {
                         case ('_JanuaryA'):
                             vm.viewerSpinnerPath = 'https://habits168-hurdaudio.s3.amazonaws.com/viewer/spinners/jana_spinner.gif';
@@ -200,6 +193,9 @@
                             break;
                         case ('_MarchA'):
                             vm.viewerSpinnerPath = 'https://habits168-hurdaudio.s3.amazonaws.com/viewer/spinners/dc86e54ceca03be4-loading-spinner-animated-gif-83320-mediabin.gif';
+                            break;
+                        case ('_MarchB'):
+                            vm.viewerSpinnerPath = 'https://habits168-hurdaudio.s3.amazonaws.com/viewer/spinners/Disk-Preloader00.gif';
                             break;
                         default:
                             alert('Error: unsupported viewMonth spinner set');
