@@ -170,8 +170,7 @@
         function getSkins() {
             $http.get('/skins/viewer')
                 .then(viewerResultData => {
-//                    vm.viewMonth = viewerResultData.data.viewer;
-                      vm.viewMonth = '_MarchB';
+                    vm.viewMonth = viewerResultData.data.viewer;
                     switch (vm.viewMonth) {
                         case ('_JanuaryA'):
                             vm.viewerSpinnerPath = 'https://habits168-hurdaudio.s3.amazonaws.com/viewer/spinners/jana_spinner.gif';
