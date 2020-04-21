@@ -63,9 +63,9 @@ router.get('/user_hub', (req, res, next) => {
     .first()
     .then(skinsTable => {
         if (skinsTable.skins.user_hub[months[now.getMonth()]].length === 1) {
-            selectedSkin = skinsTable.skins.viewer.available[Math.floor(Math.random() * skinsTable.skins.viewer.available.length)];
+            selectedSkin = skinsTable.skins.user_hub.available[Math.floor(Math.random() * skinsTable.skins.user_hub.available.length)];
         } else {
-            selectedSkin = skinsTable.skins.viewer[months[now.getMonth()]][now.getDate()];
+            selectedSkin = skinsTable.skins.user_hub[months[now.getMonth()]][now.getDate()];
         }
         res.send({ user_hub: selectedSkin });
     })
