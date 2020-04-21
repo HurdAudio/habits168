@@ -27,6 +27,11 @@
         vm.toggleToRecentPosts = toggleToRecentPosts;
         vm.toggleToRecentShares = toggleToRecentShares;
         vm.navigateToUserHub = navigateToUserHub;
+        vm.navigateToNewUserSignup = navigateToNewUserSignup;
+        
+        function navigateToNewUserSignup() {
+            $state.go('newusersignup');
+        }
 
         function navigateToUserHub() {
             $state.go('userhub', {

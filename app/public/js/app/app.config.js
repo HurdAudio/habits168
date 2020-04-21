@@ -75,6 +75,12 @@
                 url: '/browse/:userUuid',
                 parent: 'app',
                 component: 'browse'
+            })
+            .state({
+                name: 'newusersignup',
+                url: '/newusersignup',
+                parent: 'app',
+                component: 'newusersignup'
             });
     }
 
