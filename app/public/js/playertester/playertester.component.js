@@ -326,8 +326,7 @@
       function getSkins() {
           $http.get('/skins/player')
                 .then(playerResultData => {
-//                    vm.playerMonth = playerResultData.data.player;
-                    vm.playerMonth = '_MarchA';
+                    vm.playerMonth = playerResultData.data.player;
                     vm.playerMask = 'playerContainer' + vm.playerMonth;
                     vm.playPause = 'playerPlay' + vm.playerMonth;
                     vm.aboutContainer = 'aboutContainerActive' + vm.playerMonth;
