@@ -409,7 +409,8 @@
             $http.get('/skins/landing')
                 .then(skinData => {
                     let skin = skinData.data;
-                    vm.monthSelect = skin.landing;
+//                    vm.monthSelect = skin.landing;
+                    vm.monthSelect = '_MarchC';
                     vm.landingLoginBoxClass = 'landingLoginInactive' + vm.monthSelect;
                     vm.linkSharesClass = 'landingRecentlySharedLinksUncollapsed' + vm.monthSelect;
                     vm.postSharesClass = 'landingRecentlySharedPostsCollapsed' + vm.monthSelect;
@@ -439,6 +440,9 @@
                             break;
                         case('_MarchB'):
                             vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/coffee-32284_1280.png';
+                            break;
+                        case('_MarchC'):
+                            vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/espresso-4929161_1920.jpg';
                             break;
                         default:
                             alert('UNSUPPORTED MONTH SELECT for LOGO');
