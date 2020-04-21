@@ -1,0 +1,1199 @@
+.backgroundDiv_MarchC {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/landing/march/arthur-mazi-xDsaGQJumBY-unsplash.jpg);
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+#landingContainer_MarchC {
+    align-items: center;
+    display: grid;
+    grid-template-areas:
+        "header""header""header""header""header"
+        "tabs""byline""content""content"
+        "tabs""byline""content""content"
+        . "footer""footer""footer""footer";
+    grid-template-columns: [first] 60px [second] 100px [third] 1fr [fourth] 1fr [fifth] 1fr [end];
+    grid-template-rows: [top] 150px [line2] 50px [line3] 50px [line4] 1fr [lineend];
+    justify-items: center;
+    width: 100%;
+}
+
+.landingTitleFlex_MarchC {
+    backdrop-filter: blur(13px) brightness(60%) hue-rotate(5deg) saturate(110%);
+    grid-area: header;
+    grid-column: first / end;
+    grid-row: top / line2;
+    width: 100%;
+}
+
+.landingLogo_MarchC {
+    filter: brightness(120%) saturate(120%);
+    float: left;
+    grid-area: header;
+    grid-column: first / third;
+    grid-row: top / line2;
+    height: 130px;
+    margin: 0 20px 0 30px;
+    max-width: 130px;
+    opacity: 0.9;
+}
+
+.landingTitleDiv_MarchC {
+    align-self: center;
+    color: #3ce896;
+    float: left;
+    grid-column: 3 / span 2;
+    grid-row: 1/ 2;
+    font-family: 'Vollkorn', serif;
+    font-size: 96px;
+    justify-self: center;
+    margin: 20px 20px 0 10px;
+}
+
+.landingTitleButtonsDiv_MarchC {
+    align-self: stretch;
+    float: left;
+    grid-area: header;
+    grid-column: 4/6;
+    grid-row: 1/2;
+    padding: 65px 5px 5px 25%;
+    width: auto;
+}
+
+.landingTitleButtonsDiv_MarchC button {
+    background: transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/landing/march/arthur-mazi-xDsaGQJumBY-unsplash.jpg) 15% stretch;
+    box-shadow: 5px 5px 4px #121a26;
+    color: #3ce896;
+    cursor: pointer;
+    filter: brightness(100%);
+    font-family: 'Vollkorn', serif;
+    font-size: 30px;
+    margin: -30px 10px 0 10px;
+    outline-color: transparent;
+    padding: 5px 15px;
+    perspective: 50px;
+    text-shadow: 5px 5px 4px #211021;
+    transition: all 0.3s linear;
+    z-index: 15;
+}
+
+.landingTitleButtonsDiv_MarchC button:hover {
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/landing/march/arthur-mazi-xDsaGQJumBY-unsplash.jpg) 25% stretch;
+    box-shadow: 8px 8px 20px #0d5877, -4px -4px 20px #0d5877;
+    color: #129eab;
+    filter: brightness(130%);
+    text-shadow: 1px 5px 4px #211021;
+    transition: all 0.3s linear;
+}
+
+.landingTitleButtonsDiv_MarchC button:active {
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/landing/march/arthur-mazi-xDsaGQJumBY-unsplash.jpg) 5% stretch;
+    box-shadow: 0 0 0 #000000;
+    color: #3ce896;
+    outline-color: transparent;
+    text-shadow: 0 0 0 #000000;
+    transition: all 0.2s linear;
+}
+
+.landingRecentlySharedLinksCollapsed_MarchC {
+    display: none;
+}
+
+.landingRecentlySharedLinksUncollapsed_MarchC {
+    background: #ada7aa;
+    grid-column: 1 / end;
+    grid-row: 3 / span 4;
+    height: 73vh;
+    opacity: 0.9;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.landingRecentlySharedPostsUncollapsed_MarchC {
+    background: #ada7aa;
+    grid-column: 1 / end;
+    grid-row: 3 / span 4;
+    height: 73vh;
+    opacity: 0.9;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.landingRecentlySharedPostsCollapsed_MarchC {
+    display: none;
+}
+
+.landingShareContainer_MarchC {
+    color: #020816;
+    font-family: 'Vollkorn', serif;
+    height: auto;
+    position: relative;
+    width: 100%;
+}
+
+.landingLinkShare_MarchC {
+    display: inline-block;
+}
+
+.landingShareSharerAvatar_MarchC {
+    filter: drop-shadow(8px 8px 16px #05232f);
+    left: 15px;
+    margin: 20px 0 20px 0;
+    position: relative;
+    top: 10px;
+    width: 70px;
+}
+
+.landingByline_MarchC {
+    float: left;
+    left: 10px;
+    position: relative;
+    top: 0;
+    width: 20%;
+}
+
+.landingByline_MarchC p {
+    font-size: 18px;
+    font-weight: 900;
+    margin-left: 20px;
+    max-width: 220px;
+}
+
+.landingShareShare_MarchC {
+    border-left: solid 1px #020816;
+    float: left;
+    margin-bottom: 15px;
+    position: relative;
+    top: 0;
+    width: 78%;
+}
+
+.landingShareShare_MarchC a {
+    color: #053b6a;
+    text-decoration: none;
+}
+
+.landingShareShare_MarchC p {
+    max-width: 700px;
+}
+
+.landingShareShare_MarchC a:hover {
+    color: #05232f;
+}
+
+.landingShareShare_MarchC a:visited {
+    color: #542954;
+}
+
+.shareSourceIcon_MarchC {
+    filter: drop-shadow(8px 8px 16px #05232f);
+    left: 5px;
+    position: relative;
+    top: 5px;
+    width: 10%;
+}
+
+.shareViaCredit_MarchC {
+    display: inline-block;
+    font-size: 24px;
+    margin: -20px 3px 15px 10px;
+    position: relative;
+    top: 0;
+    width: 80%;
+}
+
+.shareHeadline_MarchC {
+    font-size: 36px;
+    margin: 15px 15px 35px 15px;
+    max-width: 710px;
+}
+
+.shareCleanDate_MarchC {
+    float: right;
+    font-size: 18px;
+    margin: 5px 30% 5px 0;
+}
+
+.shareDescription_MarchC {
+    font-size: 18px;
+    line-height: 1.3em;
+    margin: 100px 15px 130px 15px;
+    max-width: 710px;
+}
+
+.shareAuthor_MarchC {
+    float: left;
+    font-size: 18px;
+    margin: 0 0 0 5px;
+}
+
+.shareShareEnclosurePhoto_MarchC {
+    filter: drop-shadow(8px 8px 16px #05232f);
+    margin: 0 0 0 5px;
+    max-width: 40%;
+}
+
+.shareShareBlogPhoto_MarchC {
+    filter: drop-shadow(8px 8px 16px #05232f);
+    margin: 0 0 0 15px;
+    max-width: 50%;
+}
+
+.shareBlogTitle_MarchC {
+    font-size: 36px;
+    margin: -40px 0 0 120px;
+}
+
+.landingFooter_MarchC {
+    background: #ada7aa;
+    bottom: 1px;
+    color: #020816;
+    font-family: 'Vollkorn', serif;
+    font-size: 12px;
+    left: 10px;
+    position: absolute;
+
+}
+
+.landingLoginActive_MarchC {
+    background: linear-gradient(145deg, #129eab, #87b06e);
+    box-shadow:  36px 36px 49px #020816, 
+             -36px -36px 49px #020816;
+    color: #020816;
+    font-family: 'Vollkorn', serif;
+    font-size: 42px;
+    height: 400px;
+    opacity: 1;
+    padding: 32px;
+    position: absolute;
+    right: 30%;
+    top: 200px;
+    transition: all 0.8s linear;
+    width: 40%;
+    z-index: 6;
+}
+
+.landingLoginInactive_MarchC {
+    height: 0;
+    position: absolute;
+    transition: all 0.8s linear;
+    width: 0;
+    z-index: -6;
+}
+
+.landingLoginActive_MarchC input {
+    background: #86acbb;
+    border: none;
+    color: #020816;
+    font-family: 'Vollkorn', serif;
+    font-size: 24px;
+    margin: 25px 5px 10px 45px;
+    outline-color: #96a1b0;
+    padding: 1px 1px 1px 15px;
+    width: 75%;
+}
+
+.landingLoginInactive_MarchC input {
+    display: none;
+}
+
+.landingLoginActive_MarchC button {
+    background: transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/landing/march/arthur-mazi-xDsaGQJumBY-unsplash.jpg) 15% stretch;
+    box-shadow: 5px 5px 4px #121a26;
+    color: #3ce896;
+    cursor: pointer;
+    filter: brightness(100%);
+    font-family: 'Vollkorn', serif;
+    font-size: 30px;
+    margin: 20px 70px;
+    outline-color: transparent;
+    padding: 5px 15px;
+    perspective: 50px;
+    text-shadow: 5px 5px 4px #211021;
+    transition: all 0.3s linear;
+    z-index: 15;
+}
+
+.landingLoginActive_MarchC button:hover {
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/landing/march/arthur-mazi-xDsaGQJumBY-unsplash.jpg) 25% stretch;
+    box-shadow: 8px 8px 20px #0d5877, -4px -4px 20px #0d5877;
+    color: #129eab;
+    filter: brightness(130%);
+    text-shadow: 1px 5px 4px #211021;
+    transition: all 0.3s linear;
+}
+
+.landingLoginActive_MarchC button:active {
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/landing/march/arthur-mazi-xDsaGQJumBY-unsplash.jpg) 5% stretch;
+    box-shadow: 0 0 0 #000000;
+    color: #3ce896;
+    outline-color: transparent;
+    text-shadow: 0 0 0 #000000;
+    transition: all 0.2s linear;
+}
+
+.landingLoginInactive_MarchC button {
+    display: none;
+}
+
+.landingLoginActive_MarchC a {
+    color: #02172a;
+    cursor: pointer;
+    float: right;
+    font-family: 'Vollkorn', serif;
+    font-size: 24px;
+    margin: 30px 0 10px 0;
+    position: relative;
+    text-decoration: none;
+}
+
+.landingLoginInactive_MarchC a {
+    display: none;
+}
+
+.landingLoginActive_MarchC h2 {
+    color: #020816;
+    margin: 25px 20px 1px 20px;
+}
+
+.landingLoginInactive_MarchC h2 {
+    display: none;
+}
+
+.tabs_MarchC {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-column: 1/end;
+    grid-row: line2/ line3;
+    height: auto;
+    justify-content: flex-start;
+    opacity: 0.9;
+    width: 100%;
+}
+
+.tabActive_MarchC {
+    background: #ada7aa;
+    color: #020816;
+    cursor: pointer;
+    font-family: 'Vollkorn', serif;
+    font-size: 30px;
+    grid-area: tabs;
+    height: 30px;
+    margin: 0 0 0 25px;
+    opacity: 1;
+    padding: 10px 16px;
+    transition: all 0.5s linear;
+}
+
+.tabInactive_MarchC {
+    background: #ada7aa;
+    color: #828a9c;
+    cursor: pointer;
+    font-family: 'Vollkorn', serif;
+    font-size: 30px;
+    grid-area: tabs;
+    height: 30px;
+    margin: 0 0 0 25px;
+    opacity: 0.5;
+    padding: 10px 16px;
+    transition: all 0.5s linear;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .landingTitleButtonsDiv_MarchC {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .backgroundDiv_MarchC {
+        background-size: 400%;
+    }
+
+    .landingTitle_MarchC {
+        font-size: 18px;
+    }
+
+    .landingShareShare_MarchC {
+        width: 70%;
+    }
+
+    .landingRecentlySharedPostsUncollapsed_MarchC {
+        height: 75vh;
+    }
+
+    .landingRecentlySharedLinksUncollapsed_MarchC {
+        height: 75vh;
+    }
+}
+
+@media only screen and (max-width: 823px) {
+
+    .landingTitleButtonsDiv_MarchC {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .landingTitle_MarchC {
+        font-size: 18px;
+    }
+
+    .landingShareShare_MarchC {
+        width: 70%;
+    }
+
+    .landingRecentlySharedPostsUncollapsed_MarchC {
+        height: 75vh;
+    }
+
+    .landingRecentlySharedLinksUncollapsed_MarchC {
+        height: 75vh;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .landingTitleButtonsDiv_MarchC {
+        padding: 65px 5px 5px 10%;
+    }
+
+
+    .landingTitleButtonsDiv_MarchC {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .landingTitle_MarchC {
+        font-size: 18px;
+    }
+
+    .landingShareShare_MarchC {
+        width: 70%;
+    }
+
+    .landingRecentlySharedPostsUncollapsed_MarchC {
+        height: 75vh;
+    }
+
+    .landingRecentlySharedLinksUncollapsed_MarchC {
+        height: 75vh;
+    }
+}
+
+@media only screen and (max-width: 736px) {
+    .backgroundDiv_MarchC {
+        background-size: 250%;
+    }
+
+    .landingTitle_MarchC {
+        font-size: 24px;
+    }
+
+    .landingTitleButtonsDiv_MarchC {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .landingTitleButtonsDiv_MarchC button {
+        font-size: 12px;
+        margin: -30px 10px 10px 10px;
+    }
+
+    .tabs_MarchC {
+        display: none;
+    }
+
+    .landingRecentlySharedLinksUncollapsed_MarchC {
+        display: none;
+    }
+
+    .landingLoginActive_MarchC {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 79%;
+    }
+
+    .landingLoginActive_MarchC a {
+        margin-top: 80px;
+    }
+
+    .landingLoginInactive_MarchC a {
+        margin-top: 80px;
+    }
+
+    .landingLoginActive_MarchC button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginInactive_MarchC button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginActive_MarchC h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginInactive_MarchC h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginActive_MarchC input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchC input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchC {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 79%;
+    }
+}
+
+@media only screen and (max-width: 731px) {
+
+    .landingTitleButtonsDiv_MarchC {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .backgroundDiv_MarchC {
+        background-size: 250%;
+    }
+
+    .landingTitle_MarchC {
+        font-size: 24px;
+    }
+
+    .landingTitleButtonsDiv_MarchC {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .landingTitleButtonsDiv_MarchC button {
+        font-size: 12px;
+        margin: -30px 10px 10px 10px;
+    }
+
+    .tabs_MarchC {
+        display: none;
+    }
+
+    .landingRecentlySharedLinksUncollapsed_MarchC {
+        display: none;
+    }
+
+    .landingLoginActive_MarchC {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 79%;
+    }
+
+    .landingLoginActive_MarchC a {
+        margin-top: 80px;
+    }
+
+    .landingLoginInactive_MarchC a {
+        margin-top: 80px;
+    }
+
+    .landingLoginActive_MarchC button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginInactive_MarchC button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginActive_MarchC h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginInactive_MarchC h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginActive_MarchC input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchC input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchC {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 79%;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+
+    .landingTitleButtonsDiv_MarchC {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .backgroundDiv_MarchC {
+        background-size: 250%;
+    }
+
+    .landingTitle_MarchC {
+        font-size: 24px;
+    }
+
+    .landingTitleButtonsDiv_MarchC {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .landingTitleButtonsDiv_MarchC button {
+        font-size: 12px;
+        margin: -30px 10px 10px 10px;
+    }
+
+    .tabs_MarchC {
+        display: none;
+    }
+
+    .landingRecentlySharedLinksUncollapsed_MarchC {
+        display: none;
+    }
+
+    .landingLoginActive_MarchC {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 79%;
+    }
+
+    .landingLoginActive_MarchC a {
+        margin-top: 80px;
+    }
+
+    .landingLoginInactive_MarchC a {
+        margin-top: 80px;
+    }
+
+    .landingLoginActive_MarchC button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginInactive_MarchC button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginActive_MarchC h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginInactive_MarchC h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginActive_MarchC input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchC input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchC {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 79%;
+    }
+}
+
+@media only screen and (max-width: 568px) {
+    .landingTitleButtonsDiv_MarchC {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .backgroundDiv_MarchC {
+        background-size: 250%;
+    }
+
+    .landingTitle_MarchC {
+        font-size: 24px;
+    }
+
+    .landingTitleButtonsDiv_MarchC {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .landingTitleButtonsDiv_MarchC button {
+        font-size: 12px;
+        margin: -30px 15px 15px 15px;
+    }
+
+    .landingUserGreeting_MarchC {
+        margin-top: -120px;
+    }
+
+    .tabs_MarchC {
+        display: none;
+    }
+
+    .landingRecentlySharedLinksUncollapsed_MarchC {
+        display: none;
+    }
+
+    .landingLoginActive_MarchC {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 79%;
+    }
+
+    .landingLoginActive_MarchC a {
+        margin-top: 80px;
+    }
+
+    .landingLoginInactive_MarchC a {
+        margin-top: 80px;
+    }
+
+    .landingLoginActive_MarchC button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginInactive_MarchC button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginActive_MarchC h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginInactive_MarchC h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginActive_MarchC input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchC input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchC {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 79%;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .backgroundDiv_MarchC {
+        background-size: 250%;
+    }
+
+    .landingTitle_MarchC {
+        font-size: 24px;
+    }
+
+    .landingTitleButtonsDiv_MarchC {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .landingTitleButtonsDiv_MarchC button {
+        font-size: 12px;
+    }
+
+    .tabs_MarchC {
+        display: none;
+    }
+
+    .landingRecentlySharedLinksUncollapsed_MarchC {
+        display: none;
+    }
+
+    .landingLoginActive_MarchC {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 79%;
+    }
+
+    .landingLoginActive_MarchC a {
+        margin-top: 80px;
+    }
+
+    .landingLoginInactive_MarchC a {
+        margin-top: 80px;
+    }
+
+    .landingLoginActive_MarchC button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginInactive_MarchC button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginActive_MarchC h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginInactive_MarchC h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginActive_MarchC input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchC input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchC {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 79%;
+    }
+}
+
+@media only screen and (max-width: 411px) {
+    .backgroundDiv_MarchC {
+        background-size: 250%;
+    }
+
+    .landingTitle_MarchC {
+        font-size: 24px;
+    }
+
+    .landingTitleButtonsDiv_MarchC {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .landingTitleButtonsDiv_MarchC button {
+        font-size: 12px;
+    }
+
+    .tabs_MarchC {
+        display: none;
+    }
+
+    .landingRecentlySharedLinksUncollapsed_MarchC {
+        display: none;
+    }
+
+    .landingLoginActive_MarchC {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 79%;
+    }
+
+    .landingLoginActive_MarchC a {
+        margin-top: 80px;
+    }
+
+    .landingLoginInactive_MarchC a {
+        margin-top: 80px;
+    }
+
+    .landingLoginActive_MarchC button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginInactive_MarchC button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginActive_MarchC h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginInactive_MarchC h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginActive_MarchC input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchC input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchC {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 79%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .backgroundDiv_MarchC {
+        background-size: 250%;
+    }
+
+    .landingTitle_MarchC {
+        font-size: 24px;
+    }
+
+    .landingTitleButtonsDiv_MarchC {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .landingTitleButtonsDiv_MarchC button {
+        font-size: 12px;
+    }
+
+    .tabs_MarchC {
+        display: none;
+    }
+
+    .landingRecentlySharedLinksUncollapsed_MarchC {
+        display: none;
+    }
+
+    .landingLoginActive_MarchC {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 61.5%;
+    }
+
+    .landingLoginActive_MarchC a {
+        margin-top: 80px;
+    }
+
+    .landingLoginInactive_MarchC a {
+        margin-top: 80px;
+    }
+
+    .landingLoginActive_MarchC button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginInactive_MarchC button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginActive_MarchC h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginInactive_MarchC h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginActive_MarchC input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchC input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchC {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 61.5%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .backgroundDiv_MarchC {
+        background-size: 250%;
+    }
+
+    .landingTitle_MarchC {
+        font-size: 24px;
+    }
+
+    .landingTitleButtonsDiv_MarchC {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .landingTitleButtonsDiv_MarchC button {
+        font-size: 12px;
+    }
+
+    .tabs_MarchC {
+        display: none;
+    }
+
+    .landingRecentlySharedLinksUncollapsed_MarchC {
+        display: none;
+    }
+
+    .landingLoginActive_MarchC {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 77%;
+    }
+
+    .landingLoginActive_MarchC a {
+        margin-top: 80px;
+    }
+
+    .landingLoginInactive_MarchC a {
+        margin-top: 80px;
+    }
+
+    .landingLoginActive_MarchC button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginInactive_MarchC button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginActive_MarchC h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginInactive_MarchC h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginActive_MarchC input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchC input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchC {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 77%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .backgroundDiv_MarchC {
+        background-size: 250%;
+    }
+
+    .landingTitle_MarchC {
+        font-size: 24px;
+    }
+
+    .landingTitleButtonsDiv_MarchC {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .landingTitleButtonsDiv_MarchC button {
+        font-size: 12px;
+    }
+
+    .tabs_MarchC {
+        display: none;
+    }
+
+    .landingRecentlySharedLinksUncollapsed_MarchC {
+        display: none;
+    }
+
+    .landingLoginActive_MarchC {
+        left: -13%;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        transform: scale(0.8);
+        width: 320px;
+    }
+
+    .landingLoginActive_MarchC a {
+        margin-top: 80px;
+    }
+
+    .landingLoginInactive_MarchC a {
+        margin-top: 80px;
+    }
+
+    .landingLoginActive_MarchC button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginInactive_MarchC button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginActive_MarchC h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginInactive_MarchC h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginActive_MarchC input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchC input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MarchC {
+        left: -13%;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        transform: scale(0.8);
+        width: 320px;
+    }
+}
