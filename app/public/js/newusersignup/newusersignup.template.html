@@ -1,0 +1,18 @@
+<div class="$ctrl.newUserContainerState">
+    <div class="newUserSignupImageDiv{{$ctrl.signupMonth}}"></div>
+    <div class="newUserNavbar{{$ctrl.signupMonth}}">
+        <img class="newUserLogoNav{{$ctrl.signupMonth}}" src="{{$ctrl.newUserLogoPath}}" ng-click="$ctrl.navigateToLanding()">
+        <h1 class="newUserSignupTitle{{$ctrl.signupMonth}}">New User Signup</h1>
+    </div>
+    <div class="newUserMasterFormDiv{{$ctrl.signupMonth}}">
+        <p class="newUserSignupFormWelcomeLine{{$ctrl.signupMonth}}">168 Habits: A better model for consuming information on the internet</p>
+        <input class="newUserTextBoxFirstName{{$ctrl.signupMonth}}" id="newUserTextBoxFirstName" placeholder="first name" type="text" ng-keyup="$ctrl.setFirstName()">
+        <input class="newUserTextBoxLastName{{$ctrl.signupMonth}}" id="newUserTextBoxLastName" placeholder="last name" type="text" ng-keyup="$ctrl.setLastName()">
+        <input class="newUserTextBoxEmail{{$ctrl.signupMonth}}" id="newUserTextBoxEmail" placeholder="email" type="email" ng-keyup="$ctrl.setEmail()">
+        <input class="newUserTextBoxPassword{{$ctrl.signupMonth}}" id="newUserTextBoxPassword" placeholder="password" type="password" ng-keyup="$ctrl.setPassword()">
+        <input class="newUserTextBoxConfirmPassword{{$ctrl.signupMonth}}" id="newUserTextBoxConfirmPassword" placeholder="confirm password" type="password" ng-keyup="$ctrl.setConfirmPassword()">
+        <p class="newUserSignupFormErrorMessageing{{$ctrl.signupMonth}}">{{$ctrl.newUserErrorMessage}}</p>
+        <p class="newUserSignupFormMessaging{{$ctrl.signupMonth}}">{{$ctrl.newUserMessage}}</p>
+        <button class="newUserSignupSubmitButton{{$ctrl.signupMonth}}" ng-click="$ctrl.submitUserDatas()">submit</button>
+    </div>
+</div>

@@ -15,7 +15,7 @@
           <div ng-if="!$ctrl.userLoggedIn">
 
             <button ng-hide="$ctrl.userLoginActive" ng-click="$ctrl.activateUserLogin()">log in</button>
-            <button ng-hide="$ctrl.userLoginActive">sign up</button>
+            <button ng-hide="$ctrl.userLoginActive" ng-click="$ctrl.navigateToNewUserSignup()">sign up</button>
             <button ng-hide="$ctrl.userLoginActive">about</button>
           </div>
 
