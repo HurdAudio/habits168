@@ -47,7 +47,8 @@
 
               <div class="tuesdayTrackProgress{{$ctrl.tuesdayMonth}}"><input type="checkbox" ng-checked="subscription.userRead"><p class="tuesdayUnreadText{{$ctrl.tuesdayMonth}}" ng-if="(!subscription.userRead && !content.podcast)">unread</p><p class="tuesdayReadText{{$ctrl.tuesdayMonth}}" ng-if="(subscription.userRead && !content.podcast)">read</p><p class="tuesdayUnreadText{{$ctrl.tuesdayMonth}}" ng-if="(!subscription.userRead && content.podcast)">new</p><p class="tuesdayReadText{{$ctrl.tuesdayMonth}}" ng-if="(subscription.userRead && content.podcast)">completed</p><span class="tuesdayCheckbox{{$ctrl.tuesdayMonth}}{{subscription.userRead}}" ng-click="$ctrl.toggleReadStatus(content.title, subscription.uuid)"><span class="tuesdaySwitchUnchecked{{$ctrl.tuesdayMonth}}{{subscription.userRead}}"></span></span></div>
 
-              <img class="tuesdaySubIcon{{$ctrl.tuesdayMonth}}" src="{{subscription.image}}">
+                <img class="tuesdaySubIcon{{$ctrl.tuesdayMonth}}" src="{{subscription.image}}" ng-if="content.title !== 'Externals'">
+                <img class="tuesdaySubIcon{{$ctrl.tuesdayMonth}}" src="{{subscription.image_link}}" ng-if="content.title === 'Externals'">
               <p class="tuesdaySubscriptionTitle{{$ctrl.tuesdayMonth}}">{{subscription.title}}: {{subscription.description}}</p>
             </div>
           </main>
