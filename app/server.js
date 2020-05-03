@@ -36,6 +36,7 @@ const skins = require('./routes/skins.js');
 const externals = require('./routes/externals.js');
 const dailies = require('./routes/dailies.js');
 const avatars = require('./routes/avatars.js');
+const tuesday_subscriptions = require('./routes/tuesday_subscriptions.js');
 // const financial_modules = require('./routes/financial_modules.js');
 
 const port = process.env.PORT || 3037;
@@ -72,6 +73,7 @@ app.use('/skins', skins);
 app.use('/externals', externals);
 app.use('/dailies', dailies);
 app.use('/avatars', avatars);
+app.use('/tuesday_subscriptions', tuesday_subscriptions);
 
 // app.get('/reuters_headlines/:country', (req, res, next) =>{
 //   let newUrl = 'https://newsapi.org/v2/top-headlines?country=';
