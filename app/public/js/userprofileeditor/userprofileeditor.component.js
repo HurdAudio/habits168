@@ -13,7 +13,7 @@
         const vm = this;
 
         vm.$onInit = onInit;
-        vm.profileMonth = '_JanuaryC';
+        vm.profileMonth = '_FebruaryA';
         vm.navigateToHub = navigateToHub;
         vm.toggleBirthdatePublicPrivate = toggleBirthdatePublicPrivate;
         vm.toggleBioPublicPrivate = toggleBioPublicPrivate;
