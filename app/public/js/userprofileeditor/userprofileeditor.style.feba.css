@@ -1,0 +1,441 @@
+.profileBackgroundDiv_FebruaryA {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/user_profile_editor/february/texture-3475976_1920.jpg);
+    background-size: 100%;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.profileEditorContent_FebruaryA {
+    transition: all 0.4s linear;
+}
+
+.profileEditorContentBlur_FebruaryA {
+    filter: blur(15px);
+    transition: all 0.4s linear;
+}
+
+.profileBanner_FebruaryA {
+    backdrop-filter: blur(5px) hue-rotate(-90deg);
+    height: 12vh;
+    width: 100%;
+}
+
+.profileIcon_FebruaryA {
+    cursor: pointer;
+    filter: drop-shadow(15px 15px 5px #341c1e);
+    float: left;
+    margin: -8px 25px;
+    max-height: 15vh;
+    max-width: 8%;
+}
+
+.profileBannerTitle_FebruaryA {
+    color: #0c0102;
+    float: left;
+    font-family: 'Tinos', serif;
+    font-size: 54px;
+    margin: 25px 0 4px 50px;
+}
+
+.profileEditorContentContainer_FebruaryA {
+    align-items: center;
+    display: grid;
+    grid-template-columns: [leftMargin] 60px [first] 300px [second] 1fr [third] 1fr [fourth] 1fr [fifth] 1fr [sixth] 1fr [seventh] 1fr [fin] 0;
+    grid-template-rows: [thetop] 60px [line2] 300px [line3] 1fr [line4] 1fr [line5] 1fr [lineend] 0;
+    justify-items: center;
+    width: 100%;
+}
+
+.profileBasicContentContainer_FebruaryA {
+    backdrop-filter: hue-rotate(135deg);
+    display: initial;
+    font-family: 'Tinos', serif;
+    font-size: 18px;
+    grid-column: first / second;
+    grid-row: line2 / line5;
+    height: 100%;
+    width: 100%;
+}
+
+.profileEditorAvatarDisplay_FebruaryA {
+    height: 300px;
+    width: 300px;
+}
+
+.profileAvatarChangeButton_FebruaryA {
+    background: #c1a3a5;
+    border: none;
+    color: #002138;
+    cursor: pointer;
+    font-family: 'Tinos', serif;
+    font-size: 24px;
+    filter: drop-shadow(15px 15px 5px #341c1e);
+    margin: 15px 0 15px 15%;
+    outline-color: #908183;
+    padding: 5px;
+    transition: all 0.4s linear;
+}
+
+.profileAvatarChangeButton_FebruaryA:hover {
+    background: #02548c;
+    color: #c3aaa8;
+    filter: drop-shadow(10px 10px 5px #341c1e);
+    transition: all 0.4s linear;
+}
+
+.profileAvatarChangeButton_FebruaryA:active {
+    background: #200307;
+    color: #8bbbd8;
+    filter: drop-shadow(0 0 0 #341c1e);
+    transition: all 0.1s linear;
+}
+
+.profileEditLabel_FebruaryA {
+    color: #0c0102;
+    font-size: 24px;
+    margin: 65px;
+}
+
+.profileEditNameInput_FebruaryA {
+    background: #8bbbd8;
+    border: none;
+    color: #0c0102;
+    font-family: 'Tinos', serif;
+    font-size: 24px;
+    margin: 5px 15px;
+    outline-color: #908183;
+    padding: 0 0 0 15px;
+}
+
+.profileExpandedContentContainer_FebruaryA {
+    backdrop-filter: blur(14px) hue-rotate(-75deg);
+    display: initial;
+    font-family: 'Tinos', serif;
+    font-size: 18px;
+    grid-column: third / seventh;
+    grid-row: line2 / line5;
+    height: 75vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.profileEditorBirthdateDiv_FebruaryA {
+    background: #c1a3a5;
+    border-bottom: 1px solid #362120;
+    opacity: 0.6;
+    padding: 12px;
+    transition: all 0.1s linear;
+}
+
+.profileEditorBirthdateDiv_FebruaryA:hover {
+    opacity: 1;
+    transition: all 0.1s linear;
+}
+
+.profileEditBirthdateInput_FebruaryA {
+    background: transparent;
+    border: none;
+    color: #0c0102;
+    font-family: 'Tinos', serif;
+    font-size: 18px;
+    margin: 7px 0 7px 80px;
+    outline-color: #10181f;
+    padding: 0 0 0 5px;
+}
+
+.profileEditorPublicSwitch_FebruaryA {
+    cursor: pointer;
+    float: right;
+    margin-right: 20%;
+    width: 19%;
+}
+
+.profileEditorPublicSwitchSlotOn_FebruaryA {
+    background: #00689a;
+    border-radius: 100%;
+    filter: brightness(250%) saturate(300%);
+    height: 35px;
+    right: 5px;
+    perspective: 100px;
+    position: sticky;
+    top: 4px;
+    width: 35px;
+}
+
+.profileEditorPublicSwitchSlotOff_FebruaryA {
+    background: #02548c;
+    border-radius: 100%;
+    filter: brightness(50%) saturate(100%);
+    height: 35px;
+    right: 5px;
+    perspective: 0;
+    position: sticky;
+    top: 4px;
+    width: 35px;
+}
+
+.profileEditorPublicPrivateLabel_FebruaryA {
+    float: right;
+    font-family: 'Tinos', serif;
+    font-size: 30px;
+    transform: translateX(30px) translateY(-30px);
+}
+
+.profileEditorBioDiv_FebruaryA {
+    background: #c1a3a5;
+    border-bottom: 1px solid #362120;
+    opacity: 0.6;
+    padding: 12px;
+    transition: all 0.1s linear;
+}
+
+.profileEditorBioDiv_FebruaryA:hover {
+    opacity: 1;
+    transition: all 0.1s linear;
+}
+
+.profileEditorBioInput_FebruaryA {
+    background: #8bbbd8;
+    border: none;
+    color: #0c0102;
+    font-family: 'Tinos', serif;
+    font-size: 18px;
+    margin: 0 30px 4px 80px;
+    outline-color: #908183;
+    padding: 0 0 0 15px;
+    position: relative;
+    width: 70%;
+}
+
+.profileEditorLocationDiv_FebruaryA {
+    background: #c1a3a5;
+    border-bottom: 1px solid #362120;
+    opacity: 0.6;
+    padding: 12px;
+    transition: all 0.1s linear;
+}
+
+.profileEditorLocationDiv_FebruaryA:hover {
+    opacity: 1;
+    transition: all 0.1s linear;
+}
+
+.profileEditorChangeLocationButtonDiv_FebruaryA {
+    float: right;
+    margin: 50px 0 0 10px;
+    left: 15%;
+}
+
+.profileEditorChangeLocationButton_FebruaryA {
+    background: #c1a3a5;
+    border: none;
+    color: #002138;
+    cursor: pointer;
+    font-family: 'Tinos', serif;
+    font-size: 24px;
+    filter: drop-shadow(15px 15px 5px #341c1e);
+    margin: 15px 0 15px 15%;
+    outline-color: #908183;
+    padding: 5px;
+    transition: all 0.4s linear;
+}
+
+.profileEditorChangeLocationButton_FebruaryA:hover {
+    background: #02548c;
+    color: #c3aaa8;
+    filter: drop-shadow(10px 10px 5px #341c1e);
+    transition: all 0.4s linear;
+}
+
+.profileEditorChangeLocationButton_FebruaryA:active {
+    background: #200307;
+    color: #8bbbd8;
+    filter: drop-shadow(0 0 0 #341c1e);
+    transition: all 0.1s linear;
+}
+
+.profileEditorLocationDatas_FebruaryA {
+    padding: 10px 0 10px 90px;
+    width: 90%;
+}
+
+.profileEditorLocationName_FebruaryA {
+    font-family: 'Tinos', serif;
+    font-size: 24px;
+}
+
+.profileEditorLocationDatapoint_FebruaryA {
+    font-family: 'Tinos', serif;
+    font-size: 18px;
+    margin: 5px 0 5px 30px;
+}
+
+.profileEditorSchoolDeleter_FebruaryA {
+    color: #0c0102;
+    cursor: pointer;
+    float: left;
+    margin: 0 0 0 60px;
+}
+
+.profileEditorAvatarModal_FebruaryA {
+    background: #8bbbd8;
+    border: 2px solid #612a30;
+    height: auto;
+    left: 10%;
+    padding: 30px;
+    position: absolute;
+    top: 5%;
+    transition: all 0.4s linear;
+    transform: scale(1);
+    width: 80%;
+}
+
+.profileEditorAvatarModalInactive_FebruaryA {
+    background: #8bbbd8;
+    border: 2px solid #612a30;
+    height: auto;
+    left: 20%;
+    padding: 30px;
+    position: absolute;
+    top: 5%;
+    transition: all 0.4s linear;
+    transform: scale(0.0001);
+    width: 80%;
+}
+
+.profileEditorAvatarPathInput_FebruaryA {
+    background: #c1a3a5;
+    border: none;
+    color: #0c0102;
+    font-family: 'Tinos', serif;
+    font-size: 18px;
+    outline-color: #908183;
+    padding: 4px 0 4px 4px;
+    width: 300px;
+}
+
+.profileAvatarModalButton_FebruaryA {
+    background: #c1a3a5;
+    border: none;
+    color: #002138;
+    cursor: pointer;
+    font-family: 'Tinos', serif;
+    font-size: 24px;
+    filter: drop-shadow(15px 15px 5px #341c1e);
+    margin: 15px 5px 15px 2%;
+    outline-color: #908183;
+    padding: 5px;
+    transition: all 0.4s linear;
+}
+
+.profileAvatarModalButton_FebruaryA:hover {
+    background: #02548c;
+    color: #c3aaa8;
+    filter: drop-shadow(10px 10px 5px #341c1e);
+    transition: all 0.4s linear;
+}
+
+.profileAvatarModalButton_FebruaryA:active {
+    background: #200307;
+    color: #8bbbd8;
+    filter: drop-shadow(0 0 0 #341c1e);
+    transition: all 0.1s linear;
+}
+
+.profileAvatarModalListDiv_FebruaryA {
+    background: transparent;
+    float: right;
+    height: 450px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 60%;
+}
+
+.profileModalAvatarListModals_FebruaryA {
+    cursor: pointer;
+    float: left;
+    height: 80px;
+    width: 80px;
+}
+
+.profileCityModal_FebruaryA {
+    background: #875451;
+    border: 2px solid #1676b0;
+    height: auto;
+    left: 25%;
+    padding: 30px;
+    position: absolute;
+    top: 2%;
+    transition: all 0.4s linear;
+    transform: rotateX(0) scale(1) skew(0);
+    width: 50%;
+}
+
+.profileCityModalInactive_FebruaryA {
+    background: #875451;
+    border: 2px solid #1676b0;
+    height: auto;
+    left: 125%;
+    padding: 30px;
+    position: absolute;
+    top: 2%;
+    transition: all 0.4s linear;
+    transform: rotateX(180deg) scale(0.0001) skew(90deg);
+    width: 50%;
+}
+
+.profileEditorCitySearchInput_FebruaryA {
+    background: #8bbbd8;
+    border: none;
+    color: #0c0102;
+    font-family: 'Tinos', serif;
+    font-size: 18px;
+    margin: 0 20% 10px 20%;
+    outline-color: #908183;
+    padding: 4px 0 4px 4px;
+    width: 60%;
+}
+
+.profileEditorCityList_FebruaryA {
+    background: #c3aaa8;
+    height: 65vh;
+    margin: 0 20% 10px 20%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 2px;
+    width: 60%;
+}
+
+#profileEditorCloseButton_FebruaryA {
+    margin-left: 45%;
+}
+
+#profileEditorFilterButton_FebruaryA {
+    margin-bottom: 8px;
+    margin-left: 45%;
+    margin-top: 0;
+}
+
+.profileCityData_FebruaryA {
+    color: #0c0102;
+    cursor: pointer;
+    font-family: 'Tinos', serif;
+    font-size: 18px;
+    margin: 5px;
+}
+
+.profileEditorCityEntryDiv_FebruaryA {
+    padding 2px 4px;
+}
+
+.profileEditorCityEntryDiv_FebruaryA:hover {
+    background: #80b4cd;
+}
