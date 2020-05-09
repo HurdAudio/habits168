@@ -13,7 +13,7 @@
         const vm = this;
 
         vm.$onInit = onInit;
-        vm.externalsMonth = "_FebruaryB";
+        vm.externalsMonth = "_FebruaryC";
         vm.externalsContainerState = "externalsContainerActive" + vm.externalsMonth;
         vm.navigateToHub = navigateToHub;
         vm.toggleReadStatus = toggleReadStatus;
