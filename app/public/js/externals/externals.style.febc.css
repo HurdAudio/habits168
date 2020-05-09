@@ -1,0 +1,568 @@
+.externalsBackgroundDiv_FebruaryC {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/externals/backdrop/petal-5019633_1920.jpg);
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.externalsContainerActive_FebruaryC {
+    filter: blur(0px) hue-rotate(0deg);
+    transform: all 0.5s linear;
+}
+
+.externalsContainerInactive_FebruaryC {
+    filter: blur(5px) hue-rotate(180deg);
+    transform: all 0.5s linear;
+}
+
+.externalsTitleBar_FebruaryC {
+    background: linear-gradient(-145deg, #d4b294, #f397a3);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Amaranth', sans-serif;
+    height: 12vh;
+    justify-content: flex-start;
+    opacity: 0.9;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.externalsLogo_FebruaryC {
+    cursor: pointer;
+    filter: drop-shadow(12px 8px 4px #432810);
+    height: 90px;
+    margin: 1px 48px 1px 13px;
+    max-width: 90px;
+}
+
+.externalsTitle_FebruaryC {
+    color: #1f1a1a;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 42px;
+    transform: translateX(0.5vw) translateY(3.5vh);
+}
+
+.externalsBody_FebruaryC {
+    background: linear-gradient(145deg, #bbabe2, #a7a1a0);
+    height: 87vh;
+    opacity: 0.9;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 24px;
+    width: 100%;
+}
+
+.externalsIssuesHeader_FebruaryC {
+    color: #1f1a1a;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 30px;
+}
+
+.externalManagementContainer_FebruaryC {
+    display: grid;
+    grid-template-columns: [leftBuffer] 10px [deleteColumn] 50px [readColumn] 120px [imageColumn] 150px [issueColumn] 1fr [rightBuffer] 10px;
+    grid-template-rows: [externalContent] auto [addNewContent] auto;
+    height: auto;
+    margin: 30px 0 15px 0;
+    width: 100%;
+}
+
+.externalsSwitchtrue_FebruaryC {
+    background: linear-gradient(145deg, #e72f47, #4e4341);
+    cursor: pointer;
+    display: inline-block;
+    filter: brightness(100%);
+    grid-column: readColumn / imageColumn;
+    grid-row: externalContent;
+    height: 15px;
+    margin: 35px 0 0 15px;
+    position: relative;
+    transition: all 0.3s linear;
+    width: 60px;
+}
+
+.externalsSwitchfalse_FebruaryC {
+    background: linear-gradient(-145deg, #5c121c, #1f1a1a);
+    cursor: pointer;
+    display: inline-block;
+    filter: brightness(90%);
+    grid-column: readColumn / imageColumn;
+    grid-row: externalContent;
+    height: 15px;
+    margin: 35px 0 0 15px;
+    position: relative;
+    transition: all 0.3s linear;
+    width: 60px;
+}
+
+.externalsSwitchHandletrue_FebruaryC {
+    background: linear-gradient(-145deg, #a96528, #7d2792);
+    bottom: 2px;
+    height: 25px;
+    left: 0;
+    position: absolute;
+    right: 2px;
+    top: -5px;
+    transition: all 0.3s linear;
+    width: 25px;
+}
+
+.externalsSwitchHandlefalse_FebruaryC {
+    background: linear-gradient(145deg, #432810, #320f3a);
+    bottom: 2px;
+    height: 25px;
+    left: 35px;
+    position: absolute;
+    right: 2px;
+    top: -5px;
+    transition: all 0.3s linear;
+    width: 25px;
+}
+
+.externalsSwitchText_FebruaryC {
+    color: #1f1a1a;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 18px;
+    margin: 28px 0 0 0;
+}
+
+.externalsImage_FebruaryC {
+    grid-column: imageColumn / issueColumn;
+    grid-row: externalContent;
+    max-height: 120px;
+    width: 100px;
+}
+
+.externalsReadingDatas_FebruaryC {
+    color: #1f1a1a;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 18px;
+    grid-column: issueColumn / rightBuffer;
+    grid-row: externalContent;
+    margin: 25px 0 0 0;
+}
+
+.externalsDelete_FebruaryC {
+    align-self: center;
+    color: #1f1a1a;
+    cursor: pointer;
+    font-size: 30px;
+    grid-column: deleteColumn / readColumn;
+    grid-row: externalContent;
+    justify-content: center;
+    transition: all 0.3s linear;
+}
+
+.externalsDelete_FebruaryC:hover {
+    color: #5c121c;
+    transition: all 0.3s linear;
+}
+
+.externalsAddNewContentDiv_FebruaryC {
+    color: #1f1a1a;
+    cursor: pointer;
+    margin: 70px 0 0 330px;
+    width: auto;
+}
+
+.externalsAddContentIcon_FebruaryC {
+    float: left;
+    font-size: 42px;
+    margin: 0 30px 0 0;
+    position: float;
+}
+
+.externalsAddNewText_FebruaryC {
+    float: left;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 24px;
+    margin: 5px 0 0 0;
+}
+
+.externalsDeleteGuardrailActive_FebruaryC {
+    background: #ccc2bf;
+    border: 1px solid #2f224e;
+    height: auto;
+    left: 25%;
+    opacity: 1;
+    position: absolute;
+    top: 15%;
+    transition: all 0.3s linear;
+    width: auto;
+    z-index: 10;
+}
+
+.externalsDeleteGuardrailInactive_FebruaryC {
+    background: #ccc2bf;
+    border: 1px solid #2f224e;
+    height: auto;
+    left: 175%;
+    opacity: 0;
+    position: absolute;
+    top: 105%;
+    transition: all 0.3s linear;
+    width: auto;
+    z-index: -10;
+}
+
+.externalsDeleteGuardrailTitleBar_FebruaryC {
+    background: #a96528;
+    border-bottom: 1px solid #2f224e;
+    height: auto;
+    padding: 6px 0;
+    width: 100%;
+}
+
+.externalsDeleteGuardrailTitle_FebruaryC {
+    color: #1f1a1a;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 30px;
+    margin-left: 40px;
+}
+
+.externalsGuardrailContainer_FebruaryC {
+    background: transparent;
+    display: grid;
+    grid-template-columns: [leftB] 10px [imgColumn] 120px [infoColumn] 1fr [rightB] 10px;
+    grid-template-rows: [title] auto [query] auto [buttons] auto;
+    height: auto;
+    padding: 12px;
+    width: 100%;
+}
+
+.externalsGuardrailBodyText_FebruaryC {
+    color: #1f1a1a;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 18px;
+    grid-column: imgColumn / rightB;
+    grid-row: title;
+}
+
+.externalsGuardrailImage_FebruaryC {
+    grid-column: imgColumn / infoColumn;
+    grid-row: query;
+    margin: 20px 0;
+    width: 90px;
+}
+
+.externalsGuardrailInfos_FebruaryC {
+    color: #1f1a1a;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 18px;
+    grid-column: infoColumn / rightB;
+    grid-row: query;
+    margin: 40px 0 20px 0;
+}
+
+.externalsGuardrailButtons_FebruaryC {
+    background: transparent;
+    grid-column: infoColumn / rightB;
+    grid-row: buttons;
+    height: auto;
+    justify-content: center;
+    margin: 0 0 0 16%;
+}
+
+.externalsGuardrailButtons_FebruaryC button {
+    background: linear-gradient(145deg, #99847f, #5f5452);
+    border: none;
+    color: #1f1a1a;
+    cursor: pointer;
+    filter: drop-shadow(10px 15px 4px #432810);
+    font-family: 'Amaranth', sans-serif;
+    font-size: 24px;
+    margin: 10px 40px 20px 0;
+    outline-color: #afaaa9;
+    transition: all 0.6s linear;
+    width: 70px;
+}
+
+.externalsGuardrailButtons_FebruaryC button:hover {
+    background: linear-gradient(145deg, #a96528, #d4b294);
+    color: #320f3a;
+    filter: drop-shadow(9px 14px 3px #432810);
+    transition: all 0.6s linear;
+}
+
+.externalsGuardrailButtons_FebruaryC button:active {
+    background: linear-gradient(145deg, #d4b294, #a96528);
+    color: #ccc2bf;
+    filter: drop-shadow(0 0 0 #2b322b);
+    transition: all 0.1s linear;
+}
+
+.externalsAddNewExternalsDialogActive_FebruaryC {
+    background: linear-gradient(145deg, #d4b294, #a7a1a0);
+    border: 1px solid #1f1a1a;
+    height: auto;
+    left: 10%;
+    opacity: 1;
+    position: absolute;
+    top: 0.5%;
+    transform: scale(1);
+    transition: all 0.6s linear;
+    width: 80%;
+    z-index: 10;
+}
+
+.externalsAddNewExternalsDialogInactive_FebruaryC {
+    background: linear-gradient(145deg, #d4b294, #a7a1a0);
+    border: 1px solid #1f1a1a;
+    height: auto;
+    left: -90%;
+    opacity: 0;
+    position: absolute;
+    top: 0.5%;
+    transform: scale(0.01);
+    transition: all 0.6s linear;
+    width: 80%;
+    z-index: -10;
+}
+
+.externalsAddNewTitleBar_FebruaryC {
+    background: linear-gradient(145deg, #5c121c, #320f3a);
+    border-bottom: 1px solid #1f1a1a;
+    height: auto;
+    padding: 6px 0;
+    width: 100%;
+}
+
+.externalsAddNewTitle_FebruaryC {
+    color: #ccc2bf;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 30px;
+    margin-left: 40px;
+}
+
+.externalsAddNewBodyContainer_FebruaryC {
+    display: grid;
+    grid-template-columns: [leftAdd] 10px [formInput] 1fr [displayAdd] 1fr [rightAdd] 10px;
+    grid-template-rows: [errorMessaging] auto [userAdds] auto [buttonsAdds] auto;
+    height: auto;
+}
+
+.externalsAddErrorField_FebruaryC {
+    color: #ff0000;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 18px;
+    grid-column: formInput / rightAdd;
+    grid-row: errorMessaging;
+    margin: 15px 30px;
+}
+
+.externalsAddUserForm_FebruaryC {
+    background: transparent;
+    grid-column: formInput / displayAdd;
+    grid-row: userAdds;
+    height: auto;
+    margin: 0 0 30px 0;
+    padding: 24px 0;
+}
+
+.externalsAddUserForm_FebruaryC label {
+    color: #1f1a1a;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 18px;
+    margin: 15px 24px;
+}
+
+.externalsAddUserForm_FebruaryC input[type="text"] {
+    background: #ccc2bf;
+    border: none;
+    color: #1f1a1a;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 18px;
+    margin: 5px 24px;
+    outline-color: #afaaa9;
+    padding: 0 5px;
+    width: 90%;
+}
+
+.externalsAddUserForm_FebruaryC textarea {
+    background: #ccc2bf;
+    border: none;
+    color: #1f1a1a;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 18px;
+    margin: 5px 24px;
+    outline-color: #afaaa9;
+    padding: 0 5px;
+    width: 90%;
+}
+
+.externalsDisplayNewAddition_FebruaryC {
+    background: transparent;
+    grid-column: displayAdd / rightAdd;
+    grid-row: userAdds;
+    height: auto;
+    margin: 0 0 30px 0;
+    padding: 24px 0;
+}
+
+.externalsAddImage_FebruaryC {
+    margin: 0 0 0 36px;
+    max-height: 240px;
+    width: 150px;
+}
+
+.externalsAddCandidateTitle_FebruaryC {
+    color: #1f1a1a;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 24px;
+    margin: 24px;
+}
+
+.externalsAddExternalsButtons_FebruaryC {
+    background: transparent;
+    height: auto;
+    grid-column: formInput / rightAdd;
+    grid-row: buttonsAdds;
+    margin: 0 0 30px 0;
+}
+
+.externalsAddExternalsButtons_FebruaryC button {
+    background: linear-gradient(145deg, #99847f, #5f5452);
+    border: none;
+    color: #1f1a1a;
+    cursor: pointer;
+    filter: drop-shadow(10px 15px 4px #432810);
+    font-family: 'Amaranth', sans-serif;
+    font-size: 24px;
+    margin: 10px 40px 20px 6%;
+    outline-color: #afaaa9;
+    transition: all 0.6s linear;
+    width: auto;
+}
+
+.externalsAddExternalsButtons_FebruaryC button:hover {
+    background: linear-gradient(145deg, #a96528, #d4b294);
+    color: #320f3a;
+    filter: drop-shadow(9px 14px 3px #432810);
+    transition: all 0.6s linear;
+}
+
+.externalsAddExternalsButtons_FebruaryC button:active {
+    background: linear-gradient(145deg, #d4b294, #a96528);
+    color: #ccc2bf;
+    filter: drop-shadow(0 0 0 #2b322b);
+    transition: all 0.1s linear;
+}
+
+.hubReaderExternalsDay2BlockInactive_FebruaryC {
+    background: #82a1b5;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/externals/backdrop/petal-5019633_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(250%) translateY(500%);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: -1;
+}
+
+.hubReaderExternalsDay2BlockActive_FebruaryC {
+    background: #82a1b5;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/externals/backdrop/petal-5019633_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px) translateY(0px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 414px) {
+
+    .externalsTitle_FebruaryC {
+        font-size: 24px;
+    }
+
+    .externalsIssuesHeader_FebruaryC {
+        font-size: 18px;
+    }
+
+    .externalManagementContainer_FebruaryC {
+        grid-template-columns: [leftBuffer] 1px [deleteColumn] 25px [readColumn] 60px [imageColumn] 80px [issueColumn] 50% [rightBuffer] 14px;
+        grid-template-rows: [externalContent] auto [addNewContent] auto;
+        margin: 15px 0 7px 0;
+    }
+
+    .externalsDelete_FebruaryC {
+        font-size: 18px;
+    }
+
+    .externalsImage_FebruaryC {
+        margin-left: 15px;
+        max-height: 50px;
+        width: 40px;
+    }
+
+    .externalsSwitchfalse_FebruaryC {
+        height: 25px;
+        margin: 15px 15px 0 5px;
+        transform: scale(0.5);
+        width: 60px;
+    }
+
+    .externalsSwitchtrue_FebruaryC {
+        height: 25px;
+        margin: 15px 15px 0 5px;
+        transform: scale(0.5);
+        width: 60px;
+    }
+
+    .externalsReadingDatas_FebruaryC {
+        font-size: 12px;
+        margin: 25px 0 0 0;
+    }
+
+    .externalsAddNewContentDiv_FebruaryC {
+        margin: 70px 0 0 10px;
+    }
+
+    .externalsDeleteGuardrailActive_FebruaryC {
+        left: 0;
+        width: 100%;
+    }
+
+    .externalsAddNewExternalsDialogActive_FebruaryC {
+        left: 0;
+        width: 100%;
+    }
+
+    .externalsAddImage_FebruaryC {
+        margin: 0 0 0 36px;
+        max-height: 120px;
+        width: 75px;
+    }
+
+    .externalsAddUserForm_FebruaryC textarea {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+
+    .externalsTitle_FebruaryC {
+        font-size: 18px;
+    }
+}

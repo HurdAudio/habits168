@@ -61,7 +61,7 @@
         vm.navigateToToday = navigateToToday;
         vm.mondayMonth = '_FebruaryC';
         vm.navigateToExternals = navigateToExternals;
-        vm.externalsMonth = '_FebruaryB';
+        vm.externalsMonth = '_FebruaryC';
         vm.navigateToDailies = navigateToDailies;
         vm.dailiesMonth = '_FebruaryB';
         vm.removeShareModal = removeShareModal;
