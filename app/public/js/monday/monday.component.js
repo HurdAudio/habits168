@@ -13,15 +13,12 @@
         const vm = this;
 
         vm.$onInit = onInit;
-        vm.mondayMonth = '_FebruaryC';
-        vm.mondayContainerState = 'mondayContainerActive' + vm.mondayMonth;
         vm.navigateToHub = navigateToHub;
         vm.toggleTabs = toggleTabs;
         vm.toggleReadStatus = toggleReadStatus;
         vm.toggleAllReadStatus = toggleAllReadStatus;
         vm.sortSubscriptions = sortSubscriptions;
         vm.exitMondayManagerModal = exitMondayManagerModal;
-        vm.managerModalState = 'mondayManageTabsSubsModalInactive' + vm.mondayMonth;
         vm.mondayManagerEngaged = mondayManagerEngaged;
         vm.mondayManageTabber = mondayManageTabber;
         vm.filterSearch = filterSearch;
@@ -787,11 +784,16 @@
                     vm.mondayTabs = assembledSubs;
                 });
         }
-
-        function onInit() {
-            console.log("Monday is lit");
-
-            switch (vm.mondayMonth) {
+        
+        function setMonthSelect() {
+            $http.get('/skins/monday')
+            .then(hubSkinResponseData => {
+                const hubSkinResponse = hubSkinResponseData.data;
+                vm.mondayMonth = hubSkinResponse.monday;
+                vm.mondayContainerState = 'mondayContainerActive' + vm.mondayMonth;
+                vm.managerModalState = 'mondayManageTabsSubsModalInactive' + vm.mondayMonth;
+                
+                switch (vm.mondayMonth) {
                 case ('_JanuaryA'):
                     vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/robe-154808_640.png';
                     break;
@@ -813,6 +815,13 @@
                 default:
                     alert('UNSUPPORTED MONTH SELECT for LOGO');
             }
+            });
+        }
+
+        function onInit() {
+            console.log("Monday is lit");
+            
+            setMonthSelect();
 
             setUserIPAddress();
             setFooterMessage();

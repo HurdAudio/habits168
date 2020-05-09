@@ -59,7 +59,6 @@
         vm.hubContactSubmit = hubContactSubmit;
         vm.navigateToDay = navigateToDay;
         vm.navigateToToday = navigateToToday;
-        vm.mondayMonth = '_FebruaryC';
         vm.navigateToExternals = navigateToExternals;
         vm.externalsMonth = '_FebruaryC';
         vm.navigateToDailies = navigateToDailies;
@@ -1604,6 +1603,7 @@
             .then(hubSkinResponseData => {
                 const hubSkinResponse = hubSkinResponseData.data;
                 vm.monthSelect = hubSkinResponse.user_hub;
+                vm.mondayMonth = hubSkinResponse.monday_skin;
                 
                 vm.hubShareTabState = 'hubTabActive' + vm.monthSelect;
                 vm.hubReaderTabState = 'hubTabInactive' + vm.monthSelect;
