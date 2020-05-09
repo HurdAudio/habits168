@@ -35,6 +35,24 @@ router.get('/landing', (req, res, next) => {
     });
 });
 
+router.get('/monday', (req, res, next) => {
+    let now = new Date();
+    let months = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'];
+    let selectedSkin;
+    
+    knex('skins')
+    .select('*')
+    .first()
+    .then(skinsTable => {
+        if (skinsTable.skins.monday[months[now.getMonth()]].length === 1) {
+            selectedSkin = skinsTable.skins.monday.available[Math.floor(Math.random() * skinsTable.skins.monday.available.length)];
+        } else {
+            selectedSkin = skinsTable.skins.monday[months[now.getMonth()]][now.getDate()];
+        }
+        res.send({ monday: selectedSkin });
+    });
+})
+
 router.get('/player', (req, res, next) => {
     let now = new Date();
     let months = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'];
@@ -56,7 +74,7 @@ router.get('/player', (req, res, next) => {
 router.get('/user_hub', (req, res, next) => {
     let now = new Date();
     let months = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'];
-    let selectedSkin;
+    let selectedSkin, mondaySkin;
     
     knex('skins')
     .select('*')
@@ -67,7 +85,14 @@ router.get('/user_hub', (req, res, next) => {
         } else {
             selectedSkin = skinsTable.skins.user_hub[months[now.getMonth()]][now.getDate()];
         }
-        res.send({ user_hub: selectedSkin });
+        if (skinsTable.skins.monday[months[now.getMonth()]].length === 1) {
+            mondaySkin = skinsTable.skins.monday.available[Math.floor(Math.random() * skinsTable.skins.monday.available.length)];
+        } else {
+            mondaySkin = skinsTable.skins.monday[months[now.getMonth()]][now.getDate()];
+        }
+        
+        
+        res.send({ monday_skin: mondaySkin, user_hub: selectedSkin });
     })
 });
 
