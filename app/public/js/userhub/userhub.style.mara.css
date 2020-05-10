@@ -1,5 +1,5 @@
-.hubBackgroundDiv_FebruaryC {
-    background: url(https://habits168-hurdaudio.s3.amazonaws.com/hub/february/designecologist-SQuY313aZyA-unsplash.jpg);
+.hubBackgroundDiv_MarchA {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/hub/march/glass-5147216_1920.jpg);
     background-size: cover;
     filter: brightness(100%);
     height: 100%;
@@ -14,80 +14,83 @@
     z-index: -1;
 }
 
-.hubTitleFlex_FebruaryC {
-    background: #4c564d;
+.hubTitleFlex_MarchA {
+    background: #93bac4;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     height: auto;
     justify-content: flex-start;
-    opacity: 0.9;
+    opacity: 0.85;
     width: 100%;
 }
 
-.hubLogo_FebruaryC {
+.hubLogo_MarchA {
+    box-shadow: 7px 7px 5px #0f2e36;
     height: 80px;
-    margin: 8px 36px 8px 36px;
+    margin: 8px 36px 8px 26px;
     width: 80px;
 }
 
-.hubTitleDiv_FebruaryC {
+.hubTitleDiv_MarchA {
     padding: 20px 4px 16px 28px;
 }
 
-.hubTitle_FebruaryC {
-    color: #040809;
-    font-family: 'Inter', sans-serif;
+.hubTitle_MarchA {
+    color: #000006;
+    font-family: 'Varela', sans-serif;
     font-size: 66px;
     font-weight: bolder;
 }
 
-.hubSignoutDiv_FebruaryC {
+.hubSignoutDiv_MarchA {
     padding: 4vh 40px;
     position: fixed;
     right: 4%;
 }
 
-.hubSignoutButton_FebruaryC {
-    background: #c3b6a3;
-    border: none;
-    color: #0c1618;
-    cursor: pointer;
-    filter: drop-shadow(10px 15px 4px #1e221e);
-    font-family: 'Inter', sans-serif;
-    font-size: 24px;
-    outline-color: #0c1618;
-    transition: all 0.4s linear;
-}
-
-.hubSignoutButton_FebruaryC:hover {
-    background: #5e7a63;
-    color: #c3b6a3;
-    filter: brightness(110%) drop-shadow(9px 14px 3px #1e221e);
-    outline-color: #c3b6a3;
-    transition: all 0.4s linear;
-}
-
-.hubSignoutButton_FebruaryC:active {
-    filter: brightness(110%) drop-shadow(0 0 0 #1e221e);
-    transition: all 0.4s linear;
-}
-
-.hubTabsBar_FebruaryC {
+.hubSignoutButton_MarchA {
+    backdrop-filter: hue-rotate(20deg) invert(0%);
     background: transparent;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/hub/march/glass-5147216_1920.jpg) 5% stretch;
+    color: #00020f;
+    cursor: pointer;
+    filter: drop-shadow(7px 10px 4px #0f2e36) invert(0%);
+    font-family: 'Varela', sans-serif;
+    font-size: 24px;
+    outline-color: #868f9c;
+    transition: all 0.4s linear;
+}
+
+.hubSignoutButton_MarchA:hover {
+    backdrop-filter: hue-rotate(-20deg) invert(0%);
+    color: #aed3da;
+    filter: brightness(110%) drop-shadow(4px 8px 3px #0f2e36);
+    transition: all 0.4s linear;
+}
+
+.hubSignoutButton_MarchA:active {
+    backdrop-filter: invert(100%);
+    filter: drop-shadow(0 0 0 #0f2e36);
+    transition: all 0.4s linear;
+}
+
+.hubTabsBar_MarchA {
+    background: radial-gradient(ellipse at top, #aed3da, #02414a);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     height: 5vh;
     justify-content: flex-start;
     padding: 0 1%;
     width: 100%;
 }
 
-.hubTabActive_FebruaryC {
-    color: #040809;
+.hubTabActive_MarchA {
+    color: #000006;
     padding: 8px 0 0 15px;
     transition: all 0.6s;
     transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
@@ -95,8 +98,8 @@
     z-index: 0;
 }
 
-.hubTabInactive_FebruaryC {
-    color: #868b8c;
+.hubTabInactive_MarchA {
+    color: #868f9c;
     cursor: pointer;
     padding: 8px 0 0 15px;
     transition: all 0.6s;
@@ -105,24 +108,24 @@
     z-index: 10;
 }
 
-.hubTabLabel_FebruaryC {
-    font-family: 'Inter', sans-serif;
+.hubTabLabel_MarchA {
+    font-family: 'Varela', sans-serif;
     font-size: 30px;
 }
 
-.hubTabInactive_FebruaryC p {
+.hubTabInactive_MarchA p {
     cursor: pointer;
     z-index: 8;
 }
 
-.hubTabActive_FebruaryC p {
+.hubTabActive_MarchA p {
     cursor: none;
     z-index: 0;
 }
 
-.hubShare_FebruaryC {
-    background: #afbdb1;
-    filter: drop-shadow(10px 1px 4px #353630);
+.hubShare_MarchA {
+    background: radial-gradient(circle at 50%, #05a4ba, #93bac4);
+    filter: drop-shadow(10px 1px 4px #0f2e36);
     height: 5vh;
     left: 0;
     position: absolute;
@@ -132,9 +135,9 @@
     width: 18%;
 }
 
-.hubReader_FebruaryC {
-    background: #afbdb1;
-    filter: drop-shadow(10px 1px 4px #353630);
+.hubReader_MarchA {
+    background: radial-gradient(circle at 50%, #05a4ba, #93bac4);
+    filter: drop-shadow(10px 1px 4px #0f2e36);
     height: 5vh;
     left: 19%;
     position: absolute;
@@ -144,9 +147,9 @@
     width: 18%;
 }
 
-.hubBlogs_FebruaryC {
-    background: #afbdb1;
-    filter: drop-shadow(10px 1px 4px #353630);
+.hubBlogs_MarchA {
+    background: radial-gradient(circle at 50%, #05a4ba, #93bac4);
+    filter: drop-shadow(10px 1px 4px #0f2e36);
     height: 5vh;
     left: 36%;
     position: absolute;
@@ -156,9 +159,9 @@
     width: 18%;
 }
 
-.hubProfile_FebruaryC {
-    background: #afbdb1;
-    filter: drop-shadow(10px 1px 4px #353630);
+.hubProfile_MarchA {
+    background: radial-gradient(circle at 50%, #05a4ba, #93bac4);
+    filter: drop-shadow(10px 1px 4px #0f2e36);
     height: 5vh;
     left: 54%;
     position: absolute;
@@ -168,29 +171,29 @@
     width: 18%;
 }
 
-.hubContentContainer_FebruaryC {
+.hubContentContainer_MarchA {
     height: 81vh;
     width: 100%;
 }
 
-.hubShareDashboard_FebruaryC {
-    background-image: radial-gradient(#e1dbd1, #c2c3bd, #959b9b);
+.hubShareDashboard_MarchA {
+    background-image: radial-gradient(#80a1a8, #93bac4, #aed3da);
     height: 81vh;
-    opacity: 0.9;
+    opacity: 0.95;
     overflow-x: hidden;
     overflow-y: auto;
     width: 105%;
 }
 
-.hubReaderDashboard_FebruaryC {
-    background-image: radial-gradient(#4e4841, #353630, #253027);
+.hubReaderDashboard_MarchA {
+    background-image: radial-gradient(#277488, #004350, #00020f);
     height: 81vh;
     opacity: 0.9;
     width: 100%;
 }
 
-.hubBlogsDashboard_FebruaryC {
-    background-image: radial-gradient(#9ca298, #85877a, #4c564d);
+.hubBlogsDashboard_MarchA {
+    background-image: radial-gradient(#050c16, #0f2e36, #00272f);
     height: 81vh;
     opacity: 0.9;
     overflow-x: hidden;
@@ -198,14 +201,14 @@
     width: 104%;
 }
 
-.hubProfileDashboard_FebruaryC {
-    background-image: radial-gradient(#868b8c, #959b9b, #a6aba6);
+.hubProfileDashboard_MarchA {
+    background-image: radial-gradient(#254248, #5da6b5, #aed3da);
     height: 81vh;
     opacity: 0.9;
     width: 103%;
 }
 
-.hubShareContainer_FebruaryC {
+.hubShareContainer_MarchA {
     display: flex;
     flex-direction: row;
     flex-wrap: no-wrap;
@@ -215,152 +218,152 @@
     width: 96%;
 }
 
-.hubShareByline_FebruaryC {
-    border-right: 2px solid #253027;
+.hubShareByline_MarchA {
+    border-right: 2px solid #0d1e38;
     float: left;
     padding: 5vh 3% 15px 3%;
     width: 20%;
 
 }
 
-.hubShareBylineAvatar_FebruaryC {
+.hubShareBylineAvatar_MarchA {
     cursor: pointer;
-    filter: drop-shadow(5px 5px 2px #1e221e);
+    filter: drop-shadow(5px 5px 2px #0f2e36);
     width: 20%;
 }
 
-.hubBylineName_FebruaryC {
-    color: #040809;
+.hubBylineName_MarchA {
+    color: #000006;
     cursor: pointer;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 5px 0 35px 0;
 }
 
-.hubShareComments_FebruaryC {
-    color: #040809;
-    font-family: 'Inter', sans-serif;
+.hubShareComments_MarchA {
+    color: #000006;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     line-height: 1.3;
 }
 
-.hubShareBody_FebruaryC {
-    border-left: 1px solid #253027;
+.hubShareBody_MarchA {
+    border-left: 1px solid #0d1e38;
     float: left;
     height: auto;
     padding: 0 1%;
     width: 70%;
 }
 
-.hubShareSourceIcon_FebruaryC {
-    filter: drop-shadow(5px 5px 2px #1e221e);
+.hubShareSourceIcon_MarchA {
+    filter: drop-shadow(5px 5px 2px #0f2e36);
     float: left;
     max-width: 70px;
 }
 
-.hubShareViaDescription_FebruaryC {
-    color: #040809;
+.hubShareViaDescription_MarchA {
+    color: #000006;
     float: left;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 10px 0 0 30px;
     max-width: 700px;
 }
 
-.hubShareBody_FebruaryC a {
-    color: #253027;
+.hubShareBody_MarchA a {
+    color: #0f2e36;
     text-decoration: none;
 }
 
-.hubShareBody_FebruaryC a:visited {
-    color: #2b3737;
+.hubShareBody_MarchA a:visited {
+    color: #277488;
 }
 
-.hubShareBody_FebruaryC a:hover {
-    color: #5e7a63;
+.hubShareBody_MarchA a:hover {
+    color: #00020f;
 }
 
-.hubShareHeadline_FebruaryC {
-    font-family: 'Inter', sans-serif;
+.hubShareHeadline_MarchA {
+    font-family: 'Varela', sans-serif;
     font-size: 30px;
     margin-bottom: 20px;
     max-width: 800px;
 }
 
-.hubShareArticleImage_FebruaryC {
-    filter: drop-shadow(5px 5px 2px #1e221e);
+.hubShareArticleImage_MarchA {
+    filter: drop-shadow(5px 5px 2px #0f2e36);
     margin-bottom: 9px;
     margin-left: 9px;
     margin-right: 12px;
     max-width: 25%;
 }
 
-.hubSharePostTimestamp_FebruaryC {
-    color: #040809;
-    font-family: 'Inter', sans-serif;
+.hubSharePostTimestamp_MarchA {
+    color: #000006;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 4px 0 6px 24px;
 }
 
-.hubShareAuthor_FebruaryC {
-    color: #040809;
-    font-family: 'Inter', sans-serif;
+.hubShareAuthor_MarchA {
+    color: #000006;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 10px 0 0 24px;
 }
 
-.hubShareDescription_FebruaryC {
-    color: #040809;
-    font-family: 'Inter', sans-serif;
+.hubShareDescription_MarchA {
+    color: #000006;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     line-height: 1.5;
     margin: 30px 0;
     max-width: 750px;
 }
 
-.hubSharedAt_FebruaryC {
-    color: #040809;
-    font-family: 'Inter', sans-serif;
+.hubSharedAt_MarchA {
+    color: #000006;
+    font-family: 'Varela', sans-serif;
     font-size: 12px;
     margin: 0 0 10px 0;
 }
 
-.hubShareReactions_FebruaryC {
+.hubShareReactions_MarchA {
     padding: 10px 5px;
     width: 100%;
 }
 
-.hubShareReactionEmoji_FebruaryC {
+.hubShareReactionEmoji_MarchA {
     float: left;
     margin: 3px 3px 11px 3px;
     padding: 1px;
     width: 24%;
 }
 
-.hubShareReactionTally_FebruaryC {
-    color: #040809;
+.hubShareReactionTally_MarchA {
+    color: #000006;
     float: left;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 24px;
     margin: 3px 2px 11px 5px;
 }
 
-.hubShareReactionDelete_FebruaryC {
-    color: #040809;
+.hubShareReactionDelete_MarchA {
+    color: #000006;
     cursor: pointer;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 21px;
     margin: 3px 17px 11px 4px;
 }
 
-.hubReactionGestalt_FebruaryC {
+.hubReactionGestalt_MarchA {
     float: left;
     margin: 5px;
     width: 28%;
 }
 
-.hubShareAddReactionDiv_FebruaryC {
-    background: #c3b6a3;
+.hubShareAddReactionDiv_MarchA {
+    background: #80a1a8;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -370,29 +373,29 @@
     width: 350px;
 }
 
-.hubShareAddReactionDiv_FebruaryC img {
+.hubShareAddReactionDiv_MarchA img {
     cursor: pointer;
     margin: 4px;
     width: 30px;
 }
 
-.hubShareAddReactionsToggle_FebruaryC {
+.hubShareAddReactionsToggle_MarchA {
     padding: 0 0 5px 35%;
     width: 100%;
 }
 
-.hubShareAddReactionsToggle_FebruaryC p {
+.hubShareAddReactionsToggle_MarchA p {
     color: #040809;
     cursor: pointer;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
 }
 
-.hubShareReactionsHoverText_FebruaryC {
-    background: #c3b6a3;
+.hubShareReactionsHoverText_MarchA {
+    background: #82d2dd;
     bottom: 10%;
-    color: #040809;
-    font-family: 'Inter', sans-serif;
+    color: #000006;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     max-width: 180px;
     opacity: 0;
@@ -403,11 +406,11 @@
     z-index: -10;
 }
 
-.hubShareReactionsHoverTextHover_FebruaryC {
-    background: #c3b6a3;
+.hubShareReactionsHoverTextHover_MarchA {
+    background: #82d2dd;
     bottom: 10%;
-    color: #040809;
-    font-family: 'Inter', sans-serif;
+    color: #000006;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     max-width: 180px;
     opacity: 1;
@@ -418,62 +421,62 @@
     z-index: 10;
 }
 
-.hubShareCommentsLabel_FebruaryC {
-    color: #040809;
-    font-family: 'Inter', sans-serif;
+.hubShareCommentsLabel_MarchA {
+    color: #000006;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 40px 80% 5px 0;
 }
 
-.hubShareCommenterAvatar_FebruaryC {
+.hubShareCommenterAvatar_MarchA {
     cursor: pointer;
     float: left;
     max-width: 30px;
 }
 
-.hubShareCommenterName_FebruaryC {
-    color: #040809;
+.hubShareCommenterName_MarchA {
+    color: #000006;
     cursor: pointer;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     position: relative;
     transform: translateX(7px) translateY(13px);
 
 }
 
-.hubShareCommentDateStamp_FebruaryC {
-    color: #040809;
-    font-family: 'Inter', sans-serif;
+.hubShareCommentDateStamp_MarchA {
+    color: #000006;
+    font-family: 'Varela', sans-serif;
     font-size: 12px;
     margin: 3px 0 3px 0;
 }
 
-.hubShareCommentComment_FebruaryC {
-    color: #040809;
-    font-family: 'Inter', sans-serif;
+.hubShareCommentComment_MarchA {
+    color: #000006;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
 }
 
-.hubShareNewComments_FebruaryC p {
-    color: #040809;
-    font-family: 'Inter', sans-serif;
+.hubShareNewComments_MarchA p {
+    color: #000006;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 40px 60% 5px 0;
 }
 
-.hubShareCommentTextArea_FebruaryC {
-    background: #afbdb1;
+.hubShareCommentTextArea_MarchA {
+    background: #aed3da;
     border: none;
     border-radius: 0 10px;
-    color: #040809;
-    filter: drop-shadow(5px 5px 2px #1e221e);
-    font-family: 'Inter', sans-serif;
+    color: #000006;
+    filter: drop-shadow(5px 5px 2px #0f2e36);
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
-    outline: #040809;
+    outline: #868f9c;
     width: 100%;
 }
 
-.hubShareNewComments_FebruaryC button {
+.hubShareNewComments_MarchA button {
     margin: 4px 35% 1px 35%;
 }
 
@@ -481,15 +484,15 @@
     width: 100%;
 }
 
-.hubTodayIsDisplay_FebruaryC {
-    color: #ced1cc;
-    font-family: 'Inter', sans-serif;
+.hubTodayIsDisplay_MarchA {
+    color: #aed3da;
+    font-family: 'Varela', sans-serif;
     font-size: 36px;
     margin-right: 50px;
     width: 60%;
 }
 
-.hubTodayIsDiv_FebruaryC {
+.hubTodayIsDiv_MarchA {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -498,66 +501,66 @@
     padding: 1% 5%;
 }
 
-.hubReaderWeekly_FebruaryC {
+.hubReaderWeekly_MarchA {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     height: auto;
     justify-content: flex-start;
     width: 100%;
 }
 
-.hubReaderTodayBlock_FebruaryC {
-    background: #5e7a63;
-    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_cup_by_lashonda1980_dazsks6-pre.png);
+.hubReaderTodayBlock_MarchA {
+    background: #93bac4;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/dd749ir-a2fcf5b4-5422-46d6-8d79-8166d3a47633.jpg);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     height: 25vh;
     margin: 1.2%;
     padding: 10px 15px;
     width: 8%;
 }
 
-.hubReaderTodayLabel_FebruaryC {
-    background: #5e7a63;
+.hubReaderTodayLabel_MarchA {
+    background: #93bac4;
     border: none;
-    color: #040809;
-    font-family: 'Inter', sans-serif;
+    color: #000006;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
 }
 
-.hubReaderDayButton_FebruaryC {
-    background: #c3b6a3;
+.hubReaderDayButton_MarchA {
+    background: #93bac4;
     border: none;
-    color: #0c1618;
+    color: #000006;
     cursor: pointer;
-    filter: drop-shadow(10px 15px 4px #1e221e);
-    font-family: 'Inter', sans-serif;
+    filter: drop-shadow(10px 15px 4px #0f2e36);
+    font-family: 'Varela', sans-serif;
     font-size: 24px;
     left: 12%;
-    outline-color: #0c1618;
+    outline-color: #868f9c;
     position: relative;
     transition: all 0.4s linear;
     z-index: 20;
 }
 
-.hubReaderDayButton_FebruaryC:hover {
+.hubReaderDayButton_MarchA:hover {
     background: #5e7a63;
     color: #c3b6a3;
-    filter: brightness(110%) drop-shadow(9px 14px 3px #1e221e);
+    filter: brightness(110%) drop-shadow(9px 14px 3px #0f2e36);
     outline-color: #c3b6a3;
     transition: all 0.4s linear;
 }
 
-.hubReaderWeekButton_FebruaryC {
-    background: #c3b6a3;
+.hubReaderWeekButton_MarchA {
+    background: #93bac4;
     border: none;
-    color: #0c1618;
+    color: #000006;
     cursor: pointer;
-    filter: drop-shadow(10px 15px 4px #1e221e);
-    font-family: 'Inter', sans-serif;
+    filter: drop-shadow(10px 15px 4px #0f2e36);
+    font-family: 'Varela', sans-serif;
     font-size: 24px;
     left: 25%;
     outline-color: #0c1618;
@@ -567,269 +570,269 @@
     z-index: 20;
 }
 
-.hubReaderWeekButton_FebruaryC:hover {
+.hubReaderWeekButton_MarchA:hover {
     background: #5e7a63;
     color: #c3b6a3;
-    filter: brightness(110%) drop-shadow(9px 14px 3px #1e221e);
+    filter: brightness(110%) drop-shadow(9px 14px 3px #0f2e36);
     outline-color: #c3b6a3;
     transition: all 0.4s linear;
 }
 
-.hubReaderBlankLabel_FebruaryC {
+.hubReaderBlankLabel_MarchA {
     color: transparent;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 30px;
 }
 
-.hubReaderDay1BlockActive_FebruaryC {
-    background: #5e7a63;
-    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_cup_by_lashonda1980_dazsks6-pre.png);
+.hubReaderDay1BlockActive_MarchA {
+    background: #93bac4;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/dd749ir-a2fcf5b4-5422-46d6-8d79-8166d3a47633.jpg);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     height: 25vh;
     margin: 1.2%;
     padding: 10px 15px;
     opacity: 1;
-    transform: translateX(0px) translateY(0px);
+    transform: translateX(0px) translateY(0px) rotate(0deg);
     transition: all 0.5s;
     transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
     width: 8%;
     z-index: 1;
 }
 
-.hubReaderDay1BlockInactive_FebruaryC {
-    background: #5e7a63;
-    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_cup_by_lashonda1980_dazsks6-pre.png);
+.hubReaderDay1BlockInactive_MarchA {
+    background: #93bac4;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/dd749ir-a2fcf5b4-5422-46d6-8d79-8166d3a47633.jpg);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     height: 25vh;
     margin: 1.2%;
     opacity: 0;
     padding: 10px 15px;
-    transform: translateX(-115%) translateY(-200%);
+    transform: translateX(-115%) translateY(-200%) rotate(180deg);
     transition: all 0.5s;
     transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
     width: 8%;
     z-index: -1;
 }
 
-.hubReaderDay2BlockActive_FebruaryC {
-    background: #5e7a63;
-    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_cup_by_lashonda1980_dazsks6-pre.png);
+.hubReaderDay2BlockActive_MarchA {
+    background: #93bac4;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/dd749ir-a2fcf5b4-5422-46d6-8d79-8166d3a47633.jpg);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     height: 25vh;
     margin: 1.2%;
     padding: 10px 15px;
     opacity: 1;
-    transform: translateX(0px) translateY(0px);
+    transform: translateX(0px) translateY(0px) rotate(0deg);
     transition: all 0.5s;
     transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
     width: 8%;
     z-index: 1;
 }
 
-.hubReaderDay2BlockInactive_FebruaryC {
-    background: #5e7a63;
-    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_cup_by_lashonda1980_dazsks6-pre.png);
+.hubReaderDay2BlockInactive_MarchA {
+    background: #93bac4;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/dd749ir-a2fcf5b4-5422-46d6-8d79-8166d3a47633.jpg);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     height: 25vh;
     margin: 1.2%;
     opacity: 0;
     padding: 10px 15px;
-    transform: translateX(250%) translateY(500%);
+    transform: translateX(250%) translateY(500%) rotate(180deg);
     transition: all 0.5s;
     transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
     width: 8%;
     z-index: -1;
 }
 
-.hubReaderDay3BlockActive_FebruaryC {
-    background: #5e7a63;
-    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_cup_by_lashonda1980_dazsks6-pre.png);
+.hubReaderDay3BlockActive_MarchA {
+    background: #93bac4;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/dd749ir-a2fcf5b4-5422-46d6-8d79-8166d3a47633.jpg);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     height: 25vh;
     margin: 1.2%;
     padding: 10px 15px;
     opacity: 1;
-    transform: translateX(0px) translateY(0px);
+    transform: translateX(0px) translateY(0px) rotate(0deg);
     transition: all 0.5s;
     transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
     width: 8%;
     z-index: 1;
 }
 
-.hubReaderDay3BlockInactive_FebruaryC {
-    background: #5e7a63;
-    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_cup_by_lashonda1980_dazsks6-pre.png);
+.hubReaderDay3BlockInactive_MarchA {
+    background: #93bac4;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/dd749ir-a2fcf5b4-5422-46d6-8d79-8166d3a47633.jpg);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     height: 25vh;
     margin: 1.2%;
     opacity: 0;
     padding: 10px 15px;
-    transform: translateX(800%) translateY(50%);
+    transform: translateX(800%) translateY(50%) rotate(180deg);
     transition: all 0.5s;
     transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
     width: 8%;
     z-index: -1;
 }
 
-.hubReaderDay4BlockActive_FebruaryC {
-    background: #5e7a63;
-    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_cup_by_lashonda1980_dazsks6-pre.png);
+.hubReaderDay4BlockActive_MarchA {
+    background: #93bac4;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/dd749ir-a2fcf5b4-5422-46d6-8d79-8166d3a47633.jpg);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     height: 25vh;
     margin: 1.2%;
     padding: 10px 15px;
     opacity: 1;
-    transform: translateX(0px) translateY(0px);
+    transform: translateX(0px) translateY(0px) rotate(0deg);
     transition: all 0.5s;
     transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
     width: 8%;
     z-index: 1;
 }
 
-.hubReaderDay4BlockInactive_FebruaryC {
-    background: #5e7a63;
-    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_cup_by_lashonda1980_dazsks6-pre.png);
+.hubReaderDay4BlockInactive_MarchA {
+    background: #93bac4;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/dd749ir-a2fcf5b4-5422-46d6-8d79-8166d3a47633.jpg);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     height: 25vh;
     margin: 1.2%;
     opacity: 0;
     padding: 10px 15px;
-    transform: translateX(-460%) translateY(550%);
+    transform: translateX(-460%) translateY(550%) rotate(180deg);
     transition: all 0.5s;
     transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
     width: 8%;
     z-index: -1;
 }
 
-.hubReaderDay5BlockActive_FebruaryC {
-    background: #5e7a63;
-    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_cup_by_lashonda1980_dazsks6-pre.png);
+.hubReaderDay5BlockActive_MarchA {
+    background: #93bac4;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/dd749ir-a2fcf5b4-5422-46d6-8d79-8166d3a47633.jpg);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     height: 25vh;
     margin: 1.2%;
     padding: 10px 15px;
     opacity: 1;
-    transform: translateX(0px) translateY(0px);
+    transform: translateX(0px) translateY(0px) rotate(0deg);
     transition: all 0.5s;
     transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
     width: 8%;
     z-index: 1;
 }
 
-.hubReaderDay5BlockInactive_FebruaryC {
-    background: #5e7a63;
-    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_cup_by_lashonda1980_dazsks6-pre.png);
+.hubReaderDay5BlockInactive_MarchA {
+    background: #93bac4;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/dd749ir-a2fcf5b4-5422-46d6-8d79-8166d3a47633.jpg);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     height: 25vh;
     margin: 1.2%;
     opacity: 0;
     padding: 10px 15px;
-    transform: translateX(575%) translateY(-1000%);
+    transform: translateX(575%) translateY(-1000%) rotate(180deg);
     transition: all 0.5s;
     transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
     width: 8%;
     z-index: -1;
 }
 
-.hubReaderDay6BlockActive_FebruaryC {
-    background: #5e7a63;
-    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_cup_by_lashonda1980_dazsks6-pre.png);
+.hubReaderDay6BlockActive_MarchA {
+    background: #93bac4;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/dd749ir-a2fcf5b4-5422-46d6-8d79-8166d3a47633.jpg);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     height: 25vh;
     margin: 1.2%;
     padding: 10px 15px;
     opacity: 1;
-    transform: translateX(0px) translateY(0px);
+    transform: translateX(0px) translateY(0px) rotate(0deg);
     transition: all 0.5s;
     transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
     width: 8%;
     z-index: 1;
 }
 
-.hubReaderDay6BlockInactive_FebruaryC {
-    background: #5e7a63;
-    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_cup_by_lashonda1980_dazsks6-pre.png);
+.hubReaderDay6BlockInactive_MarchA {
+    background: #93bac4;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/dd749ir-a2fcf5b4-5422-46d6-8d79-8166d3a47633.jpg);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     height: 25vh;
     margin: 1.2%;
     opacity: 0;
     padding: 10px 15px;
-    transform: translateX(690%) translateY(200%);
+    transform: translateX(690%) translateY(200%) rotate(180deg);
     transition: all 0.5s;
     transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
     width: 8%;
     z-index: -1;
 }
 
-.hubReaderDay7BlockActive_FebruaryC {
-    background: #5e7a63;
-    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_cup_by_lashonda1980_dazsks6-pre.png);
+.hubReaderDay7BlockActive_MarchA {
+    background: #93bac4;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/dd749ir-a2fcf5b4-5422-46d6-8d79-8166d3a47633.jpg);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     height: 25vh;
     margin: 1.2%;
     padding: 10px 15px;
     opacity: 1;
-    transform: translateX(0px) translateY(0px);
+    transform: translateX(0px) translateY(0px) rotate(0deg);
     transition: all 0.5s;
     transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
     width: 8%;
     z-index: 1;
 }
 
-.hubReaderDay7BlockInactive_FebruaryC {
-    background: #5e7a63;
-    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_cup_by_lashonda1980_dazsks6-pre.png);
+.hubReaderDay7BlockInactive_MarchA {
+    background: #93bac4;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/dd749ir-a2fcf5b4-5422-46d6-8d79-8166d3a47633.jpg);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     height: 25vh;
     margin: 1.2%;
     opacity: 0;
     padding: 10px 15px;
-    transform: translateX(-15%) translateY(433%);
+    transform: translateX(-15%) translateY(433%) rotate(180deg);
     transition: all 0.5s;
     transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
     width: 8%;
     z-index: -1;
 }
 
-.hubReaderManagementRow_FebruaryC {
+.hubReaderManagementRow_MarchA {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     height: auto;
     justify-content: flex-start;
     width: 100%;
 }
 
-.hubShareShareSaveButtonsDiv_FebruaryC {
+.hubShareShareSaveButtonsDiv_MarchA {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -838,35 +841,37 @@
     width: 100%;
 }
 
-.hubShareShareSaveButtonsDiv_FebruaryC button {
-    background: #c3b6a3;
-    border: none;
-    color: #0c1618;
+.hubShareShareSaveButtonsDiv_MarchA button {
+    backdrop-filter: hue-rotate(20deg) invert(0%);
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/hub/march/glass-5147216_1920.jpg) 5% stretch;
+    color: #00020f;
     cursor: pointer;
-    filter: drop-shadow(10px 15px 4px #1e221e);
-    font-family: 'Inter', sans-serif;
+    filter: drop-shadow(7px 10px 4px #0f2e36) invert(0%);
+    font-family: 'Varela', sans-serif;
     font-size: 24px;
     margin: 10px 35px;
-    outline-color: #0c1618;
+    outline-color: #868f9c;
     transition: all 0.4s linear;
 }
 
-.hubShareShareSaveButtonsDiv_FebruaryC button:hover {
-    background: #5e7a63;
-    color: #c3b6a3;
-    filter: brightness(110%) drop-shadow(9px 14px 3px #1e221e);
-    outline-color: #c3b6a3;
+.hubShareShareSaveButtonsDiv_MarchA button:hover {
+    backdrop-filter: hue-rotate(-20deg) invert(0%);
+    color: #aed3da;
+    filter: brightness(110%) drop-shadow(4px 8px 3px #0f2e36);
     transition: all 0.4s linear;
 }
 
-.hubShareShareSaveButtonsDiv_FebruaryC button:active {
-    filter: brightness(110%) drop-shadow(0 0 0 #1e221e);
+.hubShareShareSaveButtonsDiv_MarchA button:active {
+    backdrop-filter: invert(100%);
+    filter: drop-shadow(0 0 0 #0f2e36);
     transition: all 0.4s linear;
 }
 
-.hubShareShareSaveModalActive_FebruaryC {
-    background: #c3b6a3;
-    filter: drop-shadow(10px 15px 4px #1e221e);
+.hubShareShareSaveModalActive_MarchA {
+    background: #93bac4;
+    filter: drop-shadow(10px 15px 4px #0f2e36);
     left: 35%;
     opacity: 1;
     padding: 1% 3%;
@@ -877,58 +882,60 @@
     z-index: 55;
 }
 
-.hubShareShareSaveModalActive_FebruaryC img {
+.hubShareShareSaveModalActive_MarchA img {
     max-width: 20%;
 }
 
-.hubShareShareSaveModalActive_FebruaryC p {
-    color: #040809;
-    font-family: 'Inter', sans-serif;
+.hubShareShareSaveModalActive_MarchA p {
+    color: #000006;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 15px 0;
 }
 
-.hubShareShareSaveModalActive_FebruaryC textarea {
-    background: #ced1cc;
+.hubShareShareSaveModalActive_MarchA textarea {
+    background: #aed3da;
     border: none;
-    color: #040809;
-    font-family: 'Inter', sans-serif;
+    color: #000006;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
-    outline-color: #040809;
+    outline-color: #868f9c;
     width: 100%;
 }
 
-.hubShareShareSaveModalActive_FebruaryC button {
-    background: #c3b6a3;
-    border: none;
-    color: #0c1618;
+.hubShareShareSaveModalActive_MarchA button {
+    backdrop-filter: hue-rotate(20deg) invert(0%);
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/hub/march/glass-5147216_1920.jpg) 5% stretch;
+    color: #00020f;
     cursor: pointer;
-    filter: drop-shadow(10px 15px 4px #1e221e);
-    font-family: 'Inter', sans-serif;
+    filter: drop-shadow(7px 10px 4px #0f2e36) invert(0%);
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 5px 45px;
-    outline-color: #0c1618;
+    outline-color: #868f9c;
     transition: all 0.4s linear;
 }
 
-.hubShareShareSaveModalActive_FebruaryC button:hover {
-    background: #5e7a63;
-    color: #c3b6a3;
-    filter: brightness(110%) drop-shadow(9px 14px 3px #1e221e);
-    outline-color: #c3b6a3;
+.hubShareShareSaveModalActive_MarchA button:hover {
+    backdrop-filter: hue-rotate(-20deg) invert(0%);
+    color: #aed3da;
+    filter: brightness(110%) drop-shadow(4px 8px 3px #0f2e36);
     transition: all 0.4s linear;
 }
 
-.hubShareShareSaveModalActive_FebruaryC button:active {
-    filter: brightness(110%) drop-shadow(0 0 0 #1e221e);
+.hubShareShareSaveModalActive_MarchA button:active {
+    backdrop-filter: invert(100%);
+    filter: drop-shadow(0 0 0 #0f2e36);
     transition: all 0.4s linear;
 }
 
-.hubShareShareSaveModalInactive_FebruaryC {
-    background: #c3b6a3;
+.hubShareShareSaveModalInactive_MarchA {
+    background: #93bac4;
     filter: drop-shadow(10px 15px 4px #1e221e);
     color: #130500;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     left: -135%;
     opacity: 0;
@@ -941,65 +948,68 @@
     z-index: -55;
 }
 
-.hubShareShareSaveModalInactive_FebruaryC img {
+.hubShareShareSaveModalInactive_MarchA img {
     max-width: 20%;
 }
 
-.hubShareShareSaveModalInactive_FebruaryC p {
-    color: #040809;
-    font-family: 'Inter', sans-serif;
+.hubShareShareSaveModalInactive_MarchA p {
+    color: #000006;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 15px 0;
 }
 
-.hubShareShareSaveModalInactive_FebruaryC textarea {
-    background: #ced1cc;
+.hubShareShareSaveModalInactive_MarchA textarea {
+    background: #aed3da;
     border: none;
-    color: #040809;
-    font-family: 'Inter', sans-serif;
+    color: #000006;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
-    outline-color: #040809;
+    outline-color: #868f9c;
     width: 100%;
 }
 
-.hubShareShareSaveModalInactive_FebruaryC button {
-    background: #c3b6a3;
-    border: none;
-    color: #0c1618;
+.hubShareShareSaveModalInactive_MarchA button {
+    backdrop-filter: hue-rotate(20deg) invert(0%);
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/hub/march/glass-5147216_1920.jpg) 5% stretch;
+    color: #00020f;
     cursor: pointer;
-    filter: drop-shadow(10px 15px 4px #1e221e);
-    font-family: 'Inter', sans-serif;
+    filter: drop-shadow(7px 10px 4px #0f2e36) invert(0%);
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 5px 45px;
-    outline-color: #0c1618;
+    outline-color: #868f9c;
     transition: all 0.4s linear;
 }
 
-.hubDialogHeadline_FebruaryC {
-    color: #0c1618;
-    font-family: 'Inter', sans-serif;
+.hubDialogHeadline_MarchA {
+    color: #000006;
+    font-family: 'Varela', sans-serif;
     font-size: 24px;
     margin: 0 0 20px 0;
 }
 
-.hubRadioButtons_FebruaryC {
-    color: #0c1618;
-    font-family: 'Inter', sans-serif;
+.hubRadioButtons_MarchA {
+    color: #000006;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 5px 5px 15px 5px;
 }
 
-.hubContainer_FebruaryC {
+.hubContainer_MarchA {
     filter: blur(0px);
     transition: all 0.4s linear;
 }
 
-.hubContainerBlur_FebruaryC {
+.hubContainerBlur_MarchA {
     filter: blur(10px);
     transition: all 0.4s linear;
 }
 
-.hubUserBlogList_FebruaryC {
+.hubUserBlogList_MarchA {
+    display: none;
     border-right: 1px solid #0c1618;
     float: left;
     height: 81vh;
@@ -1007,47 +1017,51 @@
     width: 30%;
 }
 
-.hubUserBlogData_FebruaryC {
+.hubUserBlogData_MarchA {
+    display: none;
     border-left: 1px solid #0c1618;
     float: left;
     height: 81vh;
     width: 60%;
 }
 
-.hubMyBlogsLabel_FebruaryC {
+.hubMyBlogsLabel_MarchA {
+    display: none;
     color: #040809;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 36px;
 }
 
-.hubBlogListEntry_FebruaryC {
+.hubBlogListEntry_MarchA {
+    display: none;
     color: #040809;
     cursor: pointer;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 30px;
     margin: 30px;
     transition: all 0.5s linear;
 }
 
-.hubBlogListEntry_FebruaryC:hover {
+.hubBlogListEntry_MarchA:hover {
     color: #959b9b;
     transition: all 0.5s linear;
 }
 
-.hubNewBlogButton_FebruaryC {
+.hubNewBlogButton_MarchA {
+    display: none;
     background: #c3b6a3;
     border: none;
     color: #0c1618;
     cursor: pointer;
     filter: drop-shadow(10px 15px 4px #1e221e);
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 35px 75px;
     outline-color: #0c1618;
     transition: all 0.4s linear;
 }
 
-.hubNewBlogButton_FebruaryC:hover {
+.hubNewBlogButton_MarchA:hover {
     background: #5e7a63;
     color: #c3b6a3;
     filter: brightness(110%) drop-shadow(9px 14px 3px #1e221e);
@@ -1055,53 +1069,60 @@
     transition: all 0.4s linear;
 }
 
-.hubNewBlogButton_FebruaryC:active {
+.hubNewBlogButton_MarchA:active {
     filter: brightness(110%) drop-shadow(0 0 0 #1e221e);
     transition: all 0.4s linear;
 }
 
-.hubBlogLogoTitleDescription_FebruaryC {
+.hubBlogLogoTitleDescription_MarchA {
+    display: none;
     cursor: pointer;
     padding: 2vh 20px;
     width: 100%;
 }
 
-.currentBlogLogoImage_FebruaryC {
+.currentBlogLogoImage_MarchA {
+    display: none;
     filter: drop-shadow(5px 5px 2px #1e221e);
     float: left;
     height: 120px;
     max-width: 25%;
 }
 
-.currentBlogName_FebruaryC {
+.currentBlogName_MarchA {
+    display: none;
     color: #040809;
     float: left;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 48px;
     margin: 72px 0 0 40px;
 }
 
-.currentBlogTagline_FebruaryC {
+.currentBlogTagline_MarchA {
+    display: none;
     color: #040809;
     float: left;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 10px 0 0 28.5%;
     position: relative;
     width: 90%;
 }
 
-.currentBlogContributersDiv_FebruaryC {
+.currentBlogContributersDiv_MarchA {
+    display: none;
     float: left;
     padding: 20px 0 0 50px;
     width: 100%;
 }
 
-.contributerInfo_FebruaryC {
+.contributerInfo_MarchA {
+    display: none;
     cursor: pointer;
 }
 
-.hubBlogContributerAvatar_FebruaryC {
+.hubBlogContributerAvatar_MarchA {
+    display: none;
     filter: drop-shadow(5px 5px 2px #1e221e);
     float: left;
     max-width: 7%;
@@ -1109,43 +1130,49 @@
     position: relative;
 }
 
-.hubContributersLabel_FebruaryC {
+.hubContributersLabel_MarchA {
+    display: none;
     color: #040809;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 24px;
     margin-bottom: 10px;
 }
 
-.hubBlogContributerName_FebruaryC {
+.hubBlogContributerName_MarchA {
+    display: none;
     color: #040809;
     float: left;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 24px;
     margin: 30px 1px 1px 30px;
     width: 85%;
 }
 
-.hubBlogDataDiv_FebruaryC {
+.hubBlogDataDiv_MarchA {
+    display: none;
     float: left;
     padding: 150px 0 0 70px;
     width: 100%;
 }
 
-.hubBlogDataPosts_FebruaryC {
+.hubBlogDataPosts_MarchA {
+    display: none;
     color: #040809;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     width: 85%;
 }
 
-.hubUserProfileBasicsPane_FebruaryC {
+.hubUserProfileBasicsPane_MarchA {
+    display: none;
     border-right: 1px solid #040809;
     float: left;
     height: 81vh;
     width: 30%;
 }
 
-.hubPublicPrivateProfilePane_FebruaryC {
+.hubPublicPrivateProfilePane_MarchA {
+    display: none;
     border-left: 1px solid #040809;
     float: left;
     height: 81vh;
@@ -1154,7 +1181,8 @@
     width: 68%;
 }
 
-.hubBasicUserData_FebruaryC {
+.hubBasicUserData_MarchA {
+    display: none;
     height: 90%;
     left: 5%;
     position: relative;
@@ -1162,46 +1190,51 @@
     width: 88%;
 }
 
-.hubLoggedInAsLabel_FebruaryC {
+.hubLoggedInAsLabel_MarchA {
+    display: none;
     color: #040809;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 24px;
 }
 
-.hubLoggedInAsAvatar_FebruaryC {
+.hubLoggedInAsAvatar_MarchA {
+    display: none;
     filter: drop-shadow(5px 5px 2px #1e221e);
     margin-top: 5px;
     max-width: 150px;
 }
 
-.hubProfileUserName_FebruaryC {
+.hubProfileUserName_MarchA {
+    display: none;
     color: #040809;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 24px;
     margin: 5px 0 25px 0;
 }
 
-.hubUserDatas_FebruaryC {
+.hubUserDatas_MarchA {
+    display: none;
     color: #040809;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
 }
 
-.hubEditProfileButton_FebruaryC {
+.hubEditProfileButton_MarchA {
+    display: none;
     background: #c3b6a3;
     border: none;
     color: #0c1618;
     cursor: pointer;
     filter: drop-shadow(10px 15px 4px #1e221e);
     float: right;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 5px 15px;
     outline-color: #0c1618;
     transition: all 0.4s linear;
 }
 
-.hubEditProfileButton_FebruaryC:hover {
+.hubEditProfileButton_MarchA:hover {
     background: #5e7a63;
     color: #c3b6a3;
     filter: brightness(110%) drop-shadow(9px 14px 3px #1e221e);
@@ -1209,12 +1242,13 @@
     transition: all 0.4s linear;
 }
 
-.hubEditProfileButton_FebruaryC:active {
+.hubEditProfileButton_MarchA:active {
     filter: brightness(110%) drop-shadow(0 0 0 #1e221e);
     transition: all 0.4s linear;
 }
 
-.hubUserProfileNavigation_FebruaryC {
+.hubUserProfileNavigation_MarchA {
+    display: none;
     height: auto;
     left: 60%;
     position: relative;
@@ -1222,7 +1256,8 @@
     width: 40%;
 }
 
-.hubUserProfileNavigationActive_FebruaryC {
+.hubUserProfileNavigationActive_MarchA {
+    display: none;
     filter: blur(0px) opacity(1);
     height: 50px;
     transition: all 1s linear;
@@ -1230,15 +1265,17 @@
     z-index: 11;
 }
 
-.hubUserProfileNavigationActive_FebruaryC p {
+.hubUserProfileNavigationActive_MarchA p {
+    display: none;
     color: #040809;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 24px;
     transform: translateX(15px) translateY(10px);
     z-index: 111;
 }
 
-.hubUserProfileNavigationInactive_FebruaryC {
+.hubUserProfileNavigationInactive_MarchA {
+    display: none;
     cursor: pointer;
     filter: blur(1px) opacity(0.4);
     height: 50px;
@@ -1246,15 +1283,17 @@
     width: 100%;
 }
 
-.hubUserProfileNavigationInactive_FebruaryC p {
+.hubUserProfileNavigationInactive_MarchA p {
+    display: none;
     color: #353630;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 24px;
     transform: translateX(15px) translateY(10px);
     z-index: 11;
 }
 
-.hubUserProfileNavigationSlidePublicState_FebruaryC {
+.hubUserProfileNavigationSlidePublicState_MarchA {
+    display: none;
     backdrop-filter: brightness(120%) saturate(150%);
     border: 1px solid #253027;
     height: 42px;
@@ -1267,7 +1306,8 @@
     z-index: -1;
 }
 
-.hubUserProfileNavigationSlidePrivateState_FebruaryC {
+.hubUserProfileNavigationSlidePrivateState_MarchA {
+    display: none;
     backdrop-filter: brightness(120%) saturate(150%);
     border: 1px solid #253027;
     height: 42px;
@@ -1280,7 +1320,8 @@
     z-index: -1;
 }
 
-.hubUserProfileNavigationSlideMessagesState_FebruaryC {
+.hubUserProfileNavigationSlideMessagesState_MarchA {
+    display: none;
     backdrop-filter: brightness(120%) saturate(150%);
     border: 1px solid #253027;
     height: 42px;
@@ -1293,7 +1334,8 @@
     z-index: -1;
 }
 
-.hubUserProfileNavigationSlideFriendsState_FebruaryC {
+.hubUserProfileNavigationSlideFriendsState_MarchA {
+    display: none;
     backdrop-filter: brightness(120%) saturate(150%);
     border: 1px solid #253027;
     height: 42px;
@@ -1306,7 +1348,8 @@
     z-index: -1;
 }
 
-.hubUserProfileNavigationSlideContactState_FebruaryC {
+.hubUserProfileNavigationSlideContactState_MarchA {
+    display: none;
     backdrop-filter: brightness(120%) saturate(150%);
     border: 1px solid #253027;
     height: 42px;
@@ -1319,117 +1362,135 @@
     z-index: -1;
 }
 
-.hubPublicProfileDeets_FebruaryC {
+.hubPublicProfileDeets_MarchA {
+    display: none;
     height: auto;
     width: 100%;
 }
 
-.hubUserPublicStats_FebruaryC {
+.hubUserPublicStats_MarchA {
+    display: none;
     max-width: 750px;
     padding: 5%;
 }
 
-.hubUserLocationStat_FebruaryC {
+.hubUserLocationStat_MarchA {
+    display: none;
     color: #040809;
     filter: brightness(350%);
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 9px 0;
     max-width: 750px;
 }
 
-.hubUserLocationMap_FebruaryC {
+.hubUserLocationMap_MarchA {
+    display: none;
     filter: drop-shadow(5px 5px 2px #1e221e);
     max-width: 50%;
 }
 
-.hubPhotoAttribution_FebruaryC {
+.hubPhotoAttribution_MarchA {
+    display: none;
     color: #040809;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 12px;
     margin: 5px 0;
 }
 
-.hubUserDescriptionStat_FebruaryC {
+.hubUserDescriptionStat_MarchA {
+    display: none;
     color: #040809;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 30px 0 0 0;
 }
 
-.hubUserOccupationStat_FebruaryC {
+.hubUserOccupationStat_MarchA {
+    display: none;
     color: #040809;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 50px 0 0 0;
 }
 
-.hubUserEmployerStat_FebruaryC {
+.hubUserEmployerStat_MarchA {
+    display: none;
     color: #040809;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 10px 0 0 0;
 }
 
-.hubUserEducationStatLabel_FebruaryC {
+.hubUserEducationStatLabel_MarchA {
+    display: none;
     color: #040809;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 24px;
     margin: 60px 0 0 0;
 }
 
-.hubUserEducationStat_FebruaryC {
+.hubUserEducationStat_MarchA {
+    display: none;
     color: #040809;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 10px 0 0 0;
 }
 
-.hubUserEmailStat_FebruaryC {
+.hubUserEmailStat_MarchA {
+    display: none;
     color: #040809;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 40px 0 0 0;
 }
 
-.hubUserPhoneStat_FebruaryC {
+.hubUserPhoneStat_MarchA {
+    display: none;
     color: #040809;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 10px 0 0 0;
 }
 
-.hubUserBirthdate_FebruaryC {
+.hubUserBirthdate_MarchA {
+    display: none;
     color: #040809;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 10px 0 5px 0;
 }
 
-.hubMessageCenter_FebruaryC {
+.hubMessageCenter_MarchA {
+    display: none;
     padding: 3%;
     width: 100%;
 }
 
-.hubMessageCenter_FebruaryC i {
+.hubMessageCenter_MarchA i {
+    display: none;
     color: #040809;
 }
 
-.hubMessageScroll_FebruaryC {
+.hubMessageScroll_MarchA {
+    display: none;
     height: 76vh;
     overflow-x: hidden;
     overflow-y: auto;
     width: 100%;
 }
 
-.hubMessageCenterLabel_FebruaryC {
+.hubMessageCenterLabel_MarchA {
+    display: none;
     color: #040809;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 30px;
     margin: 15px 0 15px 0;
 }
 
-.hubMainMessageContainer_FebruaryC {
+.hubMainMessageContainer_MarchA {
+    display: none;
     border-top: 3px solid #040809;
     color: #040809;
     cursor: pointer;
@@ -1439,69 +1500,77 @@
     width: 100%;
 }
 
-.unreadIcon_FebruaryC {
+.unreadIcon_MarchA {
+    display: none;
     float: left;
     font-size: 42px;
     margin: 8px 0;
 }
 
-.hubMessageFromSubjectfalse_FebruaryC {
+.hubMessageFromSubjectfalse_MarchA {
+    display: none;
     color: #040809;
     float: left;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 0 10px 0 5px;
 }
 
-/* .hubMessageFromSubjectfalse_FebruaryC:hover {
+/* .hubMessageFromSubjectfalse_MarchA:hover {
   color: #e3e6eb;
 } */
 
-.hubMessageFromSubjecttrue_FebruaryC {
+.hubMessageFromSubjecttrue_MarchA {
+    display: none;
     color: #040809;
     float: left;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 10px 10px 0 10px;
 }
 
-/* .hubMessageFromSubjecttrue_FebruaryC:hover {
+/* .hubMessageFromSubjecttrue_MarchA:hover {
   color: #e3e6eb;
 } */
 
-.hubExpandedMessageContainer_FebruaryC {
+.hubExpandedMessageContainer_MarchA {
+    display: none;
     margin-left: 30px;
     max-width: 900px;
 }
 
-.hubMessageAvatar_FebruaryC {
+.hubMessageAvatar_MarchA {
+    display: none;
     float: left;
     margin: 4px 1px 0 15px;
     max-width: 3%;
 }
 
-.hubMessageMessage_FebruaryC {
+.hubMessageMessage_MarchA {
+    display: none;
     color: #040809;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 10px 0 5px 0;
     max-width: 750px;
 }
 
 
-.hubReplyNameDate_FebruaryC {
+.hubReplyNameDate_MarchA {
+    display: none;
     color: #040809;
     float: left;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 3px 10px 0 5px;
 }
 
-.hubReplyText_FebruaryC {
+.hubReplyText_MarchA {
+    display: none;
     background: #afbdb1;
     border: none;
     color: #040809;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin-bottom: 35px;
     max-width: 750px;
@@ -1509,55 +1578,57 @@
     width: 80%;
 }
 
-.hubReplyResponseText_FebruaryC {
+.hubReplyResponseText_MarchA {
+    display: none;
     background: #afbdb1;
     border: none;
     color: #040809;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     max-width: 750px;
     rows: 3;
     width: 80%;
 }
 
-.hubReplyResponseText_FebruaryC::-webkit-input-placeholder {
+.hubReplyResponseText_MarchA::-webkit-input-placeholder {
     color: #2b3737;
 }
 
-.hubReplyResponseText_FebruaryC:-moz-placeholder {
+.hubReplyResponseText_MarchA:-moz-placeholder {
     color: #2b3737;
 }
 
-.hubReplyResponseText_FebruaryC::-moz-placeholder {
+.hubReplyResponseText_MarchA::-moz-placeholder {
     color: #2b3737;
 }
 
-.hubReplyResponseText_FebruaryC::-moz-placeholder {
+.hubReplyResponseText_MarchA::-moz-placeholder {
     color: #2b3737;
 }
 
-.hubReplyResponseText_FebruaryC:-ms-input-placeholder {
+.hubReplyResponseText_MarchA:-ms-input-placeholder {
     color: #2b3737;
 }
 
-.hubReplyResponseText_FebruaryC::placeholder {
+.hubReplyResponseText_MarchA::placeholder {
     color: #2b3737;
 }
 
-.hubReplySubmit_FebruaryC {
+.hubReplySubmit_MarchA {
+    display: none;
     background: #c3b6a3;
     border: none;
     color: #0c1618;
     cursor: pointer;
     filter: drop-shadow(10px 15px 4px #1e221e);
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 1px 2px 15px 5px;
     outline-color: #0c1618;
     transition: all 0.4s linear;
 }
 
-.hubReplySubmit_FebruaryC:hover {
+.hubReplySubmit_MarchA:hover {
     background: #5e7a63;
     color: #c3b6a3;
     filter: brightness(110%) drop-shadow(9px 14px 3px #1e221e);
@@ -1565,103 +1636,112 @@
     transition: all 0.4s linear;
 }
 
-.hubReplySubmit_FebruaryC:active {
+.hubReplySubmit_MarchA:active {
     filter: brightness(110%) drop-shadow(0 0 0 #1e221e);
     transition: all 0.4s linear;
 }
 
-.hubFriendsCenter_FebruaryC {
+.hubFriendsCenter_MarchA {
+    display: none;
     padding: 3%;
     width: 100%;
 }
 
-.hubFriendsCenterLabel_FebruaryC {
+.hubFriendsCenterLabel_MarchA {
+    display: none;
     color: #040809;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 30px;
     margin: 15px 0 15px 0;
 }
 
-.hubFriendsScroll_FebruaryC {
+.hubFriendsScroll_MarchA {
+    display: none;
     height: 76vh;
     overflow-x: hidden;
     overflow-y: auto;
     width: 100%;
 }
 
-.hubFriendsFilter_FebruaryC {
+.hubFriendsFilter_MarchA {
+    display: none;
     background: #afbdb1;
     border: none;
     color: #040809;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     outline-color: #040809;
     width: 50%;
 }
 
-.hubFriendsFilter_FebruaryC::-webkit-input-placeholder {
+.hubFriendsFilter_MarchA::-webkit-input-placeholder {
     color: #2b3737;
 }
 
-.hubFriendsFilter_FebruaryC:-moz-placeholder {
+.hubFriendsFilter_MarchA:-moz-placeholder {
     color: #2b3737;
 }
 
-.hubFriendsFilter_FebruaryC::-moz-placeholder {
+.hubFriendsFilter_MarchA::-moz-placeholder {
     color: #2b3737;
 }
 
-.hubFriendsFilter_FebruaryC::-moz-placeholder {
+.hubFriendsFilter_MarchA::-moz-placeholder {
     color: #2b3737;
 }
 
-.hubFriendsFilter_FebruaryC:-ms-input-placeholder {
+.hubFriendsFilter_MarchA:-ms-input-placeholder {
     color: #2b3737;
 }
 
-.hubFriendsFilter_FebruaryC::placeholder {
+.hubFriendsFilter_MarchA::placeholder {
     color: #2b3737;
 }
 
-.hubSearchIcon_FebruaryC {
+.hubSearchIcon_MarchA {
+    display: none;
     color: #040809;
     font-size: 18px;
     margin: 5px 15px 0 0;
 }
 
-.hubFriendRollEntry_FebruaryC {
+.hubFriendRollEntry_MarchA {
+    display: none;
     cursor: pointer;
     margin: 20px 0 0 50px;
     max-width: 750px;
 }
 
-.hubFriendsRollAvatar_FebruaryC {
+.hubFriendsRollAvatar_MarchA {
+    display: none;
     filter: drop-shadow(5px 5px 2px #1e221e);
     margin-bottom: 7px;
     max-height: 50px;
     max-width: 50px;
 }
 
-.hubFriendsNameListing_FebruaryC {
+.hubFriendsNameListing_MarchA {
+    display: none;
     color: #040809;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
 }
 
-.hubFriendMessageButton_FebruaryC {
+.hubFriendMessageButton_MarchA {
+    display: none;
     background: #c3b6a3;
     border: none;
     color: #0c1618;
     cursor: pointer;
     filter: drop-shadow(10px 15px 4px #1e221e);
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 24px;
     margin: 0 5px 15px 50px;
     outline-color: #0c1618;
     transition: all 0.4s linear;
 }
 
-.hubFriendMessageButton_FebruaryC:hover {
+.hubFriendMessageButton_MarchA:hover {
     background: #5e7a63;
     color: #c3b6a3;
     filter: brightness(110%) drop-shadow(9px 14px 3px #1e221e);
@@ -1669,12 +1749,13 @@
     transition: all 0.4s linear;
 }
 
-.hubFriendMessageButton_FebruaryC:active {
+.hubFriendMessageButton_MarchA:active {
     filter: brightness(110%) drop-shadow(0 0 0 #1e221e);
     transition: all 0.4s linear;
 }
 
-.hubProfileDisplayerActive_FebruaryC {
+.hubProfileDisplayerActive_MarchA {
+    display: none;
     background: #a6aba6;
     height: auto;
     left: 15%;
@@ -1686,7 +1767,8 @@
     z-index: 100;
 }
 
-.hubProfileDisplayerInactive_FebruaryC {
+.hubProfileDisplayerInactive_MarchA {
+    display: none;
     background: #a6aba6;
     height: auto;
     left: 145%;
@@ -1698,21 +1780,22 @@
     z-index: -6;
 }
 
-.hubProfileDisplayCloseButton_FebruaryC {
+.hubProfileDisplayCloseButton_MarchA {
+    display: none;
     background: #c3b6a3;
     border: none;
     color: #0c1618;
     cursor: pointer;
     filter: drop-shadow(10px 15px 4px #1e221e);
     float: right;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 15px;
     outline-color: #0c1618;
     transition: all 0.4s linear;
 }
 
-.hubProfileDisplayCloseButton_FebruaryC:hover {
+.hubProfileDisplayCloseButton_MarchA:hover {
     background: #5e7a63;
     color: #c3b6a3;
     filter: brightness(110%) drop-shadow(9px 14px 3px #1e221e);
@@ -1720,86 +1803,97 @@
     transition: all 0.4s linear;
 }
 
-.hubProfileDisplayCloseButton_FebruaryC:active {
+.hubProfileDisplayCloseButton_MarchA:active {
     filter: brightness(110%) drop-shadow(0 0 0 #1e221e);
     transition: all 0.4s linear;
 }
 
-.hubProfileDisplayAvatar_FebruaryC {
+.hubProfileDisplayAvatar_MarchA {
+    display: none;
     filter: drop-shadow(10px 15px 4px #1e221e);
     float: left;
     margin: 15px;
     max-width: 200px;
 }
 
-.hubProfileDisplayDataContainer_FebruaryC {
+.hubProfileDisplayDataContainer_MarchA {
+    display: none;
     padding: 15px;
 }
 
-.hubProfileDisplayName_FebruaryC {
+.hubProfileDisplayName_MarchA {
+    display: none;
     color: #040809;
     float: left;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 36px;
 }
 
-.hubProfileDisplayDescritors_FebruaryC {
+.hubProfileDisplayDescritors_MarchA {
+    display: none;
     color: #040809;
     float: left;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 24px;
 }
 
-.hubDisplayContainer2_FebruaryC {
-    display: flex;
+.hubDisplayContainer2_MarchA {
+    display: none;
+/*    display: flex;*/
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
     width: 100%;
 }
 
-.profileDisplayStats_FebruaryC {
+.profileDisplayStats_MarchA {
+    display: none;
     color: #040809;
     float: left;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     width: 70%;
 }
 
-.hubProfileDisplayBioBlock_FebruaryC {
+.hubProfileDisplayBioBlock_MarchA {
+    display: none;
     padding: 15px;
     min-width: 215px;
     width: 30%;
 
 }
 
-.hubProfileDisplayBioImage_FebruaryC {
+.hubProfileDisplayBioImage_MarchA {
+    display: none;
     filter: drop-shadow(10px 15px 4px #1e221e);
     max-width: 200px;
 }
 
-.hubProfileDisplayUserDatas_FebruaryC {
+.hubProfileDisplayUserDatas_MarchA {
+    display: none;
     float: left;
     padding: 15px;
     width: 60%;
 }
 
-.hubProfileDisplayDescritors2_FebruaryC {
+.hubProfileDisplayDescritors2_MarchA {
+    display: none;
     color: #040809;
     float: left;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     width: 70%;
 }
 
-.hubDisplayMessageButton_FebruaryC {
+.hubDisplayMessageButton_MarchA {
+    display: none;
     background: #c3b6a3;
     border: none;
     color: #0c1618;
     cursor: pointer;
     filter: drop-shadow(10px 15px 4px #1e221e);
     float: right;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 15px;
     outline-color: #0c1618;
@@ -1807,7 +1901,7 @@
     transition: all 0.4s linear;
 }
 
-.hubDisplayMessageButton_FebruaryC:hover {
+.hubDisplayMessageButton_MarchA:hover {
     background: #5e7a63;
     color: #c3b6a3;
     filter: brightness(110%) drop-shadow(9px 14px 3px #1e221e);
@@ -1815,12 +1909,13 @@
     transition: all 0.4s linear;
 }
 
-.hubDisplayMessageButton_FebruaryC:active {
+.hubDisplayMessageButton_MarchA:active {
     filter: brightness(110%) drop-shadow(0 0 0 #1e221e);
     transition: all 0.4s linear;
 }
 
-.hubDisplayMessageModalActive_FebruaryC {
+.hubDisplayMessageModalActive_MarchA {
+    display: none;
     background: #85877a;
     height: auto;
     left: 15%;
@@ -1832,7 +1927,8 @@
     z-index: 100;
 }
 
-.hubDisplayMessageModalInactive_FebruaryC {
+.hubDisplayMessageModalInactive_MarchA {
+    display: none;
     background: #85877a;
     height: auto;
     left: -45%;
@@ -1844,25 +1940,28 @@
     z-index: -6;
 }
 
-.hubMessageModalLabel_FebruaryC {
+.hubMessageModalLabel_MarchA {
+    display: none;
     color: #040809;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 24px;
     margin: 30px;
 }
 
-.hubMessageModalButtonFields_FebruaryC {
+.hubMessageModalButtonFields_MarchA {
+    display: none;
     padding: 15px 0 45px 35%;
 }
 
-.hubMessageModalButton_FebruaryC {
+.hubMessageModalButton_MarchA {
+    display: none;
     background: #c3b6a3;
     border: none;
     color: #0c1618;
     cursor: pointer;
     filter: drop-shadow(10px 15px 4px #1e221e);
     float: right;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 0 39px;
     outline-color: #0c1618;
@@ -1870,7 +1969,7 @@
     transition: all 0.4s linear;
 }
 
-.hubMessageModalButton_FebruaryC:hover {
+.hubMessageModalButton_MarchA:hover {
     background: #5e7a63;
     color: #c3b6a3;
     filter: brightness(110%) drop-shadow(9px 14px 3px #1e221e);
@@ -1878,39 +1977,43 @@
     transition: all 0.4s linear;
 }
 
-.hubMessageModalButton_FebruaryC:active {
+.hubMessageModalButton_MarchA:active {
     filter: brightness(110%) drop-shadow(0 0 0 #1e221e);
     transition: all 0.4s linear;
 }
 
-.hubMessageModalInputs_FebruaryC {
+.hubMessageModalInputs_MarchA {
+    display: none;
     padding: 15px 45px 0 45px;
 }
 
-.hubMessageModalSubjectInput_FebruaryC {
+.hubMessageModalSubjectInput_MarchA {
+    display: none;
     background: #afbdb1;
     border: none;
     color: #040809;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 0 0 0 8%;
     outline-color: #040809;
     width: 80%;
 }
 
-.hubMessageModalMessageInput_FebruaryC {
+.hubMessageModalMessageInput_MarchA {
+    display: none;
     background: #afbdb1;
     border: none;
     color: #040809;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 5px 0 0 8%;
     outline-color: #040809;
     width: 80%;
 }
 
-.hubMessageModalToFields_FebruaryC {
-    display: flex;
+.hubMessageModalToFields_MarchA {
+    display: none;
+/*    display: flex;*/
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -1918,21 +2021,24 @@
     width: 100%;
 }
 
-.hubRecipientAvatar_FebruaryC {
+.hubRecipientAvatar_MarchA {
+    display: none;
     filter: drop-shadow(10px 15px 4px #1e221e);
     float: left;
     max-width: 50px;
 }
 
-.hubRecipientName_FebruaryC {
+.hubRecipientName_MarchA {
+    display: none;
     float: left;
     color: #040809;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 24px;
     margin: 12px 0 8px 15px;
 }
 
-.hubRemoveGuardrailActive_FebruaryC {
+.hubRemoveGuardrailActive_MarchA {
+    display: none;
     background: #868b8c;
     height: auto;
     left: 25%;
@@ -1944,7 +2050,8 @@
     z-index: 100;
 }
 
-.hubRemoveGuardrailInactive_FebruaryC {
+.hubRemoveGuardrailInactive_MarchA {
+    display: none;
     background: #868b8c;
     height: auto;
     left: -45%;
@@ -1956,21 +2063,23 @@
     z-index: -6;
 }
 
-.hubGuardrailText_FebruaryC {
+.hubGuardrailText_MarchA {
+    display: none;
     color: #040809;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 24px;
     margin: 24px 10% 8px 10%;
 }
 
-.hubGuardrailButton_FebruaryC {
+.hubGuardrailButton_MarchA {
+    display: none;
     background: #c3b6a3;
     border: none;
     color: #0c1618;
     cursor: pointer;
     filter: drop-shadow(10px 15px 4px #1e221e);
     float: right;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 20px 10px;
     outline-color: #0c1618;
@@ -1978,7 +2087,7 @@
     transition: all 0.4s linear;
 }
 
-.hubGuardrailButton_FebruaryC:hover {
+.hubGuardrailButton_MarchA:hover {
     background: #5e7a63;
     color: #c3b6a3;
     filter: brightness(110%) drop-shadow(9px 14px 3px #1e221e);
@@ -1986,24 +2095,27 @@
     transition: all 0.4s linear;
 }
 
-.hubGuardrailButton_FebruaryC:active {
+.hubGuardrailButton_MarchA:active {
     filter: brightness(110%) drop-shadow(0 0 0 #1e221e);
     transition: all 0.4s linear;
 }
 
-.hubGuardrailButtonsDiv_FebruaryC {
+.hubGuardrailButtonsDiv_MarchA {
+    display: none;
     margin: 5px 40%;
 }
 
-.hubOtherProfileEditButton_FebruaryC {
+.hubOtherProfileEditButton_MarchA {
+    display: none;
     float: right;
     padding: 30px 45px;
 }
 
-.pendingFriendRequests_FebruaryC {
+.pendingFriendRequests_MarchA {
+    display: none;
     color: #040809;
     float: right;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     left: 80%;
     margin: 1%;
@@ -2011,35 +2123,40 @@
     top: 20%;
 }
 
-.hubContactCenter_FebruaryC {
+.hubContactCenter_MarchA {
+    display: none;
     padding: 10%;
     width: 100%;
 }
 
-.hubContactLabel_FebruaryC {
+.hubContactLabel_MarchA {
+    display: none;
     color: #040809;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 30px;
 }
 
-.hubFooter_FebruaryC {
+.hubFooter_MarchA {
+    display: none;
     bottom: 8px;
     color: #040809;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 13px;
     left: 80%;
     position: absolute;
 }
 
-.hubContactFormField_FebruaryC {
+.hubContactFormField_MarchA {
+    display: none;
     margin: 25px 0;
 }
 
-.hubContactSubjectInput_FebruaryC {
+.hubContactSubjectInput_MarchA {
+    display: none;
     background: #afbdb1;
     border: none;
     color: #040809;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 5px 0 5px 0;
     max-width: 750px;
@@ -2047,11 +2164,12 @@
     width: 80%;
 }
 
-.hubContactMessageInput_FebruaryC {
+.hubContactMessageInput_MarchA {
+    display: none;
     background: #afbdb1;
     border: none;
     color: #040809;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 5px 0 5px 0;
     max-width: 750px;
@@ -2059,13 +2177,14 @@
     width: 80%;
 }
 
-.hubContactAdminSubmitButton_FebruaryC {
+.hubContactAdminSubmitButton_MarchA {
+    display: none;
     background: #c3b6a3;
     border: none;
     color: #0c1618;
     cursor: pointer;
     filter: drop-shadow(10px 15px 4px #1e221e);
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 5px 0;
     outline-color: #0c1618;
@@ -2074,7 +2193,7 @@
     width: 76%;
 }
 
-.hubContactAdminSubmitButton_FebruaryC:hover {
+.hubContactAdminSubmitButton_MarchA:hover {
     background: #5e7a63;
     color: #c3b6a3;
     filter: brightness(110%) drop-shadow(9px 14px 3px #1e221e);
@@ -2082,19 +2201,21 @@
     transition: all 0.4s linear;
 }
 
-.hubContactAdminSubmitButton_FebruaryC:active {
+.hubContactAdminSubmitButton_MarchA:active {
     filter: brightness(110%) drop-shadow(0 0 0 #1e221e);
     transition: all 0.4s linear;
 }
 
-.removeShare_FebruaryC {
+.removeShare_MarchA {
+    display: none;
     color: #040809;
     cursor: pointer;
     float: right;
     font-size: 30px;
 }
 
-.deleteGuardrailActive_FebruaryC {
+.deleteGuardrailActive_MarchA {
+    display: none;
     background: #c2c3bd;
     height: auto;
     left: 25%;
@@ -2106,7 +2227,8 @@
     z-index: 100;
 }
 
-.deleteGuardrailInactive_FebruaryC {
+.deleteGuardrailInactive_MarchA {
+    display: none;
     background: #c2c3bd;
     height: auto;
     left: -45%;
@@ -2118,7 +2240,8 @@
     z-index: -6;
 }
 
-.deleteCommentGuardrailActive_FebruaryC {
+.deleteCommentGuardrailActive_MarchA {
+    display: none;
     background: #c2c3bd;
     height: auto;
     left: 25%;
@@ -2130,7 +2253,8 @@
     z-index: 100;
 }
 
-.deleteCommentGuardrailInactive_FebruaryC {
+.deleteCommentGuardrailInactive_MarchA {
+    display: none;
     background: #c2c3bd;
     height: auto;
     left: -45%;
@@ -2142,14 +2266,16 @@
     z-index: -6;
 }
 
-.editComment_FebruaryC {
+.editComment_MarchA {
+    display: none;
     color: #040809;
     cursor: pointer;
     float: right;
     font-size: 18px;
 }
 
-.hubEditMessageInactive_FebruaryC {
+.hubEditMessageInactive_MarchA {
+    display: none;
     background: #c2c3bd;
     left: -35%;
     opacity: 0;
@@ -2161,7 +2287,8 @@
     z-index: -55;
 }
 
-.hubEditMessageActive_FebruaryC {
+.hubEditMessageActive_MarchA {
+    display: none;
     background: #c2c3bd;
     left: 35%;
     opacity: 1;
@@ -2173,35 +2300,39 @@
     z-index: 55;
 }
 
-.hubEditMessageActive_FebruaryC img {
+.hubEditMessageActive_MarchA img {
+    display: none;
     filter: drop-shadow(10px 15px 4px #1e221e);
     max-width: 15%;
 }
 
-.hubEditMessageActive_FebruaryC p {
+.hubEditMessageActive_MarchA p {
+    display: none;
     color: #040809;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 15px 0;
 }
 
-.hubEditMessageActive_FebruaryC textarea {
+.hubEditMessageActive_MarchA textarea {
+    display: none;
     background: #afbdb1;
     border: none;
     color: #040809;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     outline-color: #040809;
     width: 100%;
 }
 
-.hubEditMessageActive_FebruaryC button {
+.hubEditMessageActive_MarchA button {
+    display: none;
     background: #c3b6a3;
     border: none;
     color: #0c1618;
     cursor: pointer;
     filter: drop-shadow(10px 15px 4px #1e221e);
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 24px;
     margin: 5px 45px;
     outline-color: #0c1618;
@@ -2209,7 +2340,7 @@
     transition: all 0.4s linear;
 }
 
-.hubEditMessageActive_FebruaryC button:hover {
+.hubEditMessageActive_MarchA button:hover {
     background: #5e7a63;
     color: #c3b6a3;
     filter: brightness(110%) drop-shadow(9px 14px 3px #1e221e);
@@ -2217,12 +2348,13 @@
     transition: all 0.4s linear;
 }
 
-.hubEditMessageActive_FebruaryC button:active {
+.hubEditMessageActive_MarchA button:active {
     filter: brightness(110%) drop-shadow(0 0 0 #1e221e);
     transition: all 0.4s linear;
 }
 
-.hubEditMessageInactive_FebruaryC {
+.hubEditMessageInactive_MarchA {
+    display: none;
     background: #afbdb1;
     left: -135%;
     opacity: 0;
@@ -2234,34 +2366,38 @@
     z-index: -55;
 }
 
-.hubEditMessageInactive_FebruaryC img {
+.hubEditMessageInactive_MarchA img {
+    display: none;
     max-width: 15%;
 }
 
-.hubEditMessageInactive_FebruaryC p {
+.hubEditMessageInactive_MarchA p {
+    display: none;
     color: #040809;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 15px 0;
 }
 
-.hubEditMessageInactive_FebruaryC textarea {
+.hubEditMessageInactive_MarchA textarea {
+    display: none;
     background: #afbdb1;
     border: none;
     color: #040809;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 18px;
     outline-color: #040809;
     width: 100%;
 }
 
-.hubEditMessageInactive_FebruaryC button {
+.hubEditMessageInactive_MarchA button {
+    display: none;
     background: #c3b6a3;
     border: none;
     color: #0c1618;
     cursor: pointer;
     filter: drop-shadow(10px 15px 4px #1e221e);
-    font-family: 'Inter', sans-serif;
+    font-family: 'Varela', sans-serif;
     font-size: 24px;
     margin: 5px 45px;
     outline-color: #0c1618;
@@ -2269,187 +2405,188 @@
     transition: all 0.4s linear;
 }
 
-.removeShareComment_FebruaryC {
+.removeShareComment_MarchA {
+    display: none;
     cursor: pointer;
     float: right;
     margin: 0 5px;
 }
 
 @media only screen and (max-width: 768px) {
-    .hubReactionGestalt_FebruaryC {
+    .hubReactionGestalt_MarchA {
         margin: 4px;
         width: 25%;
     }
 
-    .hubShareReactionTally_FebruaryC {
+    .hubShareReactionTally_MarchA {
         font-size: 18px;
         margin: 3px 1px 10px 4px;
     }
 
-    .hubShareReactionDelete_FebruaryC {
+    .hubShareReactionDelete_MarchA {
         margin: 3px 4px 10px 0;
     }
 
-    .hubReaderTodayBlock_FebruaryC {
+    .hubReaderTodayBlock_MarchA {
         width: 5%;
     }
 
-    .currentBlogTagline_FebruaryC {
+    .currentBlogTagline_MarchA {
         width: 80%;
     }
 
-    .hubUserProfileNavigation_FebruaryC {
+    .hubUserProfileNavigation_MarchA {
         transform: scale(0.9) translateX(-25px);
     }
 }
 
 @media only screen and (max-width: 414px) {
 
-    .hubBlogsDashboard_FebruaryC {
+    .hubBlogsDashboard_MarchA {
         width: 99%;
     }
 
-    .hubPublicPrivateProfilePane_FebruaryC {
+    .hubPublicPrivateProfilePane_MarchA {
         width: 60%;
     }
 
-    .hubTitleFlex_FebruaryC {
+    .hubTitleFlex_MarchA {
         transform: scale(0.9);
     }
 
-    .hubBylineName_FebruaryC {
+    .hubBylineName_MarchA {
         font-size: 18px;
     }
 
-    .hubShareComments_FebruaryC {
+    .hubShareComments_MarchA {
         font-size: 18px;
     }
 
-    .hubShareAddReactionsToggle_FebruaryC p {
+    .hubShareAddReactionsToggle_MarchA p {
         font-size: 13px;
         transform: translateX(-10px);
     }
 
-    .hubReactionGestalt_FebruaryC {
+    .hubReactionGestalt_MarchA {
         width: 40%;
     }
 
-    .hubShareReactionEmoji_FebruaryC {
+    .hubShareReactionEmoji_MarchA {
         width: 50%;
     }
 
-    .hubTabLabel_FebruaryC {
+    .hubTabLabel_MarchA {
         font-size: 13px;
     }
 
-    .hubShareCommentsLabel_FebruaryC {
+    .hubShareCommentsLabel_MarchA {
         font-size: 13px;
     }
 
-    .hubShareCommenterName_FebruaryC {
+    .hubShareCommenterName_MarchA {
         font-size: 18px;
         margin-bottom: 20px;
     }
 
-    .hubShareCommentComment_FebruaryC {
+    .hubShareCommentComment_MarchA {
         font-size: 13px;
     }
 
-    .hubSignoutButton_FebruaryC {
+    .hubSignoutButton_MarchA {
         transform: translateX(-30px);
     }
 
-    .hubShareNewComments_FebruaryC {
+    .hubShareNewComments_MarchA {
         font-size: 13px;
     }
 
-    .hubShareHeadline_FebruaryC {
+    .hubShareHeadline_MarchA {
         font-size: 30px;
     }
 
-    .hubReaderDashboard_FebruaryC {
+    .hubReaderDashboard_MarchA {
         overflow-x: hidden;
         overflow-y: scroll;
     }
 
-    .hubMyBlogsLabel_FebruaryC {
+    .hubMyBlogsLabel_MarchA {
         font-size: 30px;
     }
 
-    .hubBlogListEntry_FebruaryC {
+    .hubBlogListEntry_MarchA {
         font-size: 18px;
     }
 
-    .hubNewBlogButton_FebruaryC {
+    .hubNewBlogButton_MarchA {
         font-size: 12px;
         transform: translateX(-20px);
     }
 
-    .currentBlogLogoImage_FebruaryC {
+    .currentBlogLogoImage_MarchA {
         max-width: 100px;
     }
 
-    .currentBlogName_FebruaryC {
+    .currentBlogName_MarchA {
         font-size: 30px;
     }
 
-    .currentBlogTagline_FebruaryC {
+    .currentBlogTagline_MarchA {
         font-size: 18px;
     }
 
-    .hubContributersLabel_FebruaryC {
+    .hubContributersLabel_MarchA {
         font-size: 18px;
     }
 
-    .hubBlogContributerName_FebruaryC {
+    .hubBlogContributerName_MarchA {
         font-size: 18px;
     }
 
-    .hubBlogDataPosts_FebruaryC {
+    .hubBlogDataPosts_MarchA {
         font-size: 18px;
     }
 
-    .hubBlogDataDiv_FebruaryC {
+    .hubBlogDataDiv_MarchA {
         padding-left: 30px;
     }
 
-    .hubLoggedInAsAvatar_FebruaryC {
+    .hubLoggedInAsAvatar_MarchA {
         max-width: 70px;
     }
 
-    .hubUserProfileNavigation_FebruaryC {
+    .hubUserProfileNavigation_MarchA {
         transform: translateX(-70px) translateY(-50px) scale(0.6);
     }
 
-    .hubMessageMessage_FebruaryC {
+    .hubMessageMessage_MarchA {
         font-size: 18px;
     }
 
-    .hubMessageFromSubjecttrue_FebruaryC {
+    .hubMessageFromSubjecttrue_MarchA {
         font-size: 18px;
     }
 
-    .hubMessageFromSubjectfalse_FebruaryC {
+    .hubMessageFromSubjectfalse_MarchA {
         font-size: 18px;
     }
 
-    .hubReplyText_FebruaryC {
+    .hubReplyText_MarchA {
         font-size: 18px;
     }
 
-    .hubReplyResponseText_FebruaryC {
+    .hubReplyResponseText_MarchA {
         font-size: 18px;
     }
 
-    .hubProfileDisplayName_FebruaryC {
+    .hubProfileDisplayName_MarchA {
         font-size: 18px;
     }
 
-    .profileDisplayStats_FebruaryC {
+    .profileDisplayStats_MarchA {
         font-size: 18px;
     }
 
-    .hubProfileDisplayUserDatas_FebruaryC {
+    .hubProfileDisplayUserDatas_MarchA {
         padding: 3px;
         width: 80%;
     }
