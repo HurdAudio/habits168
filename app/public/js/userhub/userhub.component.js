@@ -1602,8 +1602,7 @@
             $http.get('/skins/user_hub')
             .then(hubSkinResponseData => {
                 const hubSkinResponse = hubSkinResponseData.data;
-//                vm.monthSelect = hubSkinResponse.user_hub;
-                vm.monthSelect = '_MarchA';
+                vm.monthSelect = hubSkinResponse.user_hub;
                 vm.mondayMonth = hubSkinResponse.monday_skin;
                 
                 vm.hubShareTabState = 'hubTabActive' + vm.monthSelect;
