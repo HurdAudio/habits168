@@ -1009,8 +1009,7 @@
 }
 
 .hubUserBlogList_MarchA {
-    display: none;
-    border-right: 1px solid #0c1618;
+    border-right: 1px solid #5da6b5;
     float: left;
     height: 81vh;
     padding: 50px 15px;
@@ -1018,23 +1017,20 @@
 }
 
 .hubUserBlogData_MarchA {
-    display: none;
-    border-left: 1px solid #0c1618;
+    border-left: 1px solid #5da6b5;
     float: left;
     height: 81vh;
     width: 60%;
 }
 
 .hubMyBlogsLabel_MarchA {
-    display: none;
-    color: #040809;
+    color: #aed3da;
     font-family: 'Varela', sans-serif;
     font-size: 36px;
 }
 
 .hubBlogListEntry_MarchA {
-    display: none;
-    color: #040809;
+    color: #aed3da;
     cursor: pointer;
     font-family: 'Varela', sans-serif;
     font-size: 30px;
@@ -1043,55 +1039,52 @@
 }
 
 .hubBlogListEntry_MarchA:hover {
-    color: #959b9b;
+    color: #05a4ba;
     transition: all 0.5s linear;
 }
 
 .hubNewBlogButton_MarchA {
-    display: none;
-    background: #c3b6a3;
-    border: none;
-    color: #0c1618;
+    backdrop-filter: hue-rotate(20deg) invert(0%);
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/hub/march/glass-5147216_1920.jpg) 5% stretch;
+    color: #aed3da;
     cursor: pointer;
-    filter: drop-shadow(10px 15px 4px #1e221e);
+    filter: drop-shadow(7px 10px 4px #0f2e36) invert(0%);
     font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 35px 75px;
-    outline-color: #0c1618;
+    outline-color: #868f9c;
     transition: all 0.4s linear;
 }
 
 .hubNewBlogButton_MarchA:hover {
-    background: #5e7a63;
-    color: #c3b6a3;
-    filter: brightness(110%) drop-shadow(9px 14px 3px #1e221e);
-    outline-color: #c3b6a3;
+    backdrop-filter: hue-rotate(-20deg) invert(0%);
+    color: #000006;
+    filter: brightness(110%) drop-shadow(4px 8px 3px #0f2e36);
     transition: all 0.4s linear;
 }
 
 .hubNewBlogButton_MarchA:active {
-    filter: brightness(110%) drop-shadow(0 0 0 #1e221e);
+    backdrop-filter: invert(100%);
+    filter: drop-shadow(0 0 0 #0f2e36);
     transition: all 0.4s linear;
 }
 
 .hubBlogLogoTitleDescription_MarchA {
-    display: none;
     cursor: pointer;
     padding: 2vh 20px;
     width: 100%;
 }
 
 .currentBlogLogoImage_MarchA {
-    display: none;
-    filter: drop-shadow(5px 5px 2px #1e221e);
     float: left;
     height: 120px;
     max-width: 25%;
 }
 
 .currentBlogName_MarchA {
-    display: none;
-    color: #040809;
+    color: #aed3da;
     float: left;
     font-family: 'Varela', sans-serif;
     font-size: 48px;
@@ -1099,8 +1092,7 @@
 }
 
 .currentBlogTagline_MarchA {
-    display: none;
-    color: #040809;
+    color: #aed3da;
     float: left;
     font-family: 'Varela', sans-serif;
     font-size: 18px;
@@ -1110,20 +1102,16 @@
 }
 
 .currentBlogContributersDiv_MarchA {
-    display: none;
     float: left;
     padding: 20px 0 0 50px;
     width: 100%;
 }
 
 .contributerInfo_MarchA {
-    display: none;
     cursor: pointer;
 }
 
 .hubBlogContributerAvatar_MarchA {
-    display: none;
-    filter: drop-shadow(5px 5px 2px #1e221e);
     float: left;
     max-width: 7%;
     margin: 1px 1px 1px 15px;
@@ -1131,16 +1119,14 @@
 }
 
 .hubContributersLabel_MarchA {
-    display: none;
-    color: #040809;
+    color: #aed3da;
     font-family: 'Varela', sans-serif;
     font-size: 24px;
     margin-bottom: 10px;
 }
 
 .hubBlogContributerName_MarchA {
-    display: none;
-    color: #040809;
+    color: #aed3da;
     float: left;
     font-family: 'Varela', sans-serif;
     font-size: 24px;
@@ -1149,31 +1135,27 @@
 }
 
 .hubBlogDataDiv_MarchA {
-    display: none;
     float: left;
     padding: 150px 0 0 70px;
     width: 100%;
 }
 
 .hubBlogDataPosts_MarchA {
-    display: none;
-    color: #040809;
+    color: #aed3da;
     font-family: 'Varela', sans-serif;
     font-size: 18px;
     width: 85%;
 }
 
 .hubUserProfileBasicsPane_MarchA {
-    display: none;
-    border-right: 1px solid #040809;
+    border-right: 1px solid #001a20;
     float: left;
     height: 81vh;
     width: 30%;
 }
 
 .hubPublicPrivateProfilePane_MarchA {
-    display: none;
-    border-left: 1px solid #040809;
+    border-left: 1px solid #001a20;
     float: left;
     height: 81vh;
     overflow-x: hidden;
@@ -1182,7 +1164,6 @@
 }
 
 .hubBasicUserData_MarchA {
-    display: none;
     height: 90%;
     left: 5%;
     position: relative;
@@ -1191,64 +1172,60 @@
 }
 
 .hubLoggedInAsLabel_MarchA {
-    display: none;
-    color: #040809;
+    color: #000006;
     font-family: 'Varela', sans-serif;
     font-size: 24px;
 }
 
 .hubLoggedInAsAvatar_MarchA {
-    display: none;
-    filter: drop-shadow(5px 5px 2px #1e221e);
+    filter: drop-shadow(5px 5px 2px #0f2e36);
     margin-top: 5px;
     max-width: 150px;
 }
 
 .hubProfileUserName_MarchA {
-    display: none;
-    color: #040809;
+    color: #000006;
     font-family: 'Varela', sans-serif;
     font-size: 24px;
     margin: 5px 0 25px 0;
 }
 
 .hubUserDatas_MarchA {
-    display: none;
-    color: #040809;
+    color: #000006;
     font-family: 'Varela', sans-serif;
     font-size: 18px;
 }
 
 .hubEditProfileButton_MarchA {
-    display: none;
-    background: #c3b6a3;
-    border: none;
-    color: #0c1618;
+    backdrop-filter: hue-rotate(20deg) invert(0%);
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/hub/march/glass-5147216_1920.jpg) 5% stretch;
+    color: #00020f;
     cursor: pointer;
-    filter: drop-shadow(10px 15px 4px #1e221e);
+    filter: drop-shadow(7px 10px 4px #0f2e36) invert(0%);
     float: right;
     font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 5px 15px;
-    outline-color: #0c1618;
+    outline-color: #868f9c;
     transition: all 0.4s linear;
 }
 
 .hubEditProfileButton_MarchA:hover {
-    background: #5e7a63;
-    color: #c3b6a3;
-    filter: brightness(110%) drop-shadow(9px 14px 3px #1e221e);
-    outline-color: #c3b6a3;
+    backdrop-filter: hue-rotate(-20deg) invert(0%);
+    color: #aed3da;
+    filter: brightness(110%) drop-shadow(4px 8px 3px #0f2e36);
     transition: all 0.4s linear;
 }
 
 .hubEditProfileButton_MarchA:active {
-    filter: brightness(110%) drop-shadow(0 0 0 #1e221e);
+    backdrop-filter: invert(100%);
+    filter: drop-shadow(0 0 0 #0f2e36);
     transition: all 0.4s linear;
 }
 
 .hubUserProfileNavigation_MarchA {
-    display: none;
     height: auto;
     left: 60%;
     position: relative;
@@ -1257,7 +1234,6 @@
 }
 
 .hubUserProfileNavigationActive_MarchA {
-    display: none;
     filter: blur(0px) opacity(1);
     height: 50px;
     transition: all 1s linear;
@@ -1266,8 +1242,7 @@
 }
 
 .hubUserProfileNavigationActive_MarchA p {
-    display: none;
-    color: #040809;
+    color: #000006;
     font-family: 'Varela', sans-serif;
     font-size: 24px;
     transform: translateX(15px) translateY(10px);
@@ -1275,17 +1250,15 @@
 }
 
 .hubUserProfileNavigationInactive_MarchA {
-    display: none;
     cursor: pointer;
-    filter: blur(1px) opacity(0.4);
+    filter: blur(1px) opacity(0.7);
     height: 50px;
     transition: all 1s linear;
     width: 100%;
 }
 
 .hubUserProfileNavigationInactive_MarchA p {
-    display: none;
-    color: #353630;
+    color: #004350;
     font-family: 'Varela', sans-serif;
     font-size: 24px;
     transform: translateX(15px) translateY(10px);
@@ -1293,9 +1266,10 @@
 }
 
 .hubUserProfileNavigationSlidePublicState_MarchA {
-    display: none;
-    backdrop-filter: brightness(120%) saturate(150%);
-    border: 1px solid #253027;
+    backdrop-filter: hue-rotate(-7deg) saturate(150%);
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/hub/march/glass-5147216_1920.jpg) 15% stretch;
+    filter: drop-shadow(4px 8px 3px #0f2e36);
     height: 42px;
     left: 0;
     position: relative;
@@ -1307,9 +1281,10 @@
 }
 
 .hubUserProfileNavigationSlidePrivateState_MarchA {
-    display: none;
-    backdrop-filter: brightness(120%) saturate(150%);
-    border: 1px solid #253027;
+    backdrop-filter: hue-rotate(-7deg) saturate(150%);
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/hub/march/glass-5147216_1920.jpg) 15% stretch;
+    filter: drop-shadow(4px 8px 3px #0f2e36);
     height: 42px;
     left: 0;
     position: relative;
@@ -1321,9 +1296,10 @@
 }
 
 .hubUserProfileNavigationSlideMessagesState_MarchA {
-    display: none;
-    backdrop-filter: brightness(120%) saturate(150%);
-    border: 1px solid #253027;
+    backdrop-filter: hue-rotate(-7deg) saturate(150%);
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/hub/march/glass-5147216_1920.jpg) 15% stretch;
+    filter: drop-shadow(4px 8px 3px #0f2e36);
     height: 42px;
     left: 0;
     position: relative;
@@ -1335,9 +1311,10 @@
 }
 
 .hubUserProfileNavigationSlideFriendsState_MarchA {
-    display: none;
-    backdrop-filter: brightness(120%) saturate(150%);
-    border: 1px solid #253027;
+    backdrop-filter: hue-rotate(-7deg) saturate(150%);
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/hub/march/glass-5147216_1920.jpg) 15% stretch;
+    filter: drop-shadow(4px 8px 3px #0f2e36);
     height: 42px;
     left: 0;
     position: relative;
@@ -1349,9 +1326,10 @@
 }
 
 .hubUserProfileNavigationSlideContactState_MarchA {
-    display: none;
-    backdrop-filter: brightness(120%) saturate(150%);
-    border: 1px solid #253027;
+    backdrop-filter: hue-rotate(-7deg) saturate(150%);
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/hub/march/glass-5147216_1920.jpg) 15% stretch;
+    filter: drop-shadow(4px 8px 3px #0f2e36);
     height: 42px;
     left: 0;
     position: relative;
@@ -1363,20 +1341,17 @@
 }
 
 .hubPublicProfileDeets_MarchA {
-    display: none;
     height: auto;
     width: 100%;
 }
 
 .hubUserPublicStats_MarchA {
-    display: none;
     max-width: 750px;
     padding: 5%;
 }
 
 .hubUserLocationStat_MarchA {
-    display: none;
-    color: #040809;
+    color: #000006;
     filter: brightness(350%);
     font-family: 'Varela', sans-serif;
     font-size: 18px;
@@ -1385,96 +1360,83 @@
 }
 
 .hubUserLocationMap_MarchA {
-    display: none;
-    filter: drop-shadow(5px 5px 2px #1e221e);
+    filter: drop-shadow(5px 5px 2px #0f2e36);
     max-width: 50%;
 }
 
 .hubPhotoAttribution_MarchA {
-    display: none;
-    color: #040809;
+    color: #000006;
     font-family: 'Varela', sans-serif;
     font-size: 12px;
     margin: 5px 0;
 }
 
 .hubUserDescriptionStat_MarchA {
-    display: none;
-    color: #040809;
+    color: #000006;
     font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 30px 0 0 0;
 }
 
 .hubUserOccupationStat_MarchA {
-    display: none;
-    color: #040809;
+    color: #000006;
     font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 50px 0 0 0;
 }
 
 .hubUserEmployerStat_MarchA {
-    display: none;
-    color: #040809;
+    color: #000006;
     font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 10px 0 0 0;
 }
 
 .hubUserEducationStatLabel_MarchA {
-    display: none;
-    color: #040809;
+    color: #000006;
     font-family: 'Varela', sans-serif;
     font-size: 24px;
     margin: 60px 0 0 0;
 }
 
 .hubUserEducationStat_MarchA {
-    display: none;
-    color: #040809;
+    color: #000006;
     font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 10px 0 0 0;
 }
 
 .hubUserEmailStat_MarchA {
-    display: none;
-    color: #040809;
+    color: #000006;
     font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 40px 0 0 0;
 }
 
 .hubUserPhoneStat_MarchA {
-    display: none;
-    color: #040809;
+    color: #000006;
     font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 10px 0 0 0;
 }
 
 .hubUserBirthdate_MarchA {
-    display: none;
-    color: #040809;
+    color: #000006;
     font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 10px 0 5px 0;
 }
 
 .hubMessageCenter_MarchA {
-    display: none;
     padding: 3%;
     width: 100%;
 }
 
 .hubMessageCenter_MarchA i {
-    display: none;
-    color: #040809;
+    color: #000006;
 }
 
 .hubMessageScroll_MarchA {
-    display: none;
     height: 76vh;
     overflow-x: hidden;
     overflow-y: auto;
@@ -1482,17 +1444,15 @@
 }
 
 .hubMessageCenterLabel_MarchA {
-    display: none;
-    color: #040809;
+    color: #000006;
     font-family: 'Varela', sans-serif;
     font-size: 30px;
     margin: 15px 0 15px 0;
 }
 
 .hubMainMessageContainer_MarchA {
-    display: none;
-    border-top: 3px solid #040809;
-    color: #040809;
+    border-top: 3px solid #000006;
+    color: #000006;
     cursor: pointer;
     margin-top: 5px;
     max-width: 750px;
@@ -1501,15 +1461,13 @@
 }
 
 .unreadIcon_MarchA {
-    display: none;
     float: left;
     font-size: 42px;
     margin: 8px 0;
 }
 
 .hubMessageFromSubjectfalse_MarchA {
-    display: none;
-    color: #040809;
+    color: #000006;
     float: left;
     font-family: 'Varela', sans-serif;
     font-size: 18px;
@@ -1521,8 +1479,7 @@
 } */
 
 .hubMessageFromSubjecttrue_MarchA {
-    display: none;
-    color: #040809;
+    color: #000006;
     float: left;
     font-family: 'Varela', sans-serif;
     font-size: 18px;
@@ -1534,21 +1491,18 @@
 } */
 
 .hubExpandedMessageContainer_MarchA {
-    display: none;
     margin-left: 30px;
     max-width: 900px;
 }
 
 .hubMessageAvatar_MarchA {
-    display: none;
     float: left;
     margin: 4px 1px 0 15px;
     max-width: 3%;
 }
 
 .hubMessageMessage_MarchA {
-    display: none;
-    color: #040809;
+    color: #000006;
     font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 10px 0 5px 0;
@@ -1557,8 +1511,7 @@
 
 
 .hubReplyNameDate_MarchA {
-    display: none;
-    color: #040809;
+    color: #000006;
     float: left;
     font-family: 'Varela', sans-serif;
     font-size: 18px;
@@ -1566,10 +1519,9 @@
 }
 
 .hubReplyText_MarchA {
-    display: none;
-    background: #afbdb1;
+    background: #aed3da;
     border: none;
-    color: #040809;
+    color: #000006;
     font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin-bottom: 35px;
@@ -1579,10 +1531,9 @@
 }
 
 .hubReplyResponseText_MarchA {
-    display: none;
-    background: #afbdb1;
+    background: #aed3da;
     border: none;
-    color: #040809;
+    color: #000006;
     font-family: 'Varela', sans-serif;
     font-size: 18px;
     max-width: 750px;
@@ -1591,72 +1542,70 @@
 }
 
 .hubReplyResponseText_MarchA::-webkit-input-placeholder {
-    color: #2b3737;
+    color: #0d1e38;
 }
 
 .hubReplyResponseText_MarchA:-moz-placeholder {
-    color: #2b3737;
+    color: #0d1e38;
 }
 
 .hubReplyResponseText_MarchA::-moz-placeholder {
-    color: #2b3737;
+    color: #0d1e38;
 }
 
 .hubReplyResponseText_MarchA::-moz-placeholder {
-    color: #2b3737;
+    color: #0d1e38;
 }
 
 .hubReplyResponseText_MarchA:-ms-input-placeholder {
-    color: #2b3737;
+    color: #0d1e38;
 }
 
 .hubReplyResponseText_MarchA::placeholder {
-    color: #2b3737;
+    color: #0d1e38;
 }
 
 .hubReplySubmit_MarchA {
-    display: none;
-    background: #c3b6a3;
-    border: none;
-    color: #0c1618;
+    backdrop-filter: hue-rotate(20deg) invert(0%);
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/hub/march/glass-5147216_1920.jpg) 5% stretch;
+    color: #00020f;
     cursor: pointer;
-    filter: drop-shadow(10px 15px 4px #1e221e);
+    filter: drop-shadow(7px 10px 4px #0f2e36) invert(0%);
     font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 1px 2px 15px 5px;
-    outline-color: #0c1618;
+    outline-color: #868f9c;
     transition: all 0.4s linear;
 }
 
 .hubReplySubmit_MarchA:hover {
-    background: #5e7a63;
-    color: #c3b6a3;
-    filter: brightness(110%) drop-shadow(9px 14px 3px #1e221e);
-    outline-color: #c3b6a3;
+    backdrop-filter: hue-rotate(-20deg) invert(0%);
+    color: #aed3da;
+    filter: brightness(110%) drop-shadow(4px 8px 3px #0f2e36);
     transition: all 0.4s linear;
 }
 
 .hubReplySubmit_MarchA:active {
-    filter: brightness(110%) drop-shadow(0 0 0 #1e221e);
+    backdrop-filter: invert(100%);
+    filter: drop-shadow(0 0 0 #0f2e36);
     transition: all 0.4s linear;
 }
 
 .hubFriendsCenter_MarchA {
-    display: none;
     padding: 3%;
     width: 100%;
 }
 
 .hubFriendsCenterLabel_MarchA {
-    display: none;
-    color: #040809;
+    color: #000006;
     font-family: 'Varela', sans-serif;
     font-size: 30px;
     margin: 15px 0 15px 0;
 }
 
 .hubFriendsScroll_MarchA {
-    display: none;
     height: 76vh;
     overflow-x: hidden;
     overflow-y: auto;
@@ -1664,99 +1613,94 @@
 }
 
 .hubFriendsFilter_MarchA {
-    display: none;
-    background: #afbdb1;
+    background: #aed3da;
     border: none;
-    color: #040809;
+    color: #000006;
     font-family: 'Varela', sans-serif;
     font-size: 18px;
-    outline-color: #040809;
+    outline-color: #868f9c;
     width: 50%;
 }
 
 .hubFriendsFilter_MarchA::-webkit-input-placeholder {
-    color: #2b3737;
+    color: #0d1e38;
 }
 
 .hubFriendsFilter_MarchA:-moz-placeholder {
-    color: #2b3737;
+    color: #0d1e38;
 }
 
 .hubFriendsFilter_MarchA::-moz-placeholder {
-    color: #2b3737;
+    color: #0d1e38;
 }
 
 .hubFriendsFilter_MarchA::-moz-placeholder {
-    color: #2b3737;
+    color: #0d1e38;
 }
 
 .hubFriendsFilter_MarchA:-ms-input-placeholder {
-    color: #2b3737;
+    color: #0d1e38;
 }
 
 .hubFriendsFilter_MarchA::placeholder {
-    color: #2b3737;
+    color: #0d1e38;
 }
 
 .hubSearchIcon_MarchA {
-    display: none;
-    color: #040809;
+    color: #000006;
     font-size: 18px;
     margin: 5px 15px 0 0;
 }
 
 .hubFriendRollEntry_MarchA {
-    display: none;
     cursor: pointer;
     margin: 20px 0 0 50px;
     max-width: 750px;
 }
 
 .hubFriendsRollAvatar_MarchA {
-    display: none;
-    filter: drop-shadow(5px 5px 2px #1e221e);
+    filter: drop-shadow(5px 5px 2px #0f2e36);
     margin-bottom: 7px;
     max-height: 50px;
     max-width: 50px;
 }
 
 .hubFriendsNameListing_MarchA {
-    display: none;
-    color: #040809;
+    color: #000006;
     font-family: 'Varela', sans-serif;
     font-size: 18px;
 }
 
 .hubFriendMessageButton_MarchA {
-    display: none;
-    background: #c3b6a3;
-    border: none;
-    color: #0c1618;
+    backdrop-filter: hue-rotate(20deg) invert(0%);
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/hub/march/glass-5147216_1920.jpg) 5% stretch;
+    color: #00020f;
     cursor: pointer;
-    filter: drop-shadow(10px 15px 4px #1e221e);
+    filter: drop-shadow(7px 10px 4px #0f2e36) invert(0%);
     font-family: 'Varela', sans-serif;
     font-size: 24px;
     margin: 0 5px 15px 50px;
-    outline-color: #0c1618;
+    outline-color: #868f9c;
     transition: all 0.4s linear;
 }
 
 .hubFriendMessageButton_MarchA:hover {
-    background: #5e7a63;
-    color: #c3b6a3;
-    filter: brightness(110%) drop-shadow(9px 14px 3px #1e221e);
-    outline-color: #c3b6a3;
+    backdrop-filter: hue-rotate(-20deg) invert(0%);
+    color: #aed3da;
+    filter: brightness(110%) drop-shadow(4px 8px 3px #0f2e36);
     transition: all 0.4s linear;
 }
 
 .hubFriendMessageButton_MarchA:active {
-    filter: brightness(110%) drop-shadow(0 0 0 #1e221e);
+    backdrop-filter: invert(100%);
+    filter: drop-shadow(0 0 0 #0f2e36);
     transition: all 0.4s linear;
 }
 
 .hubProfileDisplayerActive_MarchA {
-    display: none;
-    background: #a6aba6;
+    background: #93bac4;
     height: auto;
     left: 15%;
     opacity: 1;
@@ -1768,8 +1712,7 @@
 }
 
 .hubProfileDisplayerInactive_MarchA {
-    display: none;
-    background: #a6aba6;
+    background: #93bac4;
     height: auto;
     left: 145%;
     opacity: 0;
@@ -1781,65 +1724,61 @@
 }
 
 .hubProfileDisplayCloseButton_MarchA {
-    display: none;
-    background: #c3b6a3;
-    border: none;
-    color: #0c1618;
+    backdrop-filter: hue-rotate(20deg) invert(0%);
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/hub/march/glass-5147216_1920.jpg) 5% stretch;
+    color: #00020f;
     cursor: pointer;
-    filter: drop-shadow(10px 15px 4px #1e221e);
+    filter: drop-shadow(7px 10px 4px #0f2e36) invert(0%);
     float: right;
     font-family: 'Varela', sans-serif;
-    font-size: 18px;
+    font-size: 24px;
     margin: 15px;
-    outline-color: #0c1618;
+    outline-color: #868f9c;
     transition: all 0.4s linear;
 }
 
 .hubProfileDisplayCloseButton_MarchA:hover {
-    background: #5e7a63;
-    color: #c3b6a3;
-    filter: brightness(110%) drop-shadow(9px 14px 3px #1e221e);
-    outline-color: #c3b6a3;
+    backdrop-filter: hue-rotate(-20deg) invert(0%);
+    color: #aed3da;
+    filter: brightness(110%) drop-shadow(4px 8px 3px #0f2e36);
     transition: all 0.4s linear;
 }
 
 .hubProfileDisplayCloseButton_MarchA:active {
-    filter: brightness(110%) drop-shadow(0 0 0 #1e221e);
+    backdrop-filter: invert(100%);
+    filter: drop-shadow(0 0 0 #0f2e36);
     transition: all 0.4s linear;
 }
 
 .hubProfileDisplayAvatar_MarchA {
-    display: none;
-    filter: drop-shadow(10px 15px 4px #1e221e);
+    filter: drop-shadow(10px 15px 4px #0f2e36);
     float: left;
     margin: 15px;
     max-width: 200px;
 }
 
 .hubProfileDisplayDataContainer_MarchA {
-    display: none;
     padding: 15px;
 }
 
 .hubProfileDisplayName_MarchA {
-    display: none;
-    color: #040809;
+    color: #000006;
     float: left;
     font-family: 'Varela', sans-serif;
     font-size: 36px;
 }
 
 .hubProfileDisplayDescritors_MarchA {
-    display: none;
-    color: #040809;
+    color: #000006;
     float: left;
     font-family: 'Varela', sans-serif;
     font-size: 24px;
 }
 
 .hubDisplayContainer2_MarchA {
-    display: none;
-/*    display: flex;*/
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -1847,8 +1786,7 @@
 }
 
 .profileDisplayStats_MarchA {
-    display: none;
-    color: #040809;
+    color: #000006;
     float: left;
     font-family: 'Varela', sans-serif;
     font-size: 18px;
@@ -1856,7 +1794,6 @@
 }
 
 .hubProfileDisplayBioBlock_MarchA {
-    display: none;
     padding: 15px;
     min-width: 215px;
     width: 30%;
@@ -1864,21 +1801,18 @@
 }
 
 .hubProfileDisplayBioImage_MarchA {
-    display: none;
-    filter: drop-shadow(10px 15px 4px #1e221e);
+    filter: drop-shadow(10px 15px 4px #0f2e36);
     max-width: 200px;
 }
 
 .hubProfileDisplayUserDatas_MarchA {
-    display: none;
     float: left;
     padding: 15px;
     width: 60%;
 }
 
 .hubProfileDisplayDescritors2_MarchA {
-    display: none;
-    color: #040809;
+    color: #000006;
     float: left;
     font-family: 'Varela', sans-serif;
     font-size: 18px;
@@ -1886,37 +1820,36 @@
 }
 
 .hubDisplayMessageButton_MarchA {
-    display: none;
-    background: #c3b6a3;
-    border: none;
-    color: #0c1618;
+    backdrop-filter: hue-rotate(20deg) invert(0%);
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/hub/march/glass-5147216_1920.jpg) 5% stretch;
+    color: #00020f;
     cursor: pointer;
-    filter: drop-shadow(10px 15px 4px #1e221e);
+    filter: drop-shadow(7px 10px 4px #0f2e36) invert(0%);
     float: right;
     font-family: 'Varela', sans-serif;
-    font-size: 18px;
+    font-size: 24px;
     margin: 15px;
-    outline-color: #0c1618;
-    position: relative;
+    outline-color: #868f9c;
     transition: all 0.4s linear;
 }
 
 .hubDisplayMessageButton_MarchA:hover {
-    background: #5e7a63;
-    color: #c3b6a3;
-    filter: brightness(110%) drop-shadow(9px 14px 3px #1e221e);
-    outline-color: #c3b6a3;
+    backdrop-filter: hue-rotate(-20deg) invert(0%);
+    color: #aed3da;
+    filter: brightness(110%) drop-shadow(4px 8px 3px #0f2e36);
     transition: all 0.4s linear;
 }
 
 .hubDisplayMessageButton_MarchA:active {
-    filter: brightness(110%) drop-shadow(0 0 0 #1e221e);
+    backdrop-filter: invert(100%);
+    filter: drop-shadow(0 0 0 #0f2e36);
     transition: all 0.4s linear;
 }
 
 .hubDisplayMessageModalActive_MarchA {
-    display: none;
-    background: #85877a;
+    background: #80a1a8;
     height: auto;
     left: 15%;
     opacity: 1;
@@ -1928,8 +1861,7 @@
 }
 
 .hubDisplayMessageModalInactive_MarchA {
-    display: none;
-    background: #85877a;
+    background: #80a1a8;
     height: auto;
     left: -45%;
     opacity: 0;
@@ -1941,79 +1873,73 @@
 }
 
 .hubMessageModalLabel_MarchA {
-    display: none;
-    color: #040809;
+    color: #000006;
     font-family: 'Varela', sans-serif;
     font-size: 24px;
     margin: 30px;
 }
 
 .hubMessageModalButtonFields_MarchA {
-    display: none;
     padding: 15px 0 45px 35%;
 }
 
 .hubMessageModalButton_MarchA {
-    display: none;
-    background: #c3b6a3;
-    border: none;
-    color: #0c1618;
+    backdrop-filter: hue-rotate(20deg) invert(0%);
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/hub/march/glass-5147216_1920.jpg) 5% stretch;
+    color: #00020f;
     cursor: pointer;
-    filter: drop-shadow(10px 15px 4px #1e221e);
+    filter: drop-shadow(7px 10px 4px #0f2e36) invert(0%);
     float: right;
     font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 0 39px;
-    outline-color: #0c1618;
-    position: relative;
+    outline-color: #868f9c;
     transition: all 0.4s linear;
 }
 
 .hubMessageModalButton_MarchA:hover {
-    background: #5e7a63;
-    color: #c3b6a3;
-    filter: brightness(110%) drop-shadow(9px 14px 3px #1e221e);
-    outline-color: #c3b6a3;
+    backdrop-filter: hue-rotate(-20deg) invert(0%);
+    color: #aed3da;
+    filter: brightness(110%) drop-shadow(4px 8px 3px #0f2e36);
     transition: all 0.4s linear;
 }
 
 .hubMessageModalButton_MarchA:active {
-    filter: brightness(110%) drop-shadow(0 0 0 #1e221e);
+    backdrop-filter: invert(100%);
+    filter: drop-shadow(0 0 0 #0f2e36);
     transition: all 0.4s linear;
 }
 
 .hubMessageModalInputs_MarchA {
-    display: none;
     padding: 15px 45px 0 45px;
 }
 
 .hubMessageModalSubjectInput_MarchA {
-    display: none;
-    background: #afbdb1;
+    background: #aed3da;
     border: none;
-    color: #040809;
+    color: #000006;
     font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 0 0 0 8%;
-    outline-color: #040809;
+    outline-color: #868f9c;
     width: 80%;
 }
 
 .hubMessageModalMessageInput_MarchA {
-    display: none;
-    background: #afbdb1;
+    background: #aed3da;
     border: none;
-    color: #040809;
+    color: #000006;
     font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 5px 0 0 8%;
-    outline-color: #040809;
+    outline-color: #868f9c;
     width: 80%;
 }
 
 .hubMessageModalToFields_MarchA {
-    display: none;
-/*    display: flex;*/
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -2022,24 +1948,21 @@
 }
 
 .hubRecipientAvatar_MarchA {
-    display: none;
-    filter: drop-shadow(10px 15px 4px #1e221e);
+    filter: drop-shadow(10px 15px 4px #0f2e36);
     float: left;
     max-width: 50px;
 }
 
 .hubRecipientName_MarchA {
-    display: none;
     float: left;
-    color: #040809;
+    color: #000006;
     font-family: 'Varela', sans-serif;
     font-size: 24px;
     margin: 12px 0 8px 15px;
 }
 
 .hubRemoveGuardrailActive_MarchA {
-    display: none;
-    background: #868b8c;
+    background: #5da6b5;
     height: auto;
     left: 25%;
     opacity: 1;
@@ -2051,8 +1974,7 @@
 }
 
 .hubRemoveGuardrailInactive_MarchA {
-    display: none;
-    background: #868b8c;
+    background: #5da6b5;
     height: auto;
     left: -45%;
     opacity: 0;
@@ -2064,56 +1986,52 @@
 }
 
 .hubGuardrailText_MarchA {
-    display: none;
-    color: #040809;
+    color: #000006;
     font-family: 'Varela', sans-serif;
     font-size: 24px;
     margin: 24px 10% 8px 10%;
 }
 
 .hubGuardrailButton_MarchA {
-    display: none;
-    background: #c3b6a3;
-    border: none;
-    color: #0c1618;
+    backdrop-filter: hue-rotate(20deg) invert(0%);
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/hub/march/glass-5147216_1920.jpg) 5% stretch;
+    color: #00020f;
     cursor: pointer;
-    filter: drop-shadow(10px 15px 4px #1e221e);
+    filter: drop-shadow(7px 10px 4px #0f2e36) invert(0%);
     float: right;
     font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 20px 10px;
-    outline-color: #0c1618;
-    position: relative;
+    outline-color: #868f9c;
     transition: all 0.4s linear;
 }
 
 .hubGuardrailButton_MarchA:hover {
-    background: #5e7a63;
-    color: #c3b6a3;
-    filter: brightness(110%) drop-shadow(9px 14px 3px #1e221e);
-    outline-color: #c3b6a3;
+    backdrop-filter: hue-rotate(-20deg) invert(0%);
+    color: #aed3da;
+    filter: brightness(110%) drop-shadow(4px 8px 3px #0f2e36);
     transition: all 0.4s linear;
 }
 
 .hubGuardrailButton_MarchA:active {
-    filter: brightness(110%) drop-shadow(0 0 0 #1e221e);
+    backdrop-filter: invert(100%);
+    filter: drop-shadow(0 0 0 #0f2e36);
     transition: all 0.4s linear;
 }
 
 .hubGuardrailButtonsDiv_MarchA {
-    display: none;
     margin: 5px 40%;
 }
 
 .hubOtherProfileEditButton_MarchA {
-    display: none;
     float: right;
     padding: 30px 45px;
 }
 
 .pendingFriendRequests_MarchA {
-    display: none;
-    color: #040809;
+    color: #000006;
     float: right;
     font-family: 'Varela', sans-serif;
     font-size: 18px;
@@ -2124,22 +2042,19 @@
 }
 
 .hubContactCenter_MarchA {
-    display: none;
     padding: 10%;
     width: 100%;
 }
 
 .hubContactLabel_MarchA {
-    display: none;
-    color: #040809;
+    color: #000006;
     font-family: 'Varela', sans-serif;
     font-size: 30px;
 }
 
 .hubFooter_MarchA {
-    display: none;
     bottom: 8px;
-    color: #040809;
+    color: #000006;
     font-family: 'Varela', sans-serif;
     font-size: 13px;
     left: 80%;
@@ -2147,76 +2062,72 @@
 }
 
 .hubContactFormField_MarchA {
-    display: none;
     margin: 25px 0;
 }
 
 .hubContactSubjectInput_MarchA {
-    display: none;
-    background: #afbdb1;
+    background: #80a1a8;
     border: none;
-    color: #040809;
+    color: #000006;
     font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 5px 0 5px 0;
     max-width: 750px;
-    outline-color: #040809;
+    outline-color: #868f9c;
     width: 80%;
 }
 
 .hubContactMessageInput_MarchA {
-    display: none;
-    background: #afbdb1;
+    background: #80a1a8;
     border: none;
-    color: #040809;
+    color: #000006;
     font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 5px 0 5px 0;
     max-width: 750px;
-    outline-color: #040809;
+    outline-color: #868f9c;
     width: 80%;
 }
 
 .hubContactAdminSubmitButton_MarchA {
-    display: none;
-    background: #c3b6a3;
-    border: none;
-    color: #0c1618;
+    backdrop-filter: hue-rotate(20deg) invert(0%);
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/hub/march/glass-5147216_1920.jpg) 5% stretch;
+    color: #00020f;
     cursor: pointer;
-    filter: drop-shadow(10px 15px 4px #1e221e);
+    filter: drop-shadow(7px 10px 4px #0f2e36) invert(0%);
     font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 5px 0;
-    outline-color: #0c1618;
+    outline-color: #868f9c;
     position: relative;
     transition: all 0.4s linear;
     width: 76%;
 }
 
 .hubContactAdminSubmitButton_MarchA:hover {
-    background: #5e7a63;
-    color: #c3b6a3;
-    filter: brightness(110%) drop-shadow(9px 14px 3px #1e221e);
-    outline-color: #c3b6a3;
+    backdrop-filter: hue-rotate(-20deg) invert(0%);
+    color: #aed3da;
+    filter: brightness(110%) drop-shadow(4px 8px 3px #0f2e36);
     transition: all 0.4s linear;
 }
 
 .hubContactAdminSubmitButton_MarchA:active {
-    filter: brightness(110%) drop-shadow(0 0 0 #1e221e);
+    backdrop-filter: invert(100%);
+    filter: drop-shadow(0 0 0 #0f2e36);
     transition: all 0.4s linear;
 }
 
 .removeShare_MarchA {
-    display: none;
-    color: #040809;
+    color: #000006;
     cursor: pointer;
     float: right;
     font-size: 30px;
 }
 
 .deleteGuardrailActive_MarchA {
-    display: none;
-    background: #c2c3bd;
+    background: #aed3da;
     height: auto;
     left: 25%;
     opacity: 1;
@@ -2228,8 +2139,7 @@
 }
 
 .deleteGuardrailInactive_MarchA {
-    display: none;
-    background: #c2c3bd;
+    background: #aed3da;
     height: auto;
     left: -45%;
     opacity: 0;
@@ -2241,8 +2151,7 @@
 }
 
 .deleteCommentGuardrailActive_MarchA {
-    display: none;
-    background: #c2c3bd;
+    background: #aed3da;
     height: auto;
     left: 25%;
     opacity: 1;
@@ -2254,8 +2163,7 @@
 }
 
 .deleteCommentGuardrailInactive_MarchA {
-    display: none;
-    background: #c2c3bd;
+    background: #aed3da;
     height: auto;
     left: -45%;
     opacity: 0;
@@ -2267,16 +2175,14 @@
 }
 
 .editComment_MarchA {
-    display: none;
-    color: #040809;
+    color: #000006;
     cursor: pointer;
     float: right;
     font-size: 18px;
 }
 
 .hubEditMessageInactive_MarchA {
-    display: none;
-    background: #c2c3bd;
+    background: #aed3da;
     left: -35%;
     opacity: 0;
     padding: 1% 3%;
@@ -2288,8 +2194,7 @@
 }
 
 .hubEditMessageActive_MarchA {
-    display: none;
-    background: #c2c3bd;
+    background: #aed3da;
     left: 35%;
     opacity: 1;
     padding: 1% 3%;
@@ -2301,61 +2206,58 @@
 }
 
 .hubEditMessageActive_MarchA img {
-    display: none;
-    filter: drop-shadow(10px 15px 4px #1e221e);
+    filter: drop-shadow(10px 15px 4px #0f2e36);
     max-width: 15%;
 }
 
 .hubEditMessageActive_MarchA p {
-    display: none;
-    color: #040809;
+    color: #000006;
     font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 15px 0;
 }
 
 .hubEditMessageActive_MarchA textarea {
-    display: none;
-    background: #afbdb1;
+    background: #80a1a8;
     border: none;
-    color: #040809;
+    color: #000006;
     font-family: 'Varela', sans-serif;
     font-size: 18px;
-    outline-color: #040809;
+    outline-color: #868f9c;
     width: 100%;
 }
 
 .hubEditMessageActive_MarchA button {
-    display: none;
-    background: #c3b6a3;
-    border: none;
-    color: #0c1618;
+    backdrop-filter: hue-rotate(20deg) invert(0%);
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/hub/march/glass-5147216_1920.jpg) 5% stretch;
+    color: #00020f;
     cursor: pointer;
-    filter: drop-shadow(10px 15px 4px #1e221e);
+    filter: drop-shadow(7px 10px 4px #0f2e36) invert(0%);
     font-family: 'Varela', sans-serif;
     font-size: 24px;
     margin: 5px 45px;
-    outline-color: #0c1618;
+    outline-color: #868f9c;
     position: relative;
     transition: all 0.4s linear;
 }
 
 .hubEditMessageActive_MarchA button:hover {
-    background: #5e7a63;
-    color: #c3b6a3;
-    filter: brightness(110%) drop-shadow(9px 14px 3px #1e221e);
-    outline-color: #c3b6a3;
+    backdrop-filter: hue-rotate(-20deg) invert(0%);
+    color: #aed3da;
+    filter: brightness(110%) drop-shadow(4px 8px 3px #0f2e36);
     transition: all 0.4s linear;
 }
 
 .hubEditMessageActive_MarchA button:active {
-    filter: brightness(110%) drop-shadow(0 0 0 #1e221e);
+    backdrop-filter: invert(100%);
+    filter: drop-shadow(0 0 0 #0f2e36);
     transition: all 0.4s linear;
 }
 
 .hubEditMessageInactive_MarchA {
-    display: none;
-    background: #afbdb1;
+    background: #aed3da;
     left: -135%;
     opacity: 0;
     padding: 1% 3%;
@@ -2367,46 +2269,43 @@
 }
 
 .hubEditMessageInactive_MarchA img {
-    display: none;
     max-width: 15%;
 }
 
 .hubEditMessageInactive_MarchA p {
-    display: none;
-    color: #040809;
+    color: #000006;
     font-family: 'Varela', sans-serif;
     font-size: 18px;
     margin: 15px 0;
 }
 
 .hubEditMessageInactive_MarchA textarea {
-    display: none;
-    background: #afbdb1;
+    background: #80a1a8;
     border: none;
-    color: #040809;
+    color: #000006;
     font-family: 'Varela', sans-serif;
     font-size: 18px;
-    outline-color: #040809;
+    outline-color: #868f9c;
     width: 100%;
 }
 
 .hubEditMessageInactive_MarchA button {
-    display: none;
-    background: #c3b6a3;
-    border: none;
-    color: #0c1618;
+    backdrop-filter: hue-rotate(20deg) invert(0%);
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/hub/march/glass-5147216_1920.jpg) 5% stretch;
+    color: #00020f;
     cursor: pointer;
-    filter: drop-shadow(10px 15px 4px #1e221e);
+    filter: drop-shadow(7px 10px 4px #0f2e36) invert(0%);
     font-family: 'Varela', sans-serif;
     font-size: 24px;
     margin: 5px 45px;
-    outline-color: #0c1618;
+    outline-color: #868f9c;
     position: relative;
     transition: all 0.4s linear;
 }
 
 .removeShareComment_MarchA {
-    display: none;
     cursor: pointer;
     float: right;
     margin: 0 5px;
