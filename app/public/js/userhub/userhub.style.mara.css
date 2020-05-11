@@ -1,0 +1,2492 @@
+.hubBackgroundDiv_MarchA {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/hub/march/glass-5147216_1920.jpg);
+    background-size: cover;
+    filter: brightness(100%);
+    height: 100%;
+    left: 0;
+    opacity: 1;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.hubTitleFlex_MarchA {
+    background: #93bac4;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Varela', sans-serif;
+    height: auto;
+    justify-content: flex-start;
+    opacity: 0.85;
+    width: 100%;
+}
+
+.hubLogo_MarchA {
+    box-shadow: 7px 7px 5px #0f2e36;
+    height: 80px;
+    margin: 8px 36px 8px 26px;
+    width: 80px;
+}
+
+.hubTitleDiv_MarchA {
+    padding: 20px 4px 16px 28px;
+}
+
+.hubTitle_MarchA {
+    color: #000006;
+    font-family: 'Varela', sans-serif;
+    font-size: 66px;
+    font-weight: bolder;
+}
+
+.hubSignoutDiv_MarchA {
+    padding: 4vh 40px;
+    position: fixed;
+    right: 4%;
+}
+
+.hubSignoutButton_MarchA {
+    backdrop-filter: hue-rotate(20deg) invert(0%);
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/hub/march/glass-5147216_1920.jpg) 5% stretch;
+    color: #00020f;
+    cursor: pointer;
+    filter: drop-shadow(7px 10px 4px #0f2e36) invert(0%);
+    font-family: 'Varela', sans-serif;
+    font-size: 24px;
+    outline-color: #868f9c;
+    transition: all 0.4s linear;
+}
+
+.hubSignoutButton_MarchA:hover {
+    backdrop-filter: hue-rotate(-20deg) invert(0%);
+    color: #aed3da;
+    filter: brightness(110%) drop-shadow(4px 8px 3px #0f2e36);
+    transition: all 0.4s linear;
+}
+
+.hubSignoutButton_MarchA:active {
+    backdrop-filter: invert(100%);
+    filter: drop-shadow(0 0 0 #0f2e36);
+    transition: all 0.4s linear;
+}
+
+.hubTabsBar_MarchA {
+    background: radial-gradient(ellipse at top, #aed3da, #02414a);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Varela', sans-serif;
+    height: 5vh;
+    justify-content: flex-start;
+    padding: 0 1%;
+    width: 100%;
+}
+
+.hubTabActive_MarchA {
+    color: #000006;
+    padding: 8px 0 0 15px;
+    transition: all 0.6s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 17%;
+    z-index: 0;
+}
+
+.hubTabInactive_MarchA {
+    color: #868f9c;
+    cursor: pointer;
+    padding: 8px 0 0 15px;
+    transition: all 0.6s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 17%;
+    z-index: 10;
+}
+
+.hubTabLabel_MarchA {
+    font-family: 'Varela', sans-serif;
+    font-size: 30px;
+}
+
+.hubTabInactive_MarchA p {
+    cursor: pointer;
+    z-index: 8;
+}
+
+.hubTabActive_MarchA p {
+    cursor: none;
+    z-index: 0;
+}
+
+.hubShare_MarchA {
+    background: radial-gradient(circle at 50%, #05a4ba, #93bac4);
+    filter: drop-shadow(10px 1px 4px #0f2e36);
+    height: 5vh;
+    left: 0;
+    position: absolute;
+    top: 13vh;
+    transition: all 0.6s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 18%;
+}
+
+.hubReader_MarchA {
+    background: radial-gradient(circle at 50%, #05a4ba, #93bac4);
+    filter: drop-shadow(10px 1px 4px #0f2e36);
+    height: 5vh;
+    left: 19%;
+    position: absolute;
+    top: 13vh;
+    transition: all 0.6s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 18%;
+}
+
+.hubBlogs_MarchA {
+    background: radial-gradient(circle at 50%, #05a4ba, #93bac4);
+    filter: drop-shadow(10px 1px 4px #0f2e36);
+    height: 5vh;
+    left: 36%;
+    position: absolute;
+    top: 13vh;
+    transition: all 0.6s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 18%;
+}
+
+.hubProfile_MarchA {
+    background: radial-gradient(circle at 50%, #05a4ba, #93bac4);
+    filter: drop-shadow(10px 1px 4px #0f2e36);
+    height: 5vh;
+    left: 54%;
+    position: absolute;
+    top: 13vh;
+    transition: all 0.6s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 18%;
+}
+
+.hubContentContainer_MarchA {
+    height: 81vh;
+    width: 100%;
+}
+
+.hubShareDashboard_MarchA {
+    background-image: radial-gradient(#80a1a8, #93bac4, #aed3da);
+    height: 81vh;
+    opacity: 0.95;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 105%;
+}
+
+.hubReaderDashboard_MarchA {
+    background-image: radial-gradient(#277488, #004350, #00020f);
+    height: 81vh;
+    opacity: 0.9;
+    width: 100%;
+}
+
+.hubBlogsDashboard_MarchA {
+    background-image: radial-gradient(#050c16, #0f2e36, #00272f);
+    height: 81vh;
+    opacity: 0.9;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 104%;
+}
+
+.hubProfileDashboard_MarchA {
+    background-image: radial-gradient(#254248, #5da6b5, #aed3da);
+    height: 81vh;
+    opacity: 0.9;
+    width: 103%;
+}
+
+.hubShareContainer_MarchA {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    height: auto;
+    justify-content: flex-start;
+    margin: 1vh 0;
+    width: 96%;
+}
+
+.hubShareByline_MarchA {
+    border-right: 2px solid #0d1e38;
+    float: left;
+    padding: 5vh 3% 15px 3%;
+    width: 20%;
+
+}
+
+.hubShareBylineAvatar_MarchA {
+    cursor: pointer;
+    filter: drop-shadow(5px 5px 2px #0f2e36);
+    width: 20%;
+}
+
+.hubBylineName_MarchA {
+    color: #000006;
+    cursor: pointer;
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    margin: 5px 0 35px 0;
+}
+
+.hubShareComments_MarchA {
+    color: #000006;
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+.hubShareBody_MarchA {
+    border-left: 1px solid #0d1e38;
+    float: left;
+    height: auto;
+    padding: 0 1%;
+    width: 70%;
+}
+
+.hubShareSourceIcon_MarchA {
+    filter: drop-shadow(5px 5px 2px #0f2e36);
+    float: left;
+    max-width: 70px;
+}
+
+.hubShareViaDescription_MarchA {
+    color: #000006;
+    float: left;
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    margin: 10px 0 0 30px;
+    max-width: 700px;
+}
+
+.hubShareBody_MarchA a {
+    color: #0f2e36;
+    text-decoration: none;
+}
+
+.hubShareBody_MarchA a:visited {
+    color: #277488;
+}
+
+.hubShareBody_MarchA a:hover {
+    color: #00020f;
+}
+
+.hubShareHeadline_MarchA {
+    font-family: 'Varela', sans-serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+    max-width: 800px;
+}
+
+.hubShareArticleImage_MarchA {
+    filter: drop-shadow(5px 5px 2px #0f2e36);
+    margin-bottom: 9px;
+    margin-left: 9px;
+    margin-right: 12px;
+    max-width: 25%;
+}
+
+.hubSharePostTimestamp_MarchA {
+    color: #000006;
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    margin: 4px 0 6px 24px;
+}
+
+.hubShareAuthor_MarchA {
+    color: #000006;
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    margin: 10px 0 0 24px;
+}
+
+.hubShareDescription_MarchA {
+    color: #000006;
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 30px 0;
+    max-width: 750px;
+}
+
+.hubSharedAt_MarchA {
+    color: #000006;
+    font-family: 'Varela', sans-serif;
+    font-size: 12px;
+    margin: 0 0 10px 0;
+}
+
+.hubShareReactions_MarchA {
+    padding: 10px 5px;
+    width: 100%;
+}
+
+.hubShareReactionEmoji_MarchA {
+    float: left;
+    margin: 3px 3px 11px 3px;
+    padding: 1px;
+    width: 24%;
+}
+
+.hubShareReactionTally_MarchA {
+    color: #000006;
+    float: left;
+    font-family: 'Varela', sans-serif;
+    font-size: 24px;
+    margin: 3px 2px 11px 5px;
+}
+
+.hubShareReactionDelete_MarchA {
+    color: #000006;
+    cursor: pointer;
+    font-family: 'Varela', sans-serif;
+    font-size: 21px;
+    margin: 3px 17px 11px 4px;
+}
+
+.hubReactionGestalt_MarchA {
+    float: left;
+    margin: 5px;
+    width: 28%;
+}
+
+.hubShareAddReactionDiv_MarchA {
+    background: #80a1a8;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: flex-start;
+    position: relative;
+    width: 350px;
+}
+
+.hubShareAddReactionDiv_MarchA img {
+    cursor: pointer;
+    margin: 4px;
+    width: 30px;
+}
+
+.hubShareAddReactionsToggle_MarchA {
+    padding: 0 0 5px 35%;
+    width: 100%;
+}
+
+.hubShareAddReactionsToggle_MarchA p {
+    color: #040809;
+    cursor: pointer;
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+}
+
+.hubShareReactionsHoverText_MarchA {
+    background: #82d2dd;
+    bottom: 10%;
+    color: #000006;
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    max-width: 180px;
+    opacity: 0;
+    padding: 3px;
+    position: absolute;
+    transform: translateX(-80px) translateY(-20px);
+    transition: all 0.5s linear;
+    z-index: -10;
+}
+
+.hubShareReactionsHoverTextHover_MarchA {
+    background: #82d2dd;
+    bottom: 10%;
+    color: #000006;
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    max-width: 180px;
+    opacity: 1;
+    padding: 3px;
+    position: absolute;
+    transform: translateX(-80px) translateY(-20px);
+    transition: all 0.5s linear;
+    z-index: 10;
+}
+
+.hubShareCommentsLabel_MarchA {
+    color: #000006;
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    margin: 40px 80% 5px 0;
+}
+
+.hubShareCommenterAvatar_MarchA {
+    cursor: pointer;
+    float: left;
+    max-width: 30px;
+}
+
+.hubShareCommenterName_MarchA {
+    color: #000006;
+    cursor: pointer;
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    position: relative;
+    transform: translateX(7px) translateY(13px);
+
+}
+
+.hubShareCommentDateStamp_MarchA {
+    color: #000006;
+    font-family: 'Varela', sans-serif;
+    font-size: 12px;
+    margin: 3px 0 3px 0;
+}
+
+.hubShareCommentComment_MarchA {
+    color: #000006;
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+}
+
+.hubShareNewComments_MarchA p {
+    color: #000006;
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    margin: 40px 60% 5px 0;
+}
+
+.hubShareCommentTextArea_MarchA {
+    background: #aed3da;
+    border: none;
+    border-radius: 0 10px;
+    color: #000006;
+    filter: drop-shadow(5px 5px 2px #0f2e36);
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    outline: #868f9c;
+    width: 100%;
+}
+
+.hubShareNewComments_MarchA button {
+    margin: 4px 35% 1px 35%;
+}
+
+.hubShareCommenterFields_FebruaryB {
+    width: 100%;
+}
+
+.hubTodayIsDisplay_MarchA {
+    color: #aed3da;
+    font-family: 'Varela', sans-serif;
+    font-size: 36px;
+    margin-right: 50px;
+    width: 60%;
+}
+
+.hubTodayIsDiv_MarchA {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-right: 50px;
+    padding: 1% 5%;
+}
+
+.hubReaderWeekly_MarchA {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Varela', sans-serif;
+    height: auto;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.hubReaderTodayBlock_MarchA {
+    background: #93bac4;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/dd749ir-a2fcf5b4-5422-46d6-8d79-8166d3a47633.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    width: 8%;
+}
+
+.hubReaderTodayLabel_MarchA {
+    background: #93bac4;
+    border: none;
+    color: #000006;
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+}
+
+.hubReaderDayButton_MarchA {
+    background: #93bac4;
+    border: none;
+    color: #000006;
+    cursor: pointer;
+    filter: drop-shadow(10px 15px 4px #0f2e36);
+    font-family: 'Varela', sans-serif;
+    font-size: 24px;
+    left: 12%;
+    outline-color: #868f9c;
+    position: relative;
+    transition: all 0.4s linear;
+    z-index: 20;
+}
+
+.hubReaderDayButton_MarchA:hover {
+    background: #5e7a63;
+    color: #c3b6a3;
+    filter: brightness(110%) drop-shadow(9px 14px 3px #0f2e36);
+    outline-color: #c3b6a3;
+    transition: all 0.4s linear;
+}
+
+.hubReaderWeekButton_MarchA {
+    background: #93bac4;
+    border: none;
+    color: #000006;
+    cursor: pointer;
+    filter: drop-shadow(10px 15px 4px #0f2e36);
+    font-family: 'Varela', sans-serif;
+    font-size: 24px;
+    left: 25%;
+    outline-color: #0c1618;
+    position: relative;
+    transition: all 0.4s linear;
+    top: 60%;
+    z-index: 20;
+}
+
+.hubReaderWeekButton_MarchA:hover {
+    background: #5e7a63;
+    color: #c3b6a3;
+    filter: brightness(110%) drop-shadow(9px 14px 3px #0f2e36);
+    outline-color: #c3b6a3;
+    transition: all 0.4s linear;
+}
+
+.hubReaderBlankLabel_MarchA {
+    color: transparent;
+    font-family: 'Varela', sans-serif;
+    font-size: 30px;
+}
+
+.hubReaderDay1BlockActive_MarchA {
+    background: #93bac4;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/dd749ir-a2fcf5b4-5422-46d6-8d79-8166d3a47633.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(0deg);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: 1;
+}
+
+.hubReaderDay1BlockInactive_MarchA {
+    background: #93bac4;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/dd749ir-a2fcf5b4-5422-46d6-8d79-8166d3a47633.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(-115%) translateY(-200%) rotate(180deg);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: -1;
+}
+
+.hubReaderDay2BlockActive_MarchA {
+    background: #93bac4;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/dd749ir-a2fcf5b4-5422-46d6-8d79-8166d3a47633.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(0deg);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: 1;
+}
+
+.hubReaderDay2BlockInactive_MarchA {
+    background: #93bac4;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/dd749ir-a2fcf5b4-5422-46d6-8d79-8166d3a47633.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(250%) translateY(500%) rotate(180deg);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: -1;
+}
+
+.hubReaderDay3BlockActive_MarchA {
+    background: #93bac4;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/dd749ir-a2fcf5b4-5422-46d6-8d79-8166d3a47633.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(0deg);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: 1;
+}
+
+.hubReaderDay3BlockInactive_MarchA {
+    background: #93bac4;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/dd749ir-a2fcf5b4-5422-46d6-8d79-8166d3a47633.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(800%) translateY(50%) rotate(180deg);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: -1;
+}
+
+.hubReaderDay4BlockActive_MarchA {
+    background: #93bac4;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/dd749ir-a2fcf5b4-5422-46d6-8d79-8166d3a47633.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(0deg);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: 1;
+}
+
+.hubReaderDay4BlockInactive_MarchA {
+    background: #93bac4;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/dd749ir-a2fcf5b4-5422-46d6-8d79-8166d3a47633.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(-460%) translateY(550%) rotate(180deg);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: -1;
+}
+
+.hubReaderDay5BlockActive_MarchA {
+    background: #93bac4;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/dd749ir-a2fcf5b4-5422-46d6-8d79-8166d3a47633.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(0deg);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: 1;
+}
+
+.hubReaderDay5BlockInactive_MarchA {
+    background: #93bac4;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/dd749ir-a2fcf5b4-5422-46d6-8d79-8166d3a47633.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(575%) translateY(-1000%) rotate(180deg);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: -1;
+}
+
+.hubReaderDay6BlockActive_MarchA {
+    background: #93bac4;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/dd749ir-a2fcf5b4-5422-46d6-8d79-8166d3a47633.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(0deg);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: 1;
+}
+
+.hubReaderDay6BlockInactive_MarchA {
+    background: #93bac4;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/dd749ir-a2fcf5b4-5422-46d6-8d79-8166d3a47633.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(690%) translateY(200%) rotate(180deg);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: -1;
+}
+
+.hubReaderDay7BlockActive_MarchA {
+    background: #93bac4;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/dd749ir-a2fcf5b4-5422-46d6-8d79-8166d3a47633.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(0deg);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: 1;
+}
+
+.hubReaderDay7BlockInactive_MarchA {
+    background: #93bac4;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/dd749ir-a2fcf5b4-5422-46d6-8d79-8166d3a47633.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(-15%) translateY(433%) rotate(180deg);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: -1;
+}
+
+.hubReaderManagementRow_MarchA {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Varela', sans-serif;
+    height: auto;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.hubShareShareSaveButtonsDiv_MarchA {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 5px;
+    width: 100%;
+}
+
+.hubShareShareSaveButtonsDiv_MarchA button {
+    backdrop-filter: hue-rotate(20deg) invert(0%);
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/hub/march/glass-5147216_1920.jpg) 5% stretch;
+    color: #00020f;
+    cursor: pointer;
+    filter: drop-shadow(7px 10px 4px #0f2e36) invert(0%);
+    font-family: 'Varela', sans-serif;
+    font-size: 24px;
+    margin: 10px 35px;
+    outline-color: #868f9c;
+    transition: all 0.4s linear;
+}
+
+.hubShareShareSaveButtonsDiv_MarchA button:hover {
+    backdrop-filter: hue-rotate(-20deg) invert(0%);
+    color: #aed3da;
+    filter: brightness(110%) drop-shadow(4px 8px 3px #0f2e36);
+    transition: all 0.4s linear;
+}
+
+.hubShareShareSaveButtonsDiv_MarchA button:active {
+    backdrop-filter: invert(100%);
+    filter: drop-shadow(0 0 0 #0f2e36);
+    transition: all 0.4s linear;
+}
+
+.hubShareShareSaveModalActive_MarchA {
+    background: #93bac4;
+    filter: drop-shadow(10px 15px 4px #0f2e36);
+    left: 35%;
+    opacity: 1;
+    padding: 1% 3%;
+    position: absolute;
+    transition: all 0.5s linear;
+    top: 5%;
+    width: 30%;
+    z-index: 55;
+}
+
+.hubShareShareSaveModalActive_MarchA img {
+    max-width: 20%;
+}
+
+.hubShareShareSaveModalActive_MarchA p {
+    color: #000006;
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.hubShareShareSaveModalActive_MarchA textarea {
+    background: #aed3da;
+    border: none;
+    color: #000006;
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    outline-color: #868f9c;
+    width: 100%;
+}
+
+.hubShareShareSaveModalActive_MarchA button {
+    backdrop-filter: hue-rotate(20deg) invert(0%);
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/hub/march/glass-5147216_1920.jpg) 5% stretch;
+    color: #00020f;
+    cursor: pointer;
+    filter: drop-shadow(7px 10px 4px #0f2e36) invert(0%);
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    margin: 5px 45px;
+    outline-color: #868f9c;
+    transition: all 0.4s linear;
+}
+
+.hubShareShareSaveModalActive_MarchA button:hover {
+    backdrop-filter: hue-rotate(-20deg) invert(0%);
+    color: #aed3da;
+    filter: brightness(110%) drop-shadow(4px 8px 3px #0f2e36);
+    transition: all 0.4s linear;
+}
+
+.hubShareShareSaveModalActive_MarchA button:active {
+    backdrop-filter: invert(100%);
+    filter: drop-shadow(0 0 0 #0f2e36);
+    transition: all 0.4s linear;
+}
+
+.hubShareShareSaveModalInactive_MarchA {
+    background: #93bac4;
+    filter: drop-shadow(10px 15px 4px #1e221e);
+    color: #130500;
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    left: -135%;
+    opacity: 0;
+    outline-color: #130500;
+    padding: 1% 3%;
+    position: absolute;
+    transition: all 0.5s linear;
+    top: 15%;
+    width: 30%;
+    z-index: -55;
+}
+
+.hubShareShareSaveModalInactive_MarchA img {
+    max-width: 20%;
+}
+
+.hubShareShareSaveModalInactive_MarchA p {
+    color: #000006;
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.hubShareShareSaveModalInactive_MarchA textarea {
+    background: #aed3da;
+    border: none;
+    color: #000006;
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    outline-color: #868f9c;
+    width: 100%;
+}
+
+.hubShareShareSaveModalInactive_MarchA button {
+    backdrop-filter: hue-rotate(20deg) invert(0%);
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/hub/march/glass-5147216_1920.jpg) 5% stretch;
+    color: #00020f;
+    cursor: pointer;
+    filter: drop-shadow(7px 10px 4px #0f2e36) invert(0%);
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    margin: 5px 45px;
+    outline-color: #868f9c;
+    transition: all 0.4s linear;
+}
+
+.hubDialogHeadline_MarchA {
+    color: #000006;
+    font-family: 'Varela', sans-serif;
+    font-size: 24px;
+    margin: 0 0 20px 0;
+}
+
+.hubRadioButtons_MarchA {
+    color: #000006;
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    margin: 5px 5px 15px 5px;
+}
+
+.hubContainer_MarchA {
+    filter: blur(0px);
+    transition: all 0.4s linear;
+}
+
+.hubContainerBlur_MarchA {
+    filter: blur(10px);
+    transition: all 0.4s linear;
+}
+
+.hubUserBlogList_MarchA {
+    border-right: 1px solid #5da6b5;
+    float: left;
+    height: 81vh;
+    padding: 50px 15px;
+    width: 30%;
+}
+
+.hubUserBlogData_MarchA {
+    border-left: 1px solid #5da6b5;
+    float: left;
+    height: 81vh;
+    width: 60%;
+}
+
+.hubMyBlogsLabel_MarchA {
+    color: #aed3da;
+    font-family: 'Varela', sans-serif;
+    font-size: 36px;
+}
+
+.hubBlogListEntry_MarchA {
+    color: #aed3da;
+    cursor: pointer;
+    font-family: 'Varela', sans-serif;
+    font-size: 30px;
+    margin: 30px;
+    transition: all 0.5s linear;
+}
+
+.hubBlogListEntry_MarchA:hover {
+    color: #05a4ba;
+    transition: all 0.5s linear;
+}
+
+.hubNewBlogButton_MarchA {
+    backdrop-filter: hue-rotate(20deg) invert(0%);
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/hub/march/glass-5147216_1920.jpg) 5% stretch;
+    color: #aed3da;
+    cursor: pointer;
+    filter: drop-shadow(7px 10px 4px #0f2e36) invert(0%);
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    margin: 35px 75px;
+    outline-color: #868f9c;
+    transition: all 0.4s linear;
+}
+
+.hubNewBlogButton_MarchA:hover {
+    backdrop-filter: hue-rotate(-20deg) invert(0%);
+    color: #000006;
+    filter: brightness(110%) drop-shadow(4px 8px 3px #0f2e36);
+    transition: all 0.4s linear;
+}
+
+.hubNewBlogButton_MarchA:active {
+    backdrop-filter: invert(100%);
+    filter: drop-shadow(0 0 0 #0f2e36);
+    transition: all 0.4s linear;
+}
+
+.hubBlogLogoTitleDescription_MarchA {
+    cursor: pointer;
+    padding: 2vh 20px;
+    width: 100%;
+}
+
+.currentBlogLogoImage_MarchA {
+    float: left;
+    height: 120px;
+    max-width: 25%;
+}
+
+.currentBlogName_MarchA {
+    color: #aed3da;
+    float: left;
+    font-family: 'Varela', sans-serif;
+    font-size: 48px;
+    margin: 72px 0 0 40px;
+}
+
+.currentBlogTagline_MarchA {
+    color: #aed3da;
+    float: left;
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    margin: 10px 0 0 28.5%;
+    position: relative;
+    width: 90%;
+}
+
+.currentBlogContributersDiv_MarchA {
+    float: left;
+    padding: 20px 0 0 50px;
+    width: 100%;
+}
+
+.contributerInfo_MarchA {
+    cursor: pointer;
+}
+
+.hubBlogContributerAvatar_MarchA {
+    float: left;
+    max-width: 7%;
+    margin: 1px 1px 1px 15px;
+    position: relative;
+}
+
+.hubContributersLabel_MarchA {
+    color: #aed3da;
+    font-family: 'Varela', sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.hubBlogContributerName_MarchA {
+    color: #aed3da;
+    float: left;
+    font-family: 'Varela', sans-serif;
+    font-size: 24px;
+    margin: 30px 1px 1px 30px;
+    width: 85%;
+}
+
+.hubBlogDataDiv_MarchA {
+    float: left;
+    padding: 150px 0 0 70px;
+    width: 100%;
+}
+
+.hubBlogDataPosts_MarchA {
+    color: #aed3da;
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    width: 85%;
+}
+
+.hubUserProfileBasicsPane_MarchA {
+    border-right: 1px solid #001a20;
+    float: left;
+    height: 81vh;
+    width: 30%;
+}
+
+.hubPublicPrivateProfilePane_MarchA {
+    border-left: 1px solid #001a20;
+    float: left;
+    height: 81vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 68%;
+}
+
+.hubBasicUserData_MarchA {
+    height: 90%;
+    left: 5%;
+    position: relative;
+    top: 5%;
+    width: 88%;
+}
+
+.hubLoggedInAsLabel_MarchA {
+    color: #000006;
+    font-family: 'Varela', sans-serif;
+    font-size: 24px;
+}
+
+.hubLoggedInAsAvatar_MarchA {
+    filter: drop-shadow(5px 5px 2px #0f2e36);
+    margin-top: 5px;
+    max-width: 150px;
+}
+
+.hubProfileUserName_MarchA {
+    color: #000006;
+    font-family: 'Varela', sans-serif;
+    font-size: 24px;
+    margin: 5px 0 25px 0;
+}
+
+.hubUserDatas_MarchA {
+    color: #000006;
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+}
+
+.hubEditProfileButton_MarchA {
+    backdrop-filter: hue-rotate(20deg) invert(0%);
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/hub/march/glass-5147216_1920.jpg) 5% stretch;
+    color: #00020f;
+    cursor: pointer;
+    filter: drop-shadow(7px 10px 4px #0f2e36) invert(0%);
+    float: right;
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    margin: 5px 15px;
+    outline-color: #868f9c;
+    transition: all 0.4s linear;
+}
+
+.hubEditProfileButton_MarchA:hover {
+    backdrop-filter: hue-rotate(-20deg) invert(0%);
+    color: #aed3da;
+    filter: brightness(110%) drop-shadow(4px 8px 3px #0f2e36);
+    transition: all 0.4s linear;
+}
+
+.hubEditProfileButton_MarchA:active {
+    backdrop-filter: invert(100%);
+    filter: drop-shadow(0 0 0 #0f2e36);
+    transition: all 0.4s linear;
+}
+
+.hubUserProfileNavigation_MarchA {
+    height: auto;
+    left: 60%;
+    position: relative;
+    top: 0;
+    width: 40%;
+}
+
+.hubUserProfileNavigationActive_MarchA {
+    filter: blur(0px) opacity(1);
+    height: 50px;
+    transition: all 1s linear;
+    width: 100%;
+    z-index: 11;
+}
+
+.hubUserProfileNavigationActive_MarchA p {
+    color: #000006;
+    font-family: 'Varela', sans-serif;
+    font-size: 24px;
+    transform: translateX(15px) translateY(10px);
+    z-index: 111;
+}
+
+.hubUserProfileNavigationInactive_MarchA {
+    cursor: pointer;
+    filter: blur(1px) opacity(0.7);
+    height: 50px;
+    transition: all 1s linear;
+    width: 100%;
+}
+
+.hubUserProfileNavigationInactive_MarchA p {
+    color: #004350;
+    font-family: 'Varela', sans-serif;
+    font-size: 24px;
+    transform: translateX(15px) translateY(10px);
+    z-index: 11;
+}
+
+.hubUserProfileNavigationSlidePublicState_MarchA {
+    backdrop-filter: hue-rotate(-7deg) saturate(150%);
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/hub/march/glass-5147216_1920.jpg) 15% stretch;
+    filter: drop-shadow(4px 8px 3px #0f2e36);
+    height: 42px;
+    left: 0;
+    position: relative;
+    transform: translateY(-250px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 100%;
+    z-index: -1;
+}
+
+.hubUserProfileNavigationSlidePrivateState_MarchA {
+    backdrop-filter: hue-rotate(-7deg) saturate(150%);
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/hub/march/glass-5147216_1920.jpg) 15% stretch;
+    filter: drop-shadow(4px 8px 3px #0f2e36);
+    height: 42px;
+    left: 0;
+    position: relative;
+    transform: translateY(-200px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 100%;
+    z-index: -1;
+}
+
+.hubUserProfileNavigationSlideMessagesState_MarchA {
+    backdrop-filter: hue-rotate(-7deg) saturate(150%);
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/hub/march/glass-5147216_1920.jpg) 15% stretch;
+    filter: drop-shadow(4px 8px 3px #0f2e36);
+    height: 42px;
+    left: 0;
+    position: relative;
+    transform: translateY(-150px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 100%;
+    z-index: -1;
+}
+
+.hubUserProfileNavigationSlideFriendsState_MarchA {
+    backdrop-filter: hue-rotate(-7deg) saturate(150%);
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/hub/march/glass-5147216_1920.jpg) 15% stretch;
+    filter: drop-shadow(4px 8px 3px #0f2e36);
+    height: 42px;
+    left: 0;
+    position: relative;
+    transform: translateY(-100px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 100%;
+    z-index: -1;
+}
+
+.hubUserProfileNavigationSlideContactState_MarchA {
+    backdrop-filter: hue-rotate(-7deg) saturate(150%);
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/hub/march/glass-5147216_1920.jpg) 15% stretch;
+    filter: drop-shadow(4px 8px 3px #0f2e36);
+    height: 42px;
+    left: 0;
+    position: relative;
+    transform: translateY(-50px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 100%;
+    z-index: -1;
+}
+
+.hubPublicProfileDeets_MarchA {
+    height: auto;
+    width: 100%;
+}
+
+.hubUserPublicStats_MarchA {
+    max-width: 750px;
+    padding: 5%;
+}
+
+.hubUserLocationStat_MarchA {
+    color: #000006;
+    filter: brightness(350%);
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    margin: 9px 0;
+    max-width: 750px;
+}
+
+.hubUserLocationMap_MarchA {
+    filter: drop-shadow(5px 5px 2px #0f2e36);
+    max-width: 50%;
+}
+
+.hubPhotoAttribution_MarchA {
+    color: #000006;
+    font-family: 'Varela', sans-serif;
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+.hubUserDescriptionStat_MarchA {
+    color: #000006;
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    margin: 30px 0 0 0;
+}
+
+.hubUserOccupationStat_MarchA {
+    color: #000006;
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    margin: 50px 0 0 0;
+}
+
+.hubUserEmployerStat_MarchA {
+    color: #000006;
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    margin: 10px 0 0 0;
+}
+
+.hubUserEducationStatLabel_MarchA {
+    color: #000006;
+    font-family: 'Varela', sans-serif;
+    font-size: 24px;
+    margin: 60px 0 0 0;
+}
+
+.hubUserEducationStat_MarchA {
+    color: #000006;
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    margin: 10px 0 0 0;
+}
+
+.hubUserEmailStat_MarchA {
+    color: #000006;
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    margin: 40px 0 0 0;
+}
+
+.hubUserPhoneStat_MarchA {
+    color: #000006;
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    margin: 10px 0 0 0;
+}
+
+.hubUserBirthdate_MarchA {
+    color: #000006;
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    margin: 10px 0 5px 0;
+}
+
+.hubMessageCenter_MarchA {
+    padding: 3%;
+    width: 100%;
+}
+
+.hubMessageCenter_MarchA i {
+    color: #000006;
+}
+
+.hubMessageScroll_MarchA {
+    height: 76vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.hubMessageCenterLabel_MarchA {
+    color: #000006;
+    font-family: 'Varela', sans-serif;
+    font-size: 30px;
+    margin: 15px 0 15px 0;
+}
+
+.hubMainMessageContainer_MarchA {
+    border-top: 3px solid #000006;
+    color: #000006;
+    cursor: pointer;
+    margin-top: 5px;
+    max-width: 750px;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.unreadIcon_MarchA {
+    float: left;
+    font-size: 42px;
+    margin: 8px 0;
+}
+
+.hubMessageFromSubjectfalse_MarchA {
+    color: #000006;
+    float: left;
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    margin: 0 10px 0 5px;
+}
+
+/* .hubMessageFromSubjectfalse_MarchA:hover {
+  color: #e3e6eb;
+} */
+
+.hubMessageFromSubjecttrue_MarchA {
+    color: #000006;
+    float: left;
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    margin: 10px 10px 0 10px;
+}
+
+/* .hubMessageFromSubjecttrue_MarchA:hover {
+  color: #e3e6eb;
+} */
+
+.hubExpandedMessageContainer_MarchA {
+    margin-left: 30px;
+    max-width: 900px;
+}
+
+.hubMessageAvatar_MarchA {
+    float: left;
+    margin: 4px 1px 0 15px;
+    max-width: 3%;
+}
+
+.hubMessageMessage_MarchA {
+    color: #000006;
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    margin: 10px 0 5px 0;
+    max-width: 750px;
+}
+
+
+.hubReplyNameDate_MarchA {
+    color: #000006;
+    float: left;
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    margin: 3px 10px 0 5px;
+}
+
+.hubReplyText_MarchA {
+    background: #aed3da;
+    border: none;
+    color: #000006;
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    margin-bottom: 35px;
+    max-width: 750px;
+    rows: 3;
+    width: 80%;
+}
+
+.hubReplyResponseText_MarchA {
+    background: #aed3da;
+    border: none;
+    color: #000006;
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    max-width: 750px;
+    rows: 3;
+    width: 80%;
+}
+
+.hubReplyResponseText_MarchA::-webkit-input-placeholder {
+    color: #0d1e38;
+}
+
+.hubReplyResponseText_MarchA:-moz-placeholder {
+    color: #0d1e38;
+}
+
+.hubReplyResponseText_MarchA::-moz-placeholder {
+    color: #0d1e38;
+}
+
+.hubReplyResponseText_MarchA::-moz-placeholder {
+    color: #0d1e38;
+}
+
+.hubReplyResponseText_MarchA:-ms-input-placeholder {
+    color: #0d1e38;
+}
+
+.hubReplyResponseText_MarchA::placeholder {
+    color: #0d1e38;
+}
+
+.hubReplySubmit_MarchA {
+    backdrop-filter: hue-rotate(20deg) invert(0%);
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/hub/march/glass-5147216_1920.jpg) 5% stretch;
+    color: #00020f;
+    cursor: pointer;
+    filter: drop-shadow(7px 10px 4px #0f2e36) invert(0%);
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    margin: 1px 2px 15px 5px;
+    outline-color: #868f9c;
+    transition: all 0.4s linear;
+}
+
+.hubReplySubmit_MarchA:hover {
+    backdrop-filter: hue-rotate(-20deg) invert(0%);
+    color: #aed3da;
+    filter: brightness(110%) drop-shadow(4px 8px 3px #0f2e36);
+    transition: all 0.4s linear;
+}
+
+.hubReplySubmit_MarchA:active {
+    backdrop-filter: invert(100%);
+    filter: drop-shadow(0 0 0 #0f2e36);
+    transition: all 0.4s linear;
+}
+
+.hubFriendsCenter_MarchA {
+    padding: 3%;
+    width: 100%;
+}
+
+.hubFriendsCenterLabel_MarchA {
+    color: #000006;
+    font-family: 'Varela', sans-serif;
+    font-size: 30px;
+    margin: 15px 0 15px 0;
+}
+
+.hubFriendsScroll_MarchA {
+    height: 76vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.hubFriendsFilter_MarchA {
+    background: #aed3da;
+    border: none;
+    color: #000006;
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    outline-color: #868f9c;
+    width: 50%;
+}
+
+.hubFriendsFilter_MarchA::-webkit-input-placeholder {
+    color: #0d1e38;
+}
+
+.hubFriendsFilter_MarchA:-moz-placeholder {
+    color: #0d1e38;
+}
+
+.hubFriendsFilter_MarchA::-moz-placeholder {
+    color: #0d1e38;
+}
+
+.hubFriendsFilter_MarchA::-moz-placeholder {
+    color: #0d1e38;
+}
+
+.hubFriendsFilter_MarchA:-ms-input-placeholder {
+    color: #0d1e38;
+}
+
+.hubFriendsFilter_MarchA::placeholder {
+    color: #0d1e38;
+}
+
+.hubSearchIcon_MarchA {
+    color: #000006;
+    font-size: 18px;
+    margin: 5px 15px 0 0;
+}
+
+.hubFriendRollEntry_MarchA {
+    cursor: pointer;
+    margin: 20px 0 0 50px;
+    max-width: 750px;
+}
+
+.hubFriendsRollAvatar_MarchA {
+    filter: drop-shadow(5px 5px 2px #0f2e36);
+    margin-bottom: 7px;
+    max-height: 50px;
+    max-width: 50px;
+}
+
+.hubFriendsNameListing_MarchA {
+    color: #000006;
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+}
+
+.hubFriendMessageButton_MarchA {
+    backdrop-filter: hue-rotate(20deg) invert(0%);
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/hub/march/glass-5147216_1920.jpg) 5% stretch;
+    color: #00020f;
+    cursor: pointer;
+    filter: drop-shadow(7px 10px 4px #0f2e36) invert(0%);
+    font-family: 'Varela', sans-serif;
+    font-size: 24px;
+    margin: 0 5px 15px 50px;
+    outline-color: #868f9c;
+    transition: all 0.4s linear;
+}
+
+.hubFriendMessageButton_MarchA:hover {
+    backdrop-filter: hue-rotate(-20deg) invert(0%);
+    color: #aed3da;
+    filter: brightness(110%) drop-shadow(4px 8px 3px #0f2e36);
+    transition: all 0.4s linear;
+}
+
+.hubFriendMessageButton_MarchA:active {
+    backdrop-filter: invert(100%);
+    filter: drop-shadow(0 0 0 #0f2e36);
+    transition: all 0.4s linear;
+}
+
+.hubProfileDisplayerActive_MarchA {
+    background: #93bac4;
+    height: auto;
+    left: 15%;
+    opacity: 1;
+    position: absolute;
+    top: 10%;
+    transition: all 0.4s linear;
+    width: 68%;
+    z-index: 100;
+}
+
+.hubProfileDisplayerInactive_MarchA {
+    background: #93bac4;
+    height: auto;
+    left: 145%;
+    opacity: 0;
+    position: absolute;
+    top: -70%;
+    transition: all 0.4s linear;
+    width: 68%;
+    z-index: -6;
+}
+
+.hubProfileDisplayCloseButton_MarchA {
+    backdrop-filter: hue-rotate(20deg) invert(0%);
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/hub/march/glass-5147216_1920.jpg) 5% stretch;
+    color: #00020f;
+    cursor: pointer;
+    filter: drop-shadow(7px 10px 4px #0f2e36) invert(0%);
+    float: right;
+    font-family: 'Varela', sans-serif;
+    font-size: 24px;
+    margin: 15px;
+    outline-color: #868f9c;
+    transition: all 0.4s linear;
+}
+
+.hubProfileDisplayCloseButton_MarchA:hover {
+    backdrop-filter: hue-rotate(-20deg) invert(0%);
+    color: #aed3da;
+    filter: brightness(110%) drop-shadow(4px 8px 3px #0f2e36);
+    transition: all 0.4s linear;
+}
+
+.hubProfileDisplayCloseButton_MarchA:active {
+    backdrop-filter: invert(100%);
+    filter: drop-shadow(0 0 0 #0f2e36);
+    transition: all 0.4s linear;
+}
+
+.hubProfileDisplayAvatar_MarchA {
+    filter: drop-shadow(10px 15px 4px #0f2e36);
+    float: left;
+    margin: 15px;
+    max-width: 200px;
+}
+
+.hubProfileDisplayDataContainer_MarchA {
+    padding: 15px;
+}
+
+.hubProfileDisplayName_MarchA {
+    color: #000006;
+    float: left;
+    font-family: 'Varela', sans-serif;
+    font-size: 36px;
+}
+
+.hubProfileDisplayDescritors_MarchA {
+    color: #000006;
+    float: left;
+    font-family: 'Varela', sans-serif;
+    font-size: 24px;
+}
+
+.hubDisplayContainer2_MarchA {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.profileDisplayStats_MarchA {
+    color: #000006;
+    float: left;
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    width: 70%;
+}
+
+.hubProfileDisplayBioBlock_MarchA {
+    padding: 15px;
+    min-width: 215px;
+    width: 30%;
+
+}
+
+.hubProfileDisplayBioImage_MarchA {
+    filter: drop-shadow(10px 15px 4px #0f2e36);
+    max-width: 200px;
+}
+
+.hubProfileDisplayUserDatas_MarchA {
+    float: left;
+    padding: 15px;
+    width: 60%;
+}
+
+.hubProfileDisplayDescritors2_MarchA {
+    color: #000006;
+    float: left;
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    width: 70%;
+}
+
+.hubDisplayMessageButton_MarchA {
+    backdrop-filter: hue-rotate(20deg) invert(0%);
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/hub/march/glass-5147216_1920.jpg) 5% stretch;
+    color: #00020f;
+    cursor: pointer;
+    filter: drop-shadow(7px 10px 4px #0f2e36) invert(0%);
+    float: right;
+    font-family: 'Varela', sans-serif;
+    font-size: 24px;
+    margin: 15px;
+    outline-color: #868f9c;
+    transition: all 0.4s linear;
+}
+
+.hubDisplayMessageButton_MarchA:hover {
+    backdrop-filter: hue-rotate(-20deg) invert(0%);
+    color: #aed3da;
+    filter: brightness(110%) drop-shadow(4px 8px 3px #0f2e36);
+    transition: all 0.4s linear;
+}
+
+.hubDisplayMessageButton_MarchA:active {
+    backdrop-filter: invert(100%);
+    filter: drop-shadow(0 0 0 #0f2e36);
+    transition: all 0.4s linear;
+}
+
+.hubDisplayMessageModalActive_MarchA {
+    background: #80a1a8;
+    height: auto;
+    left: 15%;
+    opacity: 1;
+    position: absolute;
+    top: 10%;
+    transition: all 0.4s linear;
+    width: 68%;
+    z-index: 100;
+}
+
+.hubDisplayMessageModalInactive_MarchA {
+    background: #80a1a8;
+    height: auto;
+    left: -45%;
+    opacity: 0;
+    position: absolute;
+    top: 70%;
+    transition: all 0.4s linear;
+    width: 68%;
+    z-index: -6;
+}
+
+.hubMessageModalLabel_MarchA {
+    color: #000006;
+    font-family: 'Varela', sans-serif;
+    font-size: 24px;
+    margin: 30px;
+}
+
+.hubMessageModalButtonFields_MarchA {
+    padding: 15px 0 45px 35%;
+}
+
+.hubMessageModalButton_MarchA {
+    backdrop-filter: hue-rotate(20deg) invert(0%);
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/hub/march/glass-5147216_1920.jpg) 5% stretch;
+    color: #00020f;
+    cursor: pointer;
+    filter: drop-shadow(7px 10px 4px #0f2e36) invert(0%);
+    float: right;
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    margin: 0 39px;
+    outline-color: #868f9c;
+    transition: all 0.4s linear;
+}
+
+.hubMessageModalButton_MarchA:hover {
+    backdrop-filter: hue-rotate(-20deg) invert(0%);
+    color: #aed3da;
+    filter: brightness(110%) drop-shadow(4px 8px 3px #0f2e36);
+    transition: all 0.4s linear;
+}
+
+.hubMessageModalButton_MarchA:active {
+    backdrop-filter: invert(100%);
+    filter: drop-shadow(0 0 0 #0f2e36);
+    transition: all 0.4s linear;
+}
+
+.hubMessageModalInputs_MarchA {
+    padding: 15px 45px 0 45px;
+}
+
+.hubMessageModalSubjectInput_MarchA {
+    background: #aed3da;
+    border: none;
+    color: #000006;
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    margin: 0 0 0 8%;
+    outline-color: #868f9c;
+    width: 80%;
+}
+
+.hubMessageModalMessageInput_MarchA {
+    background: #aed3da;
+    border: none;
+    color: #000006;
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    margin: 5px 0 0 8%;
+    outline-color: #868f9c;
+    width: 80%;
+}
+
+.hubMessageModalToFields_MarchA {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 20px 0 10px 12%;
+    width: 100%;
+}
+
+.hubRecipientAvatar_MarchA {
+    filter: drop-shadow(10px 15px 4px #0f2e36);
+    float: left;
+    max-width: 50px;
+}
+
+.hubRecipientName_MarchA {
+    float: left;
+    color: #000006;
+    font-family: 'Varela', sans-serif;
+    font-size: 24px;
+    margin: 12px 0 8px 15px;
+}
+
+.hubRemoveGuardrailActive_MarchA {
+    background: #5da6b5;
+    height: auto;
+    left: 25%;
+    opacity: 1;
+    position: absolute;
+    top: 30%;
+    transition: all 0.4s linear;
+    width: 50%;
+    z-index: 100;
+}
+
+.hubRemoveGuardrailInactive_MarchA {
+    background: #5da6b5;
+    height: auto;
+    left: -45%;
+    opacity: 0;
+    position: absolute;
+    top: 70%;
+    transition: all 0.4s linear;
+    width: 68%;
+    z-index: -6;
+}
+
+.hubGuardrailText_MarchA {
+    color: #000006;
+    font-family: 'Varela', sans-serif;
+    font-size: 24px;
+    margin: 24px 10% 8px 10%;
+}
+
+.hubGuardrailButton_MarchA {
+    backdrop-filter: hue-rotate(20deg) invert(0%);
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/hub/march/glass-5147216_1920.jpg) 5% stretch;
+    color: #00020f;
+    cursor: pointer;
+    filter: drop-shadow(7px 10px 4px #0f2e36) invert(0%);
+    float: right;
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    margin: 20px 10px;
+    outline-color: #868f9c;
+    transition: all 0.4s linear;
+}
+
+.hubGuardrailButton_MarchA:hover {
+    backdrop-filter: hue-rotate(-20deg) invert(0%);
+    color: #aed3da;
+    filter: brightness(110%) drop-shadow(4px 8px 3px #0f2e36);
+    transition: all 0.4s linear;
+}
+
+.hubGuardrailButton_MarchA:active {
+    backdrop-filter: invert(100%);
+    filter: drop-shadow(0 0 0 #0f2e36);
+    transition: all 0.4s linear;
+}
+
+.hubGuardrailButtonsDiv_MarchA {
+    margin: 5px 40%;
+}
+
+.hubOtherProfileEditButton_MarchA {
+    float: right;
+    padding: 30px 45px;
+}
+
+.pendingFriendRequests_MarchA {
+    color: #000006;
+    float: right;
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    left: 80%;
+    margin: 1%;
+    position: absolute;
+    top: 20%;
+}
+
+.hubContactCenter_MarchA {
+    padding: 10%;
+    width: 100%;
+}
+
+.hubContactLabel_MarchA {
+    color: #000006;
+    font-family: 'Varela', sans-serif;
+    font-size: 30px;
+}
+
+.hubFooter_MarchA {
+    bottom: 8px;
+    color: #000006;
+    font-family: 'Varela', sans-serif;
+    font-size: 13px;
+    left: 80%;
+    position: absolute;
+}
+
+.hubContactFormField_MarchA {
+    margin: 25px 0;
+}
+
+.hubContactSubjectInput_MarchA {
+    background: #80a1a8;
+    border: none;
+    color: #000006;
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    margin: 5px 0 5px 0;
+    max-width: 750px;
+    outline-color: #868f9c;
+    width: 80%;
+}
+
+.hubContactMessageInput_MarchA {
+    background: #80a1a8;
+    border: none;
+    color: #000006;
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    margin: 5px 0 5px 0;
+    max-width: 750px;
+    outline-color: #868f9c;
+    width: 80%;
+}
+
+.hubContactAdminSubmitButton_MarchA {
+    backdrop-filter: hue-rotate(20deg) invert(0%);
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/hub/march/glass-5147216_1920.jpg) 5% stretch;
+    color: #00020f;
+    cursor: pointer;
+    filter: drop-shadow(7px 10px 4px #0f2e36) invert(0%);
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    margin: 5px 0;
+    outline-color: #868f9c;
+    position: relative;
+    transition: all 0.4s linear;
+    width: 76%;
+}
+
+.hubContactAdminSubmitButton_MarchA:hover {
+    backdrop-filter: hue-rotate(-20deg) invert(0%);
+    color: #aed3da;
+    filter: brightness(110%) drop-shadow(4px 8px 3px #0f2e36);
+    transition: all 0.4s linear;
+}
+
+.hubContactAdminSubmitButton_MarchA:active {
+    backdrop-filter: invert(100%);
+    filter: drop-shadow(0 0 0 #0f2e36);
+    transition: all 0.4s linear;
+}
+
+.removeShare_MarchA {
+    color: #000006;
+    cursor: pointer;
+    float: right;
+    font-size: 30px;
+}
+
+.deleteGuardrailActive_MarchA {
+    background: #aed3da;
+    height: auto;
+    left: 25%;
+    opacity: 1;
+    position: absolute;
+    top: 30%;
+    transition: all 0.4s linear;
+    width: 50%;
+    z-index: 100;
+}
+
+.deleteGuardrailInactive_MarchA {
+    background: #aed3da;
+    height: auto;
+    left: -45%;
+    opacity: 0;
+    position: absolute;
+    top: 70%;
+    transition: all 0.4s linear;
+    width: 68%;
+    z-index: -6;
+}
+
+.deleteCommentGuardrailActive_MarchA {
+    background: #aed3da;
+    height: auto;
+    left: 25%;
+    opacity: 1;
+    position: absolute;
+    top: 30%;
+    transition: all 0.4s linear;
+    width: 50%;
+    z-index: 100;
+}
+
+.deleteCommentGuardrailInactive_MarchA {
+    background: #aed3da;
+    height: auto;
+    left: -45%;
+    opacity: 0;
+    position: absolute;
+    top: 70%;
+    transition: all 0.4s linear;
+    width: 68%;
+    z-index: -6;
+}
+
+.editComment_MarchA {
+    color: #000006;
+    cursor: pointer;
+    float: right;
+    font-size: 18px;
+}
+
+.hubEditMessageInactive_MarchA {
+    background: #aed3da;
+    left: -35%;
+    opacity: 0;
+    padding: 1% 3%;
+    position: absolute;
+    transition: all 0.5s linear;
+    top: -55%;
+    width: 30%;
+    z-index: -55;
+}
+
+.hubEditMessageActive_MarchA {
+    background: #aed3da;
+    left: 35%;
+    opacity: 1;
+    padding: 1% 3%;
+    position: absolute;
+    transition: all 0.5s linear;
+    top: 5%;
+    width: 30%;
+    z-index: 55;
+}
+
+.hubEditMessageActive_MarchA img {
+    filter: drop-shadow(10px 15px 4px #0f2e36);
+    max-width: 15%;
+}
+
+.hubEditMessageActive_MarchA p {
+    color: #000006;
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.hubEditMessageActive_MarchA textarea {
+    background: #80a1a8;
+    border: none;
+    color: #000006;
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    outline-color: #868f9c;
+    width: 100%;
+}
+
+.hubEditMessageActive_MarchA button {
+    backdrop-filter: hue-rotate(20deg) invert(0%);
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/hub/march/glass-5147216_1920.jpg) 5% stretch;
+    color: #00020f;
+    cursor: pointer;
+    filter: drop-shadow(7px 10px 4px #0f2e36) invert(0%);
+    font-family: 'Varela', sans-serif;
+    font-size: 24px;
+    margin: 5px 45px;
+    outline-color: #868f9c;
+    position: relative;
+    transition: all 0.4s linear;
+}
+
+.hubEditMessageActive_MarchA button:hover {
+    backdrop-filter: hue-rotate(-20deg) invert(0%);
+    color: #aed3da;
+    filter: brightness(110%) drop-shadow(4px 8px 3px #0f2e36);
+    transition: all 0.4s linear;
+}
+
+.hubEditMessageActive_MarchA button:active {
+    backdrop-filter: invert(100%);
+    filter: drop-shadow(0 0 0 #0f2e36);
+    transition: all 0.4s linear;
+}
+
+.hubEditMessageInactive_MarchA {
+    background: #aed3da;
+    left: -135%;
+    opacity: 0;
+    padding: 1% 3%;
+    position: absolute;
+    transition: all 0.5s linear;
+    top: 15%;
+    width: 30%;
+    z-index: -55;
+}
+
+.hubEditMessageInactive_MarchA img {
+    max-width: 15%;
+}
+
+.hubEditMessageInactive_MarchA p {
+    color: #000006;
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.hubEditMessageInactive_MarchA textarea {
+    background: #80a1a8;
+    border: none;
+    color: #000006;
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    outline-color: #868f9c;
+    width: 100%;
+}
+
+.hubEditMessageInactive_MarchA button {
+    backdrop-filter: hue-rotate(20deg) invert(0%);
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/hub/march/glass-5147216_1920.jpg) 5% stretch;
+    color: #00020f;
+    cursor: pointer;
+    filter: drop-shadow(7px 10px 4px #0f2e36) invert(0%);
+    font-family: 'Varela', sans-serif;
+    font-size: 24px;
+    margin: 5px 45px;
+    outline-color: #868f9c;
+    position: relative;
+    transition: all 0.4s linear;
+}
+
+.removeShareComment_MarchA {
+    cursor: pointer;
+    float: right;
+    margin: 0 5px;
+}
+
+@media only screen and (max-width: 768px) {
+    .hubReactionGestalt_MarchA {
+        margin: 4px;
+        width: 25%;
+    }
+
+    .hubShareReactionTally_MarchA {
+        font-size: 18px;
+        margin: 3px 1px 10px 4px;
+    }
+
+    .hubShareReactionDelete_MarchA {
+        margin: 3px 4px 10px 0;
+    }
+
+    .hubReaderTodayBlock_MarchA {
+        width: 5%;
+    }
+
+    .currentBlogTagline_MarchA {
+        width: 80%;
+    }
+
+    .hubUserProfileNavigation_MarchA {
+        transform: scale(0.9) translateX(-25px);
+    }
+}
+
+@media only screen and (max-width: 414px) {
+
+    .hubBlogsDashboard_MarchA {
+        width: 99%;
+    }
+
+    .hubPublicPrivateProfilePane_MarchA {
+        width: 60%;
+    }
+
+    .hubTitleFlex_MarchA {
+        transform: scale(0.9);
+    }
+
+    .hubBylineName_MarchA {
+        font-size: 18px;
+    }
+
+    .hubShareComments_MarchA {
+        font-size: 18px;
+    }
+
+    .hubShareAddReactionsToggle_MarchA p {
+        font-size: 13px;
+        transform: translateX(-10px);
+    }
+
+    .hubReactionGestalt_MarchA {
+        width: 40%;
+    }
+
+    .hubShareReactionEmoji_MarchA {
+        width: 50%;
+    }
+
+    .hubTabLabel_MarchA {
+        font-size: 13px;
+    }
+
+    .hubShareCommentsLabel_MarchA {
+        font-size: 13px;
+    }
+
+    .hubShareCommenterName_MarchA {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .hubShareCommentComment_MarchA {
+        font-size: 13px;
+    }
+
+    .hubSignoutButton_MarchA {
+        transform: translateX(-30px);
+    }
+
+    .hubShareNewComments_MarchA {
+        font-size: 13px;
+    }
+
+    .hubShareHeadline_MarchA {
+        font-size: 30px;
+    }
+
+    .hubReaderDashboard_MarchA {
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+
+    .hubMyBlogsLabel_MarchA {
+        font-size: 30px;
+    }
+
+    .hubBlogListEntry_MarchA {
+        font-size: 18px;
+    }
+
+    .hubNewBlogButton_MarchA {
+        font-size: 12px;
+        transform: translateX(-20px);
+    }
+
+    .currentBlogLogoImage_MarchA {
+        max-width: 100px;
+    }
+
+    .currentBlogName_MarchA {
+        font-size: 30px;
+    }
+
+    .currentBlogTagline_MarchA {
+        font-size: 18px;
+    }
+
+    .hubContributersLabel_MarchA {
+        font-size: 18px;
+    }
+
+    .hubBlogContributerName_MarchA {
+        font-size: 18px;
+    }
+
+    .hubBlogDataPosts_MarchA {
+        font-size: 18px;
+    }
+
+    .hubBlogDataDiv_MarchA {
+        padding-left: 30px;
+    }
+
+    .hubLoggedInAsAvatar_MarchA {
+        max-width: 70px;
+    }
+
+    .hubUserProfileNavigation_MarchA {
+        transform: translateX(-70px) translateY(-50px) scale(0.6);
+    }
+
+    .hubMessageMessage_MarchA {
+        font-size: 18px;
+    }
+
+    .hubMessageFromSubjecttrue_MarchA {
+        font-size: 18px;
+    }
+
+    .hubMessageFromSubjectfalse_MarchA {
+        font-size: 18px;
+    }
+
+    .hubReplyText_MarchA {
+        font-size: 18px;
+    }
+
+    .hubReplyResponseText_MarchA {
+        font-size: 18px;
+    }
+
+    .hubProfileDisplayName_MarchA {
+        font-size: 18px;
+    }
+
+    .profileDisplayStats_MarchA {
+        font-size: 18px;
+    }
+
+    .hubProfileDisplayUserDatas_MarchA {
+        padding: 3px;
+        width: 80%;
+    }
+}
