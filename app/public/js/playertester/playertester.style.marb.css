@@ -1,0 +1,1888 @@
+.playerContainer_MarchB {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/player/moto-moto-sc-vZKN6l6UFCA-unsplash.jpg);
+    background-size: cover;
+    filter: blur(0);
+    height: 95vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    z-index: 1;
+}
+
+.playerContainerBlur_MarchB {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/player/moto-moto-sc-vZKN6l6UFCA-unsplash.jpg);
+    background-size: cover;
+    filter: blur(10px);
+    height: 95vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    z-index: 1;
+}
+
+.playerDiv_MarchB {
+    backdrop-filter: blur(12px) brightness(80%) saturate(70%);
+    border: 3px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/player/moto-moto-sc-vZKN6l6UFCA-unsplash.jpg) 5% stretch;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 41vh;
+    justify-content: flex-start;
+    left: 5%;
+    position: relative;
+    top: 0;
+    width: 88%;
+}
+
+.playerFeedIcon_MarchB img {
+    height: 200px;
+    margin: 30px 10%;
+    width: 200px;
+}
+
+.playerPodcastTitle_MarchB {
+    color: #bb9782;
+    filter: brightness(174%) saturate(200%);
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 42px;
+}
+
+.playerEpisodeTitle_MarchB {
+    color: #bb9782;
+    filter: brightness(174%) saturate(200%);
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.playerEpisodeAuthor_MarchB {
+    color: #bb9782;
+    filter: brightness(174%) saturate(200%);
+    float: left;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 18px;
+    margin: 10px 0 5px 0;
+}
+
+.playerTitlingDiv_MarchB {
+    padding: 25px 15px 1px 40px;
+    width: 70%;
+}
+
+.playerContainer_MarchB a {
+    text-decoration: none;
+}
+
+.playerControlsDiv_MarchB {
+    margin: 50px 15px 4px 15px;
+    position: relative;
+    width: 100%;
+}
+
+.playerPlay_MarchB {
+    background: transparent;
+    border: 3px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/player/moto-moto-sc-vZKN6l6UFCA-unsplash.jpg) 30% stretch;
+    box-sizing: border-box;
+    color: #829bab;
+    cursor: pointer;
+    filter: brightness(130%) drop-shadow(10px 15px 4px #1e1826) invert(0%);
+    float: left;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 54px;
+    outline-color: #8f8c93;
+    padding: 6px 20px;
+    transition: all 0.4s linear;
+}
+
+.playerPlay_MarchB:hover {
+    color: #772e05;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/player/moto-moto-sc-vZKN6l6UFCA-unsplash.jpg) 20% stretch;
+    filter: brightness(150%) drop-shadow(7px 7px 4px #1e1826) invert(0%);
+    transition: all 0.3s linear;
+}
+
+.playerPlay_MarchB:active {
+    filter: brightness(120%) drop-shadow(0 0 0 #1e1826) invert(100%);
+    transition: all 0.1s linear;
+}
+
+.playerPause_MarchB {
+    background: transparent;
+    border: 3px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/player/moto-moto-sc-vZKN6l6UFCA-unsplash.jpg) 30% stretch;
+    box-sizing: border-box;
+    color: #829bab;
+    cursor: pointer;
+    filter: brightness(130%) drop-shadow(10px 15px 4px #1e1826) invert(0%);
+    float: left;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 54px;
+    outline-color: #8f8c93;
+    padding: 6px 20px;
+    transition: all 0.4s linear;
+}
+
+.playerPause_MarchB:hover {
+    color: #772e05;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/player/moto-moto-sc-vZKN6l6UFCA-unsplash.jpg) 20% stretch;
+    filter: brightness(150%) drop-shadow(7px 7px 4px #1e1826) invert(0%);
+    transition: all 0.3s linear;
+}
+
+.playerPause_MarchB:active {
+    filter: brightness(120%) drop-shadow(0 0 0 #1e1826) invert(100%);
+    transition: all 0.1s linear;
+}
+
+.playerNumericalProgressDisplay_MarchB {
+    color: #bb9782;
+    filter: brightness(174%) saturate(200%);
+    float: left;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 30px;
+    padding: 0 0 4px 30px;
+    width: 17vw;
+}
+
+.playerProgressSlider_MarchB {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: #162930;    
+    cursor: pointer;
+    float: left;
+    height: 3.2vh;
+    margin: 22px 0 10px 15px;
+    outline-color: transparent;
+    perspective: 500px;
+    transition: all 0.1s linear;
+    width: 50vw;
+}
+
+.playerProgressSlider_MarchB:hover {
+    filter: brightness(150%);
+    transition: all 0.1s linear;
+}
+
+.playerProgressSlider_MarchB::-webkit-slider-runnable-track {
+    background: #162930;
+}
+
+.playerProgressSlider_MarchB::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background: #481b04;
+    height: 3.2vh;
+    perspective: 500px;
+    width: 17px;
+}
+
+.playerProgressSlider_MarchB::-moz-range-thumb {
+     -webkit-appearance: none;
+    appearance: none;
+    background: #481b04;
+    height: 3.2vh;
+    perspective: 500px;
+    width: 17px;
+}
+
+.tabsContainer_MarchB {
+    backdrop-filter: blur(4px) hue-rotate(-135deg);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: auto;
+    justify-content: flex-start;
+    left: 5%;
+    opacity: 0.9;
+    position: relative;
+    transition: all 0.5s linear;
+    top: 3vh;
+    width: 88%;
+    z-index: 5;
+}
+
+.playerTabActive_MarchB {
+    background: #829bab;
+    color: #030100;
+    cursor: none;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 24px;
+    opacity: 0.9;
+    padding: 8px 15.5%;
+    transition: all 0.5s linear;
+    width: auto;
+}
+
+.playerTabInactive_MarchB {
+    background: transparent;
+    color: #8f8c93;
+    cursor: pointer;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 24px;
+    padding: 8px 10.5%;
+    transition: all 0.5s linear;
+    width: auto;
+}
+
+.aboutContainerActive_MarchB {
+    backdrop-filter: blur(16px) hue-rotate(45deg);
+    background: #829bab;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: flex-start;
+    left: 5%;
+    opacity: 0.85;
+    position: relative;
+    top: 3vh;
+    width: 88%;
+    z-index: 8;
+}
+
+.aboutContainerInactive_MarchB {
+    display: none;
+}
+
+.episodeContainerActive_MarchB {
+    backdrop-filter: blur(16px) hue-rotate(90deg);
+    background: #829bab;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: flex-start;
+    left: 5%;
+    margin-bottom: 8vh;
+    opacity: 0.85;
+    position: relative;
+    top: 3vh;
+    width: 88%;
+    z-index: 8;
+}
+
+.episodeContainerInactive_MarchB {
+    display: none;
+}
+
+.detailsContainerActive_MarchB {
+    backdrop-filter: blur(16px) hue-rotate(135deg);
+    background: #829bab;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: flex-start;
+    left: 5%;
+    margin-bottom: 5vh;
+    opacity: 0.95;
+    position: relative;
+    top: 3vh;
+    width: 88%;
+    z-index: 8;
+}
+
+.detailsContainerInactive_MarchB {
+    display: none;
+}
+
+.episodesTitleBar_MarchB {
+    color: #030100;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 30px;
+    height: auto;
+    padding: 15px 0 4px 25px;
+    width: 100%;
+}
+
+.episodeItems_MarchB {
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 4px;
+    width: 95%;
+}
+
+.episodeItemsCurrent_MarchB {
+    background: #848280;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 4px;
+    width: 95%;
+}
+
+.userEpisodeStatus_MarchB {
+    color: #030100;
+    float: left;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 24px;
+    padding: 8px 0 8px 16px;
+    position: relative;
+    width: 4vw;
+}
+
+.userEpisodeItemsTitle_MarchB {
+    float: left;
+    color: #030100;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 24px;
+    padding: 8px 0 8px 16px;
+    position: inherit;
+    width: 35vw;
+}
+
+.userEpisodeItemsAuthor_MarchB {
+    color: #030100;
+    float: left;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 18px;
+    padding: 10px 0 8px 16px;
+    position: inherit;
+    width: 30vw;
+}
+
+.userEpisodePosition_MarchB {
+    color: #030100;
+    float: left;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 18px;
+    padding: 10px 0 8px 16px;
+    position: inherit;
+    width: 13.5vw;
+}
+
+.aboutThisPodcastImage_MarchB {
+    filter: brightness(100%);
+    float: left;
+    height: 100px;
+    margin: 15px;
+    width: 100px;
+}
+
+.aboutThisPodcastTitle_MarchB {
+    color: #030100;
+    float: left;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 30px;
+    height: 5vh;
+    margin: 15px 5px 5px 15px;
+}
+
+.aboutThisPodcastAuthor_MarchB {
+    color: #030100;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 24px;
+    margin: 18px 5px 5px 15px;
+}
+
+.aboutThisPodcastDescription_MarchB {
+    color: #030100;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.4em;
+    margin: 5px 0 100px 115px;
+    max-width: 750px;
+}
+
+.detailsTitle_MarchB {
+    color: #030100;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 30px;
+    margin: 15px 15px 15px 80px;
+}
+
+.detailsEpisodeTitle_MarchB {
+    color: #030100;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 30px;
+    margin: 15px;
+}
+
+.detailsContent_MarchB {
+    color: #030100;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.4em;
+    max-width: 700px;
+    padding: 35px 35px 100px 115px;
+}
+
+.detailsContent_MarchB a {
+    color: #053656;
+    text-decoration: underline;
+}
+
+.detailsContent_MarchB a:visited {
+    color: #162930;
+}
+
+.detailsContent_MarchB a:hover {
+    color: #1e1826;
+}
+
+.playerRewindToBeginning_MarchB {
+    background: transparent;
+    border: 3px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/player/moto-moto-sc-vZKN6l6UFCA-unsplash.jpg) 30% stretch;
+    box-sizing: border-box;
+    color: #829bab;
+    cursor: pointer;
+    filter: brightness(130%) drop-shadow(10px 15px 4px #1e1826) invert(0%);
+    float: left;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 24px;
+    margin: 0 6px;
+    outline-color: #8f8c93;
+    padding: 6px 10px;
+    transition: all 0.4s linear;
+}
+
+.playerRewindToBeginning_MarchB:hover {
+    color: #772e05;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/player/moto-moto-sc-vZKN6l6UFCA-unsplash.jpg) 20% stretch;
+    filter: brightness(150%) drop-shadow(7px 7px 4px #1e1826) invert(0%);
+    transition: all 0.3s linear;
+}
+
+.playerRewindToBeginning_MarchB:active {
+    filter: brightness(120%) drop-shadow(0 0 0 #1e1826) invert(100%);
+    transition: all 0.1s linear;
+}
+
+.playerRewind15Seconds_MarchB {
+    background: transparent;
+    border: 3px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/player/moto-moto-sc-vZKN6l6UFCA-unsplash.jpg) 30% stretch;
+    box-sizing: border-box;
+    color: #829bab;
+    cursor: pointer;
+    filter: brightness(130%) drop-shadow(10px 15px 4px #1e1826) invert(0%);
+    float: left;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 24px;
+    margin: 0 6px;
+    outline-color: #8f8c93;
+    padding: 6px 10px;
+    transition: all 0.4s linear;
+}
+
+.playerRewind15Seconds_MarchB:hover {
+    color: #772e05;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/player/moto-moto-sc-vZKN6l6UFCA-unsplash.jpg) 20% stretch;
+    filter: brightness(150%) drop-shadow(7px 7px 4px #1e1826) invert(0%);
+    transition: all 0.3s linear;
+}
+
+.playerRewind15Seconds_MarchB:active {
+    filter: brightness(120%) drop-shadow(0 0 0 #1e1826) invert(100%);
+    transition: all 0.1s linear;
+}
+
+.playerForward15Seconds_MarchB {
+    background: transparent;
+    border: 3px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/player/moto-moto-sc-vZKN6l6UFCA-unsplash.jpg) 30% stretch;
+    box-sizing: border-box;
+    color: #829bab;
+    cursor: pointer;
+    filter: brightness(130%) drop-shadow(10px 15px 4px #1e1826) invert(0%);
+    float: left;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 24px;
+    margin: 0 6px;
+    outline-color: #8f8c93;
+    padding: 6px 10px;
+    transition: all 0.4s linear;
+}
+
+.playerForward15Seconds_MarchB:hover {
+    color: #772e05;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/player/moto-moto-sc-vZKN6l6UFCA-unsplash.jpg) 20% stretch;
+    filter: brightness(150%) drop-shadow(7px 7px 4px #1e1826) invert(0%);
+    transition: all 0.3s linear;
+}
+
+.playerForward15Seconds_MarchB:active {
+    filter: brightness(120%) drop-shadow(0 0 0 #1e1826) invert(100%);
+    transition: all 0.1s linear;
+}
+
+.playerFastForwardEnd_MarchB {
+    background: transparent;
+    border: 3px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/player/moto-moto-sc-vZKN6l6UFCA-unsplash.jpg) 30% stretch;
+    box-sizing: border-box;
+    color: #829bab;
+    cursor: pointer;
+    filter: brightness(130%) drop-shadow(10px 15px 4px #1e1826) invert(0%);
+    float: left;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 24px;
+    margin: 0 6px;
+    outline-color: #8f8c93;
+    padding: 6px 10px;
+    transition: all 0.4s linear;
+}
+
+.playerFastForwardEnd_MarchB:hover {
+    color: #772e05;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/player/moto-moto-sc-vZKN6l6UFCA-unsplash.jpg) 20% stretch;
+    filter: brightness(150%) drop-shadow(7px 7px 4px #1e1826) invert(0%);
+    transition: all 0.3s linear;
+}
+
+.playerFastForwardEnd_MarchB:active {
+    filter: brightness(120%) drop-shadow(0 0 0 #1e1826) invert(100%);
+    transition: all 0.1s linear;
+}
+
+.playerAtSpeed1_MarchB {
+    background: transparent;
+    border: 3px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/player/moto-moto-sc-vZKN6l6UFCA-unsplash.jpg) 30% stretch;
+    box-sizing: border-box;
+    color: #829bab;
+    cursor: pointer;
+    filter: brightness(130%) drop-shadow(10px 15px 4px #1e1826) invert(0%);
+    float: left;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 24px;
+    margin: 0 6px;
+    outline-color: #8f8c93;
+    padding: 6px 10px;
+    transition: all 0.4s linear;
+}
+
+.playerAtSpeed1_MarchB:hover {
+    color: #772e05;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/player/moto-moto-sc-vZKN6l6UFCA-unsplash.jpg) 20% stretch;
+    filter: brightness(150%) drop-shadow(7px 7px 4px #1e1826) invert(0%);
+    transition: all 0.3s linear;
+}
+
+.playerAtSpeed1_MarchB:active {
+    filter: brightness(120%) drop-shadow(0 0 0 #1e1826) invert(100%);
+    transition: all 0.1s linear;
+}
+
+.playerAtSpeed1point25_MarchB {
+    background: transparent;
+    border: 3px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/player/moto-moto-sc-vZKN6l6UFCA-unsplash.jpg) 30% stretch;
+    box-sizing: border-box;
+    color: #829bab;
+    cursor: pointer;
+    filter: brightness(130%) drop-shadow(10px 15px 4px #1e1826) invert(0%);
+    float: left;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 24px;
+    margin: 0 6px;
+    outline-color: #8f8c93;
+    padding: 6px 10px;
+    transition: all 0.4s linear;
+}
+
+.playerAtSpeed1point25_MarchB:hover {
+    color: #772e05;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/player/moto-moto-sc-vZKN6l6UFCA-unsplash.jpg) 20% stretch;
+    filter: brightness(150%) drop-shadow(7px 7px 4px #1e1826) invert(0%);
+    transition: all 0.3s linear;
+}
+
+.playerAtSpeed1point25_MarchB:active {
+    filter: brightness(120%) drop-shadow(0 0 0 #1e1826) invert(100%);
+    transition: all 0.1s linear;
+}
+
+.playerAtSpeed1point5_MarchB {
+    background: transparent;
+    border: 3px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/player/moto-moto-sc-vZKN6l6UFCA-unsplash.jpg) 30% stretch;
+    box-sizing: border-box;
+    color: #829bab;
+    cursor: pointer;
+    filter: brightness(130%) drop-shadow(10px 15px 4px #1e1826) invert(0%);
+    float: left;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 24px;
+    margin: 0 6px;
+    outline-color: #8f8c93;
+    padding: 6px 10px;
+    transition: all 0.4s linear;
+}
+
+.playerAtSpeed1point5_MarchB:hover {
+    color: #772e05;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/player/moto-moto-sc-vZKN6l6UFCA-unsplash.jpg) 20% stretch;
+    filter: brightness(150%) drop-shadow(7px 7px 4px #1e1826) invert(0%);
+    transition: all 0.3s linear;
+}
+
+.playerAtSpeed1point5_MarchB:active {
+    filter: brightness(120%) drop-shadow(0 0 0 #1e1826) invert(100%);
+    transition: all 0.1s linear;
+}
+
+.playerAtSpeed2_MarchB {
+    background: transparent;
+    border: 3px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/player/moto-moto-sc-vZKN6l6UFCA-unsplash.jpg) 30% stretch;
+    box-sizing: border-box;
+    color: #829bab;
+    cursor: pointer;
+    filter: brightness(130%) drop-shadow(10px 15px 4px #1e1826) invert(0%);
+    float: left;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 24px;
+    margin: 0 6px;
+    outline-color: #8f8c93;
+    padding: 6px 10px;
+    transition: all 0.4s linear;
+}
+
+.playerAtSpeed2_MarchB:hover {
+    color: #772e05;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/player/moto-moto-sc-vZKN6l6UFCA-unsplash.jpg) 20% stretch;
+    filter: brightness(150%) drop-shadow(7px 7px 4px #1e1826) invert(0%);
+    transition: all 0.3s linear;
+}
+
+.playerAtSpeed2_MarchB:active {
+    filter: brightness(120%) drop-shadow(0 0 0 #1e1826) invert(100%);
+    transition: all 0.1s linear;
+}
+
+.playerAtSpeedPoint5_MarchB {
+    background: transparent;
+    border: 3px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/player/moto-moto-sc-vZKN6l6UFCA-unsplash.jpg) 30% stretch;
+    box-sizing: border-box;
+    color: #829bab;
+    cursor: pointer;
+    filter: brightness(130%) drop-shadow(10px 15px 4px #1e1826) invert(0%);
+    float: left;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 24px;
+    margin: 0 6px;
+    outline-color: #8f8c93;
+    padding: 6px 10px;
+    transition: all 0.4s linear;
+}
+
+.playerAtSpeedPoint5_MarchB:hover {
+    color: #772e05;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/player/moto-moto-sc-vZKN6l6UFCA-unsplash.jpg) 20% stretch;
+    filter: brightness(150%) drop-shadow(7px 7px 4px #1e1826) invert(0%);
+    transition: all 0.3s linear;
+}
+
+.playerAtSpeedPoint5_MarchB:active {
+    filter: brightness(120%) drop-shadow(0 0 0 #1e1826) invert(100%);
+    transition: all 0.1s linear;
+}
+
+.playerAtSpeedPoint75_MarchB {
+    background: transparent;
+    border: 3px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/player/moto-moto-sc-vZKN6l6UFCA-unsplash.jpg) 30% stretch;
+    box-sizing: border-box;
+    color: #829bab;
+    cursor: pointer;
+    filter: brightness(130%) drop-shadow(10px 15px 4px #1e1826) invert(0%);
+    float: left;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 24px;
+    margin: 0 6px;
+    outline-color: #8f8c93;
+    padding: 6px 10px;
+    transition: all 0.4s linear;
+}
+
+.playerAtSpeedPoint75_MarchB:hover {
+    color: #772e05;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/player/moto-moto-sc-vZKN6l6UFCA-unsplash.jpg) 20% stretch;
+    filter: brightness(150%) drop-shadow(7px 7px 4px #1e1826) invert(0%);
+    transition: all 0.3s linear;
+}
+
+.playerAtSpeedPoint75_MarchB:active {
+    filter: brightness(120%) drop-shadow(0 0 0 #1e1826) invert(100%);
+    transition: all 0.1s linear;
+}
+
+.playerShareSaveDiv_MarchB {
+    position: relative;
+    transform: translateX(7.4vw) translateY(15vh);
+}
+
+.playerShareButton_MarchB {
+    background: transparent;
+    border: 3px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/player/moto-moto-sc-vZKN6l6UFCA-unsplash.jpg) 30% stretch;
+    box-sizing: border-box;
+    color: #829bab;
+    cursor: pointer;
+    filter: brightness(130%) drop-shadow(10px 15px 4px #1e1826) invert(0%);
+    float: left;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 30px;
+    margin: 0 6px;
+    outline-color: #8f8c93;
+    padding: 1px 6px;
+    transition: all 0.4s linear;
+    transform: translateX(450px) translateY(-100px);
+}
+
+.playerShareButton_MarchB:hover {
+    color: #772e05;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/player/moto-moto-sc-vZKN6l6UFCA-unsplash.jpg) 20% stretch;
+    filter: brightness(150%) drop-shadow(7px 7px 4px #1e1826) invert(0%);
+    transition: all 0.3s linear;
+}
+
+.playerShareButton_MarchB:active {
+    filter: brightness(120%) drop-shadow(0 0 0 #1e1826) invert(100%);
+    transition: all 0.1s linear;
+}
+
+.playerSaveButton_MarchB {
+    background: transparent;
+    border: 3px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/player/moto-moto-sc-vZKN6l6UFCA-unsplash.jpg) 30% stretch;
+    box-sizing: border-box;
+    color: #829bab;
+    cursor: pointer;
+    filter: brightness(130%) drop-shadow(10px 15px 4px #1e1826) invert(0%);
+    float: left;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 30px;
+    margin: 0 6px;
+    outline-color: #8f8c93;
+    padding: 1px 6px;
+    transition: all 0.4s linear;
+    transform: translateX(450px) translateY(-100px);
+}
+
+.playerSaveButton_MarchB:hover {
+    color: #772e05;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/player/moto-moto-sc-vZKN6l6UFCA-unsplash.jpg) 20% stretch;
+    filter: brightness(150%) drop-shadow(7px 7px 4px #1e1826) invert(0%);
+    transition: all 0.3s linear;
+}
+
+.playerSaveButton_MarchB:active {
+    filter: brightness(120%) drop-shadow(0 0 0 #1e1826) invert(100%);
+    transition: all 0.1s linear;
+}
+
+.shareSaveDivActive_MarchB {
+    background: #848280;
+    height: auto;
+    left: 20%;
+    opacity: 1;
+    position: absolute;
+    top: 20%;
+    transform: translateY(0px);
+    transition: all 0.5s linear;
+    width: 60%;
+    z-index: 17;
+}
+
+.shareSaveDivInactive_MarchB {
+    background: #848280;
+    height: auto;
+    left: 20%;
+    opacity: 0.2;
+    position: absolute;
+    top: 20%;
+    transform: translateY(2500px);
+    transition: all 0.5s linear;
+    width: 60%;
+    z-index: -17;
+}
+
+.shareOrSaveStatus_MarchB {
+    color: #030100;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 24px;
+    margin: 30px 5px 15px 30px;
+    transition: all 0.5s linear;
+}
+
+.shareOrSaveContent_MarchB {
+    color: #030100;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 24px;
+    margin: 30px 5px 15px 60px;
+}
+
+.playerShareSaveLinkUserNotes_MarchB {
+    background: #829bab;
+    border: solid 1px transparent;
+    color: #030100;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 18px;
+    margin: 5px 60px 5px 60px;
+    outline-color: #8f8c93;
+    width: 80%;
+}
+
+.playerRadioButtons_MarchB {
+    color: #030100;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 18px;
+    margin: 5px 60px 5px 60px;
+}
+
+.shareSaveDivActive_MarchB button {
+    background: transparent;
+    border: 3px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/player/moto-moto-sc-vZKN6l6UFCA-unsplash.jpg) 30% stretch;
+    box-sizing: border-box;
+    color: #829bab;
+    cursor: pointer;
+    filter: brightness(130%) drop-shadow(10px 15px 4px #1e1826) invert(0%);
+    float: left;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 30px;
+    margin: 40px 150px 40px 150px;
+    outline-color: #8f8c93;
+    padding: 5px 5px;
+    transition: all 0.4s linear;
+}
+
+.shareSaveDivActive_MarchB button:hover {
+    color: #772e05;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/player/moto-moto-sc-vZKN6l6UFCA-unsplash.jpg) 20% stretch;
+    filter: brightness(150%) drop-shadow(7px 7px 4px #1e1826) invert(0%);
+    transition: all 0.3s linear;
+}
+
+.shareSaveDivActive_MarchB button:active {
+    filter: brightness(120%) drop-shadow(0 0 0 #1e1826) invert(100%);
+    transition: all 0.1s linear;
+}
+
+.playerExit_MarchB {
+    background: transparent;
+    border: solid 1px transparent;
+    color: #bb9782;
+    cursor: pointer;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 48px;
+    left: 94%;
+    margin: 0 0 -10px 0;
+    position: relative;
+    top: 0;
+    width: 5%;
+}
+
+@media only screen and (max-width: 1400px) {
+    .playerShareButton_MarchB {
+
+        margin-right: 0;
+
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .playerDiv_MarchB {
+
+        height: 26vh;
+        justify-content: flex-start;
+        left: 5%;
+        opacity: 0.9;
+        position: relative;
+        top: 0;
+        width: 88%;
+    }
+
+    .playerFeedIcon_MarchB img {
+        height: 130px;
+        margin: 10px 10px;
+        width: 130px;
+    }
+
+    .playerPodcastTitle_MarchB {
+        font-size: 30px;
+        margin: 10px 0 10px 5px;
+    }
+
+    .playerEpisodeTitle_MarchB {
+        font-size: 24px;
+        margin: 4px 0 4px 5px;
+    }
+
+    .playerEpisodeAuthor_MarchB {
+        font-size: 18px;
+        margin: 4px 0 5px 5px;
+    }
+
+    .playerControlsDiv_MarchB {
+        margin: 35px 25px 4px -120px;
+        position: relative;
+        transform: scale(0.55);
+        width: 120%;
+    }
+
+    .playerProgressSlider_MarchB {
+
+        margin: 17px 0 10px 15px;
+        width: 50px;
+    }
+
+    .playerShareSaveDiv_MarchB {
+        position: relative;
+        transform: scale(0.5) translateX(-3vw) translateY(20vh);
+    }
+
+    .shareSaveDivActive_MarchB button {
+
+        margin: 40px 30px 40px 30px;
+        padding: 5px 5px;
+    }
+
+    .playerShareButton_MarchB {
+
+        margin-right: 0;
+
+    }
+
+    .playerShareButton_MarchB:active {
+        transition: all 0.1s linear;
+    }
+
+    .playerSaveButton_MarchB {
+
+        margin-right: 0;
+        transform: translateX(15px);
+    }
+
+    .playerSaveButton_MarchB:active {
+        transition: all 0.1s linear;
+    }
+
+    .playerProgressSlider_MarchB {
+        margin: 17px 0 10px 5px;
+        width: 150%;
+    }
+
+    .playerTabActive_MarchB {
+        font-size: 18px;
+        padding: 4px 0 4px 3px;
+        width: 30%;
+    }
+
+    .playerTabInactive_MarchB {
+        font-size: 18px;
+        padding: 4px 0 4px 3px;
+        width: 30%;
+    }
+
+    .episodesTitleBar_MarchB {
+        font-size: 18px;
+        height: auto;
+
+    }
+
+    .userEpisodeStatus_MarchB {
+
+        font-size: 12px;
+        padding: 4px 1px 4px 4px;
+        position: relative;
+        width: 2vw;
+    }
+
+    .userEpisodeItemsTitle_MarchB {
+        font-size: 12px;
+        padding: 4px 1px 4px 20px;
+        position: inherit;
+        width: 35vw;
+    }
+
+    .userEpisodeItemsAuthor_MarchB {
+        display: none;
+    }
+
+    .userEpisodePosition_MarchB {
+
+        font-size: 12px;
+        padding: 10px 1px 4px 16px;
+        width: 19vw;
+    }
+
+    .aboutThisPodcastImage_MarchB {
+        height: 40px;
+        margin: 5px;
+        width: 40px;
+    }
+
+    .aboutThisPodcastTitle_MarchB {
+
+        font-size: 18px;
+
+    }
+
+    .aboutThisPodcastAuthor_MarchB {
+
+        font-size: 12px;
+    }
+
+    .aboutThisPodcastDescription_MarchB {
+
+        font-size: 12px;
+        margin: 5px 50px 100px 5px;
+        max-width: 750px;
+    }
+
+    .detailsTitle_MarchB {
+
+        font-size: 18px;
+        margin: 15px 15px 15px 15px;
+    }
+
+    .detailsEpisodeTitle_MarchB {
+
+        font-size: 18px;
+        margin: 15px;
+    }
+
+    .detailsContent_MarchB {
+
+        font-size: 12px;
+
+        max-width: 300px;
+        padding: 4px 16px 50px 5px;
+    }
+
+    .detailsContent_MarchB a {
+        text-decoration: underline;
+    }
+
+    .scrollerDiv {
+        height: 1300px;
+    }
+
+    .playerExit_MarchB {
+
+        font-size: 24px;
+        margin: 0 0 -10px 0;
+        position: relative;
+        left: 91%;
+        top: 0;
+        width: 5%;
+    }
+
+    .shareSaveDivActive_MarchB {
+
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 17;
+    }
+
+    .shareSaveDivInactive_MarchB {
+        height: auto;
+        left: 20%;
+        opacity: 0.2;
+        position: absolute;
+        top: 20%;
+        transform: translateY(-500px);
+        width: 60%;
+        z-index: -17;
+    }
+
+    .scrollerDiv {
+        height: 950px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .playerDiv_MarchB {
+
+        height: 26vh;
+        justify-content: flex-start;
+        left: 5%;
+        opacity: 0.9;
+        position: relative;
+        top: 0;
+        width: 88%;
+    }
+
+    .playerFeedIcon_MarchB img {
+        height: 130px;
+        margin: 10px 10px;
+        width: 130px;
+    }
+
+    .playerPodcastTitle_MarchB {
+        font-size: 30px;
+        margin: 10px 0 10px 5px;
+    }
+
+    .playerEpisodeTitle_MarchB {
+        font-size: 24px;
+        margin: 4px 0 4px 5px;
+    }
+
+    .playerEpisodeAuthor_MarchB {
+        font-size: 18px;
+        margin: 4px 0 5px 5px;
+    }
+
+    .playerControlsDiv_MarchB {
+        margin: 35px 25px 4px -120px;
+        position: relative;
+        transform: scale(0.55);
+        width: 120%;
+    }
+
+    .playerProgressSlider_MarchB {
+
+        margin: 17px 0 10px 15px;
+        width: 50px;
+    }
+
+    .playerShareSaveDiv_MarchB {
+        position: relative;
+        transform: scale(0.5) translateX(-3vw) translateY(20vh);
+    }
+
+    .shareSaveDivActive_MarchB button {
+
+        margin: 40px 30px 40px 30px;
+        padding: 5px 5px;
+        transition: all 0.4s linear;
+    }
+
+    .playerShareButton_MarchB {
+
+        margin-right: 0;
+
+    }
+
+    .playerShareButton_MarchB:active {
+        transition: all 0.1s linear;
+    }
+
+    .playerSaveButton_MarchB {
+
+        margin-right: 0;
+        transform: translateX(15px);
+    }
+
+    .playerSaveButton_MarchB:active {
+        transition: all 0.1s linear;
+    }
+
+    .playerProgressSlider_MarchB {
+        margin: 17px 0 10px 5px;
+        width: 150%;
+    }
+
+    .playerTabActive_MarchB {
+        font-size: 18px;
+        padding: 4px 0 4px 3px;
+        width: 30%;
+    }
+
+    .playerTabInactive_MarchB {
+        font-size: 18px;
+        padding: 4px 0 4px 3px;
+        width: 30%;
+    }
+
+    .episodesTitleBar_MarchB {
+        font-size: 18px;
+        height: auto;
+
+    }
+
+    .userEpisodeStatus_MarchB {
+
+        font-size: 12px;
+        padding: 4px 1px 4px 4px;
+        position: relative;
+        width: 2vw;
+    }
+
+    .userEpisodeItemsTitle_MarchB {
+        font-size: 12px;
+        padding: 4px 1px 4px 20px;
+        position: inherit;
+        width: 35vw;
+    }
+
+    .userEpisodeItemsAuthor_MarchB {
+        display: none;
+    }
+
+    .userEpisodePosition_MarchB {
+
+        font-size: 12px;
+        padding: 10px 1px 4px 16px;
+        width: 19vw;
+    }
+
+    .aboutThisPodcastImage_MarchB {
+        height: 40px;
+        margin: 5px;
+        width: 40px;
+    }
+
+    .aboutThisPodcastTitle_MarchB {
+
+        font-size: 18px;
+
+    }
+
+    .aboutThisPodcastAuthor_MarchB {
+
+        font-size: 12px;
+    }
+
+    .aboutThisPodcastDescription_MarchB {
+
+        font-size: 12px;
+        margin: 5px 50px 100px 5px;
+        max-width: 750px;
+    }
+
+    .detailsTitle_MarchB {
+
+        font-size: 18px;
+        margin: 15px 15px 15px 15px;
+    }
+
+    .detailsEpisodeTitle_MarchB {
+
+        font-size: 18px;
+        margin: 15px;
+    }
+
+    .detailsContent_MarchB {
+
+        font-size: 12px;
+
+        max-width: 300px;
+        padding: 4px 16px 50px 5px;
+    }
+
+    .detailsContent_MarchB a {
+        text-decoration: underline;
+    }
+
+    .scrollerDiv {
+        height: 640px;
+    }
+
+    .playerExit_MarchB {
+
+        font-size: 24px;
+        margin: 0 0 -10px 0;
+        position: relative;
+        left: 91%;
+        top: 0;
+        width: 5%;
+    }
+
+    .shareSaveDivActive_MarchB {
+
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 17;
+    }
+
+    .shareSaveDivInactive_MarchB {
+        height: auto;
+        left: 20%;
+        opacity: 0.2;
+        position: absolute;
+        top: 20%;
+        transform: translateY(-500px);
+        width: 60%;
+        z-index: -17;
+    }
+
+    .scrollerDiv {
+        height: 950px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .playerFeedIcon_MarchB img {
+        height: 50px;
+        margin: 10px 5px;
+        width: 50px;
+    }
+
+    .playerPodcastTitle_MarchB {
+        font-size: 18px;
+        margin: 10px 0 10px 5px;
+    }
+
+    .playerEpisodeTitle_MarchB {
+        font-size: 18px;
+        margin: 4px 0 4px 5px;
+    }
+
+    .playerEpisodeAuthor_MarchB {
+        font-size: 12px;
+        margin: 4px 0 5px 5px;
+    }
+
+    .playerControlsDiv_MarchB {
+        margin: 35px 5px 4px -120px;
+        position: relative;
+        transform: scale(0.5);
+        width: 150%;
+    }
+
+    .playerShareSaveDiv_MarchB {
+        position: relative;
+        transform: scale(0.5) translateX(-3vw) translateY(15vh);
+    }
+
+    .shareSaveDivActive_MarchB button {
+
+        margin: 40px 30px 40px 30px;
+        padding: 5px 5px;
+        transition: all 0.4s linear;
+    }
+
+    .playerShareButton_MarchB {
+
+        margin-right: 0;
+
+    }
+
+    .playerShareButton_MarchB:active {
+        transition: all 0.1s linear;
+    }
+
+    .playerSaveButton_MarchB {
+
+        margin-right: 0;
+        transform: translateX(-190px) translateY(-53px);
+    }
+
+    .playerSaveButton_MarchB:active {
+        box-shadow: -3px -3px transparent;
+        transition: all 0.1s linear;
+    }
+
+    .playerProgressSlider_MarchB {
+        margin: 17px 0 10px 5px;
+        width: 150%;
+    }
+
+    .playerTabActive_MarchB {
+        font-size: 18px;
+        padding: 4px 0 4px 3px;
+        width: 30%;
+    }
+
+    .playerTabInactive_MarchB {
+        font-size: 18px;
+        padding: 4px 0 4px 3px;
+        width: 30%;
+    }
+
+    .episodesTitleBar_MarchB {
+        font-size: 18px;
+        height: auto;
+
+    }
+
+    .userEpisodeStatus_MarchB {
+
+        font-size: 12px;
+        padding: 4px 1px 4px 4px;
+        position: relative;
+        width: 2vw;
+    }
+
+    .userEpisodeItemsTitle_MarchB {
+        font-size: 12px;
+        padding: 4px 1px 4px 20px;
+        position: inherit;
+        width: 35vw;
+    }
+
+    .userEpisodeItemsAuthor_MarchB {
+        display: none;
+    }
+
+    .userEpisodePosition_MarchB {
+
+        font-size: 12px;
+        padding: 10px 1px 4px 16px;
+        width: 19vw;
+    }
+
+    .aboutThisPodcastImage_MarchB {
+        height: 40px;
+        margin: 5px;
+        width: 40px;
+    }
+
+    .aboutThisPodcastTitle_MarchB {
+
+        font-size: 18px;
+
+    }
+
+    .aboutThisPodcastAuthor_MarchB {
+
+        font-size: 12px;
+    }
+
+    .aboutThisPodcastDescription_MarchB {
+
+        font-size: 12px;
+        margin: 5px 50px 100px 5px;
+        max-width: 750px;
+    }
+
+    .detailsTitle_MarchB {
+
+        font-size: 18px;
+        margin: 15px 15px 15px 15px;
+    }
+
+    .detailsEpisodeTitle_MarchB {
+
+        font-size: 18px;
+        margin: 15px;
+    }
+
+    .detailsContent_MarchB {
+
+        font-size: 12px;
+
+        max-width: 300px;
+        padding: 4px 16px 50px 5px;
+    }
+
+    .detailsContent_MarchB a {
+        text-decoration: underline;
+    }
+
+    .scrollerDiv {
+        height: 640px;
+    }
+
+    .playerExit_MarchB {
+
+        font-size: 24px;
+        margin: 0 0 -10px 0;
+        position: relative;
+        left: 91%;
+        top: 0;
+        width: 5%;
+    }
+
+    .shareSaveDivActive_MarchB {
+
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 17;
+    }
+
+    .shareSaveDivInactive_MarchB {
+        height: auto;
+        left: 20%;
+        opacity: 0.2;
+        position: absolute;
+        top: 20%;
+        transform: translateY(-500px);
+        width: 60%;
+        z-index: -17;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+
+    .playerShareButton_MarchB {
+
+        margin-right: 1vh;
+
+    }
+
+    .playerSaveButton_MarchB {
+
+        margin-right: 1vh;
+        transform: translateX(50px);
+
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .playerFeedIcon_MarchB img {
+        height: 50px;
+        margin: 10px 5px;
+        width: 50px;
+    }
+
+    .playerPodcastTitle_MarchB {
+        font-size: 18px;
+        margin: 10px 0 10px 5px;
+    }
+
+    .playerEpisodeTitle_MarchB {
+        font-size: 18px;
+        margin: 4px 0 4px 5px;
+    }
+
+    .playerEpisodeAuthor_MarchB {
+        font-size: 12px;
+        margin: 4px 0 5px 5px;
+    }
+
+    .playerControlsDiv_MarchB {
+        margin: 35px 5px 4px -120px;
+        position: relative;
+        transform: scale(0.5);
+        width: 150%;
+    }
+
+    .playerShareSaveDiv_MarchB {
+        position: relative;
+        transform: scale(0.5) translateX(7.4vw) translateY(15vh);
+    }
+
+    .playerShareButton_MarchB {
+
+        margin-right: 1vh;
+
+    }
+
+    .playerSaveButton_MarchB {
+
+        margin-right: 1vh;
+
+    }
+
+    .playerProgressSlider_MarchB {
+        margin: 17px 0 10px 5px;
+        width: 150%;
+    }
+
+    .playerTabActive_MarchB {
+        font-size: 18px;
+        padding: 4px 0 4px 3px;
+        width: 30%;
+    }
+
+    .playerTabInactive_MarchB {
+        font-size: 18px;
+        padding: 4px 0 4px 3px;
+        width: 30%;
+    }
+
+    .episodesTitleBar_MarchB {
+        font-size: 18px;
+        height: auto;
+
+    }
+
+    .userEpisodeStatus_MarchB {
+
+        font-size: 12px;
+        padding: 4px 1px 4px 4px;
+        position: relative;
+        width: 2vw;
+    }
+
+    .userEpisodeItemsTitle_MarchB {
+        font-size: 12px;
+        padding: 4px 1px 4px 20px;
+        position: inherit;
+        width: 35vw;
+    }
+
+    .userEpisodeItemsAuthor_MarchB {
+        display: none;
+    }
+
+    .userEpisodePosition_MarchB {
+
+        font-size: 12px;
+        padding: 10px 1px 4px 16px;
+        width: 19vw;
+    }
+
+    .aboutThisPodcastImage_MarchB {
+        height: 40px;
+        margin: 5px;
+        width: 40px;
+    }
+
+    .aboutThisPodcastTitle_MarchB {
+
+        font-size: 18px;
+
+    }
+
+    .aboutThisPodcastAuthor_MarchB {
+
+        font-size: 12px;
+    }
+
+    .aboutThisPodcastDescription_MarchB {
+
+        font-size: 12px;
+        margin: 5px 50px 100px 5px;
+        max-width: 750px;
+    }
+
+    .detailsTitle_MarchB {
+
+        font-size: 18px;
+        margin: 15px 15px 15px 15px;
+    }
+
+    .detailsEpisodeTitle_MarchB {
+
+        font-size: 18px;
+        margin: 15px;
+    }
+
+    .detailsContent_MarchB {
+
+        font-size: 12px;
+
+        max-width: 300px;
+        padding: 4px 16px 50px 5px;
+    }
+
+    .detailsContent_MarchB a {
+        text-decoration: underline;
+    }
+
+    .scrollerDiv {
+        height: 640px;
+    }
+
+    .playerExit_MarchB {
+
+        font-size: 24px;
+        margin: 0 0 -10px 0;
+        position: relative;
+        left: 91%;
+        top: 0;
+        width: 5%;
+    }
+
+    .shareSaveDivActive_MarchB {
+
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 17;
+    }
+
+    .shareSaveDivInactive_MarchB {
+        height: auto;
+        left: 20%;
+        opacity: 0.2;
+        position: absolute;
+        top: 20%;
+        transform: translateY(-500px);
+        width: 60%;
+        z-index: -17;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .playerFeedIcon_MarchB img {
+        height: 50px;
+        margin: 10px 5px;
+        width: 50px;
+    }
+
+    .playerPodcastTitle_MarchB {
+        font-size: 18px;
+        margin: 10px 0 10px 5px;
+    }
+
+    .playerEpisodeTitle_MarchB {
+        font-size: 18px;
+        margin: 4px 0 4px 5px;
+    }
+
+    .playerEpisodeAuthor_MarchB {
+        font-size: 12px;
+        margin: 4px 0 5px 5px;
+    }
+
+    .playerControlsDiv_MarchB {
+        margin: 35px 5px 4px -120px;
+        position: relative;
+        transform: scale(0.5);
+        width: 150%;
+    }
+
+    .playerShareSaveDiv_MarchB {
+        position: relative;
+        transform: scale(0.5) translateX(1.4vw) translateY(10vh);
+    }
+
+    .playerShareButton_MarchB {
+
+        margin-right: 1vh;
+        transform: translateX(-30px) translateY(-8px);
+
+    }
+
+    .playerSaveButton_MarchB {
+
+        margin-right: 1vh;
+
+    }
+
+    .playerProgressSlider_MarchB {
+        margin: 17px 0 10px 5px;
+        width: 150%;
+    }
+
+    .playerTabActive_MarchB {
+        font-size: 18px;
+        padding: 4px 0 4px 3px;
+        width: 30%;
+    }
+
+    .playerTabInactive_MarchB {
+        font-size: 18px;
+        padding: 4px 0 4px 3px;
+        width: 30%;
+    }
+
+    .episodesTitleBar_MarchB {
+        font-size: 18px;
+        height: auto;
+
+    }
+
+    .userEpisodeStatus_MarchB {
+
+        font-size: 12px;
+        padding: 4px 1px 4px 4px;
+        position: relative;
+        width: 2vw;
+    }
+
+    .userEpisodeItemsTitle_MarchB {
+        font-size: 12px;
+        padding: 4px 1px 4px 20px;
+        position: inherit;
+        width: 35vw;
+    }
+
+    .userEpisodeItemsAuthor_MarchB {
+        display: none;
+    }
+
+    .userEpisodePosition_MarchB {
+
+        font-size: 12px;
+        padding: 10px 1px 4px 16px;
+        width: 19vw;
+    }
+
+    .aboutThisPodcastImage_MarchB {
+        height: 40px;
+        margin: 5px;
+        width: 40px;
+    }
+
+    .aboutThisPodcastTitle_MarchB {
+
+        font-size: 18px;
+
+    }
+
+    .aboutThisPodcastAuthor_MarchB {
+
+        font-size: 12px;
+    }
+
+    .aboutThisPodcastDescription_MarchB {
+
+        font-size: 12px;
+        margin: 5px 5px 100px 5px;
+        max-width: 300px;
+    }
+
+    .detailsTitle_MarchB {
+
+        font-size: 18px;
+        margin: 15px 15px 15px 15px;
+    }
+
+    .detailsEpisodeTitle_MarchB {
+
+        font-size: 18px;
+        margin: 15px;
+    }
+
+    .detailsContent_MarchB {
+
+        font-size: 12px;
+
+        max-width: 250px;
+        padding: 4px 16px 50px 5px;
+    }
+
+    .detailsContent_MarchB a {
+        color: #a75853;
+        text-decoration: underline;
+    }
+
+    .scrollerDiv {
+        height: 640px;
+    }
+
+    .playerExit_MarchB {
+
+        font-size: 24px;
+        margin: 0 0 -10px 0;
+        position: relative;
+        left: 91%;
+        top: 0;
+        width: 5%;
+    }
+
+    .shareSaveDivActive_MarchB {
+
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 17;
+    }
+
+    .shareSaveDivInactive_MarchB {
+        height: auto;
+        left: 20%;
+        opacity: 0.2;
+        position: absolute;
+        top: 20%;
+        transform: translateY(-500px);
+        width: 60%;
+        z-index: -17;
+    }
+}
