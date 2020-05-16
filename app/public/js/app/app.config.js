@@ -81,6 +81,12 @@
                 url: '/newusersignup',
                 parent: 'app',
                 component: 'newusersignup'
+            })
+            .state({
+                name: 'wednesday',
+                url: '/wednesday/:userUuid',
+                parent: 'app',
+                component: 'wednesday'
             });
     }
 
