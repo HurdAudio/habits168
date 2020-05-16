@@ -531,7 +531,7 @@
                     podcast: vm.tabPodcast,
                     sort: 'up',
                     subscriptions: [],
-                    tab: 'tuesdayTabInactive' + vm.mondayMonth,
+                    tab: 'tuesdayTabInactive' + vm.tuesdayMonth,
                     title: tuesdayTabNameInput.value
                 }
                 tueSubs.push(subObj);
@@ -629,7 +629,7 @@
             vm.tabCreateEditEngaged = true;
             vm.tabPodcast = tab.podcast;
             vm.editingTab = tab;
-            vm.managerModalState = 'mondayManageTabsSubsModalBlur' + vm.tuesdayMonth;
+            vm.managerModalState = 'tuesdayManageTabsSubsModalBlur' + vm.tuesdayMonth;
             vm.tuesdayCreateEditTabText = 'Edit tab:';
             setTimeout(() => {
                 let tuesdayTabNameInput = document.getElementById('tuesdayTabNameInput');

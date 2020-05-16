@@ -76,6 +76,30 @@ exports.seed = function(knex, Promise) {
           title: 'Meet the Composer',
           created_at: new Date('2019-06-01 17:21:00.000 UTC'),
           updated_at: new Date('2019-06-01 17:21:00.000 UTC')
+        },
+          {
+          uuid: 'e77fb9d5-5df2-40fd-9010-0d65435c49ca',
+          author: 'Book Riot',
+          description: 'Book Riot - The Podcast is a weekly news and talk show about what\'s new, cool, and worth talking about in the world of books and reading, brought to you by the editors of BookRiot.com',
+          link: 'https://bookriot.com/listen/shows/thepodcast/',
+          image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/bookRiotPodcast.jpg',
+          items: null,
+          rss: 'https://omny.fm/shows/book-riot-the-podcast-1/playlists/podcast.rss',
+          title: 'Book Riot - The Podcast',
+          created_at: new Date('2019-06-01 17:21:00.000 UTC'),
+          updated_at: new Date('2019-06-01 17:21:00.000 UTC')
+        },
+          {
+          uuid: 'ced9116d-00e6-4b86-b99a-b50c65b1be7b',
+          author: 'Devchat.tv',
+          description: 'A weekly exploration into the people who make JavaScript what it is.',
+          link: 'http://devchat.tv/my-js-story',
+          image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/MyJSStory.jpg',
+          items: null,
+          rss: 'https://feeds.feedwrench.com/my-js-story.rss',
+          title: 'My JavaScript Story',
+          created_at: new Date('2019-06-01 17:21:00.000 UTC'),
+          updated_at: new Date('2019-06-01 17:21:00.000 UTC')
         }
       ]);
     });
