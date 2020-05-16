@@ -1,0 +1,198 @@
+.newUserContainerActive_JanuaryB {
+    filter: blur(0);
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.newUserContainerBlur_JanuaryB {
+    filter: blur(13px);
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.newUserSignupImageDiv_JanuaryB {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/newusersignup/january/dylan-calluy-AhioIvUGklE-unsplash.jpg);
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.newUserNavbar_JanuaryB {
+    backdrop-filter: blur(6px) hue-rotate(-45deg) saturate(110%);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Inter', sans-serif;
+    height: 12vh;
+    justify-content: left;
+    left: 0;
+    padding-left: 25px;
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+
+.newUserLogoNav_JanuaryB {
+    cursor: pointer;
+    filter: brightness(100%) hue-rotate(-45deg) saturate(100%);
+    max-height: 12vh;
+    max-width: 155px;
+}
+
+.newUserSignupTitle_JanuaryB {
+    color: #d1e0ee;
+    font-family: 'Inter', sans-serif;
+    font-size: 48px;
+    margin: 3vh 185px;
+}
+
+.newUserMasterFormDiv_JanuaryB {
+    backdrop-filter: sepia(30%);
+    box-shadow: 5px 5px 5px #253a4b, -5px 5px 5px #253a4b, 5px -5px 5px #253a4b, -5px -5px 5px #253a4b;
+    display: grid;
+    grid-template-columns: [col1] 1fr [col2] 1fr [col3] 1fr [col4] 1fr [col5] 1fr [col6] 1fr [col7] 1fr [col8] 1fr [col9] 1fr [col10] 1fr [col11] 1fr [colEnd];
+    grid-template-rows: [row1] 1fr [row2] 1fr [row3] 1fr [row4] 1fr [row5] 1fr [row6] 1fr [row7] 1fr [row8] 1fr [row9] 1fr [row10] 1fr [row11] 1fr [rowEnd];
+    height: 70vh;
+    left: 10%;
+    position: relative;
+    top: 10vh;
+    width: 80%;
+}
+
+.newUserSignupFormWelcomeLine_JanuaryB {
+    color: #021c2c;
+    filter: brightness(50%) saturate(300%);
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    grid-column: col2 / col12;
+    grid-row: row2 / row3;
+    text-shadow: 2px 2px 5px #253a4b;
+}
+
+.newUserTextBoxFirstName_JanuaryB {
+    background: #c0d4e4;
+    border: none;
+    box-shadow: 2px 2px 5px #253a4b, -2px 2px 5px #253a4b, 2px -2px 5px #253a4b, -2px -2px 2px #253a4b;
+    color: #021c2c;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    height: 24px;
+    grid-column: col3 / col6;
+    grid-row: row4 / row5;
+    outline-color: #95afc3;
+}
+
+.newUserTextBoxLastName_JanuaryB {
+    background: #c0d4e4;
+    border: none;
+    box-shadow: 2px 2px 5px #253a4b, -2px 2px 5px #253a4b, 2px -2px 5px #253a4b, -2px -2px 2px #253a4b;
+    color: #021c2c;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    height: 24px;
+    grid-column: col7 / col10;
+    grid-row: row4 / row5;
+    outline-color: #95afc3;
+}
+
+.newUserTextBoxEmail_JanuaryB {
+    background: #c0d4e4;
+    border: none;
+    box-shadow: 2px 2px 5px #253a4b, -2px 2px 5px #253a4b, 2px -2px 5px #253a4b, -2px -2px 2px #253a4b;
+    color: #021c2c;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    height: 24px;
+    grid-column: col3 / col6;
+    grid-row: row5 / row6;
+    outline-color: #95afc3;
+}
+
+.newUserTextBoxPassword_JanuaryB {
+    background: #c0d4e4;
+    border: none;
+    box-shadow: 2px 2px 5px #253a4b, -2px 2px 5px #253a4b, 2px -2px 5px #253a4b, -2px -2px 2px #253a4b;
+    color: #021c2c;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    height: 24px;
+    grid-column: col7 / col10;
+    grid-row: row5 / row6;
+    outline-color: #95afc3;
+}
+
+.newUserTextBoxConfirmPassword_JanuaryB {
+    background: #c0d4e4;
+    border: none;
+    box-shadow: 2px 2px 5px #253a4b, -2px 2px 5px #253a4b, 2px -2px 5px #253a4b, -2px -2px 2px #253a4b;
+    color: #021c2c;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    height: 24px;
+    grid-column: col7 / col10;
+    grid-row: row6 / row7;
+    outline-color: #95afc3;
+}
+
+.newUserSignupFormErrorMessageing_JanuaryB {
+    color: #ff0000;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    grid-column: col3 / col10;
+    grid-row: row8 / row9;
+}
+
+.newUserSignupFormMessaging_JanuaryB {
+    color: #021c2c;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    grid-column: col3 / col10;
+    grid-row: row9 / row10;
+}
+
+.newUserSignupSubmitButton_JanuaryB {
+    background: linear-gradient(145deg, #021c2c, #054670);
+    border: none;
+    color: #d1e0ee;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    grid-column: col6 / col7;
+    grid-row: row10 / row11;
+    outline-color: #95afc3;
+    padding: 5px 4px 0 4px;
+    transform: skew(-15deg);
+    transition: all 0.4s linear;
+}
+
+.newUserSignupSubmitButton_JanuaryB:hover {
+    background: linear-gradient(145deg, #82a3b8, #d1e0ee);
+    color: #021c2c;
+    transform: skew(-5deg);
+    transition: all 0.4s linear;
+}
+
+.newUserSignupSubmitButton_JanuaryB:active {
+    background: #387cab;
+    color: #404d58;
+    transition: all 0.2s linear;
+}
