@@ -139,7 +139,6 @@
 }
 
 .browsePodcastsByCategory_JanuaryC {
-    display: none;
     backdrop-filter: blur(4px);
     background: #a0b8db;
     border-right: 1px solid #33669d;
@@ -207,10 +206,9 @@
 }
 
 .browsePodCategoricalFeeds_generic_JanuaryC {
-    display: none;
     backdrop-filter: blur(38px);
     border: 2px solid transparent;
-    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/january/ruedi-haberli-aenmKjVL1SM-unsplash.jpg) 10 stretch;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/january/ruedi-haberli-aenmKjVL1SM-unsplash.jpg) 20% stretch;
     box-sizing: border-box;
     height: 77vh;
     margin: 15px;
@@ -220,7 +218,6 @@
 }
 
 .browsePodCategoricalFeeds_JanuaryC {
-    display: none;
     backdrop-filter: blur(38px);
     border: 2px solid transparent;
     border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/january/ruedi-haberli-aenmKjVL1SM-unsplash.jpg) 10% stretch;
@@ -242,9 +239,8 @@
 }
 
 .browseFeedsPodcastContainer_generic_JanuaryC {
-    display: none;
     cursor: pointer;
-/*    display: flex;*/
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -252,7 +248,6 @@
 }
 
 .browseFeedsPodcastContainer_generic_JanuaryC img {
-    display: none;
     height: 50px;
     margin: 0 15px 0 0;
     width: 50px;
@@ -265,8 +260,7 @@
 }
 
 .browsePodCategoricalFeeds_generic_JanuaryC p {
-    display: none;
-    color: #0a101d;
+    color: #070e13;
     font-family: 'Cantarell', sans-serif;
     font-size: 18px;
 }
@@ -341,10 +335,9 @@
 }
 
 .browseIndividualPodFeedData_generic_JanuaryC {
-    display: none;
     backdrop-filter: blur(38px);
     border: 2px solid transparent;
-    border-image: url() 10 stretch;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/january/ruedi-haberli-aenmKjVL1SM-unsplash.jpg) 30% stretch;
     box-sizing: border-box;
     height: 77vh;
     margin: 15px;
@@ -360,8 +353,7 @@
 }
 
 .browseIndividualPodFeedData_generic_JanuaryC h3 {
-    display: none;
-    color: #0a101d;
+    color: #070e13;
     font-family: 'Cantarell', sans-serif;
     font-size: 36px;
     margin: 5px 10%;
@@ -369,8 +361,7 @@
 }
 
 .browseIndividualPodFeedData_generic_JanuaryC p {
-    display: none;
-    color: #0a101d;
+    color: #070e13;
     font-family: 'Cantarell', sans-serif;
     font-size: 18px;
     margin: 15px 10%;
@@ -378,30 +369,28 @@
 }
 
 .browseIndividualPodFeedData_generic_JanuaryC button {
-    display: none;
-    background: #968c83;
+    background: #4071b6;
     border: none;
-    color: #17242f;
+    color: #0c1625;
     cursor: pointer;
     font-family: 'Cantarell', sans-serif;
     font-size: 24px;
     margin: 30px 35%;
-    outline-color: #c5c0be;
+    outline-color: #b1beca;
     transform: skew(-15deg);
     transition: all 0.4s linear;
 }
 
 .browseIndividualPodFeedData_generic_JanuaryC button:hover {
-    background: #19294a;
-    color: #b4cadf;
-    outline-color: #c5c0be;
+    background: #1f395e;
+    color: #aab4bd;
     transform: skew(-5deg);
     transition: all 0.4s linear;
 }
 
 .browseIndividualPodFeedData_generic_JanuaryC button:active {
-    background: #b4cadf;
-    color: #19294a;
+    background: #aab4bd;
+    color: #1f395e;
     transition: all 0.4s linear;
 }
 
