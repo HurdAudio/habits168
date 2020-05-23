@@ -93,6 +93,33 @@
                 vm.newBlogTabInput = false;
             }
         }
+        
+        function subTabsToTuesday() {
+            vm.blogSubTabs = [];
+            $http.get(`/tuesday_subscriptions/assembled/${vm.user.uuid}`)
+            .then(tuesdaySubsData => {
+                const tuesdaySubs = tuesdaySubsData.data;
+                for (let i = 0; i < tuesdaySubs.length; i++) {
+                    if (tuesdaySubs[i].title === 'Dailies') {
+                        vm.blogSubTabs.push({
+                            title: 'add new tab'
+                        });
+                        if (i === 0) {
+                            vm.newBlogTabInput = true;
+                            vm.currentSubTab = null;
+                        }
+                    } else {
+                        vm.blogSubTabs.push({
+                            title: tuesdaySubs[i].title,
+                            podcast: tuesdaySubs[i].podcast
+                        });
+                        if (i === 0) {
+                            vm.currentSubTab = tuesdaySubs[i].title;
+                        }
+                    }
+                }
+            });
+        }
 
         function subTabsToMonday() {
             vm.blogSubTabs = [];
@@ -130,6 +157,9 @@
                 case ('monday'):
                     subTabsToMonday();
                     break;
+                case ('tuesday'):
+                    subTabsToTuesday();
+                    break;
                 default:
                     alert('unsupported destination');
             }
@@ -151,8 +181,38 @@
             vm.browseSubscriptionModalState = 'browseSubscriptionModalActive' + vm.browseMonth;
             vm.currentAdder = 'podcast';
         }
+        
+        function checkTuesdaySubscriptions() {
+            $http.get(`/tuesday_subscriptions/assembled/${vm.user.uuid}`)
+                .then(tuesdaySubsData => {
+                    const tuesdaySubs = tuesdaySubsData.data;
+                    console.log(tuesdaySubs);
+                    for (let i = 0; i < tuesdaySubs.length; i++) {
+                        for (let j = 0; j < tuesdaySubs[i].subscriptions.length; j++) {
+                            if ((tuesdaySubs[i].subscriptions[j].uuid === vm.currentFeed.uuid) || (tuesdaySubs[i].subscriptions[j].uuid === vm.currentPodcastFeed.uuid)) {
+                                if (tuesdaySubs[i].podcast) {
+                                    vm.currentPodcastFeed.subscribed = true;
+                                } else {
+                                    vm.currentFeed.subscribed = true;
+                                }
+                                if (tuesdaySubs[i].title === 'Dailies') {
+                                    vm.currentFeed.subscriptionString = 'Currently subscribed as a Dailies subscription.'
+                                } else {
+                                    if (tuesdaySubs[i].podcast) {
+                                        vm.currentPodcastFeed.subscriptionString = `Currently subscribed for Tuesday: ${tuesdaySubs[i].title} tab.`;
+                                    } else {
+                                        vm.currentFeed.subscriptionString = `Currently subscribed for Tuesday: ${tuesdaySubs[i].title} tab.`;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                });
+        }
 
         function checkMondaySubscriptions() {
+            vm.currentPodcastFeed.subscribed = false;
+            vm.currentFeed.subscribed = false;
             $http.get(`/monday_subscriptions/assembled/${vm.user.uuid}`)
                 .then(mondaySubsData => {
                     const mondaySubs = mondaySubsData.data;
@@ -175,6 +235,12 @@
                                 }
                             }
                         }
+                    }
+                    console.log(vm.currentFeed.subscribed);
+                    console.log(vm.currentPodcastFeed.subscribed);
+                    if ((!vm.currentPodcastFeed.subscribed) && (!vm.currentFeed.subscribed)) {
+                        console.log('next day');
+                        checkTuesdaySubscriptions();
                     }
                 });
         }
