@@ -1,0 +1,888 @@
+.tuesdayBackgroundDiv_FebruaryA {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/february/buttons-4939213_1920.jpg);
+    background-size: 100%;
+    height: 100%;
+    left: 0;
+    opacity: 1;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.tuesdayContainerActive_FebruaryA {
+    filter: blur(0px);
+}
+
+.tuesdayContainerInactive_FebruaryA {
+    filter: blur(15px);
+}
+
+.tuesdayTitleStrip_FebruaryA {
+    background: #c4c2c0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Jost', sans-serif;
+    height: auto;
+    justify-content: flex-start;
+    opacity: 0.9;
+    padding: 4px 2vw 4px 2vw;
+    width: 100%;
+}
+
+.tuesdayLogo_FebruaryA {
+    cursor: pointer;
+    filter: drop-shadow(8px 12px 4px #2e2b28);
+    max-width: 85px;
+}
+
+.tuesdayReadingPlaylistTitle_FebruaryA {
+    color: #0f0d0b;
+    font-size: 54px;
+    margin: 15px 0 0 96px;
+}
+
+.tuesdayTabStrip_FebruaryA {
+    background: #bab6b2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Jost', sans-serif;
+    height: auto;
+    opacity: 0.7;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.tuesdayTabActive_FebruaryA {
+    background: #e1d8ad;
+    color: #0f0d0b;
+    cursor: none;
+    font-size: 30px;
+    padding: 2px 55px 2px 5px;
+    transition: all 0.5s linear;
+}
+
+.tuesdayTabInactive_FebruaryA {
+    background: transparent;
+    color: #f0ecd6;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 2px 25px 2px 15px;
+    transition: all 0.5s linear;
+}
+
+.tuesdayContent_FebruaryA {
+    background: transparent;
+    height: 80vh;
+    width: 100%;
+}
+
+.tuesdayContentContent_FebruaryA {
+    background: #bab6b2;
+    height: 82vh;
+    opacity: 0.85;
+    overflow-x: hidden;
+    overflow-Y: auto;
+    width: 105%;
+}
+
+.tuesdayReaderNavigationButtons_FebruaryA {
+    background: #756c65;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: flex-start;
+    margin: 0 0 0 0;
+    position: fixed;
+    width: 100%;
+    z-index: 15;
+}
+
+.markAllReadTextTuesday_FebruaryA {
+    color: #0f0d0b;
+    font-family: 'Jost', sans-serif;
+    font-size: 24px;
+    margin: 35px 10px 0 40px;
+}
+
+.tuesdayTrackProgress_FebruaryA {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    cursor: pointer;
+    display: block;
+    font-size: 48px;
+    margin: 15px 1px 15px 5px;
+    padding-left: 35px;
+    position: relative;
+    user-select: none;
+}
+
+.tuesdayTrackProgress_FebruaryA input {
+    cursor: pointer;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    width: 0;
+}
+
+.tuesdayCheckbox_FebruaryAtrue {
+    background-color: #e1d8ad;
+    border: none;
+    height: 40px;
+    left: 10px;
+    position: absolute;
+    top: -5px;
+    transform: translateX(0) translateY(5px);
+    transition: all 0.3s linear;
+    width: 20px;
+}
+
+.tuesdayCheckbox_FebruaryAfalse {
+    background-color: #5a5645;
+    border: none;
+    height: 40px;
+    left: 10px;
+    position: absolute;
+    top: -5px;
+    transform: translateX(0px) translateY(5px);
+    transition: all 0.3s linear;
+    width: 20px;
+}
+
+.tuesdaySwitchUnchecked_FebruaryAtrue {
+    background-color: #181716;
+    filter: brightness(120%);
+    height: 20px;
+    left: 0px;
+    position: absolute;
+    top: 5px;
+    transform: translateX(-5px) translateY(-7px);
+    transition: all 0.2s linear;
+    width: 30px;
+}
+
+.tuesdaySwitchUnchecked_FebruaryAfalse {
+    background-color: #181716;
+    filter: brightness(80%);
+    height: 20px;
+    left: 0px;
+    position: absolute;
+    top: 28px;
+    transform: translateX(-5px) translateY(-7px);
+    transition: all 0.2s linear;
+    width: 30px;
+}
+
+.tuesdayReadAll_FebruaryA {
+    color: #0f0d0b;
+    font-family: 'Jost', sans-serif;
+    font-size: 24px;
+    margin: 14px 0 14px 25px;
+}
+
+.tuesdayReadAllButton_FebruaryA {
+    background: #5a5645;
+    border: transparent;
+    color: #f0ecd6;
+    cursor: pointer;
+    filter: drop-shadow(8px 12px 4px #2e2b28);
+    font-family: 'Jost', sans-serif;
+    font-size: 36px;
+    height: 60px;
+    outline-color: #9f9d9b;
+    transition: all 0.5s linear;
+    width: 60px;
+}
+
+.tuesdayReadAllButton_FebruaryA:hover {
+    background: #3e3a37;
+    color: #1f2a30;
+    filter: drop-shadow(4px 8px 4px #2e2b28);
+    transition: all 0.5s linear;
+}
+
+.tuesdayReadAllButton_FebruaryA:active {
+    background: #1f2a30;
+    color: #3e3a37;
+    filter: drop-shadow(0 0 0 #2e2b28);
+    transition: all 0.1s linear;
+}
+
+.tuesdaySorting_FebruaryA {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 14px 0 14px 100px;
+}
+
+.tuesdaySorting_FebruaryA p {
+    color: #0f0d0b;
+    font-family: 'Jost', sans-serif;
+    font-size: 24px;
+    margin: 20px 20px 0 0;
+}
+
+.tuesdaySorting_FebruaryA button {
+    margin: 0 5px;
+}
+
+.tuesdayFeedsDiv_FebruaryA {
+    height: auto;
+    margin: 90px 50px 0 50px;
+    width: 90%;
+}
+
+.tuesdaySubscriptions_FebruaryA {
+    cursor: pointer;
+    margin: 10px;
+}
+
+.tuesdayBuffer_FebruaryA {
+    height: 20px;
+    width: 100%;
+}
+
+.tuesdayFeedContainer_FebruaryA {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 5px 5px 5px -15px;
+}
+
+.tuesdaySubIcon_FebruaryA {
+    filter: drop-shadow(8px 12px 4px #2e2b28);
+    height: 65px;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: all 0.5s linear;
+    width: 65px;
+}
+
+.tuesdaySubscriptionTitle_FebruaryA {
+    color: #0f0d0b;
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+    line-height: 1.2;
+    margin: 5px 0 10px 0;
+    width: 650px;
+}
+
+.tuesdayUnreadText_FebruaryA {
+    color: #0f0d0b;
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+    margin: 10px 40px 0 30px;
+    width: 35px;
+}
+
+.tuesdayReadText_FebruaryA {
+    color: #0f0d0b;
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+    margin: 10px 40px 0 30px;
+    width: 35px;
+}
+
+.tuesdayManageTabsButton_FebruaryA {
+    background: #5a5645;
+    border: transparent;
+    color: #f0ecd6;
+    cursor: pointer;
+    filter: drop-shadow(8px 12px 4px #2e2b28);
+    font-family: 'Jost', sans-serif;
+    font-size: 24px;
+    height: 40px;
+    margin: 56px 0 0 20%;
+    outline-color: #9f9d9b;
+    transition: all 0.5s linear;
+    width: auto;
+}
+
+.tuesdayManageTabsButton_FebruaryA:hover {
+    background: #3e3a37;
+    color: #1f2a30;
+    filter: drop-shadow(4px 8px 4px #2e2b28);
+    transition: all 0.5s linear;
+}
+
+.tuesdayManageTabsButton_FebruaryA:active {
+    background: #1f2a30;
+    color: #3e3a37;
+    filter: drop-shadow(0 0 0 #2e2b28);
+    transition: all 0.1s linear;
+}
+
+.tuesdayManageTabsSubsModal_FebruaryA {
+    background: #f0ecd6;
+    filter: blur(0px);
+    height: 90vh;
+    left: 2%;
+    opacity: 1;
+    position: absolute;
+    top: 5vh;
+    transition: all 0.4s linear;
+    width: 95%;
+    z-index: 50;
+}
+
+.tuesdayManageTabsSubsModalBlur_FebruaryA {
+    background: #f0ecd6;
+    filter: blur(5px);
+    height: 90vh;
+    left: 2%;
+    opacity: 0.4;
+    position: absolute;
+    top: 5vh;
+    transition: all 0.4s linear;
+    width: 95%;
+    z-index: 50;
+}
+
+.tuesdayManageTabsSubsModalInactive_FebruaryA {
+    opacity: 0;
+    top: -80vh;
+    transition: all 0.4s linear;
+    z-index: -5;
+}
+
+.tuesdayManageTitleBar_FebruaryA {
+    background: #5a5645;
+    color: #f0ecd6;
+    font-family: 'Jost', sans-serif;
+    height: 6vh;
+    opacity: 0.9;
+    position: relative;
+    padding: 1vh 0 2vh 1vw;
+    width: 99%;
+}
+
+.tuesdayModalExit_FebruaryA {
+    color: #f0ecd6;
+    cursor: pointer;
+    font-family: 'Jost', sans-serif;
+    font-size: 48px;
+    float: left;
+    left: 94%;
+    position: relative;
+    top: 1%;
+}
+
+.tuesdayManageTitle_FebruaryA {
+    color: #f0ecd6;
+    font-family: 'Jost', sans-serif;
+    font-size: 30px;
+    margin: 20px 0 0 0;
+}
+
+.tuesdayManagerModalContainer_FebruaryA {
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    height: 81vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.tuesdayManagerTabsSection_FebruaryA {
+    height: auto;
+    padding: 15px;
+    position: relative;
+    width: 30%;
+}
+
+.tuesdayTabsManageTitle_FebruaryA {
+    color: #0f0d0b;
+    font-family: 'Jost', sans-serif;
+    font-size: 24px;
+}
+
+.tuesdayManageTabsContainer_FebruaryA {
+    margin: 40px 8%;
+}
+
+.tuesdayTabManageTab_FebruaryA {
+    color: #0f0d0b;
+    cursor: pointer;
+    font-family: 'Jost', sans-serif;
+    font-size: 24px;
+    margin: 15px 0 15px 10px;
+}
+
+.tuesdayTabManageSubTab_FebruaryA {
+    color: #0f0d0b;
+    cursor: pointer;
+    font-family: 'Jost', sans-serif;
+    font-size: 15px;
+    margin: 1px 0 30px 40px;
+    width: 10%;
+}
+
+.tuesdayManagerSubscriptionsSection_FebruaryA {
+    height: auto;
+    padding: 15px;
+    position: relative;
+    width: 30%;
+}
+
+.tuesdayTabsSubscriptionTitle_FebruaryA {
+    color: #0f0d0b;
+    font-family: 'Jost', sans-serif;
+    font-size: 24px;
+}
+
+.tuesdayManageSubIcon_FebruaryA {
+    filter: drop-shadow(8px 12px 4px #2e2b28);
+    height: 40px;
+    width: 40px;
+}
+
+.tuesdaySubManageSubTab_FebruaryA {
+    color: #0f0d0b;
+    cursor: pointer;
+    font-family: 'Jost', sans-serif;
+    font-size: 15px;
+    margin: 4px 0 1px 10px;
+    transform: translateX(100px) translateY(-40px);
+    width: 10%;
+}
+
+.tuesdayManageSubsTitles_FebruaryA {
+    color: #0f0d0b;
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+    margin: -15px 0 30px 1px;
+}
+
+.tuesdayManagerFeedsSection_FebruaryA {
+    height: auto;
+    padding: 15px;
+    position: relative;
+    width: 30%;
+}
+
+.tuesdayManagerFeedsTitle_FebruaryA {
+    color: #0f0d0b;
+    font-family: 'Jost', sans-serif;
+    font-size: 24px;
+}
+
+.tuesdayManageSearch_FebruaryA {
+    background: #d1d7e3;
+    border: none;
+    color: #0f0d0b;
+    float: left;
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+    margin-top: 3px;
+    outline-color: #9f9d9b;
+    padding-left: 5px;
+    width: 100%;
+}
+
+.tuesdayManageSubsTitlesFeeds_FebruaryA {
+    color: #0f0d0b;
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+    margin: -15px 0 30px 1px;
+}
+
+.tuesdayCreateEditTabManagement_FebruaryA {
+    background: #bab6b2;
+    filter: drop-shadow(8px 12px 4px #2e2b28);
+    height: auto;
+    left: 22%;
+    opacity: 1;
+    padding: 45px;
+    position: absolute;
+    top: 25vh;
+    transition: all 0.4s linear;
+    width: 50%;
+    z-index: 60;
+}
+
+.tuesdayCreateEditTabTitle_FebruaryA {
+    color: #0f0d0b;
+    font-family: 'Jost', sans-serif;
+    font-size: 24px;
+    margin: 15px 0 30px 25px;
+}
+
+.tuesdayTabEditorFields_FebruaryA {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin: 10px 0 0 60px;
+}
+
+.tuesdayTabNameLabel_FebruaryA {
+    color: #0f0d0b;
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+    margin: 0 9px 0 0;
+}
+
+.tuesdayTabNameInput_FebruaryA {
+    background: #d1d7e3;
+    border: none;
+    color: #0f0d0b;
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+    height: 21px;
+    margin: 0 9px;
+    outline-color: #9f9d9b;
+    width: 350px;
+}
+
+.tuesdayTabEditorPodcastBlogStatus_FebruaryA {
+    margin: -13px 0 0 40px;
+}
+
+#tuesdayUnreadText_FebruaryA {
+    color: #0f0d0b;
+}
+
+#tuesdayReadText_FebruaryA {
+    color: #0f0d0b;
+}
+
+.tuesdayTabEditorFields_FebruaryA {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin: 10px 0 0 60px;
+}
+
+.tuesdayTabEditorErrorMessage_FebruaryA {
+    color: #ff0000;
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+    margin-left: 120px;
+    margin-top: 20px;
+}
+
+.tuesdayManageTabsConfirmButton_FebruaryA {
+    background: #5a5645;
+    border: transparent;
+    color: #f0ecd6;
+    cursor: pointer;
+    filter: drop-shadow(8px 12px 4px #2e2b28);
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+    height: 40px;
+    margin: 56px 0 0 5%;
+    outline-color: #9f9d9b;
+    position: relative;
+    transition: all 0.5s linear;
+    width: auto;
+}
+
+.tuesdayManageTabsConfirmButton_FebruaryA:hover {
+    background: #3e3a37;
+    color: #1f2a30;
+    filter: drop-shadow(4px 8px 4px #2e2b28);
+    transition: all 0.5s linear;
+}
+
+.tuesdayManageTabsConfirmButton_FebruaryA:active {
+    background: #1f2a30;
+    color: #3e3a37;
+    filter: drop-shadow(0 0 0 #2e2b28);
+    transition: all 0.1s linear;
+}
+
+.tuesdayManageTabsSubmitCancelButton_FebruaryA {
+    background: #5a5645;
+    border: transparent;
+    color: #f0ecd6;
+    cursor: pointer;
+    filter: drop-shadow(8px 12px 4px #2e2b28);
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+    height: 40px;
+    margin: 56px 0 0 20%;
+    outline-color: #9f9d9b;
+    position: relative;
+    transition: all 0.5s linear;
+    width: auto;
+}
+
+.tuesdayManageTabsSubmitCancelButton_FebruaryA:hover {
+    background: #3e3a37;
+    color: #1f2a30;
+    filter: drop-shadow(4px 8px 4px #2e2b28);
+    transition: all 0.5s linear;
+}
+
+.tuesdayManageTabsSubmitCancelButton_FebruaryA:active {
+    background: #1f2a30;
+    color: #3e3a37;
+    filter: drop-shadow(0 0 0 #2e2b28);
+    transition: all 0.1s linear;
+}
+
+.tuesdayGuardRail_FebruaryA {
+    background: #0f0d0b;
+    filter: drop-shadow(8px 12px 4px #2e2b28);
+    height: auto;
+    left: 32%;
+    opacity: 1;
+    padding: 45px;
+    position: absolute;
+    top: 25vh;
+    transition: all 0.4s linear;
+    width: 30%;
+    z-index: 60;
+}
+
+.tuesdayGuardRailText_FebruaryA {
+    color: #f0ecd6;
+    font-family: 'Jost', sans-serif;
+    font-size: 24px;
+    margin: 15px 0 30px 25px;
+}
+
+.tuesdayGuardRailButtons_FebruaryA {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin: 10px 0 0 60px;
+}
+
+.hubReaderDay1TuesdayActive_FebruaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/february/buttons-4939213_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px) translateY(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.58, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay1TuesdayInactive_FebruaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/february/buttons-4939213_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-115%) translateY(-200%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay2TuesdayActive_FebruaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/february/buttons-4939213_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px) translateY(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay2TuesdayInactive_FebruaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/february/buttons-4939213_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(250%) translateY(500%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay3TuesdayActive_FebruaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/february/buttons-4939213_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px) translateY(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay3TuesdayInactive_FebruaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/february/buttons-4939213_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(800%) translateY(50%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay4TuesdayActive_FebruaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/february/buttons-4939213_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px) translateY(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay4TuesdayInactive_FebruaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/february/buttons-4939213_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-460%) translateY(550%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay5TuesdayActive_FebruaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/february/buttons-4939213_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px) translateY(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 3;
+}
+
+.hubReaderDay5TuesdayInactive_FebruaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/february/buttons-4939213_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(575%) translateY(-1000%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay6TuesdayActive_FebruaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/february/buttons-4939213_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px) translateY(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay6TuesdayInactive_FebruaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/february/buttons-4939213_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(690%) translateY(200%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay7TuesdayActive_FebruaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/february/buttons-4939213_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px) translateY(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay7TuesdayInactive_FebruaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/february/buttons-4939213_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-15%) translateY(433%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
