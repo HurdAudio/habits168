@@ -13,12 +13,10 @@
         const vm = this;
 
         vm.$onInit = onInit;
-        vm.externalsMonth = "_FebruaryC";
-        vm.externalsContainerState = "externalsContainerActive" + vm.externalsMonth;
+        
         vm.navigateToHub = navigateToHub;
         vm.toggleReadStatus = toggleReadStatus;
         vm.deleteGuardrail = deleteGuardrail;
-        vm.externalsGuardrailState = 'externalsDeleteGuardrailInactive' + vm.externalsMonth;
         vm.cancelGuardrail = cancelGuardrail;
         vm.confirmGuardrail = confirmGuardrail;
         vm.externalAddErrorMessage = '';
@@ -29,7 +27,6 @@
         vm.updateDescription = updateDescription;
         vm.updateImage = updateImage;
         vm.externalsAddCancel = externalsAddCancel;
-        vm.externalsAddDialogState = 'externalsAddNewExternalsDialogInactive' + vm.externalsMonth;
         vm.activateAddDialog = activateAddDialog;
         vm.externalsAddSubmit = externalsAddSubmit;
 
@@ -324,32 +321,44 @@
                     };
                 });
         }
+        
+        function setExternalSkins() {
+            $http.get(`/skins/externals`)
+            .then(externalSkinData => {
+                const externalSkin = externalSkinData.data;
+                vm.externalsMonth = externalSkin.externals;
+                vm.externalsContainerState = "externalsContainerActive" + vm.externalsMonth;
+                vm.externalsGuardrailState = 'externalsDeleteGuardrailInactive' + vm.externalsMonth;
+                vm.externalsAddDialogState = 'externalsAddNewExternalsDialogInactive' + vm.externalsMonth;
+                switch (vm.externalsMonth) {
+                    case ('_JanuaryA'):
+                        vm.externalsLogoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/robe-154808_640.png';
+                        break;
+                    case ('_JanuaryB'):
+                        vm.externalsLogoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/nun-4018982_1280.png';
+                        break;
+                    case ('_JanuaryC'):
+                        vm.externalsLogoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/job-3506038_1280.png';
+                        break;
+                    case ('_FebruaryA'):
+                        vm.externalsLogoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_png_by_piccolapersempre_dbuithu-fullview.png';
+                        break;
+                    case ('_FebruaryB'):
+                        vm.externalsLogoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/digital_painting__liquid_sleep_by_ukulelemoon_d888syz-pre.jpg';
+                        break;
+                    case ('_FebruaryC'):
+                        vm.externalsLogoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_cup_by_lashonda1980_dazsks6-pre.png';
+                        break;
+                    default:
+                        alert('UNSUPPORTED MONTH SELECT for LOGO');
+                }
+            });
+        }
 
         function onInit() {
             console.log("Externals is lit");
 
-            switch (vm.externalsMonth) {
-                case ('_JanuaryA'):
-                    vm.externalsLogoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/robe-154808_640.png';
-                    break;
-                case ('_JanuaryB'):
-                    vm.externalsLogoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/nun-4018982_1280.png';
-                    break;
-                case ('_JanuaryC'):
-                    vm.externalsLogoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/job-3506038_1280.png';
-                    break;
-                case ('_FebruaryA'):
-                    vm.externalsLogoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_png_by_piccolapersempre_dbuithu-fullview.png';
-                    break;
-                case ('_FebruaryB'):
-                    vm.externalsLogoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/digital_painting__liquid_sleep_by_ukulelemoon_d888syz-pre.jpg';
-                    break;
-                case ('_FebruaryC'):
-                    vm.externalsLogoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_cup_by_lashonda1980_dazsks6-pre.png';
-                    break;
-                default:
-                    alert('UNSUPPORTED MONTH SELECT for LOGO');
-            }
+            setExternalSkins();
 
             setUserIPAddress();
             populateExternalsFeed($stateParams.userUuid);
