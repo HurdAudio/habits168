@@ -13,7 +13,7 @@
         const vm = this;
 
         vm.$onInit = onInit;
-        vm.dailiesMonth = '_FebruaryB';
+        vm.dailiesMonth = '_FebruaryC';
         vm.dailiesContainer = 'dailiesContainerActive' + vm.dailiesMonth;
         vm.navigateToHub = navigateToHub;
         vm.availableSubs = [];
