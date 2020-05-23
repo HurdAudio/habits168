@@ -17,6 +17,24 @@ router.get('/', (req, res, next) => {
         });
 });
 
+router.get('/externals', (req, res, next) => {
+    let now = new Date();
+    let months = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'];
+    let selectedSkin;
+    
+    knex('skins')
+    .select('*')
+    .first()
+    .then(skinsTable => {
+        if (skinsTable.skins.externals[months[now.getMonth()]].length === 1) {
+            selectedSkin = skinsTable.skins.externals.available[Math.floor(Math.random() * skinsTable.skins.externals.available.length)];
+        } else {
+            selectedSkin = skinsTable.skins.externals[months[now.getMonth()]][now.getDate()];
+        }
+        res.send({ externals: selectedSkin });
+    });
+});
+
 router.get('/landing', (req, res, next) => {
     let now = new Date();
     let months = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'];
@@ -74,7 +92,7 @@ router.get('/player', (req, res, next) => {
 router.get('/user_hub', (req, res, next) => {
     let now = new Date();
     let months = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'];
-    let selectedSkin, mondaySkin;
+    let selectedSkin, mondaySkin, externalsSkin;
     
     knex('skins')
     .select('*')
@@ -90,9 +108,14 @@ router.get('/user_hub', (req, res, next) => {
         } else {
             mondaySkin = skinsTable.skins.monday[months[now.getMonth()]][now.getDate()];
         }
+        if (skinsTable.skins.externals[months[now.getMonth()]].length === 1) {
+            externalsSkin = skinsTable.skins.externals.available[Math.floor(Math.random() * skinsTable.skins.externals.available.length)];
+        } else {
+            externalsSkin = skinsTable.skins.externals[months[now.getMonth()]][now.getDate()];
+        }
         
         
-        res.send({ monday_skin: mondaySkin, user_hub: selectedSkin });
+        res.send({ externals: externalsSkin, monday_skin: mondaySkin, user_hub: selectedSkin });
     })
 });
 

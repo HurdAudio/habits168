@@ -34,7 +34,6 @@
         vm.hubWeekToggle = hubWeekToggle;
         vm.subscriptionToggle = 'off';
         vm.toggleSubscriptionManagement = toggleSubscriptionManagement;
-        vm.externalsBlockToggleStatus = 'hubReaderExternalsDay2BlockInactive' + vm.externalsMonth;
         vm.browseFeedsBlockToggleStatus = 'hubReaderBrowseBlockInactive' + vm.browseMonth;
         vm.hubLinkShareOrSave = 'Share Link';
         vm.hubShareSave = hubShareSave;
@@ -60,7 +59,6 @@
         vm.navigateToDay = navigateToDay;
         vm.navigateToToday = navigateToToday;
         vm.navigateToExternals = navigateToExternals;
-        vm.externalsMonth = '_FebruaryC';
         vm.navigateToDailies = navigateToDailies;
         vm.dailiesMonth = '_FebruaryC';
         vm.removeShareModal = removeShareModal;
@@ -1652,7 +1650,9 @@
                 const hubSkinResponse = hubSkinResponseData.data;
                 vm.monthSelect = hubSkinResponse.user_hub;
                 vm.mondayMonth = hubSkinResponse.monday_skin;
+                vm.externalsMonth = hubSkinResponse.externals;
                 
+                vm.externalsBlockToggleStatus = 'hubReaderExternalsDay2BlockInactive' + vm.externalsMonth;
                 vm.hubShareTabState = 'hubTabActive' + vm.monthSelect;
                 vm.hubReaderTabState = 'hubTabInactive' + vm.monthSelect;
                 vm.hubBloggerTabState = 'hubTabInactive' + vm.monthSelect;
