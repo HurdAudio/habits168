@@ -1,0 +1,945 @@
+.mondayBackgroundDiv_MarchA {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/march/candle-holder-5039752_1920.jpg);
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.mondayTitleStrip_MarchA {
+    background: #969b9d;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Inria Sans', sans-serif;
+    height: auto;
+    justify-content: flex-start;
+    opacity: 0.85;
+    padding: 0 3vw 0 3vw;
+    width: 100%;
+    z-index: 1;
+}
+
+.mondayLogo_MarchA {
+    border-radius: 100%;
+    cursor: pointer;
+    margin: 5px 48px 5px -5px;
+    opacity: 1;
+    width: 7%;
+}
+
+.mondayLabel_MarchA {
+    color: #010100;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 42px;
+    margin: 32px 0 0 0;
+}
+
+.mondayTabsStrip_MarchA {
+    background: #70745b;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Inria Sans', sans-serif;
+    height: auto;
+    justify-content: flex-start;
+    opacity: 0.85;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-left: 3%;
+    width: 100%;
+}
+
+.mondayTabActive_MarchA {
+    background: #969b9d;
+    color: #010100;
+    cursor: none;
+    filter: drop-shadow(10px 15px 4px #5d4b37);
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 24px;
+    padding: 6px 48px 4px 4px;
+    perspective: 5.5cm;
+    transition: all 0.5s linear;
+    z-index: 5;
+}
+
+.mondayTabInactive_MarchA {
+    background: transparent;
+    color: #969b9d;
+    cursor: pointer;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 24px;
+    padding: 6px 20px 4px 10px;
+    perspective: none;
+    transition: all 0.5s linear;
+    z-index: 5;
+}
+
+.mondayContent_MarchA {
+    background: transparent;
+    height: 80vh;
+    width: 100%;
+}
+
+.mondayContentContent_MarchA {
+    background: #aea59b;
+    height: 83vh;
+    opacity: 0.85;
+    overflow-x: hidden;
+    overflow-Y: auto;
+    width: 105%;
+}
+
+.mondayFeedsDiv_MarchA {
+    height: auto;
+    margin: 90px 50px 0 50px;
+    width: 90%;
+}
+
+.mondayFeedContainer_MarchA {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 5px 50px;
+}
+
+.mondaySubscriptions_MarchA {
+    cursor: pointer;
+}
+
+.mondaySubIcon_MarchA {
+    filter: drop-shadow(10px 15px 4px #5d4b37);
+    height: 65px;
+    margin-right: 20px;
+    transition: all 0.5s linear;
+    width: 65px;
+}
+
+.mondaySubscriptionTitle_MarchA {
+    color: #010100;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 21px;
+    line-height: 1.2;
+    margin: 5px 0 10px 0;
+    width: 750px;
+}
+
+.mondayTrackProgress_MarchA {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    cursor: pointer;
+    display: block;
+    font-size: 48px;
+    margin: 15px 100px 15px 5px;
+    padding-left: 35px;
+    position: relative;
+    user-select: none;
+}
+
+.mondayTrackProgress_MarchA input {
+    cursor: pointer;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    width: 0;
+}
+
+.mondayCheckbox_MarchAfalse {
+    background-color: #1b2318;
+    height: 18px;
+    left: 0;
+    position: absolute;
+    top: 18px;
+    transition: all 0.3s linear;
+    width: 50px;
+}
+
+.mondayCheckbox_MarchAtrue {
+    background-color: #70745b;
+    height: 18px;
+    left: 0;
+    position: absolute;
+    top: 18px;
+    transition: all 0.3s linear;
+    width: 50px;
+}
+
+.mondayCheckbox_MarchAfalse:hover {
+    filter: hue-rotate(45deg);
+}
+
+.mondayCheckbox_MarchAtrue:hover {
+    filter: hue-rotate(-45deg);
+}
+
+.mondaySwitchUnchecked_MarchAfalse {
+    background-color: #2d363b;
+    height: 35px;
+    left: 0px;
+    position: absolute;
+    top: -8px;
+    transition: all 0.2s linear;
+    width: 25px;
+}
+
+.mondaySwitchUnchecked_MarchAtrue {
+    background-color: #2d363b;
+    height: 35px;
+    left: 25px;
+    position: absolute;
+    top: -8px;
+    transition: all 0.2s linear;
+    width: 25px;
+}
+
+.mondayReadAllButton_MarchA {
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/march/candle-holder-5039752_1920.jpg) stretch 15%;
+    box-sizing: border-box;
+    color: #121517;
+    cursor: pointer;
+    filter: drop-shadow(5px 10px 4px #5d4b37);
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 36px;
+    height: 60px;
+    outline-color: #8d918c;
+    transition: all 0.5s ease-out;
+    width: 60px;
+}
+
+.mondayReadAllButton_MarchA i {
+    transform: translateY(-4px);
+}
+
+.mondayReadAllButton_MarchA:hover {
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/march/candle-holder-5039752_1920.jpg) stretch 25%;
+    color: #5d4b37;
+    filter: brightness(150%) drop-shadow(5px 5px 3px #5d4b37);
+    transition: all 0.5s ease-in;
+}
+
+.mondayReadAllButton_MarchA:active {
+    filter: brightness(50%) drop-shadow(0 0 0 #5d4b37);
+    transition: all 0.1s linear;
+}
+
+.mondayReaderNavigationButtons_MarchA {
+    background: #a6af9e;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: flex-start;
+    margin: 0 0 0 0;
+    position: fixed;
+    width: 100%;
+    z-index: 15;
+}
+
+.mondayReadAll_MarchA {
+    color: #010100;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 24px;
+    margin: 14px 0 14px 25px;
+}
+
+.mondaySorting_MarchA {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 14px 0 14px 100px;
+}
+
+.mondaySorting_MarchA p {
+    color: #010100;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 21px;
+    margin: 20px 20px 0 0;
+}
+
+.mondaySortingButton_MarchA {
+    margin-right: 20px;
+}
+
+.markAllReadText_MarchA {
+    color: #010100;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 21px;
+    margin: 35px 10px 0 40px;
+}
+
+.mondayUnreadText_MarchA {
+    color: #010100;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 21px;
+    margin: 10px 0 0 30px;
+    width: 35px;
+}
+
+.mondayReadText_MarchA {
+    color: #010100;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 21px;
+    margin: 10px 0 0 30px;
+    width: 35px;
+}
+
+.mondayBuffer_MarchA {
+    height: 20px;
+    width: 100%;
+}
+
+.mondayManageTabsButton_MarchA {
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/march/candle-holder-5039752_1920.jpg) stretch 15%;
+    box-sizing: border-box;
+    color: #121517;
+    cursor: pointer;
+    filter: drop-shadow(5px 10px 4px #5d4b37);
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 18px;
+    height: auto;
+    margin: 56px 0 20px 20%;
+    outline-color: #8d918c;
+    padding: -30px 20px;
+    position: relative;
+    transition: all 0.5s ease-out;
+    width: auto;
+}
+
+.mondayManageTabsButton_MarchA:hover {
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/march/candle-holder-5039752_1920.jpg) stretch 25%;
+    color: #5d4b37;
+    filter: brightness(150%) drop-shadow(5px 5px 3px #5d4b37);
+    transition: all 0.5s ease-in;
+}
+
+.mondayManageTabsButton_MarchA:active {
+    filter: brightness(50%) drop-shadow(0 0 0 #5d4b37);
+    transition: all 0.1s linear;
+}
+
+.mondayContainerActive_MarchA {
+    filter: blur(0px);
+}
+
+.mondayContainerInactive_MarchA {
+    filter: blur(15px);
+}
+
+.mondayManageTabsSubsModal_MarchA {
+    background: #bbc6c2;
+    filter: blur(0px) drop-shadow(10px 15px 4px #5d4b37);
+    height: 90vh;
+    left: 2%;
+    opacity: 1;
+    position: absolute;
+    top: 5vh;
+    transition: all 0.4s linear;
+    width: 95%;
+    z-index: 50;
+}
+
+.mondayManageTabsSubsModalBlur_MarchA {
+    background: #bbc6c2;
+    filter: blur(0px) drop-shadow(10px 15px 4px #5d4b37);
+    height: 90vh;
+    left: 2%;
+    opacity: 0.4;
+    position: absolute;
+    top: 5vh;
+    transition: all 0.4s linear;
+    width: 95%;
+    z-index: 50;
+}
+
+.mondayManageTitleBar_MarchA {
+    background: #2d363b;
+    font-family: 'Inria Sans', sans-serif;
+    height: auto;
+    opacity: 0.9;
+    position: relative;
+    padding: 1vh 0 1vh 1vw;
+    width: 99%;
+}
+
+.mondayManageTitle_MarchA {
+    color: #b8baad;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 30px;
+}
+
+.mondayModalExit_MarchA {
+    color: #b8baad;
+    cursor: pointer;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 48px;
+    float: left;
+    left: 97%;
+    position: relative;
+    top: -2%;
+    transform: translateY(-10px);
+}
+
+.mondayManageTabsSubsModalInactive_MarchA {
+    opacity: 0;
+    top: -90vh;
+    transition: all 0.4s linear;
+}
+
+.mondayManagerModalContainer_MarchA {
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    height: 82.7vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.mondayManagerTabsSection_MarchA {
+    height: auto;
+    padding: 15px;
+    position: relative;
+    width: 30%;
+}
+
+.mondayTabsManageTitle_MarchA {
+    color: #010100;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 30px;
+}
+
+.mondayManagerSubscriptionsSection_MarchA {
+    height: auto;
+    padding: 15px;
+    position: relative;
+    width: 30%;
+}
+
+.mondayTabsSubscriptionTitle_MarchA {
+    color: #010100;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 30px;
+}
+
+.mondayManagerFeedsSection_MarchA {
+    height: auto;
+    padding: 15px;
+    position: relative;
+    width: 30%;
+}
+
+.mondayManagerFeedsTitle_MarchA {
+    color: #010100;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 30px;
+}
+
+.mondayManageTabsContainer_MarchA {
+    margin: 40px 8%;
+}
+
+.mondayTabManageTab_MarchA {
+    color: #010100;
+    cursor: pointer;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 30px;
+    margin: 15px 0 15px 10px;
+}
+
+.mondayManageSubIcon_MarchA {
+    height: 40px;
+    width: 40px;
+}
+
+.mondayManageSubsTitles_MarchA {
+    color: #010100;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 18px;
+    margin: 1px 0 30px 1px;
+}
+
+.mondayManageSearch_MarchA {
+    background: #aea59b;
+    border: none;
+    color: #010100;
+    float: left;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 18px;
+    height: 21px;
+    margin-top: 3px;
+    outline-color: #8d918c;
+    width: 100%;
+}
+
+.mondayTabManageSubTab_MarchA {
+    color: #010100;
+    cursor: pointer;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 15px;
+    margin: 1px 0 30px 40px;
+    width: 10%;
+}
+
+.mondaySubManageSubTab_MarchA {
+    color: #010100;
+    cursor: pointer;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 15px;
+    margin: 4px 0 1px 10px;
+    transform: translateX(100px) translateY(-40px);
+    width: 10%;
+}
+
+.mondayManageSubsTitlesFeeds_MarchA {
+    color: #010100;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 18px;
+    margin: -15px 0 30px 1px;
+}
+
+.mondayCreateEditTabManagement_MarchA {
+    background: #8d918c;
+    filter: drop-shadow(10px 15px 4px #5d4b37);
+    height: auto;
+    left: 22%;
+    opacity: 1;
+    padding: 45px;
+    position: absolute;
+    top: 25vh;
+    transition: all 0.4s linear;
+    width: 50%;
+    z-index: 60;
+}
+
+.mondayCreateEditTabTitle_MarchA {
+    color: #010100;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 24px;
+    margin: 15px 0 30px 25px;
+}
+
+.mondayTabEditorFields_MarchA {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin: 10px 0 0 60px;
+}
+
+.mondayTabNameLabel_MarchA {
+    color: #010100;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 18px;
+    margin: 0 9px 0 0;
+}
+
+.mondayTabNameInput_MarchA {
+    background: #aea59b;
+    border: none;
+    color: #010100;
+    float: left;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 18px;
+    height: 21px;
+    margin: 0 9px;
+    outline-color: #8d918c;
+    width: 350px;
+}
+
+#mondayTabEditorPodcastBlogStatus_MarchA {
+    margin: -13px 0 0 40px;
+}
+
+.mondayTabEditorErrorMessage_MarchA {
+    color: #ff0000;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 21px;
+    margin-left: 120px;
+    margin-top: 20px;
+}
+
+.mondayManageTabsConfirmButton_MarchA {
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/march/candle-holder-5039752_1920.jpg) stretch 15%;
+    box-sizing: border-box;
+    color: #121517;
+    cursor: pointer;
+    filter: drop-shadow(5px 10px 4px #5d4b37);
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 18px;
+    height: auto;
+    margin: 10px 0 0 15px;
+    outline-color: #8d918c;
+    padding: -20px 20px;
+    position: relative;
+    transition: all 0.5s ease-out;
+    width: auto;
+}
+
+
+.mondayManageTabsConfirmButton_MarchA:hover {
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/march/candle-holder-5039752_1920.jpg) stretch 25%;
+    color: #5d4b37;
+    filter: brightness(150%) drop-shadow(5px 5px 3px #5d4b37);
+    transition: all 0.5s ease-in;
+}
+
+.mondayManageTabsConfirmButton_MarchA:active {
+    filter: brightness(50%) drop-shadow(0 0 0 #5d4b37);
+    transition: all 0.1s linear;
+}
+
+.mondayManageTabsSubmitCancelButton_MarchA {
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/march/candle-holder-5039752_1920.jpg) stretch 15%;
+    box-sizing: border-box;
+    color: #121517;
+    cursor: pointer;
+    filter: drop-shadow(5px 10px 4px #5d4b37);
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 18px;
+    height: auto;
+    margin: 30px 0 0 70px;
+    outline-color: #8d918c;
+    padding: -40px 20px;
+    position: relative;
+    transition: all 0.5s ease-out;
+    width: auto;
+}
+
+.mondayManageTabsSubmitCancelButton_MarchA:hover {
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/march/candle-holder-5039752_1920.jpg) stretch 25%;
+    color: #5d4b37;
+    filter: brightness(150%) drop-shadow(5px 5px 3px #5d4b37);
+    transition: all 0.5s ease-in;
+}
+
+.mondayManageTabsSubmitCancelButton_MarchA:active {
+    filter: brightness(50%) drop-shadow(0 0 0 #5d4b37);
+    transition: all 0.1s linear;
+}
+
+.mondayGuardRail_MarchA {
+    background: #2d363b;
+    filter: drop-shadow(10px 15px 4px #5d4b37);
+    height: auto;
+    left: 32%;
+    opacity: 1;
+    padding: 45px;
+    position: absolute;
+    top: 25vh;
+    transition: all 0.4s linear;
+    width: 30%;
+    z-index: 60;
+}
+
+.guardRailText_MarchA {
+    color: #dde3e1;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 24px;
+    margin: 15px 0 30px 25px;
+}
+
+.guardRailButtons_MarchA {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin: 10px 0 0 60px;
+}
+
+.hubReaderDay1MondayActive_MarchA {
+    background: #a5a5a3;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/march/candle-holder-5039752_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px) translateY(0px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.1, 0.1, 0.58, 1.0);
+    width: 8%;
+    z-index: 1;
+}
+
+.hubReaderDay1MondayInactive_MarchA {
+    background: #a5a5a3;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/march/candle-holder-5039752_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(-115%) translateY(200%);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+    width: 8%;
+    z-index: -1;
+}
+
+.hubReaderDay2MondayActive_MarchA {
+    background: #a5a5a3;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/march/candle-holder-5039752_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px) translateY(0px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+    width: 8%;
+    z-index: 1;
+}
+
+.hubReaderDay2MondayInactive_MarchA {
+    background: #a5a5a3;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/march/candle-holder-5039752_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(250%) translateY(-500%);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+    width: 8%;
+    z-index: -1;
+}
+
+.hubReaderDay3MondayActive_MarchA {
+    background: #a5a5a3;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/march/candle-holder-5039752_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px) translateY(0px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+    width: 8%;
+    z-index: 1;
+}
+
+.hubReaderDay3MondayInactive_MarchA {
+    background: #a5a5a3;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/march/candle-holder-5039752_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(800%) translateY(-50%);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+    width: 8%;
+    z-index: -1;
+}
+
+.hubReaderDay4MondayActive_MarchA {
+    background: #a5a5a3;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/march/candle-holder-5039752_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px) translateY(0px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+    width: 8%;
+    z-index: 1;
+}
+
+.hubReaderDay4MondayInactive_MarchA {
+    background: #a5a5a3;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/march/candle-holder-5039752_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(-460%) translateY(-550%);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+    width: 8%;
+    z-index: -1;
+}
+
+.hubReaderDay5MondayActive_MarchA {
+    background: #a5a5a3;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/march/candle-holder-5039752_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px) translateY(0px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+    width: 8%;
+    z-index: 3;
+}
+
+.hubReaderDay5MondayInactive_MarchA {
+    background: #a5a5a3;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/march/candle-holder-5039752_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(575%) translateY(1000%);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+    width: 8%;
+    z-index: -1;
+}
+
+.hubReaderDay6MondayActive_MarchA {
+    background: #a5a5a3;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/march/candle-holder-5039752_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px) translateY(0px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+    width: 8%;
+    z-index: 1;
+}
+
+.hubReaderDay6MondayInactive_MarchA {
+    background: #a5a5a3;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/march/candle-holder-5039752_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(690%) translateY(-200%);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+    width: 8%;
+    z-index: -1;
+}
+
+.hubReaderDay7MondayActive_MarchA {
+    background: #a5a5a3;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/march/candle-holder-5039752_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px) translateY(0px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+    width: 8%;
+    z-index: 1;
+}
+
+.hubReaderDay7MondayInactive_MarchA {
+    background: #a5a5a3;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/march/candle-holder-5039752_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(-15%) translateY(-433%);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+    width: 8%;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 414px) {
+
+    .mondayReaderNavigationButtons_MarchA {
+        display: none;
+    }
+
+    .mondayLabel_MarchA {
+        font-size: 24px;
+    }
+
+    .mondayTrackProgress_MarchA {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        cursor: pointer;
+        display: block;
+        font-size: 48px;
+        margin: 15px 1px 15px 5px;
+        padding-left: 35px;
+        position: relative;
+        user-select: none;
+    }
+
+    .mondaySorting_MarchA {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin: 14px 0 14px 10px;
+    }
+
+    .mondaySorting_MarchA p {
+        font-size: 12px;
+        margin: 5px 15px 0 0;
+    }
+
+    .mondayFeedContainer_MarchA {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 5px 5px 5px -15px;
+    }
+
+    .mondaySubIcon_MarchA {
+        filter: invert(0%);
+        height: 65px;
+        margin-right: 20px;
+        transform: skewX(-15deg) translateX(55px);
+        transition: all 0.5s linear;
+        width: 65px;
+    }
+
+}
