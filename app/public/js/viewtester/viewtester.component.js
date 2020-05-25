@@ -64,109 +64,7 @@
         vm.viewCancelShareSaveLink = viewCancelShareSaveLink;
         vm.viewSaveLink = viewSaveLink;
         vm.spinner = false;
-
-        function viewSaveLink(post) {
-            vm.shareSaveLinkDisplay = 'viewShareSaveDialogueDisplayed' + vm.viewMonth;
-            vm.viewLinkShareOrSave = 'Save Link';
-            vm.viewLinkShareSaveTitle = post.title;
-            vm.viewLinkShareSaveLink = post.link;
-            vm.viewMask = 'viewContainerCloaked' + vm.viewMonth;
-        }
-
-        function viewCancelShareSaveLink() {
-            vm.shareSaveLinkDisplay = 'viewShareSaveDialogueHidden' + vm.viewMonth;
-            vm.viewMask = 'viewContainer' + vm.viewMonth;
-            document.getElementById('viewShareSaveLinkUserNotes').value = '';
-        }
-
-        function viewShareLink(post) {
-            vm.shareSaveLinkDisplay = 'viewShareSaveDialogueDisplayed' + vm.viewMonth;
-            vm.viewLinkShareOrSave = 'Share Link';
-            vm.viewLinkShareSaveTitle = post.title;
-            vm.viewLinkShareSaveLink = post.link;
-            vm.viewMask = 'viewContainerCloaked' + vm.viewMonth;
-        }
-
-        function refreshFeedList() {
-            vm.feedsList[vm.feedsListIndex].items = [];
-            populateFeedContent();
-        }
-
-        function navigationBack() {
-            vm.feedsListIndex -= 1;
-            if (vm.feedsListIndex === 0) {
-                vm.feedStart = true;
-            } else {
-                vm.feedStart = false;
-            }
-            if (vm.feedsListIndex === (vm.feedsList.length - 1)) {
-                vm.feedEnd = true;
-            } else {
-                vm.feedEnd = false;
-            }
-            vm.feedIcon = vm.feedsList[vm.feedsListIndex].image;
-            vm.feedTitle = vm.feedsList[vm.feedsListIndex].title;
-            vm.feedDescription = vm.feedsList[vm.feedsListIndex].description;
-            vm.feedLink = vm.feedsList[vm.feedsListIndex].link;
-            populateFeedContent();
-            document.getElementById('viewContentDiv').scrollTop = 0;
-        }
-
-        function navigationAdvance() {
-            vm.feedsListIndex += 1;
-            if (vm.feedsListIndex === 0) {
-                vm.feedStart = true;
-            } else {
-                vm.feedStart = false;
-            }
-            if (vm.feedsListIndex === (vm.feedsList.length - 1)) {
-                vm.feedEnd = true;
-            } else {
-                vm.feedEnd = false;
-            }
-            vm.feedIcon = vm.feedsList[vm.feedsListIndex].image;
-            vm.feedTitle = vm.feedsList[vm.feedsListIndex].title;
-            vm.feedDescription = vm.feedsList[vm.feedsListIndex].description;
-            vm.feedLink = vm.feedsList[vm.feedsListIndex].link;
-            populateFeedContent();
-            document.getElementById('viewContentDiv').scrollTop = 0;
-        }
-
-        function populateFeedContent() {
-            let postTime;
-            let localDate;
-            let days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-            let months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-
-            if (vm.feedsList[vm.feedsListIndex].items.length === 0) {
-                let rssLink = vm.feedsList[vm.feedsListIndex].rss;
-                rssLink = rssLink.replace(':', '%3A');
-                while (rssLink.indexOf('/') !== -1) {
-                    rssLink = rssLink.replace('/', '%2F');
-                }
-                console.log(rssLink);
-                vm.spinner = true;
-                $http.get(`/rss_reader/${rssLink}`)
-                    .then(rssContentData => {
-                        vm.spinner = false;
-                        let rssContent = rssContentData.data;
-                        console.log(rssContent);
-                        vm.feedsList[vm.feedsListIndex].items = rssContent.items;
-
-                        vm.feedItems = vm.feedsList[vm.feedsListIndex].items;
-                        for (let i = 0; i < vm.feedsList[vm.feedsListIndex].items.length; i++) {
-                            postTime = new Date(vm.feedsList[vm.feedsListIndex].items[i].pubDate);
-                            localDate = postTime.toString();
-                            postTime = new Date(localDate);
-                            vm.feedsList[vm.feedsListIndex].items[i].cleanDate = days[postTime.getDay()] + ' ' + postTime.getFullYear() + ' ' + months[postTime.getMonth()] + ' ' + postTime.getDate() + ' - ' + postTime.toLocaleTimeString('en-US');
-                        }
-                        console.log(vm.feedsList);
-                    });
-            } else {
-                vm.feedItems = vm.feedsList[vm.feedsListIndex].items;
-            }
-        }
-
+        
         function getSkins() {
             $http.get('/skins/viewer')
                 .then(viewerResultData => {
@@ -206,6 +104,108 @@
                     vm.shareSaveLinkDisplay = 'viewShareSaveDialogueHidden' + vm.viewMonth;
                     vm.viewMask = 'viewContainer' + vm.viewMonth;
                 });
+        }
+        
+        function navigationAdvance() {
+            vm.feedsListIndex += 1;
+            if (vm.feedsListIndex === 0) {
+                vm.feedStart = true;
+            } else {
+                vm.feedStart = false;
+            }
+            if (vm.feedsListIndex === (vm.feedsList.length - 1)) {
+                vm.feedEnd = true;
+            } else {
+                vm.feedEnd = false;
+            }
+            vm.feedIcon = vm.feedsList[vm.feedsListIndex].image;
+            vm.feedTitle = vm.feedsList[vm.feedsListIndex].title;
+            vm.feedDescription = vm.feedsList[vm.feedsListIndex].description;
+            vm.feedLink = vm.feedsList[vm.feedsListIndex].link;
+            populateFeedContent();
+            document.getElementById('viewContentDiv').scrollTop = 0;
+        }
+        
+        function navigationBack() {
+            vm.feedsListIndex -= 1;
+            if (vm.feedsListIndex === 0) {
+                vm.feedStart = true;
+            } else {
+                vm.feedStart = false;
+            }
+            if (vm.feedsListIndex === (vm.feedsList.length - 1)) {
+                vm.feedEnd = true;
+            } else {
+                vm.feedEnd = false;
+            }
+            vm.feedIcon = vm.feedsList[vm.feedsListIndex].image;
+            vm.feedTitle = vm.feedsList[vm.feedsListIndex].title;
+            vm.feedDescription = vm.feedsList[vm.feedsListIndex].description;
+            vm.feedLink = vm.feedsList[vm.feedsListIndex].link;
+            populateFeedContent();
+            document.getElementById('viewContentDiv').scrollTop = 0;
+        }
+        
+        function populateFeedContent() {
+            let postTime;
+            let localDate;
+            let days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+            let months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+            if (vm.feedsList[vm.feedsListIndex].items.length === 0) {
+                let rssLink = vm.feedsList[vm.feedsListIndex].rss;
+                rssLink = rssLink.replace(':', '%3A');
+                while (rssLink.indexOf('/') !== -1) {
+                    rssLink = rssLink.replace('/', '%2F');
+                }
+                console.log(rssLink);
+                vm.spinner = true;
+                $http.get(`/rss_reader/${rssLink}`)
+                    .then(rssContentData => {
+                        vm.spinner = false;
+                        let rssContent = rssContentData.data;
+                        console.log(rssContent);
+                        vm.feedsList[vm.feedsListIndex].items = rssContent.items;
+
+                        vm.feedItems = vm.feedsList[vm.feedsListIndex].items;
+                        for (let i = 0; i < vm.feedsList[vm.feedsListIndex].items.length; i++) {
+                            postTime = new Date(vm.feedsList[vm.feedsListIndex].items[i].pubDate);
+                            localDate = postTime.toString();
+                            postTime = new Date(localDate);
+                            vm.feedsList[vm.feedsListIndex].items[i].cleanDate = days[postTime.getDay()] + ' ' + postTime.getFullYear() + ' ' + months[postTime.getMonth()] + ' ' + postTime.getDate() + ' - ' + postTime.toLocaleTimeString('en-US');
+                        }
+                        console.log(vm.feedsList);
+                    });
+            } else {
+                vm.feedItems = vm.feedsList[vm.feedsListIndex].items;
+            }
+        }
+        
+        function refreshFeedList() {
+            vm.feedsList[vm.feedsListIndex].items = [];
+            populateFeedContent();
+        }
+        
+        function viewCancelShareSaveLink() {
+            vm.shareSaveLinkDisplay = 'viewShareSaveDialogueHidden' + vm.viewMonth;
+            vm.viewMask = 'viewContainer' + vm.viewMonth;
+            document.getElementById('viewShareSaveLinkUserNotes').value = '';
+        }
+
+        function viewSaveLink(post) {
+            vm.shareSaveLinkDisplay = 'viewShareSaveDialogueDisplayed' + vm.viewMonth;
+            vm.viewLinkShareOrSave = 'Save Link';
+            vm.viewLinkShareSaveTitle = post.title;
+            vm.viewLinkShareSaveLink = post.link;
+            vm.viewMask = 'viewContainerCloaked' + vm.viewMonth;
+        }
+
+        function viewShareLink(post) {
+            vm.shareSaveLinkDisplay = 'viewShareSaveDialogueDisplayed' + vm.viewMonth;
+            vm.viewLinkShareOrSave = 'Share Link';
+            vm.viewLinkShareSaveTitle = post.title;
+            vm.viewLinkShareSaveLink = post.link;
+            vm.viewMask = 'viewContainerCloaked' + vm.viewMonth;
         }
 
         function onInit() {
