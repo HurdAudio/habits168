@@ -1,0 +1,198 @@
+.newUserContainerActive_JanuaryC {
+    filter: blur(0);
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.newUserContainerBlur_JanuaryC {
+    filter: blur(13px);
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.newUserSignupImageDiv_JanuaryC {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/newusersignup/january/ice-5143789_1920.jpg);
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.newUserNavbar_JanuaryC {
+    backdrop-filter: hue-rotate(-45deg) saturate(210%);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    height: 12vh;
+    justify-content: left;
+    left: 0;
+    padding-left: 25px;
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+
+.newUserLogoNav_JanuaryC {
+    cursor: pointer;
+    filter: brightness(100%) invert(100%);
+    max-height: 12vh;
+    max-width: 155px;
+    z-index: 55;
+}
+
+.newUserSignupTitle_JanuaryC {
+    color: #eae8e9;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    font-size: 48px;
+    margin: 3vh 0 3vh 40%;
+}
+
+.newUserMasterFormDiv_JanuaryC {
+    backdrop-filter: sepia(30%);
+    box-shadow: 5px 5px 5px #aeaeb0, -5px 5px 5px #aeaeb0, 5px -5px 5px #aeaeb0, -5px -5px 5px #aeaeb0;
+    display: grid;
+    grid-template-columns: [col1] 1fr [col2] 1fr [col3] 1fr [col4] 1fr [col5] 1fr [col6] 1fr [col7] 1fr [col8] 1fr [col9] 1fr [col10] 1fr [col11] 1fr [colEnd];
+    grid-template-rows: [row1] 1fr [row2] 1fr [row3] 1fr [row4] 1fr [row5] 1fr [row6] 1fr [row7] 1fr [row8] 1fr [row9] 1fr [row10] 1fr [row11] 1fr [rowEnd];
+    height: 70vh;
+    left: 10%;
+    position: relative;
+    top: 10vh;
+    width: 80%;
+}
+
+.newUserSignupFormWelcomeLine_JanuaryC {
+    color: #808080;
+    filter: brightness(50%) saturate(300%);
+    font-family: 'Sawarabi Gothic', sans-serif;
+    font-size: 24px;
+    grid-column: col2 / col12;
+    grid-row: row2 / row3;
+}
+
+.newUserTextBoxFirstName_JanuaryC {
+    background: #c8c7cc;
+    border: none;
+    box-shadow: 2px 2px 5px #aeaeb0, -2px 2px 5px #aeaeb0, 2px -2px 5px #aeaeb0, -2px -2px 2px #aeaeb0;
+    color: #000000;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    font-size: 18px;
+    height: 24px;
+    grid-column: col3 / col6;
+    grid-row: row4 / row5;
+    outline-color: #a1a1a5;
+}
+
+.newUserTextBoxLastName_JanuaryC {
+    background: #c8c7cc;
+    border: none;
+    box-shadow: 2px 2px 5px #aeaeb0, -2px 2px 5px #aeaeb0, 2px -2px 5px #aeaeb0, -2px -2px 2px #aeaeb0;
+    color: #000000;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    font-size: 18px;
+    height: 24px;
+    grid-column: col7 / col10;
+    grid-row: row4 / row5;
+    outline-color: #a1a1a5;
+}
+
+.newUserTextBoxEmail_JanuaryC {
+    background: #c8c7cc;
+    border: none;
+    box-shadow: 2px 2px 5px #aeaeb0, -2px 2px 5px #aeaeb0, 2px -2px 5px #aeaeb0, -2px -2px 2px #aeaeb0;
+    color: #000000;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    font-size: 18px;
+    height: 24px;
+    grid-column: col3 / col6;
+    grid-row: row5 / row6;
+    outline-color: #a1a1a5;
+}
+
+.newUserTextBoxPassword_JanuaryC {
+    background: #c8c7cc;
+    border: none;
+    box-shadow: 2px 2px 5px #aeaeb0, -2px 2px 5px #aeaeb0, 2px -2px 5px #aeaeb0, -2px -2px 2px #aeaeb0;
+    color: #000000;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    font-size: 18px;
+    height: 24px;
+    grid-column: col7 / col10;
+    grid-row: row5 / row6;
+    outline-color: #a1a1a5;
+}
+
+.newUserTextBoxConfirmPassword_JanuaryC {
+    background: #c8c7cc;
+    border: none;
+    box-shadow: 2px 2px 5px #aeaeb0, -2px 2px 5px #aeaeb0, 2px -2px 5px #aeaeb0, -2px -2px 2px #aeaeb0;
+    color: #000000;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    font-size: 18px;
+    height: 24px;
+    grid-column: col7 / col10;
+    grid-row: row6 / row7;
+    outline-color: #a1a1a5;
+}
+
+.newUserSignupFormErrorMessageing_JanuaryC {
+    color: #ff0000;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    font-size: 24px;
+    grid-column: col3 / col10;
+    grid-row: row8 / row9;
+}
+
+.newUserSignupFormMessaging_JanuaryC {
+    color: #ff0000;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    font-size: 24px;
+    grid-column: col3 / col10;
+    grid-row: row9 / row10;
+}
+
+.newUserSignupSubmitButton_JanuaryC {
+    background: linear-gradient(145deg, #43434b, #908e99);
+    border: none;
+    color: #eae8e9;
+    cursor: pointer;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    font-size: 30px;
+    grid-column: col6 / col7;
+    grid-row: row10 / row11;
+    outline-color: #a1a1a5;
+    padding: 5px 4px 0 4px;
+    transform: skew(-15deg);
+    transition: all 0.4s linear;
+}
+
+.newUserSignupSubmitButton_JanuaryC:hover {
+    background: linear-gradient(145deg, #b9b9be, #eae8e9);
+    color: #000000;
+    transform: skew(-5deg);
+    transition: all 0.4s linear;
+}
+
+.newUserSignupSubmitButton_JanuaryC:active {
+    background: #000000;
+    color: #eae8e9;
+    transition: all 0.2s linear;
+}
