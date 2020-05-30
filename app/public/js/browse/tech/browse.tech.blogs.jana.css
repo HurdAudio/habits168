@@ -1,0 +1,124 @@
+.browseCategoricalFeeds_tech_JanuaryA {
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/tech/january/blue-cyber-circuit-future-technology-concept-background_42077-646.jpg);
+    background-size: cover;
+    border: none;
+    filter: brightness(65%);
+    height: 77vh;
+    margin: 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 34%;
+}
+
+/*
+tech januaryA === Vector Graphics
+.browsePodCategoricalFeeds_JanuaryA {
+    backdrop-filter: blur(38px);
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/january/d360wre-547d2e30-1c0c-4bb0-9f2c-88de8fbf5879.jpg) 10 stretch;
+    box-sizing: border-box;
+    height: 77vh;
+    margin: 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 34%;
+}
+*/
+
+.browseFeedsContainer_tech_JanuaryA {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 5px 15px;
+}
+
+.browseFeedsContainer_tech_JanuaryA img {
+    filter: brightness(120%) drop-shadow(5px 5px 5px #009edb);
+    height: 50px;
+    margin: 0 15px 0 0;
+    width: 50px;
+}
+
+.browsePodCategoricalFeeds_tech_JanuaryA p {
+    color: #81f1f9;
+    filter: brightness(300%);
+    font-family: 'VT323', monospace;
+    font-size: 30px;
+}
+
+.browseFeedsTitleDiv_tech_JanuaryA {
+    width: 75%;
+}
+
+.browseFeedsTitleDiv_tech_JanuaryA p {
+    color: #80aabb;
+    filter: brightness(300%);
+    font-family: 'VT323', monospace;
+    font-size: 30px;
+}
+
+.browseIndividualFeedData_tech_JanuaryA {
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/tech/january/blue-cyber-circuit-future-technology-concept-background_42077-646.jpg);
+    background-size: cover;
+    border: none;
+    filter: brightness(65%);
+    height: 77vh;
+    margin: 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 34%;
+}
+
+.browseIndividualFeedData_tech_JanuaryA img {
+    filter: brightness(120%) drop-shadow(5px 5px 5px #009edb);
+    margin: 10px 15%;
+    width: 70%;
+}
+
+.browseIndividualFeedData_tech_JanuaryA h3 {
+    color: #80aabb;
+    filter: brightness(300%);
+    font-family: 'VT323', monospace;
+    font-size: 36px;
+    margin: 5px 10%;
+    width: 80%;
+}
+
+.browseIndividualFeedData_tech_JanuaryA p {
+    color: #80aabb;
+    filter: brightness(300%);
+    font-family: 'VT323', monospace;
+    font-size: 30px;
+    margin: 15px 10%;
+    width: 80%;
+}
+
+.browseIndividualFeedData_tech_JanuaryA button {
+    background: #3c5375;
+    border: none;
+    color: #aedbdf;
+    cursor: pointer;
+    font-family: 'VT323', monospace;
+    font-size: 36px;
+    margin: 30px 35%;
+    outline-color: #aedbdf;
+    transform: skew(-15deg);
+    transition: all 0.4s linear;
+}
+
+.browseIndividualFeedData_tech_JanuaryA button:hover {
+    background: #878886;
+    color: #050605;
+    outline-color: #050605;
+    transform: skew(-5deg);
+    transition: all 0.4s linear;
+}
+
+.browseIndividualFeedData_tech_JanuaryA button:active {
+    background: #050605;
+    color: #878886;
+    outline-color: #878886;
+    transition: all 0.4s linear;
+}
