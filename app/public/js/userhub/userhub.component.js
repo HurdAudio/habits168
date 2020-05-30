@@ -76,7 +76,7 @@
         vm.navigateToProfileEditor = navigateToProfileEditor;
         vm.tuesdayMonth = '_FebruaryA';
         vm.navigateToBrowse = navigateToBrowse;
-        vm.wednesdayMonth = '_JanuaryA';
+        vm.wednesdayMonth = '_JanuaryB';
         
         function navigateToBrowse() {
             $state.go('browse', {
