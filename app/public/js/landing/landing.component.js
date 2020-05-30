@@ -327,6 +327,9 @@
                         case('_MarchC'):
                             vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/espresso-4929161_1920.jpg';
                             break;
+                        case('_AprilA'):
+                            vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/ddd784j-25abee3c-e332-4d13-8e9c-df956fe4af96.png';
+                            break;
                         default:
                             alert('UNSUPPORTED MONTH SELECT for LOGO');
                     }
