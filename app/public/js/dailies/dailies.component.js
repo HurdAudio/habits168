@@ -13,8 +13,7 @@
         const vm = this;
 
         vm.$onInit = onInit;
-        vm.dailiesMonth = '_FebruaryC';
-        vm.dailiesContainer = 'dailiesContainerActive' + vm.dailiesMonth;
+        
         vm.navigateToHub = navigateToHub;
         vm.availableSubs = [];
         vm.filterAvailables = filterAvailables;
@@ -270,12 +269,15 @@
                     populateAvailableSubs();
                 });
         }
-
-
-        function onInit() {
-            console.log("Dailies is lit");
-
-            switch (vm.dailiesMonth) {
+        
+        function setDailiesSkin() {
+            $http.get('/skins/dailies')
+            .then(hubSkinResponseData => {
+                const hubSkinResponse = hubSkinResponseData.data;
+                vm.dailiesMonth = hubSkinResponse.dailies;
+                vm.dailiesContainer = 'dailiesContainerActive' + vm.dailiesMonth;
+                
+                switch (vm.dailiesMonth) {
                 case ('_JanuaryA'):
                     vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/robe-154808_640.png';
                     break;
@@ -297,6 +299,14 @@
                 default:
                     alert('UNSUPPORTED MONTH SELECT for LOGO');
             }
+            });
+        }
+
+
+        function onInit() {
+            console.log("Dailies is lit");
+            
+            setDailiesSkin();
             setUserIPAddress();
         }
 

@@ -60,7 +60,6 @@
         vm.navigateToToday = navigateToToday;
         vm.navigateToExternals = navigateToExternals;
         vm.navigateToDailies = navigateToDailies;
-        vm.dailiesMonth = '_FebruaryC';
         vm.removeShareModal = removeShareModal;
         vm.negativeDeleteShare = negativeDeleteShare;
         vm.positiveDeleteShare = positiveDeleteShare;
@@ -1651,6 +1650,7 @@
                 vm.monthSelect = hubSkinResponse.user_hub;
                 vm.mondayMonth = hubSkinResponse.monday_skin;
                 vm.externalsMonth = hubSkinResponse.externals;
+                vm.dailiesMonth = hubSkinResponse.dailies;
                 
                 vm.externalsBlockToggleStatus = 'hubReaderExternalsDay2BlockInactive' + vm.externalsMonth;
                 vm.hubShareTabState = 'hubTabActive' + vm.monthSelect;

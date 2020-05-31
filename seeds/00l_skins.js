@@ -7,6 +7,21 @@ exports.seed = function (knex, Promise) {
                 {
                     uuid: '9fc176e3-91f8-4864-a996-01a101f88893',
                     skins: {
+                        "dailies": {
+                            "available": ['_JanuaryA', '_JanuaryB', '_JanuaryC', '_FebruaryA', '_FebruaryB', '_FebruaryC'],
+                            "january": [ 31, '_JanuaryC', '_JanuaryB', '_JanuaryC', '_JanuaryA', '_JanuaryC', '_JanuaryB', '_JanuaryC', '_JanuaryA', '_JanuaryA', '_JanuaryA', '_JanuaryA', '_JanuaryB', '_JanuaryA', '_JanuaryB', '_JanuaryB', '_JanuaryB', '_JanuaryC', '_JanuaryB', '_JanuaryA', '_JanuaryB', '_JanuaryC', '_JanuaryA', '_JanuaryA', '_JanuaryC', '_JanuaryB', '_JanuaryA', '_JanuaryB', '_JanuaryC', '_JanuaryC', '_JanuaryA', '_JanuaryC' ],
+                            "february": [ 29, '_FebruaryA', '_FebruaryA', '_FebruaryB', '_FebruaryC', '_FebruaryC', '_FebruaryB', '_FebruaryA', '_FebruaryB', '_FebruaryC', '_FebruaryC', '_FebruaryC', '_FebruaryC', '_FebruaryC', '_FebruaryB', '_FebruaryB', '_FebruaryA', '_FebruaryC', '_FebruaryA', '_FebruaryB', '_FebruaryB', '_FebruaryB', '_FebruaryB', '_FebruaryA', '_FebruaryA', '_FebruaryA', '_FebruaryC', '_FebruaryA', '_FebruaryB', '_FebruaryC' ],
+                            "march": [31],
+                            "april": [30],
+                            "may": [31],
+                            "june": [30],
+                            "july": [31],
+                            "august": [31],
+                            "september": [30],
+                            "october": [31],
+                            "november": [30],
+                            "december": [31]
+                        },
                         "externals": {
                             "available": ['_JanuaryA', '_JanuaryB', '_JanuaryC', '_FebruaryA', '_FebruaryB', '_FebruaryC'],
                             "january": [ 31, '_JanuaryB', '_JanuaryB', '_JanuaryC','_JanuaryC', '_JanuaryB', '_JanuaryC', '_JanuaryB', '_JanuaryC', '_JanuaryC', '_JanuaryA', '_JanuaryA', '_JanuaryC', '_JanuaryA', '_JanuaryA', '_JanuaryA', '_JanuaryC', '_JanuaryB', '_JanuaryB', '_JanuaryA', '_JanuaryC', '_JanuaryB', '_JanuaryC', '_JanuaryB', '_JanuaryA', '_JanuaryA', '_JanuaryA', '_JanuaryC', '_JanuaryB', '_JanuaryA', '_JanuaryB', '_JanuaryA' ],
