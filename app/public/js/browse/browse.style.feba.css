@@ -1,0 +1,554 @@
+.browseActive_FebruaryA {
+    filter: blur(0);
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.browseInactive_FebruaryA {
+    filter: blur(19px);
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.browseImageDiv_FebruaryA {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/feburary/curtain-4943882_1920.jpg);
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.browseNavbar_FebruaryA {
+    backdrop-filter: blur(6px);
+    border-bottom: 2px solid #fe361c;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Krub', sans-serif;
+    height: 12vh;
+    justify-content: left;
+    left: 0;
+    padding-left: 25px;
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+
+.browseLogoNav_FebruaryA {
+    cursor: pointer;
+    filter: brightness(110%) drop-shadow(15px 15px 5px #420203);
+    margin: 0.5vh 0;
+    max-height: 11vh;
+    max-width: 105px;
+}
+
+.browseTitle_FebruaryA {
+    color: #0c0000;
+    font-family: 'Krub', sans-serif;
+    font-size: 48px;
+    margin: 4vh 0 0 65px;
+}
+
+.browseTabs_FebruaryA {
+    backdrop-filter: hue-rotate(-135deg);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Krub', sans-serif;
+    height: 6vh;
+    justify-content: center;
+}
+
+.browseTabActive_FebruaryA {
+    background: #e7140d;
+    color: #0c0000;
+    cursor: none;
+    font-family: 'Krub', sans-serif;
+    font-size: 36px;
+    height: 100%;
+    opacity: 0.75;
+    padding: 0 10%;
+    pointer-events: none;
+}
+
+.browseTabActive_FebruaryA p {
+    color: #0c0000;
+    font-family: 'Krub', sans-serif;
+    font-size: 36px;
+    margin: 1vh 0;
+}
+
+.browseTabInactive_FebruaryA {
+    background: #ff9b8e;
+    color: #8f8080;
+    cursor: pointer;
+    font-family: 'Krub', sans-serif;
+    font-size: 36px;
+    height: 100%;
+    opacity: 0.45;
+    padding: 0 10%;
+}
+
+.browseTabInactive_FebruaryA p {
+    color: #8f8080;
+    font-family: 'Krub', sans-serif;
+    font-size: 36px;
+    margin: 1vh 0;
+}
+
+.browseContainerActive_FebruaryA {
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 80vh;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.browseContainerInactive_FebruaryA {
+    display: none;
+}
+
+.browseBlogsByCategory_FebruaryA {
+    backdrop-filter: blur(4px);
+    background: #8f8080;
+    border-right: 1px solid #ff9b8e;
+    height: 77vh;
+    margin: 15px;
+    opacity: 0.8;
+    width: 19%;
+}
+
+.browsePodcastsByCategory_FebruaryA {
+    backdrop-filter: blur(4px);
+    background: #8f8080;
+    border-right: 1px solid #ff9b8e;
+    height: 77vh;
+    margin: 15px;
+    opacity: 0.8;
+    width: 19%;
+}
+
+.browseBlogsCategoryLabel_FebruaryA {
+    color: #0c0000;
+    font-family: 'Krub', sans-serif;
+    font-size: 24px;
+    margin: 27px 27px 5px 27px;
+}
+
+.browseCategorySelect_FebruaryA {
+    background: #f38a86;
+    border: none;
+    color: #0c0000;
+    font-family: 'Krub', sans-serif;
+    font-size: 24px;
+    margin: 10px 15%;
+    min-width: 70%;
+    outline-color: #b48080;
+    padding: 2px 17px;
+}
+
+.browseViewFeedsButton_FebruaryA {
+    background: #1f0101;
+    border: none;
+    color: #ff9b8e;
+    cursor: pointer;
+    filter: drop-shadow(8px 8px 8px #420203);
+    font-family: 'Krub', sans-serif;
+    font-size: 24px;
+    margin: 30px 35%;
+    outline-color: #b48080;
+    transition: all 0.4s linear;
+}
+
+.browseViewFeedsButton_FebruaryA:hover {
+    background: #420203;
+    color: #fe361c;
+    filter: drop-shadow(3px 6px 8px #420203);
+    transition: all 0.4s linear;
+}
+
+.browseViewFeedsButton_FebruaryA:active {
+    background: #fe361c;
+    color: #420203;
+    filter: drop-shadow(0 0 - #420203);
+    transition: all 0.4s linear;
+}
+
+.browseCategoricalFeeds_generic_FebruaryA {
+    backdrop-filter: blur(4px);
+    background: #8f8080;
+    border-right: 1px solid #ff9b8e;
+    height: 77vh;
+    margin: 15px;
+    opacity: 0.8;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 34%;
+}
+
+.browsePodCategoricalFeeds_generic_FebruaryA {
+    display: none;
+    backdrop-filter: blur(38px);
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    height: 77vh;
+    margin: 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 34%;
+}
+
+.browsePodCategoricalFeeds_FebruaryA {
+    display: none;
+    backdrop-filter: blur(38px);
+    border: 2px solid transparent;
+    border-image: url() 10% stretch;
+    box-sizing: border-box;
+    height: 77vh;
+    margin: 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 34%;
+}
+
+.browseFeedsContainer_generic_FebruaryA {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 5px 15px;
+}
+
+.browseFeedsPodcastContainer_generic_FebruaryA {
+    display: none;
+    cursor: pointer;
+/*    display: flex;*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 5px 15px;
+}
+
+.browseFeedsPodcastContainer_generic_FebruaryA img {
+    display: none;
+    height: 50px;
+    margin: 0 15px 0 0;
+    width: 50px;
+}
+
+.browseFeedsContainer_generic_FebruaryA img {
+    filter: brightness(110%) drop-shadow(15px 15px 5px #420203);
+    height: 50px;
+    margin: 0 15px 0 0;
+    width: 50px;
+}
+
+.browsePodCategoricalFeeds_generic_FebruaryA p {
+    display: none;
+    color: #070e13;
+    font-family: 'Krub', sans-serif;
+    font-size: 18px;
+}
+
+.browseFeedsTitleDiv_generic_FebruaryA {
+    width: 75%;
+}
+
+.browseFeedsTitleDiv_generic_FebruaryA p {
+    color: #0c0000;
+    font-family: 'Krub', sans-serif;
+    font-size: 18px;
+}
+
+.browseIndividualFeedData_generic_FebruaryA {
+    backdrop-filter: blur(4px);
+    background: #8f8080;
+    border-right: 1px solid #ff9b8e;
+    height: 77vh;
+    margin: 15px;
+    opacity: 0.8;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 34%;
+}
+
+.browseIndividualFeedData_generic_FebruaryA img {
+    filter: brightness(110%) drop-shadow(15px 15px 5px #420203);
+    margin: 10px 15%;
+    width: 70%;
+}
+
+.browseIndividualFeedData_generic_FebruaryA h3 {
+    color: #0c0000;
+    font-family: 'Krub', sans-serif;
+    font-size: 36px;
+    margin: 5px 10%;
+    width: 80%;
+}
+
+.browseIndividualFeedData_generic_FebruaryA p {
+    color: #0c0000;
+    font-family: 'Krub', sans-serif;
+    font-size: 18px;
+    margin: 15px 10%;
+    width: 80%;
+}
+
+.browseIndividualFeedData_generic_FebruaryA button {
+    background: #1f0101;
+    border: none;
+    color: #ff9b8e;
+    cursor: pointer;
+    filter: drop-shadow(8px 8px 8px #420203);
+    font-family: 'Krub', sans-serif;
+    font-size: 24px;
+    margin: 30px 35%;
+    outline-color: #b48080;
+    transition: all 0.4s linear;
+}
+
+.browseIndividualFeedData_generic_FebruaryA button:hover {
+    background: #420203;
+    color: #fe361c;
+    filter: drop-shadow(3px 6px 8px #420203);
+    transition: all 0.4s linear;
+}
+
+.browseIndividualFeedData_generic_FebruaryA button:active {
+    background: #fe361c;
+    color: #420203;
+    filter: drop-shadow(0 0 - #420203);
+    transition: all 0.4s linear;
+}
+
+.browseIndividualPodFeedData_generic_FebruaryA {
+    display: none;
+    backdrop-filter: blur(38px);
+    border: 2px solid transparent;
+    border-image: url() 30% stretch;
+    box-sizing: border-box;
+    height: 77vh;
+    margin: 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 34%;
+}
+
+.browseIndividualPodFeedData_generic_FebruaryA img {
+    display: none;
+    margin: 10px 15%;
+    width: 70%;
+}
+
+.browseIndividualPodFeedData_generic_FebruaryA h3 {
+    display: none;
+    color: #070e13;
+    font-family: 'Krub', sans-serif;
+    font-size: 36px;
+    margin: 5px 10%;
+    width: 80%;
+}
+
+.browseIndividualPodFeedData_generic_FebruaryA p {
+    display: none;
+    color: #070e13;
+    font-family: 'Krub', sans-serif;
+    font-size: 18px;
+    margin: 15px 10%;
+    width: 80%;
+}
+
+.browseIndividualPodFeedData_generic_FebruaryA button {
+    display: none;
+    background: #4071b6;
+    border: none;
+    color: #0c1625;
+    cursor: pointer;
+    font-family: 'Krub', sans-serif;
+    font-size: 24px;
+    margin: 30px 35%;
+    outline-color: #b1beca;
+    transform: skew(-15deg);
+    transition: all 0.4s linear;
+}
+
+.browseIndividualPodFeedData_generic_FebruaryA button:hover {
+    background: #1f395e;
+    color: #aab4bd;
+    transform: skew(-5deg);
+    transition: all 0.4s linear;
+}
+
+.browseIndividualPodFeedData_generic_FebruaryA button:active {
+    background: #aab4bd;
+    color: #1f395e;
+    transition: all 0.4s linear;
+}
+
+.browseSubscriptionModalActive_FebruaryA {
+    background: linear-gradient(90deg, #ff9b8e, #f38a86);
+    box-sizing: border-box;
+    filter: saturate(100%);
+    height: auto;
+    left: 25%;
+    top: 10vh;
+    width: 50%;
+    position: absolute;
+    transform: scale(1);
+    transition: all 0.5s linear;
+}
+
+.browseSubscriptionModalInactive_FebruaryA {
+    background: linear-gradient(90deg, #ff9b8e, #f38a86);
+    filter: saturate(100%);
+    height: auto;
+    left: 25%;
+    top: 100vh;
+    width: 50%;
+    position: absolute;
+    transform: scale(0.4);
+    transition: all 0.5s linear;
+}
+
+.blogSubscriptionModalLabel_FebruaryA {
+    color: #0c0000;
+    font-family: 'Krub', sans-serif;
+    font-size: 36px;
+    margin: 5px 0 15px 5px;
+}
+
+.browseSubscriptionModalActive_FebruaryA button {
+    background: #1f0101;
+    border: none;
+    color: #ff9b8e;
+    cursor: pointer;
+    filter: drop-shadow(8px 8px 8px #420203);
+    font-family: 'Krub', sans-serif;
+    font-size: 24px;
+    margin: 5px -10% 5px 25%;
+    outline-color: #b48080;
+    transition: all 0.4s linear;
+}
+
+.browseSubscriptionModalActive_FebruaryA button:hover {
+    background: #420203;
+    color: #fe361c;
+    filter: drop-shadow(3px 6px 8px #420203);
+    transition: all 0.4s linear;
+}
+
+.browseSubscriptionModalActive_FebruaryA button:active {
+    background: #fe361c;
+    color: #420203;
+    filter: drop-shadow(0 0 - #420203);
+    transition: all 0.4s linear;
+}
+
+.browseSubscriptionModalInactive_FebruaryA button {
+    background: #1f0101;
+    border: none;
+    color: #ff9b8e;
+    cursor: pointer;
+    filter: drop-shadow(8px 8px 8px #420203);
+    font-family: 'Krub', sans-serif;
+    font-size: 24px;
+    margin: 5px -10% 5px 25%;
+    outline-color: #b48080;
+    transition: all 0.4s linear;
+}
+
+.blogSubscriptionMondalImage_FebruaryA {
+    filter: brightness(110%) drop-shadow(15px 15px 5px #420203);
+    float: left;
+    margin: 15px;
+    max-height: 100px;
+    max-width: 100px;
+}
+
+.blogSubscriptionModalTitle_FebruaryA {
+    color: #0c0000;
+    float: left;
+    font-family: 'Krub', sans-serif;
+    font-size: 24px;
+    margin: 15px;
+    width: 50%;
+}
+
+.browseModalSelectors_FebruaryA {
+    width: 100%;
+    float: left;
+}
+
+.blogSubscriptionDaySelector_FebruaryA {
+    background: #f38a86;
+    border: none;
+    color: #0c0000;
+    font-family: 'Krub', sans-serif;
+    font-size: 24px;
+    margin: 30px 15px 70px 15px;
+    outline-color: #b48080;
+    width: 25%;
+}
+
+.browseModalSpacer_FebruaryA {
+    bottom: 0;
+    height: 350px;
+    position: relative;
+    width: 100%;
+    z-index: -4;
+}
+
+/*
+.hubReaderBrowseBlockActive_FebruaryA {
+    background: #82a1b5;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: 1;
+}
+
+.hubReaderBrowseBlockInactive_FebruaryA {
+    background: #82a1b5;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(-460%);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: -1;
+}
+*/
