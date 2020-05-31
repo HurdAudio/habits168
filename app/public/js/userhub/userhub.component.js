@@ -74,7 +74,7 @@
         vm.removeMessage = removeMessage;
         vm.removeMessageReply = removeMessageReply;
         vm.navigateToProfileEditor = navigateToProfileEditor;
-        vm.tuesdayMonth = '_FebruaryA';
+        vm.tuesdayMonth = '_FebruaryB';
         vm.navigateToBrowse = navigateToBrowse;
         vm.wednesdayMonth = '_JanuaryB';
         
