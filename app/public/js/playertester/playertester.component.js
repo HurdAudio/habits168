@@ -9,7 +9,7 @@
 
     PlayerTesterController.$inject = ['$http', '$state', '$stateParams'];
 
-    function PlayerTesterController($http, $state, $stateParams){
+    function PlayerTesterController($http, $state, $stateParams) {
       const vm = this;
 
       vm.$onInit = onInit;
@@ -46,13 +46,133 @@
       
       vm.shareSaveDialog = shareSaveDialog;
       vm.viewCancelShareSaveLink = viewCancelShareSaveLink;
+        
+    function fastForward15seconds() {
+        let playerAudioPlayer = document.getElementById('playerAudioPlayer');
 
-      function viewCancelShareSaveLink() {
-        vm.shareSaveDialogStatus = 'shareSaveDivInactive' + vm.playerMonth;
-        vm.playerMask = 'playerContainer' + vm.playerMonth;
-      }
+        if (playerAudioPlayer.currentTime < (vm.episodesList[vm.currentEpisodeIndex].enclosure.duration - 15)) {
+          playerAudioPlayer.currentTime += 15;
+        } else {
+          playerAudioPlayer.currentTime = vm.episodesList[vm.currentEpisodeIndex].enclosure.duration;
+        }
+        updateNumericalProgressDisplay();
+    }
+        
+    function feedDatas() {
+        let playerProgressSlider = document.getElementById('playerProgressSlider');
+        let playerAudioPlayer = document.getElementById('playerAudioPlayer');
+        let rssLink = vm.playerFeeds[vm.playerFeedsIndex].url;
+        rssLink = rssLink.replace(':', '%3A');
+        while(rssLink.indexOf('/') !== -1) {
+          rssLink = rssLink.replace('/', '%2F');
+        }
+        console.log(rssLink);
+        $http.get(`/rss_reader/${rssLink}`)
+        .then(feedsPlaylistData => {
+          let feedsPlaylist = feedsPlaylistData.data;
+          console.log(feedsPlaylist);
+          vm.episodeLink = feedsPlaylist.items[0].link
+          vm.episodeContent = feedsPlaylist.items[0].content;
+          vm.feedAudio = feedsPlaylist.items[0].enclosure.link;
+          vm.feedAudioType = feedsPlaylist.items[0].enclosure.type;
+          vm.podcastEpisodeTitle = feedsPlaylist.items[0].title;
+          vm.podcastEpisodeAuthorship = feedsPlaylist.items[0].author;
+          vm.playerTotalPlaytime = secondsConversion(feedsPlaylist.items[0].enclosure.duration);
+          playerProgressSlider.min = '0';
+          playerProgressSlider.step = '1';
+          playerProgressSlider.max = Math.round(feedsPlaylist.items[0].enclosure.duration);
+          vm.episodesList = feedsPlaylist.items;
+          for (let i = 0; i < feedsPlaylist.items.length; i++) {
+            vm.episodesList[i].index = i;
+            vm.episodesList[i].durationInHumanReadableTime = secondsConversion(feedsPlaylist.items[i].enclosure.duration);
+            vm.episodesList[i].userCurrentTime = secondsConversion(0);
+          }
+          vm.currentEpisodeIndex = 0;
+        });
+    }
+        
+    function getSkins() {
+          $http.get('/skins/player')
+                .then(playerResultData => {
+                    vm.playerMonth = playerResultData.data.player;
+                    vm.playerMask = 'playerContainer' + vm.playerMonth;
+                    vm.playPause = 'playerPlay' + vm.playerMonth;
+                    vm.aboutContainer = 'aboutContainerActive' + vm.playerMonth;
+                    vm.episodeContainer = 'episodeContainerInactive' + vm.playerMonth;
+                    vm.detailsContainer = 'detailsContainerInactive' + vm.playerMonth;
+                    vm.aboutTabStatus = 'playerTabActive' + vm.playerMonth;
+                    vm.episodeTabStatus = 'playerTabInactive' + vm.playerMonth;
+                    vm.episodeDetailsTabStatus = 'playerTabInactive' + vm.playerMonth;
+                    vm.playbackRateStatus = "playerAtSpeed1" + vm.playerMonth;
+                    vm.shareSaveDialogStatus = 'shareSaveDivInactive' + vm.playerMonth;
+                });
+    }
+        
+    function isCurrentEpisodeIndex(index) {
+        if (index === vm.currentEpisodeIndex) {
+          return('episodeItemsCurrent' + vm.playerMonth);
+        } else {
+          return('episodeItems' + vm.playerMonth);
+        }
+    }
+        
+    function rewind15Seconds() {
+        let playerAudioPlayer = document.getElementById('playerAudioPlayer');
 
-      function shareSaveDialog(status) {
+        if (playerAudioPlayer.currentTime > 15) {
+          playerAudioPlayer.currentTime -= 15;
+        } else {
+          playerAudioPlayer.currentTime = 0;
+        }
+        updateNumericalProgressDisplay();
+    }
+        
+    function rewindToStart() {
+        let playerAudioPlayer = document.getElementById('playerAudioPlayer');
+
+        playerAudioPlayer.currentTime = 0;
+        updateNumericalProgressDisplay();
+    }
+        
+    function secondsConversion(totalSeconds) {
+        let calculateTime = totalSeconds;
+        let displayTime = '';
+        let hours = 0;
+        let minutes = 0;
+        let seconds = 0;
+
+        if (calculateTime > 3599) {
+          while(calculateTime > 3599) {
+            ++hours;
+            calculateTime -= 3600;
+          }
+          displayTime += hours.toString() + ':';
+        }
+        if (calculateTime > 59) {
+          while(calculateTime > 59) {
+            ++minutes;
+            calculateTime -= 60;
+          }
+          if ((hours !== 0) && (minutes < 10)) {
+            displayTime += '0';
+          }
+          displayTime += minutes.toString() + ':';
+        } else {
+          if (hours === 0) {
+            displayTime += '0:';
+          } else {
+            displayTime += '00:';
+          }
+        }
+        if (calculateTime < 10) {
+          displayTime += '0';
+        }
+        displayTime += calculateTime.toString();
+
+        return(displayTime);
+    }
+        
+    function shareSaveDialog(status) {
         vm.shareSaveDialogStatus = 'shareSaveDivActive' + vm.playerMonth;
         vm.playerMask = 'playerContainerBlur' + vm.playerMonth;
         if (status === 'share') {
@@ -60,9 +180,53 @@
         } else {
           vm.playerShareOrSaveStatus = 'Save Episode:';
         }
-      }
-
-      function togglePlaybackRate() {
+    }
+    
+    function skipToEnd() {
+        let playerAudioPlayer = document.getElementById('playerAudioPlayer');
+        playerAudioPlayer.currentTime = vm.episodesList[vm.currentEpisodeIndex].enclosure.duration;
+        updateNumericalProgressDisplay();
+    }
+        
+    function tabClick(tab) {
+        switch(tab) {
+          case('about'):
+            if (vm.aboutTabStatus !== ('playerTabActive' + vm.playerMonth)) {
+              vm.aboutTabStatus = 'playerTabActive' + vm.playerMonth;
+              vm.episodeTabStatus = 'playerTabInactive' + vm.playerMonth;
+              vm.episodeDetailsTabStatus = 'playerTabInactive' + vm.playerMonth;
+              vm.aboutContainer = 'aboutContainerActive' + vm.playerMonth;
+              vm.episodeContainer = 'episodeContainerInactive' + vm.playerMonth;
+              vm.detailsContainer = 'detailsContainerInactive' + vm.playerMonth;
+            }
+            break;
+          case('episodes'):
+            if (vm.episodeTabStatus !== ('tabAcitve' + vm.playerMonth)) {
+              vm.episodeTabStatus = 'playerTabActive' + vm.playerMonth;
+              vm.aboutTabStatus = 'playerTabInactive' + vm.playerMonth;
+              vm.episodeDetailsTabStatus = 'playerTabInactive' + vm.playerMonth;
+              vm.aboutContainer = 'aboutContainerInactive' + vm.playerMonth;
+              vm.episodeContainer = 'episodeContainerActive' + vm.playerMonth;
+              vm.detailsContainer = 'detailsContainerInactive' + vm.playerMonth;
+            }
+            break;
+          case('details'):
+            if (vm.episodeDetailsTabStatus !== ('tabAcitve' + vm.playerMonth)) {
+              vm.episodeDetailsTabStatus = 'playerTabActive' + vm.playerMonth;
+              vm.episodeTabStatus = 'playerTabInactive' + vm.playerMonth;
+              vm.aboutTabStatus = 'playerTabInactive' + vm.playerMonth;
+              vm.aboutContainer = 'aboutContainerInactive' + vm.playerMonth;
+              vm.episodeContainer = 'episodeContainerInactive' + vm.playerMonth;
+              vm.detailsContainer = 'detailsContainerActive' + vm.playerMonth;
+            }
+            break;
+          default:
+            console.log('unsupported tab');
+            alert('unsupported tab');
+        }
+    }
+        
+    function togglePlaybackRate() {
         let playerAudioPlayer = document.getElementById('playerAudioPlayer');
         let playbackRateToggle = document.getElementById('playbackRateToggle');
 
@@ -107,82 +271,51 @@
             console.log('Error: bad playback rate status');
             alert('ERROR on playback rate');
         }
-      }
-
-      function skipToEnd() {
-        let playerAudioPlayer = document.getElementById('playerAudioPlayer');
-        playerAudioPlayer.currentTime = vm.episodesList[vm.currentEpisodeIndex].enclosure.duration;
-        updateNumericalProgressDisplay();
-      }
-
-      function fastForward15seconds() {
+    }
+        
+    function togglePlayPause() {
+        let playerPlayPauseButton = document.getElementById('playerPlayPauseButton');
         let playerAudioPlayer = document.getElementById('playerAudioPlayer');
 
-        if (playerAudioPlayer.currentTime < (vm.episodesList[vm.currentEpisodeIndex].enclosure.duration - 15)) {
-          playerAudioPlayer.currentTime += 15;
+        if (vm.playPause === ('playerPlay' + vm.playerMonth)) {
+          vm.playPause = 'playerPause' + vm.playerMonth;
+          playerPlayPauseButton.innerHTML = '&#10074;&#10074;';
+          playerAudioPlayer.play();
+          updateNumericalProgressDisplay();
         } else {
-          playerAudioPlayer.currentTime = vm.episodesList[vm.currentEpisodeIndex].enclosure.duration;
+          vm.playPause = 'playerPlay' + vm.playerMonth;
+          playerPlayPauseButton.innerHTML = '&#9654;';
+          playerAudioPlayer.pause();
         }
-        updateNumericalProgressDisplay();
-      }
-
-      function rewind15Seconds() {
+    }
+        
+    function updateNumericalProgressDisplay() {
+        let playerProgressSlider = document.getElementById('playerProgressSlider');
         let playerAudioPlayer = document.getElementById('playerAudioPlayer');
-
-        if (playerAudioPlayer.currentTime > 15) {
-          playerAudioPlayer.currentTime -= 15;
-        } else {
-          playerAudioPlayer.currentTime = 0;
-        }
-        updateNumericalProgressDisplay();
-      }
-
-      function rewindToStart() {
+        let playerProgressNumericalDisplay = document.getElementById('playerProgressNumericalDisplay');
+        vm.playerCurrentPosition = secondsConversion(Math.round(playerAudioPlayer.currentTime));
+        playerProgressNumericalDisplay.innerHTML = vm.playerCurrentPosition + ' / ' + vm.playerTotalPlaytime;
+        playerProgressSlider.value = Math.round(playerAudioPlayer.currentTime);
+        vm.episodesList[vm.currentEpisodeIndex].userCurrentTime = secondsConversion(Math.round(playerAudioPlayer.currentTime));
+        setTimeout(() => {
+          if (vm.playPause === 'playerPause' + vm.playerMonth) {
+            updateNumericalProgressDisplay();
+          }
+        }, vm.updateRate);
+    }
+        
+    function userSliderPosition() {
+        let playerProgressSlider = document.getElementById('playerProgressSlider');
         let playerAudioPlayer = document.getElementById('playerAudioPlayer');
+        let playerPlayPauseButton = document.getElementById('playerPlayPauseButton');
 
-        playerAudioPlayer.currentTime = 0;
-        updateNumericalProgressDisplay();
-      }
-
-      function tabClick(tab) {
-        switch(tab) {
-          case('about'):
-            if (vm.aboutTabStatus !== ('playerTabActive' + vm.playerMonth)) {
-              vm.aboutTabStatus = 'playerTabActive' + vm.playerMonth;
-              vm.episodeTabStatus = 'playerTabInactive' + vm.playerMonth;
-              vm.episodeDetailsTabStatus = 'playerTabInactive' + vm.playerMonth;
-              vm.aboutContainer = 'aboutContainerActive' + vm.playerMonth;
-              vm.episodeContainer = 'episodeContainerInactive' + vm.playerMonth;
-              vm.detailsContainer = 'detailsContainerInactive' + vm.playerMonth;
-            }
-            break;
-          case('episodes'):
-            if (vm.episodeTabStatus !== ('tabAcitve' + vm.playerMonth)) {
-              vm.episodeTabStatus = 'playerTabActive' + vm.playerMonth;
-              vm.aboutTabStatus = 'playerTabInactive' + vm.playerMonth;
-              vm.episodeDetailsTabStatus = 'playerTabInactive' + vm.playerMonth;
-              vm.aboutContainer = 'aboutContainerInactive' + vm.playerMonth;
-              vm.episodeContainer = 'episodeContainerActive' + vm.playerMonth;
-              vm.detailsContainer = 'detailsContainerInactive' + vm.playerMonth;
-            }
-            break;
-          case('details'):
-            if (vm.episodeDetailsTabStatus !== ('tabAcitve' + vm.playerMonth)) {
-              vm.episodeDetailsTabStatus = 'playerTabActive' + vm.playerMonth;
-              vm.episodeTabStatus = 'playerTabInactive' + vm.playerMonth;
-              vm.aboutTabStatus = 'playerTabInactive' + vm.playerMonth;
-              vm.aboutContainer = 'aboutContainerInactive' + vm.playerMonth;
-              vm.episodeContainer = 'episodeContainerInactive' + vm.playerMonth;
-              vm.detailsContainer = 'detailsContainerActive' + vm.playerMonth;
-            }
-            break;
-          default:
-            console.log('unsupported tab');
-            alert('unsupported tab');
+        playerAudioPlayer.currentTime = playerProgressSlider.value;
+        if (playerPlayPauseButton.className === 'playerPlay' + vm.playerMonth) {
+          updateNumericalProgressDisplay();
         }
-      }
-
-      function userSwitchCurrentEpisode(index) {
+    }
+    
+    function userSwitchCurrentEpisode(index) {
         let playerProgressSlider = document.getElementById('playerProgressSlider');
 
         if (index !== vm.currentEpisodeIndex) {
@@ -199,146 +332,12 @@
           playerProgressSlider.max = Math.round(vm.episodesList[index].enclosure.duration);
           playerProgressSlider.value = 0;
         }
-      }
+    }
 
-      function isCurrentEpisodeIndex(index) {
-        if (index === vm.currentEpisodeIndex) {
-          return('episodeItemsCurrent' + vm.playerMonth);
-        } else {
-          return('episodeItems' + vm.playerMonth);
-        }
-      }
-
-
-      function userSliderPosition() {
-        let playerProgressSlider = document.getElementById('playerProgressSlider');
-        let playerAudioPlayer = document.getElementById('playerAudioPlayer');
-        let playerPlayPauseButton = document.getElementById('playerPlayPauseButton');
-
-        playerAudioPlayer.currentTime = playerProgressSlider.value;
-        if (playerPlayPauseButton.className === 'playerPlay' + vm.playerMonth) {
-          updateNumericalProgressDisplay();
-        }
-      }
-
-      function secondsConversion(totalSeconds) {
-        let calculateTime = totalSeconds;
-        let displayTime = '';
-        let hours = 0;
-        let minutes = 0;
-        let seconds = 0;
-
-        if (calculateTime > 3599) {
-          while(calculateTime > 3599) {
-            ++hours;
-            calculateTime -= 3600;
-          }
-          displayTime += hours.toString() + ':';
-        }
-        if (calculateTime > 59) {
-          while(calculateTime > 59) {
-            ++minutes;
-            calculateTime -= 60;
-          }
-          if ((hours !== 0) && (minutes < 10)) {
-            displayTime += '0';
-          }
-          displayTime += minutes.toString() + ':';
-        } else {
-          if (hours === 0) {
-            displayTime += '0:';
-          } else {
-            displayTime += '00:';
-          }
-        }
-        if (calculateTime < 10) {
-          displayTime += '0';
-        }
-        displayTime += calculateTime.toString();
-
-        return(displayTime);
-      }
-
-      function updateNumericalProgressDisplay() {
-        let playerProgressSlider = document.getElementById('playerProgressSlider');
-        let playerAudioPlayer = document.getElementById('playerAudioPlayer');
-        let playerProgressNumericalDisplay = document.getElementById('playerProgressNumericalDisplay');
-        vm.playerCurrentPosition = secondsConversion(Math.round(playerAudioPlayer.currentTime));
-        playerProgressNumericalDisplay.innerHTML = vm.playerCurrentPosition + ' / ' + vm.playerTotalPlaytime;
-        playerProgressSlider.value = Math.round(playerAudioPlayer.currentTime);
-        vm.episodesList[vm.currentEpisodeIndex].userCurrentTime = secondsConversion(Math.round(playerAudioPlayer.currentTime));
-        setTimeout(() => {
-          if (vm.playPause === 'playerPause' + vm.playerMonth) {
-            updateNumericalProgressDisplay();
-          }
-        }, vm.updateRate);
-      }
-
-      function togglePlayPause() {
-        let playerPlayPauseButton = document.getElementById('playerPlayPauseButton');
-        let playerAudioPlayer = document.getElementById('playerAudioPlayer');
-
-        if (vm.playPause === ('playerPlay' + vm.playerMonth)) {
-          vm.playPause = 'playerPause' + vm.playerMonth;
-          playerPlayPauseButton.innerHTML = '&#10074;&#10074;';
-          playerAudioPlayer.play();
-          updateNumericalProgressDisplay();
-        } else {
-          vm.playPause = 'playerPlay' + vm.playerMonth;
-          playerPlayPauseButton.innerHTML = '&#9654;';
-          playerAudioPlayer.pause();
-        }
-      }
-
-      function feedDatas() {
-        let playerProgressSlider = document.getElementById('playerProgressSlider');
-        let playerAudioPlayer = document.getElementById('playerAudioPlayer');
-        let rssLink = vm.playerFeeds[vm.playerFeedsIndex].url;
-        rssLink = rssLink.replace(':', '%3A');
-        while(rssLink.indexOf('/') !== -1) {
-          rssLink = rssLink.replace('/', '%2F');
-        }
-        console.log(rssLink);
-        $http.get(`/rss_reader/${rssLink}`)
-        .then(feedsPlaylistData => {
-          let feedsPlaylist = feedsPlaylistData.data;
-          console.log(feedsPlaylist);
-          vm.episodeLink = feedsPlaylist.items[0].link
-          vm.episodeContent = feedsPlaylist.items[0].content;
-          vm.feedAudio = feedsPlaylist.items[0].enclosure.link;
-          vm.feedAudioType = feedsPlaylist.items[0].enclosure.type;
-          vm.podcastEpisodeTitle = feedsPlaylist.items[0].title;
-          vm.podcastEpisodeAuthorship = feedsPlaylist.items[0].author;
-          vm.playerTotalPlaytime = secondsConversion(feedsPlaylist.items[0].enclosure.duration);
-          playerProgressSlider.min = '0';
-          playerProgressSlider.step = '1';
-          playerProgressSlider.max = Math.round(feedsPlaylist.items[0].enclosure.duration);
-          vm.episodesList = feedsPlaylist.items;
-          for (let i = 0; i < feedsPlaylist.items.length; i++) {
-            vm.episodesList[i].index = i;
-            vm.episodesList[i].durationInHumanReadableTime = secondsConversion(feedsPlaylist.items[i].enclosure.duration);
-            vm.episodesList[i].userCurrentTime = secondsConversion(0);
-          }
-          vm.currentEpisodeIndex = 0;
-        });
-      }
-        
-      function getSkins() {
-          $http.get('/skins/player')
-                .then(playerResultData => {
-                    vm.playerMonth = playerResultData.data.player;
-                    vm.playerMask = 'playerContainer' + vm.playerMonth;
-                    vm.playPause = 'playerPlay' + vm.playerMonth;
-                    vm.aboutContainer = 'aboutContainerActive' + vm.playerMonth;
-                    vm.episodeContainer = 'episodeContainerInactive' + vm.playerMonth;
-                    vm.detailsContainer = 'detailsContainerInactive' + vm.playerMonth;
-                    vm.aboutTabStatus = 'playerTabActive' + vm.playerMonth;
-                    vm.episodeTabStatus = 'playerTabInactive' + vm.playerMonth;
-                    vm.episodeDetailsTabStatus = 'playerTabInactive' + vm.playerMonth;
-                    vm.playbackRateStatus = "playerAtSpeed1" + vm.playerMonth;
-                    vm.shareSaveDialogStatus = 'shareSaveDivInactive' + vm.playerMonth;
-                });
-      }
+    function viewCancelShareSaveLink() {
+        vm.shareSaveDialogStatus = 'shareSaveDivInactive' + vm.playerMonth;
+        vm.playerMask = 'playerContainer' + vm.playerMonth;
+    }
 
 
       function onInit() {
