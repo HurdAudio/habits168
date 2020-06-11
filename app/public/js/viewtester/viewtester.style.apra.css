@@ -1,0 +1,368 @@
+.viewContainer_AprilA {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/viewer/age-rappell-acpe9K16y10-unsplash.jpg);
+    background-size: cover;
+    filter: blur(0);
+    height: 95%;
+    margin: 5% 0 0 0;
+    transition: all 0.5s linear;
+    width: 100%;
+    z-index: 1;
+}
+
+.viewContainerCloaked_AprilA {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/viewer/age-rappell-acpe9K16y10-unsplash.jpg);
+    background-size: cover;
+    filter: blur(20px);
+    height: 95%;
+    margin: 5% 0 0 0;
+    transition: all 0.5s linear;
+    width: 100%;
+    z-index: 1;
+}
+
+.viewToolbar_AprilA {
+    backdrop-filter: contrast(250%) saturate(200%);
+    border-bottom: 1px solid transparent;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 11.3vh;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.viewNavigation_AprilA {
+    background: #8bafc7;
+    border: none;
+    box-shadow: 5px 5px 4px #37464f, -5px -5px 4px #37464f;
+    color: #000b15;
+    cursor: pointer;
+    font-family: 'Caladea', serif;
+    font-size: 60px;
+    height: 80px;
+    margin: 3px 10px;
+    outline-color: #8aa2b1;
+    padding: 1px;
+    transition: all 0.2s linear;
+    width: 85px;
+}
+
+.viewNavigation_AprilA:hover {
+    background: #011d35;
+    box-shadow: 8px 8px 20px #d9d7d2, -4px -4px 20px #d9d7d2;
+    color: #d9d7d2;
+    transition: all 0.2s linear;
+}
+
+.viewNavigation_AprilA:active {
+    box-shadow: 0 0 0 #d9d7d2, 0 0 0 #d9d7d2;
+    transition: all 0.1s linear;
+}
+
+.viewCurrentFeedIcon_AprilA {
+    height: 75px;
+    width: 75px;
+}
+
+.viewCurrentFeedTitle_AprilA {
+    background: transparent;
+    color: #000b15;
+    cursor: pointer;
+    display: initial;
+    font-family: 'Caladea', serif;
+    font-size: 66px;
+    font-weight: 900;
+    padding: 10px 15px 0 15px;
+    transition: all 0.2s linear;
+}
+
+.viewCurrentFeedTitle_AprilA:hover {
+    color: #343d3f;
+    transition: all 0.2s linear;
+}
+
+.viewCurrentFeedTitle_AprilA a:hover {
+    color: #482000;
+    transition: all 0.2s linear;
+}
+
+.viewCurrentFeedTitle_AprilA a {
+    color: #011d35;
+    text-decoration: none;
+    transition: all 0.3s linear;
+}
+
+.viewCurrentFeedDescription_AprilA {
+    background: transparent;
+    color: #000b15;
+    display: initial;
+    justify-content: flex-end;
+    font-family: 'Caladea', serif;
+    font-size: 18px;
+    font-weight: 900;
+    padding: 50px 0 0 10px;
+}
+
+.viewContentDiv_AprilA {
+    backdrop-filter: blur(4px) brightness(80%);
+    background: #c1cccf;
+    height: 75.5vh;
+    opacity: 0.85;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 1% 5%;
+    width: 100%;
+}
+
+.viewIndividualItems_AprilA {
+    color: #000b15;
+    font-family: 'Caladea', serif;
+    line-height: 1.3em;
+    max-width: 880px;
+}
+
+.viewIndividualItems_AprilA img {
+    max-width: 70%;
+}
+
+.viewIndividualItems_AprilA p {
+    font-size: 18px;
+    line-height: 1.3em;
+    margin: 5px 5% 5px 1%;
+}
+
+.viewIndividualItems_AprilA a {
+    color: #011d35;
+    text-decoration: none;
+}
+
+.viewIndividualItems_AprilA a p {
+    font-size: 30px;
+    margin: 25px 4px 8px 0;
+}
+
+.viewIndividualItems_AprilA a:hover {
+    color: #2d607b;
+}
+
+.viewIndividualItems_AprilA a:visited {
+    color: #343d3f;
+}
+
+.viewIndividualItems_AprilA button {
+    background: #8bafc7;
+    border: none;
+    box-shadow: 5px 5px 4px #37464f, -5px -5px 4px #37464f;
+    color: #000b15;
+    cursor: pointer;
+    font-family: 'Caladea', serif;
+    font-size: 18px;
+    height: auto;
+    margin: 0 0 0 0;
+    outline-color: #8aa2b1;
+    padding: 3px;
+    transition: all 0.2s linear;
+}
+
+.viewIndividualItems_AprilA button:hover {
+    background: #011d35;
+    box-shadow: 8px 8px 20px #d9d7d2, -4px -4px 20px #d9d7d2;
+    color: #d9d7d2;
+    transition: all 0.2s linear;
+}
+
+.viewIndividualItems_AprilA button:active {
+    box-shadow: 0 0 0 #d9d7d2, 0 0 0 #d9d7d2;
+    transition: all 0.1s linear;
+}
+
+.viewPostTimestamp_AprilA {
+    margin: 5px 5px 5px 45% !important;
+}
+
+.viewShareSaveDialogueDisplayed_AprilA {
+    background: #808e9a;
+    color: #000b15;
+    display: initial;
+    filter: drop-shadow(10px 15px 4px #343d3f);
+    font-family: 'Caladea', serif;
+    height: 70vh;
+    left: 10%;
+    opacity: 0.99;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    top: 15%;
+    transform: skewX(0deg);
+    transition: all 0.5s linear;
+    width: 80%;
+    z-index: 17;
+}
+
+.viewShareSaveDialogueHidden_AprilA {
+    background: #808e9a;
+    color: #000b15;
+    filter: drop-shadow(10px 15px 4px #343d3f);
+    font-family: 'Caladea', serif;
+    height: 70vh;
+    left: 10%;
+    opacity: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    top: -45%;
+    transform: skewX(0deg);
+    transition: all 0.5s linear;
+    width: 80%;
+    z-index: -1;
+}
+
+.viewDialogHeadline_AprilA {
+    background: #2d607b;
+    color: #d4e1e8;
+    font-size: 48px;
+    padding: 30px 0 10px 50px;
+}
+
+.viewShareSaveDialogueDisplayed_AprilA img {
+    height: 75px;
+    margin: 30px 0 15px 150px;
+    width: 75px;
+}
+
+.viewShareSaveDialogueHidden_AprilA img {
+    height: 75px;
+    margin: 30px 0 15px 150px;
+    width: 75px;
+}
+
+.viewShareSaveDialogueDisplayed_AprilA p {
+    font-size: 24px;
+    margin: 5px 50px 15px 50px;
+}
+
+.viewShareSaveDialogueHidden_AprilA p {
+    font-size: 24px;
+    margin: 5px 50px 15px 50px;
+}
+
+.viewShareSaveDialogueDisplayed_AprilA textarea {
+    background: #c1cccf;
+    border: none;
+    color: #000b15;
+    display: initial;
+    font-family: 'Caladea', serif;
+    font-size: 18px;
+    margin: 5px 50px 5px 50px;
+    outline-color: #8aa2b1;
+    padding: 5px;
+    width: 88%;
+}
+
+.viewShareSaveDialogueHidden_AprilA textarea {
+    background: #c1cccf;
+    border: none;
+    color: #000b15;
+    display: initial;
+    font-family: 'Caladea', serif;
+    font-size: 18px;
+    margin: 5px 50px 5px 50px;
+    outline-color: #8aa2b1;
+    padding: 5px;
+    width: 88%;
+}
+
+.viewShareSaveDialogueDisplayed_AprilA button {
+    background: #8bafc7;
+    border: none;
+    box-shadow: 5px 5px 4px #37464f, -5px -5px 4px #37464f;
+    color: #000b15;
+    cursor: pointer;
+    font-family: 'Caladea', serif;
+    font-size: 18px;
+    height: auto;
+    margin: 15px 15px 5px 50px;
+    outline-color: #8aa2b1;
+    padding: 5px;
+    transition: all 0.2s linear;
+}
+
+.viewShareSaveDialogueHidden_AprilA button {
+    background: #8bafc7;
+    border: none;
+    box-shadow: 5px 5px 4px #37464f, -5px -5px 4px #37464f;
+    color: #000b15;
+    cursor: pointer;
+    font-family: 'Caladea', serif;
+    font-size: 18px;
+    height: auto;
+    margin: 15px 15px 5px 50px;
+    outline-color: #8aa2b1;
+    padding: 5px;
+    transition: all 0.2s linear;
+}
+
+.viewShareSaveDialogueDisplayed_AprilA button:hover {
+    background: #011d35;
+    box-shadow: 8px 8px 20px #d9d7d2, -4px -4px 20px #d9d7d2;
+    color: #d9d7d2;
+    transition: all 0.2s linear;
+}
+
+.viewShareSaveDialogueDisplayed_AprilA button:active {
+    box-shadow: 0 0 0 #d9d7d2, 0 0 0 #d9d7d2;
+    transition: all 0.1s linear;
+}
+
+.viewRadioButtons_AprilA {
+    font-family: 'Caladea', serif;
+    font-size: 24px;
+    margin: 0 0 20px 50px;
+}
+
+@media only screen and (max-width: 736px) {
+
+    .viewCurrentFeedDescription_AprilA {
+        display: none;
+    }
+
+    .viewContentDiv_AprilA {
+        height: 140vh;
+    }
+
+    .viewToolbar_AprilA {
+        height: 16vh;
+    }
+
+    .viewCurrentFeedTitle_AprilA {
+        display: initial;
+        font-size: 48px;
+        padding: 20px 15px 0 15px;
+    }
+}
+
+@media only screen and (max-width: 667px) {
+
+    .viewCurrentFeedTitle_AprilA {
+        display: none;
+    }
+
+    .viewNavigation_AprilA {
+        font-size: 48px;
+        height: 50px;
+        width: 50px;
+    }
+
+    .viewCurrentFeedIcon_AprilA {
+        height: 50px;
+        width: 50px;
+    }
+
+    .viewShareSaveDialogueDisplayed_AprilA textarea {
+        margin: 5px 50px 5px 50px;
+        padding: 5px;
+        width: 58%;
+    }
+
+}
