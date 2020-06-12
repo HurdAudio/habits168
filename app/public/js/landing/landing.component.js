@@ -330,6 +330,9 @@
                         case('_AprilA'):
                             vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/ddd784j-25abee3c-e332-4d13-8e9c-df956fe4af96.png';
                             break;
+                        case('_AprilB'):
+                            vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_for_mister_mondrian_by_floriandra_d15xzay-fullview.jpg';
+                            break;
                         default:
                             alert('UNSUPPORTED MONTH SELECT for LOGO');
                     }
