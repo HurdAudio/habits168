@@ -51,6 +51,7 @@
             <h4 class="browseBlogsCategoryLabel{{$ctrl.browseMonth}}">category:</h4>
             <select class="browseCategorySelect{{$ctrl.browseMonth}}" id="browsePodcastCategorySelect">
                 <option value="_generic">all feeds</option>
+                <option value="_tech">tech</option>
             </select>
             <button class="browseViewFeedsButton{{$ctrl.browseMonth}}" ng-click="$ctrl.clickBrowseViewPodcastFeedsButton()">view</button>
         </div>
@@ -67,7 +68,7 @@
                 
             </main>
         </div>
-        <div class="browseIndividualPodFeedData{{$ctrl.currentView}}{{$ctrl.browseMonth}}">
+        <div class="browseIndividualPodFeedData{{$ctrl.currentPodView}}{{$ctrl.browseMonth}}">
             <img src={{$ctrl.currentPodcastFeed.image}}>
             <h3 ng-bind-html="$ctrl.currentPodcastFeed.title"></h3>
             <p ng-bind-html="$ctrl.currentPodcastFeed.author"></p>
