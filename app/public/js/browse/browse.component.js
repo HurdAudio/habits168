@@ -13,7 +13,7 @@
         const vm = this;
 
         vm.$onInit = onInit;
-        vm.browseMonth = '_FebruaryA';
+        vm.browseMonth = '_JanuaryA';
         vm.navigateToHub = navigateToHub;
         vm.browseContainer = 'browseActive' + vm.browseMonth;
         vm.blogFeedTabState = 'browseTabActive' + vm.browseMonth;
@@ -273,6 +273,28 @@
                 title: 'JSConf'
             }
         ];
+        vm.techPodcasts = [
+            {
+                  uuid: '7f5aca06-17bf-4c99-8c8f-af561999498c',
+                  author: 'DevChat.tv',
+                  description: 'Weekly podcast discussion about Javascript on the front and back ends. Also discuss programming practices, coding environments, and the communities related to the technology.',
+                  link: 'http://javascriptjabber.com/',
+                  image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/javascript_jabber_thumb.jpg',
+                  items: null,
+                  rss: 'https://feeds.feedwrench.com/js-jabber.rss',
+                  title: 'JavaScript Jabber'
+            },
+            {
+                  uuid: 'ced9116d-00e6-4b86-b99a-b50c65b1be7b',
+                  author: 'Devchat.tv',
+                  description: 'A weekly exploration into the people who make JavaScript what it is.',
+                  link: 'http://devchat.tv/my-js-story',
+                  image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/MyJSStory.jpg',
+                  items: null,
+                  rss: 'https://feeds.feedwrench.com/my-js-story.rss',
+                  title: 'My JavaScript Story'
+            }
+        ];
 
         function removeSubscription() {
             // TODO: wire subscription removal into the backend
@@ -495,11 +517,37 @@
                 case('_generic'):
                     tableName = 'podcast_feeds';
                     break;
+                case('_tech'):
+                    tableName = 'tech_podcasts';
+                    break;
                 default:
                     alert('non-supported podcast category');
             }
             if (tableName !== '') {
-                $http.get(`/${tableName}`)
+                if (tableName === 'tech_podcasts') {
+                    vm.viewPodcastFeeds = vm.techPodcasts.sort((a, b) => {
+                        first = a.title.toLowerCase();
+                        second = b.title.toLowerCase();
+                        if (first.slice(0, 4) === 'the ') {
+                            first = first.slice(4);
+                        } else if (first.slice(0, 2) === 'a ') {
+                            first = first.slice(2);
+                        }
+                        if (second.slice(0, 4) === 'the ') {
+                            second = second.slice(4);
+                        } else if (second.slice(0, 2) === 'a ') {
+                            second = second.slice(2);
+                        }
+                        if (first < second) {
+                            return -1;
+                        } else if (first > second) {
+                            return 1;
+                        } else {
+                            return 0;
+                        }
+                    });
+                } else {
+                    $http.get(`/${tableName}`)
                 .then(allFeeds => {
                     vm.viewPodcastFeeds = allFeeds.data.sort((a, b) => {
                         first = a.title.toLowerCase();
@@ -521,8 +569,10 @@
                         } else {
                             return 0;
                         }
+                        });
                     });
-                });
+                }
+                
             }
         }
 
@@ -549,24 +599,24 @@
                 if (tableName === 'tech_feeds') {
                     vm.viewBlogFeeds = vm.techBlogs.sort((a, b) => {
                         first = a.title.toLowerCase();
-                            second = b.title.toLowerCase();
-                            if (first.slice(0, 4) === 'the ') {
-                                first = first.slice(4);
-                            } else if (first.slice(0, 2) === 'a ') {
-                                first = first.slice(2);
-                            }
-                            if (second.slice(0, 4) === 'the ') {
-                                second = second.slice(4);
-                            } else if (second.slice(0, 2) === 'a ') {
-                                second = second.slice(2);
-                            }
-                            if (first < second) {
-                                return -1;
-                            } else if (first > second) {
-                                return 1;
-                            } else {
-                                return 0;
-                            }
+                        second = b.title.toLowerCase();
+                        if (first.slice(0, 4) === 'the ') {
+                            first = first.slice(4);
+                        } else if (first.slice(0, 2) === 'a ') {
+                            first = first.slice(2);
+                        }
+                        if (second.slice(0, 4) === 'the ') {
+                            second = second.slice(4);
+                        } else if (second.slice(0, 2) === 'a ') {
+                            second = second.slice(2);
+                        }
+                        if (first < second) {
+                            return -1;
+                        } else if (first > second) {
+                            return 1;
+                        } else {
+                            return 0;
+                        }
                     });
                 } else {
                     $http.get(`/${tableName}`)
