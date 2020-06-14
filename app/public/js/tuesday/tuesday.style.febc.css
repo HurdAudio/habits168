@@ -1,5 +1,5 @@
-.tuesdayBackgroundDiv_FebruaryB {
-    background: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/february/jen-theodore-PU4sOcNnYj8-unsplash.jpg);
+.tuesdayBackgroundDiv_FebruaryC {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/february/nick-de-partee-5DLBoEX99Cs-unsplash.jpg);
     background-size: 100%;
     height: 100%;
     left: 0;
@@ -13,86 +13,86 @@
     z-index: -1;
 }
 
-.tuesdayContainerActive_FebruaryB {
+.tuesdayContainerActive_FebruaryC {
     filter: blur(0px);
 }
 
-.tuesdayContainerInactive_FebruaryB {
+.tuesdayContainerInactive_FebruaryC {
     filter: blur(15px);
 }
 
-.tuesdayTitleStrip_FebruaryB {
-    background: #b4b0b0;
+.tuesdayTitleStrip_FebruaryC {
+    background: linear-gradient(90deg, #5d556a, #be9b95, transparent);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     font-family: 'Sen', sans-serif;
     height: auto;
     justify-content: flex-start;
-    opacity: 0.9;
+    opacity: 1;
     padding: 4px 2vw 4px 2vw;
     width: 100%;
 }
 
-.tuesdayLogo_FebruaryB {
+.tuesdayLogo_FebruaryC {
     cursor: pointer;
-    filter: drop-shadow(8px 12px 4px #51464c);
+    filter: drop-shadow(8px 12px 4px #0f1a3a);
     max-width: 85px;
 }
 
-.tuesdayReadingPlaylistTitle_FebruaryB {
-    color: #0a080a;
+.tuesdayReadingPlaylistTitle_FebruaryC {
+    color: #0e0e0e;
     font-size: 54px;
-    margin: 15px 0 0 96px;
+    margin: 5px 0 0 96px;
 }
 
-.tuesdayTabStrip_FebruaryB {
-    background: #51464c;
+.tuesdayTabStrip_FebruaryC {
+    background: linear-gradient(90deg, #7d372b, #7d372b, #aeaab5, transparent);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     font-family: 'Sen', sans-serif;
     height: auto;
-    opacity: 0.7;
+    opacity: 1;
     padding: 0 20px;
     width: 100%;
 }
 
-.tuesdayTabActive_FebruaryB {
-    background: #eaabcb;
-    color: #0a080a;
+.tuesdayTabActive_FebruaryC {
+    background: linear-gradient(90deg, #93a1c9, #93a1c9, #be9b95, #be9b95, transparent);
+    color: #0e0e0e;
     cursor: none;
     font-size: 30px;
     padding: 2px 55px 2px 5px;
     transition: all 0.5s linear;
 }
 
-.tuesdayTabInactive_FebruaryB {
+.tuesdayTabInactive_FebruaryC {
     background: transparent;
-    color: #9a989b;
+    color: #354046;
     cursor: pointer;
     font-size: 30px;
     padding: 2px 25px 2px 15px;
     transition: all 0.5s linear;
 }
 
-.tuesdayContent_FebruaryB {
+.tuesdayContent_FebruaryC {
     background: transparent;
     height: 80vh;
     width: 100%;
 }
 
-.tuesdayContentContent_FebruaryB {
-    background: #c3c2c5;
+.tuesdayContentContent_FebruaryC {
+    background: linear-gradient(90deg, #aeaab5, #aeaab5, #be9b95, transparent);
     height: 82vh;
-    opacity: 0.85;
+    opacity: 1;
     overflow-x: hidden;
     overflow-Y: auto;
     width: 105%;
 }
 
-.tuesdayReaderNavigationButtons_FebruaryB {
-    background: #877e79;
+.tuesdayReaderNavigationButtons_FebruaryC {
+    background: linear-gradient(90deg, #5d556a, #5d556a, #aeaab5, transparent);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -105,14 +105,14 @@
     z-index: 15;
 }
 
-.markAllReadTextTuesday_FebruaryB {
-    color: #0a080a;
+.markAllReadTextTuesday_FebruaryC {
+    color: #0e0e0e;
     font-family: 'Sen', sans-serif;
     font-size: 24px;
     margin: 35px 10px 0 40px;
 }
 
-.tuesdayTrackProgress_FebruaryB {
+.tuesdayTrackProgress_FebruaryC {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -125,7 +125,7 @@
     user-select: none;
 }
 
-.tuesdayTrackProgress_FebruaryB input {
+.tuesdayTrackProgress_FebruaryC input {
     cursor: pointer;
     height: 0;
     opacity: 0;
@@ -133,86 +133,88 @@
     width: 0;
 }
 
-.tuesdayCheckbox_FebruaryBtrue {
-    background-color: #6fd3c9;
+.tuesdayCheckbox_FebruaryCtrue {
+    background-color: #264393;
     border: none;
     height: 20px;
     left: 10px;
     position: absolute;
-    top: -5px;
+    top: 0;
     transform: translateX(0) translateY(20px);
     transition: all 0.3s linear;
     width: 40px;
 }
 
-.tuesdayCheckbox_FebruaryBfalse {
-    background-color: #94ad76;
+.tuesdayCheckbox_FebruaryCfalse {
+    background-color: #0f1a3a;
     border: none;
     height: 20px;
     left: 10px;
     position: absolute;
-    top: -5px;
+    top: 0;
     transform: translateX(0px) translateY(20px);
     transition: all 0.3s linear;
     width: 40px;
 }
 
-.tuesdaySwitchUnchecked_FebruaryBtrue {
-    background-color: #0a080a;
-    height: 30px;
-    left: 20px;
+.tuesdaySwitchUnchecked_FebruaryCtrue {
+    background-color: #0e0e0e;
+    height: 40px;
+    left: 30px;
     position: absolute;
-    top: -5px;
+    top: -10px;
     transition: all 0.2s linear;
-    width: 20px;
+    transform: rotateZ(180deg);
+    width: 10px;
 }
 
-.tuesdaySwitchUnchecked_FebruaryBfalse {
-    background-color: #0a080a;
-    height: 30px;
+.tuesdaySwitchUnchecked_FebruaryCfalse {
+    background-color: #0e0e0e;
+    height: 40px;
     left: 0px;
     position: absolute;
-    top: -5px;
+    top: -10px;
     transition: all 0.2s linear;
-    width: 20px;
+    transform: rotateZ(0deg);
+    width: 10px;
 }
 
-.tuesdayReadAll_FebruaryB {
-    color: #0a080a;
+.tuesdayReadAll_FebruaryC {
+    color: #0e0e0e;
     font-family: 'Sen', sans-serif;
     font-size: 24px;
     margin: 14px 0 14px 25px;
 }
 
-.tuesdayReadAllButton_FebruaryB {
-    background: #51464c;
+.tuesdayReadAllButton_FebruaryC {
+    background: #7d372b;
     border: transparent;
-    color: #eaabcb;
+    color: #94b7d2;
     cursor: pointer;
-    filter: drop-shadow(8px 12px 4px #51464c);
+    filter: drop-shadow(8px 12px 4px #0f1a3a);
     font-family: 'Sen', sans-serif;
     font-size: 36px;
     height: 60px;
-    outline-color: #9a989b;
+    outline-color: #9aa0a3;
     transition: all 0.5s linear;
     width: 60px;
 }
 
-.tuesdayReadAllButton_FebruaryB:hover {
-    background: #1a1519;
-    color: #a6ece2;
-    filter: drop-shadow(4px 8px 4px #51464c);
+.tuesdayReadAllButton_FebruaryC:hover {
+    background: #296ea5;
+    color: #be9b95;
+    filter: drop-shadow(4px 8px 4px #0f1a3a);
     transition: all 0.5s linear;
 }
 
-.tuesdayReadAllButton_FebruaryB:active {
-    background: #a6ece2;
-    color: #1a1519;
-    filter: drop-shadow(0 0 0 #51464c);
+.tuesdayReadAllButton_FebruaryC:active {
+    background: #be9b95;
+    color: #296ea5;
+    filter: drop-shadow(0 0 0 #0f1a3a);
     transition: all 0.1s linear;
 }
 
-.tuesdaySorting_FebruaryB {
+.tuesdaySorting_FebruaryC {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -220,34 +222,34 @@
     margin: 14px 0 14px 100px;
 }
 
-.tuesdaySorting_FebruaryB p {
-    color: #0a080a;
+.tuesdaySorting_FebruaryC p {
+    color: #0e0e0e;
     font-family: 'Sen', sans-serif;
     font-size: 24px;
     margin: 20px 20px 0 0;
 }
 
-.tuesdaySorting_FebruaryB button {
+.tuesdaySorting_FebruaryC button {
     margin: 0 5px;
 }
 
-.tuesdayFeedsDiv_FebruaryB {
+.tuesdayFeedsDiv_FebruaryC {
     height: auto;
-    margin: 90px 50px 0 50px;
+    margin: 120px 50px 0 50px;
     width: 90%;
 }
 
-.tuesdaySubscriptions_FebruaryB {
+.tuesdaySubscriptions_FebruaryC {
     cursor: pointer;
     margin: 10px;
 }
 
-.tuesdayBuffer_FebruaryB {
+.tuesdayBuffer_FebruaryC {
     height: 20px;
     width: 100%;
 }
 
-.tuesdayFeedContainer_FebruaryB {
+.tuesdayFeedContainer_FebruaryC {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -255,8 +257,8 @@
     padding: 5px 5px 5px -15px;
 }
 
-.tuesdaySubIcon_FebruaryB {
-    filter: drop-shadow(8px 12px 4px #51464c);
+.tuesdaySubIcon_FebruaryC {
+    filter: drop-shadow(8px 12px 4px #0f1a3a);
     height: 65px;
     margin-left: 20px;
     margin-right: 20px;
@@ -264,8 +266,8 @@
     width: 65px;
 }
 
-.tuesdaySubscriptionTitle_FebruaryB {
-    color: #0a080a;
+.tuesdaySubscriptionTitle_FebruaryC {
+    color: #0e0e0e;
     font-family: 'Sen', sans-serif;
     font-size: 18px;
     line-height: 1.2;
@@ -273,53 +275,53 @@
     width: 650px;
 }
 
-.tuesdayUnreadText_FebruaryB {
-    color: #0a080a;
+.tuesdayUnreadText_FebruaryC {
+    color: #0e0e0e;
     font-family: 'Sen', sans-serif;
     font-size: 18px;
     margin: 10px 40px 0 30px;
     width: 35px;
 }
 
-.tuesdayReadText_FebruaryB {
-    color: #0a080a;
+.tuesdayReadText_FebruaryC {
+    color: #0e0e0e;
     font-family: 'Sen', sans-serif;
     font-size: 18px;
     margin: 10px 40px 0 30px;
     width: 35px;
 }
 
-.tuesdayManageTabsButton_FebruaryB {
-    background: #51464c;
+.tuesdayManageTabsButton_FebruaryC {
+    background: #7d372b;
     border: transparent;
-    color: #eaabcb;
+    color: #94b7d2;
     cursor: pointer;
-    filter: drop-shadow(8px 12px 4px #51464c);
+    filter: drop-shadow(8px 12px 4px #0f1a3a);
     font-family: 'Sen', sans-serif;
     font-size: 24px;
     height: 40px;
-    margin: 36px 0 0 5%;
-    outline-color: #9a989b;
+    margin: 18px 0 0 5%;
+    outline-color: #9aa0a3;
     transition: all 0.5s linear;
     width: auto;
 }
 
-.tuesdayManageTabsButton_FebruaryB:hover {
-    background: #1a1519;
-    color: #a6ece2;
-    filter: drop-shadow(4px 8px 4px #51464c);
+.tuesdayManageTabsButton_FebruaryC:hover {
+    background: #296ea5;
+    color: #be9b95;
+    filter: drop-shadow(4px 8px 4px #0f1a3a);
     transition: all 0.5s linear;
 }
 
-.tuesdayManageTabsButton_FebruaryB:active {
-    background: #a6ece2;
-    color: #1a1519;
-    filter: drop-shadow(0 0 0 #51464c);
+.tuesdayManageTabsButton_FebruaryC:active {
+    background: #be9b95;
+    color: #296ea5;
+    filter: drop-shadow(0 0 0 #0f1a3a);
     transition: all 0.1s linear;
 }
 
-.tuesdayManageTabsSubsModal_FebruaryB {
-    background: #b4b0b0;
+.tuesdayManageTabsSubsModal_FebruaryC {
+    background: #94b7d2;
     filter: blur(0px);
     height: 90vh;
     left: 2%;
@@ -331,8 +333,8 @@
     z-index: 50;
 }
 
-.tuesdayManageTabsSubsModalBlur_FebruaryB {
-    background: #b4b0b0;
+.tuesdayManageTabsSubsModalBlur_FebruaryC {
+    background: #94b7d2;
     filter: blur(5px);
     height: 90vh;
     left: 2%;
@@ -344,16 +346,16 @@
     z-index: 50;
 }
 
-.tuesdayManageTabsSubsModalInactive_FebruaryB {
+.tuesdayManageTabsSubsModalInactive_FebruaryC {
     opacity: 0;
     top: -80vh;
     transition: all 0.4s linear;
     z-index: -5;
 }
 
-.tuesdayManageTitleBar_FebruaryB {
-    background: #201c1e;
-    color: #b4b0b0;
+.tuesdayManageTitleBar_FebruaryC {
+    background: #0f1a3a;
+    color: #94b7d2;
     font-family: 'Sen', sans-serif;
     height: 6vh;
     opacity: 0.9;
@@ -362,8 +364,8 @@
     width: 99%;
 }
 
-.tuesdayModalExit_FebruaryB {
-    color: #b4b0b0;
+.tuesdayModalExit_FebruaryC {
+    color: #94b7d2;
     cursor: pointer;
     font-family: 'Sen', sans-serif;
     font-size: 48px;
@@ -373,14 +375,14 @@
     top: 1%;
 }
 
-.tuesdayManageTitle_FebruaryB {
-    color: #b4b0b0;
+.tuesdayManageTitle_FebruaryC {
+    color: #94b7d2;
     font-family: 'Sen', sans-serif;
     font-size: 30px;
     margin: 20px 0 0 0;
 }
 
-.tuesdayManagerModalContainer_FebruaryB {
+.tuesdayManagerModalContainer_FebruaryC {
     background: transparent;
     display: flex;
     flex-direction: row;
@@ -392,33 +394,33 @@
     width: 100%;
 }
 
-.tuesdayManagerTabsSection_FebruaryB {
+.tuesdayManagerTabsSection_FebruaryC {
     height: auto;
     padding: 15px;
     position: relative;
     width: 30%;
 }
 
-.tuesdayTabsManageTitle_FebruaryB {
+.tuesdayTabsManageTitle_FebruaryC {
     color: #0a080a;
     font-family: 'Sen', sans-serif;
     font-size: 24px;
 }
 
-.tuesdayManageTabsContainer_FebruaryB {
+.tuesdayManageTabsContainer_FebruaryC {
     margin: 40px 8%;
 }
 
-.tuesdayTabManageTab_FebruaryB {
-    color: #0a080a;
+.tuesdayTabManageTab_FebruaryC {
+    color: #0e0e0e;
     cursor: pointer;
     font-family: 'Sen', sans-serif;
     font-size: 24px;
     margin: 15px 0 15px 10px;
 }
 
-.tuesdayTabManageSubTab_FebruaryB {
-    color: #0a080a;
+.tuesdayTabManageSubTab_FebruaryC {
+    color: #0e0e0e;
     cursor: pointer;
     font-family: 'Sen', sans-serif;
     font-size: 15px;
@@ -426,27 +428,27 @@
     width: 10%;
 }
 
-.tuesdayManagerSubscriptionsSection_FebruaryB {
+.tuesdayManagerSubscriptionsSection_FebruaryC {
     height: auto;
     padding: 15px;
     position: relative;
     width: 30%;
 }
 
-.tuesdayTabsSubscriptionTitle_FebruaryB {
-    color: #0a080a;
+.tuesdayTabsSubscriptionTitle_FebruaryC {
+    color: #0e0e0e;
     font-family: 'Sen', sans-serif;
     font-size: 24px;
 }
 
-.tuesdayManageSubIcon_FebruaryB {
-    filter: drop-shadow(8px 12px 4px #51464c);
+.tuesdayManageSubIcon_FebruaryC {
+    filter: drop-shadow(8px 12px 4px #0f1a3a);
     height: 40px;
     width: 40px;
 }
 
-.tuesdaySubManageSubTab_FebruaryB {
-    color: #0a080a;
+.tuesdaySubManageSubTab_FebruaryC {
+    color: #0e0e0e;
     cursor: pointer;
     font-family: 'Sen', sans-serif;
     font-size: 15px;
@@ -455,49 +457,49 @@
     width: 10%;
 }
 
-.tuesdayManageSubsTitles_FebruaryB {
-    color: #0a080a;
+.tuesdayManageSubsTitles_FebruaryC {
+    color: #0e0e0e;
     font-family: 'Sen', sans-serif;
     font-size: 18px;
     margin: -15px 0 30px 1px;
 }
 
-.tuesdayManagerFeedsSection_FebruaryB {
+.tuesdayManagerFeedsSection_FebruaryC {
     height: auto;
     padding: 15px;
     position: relative;
     width: 30%;
 }
 
-.tuesdayManagerFeedsTitle_FebruaryB {
-    color: #0a080a;
+.tuesdayManagerFeedsTitle_FebruaryC {
+    color: #0e0e0e;
     font-family: 'Sen', sans-serif;
     font-size: 24px;
 }
 
-.tuesdayManageSearch_FebruaryB {
-    background: #c3c2c5;
+.tuesdayManageSearch_FebruaryC {
+    background: #aaa4a2;
     border: none;
-    color: #0a080a;
+    color: #0e0e0e;
     float: left;
     font-family: 'Sen', sans-serif;
     font-size: 18px;
     margin-top: 3px;
-    outline-color: #9a989b;
+    outline-color: #9aa0a3;
     padding-left: 5px;
     width: 100%;
 }
 
-.tuesdayManageSubsTitlesFeeds_FebruaryB {
-    color: #0a080a;
+.tuesdayManageSubsTitlesFeeds_FebruaryC {
+    color: #0e0e0e;
     font-family: 'Sen', sans-serif;
     font-size: 18px;
     margin: -15px 0 30px 1px;
 }
 
-.tuesdayCreateEditTabManagement_FebruaryB {
-    background: #86858b;
-    filter: drop-shadow(8px 12px 4px #51464c);
+.tuesdayCreateEditTabManagement_FebruaryC {
+    background: #be9b95;
+    filter: drop-shadow(8px 12px 4px #0f1a3a);
     height: auto;
     left: 22%;
     opacity: 1;
@@ -509,14 +511,14 @@
     z-index: 60;
 }
 
-.tuesdayCreateEditTabTitle_FebruaryB {
-    color: #0a080a;
+.tuesdayCreateEditTabTitle_FebruaryC {
+    color: #0e0e0e;
     font-family: 'Sen', sans-serif;
     font-size: 24px;
     margin: 15px 0 30px 25px;
 }
 
-.tuesdayTabEditorFields_FebruaryB {
+.tuesdayTabEditorFields_FebruaryC {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -524,38 +526,38 @@
     margin: 10px 0 0 60px;
 }
 
-.tuesdayTabNameLabel_FebruaryB {
-    color: #0a080a;
+.tuesdayTabNameLabel_FebruaryC {
+    color: #0e0e0e;
     font-family: 'Sen', sans-serif;
     font-size: 18px;
     margin: 0 9px 0 0;
 }
 
-.tuesdayTabNameInput_FebruaryB {
-    background: #c3c2c5;
+.tuesdayTabNameInput_FebruaryC {
+    background: #94b7d2;
     border: none;
-    color: #0a080a;
+    color: #0e0e0e;
     font-family: 'Sen', sans-serif;
     font-size: 18px;
     height: 21px;
     margin: 0 9px;
-    outline-color: #9a989b;
+    outline-color: #9aa0a3;
     width: 350px;
 }
 
-.tuesdayTabEditorPodcastBlogStatus_FebruaryB {
+.tuesdayTabEditorPodcastBlogStatus_FebruaryC {
     margin: -13px 0 0 40px;
 }
 
-#tuesdayUnreadText_FebruaryB {
-    color: #0f0d0b;
+#tuesdayUnreadText_FebruaryC {
+    color: #0e0e0e;
 }
 
-#tuesdayReadText_FebruaryB {
-    color: #0f0d0b;
+#tuesdayReadText_FebruaryC {
+    color: #0e0e0e;
 }
 
-.tuesdayTabEditorFields_FebruaryB {
+.tuesdayTabEditorFields_FebruaryC {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -563,7 +565,7 @@
     margin: 10px 0 0 60px;
 }
 
-.tuesdayTabEditorErrorMessage_FebruaryB {
+.tuesdayTabEditorErrorMessage_FebruaryC {
     color: #ff0000;
     font-family: 'Sen', sans-serif;
     font-size: 18px;
@@ -571,69 +573,69 @@
     margin-top: 20px;
 }
 
-.tuesdayManageTabsConfirmButton_FebruaryB {
-    background: #51464c;
+.tuesdayManageTabsConfirmButton_FebruaryC {
+    background: #7d372b;
     border: transparent;
-    color: #eaabcb;
+    color: #94b7d2;
     cursor: pointer;
-    filter: drop-shadow(8px 12px 4px #51464c);
+    filter: drop-shadow(8px 12px 4px #0f1a3a);
     font-family: 'Sen', sans-serif;
     font-size: 18px;
     height: 40px;
     margin: 56px 0 0 5%;
-    outline-color: #9a989b;
+    outline-color: #9aa0a3;
     position: relative;
     transition: all 0.5s linear;
     width: auto;
 }
 
-.tuesdayManageTabsConfirmButton_FebruaryB:hover {
-    background: #1a1519;
-    color: #a6ece2;
-    filter: drop-shadow(4px 8px 4px #51464c);
+.tuesdayManageTabsConfirmButton_FebruaryC:hover {
+    background: #296ea5;
+    color: #be9b95;
+    filter: drop-shadow(4px 8px 4px #0f1a3a);
     transition: all 0.5s linear;
 }
 
-.tuesdayManageTabsConfirmButton_FebruaryB:active {
-    background: #a6ece2;
-    color: #1a1519;
-    filter: drop-shadow(0 0 0 #51464c);
+.tuesdayManageTabsConfirmButton_FebruaryC:active {
+    background: #be9b95;
+    color: #296ea5;
+    filter: drop-shadow(0 0 0 #0f1a3a);
     transition: all 0.1s linear;
 }
 
-.tuesdayManageTabsSubmitCancelButton_FebruaryB {
-    background: #51464c;
+.tuesdayManageTabsSubmitCancelButton_FebruaryC {
+    background: #7d372b;
     border: transparent;
-    color: #eaabcb;
+    color: #94b7d2;
     cursor: pointer;
-    filter: drop-shadow(8px 12px 4px #51464c);
+    filter: drop-shadow(8px 12px 4px #0f1a3a);
     font-family: 'Sen', sans-serif;
     font-size: 18px;
     height: 40px;
     margin: 56px 0 0 20%;
-    outline-color: #9a989b;
+    outline-color: #9aa0a3;
     position: relative;
     transition: all 0.5s linear;
     width: auto;
 }
 
-.tuesdayManageTabsSubmitCancelButton_FebruaryB:hover {
-    background: #1a1519;
-    color: #a6ece2;
-    filter: drop-shadow(4px 8px 4px #51464c);
+.tuesdayManageTabsSubmitCancelButton_FebruaryC:hover {
+    background: #296ea5;
+    color: #be9b95;
+    filter: drop-shadow(4px 8px 4px #0f1a3a);
     transition: all 0.5s linear;
 }
 
-.tuesdayManageTabsSubmitCancelButton_FebruaryB:active {
-    background: #a6ece2;
-    color: #1a1519;
-    filter: drop-shadow(0 0 0 #51464c);
+.tuesdayManageTabsSubmitCancelButton_FebruaryC:active {
+    background: #be9b95;
+    color: #296ea5;
+    filter: drop-shadow(0 0 0 #0f1a3a);
     transition: all 0.1s linear;
 }
 
-.tuesdayGuardRail_FebruaryB {
-    background: #54223c;
-    filter: drop-shadow(8px 12px 4px #51464c);
+.tuesdayGuardRail_FebruaryC {
+    background: #7d372b;
+    filter: drop-shadow(8px 12px 4px #0f1a3a);
     height: auto;
     left: 32%;
     opacity: 1;
@@ -645,14 +647,14 @@
     z-index: 60;
 }
 
-.tuesdayGuardRailText_FebruaryB {
-    color: #c3c2c5;
+.tuesdayGuardRailText_FebruaryC {
+    color: #0e0e0e;
     font-family: 'Sen', sans-serif;
     font-size: 24px;
     margin: 15px 0 30px 25px;
 }
 
-.tuesdayGuardRailButtons_FebruaryB {
+.tuesdayGuardRailButtons_FebruaryC {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -660,9 +662,9 @@
     margin: 10px 0 0 60px;
 }
 
-.hubReaderDay1TuesdayActive_FebruaryB {
+.hubReaderDay1TuesdayActive_FebruaryC {
   background: #82a1b5;
-  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/february/jen-theodore-PU4sOcNnYj8-unsplash.jpg);
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/february/nick-de-partee-5DLBoEX99Cs-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 25vh;
@@ -676,9 +678,9 @@
   z-index: 1;
 }
 
-.hubReaderDay1TuesdayInactive_FebruaryB {
+.hubReaderDay1TuesdayInactive_FebruaryC {
   background: #82a1b5;
-  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/february/jen-theodore-PU4sOcNnYj8-unsplash.jpg);
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/february/nick-de-partee-5DLBoEX99Cs-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 25vh;
@@ -692,9 +694,9 @@
   z-index: -1;
 }
 
-.hubReaderDay2TuesdayActive_FebruaryB {
+.hubReaderDay2TuesdayActive_FebruaryC {
   background: #82a1b5;
-  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/february/jen-theodore-PU4sOcNnYj8-unsplash.jpg);
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/february/nick-de-partee-5DLBoEX99Cs-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 25vh;
@@ -708,9 +710,9 @@
   z-index: 1;
 }
 
-.hubReaderDay2TuesdayInactive_FebruaryB {
+.hubReaderDay2TuesdayInactive_FebruaryC {
   background: #82a1b5;
-  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/february/jen-theodore-PU4sOcNnYj8-unsplash.jpg);
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/february/nick-de-partee-5DLBoEX99Cs-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   height: 25vh;
@@ -724,9 +726,9 @@
   z-index: -1;
 }
 
-.hubReaderDay3TuesdayActive_FebruaryB {
+.hubReaderDay3TuesdayActive_FebruaryC {
   background: #82a1b5;
-  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/february/jen-theodore-PU4sOcNnYj8-unsplash.jpg);
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/february/nick-de-partee-5DLBoEX99Cs-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 25vh;
@@ -740,9 +742,9 @@
   z-index: 1;
 }
 
-.hubReaderDay3TuesdayInactive_FebruaryB {
+.hubReaderDay3TuesdayInactive_FebruaryC {
   background: #82a1b5;
-  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/february/jen-theodore-PU4sOcNnYj8-unsplash.jpg);
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/february/nick-de-partee-5DLBoEX99Cs-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 25vh;
@@ -756,9 +758,9 @@
   z-index: -1;
 }
 
-.hubReaderDay4TuesdayActive_FebruaryB {
+.hubReaderDay4TuesdayActive_FebruaryC {
   background: #82a1b5;
-  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/february/jen-theodore-PU4sOcNnYj8-unsplash.jpg);
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/february/nick-de-partee-5DLBoEX99Cs-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 25vh;
@@ -772,9 +774,9 @@
   z-index: 1;
 }
 
-.hubReaderDay4TuesdayInactive_FebruaryB {
+.hubReaderDay4TuesdayInactive_FebruaryC {
   background: #82a1b5;
-  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/february/jen-theodore-PU4sOcNnYj8-unsplash.jpg);
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/february/nick-de-partee-5DLBoEX99Cs-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 25vh;
@@ -788,9 +790,9 @@
   z-index: -1;
 }
 
-.hubReaderDay5TuesdayActive_FebruaryB {
+.hubReaderDay5TuesdayActive_FebruaryC {
   background: #82a1b5;
-  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/february/jen-theodore-PU4sOcNnYj8-unsplash.jpg);
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/february/nick-de-partee-5DLBoEX99Cs-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 25vh;
@@ -804,9 +806,9 @@
   z-index: 3;
 }
 
-.hubReaderDay5TuesdayInactive_FebruaryB {
+.hubReaderDay5TuesdayInactive_FebruaryC {
   background: #82a1b5;
-  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/february/jen-theodore-PU4sOcNnYj8-unsplash.jpg);
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/february/nick-de-partee-5DLBoEX99Cs-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 25vh;
@@ -820,9 +822,9 @@
   z-index: -1;
 }
 
-.hubReaderDay6TuesdayActive_FebruaryB {
+.hubReaderDay6TuesdayActive_FebruaryC {
   background: #82a1b5;
-  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/february/jen-theodore-PU4sOcNnYj8-unsplash.jpg);
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/february/nick-de-partee-5DLBoEX99Cs-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 25vh;
@@ -836,9 +838,9 @@
   z-index: 1;
 }
 
-.hubReaderDay6TuesdayInactive_FebruaryB {
+.hubReaderDay6TuesdayInactive_FebruaryC {
   background: #82a1b5;
-  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/february/jen-theodore-PU4sOcNnYj8-unsplash.jpg);
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/february/nick-de-partee-5DLBoEX99Cs-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 25vh;
@@ -852,9 +854,9 @@
   z-index: -1;
 }
 
-.hubReaderDay7TuesdayActive_FebruaryB {
+.hubReaderDay7TuesdayActive_FebruaryC {
   background: #82a1b5;
-  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/february/jen-theodore-PU4sOcNnYj8-unsplash.jpg);
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/february/nick-de-partee-5DLBoEX99Cs-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 25vh;
@@ -868,9 +870,9 @@
   z-index: 1;
 }
 
-.hubReaderDay7TuesdayInactive_FebruaryB {
+.hubReaderDay7TuesdayInactive_FebruaryC {
   background: #82a1b5;
-  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/february/jen-theodore-PU4sOcNnYj8-unsplash.jpg);
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/february/nick-de-partee-5DLBoEX99Cs-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 25vh;
