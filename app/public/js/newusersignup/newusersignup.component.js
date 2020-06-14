@@ -56,8 +56,32 @@
                 vm.newUserErrorMessage = "Password entries do not match.";
                 return;
             }
-            vm.newUserErrorMessage = '';
-            vm.newUserMessage = 'Please confirm email. Mail sent to ' + vm.newUserEmail;
+            $http.get('/users')
+            .then(allUsersData => {
+                const allUsers = allUsersData.data;
+                const duplicateUsers = allUsers.filter(entry => {
+                    return(entry.email.toLowerCase() === vm.newUserEmail.toLowerCase());
+                });
+                if (duplicateUsers.length > 0) {
+                    vm.newUserErrorMessage = "Account for " + vm.newUserEmail + " already exists.";
+                    return;
+                }
+                $http.post('/users', {
+                    email: vm.newUserEmail,
+                    first_name: vm.newUserFirstName,
+                    last_name: vm.newUserLastName,
+                    password: vm.newUserPassword,
+                    is_admin: false
+                })
+                .then(postedUserData => {
+                    const postedUser = postedUserData.data[0];
+                    $http.post(`/users/newuserconfirm/${postedUser.uuid}`, {});
+                    vm.newUserErrorMessage = '';
+                    vm.newUserMessage = 'Please confirm email. Mail sent to ' + vm.newUserEmail;
+                });
+                
+            });
+            
         }
         
         function setConfirmPassword() {

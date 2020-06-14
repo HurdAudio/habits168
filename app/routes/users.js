@@ -10,6 +10,7 @@ const bcrypt = require('bcrypt');
 const saltRounds = process.env.SALT_ROUNDS;
 const nanoid = require('nanoid');
 const request = require('request');
+const uuid4 = require('uuid4');
 
 const nodemailer = require('nodemailer');
 // const myPlaintextPassword = 'whip it';
@@ -99,91 +100,96 @@ router.use(function (req,res,next) {
 //   });
 // });
 
-// router.post('/newuserconfirm/:id', (req, res, next)=>{
-//   let linkString = 'http://localhost:3007/emailconfirm/';
-//   let user = req.params.id;
-//
-//   let smtp = {
-//     host: 'smtp.mail.com',
-//     port: 587,
-//     secure: false
-//   };
-//   let account = {
-//     smtp: smtp,
-//     user: process.env.EMAIL_ACCOUNT,
-//     pass: process.env.EMAIL_PASSWORD
-//   };
-//
-//   knex('users')
-//   .where({id: user})
-//   .first()
-//   .then(userFile=>{
-//     console.log(userFile);
-//     let identifier = userFile.email_reset.initialize_account;
-//
-//     let transporter = nodemailer.createTransport(
-//         {
-//             host: account.smtp.host,
-//             port: account.smtp.port,
-//             secure: account.smtp.secure,
-//             auth: {
-//                 user: account.user,
-//                 pass: account.pass
-//             },
-//             tls: {
-//               rejectUnauthorized: false
-//             },
-//             logger: true,
-//             debug: true // include SMTP traffic in the logs
-//         },
-//         {
-//             // default message fields
-//
-//             // sender info
-//             from: process.env.EMAIL_ACCOUNT
-//         }
-//     );
-//
-//     transporter.verify(function(error, success) {
-//       if (error) {
-//         console.log(error);
-//       } else {
-//         console.log('Server is ready to take our messages');
-//       }
-//     });
-//
-//     // Message object
-//     let message = {
-//         // Comma separated list of recipients
-//         from: process.env.EMAIL_ACCOUNT,
-//         to: userFile.email,
-//
-//         // Subject of the message
-//         subject: 'Your FreqDomain 2.0 email verification link',
-//
-//         // plaintext body
-//         text: 'Please click this link to confirm your email:',
-//
-//         // HTML body
-//         html: '<a href="' + linkString + identifier + '"><h1>__FreqDomain2.0_Email_Link__<h1></a>'
-//
-//     };
-//
-//     transporter.sendMail(message, (error, info) => {
-//         if (error) {
-//             console.log('Error occurred');
-//             console.log(error.message);
-//             return process.exit(1);
-//         }
-//
-//         console.log('Message sent successfully!');
-//         console.log(nodemailer.getTestMessageUrl(info));
-//
-//         // only needed when using pooled connections
-//         //transporter.close();
-//     });
-//   });
-// });
+ router.post('/newuserconfirm/:uuid', (req, res, next)=>{
+   const linkString = process.env.HTTP_PATH;
+   const user = req.params.uuid;
+
+   const smtp = {
+     host: 'smtp.mail.com',
+     port: 587,
+     secure: false
+   };
+   const account = {
+     smtp: smtp,
+     user: process.env.EMAIL_ACCOUNT,
+     pass: process.env.EMAIL_PASSWORD
+   };
+
+   knex('users')
+   .where({uuid: user})
+   .first()
+   .then(userFile=>{
+       if (userFile.security.initialize_account) {
+           const identifier = userFile.email_reset.key + userFile.email_reset.value;
+           const transporter = nodemailer.createTransport(
+             {
+                 host: account.smtp.host,
+                 port: account.smtp.port,
+                 secure: account.smtp.secure,
+                 auth: {
+                     user: account.user,
+                     pass: account.pass
+                 },
+                 tls: {
+                   rejectUnauthorized: false
+                 },
+                 logger: true,
+                 debug: true // include SMTP traffic in the logs
+             },
+             {
+                 // default message fields
+
+                 // sender info
+                 from: process.env.EMAIL_ACCOUNT
+             }
+         );
+           
+           transporter.verify(function(error, success) {
+               if (error) {
+                 console.log(error);
+               } else {
+                 console.log('Server is ready to take our messages');
+               }
+             });
+           
+            // Message object
+             const message = {
+                 // Comma separated list of recipients
+                 from: process.env.EMAIL_ACCOUNT,
+                 to: userFile.email,
+
+                 // Subject of the message
+                 subject: 'Your 168 Habits email verification link',
+
+                 // plaintext body
+                 text: 'Please click this link to confirm your email:',
+
+                 // HTML body
+                 html: '<a href="' + linkString + identifier + '"><h1>168 Habits Email Confirmation Link<h1></a>'
+
+             };
+           
+           transporter.sendMail(message, (error, info) => {
+             if (error) {
+                 console.log('Error occurred');
+                 console.log(error.message);
+                 return process.exit(1);
+             }
+
+             console.log('Message sent successfully!');
+             console.log(nodemailer.getTestMessageUrl(info));
+               res.sendStatus(200);
+
+             // only needed when using pooled connections
+             //transporter.close();
+         });
+           
+       } else {
+           res.sendStatus(404);
+       }
+     
+   });
+ });
 
 // router.post('/lostpassword/:id', (req, res, next)=>{
 //   console.log('it\'s emailing time!');
@@ -582,23 +588,24 @@ router.post('/', (req, res, next) => {
   var key = nanoid();
   var value = nanoid();
   var email_confirm = nanoid() + nanoid();
+  var uuid = uuid4();
 
 
   knex('users')
   .insert({
-    name: req.body.name,
+    uuid: uuid,
     email: req.body.email,
+    first_name: req.body.first_name,
+    last_name: req.body.last_name,
     hashed_password: hash,
     is_admin: req.body.is_admin,
-    user_avatar_url: req.body.user_avatar_url,
+    avatar_path: req.body.avatar_path,
     associates: req.body.associates,
-    security: { "key": key, "value": value },
-    email_reset: { "initialize_account": email_confirm, "confirm": false}
+    email_confirmed: false,
+    security: {"initialize_account": true, "confirm": false},
+    email_reset: {"key": key, "value": value}
   }, '*')
   .then((result) => {
-    // console.log(bcrypt.compareSync(myPlaintextPassword, hash)); //true
-    // console.log(bcrypt.compareSync(someOtherPlaintextPassword, hash)); //false
-    // console.log(bcrypt.compareSync(myPlaintextPassword, '$2a$12$mrJJzYrcDZYJR8OSfBsRLumSdtlafr6yz.TuwsXmYmih6UGQTuuBm')); // true
     res.status(200).send(result);
   })
   .catch((err) => {
