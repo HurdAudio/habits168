@@ -13,7 +13,6 @@
         const vm = this;
 
         vm.$onInit = onInit;
-        vm.profileMonth = '_FebruaryC';
         vm.navigateToHub = navigateToHub;
         vm.toggleBirthdatePublicPrivate = toggleBirthdatePublicPrivate;
         vm.toggleBioPublicPrivate = toggleBioPublicPrivate;
@@ -31,9 +30,7 @@
         vm.togglePhonePrivate = togglePhonePrivate;
         vm.selectAvatarFromList = selectAvatarFromList;
         vm.linkToAvatar = linkToAvatar;
-        vm.avatarModalStatus = 'profileEditorAvatarModalInactive' + vm.profileMonth;
         vm.openChangeAvatarModal = openChangeAvatarModal;
-        vm.profileEditorContentStatus = 'profileEditorContent' + vm.profileMonth;
         vm.cancelProfileAvatarModal = cancelProfileAvatarModal;
         vm.submitProfileAvatar = submitProfileAvatar;
         vm.updateFirstName = updateFirstName;
@@ -43,7 +40,6 @@
         vm.updateProfileDescription = updateProfileDescription;
         vm.citiesList = [];
         vm.filterCitiesList = filterCitiesList;
-        vm.cityModalStatus = 'profileCityModalInactive' + vm.profileMonth;
         vm.changeLocationModal = changeLocationModal;
         vm.closeCitySelect = closeCitySelect;
         vm.selectCity = selectCity;
@@ -623,17 +619,16 @@
                 vm.avatarList = avatarsData.data;
             });
         }
-
-
-
-        function onInit() {
-            console.log("User Profile Editor is lit");
-            
-            setUserIPAddress();
-            
-            setAvatarList();
-
-            switch (vm.profileMonth) {
+        
+        function setSkin() {
+            $http.get('/skins/user_profile_editor')
+            .then(skinData => {
+                vm.profileMonth = skinData.data.user_profile_editor;
+                vm.avatarModalStatus = 'profileEditorAvatarModalInactive' + vm.profileMonth;
+                vm.profileEditorContentStatus = 'profileEditorContent' + vm.profileMonth;
+                vm.cityModalStatus = 'profileCityModalInactive' + vm.profileMonth;
+                
+                switch (vm.profileMonth) {
                 case ('_JanuaryA'):
                     vm.profileLogo = 'https://habits168-hurdaudio.s3.amazonaws.com/img/robe-154808_640.png';
                     break;
@@ -655,6 +650,14 @@
                 default:
                     alert('UNSUPPORTED MONTH SELECT for LOGO');
             }
+            });
+        }
+
+        function onInit() {
+            console.log("User Profile Editor is lit");
+            setSkin();
+            setUserIPAddress();
+            setAvatarList();
             setTimeout(() => {
                 extendedProfileData();
             }, 600);
