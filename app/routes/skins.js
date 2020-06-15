@@ -142,6 +142,24 @@ router.get('/user_hub', (req, res, next) => {
     })
 });
 
+router.get('/user_profile_editor', (req, res, next) => {
+    let now = new Date();
+    let months = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'];
+    let selectedSkin;
+    
+    knex('skins')
+    .select('*')
+    .first()
+    .then(skinsTable => {
+        if (skinsTable.skins.user_profile_editor[months[now.getMonth()]].length === 1) {
+            selectedSkin = skinsTable.skins.user_profile_editor.available[Math.floor(Math.random() * skinsTable.skins.user_profile_editor.available.length)];
+        } else {
+            selectedSkin = skinsTable.skins.user_profile_editor[months[now.getMonth()]][now.getDate()];
+        }
+        res.send({user_profile_editor: selectedSkin});
+    });
+});
+
 router.get('/viewer', (req, res, next) => {
     let now = new Date();
     let months = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'];
