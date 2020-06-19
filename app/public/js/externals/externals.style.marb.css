@@ -1,0 +1,571 @@
+.externalsBackgroundDiv_MarchB {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/externals/backdrop/mirror-5170969_1920.jpg);
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.externalsContainerActive_MarchB {
+    filter: blur(0px) hue-rotate(0deg);
+    transform: all 0.5s linear;
+}
+
+.externalsContainerInactive_MarchB {
+    filter: blur(5px) hue-rotate(180deg);
+    transform: all 0.5s linear;
+}
+
+.externalsTitleBar_MarchB {
+    background: linear-gradient(90deg, #852830, #89716d, #89716d, transparent);
+    border-bottom: 3px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/externals/backdrop/mirror-5170969_1920.jpg) 10% stretch;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Caladea', serif;
+    height: 12vh;
+    justify-content: flex-start;
+    opacity: 1;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.externalsLogo_MarchB {
+    cursor: pointer;
+    height: 90px;
+    margin: 1px 48px 1px 13px;
+    max-width: 90px;
+}
+
+.externalsTitle_MarchB {
+    color: #08070c;
+    font-family: 'Caladea', serif;
+    font-size: 42px;
+    transform: translateX(0.5vw) translateY(3.5vh);
+}
+
+.externalsBody_MarchB {
+    background: linear-gradient(90deg, #a9a3a5, #c4b8b6, #c4b8b6, transparent);
+    height: 87vh;
+    opacity: 1;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 24px;
+    width: 100%;
+}
+
+.externalsIssuesHeader_MarchB {
+    color: #08070c;
+    font-family: 'Caladea', serif;
+    font-size: 30px;
+}
+
+.externalManagementContainer_MarchB {
+    display: grid;
+    grid-template-columns: [leftBuffer] 10px [deleteColumn] 50px [readColumn] 120px [imageColumn] 150px [issueColumn] 1fr [rightBuffer] 10px;
+    grid-template-rows: [externalContent] auto [addNewContent] auto;
+    height: auto;
+    margin: 30px 0 15px 0;
+    width: 100%;
+}
+
+.externalsSwitchtrue_MarchB {
+    background: linear-gradient(90deg, #b9673f, #b9673f, #b9673f, transparent);
+    cursor: pointer;
+    display: inline-block;
+    filter: brightness(100%);
+    grid-column: readColumn / imageColumn;
+    grid-row: externalContent;
+    height: 25px;
+    margin: 35px 0 0 15px;
+    position: relative;
+    transition: all 0.3s linear;
+    width: 60px;
+}
+
+.externalsSwitchfalse_MarchB {
+    background: linear-gradient(-90deg, #b9673f, #b9673f, #b9673f, transparent);
+    cursor: pointer;
+    display: inline-block;
+    filter: brightness(90%);
+    grid-column: readColumn / imageColumn;
+    grid-row: externalContent;
+    height: 25px;
+    margin: 35px 0 0 15px;
+    position: relative;
+    transition: all 0.3s linear;
+    width: 60px;
+}
+
+.externalsSwitchHandletrue_MarchB {
+    background: #852830;
+    bottom: 2px;
+    height: 25px;
+    left: 0;
+    position: absolute;
+    right: 2px;
+    top: 0;
+    transition: all 0.3s linear;
+    width: 30px;
+}
+
+.externalsSwitchHandlefalse_MarchB {
+    background: #852830;
+    bottom: 2px;
+    height: 25px;
+    left: 30px;
+    position: absolute;
+    right: 2px;
+    top: 0;
+    transition: all 0.3s linear;
+    width: 30px;
+}
+
+.externalsSwitchText_MarchB {
+    color: #08070c;
+    font-family: 'Caladea', serif;
+    font-size: 18px;
+    margin: 28px 0 0 0;
+}
+
+.externalsImage_MarchB {
+    filter: drop-shadow(12px 8px 4px #211c1e);
+    grid-column: imageColumn / issueColumn;
+    grid-row: externalContent;
+    max-height: 120px;
+    width: 100px;
+}
+
+.externalsReadingDatas_MarchB {
+    color: #08070c;
+    font-family: 'Caladea', serif;
+    font-size: 18px;
+    grid-column: issueColumn / rightBuffer;
+    grid-row: externalContent;
+    margin: 25px 0 0 0;
+}
+
+.externalsDelete_MarchB {
+    align-self: center;
+    color: #08070c;
+    cursor: pointer;
+    font-size: 30px;
+    grid-column: deleteColumn / readColumn;
+    grid-row: externalContent;
+    justify-content: center;
+    transition: all 0.3s linear;
+}
+
+.externalsDelete_MarchB:hover {
+    color: #3a1a12;
+    transition: all 0.3s linear;
+}
+
+.externalsAddNewContentDiv_MarchB {
+    color: #08070c;
+    cursor: pointer;
+    margin: 70px 0 0 330px;
+    width: auto;
+}
+
+.externalsAddContentIcon_MarchB {
+    float: left;
+    font-size: 42px;
+    margin: 0 30px 0 0;
+    position: float;
+}
+
+.externalsAddNewText_MarchB {
+    float: left;
+    font-family: 'Caladea', serif;
+    font-size: 24px;
+    margin: 5px 0 0 0;
+}
+
+.externalsDeleteGuardrailActive_MarchB {
+    background: #dcb39f;
+    height: auto;
+    left: 25%;
+    opacity: 1;
+    position: absolute;
+    top: 15%;
+    transition: all 0.3s linear;
+    width: auto;
+    z-index: 10;
+}
+
+.externalsDeleteGuardrailInactive_MarchB {
+    background: #dcb39f;
+    height: auto;
+    left: 175%;
+    opacity: 0;
+    position: absolute;
+    top: 105%;
+    transition: all 0.3s linear;
+    width: auto;
+    z-index: -10;
+}
+
+.externalsDeleteGuardrailTitleBar_MarchB {
+    background: #351013;
+    height: auto;
+    padding: 6px 0;
+    width: 100%;
+}
+
+.externalsDeleteGuardrailTitle_MarchB {
+    color: #dcb39f;
+    font-family: 'Caladea', serif;
+    font-size: 30px;
+    margin-left: 40px;
+}
+
+.externalsGuardrailContainer_MarchB {
+    background: transparent;
+    display: grid;
+    grid-template-columns: [leftB] 10px [imgColumn] 120px [infoColumn] 1fr [rightB] 10px;
+    grid-template-rows: [title] auto [query] auto [buttons] auto;
+    height: auto;
+    padding: 12px;
+    width: 100%;
+}
+
+.externalsGuardrailBodyText_MarchB {
+    color: #08070c;
+    font-family: 'Caladea', serif;
+    font-size: 18px;
+    grid-column: imgColumn / rightB;
+    grid-row: title;
+}
+
+.externalsGuardrailImage_MarchB {
+    filter: drop-shadow(12px 8px 4px #211c1e);
+    grid-column: imgColumn / infoColumn;
+    grid-row: query;
+    margin: 20px 0;
+    width: 90px;
+}
+
+.externalsGuardrailInfos_MarchB {
+    color: #08070c;
+    font-family: 'Caladea', serif;
+    font-size: 18px;
+    grid-column: infoColumn / rightB;
+    grid-row: query;
+    margin: 40px 0 20px 0;
+}
+
+.externalsGuardrailButtons_MarchB {
+    background: transparent;
+    grid-column: infoColumn / rightB;
+    grid-row: buttons;
+    height: auto;
+    justify-content: center;
+    margin: 0 0 0 16%;
+}
+
+.externalsGuardrailButtons_MarchB button {
+    backdrop-filter: hue-rotate(45deg);
+    background: transparent;
+    border: 1px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/externals/backdrop/mirror-5170969_1920.jpg) 20% stretch;
+    box-sizing: border-box;
+    color: #08070c;
+    cursor: pointer;
+    filter: drop-shadow(8px 8px 4px #211c1e);
+    font-family: 'Caladea', serif;
+    font-size: 24px;
+    margin: 10px 40px 20px 0;
+    outline-color: #999ba1;
+    transition: all 0.6s linear;
+    width: 70px;
+}
+
+.externalsGuardrailButtons_MarchB button:hover {
+    backdrop-filter: hue-rotate(-45deg) saturate(150%);
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/externals/backdrop/mirror-5170969_1920.jpg) 5% stretch;
+    color: #351013;
+    filter: drop-shadow(4px 8px 3px #211c1e);
+    transition: all 0.6s linear;
+}
+
+.externalsGuardrailButtons_MarchB button:active {
+    filter: drop-shadow(0 0 0 #211c1e) invert(100%);
+    transition: all 0.1s linear;
+}
+
+.externalsAddNewExternalsDialogActive_MarchB {
+    background: linear-gradient(90deg, #c4b8b6, #a9a3a5);
+    height: auto;
+    left: 10%;
+    opacity: 1;
+    position: absolute;
+    top: 0.5%;
+    transform: scale(1);
+    transition: all 0.6s linear;
+    width: 80%;
+    z-index: 10;
+}
+
+.externalsAddNewExternalsDialogInactive_MarchB {
+    background: linear-gradient(90deg, #c4b8b6, #a9a3a5);
+    height: auto;
+    left: -90%;
+    opacity: 0;
+    position: absolute;
+    top: 0.5%;
+    transform: scale(0.01);
+    transition: all 0.6s linear;
+    width: 80%;
+    z-index: -10;
+}
+
+.externalsAddNewTitleBar_MarchB {
+    background: linear-gradient(-90deg, #14161a, #362d2b);
+    height: auto;
+    padding: 6px 0;
+    width: 100%;
+}
+
+.externalsAddNewTitle_MarchB {
+    color: #c4b8b6;
+    font-family: 'Caladea', serif;
+    font-size: 30px;
+    margin-left: 40px;
+}
+
+.externalsAddNewBodyContainer_MarchB {
+    display: grid;
+    grid-template-columns: [leftAdd] 10px [formInput] 1fr [displayAdd] 1fr [rightAdd] 10px;
+    grid-template-rows: [errorMessaging] auto [userAdds] auto [buttonsAdds] auto;
+    height: auto;
+}
+
+.externalsAddErrorField_MarchB {
+    color: #ff0000;
+    font-family: 'Caladea', serif;
+    font-size: 18px;
+    grid-column: formInput / rightAdd;
+    grid-row: errorMessaging;
+    margin: 15px 30px;
+}
+
+.externalsAddUserForm_MarchB {
+    background: transparent;
+    grid-column: formInput / displayAdd;
+    grid-row: userAdds;
+    height: auto;
+    margin: 0 0 30px 0;
+    padding: 24px 0;
+}
+
+.externalsAddUserForm_MarchB label {
+    color: #08070c;
+    font-family: 'Caladea', serif;
+    font-size: 18px;
+    margin: 15px 24px;
+}
+
+.externalsAddUserForm_MarchB input[type="text"] {
+    background: #c29498;
+    border: none;
+    color: #08070c;
+    font-family: 'Caladea', serif;
+    font-size: 18px;
+    margin: 5px 24px;
+    outline-color: #999ba1;
+    padding: 0 5px;
+    width: 90%;
+}
+
+.externalsAddUserForm_MarchB textarea {
+    background: #c29498;
+    border: none;
+    color: #08070c;
+    font-family: 'Caladea', serif;
+    font-size: 18px;
+    margin: 5px 24px;
+    outline-color: #999ba1;
+    padding: 0 5px;
+    width: 90%;
+}
+
+.externalsDisplayNewAddition_MarchB {
+    background: transparent;
+    grid-column: displayAdd / rightAdd;
+    grid-row: userAdds;
+    height: auto;
+    margin: 0 0 30px 0;
+    padding: 24px 0;
+}
+
+.externalsAddImage_MarchB {
+    filter: drop-shadow(12px 8px 4px #211c1e);
+    margin: 0 0 0 36px;
+    max-height: 240px;
+    width: 150px;
+}
+
+.externalsAddCandidateTitle_MarchB {
+    color: #08070c;
+    font-family: 'Caladea', serif;
+    font-size: 24px;
+    margin: 24px;
+}
+
+.externalsAddExternalsButtons_MarchB {
+    background: transparent;
+    height: auto;
+    grid-column: formInput / rightAdd;
+    grid-row: buttonsAdds;
+    margin: 0 0 30px 0;
+}
+
+.externalsAddExternalsButtons_MarchB button {
+    backdrop-filter: hue-rotate(45deg);
+    background: transparent;
+    border: 1px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/externals/backdrop/mirror-5170969_1920.jpg) 20% stretch;
+    box-sizing: border-box;
+    color: #08070c;
+    cursor: pointer;
+    filter: drop-shadow(8px 8px 4px #211c1e);
+    font-family: 'Caladea', serif;
+    font-size: 24px;
+    margin: 10px 40px 20px 6%;
+    outline-color: #999ba1;
+    transition: all 0.6s linear;
+    width: auto;
+}
+
+.externalsAddExternalsButtons_MarchB button:hover {
+    backdrop-filter: hue-rotate(-45deg) saturate(150%);
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/externals/backdrop/mirror-5170969_1920.jpg) 5% stretch;
+    color: #351013;
+    filter: drop-shadow(4px 8px 3px #211c1e);
+    transition: all 0.6s linear;
+}
+
+.externalsAddExternalsButtons_MarchB button:active {
+    filter: drop-shadow(0 0 0 #211c1e) invert(100%);
+    transition: all 0.1s linear;
+}
+
+.hubReaderExternalsDay2BlockInactive_MarchB {
+    background: #82a1b5;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/externals/backdrop/mirror-5170969_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(250%) translateY(500%);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: -1;
+}
+
+.hubReaderExternalsDay2BlockActive_MarchB {
+    background: #82a1b5;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/externals/backdrop/mirror-5170969_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px) translateY(0px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 414px) {
+
+    .externalsTitle_MarchB {
+        font-size: 24px;
+    }
+
+    .externalsIssuesHeader_MarchB {
+        font-size: 18px;
+    }
+
+    .externalManagementContainer_MarchB {
+        grid-template-columns: [leftBuffer] 1px [deleteColumn] 25px [readColumn] 60px [imageColumn] 80px [issueColumn] 50% [rightBuffer] 14px;
+        grid-template-rows: [externalContent] auto [addNewContent] auto;
+        margin: 15px 0 7px 0;
+    }
+
+    .externalsDelete_MarchB {
+        font-size: 18px;
+    }
+
+    .externalsImage_MarchB {
+        margin-left: 15px;
+        max-height: 50px;
+        width: 40px;
+    }
+
+    .externalsSwitchfalse_MarchB {
+        height: 25px;
+        margin: 15px 15px 0 5px;
+        transform: scale(0.5);
+        width: 60px;
+    }
+
+    .externalsSwitchtrue_MarchB {
+        height: 25px;
+        margin: 15px 15px 0 5px;
+        transform: scale(0.5);
+        width: 60px;
+    }
+
+    .externalsReadingDatas_MarchB {
+        font-size: 12px;
+        margin: 25px 0 0 0;
+    }
+
+    .externalsAddNewContentDiv_MarchB {
+        margin: 70px 0 0 10px;
+    }
+
+    .externalsDeleteGuardrailActive_MarchB {
+        left: 0;
+        width: 100%;
+    }
+
+    .externalsAddNewExternalsDialogActive_MarchB {
+        left: 0;
+        width: 100%;
+    }
+
+    .externalsAddImage_MarchB {
+        margin: 0 0 0 36px;
+        max-height: 120px;
+        width: 75px;
+    }
+
+    .externalsAddUserForm_MarchB textarea {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+
+    .externalsTitle_MarchB {
+        font-size: 18px;
+    }
+}
