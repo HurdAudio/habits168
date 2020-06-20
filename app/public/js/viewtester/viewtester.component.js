@@ -100,6 +100,9 @@
                         case ('_AprilA'):
                             vm.viewerSpinnerPath = 'https://habits168-hurdaudio.s3.amazonaws.com/viewer/spinners/b4a94b786bffe582cf5824950a8596f4.gif';
                             break;
+                        case ('_AprilB'):
+                            vm.viewerSpinnerPath = 'https://habits168-hurdaudio.s3.amazonaws.com/viewer/spinners/blueSpinnerSpinner.gif';
+                            break;
                         default:
                             alert('Error: unsupported viewMonth spinner set');
                             console.log('Error: unsupported viewMonth spinner set');
