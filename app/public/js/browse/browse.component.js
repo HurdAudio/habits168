@@ -13,7 +13,7 @@
         const vm = this;
 
         vm.$onInit = onInit;
-        vm.browseMonth = '_JanuaryB';
+        vm.browseMonth = '_JanuaryC';
         vm.navigateToHub = navigateToHub;
         vm.browseContainer = 'browseActive' + vm.browseMonth;
         vm.blogFeedTabState = 'browseTabActive' + vm.browseMonth;
