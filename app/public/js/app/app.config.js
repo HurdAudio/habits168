@@ -87,6 +87,12 @@
                 url: '/wednesday/:userUuid',
                 parent: 'app',
                 component: 'wednesday'
+            })
+            .state({
+                name: 'emailconfirm',
+                url: '/emailconfirm/:code',
+                parent: 'app',
+                component: 'emailconfirm'
             });
     }
 

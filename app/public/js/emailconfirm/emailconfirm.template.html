@@ -1,0 +1,46 @@
+<div class="emailConfirmBackgroundDiv{{$ctrl.emailConfirmMonth}}"></div>
+<div class="{{$ctrl.emailConfirmContainerState}}">
+    <div class="emailConfirmTitleBar{{$ctrl.emailConfirmMonth}}">
+
+      <img class="emailConfirmLogo{{$ctrl.emailConfirmMonth}}" src="{{$ctrl.emailConfirmLogoPath}}">
+      <h3 class="externalsTitle{{$ctrl.emailConfirmMonth}}">Confirm Email</h3>
+    </div>
+    <div class="emailConfirmBody{{$ctrl.emailConfirmMonth}}">
+        <div class="emailConfirmPreCheckDiv{{$ctrl.emailConfirmMonth}}" ng-if="$ctrl.accountValid === 'unchecked'">
+            <p class="emailConfirmStandardMessaging{{$ctrl.emailConfirmMonth}}">Checking account.</p>
+            <p class="emailConfirmStandardMessaging{{$ctrl.emailConfirmMonth}}">Please wait.</p>
+        </div>
+        <div class="emailConfirmInvalidLinkDiv{{$ctrl.emailConfirmMonth}}" ng-if="$ctrl.accountValid === 'invalid'">
+            <p class="emailConfirmInvalidLinkMessaging{{$ctrl.emailConfirmMonth}}">Invalid Link</p>
+            <p class="emailConfirmStandardMessaging{{$ctrl.emailConfirmMonth}}">Enter email for new link:</p>
+            <input class="emailConfirmationPasswordInput{{$ctrl.emailConfirmMonth}}" id="resubEmail" type="email">
+            <button class="emailConfirmationButton{{$ctrl.emailConfirmMonth}}" ng-click="$ctrl.resubEmail()">submit</button>
+        </div>
+        <div class="emailConfirmValidLinkDiv{{$ctrl.emailConfirmMonth}}" ng-if="$ctrl.accountValid === 'valid'">
+            <br><br><br><br>
+            <p class="emailConfirmStandardMessaging{{$ctrl.emailConfirmMonth}}">Please enter password to complete confirmation</p>
+            <input class="emailConfirmationPasswordInput{{$ctrl.emailConfirmMonth}}" id="emailConfirmPasswordInput" type="password">
+            <button class="emailConfirmationButton{{$ctrl.emailConfirmMonth}}" ng-click="$ctrl.confirmPassword()">confirm</button>
+        </div>
+        <div class="emailConfirmNoEmailOnRecordDiv{{$ctrl.emailConfirmMonth}}" ng-if="$ctrl.accountValid === 'noemailhere'">
+            <p class="emailConfirmInvalidLinkMessaging{{$ctrl.emailConfirmMonth}}">No account exists for submitted email</p><br>
+            <button class="emailConfirmationButton{{$ctrl.emailConfirmMonth}}" style="margin-left: 15%" ng-click="$ctrl.returnToInvalidState()">back</button>
+        </div>
+        <div class="emailConfirmNoEmailOnRecordDiv{{$ctrl.emailConfirmMonth}}" ng-if="$ctrl.accountValid === 'alreadyconfirmed'">
+            <p class="emailConfirmInvalidLinkMessaging{{$ctrl.emailConfirmMonth}}">Submitted email is already confirmed.</p><br>
+            <button class="emailConfirmationButton{{$ctrl.emailConfirmMonth}}" style="margin-left: 15%" ng-click="$ctrl.returnToLanding()">back</button>
+        </div>
+        <div class="emailConfirmNoEmailOnRecordDiv{{$ctrl.emailConfirmMonth}}" ng-if="$ctrl.accountValid === 'newlinksent'">
+            <br><br><br><br>
+            <p class="emailConfirmStandardMessaging{{$ctrl.emailConfirmMonth}}">New link email sent.</p>
+            <p class="emailConfirmStandardMessaging{{$ctrl.emailConfirmMonth}}">Please check your email.</p>
+        </div>
+        <div class="emailConfirmNoEmailOnRecordDiv{{$ctrl.emailConfirmMonth}}" ng-if="$ctrl.accountValid === 'wrongpassword'">
+            <p class="emailConfirmInvalidLinkMessaging{{$ctrl.emailConfirmMonth}}">Error encountered</p><br>
+            <button class="emailConfirmationButton{{$ctrl.emailConfirmMonth}}" style="margin-left: 15%" ng-click="$ctrl.returnToValidState()">back</button>
+        </div>
+      
+    </div>
+
+</div>
+
