@@ -1,0 +1,216 @@
+.newUserContainerActive_FebruaryA {
+    filter: blur(0);
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.newUserContainerBlur_FebruaryA {
+    filter: blur(13px);
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.newUserSignupImageDiv_FebruaryA {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/newusersignup/february/sumit-saharkar-QMYYz7Vh_k8-unsplash.jpg);
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.newUserNavbar_FebruaryA {
+    backdrop-filter: hue-rotate(-45deg) saturate(210%);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Alata', sans-serif;
+    height: 12vh;
+    justify-content: left;
+    left: 0;
+    padding-left: 25px;
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+
+.newUserLogoNav_FebruaryA {
+    cursor: pointer;
+    filter: brightness(100%) drop-shadow(-4px -4px 8px #363851);
+    max-height: 12vh;
+    max-width: 155px;
+    z-index: 55;
+}
+
+.newUserSignupTitle_FebruaryA {
+    color: #9b9ca8;
+    font-family: 'Alata', sans-serif;
+    font-size: 48px;
+    margin: 3vh 0 3vh 20%;
+}
+
+.newUserMasterFormDiv_FebruaryA {
+    backdrop-filter: sepia(20%);
+    box-shadow: 5px 5px 5px #363851, -5px 5px 5px #363851, 5px -5px 5px #363851, -5px -5px 5px #363851;
+    display: grid;
+    grid-template-columns: [col1] 1fr [col2] 1fr [col3] 1fr [col4] 1fr [col5] 1fr [col6] 1fr [col7] 1fr [col8] 1fr [col9] 1fr [col10] 1fr [col11] 1fr [colEnd];
+    grid-template-rows: [row1] 1fr [row2] 1fr [row3] 1fr [row4] 1fr [row5] 1fr [row6] 1fr [row7] 1fr [row8] 1fr [row9] 1fr [row10] 1fr [row11] 1fr [rowEnd];
+    height: 70vh;
+    left: 10%;
+    position: relative;
+    top: 10vh;
+    width: 80%;
+}
+
+.newUserSignupFormWelcomeLine_FebruaryA {
+    color: #9b9ca8;
+    filter: brightness(100%) saturate(300%);
+    font-family: 'Alata', sans-serif;
+    font-size: 24px;
+    grid-column: col2 / col12;
+    grid-row: row2 / row3;
+}
+
+.newUserTextBoxFirstName_FebruaryA {
+    background: #8f909a;
+    border: none;
+    box-shadow: 2px 2px 5px #363851, -2px 2px 5px #363851, 2px -2px 5px #363851, -2px -2px 2px #363851;
+    color: #0d0c14;
+    font-family: 'Alata', sans-serif;
+    font-size: 18px;
+    height: 24px;
+    grid-column: col3 / col6;
+    grid-row: row4 / row5;
+    outline-color: #8f909a;
+}
+
+.newUserTextBoxFirstName_FebruaryA::placeholder {
+    color: #363851;
+}
+
+.newUserTextBoxLastName_FebruaryA {
+    background: #8f909a;
+    border: none;
+    box-shadow: 2px 2px 5px #363851, -2px 2px 5px #363851, 2px -2px 5px #363851, -2px -2px 2px #363851;
+    color: #0d0c14;
+    font-family: 'Alata', sans-serif;
+    font-size: 18px;
+    height: 24px;
+    grid-column: col7 / col10;
+    grid-row: row4 / row5;
+    outline-color: #8f909a;
+}
+
+.newUserTextBoxLastName_FebruaryA::placeholder {
+    color: #363851;
+}
+
+.newUserTextBoxEmail_FebruaryA {
+    background: #8f909a;
+    border: none;
+    box-shadow: 2px 2px 5px #363851, -2px 2px 5px #363851, 2px -2px 5px #363851, -2px -2px 2px #363851;
+    color: #0d0c14;
+    font-family: 'Alata', sans-serif;
+    font-size: 18px;
+    height: 24px;
+    grid-column: col3 / col6;
+    grid-row: row5 / row6;
+    outline-color: #8f909a;
+}
+
+.newUserTextBoxEmail_FebruaryA::placeholder {
+    color: #363851;
+}
+
+.newUserTextBoxPassword_FebruaryA {
+    background: #8f909a;
+    border: none;
+    box-shadow: 2px 2px 5px #363851, -2px 2px 5px #363851, 2px -2px 5px #363851, -2px -2px 2px #363851;
+    color: #0d0c14;
+    font-family: 'Alata', sans-serif;
+    font-size: 18px;
+    height: 24px;
+    grid-column: col7 / col10;
+    grid-row: row5 / row6;
+    outline-color: #8f909a;
+}
+
+.newUserTextBoxPassword_FebruaryA::placeholder {
+    color: #363851;
+}
+
+.newUserTextBoxConfirmPassword_FebruaryA {
+    background: #8f909a;
+    border: none;
+    box-shadow: 2px 2px 5px #363851, -2px 2px 5px #363851, 2px -2px 5px #363851, -2px -2px 2px #363851;
+    color: #0d0c14;
+    font-family: 'Alata', sans-serif;
+    font-size: 18px;
+    height: 24px;
+    grid-column: col7 / col10;
+    grid-row: row6 / row7;
+    outline-color: #8f909a;
+}
+
+.newUserTextBoxConfirmPassword_FebruaryA::placeholder {
+    color: #363851;
+}
+
+.newUserSignupFormErrorMessageing_FebruaryA {
+    color: #ff0000;
+    font-family: 'Alata', sans-serif;
+    font-size: 24px;
+    grid-column: col3 / col10;
+    grid-row: row8 / row9;
+}
+
+.newUserSignupFormMessaging_FebruaryA {
+    color: #ff0000;
+    font-family: 'Alata', sans-serif;
+    font-size: 24px;
+    grid-column: col3 / col10;
+    grid-row: row9 / row10;
+}
+
+.newUserSignupSubmitButton_FebruaryA {
+    background: #9b9ca8;
+    border: none;
+    color: #1e2035;
+    cursor: pointer;
+    filter: brightness(100%) drop-shadow(10px 15px 4px #363851);
+    font-family: 'Padauk', sans-serif;
+    font-size: 30px;
+    grid-column: col6 / col7;
+    grid-row: row10 / row11;
+    margin: 0 10px;
+    outline-color: #8f909a;
+    padding: 5px 15px;
+    transition: all 0.3s linear;
+}
+
+.newUserSignupSubmitButton_FebruaryA:hover {
+    filter: brightness(110%) drop-shadow(4px 5px 3px #363851);
+    transition: all 0.3s linear;
+}
+
+.newUserSignupSubmitButton_FebruaryA:active {
+    filter: invert(100%);
+    transition: all 0.2s linear;
+}
