@@ -16,397 +16,397 @@
         vm.wednesdayMonth = '_JanuaryC';
         vm.wednesdayContainerState = 'wednesdayContainerActive' + vm.wednesdayMonth;
         vm.navigateToHub = navigateToHub;
-        vm.wednesdayTabs = [
-            {
-                active: true,
-                allRead: false,
-                podcast: false,
-                sort: 'up',
-                subscriptions: [
-                    {
-                        uuid: 'b1c2eff2-81e8-4f19-a1ba-8fff123fb89a',
-                        author: null,
-                        description: 'A source for news on music that is challenging, interesting, different, progressive, introspective, or just plain weird',
-                        link: 'https://avantmusicnews.com/',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/cropped-cropped-amnbanner1.jpg',
-                        items: null,
-                        rss: 'https://avantmusicnews.com/rss',
-                        title: 'Avant Music News',
-                        userRead: false
-                    },
-                    {
-                        uuid: '2e535aa1-d6d3-4741-9df7-e47ec5ac2260',
-                        author: null,
-                        description: 'The latest from Bandcamp',
-                        link: 'https://daily.bandcamp.com/',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/bc-site-icon1.png',
-                        items: null,
-                        rss: 'https://daily.bandcamp.com/feed',
-                        title: 'Bandcamp Daily',
-                        userRead: false
-                    },
-                    {
-                        uuid: '9546ff34-ff07-4e31-9332-786ea544ec47',
-                        author: null,
-                        description: 'A blog about Major League Baseball',
-                        link: 'https://www.baseballmusings.com/',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/788443.png',
-                        items: null,
-                        rss: 'http://feeds2.feedburner.com/Baseballmusingscom',
-                        title: 'Baseball Musings',
-                        userRead: false
-                    },
-                    {
-                        uuid: '321d2897-f108-45c1-96ca-3aa70ec46590',
-                        author: null,
-                        description: 'The main page.',
-                        link: 'http://www.dailykos.com/blogs/main',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/daily-kos-squarelogo-1517554340259.png',
-                        items: null,
-                        rss: 'https://feeds.dailykos.com',
-                        title: 'Daily Kos',
-                        userRead: false
-                    },
-                    {
-                        uuid: '2c7be513-9083-439c-937f-42bbe95c0cb9',
-                        author: null,
-                        description: 'Links for the intellectually curious, ranked by readers.',
-                        link: 'https://news.ycombinator.com/',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/hacker-news-2-569388.png',
-                        items: null,
-                        rss: 'https://news.ycombinator.com/rss',
-                        title: 'Hacker News',
-                        userRead: false
-                    },
-                    {
-                        uuid: 'b081d79b-ff77-4586-83f3-e9eea5e22c9a',
-                        author: null,
-                        description: 'The news according to John Marshall',
-                        link: 'https://talkingpointsmemo.com/',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/tpm-sq.svg',
-                        items: null,
-                        rss: 'https://talkingpointsmemo.com/feed/all',
-                        title: 'Talking Points Memo',
-                        userRead: false
-                    },
-                    {
-                        uuid: '5eb65b5e-6896-4357-94af-e48fad7c64cc',
-                        author: null,
-                        description: 'Wonkette',
-                        link: 'https://www.wonkette.com/',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/wonkette.jpg',
-                        items: null,
-                        rss: 'https://www.wonkette.com/feeds/feed.rss',
-                        title: 'Wonkette',
-                        userRead: false
-                    }
-                  ],
-                tab: 'wednesdayTabActive' + vm.wednesdayMonth,
-                title: 'Dailies'
-                },
-            {
-                active: false,
-                allRead: false,
-                podcast: false,
-                sort: 'up',
-                subscriptions: [
-                    {
-                        uuid: 'af66bdc7-e46c-43b8-a39c-878d80f01b6b',
-                        author: null,
-                        description: 'All about the JavaScript programming language!',
-                        link: 'https://www.reddit.com/r/javascript/',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/5589238-reddit-icon-vector-images-icon-sign-and-symbols-reddit-logo-png-300_300_preview.png',
-                        items: null,
-                        rss: 'https://reddit.com/r/javascript/.rss',
-                        title: 'javascript',
-                        userRead: false
-                    },
-                    {
-                        uuid: 'f99c2c48-c52c-4d9d-8d60-8756a61620a6',
-                        author: null,
-                        description: 'Learn CSS | HTML5 | JavaScript | Wordpress | Tutorials-Web Development | Reference | Books and More',
-                        link: 'https://www.sitepoint.com/',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/58482e76cef1014c0b5e4a6c.png',
-                        items: null,
-                        rss: 'https://sitepoint.com/feed',
-                        title: 'SitePoint',
-                        userRead: false
-                    },
-                    {
-                        uuid: 'fceb9120-e6a1-4be1-bbe5-aef9db874440',
-                        author: null,
-                        description: 'Where programmers share ideas and help each other grow—A constructive and inclusive social network.',
-                        link: 'https://dev.to/',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/devtorainbow.png',
-                        items: null,
-                        rss: 'https://dev.to/feed',
-                        title: 'DEV Community',
-                        userRead: false
-                    },
-                    {
-                        uuid: 'cce488c6-e563-4de3-b6bc-266ba896ce61',
-                        author: null,
-                        description: 'Description pending',
-                        link: 'http://www.echojs.com/',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/acdaff17c49fc10cfb43a2e557804099_400x400.png',
-                        items: null,
-                        rss: 'https://www.echojs.com/rss',
-                        title: 'Echo JS',
-                        userRead: false
-                    },
-                    {
-                        uuid: '03520f1f-b069-4a3d-9329-69451cf9c9e6',
-                        author: null,
-                        description: 'A free, once–weekly e-mail round-up of Node.js news and articles.',
-                        link: 'https://nodeweekly.com/',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/qzlqdaj4qzm2bzcdliyp.png',
-                        items: null,
-                        rss: 'https://nodeweekly.com/rss/12acdl5j',
-                        title: 'Node Weekly',
-                        userRead: false
-                    },
-                    {
-                        uuid: '6ba1eb91-375b-4d49-b47a-f9661682f9ba',
-                        author: null,
-                        description: 'Google News',
-                        link: 'https://news.google.com/search?q=javascript&hl=en-US&gl=US&ceid=US%3Aen',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/1200px-Google_News_icon.svg.png',
-                        items: null,
-                        rss: 'https://news.google.com/rss/search?pz=1&cf=all&topic=topics&q=javascript&hl=en-US&num=10&gl=US&ceid=US:en',
-                        title: 'Google News - Javascript',
-                        userRead: false
-                    },
-                    {
-                        uuid: '66a55437-b871-43c3-b420-fb4fd4b3105f',
-                        author: 'JSConf',
-                        description: '',
-                        link: 'https://www.youtube.com/channel/UCzoVCacndDCfGDf41P-z0iA',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/jsconf_eu.png',
-                        items: null,
-                        rss: 'https://www.youtube.com/channel/UCzoVCacndDCfGDf41P-z0iA',
-                        title: 'JSConf',
-                        userRead: false
-                    }
-                  ],
-                tab: 'wednesdayTabInactive' + vm.wednesdayMonth,
-                title: 'Coding'
-                },
-            {
-                active: false,
-                allRead: false,
-                podcast: false,
-                sort: 'up',
-                subscriptions: [
-                    {
-                        uuid: '2cae1952-92b6-47ba-a071-6c26ffb7bf3b',
-                        author: null,
-                        description: '',
-                        link: 'https://www.dailywritingtips.com/',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/dwt_400x400.gif',
-                        items: null,
-                        rss: 'https://www.dailywritingtips.com/feed/',
-                        title: 'Daily Writing Tips',
-                        userRead: false
-                    },
-                    {
-                        uuid: '4fab6bab-b9bf-4e30-8ff4-2b2929d624be',
-                        author: null,
-                        description: 'Writing, self-publishing, book marketing, making a living with your writing',
-                        link: 'https://www.thecreativepenn.com/',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/theCreativePenn.jpg',
-                        items: null,
-                        rss: 'http://feeds.feedburner.com/TheCreativePenn',
-                        title: 'The Creative Penn',
-                        userRead: false
-                    },
-                    {
-                        uuid: 'a03e655b-8905-4009-8637-054a3a2781f0',
-                        author: null,
-                        description: 'The Online Writing Workbook',
-                        link: 'https://thewritepractice.com/',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/writePracticeLogo.jpeg',
-                        items: null,
-                        rss: 'https://thewritepractice.com/feed/',
-                        title: 'The Write Practice',
-                        userRead: false
-                    },
-                    {
-                        uuid: '5b0e0672-1206-476e-86e1-6a5c10cf0eb9',
-                        author: null,
-                        description: 'about the craft and business of fiction',
-                        link: 'https://writerunboxed.com/',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/smaller-jpg-Unconference-e1399854512236.jpg',
-                        items: null,
-                        rss: 'http://feeds.feedburner.com/WriterUnboxed',
-                        title: 'Writer Unboxed',
-                        userRead: false
-                    },
-                    {
-                        uuid: 'e6d6a7ec-ab9a-4b89-a4e3-cb9309e25b22',
-                        author: null,
-                        description: 'Creative Writing Tips and Ideas',
-                        link: 'https://www.writingforward.com/',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/4f6ee35db80d664bb6fb85dfa71e8963.jpg',
-                        items: null,
-                        rss: 'http://feeds.feedburner.com/WritingForward',
-                        title: 'Writing Forward',
-                        userRead: false
-                    }
-                  ],
-                tab: 'wednesdayTabInactive' + vm.wednesdayMonth,
-                title: 'Writing'
-                },
-            {
-                active: false,
-                allRead: false,
-                podcast: false,
-                sort: 'up',
-                subscriptions: [
-                    {
-                        uuid: 'fdb900a9-b8d3-4408-b7f2-f379a468df22',
-                        author: null,
-                        description: 'The Internet\'s Band of Incorrigible Spitballers® Since 2006',
-                        link: 'https://mockpaperscissors.com/',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/dump-trump.jpg',
-                        items: null,
-                        rss: 'https://mockpaperscissors.com/feed/',
-                        title: 'Mock Paper Scissors',
-                        userRead: false
-                    },
-                    {
-                        uuid: 'bb51cad9-ef52-4910-9184-559edd28647f',
-                        author: null,
-                        description: '"We deal in illusions, man. None of it is true. But you people sit there day after day, night after night, all ages, colors, creeds. We\'re all you know. You\'re beginning to believe the illusions we\'re spinning here. You\'re beginning to think that the tube is reality and that your own lives are unreal. You do whatever the tube tells you. You dress like the tube. You eat like the tube. You even think like the tube. In God\'s name, you people are the real thing, WE are the illusion." -Howard Beale',
-                        link: 'https://digbysblog.blogspot.com/',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/network-howard-beal.jpg',
-                        items: null,
-                        rss: 'http://digbysblog.blogspot.com/feeds/posts/default',
-                        title: 'Hullabaloo',
-                        userRead: false
-                    },
-                    {
-                        uuid: 'a56f0791-9ade-4c22-9ef8-564efdaaa4ff',
-                        author: null,
-                        description: 'Like Kryptonite To Stupid',
-                        link: 'https://oliverwillis.com/',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/willis1.jpeg',
-                        items: null,
-                        rss: 'https://oliverwillis.com/feed/',
-                        title: 'Oliver Willis',
-                        userRead: false
-                    },
-                    {
-                        uuid: 'd4449a9f-0589-4875-bb7e-daa523666a94',
-                        author: 'DownWithTyranny',
-                        description: '"When fascism comes to America, it will be wrapped in the flag and carrying the cross." -- Sinclair Lewis',
-                        link: 'https://downwithtyranny.blogspot.com/',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/dwtlgob_400x400.jpg',
-                        items: null,
-                        rss: 'https://downwithtyranny.blogspot.com/feeds/posts/default',
-                        title: 'DownWithTyranny!',
-                        userRead: false
-                    },
-                    {
-                        uuid: '5a271358-a6d3-471a-ba17-30f481d3b98b',
-                        author: null,
-                        description: 'Music, Film, TV and Political News Coverage',
-                        link: 'https://www.rollingstone.com/',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/RS_Monogram_3000px-copy-e1530547673203.png',
-                        items: null,
-                        rss: 'https://www.rollingstone.com/politics/feed',
-                        title: 'Politics',
-                        userRead: false
-                    }
-                  ],
-                tab: 'wednesdayTabInactive' + vm.wednesdayMonth,
-                title: 'Politics'
-                },
-            {
-                active: false,
-                allRead: false,
-                podcast: true,
-                sort: 'up',
-                subscriptions: [
-                    {
-                        uuid: 'e77fb9d5-5df2-40fd-9010-0d65435c49ca',
-                        author: 'Book Riot',
-                        description: 'Book Riot - The Podcast is a weekly news and talk show about what\'s new, cool, and worth talking about in the world of books and reading, brought to you by the editors of BookRiot.com',
-                        link: 'https://bookriot.com/listen/shows/thepodcast/',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/bookRiotPodcast.jpg',
-                        items: null,
-                        rss: 'https://omny.fm/shows/book-riot-the-podcast-1/playlists/podcast.rss',
-                        title: 'Book Riot - The Podcast',
-                        userRead: false
-                    }
-                  ],
-                tab: 'wednesdayTabInactive' + vm.wednesdayMonth,
-                title: 'Book Podcasts'
-                },
-            {
-                active: false,
-                allRead: false,
-                podcast: true,
-                sort: 'up',
-                subscriptions: [
-                    {
-                        uuid: 'ced9116d-00e6-4b86-b99a-b50c65b1be7b',
-                        author: 'Devchat.tv',
-                        description: 'A weekly exploration into the people who make JavaScript what it is.',
-                        link: 'http://devchat.tv/my-js-story',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/MyJSStory.jpg',
-                        items: null,
-                        rss: 'https://feeds.feedwrench.com/my-js-story.rss',
-                        title: 'My JavaScript Story',
-                        userRead: false
-                    }
-                  ],
-                tab: 'wednesdayTabInactive' + vm.wednesdayMonth,
-                title: 'Coding Podcasts'
-                },
-            {
-                active: false,
-                allRead: false,
-                podcast: false,
-                sort: 'up',
-                subscriptions: [
-                    {
-                        uuid: 'c2f53e34-5499-4015-80d5-b4fcea47c78b',
-                        author: null,
-                        description: 'War Is a Racket',
-                        link: null,
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/externals/EDD_xVYXsAEtYxP.jpg',
-                        items: null,
-                        rss: null,
-                        title: 'Jacobin Magazine - Summer 2019',
-                        userRead: false
-                    },
-                    {
-                        uuid: '2b7da266-f978-445f-8c5b-07da611f2464',
-                        author: null,
-                        description: 'Fair But Not Square',
-                        link: null,
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/externals/v28_i37_Fair_But_Not_Square.jpg',
-                        items: null,
-                        rss: null,
-                        title: 'Albuquerque Alibi - Thursday, September 12, 2019',
-                        userRead: true
-                    },
-                    {
-                        uuid: '174f6d0e-b7cd-4979-8177-61032be3fefe',
-                        author: null,
-                        description: 'All the News that\'s fit to print.',
-                        link: null,
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/externals/scanNYT2019-09-15.jpg',
-                        items: null,
-                        rss: null,
-                        title: 'New York Times - Sunday, September 15, 2019',
-                        userRead: true
-                    }
-                  ],
-                tab: 'wednesdayTabInactive' + vm.wednesdayMonth,
-                title: 'Externals'
-                }
-              ];
+//        vm.wednesdayTabs = [
+//            {
+//                active: true,
+//                allRead: false,
+//                podcast: false,
+//                sort: 'up',
+//                subscriptions: [
+//                    {
+//                        uuid: 'b1c2eff2-81e8-4f19-a1ba-8fff123fb89a',
+//                        author: null,
+//                        description: 'A source for news on music that is challenging, interesting, different, progressive, introspective, or just plain weird',
+//                        link: 'https://avantmusicnews.com/',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/cropped-cropped-amnbanner1.jpg',
+//                        items: null,
+//                        rss: 'https://avantmusicnews.com/rss',
+//                        title: 'Avant Music News',
+//                        userRead: false
+//                    },
+//                    {
+//                        uuid: '2e535aa1-d6d3-4741-9df7-e47ec5ac2260',
+//                        author: null,
+//                        description: 'The latest from Bandcamp',
+//                        link: 'https://daily.bandcamp.com/',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/bc-site-icon1.png',
+//                        items: null,
+//                        rss: 'https://daily.bandcamp.com/feed',
+//                        title: 'Bandcamp Daily',
+//                        userRead: false
+//                    },
+//                    {
+//                        uuid: '9546ff34-ff07-4e31-9332-786ea544ec47',
+//                        author: null,
+//                        description: 'A blog about Major League Baseball',
+//                        link: 'https://www.baseballmusings.com/',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/788443.png',
+//                        items: null,
+//                        rss: 'http://feeds2.feedburner.com/Baseballmusingscom',
+//                        title: 'Baseball Musings',
+//                        userRead: false
+//                    },
+//                    {
+//                        uuid: '321d2897-f108-45c1-96ca-3aa70ec46590',
+//                        author: null,
+//                        description: 'The main page.',
+//                        link: 'http://www.dailykos.com/blogs/main',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/daily-kos-squarelogo-1517554340259.png',
+//                        items: null,
+//                        rss: 'https://feeds.dailykos.com',
+//                        title: 'Daily Kos',
+//                        userRead: false
+//                    },
+//                    {
+//                        uuid: '2c7be513-9083-439c-937f-42bbe95c0cb9',
+//                        author: null,
+//                        description: 'Links for the intellectually curious, ranked by readers.',
+//                        link: 'https://news.ycombinator.com/',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/hacker-news-2-569388.png',
+//                        items: null,
+//                        rss: 'https://news.ycombinator.com/rss',
+//                        title: 'Hacker News',
+//                        userRead: false
+//                    },
+//                    {
+//                        uuid: 'b081d79b-ff77-4586-83f3-e9eea5e22c9a',
+//                        author: null,
+//                        description: 'The news according to John Marshall',
+//                        link: 'https://talkingpointsmemo.com/',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/tpm-sq.svg',
+//                        items: null,
+//                        rss: 'https://talkingpointsmemo.com/feed/all',
+//                        title: 'Talking Points Memo',
+//                        userRead: false
+//                    },
+//                    {
+//                        uuid: '5eb65b5e-6896-4357-94af-e48fad7c64cc',
+//                        author: null,
+//                        description: 'Wonkette',
+//                        link: 'https://www.wonkette.com/',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/wonkette.jpg',
+//                        items: null,
+//                        rss: 'https://www.wonkette.com/feeds/feed.rss',
+//                        title: 'Wonkette',
+//                        userRead: false
+//                    }
+//                  ],
+//                tab: 'wednesdayTabActive' + vm.wednesdayMonth,
+//                title: 'Dailies'
+//                },
+//            {
+//                active: false,
+//                allRead: false,
+//                podcast: false,
+//                sort: 'up',
+//                subscriptions: [
+//                    {
+//                        uuid: 'af66bdc7-e46c-43b8-a39c-878d80f01b6b',
+//                        author: null,
+//                        description: 'All about the JavaScript programming language!',
+//                        link: 'https://www.reddit.com/r/javascript/',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/5589238-reddit-icon-vector-images-icon-sign-and-symbols-reddit-logo-png-300_300_preview.png',
+//                        items: null,
+//                        rss: 'https://reddit.com/r/javascript/.rss',
+//                        title: 'javascript',
+//                        userRead: false
+//                    },
+//                    {
+//                        uuid: 'f99c2c48-c52c-4d9d-8d60-8756a61620a6',
+//                        author: null,
+//                        description: 'Learn CSS | HTML5 | JavaScript | Wordpress | Tutorials-Web Development | Reference | Books and More',
+//                        link: 'https://www.sitepoint.com/',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/58482e76cef1014c0b5e4a6c.png',
+//                        items: null,
+//                        rss: 'https://sitepoint.com/feed',
+//                        title: 'SitePoint',
+//                        userRead: false
+//                    },
+//                    {
+//                        uuid: 'fceb9120-e6a1-4be1-bbe5-aef9db874440',
+//                        author: null,
+//                        description: 'Where programmers share ideas and help each other grow—A constructive and inclusive social network.',
+//                        link: 'https://dev.to/',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/devtorainbow.png',
+//                        items: null,
+//                        rss: 'https://dev.to/feed',
+//                        title: 'DEV Community',
+//                        userRead: false
+//                    },
+//                    {
+//                        uuid: 'cce488c6-e563-4de3-b6bc-266ba896ce61',
+//                        author: null,
+//                        description: 'Description pending',
+//                        link: 'http://www.echojs.com/',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/acdaff17c49fc10cfb43a2e557804099_400x400.png',
+//                        items: null,
+//                        rss: 'https://www.echojs.com/rss',
+//                        title: 'Echo JS',
+//                        userRead: false
+//                    },
+//                    {
+//                        uuid: '03520f1f-b069-4a3d-9329-69451cf9c9e6',
+//                        author: null,
+//                        description: 'A free, once–weekly e-mail round-up of Node.js news and articles.',
+//                        link: 'https://nodeweekly.com/',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/qzlqdaj4qzm2bzcdliyp.png',
+//                        items: null,
+//                        rss: 'https://nodeweekly.com/rss/12acdl5j',
+//                        title: 'Node Weekly',
+//                        userRead: false
+//                    },
+//                    {
+//                        uuid: '6ba1eb91-375b-4d49-b47a-f9661682f9ba',
+//                        author: null,
+//                        description: 'Google News',
+//                        link: 'https://news.google.com/search?q=javascript&hl=en-US&gl=US&ceid=US%3Aen',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/1200px-Google_News_icon.svg.png',
+//                        items: null,
+//                        rss: 'https://news.google.com/rss/search?pz=1&cf=all&topic=topics&q=javascript&hl=en-US&num=10&gl=US&ceid=US:en',
+//                        title: 'Google News - Javascript',
+//                        userRead: false
+//                    },
+//                    {
+//                        uuid: '66a55437-b871-43c3-b420-fb4fd4b3105f',
+//                        author: 'JSConf',
+//                        description: '',
+//                        link: 'https://www.youtube.com/channel/UCzoVCacndDCfGDf41P-z0iA',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/jsconf_eu.png',
+//                        items: null,
+//                        rss: 'https://www.youtube.com/channel/UCzoVCacndDCfGDf41P-z0iA',
+//                        title: 'JSConf',
+//                        userRead: false
+//                    }
+//                  ],
+//                tab: 'wednesdayTabInactive' + vm.wednesdayMonth,
+//                title: 'Coding'
+//                },
+//            {
+//                active: false,
+//                allRead: false,
+//                podcast: false,
+//                sort: 'up',
+//                subscriptions: [
+//                    {
+//                        uuid: '2cae1952-92b6-47ba-a071-6c26ffb7bf3b',
+//                        author: null,
+//                        description: '',
+//                        link: 'https://www.dailywritingtips.com/',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/dwt_400x400.gif',
+//                        items: null,
+//                        rss: 'https://www.dailywritingtips.com/feed/',
+//                        title: 'Daily Writing Tips',
+//                        userRead: false
+//                    },
+//                    {
+//                        uuid: '4fab6bab-b9bf-4e30-8ff4-2b2929d624be',
+//                        author: null,
+//                        description: 'Writing, self-publishing, book marketing, making a living with your writing',
+//                        link: 'https://www.thecreativepenn.com/',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/theCreativePenn.jpg',
+//                        items: null,
+//                        rss: 'http://feeds.feedburner.com/TheCreativePenn',
+//                        title: 'The Creative Penn',
+//                        userRead: false
+//                    },
+//                    {
+//                        uuid: 'a03e655b-8905-4009-8637-054a3a2781f0',
+//                        author: null,
+//                        description: 'The Online Writing Workbook',
+//                        link: 'https://thewritepractice.com/',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/writePracticeLogo.jpeg',
+//                        items: null,
+//                        rss: 'https://thewritepractice.com/feed/',
+//                        title: 'The Write Practice',
+//                        userRead: false
+//                    },
+//                    {
+//                        uuid: '5b0e0672-1206-476e-86e1-6a5c10cf0eb9',
+//                        author: null,
+//                        description: 'about the craft and business of fiction',
+//                        link: 'https://writerunboxed.com/',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/smaller-jpg-Unconference-e1399854512236.jpg',
+//                        items: null,
+//                        rss: 'http://feeds.feedburner.com/WriterUnboxed',
+//                        title: 'Writer Unboxed',
+//                        userRead: false
+//                    },
+//                    {
+//                        uuid: 'e6d6a7ec-ab9a-4b89-a4e3-cb9309e25b22',
+//                        author: null,
+//                        description: 'Creative Writing Tips and Ideas',
+//                        link: 'https://www.writingforward.com/',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/4f6ee35db80d664bb6fb85dfa71e8963.jpg',
+//                        items: null,
+//                        rss: 'http://feeds.feedburner.com/WritingForward',
+//                        title: 'Writing Forward',
+//                        userRead: false
+//                    }
+//                  ],
+//                tab: 'wednesdayTabInactive' + vm.wednesdayMonth,
+//                title: 'Writing'
+//                },
+//            {
+//                active: false,
+//                allRead: false,
+//                podcast: false,
+//                sort: 'up',
+//                subscriptions: [
+//                    {
+//                        uuid: 'fdb900a9-b8d3-4408-b7f2-f379a468df22',
+//                        author: null,
+//                        description: 'The Internet\'s Band of Incorrigible Spitballers® Since 2006',
+//                        link: 'https://mockpaperscissors.com/',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/dump-trump.jpg',
+//                        items: null,
+//                        rss: 'https://mockpaperscissors.com/feed/',
+//                        title: 'Mock Paper Scissors',
+//                        userRead: false
+//                    },
+//                    {
+//                        uuid: 'bb51cad9-ef52-4910-9184-559edd28647f',
+//                        author: null,
+//                        description: '"We deal in illusions, man. None of it is true. But you people sit there day after day, night after night, all ages, colors, creeds. We\'re all you know. You\'re beginning to believe the illusions we\'re spinning here. You\'re beginning to think that the tube is reality and that your own lives are unreal. You do whatever the tube tells you. You dress like the tube. You eat like the tube. You even think like the tube. In God\'s name, you people are the real thing, WE are the illusion." -Howard Beale',
+//                        link: 'https://digbysblog.blogspot.com/',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/network-howard-beal.jpg',
+//                        items: null,
+//                        rss: 'http://digbysblog.blogspot.com/feeds/posts/default',
+//                        title: 'Hullabaloo',
+//                        userRead: false
+//                    },
+//                    {
+//                        uuid: 'a56f0791-9ade-4c22-9ef8-564efdaaa4ff',
+//                        author: null,
+//                        description: 'Like Kryptonite To Stupid',
+//                        link: 'https://oliverwillis.com/',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/willis1.jpeg',
+//                        items: null,
+//                        rss: 'https://oliverwillis.com/feed/',
+//                        title: 'Oliver Willis',
+//                        userRead: false
+//                    },
+//                    {
+//                        uuid: 'd4449a9f-0589-4875-bb7e-daa523666a94',
+//                        author: 'DownWithTyranny',
+//                        description: '"When fascism comes to America, it will be wrapped in the flag and carrying the cross." -- Sinclair Lewis',
+//                        link: 'https://downwithtyranny.blogspot.com/',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/dwtlgob_400x400.jpg',
+//                        items: null,
+//                        rss: 'https://downwithtyranny.blogspot.com/feeds/posts/default',
+//                        title: 'DownWithTyranny!',
+//                        userRead: false
+//                    },
+//                    {
+//                        uuid: '5a271358-a6d3-471a-ba17-30f481d3b98b',
+//                        author: null,
+//                        description: 'Music, Film, TV and Political News Coverage',
+//                        link: 'https://www.rollingstone.com/',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/RS_Monogram_3000px-copy-e1530547673203.png',
+//                        items: null,
+//                        rss: 'https://www.rollingstone.com/politics/feed',
+//                        title: 'Politics',
+//                        userRead: false
+//                    }
+//                  ],
+//                tab: 'wednesdayTabInactive' + vm.wednesdayMonth,
+//                title: 'Politics'
+//                },
+//            {
+//                active: false,
+//                allRead: false,
+//                podcast: true,
+//                sort: 'up',
+//                subscriptions: [
+//                    {
+//                        uuid: 'e77fb9d5-5df2-40fd-9010-0d65435c49ca',
+//                        author: 'Book Riot',
+//                        description: 'Book Riot - The Podcast is a weekly news and talk show about what\'s new, cool, and worth talking about in the world of books and reading, brought to you by the editors of BookRiot.com',
+//                        link: 'https://bookriot.com/listen/shows/thepodcast/',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/bookRiotPodcast.jpg',
+//                        items: null,
+//                        rss: 'https://omny.fm/shows/book-riot-the-podcast-1/playlists/podcast.rss',
+//                        title: 'Book Riot - The Podcast',
+//                        userRead: false
+//                    }
+//                  ],
+//                tab: 'wednesdayTabInactive' + vm.wednesdayMonth,
+//                title: 'Book Podcasts'
+//                },
+//            {
+//                active: false,
+//                allRead: false,
+//                podcast: true,
+//                sort: 'up',
+//                subscriptions: [
+//                    {
+//                        uuid: 'ced9116d-00e6-4b86-b99a-b50c65b1be7b',
+//                        author: 'Devchat.tv',
+//                        description: 'A weekly exploration into the people who make JavaScript what it is.',
+//                        link: 'http://devchat.tv/my-js-story',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/MyJSStory.jpg',
+//                        items: null,
+//                        rss: 'https://feeds.feedwrench.com/my-js-story.rss',
+//                        title: 'My JavaScript Story',
+//                        userRead: false
+//                    }
+//                  ],
+//                tab: 'wednesdayTabInactive' + vm.wednesdayMonth,
+//                title: 'Coding Podcasts'
+//                },
+//            {
+//                active: false,
+//                allRead: false,
+//                podcast: false,
+//                sort: 'up',
+//                subscriptions: [
+//                    {
+//                        uuid: 'c2f53e34-5499-4015-80d5-b4fcea47c78b',
+//                        author: null,
+//                        description: 'War Is a Racket',
+//                        link: null,
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/externals/EDD_xVYXsAEtYxP.jpg',
+//                        items: null,
+//                        rss: null,
+//                        title: 'Jacobin Magazine - Summer 2019',
+//                        userRead: false
+//                    },
+//                    {
+//                        uuid: '2b7da266-f978-445f-8c5b-07da611f2464',
+//                        author: null,
+//                        description: 'Fair But Not Square',
+//                        link: null,
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/externals/v28_i37_Fair_But_Not_Square.jpg',
+//                        items: null,
+//                        rss: null,
+//                        title: 'Albuquerque Alibi - Thursday, September 12, 2019',
+//                        userRead: true
+//                    },
+//                    {
+//                        uuid: '174f6d0e-b7cd-4979-8177-61032be3fefe',
+//                        author: null,
+//                        description: 'All the News that\'s fit to print.',
+//                        link: null,
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/externals/scanNYT2019-09-15.jpg',
+//                        items: null,
+//                        rss: null,
+//                        title: 'New York Times - Sunday, September 15, 2019',
+//                        userRead: true
+//                    }
+//                  ],
+//                tab: 'wednesdayTabInactive' + vm.wednesdayMonth,
+//                title: 'Externals'
+//                }
+//              ];
         vm.toggleTabs = toggleTabs;
         vm.toggleAllReadStatus = toggleAllReadStatus;
         vm.sortSubscriptions = sortSubscriptions;
@@ -961,41 +961,41 @@
 
         function navigateToHub() {
             let now = new Date();
-//            let tabs = vm.wednesdayTabs.filter(entry => {
-//                return ((entry.title !== 'Dailies') && (entry.title !== 'Externals'));
-//            });
-//            let dailyTab = vm.wednesdayTabs.filter(entry => {
-//                return (entry.title === 'Dailies');
-//            });
-//            let externalTab = vm.wednesdayTabs.filter(entry => {
-//                return(entry.title === 'Externals');
-//            });
-//            for (let i = 0; i < externalTab[0].subscriptions.length; i++) {
-//                updateExternalsReadStatus(externalTab[0].subscriptions[i]);
-//            }
-//            $http.patch(`/tuesday_subscriptions/${vm.user.uuid}`, {
-//                    tabs: {
-//                        tabs: tabs
-//                    },
-//                    updated_at: new Date()
-//                })
-//                .then(() => {
-//                    $http.get(`/dailies/byuser/${vm.user.uuid}`)
-//                        .then(userDailyData => {
-//                            let userDaily = userDailyData.data;
-//                            userDaily.dailies.dailies = dailyTab[0];
-//                            userDaily.updated_at = now;
-//                            $http.patch(`/dailies/${userDaily.uuid}`, userDaily)
-//                                .then(() => {
-//                                    $state.go('userhub', {
-//                                        id: vm.user.uuid
-//                                    });
-//                                });
-//                        });
-//                });
-            $state.go('userhub', {
-                id: vm.user.uuid
+            let tabs = vm.wednesdayTabs.filter(entry => {
+                return ((entry.title !== 'Dailies') && (entry.title !== 'Externals'));
             });
+            let dailyTab = vm.wednesdayTabs.filter(entry => {
+                return (entry.title === 'Dailies');
+            });
+            let externalTab = vm.wednesdayTabs.filter(entry => {
+                return(entry.title === 'Externals');
+            });
+            for (let i = 0; i < externalTab[0].subscriptions.length; i++) {
+                updateExternalsReadStatus(externalTab[0].subscriptions[i]);
+            }
+            $http.patch(`/wednesday_subscriptions/${vm.user.uuid}`, {
+                    tabs: {
+                        tabs: tabs
+                    },
+                    updated_at: new Date()
+                })
+                .then(() => {
+                    $http.get(`/dailies/byuser/${vm.user.uuid}`)
+                        .then(userDailyData => {
+                            let userDaily = userDailyData.data;
+                            userDaily.dailies.dailies = dailyTab[0];
+                            userDaily.updated_at = now;
+                            $http.patch(`/dailies/${userDaily.uuid}`, userDaily)
+                                .then(() => {
+                                    $state.go('userhub', {
+                                        id: vm.user.uuid
+                                    });
+                                });
+                        });
+                });
+//            $state.go('userhub', {
+//                id: vm.user.uuid
+//            });
 
         }
 
@@ -1151,22 +1151,22 @@
         }
         
         function populatewednesdayTabs(userUuid) {
-//            $http.get(`/tuesday_subscriptions/assembled/${userUuid}`)
-//                .then(assembledSubsData => {
-//                    let assembledSubs = assembledSubsData.data;
-//                    for (let i = 0; i < assembledSubs.length; i++) {
-//                        if (assembledSubs[i].active) {
-//                            assembledSubs[i].tab = 'wednesdayTabActive' + vm.wednesdayMonth;
-//                            if (i > 0) {
-//                                assembledSubs[0].active = false;
-//                                assembledSubs[0].tab = 'wednesdayTabInactive' + vm.wednesdayMonth;
-//                            }
-//                        } else {
-//                            assembledSubs[i].tab = 'wednesdayTabInactive' + vm.wednesdayMonth;
-//                        }
-//                    }
-//                    vm.wednesdayTabs = assembledSubs;
-//                });
+            $http.get(`/wednesday_subscriptions/assembled/${userUuid}`)
+                .then(assembledSubsData => {
+                    let assembledSubs = assembledSubsData.data;
+                    for (let i = 0; i < assembledSubs.length; i++) {
+                        if (assembledSubs[i].active) {
+                            assembledSubs[i].tab = 'wednesdayTabActive' + vm.wednesdayMonth;
+                            if (i > 0) {
+                                assembledSubs[0].active = false;
+                                assembledSubs[0].tab = 'wednesdayTabInactive' + vm.wednesdayMonth;
+                            }
+                        } else {
+                            assembledSubs[i].tab = 'wednesdayTabInactive' + vm.wednesdayMonth;
+                        }
+                    }
+                    vm.wednesdayTabs = assembledSubs;
+                });
         }
 
         function onInit() {
@@ -1188,7 +1188,7 @@
 
             setUserIPAddress();
             setFooterMessage();
-//             populatewednesdayTabs($stateParams.userUuid);
+             populatewednesdayTabs($stateParams.userUuid);
             // checkLoginStatus();
 
         }
