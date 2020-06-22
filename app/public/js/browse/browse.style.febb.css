@@ -139,10 +139,9 @@
 }
 
 .browsePodcastsByCategory_FebruaryB {
-    display: none;
-    backdrop-filter: blur(4px);
-    background: #8f8080;
-    border-right: 1px solid #ff9b8e;
+    backdrop-filter: blur(8px);
+    background: #8e8f91;
+    border-right: 1px solid #2e2f30;
     height: 77vh;
     margin: 15px;
     opacity: 0.8;
@@ -208,10 +207,9 @@
 }
 
 .browsePodCategoricalFeeds_generic_FebruaryB {
-    display: none;
-    backdrop-filter: blur(4px);
-    background: #8f8080;
-    border-right: 1px solid #ff9b8e;
+    backdrop-filter: blur(8px);
+    background: #8e8f91;
+    border-right: 1px solid #2e2f30;
     height: 77vh;
     margin: 15px;
     opacity: 0.8;
@@ -221,10 +219,9 @@
 }
 
 .browsePodCategoricalFeeds_FebruaryB {
-    display: none;
-    backdrop-filter: blur(4px);
-    background: #8f8080;
-    border-right: 1px solid #ff9b8e;
+    backdrop-filter: blur(8px);
+    background: #8e8f91;
+    border-right: 1px solid #2e2f30;
     height: 77vh;
     margin: 15px;
     opacity: 0.8;
@@ -243,9 +240,8 @@
 }
 
 .browseFeedsPodcastContainer_generic_FebruaryB {
-    display: none;
     cursor: pointer;
-/*    display: flex;*/
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -253,8 +249,7 @@
 }
 
 .browseFeedsPodcastContainer_generic_FebruaryB img {
-    display: none;
-    filter: brightness(110%) drop-shadow(15px 15px 5px #420203);
+    filter: brightness(100%) drop-shadow(15px 15px 5px #38393a);
     height: 50px;
     margin: 0 15px 0 0;
     width: 50px;
@@ -268,7 +263,6 @@
 }
 
 .browsePodCategoricalFeeds_generic_FebruaryB p {
-    display: none;
     color: #040404;
     font-family: 'Lexend Deca', sans-serif;
     font-size: 18px;
@@ -346,10 +340,9 @@
 }
 
 .browseIndividualPodFeedData_generic_FebruaryB {
-    display: none;
-    backdrop-filter: blur(4px);
-    background: #8f8080;
-    border-right: 1px solid #ff9b8e;
+    backdrop-filter: blur(8px);
+    background: #8e8f91;
+    border-right: 1px solid #2e2f30;
     height: 77vh;
     margin: 15px;
     opacity: 0.8;
@@ -359,14 +352,12 @@
 }
 
 .browseIndividualPodFeedData_generic_FebruaryB img {
-    display: none;
     margin: 10px 15%;
     width: 70%;
 }
 
 .browseIndividualPodFeedData_generic_FebruaryB h3 {
-    display: none;
-    color: #0c0000;
+    color: #040404;
     font-family: 'Lexend Deca', sans-serif;
     font-size: 36px;
     margin: 5px 10%;
@@ -374,8 +365,7 @@
 }
 
 .browseIndividualPodFeedData_generic_FebruaryB p {
-    display: none;
-    color: #0c0000;
+    color: #040404;
     font-family: 'Lexend Deca', sans-serif;
     font-size: 18px;
     margin: 15px 10%;
@@ -383,30 +373,29 @@
 }
 
 .browseIndividualPodFeedData_generic_FebruaryB button {
-    display: none;
-    background: #1f0101;
+    background: #0b0b0b;
     border: none;
-    color: #ff9b8e;
+    color: #d4d3d4;
     cursor: pointer;
-    filter: drop-shadow(8px 8px 8px #420203);
+    filter: drop-shadow(8px 8px 8px #38393a);
     font-family: 'Lexend Deca', sans-serif;
     font-size: 24px;
     margin: 30px 35%;
-    outline-color: #b48080;
+    outline-color: #939394;
     transition: all 0.4s linear;
 }
 
 .browseIndividualPodFeedData_generic_FebruaryB button:hover {
-    background: #420203;
-    color: #fe361c;
-    filter: drop-shadow(3px 6px 8px #420203);
+    background: #5d5d5f;
+    color: #aeaeaf;
+    filter: drop-shadow(3px 6px 8px #38393a);
     transition: all 0.4s linear;
 }
 
 .browseIndividualPodFeedData_generic_FebruaryB button:active {
-    background: #fe361c;
-    color: #420203;
-    filter: drop-shadow(0 0 - #420203);
+    background: #aeaeaf;
+    color: #5d5d5f;
+    filter: drop-shadow(0 0 0 #38393a);
     transition: all 0.4s linear;
 }
 
