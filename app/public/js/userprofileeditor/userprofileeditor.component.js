@@ -623,8 +623,7 @@
         function setSkin() {
             $http.get('/skins/user_profile_editor')
             .then(skinData => {
-//                vm.profileMonth = skinData.data.user_profile_editor;
-                vm.profileMonth = '_MarchA';
+                vm.profileMonth = skinData.data.user_profile_editor;
                 vm.avatarModalStatus = 'profileEditorAvatarModalInactive' + vm.profileMonth;
                 vm.profileEditorContentStatus = 'profileEditorContent' + vm.profileMonth;
                 vm.cityModalStatus = 'profileCityModalInactive' + vm.profileMonth;
