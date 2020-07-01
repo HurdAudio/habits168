@@ -13,15 +13,14 @@
         const vm = this;
 
         vm.$onInit = onInit;
-        vm.tuesdayMonth = '_FebruaryC';
-        vm.tuesdayContainerState = 'tuesdayContainerActive' + vm.tuesdayMonth;
+        
         vm.navigateToHub = navigateToHub;
         vm.toggleTabs = toggleTabs;
         vm.toggleAllReadStatus = toggleAllReadStatus;
         vm.sortSubscriptions = sortSubscriptions;
         vm.toggleReadStatus = toggleReadStatus;
         vm.tuesdayManagerEngaged = tuesdayManagerEngaged;
-        vm.managerModalState = 'tuesdayManageTabsSubsModalInactive' + vm.tuesdayMonth;
+        
         vm.exitTuesdayManagerModal = exitTuesdayManagerModal;
         vm.tuesdayManageTabber = tuesdayManageTabber;
         vm.filterSearch = filterSearch;
@@ -774,11 +773,17 @@
                     vm.tuesdayTabs = assembledSubs;
                 });
         }
-
-        function onInit() {
-            console.log("Tuesday is lit");
-
-            switch (vm.tuesdayMonth) {
+        
+        
+        function setMonthSelect() {
+            $http.get('/skins/tuesday')
+            .then(hubSkinResponseData => {
+                const hubSkinResponse = hubSkinResponseData.data;
+                vm.tuesdayMonth = hubSkinResponse.tuesday;
+                vm.tuesdayContainerState = 'tuesdayContainerActive' + vm.tuesdayMonth;
+                vm.managerModalState = 'tuesdayManageTabsSubsModalInactive' + vm.tuesdayMonth;
+                
+                switch (vm.tuesdayMonth) {
                 case ('_JanuaryA'):
                     vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/robe-154808_640.png';
                     break;
@@ -799,8 +804,15 @@
                     break;
                 default:
                     alert('UNSUPPORTED MONTH SELECT for LOGO');
-            }
+                }
+            });
+        }
 
+        function onInit() {
+            console.log("Tuesday is lit");
+
+            setMonthSelect();
+            
             setUserIPAddress();
             setFooterMessage();
              populateTuesdayTabs($stateParams.userUuid);
