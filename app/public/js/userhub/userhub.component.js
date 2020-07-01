@@ -73,7 +73,6 @@
         vm.removeMessage = removeMessage;
         vm.removeMessageReply = removeMessageReply;
         vm.navigateToProfileEditor = navigateToProfileEditor;
-        vm.tuesdayMonth = '_FebruaryC';
         vm.navigateToBrowse = navigateToBrowse;
         vm.wednesdayMonth = '_JanuaryC';
         
@@ -1651,6 +1650,7 @@
                 vm.mondayMonth = hubSkinResponse.monday_skin;
                 vm.externalsMonth = hubSkinResponse.externals;
                 vm.dailiesMonth = hubSkinResponse.dailies;
+                vm.tuesdayMonth = hubSkinResponse.tuesday_skin;
                 
                 vm.externalsBlockToggleStatus = 'hubReaderExternalsDay2BlockInactive' + vm.externalsMonth;
                 vm.hubShareTabState = 'hubTabActive' + vm.monthSelect;

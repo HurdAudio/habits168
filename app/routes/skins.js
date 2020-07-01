@@ -107,10 +107,28 @@ router.get('/player', (req, res, next) => {
     });
 });
 
+router.get('/tuesday', (req, res, next) => {
+    let now = new Date();
+    let months = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'];
+    let selectedSkin;
+    
+    knex('skins')
+    .select('*')
+    .first()
+    .then(skinsTable => {
+        if (skinsTable.skins.tuesday[months[now.getMonth()]].length === 1) {
+            selectedSkin = skinsTable.skins.tuesday.available[Math.floor(Math.random() * skinsTable.skins.tuesday.available.length)];
+        } else {
+            selectedSkin = skinsTable.skins.tuesday[months[now.getMonth()]][now.getDate()];
+        }
+        res.send({ tuesday: selectedSkin });
+    });
+});
+
 router.get('/user_hub', (req, res, next) => {
     let now = new Date();
     let months = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'];
-    let selectedSkin, mondaySkin, externalsSkin, dailiesSkin;
+    let selectedSkin, mondaySkin, externalsSkin, dailiesSkin, tuesdaySkin;
     
     knex('skins')
     .select('*')
@@ -136,9 +154,14 @@ router.get('/user_hub', (req, res, next) => {
         } else {
             dailiesSkin = skinsTabl.skins.dailies[months[now.getMonth()]][now.getDate()];
         }
+        if (skinsTable.skins.tuesday[months[now.getMonth()]].length === 1) {
+            tuesdaySkin = skinsTable.skins.tuesday.available[Math.floor(Math.random() * skinsTable.skins.tuesday.available.length)];
+        } else {
+            tuesdaySkin = skinsTable.skins.tuesday[months[now.getMonth()]][now.getDate()];
+        }
         
         
-        res.send({ dailies: dailiesSkin, externals: externalsSkin, monday_skin: mondaySkin, user_hub: selectedSkin });
+        res.send({ dailies: dailiesSkin, externals: externalsSkin, monday_skin: mondaySkin, tuesday_skin: tuesdaySkin, user_hub: selectedSkin });
     })
 });
 
