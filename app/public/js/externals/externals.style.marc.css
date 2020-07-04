@@ -1,0 +1,571 @@
+.externalsBackgroundDiv_MarchC {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/externals/backdrop/glass-5150199_1920.jpg);
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.externalsContainerActive_MarchC {
+    filter: blur(0px) hue-rotate(0deg);
+    transform: all 0.5s linear;
+}
+
+.externalsContainerInactive_MarchC {
+    filter: blur(5px) hue-rotate(180deg);
+    transform: all 0.5s linear;
+}
+
+.externalsTitleBar_MarchC {
+    background: linear-gradient(90deg, #6c766b, #314e56, #314e56, transparent);
+    border-bottom: 3px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/externals/backdrop/glass-5150199_1920.jpg) 10% stretch;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Gelasio', serif;
+    height: 12vh;
+    justify-content: flex-start;
+    opacity: 1;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.externalsLogo_MarchC {
+    cursor: pointer;
+    height: 90px;
+    margin: 1px 48px 1px 13px;
+    max-width: 90px;
+}
+
+.externalsTitle_MarchC {
+    color: #000000;
+    font-family: 'Gelasio', serif;
+    font-size: 42px;
+    transform: translateX(0.5vw) translateY(3.5vh);
+}
+
+.externalsBody_MarchC {
+    background: linear-gradient(90deg, #8294a0, #cedce3, #cedce3, transparent);
+    height: 87vh;
+    opacity: 0.9;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 24px;
+    width: 100%;
+}
+
+.externalsIssuesHeader_MarchC {
+    color: #000000;
+    font-family: 'Gelasio', serif;
+    font-size: 30px;
+}
+
+.externalManagementContainer_MarchC {
+    display: grid;
+    grid-template-columns: [leftBuffer] 10px [deleteColumn] 50px [readColumn] 120px [imageColumn] 150px [issueColumn] 1fr [rightBuffer] 10px;
+    grid-template-rows: [externalContent] auto [addNewContent] auto;
+    height: auto;
+    margin: 30px 0 15px 0;
+    width: 100%;
+}
+
+.externalsSwitchtrue_MarchC {
+    background: #2b2f2a;
+    cursor: pointer;
+    display: inline-block;
+    filter: brightness(100%);
+    grid-column: readColumn / imageColumn;
+    grid-row: externalContent;
+    height: 25px;
+    margin: 35px 0 0 15px;
+    position: relative;
+    transition: all 0.3s linear;
+    width: 60px;
+}
+
+.externalsSwitchfalse_MarchC {
+    background: #2b2f2a;
+    cursor: pointer;
+    display: inline-block;
+    filter: brightness(90%);
+    grid-column: readColumn / imageColumn;
+    grid-row: externalContent;
+    height: 25px;
+    margin: 35px 0 0 15px;
+    position: relative;
+    transition: all 0.3s linear;
+    width: 60px;
+}
+
+.externalsSwitchHandletrue_MarchC {
+    background: #b6bbb5;
+    bottom: 2px;
+    height: 25px;
+    left: 0;
+    position: absolute;
+    right: 2px;
+    top: 0;
+    transition: all 0.3s linear;
+    width: 30px;
+}
+
+.externalsSwitchHandlefalse_MarchC {
+    background: #b6bbb5;
+    bottom: 2px;
+    height: 25px;
+    left: 30px;
+    position: absolute;
+    right: 2px;
+    top: 0;
+    transition: all 0.3s linear;
+    width: 30px;
+}
+
+.externalsSwitchText_MarchC {
+    color: #000000;
+    font-family: 'Gelasio', serif;
+    font-size: 18px;
+    margin: 28px 0 0 0;
+}
+
+.externalsImage_MarchC {
+    filter: drop-shadow(12px 8px 4px #131f22);
+    grid-column: imageColumn / issueColumn;
+    grid-row: externalContent;
+    max-height: 120px;
+    width: 100px;
+}
+
+.externalsReadingDatas_MarchC {
+    color: #000000;
+    font-family: 'Gelasio', serif;
+    font-size: 18px;
+    grid-column: issueColumn / rightBuffer;
+    grid-row: externalContent;
+    margin: 25px 0 0 0;
+}
+
+.externalsDelete_MarchC {
+    align-self: center;
+    color: #000000;
+    cursor: pointer;
+    font-size: 30px;
+    grid-column: deleteColumn / readColumn;
+    grid-row: externalContent;
+    justify-content: center;
+    transition: all 0.3s linear;
+}
+
+.externalsDelete_MarchC:hover {
+    color: #314e56;
+    transition: all 0.3s linear;
+}
+
+.externalsAddNewContentDiv_MarchC {
+    color: #000000;
+    cursor: pointer;
+    margin: 70px 0 0 330px;
+    width: auto;
+}
+
+.externalsAddContentIcon_MarchC {
+    float: left;
+    font-size: 42px;
+    margin: 0 30px 0 0;
+    position: float;
+}
+
+.externalsAddNewText_MarchC {
+    float: left;
+    font-family: 'Gelasio', serif;
+    font-size: 24px;
+    margin: 5px 0 0 0;
+}
+
+.externalsDeleteGuardrailActive_MarchC {
+    background: #cfd1c3;
+    height: auto;
+    left: 25%;
+    opacity: 1;
+    position: absolute;
+    top: 15%;
+    transition: all 0.3s linear;
+    width: auto;
+    z-index: 10;
+}
+
+.externalsDeleteGuardrailInactive_MarchC {
+    background: #cfd1c3;
+    height: auto;
+    left: 175%;
+    opacity: 0;
+    position: absolute;
+    top: 105%;
+    transition: all 0.3s linear;
+    width: auto;
+    z-index: -10;
+}
+
+.externalsDeleteGuardrailTitleBar_MarchC {
+    background: #000000;
+    height: auto;
+    padding: 6px 0;
+    width: 100%;
+}
+
+.externalsDeleteGuardrailTitle_MarchC {
+    color: #cfd1c3;
+    font-family: 'Gelasio', serif;
+    font-size: 30px;
+    margin-left: 40px;
+}
+
+.externalsGuardrailContainer_MarchC {
+    background: transparent;
+    display: grid;
+    grid-template-columns: [leftB] 10px [imgColumn] 120px [infoColumn] 1fr [rightB] 10px;
+    grid-template-rows: [title] auto [query] auto [buttons] auto;
+    height: auto;
+    padding: 12px;
+    width: 100%;
+}
+
+.externalsGuardrailBodyText_MarchC {
+    color: #000000;
+    font-family: 'Gelasio', serif;
+    font-size: 18px;
+    grid-column: imgColumn / rightB;
+    grid-row: title;
+}
+
+.externalsGuardrailImage_MarchC {
+    filter: drop-shadow(12px 8px 4px #131f22);
+    grid-column: imgColumn / infoColumn;
+    grid-row: query;
+    margin: 20px 0;
+    width: 90px;
+}
+
+.externalsGuardrailInfos_MarchC {
+    color: #000000;
+    font-family: 'Gelasio', serif;
+    font-size: 18px;
+    grid-column: infoColumn / rightB;
+    grid-row: query;
+    margin: 40px 0 20px 0;
+}
+
+.externalsGuardrailButtons_MarchC {
+    background: transparent;
+    grid-column: infoColumn / rightB;
+    grid-row: buttons;
+    height: auto;
+    justify-content: center;
+    margin: 0 0 0 16%;
+}
+
+.externalsGuardrailButtons_MarchC button {
+    backdrop-filter: hue-rotate(45deg);
+    background: transparent;
+    border: 1px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/externals/backdrop/glass-5150199_1920.jpg) 20% stretch;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    filter: drop-shadow(8px 8px 4px #131f22);
+    font-family: 'Gelasio', serif;
+    font-size: 24px;
+    margin: 10px 40px 20px 0;
+    outline-color: #8a8f90;
+    transition: all 0.6s linear;
+    width: 70px;
+}
+
+.externalsGuardrailButtons_MarchC button:hover {
+    backdrop-filter: hue-rotate(-45deg) saturate(150%);
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/externals/backdrop/glass-5150199_1920.jpg) 5% stretch;
+    color: #151f20;
+    filter: drop-shadow(4px 8px 3px #131f22);
+    transition: all 0.6s linear;
+}
+
+.externalsGuardrailButtons_MarchC button:active {
+    filter: drop-shadow(0 0 0 #131f22) invert(100%);
+    transition: all 0.1s linear;
+}
+
+.externalsAddNewExternalsDialogActive_MarchC {
+    background: linear-gradient(90deg, #cedce3, #9db9c7);
+    height: auto;
+    left: 10%;
+    opacity: 1;
+    position: absolute;
+    top: 0.5%;
+    transform: scale(1);
+    transition: all 0.6s linear;
+    width: 80%;
+    z-index: 10;
+}
+
+.externalsAddNewExternalsDialogInactive_MarchC {
+    background: linear-gradient(90deg, #cedce3, #9db9c7);
+    height: auto;
+    left: -90%;
+    opacity: 0;
+    position: absolute;
+    top: 0.5%;
+    transform: scale(0.01);
+    transition: all 0.6s linear;
+    width: 80%;
+    z-index: -10;
+}
+
+.externalsAddNewTitleBar_MarchC {
+    background: linear-gradient(-90deg, #52534e, #131f22);
+    height: auto;
+    padding: 6px 0;
+    width: 100%;
+}
+
+.externalsAddNewTitle_MarchC {
+    color: #e7e8e1;
+    font-family: 'Gelasio', serif;
+    font-size: 30px;
+    margin-left: 40px;
+}
+
+.externalsAddNewBodyContainer_MarchC {
+    display: grid;
+    grid-template-columns: [leftAdd] 10px [formInput] 1fr [displayAdd] 1fr [rightAdd] 10px;
+    grid-template-rows: [errorMessaging] auto [userAdds] auto [buttonsAdds] auto;
+    height: auto;
+}
+
+.externalsAddErrorField_MarchC {
+    color: #ff0000;
+    font-family: 'Gelasio', serif;
+    font-size: 18px;
+    grid-column: formInput / rightAdd;
+    grid-row: errorMessaging;
+    margin: 15px 30px;
+}
+
+.externalsAddUserForm_MarchC {
+    background: transparent;
+    grid-column: formInput / displayAdd;
+    grid-row: userAdds;
+    height: auto;
+    margin: 0 0 30px 0;
+    padding: 24px 0;
+}
+
+.externalsAddUserForm_MarchC label {
+    color: #000000;
+    font-family: 'Gelasio', serif;
+    font-size: 18px;
+    margin: 15px 24px;
+}
+
+.externalsAddUserForm_MarchC input[type="text"] {
+    background: #b6bbb5;
+    border: none;
+    color: #000000;
+    font-family: 'Gelasio', serif;
+    font-size: 18px;
+    margin: 5px 24px;
+    outline-color: #8a8f90;
+    padding: 0 5px;
+    width: 90%;
+}
+
+.externalsAddUserForm_MarchC textarea {
+    background: #b6bbb5;
+    border: none;
+    color: #000000;
+    font-family: 'Gelasio', serif;
+    font-size: 18px;
+    margin: 5px 24px;
+    outline-color: #8a8f90;
+    padding: 0 5px;
+    width: 90%;
+}
+
+.externalsDisplayNewAddition_MarchC {
+    background: transparent;
+    grid-column: displayAdd / rightAdd;
+    grid-row: userAdds;
+    height: auto;
+    margin: 0 0 30px 0;
+    padding: 24px 0;
+}
+
+.externalsAddImage_MarchC {
+    filter: drop-shadow(12px 8px 4px #131f22);
+    margin: 0 0 0 36px;
+    max-height: 240px;
+    width: 150px;
+}
+
+.externalsAddCandidateTitle_MarchC {
+    color: #000000;
+    font-family: 'Gelasio', serif;
+    font-size: 24px;
+    margin: 24px;
+}
+
+.externalsAddExternalsButtons_MarchC {
+    background: transparent;
+    height: auto;
+    grid-column: formInput / rightAdd;
+    grid-row: buttonsAdds;
+    margin: 0 0 30px 0;
+}
+
+.externalsAddExternalsButtons_MarchC button {
+    backdrop-filter: hue-rotate(45deg);
+    background: transparent;
+    border: 1px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/externals/backdrop/glass-5150199_1920.jpg) 20% stretch;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    filter: drop-shadow(8px 8px 4px #131f22);
+    font-family: 'Gelasio', serif;
+    font-size: 24px;
+    margin: 10px 40px 20px 6%;
+    outline-color: #8a8f90;
+    transition: all 0.6s linear;
+    width: auto;
+}
+
+.externalsAddExternalsButtons_MarchC button:hover {
+    backdrop-filter: hue-rotate(-45deg) saturate(150%);
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/externals/backdrop/glass-5150199_1920.jpg) 5% stretch;
+    color: #151f20;
+    filter: drop-shadow(4px 8px 3px #131f22);
+    transition: all 0.6s linear;
+}
+
+.externalsAddExternalsButtons_MarchC button:active {
+    filter: drop-shadow(0 0 0 #131f22) invert(100%);
+    transition: all 0.1s linear;
+}
+
+.hubReaderExternalsDay2BlockInactive_MarchC {
+    background: #82a1b5;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/externals/backdrop/glass-5150199_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(250%) translateY(500%);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: -1;
+}
+
+.hubReaderExternalsDay2BlockActive_MarchC {
+    background: #82a1b5;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/externals/backdrop/glass-5150199_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px) translateY(0px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 414px) {
+
+    .externalsTitle_MarchC {
+        font-size: 24px;
+    }
+
+    .externalsIssuesHeader_MarchC {
+        font-size: 18px;
+    }
+
+    .externalManagementContainer_MarchC {
+        grid-template-columns: [leftBuffer] 1px [deleteColumn] 25px [readColumn] 60px [imageColumn] 80px [issueColumn] 50% [rightBuffer] 14px;
+        grid-template-rows: [externalContent] auto [addNewContent] auto;
+        margin: 15px 0 7px 0;
+    }
+
+    .externalsDelete_MarchC {
+        font-size: 18px;
+    }
+
+    .externalsImage_MarchC {
+        margin-left: 15px;
+        max-height: 50px;
+        width: 40px;
+    }
+
+    .externalsSwitchfalse_MarchC {
+        height: 25px;
+        margin: 15px 15px 0 5px;
+        transform: scale(0.5);
+        width: 60px;
+    }
+
+    .externalsSwitchtrue_MarchC {
+        height: 25px;
+        margin: 15px 15px 0 5px;
+        transform: scale(0.5);
+        width: 60px;
+    }
+
+    .externalsReadingDatas_MarchC {
+        font-size: 12px;
+        margin: 25px 0 0 0;
+    }
+
+    .externalsAddNewContentDiv_MarchC {
+        margin: 70px 0 0 10px;
+    }
+
+    .externalsDeleteGuardrailActive_MarchC {
+        left: 0;
+        width: 100%;
+    }
+
+    .externalsAddNewExternalsDialogActive_MarchC {
+        left: 0;
+        width: 100%;
+    }
+
+    .externalsAddImage_MarchC {
+        margin: 0 0 0 36px;
+        max-height: 120px;
+        width: 75px;
+    }
+
+    .externalsAddUserForm_MarchC textarea {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+
+    .externalsTitle_MarchC {
+        font-size: 18px;
+    }
+}
