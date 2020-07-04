@@ -1,0 +1,261 @@
+.dailiesContainerActive_MarchB {
+    display: initial;
+    filter: blur(0);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: all 0.3s linear;
+    width: 100%;
+}
+
+.dailiesImageDiv_MarchB {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/dailies/march/window-5353771_1920.jpg);
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.dailiesNavbar_MarchB {
+    backdrop-filter: blur(15px) hue-rotate(10deg);
+    border-bottom: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/dailies/march/window-5353771_1920.jpg) 5% stretch;
+    box-sizing: border-box;
+    color: #000102;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Be Vietnam', sans-serif;
+    height: 11vh;
+    justify-content: left;
+    left: 0;
+    padding-left: 25px;
+    padding-top: 1vh;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 4;
+}
+
+.dailiesLogoNav_MarchB {
+    cursor: pointer;
+    filter: brightness(100%) sepia(40%);
+    max-height: 10vh;
+    max-width: 85px;
+    transform: translateY(-5px);
+}
+
+.dailiesTitle_MarchB {
+    color: #f3d8a2;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 60px;
+    margin: 1vh 0 6vh 65px;
+}
+
+.dailiesSubsManagementContainer_MarchB {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 88.7vh;
+    justify-content: left;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100%;
+}
+
+.dailiesSubscriptions_MarchB {
+    backdrop-filter: blur(4px);
+    background: #b0a793;
+    border-right: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/dailies/march/window-5353771_1920.jpg) 5% stretch;
+    box-sizing: border-box;
+    float: left;
+    height: 88.7vh;
+    opacity: 0.85;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 30px 15px;
+    position: relative;
+    width: 60%;
+}
+
+.dailiesAvailableFeeds_MarchB {
+    backdrop-filter: invert(100%);
+    background: #e4cb93;
+    float: left;
+    height: 88.7vh;
+    opacity: 0.85;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 30px 15px;
+    position: relative;
+    width: 40%;
+}
+
+.dailiesCurrentSubsTitle_MarchB {
+    color: #040301;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.dailySubIcon_MarchB {
+    float: left;
+    max-height: 75px;
+    max-width: 75px;
+    width: 10%;
+}
+
+.dailiesSubscriptions_MarchB i {
+    color: #040301;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.dailyDeleter_MarchB {
+    color: #040301;
+    cursor: pointer;
+    float: left;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 18px;
+    margin: 10px 0;
+    width: 20%;
+    transform: translateY(7px);
+}
+
+.dailySubTitleDescription_MarchB {
+    color: #040301;
+    float: left;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 18px;
+    margin: 2vh 15px 25px 15px;
+    max-width: 750px;
+    width: 65%;
+}
+
+.dailiesAvailableSubsTitle_MarchB {
+    color: #040301;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.dailiesAvailableFeeds_MarchB i {
+    color: #040301;
+    float: left;
+    font-size: 24px;
+    transform: translateX(10px) translateY(2px);
+    margin-right: 8px;
+    width: 10%;
+}
+
+.dailiesFeedsSearchInput_MarchB {
+    background: #cdc29d;
+    border: none;
+    color: #040301;
+    float: left;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 24px;
+    outline-color: #97938a;
+    padding: 0 0 0 5px;
+    width: 75%;
+}
+
+.dailyAdder_MarchB {
+    color: #040301;
+    cursor: pointer;
+    float: left;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 18px;
+    width: 15%;
+}
+
+.dailyAvailSubIcon_MarchB {
+    float: left;
+    margin-left: 10px;
+    max-height: 55px;
+    max-width: 55px;
+    width: 15%;
+}
+
+.dailyAvailSubTitleDescription_MarchB {
+    color: #040301;
+    float: left;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 18px;
+    margin: 0.5vh 15px 25px 15px;
+    max-width: 300px;
+    width: 70%;
+}
+
+.dailiesSubsManagementContainer_MarchB main {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.dailiesAvailableFeeds_MarchB main {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.hubReaderDay3BlockActive_MarchB {
+    background: #ad90aa;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/dailies/march/window-5353771_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: 1;
+}
+
+.hubReaderDay3BlockInactive_MarchB {
+    background: #ad90aa;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/dailies/march/window-5353771_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(800%) translateY(50%);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 1025px) {
+    .dailySubTitleDescription_MarchB {
+        max-width: 550px;
+        width: 100%;
+    }
+
+    .dailyAvailSubTitleDescription_MarchB {
+        max-width: 350px;
+        width: 100%;
+    }
+
+    .dailyAvailSubIcon_MarchB {
+        margin-left: 40px;
+    }
+}
