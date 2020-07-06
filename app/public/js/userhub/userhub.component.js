@@ -1706,6 +1706,15 @@
                     case('_MarchC'):
                         vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/espresso-4929161_1920.jpg';
                         break;
+                    case('_AprilA'):
+                            vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/ddd784j-25abee3c-e332-4d13-8e9c-df956fe4af96.png';
+                            break;
+                    case('_AprilB'):
+                        vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_for_mister_mondrian_by_floriandra_d15xzay-fullview.jpg';
+                        break;
+                    case('_AprilC'):
+                        vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/d7z2x8u-2a1dd6ee-67da-4329-9441-747411452f31.png';
+                        break;
                     default:
                         alert('UNSUPPORTED MONTH SELECT for LOGO');
                         alert(vm.monthSelect);
