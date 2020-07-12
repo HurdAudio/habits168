@@ -93,6 +93,12 @@
                 url: '/emailconfirm/:code',
                 parent: 'app',
                 component: 'emailconfirm'
+            })
+            .state({
+                name: 'thursday',
+                url: '/thursday/:userUuid',
+                parent: 'app',
+                component: 'thursday'
             });
     }
 

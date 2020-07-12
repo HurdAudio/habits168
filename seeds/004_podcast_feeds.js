@@ -100,6 +100,30 @@ exports.seed = function(knex, Promise) {
           title: 'My JavaScript Story',
           created_at: new Date('2019-06-01 17:21:00.000 UTC'),
           updated_at: new Date('2019-06-01 17:21:00.000 UTC')
+        },
+          {
+          uuid: 'e6619583-0567-4686-af04-7d0a2fb1c9d0',
+          author: '',
+          description: '',
+          link: 'http://www.bestoftheleft.com/',
+          image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/logo2bestoftheleft.png',
+          items: null,
+          rss: 'http://www.bestoftheleft.com/podcast.rss',
+          title: 'Latest Episodes - Best of the Left Podcast',
+          created_at: new Date('2019-06-01 17:21:00.000 UTC'),
+          updated_at: new Date('2019-06-01 17:21:00.000 UTC')
+        },
+          {
+          uuid: '61e56ee6-8af8-49e0-b7c5-3b523e66c0e0',
+          author: 'Michael Chan',
+          description: 'Conversations about React with your favorite developers.',
+          link: 'http://reactpodcast.com/',
+          image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/reactpodcast.jpg',
+          items: null,
+          rss: 'https://feeds.simplecast.com/JoR28o79',
+          title: 'React Podcast',
+          created_at: new Date('2019-06-01 17:21:00.000 UTC'),
+          updated_at: new Date('2019-06-01 17:21:00.000 UTC')
         }
       ]);
     });

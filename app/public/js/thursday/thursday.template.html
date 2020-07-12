@@ -1,0 +1,164 @@
+<div class="thursdayBackgroundDiv{{$ctrl.thursdayMonth}}"></div>
+
+<div class="{{$ctrl.thursdayContainerState}}">
+    <div class="thursdayTitleStrip{{$ctrl.thursdayMonth}}">
+        <img class="thursdayLogo{{$ctrl.thursdayMonth}}" src="{{$ctrl.logoPath}}" ng-click="$ctrl.navigateToHub()">
+        <p class="thursdayReadingPlaylistTitle{{$ctrl.thursdayMonth}}">Thursday Reading/Playlist</p>
+        <button class="thursdayManageTabsButton{{$ctrl.thursdayMonth}}" ng-click="$ctrl.thursdayManagerEngaged()">Manage Tabs/Subscriptions</button>
+    </div>
+    <div class="thursdayTabStrip{{$ctrl.thursdayMonth}}">
+        <main ng-repeat="tab in $ctrl.thursdayTabs">
+            <div class="{{tab.tab}}" ng-click="$ctrl.toggleTabs(tab.title)">
+                <p>{{tab.title}}</p>
+            </div>
+
+        </main>
+    </div>
+    
+    <div class="thursdayContent{{$ctrl.thursdayMonth}}">
+
+    <main ng-repeat="content in $ctrl.thursdayTabs">
+
+      <div class="thursdayContentContent{{$ctrl.thursdayMonth}}" ng-if="content.active">
+
+        <div class="thursdayReaderNavigationButtons{{$ctrl.thursdayMonth}}" ng-if="content.title !== 'Externals'">
+
+          <p class="markAllReadTextThursday{{$ctrl.thursdayMonth}}" ng-if="content.subscriptions.length > 1">Mark All Read/Unread:</p>
+          <div class="thursdayTrackProgress{{$ctrl.thursdayMonth}}" ng-if="content.subscriptions.length > 1"><input type="checkbox" ng-checked="content.allRead"><span class="thursdayCheckbox{{$ctrl.thursdayMonth}}{{content.allRead}}" ng-click="$ctrl.toggleAllReadStatus(content.title)"><span class="thursdaySwitchUnchecked{{$ctrl.thursdayMonth}}{{content.allRead}}"></span></span></div>
+
+          <p class="markAllReadTextThursday{{$ctrl.thursdayMonth}}" ng-if="((content.subscriptions.length > 1) && (!content.podcast))">Read All:</p>
+          <div class="thursdayReadAll{{$ctrl.thursdayMonth}}" ng-if="!content.podcast"><button class="thursdayReadAllButton{{$ctrl.thursdayMonth}}" ng-if="content.subscriptions.length > 1"><i class="fas fa-book-reader"></i></button></div>
+
+          <div class="thursdaySorting{{$ctrl.thursdayMonth}}" ng-if="content.subscriptions.length > 1">
+            <p>Sorting Order:</p>
+              <button class="thursdayReadAllButton{{$ctrl.thursdayMonth}} thursdaySortingButton{{$ctrl.thursdayMonth}}" ng-if="content.sort !== 'up'" ng-click="$ctrl.sortSubscriptions(content.title, 'up')"><i class="fas fa-sort-alpha-up"></i></button>
+              <button class="thursdayReadAllButton{{$ctrl.thursdayMonth}} thursdaySortingButton{{$ctrl.thursdayMonth}}" ng-if="content.sort !== 'down'" ng-click="$ctrl.sortSubscriptions(content.title, 'down')"><i class="fas fa-sort-alpha-down-alt"></i></button>
+              <button class="thursdayReadAllButton{{$ctrl.thursdayMonth}} thursdaySortingButton{{$ctrl.thursdayMonth}}" ng-click="$ctrl.sortSubscriptions(content.title, 'random')"><i class="fas fa-random"></i></button>
+
+          </div>
+        </div>
+
+
+        <div class="thursdayFeedsDiv{{$ctrl.thursdayMonth}}">
+
+
+          <main ng-repeat="subscription in content.subscriptions" class="thursdaySubscriptions{{$ctrl.thursdayMonth}}">
+            <div class="thursdayFeedContainer{{$ctrl.thursdayMonth}}">
+
+              <div class="thursdayTrackProgress{{$ctrl.thursdayMonth}}"><input type="checkbox" ng-checked="subscription.userRead"><p class="thursdayUnreadText{{$ctrl.thursdayMonth}}" ng-if="(!subscription.userRead && !content.podcast)">unread</p><p class="thursdayReadText{{$ctrl.thursdayMonth}}" ng-if="(subscription.userRead && !content.podcast)">read</p><p class="thursdayUnreadText{{$ctrl.thursdayMonth}}" ng-if="(!subscription.userRead && content.podcast)">new</p><p class="thursdayReadText{{$ctrl.thursdayMonth}}" ng-if="(subscription.userRead && content.podcast)">completed</p><span class="thursdayCheckbox{{$ctrl.thursdayMonth}}{{subscription.userRead}}" ng-click="$ctrl.toggleReadStatus(content.title, subscription.uuid)"><span class="thursdaySwitchUnchecked{{$ctrl.thursdayMonth}}{{subscription.userRead}}"></span></span></div>
+
+                <img class="thursdaySubIcon{{$ctrl.thursdayMonth}}" src="{{subscription.image}}" ng-if="content.title !== 'Externals'">
+                <img class="thursdaySubIcon{{$ctrl.thursdayMonth}}" src="{{subscription.image_link}}" ng-if="content.title === 'Externals'">
+              <p class="thursdaySubscriptionTitle{{$ctrl.thursdayMonth}}">{{subscription.title}}: {{subscription.description}}</p>
+            </div>
+          </main>
+          <div class="thursdayBuffer{{$ctrl.thursdayMonth}}"></div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+
+<div class="{{$ctrl.managerModalState}}">
+
+  <div class="thursdayManageTitleBar{{$ctrl.thursdayMonth}}">
+    <p class="thursdayModalExit{{$ctrl.thursdayMonth}}" ng-click="$ctrl.exitThursdayManagerModal()"><i class="fas fa-times"></i></p>
+
+    <p class="thursdayManageTitle{{$ctrl.thursdayMonth}}">Thursday Tabs/Subscription Management</p>
+
+  </div>
+
+  <div class="thursdayManagerModalContainer{{$ctrl.thursdayMonth}}">
+    <div class="thursdayManagerTabsSection{{$ctrl.thursdayMonth}}">
+
+      <p class="thursdayTabsManageTitle{{$ctrl.thursdayMonth}}">Tabs:</p>
+      <div class="thursdayManageTabsContainer{{$ctrl.thursdayMonth}}">
+
+        <main ng-repeat="tab in $ctrl.thursdayTabs">
+
+          <p class="thursdayTabManageTab{{$ctrl.thursdayMonth}}" ng-click="$ctrl.thursdayManageTabber(tab.title)"><i class="fas fa-arrow-right" ng-if="tab.title === $ctrl.thursdayManageSelectedTab"></i>&nbsp;&nbsp;{{tab.title}}</p>
+          <p class="thursdayTabManageSubTab{{$ctrl.thursdayMonth}}" ng-if="tab.title === $ctrl.thursdayManageSelectedTab"><span ng-if="(tab.title !== 'Externals' && tab.title !== 'Dailies' && !$ctrl.tabCreateEditEngaged && !$ctrl.thursdayGuardRailEngaged)" ng-click="$ctrl.editTablogic(tab)"><i class="fas fa-edit"></i>&nbsp;edit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span ng-if="(tab.title !== 'Externals' && tab.title !== 'Dailies' && !$ctrl.thursdayGuardRailEngaged && !$ctrl.tabCreateEditEngaged)" ng-click="$ctrl.deleteTabLogic(tab)"><i class="far fa-trash-alt"></i>&nbsp;&nbsp;delete&nbsp;</span></p>
+        </main>
+          <p class="thursdayTabManageTab{{$ctrl.thursdayMonth}}" ng-click="$ctrl.addTabLogic()" ng-if="!$ctrl.tabCreateEditEngaged"><i class="far fa-plus-square"></i>&nbsp;&nbsp;Add Tab</p>
+      </div>
+    </div>
+    <div class="thursdayManagerSubscriptionsSection{{$ctrl.thursdayMonth}}">
+
+      <p class="thursdayTabsSubscriptionTitle{{$ctrl.thursdayMonth}}">Subscriptions:</p>
+      <div class="thursdayManageTabsContainer{{$ctrl.thursdayMonth}}">
+
+        <main ng-repeat="sub in $ctrl.thursdaySubs">
+
+          <img class="thursdayManageSubIcon{{$ctrl.thursdayMonth}}" src="{{sub.image}}">
+          <p class="thursdaySubManageSubTab{{$ctrl.thursdayMonth}}"><span ng-click="$ctrl.removeSubscription(sub)"><i class="far fa-trash-alt"></i>&nbsp;&nbsp;delete&nbsp;</span></p>
+          <p class="thursdayManageSubsTitles{{$ctrl.thursdayMonth}}">{{sub.title}}: {{sub.description}}</p>
+        </main>
+      </div>
+    </div>
+    <div class="thursdayManagerFeedsSection{{$ctrl.thursdayMonth}}">
+
+      <p class="thursdayManagerFeedsTitle{{$ctrl.thursdayMonth}}">Feeds:</p>
+      <input id="thursdayManageSearch" class="thursdayManageSearch{{$ctrl.thursdayMonth}}" type="text" placeholder="search" ng-keyup="$ctrl.filterSearch()">
+      <div class="thursdayManageTabsContainer{{$ctrl.thursdayMonth}}">
+
+
+
+        <main ng-repeat="feed in $ctrl.availableFeeds">
+
+          <img class="thursdayManageSubIcon{{$ctrl.thursdayMonth}}" src="{{feed.image}}">
+          <p class="thursdaySubManageSubTab{{$ctrl.thursdayMonth}}"><span ng-click="$ctrl.addSubscription(feed)"><i class="far fa-plus-square"></i>&nbsp;&nbsp;add&nbsp;</span></p>
+          <p class="thursdayManageSubsTitlesFeeds{{$ctrl.thursdayMonth}}">{{feed.title}}: {{feed.description}}</p>
+        </main>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="thursdayCreateEditTabManagement{{$ctrl.thursdayMonth}}" ng-if="$ctrl.tabCreateEditEngaged">
+  <p class="thursdayCreateEditTabTitle{{$ctrl.thursdayMonth}}">{{$ctrl.thursdayCreateEditTabText}}</p>
+  <div class="thursdayTabEditorFields{{$ctrl.thursdayMonth}}">
+
+    <p class="thursdayTabNameLabel{{$ctrl.thursdayMonth}}">Tab Name:</p>
+    <input id="thursdayTabNameInput" class="thursdayTabNameInput{{$ctrl.thursdayMonth}}" type="text">
+    <div id="thursdayTabEditorPodcastBlogStatus{{$ctrl.thursdayMonth}}" class="thursdayTrackProgress{{$ctrl.thursdayMonth}}"><input type="checkbox" ng-checked="false"><p class="thursdayUnreadText{{$ctrl.thursdayMonth}}" id="thursdayUnreadText{{$ctrl.thursdayMonth}}" ng-if="!$ctrl.tabPodcast">blogs</p><p class="thursdayReadText{{$ctrl.thursdayMonth}}" id="thursdayReadText{{$ctrl.thursdayMonth}}" ng-if="$ctrl.tabPodcast">podcasts</p><span class="thursdayCheckbox{{$ctrl.thursdayMonth}}{{$ctrl.tabPodcast}}" ng-click="$ctrl.togglePodcastFeedStatus()"><span class="thursdaySwitchUnchecked{{$ctrl.thursdayMonth}}{{$ctrl.tabPodcast}}"></span></span></div>
+
+  </div>
+  <div class="thursdayTabEditorFields{{$ctrl.thursdayMonth}}" ng-if="$ctrl.emptyTabNameError">
+
+    <p class="thursdayTabEditorErrorMessage{{$ctrl.thursdayMonth}}">Tab name cannot be blank.</p>
+
+  </div>
+
+  <div class="thursdayTabEditorFields{{$ctrl.thursdayMonth}}" ng-if="$ctrl.uniqueTabNameError">
+
+    <p class="thursdayTabEditorErrorMessage{{$ctrl.thursdayMonth}}">Tab name already exists.</p>
+
+  </div>
+
+  <div class="thursdayTabEditorFields{{$ctrl.thursdayMonth}}" ng-if="$ctrl.actionWillDeleteFeedsError">
+
+    <p class="thursdayTabEditorErrorMessage{{$ctrl.thursdayMonth}}">Existing subscriptions will be deleted. Continue?</p>
+    <button class="thursdayManageTabsConfirmButton{{$ctrl.thursdayMonth}}" ng-click="$ctrl.overwriteSubscriptionsInTab()">yes</button>
+    <button class="thursdayManageTabsConfirmButton{{$ctrl.thursdayMonth}}" ng-click="$ctrl.cancelAddTabLogic()">no</button>
+
+  </div>
+
+  <div class="thursdayTabEditorFields{{$ctrl.thursdayMonth}}">
+
+
+    <button class="thursdayManageTabsSubmitCancelButton{{$ctrl.thursdayMonth}}" ng-click="$ctrl.submitTabLogic()">Submit</button>
+    <button class="thursdayManageTabsSubmitCancelButton{{$ctrl.thursdayMonth}}" ng-click="$ctrl.cancelAddTabLogic()">Cancel</button>
+
+  </div>
+
+</div>
+
+<div class="thursdayGuardRail{{$ctrl.thursdayMonth}}" ng-if="$ctrl.thursdayGuardRailEngaged">
+
+  <p class="thursdayGuardRailText{{$ctrl.thursdayMonth}}">{{$ctrl.guardRailText}}</p>
+  <div class="thursdayGuardRailButtons{{$ctrl.thursdayMonth}}">
+
+    <button class="thursdayManageTabsSubmitCancelButton{{$ctrl.thursdayMonth}}" ng-click="$ctrl.guardrailAccepted()">yes</button>
+    <button class="thursdayManageTabsSubmitCancelButton{{$ctrl.thursdayMonth}}" ng-click="$ctrl.guardrailDenied()">no</button>
+  </div>
+</div>

@@ -77,7 +77,7 @@
         <main ng-repeat="tab in $ctrl.wednesdayTabs">
 
           <p class="wednesdayTabManageTab{{$ctrl.wednesdayMonth}}" ng-click="$ctrl.wednesdayManageTabber(tab.title)"><i class="fas fa-arrow-right" ng-if="tab.title === $ctrl.wednesdayManageSelectedTab"></i>&nbsp;&nbsp;{{tab.title}}</p>
-          <p class="wedneesdayTabManageSubTab{{$ctrl.wednesdayMonth}}" ng-if="tab.title === $ctrl.wednesdayManageSelectedTab"><span ng-if="(tab.title !== 'Externals' && tab.title !== 'Dailies' && !$ctrl.tabCreateEditEngaged && !$ctrl.wednesdayGuardRailEngaged)" ng-click="$ctrl.editTablogic(tab)"><i class="fas fa-edit"></i>&nbsp;edit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span ng-if="(tab.title !== 'Externals' && tab.title !== 'Dailies' && !$ctrl.wednesdayGuardRailEngaged && !$ctrl.tabCreateEditEngaged)" ng-click="$ctrl.deleteTabLogic(tab)"><i class="far fa-trash-alt"></i>&nbsp;&nbsp;delete&nbsp;</span></p>
+          <p class="wednesdayTabManageSubTab{{$ctrl.wednesdayMonth}}" ng-if="tab.title === $ctrl.wednesdayManageSelectedTab"><span ng-if="(tab.title !== 'Externals' && tab.title !== 'Dailies' && !$ctrl.tabCreateEditEngaged && !$ctrl.wednesdayGuardRailEngaged)" ng-click="$ctrl.editTablogic(tab)"><i class="fas fa-edit"></i>&nbsp;edit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span ng-if="(tab.title !== 'Externals' && tab.title !== 'Dailies' && !$ctrl.wednesdayGuardRailEngaged && !$ctrl.tabCreateEditEngaged)" ng-click="$ctrl.deleteTabLogic(tab)"><i class="far fa-trash-alt"></i>&nbsp;&nbsp;delete&nbsp;</span></p>
         </main>
           <p class="wednesdayTabManageTab{{$ctrl.wednesdayMonth}}" ng-click="$ctrl.addTabLogic()" ng-if="!$ctrl.tabCreateEditEngaged"><i class="far fa-plus-square"></i>&nbsp;&nbsp;Add Tab</p>
       </div>
