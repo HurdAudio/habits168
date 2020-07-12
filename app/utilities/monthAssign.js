@@ -41,14 +41,24 @@ function generate(arr) {
 //    arr.push('_FebruaryC');
 //}
 
-const days = 31;
+//const days = 31;
+//
+//let arr = ['_MarchA'];
+//
+//for (let i = 0; i < 10; i++) {
+//    arr.push('_MarchA');
+//    arr.push('_MarchB');
+//    arr.push('_MarchC');
+//}
 
-let arr = ['_MarchA'];
+const days = 30;
+
+let arr = [];
 
 for (let i = 0; i < 10; i++) {
-    arr.push('_MarchA');
-    arr.push('_MarchB');
-    arr.push('_MarchC');
+    arr.push('_AprilA');
+    arr.push('_AprilB');
+    arr.push('_AprilC');
 }
 
 
