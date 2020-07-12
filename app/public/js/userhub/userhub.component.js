@@ -75,6 +75,7 @@
         vm.navigateToProfileEditor = navigateToProfileEditor;
         vm.navigateToBrowse = navigateToBrowse;
         vm.wednesdayMonth = '_JanuaryC';
+        vm.thursdayMonth = '_JanuaryA';
         
         function navigateToBrowse() {
             $state.go('browse', {
@@ -247,6 +248,8 @@
                 vm.day1ToggleState = 'hubReaderDay1TuesdayInactive' + vm.tuesdayMonth;
             } else if (day === 'Wednesday') {
                 vm.day1ToggleState = 'hubReaderDay1WednesdayInactive' + vm.wednesdayMonth;
+            } else if (day === 'Thursday') {
+                vm.day1ToggleState = 'hubReaderDay1ThursdayInactive' + vm.thursdayMonth;
             } else {
                 vm.day1ToggleState = 'hubReaderDay1BlockInactive' + vm.monthSelect;
             }
@@ -257,6 +260,8 @@
                 vm.day2ToggleState = 'hubReaderDay2TuesdayInactive' + vm.tuesdayMonth;
             } else if (day === 'Wednesday') {
                 vm.day2ToggleState = 'hubReaderDay2WednesdayInactive' + vm.wednesdayMonth;
+            } else if (day === 'Thursday') {
+                vm.day2ToggleState = 'hubReaderDay2ThursdayInactive' + vm.thursdayMonth;
             } else {
                 vm.day2ToggleState = 'hubReaderDay2BlockInactive' + vm.monthSelect;
             }
@@ -267,6 +272,8 @@
                 vm.day3ToggleState = 'hubReaderDay3TuesdayInactive' + vm.tuesdayMonth;
             } else if (day === 'Wednesday') {
                 vm.day3ToggleState = 'hubReaderDay3WednesdayInactive' + vm.wednesdayMonth;
+            } else if (day === 'Thursday') {
+                vm.day3ToggleState = 'hubReaderDay3ThursdayInactive' + vm.thursdayMonth;
             } else {
                 vm.day3ToggleState = 'hubReaderDay3BlockInactive' + vm.monthSelect;
             }
@@ -277,6 +284,8 @@
                 vm.day4ToggleState = 'hubReaderDay4TuesdayInactive' + vm.tuesdayMonth;
             } else if (day === 'Wednesday') {
                 vm.day4ToggleState = 'hubReaderDay4WednesdayInactive' + vm.wednesdayMonth;
+            } else if (day === 'Thursday') {
+                vm.day4ToggleState = 'hubReaderDay4ThursdayInactive' + vm.thursdayMonth;
             } else {
                 vm.day4ToggleState = 'hubReaderDay4BlockInactive' + vm.monthSelect;
             }
@@ -287,6 +296,8 @@
                 vm.day5ToggleState = 'hubReaderDay5TuesdayInactive' + vm.tuesdayMonth;
             } else if (day === 'Wednesday') {
                 vm.day5ToggleState = 'hubReaderDay5WednesdayInactive' + vm.wednesdayMonth;
+            } else if (day === 'Thursday') {
+                vm.day5ToggleState = 'hubReaderDay5ThursdayInactive' + vm.thursdayMonth;
             } else {
                 vm.day5ToggleState = 'hubReaderDay5BlockInactive' + vm.monthSelect;
             }
@@ -297,6 +308,8 @@
                 vm.day6ToggleState = 'hubReaderDay6TuesdayInactive' + vm.tuesdayMonth;
             } else if (day === 'Wednesday') {
                 vm.day6ToggleState = 'hubReaderDay6WednesdayInactive' + vm.wednesdayMonth;
+            } else if (day === 'Thursday') {
+                vm.day6ToggleState = 'hubReaderDay6ThursdayInactive' + vm.thursdayMonth;
             } else {
                 vm.day6ToggleState = 'hubReaderDay6BlockInactive' + vm.monthSelect;
             }
@@ -307,6 +320,8 @@
                 vm.day7ToggleState = 'hubReaderDay7TuesdayInactive' + vm.tuesdayMonth;
             } else if (day === 'Wednesday') {
                 vm.day7ToggleState = 'hubReaderDay7WednesdayInactive' + vm.wednesdayMonth;
+            } else if (day === 'Thursday') {
+                vm.day7ToggleState = 'hubReaderDay7ThursdayInactive' + vm.thursdayMonth;
             } else {
                 vm.day7ToggleState = 'hubReaderDay7BlockInactive' + vm.monthSelect;
             }
@@ -345,6 +360,11 @@
                     break;
                 case ('Wednesday'):
                     $state.go('wednesday', {
+                        userUuid: vm.user.uuid
+                    });
+                    break;
+                case ('Thursday'):
+                    $state.go('thursday', {
                         userUuid: vm.user.uuid
                     });
                     break;
@@ -821,6 +841,8 @@
                     vm.day1ToggleState = 'hubReaderDay1TuesdayActive' + vm.tuesdayMonth;
                 } else if (day === 'Wednesday') {
                     vm.day1ToggleState = 'hubReaderDay1WednesdayActive' + vm.wednesdayMonth;
+                } else if (day === 'Thursday') {
+                    vm.day1ToggleState = 'hubReaderDay1ThursdayActive' + vm.thursdayMonth;
                 } else {
                     vm.day1ToggleState = 'hubReaderDay1BlockActive' + vm.monthSelect;
                 }
@@ -831,6 +853,8 @@
                     vm.day2ToggleState = 'hubReaderDay2TuesdayActive' + vm.tuesdayMonth;
                 } else if (day === 'Wednesday') {
                     vm.day2ToggleState = 'hubReaderDay2WednesdayActive' + vm.wednesdayMonth;
+                } else if (day === 'Thursday') {
+                    vm.day2ToggleState = 'hubReaderDay2ThursdayActive' + vm.thursdayMonth;
                 } else {
                     vm.day2ToggleState = 'hubReaderDay2BlockActive' + vm.monthSelect;
                 }
@@ -841,6 +865,8 @@
                     vm.day3ToggleState = 'hubReaderDay3TuesdayActive' + vm.tuesdayMonth;
                 } else if (day === 'Wednesday') {
                     vm.day3ToggleState = 'hubReaderDay3WednesdayActive' + vm.wednesdayMonth;
+                } else if (day === 'Thursday') {
+                    vm.day3ToggleState = 'hubReaderDay3ThursdayActive' + vm.thursdayMonth;
                 } else {
                     vm.day3ToggleState = 'hubReaderDay3BlockActive' + vm.monthSelect;
                 }
@@ -851,6 +877,8 @@
                     vm.day4ToggleState = 'hubReaderDay4TuesdayActive' + vm.tuesdayMonth;
                 } else if (day === 'Wednesday') {
                     vm.day4ToggleState = 'hubReaderDay4WednesdayActive' + vm.wednesdayMonth;
+                } else if (day === 'Thursday') {
+                    vm.day4ToggleState = 'hubReaderDay4ThursdayActive' + vm.thursdayMonth;
                 } else {
                     vm.day4ToggleState = 'hubReaderDay4BlockActive' + vm.monthSelect;
                 }
@@ -861,6 +889,8 @@
                     vm.day5ToggleState = 'hubReaderDay5TuesdayActive' + vm.tuesdayMonth;
                 } else if (day === 'Wednesday') {
                     vm.day5ToggleState = 'hubReaderDay5WednesdayActive' + vm.wednesdayMonth;
+                } else if (day === 'Thursday') {
+                    vm.day5ToggleState = 'hubReaderDay5ThursdayActive' + vm.thursdayMonth;
                 } else {
                     vm.day5ToggleState = 'hubReaderDay5BlockActive' + vm.monthSelect;
                 }
@@ -871,6 +901,8 @@
                     vm.day6ToggleState = 'hubReaderDay6TuesdayActive' + vm.tuesdayMonth;
                 } else if (day === 'Wednesday') {
                     vm.day6ToggleState = 'hubReaderDay6WednesdayActive' + vm.wednesdayMonth;
+                } else if (day === 'Thursday') {
+                    vm.day6ToggleState = 'hubReaderDay6ThursdayActive' + vm.thursdayMonth;
                 } else {
                     vm.day6ToggleState = 'hubReaderDay6BlockActive' + vm.monthSelect;
                 }
@@ -881,6 +913,8 @@
                     vm.day7ToggleState = 'hubReaderDay7TuesdayActive' + vm.tuesdayMonth;
                 } else if (day === 'Wednesday') {
                     vm.day7ToggleState = 'hubReaderDay7WednesdayActive' + vm.wednesdayMonth;
+                } else if (day === 'Thursday') {
+                    vm.day7ToggleState = 'hubReaderDay7ThursdayActive' + vm.thursdayMonth;
                 } else {
                     vm.day7ToggleState = 'hubReaderDay7BlockActive' + vm.monthSelect;
                 }
@@ -895,6 +929,8 @@
                     vm.day1ToggleState = 'hubReaderDay1TuesdayInactive' + vm.tuesdayMonth;
                 } else if (day === 'Wednesday') {
                     vm.day1ToggleState = 'hubReaderDay1WednesdayInactive' + vm.wednesdayMonth;
+                } else if (day === 'Thursday') {
+                    vm.day1ToggleState = 'hubReaderDay1ThursdayInactive' + vm.thursdayMonth;
                 } else {
                     vm.day1ToggleState = 'hubReaderDay1BlockInactive' + vm.monthSelect;
                 }
@@ -905,6 +941,8 @@
                     vm.day2ToggleState = 'hubReaderDay2TuesdayInactive' + vm.tuesdayMonth;
                 } else if (day === 'Wednesday') {
                     vm.day2ToggleState = 'hubReaderDay2WednesdayInactive' + vm.wednesdayMonth;
+                } else if (day === 'Thursday') {
+                    vm.day2ToggleState = 'hubReaderDay2ThursdayInactive' + vm.thursdayMonth;
                 } else {
                     vm.day2ToggleState = 'hubReaderDay2BlockInactive' + vm.monthSelect;
                 }
@@ -915,6 +953,8 @@
                     vm.day3ToggleState = 'hubReaderDay3TuesdayInactive' + vm.tuesdayMonth;
                 } else if (day === 'Wednesday') {
                     vm.day3ToggleState = 'hubReaderDay3WednesdayInactive' + vm.wednesdayMonth;
+                } else if (day === 'Thursday') {
+                    vm.day3ToggleState = 'hubReaderDay3ThursdayInactive' + vm.thursdayMonth;
                 } else {
                     vm.day3ToggleState = 'hubReaderDay3BlockInactive' + vm.monthSelect;
                 }
@@ -925,6 +965,8 @@
                     vm.day4ToggleState = 'hubReaderDay4TuesdayInactive' + vm.tuesdayMonth;
                 } else if (day === 'Wednesday') {
                     vm.day4ToggleState = 'hubReaderDay4WednesdayInactive' + vm.wednesdayMonth;
+                } else if (day === 'Thursday') {
+                    vm.day4ToggleState = 'hubReaderDay4ThursdayInactive' + vm.thursdayMonth;
                 } else {
                     vm.day4ToggleState = 'hubReaderDay4BlockInactive' + vm.monthSelect;
                 }
@@ -935,6 +977,8 @@
                     vm.day5ToggleState = 'hubReaderDay5TuesdayInactive' + vm.tuesdayMonth;
                 } else if (day === 'Wednesday') {
                     vm.day5ToggleState = 'hubReaderDay5WednesdayInactive' + vm.wednesdayMonth;
+                } else if (day === 'Thursday') {
+                    vm.day5ToggleState = 'hubReaderDay5ThursdayInactive' + vm.thursdayMonth;
                 } else {
                     vm.day5ToggleState = 'hubReaderDay5BlockInactive' + vm.monthSelect;
                 }
@@ -945,6 +989,8 @@
                     vm.day6ToggleState = 'hubReaderDay6TuesdayInactive' + vm.tuesdayMonth;
                 } else if (day === 'Wednesday') {
                     vm.day6ToggleState = 'hubReaderDay6WednesdayInactive' + vm.wednesdayMonth;
+                } else if (day === 'Thursday') {
+                    vm.day6ToggleState = 'hubReaderDay6ThursdayInactive' + vm.thursdayMonth;
                 } else {
                     vm.day6ToggleState = 'hubReaderDay6BlockInactive' + vm.monthSelect;
                 }
@@ -955,6 +1001,8 @@
                     vm.day7ToggleState = 'hubReaderDay7TuesdayInactive' + vm.tuesdayMonth;
                 } else if (day === 'Wednesday') {
                     vm.day7ToggleState = 'hubReaderDay7WednesdayInactive' + vm.wednesdayMonth;
+                } else if (day === 'Thursday') {
+                    vm.day7ToggleState = 'hubReaderDay7ThursdayInactive' + vm.thursdayMonth;
                 } else {
                     vm.day7ToggleState = 'hubReaderDay7BlockInactive' + vm.monthSelect;
                 }

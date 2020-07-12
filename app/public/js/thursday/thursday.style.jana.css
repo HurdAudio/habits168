@@ -1,0 +1,877 @@
+.thursdayBackgroundDiv_JanuaryA {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/thursday/january/kyle-burton-ssbsdwP4Y1w-unsplash.jpg);
+    background-size: 100%;
+    height: 100%;
+    left: 0;
+    opacity: 0.6;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.thursdayContainerActive_JanuaryA {
+    filter: blur(0px);
+}
+
+.thursdayContainerInactive_JanuaryA {
+    filter: blur(15px);
+}
+
+.thursdayTitleStrip_JanuaryA {
+    background: #e3d7d2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Be Vietnam', sans-serif;
+    height: auto;
+    justify-content: flex-start;
+    opacity: 0.9;
+    padding: 4px 2vw 4px 2vw;
+    width: 100%;
+}
+
+.thursdayLogo_JanuaryA {
+    cursor: pointer;
+    filter: brightness(50%);
+    max-width: 75px;
+}
+
+.thursdayReadingPlaylistTitle_JanuaryA {
+    color: #11171f;
+    font-size: 42px;
+    margin: 30px 0 0 96px;
+}
+
+.thursdayTabStrip_JanuaryA {
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Be Vietnam', sans-serif;
+    height: auto;
+    opacity: 0.9;
+    padding: 0 10px;
+    width: 100%;
+}
+
+.thursdayTabActive_JanuaryA {
+    background: #f7c06e;
+    color: #11171f;
+    cursor: none;
+    font-size: 24px;
+    padding: 5px 45px;
+    transition: all 0.5s linear;
+}
+
+.thursdayTabInactive_JanuaryA {
+    background: transparent;
+    color: #2e2c31;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 5px 25px;
+    transition: all 0.5s linear;
+}
+
+.thursdayContent_JanuaryA {
+    background: transparent;
+    height: 80vh;
+    width: 100%;
+}
+
+.thursdayContentContent_JanuaryA {
+    background: #e3d7d2;
+    height: 80vh;
+    opacity: 0.9;
+    overflow-x: hidden;
+    overflow-Y: auto;
+    width: 105%;
+}
+
+.thursdayReaderNavigationButtons_JanuaryA {
+    background: #928a97;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: flex-start;
+    margin: 0 0 0 0;
+    position: fixed;
+    width: 100%;
+    z-index: 15;
+}
+
+.markAllReadTextThursday_JanuaryA {
+    color: #11171f;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 18px;
+    margin: 35px 10px 0 40px;
+}
+
+.thursdayTrackProgress_JanuaryA {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    cursor: pointer;
+    display: block;
+    font-size: 48px;
+    margin: 15px 1px 15px 5px;
+    padding-left: 35px;
+    position: relative;
+    user-select: none;
+}
+
+.thursdayTrackProgress_JanuaryA input {
+    cursor: pointer;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    width: 0;
+}
+
+.thursdayCheckbox_JanuaryAtrue {
+    background-color: #261e29;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    top: 15px;
+    transition: all 0.3s linear;
+    width: 50px;
+}
+
+.thursdayCheckbox_JanuaryAfalse {
+    background-color: #261e29;
+    border: none;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    top: 15px;
+    transition: all 0.3s linear;
+    width: 50px;
+}
+
+.thursdaySwitchUnchecked_JanuaryAtrue {
+    background-color: #fee28f;
+    height: 20px;
+    left: 25px;
+    position: absolute;
+    top: 0;
+    transition: all 0.2s linear;
+    width: 30px;
+}
+
+.thursdaySwitchUnchecked_JanuaryAfalse {
+    background-color: #f7c06e;
+    height: 20px;
+    left: 0px;
+    position: absolute;
+    top: 0;
+    transition: all 0.2s linear;
+    width: 30px;
+}
+
+.thursdayReadAll_JanuaryA {
+    color: #11171f;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 24px;
+    margin: 14px 0 14px 25px;
+}
+
+.thursdayReadAllButton_JanuaryA {
+    background: #2c3b4e;
+    border: transparent;
+    color: #e3d7d2;
+    cursor: pointer;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 36px;
+    height: 60px;
+    outline-color: #b0a6b3;
+    transform: skewX(-15deg);
+    transition: all 0.5s linear;
+    width: 60px;
+}
+
+.thursdayReadAllButton_JanuaryA:hover {
+    background: #969da7;
+    color: #2e2c31;
+    transform: skewX(-5deg);
+    transition: all 0.5s linear;
+}
+
+.thursdayReadAllButton_JanuaryA:active {
+    background: #2e2c31;
+    color: #969da7;
+    transition: all 0.1s linear;
+}
+
+.thursdaySorting_JanuaryA {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 14px 0 14px 100px;
+}
+
+.thursdaySorting_JanuaryA p {
+    color: #11171f;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 18px;
+    margin: 20px 20px 0 0;
+}
+
+.thursdaySorting_JanuaryA button {
+    margin: 0 5px;
+}
+
+.thursdayFeedsDiv_JanuaryA {
+    height: auto;
+    margin: 90px 50px 0 50px;
+    width: 90%;
+}
+
+.thursdaySubscriptions_JanuaryA {
+    cursor: pointer;
+    margin: 10px;
+}
+
+.thursdayBuffer_JanuaryA {
+    height: 20px;
+    width: 100%;
+}
+
+.thursdayFeedContainer_JanuaryA {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 5px 5px 5px -15px;
+}
+
+.thursdaySubIcon_JanuaryA {
+    height: 65px;
+    margin-right: 20px;
+    transition: all 0.5s linear;
+    width: 65px;
+}
+
+.thursdaySubscriptionTitle_JanuaryA {
+    color: #11171f;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 18px;
+    line-height: 1.2;
+    margin: 5px 0 10px 0;
+    width: 650px;
+}
+
+.thursdayUnreadText_JanuaryA {
+    color: #11171f;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 18px;
+    margin: 10px 40px 0 30px;
+    width: 35px;
+}
+
+.thursdayReadText_JanuaryA {
+    color: #11171f;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 18px;
+    margin: 10px 40px 0 30px;
+    width: 35px;
+}
+
+.thursdayManageTabsButton_JanuaryA {
+    background: #2c3b4e;
+    border: transparent;
+    color: #e3d7d2;
+    cursor: pointer;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 24px;
+    height: auto;
+    margin: 56px 0 0 20%;
+    position: relative;
+    outline-color: #b0a6b3;
+    transform: skewX(-15deg);
+    transition: all 0.5s linear;
+    width: auto;
+}
+
+.thursdayManageTabsButton_JanuaryA:hover {
+    background: #969da7;
+    color: #2e2c31;
+    transform: skewX(-5deg);
+    transition: all 0.5s linear;
+}
+
+.thursdayManageTabsButton_JanuaryA:active {
+    background: #2e2c31;
+    color: #969da7;
+    transition: all 0.1s linear;
+}
+
+.thursdayManageTabsSubsModal_JanuaryA {
+    background: #969da7;
+    border: solid 5px #624c2c;
+    filter: blur(0px);
+    height: 90vh;
+    left: 2%;
+    opacity: 1;
+    position: absolute;
+    top: 5vh;
+    transition: all 0.4s linear;
+    width: 95%;
+    z-index: 50;
+}
+
+.thursdayManageTabsSubsModalBlur_JanuaryA {
+    background: #969da7;
+    border: solid 5px #624c2c;
+    filter: blur(5px);
+    height: 90vh;
+    left: 2%;
+    opacity: 0.4;
+    position: absolute;
+    top: 5vh;
+    transition: all 0.4s linear;
+    width: 95%;
+    z-index: 50;
+}
+
+.thursdayManageTabsSubsModalInactive_JanuaryA {
+    opacity: 0;
+    top: -80vh;
+    transition: all 0.4s linear;
+    z-index: -5;
+}
+
+.thursdayManageTitleBar_JanuaryA {
+    background: #2c3b4e;
+    color: #e3d7d2;
+    font-family: 'Be Vietnam', sans-serif;
+    height: 6vh;
+    opacity: 0.9;
+    position: relative;
+    padding: 1vh 0 2vh 1vw;
+    width: 99%;
+}
+
+.thursdayModalExit_JanuaryA {
+    color: #e3d7d2;
+    cursor: pointer;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 48px;
+    float: left;
+    left: 94%;
+    position: relative;
+    top: 1%;
+}
+
+.thursdayManageTitle_JanuaryA {
+    color: #e3d7d2;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 30px;
+    margin: 20px 0 0 0;
+}
+
+.thursdayManagerModalContainer_JanuaryA {
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    height: 81vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.thursdayManagerTabsSection_JanuaryA {
+    height: auto;
+    padding: 15px;
+    position: relative;
+    width: 30%;
+}
+
+.thursdayTabsManageTitle_JanuaryA {
+    color: #11171f;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 24px;
+}
+
+.thursdayManageTabsContainer_JanuaryA {
+    margin: 40px 8%;
+}
+
+.thursdayTabManageTab_JanuaryA {
+    color: #11171f;
+    cursor: pointer;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 24px;
+    margin: 15px 0 15px 10px;
+}
+
+.thursdayTabManageSubTab_JanuaryA {
+    color: #11171f;
+    cursor: pointer;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 15px;
+    margin: 1px 0 30px 40px;
+    width: 10%;
+}
+
+.thursdayManagerSubscriptionsSection_JanuaryA {
+    height: auto;
+    padding: 15px;
+    position: relative;
+    width: 30%;
+}
+
+.thursdayTabsSubscriptionTitle_JanuaryA {
+    color: #11171f;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 24px;
+}
+
+.thursdayManageSubIcon_JanuaryA {
+    height: 40px;
+    width: 40px;
+}
+
+.thursdaySubManageSubTab_JanuaryA {
+    color: #11171f;
+    cursor: pointer;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 15px;
+    margin: 4px 0 1px 10px;
+    transform: translateX(100px) translateY(-40px);
+    width: 10%;
+}
+
+.thursdayManageSubsTitles_JanuaryA {
+    color: #11171f;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 18px;
+    margin: -15px 0 30px 1px;
+}
+
+.thursdayManagerFeedsSection_JanuaryA {
+    height: auto;
+    padding: 15px;
+    position: relative;
+    width: 30%;
+}
+
+.thursdayManagerFeedsTitle_JanuaryA {
+    color: #11171f;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 24px;
+}
+
+.thursdayManageSearch_JanuaryA {
+    background: #c9c5cb;
+    border: none;
+    color: #11171f;
+    float: left;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 18px;
+    margin-top: 3px;
+    outline-color: #b0a6b3;
+    padding-left: 5px;
+    width: 100%;
+}
+
+.thursdayManageSubsTitlesFeeds_JanuaryA {
+    color: #11171f;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 18px;
+    margin: -15px 0 30px 1px;
+}
+
+.thursdayCreateEditTabManagement_JanuaryA {
+    background: #b9b8bd;
+    border: solid 5px #624c2c;
+    height: auto;
+    left: 22%;
+    opacity: 1;
+    padding: 45px;
+    position: absolute;
+    top: 25vh;
+    transition: all 0.4s linear;
+    width: 50%;
+    z-index: 60;
+}
+
+.thursdayCreateEditTabTitle_JanuaryA {
+    color: #11171f;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 24px;
+    margin: 15px 0 30px 25px;
+}
+
+.thursdayTabEditorFields_JanuaryA {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin: 10px 0 0 60px;
+}
+
+.thursdayTabNameLabel_JanuaryA {
+    color: #11171f;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 18px;
+    margin: 0 9px 0 0;
+}
+
+.thursdayTabNameInput_JanuaryA {
+    background: #969da7;
+    border: none;
+    color: #11171f;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 18px;
+    height: 21px;
+    margin: 0 9px;
+    outline: #b0a6b3;
+    width: 350px;
+}
+
+.thursdayTabEditorPodcastBlogStatus_JanuaryA {
+    margin: -13px 0 0 40px;
+}
+
+#thursdayUnreadText_JanuaryA {
+    color: #11171f;
+}
+
+#thursdayReadText_JanuaryA {
+    color: #11171f;
+}
+
+.thursdayTabEditorFields_JanuaryA {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin: 10px 0 0 60px;
+}
+
+.thursdayTabEditorErrorMessage_JanuaryA {
+    color: #ff0000;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 18px;
+    margin-left: 120px;
+    margin-top: 20px;
+}
+
+.thursdayManageTabsConfirmButton_JanuaryA {
+    background: #2c3b4e;
+    border: transparent;
+    color: #e3d7d2;
+    cursor: pointer;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 18px;
+    height: 40px;
+    margin: 56px 0 0 5%;
+    outline-color: #b0a6b3;
+    position: relative;
+    transform: skewX(-15deg);
+    transition: all 0.5s linear;
+    width: auto;
+}
+
+.thursdayManageTabsConfirmButton_JanuaryA:hover {
+    background: #969da7;
+    color: #2e2c31;
+    transform: skewX(-5deg);
+    transition: all 0.5s linear;
+}
+
+.thursdayManageTabsConfirmButton_JanuaryA:active {
+    background: #2e2c31;
+    color: #969da7;
+    transition: all 0.1s linear;
+}
+
+.thursdayManageTabsSubmitCancelButton_JanuaryA {
+    background: #2c3b4e;
+    border: transparent;
+    color: #e3d7d2;
+    cursor: pointer;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 18px;
+    height: 40px;
+    margin: 56px 0 0 20%;
+    outline-color: #b0a6b3;
+    position: relative;
+    transform: skewX(-15deg);
+    transition: all 0.5s linear;
+    width: auto;
+}
+
+.thursdayManageTabsSubmitCancelButton_JanuaryA:hover {
+    background: #969da7;
+    color: #2e2c31;
+    transform: skewX(-5deg);
+    transition: all 0.5s linear;
+}
+
+.thursdayManageTabsSubmitCancelButton_JanuaryA:active {
+    background: #2e2c31;
+    color: #969da7;
+    transition: all 0.1s linear;
+}
+
+.thursdayGuardRail_JanuaryA {
+    background: #c6aea4;
+    border: solid 5px #624c2c;
+    height: auto;
+    left: 32%;
+    opacity: 1;
+    padding: 45px;
+    position: absolute;
+    top: 25vh;
+    transition: all 0.4s linear;
+    width: 30%;
+    z-index: 60;
+}
+
+.thursdayGuardRailText_JanuaryA {
+    color: #11171f;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 24px;
+    margin: 15px 0 30px 25px;
+}
+
+.thursdayGuardRailButtons_JanuaryA {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin: 10px 0 0 60px;
+}
+
+.hubReaderDay1ThursdayActive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/thursday/january/kyle-burton-ssbsdwP4Y1w-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay1ThursdayInactive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/thursday/january/kyle-burton-ssbsdwP4Y1w-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-115%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay2ThursdayActive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/thursday/january/kyle-burton-ssbsdwP4Y1w-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay2ThursdayInactive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/thursday/january/kyle-burton-ssbsdwP4Y1w-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-230%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay3ThursdayActive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/thursday/january/kyle-burton-ssbsdwP4Y1w-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay3ThursdayInactive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/thursday/january/kyle-burton-ssbsdwP4Y1w-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-345%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay4ThursdayActive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/thursday/january/kyle-burton-ssbsdwP4Y1w-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay4ThursdayInactive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/thursday/january/kyle-burton-ssbsdwP4Y1w-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-460%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay5ThursdayActive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/thursday/january/kyle-burton-ssbsdwP4Y1w-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 3;
+}
+
+.hubReaderDay5ThursdayInactive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/thursday/january/kyle-burton-ssbsdwP4Y1w-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-575%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay6ThursdayActive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/thursday/january/kyle-burton-ssbsdwP4Y1w-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay6ThursdayInactive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/thursday/january/kyle-burton-ssbsdwP4Y1w-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-690%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay7ThursdayActive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/thursday/january/kyle-burton-ssbsdwP4Y1w-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay7ThursdayInactive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/thursday/january/kyle-burton-ssbsdwP4Y1w-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-705%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
