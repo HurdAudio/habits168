@@ -13,7 +13,7 @@
         const vm = this;
 
         vm.$onInit = onInit;
-        vm.emailConfirmMonth = '_JanuaryA';
+        vm.emailConfirmMonth = '_JanuaryB';
         vm.emailConfirmContainerState = 'confirmEmail_Active' + vm.emailConfirmMonth;
         vm.accountValid = 'unchecked';
         vm.resubEmail = resubEmail;

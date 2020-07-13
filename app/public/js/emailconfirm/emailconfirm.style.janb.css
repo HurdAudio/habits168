@@ -1,0 +1,133 @@
+.emailConfirmBackgroundDiv_JanuaryB {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/email_confirm/january/ruedi-haberli-2t6SpSFU6LY-unsplash.jpg);
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    opacity: 1;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.confirmEmail_Active_JanuaryB {
+    filter: blur(0px) hue-rotate(0deg);
+    transform: all 0.5s linear;
+}
+
+.confirmEmail_Inactive_JanuaryB {
+    filter: blur(5px) hue-rotate(180deg);
+    transform: all 0.5s linear;
+}
+
+.emailConfirmTitleBar_JanuaryB {
+    background: linear-gradient(90deg, transparent, #7e8b9c, #6e7472, #7e8b9c, transparent);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'DM Serif Text', serif;
+    height: 12vh;
+    justify-content: flex-start;
+    opacity: 1;
+    top: 0;
+    width: 100%;
+}
+
+.emailConfirmLogo_JanuaryB {
+    cursor: pointer;
+    height: 72px;
+    margin: 16px 48px 16px 26px;
+    opacity: 1;
+    width: 5%;
+}
+
+.externalsTitle_JanuaryB {
+    color: #161718;
+    font-family: 'DM Serif Text', serif;
+    font-size: 36px;
+    transform: translateX(0.5vw) translateY(6.5vh);
+}
+
+.emailConfirmBody_JanuaryB {
+    color: #161718;
+    display: grid;
+    font-family: 'DM Serif Text', serif;
+    grid-template-columns: [col1] 1fr [col2] 1fr [col3] 1fr [col4] 1fr [col5] 1fr [col6] 1fr [col7] 1fr [col8] 1fr [col9] 1fr [col10] 1fr [col11] 1fr [col12] 1fr [colEnd];
+    grid-template-rows: [row1] 1fr [row2] 1fr [row3] 1fr [row4] 1fr [row5] 1fr [row6] 1fr [row7] 1fr [row8] 1fr [row9] 1fr [row10] 1fr [row11] 1fr [row12] 1fr [rowEnd];
+    height: 85vh;
+    width: 100%;
+}
+
+.emailConfirmPreCheckDiv_JanuaryB {
+    background: linear-gradient(180deg, #dcdee0, #7e8b9c, #6e7472, #7e8b9c, transparent);
+    grid-column: col4 / col10;
+    grid-row: row3 / row8;
+}
+
+.emailConfirmStandardMessaging_JanuaryB {
+    font-size: 24px;
+    margin: 2% 15% 1% 15%;
+}
+
+.emailConfirmInvalidLinkDiv_JanuaryB {
+    background: linear-gradient(180deg, #dcdee0, #7e8b9c, #6e7472, #7e8b9c, transparent);
+    grid-column: col4 / col10;
+    grid-row: row3 / row8; 
+}
+
+.emailConfirmInvalidLinkMessaging_JanuaryB {
+    color: #ff0000;
+    filter: brightness(200%);
+    font-family: 'DM Serif Text', serif;
+    font-size: 36px;
+    margin: 15% 20% 1% 15%;
+}
+
+.emailConfirmationPasswordInput_JanuaryB {
+    background: linear-gradient(90deg, #dcdee0, #7e8b9c, #7e8b9c, #dcdee0);
+    border: none;
+    color: #161718;
+    font-size: 24px;
+    margin: 2% 4% 1% 15%;
+    outline-color: #a9aaac;
+}
+
+.emailConfirmationButton_JanuaryB {
+    background: #32373e;
+    border: none;
+    color: #f0f1f2;
+    cursor: pointer;
+    filter: contrast(100%) invert(0) saturate(100%);
+    font-size: 24px;
+    outline-color: #a9aaac;
+    transform: skew(-15deg);
+    transition: all 0.4s linear;
+}
+
+.emailConfirmationButton_JanuaryB:hover {
+    background: #f0f1f2;
+    color: #32373e;
+    filter: contrast(200%) invert(0) saturate(50%);
+    transform: skew(-5deg);
+    transition: all 0.4s linear;
+}
+
+.emailConfirmationButton_JanuaryB:active {
+    filter: contrast(200%) invert(100%) saturate(50%);
+    transition: all 0.1s linear;
+}
+
+.emailConfirmValidLinkDiv_JanuaryB {
+    background: linear-gradient(180deg, #dcdee0, #7e8b9c, #6e7472, #7e8b9c, transparent);
+    grid-column: col4 / col10;
+    grid-row: row3 / row8; 
+}
+
+.emailConfirmNoEmailOnRecordDiv_JanuaryB {
+    background: linear-gradient(180deg, #dcdee0, #7e8b9c, #6e7472, #7e8b9c, transparent);
+    grid-column: col4 / col10;
+    grid-row: row3 / row8; 
+}
