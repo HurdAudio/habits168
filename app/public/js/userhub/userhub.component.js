@@ -74,7 +74,7 @@
         vm.removeMessageReply = removeMessageReply;
         vm.navigateToProfileEditor = navigateToProfileEditor;
         vm.navigateToBrowse = navigateToBrowse;
-        vm.wednesdayMonth = '_JanuaryC';
+        vm.wednesdayMonth = '_FebruaryA';
         vm.thursdayMonth = '_JanuaryA';
         
         function navigateToBrowse() {
