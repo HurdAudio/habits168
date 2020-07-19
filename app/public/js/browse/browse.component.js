@@ -51,228 +51,228 @@
         vm.removePodSubscription = removePodSubscription;
         vm.addPodSubscription = addPodSubscription;
         vm.currentAdder = null;
-        vm.techBlogs = [
-            {
-                uuid: '2c7be513-9083-439c-937f-42bbe95c0cb9',
-                author: null,
-                description: 'Links for the intellectually curious, ranked by readers.',
-                link: 'https://news.ycombinator.com/',
-                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/hacker-news-2-569388.png',
-                items: null,
-                rss: 'https://news.ycombinator.com/rss',
-                title: 'Hacker News'
-            },
-            {
-                uuid: '3b7cdbfa-751e-4622-85e2-31c17abd351f',
-                author: null,
-                description: 'A community for the awesome MVC JS framework.',
-                link: 'https://www.reddit.com/r/angularjs/',
-                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/Z4ki_RNzhlka_Gnb.png',
-                items: null,
-                rss: 'https://reddit.com/r/angularjs/.rss',
-                title: 'angular.js'
-            },
-            {
-                uuid: 'a10dc8ef-98ec-4b9e-b5f3-3c4705cb13f2',
-                author: null,
-                description: 'Node.js Support, Training and Consulting for the Enterprise, Worldwide',
-                link: 'https://nodesource.com/blog',
-                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/nodesource-512x512.png',
-                items: null,
-                rss: 'https://nodesource.com/blog/rss',
-                title: 'The NodeSource Blog'
-            },
-            {
-                uuid: 'a4e7fedd-46fb-4d9f-9c17-e8593c0c949b',
-                author: null,
-                description: 'Curious Perversions in Information Technology',
-                link: 'http://thedailywtf.com',
-                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/logoWTF.png',
-                items: null,
-                rss: 'http://syndication.thedailywtf.com/TheDailyWtf',
-                title: 'The Daily WTF'
-            },
-            {
-                uuid: '25243f5e-e861-4252-abc5-ccf7aa5c8f8b',
-                author: null,
-                description: 'Helping you become a better engineer',
-                link: 'https://swizec.com/blog',
-                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/swiz.png',
-                items: null,
-                rss: 'http://swizec.com/blog/feed',
-                title: 'A geek with a hat'
-            },
-            {
-                uuid: 'f9bc3d9c-5960-4fa6-aa28-1b43a01cc73f',
-                author: null,
-                description: 'A blog featuring tutorials about JavaScript, HTML5, AJAX, PHP, CSS, WordPress, and everything else development.',
-                link: 'https://davidwalsh.name/',
-                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/dwblogo.png',
-                items: null,
-                rss: 'https://davidwalsh.name/feed',
-                title: 'David Walsh Blog'
-            },
-            {
-                uuid: '99f6b8cc-dbde-4757-abb3-e46cf6a1ecb1',
-                author: null,
-                description: 'NodeJS Subreddit',
-                link: 'https://www.reddit.com/r/node/',
-                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/nodejssubreddit.png',
-                items: null,
-                rss: 'https://reddit.com/r/node/.rss',
-                title: 'node.js'
-            },
-            {
-                uuid: 'e8249664-185f-444e-acd0-20928581bfb8',
-                author: null,
-                description: 'The latest news and tips from the Angular team - Medium',
-                link: 'https://blog.angular.io/',
-                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/1_TGH72Nnw24QL3iV9IOm4VA.png',
-                items: null,
-                rss: 'https://blog.angular.io/rss',
-                title: 'Angular Blog - Medium'
-            },
-            {
-                uuid: '83cfdddd-a5f7-4f46-b4db-c698f082def7',
-                author: null,
-                description: 'A website powered by alien technology from the future.',
-                link: 'https://catonmat.net/',
-                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/catonmat-logo-powered-by-alien-technology.png',
-                items: null,
-                rss: 'https://catonmat.net/feed',
-                title: 'catonmat.net – less is more'
-            },
-            {
-                uuid: '33ce0ce6-7f8e-4e1a-919e-035719852076',
-                author: null,
-                description: 'Essays, opinions, and advice on the act of computer programming from Stack Overflow.',
-                link: 'https://stackoverflow.blog/',
-                image: 'https://habits168-hurdaudio.s3.amazonaws.com/blog_logos/cropped-SO_Logo_glyph-use-this-one-smaller-32x32.jpg',
-                items: null,
-                rss: 'https://stackoverflow.blog/rss',
-                title: 'Stack Overflow Blog'
-            },
-            {
-                uuid: 'c2f08cfd-3860-490b-b1ed-c3810c800289',
-                author: null,
-                description: 'Online reference, blog and news source for the Web as Platform. Because the world\'s your programmable oyster.',
-                link: 'https://www.programmableweb.com/rss_blog',
-                image: 'https://habits168-hurdaudio.s3.amazonaws.com/blog_logos/programmableWebPiece.jpeg',
-                items: null,
-                rss: 'https://feeds.feedburner.com/ProgrammableWeb',
-                title: 'ProgrammableWeb'
-            },
-            {
-                uuid: '017317fd-72bf-411f-a41a-401b4fff5043',
-                author: null,
-                description: 'Scott Hanselman on Programming, User Experience, The Zen of Computers and Life in General',
-                link: 'https://www.hanselman.com/blog/',
-                image: 'https://habits168-hurdaudio.s3.amazonaws.com/blog_logos/tinyheadshot2.jpg',
-                items: null,
-                rss: 'https://hanselman.com/blog/feed',
-                title: 'Scott Hanselman\'s Blog'
-            },
-            {
-                uuid: 'b1ea9fb5-378a-4616-8142-f5db5a953adf',
-                author: null,
-                description: 'Recent content in Articles on Smashing Magazine — For Web Designers And Developers',
-                link: 'https://www.smashingmagazine.com/articles/',
-                image: 'https://habits168-hurdaudio.s3.amazonaws.com/blog_logos/smashing-logo-avatar-opt.png',
-                items: null,
-                rss: 'https://smashingmagazine.com/feed',
-                title: 'Articles on Smashing Magazine — For Web Designers And Developers'
-            },
-            {
-                uuid: '460065c7-f949-4bbb-9397-8a0b2193baf4',
-                author: null,
-                description: 'CSS Architecture, Web Performance Optimisation, and more, by Harry Roberts',
-                link: 'https://csswizardry.com/',
-                image: 'https://habits168-hurdaudio.s3.amazonaws.com/blog_logos/cssWizardryLogo.png',
-                items: null,
-                rss: 'https://csswizardry.com/feed',
-                title: 'CSS Wizardry'
-            },
-            {
-                uuid: '5efd84d8-4155-421e-8f00-eaad72d4ea9d',
-                author: null,
-                description: 'Weekly e-mail roundup of latest CSS articles, tutorials, tools and experiments',
-                link: 'https://css-weekly.com/',
-                image: 'https://habits168-hurdaudio.s3.amazonaws.com/blog_logos/css_weekly_shirt.png',
-                items: null,
-                rss: 'https://css-weekly.com/feed',
-                title: 'CSS WeeklyCSS Weekly'
-            },
-            {
-                uuid: 'af66bdc7-e46c-43b8-a39c-878d80f01b6b',
-                author: null,
-                description: 'All about the JavaScript programming language!',
-                link: 'https://www.reddit.com/r/javascript/',
-                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/5589238-reddit-icon-vector-images-icon-sign-and-symbols-reddit-logo-png-300_300_preview.png',
-                items: null,
-                rss: 'https://reddit.com/r/javascript/.rss',
-                title: '𝚓𝚊𝚟𝚊𝚜𝚌𝚛𝚒𝚙𝚝'
-            },
-            {
-                uuid: 'f99c2c48-c52c-4d9d-8d60-8756a61620a6',
-                author: null,
-                description: 'Learn CSS | HTML5 | JavaScript | Wordpress | Tutorials-Web Development | Reference | Books and More',
-                link: 'https://www.sitepoint.com/',
-                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/58482e76cef1014c0b5e4a6c.png',
-                items: null,
-                rss: 'https://sitepoint.com/feed',
-                title: 'SitePoint'
-            },
-            {
-                uuid: 'fceb9120-e6a1-4be1-bbe5-aef9db874440',
-                author: null,
-                description: 'Where programmers share ideas and help each other grow—A constructive and inclusive social network.',
-                link: 'https://dev.to/',
-                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/devtorainbow.png',
-                items: null,
-                rss: 'https://dev.to/feed',
-                title: 'DEV Community'
-            },
-            {
-                uuid: 'cce488c6-e563-4de3-b6bc-266ba896ce61',
-                author: null,
-                description: 'Description pending',
-                link: 'http://www.echojs.com/',
-                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/acdaff17c49fc10cfb43a2e557804099_400x400.png',
-                items: null,
-                rss: 'https://www.echojs.com/rss',
-                title: 'Echo JS'
-            },
-            {
-                uuid: '03520f1f-b069-4a3d-9329-69451cf9c9e6',
-                author: null,
-                description: 'A free, once–weekly e-mail round-up of Node.js news and articles.',
-                link: 'https://nodeweekly.com/',
-                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/qzlqdaj4qzm2bzcdliyp.png',
-                items: null,
-                rss: 'https://nodeweekly.com/rss/12acdl5j',
-                title: 'Node Weekly'
-            },
-            {
-                uuid: '6ba1eb91-375b-4d49-b47a-f9661682f9ba',
-                author: null,
-                description: 'Google News',
-                link: 'https://news.google.com/search?q=javascript&hl=en-US&gl=US&ceid=US%3Aen',
-                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/1200px-Google_News_icon.svg.png',
-                items: null,
-                rss: 'https://news.google.com/rss/search?pz=1&cf=all&topic=topics&q=javascript&hl=en-US&num=10&gl=US&ceid=US:en',
-                title: 'Google News - Javascript'
-            },
-            {
-                uuid: '66a55437-b871-43c3-b420-fb4fd4b3105f',
-                author: 'JSConf',
-                description: '',
-                link: 'https://www.youtube.com/channel/UCzoVCacndDCfGDf41P-z0iA',
-                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/jsconf_eu.png',
-                items: null,
-                rss: 'https://www.youtube.com/channel/UCzoVCacndDCfGDf41P-z0iA',
-                title: 'JSConf'
-            }
-        ];
+//        vm.techBlogs = [
+//            {
+//                uuid: '2c7be513-9083-439c-937f-42bbe95c0cb9',
+//                author: null,
+//                description: 'Links for the intellectually curious, ranked by readers.',
+//                link: 'https://news.ycombinator.com/',
+//                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/hacker-news-2-569388.png',
+//                items: null,
+//                rss: 'https://news.ycombinator.com/rss',
+//                title: 'Hacker News'
+//            },
+//            {
+//                uuid: '3b7cdbfa-751e-4622-85e2-31c17abd351f',
+//                author: null,
+//                description: 'A community for the awesome MVC JS framework.',
+//                link: 'https://www.reddit.com/r/angularjs/',
+//                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/Z4ki_RNzhlka_Gnb.png',
+//                items: null,
+//                rss: 'https://reddit.com/r/angularjs/.rss',
+//                title: 'angular.js'
+//            },
+//            {
+//                uuid: 'a10dc8ef-98ec-4b9e-b5f3-3c4705cb13f2',
+//                author: null,
+//                description: 'Node.js Support, Training and Consulting for the Enterprise, Worldwide',
+//                link: 'https://nodesource.com/blog',
+//                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/nodesource-512x512.png',
+//                items: null,
+//                rss: 'https://nodesource.com/blog/rss',
+//                title: 'The NodeSource Blog'
+//            },
+//            {
+//                uuid: 'a4e7fedd-46fb-4d9f-9c17-e8593c0c949b',
+//                author: null,
+//                description: 'Curious Perversions in Information Technology',
+//                link: 'http://thedailywtf.com',
+//                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/logoWTF.png',
+//                items: null,
+//                rss: 'http://syndication.thedailywtf.com/TheDailyWtf',
+//                title: 'The Daily WTF'
+//            },
+//            {
+//                uuid: '25243f5e-e861-4252-abc5-ccf7aa5c8f8b',
+//                author: null,
+//                description: 'Helping you become a better engineer',
+//                link: 'https://swizec.com/blog',
+//                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/swiz.png',
+//                items: null,
+//                rss: 'http://swizec.com/blog/feed',
+//                title: 'A geek with a hat'
+//            },
+//            {
+//                uuid: 'f9bc3d9c-5960-4fa6-aa28-1b43a01cc73f',
+//                author: null,
+//                description: 'A blog featuring tutorials about JavaScript, HTML5, AJAX, PHP, CSS, WordPress, and everything else development.',
+//                link: 'https://davidwalsh.name/',
+//                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/dwblogo.png',
+//                items: null,
+//                rss: 'https://davidwalsh.name/feed',
+//                title: 'David Walsh Blog'
+//            },
+//            {
+//                uuid: '99f6b8cc-dbde-4757-abb3-e46cf6a1ecb1',
+//                author: null,
+//                description: 'NodeJS Subreddit',
+//                link: 'https://www.reddit.com/r/node/',
+//                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/nodejssubreddit.png',
+//                items: null,
+//                rss: 'https://reddit.com/r/node/.rss',
+//                title: 'node.js'
+//            },
+//            {
+//                uuid: 'e8249664-185f-444e-acd0-20928581bfb8',
+//                author: null,
+//                description: 'The latest news and tips from the Angular team - Medium',
+//                link: 'https://blog.angular.io/',
+//                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/1_TGH72Nnw24QL3iV9IOm4VA.png',
+//                items: null,
+//                rss: 'https://blog.angular.io/rss',
+//                title: 'Angular Blog - Medium'
+//            },
+//            {
+//                uuid: '83cfdddd-a5f7-4f46-b4db-c698f082def7',
+//                author: null,
+//                description: 'A website powered by alien technology from the future.',
+//                link: 'https://catonmat.net/',
+//                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/catonmat-logo-powered-by-alien-technology.png',
+//                items: null,
+//                rss: 'https://catonmat.net/feed',
+//                title: 'catonmat.net – less is more'
+//            },
+//            {
+//                uuid: '33ce0ce6-7f8e-4e1a-919e-035719852076',
+//                author: null,
+//                description: 'Essays, opinions, and advice on the act of computer programming from Stack Overflow.',
+//                link: 'https://stackoverflow.blog/',
+//                image: 'https://habits168-hurdaudio.s3.amazonaws.com/blog_logos/cropped-SO_Logo_glyph-use-this-one-smaller-32x32.jpg',
+//                items: null,
+//                rss: 'https://stackoverflow.blog/rss',
+//                title: 'Stack Overflow Blog'
+//            },
+//            {
+//                uuid: 'c2f08cfd-3860-490b-b1ed-c3810c800289',
+//                author: null,
+//                description: 'Online reference, blog and news source for the Web as Platform. Because the world\'s your programmable oyster.',
+//                link: 'https://www.programmableweb.com/rss_blog',
+//                image: 'https://habits168-hurdaudio.s3.amazonaws.com/blog_logos/programmableWebPiece.jpeg',
+//                items: null,
+//                rss: 'https://feeds.feedburner.com/ProgrammableWeb',
+//                title: 'ProgrammableWeb'
+//            },
+//            {
+//                uuid: '017317fd-72bf-411f-a41a-401b4fff5043',
+//                author: null,
+//                description: 'Scott Hanselman on Programming, User Experience, The Zen of Computers and Life in General',
+//                link: 'https://www.hanselman.com/blog/',
+//                image: 'https://habits168-hurdaudio.s3.amazonaws.com/blog_logos/tinyheadshot2.jpg',
+//                items: null,
+//                rss: 'https://hanselman.com/blog/feed',
+//                title: 'Scott Hanselman\'s Blog'
+//            },
+//            {
+//                uuid: 'b1ea9fb5-378a-4616-8142-f5db5a953adf',
+//                author: null,
+//                description: 'Recent content in Articles on Smashing Magazine — For Web Designers And Developers',
+//                link: 'https://www.smashingmagazine.com/articles/',
+//                image: 'https://habits168-hurdaudio.s3.amazonaws.com/blog_logos/smashing-logo-avatar-opt.png',
+//                items: null,
+//                rss: 'https://smashingmagazine.com/feed',
+//                title: 'Articles on Smashing Magazine — For Web Designers And Developers'
+//            },
+//            {
+//                uuid: '460065c7-f949-4bbb-9397-8a0b2193baf4',
+//                author: null,
+//                description: 'CSS Architecture, Web Performance Optimisation, and more, by Harry Roberts',
+//                link: 'https://csswizardry.com/',
+//                image: 'https://habits168-hurdaudio.s3.amazonaws.com/blog_logos/cssWizardryLogo.png',
+//                items: null,
+//                rss: 'https://csswizardry.com/feed',
+//                title: 'CSS Wizardry'
+//            },
+//            {
+//                uuid: '5efd84d8-4155-421e-8f00-eaad72d4ea9d',
+//                author: null,
+//                description: 'Weekly e-mail roundup of latest CSS articles, tutorials, tools and experiments',
+//                link: 'https://css-weekly.com/',
+//                image: 'https://habits168-hurdaudio.s3.amazonaws.com/blog_logos/css_weekly_shirt.png',
+//                items: null,
+//                rss: 'https://css-weekly.com/feed',
+//                title: 'CSS WeeklyCSS Weekly'
+//            },
+//            {
+//                uuid: 'af66bdc7-e46c-43b8-a39c-878d80f01b6b',
+//                author: null,
+//                description: 'All about the JavaScript programming language!',
+//                link: 'https://www.reddit.com/r/javascript/',
+//                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/5589238-reddit-icon-vector-images-icon-sign-and-symbols-reddit-logo-png-300_300_preview.png',
+//                items: null,
+//                rss: 'https://reddit.com/r/javascript/.rss',
+//                title: '𝚓𝚊𝚟𝚊𝚜𝚌𝚛𝚒𝚙𝚝'
+//            },
+//            {
+//                uuid: 'f99c2c48-c52c-4d9d-8d60-8756a61620a6',
+//                author: null,
+//                description: 'Learn CSS | HTML5 | JavaScript | Wordpress | Tutorials-Web Development | Reference | Books and More',
+//                link: 'https://www.sitepoint.com/',
+//                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/58482e76cef1014c0b5e4a6c.png',
+//                items: null,
+//                rss: 'https://sitepoint.com/feed',
+//                title: 'SitePoint'
+//            },
+//            {
+//                uuid: 'fceb9120-e6a1-4be1-bbe5-aef9db874440',
+//                author: null,
+//                description: 'Where programmers share ideas and help each other grow—A constructive and inclusive social network.',
+//                link: 'https://dev.to/',
+//                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/devtorainbow.png',
+//                items: null,
+//                rss: 'https://dev.to/feed',
+//                title: 'DEV Community'
+//            },
+//            {
+//                uuid: 'cce488c6-e563-4de3-b6bc-266ba896ce61',
+//                author: null,
+//                description: 'Description pending',
+//                link: 'http://www.echojs.com/',
+//                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/acdaff17c49fc10cfb43a2e557804099_400x400.png',
+//                items: null,
+//                rss: 'https://www.echojs.com/rss',
+//                title: 'Echo JS'
+//            },
+//            {
+//                uuid: '03520f1f-b069-4a3d-9329-69451cf9c9e6',
+//                author: null,
+//                description: 'A free, once–weekly e-mail round-up of Node.js news and articles.',
+//                link: 'https://nodeweekly.com/',
+//                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/qzlqdaj4qzm2bzcdliyp.png',
+//                items: null,
+//                rss: 'https://nodeweekly.com/rss/12acdl5j',
+//                title: 'Node Weekly'
+//            },
+//            {
+//                uuid: '6ba1eb91-375b-4d49-b47a-f9661682f9ba',
+//                author: null,
+//                description: 'Google News',
+//                link: 'https://news.google.com/search?q=javascript&hl=en-US&gl=US&ceid=US%3Aen',
+//                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/1200px-Google_News_icon.svg.png',
+//                items: null,
+//                rss: 'https://news.google.com/rss/search?pz=1&cf=all&topic=topics&q=javascript&hl=en-US&num=10&gl=US&ceid=US:en',
+//                title: 'Google News - Javascript'
+//            },
+//            {
+//                uuid: '66a55437-b871-43c3-b420-fb4fd4b3105f',
+//                author: 'JSConf',
+//                description: '',
+//                link: 'https://www.youtube.com/channel/UCzoVCacndDCfGDf41P-z0iA',
+//                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/jsconf_eu.png',
+//                items: null,
+//                rss: 'https://www.youtube.com/channel/UCzoVCacndDCfGDf41P-z0iA',
+//                title: 'JSConf'
+//            }
+//        ];
         vm.techPodcasts = [
             {
                   uuid: '7f5aca06-17bf-4c99-8c8f-af561999498c',
@@ -590,14 +590,16 @@
                     tableName = 'blog_feeds';
                     break;
                 case('_tech'):
-                    tableName = 'tech_feeds';
+                    tableName = 'tech_blogs/assembled';
                     break;
                 default:
                     alert('non-supported blog category');
             }
             if (tableName !== '') {
-                if (tableName === 'tech_feeds') {
-                    vm.viewBlogFeeds = vm.techBlogs.sort((a, b) => {
+                    
+                $http.get(`/${tableName}`)
+                .then(allFeeds => {
+                    vm.viewBlogFeeds = allFeeds.data.sort((a, b) => {
                         first = a.title.toLowerCase();
                         second = b.title.toLowerCase();
                         if (first.slice(0, 4) === 'the ') {
@@ -618,32 +620,7 @@
                             return 0;
                         }
                     });
-                } else {
-                    $http.get(`/${tableName}`)
-                    .then(allFeeds => {
-                        vm.viewBlogFeeds = allFeeds.data.sort((a, b) => {
-                            first = a.title.toLowerCase();
-                            second = b.title.toLowerCase();
-                            if (first.slice(0, 4) === 'the ') {
-                                first = first.slice(4);
-                            } else if (first.slice(0, 2) === 'a ') {
-                                first = first.slice(2);
-                            }
-                            if (second.slice(0, 4) === 'the ') {
-                                second = second.slice(4);
-                            } else if (second.slice(0, 2) === 'a ') {
-                                second = second.slice(2);
-                            }
-                            if (first < second) {
-                                return -1;
-                            } else if (first > second) {
-                                return 1;
-                            } else {
-                                return 0;
-                            }
-                        });
-                    });
-                }
+                });
                 
             }
         }
