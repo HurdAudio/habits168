@@ -1,0 +1,214 @@
+.newUserContainerActive_FebruaryB {
+    filter: blur(0);
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.newUserContainerBlur_FebruaryB {
+    filter: blur(13px);
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.newUserSignupImageDiv_FebruaryB {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/newusersignup/february/jeans-5394561_1920.jpg);
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.newUserNavbar_FebruaryB {
+    backdrop-filter: hue-rotate(-45deg) saturate(210%);
+    background: linear-gradient(90deg, transparent, #8a94b0, #a6b2b4, #a6b2b4, #8a94b0, transparent);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Inria Sans', sans-serif;
+    height: 12vh;
+    justify-content: left;
+    left: 0;
+    padding-left: 25px;
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+
+.newUserLogoNav_FebruaryB {
+    cursor: pointer;
+    filter: brightness(100%);
+    max-height: 12vh;
+    max-width: 155px;
+    z-index: 55;
+}
+
+.newUserSignupTitle_FebruaryB {
+    color: #020102;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 48px;
+    margin: 3vh 0 3vh 20%;
+}
+
+.newUserMasterFormDiv_FebruaryB {
+    backdrop-filter: brightness(30%) sepia(50%);
+    box-shadow: 5px 5px 5px #3768ad, -5px 5px 5px #3768ad, 5px -5px 5px #3768ad, -5px -5px 5px #3768ad;
+    display: grid;
+    grid-template-columns: [col1] 1fr [col2] 1fr [col3] 1fr [col4] 1fr [col5] 1fr [col6] 1fr [col7] 1fr [col8] 1fr [col9] 1fr [col10] 1fr [col11] 1fr [colEnd];
+    grid-template-rows: [row1] 1fr [row2] 1fr [row3] 1fr [row4] 1fr [row5] 1fr [row6] 1fr [row7] 1fr [row8] 1fr [row9] 1fr [row10] 1fr [row11] 1fr [rowEnd];
+    height: 70vh;
+    left: 10%;
+    position: relative;
+    top: 10vh;
+    width: 80%;
+}
+
+.newUserSignupFormWelcomeLine_FebruaryB {
+    color: #9bb4d6;
+    filter: brightness(200%) saturate(300%);
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 24px;
+    grid-column: col2 / col12;
+    grid-row: row2 / row3;
+}
+
+.newUserTextBoxFirstName_FebruaryB {
+    background: #9bb4d6;
+    border: none;
+    color: #020102;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 18px;
+    height: 24px;
+    grid-column: col3 / col6;
+    grid-row: row4 / row5;
+    outline-color: #868e96;
+}
+
+.newUserTextBoxFirstName_FebruaryB::placeholder {
+    color: #1a2540;
+}
+
+.newUserTextBoxLastName_FebruaryB {
+    background: #9bb4d6;
+    border: none;
+    color: #020102;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 18px;
+    height: 24px;
+    grid-column: col7 / col10;
+    grid-row: row4 / row5;
+    outline-color: #868e96;
+}
+
+.newUserTextBoxLastName_FebruaryB::placeholder {
+    color: #1a2540;
+}
+
+.newUserTextBoxEmail_FebruaryB {
+    background: #9bb4d6;
+    border: none;
+    color: #020102;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 18px;
+    height: 24px;
+    grid-column: col3 / col6;
+    grid-row: row5 / row6;
+    outline-color: #868e96;
+}
+
+.newUserTextBoxEmail_FebruaryB::placeholder {
+    color: #1a2540;
+}
+
+.newUserTextBoxPassword_FebruaryB {
+    background: #9bb4d6;
+    border: none;
+    color: #020102;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 18px;
+    height: 24px;
+    grid-column: col7 / col10;
+    grid-row: row5 / row6;
+    outline-color: #868e96;
+}
+
+.newUserTextBoxPassword_FebruaryB::placeholder {
+    color: #1a2540;
+}
+
+.newUserTextBoxConfirmPassword_FebruaryB {
+    background: #9bb4d6;
+    border: none;
+    color: #020102;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 18px;
+    height: 24px;
+    grid-column: col7 / col10;
+    grid-row: row6 / row7;
+    outline-color: #868e96;
+}
+
+.newUserTextBoxConfirmPassword_FebruaryB::placeholder {
+    color: #1a2540;
+}
+
+.newUserSignupFormErrorMessageing_FebruaryB {
+    color: #a6b2b4;
+    filter: brightness(500%) contrast(200%) saturate(300%);
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 24px;
+    grid-column: col3 / col10;
+    grid-row: row8 / row9;
+}
+
+.newUserSignupFormMessaging_FebruaryB {
+    color: #a6b2b4;
+    filter: brightness(500%) contrast(200%) saturate(300%);
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 24px;
+    grid-column: col3 / col10;
+    grid-row: row9 / row10;
+}
+
+.newUserSignupSubmitButton_FebruaryB {
+    background: #162945;
+    border: none;
+    color: #a6b2b4;
+    cursor: pointer;
+    filter: brightness(100%) drop-shadow(10px 15px 4px #081026);
+    font-family: 'Padauk', sans-serif;
+    font-size: 30px;
+    grid-column: col6 / col7;
+    grid-row: row10 / row11;
+    margin: 0 10px;
+    outline-color: #868e96;
+    padding: 5px 15px;
+    transition: all 0.3s linear;
+}
+
+.newUserSignupSubmitButton_FebruaryB:hover {
+    filter: brightness(110%) drop-shadow(4px 5px 3px #081026);
+    transition: all 0.3s linear;
+}
+
+.newUserSignupSubmitButton_FebruaryB:active {
+    filter: invert(100%);
+    transition: all 0.2s linear;
+}

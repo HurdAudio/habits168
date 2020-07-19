@@ -13,7 +13,7 @@
         const vm = this;
 
         vm.$onInit = onInit;
-        vm.signupMonth = '_FebruaryA';
+        vm.signupMonth = '_FebruaryB';
         vm.newUserContainerState = 'newUserContainerActive' + vm.signupMonth;
         vm.navigateToLanding = navigateToLanding;
         vm.newUserErrorMessage = '';
