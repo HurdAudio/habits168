@@ -17,6 +17,24 @@ router.get('/', (req, res, next) => {
         });
 });
 
+router.get('/browse', (req, res, next) => {
+    let now = new Date();
+    let months = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'];
+    let selectedSkin;
+    
+    knex('skins')
+    .select('*')
+    .first()
+    .then(skinsTable => {
+        if (skinsTable.skins.browse[months[now.getMonth()]].length === 1) {
+            selectedSkin = skinsTable.skins.browse.available[Math.floor(Math.random() * skinsTable.skins.browse.available.length)];
+        } else {
+            selectedSkin = skinsTable.skins.browse[months[now.getMonth()]][now.getDate()];
+        }
+        res.send({ browse: selectedSkin });
+    });
+});
+
 router.get('/dailies', (req, res, next) => {
     let now = new Date();
     let months = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'];
@@ -128,7 +146,7 @@ router.get('/tuesday', (req, res, next) => {
 router.get('/user_hub', (req, res, next) => {
     let now = new Date();
     let months = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'];
-    let selectedSkin, mondaySkin, externalsSkin, dailiesSkin, tuesdaySkin;
+    let selectedSkin, mondaySkin, externalsSkin, dailiesSkin, tuesdaySkin, browseSkin;
     
     knex('skins')
     .select('*')
@@ -159,9 +177,14 @@ router.get('/user_hub', (req, res, next) => {
         } else {
             tuesdaySkin = skinsTable.skins.tuesday[months[now.getMonth()]][now.getDate()];
         }
+        if (skinsTable.skins.browse[months[now.getMonth()]].length === 1) {
+            browseSkin = skinsTable.skins.browse.available[Math.floor(Math.random() * skinsTable.skins.browse.available.length)];
+        } else {
+            browseSkin = skinsTable.skins.browse[months[now.getMonth()]][now.getDate()];
+        }
         
         
-        res.send({ dailies: dailiesSkin, externals: externalsSkin, monday_skin: mondaySkin, tuesday_skin: tuesdaySkin, user_hub: selectedSkin });
+        res.send({ browse: browseSkin, dailies: dailiesSkin, externals: externalsSkin, monday_skin: mondaySkin, tuesday_skin: tuesdaySkin, user_hub: selectedSkin });
     })
 });
 

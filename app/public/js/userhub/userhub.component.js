@@ -14,7 +14,6 @@
 
         vm.$onInit = onInit;
         vm.userLogout = userLogout;
-        vm.browseMonth = '_JanuaryA'
         vm.updateHubTab = updateHubTab;
         vm.toggleEmojiSelector = toggleEmojiSelector;
         vm.shareAddEmoji = shareAddEmoji;
@@ -34,7 +33,6 @@
         vm.hubWeekToggle = hubWeekToggle;
         vm.subscriptionToggle = 'off';
         vm.toggleSubscriptionManagement = toggleSubscriptionManagement;
-        vm.browseFeedsBlockToggleStatus = 'hubReaderBrowseBlockInactive' + vm.browseMonth;
         vm.hubLinkShareOrSave = 'Share Link';
         vm.hubShareSave = hubShareSave;
         vm.hubCancelShareSaveLink = hubCancelShareSaveLink;
@@ -1725,6 +1723,8 @@
                 vm.deleteShareGuardrailState = 'deleteGuardrailInactive' + vm.monthSelect;
                 vm.deleteShareCommentGuardrailState = 'deleteCommentGuardrailInactive' + vm.monthSelect;
                 vm.editCommentModalState = 'hubEditMessageInactive' + vm.monthSelect;
+                vm.browseMonth = hubSkinResponse.browse;
+                vm.browseFeedsBlockToggleStatus = 'hubReaderBrowseBlockInactive' + vm.browseMonth;
                 
                 switch (vm.monthSelect) {
                     case ('_JanuaryA'):
