@@ -514,10 +514,9 @@
     z-index: -4;
 }
 
-/*
 .hubReaderBrowseBlockActive_FebruaryC {
     background: #82a1b5;
-    background-image: url();
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/feburary/nick-fewings-naJ2JyrK9dI-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 25vh;
@@ -533,7 +532,7 @@
 
 .hubReaderBrowseBlockInactive_FebruaryC {
     background: #82a1b5;
-    background-image: url();
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/feburary/nick-fewings-naJ2JyrK9dI-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 25vh;
@@ -546,4 +545,3 @@
     width: 8%;
     z-index: -1;
 }
-*/

@@ -512,10 +512,9 @@
     z-index: -4;
 }
 
-/*
 .hubReaderBrowseBlockActive_FebruaryB {
     background: #82a1b5;
-    background-image: url();
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/feburary/jeans-5081280_1920.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 25vh;
@@ -531,7 +530,7 @@
 
 .hubReaderBrowseBlockInactive_FebruaryB {
     background: #82a1b5;
-    background-image: url();
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/feburary/jeans-5081280_1920.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 25vh;
@@ -544,4 +543,3 @@
     width: 8%;
     z-index: -1;
 }
-*/

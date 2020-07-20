@@ -13,14 +13,8 @@
         const vm = this;
 
         vm.$onInit = onInit;
-        vm.browseMonth = '_FebruaryC';
         vm.navigateToHub = navigateToHub;
-        vm.browseContainer = 'browseActive' + vm.browseMonth;
-        vm.blogFeedTabState = 'browseTabActive' + vm.browseMonth;
-        vm.podcastFeedTabState = 'browseTabInactive' + vm.browseMonth;
         vm.toggleTabs = toggleTabs;
-        vm.browseBlogsContainerState = 'browseContainerActive' + vm.browseMonth;
-        vm.browsePodcastContainerState = 'browseContainerInactive' + vm.browseMonth;
         vm.clickBrowseViewFeedsButton = clickBrowseViewFeedsButton;
         vm.clickBrowseViewPodcastFeedsButton = clickBrowseViewPodcastFeedsButton;
         vm.currentView = "_generic";
@@ -35,7 +29,6 @@
             subscribed: true
         };
         vm.addSubscription = addSubscription;
-        vm.browseSubscriptionModalState = 'browseSubscriptionModalInactive' + vm.browseMonth;
         vm.blogSubscriptionCancel = blogSubscriptionCancel;
         vm.updateBlogSubscriptionDestination = updateBlogSubscriptionDestination;
         vm.subDestination = 'dailies';
@@ -807,32 +800,49 @@
                 });
 
         }
+        
+        function setSkin() {
+            $http.get('/skins/browse')
+                .then(skinData => {
+                    let skin = skinData.data;
+                    vm.browseMonth = skin.browse;
+                    vm.browseContainer = 'browseActive' + vm.browseMonth;
+                    vm.blogFeedTabState = 'browseTabActive' + vm.browseMonth;
+                    vm.podcastFeedTabState = 'browseTabInactive' + vm.browseMonth;
+                    vm.browseBlogsContainerState = 'browseContainerActive' + vm.browseMonth;
+                    vm.browsePodcastContainerState = 'browseContainerInactive' + vm.browseMonth;
+                    vm.browseSubscriptionModalState = 'browseSubscriptionModalInactive' + vm.browseMonth;
+                
+                    switch (vm.browseMonth) {
+                        case ('_JanuaryA'):
+                            vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/robe-154808_640.png';
+                            break;
+                        case ('_JanuaryB'):
+                            vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/nun-4018982_1280.png'
+                            break;
+                        case ('_JanuaryC'):
+                            vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/job-3506038_1280.png';
+                            break;
+                        case ('_FebruaryA'):
+                            vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_png_by_piccolapersempre_dbuithu-fullview.png';
+                            break;
+                        case ('_FebruaryB'):
+                            vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/digital_painting__liquid_sleep_by_ukulelemoon_d888syz-pre.jpg';
+                            break;
+                        case ('_FebruaryC'):
+                            vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_cup_by_lashonda1980_dazsks6-pre.png';
+                            break;
+                        default:
+                            alert('UNSUPPORTED MONTH SELECT for LOGO');
+                    }
+
+                });
+        }
 
         function onInit() {
             console.log("Browse Feeds is lit");
 
-            switch (vm.browseMonth) {
-                case ('_JanuaryA'):
-                    vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/robe-154808_640.png';
-                    break;
-                case ('_JanuaryB'):
-                    vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/nun-4018982_1280.png'
-                    break;
-                case ('_JanuaryC'):
-                    vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/job-3506038_1280.png';
-                    break;
-                case ('_FebruaryA'):
-                    vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_png_by_piccolapersempre_dbuithu-fullview.png';
-                    break;
-                case ('_FebruaryB'):
-                    vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/digital_painting__liquid_sleep_by_ukulelemoon_d888syz-pre.jpg';
-                    break;
-                case ('_FebruaryC'):
-                    vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_cup_by_lashonda1980_dazsks6-pre.png';
-                    break;
-                default:
-                    alert('UNSUPPORTED MONTH SELECT for LOGO');
-            }
+            setSkin();
 
             setUserIPAddress();
             setFooterMessage();
