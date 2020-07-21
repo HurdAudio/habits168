@@ -802,6 +802,15 @@
                 case ('_FebruaryC'):
                     vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_cup_by_lashonda1980_dazsks6-pre.png';
                     break;
+                case ('_MarchA'):
+                    vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/dd749ir-a2fcf5b4-5422-46d6-8d79-8166d3a47633.jpg';
+                    break;
+                case('_MarchB'):
+                    vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/coffee-32284_1280.png';
+                    break;
+                case('_MarchC'):
+                    vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/espresso-4929161_1920.jpg';
+                    break;
                 default:
                     alert('UNSUPPORTED MONTH SELECT for LOGO');
                 }
