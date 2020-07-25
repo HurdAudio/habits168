@@ -1,0 +1,264 @@
+.dailiesContainerActive_MarchC {
+    display: initial;
+    filter: blur(0);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: all 0.3s linear;
+    width: 100%;
+}
+
+.dailiesImageDiv_MarchC {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/dailies/march/kalineri-PgQ1h-ojz6Q-unsplash.jpg);
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.dailiesNavbar_MarchC {
+    backdrop-filter: blur(15px) hue-rotate(10deg);
+    border-bottom: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/dailies/march/kalineri-PgQ1h-ojz6Q-unsplash.jpg) 5% stretch;
+    box-sizing: border-box;
+    color: #666f5a;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Epilogue', sans-serif;
+    height: 11vh;
+    justify-content: left;
+    left: 0;
+    padding-left: 25px;
+    padding-top: 1vh;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 4;
+}
+
+.dailiesLogoNav_MarchC {
+    cursor: pointer;
+    filter: brightness(100%) sepia(40%);
+    max-height: 10vh;
+    max-width: 85px;
+    transform: translateY(-5px);
+}
+
+.dailiesTitle_MarchC {
+    color: #9bb876;
+    filter: brightness(150%);
+    font-family: 'Epilogue', sans-serif;
+    font-size: 60px;
+    margin: 1vh 0 6vh 265px;
+}
+
+.dailiesSubsManagementContainer_MarchC {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 88.7vh;
+    justify-content: left;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100%;
+}
+
+.dailiesSubscriptions_MarchC {
+    backdrop-filter: blur(4px);
+    background: #cddcbb;
+    border-right: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/dailies/march/kalineri-PgQ1h-ojz6Q-unsplash.jpg) 5% stretch;
+    box-sizing: border-box;
+    float: left;
+    height: 88.7vh;
+    opacity: 0.85;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 30px 15px;
+    position: relative;
+    width: 60%;
+}
+
+.dailiesAvailableFeeds_MarchC {
+    backdrop-filter: invert(100%);
+    background: #c9cdcc;
+    float: left;
+    height: 88.7vh;
+    opacity: 0.85;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 30px 15px;
+    position: relative;
+    width: 40%;
+}
+
+.dailiesCurrentSubsTitle_MarchC {
+    color: #070707;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.dailySubIcon_MarchC {
+    float: left;
+    max-height: 75px;
+    max-width: 75px;
+    width: 10%;
+}
+
+.dailiesSubscriptions_MarchC i {
+    color: #070707;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.dailyDeleter_MarchC {
+    color: #070707;
+    cursor: pointer;
+    float: left;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 18px;
+    margin: 10px 0;
+    width: 20%;
+    transform: translateY(7px);
+}
+
+.dailySubTitleDescription_MarchC {
+    color: #070707;
+    float: left;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 18px;
+    margin: 2vh 15px 25px 15px;
+    max-width: 750px;
+    width: 65%;
+}
+
+.dailiesAvailableSubsTitle_MarchC {
+    color: #070707;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.dailiesAvailableFeeds_MarchC i {
+    color: #070707;
+    float: left;
+    font-size: 24px;
+    transform: translateX(10px) translateY(2px);
+    margin-right: 8px;
+    width: 10%;
+}
+
+.dailiesFeedsSearchInput_MarchC {
+    background: #9bb876;
+    border: none;
+    color: #070707;
+    float: left;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 24px;
+    outline-color: #939c92;
+    padding: 0 0 0 5px;
+    width: 75%;
+}
+
+.dailyAdder_MarchC {
+    color: #070707;
+    cursor: pointer;
+    float: left;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 18px;
+    width: 15%;
+}
+
+.dailyAvailSubIcon_MarchC {
+    float: left;
+    margin-left: 10px;
+    max-height: 55px;
+    max-width: 55px;
+    width: 15%;
+}
+
+.dailyAvailSubTitleDescription_MarchC {
+    color: #070707;
+    float: left;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 18px;
+    margin: 0.5vh 15px 25px 15px;
+    max-width: 300px;
+    width: 70%;
+}
+
+.dailiesSubsManagementContainer_MarchC main {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.dailiesAvailableFeeds_MarchC main {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.hubReaderDay3BlockActive_MarchC {
+    display: none;
+    background: #ad90aa;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/dailies/march/kalineri-PgQ1h-ojz6Q-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: 1;
+}
+
+.hubReaderDay3BlockInactive_MarchC {
+    display: none;
+    background: #ad90aa;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/dailies/march/kalineri-PgQ1h-ojz6Q-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(800%) translateY(50%);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 1025px) {
+    .dailySubTitleDescription_MarchC {
+        max-width: 550px;
+        width: 100%;
+    }
+
+    .dailyAvailSubTitleDescription_MarchC {
+        max-width: 350px;
+        width: 100%;
+    }
+
+    .dailyAvailSubIcon_MarchC {
+        margin-left: 40px;
+    }
+}
