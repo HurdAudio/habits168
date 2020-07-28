@@ -1,5 +1,5 @@
-.backgroundDiv_AprilC {
-    background: url(https://habits168-hurdaudio.s3.amazonaws.com/landing/april/richard-fullbrook-RRokAMJFjfE-unsplash.jpg);
+.backgroundDiv_MayA {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/landing/may/deb-barnes-JZ6EA8Ha3zI-unsplash.jpg);
     background-size: cover;
     height: 100%;
     left: 0;
@@ -12,7 +12,7 @@
     z-index: -1;
 }
 
-#landingContainer_AprilC {
+#landingContainer_MayA {
     align-items: center;
     display: grid;
     grid-template-areas:
@@ -26,7 +26,7 @@
     width: 100%;
 }
 
-.landingTitleFlex_AprilC {
+.landingTitleFlex_MayA {
     backdrop-filter: blur(13px) saturate(150%);
     grid-area: header;
     grid-column: first / end;
@@ -34,7 +34,7 @@
     width: 100%;
 }
 
-.landingLogo_AprilC {
+.landingLogo_MayA {
     filter: brightness(100%) saturate(100%);
     float: left;
     grid-area: header;
@@ -46,20 +46,20 @@
     opacity: 0.9;
 }
 
-.landingTitleDiv_AprilC {
+.landingTitleDiv_MayA {
     align-self: center;
-    color: #6893b5;
+    color: #aeaf99;
     filter: brightness(150%);
     float: left;
     grid-column: 3 / span 2;
     grid-row: 1/ 2;
-    font-family: 'Niramit', sans-serif;
+    font-family: 'Varta', sans-serif;
     font-size: 102px;
     justify-self: center;
-    margin: 15px 20px 0 15px;
+    margin: 30px 20px 0 15px;
 }
 
-.landingTitleButtonsDiv_AprilC {
+.landingTitleButtonsDiv_MayA {
     align-self: stretch;
     float: left;
     grid-area: header;
@@ -69,44 +69,49 @@
     width: auto;
 }
 
-.landingTitleButtonsDiv_AprilC button {
-    background: #bb998f;
-    border: none;
-    border-radius: 10px 0;
-    box-shadow: 5px 5px 4px #0e0c10, -5px -5px 4px #0e0c10;
-    color: #0c0a0d;
+.landingTitleButtonsDiv_MayA button {
+    background: #4f7800;
+    border-bottom: none;
+    border-left: 2px solid #000a01;
+    border-right: 2px solid #000a01;
+    border-top: none;
+    box-shadow: 5px 5px 14px #1f3000;
+    color: #000400;
     cursor: pointer;
-    font-family: 'Niramit', sans-serif;
+    font-family: 'Varta', sans-serif;
     font-size: 24px;
     margin: -30px 10px 0 10px;
-    opacity: 0.85;
-    outline-color: #928f95  ;
+    outline-color: #8e9784  ;
     padding: 10px 20px;
     perspective: 50px;
     transition: all 0.3s linear;
+    width: auto;
     z-index: 15;
 }
 
-.landingTitleButtonsDiv_AprilC button:hover {
-    background: #241e2a;
-    box-shadow: 8px 8px 20px #b4c9da, -4px -4px 20px #b4c9da;
-    color: #b4c9da;
+.landingTitleButtonsDiv_MayA button:hover {
+    background: #1f3000;
+    border-left: 22px solid #cfd894;
+    border-right: none;
+    box-shadow: 8px 8px 20px #1f3000;
+    color: #cfd894;
+    padding 10px 5px 10px -32px;
     transition: all 0.3s linear;
 }
 
-.landingTitleButtonsDiv_AprilC button:active {
-    box-shadow: 0 0 0 #b4c9da;
+.landingTitleButtonsDiv_MayA button:active {
+    box-shadow: 0 0 0 #1f3000;
     filter: invert(100%);
     transition: all 0.2s linear;
 }
 
-.landingRecentlySharedLinksCollapsed_AprilC {
+.landingRecentlySharedLinksCollapsed_MayA {
     display: none;
 }
 
-.landingRecentlySharedLinksUncollapsed_AprilC {
+.landingRecentlySharedLinksUncollapsed_MayA {
     backdrop-filter: blur(9px) brightness(50%) saturate(60%) sepia(100%);
-    background: linear-gradient(90deg, #b4c9da, #d9b2a8, #d9b2a8, transparent);
+    background: linear-gradient(90deg, #cfd894, #aeaf99, #9fb129, transparent);
     grid-column: 1 / end;
     grid-row: 3 / span 4;
     height: 73vh;
@@ -116,9 +121,9 @@
     width: 100%;
 }
 
-.landingRecentlySharedPostsUncollapsed_AprilC {
+.landingRecentlySharedPostsUncollapsed_MayA {
     backdrop-filter: blur(9px) brightness(50%) saturate(60%) sepia(100%);
-    background: linear-gradient(90deg, #b4c9da, #d9b2a8, #d9b2a8, transparent);
+    background: linear-gradient(90deg, #cfd894, #aeaf99, #9fb129, transparent);
     grid-column: 1 / end;
     grid-row: 3 / span 4;
     height: 73vh;
@@ -128,23 +133,23 @@
     width: 100%;
 }
 
-.landingRecentlySharedPostsCollapsed_AprilC {
+.landingRecentlySharedPostsCollapsed_MayA {
     display: none;
 }
 
-.landingShareContainer_AprilC {
-    color: #040405;
-    font-family: 'Niramit', sans-serif;
+.landingShareContainer_MayA {
+    color: #000400;
+    font-family: 'Varta', sans-serif;
     height: auto;
     position: relative;
     width: 100%;
 }
 
-.landingLinkShare_AprilC {
+.landingLinkShare_MayA {
     display: inline-block;
 }
 
-.landingShareSharerAvatar_AprilC {
+.landingShareSharerAvatar_MayA {
     left: 15px;
     margin: 20px 0 20px 0;
     position: relative;
@@ -152,7 +157,7 @@
     width: 70px;
 }
 
-.landingByline_AprilC {
+.landingByline_MayA {
     float: left;
     left: 10px;
     position: relative;
@@ -160,7 +165,7 @@
     width: 20%;
 }
 
-.landingByline_AprilC p {
+.landingByline_MayA p {
     filter: brightness(100%);
     font-size: 18px;
     font-weight: 900;
@@ -168,8 +173,8 @@
     max-width: 220px;
 }
 
-.landingShareShare_AprilC {
-    border-left: solid 1px #040405;
+.landingShareShare_MayA {
+    border-left: solid 1px #000400;
     float: left;
     margin-bottom: 15px;
     position: relative;
@@ -177,35 +182,35 @@
     width: 78%;
 }
 
-.landingShareShare_AprilC a {
-    color: #293a48;
-    filter: brightness(100%);
+.landingShareShare_MayA a {
+    color: #1c2e08;
+    filter: brightness(130%);
     text-decoration: none;
 }
 
-.landingShareShare_AprilC p {
+.landingShareShare_MayA p {
     filter: brightness(100%);
     max-width: 700px;
 }
 
-.landingShareShare_AprilC a:hover {
-    color: #6893b5;
+.landingShareShare_MayA a:hover {
+    color: #242614;
     filter: brightness(100%);
 }
 
-.landingShareShare_AprilC a:visited {
-    color: #4d302a;
+.landingShareShare_MayA a:visited {
+    color: #242614;
     filter: brightness(100%);
 }
 
-.shareSourceIcon_AprilC {
+.shareSourceIcon_MayA {
     left: 5px;
     position: relative;
     top: 5px;
     width: 10%;
 }
 
-.shareViaCredit_AprilC {
+.shareViaCredit_MayA {
     display: inline-block;
     font-size: 24px;
     margin: -20px 3px 15px 10px;
@@ -214,21 +219,21 @@
     width: 80%;
 }
 
-.shareHeadline_AprilC {
+.shareHeadline_MayA {
     filter: brightness(100%);
     font-size: 36px;
     margin: 15px 15px 35px 15px;
     max-width: 710px;
 }
 
-.shareCleanDate_AprilC {
+.shareCleanDate_MayA {
     filter: brightness(100%);
     float: right;
     font-size: 18px;
     margin: 5px 30% 5px 0;
 }
 
-.shareDescription_AprilC {
+.shareDescription_MayA {
     filter: brightness(100%);
     font-size: 18px;
     line-height: 1.3em;
@@ -236,46 +241,46 @@
     max-width: 710px;
 }
 
-.shareAuthor_AprilC {
+.shareAuthor_MayA {
     filter: brightness(100%);
     float: left;
     font-size: 18px;
     margin: 0 0 0 5px;
 }
 
-.shareShareEnclosurePhoto_AprilC {
+.shareShareEnclosurePhoto_MayA {
     margin: 0 0 0 5px;
     max-width: 40%;
 }
 
-.shareShareBlogPhoto_AprilC {
+.shareShareBlogPhoto_MayA {
     margin: 0 0 0 15px;
     max-width: 50%;
 }
 
-.shareBlogTitle_AprilC {
+.shareBlogTitle_MayA {
     filter: brightness(100%);
     font-size: 36px;
     margin: -40px 0 0 120px;
 }
 
-.landingFooter_AprilC {
+.landingFooter_MayA {
     background: transparent;
     bottom: 1px;
-    color: #040405;
-    font-family: 'Niramit', sans-serif;
+    color: #000400;
+    font-family: 'Varta', sans-serif;
     font-size: 12px;
     left: 10px;
     position: absolute;
 
 }
 
-.landingLoginActive_AprilC {
-    background: linear-gradient(90deg, #b4c9da, #d5bcc2, #d5bcc2, #b4c9da);
-    box-shadow:  36px 36px 49px #0e0c10, 
-             -36px -36px 49px #0e0c10;
-    color: #040405;
-    font-family: 'Niramit', sans-serif;
+.landingLoginActive_MayA {
+    background: linear-gradient(90deg, #5c5f32, #b7ca90, #b7ca90, #5c5f32);
+    box-shadow:  36px 36px 49px #1f3000, 
+             -36px -36px 49px #1f3000;
+    color: #000400;
+    font-family: 'Varta', sans-serif;
     font-size: 42px;
     height: 400px;
     opacity: 1;
@@ -288,7 +293,7 @@
     z-index: 6;
 }
 
-.landingLoginInactive_AprilC {
+.landingLoginInactive_MayA {
     height: 0;
     position: absolute;
     transition: all 0.8s linear;
@@ -296,82 +301,87 @@
     z-index: -6;
 }
 
-.landingLoginActive_AprilC input {
-    background: #bb998f;
+.landingLoginActive_MayA input {
+    background: #cfd894;
     border: none;
-    color: #040405;
-    font-family: 'Niramit', sans-serif;
+    color: #000400;
+    font-family: 'Varta', sans-serif;
     font-size: 24px;
     margin: 25px 5px 10px 45px;
-    outline-color: #928f95;
+    outline-color: #8e9784;
     padding: 1px 1px 1px 15px;
     width: 75%;
 }
 
-.landingLoginInactive_AprilC input {
+.landingLoginInactive_MayA input {
     display: none;
 }
 
-.landingLoginActive_AprilC button {
-    background: #bb998f;
-    border: none;
-    border-radius: 10px 0;
-    box-shadow: 5px 5px 4px #0e0c10, -5px -5px 4px #0e0c10;
-    color: #0c0a0d;
+.landingLoginActive_MayA button {
+    background: #4f7800;
+    border-bottom: none;
+    border-left: 2px solid #000a01;
+    border-right: 2px solid #000a01;
+    border-top: none;
+    box-shadow: 5px 5px 14px #1f3000;
+    color: #000400;
     cursor: pointer;
-    font-family: 'Niramit', sans-serif;
-    font-size: 30px;
+    font-family: 'Varta', sans-serif;
+    font-size: 24px;
     margin: 20px 70px;
-    opacity: 0.85;
-    outline-color: #928f95;
+    outline-color: #8e9784  ;
     padding: 5px 15px;
     perspective: 50px;
     transition: all 0.3s linear;
+    width: auto;
     z-index: 15;
 }
 
-.landingLoginActive_AprilC button:hover {
-    background: #241e2a;
-    box-shadow: 8px 8px 20px #b4c9da, -4px -4px 20px #b4c9da;
-    color: #b4c9da;
+.landingLoginActive_MayA button:hover {
+    background: #1f3000;
+    border-left: 22px solid #cfd894;
+    border-right: none;
+    box-shadow: 8px 8px 20px #1f3000;
+    color: #cfd894;
+    padding 10px 5px 10px -32px;
     transition: all 0.3s linear;
 }
 
-.landingLoginActive_AprilC button:active {
-    box-shadow: 0 0 0 #b4c9da;
+.landingLoginActive_MayA button:active {
+    box-shadow: 0 0 0 #1f3000;
     filter: invert(100%);
     transition: all 0.2s linear;
 }
 
-.landingLoginInactive_AprilC button {
+.landingLoginInactive_MayA button {
     display: none;
 }
 
-.landingLoginActive_AprilC a {
-    color: #783524;
+.landingLoginActive_MayA a {
+    color: #000400;
     cursor: pointer;
     float: right;
-    font-family: 'Niramit', sans-serif;
+    font-family: 'Varta', sans-serif;
     font-size: 24px;
     margin: 30px 0 10px 0;
     position: relative;
     text-decoration: none;
 }
 
-.landingLoginInactive_AprilC a {
+.landingLoginInactive_MayA a {
     display: none;
 }
 
-.landingLoginActive_AprilC h2 {
-    color: #000000;
+.landingLoginActive_MayA h2 {
+    color: #000400;
     margin: 25px 20px 1px 20px;
 }
 
-.landingLoginInactive_AprilC h2 {
+.landingLoginInactive_MayA h2 {
     display: none;
 }
 
-.tabs_AprilC {
+.tabs_MayA {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -379,15 +389,15 @@
     grid-row: line2/ line3;
     height: auto;
     justify-content: flex-start;
-    opacity: 0.9;
+    opacity: 1;
     width: 100%;
 }
 
-.tabActive_AprilC {
-    background: #b26551;
-    color: #040405;
+.tabActive_MayA {
+    background: #4f7800;
+    color: #000400;
     cursor: pointer;
-    font-family: 'Niramit', sans-serif;
+    font-family: 'Varta', sans-serif;
     font-size: 30px;
     grid-area: tabs;
     height: 30px;
@@ -397,11 +407,11 @@
     transition: all 0.5s linear;
 }
 
-.tabInactive_AprilC {
-    background: transparent;
-    color: #868586;
+.tabInactive_MayA {
+    background: #cfd894;
+    color: #1c2e08;
     cursor: pointer;
-    font-family: 'Niramit', sans-serif;
+    font-family: 'Varta', sans-serif;
     font-size: 30px;
     grid-area: tabs;
     height: 30px;
@@ -413,109 +423,109 @@
 
 @media only screen and (max-width: 1024px) {
 
-    .landingTitleButtonsDiv_AprilC {
+    .landingTitleButtonsDiv_MayA {
         padding: 65px 5px 5px 10%;
     }
 
-    .backgroundDiv_AprilC {
+    .backgroundDiv_MayA {
         background-size: 400%;
     }
 
-    .landingTitle_AprilC {
+    .landingTitle_MayA {
         font-size: 18px;
     }
 
-    .landingShareShare_AprilC {
+    .landingShareShare_MayA {
         width: 70%;
     }
 
-    .landingRecentlySharedPostsUncollapsed_AprilC {
+    .landingRecentlySharedPostsUncollapsed_MayA {
         height: 75vh;
     }
 
-    .landingRecentlySharedLinksUncollapsed_AprilC {
+    .landingRecentlySharedLinksUncollapsed_MayA {
         height: 75vh;
     }
 }
 
 @media only screen and (max-width: 823px) {
 
-    .landingTitleButtonsDiv_AprilC {
+    .landingTitleButtonsDiv_MayA {
         padding: 65px 5px 5px 10%;
     }
 
-    .landingTitle_AprilC {
+    .landingTitle_MayA {
         font-size: 18px;
     }
 
-    .landingShareShare_AprilC {
+    .landingShareShare_MayA {
         width: 70%;
     }
 
-    .landingRecentlySharedPostsUncollapsed_AprilC {
+    .landingRecentlySharedPostsUncollapsed_MayA {
         height: 75vh;
     }
 
-    .landingRecentlySharedLinksUncollapsed_AprilC {
+    .landingRecentlySharedLinksUncollapsed_MayA {
         height: 75vh;
     }
 }
 
 @media only screen and (max-width: 768px) {
 
-    .landingTitleButtonsDiv_AprilC {
+    .landingTitleButtonsDiv_MayA {
         padding: 65px 5px 5px 10%;
     }
 
 
-    .landingTitleButtonsDiv_AprilC {
+    .landingTitleButtonsDiv_MayA {
         padding: 65px 5px 5px 10%;
     }
 
-    .landingTitle_AprilC {
+    .landingTitle_MayA {
         font-size: 18px;
     }
 
-    .landingShareShare_AprilC {
+    .landingShareShare_MayA {
         width: 70%;
     }
 
-    .landingRecentlySharedPostsUncollapsed_AprilC {
+    .landingRecentlySharedPostsUncollapsed_MayA {
         height: 75vh;
     }
 
-    .landingRecentlySharedLinksUncollapsed_AprilC {
+    .landingRecentlySharedLinksUncollapsed_MayA {
         height: 75vh;
     }
 }
 
 @media only screen and (max-width: 736px) {
-    .backgroundDiv_AprilC {
+    .backgroundDiv_MayA {
         background-size: 250%;
     }
 
-    .landingTitle_AprilC {
+    .landingTitle_MayA {
         font-size: 24px;
     }
 
-    .landingTitleButtonsDiv_AprilC {
+    .landingTitleButtonsDiv_MayA {
         padding: 65px 5px 5px 10%;
     }
 
-    .landingTitleButtonsDiv_AprilC button {
+    .landingTitleButtonsDiv_MayA button {
         font-size: 12px;
         margin: -30px 10px 10px 10px;
     }
 
-    .tabs_AprilC {
+    .tabs_MayA {
         display: none;
     }
 
-    .landingRecentlySharedLinksUncollapsed_AprilC {
+    .landingRecentlySharedLinksUncollapsed_MayA {
         display: none;
     }
 
-    .landingLoginActive_AprilC {
+    .landingLoginActive_MayA {
         left: 0;
         margin: 0;
         position: absolute;
@@ -523,41 +533,41 @@
         width: 79%;
     }
 
-    .landingLoginActive_AprilC a {
+    .landingLoginActive_MayA a {
         margin-top: 80px;
     }
 
-    .landingLoginInactive_AprilC a {
+    .landingLoginInactive_MayA a {
         margin-top: 80px;
     }
 
-    .landingLoginActive_AprilC button {
+    .landingLoginActive_MayA button {
         margin-left: 15px;
         margin-right: 15px;
     }
 
-    .landingLoginInactive_AprilC button {
+    .landingLoginInactive_MayA button {
         margin-left: 15px;
         margin-right: 15px;
     }
 
-    .landingLoginActive_AprilC h3 {
+    .landingLoginActive_MayA h3 {
         font-size: 18px;
     }
 
-    .landingLoginInactive_AprilC h3 {
+    .landingLoginInactive_MayA h3 {
         font-size: 18px;
     }
 
-    .landingLoginActive_AprilC input {
+    .landingLoginActive_MayA input {
         margin-left: 17px;
     }
 
-    .landingLoginInactive_AprilC input {
+    .landingLoginInactive_MayA input {
         margin-left: 17px;
     }
 
-    .landingLoginInactive_AprilC {
+    .landingLoginInactive_MayA {
         left: 0;
         margin: 0;
         position: absolute;
@@ -568,36 +578,36 @@
 
 @media only screen and (max-width: 731px) {
 
-    .landingTitleButtonsDiv_AprilC {
+    .landingTitleButtonsDiv_MayA {
         padding: 65px 5px 5px 10%;
     }
 
-    .backgroundDiv_AprilC {
+    .backgroundDiv_MayA {
         background-size: 250%;
     }
 
-    .landingTitle_AprilC {
+    .landingTitle_MayA {
         font-size: 24px;
     }
 
-    .landingTitleButtonsDiv_AprilC {
+    .landingTitleButtonsDiv_MayA {
         padding: 65px 5px 5px 10%;
     }
 
-    .landingTitleButtonsDiv_AprilC button {
+    .landingTitleButtonsDiv_MayA button {
         font-size: 12px;
         margin: -30px 10px 10px 10px;
     }
 
-    .tabs_AprilC {
+    .tabs_MayA {
         display: none;
     }
 
-    .landingRecentlySharedLinksUncollapsed_AprilC {
+    .landingRecentlySharedLinksUncollapsed_MayA {
         display: none;
     }
 
-    .landingLoginActive_AprilC {
+    .landingLoginActive_MayA {
         left: 0;
         margin: 0;
         position: absolute;
@@ -605,41 +615,41 @@
         width: 79%;
     }
 
-    .landingLoginActive_AprilC a {
+    .landingLoginActive_MayA a {
         margin-top: 80px;
     }
 
-    .landingLoginInactive_AprilC a {
+    .landingLoginInactive_MayA a {
         margin-top: 80px;
     }
 
-    .landingLoginActive_AprilC button {
+    .landingLoginActive_MayA button {
         margin-left: 15px;
         margin-right: 15px;
     }
 
-    .landingLoginInactive_AprilC button {
+    .landingLoginInactive_MayA button {
         margin-left: 15px;
         margin-right: 15px;
     }
 
-    .landingLoginActive_AprilC h3 {
+    .landingLoginActive_MayA h3 {
         font-size: 18px;
     }
 
-    .landingLoginInactive_AprilC h3 {
+    .landingLoginInactive_MayA h3 {
         font-size: 18px;
     }
 
-    .landingLoginActive_AprilC input {
+    .landingLoginActive_MayA input {
         margin-left: 17px;
     }
 
-    .landingLoginInactive_AprilC input {
+    .landingLoginInactive_MayA input {
         margin-left: 17px;
     }
 
-    .landingLoginInactive_AprilC {
+    .landingLoginInactive_MayA {
         left: 0;
         margin: 0;
         position: absolute;
@@ -650,36 +660,36 @@
 
 @media only screen and (max-width: 640px) {
 
-    .landingTitleButtonsDiv_AprilC {
+    .landingTitleButtonsDiv_MayA {
         padding: 65px 5px 5px 10%;
     }
 
-    .backgroundDiv_AprilC {
+    .backgroundDiv_MayA {
         background-size: 250%;
     }
 
-    .landingTitle_AprilC {
+    .landingTitle_MayA {
         font-size: 24px;
     }
 
-    .landingTitleButtonsDiv_AprilC {
+    .landingTitleButtonsDiv_MayA {
         padding: 65px 5px 5px 10%;
     }
 
-    .landingTitleButtonsDiv_AprilC button {
+    .landingTitleButtonsDiv_MayA button {
         font-size: 12px;
         margin: -30px 10px 10px 10px;
     }
 
-    .tabs_AprilC {
+    .tabs_MayA {
         display: none;
     }
 
-    .landingRecentlySharedLinksUncollapsed_AprilC {
+    .landingRecentlySharedLinksUncollapsed_MayA {
         display: none;
     }
 
-    .landingLoginActive_AprilC {
+    .landingLoginActive_MayA {
         left: 0;
         margin: 0;
         position: absolute;
@@ -687,41 +697,41 @@
         width: 79%;
     }
 
-    .landingLoginActive_AprilC a {
+    .landingLoginActive_MayA a {
         margin-top: 80px;
     }
 
-    .landingLoginInactive_AprilC a {
+    .landingLoginInactive_MayA a {
         margin-top: 80px;
     }
 
-    .landingLoginActive_AprilC button {
+    .landingLoginActive_MayA button {
         margin-left: 15px;
         margin-right: 15px;
     }
 
-    .landingLoginInactive_AprilC button {
+    .landingLoginInactive_MayA button {
         margin-left: 15px;
         margin-right: 15px;
     }
 
-    .landingLoginActive_AprilC h3 {
+    .landingLoginActive_MayA h3 {
         font-size: 18px;
     }
 
-    .landingLoginInactive_AprilC h3 {
+    .landingLoginInactive_MayA h3 {
         font-size: 18px;
     }
 
-    .landingLoginActive_AprilC input {
+    .landingLoginActive_MayA input {
         margin-left: 17px;
     }
 
-    .landingLoginInactive_AprilC input {
+    .landingLoginInactive_MayA input {
         margin-left: 17px;
     }
 
-    .landingLoginInactive_AprilC {
+    .landingLoginInactive_MayA {
         left: 0;
         margin: 0;
         position: absolute;
@@ -731,40 +741,40 @@
 }
 
 @media only screen and (max-width: 568px) {
-    .landingTitleButtonsDiv_AprilC {
+    .landingTitleButtonsDiv_MayA {
         padding: 65px 5px 5px 10%;
     }
 
-    .backgroundDiv_AprilC {
+    .backgroundDiv_MayA {
         background-size: 250%;
     }
 
-    .landingTitle_AprilC {
+    .landingTitle_MayA {
         font-size: 24px;
     }
 
-    .landingTitleButtonsDiv_AprilC {
+    .landingTitleButtonsDiv_MayA {
         padding: 65px 5px 5px 10%;
     }
 
-    .landingTitleButtonsDiv_AprilC button {
+    .landingTitleButtonsDiv_MayA button {
         font-size: 12px;
         margin: -30px 15px 15px 15px;
     }
 
-    .landingUserGreeting_AprilC {
+    .landingUserGreeting_MayA {
         margin-top: -120px;
     }
 
-    .tabs_AprilC {
+    .tabs_MayA {
         display: none;
     }
 
-    .landingRecentlySharedLinksUncollapsed_AprilC {
+    .landingRecentlySharedLinksUncollapsed_MayA {
         display: none;
     }
 
-    .landingLoginActive_AprilC {
+    .landingLoginActive_MayA {
         left: 0;
         margin: 0;
         position: absolute;
@@ -772,41 +782,41 @@
         width: 79%;
     }
 
-    .landingLoginActive_AprilC a {
+    .landingLoginActive_MayA a {
         margin-top: 80px;
     }
 
-    .landingLoginInactive_AprilC a {
+    .landingLoginInactive_MayA a {
         margin-top: 80px;
     }
 
-    .landingLoginActive_AprilC button {
+    .landingLoginActive_MayA button {
         margin-left: 15px;
         margin-right: 15px;
     }
 
-    .landingLoginInactive_AprilC button {
+    .landingLoginInactive_MayA button {
         margin-left: 15px;
         margin-right: 15px;
     }
 
-    .landingLoginActive_AprilC h3 {
+    .landingLoginActive_MayA h3 {
         font-size: 18px;
     }
 
-    .landingLoginInactive_AprilC h3 {
+    .landingLoginInactive_MayA h3 {
         font-size: 18px;
     }
 
-    .landingLoginActive_AprilC input {
+    .landingLoginActive_MayA input {
         margin-left: 17px;
     }
 
-    .landingLoginInactive_AprilC input {
+    .landingLoginInactive_MayA input {
         margin-left: 17px;
     }
 
-    .landingLoginInactive_AprilC {
+    .landingLoginInactive_MayA {
         left: 0;
         margin: 0;
         position: absolute;
@@ -816,31 +826,31 @@
 }
 
 @media only screen and (max-width: 414px) {
-    .backgroundDiv_AprilC {
+    .backgroundDiv_MayA {
         background-size: 250%;
     }
 
-    .landingTitle_AprilC {
+    .landingTitle_MayA {
         font-size: 24px;
     }
 
-    .landingTitleButtonsDiv_AprilC {
+    .landingTitleButtonsDiv_MayA {
         padding: 65px 5px 5px 10%;
     }
 
-    .landingTitleButtonsDiv_AprilC button {
+    .landingTitleButtonsDiv_MayA button {
         font-size: 12px;
     }
 
-    .tabs_AprilC {
+    .tabs_MayA {
         display: none;
     }
 
-    .landingRecentlySharedLinksUncollapsed_AprilC {
+    .landingRecentlySharedLinksUncollapsed_MayA {
         display: none;
     }
 
-    .landingLoginActive_AprilC {
+    .landingLoginActive_MayA {
         left: 0;
         margin: 0;
         position: absolute;
@@ -848,41 +858,41 @@
         width: 79%;
     }
 
-    .landingLoginActive_AprilC a {
+    .landingLoginActive_MayA a {
         margin-top: 80px;
     }
 
-    .landingLoginInactive_AprilC a {
+    .landingLoginInactive_MayA a {
         margin-top: 80px;
     }
 
-    .landingLoginActive_AprilC button {
+    .landingLoginActive_MayA button {
         margin-left: 15px;
         margin-right: 15px;
     }
 
-    .landingLoginInactive_AprilC button {
+    .landingLoginInactive_MayA button {
         margin-left: 15px;
         margin-right: 15px;
     }
 
-    .landingLoginActive_AprilC h3 {
+    .landingLoginActive_MayA h3 {
         font-size: 18px;
     }
 
-    .landingLoginInactive_AprilC h3 {
+    .landingLoginInactive_MayA h3 {
         font-size: 18px;
     }
 
-    .landingLoginActive_AprilC input {
+    .landingLoginActive_MayA input {
         margin-left: 17px;
     }
 
-    .landingLoginInactive_AprilC input {
+    .landingLoginInactive_MayA input {
         margin-left: 17px;
     }
 
-    .landingLoginInactive_AprilC {
+    .landingLoginInactive_MayA {
         left: 0;
         margin: 0;
         position: absolute;
@@ -892,31 +902,31 @@
 }
 
 @media only screen and (max-width: 411px) {
-    .backgroundDiv_AprilC {
+    .backgroundDiv_MayA {
         background-size: 250%;
     }
 
-    .landingTitle_AprilC {
+    .landingTitle_MayA {
         font-size: 24px;
     }
 
-    .landingTitleButtonsDiv_AprilC {
+    .landingTitleButtonsDiv_MayA {
         padding: 65px 5px 5px 10%;
     }
 
-    .landingTitleButtonsDiv_AprilC button {
+    .landingTitleButtonsDiv_MayA button {
         font-size: 12px;
     }
 
-    .tabs_AprilC {
+    .tabs_MayA {
         display: none;
     }
 
-    .landingRecentlySharedLinksUncollapsed_AprilC {
+    .landingRecentlySharedLinksUncollapsed_MayA {
         display: none;
     }
 
-    .landingLoginActive_AprilC {
+    .landingLoginActive_MayA {
         left: 0;
         margin: 0;
         position: absolute;
@@ -924,41 +934,41 @@
         width: 79%;
     }
 
-    .landingLoginActive_AprilC a {
+    .landingLoginActive_MayA a {
         margin-top: 80px;
     }
 
-    .landingLoginInactive_AprilC a {
+    .landingLoginInactive_MayA a {
         margin-top: 80px;
     }
 
-    .landingLoginActive_AprilC button {
+    .landingLoginActive_MayA button {
         margin-left: 15px;
         margin-right: 15px;
     }
 
-    .landingLoginInactive_AprilC button {
+    .landingLoginInactive_MayA button {
         margin-left: 15px;
         margin-right: 15px;
     }
 
-    .landingLoginActive_AprilC h3 {
+    .landingLoginActive_MayA h3 {
         font-size: 18px;
     }
 
-    .landingLoginInactive_AprilC h3 {
+    .landingLoginInactive_MayA h3 {
         font-size: 18px;
     }
 
-    .landingLoginActive_AprilC input {
+    .landingLoginActive_MayA input {
         margin-left: 17px;
     }
 
-    .landingLoginInactive_AprilC input {
+    .landingLoginInactive_MayA input {
         margin-left: 17px;
     }
 
-    .landingLoginInactive_AprilC {
+    .landingLoginInactive_MayA {
         left: 0;
         margin: 0;
         position: absolute;
@@ -968,31 +978,31 @@
 }
 
 @media only screen and (max-width: 375px) {
-    .backgroundDiv_AprilC {
+    .backgroundDiv_MayA {
         background-size: 250%;
     }
 
-    .landingTitle_AprilC {
+    .landingTitle_MayA {
         font-size: 24px;
     }
 
-    .landingTitleButtonsDiv_AprilC {
+    .landingTitleButtonsDiv_MayA {
         padding: 65px 5px 5px 10%;
     }
 
-    .landingTitleButtonsDiv_AprilC button {
+    .landingTitleButtonsDiv_MayA button {
         font-size: 12px;
     }
 
-    .tabs_AprilC {
+    .tabs_MayA {
         display: none;
     }
 
-    .landingRecentlySharedLinksUncollapsed_AprilC {
+    .landingRecentlySharedLinksUncollapsed_MayA {
         display: none;
     }
 
-    .landingLoginActive_AprilC {
+    .landingLoginActive_MayA {
         left: 0;
         margin: 0;
         position: absolute;
@@ -1000,41 +1010,41 @@
         width: 61.5%;
     }
 
-    .landingLoginActive_AprilC a {
+    .landingLoginActive_MayA a {
         margin-top: 80px;
     }
 
-    .landingLoginInactive_AprilC a {
+    .landingLoginInactive_MayA a {
         margin-top: 80px;
     }
 
-    .landingLoginActive_AprilC button {
+    .landingLoginActive_MayA button {
         margin-left: 15px;
         margin-right: 15px;
     }
 
-    .landingLoginInactive_AprilC button {
+    .landingLoginInactive_MayA button {
         margin-left: 15px;
         margin-right: 15px;
     }
 
-    .landingLoginActive_AprilC h3 {
+    .landingLoginActive_MayA h3 {
         font-size: 18px;
     }
 
-    .landingLoginInactive_AprilC h3 {
+    .landingLoginInactive_MayA h3 {
         font-size: 18px;
     }
 
-    .landingLoginActive_AprilC input {
+    .landingLoginActive_MayA input {
         margin-left: 17px;
     }
 
-    .landingLoginInactive_AprilC input {
+    .landingLoginInactive_MayA input {
         margin-left: 17px;
     }
 
-    .landingLoginInactive_AprilC {
+    .landingLoginInactive_MayA {
         left: 0;
         margin: 0;
         position: absolute;
@@ -1044,31 +1054,31 @@
 }
 
 @media only screen and (max-width: 360px) {
-    .backgroundDiv_AprilC {
+    .backgroundDiv_MayA {
         background-size: 250%;
     }
 
-    .landingTitle_AprilC {
+    .landingTitle_MayA {
         font-size: 24px;
     }
 
-    .landingTitleButtonsDiv_AprilC {
+    .landingTitleButtonsDiv_MayA {
         padding: 65px 5px 5px 10%;
     }
 
-    .landingTitleButtonsDiv_AprilC button {
+    .landingTitleButtonsDiv_MayA button {
         font-size: 12px;
     }
 
-    .tabs_AprilC {
+    .tabs_MayA {
         display: none;
     }
 
-    .landingRecentlySharedLinksUncollapsed_AprilC {
+    .landingRecentlySharedLinksUncollapsed_MayA {
         display: none;
     }
 
-    .landingLoginActive_AprilC {
+    .landingLoginActive_MayA {
         left: 0;
         margin: 0;
         position: absolute;
@@ -1076,41 +1086,41 @@
         width: 77%;
     }
 
-    .landingLoginActive_AprilC a {
+    .landingLoginActive_MayA a {
         margin-top: 80px;
     }
 
-    .landingLoginInactive_AprilC a {
+    .landingLoginInactive_MayA a {
         margin-top: 80px;
     }
 
-    .landingLoginActive_AprilC button {
+    .landingLoginActive_MayA button {
         margin-left: 15px;
         margin-right: 15px;
     }
 
-    .landingLoginInactive_AprilC button {
+    .landingLoginInactive_MayA button {
         margin-left: 15px;
         margin-right: 15px;
     }
 
-    .landingLoginActive_AprilC h3 {
+    .landingLoginActive_MayA h3 {
         font-size: 18px;
     }
 
-    .landingLoginInactive_AprilC h3 {
+    .landingLoginInactive_MayA h3 {
         font-size: 18px;
     }
 
-    .landingLoginActive_AprilC input {
+    .landingLoginActive_MayA input {
         margin-left: 17px;
     }
 
-    .landingLoginInactive_AprilC input {
+    .landingLoginInactive_MayA input {
         margin-left: 17px;
     }
 
-    .landingLoginInactive_AprilC {
+    .landingLoginInactive_MayA {
         left: 0;
         margin: 0;
         position: absolute;
@@ -1120,31 +1130,31 @@
 }
 
 @media only screen and (max-width: 320px) {
-    .backgroundDiv_AprilC {
+    .backgroundDiv_MayA {
         background-size: 250%;
     }
 
-    .landingTitle_AprilC {
+    .landingTitle_MayA {
         font-size: 24px;
     }
 
-    .landingTitleButtonsDiv_AprilC {
+    .landingTitleButtonsDiv_MayA {
         padding: 65px 5px 5px 10%;
     }
 
-    .landingTitleButtonsDiv_AprilC button {
+    .landingTitleButtonsDiv_MayA button {
         font-size: 12px;
     }
 
-    .tabs_AprilC {
+    .tabs_MayA {
         display: none;
     }
 
-    .landingRecentlySharedLinksUncollapsed_AprilC {
+    .landingRecentlySharedLinksUncollapsed_MayA {
         display: none;
     }
 
-    .landingLoginActive_AprilC {
+    .landingLoginActive_MayA {
         left: -13%;
         margin: 0;
         position: absolute;
@@ -1153,41 +1163,41 @@
         width: 320px;
     }
 
-    .landingLoginActive_AprilC a {
+    .landingLoginActive_MayA a {
         margin-top: 80px;
     }
 
-    .landingLoginInactive_AprilC a {
+    .landingLoginInactive_MayA a {
         margin-top: 80px;
     }
 
-    .landingLoginActive_AprilC button {
+    .landingLoginActive_MayA button {
         margin-left: 15px;
         margin-right: 15px;
     }
 
-    .landingLoginInactive_AprilC button {
+    .landingLoginInactive_MayA button {
         margin-left: 15px;
         margin-right: 15px;
     }
 
-    .landingLoginActive_AprilC h3 {
+    .landingLoginActive_MayA h3 {
         font-size: 18px;
     }
 
-    .landingLoginInactive_AprilC h3 {
+    .landingLoginInactive_MayA h3 {
         font-size: 18px;
     }
 
-    .landingLoginActive_AprilC input {
+    .landingLoginActive_MayA input {
         margin-left: 17px;
     }
 
-    .landingLoginInactive_AprilC input {
+    .landingLoginInactive_MayA input {
         margin-left: 17px;
     }
 
-    .landingLoginInactive_AprilC {
+    .landingLoginInactive_MayA {
         left: -13%;
         margin: 0;
         position: absolute;
