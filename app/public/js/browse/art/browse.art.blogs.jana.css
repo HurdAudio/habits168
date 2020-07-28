@@ -1,0 +1,207 @@
+.browseCategoricalFeeds_art_JanuaryA {
+    background-image: url(https://s3.amazonaws.com/hours168-hurdaudio/img/january/158-rue-de-tolbiac.jpg);
+    background-size: cover;
+    border: none;
+    filter: brightness(100%);
+    height: 77vh;
+    margin: 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 34%;
+}
+
+/*
+art januaryA === Abstract Art
+*/
+
+.browsePodCategoricalFeeds_art_JanuaryA {
+    display: none;
+    background-image: url();
+    background-size: cover;
+    border: none;
+    filter: brightness(65%);
+    height: 73vh;
+    margin: 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 15px;
+    width: 34%;
+}
+
+.browsePodCategoricalFeeds_art_JanuaryA img {
+    display: none;
+    filter: brightness(120%) drop-shadow(5px 5px 5px #009edb);
+    height: 50px;
+    margin: 0 15px 0 0;
+    width: 50px;
+}
+
+.browseIndividualPodFeedData_art_JanuaryA {
+    display: none;
+    background-image: url();
+    background-size: cover;
+    border: none;
+    filter: brightness(65%);
+    height: 77vh;
+    margin: 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 34%;
+}
+
+.browseIndividualPodFeedData_art_JanuaryA img {
+    display: none;
+    filter: brightness(120%) drop-shadow(5px 5px 5px #009edb);
+    margin: 10px 15%;
+    width: 70%;
+}
+
+.browseIndividualPodFeedData_art_JanuaryA h3 {
+    display: none;
+    color: #80aabb;
+    cursor: pointer;
+    filter: brightness(300%);
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: 36px;
+    margin: 5px 10%;
+    width: 80%;
+}
+
+.browseIndividualPodFeedData_art_JanuaryA p {
+    display: none;
+    color: #80aabb;
+    cursor: pointer;
+    filter: brightness(300%);
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: 30px;
+    margin: 15px 10%;
+    width: 80%;
+}
+
+.browseIndividualPodFeedData_art_JanuaryA button {
+    display: none;
+    background: #3c5375;
+    border: none;
+    color: #aedbdf;
+    cursor: pointer;
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: 36px;
+    margin: 30px 35%;
+    outline-color: #aedbdf;
+    transform: skew(-15deg);
+    transition: all 0.4s linear;
+}
+
+.browseIndividualPodFeedData_art_JanuaryA button:hover {
+    background: #878886;
+    color: #050605;
+    outline-color: #050605;
+    transform: skew(-5deg);
+    transition: all 0.4s linear;
+}
+
+.browseIndividualPodFeedData_art_JanuaryA button:active {
+    background: #050605;
+    color: #878886;
+    outline-color: #878886;
+    transition: all 0.4s linear;
+}
+
+
+.browseFeedsContainer_art_JanuaryA {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 5px 15px;
+}
+
+.browseFeedsContainer_art_JanuaryA img {
+    filter: brightness(120%) drop-shadow(5px 5px 5px #273633);
+    height: 50px;
+    margin: 0 15px 0 0;
+    width: 50px;
+}
+
+.browsePodCategoricalFeeds_art_JanuaryA p {
+    display: none;
+    color: #81f1f9;
+    cursor: pointer;
+    filter: brightness(300%);
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: 30px;
+}
+
+.browseFeedsTitleDiv_art_JanuaryA {
+    width: 75%;
+}
+
+.browseFeedsTitleDiv_art_JanuaryA p {
+    color: #100e0d;
+    filter: brightness(100%);
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: 30px;
+}
+
+.browseIndividualFeedData_art_JanuaryA {
+    background-image: url(https://s3.amazonaws.com/hours168-hurdaudio/img/january/158-rue-de-tolbiac.jpg);
+    background-size: cover;
+    border: none;
+    filter: brightness(100%);
+    height: 77vh;
+    margin: 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 34%;
+}
+
+.browseIndividualFeedData_art_JanuaryA img {
+    filter: brightness(120%) drop-shadow(5px 5px 5px #273633);
+    margin: 10px 15%;
+    width: 70%;
+}
+
+.browseIndividualFeedData_art_JanuaryA h3 {
+    color: #100e0d;
+    filter: brightness(100%);
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: 36px;
+    margin: 5px 10%;
+    width: 80%;
+}
+
+.browseIndividualFeedData_art_JanuaryA p {
+    color: #100e0d;
+    filter: brightness(100%);
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: 30px;
+    margin: 15px 10%;
+    width: 80%;
+}
+
+.browseIndividualFeedData_art_JanuaryA button {
+    background: #638880;
+    border: none;
+    color: #100e0d;
+    cursor: pointer;
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: 36px;
+    margin: 30px 35%;
+    outline-color: #99adc7;
+    transform: skew(-15deg);
+    transition: all 0.4s linear;
+}
+
+.browseIndividualFeedData_art_JanuaryA button:hover {
+    background: #471a1a;
+    color: #d2d2ce;
+    transform: skew(-5deg);
+    transition: all 0.4s linear;
+}
+
+.browseIndividualFeedData_art_JanuaryA button:active {
+    background: #325a8e;
+    color: #949291;
+    transition: all 0.4s linear;
+}

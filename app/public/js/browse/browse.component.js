@@ -44,6 +44,58 @@
         vm.removePodSubscription = removePodSubscription;
         vm.addPodSubscription = addPodSubscription;
         vm.currentAdder = null;
+        vm.artBlogs = [
+            {
+                uuid: '0e0e0359-c8db-4290-a50c-3c9bf9f7635b',
+                author: null,
+                description: 'Art, design, and visual culture.',
+                link: 'https://www.thisiscolossal.com/',
+                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/Colossal.png',
+                items: null,
+                rss: 'https://www.thisiscolossal.com/feed/',
+                title: 'Colossal'
+            },
+            {
+                uuid: 'f40998d9-be6c-43d3-a110-a38a3eba2834',
+                author: null,
+                description: 'CREATE * INSPIRE * COMMUNITY * ART * DESIGN * MUSIC * FILM * PHOTO * PROJECTS',
+                link: 'https://www.booooooom.com/',
+                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/logo-fb.jpg',
+                items: null,
+                rss: 'https://www.booooooom.com/feed/',
+                title: 'BOOOOOOOM! – CREATE * INSPIRE * COMMUNITY * ART * DESIGN * MUSIC * FILM * PHOTO * PROJECTS'
+            },
+            {
+                uuid: '9a3d2f71-9ca3-4c8f-85f0-a38a6df70912',
+                author: null,
+                description: 'Online version of the leading quarterly contemporary and underground art bible, Juxtapoz Art and Culture Magazine, with featured articles, blogs, video, reader art, gallery guides, and archives.',
+                link: 'https://www.juxtapoz.com/',
+                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/Juxtapoz_logo_425x113.png',
+                items: null,
+                rss: 'https://www.juxtapoz.com/feed/',
+                title: 'Juxtapoz Magazine - Juxtapoz Magazine - Home'
+            },
+            {
+                uuid: 'defa75f9-f581-4410-8586-4825e498ced1',
+                author: null,
+                description: 'IGNANT is an award-winning online magazine featuring the finest in art, design, photography, travel and architecture',
+                link: 'https://www.ignant.com/',
+                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/rUcBP8hDTIIm0xcOpmWw_48361450_2855126224504886_4936663533468254208_o.jpg',
+                items: null,
+                rss: 'https://www.ignant.com/feed/',
+                title: 'IGNANT',
+            },
+            {
+                uuid: '52039a0b-79c8-407e-91f2-4e67db67dc6d',
+                author: null,
+                description: 'Artzine - Latest News',
+                link: 'https://artzine.com/',
+                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/logo-1024artzine.png',
+                items: null,
+                rss: 'https://api.artzine.com/feeds/news.rss',
+                title: 'Artzine'
+            }
+        ];
 //        vm.techBlogs = [
 //            {
 //                uuid: '2c7be513-9083-439c-937f-42bbe95c0cb9',
@@ -513,6 +565,9 @@
                 case('_tech'):
                     tableName = 'tech_podcasts';
                     break;
+                case('_art'):
+                    tableName = 'art_podcasts';
+                    break;
                 default:
                     alert('non-supported podcast category');
             }
@@ -585,11 +640,17 @@
                 case('_tech'):
                     tableName = 'tech_blogs/assembled';
                     break;
+                case('_art'):
+                    tableName = 'art_blogs';
+                    break;
                 default:
                     alert('non-supported blog category');
             }
-            if (tableName !== '') {
-                    
+            if (tableName === 'art_blogs') {
+                vm.viewBlogFeeds = vm.artBlogs;
+                return;
+            }
+            if (tableName !== '') {  
                 $http.get(`/${tableName}`)
                 .then(allFeeds => {
                     vm.viewBlogFeeds = allFeeds.data.sort((a, b) => {
@@ -806,6 +867,7 @@
                 .then(skinData => {
                     let skin = skinData.data;
                     vm.browseMonth = skin.browse;
+//                    vm.browseMonth = '_JanuaryA';
                     vm.browseContainer = 'browseActive' + vm.browseMonth;
                     vm.blogFeedTabState = 'browseTabActive' + vm.browseMonth;
                     vm.podcastFeedTabState = 'browseTabInactive' + vm.browseMonth;
