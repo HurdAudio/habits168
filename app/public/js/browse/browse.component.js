@@ -844,8 +844,8 @@
             $http.get('/skins/browse')
                 .then(skinData => {
                     let skin = skinData.data;
-//                    vm.browseMonth = skin.browse;
-                    vm.browseMonth = '_JanuaryA';
+                    vm.browseMonth = skin.browse;
+//                    vm.browseMonth = '_FebruaryA';
                     vm.browseContainer = 'browseActive' + vm.browseMonth;
                     vm.blogFeedTabState = 'browseTabActive' + vm.browseMonth;
                     vm.podcastFeedTabState = 'browseTabInactive' + vm.browseMonth;
