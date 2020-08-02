@@ -1,0 +1,876 @@
+.thursdayBackgroundDiv_JanuaryB {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/thursday/january/sophia-simoes-2DTo96HSW6s-unsplash.jpg);
+    background-size: 100%;
+    height: 100%;
+    left: 0;
+    opacity: 0.6;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.thursdayContainerActive_JanuaryB {
+    filter: blur(0px);
+}
+
+.thursdayContainerInactive_JanuaryB {
+    filter: blur(15px);
+}
+
+.thursdayTitleStrip_JanuaryB {
+    background: #c1c4d2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Sulphur Point', sans-serif;
+    height: auto;
+    justify-content: flex-start;
+    opacity: 0.9;
+    padding: 4px 2vw 4px 2vw;
+    width: 100%;
+}
+
+.thursdayLogo_JanuaryB {
+    cursor: pointer;
+    filter: brightness(100%);
+    max-width: 75px;
+}
+
+.thursdayReadingPlaylistTitle_JanuaryB {
+    color: #00262c;
+    font-size: 42px;
+    margin: 30px 0 0 96px;
+}
+
+.thursdayTabStrip_JanuaryB {
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Sulphur Point', sans-serif;
+    height: auto;
+    opacity: 0.9;
+    padding: 0 10px;
+    width: 100%;
+}
+
+.thursdayTabActive_JanuaryB {
+    background: #8388a5;
+    color: #00262c;
+    cursor: none;
+    font-size: 24px;
+    padding: 5px 45px;
+    transition: all 0.5s linear;
+}
+
+.thursdayTabInactive_JanuaryB {
+    background: transparent;
+    color: #343642;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 5px 25px;
+    transition: all 0.5s linear;
+}
+
+.thursdayContent_JanuaryB {
+    background: transparent;
+    height: 80vh;
+    width: 100%;
+}
+
+.thursdayContentContent_JanuaryB {
+    background: linear-gradient(90deg, #cbcddc, #cbcddc, #c1c4d2, transparent);
+    height: 80vh;
+    opacity: 0.8;
+    overflow-x: hidden;
+    overflow-Y: auto;
+    width: 105%;
+}
+
+.thursdayReaderNavigationButtons_JanuaryB {
+    background: #5a9db0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: flex-start;
+    margin: 0 0 0 0;
+    position: fixed;
+    width: 100%;
+    z-index: 15;
+}
+
+.markAllReadTextThursday_JanuaryB {
+    color: #00262c;
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 18px;
+    margin: 35px 10px 0 40px;
+}
+
+.thursdayTrackProgress_JanuaryB {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    cursor: pointer;
+    display: block;
+    font-size: 48px;
+    margin: 15px 1px 15px 5px;
+    padding-left: 35px;
+    position: relative;
+    user-select: none;
+}
+
+.thursdayTrackProgress_JanuaryB input {
+    cursor: pointer;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    width: 0;
+}
+
+.thursdayCheckbox_JanuaryBtrue {
+    background-color: #163941;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    top: 15px;
+    transition: all 0.3s linear;
+    width: 50px;
+}
+
+.thursdayCheckbox_JanuaryBfalse {
+    background-color: #163941;
+    border: none;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    top: 15px;
+    transition: all 0.3s linear;
+    width: 50px;
+}
+
+.thursdaySwitchUnchecked_JanuaryBtrue {
+    background-color: #8388a5;
+    height: 20px;
+    left: 25px;
+    position: absolute;
+    top: 0;
+    transition: all 0.2s linear;
+    width: 30px;
+}
+
+.thursdaySwitchUnchecked_JanuaryBfalse {
+    background-color: #8388a5;
+    height: 20px;
+    left: 0px;
+    position: absolute;
+    top: 0;
+    transition: all 0.2s linear;
+    width: 30px;
+}
+
+.thursdayReadAll_JanuaryB {
+    color: #00262c;
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 24px;
+    margin: 14px 0 14px 25px;
+}
+
+.thursdayReadAllButton_JanuaryB {
+    background: #005f6f;
+    border: transparent;
+    color: #edebeb;
+    cursor: pointer;
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 36px;
+    height: 60px;
+    outline-color: #9cc7d1;
+    transform: skewX(-15deg);
+    transition: all 0.5s linear;
+    width: 60px;
+}
+
+.thursdayReadAllButton_JanuaryB:hover {
+    background: #b9bbc7;
+    color: #00262c;
+    transform: skewX(-5deg);
+    transition: all 0.5s linear;
+}
+
+.thursdayReadAllButton_JanuaryB:active {
+    background: #00262c;
+    color: #b9bbc7;
+    transition: all 0.1s linear;
+}
+
+.thursdaySorting_JanuaryB {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 14px 0 14px 100px;
+}
+
+.thursdaySorting_JanuaryB p {
+    color: #00262c;
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 18px;
+    margin: 20px 20px 0 0;
+}
+
+.thursdaySorting_JanuaryB button {
+    margin: 0 5px;
+}
+
+.thursdayFeedsDiv_JanuaryB {
+    height: auto;
+    margin: 90px 50px 0 50px;
+    width: 90%;
+}
+
+.thursdaySubscriptions_JanuaryB {
+    cursor: pointer;
+    margin: 10px;
+}
+
+.thursdayBuffer_JanuaryB {
+    height: 20px;
+    width: 100%;
+}
+
+.thursdayFeedContainer_JanuaryB {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 5px 5px 5px -15px;
+}
+
+.thursdaySubIcon_JanuaryB {
+    height: 65px;
+    margin-right: 20px;
+    transition: all 0.5s linear;
+    width: 65px;
+}
+
+.thursdaySubscriptionTitle_JanuaryB {
+    color: #00262c;
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 18px;
+    line-height: 1.2;
+    margin: 5px 0 10px 0;
+    width: 650px;
+}
+
+.thursdayUnreadText_JanuaryB {
+    color: #00262c;
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 18px;
+    margin: 10px 40px 0 30px;
+    width: 35px;
+}
+
+.thursdayReadText_JanuaryB {
+    color: #00262c;
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 18px;
+    margin: 10px 40px 0 30px;
+    width: 35px;
+}
+
+.thursdayManageTabsButton_JanuaryB {
+    background: #005f6f;
+    border: transparent;
+    color: #edebeb;
+    cursor: pointer;
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 24px;
+    height: auto;
+    margin: 56px 0 0 20%;
+    outline-color: #9cc7d1;
+    position: relative;
+    transform: skewX(-15deg);
+    transition: all 0.5s linear;
+    width: auto;
+}
+
+.thursdayManageTabsButton_JanuaryB:hover {
+    background: #b9bbc7;
+    color: #00262c;
+    transform: skewX(-5deg);
+    transition: all 0.5s linear;
+}
+
+.thursdayManageTabsButton_JanuaryB:active {
+    background: #00262c;
+    color: #b9bbc7;
+    transition: all 0.1s linear;
+}
+
+.thursdayManageTabsSubsModal_JanuaryB {
+    background: #b9bbc7;
+    border: solid 5px #3c3e49;
+    filter: blur(0px);
+    height: 90vh;
+    left: 2%;
+    opacity: 1;
+    position: absolute;
+    top: 5vh;
+    transition: all 0.4s linear;
+    width: 95%;
+    z-index: 50;
+}
+
+.thursdayManageTabsSubsModalBlur_JanuaryB {
+    background: #b9bbc7;
+    border: solid 5px #3c3e49;
+    filter: blur(5px);
+    height: 90vh;
+    left: 2%;
+    opacity: 0.4;
+    position: absolute;
+    top: 5vh;
+    transition: all 0.4s linear;
+    width: 95%;
+    z-index: 50;
+}
+
+.thursdayManageTabsSubsModalInactive_JanuaryB {
+    opacity: 0;
+    top: -80vh;
+    transition: all 0.4s linear;
+    z-index: -5;
+}
+
+.thursdayManageTitleBar_JanuaryB {
+    background: #00262c;
+    color: #e3d7d2;
+    font-family: 'Sulphur Point', sans-serif;
+    height: 6vh;
+    opacity: 0.9;
+    position: relative;
+    padding: 1vh 0 2vh 1vw;
+    width: 99%;
+}
+
+.thursdayModalExit_JanuaryB {
+    color: #edebeb;
+    cursor: pointer;
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 48px;
+    float: left;
+    left: 94%;
+    position: relative;
+    top: 1%;
+}
+
+.thursdayManageTitle_JanuaryB {
+    color: #edebeb;
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 30px;
+    margin: 20px 0 0 0;
+}
+
+.thursdayManagerModalContainer_JanuaryB {
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    height: 81vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.thursdayManagerTabsSection_JanuaryB {
+    height: auto;
+    padding: 15px;
+    position: relative;
+    width: 30%;
+}
+
+.thursdayTabsManageTitle_JanuaryB {
+    color: #11171f;
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 24px;
+}
+
+.thursdayManageTabsContainer_JanuaryB {
+    margin: 40px 8%;
+}
+
+.thursdayTabManageTab_JanuaryB {
+    color: #00262c;
+    cursor: pointer;
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 24px;
+    margin: 15px 0 15px 10px;
+}
+
+.thursdayTabManageSubTab_JanuaryB {
+    color: #00262c;
+    cursor: pointer;
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 15px;
+    margin: 1px 0 30px 40px;
+    width: 10%;
+}
+
+.thursdayManagerSubscriptionsSection_JanuaryB {
+    height: auto;
+    padding: 15px;
+    position: relative;
+    width: 30%;
+}
+
+.thursdayTabsSubscriptionTitle_JanuaryB {
+    color: #00262c;
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 24px;
+}
+
+.thursdayManageSubIcon_JanuaryB {
+    height: 40px;
+    width: 40px;
+}
+
+.thursdaySubManageSubTab_JanuaryB {
+    color: #00262c;
+    cursor: pointer;
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 15px;
+    margin: 4px 0 1px 10px;
+    transform: translateX(100px) translateY(-40px);
+    width: 10%;
+}
+
+.thursdayManageSubsTitles_JanuaryB {
+    color: #00262c;
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 18px;
+    margin: -15px 0 30px 1px;
+}
+
+.thursdayManagerFeedsSection_JanuaryB {
+    height: auto;
+    padding: 15px;
+    position: relative;
+    width: 30%;
+}
+
+.thursdayManagerFeedsTitle_JanuaryB {
+    color: #00262c;
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 24px;
+}
+
+.thursdayManageSearch_JanuaryB {
+    background: #adced8;
+    border: none;
+    color: #00262c;
+    float: left;
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 18px;
+    margin-top: 3px;
+    outline-color: #9cc7d1;
+    padding-left: 5px;
+    width: 100%;
+}
+
+.thursdayManageSubsTitlesFeeds_JanuaryB {
+    color: #00262c;
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 18px;
+    margin: -15px 0 30px 1px;
+}
+
+.thursdayCreateEditTabManagement_JanuaryB {
+    background: #dad6d7;
+    border: solid 5px #4a4a4f;
+    height: auto;
+    left: 22%;
+    opacity: 1;
+    padding: 45px;
+    position: absolute;
+    top: 25vh;
+    transition: all 0.4s linear;
+    width: 50%;
+    z-index: 60;
+}
+
+.thursdayCreateEditTabTitle_JanuaryB {
+    color: #00262c;
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 24px;
+    margin: 15px 0 30px 25px;
+}
+
+.thursdayTabEditorFields_JanuaryB {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin: 10px 0 0 60px;
+}
+
+.thursdayTabNameLabel_JanuaryB {
+    color: #00262c;
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 18px;
+    margin: 0 9px 0 0;
+}
+
+.thursdayTabNameInput_JanuaryB {
+    background: #adced8;
+    border: none;
+    color: #00262c;
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 18px;
+    height: 21px;
+    margin: 0 9px;
+    outline: #9cc7d1;
+    width: 350px;
+}
+
+.thursdayTabEditorPodcastBlogStatus_JanuaryB {
+    margin: -13px 0 0 40px;
+}
+
+#thursdayUnreadText_JanuaryB {
+    color: #00262c;
+}
+
+#thursdayReadText_JanuaryB {
+    color: #00262c;
+}
+
+.thursdayTabEditorFields_JanuaryB {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin: 10px 0 0 60px;
+}
+
+.thursdayTabEditorErrorMessage_JanuaryB {
+    color: #ff0000;
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 18px;
+    margin-left: 120px;
+    margin-top: 20px;
+}
+
+.thursdayManageTabsConfirmButton_JanuaryB {
+    background: #005f6f;
+    border: transparent;
+    color: #edebeb;
+    cursor: pointer;
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 18px;
+    height: 40px;
+    margin: 56px 0 0 5%;
+    outline-color: #9cc7d1;
+    position: relative;
+    transform: skewX(-15deg);
+    transition: all 0.5s linear;
+    width: auto;
+}
+
+.thursdayManageTabsConfirmButton_JanuaryB:hover {
+    background: #b9bbc7;
+    color: #00262c;
+    transform: skewX(-5deg);
+    transition: all 0.5s linear;
+}
+
+.thursdayManageTabsConfirmButton_JanuaryB:active {
+    background: #00262c;
+    color: #b9bbc7;
+    transition: all 0.1s linear;
+}
+
+.thursdayManageTabsSubmitCancelButton_JanuaryB {
+    background: #005f6f;
+    border: transparent;
+    color: #edebeb;
+    cursor: pointer;
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 18px;
+    height: 40px;
+    margin: 56px 0 0 20%;
+    outline-color: #9cc7d1;
+    position: relative;
+    transform: skewX(-15deg);
+    transition: all 0.5s linear;
+    width: auto;
+}
+
+.thursdayManageTabsSubmitCancelButton_JanuaryB:hover {
+    background: #b9bbc7;
+    color: #00262c;
+    transform: skewX(-5deg);
+    transition: all 0.5s linear;
+}
+
+.thursdayManageTabsSubmitCancelButton_JanuaryB:active {
+    background: #00262c;
+    color: #b9bbc7;
+    transition: all 0.1s linear;
+}
+
+.thursdayGuardRail_JanuaryB {
+    background: #575556;
+    border: solid 5px #005f6f;
+    height: auto;
+    left: 32%;
+    opacity: 1;
+    padding: 45px;
+    position: absolute;
+    top: 25vh;
+    transition: all 0.4s linear;
+    width: 30%;
+    z-index: 60;
+}
+
+.thursdayGuardRailText_JanuaryB {
+    color: #edebeb;
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 24px;
+    margin: 15px 0 30px 25px;
+}
+
+.thursdayGuardRailButtons_JanuaryB {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin: 10px 0 0 60px;
+}
+
+.hubReaderDay1ThursdayActive_JanuaryB {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/thursday/january/sophia-simoes-2DTo96HSW6s-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay1ThursdayInactive_JanuaryB {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/thursday/january/sophia-simoes-2DTo96HSW6s-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-115%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay2ThursdayActive_JanuaryB {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/thursday/january/sophia-simoes-2DTo96HSW6s-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay2ThursdayInactive_JanuaryB {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/thursday/january/sophia-simoes-2DTo96HSW6s-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-230%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay3ThursdayActive_JanuaryB {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/thursday/january/sophia-simoes-2DTo96HSW6s-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay3ThursdayInactive_JanuaryB {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/thursday/january/sophia-simoes-2DTo96HSW6s-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-345%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay4ThursdayActive_JanuaryB {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/thursday/january/sophia-simoes-2DTo96HSW6s-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay4ThursdayInactive_JanuaryB {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/thursday/january/sophia-simoes-2DTo96HSW6s-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-460%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay5ThursdayActive_JanuaryB {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/thursday/january/sophia-simoes-2DTo96HSW6s-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 3;
+}
+
+.hubReaderDay5ThursdayInactive_JanuaryB {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/thursday/january/sophia-simoes-2DTo96HSW6s-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-575%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay6ThursdayActive_JanuaryB {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/thursday/january/sophia-simoes-2DTo96HSW6s-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay6ThursdayInactive_JanuaryB {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/thursday/january/sophia-simoes-2DTo96HSW6s-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-690%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay7ThursdayActive_JanuaryB {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/thursday/january/sophia-simoes-2DTo96HSW6s-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay7ThursdayInactive_JanuaryB {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/thursday/january/sophia-simoes-2DTo96HSW6s-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-705%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
