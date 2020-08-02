@@ -13,7 +13,7 @@
         const vm = this;
 
         vm.$onInit = onInit;
-        vm.thursdayMonth = '_JanuaryA';
+        vm.thursdayMonth = '_JanuaryB';
         vm.thursdayContainerState = 'thursdayContainerActive' + vm.thursdayMonth;
         vm.navigateToHub = navigateToHub;
         vm.thursdayTabs = [
@@ -977,7 +977,7 @@
                             break;
                         case ('random'):
                             let index
-                            for (let k = 0; k < (vm.wednthursdayTabsesdayTabs[i].subscriptions.length * 10); k++) {
+                            for (let k = 0; k < (vm.thursdayTabs[i].subscriptions.length * 10); k++) {
                                 for (let j = 0; j < vm.thursdayTabs[i].subscriptions.length; j++) {
                                     index = Math.floor(Math.random() * vm.thursdayTabs[i].subscriptions.length);
                     [vm.thursdayTabs[i].subscriptions[j], vm.thursdayTabs[i].subscriptions[index]] = [vm.thursdayTabs[i].subscriptions[index], vm.thursdayTabs[i].subscriptions[j]];
