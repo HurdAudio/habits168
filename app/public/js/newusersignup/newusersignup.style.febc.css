@@ -1,0 +1,214 @@
+.newUserContainerActive_FebruaryC {
+    filter: blur(0);
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.newUserContainerBlur_FebruaryC {
+    filter: blur(13px);
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.newUserSignupImageDiv_FebruaryC {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/newusersignup/february/steve-long-NEKj44vMT5g-unsplash.jpg);
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.newUserNavbar_FebruaryC {
+    backdrop-filter: hue-rotate(-45deg) saturate(210%);
+    background: linear-gradient(90deg, #27695d, #006593, #4f5c6c, #90110a, #264536, transparent);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Poppins', sans-serif;
+    height: 12vh;
+    justify-content: left;
+    left: 0;
+    padding-left: 25px;
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+
+.newUserLogoNav_FebruaryC {
+    cursor: pointer;
+    filter: brightness(100%);
+    max-height: 12vh;
+    max-width: 155px;
+    z-index: 55;
+}
+
+.newUserSignupTitle_FebruaryC {
+    color: #080b0c;
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    margin: 3vh 0 3vh 20%;
+}
+
+.newUserMasterFormDiv_FebruaryC {
+    backdrop-filter: brightness(30%) sepia(50%);
+    box-shadow: 5px 5px 5px #a7aeb6, -5px 5px 5px #80b2c9, 5px -5px 5px #93b4ae, -5px -5px 5px #93a29b;
+    display: grid;
+    grid-template-columns: [col1] 1fr [col2] 1fr [col3] 1fr [col4] 1fr [col5] 1fr [col6] 1fr [col7] 1fr [col8] 1fr [col9] 1fr [col10] 1fr [col11] 1fr [colEnd];
+    grid-template-rows: [row1] 1fr [row2] 1fr [row3] 1fr [row4] 1fr [row5] 1fr [row6] 1fr [row7] 1fr [row8] 1fr [row9] 1fr [row10] 1fr [row11] 1fr [rowEnd];
+    height: 70vh;
+    left: 10%;
+    position: relative;
+    top: 10vh;
+    width: 80%;
+}
+
+.newUserSignupFormWelcomeLine_FebruaryC {
+    color: #a7aeb6;
+    filter: brightness(200%) saturate(300%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    grid-column: col2 / col12;
+    grid-row: row2 / row3;
+}
+
+.newUserTextBoxFirstName_FebruaryC {
+    background: #a7aeb6;
+    border: none;
+    color: #080b0c;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    height: 24px;
+    grid-column: col3 / col6;
+    grid-row: row4 / row5;
+    outline-color: #809aa6;
+}
+
+.newUserTextBoxFirstName_FebruaryC::placeholder {
+    color: #00283a;
+}
+
+.newUserTextBoxLastName_FebruaryC {
+    background: #a7aeb6;
+    border: none;
+    color: #080b0c;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    height: 24px;
+    grid-column: col7 / col10;
+    grid-row: row4 / row5;
+    outline-color: #809aa6;
+}
+
+.newUserTextBoxLastName_FebruaryC::placeholder {
+    color: #00283a;
+}
+
+.newUserTextBoxEmail_FebruaryC {
+    background: #a7aeb6;
+    border: none;
+    color: #080b0c;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    height: 24px;
+    grid-column: col3 / col6;
+    grid-row: row5 / row6;
+    outline-color: #809aa6;
+}
+
+.newUserTextBoxEmail_FebruaryC::placeholder {
+    color: #00283a;
+}
+
+.newUserTextBoxPassword_FebruaryC {
+    background: #a7aeb6;
+    border: none;
+    color: #080b0c;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    height: 24px;
+    grid-column: col7 / col10;
+    grid-row: row5 / row6;
+    outline-color: #809aa6;
+}
+
+.newUserTextBoxPassword_FebruaryC::placeholder {
+    color: #00283a;
+}
+
+.newUserTextBoxConfirmPassword_FebruaryC {
+    background: #a7aeb6;
+    border: none;
+    color: #080b0c;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    height: 24px;
+    grid-column: col7 / col10;
+    grid-row: row6 / row7;
+    outline-color: #809aa6;
+}
+
+.newUserTextBoxConfirmPassword_FebruaryC::placeholder {
+    color: #00283a;
+}
+
+.newUserSignupFormErrorMessageing_FebruaryC {
+    color: #90110a;
+    filter: brightness(500%) contrast(200%) saturate(300%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    grid-column: col3 / col10;
+    grid-row: row8 / row9;
+}
+
+.newUserSignupFormMessaging_FebruaryC {
+    color: #93b4ae;
+    filter: brightness(500%) contrast(200%) saturate(300%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    grid-column: col3 / col10;
+    grid-row: row9 / row10;
+}
+
+.newUserSignupSubmitButton_FebruaryC {
+    background: #00344c;
+    border: none;
+    color: #a7aeb6;
+    cursor: pointer;
+    filter: brightness(100%) drop-shadow(10px 15px 4px #0f2a25);
+    font-family: 'Padauk', sans-serif;
+    font-size: 30px;
+    grid-column: col6 / col7;
+    grid-row: row10 / row11;
+    margin: 0 10px;
+    outline-color: #809aa6;
+    padding: 5px 15px;
+    transition: all 0.3s linear;
+}
+
+.newUserSignupSubmitButton_FebruaryC:hover {
+    filter: brightness(110%) drop-shadow(4px 5px 3px #0f2a25);
+    transition: all 0.3s linear;
+}
+
+.newUserSignupSubmitButton_FebruaryC:active {
+    filter: invert(100%);
+    transition: all 0.2s linear;
+}
