@@ -1,0 +1,559 @@
+.browseActive_MarchA {
+    filter: blur(0);
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.browseInactive_MarchA {
+    filter: blur(19px);
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.browseImageDiv_MarchA {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/march/tim-hufner-gEcKSl2mrA0-unsplash.jpg);
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.browseNavbar_MarchA {
+    backdrop-filter: blur(16px);
+    border-bottom: 2px solid #3f262a;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Syne', sans-serif;
+    height: 12vh;
+    justify-content: left;
+    left: 0;
+    padding-left: 25px;
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+
+.browseLogoNav_MarchA {
+    cursor: pointer;
+    filter: brightness(110%) drop-shadow(5px 5px 5px #190f10);
+    margin: 0.5vh 0;
+    max-height: 11vh;
+    max-width: 105px;
+}
+
+.browseTitle_MarchA {
+    color: #9f9395;
+    filter: brightness(140%);
+    font-family: 'Syne', sans-serif;
+    font-size: 48px;
+    margin: 4vh 0 0 65px;
+}
+
+.browseTabs_MarchA {
+    backdrop-filter: hue-rotate(45deg);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Syne', sans-serif;
+    height: 6vh;
+    justify-content: center;
+}
+
+.browseTabActive_MarchA {
+    background: #9ca2a2;
+    color: #190f10;
+    cursor: none;
+    font-family: 'Syne', sans-serif;
+    font-size: 36px;
+    height: 100%;
+    opacity: 0.75;
+    padding: 0 10%;
+    pointer-events: none;
+}
+
+.browseTabActive_MarchA p {
+    color: #190f10;
+    font-family: 'Syne', sans-serif;
+    font-size: 36px;
+    margin: 1vh 0;
+}
+
+.browseTabInactive_MarchA {
+    background: transparent;
+    color: #9bb1b5;
+    cursor: pointer;
+    font-family: 'Syne', sans-serif;
+    font-size: 36px;
+    height: 100%;
+    opacity: 0.45;
+    padding: 0 10%;
+}
+
+.browseTabInactive_MarchA p {
+    color: #9bb1b5;
+    font-family: 'Syne', sans-serif;
+    font-size: 36px;
+    margin: 1vh 0;
+}
+
+.browseContainerActive_MarchA {
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 80vh;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.browseContainerInactive_MarchA {
+    display: none;
+}
+
+.browseBlogsByCategory_MarchA {
+    backdrop-filter: blur(8px);
+    background: #84a5ad;
+    border-right: 1px solid #3f262a;
+    height: 77vh;
+    margin: 15px;
+    opacity: 0.8;
+    width: 19%;
+}
+
+.browsePodcastsByCategory_MarchA {
+    display: none;
+    backdrop-filter: blur(8px);
+    background: #808ea6;
+    border-right: 1px solid #0e2f1c;
+    height: 77vh;
+    margin: 15px;
+    opacity: 0.8;
+    width: 19%;
+}
+
+.browseBlogsCategoryLabel_MarchA {
+    color: #000002;
+    font-family: 'Syne', sans-serif;
+    font-size: 24px;
+    margin: 27px 27px 5px 27px;
+}
+
+.browseCategorySelect_MarchA {
+    background: #9f9395;
+    border: none;
+    color: #000002;
+    font-family: 'Syne', sans-serif;
+    font-size: 24px;
+    margin: 10px 15%;
+    min-width: 70%;
+    outline-color: #809097;
+    padding: 2px 17px;
+}
+
+.browseViewFeedsButton_MarchA {
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/march/tim-hufner-gEcKSl2mrA0-unsplash.jpg) 5% stretch;
+    box-sizing: border-box;
+    color: #00151c;
+    cursor: pointer;
+    filter: drop-shadow(8px 8px 8px #190f10);
+    font-family: 'Syne', sans-serif;
+    font-size: 24px;
+    margin: 30px 35%;
+    outline-color: #809097;
+    transition: all 0.4s linear;
+}
+
+.browseViewFeedsButton_MarchA:hover {
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/march/tim-hufner-gEcKSl2mrA0-unsplash.jpg) 15% stretch;
+    color: #16272a;
+    filter: drop-shadow(3px 6px 8px #190f10);
+    transition: all 0.4s linear;
+}
+
+.browseViewFeedsButton_MarchA:active {
+    filter: drop-shadow(0 0 0 #190f10);
+    transition: all 0.4s linear;
+}
+
+.browseCategoricalFeeds_generic_MarchA {
+    backdrop-filter: blur(8px);
+    background: #808ea6;
+    border-right: 1px solid #0e2f1c;
+    height: 77vh;
+    margin: 15px;
+    opacity: 0.8;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 34%;
+}
+
+.browsePodCategoricalFeeds_generic_MarchA {
+    display: none;
+    backdrop-filter: blur(8px);
+    background: #808ea6;
+    border-right: 1px solid #2e2f30;
+    height: 77vh;
+    margin: 15px;
+    opacity: 0.8;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 34%;
+}
+
+.browsePodCategoricalFeeds_MarchA {
+    display: none;
+    backdrop-filter: blur(8px);
+    background: #808ea6;
+    border-right: 1px solid #2e2f30;
+    height: 77vh;
+    margin: 15px;
+    opacity: 0.8;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 34%;
+}
+
+.browseFeedsContainer_generic_MarchA {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 5px 15px;
+}
+
+.browseFeedsPodcastContainer_generic_MarchA {
+    display: none;
+    cursor: pointer;
+/*    display: flex;*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 5px 15px;
+}
+
+.browseFeedsPodcastContainer_generic_MarchA img {
+    display: none;
+    filter: brightness(100%) drop-shadow(15px 15px 5px #1f0007);
+    height: 50px;
+    margin: 0 15px 0 0;
+    width: 50px;
+}
+
+.browseFeedsContainer_generic_MarchA img {
+    filter: brightness(100%) drop-shadow(15px 15px 5px #190f10);
+    height: 50px;
+    margin: 0 15px 0 0;
+    width: 50px;
+}
+
+.browsePodCategoricalFeeds_generic_MarchA p {
+    display: none;
+    color: #030302;
+    font-family: 'Syne', sans-serif;
+    font-size: 18px;
+}
+
+.browseFeedsTitleDiv_generic_MarchA {
+    width: 75%;
+}
+
+.browseFeedsTitleDiv_generic_MarchA p {
+    color: #000002;
+    font-family: 'Syne', sans-serif;
+    font-size: 18px;
+}
+
+.browseIndividualFeedData_generic_MarchA {
+    backdrop-filter: blur(8px);
+    background: #808ea6;
+    border-right: 1px solid #0e2f1c;
+    height: 77vh;
+    margin: 15px;
+    opacity: 0.8;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 34%;
+}
+
+.browseIndividualFeedData_generic_MarchA img {
+    filter: brightness(100%) drop-shadow(15px 15px 5px #190f10);
+    margin: 10px 15%;
+    width: 70%;
+}
+
+.browseIndividualFeedData_generic_MarchA h3 {
+    color: #000002;
+    font-family: 'Syne', sans-serif;
+    font-size: 36px;
+    margin: 5px 10%;
+    width: 80%;
+}
+
+.browseIndividualFeedData_generic_MarchA p {
+    color: #000002;
+    font-family: 'Syne', sans-serif;
+    font-size: 18px;
+    margin: 15px 10%;
+    width: 80%;
+}
+
+.browseIndividualFeedData_generic_MarchA button {
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/march/tim-hufner-gEcKSl2mrA0-unsplash.jpg) 5% stretch;
+    box-sizing: border-box;
+    color: #00151c;
+    cursor: pointer;
+    filter: drop-shadow(8px 8px 8px #190f10);
+    font-family: 'Syne', sans-serif;
+    font-size: 24px;
+    margin: 30px 35%;
+    outline-color: #809097;
+    transition: all 0.4s linear;
+}
+
+.browseIndividualFeedData_generic_MarchA button:hover {
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/march/tim-hufner-gEcKSl2mrA0-unsplash.jpg) 15% stretch;
+    color: #16272a;
+    filter: drop-shadow(3px 6px 8px #190f10);
+    transition: all 0.4s linear;
+}
+
+.browseIndividualFeedData_generic_MarchA button:active {
+    filter: drop-shadow(0 0 0 #190f10);
+    transition: all 0.4s linear;
+}
+
+.browseIndividualPodFeedData_generic_MarchA {
+    display: none;
+    backdrop-filter: blur(8px);
+    background: #808ea6;
+    border-right: 1px solid #0e2f1c;
+    height: 77vh;
+    margin: 15px;
+    opacity: 0.8;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 34%;
+}
+
+.browseIndividualPodFeedData_generic_MarchA img {
+    display: none;
+    filter: brightness(100%) drop-shadow(15px 15px 5px #1f0007);
+    margin: 10px 15%;
+    width: 70%;
+}
+
+.browseIndividualPodFeedData_generic_MarchA h3 {
+    display: none;
+    color: #030302;
+    font-family: 'Syne', sans-serif;
+    font-size: 36px;
+    margin: 5px 10%;
+    width: 80%;
+}
+
+.browseIndividualPodFeedData_generic_MarchA p {
+    display: none;
+    color: #030302;
+    font-family: 'Syne', sans-serif;
+    font-size: 18px;
+    margin: 15px 10%;
+    width: 80%;
+}
+
+.browseIndividualPodFeedData_generic_MarchA button {
+    display: none;
+    background: #25000a;
+    border: none;
+    color: #819caf;
+    cursor: pointer;
+    filter: drop-shadow(8px 8px 8px #1f0007);
+    font-family: 'Syne', sans-serif;
+    font-size: 24px;
+    margin: 30px 35%;
+    outline-color: #808ea6;
+    transition: all 0.4s linear;
+}
+
+.browseIndividualPodFeedData_generic_MarchA button:hover {
+    background: #808ea6;
+    color: #05120b;
+    filter: drop-shadow(3px 6px 8px #1f0007);
+    transition: all 0.4s linear;
+}
+
+.browseIndividualPodFeedData_generic_MarchA button:active {
+    filter: drop-shadow(0 0 0 #190f10);
+    transition: all 0.4s linear;
+}
+
+.browseSubscriptionModalActive_MarchA {
+    background: linear-gradient(90deg, #9f9395, #818083);
+    box-sizing: border-box;
+    filter: saturate(100%);
+    height: auto;
+    left: 25%;
+    top: 10vh;
+    width: 50%;
+    position: absolute;
+    transform: scale(1);
+    transition: all 0.5s linear;
+}
+
+.browseSubscriptionModalInactive_MarchA {
+    background: linear-gradient(90deg, #9f9395, #818083);
+    filter: saturate(100%);
+    height: auto;
+    left: 25%;
+    top: 100vh;
+    width: 50%;
+    position: absolute;
+    transform: scale(0.4);
+    transition: all 0.5s linear;
+}
+
+.blogSubscriptionModalLabel_MarchA {
+    color: #000002;
+    font-family: 'Syne', sans-serif;
+    font-size: 36px;
+    margin: 5px 0 15px 5px;
+}
+
+.browseSubscriptionModalActive_MarchA button {
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/march/tim-hufner-gEcKSl2mrA0-unsplash.jpg) 5% stretch;
+    box-sizing: border-box;
+    color: #00151c;
+    cursor: pointer;
+    filter: drop-shadow(8px 8px 8px #190f10);
+    font-family: 'Syne', sans-serif;
+    font-size: 24px;
+    margin: 5px -10% 5px 25%;
+    outline-color: #809097;
+    transition: all 0.4s linear;
+
+}
+
+.browseSubscriptionModalActive_MarchA button:hover {
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/march/tim-hufner-gEcKSl2mrA0-unsplash.jpg) 15% stretch;
+    color: #16272a;
+    filter: drop-shadow(3px 6px 8px #190f10);
+    transition: all 0.4s linear;
+}
+
+.browseSubscriptionModalActive_MarchA button:active {
+    filter: drop-shadow(0 0 0 #190f10);
+    transition: all 0.4s linear;
+}
+
+.browseSubscriptionModalInactive_MarchA button {
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/march/tim-hufner-gEcKSl2mrA0-unsplash.jpg) 5% stretch;
+    box-sizing: border-box;
+    color: #00151c;
+    cursor: pointer;
+    filter: drop-shadow(8px 8px 8px #190f10);
+    font-family: 'Syne', sans-serif;
+    font-size: 24px;
+    margin: 5px -10% 5px 25%;
+    outline-color: #809097;
+    transition: all 0.4s linear;
+}
+
+.blogSubscriptionMondalImage_MarchA {
+    filter: brightness(110%) drop-shadow(15px 15px 5px #190f10);
+    float: left;
+    margin: 15px;
+    max-height: 100px;
+    max-width: 100px;
+}
+
+.blogSubscriptionModalTitle_MarchA {
+    color: #000002;
+    float: left;
+    font-family: 'Syne', sans-serif;
+    font-size: 24px;
+    margin: 15px;
+    width: 50%;
+}
+
+.browseModalSelectors_MarchA {
+    width: 100%;
+    float: left;
+}
+
+.blogSubscriptionDaySelector_MarchA {
+    background: #9ca2a2;
+    border: none;
+    color: #000002;
+    font-family: 'Syne', sans-serif;
+    font-size: 24px;
+    margin: 30px 15px 70px 15px;
+    outline-color: #809097;
+    width: 25%;
+}
+
+.browseModalSpacer_MarchA {
+    bottom: 0;
+    height: 350px;
+    position: relative;
+    width: 100%;
+    z-index: -4;
+}
+
+.hubReaderBrowseBlockActive_MarchA {
+    background: #82a1b5;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/march/tim-hufner-gEcKSl2mrA0-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: 1;
+}
+
+.hubReaderBrowseBlockInactive_MarchA {
+    background: #82a1b5;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/march/tim-hufner-gEcKSl2mrA0-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(-460%);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: -1;
+}
