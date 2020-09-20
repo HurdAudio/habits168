@@ -1,0 +1,565 @@
+.externalsBackgroundDiv_AprilA {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/externals/backdrop/container-port-5570707_1920.jpg);
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.externalsContainerActive_AprilA {
+    filter: blur(0px) hue-rotate(0deg);
+    transform: all 0.5s linear;
+}
+
+.externalsContainerInactive_AprilA {
+    filter: blur(5px) hue-rotate(180deg);
+    transform: all 0.5s linear;
+}
+
+.externalsTitleBar_AprilA {
+    background: linear-gradient(90deg, #d1c3ab, #a8b0ac, #a8b0ac, transparent);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Baskervville', serif;
+    height: 12vh;
+    justify-content: flex-start;
+    opacity: 0.9;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.externalsLogo_AprilA {
+    cursor: pointer;
+    height: 90px;
+    margin: 1px 48px 1px 13px;
+    max-width: 90px;
+}
+
+.externalsTitle_AprilA {
+    color: #080100;
+    font-family: 'Baskervville', serif;
+    font-size: 42px;
+    transform: translateX(0.5vw) translateY(3.5vh);
+}
+
+.externalsBody_AprilA {
+    background: linear-gradient(90deg, #516059, #a8b0ac, #a8b0ac, transparent);
+    height: 87vh;
+    opacity: 0.9;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 24px;
+    width: 100%;
+}
+
+.externalsIssuesHeader_AprilA {
+    color: #080100;
+    font-family: 'Baskervville', serif;
+    font-size: 30px;
+}
+
+.externalManagementContainer_AprilA {
+    display: grid;
+    grid-template-columns: [leftBuffer] 10px [deleteColumn] 50px [readColumn] 120px [imageColumn] 150px [issueColumn] 1fr [rightBuffer] 10px;
+    grid-template-rows: [externalContent] auto [addNewContent] auto;
+    height: auto;
+    margin: 30px 0 15px 0;
+    width: 100%;
+}
+
+.externalsSwitchtrue_AprilA {
+    background: #140300;
+    cursor: pointer;
+    display: inline-block;
+    filter: brightness(100%);
+    grid-column: readColumn / imageColumn;
+    grid-row: externalContent;
+    height: 25px;
+    margin: 35px 0 0 15px;
+    position: relative;
+    transition: all 0.3s linear;
+    width: 60px;
+}
+
+.externalsSwitchfalse_AprilA {
+    background: #140300;
+    cursor: pointer;
+    display: inline-block;
+    filter: brightness(90%);
+    grid-column: readColumn / imageColumn;
+    grid-row: externalContent;
+    height: 25px;
+    margin: 35px 0 0 15px;
+    position: relative;
+    transition: all 0.3s linear;
+    width: 60px;
+}
+
+.externalsSwitchHandletrue_AprilA {
+    background: #cf9845;
+    bottom: 2px;
+    height: 25px;
+    left: 0;
+    position: absolute;
+    right: 2px;
+    top: 0;
+    transition: all 0.3s linear;
+    width: 30px;
+}
+
+.externalsSwitchHandlefalse_AprilA {
+    background: #cf9845;
+    bottom: 2px;
+    height: 25px;
+    left: 30px;
+    position: absolute;
+    right: 2px;
+    top: 0;
+    transition: all 0.3s linear;
+    width: 30px;
+}
+
+.externalsSwitchText_AprilA {
+    color: #080100;
+    font-family: 'Baskervville', serif;
+    font-size: 18px;
+    margin: 28px 0 0 0;
+}
+
+.externalsImage_AprilA {
+    filter: drop-shadow(12px 8px 4px #202623);
+    grid-column: imageColumn / issueColumn;
+    grid-row: externalContent;
+    max-height: 120px;
+    width: 100px;
+}
+
+.externalsReadingDatas_AprilA {
+    color: #080100;
+    font-family: 'Baskervville', serif;
+    font-size: 18px;
+    grid-column: issueColumn / rightBuffer;
+    grid-row: externalContent;
+    margin: 25px 0 0 0;
+}
+
+.externalsDelete_AprilA {
+    align-self: center;
+    color: #080100;
+    cursor: pointer;
+    font-size: 30px;
+    grid-column: deleteColumn / readColumn;
+    grid-row: externalContent;
+    justify-content: center;
+    transition: all 0.3s linear;
+}
+
+.externalsDelete_AprilA:hover {
+    color: #2b1d1c;
+    transition: all 0.3s linear;
+}
+
+.externalsAddNewContentDiv_AprilA {
+    color: #080100;
+    cursor: pointer;
+    margin: 70px 0 0 330px;
+    width: auto;
+}
+
+.externalsAddContentIcon_AprilA {
+    float: left;
+    font-size: 42px;
+    margin: 0 30px 0 0;
+    position: float;
+}
+
+.externalsAddNewText_AprilA {
+    float: left;
+    font-family: 'Baskervville', serif;
+    font-size: 24px;
+    margin: 5px 0 0 0;
+}
+
+.externalsDeleteGuardrailActive_AprilA {
+    background: #516059;
+    height: auto;
+    left: 25%;
+    opacity: 1;
+    position: absolute;
+    top: 15%;
+    transition: all 0.3s linear;
+    width: auto;
+    z-index: 10;
+}
+
+.externalsDeleteGuardrailInactive_AprilA {
+    background: #516059;
+    height: auto;
+    left: 175%;
+    opacity: 0;
+    position: absolute;
+    top: 105%;
+    transition: all 0.3s linear;
+    width: auto;
+    z-index: -10;
+}
+
+.externalsDeleteGuardrailTitleBar_AprilA {
+    background: #080100;
+    height: auto;
+    padding: 6px 0;
+    width: 100%;
+}
+
+.externalsDeleteGuardrailTitle_AprilA {
+    color: #516059;
+    font-family: 'Baskervville', serif;
+    font-size: 30px;
+    margin-left: 40px;
+}
+
+.externalsGuardrailContainer_AprilA {
+    background: transparent;
+    display: grid;
+    grid-template-columns: [leftB] 10px [imgColumn] 120px [infoColumn] 1fr [rightB] 10px;
+    grid-template-rows: [title] auto [query] auto [buttons] auto;
+    height: auto;
+    padding: 12px;
+    width: 100%;
+}
+
+.externalsGuardrailBodyText_AprilA {
+    color: #080100;
+    font-family: 'Baskervville', serif;
+    font-size: 18px;
+    grid-column: imgColumn / rightB;
+    grid-row: title;
+}
+
+.externalsGuardrailImage_AprilA {
+    filter: drop-shadow(12px 8px 4px #202623);
+    grid-column: imgColumn / infoColumn;
+    grid-row: query;
+    margin: 20px 0;
+    width: 90px;
+}
+
+.externalsGuardrailInfos_AprilA {
+    color: #080100;
+    font-family: 'Baskervville', serif;
+    font-size: 18px;
+    grid-column: infoColumn / rightB;
+    grid-row: query;
+    margin: 40px 0 20px 0;
+}
+
+.externalsGuardrailButtons_AprilA {
+    background: transparent;
+    grid-column: infoColumn / rightB;
+    grid-row: buttons;
+    height: auto;
+    justify-content: center;
+    margin: 0 0 0 16%;
+}
+
+.externalsGuardrailButtons_AprilA button {
+    backdrop-filter: hue-rotate(45deg);
+    background: transparent;
+    border: 1px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/externals/backdrop/container-port-5570707_1920.jpg) 20% stretch;
+    box-sizing: border-box;
+    color: #080100;
+    cursor: pointer;
+    filter: drop-shadow(8px 8px 4px #202623);
+    font-family: 'Baskervville', serif;
+    font-size: 24px;
+    margin: 10px 40px 20px 0;
+    outline-color: #958e8e;
+    transition: all 0.6s linear;
+    width: 70px;
+}
+
+.externalsGuardrailButtons_AprilA button:hover {
+    backdrop-filter: hue-rotate(-45deg) saturate(150%);
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/externals/backdrop/container-port-5570707_1920.jpg) 5% stretch;
+    color: #140300;
+    filter: drop-shadow(4px 8px 3px #202623);
+    transition: all 0.6s linear;
+}
+
+.externalsGuardrailButtons_AprilA button:active {
+    filter: drop-shadow(0 0 0 #202623) invert(100%);
+    transition: all 0.1s linear;
+}
+
+.externalsAddNewExternalsDialogActive_AprilA {
+    background: linear-gradient(90deg, #aa9c88, #e7cca2);
+    height: auto;
+    left: 10%;
+    opacity: 1;
+    position: absolute;
+    top: 0.5%;
+    transform: scale(1);
+    transition: all 0.6s linear;
+    width: 80%;
+    z-index: 10;
+}
+
+.externalsAddNewExternalsDialogInactive_AprilA {
+    background: linear-gradient(90deg, #aa9c88, #e7cca2);
+    height: auto;
+    left: -90%;
+    opacity: 0;
+    position: absolute;
+    top: 0.5%;
+    transform: scale(0.01);
+    transition: all 0.6s linear;
+    width: 80%;
+    z-index: -10;
+}
+
+.externalsAddNewTitleBar_AprilA {
+    background: linear-gradient(-90deg, #140300, #523c1b);
+    height: auto;
+    padding: 6px 0;
+    width: 100%;
+}
+
+.externalsAddNewTitle_AprilA {
+    color: #e7cca2;
+    font-family: 'Baskervville', serif;
+    font-size: 30px;
+    margin-left: 40px;
+}
+
+.externalsAddNewBodyContainer_AprilA {
+    display: grid;
+    grid-template-columns: [leftAdd] 10px [formInput] 1fr [displayAdd] 1fr [rightAdd] 10px;
+    grid-template-rows: [errorMessaging] auto [userAdds] auto [buttonsAdds] auto;
+    height: auto;
+}
+
+.externalsAddErrorField_AprilA {
+    color: #ff0000;
+    font-family: 'Baskervville', serif;
+    font-size: 18px;
+    grid-column: formInput / rightAdd;
+    grid-row: errorMessaging;
+    margin: 15px 30px;
+}
+
+.externalsAddUserForm_AprilA {
+    background: transparent;
+    grid-column: formInput / displayAdd;
+    grid-row: userAdds;
+    height: auto;
+    margin: 0 0 30px 0;
+    padding: 24px 0;
+}
+
+.externalsAddUserForm_AprilA label {
+    color: #080100;
+    font-family: 'Baskervville', serif;
+    font-size: 18px;
+    margin: 15px 24px;
+}
+
+.externalsAddUserForm_AprilA input[type="text"] {
+    background: #a8b0ac;
+    border: none;
+    color: #080100;
+    font-family: 'Baskervville', serif;
+    font-size: 18px;
+    margin: 5px 24px;
+    outline-color: #958e8e;
+    padding: 0 5px;
+    width: 90%;
+}
+
+.externalsAddUserForm_AprilA textarea {
+    background: #a8b0ac;
+    border: none;
+    color: #080100;
+    font-family: 'Baskervville', serif;
+    font-size: 18px;
+    margin: 5px 24px;
+    outline-color: #958e8e;
+    padding: 0 5px;
+    width: 90%;
+}
+
+.externalsDisplayNewAddition_AprilA {
+    background: transparent;
+    grid-column: displayAdd / rightAdd;
+    grid-row: userAdds;
+    height: auto;
+    margin: 0 0 30px 0;
+    padding: 24px 0;
+}
+
+.externalsAddImage_AprilA {
+    filter: drop-shadow(12px 8px 4px #202623);
+    margin: 0 0 0 36px;
+    max-height: 240px;
+    width: 150px;
+}
+
+.externalsAddCandidateTitle_AprilA {
+    color: #080100;
+    font-family: 'Baskervville', serif;
+    font-size: 24px;
+    margin: 24px;
+}
+
+.externalsAddExternalsButtons_AprilA {
+    background: transparent;
+    height: auto;
+    grid-column: formInput / rightAdd;
+    grid-row: buttonsAdds;
+    margin: 0 0 30px 0;
+}
+
+.externalsAddExternalsButtons_AprilA button {
+    backdrop-filter: hue-rotate(45deg);
+    background: transparent;
+    border: 1px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/externals/backdrop/container-port-5570707_1920.jpg) 20% stretch;
+    box-sizing: border-box;
+    color: #080100;
+    cursor: pointer;
+    filter: drop-shadow(8px 8px 4px #202623);
+    font-family: 'Baskervville', serif;
+    font-size: 24px;
+    margin: 10px 40px 20px 6%;
+    outline-color: #958e8e;
+    transition: all 0.6s linear;
+    width: auto;
+}
+
+.externalsAddExternalsButtons_AprilA button:hover {
+    filter: drop-shadow(0 0 0 #202623) invert(100%);
+    transition: all 0.1s linear;
+}
+
+.externalsAddExternalsButtons_AprilA button:active {
+    filter: drop-shadow(0 0 0 #202623) invert(100%);
+    transition: all 0.1s linear;
+}
+
+.hubReaderExternalsDay2BlockInactive_AprilA {
+    background: #82a1b5;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/externals/backdrop/container-port-5570707_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(250%) translateY(500%);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: -1;
+}
+
+.hubReaderExternalsDay2BlockActive_AprilA {
+    background: #82a1b5;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/externals/backdrop/container-port-5570707_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px) translateY(0px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 414px) {
+
+    .externalsTitle_AprilA {
+        font-size: 24px;
+    }
+
+    .externalsIssuesHeader_AprilA {
+        font-size: 18px;
+    }
+
+    .externalManagementContainer_AprilA {
+        grid-template-columns: [leftBuffer] 1px [deleteColumn] 25px [readColumn] 60px [imageColumn] 80px [issueColumn] 50% [rightBuffer] 14px;
+        grid-template-rows: [externalContent] auto [addNewContent] auto;
+        margin: 15px 0 7px 0;
+    }
+
+    .externalsDelete_AprilA {
+        font-size: 18px;
+    }
+
+    .externalsImage_AprilA {
+        margin-left: 15px;
+        max-height: 50px;
+        width: 40px;
+    }
+
+    .externalsSwitchfalse_AprilA {
+        height: 25px;
+        margin: 15px 15px 0 5px;
+        transform: scale(0.5);
+        width: 60px;
+    }
+
+    .externalsSwitchtrue_AprilA {
+        height: 25px;
+        margin: 15px 15px 0 5px;
+        transform: scale(0.5);
+        width: 60px;
+    }
+
+    .externalsReadingDatas_AprilA {
+        font-size: 12px;
+        margin: 25px 0 0 0;
+    }
+
+    .externalsAddNewContentDiv_AprilA {
+        margin: 70px 0 0 10px;
+    }
+
+    .externalsDeleteGuardrailActive_AprilA {
+        left: 0;
+        width: 100%;
+    }
+
+    .externalsAddNewExternalsDialogActive_AprilA {
+        left: 0;
+        width: 100%;
+    }
+
+    .externalsAddImage_AprilA {
+        margin: 0 0 0 36px;
+        max-height: 120px;
+        width: 75px;
+    }
+
+    .externalsAddUserForm_AprilA textarea {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+
+    .externalsTitle_AprilA {
+        font-size: 18px;
+    }
+}
