@@ -1,0 +1,379 @@
+.viewContainer_MayA {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/viewer/fernanda-arias-5Qv-ViYil50-unsplash.jpg);
+    background-size: cover;
+    filter: blur(0);
+    height: 95%;
+    margin: 5% 0 0 0;
+    transition: all 0.5s linear;
+    width: 100%;
+    z-index: 1;
+}
+
+.viewContainerCloaked_MayA {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/viewer/fernanda-arias-5Qv-ViYil50-unsplash.jpg);
+    background-size: cover;
+    filter: blur(20px);
+    height: 95%;
+    margin: 5% 0 0 0;
+    transition: all 0.5s linear;
+    width: 100%;
+    z-index: 1;
+}
+
+.viewToolbar_MayA {
+    backdrop-filter: brightness(500%) contrast(25%) invert(100%) saturate(100%);
+    border-bottom: 1px solid transparent;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 11.3vh;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.viewNavigation_MayA {
+    background: #2c2b15;
+    border-left: 2px solid #eabbab;
+    border-right: 2px solid #eabbab;
+    box-sizing: border-box;
+    color: #eabbab;
+    cursor: pointer;
+    font-family: 'Sora', sans-serif;
+    font-size: 60px;
+    height: 80px;
+    margin: 3px 10px;
+    outline-color: #929e84;
+    padding: 1px;
+    transition: all 0.2s linear;
+    width: 85px;
+}
+
+.viewNavigation_MayA:hover {
+    background: #050400;
+    border-left: 15px solid #eabbab;
+    border-right: none;
+    box-sizing: border-box;
+    color: #eabbab;
+    transition: all 0.2s linear;
+}
+
+.viewNavigation_MayA:active {
+    filter: invert(100%);
+    transition: all 0.1s linear;
+}
+
+.viewCurrentFeedIcon_MayA {
+    height: 75px;
+    width: 75px;
+}
+
+.viewCurrentFeedTitle_MayA {
+    background: transparent;
+    color: #050400;
+    cursor: pointer;
+    display: initial;
+    font-family: 'Sora', sans-serif;
+    font-size: 54px;
+    font-weight: 900;
+    padding: 20px 15px 0 15px;
+    transition: all 0.2s linear;
+}
+
+.viewCurrentFeedTitle_MayA:hover {
+    color: #6f6c35;
+    transition: all 0.2s linear;
+}
+
+.viewCurrentFeedTitle_MayA a:hover {
+    color: #552f22;
+    transition: all 0.2s linear;
+}
+
+.viewCurrentFeedTitle_MayA a {
+    color: #0e0c00;
+    text-decoration: none;
+    transition: all 0.3s linear;
+}
+
+.viewCurrentFeedDescription_MayA {
+    background: transparent;
+    color: #050400;
+    display: initial;
+    justify-content: flex-end;
+    font-family: 'Sora', sans-serif;
+    font-size: 12px;
+    font-weight: 900;
+    max-width: 250px;
+    padding: 50px 0 0 10px;
+}
+
+.viewContentDiv_MayA {
+    backdrop-filter: blur(2px)  ;
+    background: linear-gradient(90deg, #cfdfae, #afb980, #afb980, transparent);
+    height: 75.5vh;
+    opacity: 0.90;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 1% 5%;
+    width: 100%;
+}
+
+.viewIndividualItems_MayA {
+    color: #050400;
+    font-family: 'Sora', sans-serif;
+    line-height: 1.3em;
+    max-width: 880px;
+}
+
+.viewIndividualItems_MayA img {
+    max-width: 70%;
+}
+
+.viewIndividualItems_MayA p {
+    font-size: 18px;
+    line-height: 1.3em;
+    margin: 5px 5% 5px 1%;
+}
+
+.viewIndividualItems_MayA a {
+    color: #0e0c00;
+    text-decoration: none;
+}
+
+.viewIndividualItems_MayA a p {
+    font-size: 30px;
+    margin: 25px 4px 8px 0;
+}
+
+.viewIndividualItems_MayA a:hover {
+    color: #552f22;
+}
+
+.viewIndividualItems_MayA a:visited {
+    color: #3f4c25;
+}
+
+.viewIndividualItems_MayA button {
+    background: #2c2b15;
+    border-left: 2px solid #eabbab;
+    border-right: 2px solid #eabbab;
+    box-sizing: border-box;
+    color: #eabbab;
+    cursor: pointer;
+    font-family: 'Sora', sans-serif;
+    font-size: 18px;
+    height: auto;
+    margin: 0 0 0 0;
+    outline-color: #929e84;
+    padding: 3px;
+    transition: all 0.2s linear;
+}
+
+.viewIndividualItems_MayA button:hover {
+    background: #050400;
+    border-left: 15px solid #eabbab;
+    border-right: none;
+    box-sizing: border-box;
+    color: #eabbab;
+    transition: all 0.2s linear;
+}
+
+.viewIndividualItems_MayA button:active {
+    filter: invert(100%);
+    transition: all 0.1s linear;
+}
+
+.viewPostTimestamp_MayA {
+    margin: 5px 5px 5px 45% !important;
+}
+
+.viewShareSaveDialogueDisplayed_MayA {
+    background: linear-gradient(90deg, #c0d69d, #eabbab, #eabbab, #878680);
+    color: #050400;
+    display: initial;
+    filter: drop-shadow(10px 15px 4px #552f22);
+    font-family: 'Sora', sans-serif;
+    height: 70vh;
+    left: 10%;
+    opacity: 0.99;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    top: 15%;
+    transform: skewX(0deg);
+    transition: all 0.5s linear;
+    width: 80%;
+    z-index: 17;
+}
+
+.viewShareSaveDialogueHidden_MayA {
+    background: linear-gradient(90deg, #c0d69d, #eabbab, #eabbab, #878680);
+    color: #050400;
+    filter: drop-shadow(10px 15px 4px #552f22);
+    font-family: 'Sora', sans-serif;
+    height: 70vh;
+    left: 10%;
+    opacity: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    top: -45%;
+    transform: skewX(0deg);
+    transition: all 0.5s linear;
+    width: 80%;
+    z-index: -1;
+}
+
+.viewDialogHeadline_MayA {
+    background: #253c08;
+    color: #c0d69d;
+    font-size: 48px;
+    padding: 30px 0 10px 50px;
+}
+
+.viewShareSaveDialogueDisplayed_MayA img {
+    height: 75px;
+    margin: 30px 0 15px 150px;
+    width: 75px;
+}
+
+.viewShareSaveDialogueHidden_MayA img {
+    height: 75px;
+    margin: 30px 0 15px 150px;
+    width: 75px;
+}
+
+.viewShareSaveDialogueDisplayed_MayA p {
+    font-size: 24px;
+    margin: 5px 50px 15px 50px;
+}
+
+.viewShareSaveDialogueHidden_MayA p {
+    font-size: 24px;
+    margin: 5px 50px 15px 50px;
+}
+
+.viewShareSaveDialogueDisplayed_MayA textarea {
+    background: #b7b69a;
+    border: none;
+    color: #050400;
+    display: initial;
+    font-family: 'Sora', sans-serif;
+    font-size: 18px;
+    margin: 5px 50px 5px 50px;
+    outline-color: #929e84;
+    padding: 5px;
+    width: 88%;
+}
+
+.viewShareSaveDialogueHidden_MayA textarea {
+    background: #b7b69a;
+    border: none;
+    color: #050400;
+    display: initial;
+    font-family: 'Sora', sans-serif;
+    font-size: 18px;
+    margin: 5px 50px 5px 50px;
+    outline-color: #929e84;
+    padding: 5px;
+    width: 88%;
+}
+
+.viewShareSaveDialogueDisplayed_MayA button {
+    background: #2c2b15;
+    border-left: 2px solid #eabbab;
+    border-right: 2px solid #eabbab;
+    box-sizing: border-box;
+    color: #eabbab;
+    cursor: pointer;
+    font-family: 'Sora', sans-serif;
+    font-size: 18px;
+    height: auto;
+    margin: 15px 15px 5px 50px;
+    outline-color: #929e84;
+    padding: 5px;
+    transition: all 0.2s linear;
+}
+
+.viewShareSaveDialogueHidden_MayA button {
+    background: #2c2b15;
+    border-left: 2px solid #eabbab;
+    border-right: 2px solid #eabbab;
+    box-sizing: border-box;
+    color: #eabbab;
+    cursor: pointer;
+    font-family: 'Sora', sans-serif;
+    font-size: 18px;
+    height: auto;
+    margin: 15px 15px 5px 50px;
+    outline-color: #929e84;
+    padding: 5px;
+    transition: all 0.2s linear;
+}
+
+.viewShareSaveDialogueDisplayed_MayA button:hover {
+    background: #050400;
+    border-left: 15px solid #eabbab;
+    border-right: none;
+    box-sizing: border-box;
+    color: #eabbab;
+    transition: all 0.2s linear;
+}
+
+.viewShareSaveDialogueDisplayed_MayA button:active {
+    filter: invert(100%);
+    transition: all 0.1s linear;
+}
+
+.viewRadioButtons_MayA {
+    font-family: 'Sora', sans-serif;
+    font-size: 24px;
+    margin: 0 0 20px 50px;
+}
+
+@media only screen and (max-width: 736px) {
+
+    .viewCurrentFeedDescription_MayA {
+        display: none;
+    }
+
+    .viewContentDiv_MayA {
+        height: 140vh;
+    }
+
+    .viewToolbar_MayA {
+        height: 16vh;
+    }
+
+    .viewCurrentFeedTitle_MayA {
+        display: initial;
+        font-size: 48px;
+        padding: 20px 15px 0 15px;
+    }
+}
+
+@media only screen and (max-width: 667px) {
+
+    .viewCurrentFeedTitle_MayA {
+        display: none;
+    }
+
+    .viewNavigation_MayA {
+        font-size: 48px;
+        height: 50px;
+        width: 50px;
+    }
+
+    .viewCurrentFeedIcon_MayA {
+        height: 50px;
+        width: 50px;
+    }
+
+    .viewShareSaveDialogueDisplayed_MayA textarea {
+        margin: 5px 50px 5px 50px;
+        padding: 5px;
+        width: 58%;
+    }
+
+}
