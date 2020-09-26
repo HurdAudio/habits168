@@ -124,6 +124,102 @@ exports.seed = function(knex, Promise) {
           title: 'React Podcast',
           created_at: new Date('2019-06-01 17:21:00.000 UTC'),
           updated_at: new Date('2019-06-01 17:21:00.000 UTC')
+        },
+          {
+          uuid: 'ef83f6e1-9cde-4a2f-bfd2-b3d299ab0f27',
+          author: 'Amanda Adams and Nicole Mueller: Artists and Creative Entrepreneurs',
+          description: 'Beyond the Studio is a podcast about the business of being an artist, brought to you by hosts Amanda Adams and Nicole Mueller.',
+          link: 'https://www.beyondthe.studio/',
+          image: 'https://habits168-hurdaudio.s3.amazonaws.com/blog_logos/AlbumArtworkBTS.jpg',
+          items: null,
+          rss: 'http://beyondthestudiopodcast.libsyn.com/rss',
+          title: 'Beyond the Studio - A Podcast for Artists',
+          created_at: new Date('2019-06-01 17:21:00.000 UTC'),
+          updated_at: new Date('2019-06-01 17:21:00.000 UTC')
+        },
+          {
+          uuid: 'c18ed947-76bc-4f0a-8554-6a306e137d9c',
+          author: 'Artists Helping Artists',
+          description: 'Artists Helping Artists is the #1 Art Show on Blogtalk radio! Join in each week as host Leslie Saeta discusses a specific topic that addresses how to sell more art on-line, along with guest artists, gallerists, and others sharing their knowledge of the business side of art. Leslie Saeta is an artist who paints with a palette knife to create vibrant, colorful paintings. Having spent 30 years in marketing her unique combination of talents has led to a successful career in art. Her non-traditional approach to marketing her art on the internet has created her desire to share her art marketing success with others.',
+          link: 'https://www.blogtalkradio.com/artistshelpingartists',
+          image: 'https://habits168-hurdaudio.s3.amazonaws.com/blog_logos/834032ee-52e7-4594-953e-86c044dac512_artists_helping_artists_small.jpg',
+          items: null,
+          rss: 'https://www.blogtalkradio.com/artistshelpingartists/podcast',
+          title: 'Artists Helping Artists: Selling Your Art On-Line with Leslie Saeta',
+          created_at: new Date('2019-06-01 17:21:00.000 UTC'),
+          updated_at: new Date('2019-06-01 17:21:00.000 UTC')
+        },
+          {
+          uuid: '5cb2083c-0fdd-4656-8890-5a8c004fc34b',
+          author: 'Catherine Orer',
+          description: 'Discover how to bridge the gap between your creativity and savvy business sense with The Artist Entrepreneur founder and Business + PR Strategist, Catherine Orer. Each episode, Catherine delves deep into a juicy business question, getting insight from artists and professional experts, and sharing her own art world experiences to offer an answer. With no-nonsense advice and actionable strategies, she pushes back on the idea that artists cannot be entrepreneurs, and helps creatives build the successful, fulfilling careers they’ve always dreamed of.',
+          link: 'http://theartistentrepreneur.com/',
+          image: 'https://habits168-hurdaudio.s3.amazonaws.com/blog_logos/TAE%2BSubmark%2BBlack.png',
+          items: null,
+          rss: 'https://theartistentrepreneur.libsyn.com/rss',
+          title: 'The Artist Entrepreneur Podcast',
+          created_at: new Date('2019-06-01 17:21:00.000 UTC'),
+          updated_at: new Date('2019-06-01 17:21:00.000 UTC')
+        },
+          {
+          uuid: '9e1c4ca3-d4b0-4f45-8b2f-c70551df1cac',
+          author: 'Jennifer Dasal/Art Curious',
+          description: 'Think art history is boring? Think again. It\'s weird, funny, mysterious, enthralling, and liberating. Join us as we cover the strangest stories in art. Is the Mona Lisa fake? Did Van Gogh actually kill himself? And why were the Impressionists so great? Subscribe to us here, and follow us at www.artcuriouspodcast.com for further information and fun extras. © 2020 Jennifer Dasal // Find us on Twitter and Instagram: @artcuriouspod',
+          link: 'http://www.artcuriouspodcast.com/artcuriouspodcast/',
+          image: 'https://habits168-hurdaudio.s3.amazonaws.com/blog_logos/Oakbur%2BQuill%2BCo..jpg',
+          items: null,
+          rss: 'https://feeds.megaphone.fm/artcuriouspodcast',
+          title: 'ArtCurious Podcast',
+          created_at: new Date('2019-06-01 17:21:00.000 UTC'),
+          updated_at: new Date('2019-06-01 17:21:00.000 UTC')
+        },
+          {
+          uuid: '0ed68c5d-d936-400c-aed2-65aa69fc29bb',
+          author: 'ArtTactic',
+          description: 'The ArtTactic Podcast, the leading podcast on the art market, covers a wide range of topics from art investment to general topics about the global art market industry. Each episode features an in-depth interview with a key art market figure.',
+          link: 'http://www.arttactic.com/',
+          image: 'https://habits168-hurdaudio.s3.amazonaws.com/blog_logos/avatars-000719128720-id8dxw-original.jpg',
+          items: null,
+          rss: 'http://feeds.soundcloud.com/users/soundcloud:users:185340078/sounds.rss',
+          title: 'ArtTactic',
+          created_at: new Date('2019-06-01 17:21:00.000 UTC'),
+          updated_at: new Date('2019-06-01 17:21:00.000 UTC')
+        },
+          {
+          uuid: 'cbf0b29f-c524-46d3-ba20-f66c986f2099',
+          author: 'Alyson Stanfield',
+          description: 'Looking for art career inspiration and ideas while you’re working in the studio or schlepping your art across the country? Alyson Stanfield helps you be a more productive artist, a more empowered artist, and a more successful artist.',
+          link: 'https://artbizsuccess.com/',
+          image: 'https://habits168-hurdaudio.s3.amazonaws.com/blog_logos/Podcast-Cover_artbiz.jpg',
+          items: null,
+          rss: 'http://artbiz.libsyn.com/rss',
+          title: 'Art Biz Podcast',
+          created_at: new Date('2019-06-01 17:21:00.000 UTC'),
+          updated_at: new Date('2019-06-01 17:21:00.000 UTC')
+        },
+          {
+          uuid: '4f90a738-8997-4d13-a474-e99352eefe48',
+          author: 'The Jealous Curator',
+          description: 'ART FOR YOUR EAR brings you stories from some of my favorite contemporary artists. When I studied Art History, the best part was, well, the gossip. I loved finding out why artists did certain things, what was going on in their personal lives, and behind-the-scenes details about other artists they knew and worked with. This podcast is exactly that ... inside-scoop stories from the artsiest people I know. You\'ll hear first-hand from these talented, successful, full-time artists (who also happen to be regular people with hilarious stories) BEFORE they’re in the Art History books. - Danielle (aka The Jealous Curator)',
+          link: 'http://thejealouscurator.libsyn.com/podcast',
+          image: 'https://habits168-hurdaudio.s3.amazonaws.com/blog_logos/tjc_podcast_ituneslogo2.png',
+          items: null,
+          rss: 'https://thejealouscurator.libsyn.com/rss',
+          title: 'The Jealous Curator : ART FOR YOUR EAR',
+          created_at: new Date('2019-06-01 17:21:00.000 UTC'),
+          updated_at: new Date('2019-06-01 17:21:00.000 UTC')
+        },
+          {
+          uuid: '6d40d0de-4321-4110-a5a6-623fb4cb90fc',
+          author: 'The Clark Hulings Fund',
+          description: 'Insights into the Business of Visual Art',
+          link: 'https://clarkhulingsfund.org/chfpodcast',
+          image: 'https://habits168-hurdaudio.s3.amazonaws.com/blog_logos/thrivingartist_rev2.png',
+          items: null,
+          rss: 'http://feeds.feedburner.com/thrivingartist',
+          title: 'The Thriving Artist',
+          created_at: new Date('2019-06-01 17:21:00.000 UTC'),
+          updated_at: new Date('2019-06-01 17:21:00.000 UTC')
         }
       ]);
     });
