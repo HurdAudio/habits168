@@ -1,0 +1,1210 @@
+.backgroundDiv_MayB {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/landing/may/ryan-arnst--_ciMTKzBus-unsplash.jpg);
+    background-position: bottom;
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+#landingContainer_MayB {
+    align-items: center;
+    display: grid;
+    grid-template-areas:
+        "header""header""header""header""header"
+        "tabs""byline""content""content"
+        "tabs""byline""content""content"
+        . "footer""footer""footer""footer";
+    grid-template-columns: [first] 60px [second] 100px [third] 1fr [fourth] 1fr [fifth] 1fr [end];
+    grid-template-rows: [top] 150px [line2] 50px [line3] 50px [line4] 1fr [lineend];
+    justify-items: center;
+    width: 100%;
+}
+
+.landingTitleFlex_MayB {
+    backdrop-filter: blur(13px) saturate(180%);
+    grid-area: header;
+    grid-column: first / end;
+    grid-row: top / line2;
+    width: 100%;
+}
+
+.landingLogo_MayB {
+    filter: brightness(150%) saturate(100%);
+    float: left;
+    grid-area: header;
+    grid-column: first / third;
+    grid-row: top / line2;
+    height: 130px;
+    margin: 0 20px 0 30px;
+    max-width: 130px;
+    opacity: 0.9;
+}
+
+.landingTitleDiv_MayB {
+    align-self: center;
+    color: #dce5d2;
+    filter: brightness(150%);
+    float: left;
+    grid-column: 3 / span 2;
+    grid-row: 1/ 2;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 102px;
+    justify-self: center;
+    margin: 30px 20px 0 15px;
+}
+
+.landingTitleButtonsDiv_MayB {
+    align-self: stretch;
+    float: left;
+    grid-area: header;
+    grid-column: 4/6;
+    grid-row: 1/2;
+    padding: 75px 5px 5px 15%;
+    width: auto;
+}
+
+.landingTitleButtonsDiv_MayB button {
+    background: #545d48;
+    border-bottom: none;
+    border-left: 2px solid #70984f;
+    border-right: 2px solid #70984f;
+    border-top: none;
+    box-shadow: 5px 5px 14px #21251c;
+    color: #b8cca7;
+    cursor: pointer;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 24px;
+    margin: -30px 10px 0 10px;
+    outline-color: #8d9189  ;
+    padding: 10px 20px;
+    perspective: 50px;
+    transition: all 0.3s linear;
+    width: auto;
+    z-index: 15;
+}
+
+.landingTitleButtonsDiv_MayB button:hover {
+    background: #0a0e07;
+    border-left: 22px solid #70984f;
+    border-right: none;
+    box-shadow: 8px 8px 20px #21251c;
+    color: #cfcfca;
+    padding 10px 5px 10px -32px;
+    transition: all 0.3s linear;
+}
+
+.landingTitleButtonsDiv_MayB button:active {
+    box-shadow: 0 0 0 #21251c;
+    filter: invert(100%);
+    transition: all 0.2s linear;
+}
+
+.landingRecentlySharedLinksCollapsed_MayB {
+    display: none;
+}
+
+.landingRecentlySharedLinksUncollapsed_MayB {
+    backdrop-filter: blur(3px) brightness(50%) saturate(60%) sepia(100%);
+    background: linear-gradient(90deg, #cfcfca, #b8cca7, #70984f, transparent);
+    grid-column: 1 / end;
+    grid-row: 3 / span 4;
+    height: 73vh;
+    opacity: 0.9;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.landingRecentlySharedPostsUncollapsed_MayB {
+    backdrop-filter: blur(3px) brightness(50%) saturate(60%) sepia(100%);
+    background: linear-gradient(90deg, #cfcfca, #b8cca7, #70984f, transparent);
+    grid-column: 1 / end;
+    grid-row: 3 / span 4;
+    height: 73vh;
+    opacity: 0.9;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.landingRecentlySharedPostsCollapsed_MayB {
+    display: none;
+}
+
+.landingShareContainer_MayB {
+    color: #000000;
+    font-family: 'Public Sans', sans-serif;
+    height: auto;
+    position: relative;
+    width: 100%;
+}
+
+.landingLinkShare_MayB {
+    display: inline-block;
+}
+
+.landingShareSharerAvatar_MayB {
+    left: 15px;
+    margin: 20px 0 20px 0;
+    position: relative;
+    top: 10px;
+    width: 70px;
+}
+
+.landingByline_MayB {
+    float: left;
+    left: 10px;
+    position: relative;
+    top: 0;
+    width: 20%;
+}
+
+.landingByline_MayB p {
+    filter: brightness(100%);
+    font-size: 18px;
+    font-weight: 900;
+    margin-left: 20px;
+    max-width: 220px;
+}
+
+.landingShareShare_MayB {
+    border-left: solid 1px #000000;
+    float: left;
+    margin-bottom: 15px;
+    position: relative;
+    top: 0;
+    width: 78%;
+}
+
+.landingShareShare_MayB a {
+    color: #2c3c1f;
+    filter: brightness(130%);
+    text-decoration: none;
+}
+
+.landingShareShare_MayB p {
+    filter: brightness(100%);
+    max-width: 700px;
+}
+
+.landingShareShare_MayB a:hover {
+    color: #364027;
+    filter: brightness(100%);
+}
+
+.landingShareShare_MayB a:visited {
+    color: #495041;
+    filter: brightness(100%);
+}
+
+.shareSourceIcon_MayB {
+    left: 5px;
+    position: relative;
+    top: 5px;
+    width: 10%;
+}
+
+.shareViaCredit_MayB {
+    display: inline-block;
+    font-size: 24px;
+    margin: -20px 3px 15px 10px;
+    position: relative;
+    top: 0;
+    width: 80%;
+}
+
+.shareHeadline_MayB {
+    filter: brightness(100%);
+    font-size: 36px;
+    margin: 15px 15px 35px 15px;
+    max-width: 710px;
+}
+
+.shareCleanDate_MayB {
+    filter: brightness(100%);
+    float: right;
+    font-size: 18px;
+    margin: 5px 30% 5px 0;
+}
+
+.shareDescription_MayB {
+    filter: brightness(100%);
+    font-size: 18px;
+    line-height: 1.3em;
+    margin: 100px 15px 130px 15px;
+    max-width: 710px;
+}
+
+.shareAuthor_MayB {
+    filter: brightness(100%);
+    float: left;
+    font-size: 18px;
+    margin: 0 0 0 5px;
+}
+
+.shareShareEnclosurePhoto_MayB {
+    margin: 0 0 0 5px;
+    max-width: 40%;
+}
+
+.shareShareBlogPhoto_MayB {
+    margin: 0 0 0 15px;
+    max-width: 50%;
+}
+
+.shareBlogTitle_MayB {
+    filter: brightness(100%);
+    font-size: 36px;
+    margin: -40px 0 0 120px;
+}
+
+.landingFooter_MayB {
+    background: transparent;
+    bottom: 1px;
+    color: #000400;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 12px;
+    left: 10px;
+    position: absolute;
+
+}
+
+.landingLoginActive_MayB {
+    background: linear-gradient(90deg, #70984f, #b8cca7, #b8cca7, #70984f);
+    box-shadow:  36px 36px 49px #2c3c1f, 
+             -36px -36px 49px #2c3c1f;
+    color: #000000;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 42px;
+    height: 400px;
+    opacity: 1;
+    padding: 32px;
+    position: absolute;
+    right: 30%;
+    top: 200px;
+    transition: all 0.8s linear;
+    width: 40%;
+    z-index: 6;
+}
+
+.landingLoginInactive_MayB {
+    height: 0;
+    position: absolute;
+    transition: all 0.8s linear;
+    width: 0;
+    z-index: -6;
+}
+
+.landingLoginActive_MayB input {
+    background: #cfcfca;
+    border: none;
+    color: #000000;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 24px;
+    margin: 25px 5px 10px 45px;
+    outline-color: #8d9189;
+    padding: 1px 1px 1px 15px;
+    width: 75%;
+}
+
+.landingLoginInactive_MayB input {
+    display: none;
+}
+
+.landingLoginActive_MayB button {
+    background: #545d48;
+    border-bottom: none;
+    border-left: 2px solid #70984f;
+    border-right: 2px solid #70984f;
+    border-top: none;
+    box-shadow: 5px 5px 14px #21251c;
+    color: #b8cca7;
+    cursor: pointer;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 24px;
+    margin: 20px 70px;
+    outline-color: #8d9189  ;
+    padding: 5px 15px;
+    perspective: 50px;
+    transition: all 0.3s linear;
+    width: auto;
+    z-index: 15;
+}
+
+.landingLoginActive_MayB button:hover {
+    background: #0a0e07;
+    border-left: 22px solid #70984f;
+    border-right: none;
+    box-shadow: 8px 8px 20px #21251c;
+    color: #cfcfca;
+    padding 10px 5px 10px -32px;
+    transition: all 0.3s linear;
+}
+
+.landingLoginActive_MayB button:active {
+    box-shadow: 0 0 0 #21251c;
+    filter: invert(100%);
+    transition: all 0.2s linear;
+}
+
+.landingLoginInactive_MayB button {
+    display: none;
+}
+
+.landingLoginActive_MayB a {
+    display: none;
+    color: #000400;
+    cursor: pointer;
+    float: right;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 24px;
+    margin: 30px 0 10px 0;
+    position: relative;
+    text-decoration: none;
+}
+
+.landingLoginInactive_MayB a {
+    display: none;
+}
+
+.landingLoginActive_MayB h2 {
+    color: #000000;
+    margin: 25px 20px 1px 20px;
+}
+
+.landingLoginInactive_MayB h2 {
+    display: none;
+}
+
+.tabs_MayB {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-column: 1/end;
+    grid-row: line2/ line3;
+    height: auto;
+    justify-content: flex-start;
+    opacity: 1;
+    width: 100%;
+}
+
+.tabActive_MayB {
+    background: #000000;
+    color: #dce5d2;
+    cursor: pointer;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 30px;
+    grid-area: tabs;
+    height: 30px;
+    margin: -1.8vh 0 0 25px;
+    opacity: 1;
+    padding: 10px 16px;
+    transition: all 0.5s linear;
+}
+
+.tabInactive_MayB {
+    background: #dce5d2;
+    color: #000000;
+    cursor: pointer;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 30px;
+    grid-area: tabs;
+    height: 30px;
+    margin: -1.8vh 0 0 25px;
+    opacity: 0.5;
+    padding: 10px 16px;
+    transition: all 0.5s linear;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .landingTitleButtonsDiv_MayB {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .backgroundDiv_MayB {
+        background-size: 400%;
+    }
+
+    .landingTitle_MayB {
+        font-size: 18px;
+    }
+
+    .landingShareShare_MayB {
+        width: 70%;
+    }
+
+    .landingRecentlySharedPostsUncollapsed_MayB {
+        height: 75vh;
+    }
+
+    .landingRecentlySharedLinksUncollapsed_MayB {
+        height: 75vh;
+    }
+}
+
+@media only screen and (max-width: 823px) {
+
+    .landingTitleButtonsDiv_MayB {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .landingTitle_MayB {
+        font-size: 18px;
+    }
+
+    .landingShareShare_MayB {
+        width: 70%;
+    }
+
+    .landingRecentlySharedPostsUncollapsed_MayB {
+        height: 75vh;
+    }
+
+    .landingRecentlySharedLinksUncollapsed_MayB {
+        height: 75vh;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .landingTitleButtonsDiv_MayB {
+        padding: 65px 5px 5px 10%;
+    }
+
+
+    .landingTitleButtonsDiv_MayB {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .landingTitle_MayB {
+        font-size: 18px;
+    }
+
+    .landingShareShare_MayB {
+        width: 70%;
+    }
+
+    .landingRecentlySharedPostsUncollapsed_MayB {
+        height: 75vh;
+    }
+
+    .landingRecentlySharedLinksUncollapsed_MayB {
+        height: 75vh;
+    }
+}
+
+@media only screen and (max-width: 736px) {
+    .backgroundDiv_MayB {
+        background-size: 250%;
+    }
+
+    .landingTitle_MayB {
+        font-size: 24px;
+    }
+
+    .landingTitleButtonsDiv_MayB {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .landingTitleButtonsDiv_MayB button {
+        font-size: 12px;
+        margin: -30px 10px 10px 10px;
+    }
+
+    .tabs_MayB {
+        display: none;
+    }
+
+    .landingRecentlySharedLinksUncollapsed_MayB {
+        display: none;
+    }
+
+    .landingLoginActive_MayB {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 79%;
+    }
+
+    .landingLoginActive_MayB a {
+        margin-top: 80px;
+    }
+
+    .landingLoginInactive_MayB a {
+        margin-top: 80px;
+    }
+
+    .landingLoginActive_MayB button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginInactive_MayB button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginActive_MayB h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginInactive_MayB h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginActive_MayB input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MayB input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MayB {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 79%;
+    }
+}
+
+@media only screen and (max-width: 731px) {
+
+    .landingTitleButtonsDiv_MayB {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .backgroundDiv_MayB {
+        background-size: 250%;
+    }
+
+    .landingTitle_MayB {
+        font-size: 24px;
+    }
+
+    .landingTitleButtonsDiv_MayB {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .landingTitleButtonsDiv_MayB button {
+        font-size: 12px;
+        margin: -30px 10px 10px 10px;
+    }
+
+    .tabs_MayB {
+        display: none;
+    }
+
+    .landingRecentlySharedLinksUncollapsed_MayB {
+        display: none;
+    }
+
+    .landingLoginActive_MayB {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 79%;
+    }
+
+    .landingLoginActive_MayB a {
+        margin-top: 80px;
+    }
+
+    .landingLoginInactive_MayB a {
+        margin-top: 80px;
+    }
+
+    .landingLoginActive_MayB button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginInactive_MayB button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginActive_MayB h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginInactive_MayB h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginActive_MayB input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MayB input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MayB {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 79%;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+
+    .landingTitleButtonsDiv_MayB {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .backgroundDiv_MayB {
+        background-size: 250%;
+    }
+
+    .landingTitle_MayB {
+        font-size: 24px;
+    }
+
+    .landingTitleButtonsDiv_MayB {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .landingTitleButtonsDiv_MayB button {
+        font-size: 12px;
+        margin: -30px 10px 10px 10px;
+    }
+
+    .tabs_MayB {
+        display: none;
+    }
+
+    .landingRecentlySharedLinksUncollapsed_MayB {
+        display: none;
+    }
+
+    .landingLoginActive_MayB {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 79%;
+    }
+
+    .landingLoginActive_MayB a {
+        margin-top: 80px;
+    }
+
+    .landingLoginInactive_MayB a {
+        margin-top: 80px;
+    }
+
+    .landingLoginActive_MayB button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginInactive_MayB button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginActive_MayB h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginInactive_MayB h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginActive_MayB input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MayB input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MayB {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 79%;
+    }
+}
+
+@media only screen and (max-width: 568px) {
+    .landingTitleButtonsDiv_MayB {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .backgroundDiv_MayB {
+        background-size: 250%;
+    }
+
+    .landingTitle_MayB {
+        font-size: 24px;
+    }
+
+    .landingTitleButtonsDiv_MayB {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .landingTitleButtonsDiv_MayB button {
+        font-size: 12px;
+        margin: -30px 15px 15px 15px;
+    }
+
+    .landingUserGreeting_MayB {
+        margin-top: -120px;
+    }
+
+    .tabs_MayB {
+        display: none;
+    }
+
+    .landingRecentlySharedLinksUncollapsed_MayB {
+        display: none;
+    }
+
+    .landingLoginActive_MayB {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 79%;
+    }
+
+    .landingLoginActive_MayB a {
+        margin-top: 80px;
+    }
+
+    .landingLoginInactive_MayB a {
+        margin-top: 80px;
+    }
+
+    .landingLoginActive_MayB button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginInactive_MayB button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginActive_MayB h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginInactive_MayB h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginActive_MayB input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MayB input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MayB {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 79%;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .backgroundDiv_MayB {
+        background-size: 250%;
+    }
+
+    .landingTitle_MayB {
+        font-size: 24px;
+    }
+
+    .landingTitleButtonsDiv_MayB {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .landingTitleButtonsDiv_MayB button {
+        font-size: 12px;
+    }
+
+    .tabs_MayB {
+        display: none;
+    }
+
+    .landingRecentlySharedLinksUncollapsed_MayB {
+        display: none;
+    }
+
+    .landingLoginActive_MayB {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 79%;
+    }
+
+    .landingLoginActive_MayB a {
+        margin-top: 80px;
+    }
+
+    .landingLoginInactive_MayB a {
+        margin-top: 80px;
+    }
+
+    .landingLoginActive_MayB button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginInactive_MayB button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginActive_MayB h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginInactive_MayB h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginActive_MayB input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MayB input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MayB {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 79%;
+    }
+}
+
+@media only screen and (max-width: 411px) {
+    .backgroundDiv_MayB {
+        background-size: 250%;
+    }
+
+    .landingTitle_MayB {
+        font-size: 24px;
+    }
+
+    .landingTitleButtonsDiv_MayB {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .landingTitleButtonsDiv_MayB button {
+        font-size: 12px;
+    }
+
+    .tabs_MayB {
+        display: none;
+    }
+
+    .landingRecentlySharedLinksUncollapsed_MayB {
+        display: none;
+    }
+
+    .landingLoginActive_MayB {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 79%;
+    }
+
+    .landingLoginActive_MayB a {
+        margin-top: 80px;
+    }
+
+    .landingLoginInactive_MayB a {
+        margin-top: 80px;
+    }
+
+    .landingLoginActive_MayB button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginInactive_MayB button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginActive_MayB h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginInactive_MayB h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginActive_MayB input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MayB input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MayB {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 79%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .backgroundDiv_MayB {
+        background-size: 250%;
+    }
+
+    .landingTitle_MayB {
+        font-size: 24px;
+    }
+
+    .landingTitleButtonsDiv_MayB {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .landingTitleButtonsDiv_MayB button {
+        font-size: 12px;
+    }
+
+    .tabs_MayB {
+        display: none;
+    }
+
+    .landingRecentlySharedLinksUncollapsed_MayB {
+        display: none;
+    }
+
+    .landingLoginActive_MayB {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 61.5%;
+    }
+
+    .landingLoginActive_MayB a {
+        margin-top: 80px;
+    }
+
+    .landingLoginInactive_MayB a {
+        margin-top: 80px;
+    }
+
+    .landingLoginActive_MayB button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginInactive_MayB button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginActive_MayB h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginInactive_MayB h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginActive_MayB input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MayB input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MayB {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 61.5%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .backgroundDiv_MayB {
+        background-size: 250%;
+    }
+
+    .landingTitle_MayB {
+        font-size: 24px;
+    }
+
+    .landingTitleButtonsDiv_MayB {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .landingTitleButtonsDiv_MayB button {
+        font-size: 12px;
+    }
+
+    .tabs_MayB {
+        display: none;
+    }
+
+    .landingRecentlySharedLinksUncollapsed_MayB {
+        display: none;
+    }
+
+    .landingLoginActive_MayB {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 77%;
+    }
+
+    .landingLoginActive_MayB a {
+        margin-top: 80px;
+    }
+
+    .landingLoginInactive_MayB a {
+        margin-top: 80px;
+    }
+
+    .landingLoginActive_MayB button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginInactive_MayB button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginActive_MayB h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginInactive_MayB h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginActive_MayB input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MayB input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MayB {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 77%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .backgroundDiv_MayB {
+        background-size: 250%;
+    }
+
+    .landingTitle_MayB {
+        font-size: 24px;
+    }
+
+    .landingTitleButtonsDiv_MayB {
+        padding: 65px 5px 5px 10%;
+    }
+
+    .landingTitleButtonsDiv_MayB button {
+        font-size: 12px;
+    }
+
+    .tabs_MayB {
+        display: none;
+    }
+
+    .landingRecentlySharedLinksUncollapsed_MayB {
+        display: none;
+    }
+
+    .landingLoginActive_MayB {
+        left: -13%;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        transform: scale(0.8);
+        width: 320px;
+    }
+
+    .landingLoginActive_MayB a {
+        margin-top: 80px;
+    }
+
+    .landingLoginInactive_MayB a {
+        margin-top: 80px;
+    }
+
+    .landingLoginActive_MayB button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginInactive_MayB button {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .landingLoginActive_MayB h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginInactive_MayB h3 {
+        font-size: 18px;
+    }
+
+    .landingLoginActive_MayB input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MayB input {
+        margin-left: 17px;
+    }
+
+    .landingLoginInactive_MayB {
+        left: -13%;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        transform: scale(0.8);
+        width: 320px;
+    }
+}

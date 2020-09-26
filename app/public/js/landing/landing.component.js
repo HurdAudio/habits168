@@ -294,7 +294,7 @@
                 .then(skinData => {
                     let skin = skinData.data;
                     vm.monthSelect = skin.landing;
-//                    vm.monthSelect = '_MayA';
+//                    vm.monthSelect = '_MayB';
                     vm.landingLoginBoxClass = 'landingLoginInactive' + vm.monthSelect;
                     vm.linkSharesClass = 'landingRecentlySharedLinksUncollapsed' + vm.monthSelect;
                     vm.postSharesClass = 'landingRecentlySharedPostsCollapsed' + vm.monthSelect;
@@ -339,6 +339,9 @@
                             break;
                         case('_MayA'):
                             vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/espresso-5414471_1920.jpg';
+                            break;
+                        case('_MayB'):
+                            vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_city_by_pushok_12_dyr0lf-fullview.jpg';
                             break;
                         default:
                             alert('UNSUPPORTED MONTH SELECT for LOGO');
