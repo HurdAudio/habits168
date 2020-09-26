@@ -1,0 +1,200 @@
+.browseCategoricalFeeds_art_JanuaryB {
+    background-image: url(https://s3.amazonaws.com/hours168-hurdaudio/img/january/vertical-and-horizontal-composition-1928.jpg);
+    background-size: cover;
+    border: none;
+    filter: brightness(100%);
+    height: 77vh;
+    margin: 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 34%;
+}
+
+/*
+art januaryA === Abstract Art
+*/
+
+.browsePodCategoricalFeeds_art_JanuaryB {
+    display: none;
+    background-image: url();
+    background-size: cover;
+    border: none;
+    filter: brightness(100%);
+    height: 77vh;
+    margin: 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 34%;
+}
+
+.browsePodCategoricalFeeds_art_JanuaryB img {
+    display: none;
+    filter: brightness(120%) drop-shadow(5px 5px 5px #273633);
+    height: 50px;
+    margin: 0 15px 0 0;
+    width: 50px;
+}
+
+.browseIndividualPodFeedData_art_JanuaryB {
+    display: none;
+    background-image: url();
+    background-size: cover;
+    border: none;
+    filter: brightness(100%);
+    height: 77vh;
+    margin: 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 34%;
+}
+
+.browseIndividualPodFeedData_art_JanuaryB img {
+    display: none;
+    filter: brightness(120%) drop-shadow(5px 5px 5px #273633);
+    margin: 10px 15%;
+    width: 70%;
+}
+
+.browseIndividualPodFeedData_art_JanuaryB h3 {
+    display: none;
+    color: #100e0d;
+    filter: brightness(100%);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 36px;
+    margin: 5px 10%;
+    width: 80%;
+}
+
+.browseIndividualPodFeedData_art_JanuaryB p {
+    display: none;
+    color: #100e0d;
+    filter: brightness(100%);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 30px;
+    margin: 15px 10%;
+    width: 80%;
+}
+
+.browseIndividualPodFeedData_art_JanuaryB button {
+    display: none;
+    background: #638880;
+    border: none;
+    color: #100e0d;
+    cursor: pointer;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 36px;
+    margin: 30px 35%;
+    outline-color: #99adc7;
+    transform: skew(-15deg);
+    transition: all 0.4s linear;
+}
+
+.browseIndividualPodFeedData_art_JanuaryB button:hover {
+    background: #471a1a;
+    color: #d2d2ce;
+    transform: skew(-5deg);
+    transition: all 0.4s linear;
+}
+
+.browseIndividualPodFeedData_art_JanuaryB button:active {
+    background: #325a8e;
+    color: #949291;
+    transition: all 0.4s linear;
+}
+
+
+.browseFeedsContainer_art_JanuaryB {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 5px 15px;
+}
+
+.browseFeedsContainer_art_JanuaryB img {
+    filter: brightness(120%) drop-shadow(5px 5px 5px #3c140e);
+    height: 50px;
+    margin: 0 15px 0 0;
+    width: 50px;
+}
+
+.browsePodCategoricalFeeds_art_JanuaryB p {
+    color: #1c1a17;
+    filter: brightness(80%);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 30px;
+}
+
+.browseFeedsTitleDiv_art_JanuaryB {
+    width: 75%;
+}
+
+.browseFeedsTitleDiv_art_JanuaryB p {
+    color: #1c1a17;
+    filter: brightness(80%);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 30px;
+}
+
+.browseIndividualFeedData_art_JanuaryB {
+    background-image: url(https://s3.amazonaws.com/hours168-hurdaudio/img/january/vertical-and-horizontal-composition-1928.jpg);
+    background-size: cover;
+    border: none;
+    filter: brightness(100%);
+    height: 77vh;
+    margin: 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 34%;
+}
+
+.browseIndividualFeedData_art_JanuaryB img {
+    filter: brightness(120%) drop-shadow(5px 5px 5px #3c140e);
+    margin: 10px 15%;
+    width: 70%;
+}
+
+.browseIndividualFeedData_art_JanuaryB h3 {
+    color: #1c1a17;
+    filter: brightness(80%);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 36px;
+    margin: 5px 10%;
+    width: 80%;
+}
+
+.browseIndividualFeedData_art_JanuaryB p {
+    color: #1c1a17;
+    filter: brightness(80%);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 30px;
+    margin: 15px 10%;
+    width: 80%;
+}
+
+.browseIndividualFeedData_art_JanuaryB button {
+    background: #eed69a;
+    border: none;
+    color: #1c1a17;
+    cursor: pointer;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 36px;
+    margin: 30px 35%;
+    outline-color: #cc9991;
+    transform: skew(-15deg);
+    transition: all 0.4s linear;
+}
+
+.browseIndividualFeedData_art_JanuaryB button:hover {
+    background: #983223;
+    color: #f7ebcd;
+    transform: skew(-5deg);
+    transition: all 0.4s linear;
+}
+
+.browseIndividualFeedData_art_JanuaryB button:active {
+    background: #f7ebcd;
+    color: #983223;
+    transition: all 0.4s linear;
+}
