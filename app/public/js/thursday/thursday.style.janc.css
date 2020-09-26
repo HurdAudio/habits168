@@ -1,0 +1,876 @@
+.thursdayBackgroundDiv_JanuaryC {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/thursday/january/ice-5555393_1920.jpg);
+    background-size: 100%;
+    height: 100%;
+    left: 0;
+    opacity: 0.6;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.thursdayContainerActive_JanuaryC {
+    filter: blur(0px);
+}
+
+.thursdayContainerInactive_JanuaryC {
+    filter: blur(15px);
+}
+
+.thursdayTitleStrip_JanuaryC {
+    background: #dae3e8;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Jomolhari', serif;
+    height: auto;
+    justify-content: flex-start;
+    opacity: 0.9;
+    padding: 4px 2vw 4px 2vw;
+    width: 100%;
+}
+
+.thursdayLogo_JanuaryC {
+    cursor: pointer;
+    filter: brightness(100%);
+    max-width: 75px;
+}
+
+.thursdayReadingPlaylistTitle_JanuaryC {
+    color: #000001;
+    font-size: 42px;
+    margin: 20px 0 0 96px;
+}
+
+.thursdayTabStrip_JanuaryC {
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Jomolhari', serif;
+    height: auto;
+    opacity: 0.9;
+    padding: 0 10px;
+    width: 100%;
+}
+
+.thursdayTabActive_JanuaryC {
+    background: #6d829d;
+    color: #020204;
+    cursor: none;
+    font-size: 24px;
+    padding: 5px 45px;
+    transition: all 0.5s linear;
+}
+
+.thursdayTabInactive_JanuaryC {
+    background: transparent;
+    color: #dae3e8;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 5px 25px;
+    transition: all 0.5s linear;
+}
+
+.thursdayContent_JanuaryC {
+    background: transparent;
+    height: 80vh;
+    width: 100%;
+}
+
+.thursdayContentContent_JanuaryC {
+    background: linear-gradient(90deg, #edf1f4, #edf1f4, #606a74, transparent);
+    height: 80vh;
+    opacity: 0.8;
+    overflow-x: hidden;
+    overflow-Y: auto;
+    width: 105%;
+}
+
+.thursdayReaderNavigationButtons_JanuaryC {
+    background: #aab7ca;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: flex-start;
+    margin: 0 0 0 0;
+    position: fixed;
+    width: 100%;
+    z-index: 15;
+}
+
+.markAllReadTextThursday_JanuaryC {
+    color: #000001;
+    font-family: 'Jomolhari', serif;
+    font-size: 18px;
+    margin: 35px 10px 0 40px;
+}
+
+.thursdayTrackProgress_JanuaryC {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    cursor: pointer;
+    display: block;
+    font-size: 48px;
+    margin: 15px 1px 15px 5px;
+    padding-left: 35px;
+    position: relative;
+    user-select: none;
+}
+
+.thursdayTrackProgress_JanuaryC input {
+    cursor: pointer;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    width: 0;
+}
+
+.thursdayCheckbox_JanuaryCtrue {
+    background-color: #262a2e;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    top: 15px;
+    transition: all 0.3s linear;
+    width: 50px;
+}
+
+.thursdayCheckbox_JanuaryCfalse {
+    background-color: #262a2e;
+    border: none;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    top: 15px;
+    transition: all 0.3s linear;
+    width: 50px;
+}
+
+.thursdaySwitchUnchecked_JanuaryCtrue {
+    background-color: #dae3e8;
+    height: 20px;
+    left: 25px;
+    position: absolute;
+    top: 0;
+    transition: all 0.2s linear;
+    width: 30px;
+}
+
+.thursdaySwitchUnchecked_JanuaryCfalse {
+    background-color: #dae3e8;
+    height: 20px;
+    left: 0px;
+    position: absolute;
+    top: 0;
+    transition: all 0.2s linear;
+    width: 30px;
+}
+
+.thursdayReadAll_JanuaryC {
+    color: #000001;
+    font-family: 'Jomolhari', serif;
+    font-size: 24px;
+    margin: 14px 0 14px 25px;
+}
+
+.thursdayReadAllButton_JanuaryC {
+    background: #2b343e;
+    border: transparent;
+    color: #d5dbe5;
+    cursor: pointer;
+    font-family: 'Jomolhari', serif;
+    font-size: 36px;
+    height: 60px;
+    outline-color: #8d9497;
+    transform: skewX(-15deg);
+    transition: all 0.5s linear;
+    width: 60px;
+}
+
+.thursdayReadAllButton_JanuaryC:hover {
+    background: #6d829d;
+    color: #000001;
+    transform: skewX(-5deg);
+    transition: all 0.5s linear;
+}
+
+.thursdayReadAllButton_JanuaryC:active {
+    background: #000001;
+    color: #6d829d;
+    transition: all 0.1s linear;
+}
+
+.thursdaySorting_JanuaryC {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 14px 0 14px 100px;
+}
+
+.thursdaySorting_JanuaryC p {
+    color: #000001;
+    font-family: 'Jomolhari', serif;
+    font-size: 18px;
+    margin: 20px 20px 0 0;
+}
+
+.thursdaySorting_JanuaryC button {
+    margin: 0 5px;
+}
+
+.thursdayFeedsDiv_JanuaryC {
+    height: auto;
+    margin: 90px 50px 0 50px;
+    width: 90%;
+}
+
+.thursdaySubscriptions_JanuaryC {
+    cursor: pointer;
+    margin: 10px;
+}
+
+.thursdayBuffer_JanuaryC {
+    height: 20px;
+    width: 100%;
+}
+
+.thursdayFeedContainer_JanuaryC {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 5px 5px 5px -15px;
+}
+
+.thursdaySubIcon_JanuaryC {
+    height: 65px;
+    margin-right: 20px;
+    transition: all 0.5s linear;
+    width: 65px;
+}
+
+.thursdaySubscriptionTitle_JanuaryC {
+    color: #000001;
+    font-family: 'Jomolhari', serif;
+    font-size: 18px;
+    line-height: 1.2;
+    margin: 5px 0 10px 0;
+    width: 650px;
+}
+
+.thursdayUnreadText_JanuaryC {
+    color: #000001;
+    font-family: 'Jomolhari', serif;
+    font-size: 18px;
+    margin: 10px 40px 0 30px;
+    width: 35px;
+}
+
+.thursdayReadText_JanuaryC {
+    color: #000001;
+    font-family: 'Jomolhari', serif;
+    font-size: 18px;
+    margin: 10px 40px 0 30px;
+    width: 35px;
+}
+
+.thursdayManageTabsButton_JanuaryC {
+    background: #2b343e;
+    border: transparent;
+    color: #d5dbe5;
+    cursor: pointer;
+    font-family: 'Jomolhari', serif;
+    font-size: 24px;
+    height: auto;
+    margin: 56px 0 0 20%;
+    outline-color: #8d9497;
+    position: relative;
+    transform: skewX(-15deg);
+    transition: all 0.5s linear;
+    width: auto;
+}
+
+.thursdayManageTabsButton_JanuaryC:hover {
+    background: #6d829d;
+    color: #000001;
+    transform: skewX(-5deg);
+    transition: all 0.5s linear;
+}
+
+.thursdayManageTabsButton_JanuaryC:active {
+    background: #000001;
+    color: #6d829d;
+    transition: all 0.1s linear;
+}
+
+.thursdayManageTabsSubsModal_JanuaryC {
+    background: #c6cdd8;
+    border: solid 5px #1b282e;
+    filter: blur(0px);
+    height: 90vh;
+    left: 2%;
+    opacity: 1;
+    position: absolute;
+    top: 5vh;
+    transition: all 0.4s linear;
+    width: 95%;
+    z-index: 50;
+}
+
+.thursdayManageTabsSubsModalBlur_JanuaryC {
+    background: #c6cdd8;
+    border: solid 5px #1b282e;
+    filter: blur(5px);
+    height: 90vh;
+    left: 2%;
+    opacity: 0.4;
+    position: absolute;
+    top: 5vh;
+    transition: all 0.4s linear;
+    width: 95%;
+    z-index: 50;
+}
+
+.thursdayManageTabsSubsModalInactive_JanuaryC {
+    opacity: 0;
+    top: -80vh;
+    transition: all 0.4s linear;
+    z-index: -5;
+}
+
+.thursdayManageTitleBar_JanuaryC {
+    background: #000001;
+    color: #d5dbe5;
+    font-family: 'Jomolhari', serif;
+    height: 6vh;
+    opacity: 0.9;
+    position: relative;
+    padding: 1vh 0 2vh 1vw;
+    width: 99%;
+}
+
+.thursdayModalExit_JanuaryC {
+    color: #d5dbe5;
+    cursor: pointer;
+    font-family: 'Jomolhari', serif;
+    font-size: 48px;
+    float: left;
+    left: 94%;
+    position: relative;
+    top: 1%;
+}
+
+.thursdayManageTitle_JanuaryC {
+    color: #d5dbe5;
+    font-family: 'Jomolhari', serif;
+    font-size: 30px;
+    margin: 20px 0 0 0;
+}
+
+.thursdayManagerModalContainer_JanuaryC {
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    height: 81vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.thursdayManagerTabsSection_JanuaryC {
+    height: auto;
+    padding: 15px;
+    position: relative;
+    width: 30%;
+}
+
+.thursdayTabsManageTitle_JanuaryC {
+    color: #000001;
+    font-family: 'Jomolhari', serif;
+    font-size: 24px;
+}
+
+.thursdayManageTabsContainer_JanuaryC {
+    margin: 40px 8%;
+}
+
+.thursdayTabManageTab_JanuaryC {
+    color: #000001;
+    cursor: pointer;
+    font-family: 'Jomolhari', serif;
+    font-size: 24px;
+    margin: 15px 0 15px 10px;
+}
+
+.thursdayTabManageSubTab_JanuaryC {
+    color: #000001;
+    cursor: pointer;
+    font-family: 'Jomolhari', serif;
+    font-size: 15px;
+    margin: 1px 0 30px 40px;
+    width: 10%;
+}
+
+.thursdayManagerSubscriptionsSection_JanuaryC {
+    height: auto;
+    padding: 15px;
+    position: relative;
+    width: 30%;
+}
+
+.thursdayTabsSubscriptionTitle_JanuaryC {
+    color: #000001;
+    font-family: 'Jomolhari', serif;
+    font-size: 24px;
+}
+
+.thursdayManageSubIcon_JanuaryC {
+    height: 40px;
+    width: 40px;
+}
+
+.thursdaySubManageSubTab_JanuaryC {
+    color: #000001;
+    cursor: pointer;
+    font-family: 'Jomolhari', serif;
+    font-size: 15px;
+    margin: 4px 0 1px 10px;
+    transform: translateX(100px) translateY(-40px);
+    width: 10%;
+}
+
+.thursdayManageSubsTitles_JanuaryC {
+    color: #000001;
+    font-family: 'Jomolhari', serif;
+    font-size: 18px;
+    margin: -15px 0 30px 1px;
+}
+
+.thursdayManagerFeedsSection_JanuaryC {
+    height: auto;
+    padding: 15px;
+    position: relative;
+    width: 30%;
+}
+
+.thursdayManagerFeedsTitle_JanuaryC {
+    color: #000001;
+    font-family: 'Jomolhari', serif;
+    font-size: 24px;
+}
+
+.thursdayManageSearch_JanuaryC {
+    background: #dae3e8;
+    border: none;
+    color: #000001;
+    float: left;
+    font-family: 'Jomolhari', serif;
+    font-size: 18px;
+    margin-top: 3px;
+    outline-color: #8d9497;
+    padding-left: 5px;
+    width: 100%;
+}
+
+.thursdayManageSubsTitlesFeeds_JanuaryC {
+    color: #000001;
+    font-family: 'Jomolhari', serif;
+    font-size: 18px;
+    margin: -15px 0 30px 1px;
+}
+
+.thursdayCreateEditTabManagement_JanuaryC {
+    background: #edf1f4;
+    border: solid 5px #1b282e;
+    height: auto;
+    left: 22%;
+    opacity: 1;
+    padding: 45px;
+    position: absolute;
+    top: 25vh;
+    transition: all 0.4s linear;
+    width: 50%;
+    z-index: 60;
+}
+
+.thursdayCreateEditTabTitle_JanuaryC {
+    color: #000001;
+    font-family: 'Jomolhari', serif;
+    font-size: 24px;
+    margin: 15px 0 30px 25px;
+}
+
+.thursdayTabEditorFields_JanuaryC {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin: 10px 0 0 60px;
+}
+
+.thursdayTabNameLabel_JanuaryC {
+    color: #000001;
+    font-family: 'Jomolhari', serif;
+    font-size: 18px;
+    margin: 0 9px 0 0;
+}
+
+.thursdayTabNameInput_JanuaryC {
+    background: #aab7ca;
+    border: none;
+    color: #000001;
+    font-family: 'Jomolhari', serif;
+    font-size: 18px;
+    height: 21px;
+    margin: 0 9px;
+    outline: #8d9497;
+    width: 350px;
+}
+
+.thursdayTabEditorPodcastBlogStatus_JanuaryC {
+    margin: -13px 0 0 40px;
+}
+
+#thursdayUnreadText_JanuaryC {
+    color: #000001;
+}
+
+#thursdayReadText_JanuaryC {
+    color: #000001;
+}
+
+.thursdayTabEditorFields_JanuaryC {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin: 10px 0 0 60px;
+}
+
+.thursdayTabEditorErrorMessage_JanuaryC {
+    color: #ff0000;
+    font-family: 'Jomolhari', serif;
+    font-size: 18px;
+    margin-left: 120px;
+    margin-top: 20px;
+}
+
+.thursdayManageTabsConfirmButton_JanuaryC {
+    background: #2b343e;
+    border: transparent;
+    color: #d5dbe5;
+    cursor: pointer;
+    font-family: 'Jomolhari', serif;
+    font-size: 18px;
+    height: 40px;
+    margin: 56px 0 0 5%;
+    outline-color: #8d9497;
+    position: relative;
+    transform: skewX(-15deg);
+    transition: all 0.5s linear;
+    width: auto;
+}
+
+.thursdayManageTabsConfirmButton_JanuaryC:hover {
+    background: #6d829d;
+    color: #000001;
+    transform: skewX(-5deg);
+    transition: all 0.5s linear;
+}
+
+.thursdayManageTabsConfirmButton_JanuaryC:active {
+    background: #000001;
+    color: #6d829d;
+    transition: all 0.1s linear;
+}
+
+.thursdayManageTabsSubmitCancelButton_JanuaryC {
+    background: #2b343e;
+    border: transparent;
+    color: #d5dbe5;
+    cursor: pointer;
+    font-family: 'Jomolhari', serif;
+    font-size: 18px;
+    height: 40px;
+    margin: 56px 0 0 20%;
+    outline-color: #8d9497;
+    position: relative;
+    transform: skewX(-15deg);
+    transition: all 0.5s linear;
+    width: auto;
+}
+
+.thursdayManageTabsSubmitCancelButton_JanuaryC:hover {
+    background: #6d829d;
+    color: #000001;
+    transform: skewX(-5deg);
+    transition: all 0.5s linear;
+}
+
+.thursdayManageTabsSubmitCancelButton_JanuaryC:active {
+    background: #000001;
+    color: #6d829d;
+    transition: all 0.1s linear;
+}
+
+.thursdayGuardRail_JanuaryC {
+    background: #b6c1ce;
+    border: solid 5px #444950;
+    height: auto;
+    left: 32%;
+    opacity: 1;
+    padding: 45px;
+    position: absolute;
+    top: 25vh;
+    transition: all 0.4s linear;
+    width: 30%;
+    z-index: 60;
+}
+
+.thursdayGuardRailText_JanuaryC {
+    color: #000001;
+    font-family: 'Jomolhari', serif;
+    font-size: 24px;
+    margin: 15px 0 30px 25px;
+}
+
+.thursdayGuardRailButtons_JanuaryC {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin: 10px 0 0 60px;
+}
+
+.hubReaderDay1ThursdayActive_JanuaryC {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/thursday/january/ice-5555393_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay1ThursdayInactive_JanuaryC {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/thursday/january/ice-5555393_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-115%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay2ThursdayActive_JanuaryC {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/thursday/january/ice-5555393_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay2ThursdayInactive_JanuaryC {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/thursday/january/ice-5555393_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-230%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay3ThursdayActive_JanuaryC {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/thursday/january/ice-5555393_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay3ThursdayInactive_JanuaryC {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/thursday/january/ice-5555393_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-345%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay4ThursdayActive_JanuaryC {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/thursday/january/ice-5555393_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay4ThursdayInactive_JanuaryC {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/thursday/january/ice-5555393_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-460%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay5ThursdayActive_JanuaryC {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/thursday/january/ice-5555393_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 3;
+}
+
+.hubReaderDay5ThursdayInactive_JanuaryC {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/thursday/january/ice-5555393_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-575%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay6ThursdayActive_JanuaryC {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/thursday/january/ice-5555393_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay6ThursdayInactive_JanuaryC {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/thursday/january/ice-5555393_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-690%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay7ThursdayActive_JanuaryC {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/thursday/january/ice-5555393_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay7ThursdayInactive_JanuaryC {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/thursday/january/ice-5555393_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-705%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
