@@ -177,7 +177,7 @@ router.use(function (req,res,next) {
              }
 
              console.log('Message sent successfully!');
-             console.log(nodemailer.getTestMessageUrl(info));
+//             console.log(nodemailer.getTestMessageUrl(info));
                res.sendStatus(200);
 
              // only needed when using pooled connections
@@ -369,6 +369,7 @@ router.post('/login', (req, res, next) => {
       res.sendStatus(403);
       return;
     }
+    console.log(req.body);
     let passwords = decryptPasswords(req.body.password, result.security);
     let clearance = false;
     let ip = result.security.ip;
@@ -584,7 +585,7 @@ router.get('/prelogin/:email/:ip', (req, res, next) => {
 
 router.post('/', (req, res, next) => {
   var salt = bcrypt.genSaltSync(parseInt(process.env.SALT_ROUNDS));
-  var hash = bcrypt.hashSync(process.env.SALT_PASSWORD + req.body.password, salt);
+  var hash = bcrypt.hashSync(process.env.SALT_passWORD + req.body.password, salt);
   var key = nanoid();
   var value = nanoid();
   var email_confirm = nanoid() + nanoid();
@@ -655,7 +656,7 @@ router.patch('/newuser/:id', (req, res, next)=>{
 
 router.patch('/passwordchange/:id', (req, res, next)=>{
   var salt = bcrypt.genSaltSync(parseInt(process.env.SALT_ROUNDS));
-  var hash = bcrypt.hashSync(process.env.SALT_PASSWORD + req.body.password, salt);
+  var hash = bcrypt.hashSync(process.env.SALT_passWORD + req.body.password, salt);
   knex('users')
   .where('id', req.params.id)
   .update({
@@ -675,7 +676,7 @@ router.patch('/:uuid', (req, res, next) => {
   if (!req.session.isChanged) {
     if (req.body.password) {
       var salt = bcrypt.genSaltSync(parseInt(process.env.SALT_ROUNDS));
-      var hash = bcrypt.hashSync(process.env.SALT_PASSWORD + req.body.password, salt);
+      var hash = bcrypt.hashSync(process.env.SALT_passWORD + req.body.password, salt);
       knex('users')
       .where('uuid', req.params.uuid)
       .update({

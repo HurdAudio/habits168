@@ -239,7 +239,7 @@ router.get('/:uuid', (req, res, next) => {
             knex('blog_shares')
                 .then(allBlogShares => {
                     let blogShares = allBlogShares.filter(blog => {
-                        return ((blog.user_uuid === user.uuid) || (user.associates.friends.indexOf(blog.user_uuid) !== -1) || (user.associates.following.indexOf(blog.user_uuid) !== -1));
+                        return ((blog.user_uuid === user.uuid) || (user.associates.friends.indexOf(blog.user_uuid) !== -1) || (user.associates.following.indexOf(blog.user_uuid) !== -1) || (blog.share_status === 'public'));
                     });
                     blogShares = blogShares.filter(share => {
                         return (((share.share_status === 'private') && (share.user_uuid === user.uuid)) || (share.share_status !== 'private'));
@@ -250,7 +250,7 @@ router.get('/:uuid', (req, res, next) => {
                     knex('podcast_shares')
                         .then(allPodcastShares => {
                             let podcastShares = allPodcastShares.filter(podcast => {
-                                return ((podcast.share_status !== 'private') && ((podcast.user_uuid === user.uuid) || (user.associates.friends.indexOf(podcast.user_uuid) !== -1) || (user.associates.following.indexOf(podcast.user_uuid) !== -1)));
+                                return ((podcast.share_status !== 'private') && ((podcast.user_uuid === user.uuid) || (user.associates.friends.indexOf(podcast.user_uuid) !== -1) || (user.associates.following.indexOf(podcast.user_uuid) !== -1)) || (podcast.share_status === 'public'));
                             });
                             podcastShares = podcastShares.filter(share => {
                                 return (((share.share_status === 'private') && (share.user_uuid === user.uuid)) || (share.share_status !== 'private'));
