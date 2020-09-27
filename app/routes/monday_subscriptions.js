@@ -2,6 +2,7 @@
 
 const express = require('express');
 const knex = require('../../knex');
+const uuid4 = require('uuid4');
 
 const router = express.Router();
 
@@ -152,6 +153,22 @@ router.get('/assembled/:user_uuid', (req, res, next) => {
 
         })
         .catch(err => {
+            next(err);
+        });
+});
+
+router.post('/', (req, res, next) => {
+    const uuid = uuid4();
+    knex('monday_subscriptions')
+        .insert({
+            uuid: uuid,
+            user_uuid: req.body.user_uuid,
+            tabs: req.body.tabs
+        }, '*')
+        .then((result) => {
+            res.status(200).send(result);
+        })
+        .catch((err) => {
             next(err);
         });
 });

@@ -58,7 +58,7 @@ router.post('/', (req, res, next) => {
             uuid: uuid,
             user_uuid: req.body.user_uuid,
             tabs: req.body.subject,
-            sub_week: req.body.message,
+            sub_management: req.body.sub_management,
             sub_week: req.body.sub_week,
             profile_state: req.body.profile_state
         }, '*')

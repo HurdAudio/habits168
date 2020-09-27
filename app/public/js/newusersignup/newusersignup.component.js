@@ -71,6 +71,10 @@
                     first_name: vm.newUserFirstName,
                     last_name: vm.newUserLastName,
                     password: vm.newUserPassword,
+                    associates: {
+                        friends: [],
+                        following: []
+                    },
                     is_admin: false
                 })
                 .then(postedUserData => {
@@ -101,7 +105,7 @@
         }
         
         function setFirstName() {
-            vm.newUserTextBoxFirstName = document.getElementById('newUserTextBoxFirstName').value;
+            vm.newUserFirstName = document.getElementById('newUserTextBoxFirstName').value;
         }
         
         function navigateToLanding() {
