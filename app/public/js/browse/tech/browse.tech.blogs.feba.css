@@ -16,8 +16,7 @@ tech february === data storage
 */
 
 .browsePodCategoricalFeeds_tech_FebruaryA {
-    display: none;
-    background-image: url();
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/tech/february/database-309919_1280.png);
     background-size: cover;
     border: none;
     filter: brightness(100%);
@@ -29,16 +28,14 @@ tech february === data storage
 }
 
 .browsePodCategoricalFeeds_tech_FebruaryA img {
-    display: none;
-    filter: brightness(100%) drop-shadow(5px 5px 5px #54401e);
+    filter: brightness(100%) drop-shadow(5px 5px 5px #666666);
     height: 50px;
     margin: 0 15px 0 0;
     width: 50px;
 }
 
 .browseIndividualPodFeedData_tech_FebruaryA {
-    display: none;
-    background-image: url();
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/tech/february/database-309919_1280.png);
     background-size: cover;
     border: none;
     filter: brightness(100%);
@@ -50,16 +47,13 @@ tech february === data storage
 }
 
 .browseIndividualPodFeedData_tech_FebruaryA img {
-    display: none;
-    filter: brightness(120%) drop-shadow(5px 5px 5px #54401e);
+    filter: brightness(120%) drop-shadow(5px 5px 5px #666666);
     margin: 10px 15%;
     width: 70%;
 }
 
 .browseIndividualPodFeedData_tech_FebruaryA h3 {
-    display: none;
-    background: #fae7ac;
-    color: #1b1b19;
+    color: #000000;
     filter: brightness(100%);
     font-family: 'VT323', monospace;
     font-size: 36px;
@@ -68,9 +62,7 @@ tech february === data storage
 }
 
 .browseIndividualPodFeedData_tech_FebruaryA p {
-    display: none;
-    background: #fae7ac;
-    color: #1b1b19;
+    color: #000000;
     filter: brightness(100%);
     font-family: 'VT323', monospace;
     font-size: 30px;
@@ -79,29 +71,26 @@ tech february === data storage
 }
 
 .browseIndividualPodFeedData_tech_FebruaryA button {
-    display: none;
-    background: #54401e;
+    background: #ababab;
     border: none;
-    color: #ebe9d3;
+    box-shadow: 5px 5px 5px #666666;
+    color: #000000;
     cursor: pointer;
     font-family: 'VT323', monospace;
     font-size: 36px;
     margin: 30px 35%;
-    outline-color: #d3b792;
-    transform: skew(-15deg);
+    outline-color: #ababab;
     transition: all 0.4s linear;
 }
 
 .browseIndividualPodFeedData_tech_FebruaryA button:hover {
-    background: #fae7ac;
-    color: #1b1b19;
-    transform: skew(-5deg);
+    box-shadow: 1px 1px 5px #666666;
+    filter: brightness(200%);
     transition: all 0.4s linear;
 }
 
 .browseIndividualPodFeedData_tech_FebruaryA button:active {
-    background: #1b1b19;
-    color: #fae7ac;
+    filter: invert(100%);
     transition: all 0.2s linear;
 }
 
