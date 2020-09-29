@@ -1,0 +1,560 @@
+.browseActive_MarchB {
+    filter: blur(0);
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.browseInactive_MarchB {
+    filter: blur(19px);
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.browseImageDiv_MarchB {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/march/nathan-watson-7XsjdiNT1fU-unsplash.jpg);
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.browseNavbar_MarchB {
+    backdrop-filter: blur(16px);
+    border-bottom: 2px solid #00515d;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Piazzolla', serif;
+    height: 12vh;
+    justify-content: left;
+    left: 0;
+    padding-left: 25px;
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+
+.browseLogoNav_MarchB {
+    cursor: pointer;
+    filter: brightness(110%) drop-shadow(5px 5px 5px #101a1a);
+    margin: 0.5vh 0;
+    max-height: 11vh;
+    max-width: 105px;
+}
+
+.browseTitle_MarchB {
+    color: #040100;
+    filter: brightness(90%);
+    font-family: 'Piazzolla', serif;
+    font-size: 48px;
+    margin: 4vh 0 0 65px;
+}
+
+.browseTabs_MarchB {
+    backdrop-filter: hue-rotate(45deg);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Piazzolla', serif;
+    height: 6vh;
+    justify-content: center;
+}
+
+.browseTabActive_MarchB {
+    background: #a2d3de;
+    color: #040100;
+    cursor: none;
+    font-family: 'Piazzolla', serif;
+    font-size: 36px;
+    height: 100%;
+    opacity: 0.95;
+    padding: 0 10%;
+    pointer-events: none;
+}
+
+.browseTabActive_MarchB p {
+    color: #040100;
+    font-family: 'Piazzolla', serif;
+    font-size: 36px;
+    margin: 1vh 0;
+}
+
+.browseTabInactive_MarchB {
+    background: transparent;
+    color: #00515d;
+    cursor: pointer;
+    font-family: 'Piazzolla', serif;
+    font-size: 36px;
+    height: 100%;
+    opacity: 0.75;
+    padding: 0 10%;
+}
+
+.browseTabInactive_MarchB p {
+    color: #00515d;
+    font-family: 'Piazzolla', serif;
+    font-size: 36px;
+    margin: 1vh 0;
+}
+
+.browseContainerActive_MarchB {
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 80vh;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.browseContainerInactive_MarchB {
+    display: none;
+}
+
+.browseBlogsByCategory_MarchB {
+    backdrop-filter: blur(8px);
+    background: #b4bec1;
+    border-right: 1px solid #44a7bc;
+    height: 77vh;
+    margin: 15px;
+    opacity: 0.8;
+    width: 19%;
+}
+
+.browsePodcastsByCategory_MarchB {
+    display: none;
+    backdrop-filter: blur(8px);
+    background: #84a5ad;
+    border-right: 1px solid #3f262a;
+    height: 77vh;
+    margin: 15px;
+    opacity: 0.8;
+    width: 19%;
+}
+
+.browseBlogsCategoryLabel_MarchB {
+    color: #040100;
+    font-family: 'Piazzolla', serif;
+    font-size: 24px;
+    margin: 27px 27px 5px 27px;
+}
+
+.browseCategorySelect_MarchB {
+    background: #95a1a1;
+    border: none;
+    color: #040100;
+    font-family: 'Piazzolla', serif;
+    font-size: 24px;
+    margin: 10px 15%;
+    min-width: 70%;
+    outline-color: #819091;
+    padding: 2px 17px;
+}
+
+.browseViewFeedsButton_MarchB {
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/march/nathan-watson-7XsjdiNT1fU-unsplash.jpg) 5% stretch;
+    box-sizing: border-box;
+    color: #0b0301;
+    cursor: pointer;
+    filter: drop-shadow(8px 8px 8px #101a1a);
+    font-family: 'Piazzolla', serif;
+    font-size: 24px;
+    margin: 30px 35%;
+    outline-color: #819091;
+    transition: all 0.4s linear;
+}
+
+.browseViewFeedsButton_MarchB:hover {
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/march/nathan-watson-7XsjdiNT1fU-unsplash.jpg) 15% stretch;
+    color: #022022;
+    filter: drop-shadow(3px 6px 8px #101a1a);
+    transition: all 0.4s linear;
+}
+
+.browseViewFeedsButton_MarchB:active {
+    filter: drop-shadow(0 0 0 #101a1a);
+    transition: all 0.4s linear;
+}
+
+.browseCategoricalFeeds_generic_MarchB {
+    backdrop-filter: blur(8px);
+    background: #b4bec1;
+    border-right: 1px solid #44a7bc;
+    height: 77vh;
+    margin: 15px;
+    opacity: 0.8;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 34%;
+}
+
+.browsePodCategoricalFeeds_generic_MarchB {
+    display: none;
+    backdrop-filter: blur(8px);
+    background: #808ea6;
+    border-right: 1px solid #0e2f1c;
+    height: 77vh;
+    margin: 15px;
+    opacity: 0.8;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 34%;
+}
+
+.browsePodCategoricalFeeds_MarchB {
+    display: none;
+    backdrop-filter: blur(8px);
+    background: #808ea6;
+    border-right: 1px solid #0e2f1c;
+    height: 77vh;
+    margin: 15px;
+    opacity: 0.8;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 34%;
+}
+
+.browseFeedsContainer_generic_MarchB {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 5px 15px;
+}
+
+.browseFeedsPodcastContainer_generic_MarchB {
+    display: none;
+    cursor: pointer;
+/*    display: flex;*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 5px 15px;
+}
+
+.browseFeedsPodcastContainer_generic_MarchB img {
+    display: none;
+    filter: brightness(100%) drop-shadow(15px 15px 5px #190f10);
+    height: 50px;
+    margin: 0 15px 0 0;
+    width: 50px;
+}
+
+.browseFeedsContainer_generic_MarchB img {
+    filter: brightness(100%) drop-shadow(5px 5px 3px #101a1a);
+    height: 50px;
+    margin: 0 15px 0 0;
+    width: 50px;
+}
+
+.browsePodCategoricalFeeds_generic_MarchB p {
+    display: none;
+    color: #000002;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+}
+
+.browseFeedsTitleDiv_generic_MarchB {
+    width: 75%;
+}
+
+.browseFeedsTitleDiv_generic_MarchB p {
+    color: #040100;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+}
+
+.browseIndividualFeedData_generic_MarchB {
+    backdrop-filter: blur(8px);
+    background: #b4bec1;
+    border-right: 1px solid #44a7bc;
+    height: 77vh;
+    margin: 15px;
+    opacity: 0.8;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 34%;
+}
+
+.browseIndividualFeedData_generic_MarchB img {
+    filter: brightness(100%) drop-shadow(5px 5px 3px #101a1a);
+    margin: 10px 15%;
+    width: 70%;
+}
+
+.browseIndividualFeedData_generic_MarchB h3 {
+    color: #040100;
+    font-family: 'Piazzolla', serif;
+    font-size: 36px;
+    margin: 5px 10%;
+    width: 80%;
+}
+
+.browseIndividualFeedData_generic_MarchB p {
+    color: #040100;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+    margin: 15px 10%;
+    width: 80%;
+}
+
+.browseIndividualFeedData_generic_MarchB button {
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/march/nathan-watson-7XsjdiNT1fU-unsplash.jpg) 5% stretch;
+    box-sizing: border-box;
+    color: #0b0301;
+    cursor: pointer;
+    filter: drop-shadow(8px 8px 8px #101a1a);
+    font-family: 'Piazzolla', serif;
+    font-size: 24px;
+    margin: 30px 35%;
+    outline-color: #819091;
+    transition: all 0.4s linear;
+}
+
+.browseIndividualFeedData_generic_MarchB button:hover {
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/march/nathan-watson-7XsjdiNT1fU-unsplash.jpg) 15% stretch;
+    color: #022022;
+    filter: drop-shadow(3px 6px 8px #101a1a);
+    transition: all 0.4s linear;
+}
+
+.browseIndividualFeedData_generic_MarchB button:active {
+    filter: drop-shadow(0 0 0 #101a1a);
+    transition: all 0.4s linear;
+}
+
+.browseIndividualPodFeedData_generic_MarchB {
+    display: none;
+    backdrop-filter: blur(8px);
+    background: #808ea6;
+    border-right: 1px solid #0e2f1c;
+    height: 77vh;
+    margin: 15px;
+    opacity: 0.8;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 34%;
+}
+
+.browseIndividualPodFeedData_generic_MarchB img {
+    display: none;
+    filter: brightness(100%) drop-shadow(15px 15px 5px #190f10);
+    margin: 10px 15%;
+    width: 70%;
+}
+
+.browseIndividualPodFeedData_generic_MarchB h3 {
+    display: none;
+    color: #000002;
+    font-family: 'Piazzolla', serif;
+    font-size: 36px;
+    margin: 5px 10%;
+    width: 80%;
+}
+
+.browseIndividualPodFeedData_generic_MarchB p {
+    display: none;
+    color: #000002;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+    margin: 15px 10%;
+    width: 80%;
+}
+
+.browseIndividualPodFeedData_generic_MarchB button {
+    display: none;
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url() 5% stretch;
+    box-sizing: border-box;
+    color: #00151c;
+    cursor: pointer;
+    filter: drop-shadow(8px 8px 8px #190f10);
+    font-family: 'Piazzolla', serif;
+    font-size: 24px;
+    margin: 30px 35%;
+    outline-color: #809097;
+    transition: all 0.4s linear;
+}
+
+.browseIndividualPodFeedData_generic_MarchB button:hover {
+    border-image: url() 15% stretch;
+    color: #16272a;
+    filter: drop-shadow(3px 6px 8px #190f10);
+    transition: all 0.4s linear;
+}
+
+.browseIndividualPodFeedData_generic_MarchB button:active {
+    filter: drop-shadow(0 0 0 #190f10);
+    transition: all 0.4s linear;
+}
+
+.browseSubscriptionModalActive_MarchB {
+    background: linear-gradient(90deg, #84b8be, #b4bec1);
+    box-sizing: border-box;
+    filter: saturate(100%);
+    height: auto;
+    left: 25%;
+    top: 10vh;
+    width: 50%;
+    position: absolute;
+    transform: scale(1);
+    transition: all 0.5s linear;
+}
+
+.browseSubscriptionModalInactive_MarchB {
+    background: linear-gradient(90deg, #84b8be, #b4bec1);
+    filter: saturate(100%);
+    height: auto;
+    left: 25%;
+    top: 100vh;
+    width: 50%;
+    position: absolute;
+    transform: scale(0.4);
+    transition: all 0.5s linear;
+}
+
+.blogSubscriptionModalLabel_MarchB {
+    color: #040100;
+    font-family: 'Piazzolla', serif;
+    font-size: 36px;
+    margin: 5px 0 15px 5px;
+}
+
+.browseSubscriptionModalActive_MarchB button {
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/march/nathan-watson-7XsjdiNT1fU-unsplash.jpg) 5% stretch;
+    box-sizing: border-box;
+    color: #0b0301;
+    cursor: pointer;
+    filter: drop-shadow(8px 8px 8px #101a1a);
+    font-family: 'Piazzolla', serif;
+    font-size: 24px;
+    margin: 5px -10% 5px 25%;
+    outline-color: #819091;
+    transition: all 0.4s linear;
+}
+
+.browseSubscriptionModalActive_MarchB button:hover {
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/march/nathan-watson-7XsjdiNT1fU-unsplash.jpg) 15% stretch;
+    color: #022022;
+    filter: drop-shadow(3px 6px 8px #101a1a);
+    transition: all 0.4s linear;
+}
+
+.browseSubscriptionModalActive_MarchB button:active {
+    filter: drop-shadow(0 0 0 #101a1a);
+    transition: all 0.4s linear;
+}
+
+.browseSubscriptionModalInactive_MarchB button {
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/march/nathan-watson-7XsjdiNT1fU-unsplash.jpg) 5% stretch;
+    box-sizing: border-box;
+    color: #0b0301;
+    cursor: pointer;
+    filter: drop-shadow(8px 8px 8px #101a1a);
+    font-family: 'Piazzolla', serif;
+    font-size: 24px;
+    margin: 5px -10% 5px 25%;
+    outline-color: #819091;
+    transition: all 0.4s linear;
+}
+
+.blogSubscriptionMondalImage_MarchB {
+    filter: brightness(110%) drop-shadow(15px 15px 5px #101a1a);
+    float: left;
+    margin: 15px;
+    max-height: 100px;
+    max-width: 100px;
+}
+
+.blogSubscriptionModalTitle_MarchB {
+    color: #040100;
+    float: left;
+    font-family: 'Piazzolla', serif;
+    font-size: 24px;
+    margin: 15px;
+    width: 50%;
+}
+
+.browseModalSelectors_MarchB {
+    width: 100%;
+    float: left;
+}
+
+.blogSubscriptionDaySelector_MarchB {
+    background: #a2d3de;
+    border: none;
+    color: #040100;
+    font-family: 'Piazzolla', serif;
+    font-size: 24px;
+    margin: 30px 15px 70px 15px;
+    outline-color: #819091;
+    width: 25%;
+}
+
+.browseModalSpacer_MarchB {
+    bottom: 0;
+    height: 350px;
+    position: relative;
+    width: 100%;
+    z-index: -4;
+}
+
+.hubReaderBrowseBlockActive_MarchB {
+    background: #82a1b5;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/march/nathan-watson-7XsjdiNT1fU-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: 1;
+}
+
+.hubReaderBrowseBlockInactive_MarchB {
+    background: #82a1b5;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/march/nathan-watson-7XsjdiNT1fU-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(-460%);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: -1;
+}
