@@ -105,7 +105,25 @@ router.get('/monday', (req, res, next) => {
         }
         res.send({ monday: selectedSkin });
     });
-})
+});
+
+router.get('/newusersignup', (req, res, next) => {
+    let now = new Date();
+    let months = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'];
+    let selectedSkin;
+    
+    knex('skins')
+    .select('*')
+    .first()
+    .then(skinsTable => {
+        if (skinsTable.skins.newusersignup[months[now.getMonth()]].length === 1) {
+            selectedSkin = skinsTable.skins.newusersignup.available[Math.floor(Math.random() * skinsTable.skins.newusersignup.available.length)];
+        } else {
+            selectedSkin = skinsTable.skins.newusersignup[months[now.getMonth()]][now.getDate()];
+        }
+        res.send({ newusersignup: selectedSkin });
+    });
+});
 
 router.get('/player', (req, res, next) => {
     let now = new Date();

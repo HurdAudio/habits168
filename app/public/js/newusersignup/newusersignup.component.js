@@ -13,8 +13,6 @@
         const vm = this;
 
         vm.$onInit = onInit;
-        vm.signupMonth = '_FebruaryC';
-        vm.newUserContainerState = 'newUserContainerActive' + vm.signupMonth;
         vm.navigateToLanding = navigateToLanding;
         vm.newUserErrorMessage = '';
         vm.newUserMessage = '';
@@ -120,41 +118,51 @@
                 vm.footerMessage = '©2019 HurdAudio'
             }
         }
+        
+        function setSkin() {
+            $http.get('/skins/newusersignup')
+                .then(skinData => {
+                    let skin = skinData.data;
+                    vm.signupMonth = skin.newusersignup;
+                    vm.newUserContainerState = 'newUserContainerActive' + vm.signupMonth;
+                    switch (vm.signupMonth) {
+                        case ('_JanuaryA'):
+                            vm.newUserLogoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/robe-154808_640.png';
+                            break;
+                        case ('_JanuaryB'):
+                            vm.newUserLogoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/nun-4018982_1280.png'
+                            break;
+                        case ('_JanuaryC'):
+                            vm.newUserLogoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/job-3506038_1280.png';
+                            break;
+                        case ('_FebruaryA'):
+                            vm.newUserLogoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_png_by_piccolapersempre_dbuithu-fullview.png';
+                            break;
+                        case ('_FebruaryB'):
+                            vm.newUserLogoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/digital_painting__liquid_sleep_by_ukulelemoon_d888syz-pre.jpg';
+                            break;
+                        case ('_FebruaryC'):
+                            vm.newUserLogoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_cup_by_lashonda1980_dazsks6-pre.png';
+                            break;
+                        case ('_MarchA'):
+                            vm.newUserLogoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/dd749ir-a2fcf5b4-5422-46d6-8d79-8166d3a47633.jpg';
+                            break;
+                        case('_MarchB'):
+                            vm.newUserLogoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/coffee-32284_1280.png';
+                            break;
+                        case('_MarchC'):
+                            vm.newUserLogoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/espresso-4929161_1920.jpg';
+                            break;
+                        default:
+                            alert('UNSUPPORTED MONTH SELECT for LOGO');
+                    }
+
+                });
+        }
 
         function onInit() {
             console.log("New User Signup is lit");
-            switch (vm.signupMonth) {
-                case ('_JanuaryA'):
-                    vm.newUserLogoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/robe-154808_640.png';
-                    break;
-                case ('_JanuaryB'):
-                    vm.newUserLogoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/nun-4018982_1280.png'
-                    break;
-                case ('_JanuaryC'):
-                    vm.newUserLogoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/job-3506038_1280.png';
-                    break;
-                case ('_FebruaryA'):
-                    vm.newUserLogoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_png_by_piccolapersempre_dbuithu-fullview.png';
-                    break;
-                case ('_FebruaryB'):
-                    vm.newUserLogoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/digital_painting__liquid_sleep_by_ukulelemoon_d888syz-pre.jpg';
-                    break;
-                case ('_FebruaryC'):
-                    vm.newUserLogoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_cup_by_lashonda1980_dazsks6-pre.png';
-                    break;
-                case ('_MarchA'):
-                    vm.newUserLogoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/dd749ir-a2fcf5b4-5422-46d6-8d79-8166d3a47633.jpg';
-                    break;
-                case('_MarchB'):
-                    vm.newUserLogoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/coffee-32284_1280.png';
-                    break;
-                case('_MarchC'):
-                    vm.newUserLogoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/espresso-4929161_1920.jpg';
-                    break;
-                default:
-                    alert('UNSUPPORTED MONTH SELECT for LOGO');
-            }
-            
+            setSkin();
 
             setFooterMessage();
         }
