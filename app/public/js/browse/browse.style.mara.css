@@ -140,10 +140,9 @@
 }
 
 .browsePodcastsByCategory_MarchA {
-    display: none;
     backdrop-filter: blur(8px);
-    background: #808ea6;
-    border-right: 1px solid #0e2f1c;
+    background: #84a5ad;
+    border-right: 1px solid #3f262a;
     height: 77vh;
     margin: 15px;
     opacity: 0.8;
@@ -209,10 +208,9 @@
 }
 
 .browsePodCategoricalFeeds_generic_MarchA {
-    display: none;
     backdrop-filter: blur(8px);
     background: #808ea6;
-    border-right: 1px solid #2e2f30;
+    border-right: 1px solid #0e2f1c;
     height: 77vh;
     margin: 15px;
     opacity: 0.8;
@@ -222,10 +220,9 @@
 }
 
 .browsePodCategoricalFeeds_MarchA {
-    display: none;
     backdrop-filter: blur(8px);
     background: #808ea6;
-    border-right: 1px solid #2e2f30;
+    border-right: 1px solid #0e2f1c;
     height: 77vh;
     margin: 15px;
     opacity: 0.8;
@@ -244,9 +241,8 @@
 }
 
 .browseFeedsPodcastContainer_generic_MarchA {
-    display: none;
     cursor: pointer;
-/*    display: flex;*/
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -254,8 +250,7 @@
 }
 
 .browseFeedsPodcastContainer_generic_MarchA img {
-    display: none;
-    filter: brightness(100%) drop-shadow(15px 15px 5px #1f0007);
+    filter: brightness(100%) drop-shadow(15px 15px 5px #190f10);
     height: 50px;
     margin: 0 15px 0 0;
     width: 50px;
@@ -269,8 +264,7 @@
 }
 
 .browsePodCategoricalFeeds_generic_MarchA p {
-    display: none;
-    color: #030302;
+    color: #000002;
     font-family: 'Syne', sans-serif;
     font-size: 18px;
 }
@@ -347,7 +341,6 @@
 }
 
 .browseIndividualPodFeedData_generic_MarchA {
-    display: none;
     backdrop-filter: blur(8px);
     background: #808ea6;
     border-right: 1px solid #0e2f1c;
@@ -360,15 +353,13 @@
 }
 
 .browseIndividualPodFeedData_generic_MarchA img {
-    display: none;
-    filter: brightness(100%) drop-shadow(15px 15px 5px #1f0007);
+    filter: brightness(100%) drop-shadow(15px 15px 5px #190f10);
     margin: 10px 15%;
     width: 70%;
 }
 
 .browseIndividualPodFeedData_generic_MarchA h3 {
-    display: none;
-    color: #030302;
+    color: #000002;
     font-family: 'Syne', sans-serif;
     font-size: 36px;
     margin: 5px 10%;
@@ -376,8 +367,7 @@
 }
 
 .browseIndividualPodFeedData_generic_MarchA p {
-    display: none;
-    color: #030302;
+    color: #000002;
     font-family: 'Syne', sans-serif;
     font-size: 18px;
     margin: 15px 10%;
@@ -385,23 +375,24 @@
 }
 
 .browseIndividualPodFeedData_generic_MarchA button {
-    display: none;
-    background: #25000a;
-    border: none;
-    color: #819caf;
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/march/tim-hufner-gEcKSl2mrA0-unsplash.jpg) 5% stretch;
+    box-sizing: border-box;
+    color: #00151c;
     cursor: pointer;
-    filter: drop-shadow(8px 8px 8px #1f0007);
+    filter: drop-shadow(8px 8px 8px #190f10);
     font-family: 'Syne', sans-serif;
     font-size: 24px;
     margin: 30px 35%;
-    outline-color: #808ea6;
+    outline-color: #809097;
     transition: all 0.4s linear;
 }
 
 .browseIndividualPodFeedData_generic_MarchA button:hover {
-    background: #808ea6;
-    color: #05120b;
-    filter: drop-shadow(3px 6px 8px #1f0007);
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/march/tim-hufner-gEcKSl2mrA0-unsplash.jpg) 15% stretch;
+    color: #16272a;
+    filter: drop-shadow(3px 6px 8px #190f10);
     transition: all 0.4s linear;
 }
 
