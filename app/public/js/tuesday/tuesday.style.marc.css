@@ -1,5 +1,5 @@
-.tuesdayBackgroundDiv_MarchB {
-    background: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/march/window-5502314_1920.jpg);
+.tuesdayBackgroundDiv_MarchC {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/march/elcarito-IIt-D-5rPHo-unsplash.jpg);
     background-size: 100%;
     height: 100%;
     left: 0;
@@ -13,23 +13,23 @@
     z-index: -1;
 }
 
-.tuesdayContainerActive_MarchB {
+.tuesdayContainerActive_MarchC {
     filter: blur(0px);
 }
 
-.tuesdayContainerInactive_MarchB {
+.tuesdayContainerInactive_MarchC {
     filter: blur(15px);
 }
 
-.tuesdayTitleStrip_MarchB {
-    background: #FDF284;
+.tuesdayTitleStrip_MarchC {
+    background: #c4c5c3;
     border-bottom: 3px solid transparent;
-    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/march/window-5502314_1920.jpg) 50 stretch;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/march/elcarito-IIt-D-5rPHo-unsplash.jpg) 50 stretch;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    font-family: 'Sen', sans-serif;
+    font-family: 'Kufam', cursive;
     height: auto;
     justify-content: flex-start;
     opacity: 0.9;
@@ -37,56 +37,56 @@
     width: 100%;
 }
 
-.tuesdayLogo_MarchB {
+.tuesdayLogo_MarchC {
     cursor: pointer;
-    filter: drop-shadow(4px 6px 4px #180B02);
-    max-width: 65px;
+    filter: drop-shadow(4px 6px 4px #262b2b);
+    max-width: 105px;
 }
 
-.tuesdayReadingPlaylistTitle_MarchB {
-    color: #000000;
+.tuesdayReadingPlaylistTitle_MarchC {
+    color: #060a0a;
     font-size: 54px;
     margin: 20px 0 0 96px;
 }
 
-.tuesdayTabStrip_MarchB {
+.tuesdayTabStrip_MarchC {
     background: transparent;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    font-family: 'Sen', sans-serif;
+    font-family: 'Kufam', cursive;
     height: auto;
     opacity: 1;
     padding: 0 20px;
     width: 100%;
 }
 
-.tuesdayTabActive_MarchB {
-    background: #954e24;
-    color: #000000;
+.tuesdayTabActive_MarchC {
+    background: #78a0aa;
+    color: #0f1314;
     cursor: none;
     font-size: 30px;
     padding: 2px 55px 2px 5px;
     transition: all 0.5s linear;
 }
 
-.tuesdayTabInactive_MarchB {
+.tuesdayTabInactive_MarchC {
     background: transparent;
-    color: #bd9584;
+    color: #c7dbe1;
     cursor: pointer;
     font-size: 30px;
     padding: 2px 25px 2px 15px;
     transition: all 0.5s linear;
 }
 
-.tuesdayContent_MarchB {
+.tuesdayContent_MarchC {
     background: transparent;
     height: 80vh;
     width: 100%;
 }
 
-.tuesdayContentContent_MarchB {
-    background: linear-gradient(90deg, #caa792, #caa792, #808080, transparent);
+.tuesdayContentContent_MarchC {
+    background: linear-gradient(90deg, #bcd0d5, #bcd0d5, #78a0aa, transparent);
     height: 82vh;
     opacity: 1;
     overflow-x: hidden;
@@ -94,8 +94,8 @@
     width: 105%;
 }
 
-.tuesdayReaderNavigationButtons_MarchB {
-    background: linear-gradient(90deg, #caa792, #caa792, #c55202, transparent);
+.tuesdayReaderNavigationButtons_MarchC {
+    background: linear-gradient(90deg, #b0b6b6, #b0b6b6, #606c6c, transparent);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -108,14 +108,14 @@
     z-index: 15;
 }
 
-.markAllReadTextTuesday_MarchB {
-    color: #000000;
-    font-family: 'Sen', sans-serif;
+.markAllReadTextTuesday_MarchC {
+    color: #060a0a;
+    font-family: 'Kufam', cursive;
     font-size: 24px;
     margin: 35px 10px 0 40px;
 }
 
-.tuesdayTrackProgress_MarchB {
+.tuesdayTrackProgress_MarchC {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -128,7 +128,7 @@
     user-select: none;
 }
 
-.tuesdayTrackProgress_MarchB input {
+.tuesdayTrackProgress_MarchC input {
     cursor: pointer;
     height: 0;
     opacity: 0;
@@ -136,8 +136,8 @@
     width: 0;
 }
 
-.tuesdayCheckbox_MarchBtrue {
-    background-color: #fdd46a;
+.tuesdayCheckbox_MarchCtrue {
+    background-color: #39494e;
     border: none;
     height: 20px;
     left: 10px;
@@ -148,8 +148,8 @@
     width: 40px;
 }
 
-.tuesdayCheckbox_MarchBfalse {
-    background-color: #fdd46a;
+.tuesdayCheckbox_MarchCfalse {
+    background-color: #39494e;
     border: none;
     height: 20px;
     left: 10px;
@@ -160,8 +160,8 @@
     width: 40px;
 }
 
-.tuesdaySwitchUnchecked_MarchBtrue {
-    background-color: #000000;
+.tuesdaySwitchUnchecked_MarchCtrue {
+    background-color: #c4c5c3;
     height: 20px;
     left: 20px;
     position: absolute;
@@ -171,8 +171,8 @@
     width: 20px;
 }
 
-.tuesdaySwitchUnchecked_MarchBfalse {
-    background-color: #000000;
+.tuesdaySwitchUnchecked_MarchCfalse {
+    background-color: #c4c5c3;
     height: 20px;
     left: 0px;
     position: absolute;
@@ -182,41 +182,42 @@
     width: 20px;
 }
 
-.tuesdayReadAll_MarchB {
-    color: #000000;
-    font-family: 'Sen', sans-serif;
+.tuesdayReadAll_MarchC {
+    color: #060a0a;
+    font-family: 'Kufam', cursive;
     font-size: 24px;
     margin: 14px 0 14px 25px;
 }
 
-.tuesdayReadAllButton_MarchB {
+.tuesdayReadAllButton_MarchC {
     background: transparent;
     border: 2px solid transparent;
-    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/march/window-5502314_1920.jpg) 5 stretch;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/march/elcarito-IIt-D-5rPHo-unsplash.jpg) 5 stretch;
     box-sizing: border-box;
-    color: #000000;
+    color: #060a0a;
     cursor: pointer;
-    filter: drop-shadow(8px 12px 4px #3b1f0e);
-    font-family: 'Sen', sans-serif;
+    filter: drop-shadow(6px 8px 4px #262b2b);
+    font-family: 'Kufam', cursive;
     font-size: 36px;
     height: 60px;
-    outline-color: #9b8c80;
+    outline-color: #939899;
     padding: 0 0 0 0;
     transition: all 0.5s linear;
     width: 60px;
 }
 
-.tuesdayReadAllButton_MarchB:hover {
-    filter: brightness(200%) drop-shadow(4px 8px 4px #3b1f0e);
+.tuesdayReadAllButton_MarchC:hover {
+    color: #304044;
+    filter: brightness(150%) drop-shadow(3px 6px 4px #262b2b);
     transition: all 0.5s linear;
 }
 
-.tuesdayReadAllButton_MarchB:active {
-    filter: drop-shadow(0 0 0 #3b1f0e) invert(100%);
+.tuesdayReadAllButton_MarchC:active {
+    filter: drop-shadow(0 0 0 #262b2b) invert(100%);
     transition: all 0.1s linear;
 }
 
-.tuesdaySorting_MarchB {
+.tuesdaySorting_MarchC {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -224,34 +225,34 @@
     margin: 14px 0 14px 100px;
 }
 
-.tuesdaySorting_MarchB p {
-    color: #000000;
-    font-family: 'Sen', sans-serif;
+.tuesdaySorting_MarchC p {
+    color: #060a0a;
+    font-family: 'Kufam', cursive;
     font-size: 24px;
     margin: 20px 20px 0 0;
 }
 
-.tuesdaySorting_MarchB button {
+.tuesdaySorting_MarchC button {
     margin: 0 5px;
 }
 
-.tuesdayFeedsDiv_MarchB {
+.tuesdayFeedsDiv_MarchC {
     height: auto;
     margin: 120px 50px 0 50px;
     width: 90%;
 }
 
-.tuesdaySubscriptions_MarchB {
+.tuesdaySubscriptions_MarchC {
     cursor: pointer;
     margin: 10px;
 }
 
-.tuesdayBuffer_MarchB {
+.tuesdayBuffer_MarchC {
     height: 20px;
     width: 100%;
 }
 
-.tuesdayFeedContainer_MarchB {
+.tuesdayFeedContainer_MarchC {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -259,8 +260,8 @@
     padding: 5px 5px 5px -15px;
 }
 
-.tuesdaySubIcon_MarchB {
-    filter: drop-shadow(8px 12px 4px #3b1f0e);
+.tuesdaySubIcon_MarchC {
+    filter: drop-shadow(8px 12px 4px #262b2b);
     height: 65px;
     margin-left: 20px;
     margin-right: 20px;
@@ -268,61 +269,62 @@
     width: 65px;
 }
 
-.tuesdaySubscriptionTitle_MarchB {
-    color: #000000;
-    font-family: 'Sen', sans-serif;
+.tuesdaySubscriptionTitle_MarchC {
+    color: #060a0a;
+    font-family: 'Kufam', cursive;
     font-size: 18px;
     line-height: 1.2;
     margin: 5px 0 10px 0;
     width: 650px;
 }
 
-.tuesdayUnreadText_MarchB {
-    color: #000000;
-    font-family: 'Sen', sans-serif;
+.tuesdayUnreadText_MarchC {
+    color: #060a0a;
+    font-family: 'Kufam', cursive;
     font-size: 18px;
     margin: 10px 40px 0 30px;
     width: 35px;
 }
 
-.tuesdayReadText_MarchB {
-    color: #000000;
-    font-family: 'Sen', sans-serif;
+.tuesdayReadText_MarchC {
+    color: #060a0a;
+    font-family: 'Kufam', cursive;
     font-size: 18px;
     margin: 10px 40px 0 30px;
     width: 35px;
 }
 
-.tuesdayManageTabsButton_MarchB {
+.tuesdayManageTabsButton_MarchC {
     background: transparent;
     border: 2px solid transparent;
-    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/march/window-5502314_1920.jpg) 5 stretch;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/march/elcarito-IIt-D-5rPHo-unsplash.jpg) 5 stretch;
     box-sizing: border-box;
-    color: #000000;
+    color: #060a0a;
     cursor: pointer;
-    filter: drop-shadow(8px 12px 4px #3b1f0e);
-    font-family: 'Sen', sans-serif;
+    filter: drop-shadow(6px 8px 4px #262b2b);
+    font-family: 'Kufam', cursive;
     font-size: 24px;
     height: 40px;
     margin: 33px 0 0 5%;
-    outline-color: #9b8c80;
+    outline-color: #939899;
     padding: 5px;
     transition: all 0.5s linear;
     width: auto;
 }
 
-.tuesdayManageTabsButton_MarchB:hover {
-    filter: brightness(200%) drop-shadow(4px 8px 4px #3b1f0e);
+.tuesdayManageTabsButton_MarchC:hover {
+    color: #304044;
+    filter: brightness(150%) drop-shadow(3px 6px 4px #262b2b);
     transition: all 0.5s linear;
 }
 
-.tuesdayManageTabsButton_MarchB:active {
-    filter: drop-shadow(0 0 0 #3b1f0e) invert(100%);
+.tuesdayManageTabsButton_MarchC:active {
+    filter: drop-shadow(0 0 0 #262b2b) invert(100%);
     transition: all 0.1s linear;
 }
 
-.tuesdayManageTabsSubsModal_MarchB {
-    background: #bd9584;
+.tuesdayManageTabsSubsModal_MarchC {
+    background: #b0b6b6;
     filter: blur(0px);
     height: 90vh;
     left: 2%;
@@ -334,8 +336,8 @@
     z-index: 50;
 }
 
-.tuesdayManageTabsSubsModalBlur_MarchB {
-    background: #bd9584;
+.tuesdayManageTabsSubsModalBlur_MarchC {
+    background: #b0b6b6;
     filter: blur(5px);
     height: 90vh;
     left: 2%;
@@ -347,17 +349,17 @@
     z-index: 50;
 }
 
-.tuesdayManageTabsSubsModalInactive_MarchB {
+.tuesdayManageTabsSubsModalInactive_MarchC {
     opacity: 0;
     top: -80vh;
     transition: all 0.4s linear;
     z-index: -5;
 }
 
-.tuesdayManageTitleBar_MarchB {
-    background: #371901;
-    color: #bd9584;
-    font-family: 'Sen', sans-serif;
+.tuesdayManageTitleBar_MarchC {
+    background: #111a19;
+    color: #b0b6b6;
+    font-family: 'Kufam', cursive;
     height: 6vh;
     opacity: 0.9;
     position: relative;
@@ -365,10 +367,10 @@
     width: 99%;
 }
 
-.tuesdayModalExit_MarchB {
-    color: #bd9584;
+.tuesdayModalExit_MarchC {
+    color: #b0b6b6;
     cursor: pointer;
-    font-family: 'Sen', sans-serif;
+    font-family: 'Kufam', cursive;
     font-size: 48px;
     float: left;
     left: 94%;
@@ -376,14 +378,14 @@
     top: 1%;
 }
 
-.tuesdayManageTitle_MarchB {
-    color: #bd9584;
-    font-family: 'Sen', sans-serif;
+.tuesdayManageTitle_MarchC {
+    color: #b0b6b6;
+    font-family: 'Kufam', cursive;
     font-size: 30px;
     margin: 20px 0 0 0;
 }
 
-.tuesdayManagerModalContainer_MarchB {
+.tuesdayManagerModalContainer_MarchC {
     background: transparent;
     display: flex;
     flex-direction: row;
@@ -395,112 +397,112 @@
     width: 100%;
 }
 
-.tuesdayManagerTabsSection_MarchB {
+.tuesdayManagerTabsSection_MarchC {
     height: auto;
     padding: 15px;
     position: relative;
     width: 30%;
 }
 
-.tuesdayTabsManageTitle_MarchB {
-    color: #000000;
-    font-family: 'Sen', sans-serif;
+.tuesdayTabsManageTitle_MarchC {
+    color: #060a0a;
+    font-family: 'Kufam', cursive;
     font-size: 24px;
 }
 
-.tuesdayManageTabsContainer_MarchB {
+.tuesdayManageTabsContainer_MarchC {
     margin: 40px 8%;
 }
 
-.tuesdayTabManageTab_MarchB {
-    color: #000000;
+.tuesdayTabManageTab_MarchC {
+    color: #060a0a;
     cursor: pointer;
-    font-family: 'Sen', sans-serif;
+    font-family: 'Kufam', cursive;
     font-size: 24px;
     margin: 15px 0 15px 10px;
 }
 
-.tuesdayTabManageSubTab_MarchB {
-    color: #000000;
+.tuesdayTabManageSubTab_MarchC {
+    color: #060a0a;
     cursor: pointer;
-    font-family: 'Sen', sans-serif;
+    font-family: 'Kufam', cursive;
     font-size: 15px;
     margin: 1px 0 30px 40px;
     width: 10%;
 }
 
-.tuesdayManagerSubscriptionsSection_MarchB {
+.tuesdayManagerSubscriptionsSection_MarchC {
     height: auto;
     padding: 15px;
     position: relative;
     width: 30%;
 }
 
-.tuesdayTabsSubscriptionTitle_MarchB {
-    color: #000000;
-    font-family: 'Sen', sans-serif;
+.tuesdayTabsSubscriptionTitle_MarchC {
+    color: #060a0a;
+    font-family: 'Kufam', cursive;
     font-size: 24px;
 }
 
-.tuesdayManageSubIcon_MarchB {
-    filter: drop-shadow(8px 12px 4px #3b1f0e);
+.tuesdayManageSubIcon_MarchC {
+    filter: drop-shadow(8px 12px 4px #262b2b);
     height: 40px;
     width: 40px;
 }
 
-.tuesdaySubManageSubTab_MarchB {
-    color: #000000;
+.tuesdaySubManageSubTab_MarchC {
+    color: #060a0a;
     cursor: pointer;
-    font-family: 'Sen', sans-serif;
+    font-family: 'Kufam', cursive;
     font-size: 15px;
     margin: 4px 0 1px 10px;
     transform: translateX(100px) translateY(-40px);
     width: 10%;
 }
 
-.tuesdayManageSubsTitles_MarchB {
-    color: #000000;
-    font-family: 'Sen', sans-serif;
+.tuesdayManageSubsTitles_MarchC {
+    color: #060a0a;
+    font-family: 'Kufam', cursive;
     font-size: 18px;
     margin: -15px 0 30px 1px;
 }
 
-.tuesdayManagerFeedsSection_MarchB {
+.tuesdayManagerFeedsSection_MarchC {
     height: auto;
     padding: 15px;
     position: relative;
     width: 30%;
 }
 
-.tuesdayManagerFeedsTitle_MarchB {
-    color: #000000;
-    font-family: 'Sen', sans-serif;
+.tuesdayManagerFeedsTitle_MarchC {
+    color: #060a0a;
+    font-family: 'Kufam', cursive;
     font-size: 24px;
 }
 
-.tuesdayManageSearch_MarchB {
-    background: #feeab5;
+.tuesdayManageSearch_MarchC {
+    background: #8fb7c3;
     border: none;
-    color: #000000;
+    color: #060a0a;
     float: left;
-    font-family: 'Sen', sans-serif;
+    font-family: 'Kufam', cursive;
     font-size: 18px;
     margin-top: 3px;
-    outline-color: #9b8c80;
+    outline-color: #939899;
     padding-left: 5px;
     width: 100%;
 }
 
-.tuesdayManageSubsTitlesFeeds_MarchB {
-    color: #000000;
-    font-family: 'Sen', sans-serif;
+.tuesdayManageSubsTitlesFeeds_MarchC {
+    color: #060a0a;
+    font-family: 'Kufam', cursive;
     font-size: 18px;
     margin: -15px 0 30px 1px;
 }
 
-.tuesdayCreateEditTabManagement_MarchB {
-    background: #e2a981;
-    filter: drop-shadow(8px 12px 4px #3b1f0e);
+.tuesdayCreateEditTabManagement_MarchC {
+    background: #c7dbe1;
+    filter: drop-shadow(8px 12px 4px #262b2b);
     height: auto;
     left: 22%;
     opacity: 1;
@@ -512,14 +514,14 @@
     z-index: 60;
 }
 
-.tuesdayCreateEditTabTitle_MarchB {
-    color: #000000;
-    font-family: 'Sen', sans-serif;
+.tuesdayCreateEditTabTitle_MarchC {
+    color: #060a0a;
+    font-family: 'Kufam', cursive;
     font-size: 24px;
     margin: 15px 0 30px 25px;
 }
 
-.tuesdayTabEditorFields_MarchB {
+.tuesdayTabEditorFields_MarchC {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -527,38 +529,38 @@
     margin: 10px 0 0 60px;
 }
 
-.tuesdayTabNameLabel_MarchB {
-    color: #000000;
-    font-family: 'Sen', sans-serif;
+.tuesdayTabNameLabel_MarchC {
+    color: #060a0a;
+    font-family: 'Kufam', cursive;
     font-size: 18px;
     margin: 0 9px 0 0;
 }
 
-.tuesdayTabNameInput_MarchB {
-    background: #feeab5;
+.tuesdayTabNameInput_MarchC {
+    background: #8fb7c3;
     border: none;
-    color: #000000;
-    font-family: 'Sen', sans-serif;
+    color: #060a0a;
+    font-family: 'Kufam', cursive;
     font-size: 18px;
     height: 21px;
     margin: 0 9px;
-    outline-color: #9b8c80;
+    outline-color: #939899;
     width: 350px;
 }
 
-.tuesdayTabEditorPodcastBlogStatus_MarchB {
+.tuesdayTabEditorPodcastBlogStatus_MarchC {
     margin: -13px 0 0 40px;
 }
 
-#tuesdayUnreadText_MarchB {
-    color: #000000;
+#tuesdayUnreadText_MarchC {
+    color: #060a0a;
 }
 
-#tuesdayReadText_MarchB {
-    color: #000000;
+#tuesdayReadText_MarchC {
+    color: #060a0a;
 }
 
-.tuesdayTabEditorFields_MarchB {
+.tuesdayTabEditorFields_MarchC {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -566,72 +568,74 @@
     margin: 10px 0 0 60px;
 }
 
-.tuesdayTabEditorErrorMessage_MarchB {
+.tuesdayTabEditorErrorMessage_MarchC {
     color: #ff0000;
-    font-family: 'Sen', sans-serif;
+    font-family: 'Kufam', cursive;
     font-size: 18px;
     margin-left: 120px;
     margin-top: 20px;
 }
 
-.tuesdayManageTabsConfirmButton_MarchB {
+.tuesdayManageTabsConfirmButton_MarchC {
     background: transparent;
     border: 2px solid transparent;
-    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/march/window-5502314_1920.jpg) 5 stretch;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/march/elcarito-IIt-D-5rPHo-unsplash.jpg) 5 stretch;
     box-sizing: border-box;
-    color: #000000;
+    color: #060a0a;
     cursor: pointer;
-    filter: drop-shadow(8px 12px 4px #3b1f0e);
-    font-family: 'Sen', sans-serif;
+    filter: drop-shadow(6px 8px 4px #262b2b);
+    font-family: 'Kufam', cursive;
     font-size: 18px;
     height: 40px;
     margin: 56px 0 0 5%;
-    outline-color: #9b8c80;
+    outline-color: #939899;
     position: relative;
     transition: all 0.5s linear;
     width: auto;
 }
 
-.tuesdayManageTabsConfirmButton_MarchB:hover {
-    filter: brightness(200%) drop-shadow(4px 8px 4px #3b1f0e);
+.tuesdayManageTabsConfirmButton_MarchC:hover {
+    color: #304044;
+    filter: brightness(150%) drop-shadow(3px 6px 4px #262b2b);
     transition: all 0.5s linear;
 }
 
-.tuesdayManageTabsConfirmButton_MarchB:active {
-    filter: drop-shadow(0 0 0 #3b1f0e) invert(100%);
+.tuesdayManageTabsConfirmButton_MarchC:active {
+    filter: drop-shadow(0 0 0 #262b2b) invert(100%);
     transition: all 0.1s linear;
 }
 
-.tuesdayManageTabsSubmitCancelButton_MarchB {
+.tuesdayManageTabsSubmitCancelButton_MarchC {
     background: transparent;
     border: 2px solid transparent;
-    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/march/window-5502314_1920.jpg) 5 stretch;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/march/elcarito-IIt-D-5rPHo-unsplash.jpg) 5 stretch;
     box-sizing: border-box;
-    color: #000000;
+    color: #060a0a;
     cursor: pointer;
-    filter: drop-shadow(8px 12px 4px #3b1f0e);
-    font-family: 'Sen', sans-serif;
+    filter: drop-shadow(6px 8px 4px #262b2b);
+    font-family: 'Kufam', cursive;
     font-size: 18px;
     height: 40px;
     margin: 56px 0 0 20%;
-    outline-color: #9b8c80;
+    outline-color: #939899;
     position: relative;
     transition: all 0.5s linear;
     width: auto;
 }
 
-.tuesdayManageTabsSubmitCancelButton_MarchB:hover {
-    filter: brightness(200%) drop-shadow(4px 8px 4px #3b1f0e);
+.tuesdayManageTabsSubmitCancelButton_MarchC:hover {
+    color: #304044;
+    filter: brightness(150%) drop-shadow(3px 6px 4px #262b2b);
     transition: all 0.5s linear;
 }
 
-.tuesdayManageTabsSubmitCancelButton_MarchB:active {
-    filter: drop-shadow(0 0 0 #3b1f0e) invert(100%);
+.tuesdayManageTabsSubmitCancelButton_MarchC:active {
+    filter: drop-shadow(0 0 0 #262b2b) invert(100%);
     transition: all 0.1s linear;
 }
 
-.tuesdayGuardRail_MarchB {
-    background: #808080;
+.tuesdayGuardRail_MarchC {
+    background: #898b86;
     filter: drop-shadow(8px 12px 4px #3b1f0e);
     height: auto;
     left: 32%;
@@ -644,14 +648,14 @@
     z-index: 60;
 }
 
-.tuesdayGuardRailText_MarchB {
-    color: #000000;
-    font-family: 'Sen', sans-serif;
+.tuesdayGuardRailText_MarchC {
+    color: #060a0a;
+    font-family: 'Kufam', cursive;
     font-size: 24px;
     margin: 15px 0 30px 25px;
 }
 
-.tuesdayGuardRailButtons_MarchB {
+.tuesdayGuardRailButtons_MarchC {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -659,9 +663,9 @@
     margin: 10px 0 0 60px;
 }
 
-.hubReaderDay1TuesdayActive_MarchB {
+.hubReaderDay1TuesdayActive_MarchC {
   background: #82a1b5;
-  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/march/window-5502314_1920.jpg);
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/march/elcarito-IIt-D-5rPHo-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 25vh;
@@ -675,9 +679,9 @@
   z-index: 1;
 }
 
-.hubReaderDay1TuesdayInactive_MarchB {
+.hubReaderDay1TuesdayInactive_MarchC {
   background: #82a1b5;
-  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/march/window-5502314_1920.jpg);
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/march/elcarito-IIt-D-5rPHo-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 25vh;
@@ -691,9 +695,9 @@
   z-index: -1;
 }
 
-.hubReaderDay2TuesdayActive_MarchB {
+.hubReaderDay2TuesdayActive_MarchC {
   background: #82a1b5;
-  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/march/window-5502314_1920.jpg);
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/march/elcarito-IIt-D-5rPHo-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 25vh;
@@ -707,9 +711,9 @@
   z-index: 1;
 }
 
-.hubReaderDay2TuesdayInactive_MarchB {
+.hubReaderDay2TuesdayInactive_MarchC {
   background: #82a1b5;
-  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/march/window-5502314_1920.jpg);
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/march/elcarito-IIt-D-5rPHo-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   height: 25vh;
@@ -723,9 +727,9 @@
   z-index: -1;
 }
 
-.hubReaderDay3TuesdayActive_MarchB {
+.hubReaderDay3TuesdayActive_MarchC {
   background: #82a1b5;
-  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/march/window-5502314_1920.jpg);
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/march/elcarito-IIt-D-5rPHo-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 25vh;
@@ -739,9 +743,9 @@
   z-index: 1;
 }
 
-.hubReaderDay3TuesdayInactive_MarchB {
+.hubReaderDay3TuesdayInactive_MarchC {
   background: #82a1b5;
-  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/march/window-5502314_1920.jpg);
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/march/elcarito-IIt-D-5rPHo-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 25vh;
@@ -755,9 +759,9 @@
   z-index: -1;
 }
 
-.hubReaderDay4TuesdayActive_MarchB {
+.hubReaderDay4TuesdayActive_MarchC {
   background: #82a1b5;
-  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/march/window-5502314_1920.jpg);
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/march/elcarito-IIt-D-5rPHo-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 25vh;
@@ -771,9 +775,9 @@
   z-index: 1;
 }
 
-.hubReaderDay4TuesdayInactive_MarchB {
+.hubReaderDay4TuesdayInactive_MarchC {
   background: #82a1b5;
-  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/march/window-5502314_1920.jpg);
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/march/elcarito-IIt-D-5rPHo-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 25vh;
@@ -787,9 +791,9 @@
   z-index: -1;
 }
 
-.hubReaderDay5TuesdayActive_MarchB {
+.hubReaderDay5TuesdayActive_MarchC {
   background: #82a1b5;
-  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/march/window-5502314_1920.jpg);
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/march/elcarito-IIt-D-5rPHo-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 25vh;
@@ -803,9 +807,9 @@
   z-index: 3;
 }
 
-.hubReaderDay5TuesdayInactive_MarchB {
+.hubReaderDay5TuesdayInactive_MarchC {
   background: #82a1b5;
-  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/march/window-5502314_1920.jpg);
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/march/elcarito-IIt-D-5rPHo-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 25vh;
@@ -819,9 +823,9 @@
   z-index: -1;
 }
 
-.hubReaderDay6TuesdayActive_MarchB {
+.hubReaderDay6TuesdayActive_MarchC {
   background: #82a1b5;
-  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/march/window-5502314_1920.jpg);
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/march/elcarito-IIt-D-5rPHo-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 25vh;
@@ -835,9 +839,9 @@
   z-index: 1;
 }
 
-.hubReaderDay6TuesdayInactive_MarchB {
+.hubReaderDay6TuesdayInactive_MarchC {
   background: #82a1b5;
-  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/march/window-5502314_1920.jpg);
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/march/elcarito-IIt-D-5rPHo-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 25vh;
@@ -851,9 +855,9 @@
   z-index: -1;
 }
 
-.hubReaderDay7TuesdayActive_MarchB {
+.hubReaderDay7TuesdayActive_MarchC {
   background: #82a1b5;
-  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/march/window-5502314_1920.jpg);
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/march/elcarito-IIt-D-5rPHo-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 25vh;
@@ -867,9 +871,9 @@
   z-index: 1;
 }
 
-.hubReaderDay7TuesdayInactive_MarchB {
+.hubReaderDay7TuesdayInactive_MarchC {
   background: #82a1b5;
-  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/march/window-5502314_1920.jpg);
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/tuesday/march/elcarito-IIt-D-5rPHo-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 25vh;
