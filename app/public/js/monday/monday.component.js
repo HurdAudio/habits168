@@ -790,7 +790,7 @@
             .then(hubSkinResponseData => {
                 const hubSkinResponse = hubSkinResponseData.data;
                 vm.mondayMonth = hubSkinResponse.monday;
-//                vm.mondayMonth = '_AprilB';
+//                vm.mondayMonth = '_AprilC';
                 vm.mondayContainerState = 'mondayContainerActive' + vm.mondayMonth;
                 vm.managerModalState = 'mondayManageTabsSubsModalInactive' + vm.mondayMonth;
                 
