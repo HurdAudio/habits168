@@ -1,0 +1,2027 @@
+.playerContainer_MayA {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/player/jennifer-griffin-xGql18F0FmQ-unsplash.jpg);
+    background-size: cover;
+    filter: blur(0);
+    height: 95vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    z-index: 1;
+}
+
+.playerContainerBlur_MayA {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/player/jennifer-griffin-xGql18F0FmQ-unsplash.jpg);
+    background-size: cover;
+    filter: blur(10px);
+    height: 95vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    z-index: 1;
+}
+
+.playerDiv_MayA {
+    backdrop-filter: blur(6px) contrast(50%) hue-rotate(-90deg);
+    box-shadow: 5px 5px 5px #1d0207;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 41vh;
+    justify-content: flex-start;
+    left: 5%;
+    position: relative;
+    top: 0;
+    width: 88%;
+}
+
+.playerFeedIcon_MayA img {
+    box-shadow: 2px 2px 20px #1d0207, -2px -2px 20px #1d0207;
+    height: 200px;
+    margin: 30px 10%;
+    width: 200px;
+}
+
+.playerPodcastTitle_MayA {
+    color: #000a0d;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 42px;
+    opacity: 0.85;
+}
+
+.playerEpisodeTitle_MayA {
+    color: #000a0d;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    opacity: 0.85;
+}
+
+.playerEpisodeAuthor_MayA {
+    color: #000a0d;
+    float: left;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    margin: 10px 0 5px 0;
+    opacity: 0.85;
+}
+
+.playerTitlingDiv_MayA {
+    padding: 25px 15px 1px 40px;
+    width: 70%;
+}
+
+.playerContainer_MayA a {
+    text-decoration: none;
+}
+
+.playerControlsDiv_MayA {
+    margin: 50px 15px 4px 15px;
+    position: relative;
+    width: 100%;
+}
+
+.playerPlay_MayA {
+    background: #80a999;
+    border-bottom: none;
+    border-left: 4px solid #85102d;
+    border-right: 4px solid #85102d;
+    border-top: none;
+    box-shadow: 5px 5px 10px #1d0207;
+    box-sizing: border-box;
+    color: #000a0d;
+    cursor: pointer;
+    filter: brightness(110%) invert(0%) saturate(135%);
+    float: left;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 54px;
+    opacity: 0.9;
+    outline-color: #a48289;
+    padding: 6px 20px;
+    transition: all 0.4s linear;
+}
+
+.playerPlay_MayA:hover {
+    background: #000a0d;
+    border-left: 15px solid #85102d;
+    border-right: 1px solid #85102d;
+    box-shadow: 5px 1px 5px #1d0207;
+    box-sizing: border-box;
+    color: #80a999;
+    filter: brightness(150%) invert(0%);
+    opacity: 1;
+    transition: all 0.3s linear;
+}
+
+.playerPlay_MayA:active {
+    filter: brightness(90%) invert(100%);
+    transition: all 0.1s linear;
+}
+
+.playerPause_MayA {
+    background: #80a999;
+    border-bottom: none;
+    border-left: 4px solid #85102d;
+    border-right: 4px solid #85102d;
+    border-top: none;
+    box-shadow: 5px 5px 10px #1d0207;
+    box-sizing: border-box;
+    color: #000a0d;
+    cursor: pointer;
+    filter: brightness(110%) invert(0%) saturate(135%);
+    float: left;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 54px;
+    opacity: 0.9;
+    outline-color: #a48289;
+    padding: 6px 20px;
+    transition: all 0.4s linear;
+}
+
+.playerPause_MayA:hover {
+    background: #000a0d;
+    border-left: 15px solid #85102d;
+    border-right: 1px solid #85102d;
+    box-shadow: 5px 1px 5px #1d0207;
+    box-sizing: border-box;
+    color: #80a999;
+    filter: brightness(150%) invert(0%);
+    opacity: 1;
+    transition: all 0.3s linear;
+}
+
+.playerPause_MayA:active {
+    filter: brightness(90%) invert(100%);
+    transition: all 0.1s linear;
+}
+
+.playerNumericalProgressDisplay_MayA {
+    color: #000a0d;
+    float: left;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 30px;
+    opacity: 0.85;
+    padding: 0 0 4px 30px;
+    width: 17vw;
+}
+
+.playerProgressSlider_MayA {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: #80a999;
+    box-shadow: 8px 8px 15px #1d0207, -8px -8px 15px #1d0207;
+    cursor: pointer;
+    float: left;
+    height: 3.2vh;
+    margin: 22px 0 10px 15px;
+    outline-color: #a48289;
+    transition: all 0.1s linear;
+    width: 50vw;
+}
+
+.playerProgressSlider_MayA:hover {
+    box-shadow: 4px -4px 10px #85102d, -4px 4px 10px #85102d, -4px -4px 10px #85102d, 4px 4px 10px #85102d;
+    transition: all 0.1s linear;
+}
+
+.playerProgressSlider_MayA::-webkit-slider-runnable-track {
+    background: #a1abae;
+    filter: brightness(80%);
+    height: 3.2vh;
+}
+
+.playerProgressSlider_MayA::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background: #002014;
+    border-left: 2px solid #c28896;
+    border-right: 2px solid #c28896;
+    height: 5.2vh;
+    transform: translateY(-1vh);
+    width: 17px;
+}
+
+.playerProgressSlider_MayA::-moz-range-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background: #002014;
+    border-left: 2px solid #c28896;
+    border-right: 2px solid #c28896;
+    height: 5.2vh;
+    transform: translateY(-1vh);
+    width: 17px;
+}
+
+.tabsContainer_MayA {
+    backdrop-filter: blur(7px) hue-rotate(45deg);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: auto;
+    justify-content: flex-start;
+    left: 5%;
+    opacity: 0.9;
+    position: relative;
+    transition: all 0.5s linear;
+    top: 3vh;
+    width: 88%;
+    z-index: 5;
+}
+
+.playerTabActive_MayA {
+    background: #80a999;
+    color: #000a0d;
+    cursor: none;
+    filter: brightness(100%) contrast(200%);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    opacity: 1;
+    padding: 8px 15.5%;
+    transition: all 0.5s linear;
+    width: auto;
+}
+
+.playerTabInactive_MayA {
+    background: transparent;
+    color: #a1abae;
+    cursor: pointer;
+    filter: brightness(130%) contrast(200%);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    padding: 8px 10.5%;
+    transition: all 0.5s linear;
+    width: auto;
+}
+
+.aboutContainerActive_MayA {
+    background: linear-gradient(90deg, #e9e5e4, #e9e5e4, #a3c6e2, #77b1e1, transparent);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: flex-start;
+    left: 5%;
+    opacity: 1;
+    position: relative;
+    top: 3vh;
+    width: 88%;
+    z-index: 8;
+}
+
+.aboutContainerInactive_MayA {
+    display: none;
+}
+
+.episodeContainerActive_MayA {
+    background: linear-gradient(90deg, #e9e5e4, #e9e5e4, #a3c6e2, #77b1e1, transparent);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: flex-start;
+    left: 5%;
+    margin-bottom: 8vh;
+    opacity: 1;
+    position: relative;
+    top: 3vh;
+    width: 88%;
+    z-index: 8;
+}
+
+.episodeContainerInactive_MayA {
+    display: none;
+}
+
+.detailsContainerActive_MayA {
+    background: linear-gradient(90deg, #e9e5e4, #e9e5e4, #a3c6e2, #77b1e1, transparent);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: flex-start;
+    left: 5%;
+    margin-bottom: 5vh;
+    opacity: 1;
+    position: relative;
+    top: 3vh;
+    width: 88%;
+    z-index: 8;
+}
+
+.detailsContainerInactive_MayA {
+    display: none;
+}
+
+.episodesTitleBar_MayA {
+    color: #000a0d;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 30px;
+    height: auto;
+    padding: 15px 0 4px 25px;
+    width: 100%;
+}
+
+.episodeItems_MayA {
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 4px;
+    width: 95%;
+}
+
+.episodeItemsCurrent_MayA {
+    background: #a1abae;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 4px;
+    width: 100.5%;
+}
+
+.userEpisodeStatus_MayA {
+    color: #000a0d;
+    float: left;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 24px;
+    padding: 8px 0 8px 16px;
+    position: relative;
+    width: 4vw;
+}
+
+.userEpisodeItemsTitle_MayA {
+    float: left;
+    color: #000a0d;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 24px;
+    padding: 8px 0 8px 16px;
+    position: inherit;
+    width: 35vw;
+}
+
+.userEpisodeItemsAuthor_MayA {
+    color: #000a0d;
+    float: left;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    padding: 10px 0 8px 16px;
+    position: inherit;
+    width: 30vw;
+}
+
+.userEpisodePosition_MayA {
+    color: #000a0d;
+    float: left;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    padding: 10px 0 8px 16px;
+    position: inherit;
+    width: 13.5vw;
+}
+
+.aboutThisPodcastImage_MayA {
+    box-shadow: 2px 2px 10px #1d0207;
+    filter: brightness(90%);
+    float: left;
+    height: 100px;
+    margin: 15px;
+    width: 100px;
+}
+
+.aboutThisPodcastTitle_MayA {
+    color: #000a0d;
+    float: left;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 30px;
+    height: 5vh;
+    margin: 15px 5px 5px 15px;
+}
+
+.aboutThisPodcastAuthor_MayA {
+    color: #000a0d;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 24px;
+    margin: 18px 5px 5px 15px;
+}
+
+.aboutThisPodcastDescription_MayA {
+    color: #000a0d;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.4em;
+    margin: 5px 0 100px 115px;
+    max-width: 750px;
+}
+
+.detailsTitle_MayA {
+    color: #000a0d;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 30px;
+    margin: 15px 15px 15px 80px;
+}
+
+.detailsEpisodeTitle_MayA {
+    color: #000a0d;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 30px;
+    margin: 15px;
+}
+
+.detailsContent_MayA {
+    color: #000a0d;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.4em;
+    max-width: 700px;
+    padding: 35px 35px 100px 115px;
+}
+
+.detailsContent_MayA a {
+    color: #015232;
+    text-decoration: underline;
+}
+
+.detailsContent_MayA a:visited {
+    color: #43565d;
+}
+
+.detailsContent_MayA a:hover {
+    color: #85102d;
+}
+
+.playerRewindToBeginning_MayA {
+    background: #80a999;
+    border-bottom: none;
+    border-left: 4px solid #85102d;
+    border-right: 4px solid #85102d;
+    border-top: none;
+    box-shadow: 5px 5px 10px #1d0207;
+    box-sizing: border-box;
+    color: #000a0d;
+    cursor: pointer;
+    filter: brightness(110%) invert(0%) saturate(135%);
+    float: left;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 24px;
+    margin: 0 6px;
+    opacity: 0.9;
+    outline-color: #a48289;
+    padding: 6px 20px;
+    transition: all 0.4s linear;
+}
+
+.playerRewindToBeginning_MayA:hover {
+    background: #000a0d;
+    border-left: 15px solid #85102d;
+    border-right: 1px solid #85102d;
+    box-shadow: 5px 1px 5px #1d0207;
+    box-sizing: border-box;
+    color: #80a999;
+    filter: brightness(150%) invert(0%);
+    opacity: 1;
+    transition: all 0.3s linear;
+}
+
+.playerRewindToBeginning_MayA:active {
+    filter: brightness(90%) invert(100%);
+    transition: all 0.1s linear;
+}
+
+.playerRewind15Seconds_MayA {
+    background: #80a999;
+    border-bottom: none;
+    border-left: 4px solid #85102d;
+    border-right: 4px solid #85102d;
+    border-top: none;
+    box-shadow: 5px 5px 10px #1d0207;
+    box-sizing: border-box;
+    color: #000a0d;
+    cursor: pointer;
+    filter: brightness(110%) invert(0%) saturate(135%);
+    float: left;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 24px;
+    margin: 0 6px;
+    opacity: 0.9;
+    outline-color: #a48289;
+    padding: 6px 20px;
+    transition: all 0.4s linear;
+}
+
+.playerRewind15Seconds_MayA:hover {
+    background: #000a0d;
+    border-left: 15px solid #85102d;
+    border-right: 1px solid #85102d;
+    box-shadow: 5px 1px 5px #1d0207;
+    box-sizing: border-box;
+    color: #80a999;
+    filter: brightness(150%) invert(0%);
+    opacity: 1;
+    transition: all 0.3s linear;
+}
+
+.playerRewind15Seconds_MayA:active {
+    filter: brightness(90%) invert(100%);
+    transition: all 0.1s linear;
+}
+
+.playerForward15Seconds_MayA {
+    background: #80a999;
+    border-bottom: none;
+    border-left: 4px solid #85102d;
+    border-right: 4px solid #85102d;
+    border-top: none;
+    box-shadow: 5px 5px 10px #1d0207;
+    box-sizing: border-box;
+    color: #000a0d;
+    cursor: pointer;
+    filter: brightness(110%) invert(0%) saturate(135%);
+    float: left;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 24px;
+    margin: 0 6px;
+    opacity: 0.9;
+    outline-color: #a48289;
+    padding: 6px 20px;
+    transition: all 0.4s linear;
+}
+
+.playerForward15Seconds_MayA:hover {
+    background: #000a0d;
+    border-left: 15px solid #85102d;
+    border-right: 1px solid #85102d;
+    box-shadow: 5px 1px 5px #1d0207;
+    box-sizing: border-box;
+    color: #80a999;
+    filter: brightness(150%) invert(0%);
+    opacity: 1;
+    transition: all 0.3s linear;
+}
+
+.playerForward15Seconds_MayA:active {
+    filter: brightness(90%) invert(100%);
+    transition: all 0.1s linear;
+}
+
+.playerFastForwardEnd_MayA {
+    background: #80a999;
+    border-bottom: none;
+    border-left: 4px solid #85102d;
+    border-right: 4px solid #85102d;
+    border-top: none;
+    box-shadow: 5px 5px 10px #1d0207;
+    box-sizing: border-box;
+    color: #000a0d;
+    cursor: pointer;
+    filter: brightness(110%) invert(0%) saturate(135%);
+    float: left;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 24px;
+    margin: 0 6px;
+    opacity: 0.9;
+    outline-color: #a48289;
+    padding: 6px 20px;
+    transition: all 0.4s linear;
+}
+
+.playerFastForwardEnd_MayA:hover {
+    background: #000a0d;
+    border-left: 15px solid #85102d;
+    border-right: 1px solid #85102d;
+    box-shadow: 5px 1px 5px #1d0207;
+    box-sizing: border-box;
+    color: #80a999;
+    filter: brightness(150%) invert(0%);
+    opacity: 1;
+    transition: all 0.3s linear;
+}
+
+.playerFastForwardEnd_MayA:active {
+    filter: brightness(90%) invert(100%);
+    transition: all 0.1s linear;
+}
+
+.playerAtSpeed1_MayA {
+    background: #80a999;
+    border-bottom: none;
+    border-left: 4px solid #85102d;
+    border-right: 4px solid #85102d;
+    border-top: none;
+    box-shadow: 5px 5px 10px #1d0207;
+    box-sizing: border-box;
+    color: #000a0d;
+    cursor: pointer;
+    filter: brightness(110%) invert(0%) saturate(135%);
+    float: left;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 24px;
+    margin: 0 6px;
+    opacity: 0.9;
+    outline-color: #a48289;
+    padding: 8px 4px 7px 4px;
+    transition: all 0.4s linear;
+}
+
+.playerAtSpeed1_MayA:hover {
+    background: #000a0d;
+    border-left: 15px solid #85102d;
+    border-right: 1px solid #85102d;
+    box-shadow: 5px 1px 5px #1d0207;
+    box-sizing: border-box;
+    color: #80a999;
+    filter: brightness(150%) invert(0%);
+    opacity: 1;
+    transition: all 0.3s linear;
+}
+
+.playerAtSpeed1_MayA:active {
+    filter: brightness(90%) invert(100%);
+    transition: all 0.1s linear;
+}
+
+.playerAtSpeed1point25_MayA {
+    background: #80a999;
+    border-bottom: none;
+    border-left: 4px solid #85102d;
+    border-right: 4px solid #85102d;
+    border-top: none;
+    box-shadow: 5px 5px 10px #1d0207;
+    box-sizing: border-box;
+    color: #000a0d;
+    cursor: pointer;
+    filter: brightness(110%) invert(0%) saturate(135%);
+    float: left;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 24px;
+    margin: 0 6px;
+    opacity: 0.9;
+    outline-color: #a48289;
+    padding: 8px 4px 7px 4px;
+    transition: all 0.4s linear;
+}
+
+.playerAtSpeed1point25_MayA:hover {
+    background: #000a0d;
+    border-left: 15px solid #85102d;
+    border-right: 1px solid #85102d;
+    box-shadow: 5px 1px 5px #1d0207;
+    box-sizing: border-box;
+    color: #80a999;
+    filter: brightness(150%) invert(0%);
+    opacity: 1;
+    transition: all 0.3s linear;
+}
+
+.playerAtSpeed1point25_MayA:active {
+    filter: brightness(90%) invert(100%);
+    transition: all 0.1s linear;
+}
+
+.playerAtSpeed1point5_MayA {
+    background: #80a999;
+    border-bottom: none;
+    border-left: 4px solid #85102d;
+    border-right: 4px solid #85102d;
+    border-top: none;
+    box-shadow: 5px 5px 10px #1d0207;
+    box-sizing: border-box;
+    color: #000a0d;
+    cursor: pointer;
+    filter: brightness(110%) invert(0%) saturate(135%);
+    float: left;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 24px;
+    margin: 0 6px;
+    opacity: 0.9;
+    outline-color: #a48289;
+    padding: 8px 4px 7px 4px;
+    transition: all 0.4s linear;
+}
+
+.playerAtSpeed1point5_MayA:hover {
+    background: #000a0d;
+    border-left: 15px solid #85102d;
+    border-right: 1px solid #85102d;
+    box-shadow: 5px 1px 5px #1d0207;
+    box-sizing: border-box;
+    color: #80a999;
+    filter: brightness(150%) invert(0%);
+    opacity: 1;
+    transition: all 0.3s linear;
+}
+
+.playerAtSpeed1point5_MayA:active {
+    filter: brightness(90%) invert(100%);
+    transition: all 0.1s linear;
+}
+
+.playerAtSpeed2_MayA {
+    background: #80a999;
+    border-bottom: none;
+    border-left: 4px solid #85102d;
+    border-right: 4px solid #85102d;
+    border-top: none;
+    box-shadow: 5px 5px 10px #1d0207;
+    box-sizing: border-box;
+    color: #000a0d;
+    cursor: pointer;
+    filter: brightness(110%) invert(0%) saturate(135%);
+    float: left;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 24px;
+    margin: 0 6px;
+    opacity: 0.9;
+    outline-color: #a48289;
+    padding: 8px 4px 7px 4px;
+    transition: all 0.4s linear;
+}
+
+.playerAtSpeed2_MayA:hover {
+    background: #000a0d;
+    border-left: 15px solid #85102d;
+    border-right: 1px solid #85102d;
+    box-shadow: 5px 1px 5px #1d0207;
+    box-sizing: border-box;
+    color: #80a999;
+    filter: brightness(150%) invert(0%);
+    opacity: 1;
+    transition: all 0.3s linear;
+}
+
+.playerAtSpeed2_MayA:active {
+    filter: brightness(90%) invert(100%);
+    transition: all 0.1s linear;
+}
+
+.playerAtSpeedPoint5_MayA {
+    background: #80a999;
+    border-bottom: none;
+    border-left: 4px solid #85102d;
+    border-right: 4px solid #85102d;
+    border-top: none;
+    box-shadow: 5px 5px 10px #1d0207;
+    box-sizing: border-box;
+    color: #000a0d;
+    cursor: pointer;
+    filter: brightness(110%) invert(0%) saturate(135%);
+    float: left;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 24px;
+    margin: 0 6px;
+    opacity: 0.9;
+    outline-color: #a48289;
+    padding: 8px 4px 7px 4px;
+    transition: all 0.4s linear;
+}
+
+.playerAtSpeedPoint5_MayA:hover {
+    background: #000a0d;
+    border-left: 15px solid #85102d;
+    border-right: 1px solid #85102d;
+    box-shadow: 5px 1px 5px #1d0207;
+    box-sizing: border-box;
+    color: #80a999;
+    filter: brightness(150%) invert(0%);
+    opacity: 1;
+    transition: all 0.3s linear;
+}
+
+.playerAtSpeedPoint5_MayA:active {
+    filter: brightness(90%) invert(100%);
+    transition: all 0.1s linear;
+}
+
+.playerAtSpeedPoint75_MayA {
+    background: #80a999;
+    border-bottom: none;
+    border-left: 4px solid #85102d;
+    border-right: 4px solid #85102d;
+    border-top: none;
+    box-shadow: 5px 5px 10px #1d0207;
+    box-sizing: border-box;
+    color: #000a0d;
+    cursor: pointer;
+    filter: brightness(110%) invert(0%) saturate(135%);
+    float: left;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 24px;
+    margin: 0 6px;
+    opacity: 0.9;
+    outline-color: #a48289;
+    padding: 8px 4px 7px 4px;
+    transition: all 0.4s linear;
+}
+
+.playerAtSpeedPoint75_MayA:hover {
+    background: #000a0d;
+    border-left: 15px solid #85102d;
+    border-right: 1px solid #85102d;
+    box-shadow: 5px 1px 5px #1d0207;
+    box-sizing: border-box;
+    color: #80a999;
+    filter: brightness(150%) invert(0%);
+    opacity: 1;
+    transition: all 0.3s linear;
+}
+
+.playerAtSpeedPoint75_MayA:active {
+    filter: brightness(90%) invert(100%);
+    transition: all 0.1s linear;
+}
+
+.playerShareSaveDiv_MayA {
+    position: relative;
+    transform: translateX(7.4vw) translateY(15vh);
+}
+
+.playerShareButton_MayA {
+    background: #80a999;
+    border-bottom: none;
+    border-left: 4px solid #85102d;
+    border-right: 4px solid #85102d;
+    border-top: none;
+    box-shadow: 5px 5px 10px #1d0207;
+    box-sizing: border-box;
+    color: #000a0d;
+    cursor: pointer;
+    filter: brightness(110%) invert(0%) saturate(135%);
+    float: left;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 30px;
+    margin: 0 6px;
+    opacity: 0.9;
+    outline-color: #a48289;
+    padding: 1px 6px;
+    transition: all 0.4s linear;
+    transform: translateX(450px) translateY(-100px);
+}
+
+.playerShareButton_MayA:hover {
+    background: #000a0d;
+    border-left: 15px solid #85102d;
+    border-right: 1px solid #85102d;
+    box-shadow: 5px 1px 5px #1d0207;
+    box-sizing: border-box;
+    color: #80a999;
+    filter: brightness(150%) invert(0%);
+    opacity: 1;
+    transition: all 0.3s linear;
+}
+
+.playerShareButton_MayA:active {
+    filter: brightness(90%) invert(100%);
+    transition: all 0.1s linear;
+}
+
+.playerSaveButton_MayA {
+    background: #80a999;
+    border-bottom: none;
+    border-left: 4px solid #85102d;
+    border-right: 4px solid #85102d;
+    border-top: none;
+    box-shadow: 5px 5px 10px #1d0207;
+    box-sizing: border-box;
+    color: #000a0d;
+    cursor: pointer;
+    filter: brightness(110%) invert(0%) saturate(135%);
+    float: left;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 30px;
+    margin: 0 6px;
+    opacity: 0.9;
+    outline-color: #a48289;
+    padding: 1px 6px;
+    transition: all 0.4s linear;
+    transform: translateX(450px) translateY(-100px);
+}
+
+.playerSaveButton_MayA:hover {
+    background: #000a0d;
+    border-left: 15px solid #85102d;
+    border-right: 1px solid #85102d;
+    box-shadow: 5px 1px 5px #1d0207;
+    box-sizing: border-box;
+    color: #80a999;
+    filter: brightness(150%) invert(0%);
+    opacity: 1;
+    transition: all 0.3s linear;
+}
+
+.playerSaveButton_MayA:active {
+    filter: brightness(90%) invert(100%);
+    transition: all 0.1s linear;
+}
+
+.shareSaveDivActive_MayA {
+    background: linear-gradient(90deg, #a9b0a8, #a9b0a8, #76ba55, #037d4a);
+    height: auto;
+    left: 20%;
+    opacity: 1;
+    position: absolute;
+    top: 20%;
+    transform: translateY(0px);
+    transition: all 0.5s linear;
+    width: 60%;
+    z-index: 17;
+}
+
+.shareSaveDivInactive_MayA {
+    background: linear-gradient(90deg, #a9b0a8, #a9b0a8, #76ba55, #037d4a);
+    height: auto;
+    left: 20%;
+    opacity: 0.2;
+    position: absolute;
+    top: 20%;
+    transform: translateY(2500px);
+    transition: all 0.5s linear;
+    width: 60%;
+    z-index: -17;
+}
+
+.shareOrSaveStatus_MayA {
+    color: #000a0d;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 24px;
+    margin: 30px 5px 15px 30px;
+    transition: all 0.5s linear;
+}
+
+.shareOrSaveContent_MayA {
+    color: #000a0d;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 24px;
+    margin: 30px 5px 15px 60px;
+}
+
+.playerShareSaveLinkUserNotes_MayA {
+    background: #e9e5e4;
+    color: #000a0d;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    margin: 5px 60px 5px 60px;
+    outline-color: #a48289;
+    width: 80%;
+}
+
+.playerRadioButtons_MayA {
+    color: #000a0d;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    margin: 5px 60px 5px 60px;
+}
+
+.shareSaveDivActive_MayA button {
+    background: #80a999;
+    border-bottom: none;
+    border-left: 4px solid #85102d;
+    border-right: 4px solid #85102d;
+    border-top: none;
+    box-shadow: 5px 5px 10px #1d0207;
+    box-sizing: border-box;
+    color: #000a0d;
+    cursor: pointer;
+    filter: brightness(110%) invert(0%) saturate(135%);
+    float: left;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 30px;
+    margin: 40px 150px 40px 150px;
+    opacity: 0.9;
+    outline-color: #a48289;
+    padding: 5px 5px;
+    transition: all 0.4s linear;
+}
+
+.shareSaveDivActive_MayA button:hover {
+    background: #000a0d;
+    border-left: 15px solid #85102d;
+    border-right: 1px solid #85102d;
+    box-shadow: 5px 1px 5px #1d0207;
+    box-sizing: border-box;
+    color: #80a999;
+    filter: brightness(150%) invert(0%);
+    opacity: 1;
+    transition: all 0.3s linear;
+}
+
+.shareSaveDivActive_MayA button:active {
+    filter: brightness(90%) invert(100%);
+    transition: all 0.1s linear;
+}
+
+.playerExit_MayA {
+    background: transparent;
+    border: solid 1px transparent;
+    color: #000a0d;
+    cursor: pointer;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 48px;
+    left: 94%;
+    margin: 0 0 -10px 0;
+    position: relative;
+    top: 0;
+    width: 5%;
+}
+
+@media only screen and (max-width: 1400px) {
+    .playerShareButton_MayA {
+
+        margin-right: 0;
+
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .playerDiv_MayA {
+
+        height: 26vh;
+        justify-content: flex-start;
+        left: 5%;
+        opacity: 0.9;
+        position: relative;
+        top: 0;
+        width: 88%;
+    }
+
+    .playerFeedIcon_MayA img {
+        height: 130px;
+        margin: 10px 10px;
+        width: 130px;
+    }
+
+    .playerPodcastTitle_MayA {
+        font-size: 30px;
+        margin: 10px 0 10px 5px;
+    }
+
+    .playerEpisodeTitle_MayA {
+        font-size: 24px;
+        margin: 4px 0 4px 5px;
+    }
+
+    .playerEpisodeAuthor_MayA {
+        font-size: 18px;
+        margin: 4px 0 5px 5px;
+    }
+
+    .playerControlsDiv_MayA {
+        margin: 35px 25px 4px -120px;
+        position: relative;
+        transform: scale(0.55);
+        width: 120%;
+    }
+
+    .playerProgressSlider_MayA {
+
+        margin: 17px 0 10px 15px;
+        width: 50px;
+    }
+
+    .playerShareSaveDiv_MayA {
+        position: relative;
+        transform: scale(0.5) translateX(-3vw) translateY(20vh);
+    }
+
+    .shareSaveDivActive_MayA button {
+
+        margin: 40px 30px 40px 30px;
+        padding: 5px 5px;
+    }
+
+    .playerShareButton_MayA {
+
+        margin-right: 0;
+
+    }
+
+    .playerShareButton_MayA:active {
+        transition: all 0.1s linear;
+    }
+
+    .playerSaveButton_MayA {
+
+        margin-right: 0;
+        transform: translateX(15px);
+    }
+
+    .playerSaveButton_MayA:active {
+        transition: all 0.1s linear;
+    }
+
+    .playerProgressSlider_MayA {
+        margin: 17px 0 10px 5px;
+        width: 150%;
+    }
+
+    .playerTabActive_MayA {
+        font-size: 18px;
+        padding: 4px 0 4px 3px;
+        width: 30%;
+    }
+
+    .playerTabInactive_MayA {
+        font-size: 18px;
+        padding: 4px 0 4px 3px;
+        width: 30%;
+    }
+
+    .episodesTitleBar_MayA {
+        font-size: 18px;
+        height: auto;
+
+    }
+
+    .userEpisodeStatus_MayA {
+
+        font-size: 12px;
+        padding: 4px 1px 4px 4px;
+        position: relative;
+        width: 2vw;
+    }
+
+    .userEpisodeItemsTitle_MayA {
+        font-size: 12px;
+        padding: 4px 1px 4px 20px;
+        position: inherit;
+        width: 35vw;
+    }
+
+    .userEpisodeItemsAuthor_MayA {
+        display: none;
+    }
+
+    .userEpisodePosition_MayA {
+
+        font-size: 12px;
+        padding: 10px 1px 4px 16px;
+        width: 19vw;
+    }
+
+    .aboutThisPodcastImage_MayA {
+        height: 40px;
+        margin: 5px;
+        width: 40px;
+    }
+
+    .aboutThisPodcastTitle_MayA {
+
+        font-size: 18px;
+
+    }
+
+    .aboutThisPodcastAuthor_MayA {
+
+        font-size: 12px;
+    }
+
+    .aboutThisPodcastDescription_MayA {
+
+        font-size: 12px;
+        margin: 5px 50px 100px 5px;
+        max-width: 750px;
+    }
+
+    .detailsTitle_MayA {
+
+        font-size: 18px;
+        margin: 15px 15px 15px 15px;
+    }
+
+    .detailsEpisodeTitle_MayA {
+
+        font-size: 18px;
+        margin: 15px;
+    }
+
+    .detailsContent_MayA {
+
+        font-size: 12px;
+
+        max-width: 300px;
+        padding: 4px 16px 50px 5px;
+    }
+
+    .detailsContent_MayA a {
+        text-decoration: underline;
+    }
+
+    .scrollerDiv {
+        height: 1300px;
+    }
+
+    .playerExit_MayA {
+
+        font-size: 24px;
+        margin: 0 0 -10px 0;
+        position: relative;
+        left: 91%;
+        top: 0;
+        width: 5%;
+    }
+
+    .shareSaveDivActive_MayA {
+
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 17;
+    }
+
+    .shareSaveDivInactive_MayA {
+        height: auto;
+        left: 20%;
+        opacity: 0.2;
+        position: absolute;
+        top: 20%;
+        transform: translateY(-500px);
+        width: 60%;
+        z-index: -17;
+    }
+
+    .scrollerDiv {
+        height: 950px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .playerDiv_MayA {
+
+        height: 26vh;
+        justify-content: flex-start;
+        left: 5%;
+        opacity: 0.9;
+        position: relative;
+        top: 0;
+        width: 88%;
+    }
+
+    .playerFeedIcon_MayA img {
+        height: 130px;
+        margin: 10px 10px;
+        width: 130px;
+    }
+
+    .playerPodcastTitle_MayA {
+        font-size: 30px;
+        margin: 10px 0 10px 5px;
+    }
+
+    .playerEpisodeTitle_MayA {
+        font-size: 24px;
+        margin: 4px 0 4px 5px;
+    }
+
+    .playerEpisodeAuthor_MayA {
+        font-size: 18px;
+        margin: 4px 0 5px 5px;
+    }
+
+    .playerControlsDiv_MayA {
+        margin: 35px 25px 4px -120px;
+        position: relative;
+        transform: scale(0.55);
+        width: 120%;
+    }
+
+    .playerProgressSlider_MayA {
+
+        margin: 17px 0 10px 15px;
+        width: 50px;
+    }
+
+    .playerShareSaveDiv_MayA {
+        position: relative;
+        transform: scale(0.5) translateX(-3vw) translateY(20vh);
+    }
+
+    .shareSaveDivActive_MayA button {
+
+        margin: 40px 30px 40px 30px;
+        padding: 5px 5px;
+        transition: all 0.4s linear;
+    }
+
+    .playerShareButton_MayA {
+
+        margin-right: 0;
+
+    }
+
+    .playerShareButton_MayA:active {
+        transition: all 0.1s linear;
+    }
+
+    .playerSaveButton_MayA {
+
+        margin-right: 0;
+        transform: translateX(15px);
+    }
+
+    .playerSaveButton_MayA:active {
+        transition: all 0.1s linear;
+    }
+
+    .playerProgressSlider_MayA {
+        margin: 17px 0 10px 5px;
+        width: 150%;
+    }
+
+    .playerTabActive_MayA {
+        font-size: 18px;
+        padding: 4px 0 4px 3px;
+        width: 30%;
+    }
+
+    .playerTabInactive_MayA {
+        font-size: 18px;
+        padding: 4px 0 4px 3px;
+        width: 30%;
+    }
+
+    .episodesTitleBar_MayA {
+        font-size: 18px;
+        height: auto;
+
+    }
+
+    .userEpisodeStatus_MayA {
+
+        font-size: 12px;
+        padding: 4px 1px 4px 4px;
+        position: relative;
+        width: 2vw;
+    }
+
+    .userEpisodeItemsTitle_MayA {
+        font-size: 12px;
+        padding: 4px 1px 4px 20px;
+        position: inherit;
+        width: 35vw;
+    }
+
+    .userEpisodeItemsAuthor_MayA {
+        display: none;
+    }
+
+    .userEpisodePosition_MayA {
+
+        font-size: 12px;
+        padding: 10px 1px 4px 16px;
+        width: 19vw;
+    }
+
+    .aboutThisPodcastImage_MayA {
+        height: 40px;
+        margin: 5px;
+        width: 40px;
+    }
+
+    .aboutThisPodcastTitle_MayA {
+
+        font-size: 18px;
+
+    }
+
+    .aboutThisPodcastAuthor_MayA {
+
+        font-size: 12px;
+    }
+
+    .aboutThisPodcastDescription_MayA {
+
+        font-size: 12px;
+        margin: 5px 50px 100px 5px;
+        max-width: 750px;
+    }
+
+    .detailsTitle_MayA {
+
+        font-size: 18px;
+        margin: 15px 15px 15px 15px;
+    }
+
+    .detailsEpisodeTitle_MayA {
+
+        font-size: 18px;
+        margin: 15px;
+    }
+
+    .detailsContent_MayA {
+
+        font-size: 12px;
+
+        max-width: 300px;
+        padding: 4px 16px 50px 5px;
+    }
+
+    .detailsContent_MayA a {
+        text-decoration: underline;
+    }
+
+    .scrollerDiv {
+        height: 640px;
+    }
+
+    .playerExit_MayA {
+
+        font-size: 24px;
+        margin: 0 0 -10px 0;
+        position: relative;
+        left: 91%;
+        top: 0;
+        width: 5%;
+    }
+
+    .shareSaveDivActive_MayA {
+
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 17;
+    }
+
+    .shareSaveDivInactive_MayA {
+        height: auto;
+        left: 20%;
+        opacity: 0.2;
+        position: absolute;
+        top: 20%;
+        transform: translateY(-500px);
+        width: 60%;
+        z-index: -17;
+    }
+
+    .scrollerDiv {
+        height: 950px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .playerFeedIcon_MayA img {
+        height: 50px;
+        margin: 10px 5px;
+        width: 50px;
+    }
+
+    .playerPodcastTitle_MayA {
+        font-size: 18px;
+        margin: 10px 0 10px 5px;
+    }
+
+    .playerEpisodeTitle_MayA {
+        font-size: 18px;
+        margin: 4px 0 4px 5px;
+    }
+
+    .playerEpisodeAuthor_MayA {
+        font-size: 12px;
+        margin: 4px 0 5px 5px;
+    }
+
+    .playerControlsDiv_MayA {
+        margin: 35px 5px 4px -120px;
+        position: relative;
+        transform: scale(0.5);
+        width: 150%;
+    }
+
+    .playerShareSaveDiv_MayA {
+        position: relative;
+        transform: scale(0.5) translateX(-3vw) translateY(15vh);
+    }
+
+    .shareSaveDivActive_MayA button {
+
+        margin: 40px 30px 40px 30px;
+        padding: 5px 5px;
+        transition: all 0.4s linear;
+    }
+
+    .playerShareButton_MayA {
+
+        margin-right: 0;
+
+    }
+
+    .playerShareButton_MayA:active {
+        transition: all 0.1s linear;
+    }
+
+    .playerSaveButton_MayA {
+
+        margin-right: 0;
+        transform: translateX(-190px) translateY(-53px);
+    }
+
+    .playerSaveButton_MayA:active {
+        box-shadow: -3px -3px transparent;
+        transition: all 0.1s linear;
+    }
+
+    .playerProgressSlider_MayA {
+        margin: 17px 0 10px 5px;
+        width: 150%;
+    }
+
+    .playerTabActive_MayA {
+        font-size: 18px;
+        padding: 4px 0 4px 3px;
+        width: 30%;
+    }
+
+    .playerTabInactive_MayA {
+        font-size: 18px;
+        padding: 4px 0 4px 3px;
+        width: 30%;
+    }
+
+    .episodesTitleBar_MayA {
+        font-size: 18px;
+        height: auto;
+
+    }
+
+    .userEpisodeStatus_MayA {
+
+        font-size: 12px;
+        padding: 4px 1px 4px 4px;
+        position: relative;
+        width: 2vw;
+    }
+
+    .userEpisodeItemsTitle_MayA {
+        font-size: 12px;
+        padding: 4px 1px 4px 20px;
+        position: inherit;
+        width: 35vw;
+    }
+
+    .userEpisodeItemsAuthor_MayA {
+        display: none;
+    }
+
+    .userEpisodePosition_MayA {
+
+        font-size: 12px;
+        padding: 10px 1px 4px 16px;
+        width: 19vw;
+    }
+
+    .aboutThisPodcastImage_MayA {
+        height: 40px;
+        margin: 5px;
+        width: 40px;
+    }
+
+    .aboutThisPodcastTitle_MayA {
+
+        font-size: 18px;
+
+    }
+
+    .aboutThisPodcastAuthor_MayA {
+
+        font-size: 12px;
+    }
+
+    .aboutThisPodcastDescription_MayA {
+
+        font-size: 12px;
+        margin: 5px 50px 100px 5px;
+        max-width: 750px;
+    }
+
+    .detailsTitle_MayA {
+
+        font-size: 18px;
+        margin: 15px 15px 15px 15px;
+    }
+
+    .detailsEpisodeTitle_MayA {
+
+        font-size: 18px;
+        margin: 15px;
+    }
+
+    .detailsContent_MayA {
+
+        font-size: 12px;
+
+        max-width: 300px;
+        padding: 4px 16px 50px 5px;
+    }
+
+    .detailsContent_MayA a {
+        text-decoration: underline;
+    }
+
+    .scrollerDiv {
+        height: 640px;
+    }
+
+    .playerExit_MayA {
+
+        font-size: 24px;
+        margin: 0 0 -10px 0;
+        position: relative;
+        left: 91%;
+        top: 0;
+        width: 5%;
+    }
+
+    .shareSaveDivActive_MayA {
+
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 17;
+    }
+
+    .shareSaveDivInactive_MayA {
+        height: auto;
+        left: 20%;
+        opacity: 0.2;
+        position: absolute;
+        top: 20%;
+        transform: translateY(-500px);
+        width: 60%;
+        z-index: -17;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+
+    .playerShareButton_MayA {
+
+        margin-right: 1vh;
+
+    }
+
+    .playerSaveButton_MayA {
+
+        margin-right: 1vh;
+        transform: translateX(50px);
+
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .playerFeedIcon_MayA img {
+        height: 50px;
+        margin: 10px 5px;
+        width: 50px;
+    }
+
+    .playerPodcastTitle_MayA {
+        font-size: 18px;
+        margin: 10px 0 10px 5px;
+    }
+
+    .playerEpisodeTitle_MayA {
+        font-size: 18px;
+        margin: 4px 0 4px 5px;
+    }
+
+    .playerEpisodeAuthor_MayA {
+        font-size: 12px;
+        margin: 4px 0 5px 5px;
+    }
+
+    .playerControlsDiv_MayA {
+        margin: 35px 5px 4px -120px;
+        position: relative;
+        transform: scale(0.5);
+        width: 150%;
+    }
+
+    .playerShareSaveDiv_MayA {
+        position: relative;
+        transform: scale(0.5) translateX(7.4vw) translateY(15vh);
+    }
+
+    .playerShareButton_MayA {
+
+        margin-right: 1vh;
+
+    }
+
+    .playerSaveButton_MayA {
+
+        margin-right: 1vh;
+
+    }
+
+    .playerProgressSlider_MayA {
+        margin: 17px 0 10px 5px;
+        width: 150%;
+    }
+
+    .playerTabActive_MayA {
+        font-size: 18px;
+        padding: 4px 0 4px 3px;
+        width: 30%;
+    }
+
+    .playerTabInactive_MayA {
+        font-size: 18px;
+        padding: 4px 0 4px 3px;
+        width: 30%;
+    }
+
+    .episodesTitleBar_MayA {
+        font-size: 18px;
+        height: auto;
+
+    }
+
+    .userEpisodeStatus_MayA {
+
+        font-size: 12px;
+        padding: 4px 1px 4px 4px;
+        position: relative;
+        width: 2vw;
+    }
+
+    .userEpisodeItemsTitle_MayA {
+        font-size: 12px;
+        padding: 4px 1px 4px 20px;
+        position: inherit;
+        width: 35vw;
+    }
+
+    .userEpisodeItemsAuthor_MayA {
+        display: none;
+    }
+
+    .userEpisodePosition_MayA {
+
+        font-size: 12px;
+        padding: 10px 1px 4px 16px;
+        width: 19vw;
+    }
+
+    .aboutThisPodcastImage_MayA {
+        height: 40px;
+        margin: 5px;
+        width: 40px;
+    }
+
+    .aboutThisPodcastTitle_MayA {
+
+        font-size: 18px;
+
+    }
+
+    .aboutThisPodcastAuthor_MayA {
+
+        font-size: 12px;
+    }
+
+    .aboutThisPodcastDescription_MayA {
+
+        font-size: 12px;
+        margin: 5px 50px 100px 5px;
+        max-width: 750px;
+    }
+
+    .detailsTitle_MayA {
+
+        font-size: 18px;
+        margin: 15px 15px 15px 15px;
+    }
+
+    .detailsEpisodeTitle_MayA {
+
+        font-size: 18px;
+        margin: 15px;
+    }
+
+    .detailsContent_MayA {
+
+        font-size: 12px;
+
+        max-width: 300px;
+        padding: 4px 16px 50px 5px;
+    }
+
+    .detailsContent_MayA a {
+        text-decoration: underline;
+    }
+
+    .scrollerDiv {
+        height: 640px;
+    }
+
+    .playerExit_MayA {
+
+        font-size: 24px;
+        margin: 0 0 -10px 0;
+        position: relative;
+        left: 91%;
+        top: 0;
+        width: 5%;
+    }
+
+    .shareSaveDivActive_MayA {
+
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 17;
+    }
+
+    .shareSaveDivInactive_MayA {
+        height: auto;
+        left: 20%;
+        opacity: 0.2;
+        position: absolute;
+        top: 20%;
+        transform: translateY(-500px);
+        width: 60%;
+        z-index: -17;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .playerFeedIcon_MayA img {
+        height: 50px;
+        margin: 10px 5px;
+        width: 50px;
+    }
+
+    .playerPodcastTitle_MayA {
+        font-size: 18px;
+        margin: 10px 0 10px 5px;
+    }
+
+    .playerEpisodeTitle_MayA {
+        font-size: 18px;
+        margin: 4px 0 4px 5px;
+    }
+
+    .playerEpisodeAuthor_MayA {
+        font-size: 12px;
+        margin: 4px 0 5px 5px;
+    }
+
+    .playerControlsDiv_MayA {
+        margin: 35px 5px 4px -120px;
+        position: relative;
+        transform: scale(0.5);
+        width: 150%;
+    }
+
+    .playerShareSaveDiv_MayA {
+        position: relative;
+        transform: scale(0.5) translateX(1.4vw) translateY(10vh);
+    }
+
+    .playerShareButton_MayA {
+
+        margin-right: 1vh;
+        transform: translateX(-30px) translateY(-8px);
+
+    }
+
+    .playerSaveButton_MayA {
+
+        margin-right: 1vh;
+
+    }
+
+    .playerProgressSlider_MayA {
+        margin: 17px 0 10px 5px;
+        width: 150%;
+    }
+
+    .playerTabActive_MayA {
+        font-size: 18px;
+        padding: 4px 0 4px 3px;
+        width: 30%;
+    }
+
+    .playerTabInactive_MayA {
+        font-size: 18px;
+        padding: 4px 0 4px 3px;
+        width: 30%;
+    }
+
+    .episodesTitleBar_MayA {
+        font-size: 18px;
+        height: auto;
+
+    }
+
+    .userEpisodeStatus_MayA {
+
+        font-size: 12px;
+        padding: 4px 1px 4px 4px;
+        position: relative;
+        width: 2vw;
+    }
+
+    .userEpisodeItemsTitle_MayA {
+        font-size: 12px;
+        padding: 4px 1px 4px 20px;
+        position: inherit;
+        width: 35vw;
+    }
+
+    .userEpisodeItemsAuthor_MayA {
+        display: none;
+    }
+
+    .userEpisodePosition_MayA {
+
+        font-size: 12px;
+        padding: 10px 1px 4px 16px;
+        width: 19vw;
+    }
+
+    .aboutThisPodcastImage_MayA {
+        height: 40px;
+        margin: 5px;
+        width: 40px;
+    }
+
+    .aboutThisPodcastTitle_MayA {
+
+        font-size: 18px;
+
+    }
+
+    .aboutThisPodcastAuthor_MayA {
+
+        font-size: 12px;
+    }
+
+    .aboutThisPodcastDescription_MayA {
+
+        font-size: 12px;
+        margin: 5px 5px 100px 5px;
+        max-width: 300px;
+    }
+
+    .detailsTitle_MayA {
+
+        font-size: 18px;
+        margin: 15px 15px 15px 15px;
+    }
+
+    .detailsEpisodeTitle_MayA {
+
+        font-size: 18px;
+        margin: 15px;
+    }
+
+    .detailsContent_MayA {
+
+        font-size: 12px;
+
+        max-width: 250px;
+        padding: 4px 16px 50px 5px;
+    }
+
+    .detailsContent_MayA a {
+        color: #a75853;
+        text-decoration: underline;
+    }
+
+    .scrollerDiv {
+        height: 640px;
+    }
+
+    .playerExit_MayA {
+
+        font-size: 24px;
+        margin: 0 0 -10px 0;
+        position: relative;
+        left: 91%;
+        top: 0;
+        width: 5%;
+    }
+
+    .shareSaveDivActive_MayA {
+
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 17;
+    }
+
+    .shareSaveDivInactive_MayA {
+        height: auto;
+        left: 20%;
+        opacity: 0.2;
+        position: absolute;
+        top: 20%;
+        transform: translateY(-500px);
+        width: 60%;
+        z-index: -17;
+    }
+}
