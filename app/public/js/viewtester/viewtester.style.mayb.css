@@ -1,0 +1,386 @@
+.viewContainer_MayB {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/viewer/danist-8GU1bDusKUk-unsplash.jpg);
+    background-size: cover;
+    filter: blur(0);
+    height: 95%;
+    margin: 5% 0 0 0;
+    transition: all 0.5s linear;
+    width: 100%;
+    z-index: 1;
+}
+
+.viewContainerCloaked_MayB {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/viewer/danist-8GU1bDusKUk-unsplash.jpg);
+    background-size: cover;
+    filter: blur(20px);
+    height: 95%;
+    margin: 5% 0 0 0;
+    transition: all 0.5s linear;
+    width: 100%;
+    z-index: 1;
+}
+
+.viewToolbar_MayB {
+    backdrop-filter: brightness(500%) contrast(25%) invert(100%) saturate(100%);
+    border-bottom: 1px solid transparent;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 11.3vh;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.viewNavigation_MayB {
+    background: #8ea7e4;
+    border-left: 2px solid #1b491b;
+    border-right: 2px solid #1b491b;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 60px;
+    height: 80px;
+    margin: 3px 10px;
+    outline-color: #8e968d;
+    padding: 1px;
+    transition: all 0.2s linear;
+    width: 85px;
+}
+
+.viewNavigation_MayB:hover {
+    background: #000000;
+    border-left: 15px solid #1b491b;
+    border-right: none;
+    box-sizing: border-box;
+    color: #8ea7e4;
+    transition: all 0.2s linear;
+}
+
+.viewNavigation_MayB:active {
+    filter: invert(100%);
+    transition: all 0.1s linear;
+}
+
+.viewCurrentFeedIcon_MayB {
+    height: 75px;
+    width: 75px;
+}
+
+.viewCurrentFeedTitle_MayB {
+    background: transparent;
+    color: #000000;
+    cursor: pointer;
+    display: initial;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 54px;
+    font-weight: 900;
+    padding: 20px 15px 0 15px;
+    transition: all 0.2s linear;
+}
+
+.viewCurrentFeedTitle_MayB:hover {
+    color: #0b1f50;
+    transition: all 0.2s linear;
+}
+
+.viewCurrentFeedTitle_MayB a:hover {
+    color: #0b1f50;
+    transition: all 0.2s linear;
+}
+
+.viewCurrentFeedTitle_MayB a {
+    color: #000000;
+    text-decoration: none;
+    transition: all 0.3s linear;
+}
+
+.viewCurrentFeedDescription_MayB {
+    background: transparent;
+    color: #000000;
+    display: initial;
+    justify-content: flex-end;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 900;
+    max-width: 250px;
+    padding: 50px 0 0 10px;
+}
+
+.viewContentDiv_MayB {
+    backdrop-filter: blur(2px)  ;
+    background: linear-gradient(90deg, #9eacc0, #8ea7e4, #8da48d, transparent);
+    height: 75.5vh;
+    opacity: 0.95;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 1% 5%;
+    width: 100%;
+}
+
+.viewIndividualItems_MayB {
+    color: #000000;
+    font-family: 'Inria Sans', sans-serif;
+    line-height: 1.3em;
+    max-width: 880px;
+}
+
+.viewIndividualItems_MayB img {
+    max-width: 70%;
+}
+
+.viewIndividualItems_MayB p {
+    font-size: 18px;
+    line-height: 1.3em;
+    margin: 5px 5% 5px 1%;
+}
+
+.viewIndividualItems_MayB a {
+    color: #0a1d0a;
+    text-decoration: none;
+}
+
+.viewIndividualItems_MayB a p {
+    font-size: 30px;
+    margin: 25px 4px 8px 0;
+}
+
+.viewIndividualItems_MayB a:hover {
+    color: #0b1f50;
+}
+
+.viewIndividualItems_MayB a:visited {
+    color: #2c3d4d;
+}
+
+.viewIndividualItems_MayB button {
+    background: #8ea7e4;
+    border-bottom: none;
+    border-left: 2px solid #1b491b;
+    border-right: 2px solid #1b491b;
+    border-top: none;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 18px;
+    height: auto;
+    margin: 0 0 0 0;
+    outline-color: #8e968d;
+    padding: 3px;
+    transition: all 0.2s linear;
+}
+
+.viewIndividualItems_MayB button:hover {
+    background: #000000;
+    border-left: 15px solid #1b491b;
+    border-right: none;
+    box-sizing: border-box;
+    color: #8ea7e4;
+    transition: all 0.2s linear;
+}
+
+.viewIndividualItems_MayB button:active {
+    filter: invert(100%);
+    transition: all 0.1s linear;
+}
+
+.viewPostTimestamp_MayB {
+    margin: 5px 5px 5px 45% !important;
+}
+
+.viewShareSaveDialogueDisplayed_MayB {
+    background: linear-gradient(90deg, #8ea7e4, #8da48d, #969ea6, #1d4fc8);
+    color: #000000;
+    display: initial;
+    filter: drop-shadow(10px 15px 4px #11181e);
+    font-family: 'Inria Sans', sans-serif;
+    height: 70vh;
+    left: 10%;
+    opacity: 0.99;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    top: 15%;
+    transform: skewX(0deg);
+    transition: all 0.5s linear;
+    width: 80%;
+    z-index: 17;
+}
+
+.viewShareSaveDialogueHidden_MayB {
+    background: linear-gradient(90deg, #8ea7e4, #8da48d, #969ea6, #1d4fc8);
+    color: #000000;
+    filter: drop-shadow(10px 15px 4px #11181e);
+    font-family: 'Inria Sans', sans-serif;
+    height: 70vh;
+    left: 10%;
+    opacity: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    top: -45%;
+    transform: skewX(0deg);
+    transition: all 0.5s linear;
+    width: 80%;
+    z-index: -1;
+}
+
+.viewDialogHeadline_MayB {
+    background: #2c3d4d;
+    color: #9eacc0;
+    font-size: 48px;
+    padding: 30px 0 10px 50px;
+}
+
+.viewShareSaveDialogueDisplayed_MayB img {
+    height: 75px;
+    margin: 30px 0 15px 150px;
+    width: 75px;
+}
+
+.viewShareSaveDialogueHidden_MayB img {
+    height: 75px;
+    margin: 30px 0 15px 150px;
+    width: 75px;
+}
+
+.viewShareSaveDialogueDisplayed_MayB p {
+    font-size: 24px;
+    margin: 5px 50px 15px 50px;
+}
+
+.viewShareSaveDialogueHidden_MayB p {
+    font-size: 24px;
+    margin: 5px 50px 15px 50px;
+}
+
+.viewShareSaveDialogueDisplayed_MayB textarea {
+    background: #8da48d;
+    border: none;
+    color: #000000;
+    display: initial;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 18px;
+    margin: 5px 50px 5px 50px;
+    outline-color: #8e968d;
+    padding: 5px;
+    width: 88%;
+}
+
+.viewShareSaveDialogueHidden_MayB textarea {
+    background: #8da48d;
+    border: none;
+    color: #000000;
+    display: initial;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 18px;
+    margin: 5px 50px 5px 50px;
+    outline-color: #8e968d;
+    padding: 5px;
+    width: 88%;
+}
+
+.viewShareSaveDialogueDisplayed_MayB button {
+    background: #8ea7e4;
+    border-bottom: none;
+    border-left: 2px solid #1b491b;
+    border-right: 2px solid #1b491b;
+    border-top: none;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 18px;
+    height: auto;
+    margin: 15px 15px 5px 50px;
+    outline-color: #8e968d;
+    padding: 5px;
+    transition: all 0.2s linear;
+}
+
+.viewShareSaveDialogueHidden_MayB button {
+    background: #8ea7e4;
+    border-bottom: none;
+    border-left: 2px solid #1b491b;
+    border-right: 2px solid #1b491b;
+    border-top: none;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 18px;
+    height: auto;
+    margin: 15px 15px 5px 50px;
+    outline-color: #8e968d;
+    padding: 5px;
+    transition: all 0.2s linear;
+}
+
+.viewShareSaveDialogueDisplayed_MayB button:hover {
+    background: #000000;
+    border-left: 15px solid #1b491b;
+    border-right: none;
+    box-sizing: border-box;
+    color: #8ea7e4;
+    transition: all 0.2s linear;
+}
+
+.viewShareSaveDialogueDisplayed_MayB button:active {
+    filter: invert(100%);
+    transition: all 0.1s linear;
+}
+
+.viewRadioButtons_MayB {
+    color: #000000;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 24px;
+    margin: 0 0 20px 50px;
+}
+
+@media only screen and (max-width: 736px) {
+
+    .viewCurrentFeedDescription_MayB {
+        display: none;
+    }
+
+    .viewContentDiv_MayB {
+        height: 140vh;
+    }
+
+    .viewToolbar_MayB {
+        height: 16vh;
+    }
+
+    .viewCurrentFeedTitle_MayB {
+        display: initial;
+        font-size: 48px;
+        padding: 20px 15px 0 15px;
+    }
+}
+
+@media only screen and (max-width: 667px) {
+
+    .viewCurrentFeedTitle_MayB {
+        display: none;
+    }
+
+    .viewNavigation_MayB {
+        font-size: 48px;
+        height: 50px;
+        width: 50px;
+    }
+
+    .viewCurrentFeedIcon_MayB {
+        height: 50px;
+        width: 50px;
+    }
+
+    .viewShareSaveDialogueDisplayed_MayB textarea {
+        margin: 5px 50px 5px 50px;
+        padding: 5px;
+        width: 58%;
+    }
+
+}
