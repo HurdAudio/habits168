@@ -99,6 +99,12 @@
                 url: '/thursday/:userUuid',
                 parent: 'app',
                 component: 'thursday'
+            })
+            .state({
+                name: 'forgotpassword',
+                url: '/forgotpassword',
+                parent: 'app',
+                component: 'forgotpassword'
             });
     }
 

@@ -28,6 +28,11 @@
         vm.toggleToRecentShares = toggleToRecentShares;
         vm.navigateToUserHub = navigateToUserHub;
         vm.navigateToNewUserSignup = navigateToNewUserSignup;
+        vm.navigateToForgotPassword = navigateToForgotPassword;
+        
+        function navigateToForgotPassword() {
+            $state.go('forgotpassword');
+        }
         
         function activateUserLogin() {
             vm.userLoginActive = true;
