@@ -16,462 +16,462 @@
         vm.thursdayMonth = '_JanuaryC';
         vm.thursdayContainerState = 'thursdayContainerActive' + vm.thursdayMonth;
         vm.navigateToHub = navigateToHub;
-        vm.thursdayTabs = [
-            {
-                active: true,
-                allRead: false,
-                podcast: false,
-                sort: 'up',
-                subscriptions: [
-                    {
-                        uuid: 'b1c2eff2-81e8-4f19-a1ba-8fff123fb89a',
-                        author: null,
-                        description: 'A source for news on music that is challenging, interesting, different, progressive, introspective, or just plain weird',
-                        link: 'https://avantmusicnews.com/',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/cropped-cropped-amnbanner1.jpg',
-                        items: null,
-                        rss: 'https://avantmusicnews.com/rss',
-                        title: 'Avant Music News',
-                        userRead: false
-                    },
-                    {
-                        uuid: '2e535aa1-d6d3-4741-9df7-e47ec5ac2260',
-                        author: null,
-                        description: 'The latest from Bandcamp',
-                        link: 'https://daily.bandcamp.com/',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/bc-site-icon1.png',
-                        items: null,
-                        rss: 'https://daily.bandcamp.com/feed',
-                        title: 'Bandcamp Daily',
-                        userRead: false
-                    },
-                    {
-                        uuid: '9546ff34-ff07-4e31-9332-786ea544ec47',
-                        author: null,
-                        description: 'A blog about Major League Baseball',
-                        link: 'https://www.baseballmusings.com/',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/788443.png',
-                        items: null,
-                        rss: 'http://feeds2.feedburner.com/Baseballmusingscom',
-                        title: 'Baseball Musings',
-                        userRead: false
-                    },
-                    {
-                        uuid: '321d2897-f108-45c1-96ca-3aa70ec46590',
-                        author: null,
-                        description: 'The main page.',
-                        link: 'http://www.dailykos.com/blogs/main',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/daily-kos-squarelogo-1517554340259.png',
-                        items: null,
-                        rss: 'https://feeds.dailykos.com',
-                        title: 'Daily Kos',
-                        userRead: false
-                    },
-                    {
-                        uuid: '2c7be513-9083-439c-937f-42bbe95c0cb9',
-                        author: null,
-                        description: 'Links for the intellectually curious, ranked by readers.',
-                        link: 'https://news.ycombinator.com/',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/hacker-news-2-569388.png',
-                        items: null,
-                        rss: 'https://news.ycombinator.com/rss',
-                        title: 'Hacker News',
-                        userRead: false
-                    },
-                    {
-                        uuid: 'b081d79b-ff77-4586-83f3-e9eea5e22c9a',
-                        author: null,
-                        description: 'The news according to John Marshall',
-                        link: 'https://talkingpointsmemo.com/',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/tpm-sq.svg',
-                        items: null,
-                        rss: 'https://talkingpointsmemo.com/feed/all',
-                        title: 'Talking Points Memo',
-                        userRead: false
-                    },
-                    {
-                        uuid: '5eb65b5e-6896-4357-94af-e48fad7c64cc',
-                        author: null,
-                        description: 'Wonkette',
-                        link: 'https://www.wonkette.com/',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/wonkette.jpg',
-                        items: null,
-                        rss: 'https://www.wonkette.com/feeds/feed.rss',
-                        title: 'Wonkette',
-                        userRead: false
-                    }
-                  ],
-                tab: 'thursdayTabActive' + vm.thursdayMonth,
-                title: 'Dailies'
-                },
-            {
-                active: false,
-                allRead: false,
-                podcast: false,
-                sort: 'up',
-                subscriptions: [
-                    {
-                        uuid: '3b7b5a1e-3e6a-48a3-9814-5dcebcef1a0c',
-                        author: null,
-                        description: '',
-                        link: 'https://2ality.com/',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/weqOd4wr_400x400.jpeg',
-                        items: null,
-                        rss: 'https://feeds.feedburner.com/2ality',
-                        title: '2ality – JavaScript and more',
-                        userRead: false
-                    },
-                    {
-                        uuid: '6559bfa8-3517-4742-a16c-6f55b251765d',
-                        author: null,
-                        description: 'A JavaScript library for building user interfaces',
-                        link: 'https://reactjs.org/',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/react-logo.png',
-                        items: null,
-                        rss: 'https://reactjs.org/feed.xml',
-                        title: 'React',
-                        userRead: false
-                    },
-                    {
-                        uuid: 'b3c9d26e-08a3-4531-9005-5775b379db1f',
-                        author: null,
-                        description: '',
-                        link: 'http://www.jackfranklin.co.uk/',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/jackfranklin-logo1.jpg',
-                        items: null,
-                        rss: 'https://www.jackfranklin.co.uk/feed.xml',
-                        title: 'Jack Franklin',
-                        userRead: false
-                    },
-                    {
-                        uuid: 'dfef5179-d748-47dc-8c23-2f5b6ef9cb54',
-                        author: null,
-                        description: 'Web Design Resources and Tutorials',
-                        link: 'https://www.webdesignerdepot.com/',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/1_ozF62oic4iyz1AeQjERtlA.png',
-                        items: null,
-                        rss: 'http://feeds2.feedburner.com/webdesignerdepot',
-                        title: 'Webdesigner Depot',
-                        userRead: false
-                    },
-                    {
-                        uuid: '1589c23f-0cb5-4f9d-b43d-b110d2dbeb6d',
-                        author: null,
-                        description: 'Software | Information | Community',
-                        link: 'http://blog.cwa.me.uk/',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/vvOu-0tq.jpg',
-                        items: null,
-                        rss: 'http://blog.cwa.me.uk/feed/',
-                        title: 'The Morning Brew',
-                        userRead: false
-                    },
-                    {
-                        uuid: '2de0d70f-a250-4dfc-9950-80cd69f92684',
-                        author: null,
-                        description: 'The five best design links, every weekday.',
-                        link: 'https://sidebar.io/',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/1_Q5NVd-xnvHfqDBfVueuKTw.png',
-                        items: null,
-                        rss: 'https://sidebar.io/feed.xml',
-                        title: 'Sidebar',
-                        userRead: false
-                    }
-                  ],
-                tab: 'thursdayTabInactive' + vm.thursdayMonth,
-                title: 'Coding'
-                },
-            {
-                active: false,
-                allRead: false,
-                podcast: false,
-                sort: 'up',
-                subscriptions: [
-                    {
-                        uuid: '206b292b-1da1-4efc-af9c-721b131078da',
-                        author: null,
-                        description: 'Daily baseball statistical analysis and commentary',
-                        link: 'https://blogs.fangraphs.com/',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/fanGraphs.jpeg',
-                        items: null,
-                        rss: 'https://blogs.fangraphs.com/feed/rss/',
-                        title: 'FanGraphs Baseball',
-                        userRead: false
-                    },
-                    {
-                        uuid: 'cccec1c5-786c-417f-a068-8b3906f2b5e1',
-                        author: null,
-                        description: '',
-                        link: 'https://www.mlbtraderumors.com/',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/sXfGmB-P.jpg',
-                        items: null,
-                        rss: 'https://www.mlbtraderumors.com/feed',
-                        title: 'MLB Trade Rumors',
-                        userRead: false
-                    },
-                    {
-                        uuid: 'd41a67ca-aac0-4369-8e01-f0433bde8dfa',
-                        author: null,
-                        description: 'Recent articles about MLB',
-                        link: 'http://www.yardbarker.com/mlb',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/131006_YBlogos_H_Bug_T.png',
-                        items: null,
-                        rss: 'https://www.yardbarker.com/rss/sport_merged/1',
-                        title: 'Yardbarker: MLB',
-                        userRead: false
-                    },
-                    {
-                        uuid: '24e0574a-4277-4357-b749-0459fb309495',
-                        author: null,
-                        description: 'Insightful analysis for the discerning baseball fan',
-                        link: 'https://www.baseballprospectus.com/',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/baseballProspectus.png',
-                        items: null,
-                        rss: 'https://www.baseballprospectus.com/feed/',
-                        title: 'Baseball Prospectus',
-                        userRead: false
-                    },
-                    {
-                        uuid: 'feaef66a-e7ce-47a2-b77d-086e14067e38',
-                        author: null,
-                        description: 'The subreddit for the bat-and-ball sport played between two teams of nine players. America\'s Pastime. Mike Trout.',
-                        link: 'https://www.reddit.com/r/baseball/',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/y7RsbWtW658h_rgTqv76tQnwJqV970QkpGkDeIGnU4U.png',
-                        items: null,
-                        rss: 'https://reddit.com/r/baseball/.rss',
-                        title: 'America\'s Pastime',
-                        userRead: false
-                    },
-                    {
-                        uuid: 'c895b5e6-664b-4a30-80d2-ac30d03eb15f',
-                        author: null,
-                        description: 'Felix is ours.',
-                        link: 'https://www.lookoutlanding.com/',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/lookoutLanding.png',
-                        items: null,
-                        rss: 'https://www.lookoutlanding.com/rss/index.xml',
-                        title: 'Lookout Landing - All Posts',
-                        userRead: false
-                    }
-                  ],
-                tab: 'thursdayTabInactive' + vm.thursdayMonth,
-                title: 'Baseball'
-                },
-            {
-                active: false,
-                allRead: false,
-                podcast: false,
-                sort: 'up',
-                subscriptions: [
-                    {
-                        uuid: '5adac099-58c6-4389-a3c5-dc3d54244f57',
-                        author: null,
-                        description: 'Album Reviews content RSS feed',
-                        link: 'https://pitchfork.com/feed-album-reviews',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/4e1863811e5488433270988ae82a928f.jpg',
-                        items: null,
-                        rss: 'https://pitchfork.com/rss/reviews/albums',
-                        title: 'RSS: Album Reviews',
-                        userRead: false
-                    },
-                    {
-                        uuid: '98f44d3e-ce0d-4c44-831f-52ee4d398b10',
-                        author: null,
-                        description: '',
-                        link: 'https://www.overgrownpath.com/',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/8fb5bfc367dfb6ce1ab767cc4e4e92fd.jpg',
-                        items: null,
-                        rss: 'https://www.overgrownpath.com/feeds/posts/default',
-                        title: 'On An Overgrown Path',
-                        userRead: false
-                    },
-                    {
-                        uuid: '50a91935-083c-4b0f-9ec0-211569ec1b00',
-                        author: null,
-                        description: 'Tim Rutherford-Johnson',
-                        link: 'https://johnsonsrambler.wordpress.com/',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/rambler.png',
-                        items: null,
-                        rss: 'https://johnsonsrambler.wordpress.com/feed/',
-                        title: 'The Rambler',
-                        userRead: false
-                    },
-                    {
-                        uuid: 'd6413817-60c2-4809-b3e0-b907186b9d4f',
-                        author: null,
-                        description: 'Superconductor offers music reviews, opera reviews, concert reviews, news articles and criticism in and around New York City. Written and edited by Paul J. Pelkonen.',
-                        link: 'http://super-conductor.blogspot.com/',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/thank-you-from-christian-vision-alliance.jpg',
-                        items: null,
-                        rss: 'https://super-conductor.blogspot.com/feeds/posts/default',
-                        title: 'Superconductor Classical and Opera',
-                        userRead: false
-                    },
-                    {
-                        uuid: '679aba68-dbbb-4957-b889-5eadd7b7e061',
-                        author: null,
-                        description: 'Tiny Mix Tapes is a music and film webzine featuring news, reviews, features, and hot replica watches.',
-                        link: 'https://www.tinymixtapes.com/',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/tmt2_logo.png',
-                        items: null,
-                        rss: 'https://www.tinymixtapes.com/feed.xml',
-                        title: 'Tiny Mix Tapes',
-                        userRead: false
-                    }
-                  ],
-                tab: 'thursdayTabInactive' + vm.thursdayMonth,
-                title: 'Music'
-                },
-            {
-                active: false,
-                allRead: false,
-                podcast: false,
-                sort: 'up',
-                subscriptions: [
-                    {
-                        uuid: '0e0e0359-c8db-4290-a50c-3c9bf9f7635b',
-                        author: '',
-                        description: 'Art, design, and visual culture.',
-                        link: 'https://www.thisiscolossal.com/',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/Colossal.png',
-                        items: null,
-                        rss: 'https://www.thisiscolossal.com/feed/',
-                        title: 'Colossal',
-                        userRead: false
-                    },
-                    {
-                        uuid: 'f40998d9-be6c-43d3-a110-a38a3eba2834',
-                        author: '',
-                        description: 'CREATE * INSPIRE * COMMUNITY * ART * DESIGN * MUSIC * FILM * PHOTO * PROJECTS',
-                        link: 'https://www.booooooom.com/',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/logo-fb.jpg',
-                        items: null,
-                        rss: 'https://www.booooooom.com/feed/',
-                        title: 'BOOOOOOOM! – CREATE * INSPIRE * COMMUNITY * ART * DESIGN * MUSIC * FILM * PHOTO * PROJECTS',
-                        userRead: false
-                    },
-                    {
-                        uuid: '9a3d2f71-9ca3-4c8f-85f0-a38a6df70912',
-                        author: '',
-                        description: 'Online version of the leading quarterly contemporary and underground art bible, Juxtapoz Art and Culture Magazine, with featured articles, blogs, video, reader art, gallery guides, and archives.',
-                        link: 'https://www.juxtapoz.com/',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/Juxtapoz_logo_425x113.png',
-                        items: null,
-                        rss: 'https://www.juxtapoz.com/feed/',
-                        title: 'Juxtapoz Magazine - Juxtapoz Magazine - Home',
-                        userRead: false
-                    },
-                    {
-                        uuid: 'defa75f9-f581-4410-8586-4825e498ced1',
-                        author: '',
-                        description: 'IGNANT is an award-winning online magazine featuring the finest in art, design, photography, travel and architecture',
-                        link: 'https://www.ignant.com/',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/rUcBP8hDTIIm0xcOpmWw_48361450_2855126224504886_4936663533468254208_o.jpg',
-                        items: null,
-                        rss: 'https://www.ignant.com/feed/',
-                        title: 'IGNANT',
-                        userRead: false
-                    },
-                    {
-                        uuid: '52039a0b-79c8-407e-91f2-4e67db67dc6d',
-                        author: '',
-                        description: 'Artzine - Latest News',
-                        link: 'https://artzine.com/',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/logo-1024artzine.png',
-                        items: null,
-                        rss: 'https://api.artzine.com/feeds/news.rss',
-                        title: 'Artzine',
-                        userRead: false
-                    }
-                  ],
-                tab: 'thursdayTabInactive' + vm.thursdayMonth,
-                title: 'Art'
-                },
-            {
-                active: false,
-                allRead: false,
-                podcast: true,
-                sort: 'up',
-                subscriptions: [
-                    {
-                        uuid: 'e6619583-0567-4686-af04-7d0a2fb1c9d0',
-                        author: '',
-                        description: '',
-                        link: 'http://www.bestoftheleft.com/',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/logo2bestoftheleft.png',
-                        items: null,
-                        rss: 'http://www.bestoftheleft.com/podcast.rss',
-                        title: 'Latest Episodes - Best of the Left Podcast',
-                        userRead: false
-                    }
-                  ],
-                tab: 'thursdayTabInactive' + vm.thursdayMonth,
-                title: 'Political Podcasts'
-                },
-            {
-                active: false,
-                allRead: false,
-                podcast: true,
-                sort: 'up',
-                subscriptions: [
-                    {
-                        uuid: '61e56ee6-8af8-49e0-b7c5-3b523e66c0e0',
-                        author: 'Michael Chan',
-                        description: 'Conversations about React with your favorite developers.',
-                        link: 'http://reactpodcast.com/',
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/reactpodcast.jpg',
-                        items: null,
-                        rss: 'https://feeds.simplecast.com/JoR28o79',
-                        title: 'React Podcast',
-                        userRead: false
-                    }
-                  ],
-                tab: 'thursdayTabInactive' + vm.thursdayMonth,
-                title: 'Tech Podcasts'
-                },
-            {
-                active: false,
-                allRead: false,
-                podcast: false,
-                sort: 'up',
-                subscriptions: [
-                    {
-                        uuid: 'c2f53e34-5499-4015-80d5-b4fcea47c78b',
-                        author: null,
-                        description: 'War Is a Racket',
-                        link: null,
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/externals/EDD_xVYXsAEtYxP.jpg',
-                        items: null,
-                        rss: null,
-                        title: 'Jacobin Magazine - Summer 2019',
-                        userRead: false
-                    },
-                    {
-                        uuid: '2b7da266-f978-445f-8c5b-07da611f2464',
-                        author: null,
-                        description: 'Fair But Not Square',
-                        link: null,
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/externals/v28_i37_Fair_But_Not_Square.jpg',
-                        items: null,
-                        rss: null,
-                        title: 'Albuquerque Alibi - Thursday, September 12, 2019',
-                        userRead: true
-                    },
-                    {
-                        uuid: '174f6d0e-b7cd-4979-8177-61032be3fefe',
-                        author: null,
-                        description: 'All the News that\'s fit to print.',
-                        link: null,
-                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/externals/scanNYT2019-09-15.jpg',
-                        items: null,
-                        rss: null,
-                        title: 'New York Times - Sunday, September 15, 2019',
-                        userRead: true
-                    }
-                  ],
-                tab: 'thursdayTabInactive' + vm.thursdayMonth,
-                title: 'Externals'
-                }
-              ];
+//        vm.thursdayTabs = [
+//            {
+//                active: true,
+//                allRead: false,
+//                podcast: false,
+//                sort: 'up',
+//                subscriptions: [
+//                    {
+//                        uuid: 'b1c2eff2-81e8-4f19-a1ba-8fff123fb89a',
+//                        author: null,
+//                        description: 'A source for news on music that is challenging, interesting, different, progressive, introspective, or just plain weird',
+//                        link: 'https://avantmusicnews.com/',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/cropped-cropped-amnbanner1.jpg',
+//                        items: null,
+//                        rss: 'https://avantmusicnews.com/rss',
+//                        title: 'Avant Music News',
+//                        userRead: false
+//                    },
+//                    {
+//                        uuid: '2e535aa1-d6d3-4741-9df7-e47ec5ac2260',
+//                        author: null,
+//                        description: 'The latest from Bandcamp',
+//                        link: 'https://daily.bandcamp.com/',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/bc-site-icon1.png',
+//                        items: null,
+//                        rss: 'https://daily.bandcamp.com/feed',
+//                        title: 'Bandcamp Daily',
+//                        userRead: false
+//                    },
+//                    {
+//                        uuid: '9546ff34-ff07-4e31-9332-786ea544ec47',
+//                        author: null,
+//                        description: 'A blog about Major League Baseball',
+//                        link: 'https://www.baseballmusings.com/',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/788443.png',
+//                        items: null,
+//                        rss: 'http://feeds2.feedburner.com/Baseballmusingscom',
+//                        title: 'Baseball Musings',
+//                        userRead: false
+//                    },
+//                    {
+//                        uuid: '321d2897-f108-45c1-96ca-3aa70ec46590',
+//                        author: null,
+//                        description: 'The main page.',
+//                        link: 'http://www.dailykos.com/blogs/main',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/daily-kos-squarelogo-1517554340259.png',
+//                        items: null,
+//                        rss: 'https://feeds.dailykos.com',
+//                        title: 'Daily Kos',
+//                        userRead: false
+//                    },
+//                    {
+//                        uuid: '2c7be513-9083-439c-937f-42bbe95c0cb9',
+//                        author: null,
+//                        description: 'Links for the intellectually curious, ranked by readers.',
+//                        link: 'https://news.ycombinator.com/',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/hacker-news-2-569388.png',
+//                        items: null,
+//                        rss: 'https://news.ycombinator.com/rss',
+//                        title: 'Hacker News',
+//                        userRead: false
+//                    },
+//                    {
+//                        uuid: 'b081d79b-ff77-4586-83f3-e9eea5e22c9a',
+//                        author: null,
+//                        description: 'The news according to John Marshall',
+//                        link: 'https://talkingpointsmemo.com/',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/tpm-sq.svg',
+//                        items: null,
+//                        rss: 'https://talkingpointsmemo.com/feed/all',
+//                        title: 'Talking Points Memo',
+//                        userRead: false
+//                    },
+//                    {
+//                        uuid: '5eb65b5e-6896-4357-94af-e48fad7c64cc',
+//                        author: null,
+//                        description: 'Wonkette',
+//                        link: 'https://www.wonkette.com/',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/wonkette.jpg',
+//                        items: null,
+//                        rss: 'https://www.wonkette.com/feeds/feed.rss',
+//                        title: 'Wonkette',
+//                        userRead: false
+//                    }
+//                  ],
+//                tab: 'thursdayTabActive' + vm.thursdayMonth,
+//                title: 'Dailies'
+//                },
+//            {
+//                active: false,
+//                allRead: false,
+//                podcast: false,
+//                sort: 'up',
+//                subscriptions: [
+//                    {
+//                        uuid: '3b7b5a1e-3e6a-48a3-9814-5dcebcef1a0c',
+//                        author: null,
+//                        description: '',
+//                        link: 'https://2ality.com/',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/weqOd4wr_400x400.jpeg',
+//                        items: null,
+//                        rss: 'https://feeds.feedburner.com/2ality',
+//                        title: '2ality – JavaScript and more',
+//                        userRead: false
+//                    },
+//                    {
+//                        uuid: '6559bfa8-3517-4742-a16c-6f55b251765d',
+//                        author: null,
+//                        description: 'A JavaScript library for building user interfaces',
+//                        link: 'https://reactjs.org/',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/react-logo.png',
+//                        items: null,
+//                        rss: 'https://reactjs.org/feed.xml',
+//                        title: 'React',
+//                        userRead: false
+//                    },
+//                    {
+//                        uuid: 'b3c9d26e-08a3-4531-9005-5775b379db1f',
+//                        author: null,
+//                        description: '',
+//                        link: 'http://www.jackfranklin.co.uk/',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/jackfranklin-logo1.jpg',
+//                        items: null,
+//                        rss: 'https://www.jackfranklin.co.uk/feed.xml',
+//                        title: 'Jack Franklin',
+//                        userRead: false
+//                    },
+//                    {
+//                        uuid: 'dfef5179-d748-47dc-8c23-2f5b6ef9cb54',
+//                        author: null,
+//                        description: 'Web Design Resources and Tutorials',
+//                        link: 'https://www.webdesignerdepot.com/',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/1_ozF62oic4iyz1AeQjERtlA.png',
+//                        items: null,
+//                        rss: 'http://feeds2.feedburner.com/webdesignerdepot',
+//                        title: 'Webdesigner Depot',
+//                        userRead: false
+//                    },
+//                    {
+//                        uuid: '1589c23f-0cb5-4f9d-b43d-b110d2dbeb6d',
+//                        author: null,
+//                        description: 'Software | Information | Community',
+//                        link: 'http://blog.cwa.me.uk/',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/vvOu-0tq.jpg',
+//                        items: null,
+//                        rss: 'http://blog.cwa.me.uk/feed/',
+//                        title: 'The Morning Brew',
+//                        userRead: false
+//                    },
+//                    {
+//                        uuid: '2de0d70f-a250-4dfc-9950-80cd69f92684',
+//                        author: null,
+//                        description: 'The five best design links, every weekday.',
+//                        link: 'https://sidebar.io/',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/1_Q5NVd-xnvHfqDBfVueuKTw.png',
+//                        items: null,
+//                        rss: 'https://sidebar.io/feed.xml',
+//                        title: 'Sidebar',
+//                        userRead: false
+//                    }
+//                  ],
+//                tab: 'thursdayTabInactive' + vm.thursdayMonth,
+//                title: 'Coding'
+//                },
+//            {
+//                active: false,
+//                allRead: false,
+//                podcast: false,
+//                sort: 'up',
+//                subscriptions: [
+//                    {
+//                        uuid: '206b292b-1da1-4efc-af9c-721b131078da',
+//                        author: null,
+//                        description: 'Daily baseball statistical analysis and commentary',
+//                        link: 'https://blogs.fangraphs.com/',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/fanGraphs.jpeg',
+//                        items: null,
+//                        rss: 'https://blogs.fangraphs.com/feed/rss/',
+//                        title: 'FanGraphs Baseball',
+//                        userRead: false
+//                    },
+//                    {
+//                        uuid: 'cccec1c5-786c-417f-a068-8b3906f2b5e1',
+//                        author: null,
+//                        description: '',
+//                        link: 'https://www.mlbtraderumors.com/',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/sXfGmB-P.jpg',
+//                        items: null,
+//                        rss: 'https://www.mlbtraderumors.com/feed',
+//                        title: 'MLB Trade Rumors',
+//                        userRead: false
+//                    },
+//                    {
+//                        uuid: 'd41a67ca-aac0-4369-8e01-f0433bde8dfa',
+//                        author: null,
+//                        description: 'Recent articles about MLB',
+//                        link: 'http://www.yardbarker.com/mlb',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/131006_YBlogos_H_Bug_T.png',
+//                        items: null,
+//                        rss: 'https://www.yardbarker.com/rss/sport_merged/1',
+//                        title: 'Yardbarker: MLB',
+//                        userRead: false
+//                    },
+//                    {
+//                        uuid: '24e0574a-4277-4357-b749-0459fb309495',
+//                        author: null,
+//                        description: 'Insightful analysis for the discerning baseball fan',
+//                        link: 'https://www.baseballprospectus.com/',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/baseballProspectus.png',
+//                        items: null,
+//                        rss: 'https://www.baseballprospectus.com/feed/',
+//                        title: 'Baseball Prospectus',
+//                        userRead: false
+//                    },
+//                    {
+//                        uuid: 'feaef66a-e7ce-47a2-b77d-086e14067e38',
+//                        author: null,
+//                        description: 'The subreddit for the bat-and-ball sport played between two teams of nine players. America\'s Pastime. Mike Trout.',
+//                        link: 'https://www.reddit.com/r/baseball/',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/y7RsbWtW658h_rgTqv76tQnwJqV970QkpGkDeIGnU4U.png',
+//                        items: null,
+//                        rss: 'https://reddit.com/r/baseball/.rss',
+//                        title: 'America\'s Pastime',
+//                        userRead: false
+//                    },
+//                    {
+//                        uuid: 'c895b5e6-664b-4a30-80d2-ac30d03eb15f',
+//                        author: null,
+//                        description: 'Felix is ours.',
+//                        link: 'https://www.lookoutlanding.com/',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/lookoutLanding.png',
+//                        items: null,
+//                        rss: 'https://www.lookoutlanding.com/rss/index.xml',
+//                        title: 'Lookout Landing - All Posts',
+//                        userRead: false
+//                    }
+//                  ],
+//                tab: 'thursdayTabInactive' + vm.thursdayMonth,
+//                title: 'Baseball'
+//                },
+//            {
+//                active: false,
+//                allRead: false,
+//                podcast: false,
+//                sort: 'up',
+//                subscriptions: [
+//                    {
+//                        uuid: '5adac099-58c6-4389-a3c5-dc3d54244f57',
+//                        author: null,
+//                        description: 'Album Reviews content RSS feed',
+//                        link: 'https://pitchfork.com/feed-album-reviews',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/4e1863811e5488433270988ae82a928f.jpg',
+//                        items: null,
+//                        rss: 'https://pitchfork.com/rss/reviews/albums',
+//                        title: 'RSS: Album Reviews',
+//                        userRead: false
+//                    },
+//                    {
+//                        uuid: '98f44d3e-ce0d-4c44-831f-52ee4d398b10',
+//                        author: null,
+//                        description: '',
+//                        link: 'https://www.overgrownpath.com/',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/8fb5bfc367dfb6ce1ab767cc4e4e92fd.jpg',
+//                        items: null,
+//                        rss: 'https://www.overgrownpath.com/feeds/posts/default',
+//                        title: 'On An Overgrown Path',
+//                        userRead: false
+//                    },
+//                    {
+//                        uuid: '50a91935-083c-4b0f-9ec0-211569ec1b00',
+//                        author: null,
+//                        description: 'Tim Rutherford-Johnson',
+//                        link: 'https://johnsonsrambler.wordpress.com/',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/rambler.png',
+//                        items: null,
+//                        rss: 'https://johnsonsrambler.wordpress.com/feed/',
+//                        title: 'The Rambler',
+//                        userRead: false
+//                    },
+//                    {
+//                        uuid: 'd6413817-60c2-4809-b3e0-b907186b9d4f',
+//                        author: null,
+//                        description: 'Superconductor offers music reviews, opera reviews, concert reviews, news articles and criticism in and around New York City. Written and edited by Paul J. Pelkonen.',
+//                        link: 'http://super-conductor.blogspot.com/',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/thank-you-from-christian-vision-alliance.jpg',
+//                        items: null,
+//                        rss: 'https://super-conductor.blogspot.com/feeds/posts/default',
+//                        title: 'Superconductor Classical and Opera',
+//                        userRead: false
+//                    },
+//                    {
+//                        uuid: '679aba68-dbbb-4957-b889-5eadd7b7e061',
+//                        author: null,
+//                        description: 'Tiny Mix Tapes is a music and film webzine featuring news, reviews, features, and hot replica watches.',
+//                        link: 'https://www.tinymixtapes.com/',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/tmt2_logo.png',
+//                        items: null,
+//                        rss: 'https://www.tinymixtapes.com/feed.xml',
+//                        title: 'Tiny Mix Tapes',
+//                        userRead: false
+//                    }
+//                  ],
+//                tab: 'thursdayTabInactive' + vm.thursdayMonth,
+//                title: 'Music'
+//                },
+//            {
+//                active: false,
+//                allRead: false,
+//                podcast: false,
+//                sort: 'up',
+//                subscriptions: [
+//                    {
+//                        uuid: '0e0e0359-c8db-4290-a50c-3c9bf9f7635b',
+//                        author: '',
+//                        description: 'Art, design, and visual culture.',
+//                        link: 'https://www.thisiscolossal.com/',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/Colossal.png',
+//                        items: null,
+//                        rss: 'https://www.thisiscolossal.com/feed/',
+//                        title: 'Colossal',
+//                        userRead: false
+//                    },
+//                    {
+//                        uuid: 'f40998d9-be6c-43d3-a110-a38a3eba2834',
+//                        author: '',
+//                        description: 'CREATE * INSPIRE * COMMUNITY * ART * DESIGN * MUSIC * FILM * PHOTO * PROJECTS',
+//                        link: 'https://www.booooooom.com/',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/logo-fb.jpg',
+//                        items: null,
+//                        rss: 'https://www.booooooom.com/feed/',
+//                        title: 'BOOOOOOOM! – CREATE * INSPIRE * COMMUNITY * ART * DESIGN * MUSIC * FILM * PHOTO * PROJECTS',
+//                        userRead: false
+//                    },
+//                    {
+//                        uuid: '9a3d2f71-9ca3-4c8f-85f0-a38a6df70912',
+//                        author: '',
+//                        description: 'Online version of the leading quarterly contemporary and underground art bible, Juxtapoz Art and Culture Magazine, with featured articles, blogs, video, reader art, gallery guides, and archives.',
+//                        link: 'https://www.juxtapoz.com/',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/Juxtapoz_logo_425x113.png',
+//                        items: null,
+//                        rss: 'https://www.juxtapoz.com/feed/',
+//                        title: 'Juxtapoz Magazine - Juxtapoz Magazine - Home',
+//                        userRead: false
+//                    },
+//                    {
+//                        uuid: 'defa75f9-f581-4410-8586-4825e498ced1',
+//                        author: '',
+//                        description: 'IGNANT is an award-winning online magazine featuring the finest in art, design, photography, travel and architecture',
+//                        link: 'https://www.ignant.com/',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/rUcBP8hDTIIm0xcOpmWw_48361450_2855126224504886_4936663533468254208_o.jpg',
+//                        items: null,
+//                        rss: 'https://www.ignant.com/feed/',
+//                        title: 'IGNANT',
+//                        userRead: false
+//                    },
+//                    {
+//                        uuid: '52039a0b-79c8-407e-91f2-4e67db67dc6d',
+//                        author: '',
+//                        description: 'Artzine - Latest News',
+//                        link: 'https://artzine.com/',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/logo-1024artzine.png',
+//                        items: null,
+//                        rss: 'https://api.artzine.com/feeds/news.rss',
+//                        title: 'Artzine',
+//                        userRead: false
+//                    }
+//                  ],
+//                tab: 'thursdayTabInactive' + vm.thursdayMonth,
+//                title: 'Art'
+//                },
+//            {
+//                active: false,
+//                allRead: false,
+//                podcast: true,
+//                sort: 'up',
+//                subscriptions: [
+//                    {
+//                        uuid: 'e6619583-0567-4686-af04-7d0a2fb1c9d0',
+//                        author: '',
+//                        description: '',
+//                        link: 'http://www.bestoftheleft.com/',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/logo2bestoftheleft.png',
+//                        items: null,
+//                        rss: 'http://www.bestoftheleft.com/podcast.rss',
+//                        title: 'Latest Episodes - Best of the Left Podcast',
+//                        userRead: false
+//                    }
+//                  ],
+//                tab: 'thursdayTabInactive' + vm.thursdayMonth,
+//                title: 'Political Podcasts'
+//                },
+//            {
+//                active: false,
+//                allRead: false,
+//                podcast: true,
+//                sort: 'up',
+//                subscriptions: [
+//                    {
+//                        uuid: '61e56ee6-8af8-49e0-b7c5-3b523e66c0e0',
+//                        author: 'Michael Chan',
+//                        description: 'Conversations about React with your favorite developers.',
+//                        link: 'http://reactpodcast.com/',
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/reactpodcast.jpg',
+//                        items: null,
+//                        rss: 'https://feeds.simplecast.com/JoR28o79',
+//                        title: 'React Podcast',
+//                        userRead: false
+//                    }
+//                  ],
+//                tab: 'thursdayTabInactive' + vm.thursdayMonth,
+//                title: 'Tech Podcasts'
+//                },
+//            {
+//                active: false,
+//                allRead: false,
+//                podcast: false,
+//                sort: 'up',
+//                subscriptions: [
+//                    {
+//                        uuid: 'c2f53e34-5499-4015-80d5-b4fcea47c78b',
+//                        author: null,
+//                        description: 'War Is a Racket',
+//                        link: null,
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/externals/EDD_xVYXsAEtYxP.jpg',
+//                        items: null,
+//                        rss: null,
+//                        title: 'Jacobin Magazine - Summer 2019',
+//                        userRead: false
+//                    },
+//                    {
+//                        uuid: '2b7da266-f978-445f-8c5b-07da611f2464',
+//                        author: null,
+//                        description: 'Fair But Not Square',
+//                        link: null,
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/externals/v28_i37_Fair_But_Not_Square.jpg',
+//                        items: null,
+//                        rss: null,
+//                        title: 'Albuquerque Alibi - Thursday, September 12, 2019',
+//                        userRead: true
+//                    },
+//                    {
+//                        uuid: '174f6d0e-b7cd-4979-8177-61032be3fefe',
+//                        author: null,
+//                        description: 'All the News that\'s fit to print.',
+//                        link: null,
+//                        image: 'https://habits168-hurdaudio.s3.amazonaws.com/externals/scanNYT2019-09-15.jpg',
+//                        items: null,
+//                        rss: null,
+//                        title: 'New York Times - Sunday, September 15, 2019',
+//                        userRead: true
+//                    }
+//                  ],
+//                tab: 'thursdayTabInactive' + vm.thursdayMonth,
+//                title: 'Externals'
+//                }
+//              ];
         vm.toggleTabs = toggleTabs;
         vm.toggleAllReadStatus = toggleAllReadStatus;
         vm.sortSubscriptions = sortSubscriptions;
@@ -1025,42 +1025,42 @@
 
 
         function navigateToHub() {
-//            let now = new Date();
-//            let tabs = vm.thursdayTabs.filter(entry => {
-//                return ((entry.title !== 'Dailies') && (entry.title !== 'Externals'));
-//            });
-//            let dailyTab = vm.thursdayTabs.filter(entry => {
-//                return (entry.title === 'Dailies');
-//            });
-//            let externalTab = vm.thursdayTabs.filter(entry => {
-//                return(entry.title === 'Externals');
-//            });
-//            for (let i = 0; i < externalTab[0].subscriptions.length; i++) {
-//                updateExternalsReadStatus(externalTab[0].subscriptions[i]);
-//            }
-//            $http.patch(`/thursday_subscriptions/${vm.user.uuid}`, {
-//                    tabs: {
-//                        tabs: tabs
-//                    },
-//                    updated_at: new Date()
-//                })
-//                .then(() => {
-//                    $http.get(`/dailies/byuser/${vm.user.uuid}`)
-//                        .then(userDailyData => {
-//                            let userDaily = userDailyData.data;
-//                            userDaily.dailies.dailies = dailyTab[0];
-//                            userDaily.updated_at = now;
-//                            $http.patch(`/dailies/${userDaily.uuid}`, userDaily)
-//                                .then(() => {
-//                                    $state.go('userhub', {
-//                                        id: vm.user.uuid
-//                                    });
-//                                });
-//                        });
-//                });
-            $state.go('userhub', {
-                id: vm.user.uuid
+            let now = new Date();
+            let tabs = vm.thursdayTabs.filter(entry => {
+                return ((entry.title !== 'Dailies') && (entry.title !== 'Externals'));
             });
+            let dailyTab = vm.thursdayTabs.filter(entry => {
+                return (entry.title === 'Dailies');
+            });
+            let externalTab = vm.thursdayTabs.filter(entry => {
+                return(entry.title === 'Externals');
+            });
+            for (let i = 0; i < externalTab[0].subscriptions.length; i++) {
+                updateExternalsReadStatus(externalTab[0].subscriptions[i]);
+            }
+            $http.patch(`/thursday_subscriptions/${vm.user.uuid}`, {
+                    tabs: {
+                        tabs: tabs
+                    },
+                    updated_at: new Date()
+                })
+                .then(() => {
+                    $http.get(`/dailies/byuser/${vm.user.uuid}`)
+                        .then(userDailyData => {
+                            let userDaily = userDailyData.data;
+                            userDaily.dailies.dailies = dailyTab[0];
+                            userDaily.updated_at = now;
+                            $http.patch(`/dailies/${userDaily.uuid}`, userDaily)
+                                .then(() => {
+                                    $state.go('userhub', {
+                                        id: vm.user.uuid
+                                    });
+                                });
+                        });
+                });
+//            $state.go('userhub', {
+//                id: vm.user.uuid
+//            });
 
         }
 
@@ -1253,7 +1253,7 @@
 
             setUserIPAddress();
             setFooterMessage();
-//            populatethursdayTabs($stateParams.userUuid);
+            populatethursdayTabs($stateParams.userUuid);
             // checkLoginStatus();
 
         }

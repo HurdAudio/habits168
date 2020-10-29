@@ -40,6 +40,7 @@ const tuesday_subscriptions = require('./routes/tuesday_subscriptions.js');
 const wednesday_subscriptions = require('./routes/wednesday_subscriptions.js');
 const tech_blogs = require('./routes/tech_blogs.js');
 const tech_podcasts = require('./routes/tech_podcasts.js');
+const thursday_subscriptions = require('./routes/thursday_subscriptions.js');
 
 const port = process.env.PORT || 3037;
 
@@ -79,6 +80,7 @@ app.use('/tuesday_subscriptions', tuesday_subscriptions);
 app.use('/wednesday_subscriptions', wednesday_subscriptions);
 app.use('/tech_blogs', tech_blogs);
 app.use('/tech_podcasts', tech_podcasts);
+app.use('/thursday_subscriptions', thursday_subscriptions);
 
 
 app.get('/rss_reader/:rss', (req, res, next) => {
