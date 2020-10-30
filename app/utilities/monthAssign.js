@@ -28,18 +28,18 @@ function generate(arr) {
 //    arr.push('_JanuaryB');
 //    arr.push('_JanuaryA')
 //}
-//
-//const days = 29
-//
-//let arr = [];
-//
-//for (let i = 0; i < 9; i++) {
-//    arr.push('_FebruaryA');
-//}
-//for (let i = 0; i < 10; i++) {
-//    arr.push('_FebruaryB');
-//    arr.push('_FebruaryC');
-//}
+
+const days = 29
+
+let arr = [];
+
+for (let i = 0; i < 9; i++) {
+    arr.push('_FebruaryA');
+}
+for (let i = 0; i < 10; i++) {
+    arr.push('_FebruaryB');
+    arr.push('_FebruaryC');
+}
 
 //const days = 31;
 //
@@ -51,15 +51,15 @@ function generate(arr) {
 //    arr.push('_MarchC');
 //}
 
-const days = 30;
-
-let arr = [];
-
-for (let i = 0; i < 10; i++) {
-    arr.push('_AprilA');
-    arr.push('_AprilB');
-    arr.push('_AprilC');
-}
+//const days = 30;
+//
+//let arr = [];
+//
+//for (let i = 0; i < 10; i++) {
+//    arr.push('_AprilA');
+//    arr.push('_AprilB');
+//    arr.push('_AprilC');
+//}
 
 
 
