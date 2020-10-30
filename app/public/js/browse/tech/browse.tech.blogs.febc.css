@@ -1,0 +1,207 @@
+.browseCategoricalFeeds_tech_FebruaryC { 
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/tech/february/media_image_resized.jpg);
+    background-size: cover;
+    border: none;
+    float: left;
+    height: 77vh;
+    margin: 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 34%;
+}
+
+/*
+tech january === Vector Graphics
+tech february === data storage
+*/
+
+.browsePodCategoricalFeeds_tech_FebruaryC {
+    display: none;
+    background-image: url();
+    background-size: cover;
+    border: none;
+    float: left;
+    height: 77vh;
+    margin: 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 34%;
+}
+
+.browsePodCategoricalFeeds_tech_FebruaryC img {
+    display: none;
+    backdrop-filter: blur(6px) brightness(100%) grayscale(100%) sepia(100%);
+    filter: brightness(150%) drop-shadow(5px 5px 5px #2a2d34);
+    height: 50px;
+    margin: 0 15px 0 0;
+    width: 50px;
+}
+
+.browseIndividualPodFeedData_tech_FebruaryC {
+    display: none;
+    background-image: url();
+    background-size: cover;
+    border: none;
+    filter: brightness(100%);
+    height: 77vh;
+    margin: 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 34%;
+}
+
+.browseIndividualPodFeedData_tech_FebruaryC img {
+    display: none;
+    backdrop-filter: blur(6px) brightness(100%) grayscale(100%) sepia(100%);
+    filter: brightness(120%) drop-shadow(5px 5px 5px #666666);
+    margin: 10px 15%;
+    width: 70%;
+}
+
+.browseIndividualPodFeedData_tech_FebruaryC h3 {
+    display: none;
+    backdrop-filter: blur(6px) brightness(50%) grayscale(100%) sepia(100%);
+    color: #00ff00;
+    filter: brightness(75%);
+    font-family: 'VT323', monospace;
+    font-size: 36px;
+    margin: 5px 10%;
+    width: 80%;
+}
+
+.browseIndividualPodFeedData_tech_FebruaryC p {
+    display: none;
+    backdrop-filter: blur(6px) brightness(50%) grayscale(100%) sepia(100%);
+    color: #00ff00;
+    filter: brightness(75%);
+    font-family: 'VT323', monospace;
+    font-size: 30px;
+    margin: 15px 10%;
+    width: 80%;
+}
+
+.browseIndividualPodFeedData_tech_FebruaryC button {
+    display: none;
+    background: #383a3a;
+    border: none;
+    box-shadow: 5px 5px 5px #2a2d34;
+    color: #007700;
+    cursor: pointer;
+    font-family: 'VT323', monospace;
+    font-size: 36px;
+    margin: 30px 35%;
+    outline-color: #959594;
+    transition: all 0.4s linear;
+}
+
+.browseIndividualPodFeedData_tech_FebruaryC button:hover {
+    box-shadow: 1px 1px 5px #2a2d34;
+    filter: brightness(200%);
+    transition: all 0.4s linear;
+}
+
+.browseIndividualPodFeedData_tech_FebruaryC button:active {
+    filter: invert(100%);
+    transition: all 0.2s linear;
+}
+
+
+.browseFeedsContainer_tech_FebruaryC {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 5px 15px;
+}
+
+.browseFeedsContainer_tech_FebruaryC img {
+    backdrop-filter: blur(6px) brightness(100%) grayscale(100%) sepia(100%);
+    filter: brightness(150%) drop-shadow(5px 5px 5px #211f09);
+    height: 50px;
+    margin: 0 15px 0 0;
+    width: 50px;
+}
+
+.browsePodCategoricalFeeds_tech_FebruaryC p {
+    backdrop-filter: blur(6px) brightness(50%) grayscale(100%) sepia(100%);
+    color: #c33f54;
+    filter: brightness(75%);
+    font-family: 'VT323', monospace;
+    font-size: 30px;
+}
+
+.browseFeedsTitleDiv_tech_FebruaryC {
+    width: 75%;
+}
+
+.browseFeedsTitleDiv_tech_FebruaryC p {
+    backdrop-filter: blur(6px) brightness(50%) grayscale(100%) sepia(100%);
+    color: #00ff00;
+    filter: brightness(75%);
+    font-family: 'VT323', monospace;
+    font-size: 30px;
+}
+
+.browseIndividualFeedData_tech_FebruaryC {
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/tech/february/media_image_resized.jpg);
+    background-size: cover;
+    border: none;
+    filter: brightness(100%);
+    height: 77vh;
+    margin: 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 34%;
+}
+
+.browseIndividualFeedData_tech_FebruaryC img {
+    backdrop-filter: blur(6px) brightness(100%) grayscale(100%) sepia(100%);
+    filter: brightness(120%) drop-shadow(5px 5px 5px #211f09);
+    margin: 10px 15%;
+    width: 70%;
+}
+
+.browseIndividualFeedData_tech_FebruaryC h3 {
+    backdrop-filter: blur(6px) brightness(50%) grayscale(100%) sepia(100%);
+    color: #00ff00;
+    filter: brightness(75%);
+    font-family: 'VT323', monospace;
+    font-size: 36px;
+    margin: 5px 10%;
+    width: 80%;
+}
+
+.browseIndividualFeedData_tech_FebruaryC p {
+    backdrop-filter: blur(6px) brightness(50%) grayscale(100%) sepia(100%);
+    color: #00ff00;
+    filter: brightness(75%);
+    font-family: 'VT323', monospace;
+    font-size: 30px;
+    margin: 15px 10%;
+    width: 80%;
+}
+
+.browseIndividualFeedData_tech_FebruaryC button {
+    background: #34371c;
+    border: none;
+    box-shadow: 5px 5px 5px #211f09;
+    color: #b1b1ca;
+    cursor: pointer;
+    font-family: 'VT323', monospace;
+    font-size: 36px;
+    margin: 30px 35%;
+    outline-color: #9a9b8e;
+    transition: all 0.4s linear;
+}
+
+.browseIndividualFeedData_tech_FebruaryC button:hover {
+    box-shadow: 1px 1px 5px #211f09;
+    filter: brightness(200%);
+    transition: all 0.4s linear;
+}
+
+.browseIndividualFeedData_tech_FebruaryC button:active {
+    filter: invert(100%);
+    transition: all 0.2s linear;
+}
