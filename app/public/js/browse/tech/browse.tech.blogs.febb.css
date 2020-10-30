@@ -16,11 +16,10 @@ tech february === data storage
 */
 
 .browsePodCategoricalFeeds_tech_FebruaryB {
-    display: none;
-    background-image: url();
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/tech/february/hard-disk-4255711_1920.jpg);
     background-size: cover;
     border: none;
-    filter: brightness(100%);
+    float: left;
     height: 77vh;
     margin: 15px;
     overflow-x: hidden;
@@ -29,16 +28,15 @@ tech february === data storage
 }
 
 .browsePodCategoricalFeeds_tech_FebruaryB img {
-    display: none;
-    filter: brightness(100%) drop-shadow(5px 5px 5px #666666);
+    backdrop-filter: blur(6px) brightness(100%) grayscale(100%) sepia(100%);
+    filter: brightness(150%) drop-shadow(5px 5px 5px #2a2d34);
     height: 50px;
     margin: 0 15px 0 0;
     width: 50px;
 }
 
 .browseIndividualPodFeedData_tech_FebruaryB {
-    display: none;
-    background-image: url();
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/tech/february/hard-disk-4255711_1920.jpg);
     background-size: cover;
     border: none;
     filter: brightness(100%);
@@ -50,16 +48,16 @@ tech february === data storage
 }
 
 .browseIndividualPodFeedData_tech_FebruaryB img {
-    display: none;
+    backdrop-filter: blur(6px) brightness(100%) grayscale(100%) sepia(100%);
     filter: brightness(120%) drop-shadow(5px 5px 5px #666666);
     margin: 10px 15%;
     width: 70%;
 }
 
 .browseIndividualPodFeedData_tech_FebruaryB h3 {
-    display: none;
-    color: #000000;
-    filter: brightness(100%);
+    backdrop-filter: blur(6px) brightness(50%) grayscale(100%) sepia(100%);
+    color: #00ff00;
+    filter: brightness(75%);
     font-family: 'VT323', monospace;
     font-size: 36px;
     margin: 5px 10%;
@@ -67,9 +65,9 @@ tech february === data storage
 }
 
 .browseIndividualPodFeedData_tech_FebruaryB p {
-    display: none;
-    color: #000000;
-    filter: brightness(100%);
+    backdrop-filter: blur(6px) brightness(50%) grayscale(100%) sepia(100%);
+    color: #00ff00;
+    filter: brightness(75%);
     font-family: 'VT323', monospace;
     font-size: 30px;
     margin: 15px 10%;
@@ -77,21 +75,20 @@ tech february === data storage
 }
 
 .browseIndividualPodFeedData_tech_FebruaryB button {
-    display: none;
-    background: #ababab;
+    background: #383a3a;
     border: none;
-    box-shadow: 5px 5px 5px #666666;
-    color: #000000;
+    box-shadow: 5px 5px 5px #2a2d34;
+    color: #007700;
     cursor: pointer;
     font-family: 'VT323', monospace;
     font-size: 36px;
     margin: 30px 35%;
-    outline-color: #ababab;
+    outline-color: #959594;
     transition: all 0.4s linear;
 }
 
 .browseIndividualPodFeedData_tech_FebruaryB button:hover {
-    box-shadow: 1px 1px 5px #666666;
+    box-shadow: 1px 1px 5px #2a2d34;
     filter: brightness(200%);
     transition: all 0.4s linear;
 }
@@ -120,9 +117,9 @@ tech february === data storage
 }
 
 .browsePodCategoricalFeeds_tech_FebruaryB p {
-    display: none;
-    color: #000000;
-    filter: brightness(100%);
+    backdrop-filter: blur(6px) brightness(50%) grayscale(100%) sepia(100%);
+    color: #00ff00;
+    filter: brightness(75%);
     font-family: 'VT323', monospace;
     font-size: 30px;
 }
