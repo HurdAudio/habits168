@@ -124,6 +124,7 @@
                 .then(skinData => {
                     let skin = skinData.data;
                     vm.signupMonth = skin.newusersignup;
+//                    vm.signupMonth = '_MarchA';
                     vm.newUserContainerState = 'newUserContainerActive' + vm.signupMonth;
                     switch (vm.signupMonth) {
                         case ('_JanuaryA'):
