@@ -1,4 +1,4 @@
-.dailiesContainerActive_AprilA {
+.dailiesContainerActive_AprilB {
     display: initial;
     filter: blur(0);
     height: 100%;
@@ -9,8 +9,8 @@
     width: 100%;
 }
 
-.dailiesImageDiv_AprilA {
-    background: url(https://habits168-hurdaudio.s3.amazonaws.com/dailies/april/marek-piwnicki-qJ8VzN7NtY8-unsplash.jpg);
+.dailiesImageDiv_AprilB {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/dailies/april/dovi-sJGb5VeOe8w-unsplash.jpg);
     background-size: cover;
     height: 100%;
     left: 0;
@@ -23,15 +23,15 @@
     z-index: -1;
 }
 
-.dailiesNavbar_AprilA {
-    backdrop-filter: blur(15px) hue-rotate(10deg);
-    border-bottom: 2px groove #554c4d;
+.dailiesNavbar_AprilB {
+    backdrop-filter: blur(15px) hue-rotate(30deg);
+    border-bottom: 2px groove #19313b;
     box-sizing: border-box;
     color: #666f5a;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    font-family: 'Commissioner', sans-serif;
+    font-family: 'Kumbh Sans', sans-serif;
     height: 11vh;
     justify-content: left;
     left: 0;
@@ -43,23 +43,23 @@
     z-index: 4;
 }
 
-.dailiesLogoNav_AprilA {
+.dailiesLogoNav_AprilB {
     cursor: pointer;
-    filter: brightness(100%) sepia(40%);
+    filter: brightness(130%) sepia(40%);
     max-height: 10vh;
     max-width: 85px;
     transform: translateY(-5px);
 }
 
-.dailiesTitle_AprilA {
-    color: #baa68c;
-    filter: brightness(150%);
-    font-family: 'Commissioner', sans-serif;
+.dailiesTitle_AprilB {
+    color: #040809;
+    filter: brightness(100%);
+    font-family: 'Kumbh Sans', sans-serif;
     font-size: 60px;
     margin: 1vh 0 6vh 265px;
 }
 
-.dailiesSubsManagementContainer_AprilA {
+.dailiesSubsManagementContainer_AprilB {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -71,10 +71,10 @@
     width: 100%;
 }
 
-.dailiesSubscriptions_AprilA {
+.dailiesSubscriptions_AprilB {
     backdrop-filter: blur(4px);
-    background: #aaa6a6;
-    border-right: 2px groove #744c18;
+    background: #73868c;
+    border-right: 2px groove #523b32;
     box-sizing: border-box;
     float: left;
     height: 88.7vh;
@@ -86,9 +86,9 @@
     width: 60%;
 }
 
-.dailiesAvailableFeeds_AprilA {
+.dailiesAvailableFeeds_AprilB {
     backdrop-filter: invert(100%);
-    background: #baa68c;
+    background: #a9b2b4;
     float: left;
     height: 88.7vh;
     opacity: 0.85;
@@ -99,56 +99,56 @@
     width: 40%;
 }
 
-.dailiesCurrentSubsTitle_AprilA {
-    color: #060608;
-    font-family: 'Commissioner', sans-serif;
+.dailiesCurrentSubsTitle_AprilB {
+    color: #040809;
+    font-family: 'Kumbh Sans', sans-serif;
     font-size: 30px;
     margin-bottom: 30px;
 }
 
-.dailySubIcon_AprilA {
+.dailySubIcon_AprilB {
     float: left;
     max-height: 75px;
     max-width: 75px;
     width: 10%;
 }
 
-.dailiesSubscriptions_AprilA i {
-    color: #060608;
+.dailiesSubscriptions_AprilB i {
+    color: #040809;
     cursor: pointer;
     font-size: 24px;
 }
 
-.dailyDeleter_AprilA {
-    color: #060608;
+.dailyDeleter_AprilB {
+    color: #040809;
     cursor: pointer;
     float: left;
-    font-family: 'Commissioner', sans-serif;
+    font-family: 'Kumbh Sans', sans-serif;
     font-size: 18px;
     margin: 10px 0;
     width: 20%;
     transform: translateY(7px);
 }
 
-.dailySubTitleDescription_AprilA {
-    color: #060608;
+.dailySubTitleDescription_AprilB {
+    color: #040809;
     float: left;
-    font-family: 'Commissioner', sans-serif;
+    font-family: 'Kumbh Sans', sans-serif;
     font-size: 18px;
     margin: 2vh 15px 25px 15px;
     max-width: 750px;
     width: 65%;
 }
 
-.dailiesAvailableSubsTitle_AprilA {
-    color: #060608;
-    font-family: 'Commissioner', sans-serif;
+.dailiesAvailableSubsTitle_AprilB {
+    color: #040809;
+    font-family: 'Kumbh Sans', sans-serif;
     font-size: 30px;
     margin-bottom: 30px;
 }
 
-.dailiesAvailableFeeds_AprilA i {
-    color: #060608;
+.dailiesAvailableFeeds_AprilB i {
+    color: #040809;
     float: left;
     font-size: 24px;
     transform: translateX(10px) translateY(2px);
@@ -156,28 +156,28 @@
     width: 10%;
 }
 
-.dailiesFeedsSearchInput_AprilA {
-    background: #9ca3d1;
+.dailiesFeedsSearchInput_AprilB {
+    background: #e7cabf;
     border: none;
-    color: #060608;
+    color: #040809;
     float: left;
-    font-family: 'Commissioner', sans-serif;
+    font-family: 'Kumbh Sans', sans-serif;
     font-size: 24px;
-    outline-color: #8f939c;
+    outline-color: #8c989d;
     padding: 0 0 0 5px;
     width: 75%;
 }
 
-.dailyAdder_AprilA {
-    color: #060608;
+.dailyAdder_AprilB {
+    color: #040809;
     cursor: pointer;
     float: left;
-    font-family: 'Commissioner', sans-serif;
+    font-family: 'Kumbh Sans', sans-serif;
     font-size: 18px;
     width: 15%;
 }
 
-.dailyAvailSubIcon_AprilA {
+.dailyAvailSubIcon_AprilB {
     float: left;
     margin-left: 10px;
     max-height: 55px;
@@ -185,17 +185,17 @@
     width: 15%;
 }
 
-.dailyAvailSubTitleDescription_AprilA {
-    color: #060608;
+.dailyAvailSubTitleDescription_AprilB {
+    color: #040809;
     float: left;
-    font-family: 'Commissioner', sans-serif;
+    font-family: 'Kumbh Sans', sans-serif;
     font-size: 18px;
     margin: 0.5vh 15px 25px 15px;
     max-width: 300px;
     width: 70%;
 }
 
-.dailiesSubsManagementContainer_AprilA main {
+.dailiesSubsManagementContainer_AprilB main {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: left;
@@ -203,7 +203,7 @@
     width: 100%;
 }
 
-.dailiesAvailableFeeds_AprilA main {
+.dailiesAvailableFeeds_AprilB main {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: left;
@@ -211,9 +211,9 @@
     width: 100%;
 }
 
-.hubReaderDay3BlockActive_AprilA {
+.hubReaderDay3BlockActive_AprilB {
     background: #ad90aa;
-    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/dailies/april/marek-piwnicki-qJ8VzN7NtY8-unsplash.jpg);
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/dailies/april/dovi-sJGb5VeOe8w-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 25vh;
@@ -227,9 +227,9 @@
     z-index: 1;
 }
 
-.hubReaderDay3BlockInactive_AprilA {
+.hubReaderDay3BlockInactive_AprilB {
     background: #ad90aa;
-    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/dailies/april/marek-piwnicki-qJ8VzN7NtY8-unsplash.jpg);
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/dailies/april/dovi-sJGb5VeOe8w-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 25vh;
@@ -244,17 +244,17 @@
 }
 
 @media only screen and (max-width: 1025px) {
-    .dailySubTitleDescription_AprilA {
+    .dailySubTitleDescription_AprilB {
         max-width: 550px;
         width: 100%;
     }
 
-    .dailyAvailSubTitleDescription_AprilA {
+    .dailyAvailSubTitleDescription_AprilB {
         max-width: 350px;
         width: 100%;
     }
 
-    .dailyAvailSubIcon_AprilA {
+    .dailyAvailSubIcon_AprilB {
         margin-left: 40px;
     }
 }
