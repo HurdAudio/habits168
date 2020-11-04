@@ -327,7 +327,7 @@
             .then(externalSkinData => {
                 const externalSkin = externalSkinData.data;
                 vm.externalsMonth = externalSkin.externals;
-//                vm.externalsMonth = '_AprilB';
+//                vm.externalsMonth = '_AprilC';
                 vm.externalsContainerState = "externalsContainerActive" + vm.externalsMonth;
                 vm.externalsGuardrailState = 'externalsDeleteGuardrailInactive' + vm.externalsMonth;
                 vm.externalsAddDialogState = 'externalsAddNewExternalsDialogInactive' + vm.externalsMonth;
