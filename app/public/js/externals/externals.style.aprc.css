@@ -1,0 +1,561 @@
+.externalsBackgroundDiv_AprilC {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/externals/backdrop/boris-misevic-FEGkUPGZPGc-unsplash.jpg);
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.externalsContainerActive_AprilC {
+    filter: blur(0px) hue-rotate(0deg);
+    transform: all 0.5s linear;
+}
+
+.externalsContainerInactive_AprilC {
+    filter: blur(5px) hue-rotate(180deg);
+    transform: all 0.5s linear;
+}
+
+.externalsTitleBar_AprilC {
+    background: linear-gradient(90deg, #91c4d9, #3ab9ff, #2499f8, transparent);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Trispace', sans-serif;
+    height: 12vh;
+    justify-content: flex-start;
+    opacity: 1;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.externalsLogo_AprilC {
+    cursor: pointer;
+    filter: brightness(100%);
+    height: 90px;
+    margin: 1px 48px 1px 13px;
+    max-width: 90px;
+}
+
+.externalsTitle_AprilC {
+    color: #092c5c;
+    font-family: 'Trispace', sans-serif;
+    font-size: 42px;
+    transform: translateX(0.5vw) translateY(3.5vh);
+}
+
+.externalsBody_AprilC {
+    background: linear-gradient(90deg, #c8e2ec, #bfdbe5, #b5dae7, transparent);
+    height: 87vh;
+    opacity: 0.95;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 24px;
+    width: 100%;
+}
+
+.externalsIssuesHeader_AprilC {
+    color: #092c5c;
+    font-family: 'Trispace', sans-serif;
+    font-size: 30px;
+}
+
+.externalManagementContainer_AprilC {
+    display: grid;
+    grid-template-columns: [leftBuffer] 10px [deleteColumn] 50px [readColumn] 120px [imageColumn] 150px [issueColumn] 1fr [rightBuffer] 10px;
+    grid-template-rows: [externalContent] auto [addNewContent] auto;
+    height: auto;
+    margin: 30px 0 15px 0;
+    width: 100%;
+}
+
+.externalsSwitchtrue_AprilC {
+    background: #3a4e56;
+    cursor: pointer;
+    display: inline-block;
+    filter: brightness(110%);
+    grid-column: readColumn / imageColumn;
+    grid-row: externalContent;
+    height: 25px;
+    margin: 35px 0 0 15px;
+    position: relative;
+    transition: all 0.3s linear;
+    width: 60px;
+}
+
+.externalsSwitchfalse_AprilC {
+    background: #3a4e56;
+    cursor: pointer;
+    display: inline-block;
+    filter: brightness(90%);
+    grid-column: readColumn / imageColumn;
+    grid-row: externalContent;
+    height: 25px;
+    margin: 35px 0 0 15px;
+    position: relative;
+    transition: all 0.3s linear;
+    width: 60px;
+}
+
+.externalsSwitchHandletrue_AprilC {
+    background: #1770e8;
+    bottom: 2px;
+    height: 25px;
+    left: 0;
+    position: absolute;
+    right: 2px;
+    top: 0;
+    transition: all 0.3s linear;
+    width: 30px;
+}
+
+.externalsSwitchHandlefalse_AprilC {
+    background: #1770e8;
+    bottom: 2px;
+    height: 25px;
+    left: 30px;
+    position: absolute;
+    right: 2px;
+    top: 0;
+    transition: all 0.3s linear;
+    width: 30px;
+}
+
+.externalsSwitchText_AprilC {
+    color: #092c5c;
+    font-family: 'Trispace', sans-serif;
+    font-size: 18px;
+    margin: 28px 0 0 0;
+}
+
+.externalsImage_AprilC {
+    filter: drop-shadow(12px 8px 4px #0e3d63);
+    grid-column: imageColumn / issueColumn;
+    grid-row: externalContent;
+    max-height: 120px;
+    width: 100px;
+}
+
+.externalsReadingDatas_AprilC {
+    color: #092c5c;
+    font-family: 'Trispace', sans-serif;
+    font-size: 18px;
+    grid-column: issueColumn / rightBuffer;
+    grid-row: externalContent;
+    margin: 25px 0 0 0;
+}
+
+.externalsDelete_AprilC {
+    align-self: center;
+    color: #092c5c;
+    cursor: pointer;
+    font-size: 30px;
+    grid-column: deleteColumn / readColumn;
+    grid-row: externalContent;
+    justify-content: center;
+    transition: all 0.3s linear;
+}
+
+.externalsDelete_AprilC:hover {
+    color: #1f4c62;
+    transition: all 0.3s linear;
+}
+
+.externalsAddNewContentDiv_AprilC {
+    color: #092c5c;
+    cursor: pointer;
+    margin: 70px 0 0 330px;
+    width: auto;
+}
+
+.externalsAddContentIcon_AprilC {
+    float: left;
+    font-size: 42px;
+    margin: 0 30px 0 0;
+    position: float;
+}
+
+.externalsAddNewText_AprilC {
+    float: left;
+    font-family: 'Trispace', sans-serif;
+    font-size: 24px;
+    margin: 5px 0 0 0;
+}
+
+.externalsDeleteGuardrailActive_AprilC {
+    background: #91c4d9;
+    height: auto;
+    left: 25%;
+    opacity: 1;
+    position: absolute;
+    top: 15%;
+    transition: all 0.3s linear;
+    width: auto;
+    z-index: 10;
+}
+
+.externalsDeleteGuardrailInactive_AprilC {
+    background: #91c4d9;
+    height: auto;
+    left: 175%;
+    opacity: 0;
+    position: absolute;
+    top: 105%;
+    transition: all 0.3s linear;
+    width: auto;
+    z-index: -10;
+}
+
+.externalsDeleteGuardrailTitleBar_AprilC {
+    background: #092c5c;
+    height: auto;
+    padding: 6px 0;
+    width: 100%;
+}
+
+.externalsDeleteGuardrailTitle_AprilC {
+    color: #c8e2ec;
+    font-family: 'Trispace', sans-serif;
+    font-size: 30px;
+    margin-left: 40px;
+}
+
+.externalsGuardrailContainer_AprilC {
+    background: transparent;
+    display: grid;
+    grid-template-columns: [leftB] 10px [imgColumn] 120px [infoColumn] 1fr [rightB] 10px;
+    grid-template-rows: [title] auto [query] auto [buttons] auto;
+    height: auto;
+    padding: 12px;
+    width: 100%;
+}
+
+.externalsGuardrailBodyText_AprilC {
+    color: #092c5c;
+    font-family: 'Trispace', sans-serif;
+    font-size: 18px;
+    grid-column: imgColumn / rightB;
+    grid-row: title;
+}
+
+.externalsGuardrailImage_AprilC {
+    filter: drop-shadow(12px 8px 4px #2a4852);
+    grid-column: imgColumn / infoColumn;
+    grid-row: query;
+    margin: 20px 0;
+    width: 90px;
+}
+
+.externalsGuardrailInfos_AprilC {
+    color: #092c5c;
+    font-family: 'Trispace', sans-serif;
+    font-size: 18px;
+    grid-column: infoColumn / rightB;
+    grid-row: query;
+    margin: 40px 0 20px 0;
+}
+
+.externalsGuardrailButtons_AprilC {
+    background: transparent;
+    grid-column: infoColumn / rightB;
+    grid-row: buttons;
+    height: auto;
+    justify-content: center;
+    margin: 0 0 0 16%;
+}
+
+.externalsGuardrailButtons_AprilC button {
+    background: #1770e8;
+    border: none;
+    border-radius: 0 20px;
+    color: #c8e2ec;
+    cursor: pointer;
+    font-family: 'Trispace', sans-serif;
+    font-size: 24px;
+    margin: 10px 40px 20px 0;
+    outline-color: #a7aab0;
+    transition: all 0.6s linear;
+    width: 70px;
+}
+
+.externalsGuardrailButtons_AprilC button:hover {
+    background: #092c5c;
+    color: #c8e2ec;
+    box-shadow: 4px 8px 10px #c8e2ec, -4px 8px 10px #c8e2ec, 4px -8px 10px #c8e2ec, -4px -8px 10px #c8e2ec;
+    transition: all 0.6s linear;
+}
+
+.externalsGuardrailButtons_AprilC button:active {
+    filter: invert(100%);
+    transition: all 0.1s linear;
+}
+
+.externalsAddNewExternalsDialogActive_AprilC {
+    background: linear-gradient(90deg, #91c4d9, #b5dae7);
+    height: auto;
+    left: 10%;
+    opacity: 1;
+    position: absolute;
+    top: 0.5%;
+    transform: scale(1);
+    transition: all 0.6s linear;
+    width: 80%;
+    z-index: 10;
+}
+
+.externalsAddNewExternalsDialogInactive_AprilC {
+    background: linear-gradient(90deg, #91c4d9, #b5dae7);
+    height: auto;
+    left: -90%;
+    opacity: 0;
+    position: absolute;
+    top: 0.5%;
+    transform: scale(0.01);
+    transition: all 0.6s linear;
+    width: 80%;
+    z-index: -10;
+}
+
+.externalsAddNewTitleBar_AprilC {
+    background: linear-gradient(-90deg, #092c5c, #2a4852);
+    height: auto;
+    padding: 6px 0;
+    width: 100%;
+}
+
+.externalsAddNewTitle_AprilC {
+    color: #c8e2ec;
+    font-family: 'Trispace', sans-serif;
+    font-size: 30px;
+    margin-left: 40px;
+}
+
+.externalsAddNewBodyContainer_AprilC {
+    display: grid;
+    grid-template-columns: [leftAdd] 10px [formInput] 1fr [displayAdd] 1fr [rightAdd] 10px;
+    grid-template-rows: [errorMessaging] auto [userAdds] auto [buttonsAdds] auto;
+    height: auto;
+}
+
+.externalsAddErrorField_AprilC {
+    color: #ff0000;
+    font-family: 'Trispace', sans-serif;
+    font-size: 18px;
+    grid-column: formInput / rightAdd;
+    grid-row: errorMessaging;
+    margin: 15px 30px;
+}
+
+.externalsAddUserForm_AprilC {
+    background: transparent;
+    grid-column: formInput / displayAdd;
+    grid-row: userAdds;
+    height: auto;
+    margin: 0 0 30px 0;
+    padding: 24px 0;
+}
+
+.externalsAddUserForm_AprilC label {
+    color: #092c5c;
+    font-family: 'Trispace', sans-serif;
+    font-size: 18px;
+    margin: 15px 24px;
+}
+
+.externalsAddUserForm_AprilC input[type="text"] {
+    background: #bfdbe5;
+    border: none;
+    color: #092c5c;
+    font-family: 'Trispace', sans-serif;
+    font-size: 18px;
+    margin: 5px 24px;
+    outline-color: #92ccfc;
+    padding: 0 5px;
+    width: 90%;
+}
+
+.externalsAddUserForm_AprilC textarea {
+    background: #bfdbe5;
+    border: none;
+    color: #092c5c;
+    font-family: 'Trispace', sans-serif;
+    font-size: 18px;
+    margin: 5px 24px;
+    outline-color: #92ccfc;
+    padding: 0 5px;
+    width: 90%;
+}
+
+.externalsDisplayNewAddition_AprilC {
+    background: transparent;
+    grid-column: displayAdd / rightAdd;
+    grid-row: userAdds;
+    height: auto;
+    margin: 0 0 30px 0;
+    padding: 24px 0;
+}
+
+.externalsAddImage_AprilC {
+    filter: drop-shadow(12px 8px 4px #0e3d63);
+    margin: 0 0 0 36px;
+    max-height: 240px;
+    width: 150px;
+}
+
+.externalsAddCandidateTitle_AprilC {
+    color: #092c5c;
+    font-family: 'Trispace', sans-serif;
+    font-size: 24px;
+    margin: 24px;
+}
+
+.externalsAddExternalsButtons_AprilC {
+    background: transparent;
+    height: auto;
+    grid-column: formInput / rightAdd;
+    grid-row: buttonsAdds;
+    margin: 0 0 30px 0;
+}
+
+.externalsAddExternalsButtons_AprilC button {
+    background: #1770e8;
+    border: none;
+    border-radius: 0 20px;
+    color: #c8e2ec;
+    cursor: pointer;
+    font-family: 'Trispace', sans-serif;
+    font-size: 24px;
+    margin: 10px 40px 20px 0;
+    outline-color: #a7aab0;
+    transition: all 0.6s linear;
+    width: auto;
+}
+
+.externalsAddExternalsButtons_AprilC button:hover {
+    background: #092c5c;
+    color: #c8e2ec;
+    box-shadow: 4px 8px 10px #c8e2ec, -4px 8px 10px #c8e2ec, 4px -8px 10px #c8e2ec, -4px -8px 10px #c8e2ec;
+    transition: all 0.6s linear;
+}
+
+.externalsAddExternalsButtons_AprilC button:active {
+    filter: invert(100%);
+    transition: all 0.1s linear;
+}
+
+.hubReaderExternalsDay2BlockInactive_AprilC {
+    background: #82a1b5;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/externals/backdrop/boris-misevic-FEGkUPGZPGc-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(250%) translateY(500%);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: -1;
+}
+
+.hubReaderExternalsDay2BlockActive_AprilC {
+    background: #82a1b5;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/externals/backdrop/boris-misevic-FEGkUPGZPGc-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px) translateY(0px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 414px) {
+
+    .externalsTitle_AprilC {
+        font-size: 24px;
+    }
+
+    .externalsIssuesHeader_AprilC {
+        font-size: 18px;
+    }
+
+    .externalManagementContainer_AprilC {
+        grid-template-columns: [leftBuffer] 1px [deleteColumn] 25px [readColumn] 60px [imageColumn] 80px [issueColumn] 50% [rightBuffer] 14px;
+        grid-template-rows: [externalContent] auto [addNewContent] auto;
+        margin: 15px 0 7px 0;
+    }
+
+    .externalsDelete_AprilC {
+        font-size: 18px;
+    }
+
+    .externalsImage_AprilC {
+        margin-left: 15px;
+        max-height: 50px;
+        width: 40px;
+    }
+
+    .externalsSwitchfalse_AprilC {
+        height: 25px;
+        margin: 15px 15px 0 5px;
+        transform: scale(0.5);
+        width: 60px;
+    }
+
+    .externalsSwitchtrue_AprilC {
+        height: 25px;
+        margin: 15px 15px 0 5px;
+        transform: scale(0.5);
+        width: 60px;
+    }
+
+    .externalsReadingDatas_AprilC {
+        font-size: 12px;
+        margin: 25px 0 0 0;
+    }
+
+    .externalsAddNewContentDiv_AprilC {
+        margin: 70px 0 0 10px;
+    }
+
+    .externalsDeleteGuardrailActive_AprilC {
+        left: 0;
+        width: 100%;
+    }
+
+    .externalsAddNewExternalsDialogActive_AprilC {
+        left: 0;
+        width: 100%;
+    }
+
+    .externalsAddImage_AprilC {
+        margin: 0 0 0 36px;
+        max-height: 120px;
+        width: 75px;
+    }
+
+    .externalsAddUserForm_AprilC textarea {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+
+    .externalsTitle_AprilC {
+        font-size: 18px;
+    }
+}
