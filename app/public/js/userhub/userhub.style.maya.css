@@ -1,0 +1,2547 @@
+.hubBackgroundDiv_MayA {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/hub/may/presentsquare-0_fhco1lRqo-unsplash.jpg);
+    background-size: cover;
+    filter: brightness(100%);
+    height: 100%;
+    left: 0;
+    opacity: 1;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.hubTitleFlex_MayA {
+    background: #909a80;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Piazzolla', serif;
+    height: auto;
+    justify-content: flex-start;
+    opacity: 0.9;
+    width: 100%;
+}
+
+.hubLogo_MayA {
+    filter: brightness(100%);
+    height: 80px;
+    margin: 4px 36px 4px 26px;
+    width: 80px;
+}
+
+.hubTitleDiv_MayA {
+    padding: 10px 4px 16px 88px;
+}
+
+.hubTitle_MayA {
+    color: #000102;
+    filter: brightness(100%);
+    font-family: 'Piazzolla', serif;
+    font-size: 66px;
+    font-weight: bolder;
+}
+
+.hubSignoutDiv_MayA {
+    padding: 3vh 40px;
+    position: fixed;
+    right: 4%;
+}
+
+.hubSignoutButton_MayA {
+    background: #003346;
+    border-bottom: none;
+    border-left: 4px solid #376757;
+    border-right: 4px solid #376757;
+    border-top: none;
+    box-sizing: border-box;
+    color: #9f9a8b;
+    cursor: pointer;
+    filter: brightness(100%) invert(0%);
+    font-family: 'Piazzolla', serif;
+    font-size: 24px;
+    outline-color: #80909c;
+    padding-bottom: 8px;
+    transition: all 0.4s linear;
+}
+
+.hubSignoutButton_MayA:hover {
+    background: #809da7;
+    border-left: 15px solid #376757;
+    border-right: 1px solid #376757;
+    color: #080e03;
+    transition: all 0.4s linear;
+}
+
+.hubSignoutButton_MayA:active {
+    filter: invert(100%);
+    transition: all 0.2s linear;
+}
+
+.hubTabsBar_MayA {
+    background: linear-gradient(90deg, #808282, #8b9184, #8099a3, transparent);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Piazzolla', serif;
+    height: 5.25vh;
+    justify-content: flex-start;
+    opacity: 1;
+    padding: 0 1%;
+    width: 100%;
+}
+
+.hubTabActive_MayA {
+    color: #000102;
+    padding: 8px 0 0 15px;
+    transition: all 0.6s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 17%;
+    z-index: 0;
+}
+
+.hubTabInactive_MayA {
+    color: #013b4f;
+    cursor: pointer;
+    padding: 8px 0 0 15px;
+    transition: all 0.6s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 17%;
+    z-index: 10;
+}
+
+.hubTabLabel_MayA {
+    font-family: 'Piazzolla', serif;
+    font-size: 30px;
+}
+
+.hubTabInactive_MayA p {
+    cursor: pointer;
+    z-index: 8;
+}
+
+.hubTabActive_MayA p {
+    cursor: none;
+    z-index: 0;
+}
+
+.hubShare_MayA {
+    background: #9f9a8b;
+    filter: drop-shadow(10px 1px 4px #191408);
+    height: 5vh;
+    left: 0;
+    position: absolute;
+    top: 11.9vh;
+    transition: all 0.6s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 18%;
+}
+
+.hubReader_MayA {
+    background: #9f9a8b;
+    filter: drop-shadow(10px 1px 4px #191408);
+    height: 5vh;
+    left: 19%;
+    position: absolute;
+    top: 11.9vh;
+    transition: all 0.6s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 18%;
+}
+
+.hubBlogs_MayA {
+    background: #9f9a8b;
+    filter: drop-shadow(10px 1px 4px #191408);
+    height: 5vh;
+    left: 36%;
+    position: absolute;
+    top: 11.9vh;
+    transition: all 0.6s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 18%;
+}
+
+.hubProfile_MayA {
+    background: #9f9a8b;
+    filter: drop-shadow(10px 1px 4px #191408);
+    height: 5vh;
+    left: 54%;
+    position: absolute;
+    top: 11.9vh;
+    transition: all 0.6s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 18%;
+}
+
+.hubContentContainer_MayA {
+    height: 81vh;
+    width: 100%;
+}
+
+.hubShareDashboard_MayA {
+    background: linear-gradient(90deg, #9f9a8b, #809da7, #809da7, transparent);
+    height: 81vh;
+    opacity: 0.97;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 105%;
+}
+
+.hubReaderDashboard_MayA {
+    background: linear-gradient(90deg, #3f3416, #213400, #213400, transparent);
+    height: 81vh;
+    opacity: 0.95;
+    width: 100%;
+}
+
+.hubBlogsDashboard_MayA {
+    background: linear-gradient(90deg, #191408, #00141c, #00141c, transparent);
+    height: 81vh;
+    opacity: 0.95;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 104%;
+}
+
+.hubProfileDashboard_MayA {
+    background: linear-gradient(90deg, #909a80, #8099a3, #8099a3, transparent);
+    height: 81vh;
+    opacity: 0.95;
+    width: 103%;
+}
+
+.hubShareContainer_MayA {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    height: auto;
+    justify-content: flex-start;
+    margin: 1vh 0;
+    width: 96%;
+}
+
+.hubShareByline_MayA {
+    border-right: 2px solid #000102;
+    float: left;
+    padding: 5vh 3% 15px 3%;
+    width: 20%;
+
+}
+
+.hubShareBylineAvatar_MayA {
+    cursor: pointer;
+    filter: drop-shadow(5px 5px 2px #191408);
+    width: 20%;
+}
+
+.hubBylineName_MayA {
+    color: #000102;
+    cursor: pointer;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+    margin: 5px 0 35px 0;
+}
+
+.hubShareComments_MayA {
+    color: #000102;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+.hubShareBody_MayA {
+    border-left: 1px solid #000102;
+    float: left;
+    height: auto;
+    padding: 0 1%;
+    width: 70%;
+}
+
+.hubShareSourceIcon_MayA {
+    filter: drop-shadow(5px 5px 2px #191408);
+    float: left;
+    max-width: 70px;
+}
+
+.hubShareViaDescription_MayA {
+    color: #000102;
+    float: left;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+    margin: 10px 0 0 30px;
+    max-width: 700px;
+}
+
+.hubShareBody_MayA a {
+    color: #002039;
+    text-decoration: none;
+}
+
+.hubShareBody_MayA a:visited {
+    color: #3f3416;
+}
+
+.hubShareBody_MayA a:hover {
+    color: #00171f;
+}
+
+.hubShareHeadline_MayA {
+    color: #000102;
+    font-family: 'Piazzolla', serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+    max-width: 800px;
+}
+
+.hubShareArticleImage_MayA {
+    filter: drop-shadow(5px 5px 2px #191408);
+    margin-bottom: 9px;
+    margin-left: 9px;
+    margin-right: 12px;
+    max-width: 25%;
+}
+
+.hubSharePostTimestamp_MayA {
+    color: #000102;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+    margin: 4px 0 6px 24px;
+}
+
+.hubShareAuthor_MayA {
+    color: #000102;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+    margin: 10px 0 0 24px;
+}
+
+.hubShareDescription_MayA {
+    color: #000102;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 30px 0;
+    max-width: 750px;
+}
+
+.hubSharedAt_MayA {
+    color: #000102;
+    font-family: 'Piazzolla', serif;
+    font-size: 12px;
+    margin: 0 0 10px 0;
+}
+
+.hubShareReactions_MayA {
+    padding: 10px 5px;
+    width: 100%;
+}
+
+.hubShareReactionEmoji_MayA {
+    float: left;
+    margin: 3px 3px 11px 3px;
+    padding: 1px;
+    width: 24%;
+}
+
+.hubShareReactionTally_MayA {
+    color: #000102;
+    float: left;
+    font-family: 'Piazzolla', serif;
+    font-size: 24px;
+    margin: 3px 2px 11px 5px;
+}
+
+.hubShareReactionDelete_MayA {
+    color: #000102;
+    cursor: pointer;
+    font-family: 'Piazzolla', serif;
+    font-size: 21px;
+    margin: 3px 17px 11px 4px;
+}
+
+.hubReactionGestalt_MayA {
+    float: left;
+    margin: 5px;
+    width: 28%;
+}
+
+.hubShareAddReactionDiv_MayA {
+    background: #9f9a8b;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: flex-start;
+    position: relative;
+    width: 350px;
+}
+
+.hubShareAddReactionDiv_MayA img {
+    cursor: pointer;
+    margin: 4px;
+    width: 30px;
+}
+
+.hubShareAddReactionsToggle_MayA {
+    padding: 0 0 5px 35%;
+    width: 100%;
+}
+
+.hubShareAddReactionsToggle_MayA p {
+    color: #000102;
+    cursor: pointer;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+}
+
+.hubShareReactionsHoverText_MayA {
+    background: #9f9a8b;
+    bottom: 10%;
+    color: #000102;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+    max-width: 180px;
+    opacity: 0;
+    padding: 3px;
+    position: absolute;
+    transform: translateX(-80px) translateY(-20px);
+    transition: all 0.5s linear;
+    z-index: -10;
+}
+
+.hubShareReactionsHoverTextHover_MayA {
+    background: #809da7;
+    bottom: 10%;
+    color: #000102;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+    max-width: 180px;
+    opacity: 1;
+    padding: 3px;
+    position: absolute;
+    transform: translateX(-80px) translateY(-20px);
+    transition: all 0.5s linear;
+    z-index: 10;
+}
+
+.hubShareCommentsLabel_MayA {
+    color: #000102;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+    margin: 40px 80% 5px 0;
+}
+
+.hubShareCommenterAvatar_MayA {
+    cursor: pointer;
+    float: left;
+    max-width: 30px;
+}
+
+.hubShareCommenterName_MayA {
+    color: #000102;
+    cursor: pointer;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+    position: relative;
+    transform: translateX(7px) translateY(13px);
+
+}
+
+.hubShareCommentDateStamp_MayA {
+    color: #000102;
+    font-family: 'Piazzolla', serif;
+    font-size: 12px;
+    margin: 3px 0 3px 0;
+}
+
+.hubShareCommentComment_MayA {
+    color: #000102;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+}
+
+.hubShareNewComments_MayA p {
+    color: #000102;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+    margin: 40px 60% 5px 0;
+}
+
+.hubShareCommentTextArea_MayA {
+    background: #809da7;
+    border: none;
+    color: #000102;
+    filter: drop-shadow(5px 5px 2px #191408);
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+    outline-color: #80909c;
+    width: 100%;
+}
+
+.hubShareNewComments_MayA button {
+    margin: 4px 35% 1px 35%;
+}
+
+.hubShareCommenterFields_FebruaryB {
+    width: 100%;
+}
+
+.hubTodayIsDisplay_MayA {
+    color: #9f9a8b;
+    font-family: 'Piazzolla', serif;
+    font-size: 36px;
+    margin-right: 50px;
+    width: 60%;
+}
+
+.hubTodayIsDiv_MayA {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-right: 50px;
+    padding: 1% 5%;
+}
+
+.hubReaderWeekly_MayA {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Piazzolla', serif;
+    height: auto;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.hubReaderTodayBlock_MayA {
+    background: #93bac4;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/espresso-5414471_1920.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    width: 8%;
+}
+
+.hubReaderTodayLabel_MayA {
+    background: #a1a4b5;
+    border: none;
+    color: #0a080c;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+}
+
+.hubReaderDayButton_MayA {
+    background: #93bac4;
+    border: none;
+    color: #0a080c;
+    cursor: pointer;
+    filter: drop-shadow(10px 15px 4px #1a1d2a);
+    font-family: 'Piazzolla', serif;
+    font-size: 24px;
+    left: 12%;
+    outline-color: #8d9396;
+    position: relative;
+    transition: all 0.4s linear;
+    z-index: 20;
+}
+
+.hubReaderDayButton_MayA:hover {
+    background: #040402;
+    color: #0a080c;
+    filter: brightness(110%) drop-shadow(9px 14px 3px #1a1d2a);
+    outline-color: #c3b6a3;
+    transition: all 0.4s linear;
+}
+
+.hubReaderWeekButton_MayA {
+    background: #93bac4;
+    border: none;
+    color: #0a080c;
+    cursor: pointer;
+    filter: drop-shadow(10px 15px 4px #1a1d2a);
+    font-family: 'Piazzolla', serif;
+    font-size: 24px;
+    left: 25%;
+    outline-color: #8d9396;
+    position: relative;
+    transition: all 0.4s linear;
+    top: 60%;
+    z-index: 20;
+}
+
+.hubReaderWeekButton_MayA:hover {
+    background: #040402;
+    color: #0a080c;
+    filter: brightness(110%) drop-shadow(9px 14px 3px #1a1d2a);
+    outline-color: #c3b6a3;
+    transition: all 0.4s linear;
+}
+
+.hubReaderBlankLabel_MayA {
+    display: none;
+    color: transparent;
+    font-family: 'Piazzolla', serif;
+    font-size: 30px;
+}
+
+.hubReaderDay1BlockActive_MayA {
+    background: #93bac4;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/espresso-5414471_1920.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(0deg);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: 1;
+}
+
+.hubReaderDay1BlockInactive_MayA {
+    background: #93bac4;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/espresso-5414471_1920.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(-115%) translateY(-200%) rotate(180deg);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: -1;
+}
+
+.hubReaderDay2BlockActive_MayA {
+    background: #93bac4;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/espresso-5414471_1920.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(0deg);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: 1;
+}
+
+.hubReaderDay2BlockInactive_MayA {
+    background: #93bac4;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/espresso-5414471_1920.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(250%) translateY(500%) rotate(180deg);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: -1;
+}
+
+.hubReaderDay3BlockActive_MayA {
+    background: #93bac4;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/espresso-5414471_1920.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(0deg);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: 1;
+}
+
+.hubReaderDay3BlockInactive_MayA {
+    background: #93bac4;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/espresso-5414471_1920.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(800%) translateY(50%) rotate(180deg);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: -1;
+}
+
+.hubReaderDay4BlockActive_MayA {
+    background: #93bac4;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/espresso-5414471_1920.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(0deg);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: 1;
+}
+
+.hubReaderDay4BlockInactive_MayA {
+    background: #93bac4;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/espresso-5414471_1920.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(-460%) translateY(550%) rotate(180deg);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: -1;
+}
+
+.hubReaderDay5BlockActive_MayA {
+    background: #93bac4;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/espresso-5414471_1920.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(0deg);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: 1;
+}
+
+.hubReaderDay5BlockInactive_MayA {
+    background: #93bac4;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/espresso-5414471_1920.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(575%) translateY(-1000%) rotate(180deg);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: -1;
+}
+
+.hubReaderDay6BlockActive_MayA {
+    background: #93bac4;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/espresso-5414471_1920.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(0deg);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: 1;
+}
+
+.hubReaderDay6BlockInactive_MayA {
+    background: #93bac4;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/espresso-5414471_1920.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(690%) translateY(200%) rotate(180deg);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: -1;
+}
+
+.hubReaderDay7BlockActive_MayA {
+    background: #93bac4;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/espresso-5414471_1920.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(0deg);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: 1;
+}
+
+.hubReaderDay7BlockInactive_MayA {
+    background: #93bac4;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/espresso-5414471_1920.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(-15%) translateY(433%) rotate(180deg);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 8%;
+    z-index: -1;
+}
+
+.hubReaderManagementRow_MayA {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Piazzolla', serif;
+    height: auto;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.hubShareShareSaveButtonsDiv_MayA {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 5px;
+    width: 100%;
+}
+
+.hubShareShareSaveButtonsDiv_MayA button {
+    background: #003346;
+    border-bottom: none;
+    border-left: 4px solid #376757;
+    border-right: 4px solid #376757;
+    border-top: none;
+    box-sizing: border-box;
+    color: #9f9a8b;
+    cursor: pointer;
+    filter: brightness(100%) invert(0%);
+    font-family: 'Piazzolla', serif;
+    font-size: 24px;
+    margin: 10px 35px;
+    outline-color: #80909c;
+    padding-bottom: 8px;
+    transition: all 0.4s linear;
+}
+
+.hubShareShareSaveButtonsDiv_MayA button:hover {
+    background: #809da7;
+    border-left: 15px solid #376757;
+    border-right: 1px solid #376757;
+    color: #080e03;
+    transition: all 0.4s linear;
+}
+
+.hubShareShareSaveButtonsDiv_MayA button:active {
+    filter: invert(100%);
+    transition: all 0.2s linear;
+}
+
+.hubShareShareSaveModalActive_MayA {
+    background: #909a80;
+    color: #000000;
+    filter: drop-shadow(10px 15px 4px #191408);
+    left: 35%;
+    opacity: 1;
+    padding: 1% 3%;
+    position: absolute;
+    transition: all 0.5s linear;
+    top: 5%;
+    width: 30%;
+    z-index: 55;
+}
+
+.hubShareShareSaveModalActive_MayA img {
+    max-width: 20%;
+}
+
+.hubShareShareSaveModalActive_MayA p {
+    color: #000102;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.hubShareShareSaveModalActive_MayA textarea {
+    background: #9f9a8b;
+    border: none;
+    color: #000102;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+    outline-color: #80909c;
+    width: 100%;
+}
+
+.hubShareShareSaveModalActive_MayA button {
+    background: #003346;
+    border-bottom: none;
+    border-left: 4px solid #376757;
+    border-right: 4px solid #376757;
+    border-top: none;
+    box-sizing: border-box;
+    color: #9f9a8b;
+    cursor: pointer;
+    filter: brightness(100%) invert(0%);
+    font-family: 'Piazzolla', serif;
+    font-size: 24px;
+    margin: 5px 45px;
+    outline-color: #80909c;
+    padding-bottom: 8px;
+    transition: all 0.4s linear;
+}
+
+.hubShareShareSaveModalActive_MayA button:hover {
+    background: #809da7;
+    border-left: 15px solid #376757;
+    border-right: 1px solid #376757;
+    color: #080e03;
+    transition: all 0.4s linear;
+}
+
+.hubShareShareSaveModalActive_MayA button:active {
+    filter: invert(100%);
+    transition: all 0.2s linear;
+}
+
+.hubShareShareSaveModalInactive_MayA {
+    background: #909a80;
+    filter: drop-shadow(10px 15px 4px #191408);
+    color: #000000;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+    left: -135%;
+    opacity: 0;
+    padding: 1% 3%;
+    position: absolute;
+    transition: all 0.5s linear;
+    top: 15%;
+    width: 30%;
+    z-index: -55;
+}
+
+.hubShareShareSaveModalInactive_MayA img {
+    max-width: 20%;
+}
+
+.hubShareShareSaveModalInactive_MayA p {
+    color: #000102;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.hubShareShareSaveModalInactive_MayA textarea {
+    background: #9f9a8b;
+    border: none;
+    color: #000102;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+    outline-color: #80909c;
+    width: 100%;
+}
+
+.hubShareShareSaveModalInactive_MayA button {
+    background: #003346;
+    border-bottom: none;
+    border-left: 4px solid #376757;
+    border-right: 4px solid #376757;
+    border-top: none;
+    box-sizing: border-box;
+    color: #9f9a8b;
+    cursor: pointer;
+    filter: brightness(100%) invert(0%);
+    font-family: 'Piazzolla', serif;
+    font-size: 24px;
+    margin: 5px 45px;
+    outline-color: #80909c;
+    padding-bottom: 8px;
+    transition: all 0.4s linear;
+}
+
+.hubDialogHeadline_MayA {
+    color: #000102;
+    font-family: 'Piazzolla', serif;
+    font-size: 24px;
+    margin: 0 0 20px 0;
+}
+
+.hubRadioButtons_MayA {
+    color: #000102;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+    margin: 5px 5px 15px 5px;
+}
+
+.hubContainer_MayA {
+    filter: blur(0px);
+    transition: all 0.4s linear;
+}
+
+.hubContainerBlur_MayA {
+    filter: blur(10px);
+    transition: all 0.4s linear;
+}
+
+.hubUserBlogList_MayA {
+    border-right: 1px solid #9f9a8b;
+    float: left;
+    height: 81vh;
+    padding: 50px 15px;
+    width: 30%;
+}
+
+.hubUserBlogData_MayA {
+    border-left: 1px solid #9f9a8b;
+    float: left;
+    height: 81vh;
+    width: 60%;
+}
+
+.hubMyBlogsLabel_MayA {
+    color: #9f9a8b;
+    font-family: 'Piazzolla', serif;
+    font-size: 36px;
+}
+
+.hubBlogListEntry_MayA {
+    color: #9f9a8b;
+    cursor: pointer;
+    font-family: 'Piazzolla', serif;
+    font-size: 30px;
+    margin: 30px;
+    transition: all 0.5s linear;
+}
+
+.hubBlogListEntry_MayA:hover {
+    filter: brightness(190%);
+    transition: all 0.5s linear;
+}
+
+.hubNewBlogButton_MayA {
+    background: #003346;
+    border-bottom: none;
+    border-left: 4px solid #376757;
+    border-right: 4px solid #376757;
+    border-top: none;
+    box-sizing: border-box;
+    color: #9f9a8b;
+    cursor: pointer;
+    filter: brightness(100%) invert(0%);
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+    margin: 35px 75px;
+    outline-color: #80909c;
+    padding-bottom: 8px;
+    transition: all 0.4s linear;
+}
+
+.hubNewBlogButton_MayA:hover {
+    background: #809da7;
+    border-left: 15px solid #376757;
+    border-right: 1px solid #376757;
+    color: #080e03;
+    transition: all 0.4s linear;
+}
+
+.hubNewBlogButton_MayA:active {
+    filter: invert(100%);
+    transition: all 0.2s linear;
+}
+
+.hubBlogLogoTitleDescription_MayA {
+    cursor: pointer;
+    padding: 2vh 20px;
+    width: 100%;
+}
+
+.currentBlogLogoImage_MayA {
+    float: left;
+    height: 120px;
+    max-width: 25%;
+}
+
+.currentBlogName_MayA {
+    color: #9f9a8b;
+    float: left;
+    font-family: 'Piazzolla', serif;
+    font-size: 48px;
+    margin: 72px 0 0 40px;
+}
+
+.currentBlogTagline_MayA {
+    color: #9f9a8b;
+    float: left;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+    margin: 10px 0 0 28.5%;
+    position: relative;
+    width: 90%;
+}
+
+.currentBlogContributersDiv_MayA {
+    float: left;
+    padding: 20px 0 0 50px;
+    width: 100%;
+}
+
+.contributerInfo_MayA {
+    cursor: pointer;
+}
+
+.hubBlogContributerAvatar_MayA {
+    float: left;
+    max-width: 7%;
+    margin: 1px 1px 1px 15px;
+    position: relative;
+}
+
+.hubContributersLabel_MayA {
+    color: #9f9a8b;
+    font-family: 'Piazzolla', serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.hubBlogContributerName_MayA {
+    color: #9f9a8b;
+    float: left;
+    font-family: 'Piazzolla', serif;
+    font-size: 24px;
+    margin: 30px 1px 1px 30px;
+    width: 85%;
+}
+
+.hubBlogDataDiv_MayA {
+    float: left;
+    padding: 150px 0 0 70px;
+    width: 100%;
+}
+
+.hubBlogDataPosts_MayA {
+    color: #9f9a8b;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+    width: 85%;
+}
+
+.hubUserProfileBasicsPane_MayA {
+    border-right: 1px solid #000102;
+    float: left;
+    height: 81vh;
+    width: 30%;
+}
+
+.hubPublicPrivateProfilePane_MayA {
+    border-left: 1px solid #000102;
+    float: left;
+    height: 81vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 68%;
+}
+
+.hubBasicUserData_MayA {
+    height: 90%;
+    left: 5%;
+    position: relative;
+    top: 5%;
+    width: 88%;
+}
+
+.hubLoggedInAsLabel_MayA {
+    color: #000102;
+    font-family: 'Piazzolla', serif;
+    font-size: 24px;
+}
+
+.hubLoggedInAsAvatar_MayA {
+    filter: drop-shadow(5px 5px 2px #191408);
+    margin-top: 5px;
+    max-width: 150px;
+}
+
+.hubProfileUserName_MayA {
+    color: #000102;
+    font-family: 'Piazzolla', serif;
+    font-size: 24px;
+    margin: 5px 0 25px 0;
+}
+
+.hubUserDatas_MayA {
+    color: #000102;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+}
+
+.hubEditProfileButton_MayA {
+    background: #003346;
+    border-bottom: none;
+    border-left: 4px solid #376757;
+    border-right: 4px solid #376757;
+    border-top: none;
+    box-sizing: border-box;
+    color: #9f9a8b;
+    cursor: pointer;
+    filter: brightness(100%) invert(0%);
+    float: right;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+    margin: 5px 15px;
+    outline-color: #80909c;
+    padding: 3px;
+    position: relative;
+    transition: all 0.4s linear;
+}
+
+.hubEditProfileButton_MayA:hover {
+    background: #809da7;
+    border-left: 15px solid #376757;
+    border-right: 1px solid #376757;
+    color: #080e03;
+    transition: all 0.4s linear;
+}
+
+.hubEditProfileButton_MayA:active {
+    filter: invert(100%);
+    transition: all 0.2s linear;
+}
+
+.hubUserProfileNavigation_MayA {
+    height: auto;
+    left: 60%;
+    position: relative;
+    top: 0;
+    width: 40%;
+}
+
+.hubUserProfileNavigationActive_MayA {
+    filter: blur(0px) opacity(1);
+    height: 50px;
+    transition: all 1s linear;
+    width: 100%;
+    z-index: 11;
+}
+
+.hubUserProfileNavigationActive_MayA p {
+    color: #000102;
+    filter: contrast(200%);
+    font-family: 'Piazzolla', serif;
+    font-size: 24px;
+    transform: translateX(15px) translateY(10px);
+    z-index: 111;
+}
+
+.hubUserProfileNavigationInactive_MayA {
+    cursor: pointer;
+    filter: blur(1px) opacity(0.7);
+    height: 50px;
+    transition: all 1s linear;
+    width: 100%;
+}
+
+.hubUserProfileNavigationInactive_MayA p {
+    color: #3f3416;
+    filter: contrast(40%);
+    font-family: 'Piazzolla', serif;
+    font-size: 24px;
+    transform: translateX(15px) translateY(10px);
+    z-index: 11;
+}
+
+.hubUserProfileNavigationSlidePublicState_MayA {
+    background: #a78637;
+    border-bottom: 1px inset #213400;
+    border-top: 1px inset #213400;
+    box-sizing: border-box;
+    height: 42px;
+    left: 0;
+    position: relative;
+    transform: translateY(-250px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 100%;
+    z-index: -1;
+}
+
+.hubUserProfileNavigationSlidePrivateState_MayA {
+    background: #a78637;
+    border-bottom: 1px inset #213400;
+    border-top: 1px inset #213400;
+    box-sizing: border-box;
+    height: 42px;
+    left: 0;
+    position: relative;
+    transform: translateY(-200px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 100%;
+    z-index: -1;
+}
+
+.hubUserProfileNavigationSlideMessagesState_MayA {
+    background: #a78637;
+    border-bottom: 1px inset #213400;
+    border-top: 1px inset #213400;
+    box-sizing: border-box;
+    height: 42px;
+    left: 0;
+    position: relative;
+    transform: translateY(-150px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 100%;
+    z-index: -1;
+}
+
+.hubUserProfileNavigationSlideFriendsState_MayA {
+    background: #a78637;
+    border-bottom: 1px inset #213400;
+    border-top: 1px inset #213400;
+    box-sizing: border-box;
+    height: 42px;
+    left: 0;
+    position: relative;
+    transform: translateY(-100px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 100%;
+    z-index: -1;
+}
+
+.hubUserProfileNavigationSlideContactState_MayA {
+    background: #a78637;
+    border-bottom: 1px inset #213400;
+    border-top: 1px inset #213400;
+    box-sizing: border-box;
+    height: 42px;
+    left: 0;
+    position: relative;
+    transform: translateY(-50px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    width: 100%;
+    z-index: -1;
+}
+
+.hubPublicProfileDeets_MayA {
+    height: auto;
+    width: 100%;
+}
+
+.hubUserPublicStats_MayA {
+    max-width: 750px;
+    padding: 5%;
+}
+
+.hubUserLocationStat_MayA {
+    color: #000102;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+    margin: 9px 0;
+    max-width: 750px;
+}
+
+.hubUserLocationMap_MayA {
+    filter: drop-shadow(5px 5px 2px #191408);
+    max-width: 50%;
+}
+
+.hubPhotoAttribution_MayA {
+    color: #000102;
+    font-family: 'Piazzolla', serif;
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+.hubUserDescriptionStat_MayA {
+    color: #000102;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+    margin: 30px 0 0 0;
+}
+
+.hubUserOccupationStat_MayA {
+    color: #000102;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+    margin: 50px 0 0 0;
+}
+
+.hubUserEmployerStat_MayA {
+    color: #000102;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+    margin: 10px 0 0 0;
+}
+
+.hubUserEducationStatLabel_MayA {
+    color: #000102;
+    font-family: 'Piazzolla', serif;
+    font-size: 24px;
+    margin: 60px 0 0 0;
+}
+
+.hubUserEducationStat_MayA {
+    color: #000102;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+    margin: 10px 0 0 0;
+}
+
+.hubUserEmailStat_MayA {
+    color: #000102;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+    margin: 40px 0 0 0;
+}
+
+.hubUserPhoneStat_MayA {
+    color: #000102;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+    margin: 10px 0 0 0;
+}
+
+.hubUserBirthdate_MayA {
+    color: #000102;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+    margin: 10px 0 5px 0;
+}
+
+.hubMessageCenter_MayA {
+    padding: 3%;
+    width: 100%;
+}
+
+.hubMessageCenter_MayA i {
+    color: #000102;
+}
+
+.hubMessageScroll_MayA {
+    height: 76vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.hubMessageCenterLabel_MayA {
+    color: #000102;
+    font-family: 'Piazzolla', serif;
+    font-size: 30px;
+    margin: 15px 0 15px 0;
+}
+
+.hubMainMessageContainer_MayA {
+    border-top: 3px solid #000102;
+    color: #000102;
+    cursor: pointer;
+    margin-top: 5px;
+    max-width: 750px;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.unreadIcon_MayA {
+    float: left;
+    font-size: 42px;
+    margin: 8px 0;
+}
+
+.hubMessageFromSubjectfalse_MayA {
+    color: #000102;
+    float: left;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+    margin: 0 10px 0 5px;
+}
+
+/* .hubMessageFromSubjectfalse_MayA:hover {
+  color: #e3e6eb;
+} */
+
+.hubMessageFromSubjecttrue_MayA {
+    color: #000102;
+    float: left;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+    margin: 10px 10px 0 10px;
+}
+
+/* .hubMessageFromSubjecttrue_MayA:hover {
+  color: #e3e6eb;
+} */
+
+.hubExpandedMessageContainer_MayA {
+    margin-left: 30px;
+    max-width: 900px;
+}
+
+.hubMessageAvatar_MayA {
+    float: left;
+    margin: 4px 1px 0 15px;
+    max-width: 3%;
+}
+
+.hubMessageMessage_MayA {
+    color: #000102;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+    margin: 10px 0 5px 0;
+    max-width: 750px;
+}
+
+
+.hubReplyNameDate_MayA {
+    color: #000102;
+    float: left;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+    margin: 3px 10px 0 5px;
+}
+
+.hubReplyText_MayA {
+    background: #9f9a8b;
+    border: none;
+    color: #000102;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+    margin-bottom: 35px;
+    max-width: 750px;
+    outline-color: #80909c;
+    rows: 3;
+    width: 80%;
+}
+
+.hubReplyResponseText_MayA {
+    background: #9f9a8b;
+    border: none;
+    color: #000102;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+    max-width: 750px;
+    rows: 3;
+    width: 80%;
+}
+
+.hubReplyResponseText_MayA::-webkit-input-placeholder {
+    color: #013b4f;
+}
+
+.hubReplyResponseText_MayA:-moz-placeholder {
+    color: #013b4f;
+}
+
+.hubReplyResponseText_MayA::-moz-placeholder {
+    color: #013b4f;
+}
+
+.hubReplyResponseText_MayA::-moz-placeholder {
+    color: #013b4f;
+}
+
+.hubReplyResponseText_MayA:-ms-input-placeholder {
+    color: #013b4f;
+}
+
+.hubReplyResponseText_MayA::placeholder {
+    color: #013b4f;
+}
+
+.hubReplySubmit_MayA {
+    background: #003346;
+    border-bottom: none;
+    border-left: 4px solid #376757;
+    border-right: 4px solid #376757;
+    border-top: none;
+    box-sizing: border-box;
+    color: #9f9a8b;
+    cursor: pointer;
+    filter: brightness(100%) invert(0%);
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+    margin: 1px 2px 15px 5px;
+    outline-color: #80909c;
+    padding-bottom: 8px;
+    transition: all 0.4s linear;
+}
+
+.hubReplySubmit_MayA:hover {
+    background: #809da7;
+    border-left: 15px solid #376757;
+    border-right: 1px solid #376757;
+    color: #080e03;
+    transition: all 0.4s linear;
+}
+
+.hubReplySubmit_MayA:active {
+    filter: invert(100%);
+    transition: all 0.2s linear;
+}
+
+.hubFriendsCenter_MayA {
+    padding: 3%;
+    width: 100%;
+}
+
+.hubFriendsCenterLabel_MayA {
+    color: #000102;
+    font-family: 'Piazzolla', serif;
+    font-size: 30px;
+    margin: 15px 0 15px 0;
+}
+
+.hubFriendsScroll_MayA {
+    height: 76vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.hubFriendsFilter_MayA {
+    background: #9f9a8b;
+    border: none;
+    color: #000102;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+    outline-color: #80909c;
+    width: 50%;
+}
+
+.hubFriendsFilter_MayA::-webkit-input-placeholder {
+    color: #013b4f;
+}
+
+.hubFriendsFilter_MayA:-moz-placeholder {
+    color: #013b4f;
+}
+
+.hubFriendsFilter_MayA::-moz-placeholder {
+    color: #013b4f;
+}
+
+.hubFriendsFilter_MayA::-moz-placeholder {
+    color: #013b4f;
+}
+
+.hubFriendsFilter_MayA:-ms-input-placeholder {
+    color: #013b4f;
+}
+
+.hubFriendsFilter_MayA::placeholder {
+    color: #013b4f;
+}
+
+.hubSearchIcon_MayA {
+    color: #000102;
+    font-size: 18px;
+    margin: 5px 15px 0 0;
+}
+
+.hubFriendRollEntry_MayA {
+    cursor: pointer;
+    margin: 20px 0 0 50px;
+    max-width: 750px;
+}
+
+.hubFriendsRollAvatar_MayA {
+    filter: drop-shadow(5px 5px 2px #191408);
+    margin-bottom: 7px;
+    max-height: 50px;
+    max-width: 50px;
+}
+
+.hubFriendsNameListing_MayA {
+    color: #000102;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+}
+
+.hubFriendMessageButton_MayA {
+    background: #003346;
+    border-bottom: none;
+    border-left: 4px solid #376757;
+    border-right: 4px solid #376757;
+    border-top: none;
+    box-sizing: border-box;
+    color: #9f9a8b;
+    cursor: pointer;
+    filter: brightness(100%) invert(0%);
+    font-family: 'Piazzolla', serif;
+    font-size: 24px;
+    margin: 9px 5px 15px 50px;
+    outline-color: #80909c;
+    padding-bottom: 8px;
+    transition: all 0.4s linear;
+}
+
+.hubFriendMessageButton_MayA:hover {
+    background: #809da7;
+    border-left: 15px solid #376757;
+    border-right: 1px solid #376757;
+    color: #080e03;
+    transition: all 0.4s linear;
+}
+
+.hubFriendMessageButton_MayA:active {
+    filter: invert(100%);
+    transition: all 0.2s linear;
+}
+
+.hubProfileDisplayerActive_MayA {
+    background: #9f9a8b;
+    height: auto;
+    left: 15%;
+    opacity: 1;
+    position: absolute;
+    top: 10%;
+    transition: all 0.4s linear;
+    width: 68%;
+    z-index: 100;
+}
+
+.hubProfileDisplayerInactive_MayA {
+    background: #9f9a8b;
+    height: auto;
+    left: 145%;
+    opacity: 0;
+    position: absolute;
+    top: -70%;
+    transition: all 0.4s linear;
+    width: 68%;
+    z-index: -6;
+}
+
+.hubProfileDisplayCloseButton_MayA {
+    background: #003346;
+    border-bottom: none;
+    border-left: 4px solid #376757;
+    border-right: 4px solid #376757;
+    border-top: none;
+    box-sizing: border-box;
+    color: #9f9a8b;
+    cursor: pointer;
+    filter: brightness(100%) invert(0%);
+    float: right;
+    font-family: 'Piazzolla', serif;
+    font-size: 24px;
+    margin: 15px;
+    outline-color: #80909c;
+    padding-bottom: 8px;
+    transition: all 0.4s linear;
+}
+
+.hubProfileDisplayCloseButton_MayA:hover {
+    background: #809da7;
+    border-left: 15px solid #376757;
+    border-right: 1px solid #376757;
+    color: #080e03;
+    transition: all 0.4s linear;
+}
+
+.hubProfileDisplayCloseButton_MayA:active {
+    filter: invert(100%);
+    transition: all 0.2s linear;
+}
+
+.hubProfileDisplayAvatar_MayA {
+    filter: drop-shadow(10px 15px 4px #191408);
+    float: left;
+    margin: 15px;
+    max-width: 200px;
+}
+
+.hubProfileDisplayDataContainer_MayA {
+    padding: 15px;
+}
+
+.hubProfileDisplayName_MayA {
+    color: #000102;
+    float: left;
+    font-family: 'Piazzolla', serif;
+    font-size: 36px;
+}
+
+.hubProfileDisplayDescritors_MayA {
+    color: #000102;
+    float: left;
+    font-family: 'Piazzolla', serif;
+    font-size: 24px;
+}
+
+.hubDisplayContainer2_MayA {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.profileDisplayStats_MayA {
+    color: #000102;
+    float: left;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+    width: 70%;
+}
+
+.hubProfileDisplayBioBlock_MayA {
+    padding: 15px;
+    min-width: 215px;
+    width: 30%;
+
+}
+
+.hubProfileDisplayBioImage_MayA {
+    filter: drop-shadow(10px 15px 4px #191408);
+    max-width: 200px;
+}
+
+.hubProfileDisplayUserDatas_MayA {
+    float: left;
+    padding: 15px;
+    width: 60%;
+}
+
+.hubProfileDisplayDescritors2_MayA {
+    color: #000102;
+    float: left;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+    width: 70%;
+}
+
+.hubDisplayMessageButton_MayA {
+    background: #003346;
+    border-bottom: none;
+    border-left: 4px solid #376757;
+    border-right: 4px solid #376757;
+    border-top: none;
+    box-sizing: border-box;
+    color: #9f9a8b;
+    cursor: pointer;
+    filter: brightness(100%) invert(0%);
+    float: right;
+    font-family: 'Piazzolla', serif;
+    font-size: 24px;
+    margin: 15px;
+    outline-color: #80909c;
+    padding-bottom: 8px;
+    transition: all 0.4s linear;
+}
+
+.hubDisplayMessageButton_MayA:hover {
+    background: #809da7;
+    border-left: 15px solid #376757;
+    border-right: 1px solid #376757;
+    color: #080e03;
+    transition: all 0.4s linear;    
+}
+
+.hubDisplayMessageButton_MayA:active {
+    filter: invert(100%);
+    transition: all 0.2s linear;
+}
+
+.hubDisplayMessageModalActive_MayA {
+    background: #809da7;
+    height: auto;
+    left: 15%;
+    opacity: 1;
+    position: absolute;
+    top: 10%;
+    transition: all 0.4s linear;
+    width: 68%;
+    z-index: 100;
+}
+
+.hubDisplayMessageModalInactive_MayA {
+    background: #809da7;
+    height: auto;
+    left: -45%;
+    opacity: 0;
+    position: absolute;
+    top: 70%;
+    transition: all 0.4s linear;
+    width: 68%;
+    z-index: -6;
+}
+
+.hubMessageModalLabel_MayA {
+    color: #000102;
+    font-family: 'Piazzolla', serif;
+    font-size: 24px;
+    margin: 30px;
+}
+
+.hubMessageModalButtonFields_MayA {
+    padding: 15px 30% 45px 15%;
+}
+
+.hubMessageModalButton_MayA {
+    background: #003346;
+    border-bottom: none;
+    border-left: 4px solid #376757;
+    border-right: 4px solid #376757;
+    border-top: none;
+    box-sizing: border-box;
+    color: #9f9a8b;
+    cursor: pointer;
+    filter: brightness(100%) invert(0%);
+    float: right;
+    font-family: 'Piazzolla', serif;
+    font-size: 24px;
+    margin: 15px;
+    outline-color: #80909c;
+    padding-bottom: 8px;
+    transition: all 0.4s linear;
+}
+
+.hubMessageModalButton_MayA:hover {
+    background: #809da7;
+    border-left: 15px solid #376757;
+    border-right: 1px solid #376757;
+    color: #080e03;
+    transition: all 0.4s linear; 
+}
+
+.hubMessageModalButton_MayA:active {
+    filter: invert(100%);
+    transition: all 0.2s linear;
+}
+
+.hubMessageModalInputs_MayA {
+    padding: 15px 45px 0 45px;
+}
+
+.hubMessageModalSubjectInput_MayA {
+    background: #9f9a8b;
+    border: none;
+    color: #000102;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+    margin: 0 0 0 8%;
+    outline-color: #80909c;
+    width: 80%;
+}
+
+.hubMessageModalMessageInput_MayA {
+    background: #9f9a8b;
+    border: none;
+    color: #000102;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+    margin: 5px 0 0 8%;
+    outline-color: #80909c;
+    width: 80%;
+}
+
+.hubMessageModalToFields_MayA {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 20px 0 10px 12%;
+    width: 100%;
+}
+
+.hubRecipientAvatar_MayA {
+    filter: drop-shadow(10px 15px 4px #191408);
+    float: left;
+    max-width: 50px;
+}
+
+.hubRecipientName_MayA {
+    float: left;
+    color: #000102;
+    font-family: 'Piazzolla', serif;
+    font-size: 24px;
+    margin: 12px 0 8px 15px;
+}
+
+.hubRemoveGuardrailActive_MayA {
+    background: #002039;
+    height: auto;
+    left: 25%;
+    opacity: 1;
+    position: absolute;
+    top: 30%;
+    transition: all 0.4s linear;
+    width: 50%;
+    z-index: 100;
+}
+
+.hubRemoveGuardrailInactive_MayA {
+    background: #002039;
+    height: auto;
+    left: -45%;
+    opacity: 0;
+    position: absolute;
+    top: 70%;
+    transition: all 0.4s linear;
+    width: 68%;
+    z-index: -6;
+}
+
+.hubGuardrailText_MayA {
+    color: #9f9a8b;
+    font-family: 'Piazzolla', serif;
+    font-size: 24px;
+    margin: 24px 10% 8px 10%;
+}
+
+.hubGuardrailButton_MayA {
+    background: #003346;
+    border-bottom: none;
+    border-left: 4px solid #376757;
+    border-right: 4px solid #376757;
+    border-top: none;
+    box-sizing: border-box;
+    color: #9f9a8b;
+    cursor: pointer;
+    filter: brightness(100%) invert(0%);
+    font-family: 'Piazzolla', serif;
+    font-size: 24px;
+    margin: 15px;
+    outline-color: #80909c;
+    padding-bottom: 8px;
+    transition: all 0.4s linear;
+}
+
+.hubGuardrailButton_MayA:hover {
+    background: #809da7;
+    border-left: 15px solid #376757;
+    border-right: 1px solid #376757;
+    color: #080e03;
+    transition: all 0.4s linear; 
+}
+
+.hubGuardrailButton_MayA:active {
+    filter: invert(100%);
+    transition: all 0.2s linear;
+}
+
+.hubGuardrailButtonsDiv_MayA {
+    float: left;
+    margin-left: 35%;
+}
+
+.hubOtherProfileEditButton_MayA {
+    float: right;
+    padding: 30px 45px;
+}
+
+.pendingFriendRequests_MayA {
+    color: #000102;
+    float: right;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+    left: 80%;
+    margin: 1%;
+    position: absolute;
+    top: 20%;
+}
+
+.hubContactCenter_MayA {
+    padding: 10%;
+    width: 100%;
+}
+
+.hubContactLabel_MayA {
+    color: #000102;
+    font-family: 'Piazzolla', serif;
+    font-size: 30px;
+}
+
+.hubFooter_MayA {
+    bottom: 3px;
+    color: #9f9a8b;
+    filter: brightness(300%);
+    font-family: 'Piazzolla', serif;
+    font-size: 13px;
+    left: 80%;
+    position: absolute;
+}
+
+.hubContactFormField_MayA {
+    margin: 25px 0;
+}
+
+.hubContactSubjectInput_MayA {
+    background: #9f9a8b;
+    border: none;
+    color: #000102;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+    margin: 5px 0 5px 0;
+    max-width: 750px;
+    outline-color: #80909c;
+    width: 80%;
+}
+
+.hubContactMessageInput_MayA {
+    background: #9f9a8b;
+    border: none;
+    color: #000102;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+    margin: 5px 0 5px 0;
+    max-width: 750px;
+    outline-color: #80909c;
+    width: 80%;
+}
+
+.hubContactAdminSubmitButton_MayA {
+    background: #003346;
+    border-bottom: none;
+    border-left: 4px solid #376757;
+    border-right: 4px solid #376757;
+    border-top: none;
+    box-sizing: border-box;
+    color: #9f9a8b;
+    cursor: pointer;
+    filter: brightness(100%) invert(0%);
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+    margin: 5px 0;
+    outline-color: #80909c;
+    padding-bottom: 8px;
+    position: relative;
+    transition: all 0.4s linear;
+    width: 76%;
+}
+
+.hubContactAdminSubmitButton_MayA:hover {
+    background: #809da7;
+    border-left: 15px solid #376757;
+    border-right: 1px solid #376757;
+    color: #080e03;
+    transition: all 0.4s linear;
+}
+
+.hubContactAdminSubmitButton_MayA:active {
+    filter: invert(100%);
+    transition: all 0.2s linear;
+}
+
+.removeShare_MayA {
+    color: #000102;
+    cursor: pointer;
+    float: right;
+    font-size: 30px;
+}
+
+.deleteGuardrailActive_MayA {
+    background: #002039;
+    height: auto;
+    left: 25%;
+    opacity: 1;
+    position: absolute;
+    top: 30%;
+    transition: all 0.4s linear;
+    width: 50%;
+    z-index: 100;
+}
+
+.deleteGuardrailInactive_MayA {
+    background: #002039;
+    height: auto;
+    left: -45%;
+    opacity: 0;
+    position: absolute;
+    top: 70%;
+    transition: all 0.4s linear;
+    width: 68%;
+    z-index: -6;
+}
+
+.deleteCommentGuardrailActive_MayA {
+    background: #002039;
+    height: auto;
+    left: 25%;
+    opacity: 1;
+    position: absolute;
+    top: 30%;
+    transition: all 0.4s linear;
+    width: 50%;
+    z-index: 100;
+}
+
+.deleteCommentGuardrailInactive_MayA {
+    background: #002039;
+    height: auto;
+    left: -45%;
+    opacity: 0;
+    position: absolute;
+    top: 70%;
+    transition: all 0.4s linear;
+    width: 68%;
+    z-index: -6;
+}
+
+.editComment_MayA {
+    color: #000102;
+    cursor: pointer;
+    float: right;
+    font-size: 18px;
+}
+
+.hubEditMessageInactive_MayA {
+    background: #9f9a8b;
+    left: -35%;
+    opacity: 0;
+    padding: 1% 3%;
+    position: absolute;
+    transition: all 0.5s linear;
+    top: -55%;
+    width: 30%;
+    z-index: -55;
+}
+
+.hubEditMessageActive_MayA {
+    background: #9f9a8b;
+    left: 35%;
+    opacity: 1;
+    padding: 1% 3%;
+    position: absolute;
+    transition: all 0.5s linear;
+    top: 5%;
+    width: 30%;
+    z-index: 55;
+}
+
+.hubEditMessageActive_MayA img {
+    filter: drop-shadow(10px 15px 4px #191408);
+    max-width: 15%;
+}
+
+.hubEditMessageActive_MayA p {
+    color: #000102;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.hubEditMessageActive_MayA textarea {
+    background: #809da7;
+    border: none;
+    color: #000102;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+    outline-color: #80909c;
+    width: 100%;
+}
+
+.hubEditMessageActive_MayA button {
+    background: #003346;
+    border-bottom: none;
+    border-left: 4px solid #376757;
+    border-right: 4px solid #376757;
+    border-top: none;
+    box-sizing: border-box;
+    color: #9f9a8b;
+    cursor: pointer;
+    filter: brightness(100%) invert(0%);
+    float: right;
+    font-family: 'Piazzolla', serif;
+    font-size: 24px;
+    margin: 5px 45px;
+    outline-color: #80909c;
+    padding-bottom: 8px;
+    position: relative;
+    transition: all 0.4s linear;
+
+}
+
+.hubEditMessageActive_MayA button:hover {
+    background: #809da7;
+    border-left: 15px solid #376757;
+    border-right: 1px solid #376757;
+    color: #080e03;
+    transition: all 0.4s linear;
+}
+
+.hubEditMessageActive_MayA button:active {
+    filter: invert(100%);
+    transition: all 0.2s linear;
+}
+
+.hubEditMessageInactive_MayA {
+    background: #809da7;
+    left: -135%;
+    opacity: 0;
+    padding: 1% 3%;
+    position: absolute;
+    transition: all 0.5s linear;
+    top: 15%;
+    width: 30%;
+    z-index: -55;
+}
+
+.hubEditMessageInactive_MayA img {
+    max-width: 15%;
+}
+
+.hubEditMessageInactive_MayA p {
+    color: #000102;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.hubEditMessageInactive_MayA textarea {
+    background: #809da7;
+    border: none;
+    color: #000102;
+    font-family: 'Piazzolla', serif;
+    font-size: 18px;
+    outline-color: #80909c;
+    width: 100%;
+}
+
+.hubEditMessageInactive_MayA button {
+    background: #003346;
+    border-bottom: none;
+    border-left: 4px solid #376757;
+    border-right: 4px solid #376757;
+    border-top: none;
+    box-sizing: border-box;
+    color: #9f9a8b;
+    cursor: pointer;
+    filter: brightness(100%) invert(0%);
+    float: right;
+    font-family: 'Piazzolla', serif;
+    font-size: 24px;
+    margin: 5px 45px;
+    outline-color: #80909c;
+    padding-bottom: 8px;
+    position: relative;
+    transition: all 0.4s linear;
+}
+
+.removeShareComment_MayA {
+    cursor: pointer;
+    float: right;
+    margin: 0 5px;
+}
+
+@media only screen and (max-width: 768px) {
+    .hubReactionGestalt_MayA {
+        margin: 4px;
+        width: 25%;
+    }
+
+    .hubShareReactionTally_MayA {
+        font-size: 18px;
+        margin: 3px 1px 10px 4px;
+    }
+
+    .hubShareReactionDelete_MayA {
+        margin: 3px 4px 10px 0;
+    }
+
+    .hubReaderTodayBlock_MayA {
+        width: 5%;
+    }
+
+    .currentBlogTagline_MayA {
+        width: 80%;
+    }
+
+    .hubUserProfileNavigation_MayA {
+        transform: scale(0.9) translateX(-25px);
+    }
+}
+
+@media only screen and (max-width: 414px) {
+
+    .hubBlogsDashboard_MayA {
+        width: 99%;
+    }
+
+    .hubPublicPrivateProfilePane_MayA {
+        width: 60%;
+    }
+
+    .hubTitleFlex_MayA {
+        transform: scale(0.9);
+    }
+
+    .hubBylineName_MayA {
+        font-size: 18px;
+    }
+
+    .hubShareComments_MayA {
+        font-size: 18px;
+    }
+
+    .hubShareAddReactionsToggle_MayA p {
+        font-size: 13px;
+        transform: translateX(-10px);
+    }
+
+    .hubReactionGestalt_MayA {
+        width: 40%;
+    }
+
+    .hubShareReactionEmoji_MayA {
+        width: 50%;
+    }
+
+    .hubTabLabel_MayA {
+        font-size: 13px;
+    }
+
+    .hubShareCommentsLabel_MayA {
+        font-size: 13px;
+    }
+
+    .hubShareCommenterName_MayA {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .hubShareCommentComment_MayA {
+        font-size: 13px;
+    }
+
+    .hubSignoutButton_MayA {
+        transform: translateX(-30px);
+    }
+
+    .hubShareNewComments_MayA {
+        font-size: 13px;
+    }
+
+    .hubShareHeadline_MayA {
+        font-size: 30px;
+    }
+
+    .hubReaderDashboard_MayA {
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+
+    .hubMyBlogsLabel_MayA {
+        font-size: 30px;
+    }
+
+    .hubBlogListEntry_MayA {
+        font-size: 18px;
+    }
+
+    .hubNewBlogButton_MayA {
+        font-size: 12px;
+        transform: translateX(-20px);
+    }
+
+    .currentBlogLogoImage_MayA {
+        max-width: 100px;
+    }
+
+    .currentBlogName_MayA {
+        font-size: 30px;
+    }
+
+    .currentBlogTagline_MayA {
+        font-size: 18px;
+    }
+
+    .hubContributersLabel_MayA {
+        font-size: 18px;
+    }
+
+    .hubBlogContributerName_MayA {
+        font-size: 18px;
+    }
+
+    .hubBlogDataPosts_MayA {
+        font-size: 18px;
+    }
+
+    .hubBlogDataDiv_MayA {
+        padding-left: 30px;
+    }
+
+    .hubLoggedInAsAvatar_MayA {
+        max-width: 70px;
+    }
+
+    .hubUserProfileNavigation_MayA {
+        transform: translateX(-70px) translateY(-50px) scale(0.6);
+    }
+
+    .hubMessageMessage_MayA {
+        font-size: 18px;
+    }
+
+    .hubMessageFromSubjecttrue_MayA {
+        font-size: 18px;
+    }
+
+    .hubMessageFromSubjectfalse_MayA {
+        font-size: 18px;
+    }
+
+    .hubReplyText_MayA {
+        font-size: 18px;
+    }
+
+    .hubReplyResponseText_MayA {
+        font-size: 18px;
+    }
+
+    .hubProfileDisplayName_MayA {
+        font-size: 18px;
+    }
+
+    .profileDisplayStats_MayA {
+        font-size: 18px;
+    }
+
+    .hubProfileDisplayUserDatas_MayA {
+        padding: 3px;
+        width: 80%;
+    }
+}
