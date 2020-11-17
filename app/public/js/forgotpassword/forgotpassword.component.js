@@ -41,7 +41,7 @@
         
         function setSkin() {
             
-            vm.forgotPasswordMonth = '_JanuaryA';
+            vm.forgotPasswordMonth = '_JanuaryB';
             vm.forgotPasswordContainer = 'forgotPassword_Active' + vm.forgotPasswordMonth;
             
             switch (vm.forgotPasswordMonth) {
