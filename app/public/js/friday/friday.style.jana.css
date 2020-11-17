@@ -1,0 +1,877 @@
+.fridayBackgroundDiv_JanuaryA {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/friday/january/alexandre-caron-7YI0IpaRBt4-unsplash.jpg);
+    background-size: 100%;
+    height: 100%;
+    left: 0;
+    opacity: 0.6;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.fridayContainerActive_JanuaryA {
+    filter: blur(0px);
+}
+
+.fridayContainerInactive_JanuaryA {
+    filter: blur(15px);
+}
+
+.fridayTitleStrip_JanuaryA {
+    background: #4e5f7b;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Space Grotesk', sans-serif;
+    height: auto;
+    justify-content: flex-start;
+    opacity: 0.9;
+    padding: 4px 2vw 4px 2vw;
+    width: 100%;
+}
+
+.fridayLogo_JanuaryA {
+    cursor: pointer;
+    filter: brightness(40%);
+    max-width: 75px;
+}
+
+.fridayReadingPlaylistTitle_JanuaryA {
+    color: #070c13;
+    font-size: 42px;
+    margin: 30px 0 0 96px;
+}
+
+.fridayTabStrip_JanuaryA {
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Space Grotesk', sans-serif;
+    height: auto;
+    opacity: 0.9;
+    padding: 0 10px;
+    width: 100%;
+}
+
+.fridayTabActive_JanuaryA {
+    background: #cfd5de;
+    color: #0d1522;
+    cursor: none;
+    font-size: 24px;
+    padding: 5px 45px;
+    transition: all 0.5s linear;
+}
+
+.fridayTabInactive_JanuaryA {
+    background: transparent;
+    color: #4e5f7b;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 5px 25px;
+    transition: all 0.5s linear;
+}
+
+.fridayContent_JanuaryA {
+    background: transparent;
+    height: 80vh;
+    width: 100%;
+}
+
+.fridayContentContent_JanuaryA {
+    background: #c1c9d4;
+    height: 80vh;
+    opacity: 0.9;
+    overflow-x: hidden;
+    overflow-Y: auto;
+    width: 105%;
+}
+
+.fridayReaderNavigationButtons_JanuaryA {
+    background: #898f98;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: flex-start;
+    margin: 0 0 0 0;
+    position: fixed;
+    width: 100%;
+    z-index: 15;
+}
+
+.markAllReadTextFriday_JanuaryA {
+    color: #070c13;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    margin: 35px 10px 0 40px;
+}
+
+.fridayTrackProgress_JanuaryA {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    cursor: pointer;
+    display: block;
+    font-size: 48px;
+    margin: 15px 1px 15px 5px;
+    padding-left: 35px;
+    position: relative;
+    user-select: none;
+}
+
+.fridayTrackProgress_JanuaryA input {
+    cursor: pointer;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    width: 0;
+}
+
+.fridayCheckbox_JanuaryAtrue {
+    background-color: #1f2631;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    top: 15px;
+    transition: all 0.3s linear;
+    width: 50px;
+}
+
+.fridayCheckbox_JanuaryAfalse {
+    background-color: #1f2631;
+    border: none;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    top: 15px;
+    transition: all 0.3s linear;
+    width: 50px;
+}
+
+.fridaySwitchUnchecked_JanuaryAtrue {
+    background-color: #b9c2d3;
+    height: 20px;
+    left: 30px;
+    position: absolute;
+    top: 0;
+    transition: all 0.2s linear;
+    width: 20px;
+}
+
+.fridaySwitchUnchecked_JanuaryAfalse {
+    background-color: #b9c2d3;
+    height: 20px;
+    left: 0px;
+    position: absolute;
+    top: 0;
+    transition: all 0.2s linear;
+    width: 20px;
+}
+
+.fridayReadAll_JanuaryA {
+    color: #070c13;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 24px;
+    margin: 14px 0 14px 25px;
+}
+
+.fridayReadAllButton_JanuaryA {
+    background: #dce1e9;
+    border: transparent;
+    color: #0d1522;
+    cursor: pointer;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 36px;
+    height: 60px;
+    outline-color: #909baa;
+    transform: skewX(-15deg);
+    transition: all 0.5s linear;
+    width: 60px;
+}
+
+.fridayReadAllButton_JanuaryA:hover {
+    background: #0d1522;
+    color: #dce1e9;
+    transform: skewX(-5deg);
+    transition: all 0.5s linear;
+}
+
+.fridayReadAllButton_JanuaryA:active {
+    background: #b4bcc7;
+    color: #4a4d54;
+    transition: all 0.1s linear;
+}
+
+.fridaySorting_JanuaryA {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 14px 0 14px 100px;
+}
+
+.fridaySorting_JanuaryA p {
+    color: #070c13;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    margin: 20px 20px 0 0;
+}
+
+.fridaySorting_JanuaryA button {
+    margin: 0 5px;
+}
+
+.fridayFeedsDiv_JanuaryA {
+    height: auto;
+    margin: 90px 50px 0 50px;
+    width: 90%;
+}
+
+.fridaySubscriptions_JanuaryA {
+    cursor: pointer;
+    margin: 10px;
+}
+
+.fridayBuffer_JanuaryA {
+    height: 20px;
+    width: 100%;
+}
+
+.fridayFeedContainer_JanuaryA {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 5px 5px 5px -15px;
+}
+
+.fridaySubIcon_JanuaryA {
+    height: 65px;
+    margin-right: 20px;
+    transition: all 0.5s linear;
+    width: 65px;
+}
+
+.fridaySubscriptionTitle_JanuaryA {
+    color: #070c13;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    line-height: 1.2;
+    margin: 5px 0 10px 0;
+    width: 650px;
+}
+
+.fridayUnreadText_JanuaryA {
+    color: #070c13;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    margin: 10px 40px 0 30px;
+    width: 35px;
+}
+
+.fridayReadText_JanuaryA {
+    color: #070c13;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    margin: 10px 40px 0 30px;
+    width: 35px;
+}
+
+.fridayManageTabsButton_JanuaryA {
+    background: #dce1e9;
+    border: transparent;
+    color: #0d1522;
+    cursor: pointer;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 24px;
+    height: auto;
+    margin: 56px 0 0 20%;
+    outline-color: #909baa;
+    position: relative;
+    transform: skewX(-15deg);
+    transition: all 0.5s linear;
+    width: auto;
+}
+
+.fridayManageTabsButton_JanuaryA:hover {
+    background: #0d1522;
+    color: #dce1e9;
+    transform: skewX(-5deg);
+    transition: all 0.5s linear;
+}
+
+.fridayManageTabsButton_JanuaryA:active {
+    background: #b4bcc7;
+    color: #4a4d54;
+    transition: all 0.1s linear;
+}
+
+.fridayManageTabsSubsModal_JanuaryA {
+    background: #9eabbc;
+    border: solid 5px #343a43;
+    filter: blur(0px);
+    height: 90vh;
+    left: 2%;
+    opacity: 1;
+    position: absolute;
+    top: 5vh;
+    transition: all 0.4s linear;
+    width: 95%;
+    z-index: 50;
+}
+
+.fridayManageTabsSubsModalBlur_JanuaryA {
+    background: #9eabbc;
+    border: solid 5px #343a43;
+    filter: blur(5px);
+    height: 90vh;
+    left: 2%;
+    opacity: 0.4;
+    position: absolute;
+    top: 5vh;
+    transition: all 0.4s linear;
+    width: 95%;
+    z-index: 50;
+}
+
+.fridayManageTabsSubsModalInactive_JanuaryA {
+    opacity: 0;
+    top: -80vh;
+    transition: all 0.4s linear;
+    z-index: -5;
+}
+
+.fridayManageTitleBar_JanuaryA {
+    background: #070c13;
+    color: #dce1e9;
+    font-family: 'Space Grotesk', sans-serif;
+    height: 6vh;
+    opacity: 0.9;
+    position: relative;
+    padding: 1vh 0 2vh 1vw;
+    width: 99%;
+}
+
+.fridayModalExit_JanuaryA {
+    color: #dce1e9;
+    cursor: pointer;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 48px;
+    float: left;
+    left: 94%;
+    position: relative;
+    top: 1%;
+}
+
+.fridayManageTitle_JanuaryA {
+    color: #dce1e9;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 30px;
+    margin: 20px 0 0 0;
+}
+
+.fridayManagerModalContainer_JanuaryA {
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    height: 81vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.fridayManagerTabsSection_JanuaryA {
+    height: auto;
+    padding: 15px;
+    position: relative;
+    width: 30%;
+}
+
+.fridayTabsManageTitle_JanuaryA {
+    color: #070c13;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 24px;
+}
+
+.fridayManageTabsContainer_JanuaryA {
+    margin: 40px 8%;
+}
+
+.fridayTabManageTab_JanuaryA {
+    color: #070c13;
+    cursor: pointer;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 24px;
+    margin: 15px 0 15px 10px;
+}
+
+.fridayTabManageSubTab_JanuaryA {
+    color: #070c13;
+    cursor: pointer;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 15px;
+    margin: 1px 0 30px 40px;
+    width: 10%;
+}
+
+.fridayManagerSubscriptionsSection_JanuaryA {
+    height: auto;
+    padding: 15px;
+    position: relative;
+    width: 30%;
+}
+
+.fridayTabsSubscriptionTitle_JanuaryA {
+    color: #070c13;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 24px;
+}
+
+.fridayManageSubIcon_JanuaryA {
+    height: 40px;
+    width: 40px;
+}
+
+.fridaySubManageSubTab_JanuaryA {
+    color: #070c13;
+    cursor: pointer;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 15px;
+    margin: 4px 0 1px 10px;
+    transform: translateX(100px) translateY(-40px);
+    width: 10%;
+}
+
+.fridayManageSubsTitles_JanuaryA {
+    color: #070c13;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    margin: -15px 0 30px 1px;
+}
+
+.fridayManagerFeedsSection_JanuaryA {
+    height: auto;
+    padding: 15px;
+    position: relative;
+    width: 30%;
+}
+
+.fridayManagerFeedsTitle_JanuaryA {
+    color: #070c13;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 24px;
+}
+
+.fridayManageSearch_JanuaryA {
+    background: #dce1e9;
+    border: none;
+    color: #070c13;
+    float: left;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    margin-top: 3px;
+    outline-color: #909baa;
+    padding-left: 5px;
+    width: 100%;
+}
+
+.fridayManageSubsTitlesFeeds_JanuaryA {
+    color: #070c13;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    margin: -15px 0 30px 1px;
+}
+
+.fridayCreateEditTabManagement_JanuaryA {
+    background: #69788f;
+    border: solid 5px #4a4d54;
+    height: auto;
+    left: 22%;
+    opacity: 1;
+    padding: 45px;
+    position: absolute;
+    top: 25vh;
+    transition: all 0.4s linear;
+    width: 50%;
+    z-index: 60;
+}
+
+.fridayCreateEditTabTitle_JanuaryA {
+    color: #070c13;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 24px;
+    margin: 15px 0 30px 25px;
+}
+
+.fridayTabEditorFields_JanuaryA {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin: 10px 0 0 60px;
+}
+
+.fridayTabNameLabel_JanuaryA {
+    color: #070c13;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    margin: 0 9px 0 0;
+}
+
+.fridayTabNameInput_JanuaryA {
+    background: #9eabbc;
+    border: none;
+    color: #070c13;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    height: 21px;
+    margin: 0 9px;
+    outline: #909baa;
+    width: 350px;
+}
+
+.fridayTabEditorPodcastBlogStatus_JanuaryA {
+    margin: -13px 0 0 40px;
+}
+
+#fridayUnreadText_JanuaryA {
+    color: #070c13;
+}
+
+#fridayReadText_JanuaryA {
+    color: #070c13;
+}
+
+.fridayTabEditorFields_JanuaryA {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin: 10px 0 0 60px;
+}
+
+.fridayTabEditorErrorMessage_JanuaryA {
+    color: #ff0000;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    margin-left: 120px;
+    margin-top: 20px;
+}
+
+.fridayManageTabsConfirmButton_JanuaryA {
+    background: #dce1e9;
+    border: transparent;
+    color: #0d1522;
+    cursor: pointer;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    height: 40px;
+    margin: 56px 0 0 5%;
+    outline-color: #909baa;
+    position: relative;
+    transform: skewX(-15deg);
+    transition: all 0.5s linear;
+    width: auto;
+}
+
+.fridayManageTabsConfirmButton_JanuaryA:hover {
+    background: #0d1522;
+    color: #dce1e9;
+    transform: skewX(-5deg);
+    transition: all 0.5s linear;
+}
+
+.fridayManageTabsConfirmButton_JanuaryA:active {
+    background: #b4bcc7;
+    color: #4a4d54;
+    transition: all 0.1s linear;
+}
+
+.fridayManageTabsSubmitCancelButton_JanuaryA {
+    background: #dce1e9;
+    border: transparent;
+    color: #0d1522;
+    cursor: pointer;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    height: 40px;
+    margin: 56px 0 0 20%;
+    outline-color: #909baa;
+    position: relative;
+    transform: skewX(-15deg);
+    transition: all 0.5s linear;
+    width: auto;
+}
+
+.fridayManageTabsSubmitCancelButton_JanuaryA:hover {
+    background: #0d1522;
+    color: #dce1e9;
+    transform: skewX(-5deg);
+    transition: all 0.5s linear;
+}
+
+.fridayManageTabsSubmitCancelButton_JanuaryA:active {
+    background: #b4bcc7;
+    color: #4a4d54;
+    transition: all 0.1s linear;
+}
+
+.fridayGuardRail_JanuaryA {
+    background: #dce1e9;
+    border: solid 5px #4a4d54;
+    height: auto;
+    left: 32%;
+    opacity: 1;
+    padding: 45px;
+    position: absolute;
+    top: 25vh;
+    transition: all 0.4s linear;
+    width: 30%;
+    z-index: 60;
+}
+
+.fridayGuardRailText_JanuaryA {
+    color: #070c13;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 24px;
+    margin: 15px 0 30px 25px;
+}
+
+.fridayGuardRailButtons_JanuaryA {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin: 10px 0 0 60px;
+}
+
+.hubReaderDay1FridayActive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/friday/january/alexandre-caron-7YI0IpaRBt4-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay1FridayInactive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/friday/january/alexandre-caron-7YI0IpaRBt4-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-115%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay2FridayActive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/friday/january/alexandre-caron-7YI0IpaRBt4-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay2FridayInactive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/friday/january/alexandre-caron-7YI0IpaRBt4-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-230%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay3FridayActive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/friday/january/alexandre-caron-7YI0IpaRBt4-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay3FridayInactive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/friday/january/alexandre-caron-7YI0IpaRBt4-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-345%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay4FridayActive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/friday/january/alexandre-caron-7YI0IpaRBt4-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay4FridayInactive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/friday/january/alexandre-caron-7YI0IpaRBt4-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-460%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay5FridayActive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/friday/january/alexandre-caron-7YI0IpaRBt4-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 3;
+}
+
+.hubReaderDay5FridayInactive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/friday/january/alexandre-caron-7YI0IpaRBt4-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-575%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay6FridayActive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/friday/january/alexandre-caron-7YI0IpaRBt4-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay6FridayInactive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/friday/january/alexandre-caron-7YI0IpaRBt4-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-690%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay7FridayActive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/friday/january/alexandre-caron-7YI0IpaRBt4-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay7FridayInactive_JanuaryA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/friday/january/alexandre-caron-7YI0IpaRBt4-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-705%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}

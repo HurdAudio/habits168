@@ -105,7 +105,13 @@
                 url: '/forgotpassword',
                 parent: 'app',
                 component: 'forgotpassword'
-            });
+            })
+            .state({
+                name: 'friday',
+                url: '/friday/:userUuid',
+                parent: 'app',
+                component: 'friday'
+        });
     }
 
 }());

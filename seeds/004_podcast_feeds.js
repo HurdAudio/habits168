@@ -220,6 +220,30 @@ exports.seed = function(knex, Promise) {
           title: 'The Thriving Artist',
           created_at: new Date('2019-06-01 17:21:00.000 UTC'),
           updated_at: new Date('2019-06-01 17:21:00.000 UTC')
+        },
+          {
+          uuid: 'ecb02059-d793-42a3-ae31-dadf11ab771c',
+          author: 'Wes Bos &amp; Scott Tolinski - Full Stack JavaScript Web Developers',
+          description: 'Full Stack Developers Wes Bos and Scott Tolinski dive deep into web development topics, explaining how they work and talking about their own experiences. They cover from JavaScript frameworks like React, to the latest advancements in CSS to simplifying web tooling.',
+          link: 'https://syntax.fm/',
+          image: 'https://habits168-hurdaudio.s3.amazonaws.com/blog_logos/syntaxlogo.png',
+          items: null,
+          rss: 'http://feed.syntax.fm/rss',
+          title: 'Syntax - Tasty Web Development Treats',
+          created_at: new Date('2019-06-01 17:21:00.000 UTC'),
+          updated_at: new Date('2019-06-01 17:21:00.000 UTC')
+        },
+          {
+          uuid: 'a3ff08fa-6791-4094-906c-6f0bfdb6a635',
+          author: 'Changelog Media',
+          description: 'A community celebration of JavaScript and the web. This show records LIVE on Thursdays at 1pm US/Eastern time. Panelists include Suz Hinton, Feross Aboukhadijeh, Kevin Ball, Emma Wedekind, Jerod Santo, Nick Nisi, Divya Sasidharan, Mikeal Rogers, and Chris Hiller. Topics discussed include the web platform (Chrome, Safari, Edge, Firefox, Brave, etc), front-end frameworks (React, Ember, Angular, Vue, etc), Node.js, web animation, SVG, robotics, IoT, and much more. If JavaScript and/or the web touch your life, this show’s for you. Some people search for JSParty and can\'t find the show, so now the string JSParty is in our description too.',
+          link: 'https://changelog.com/jsparty',
+          image: 'https://habits168-hurdaudio.s3.amazonaws.com/blog_logos/js-party-original.png',
+          items: null,
+          rss: 'https://changelog.com/jsparty/feed',
+          title: 'JS Party: JavaScript &amp; Web Dev',
+          created_at: new Date('2019-06-01 17:21:00.000 UTC'),
+          updated_at: new Date('2019-06-01 17:21:00.000 UTC')
         }
       ]);
     });
