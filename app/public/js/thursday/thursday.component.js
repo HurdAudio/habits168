@@ -13,7 +13,7 @@
         const vm = this;
 
         vm.$onInit = onInit;
-        vm.thursdayMonth = '_JanuaryC';
+        vm.thursdayMonth = '_FebruaryA';
         vm.thursdayContainerState = 'thursdayContainerActive' + vm.thursdayMonth;
         vm.navigateToHub = navigateToHub;
 //        vm.thursdayTabs = [
@@ -1246,6 +1246,15 @@
                     break;
                 case ('_JanuaryC'):
                     vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/job-3506038_1280.png';
+                    break;
+                case ('_FebruaryA'):
+                    vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_png_by_piccolapersempre_dbuithu-fullview.png';
+                    break;
+                case ('_FebruaryB'):
+                    vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/digital_painting__liquid_sleep_by_ukulelemoon_d888syz-pre.jpg';
+                    break;
+                case ('_FebruaryC'):
+                    vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_cup_by_lashonda1980_dazsks6-pre.png';
                     break;
                 default:
                     alert('UNSUPPORTED MONTH SELECT for LOGO');
