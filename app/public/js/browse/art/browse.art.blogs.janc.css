@@ -15,8 +15,7 @@ art januaryA === Abstract Art
 */
 
 .browsePodCategoricalFeeds_art_JanuaryC {
-    display: none;
-    background-image: url();
+    background-image: url('https://s3.amazonaws.com/hours168-hurdaudio/img/january/untitled-07-2006(1).jpg');
     background-size: cover;
     border: none;
     filter: brightness(100%);
@@ -28,16 +27,14 @@ art januaryA === Abstract Art
 }
 
 .browsePodCategoricalFeeds_art_JanuaryC img {
-    display: none;
-    filter: brightness(120%) drop-shadow(5px 5px 5px #3c140e);
+    filter: brightness(120%) drop-shadow(5px 5px 5px #2a333c);
     height: 50px;
     margin: 0 15px 0 0;
     width: 50px;
 }
 
 .browseIndividualPodFeedData_art_JanuaryC {
-    display: none;
-    background-image: url();
+    background-image: url('https://s3.amazonaws.com/hours168-hurdaudio/img/january/untitled-07-2006(1).jpg');
     background-size: cover;
     border: none;
     filter: brightness(100%);
@@ -49,16 +46,15 @@ art januaryA === Abstract Art
 }
 
 .browseIndividualPodFeedData_art_JanuaryC img {
-    display: none;
-    filter: brightness(120%) drop-shadow(5px 5px 5px #3c140e);
+    filter: brightness(120%) drop-shadow(5px 5px 5px #2a333c);
     margin: 10px 15%;
     width: 70%;
 }
 
 .browseIndividualPodFeedData_art_JanuaryC h3 {
-    display: none;
-    color: #1c1a17;
-    filter: brightness(80%);
+    background: #e5d6d9;
+    color: #22282f;
+    filter: brightness(100%);
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 36px;
     margin: 5px 10%;
@@ -66,9 +62,9 @@ art januaryA === Abstract Art
 }
 
 .browseIndividualPodFeedData_art_JanuaryC p {
-    display: none;
-    color: #1c1a17;
-    filter: brightness(80%);
+    background: #e5d6d9;
+    color: #22282f;
+    filter: brightness(100%);
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 30px;
     margin: 15px 10%;
@@ -76,29 +72,28 @@ art januaryA === Abstract Art
 }
 
 .browseIndividualPodFeedData_art_JanuaryC button {
-    display: none;
-    background: #eed69a;
+    background: #556676;
     border: none;
-    color: #1c1a17;
+    color: #fcf8fc;
     cursor: pointer;
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 36px;
     margin: 30px 35%;
-    outline-color: #cc9991;
+    outline-color: #b5c0cc;
     transform: skew(-15deg);
     transition: all 0.4s linear;
 }
 
 .browseIndividualPodFeedData_art_JanuaryC button:hover {
-    background: #983223;
-    color: #f7ebcd;
+    background: #fcf8fc;
+    color: #556676;
     transform: skew(-5deg);
     transition: all 0.4s linear;
 }
 
 .browseIndividualPodFeedData_art_JanuaryC button:active {
-    background: #f7ebcd;
-    color: #983223;
+    background: #636063;
+    color: #5f7990;
     transition: all 0.4s linear;
 }
 
