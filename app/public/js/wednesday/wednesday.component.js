@@ -1171,6 +1171,7 @@
             .then(hubSkinResponseData => {
                 const hubSkinResponse = hubSkinResponseData.data;
                 vm.wednesdayMonth = hubSkinResponse.wednesday;
+//                vm.wednesdayMonth = '_MarchA';
                 vm.wednesdayContainerState = 'wednesdayContainerActive' + vm.wednesdayMonth;
                 vm.managerModalState = 'wednesdayManageTabsSubsModalInactive' + vm.wednesdayMonth;
                 switch (vm.wednesdayMonth) {

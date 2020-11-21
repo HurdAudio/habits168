@@ -1,0 +1,888 @@
+.wednesdayBackgroundDiv_MarchA {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/wednesday/march/connie-perez-hCKppMX5rcU-unsplash.jpg);
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    opacity: 1;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.wednesdayContainerActive_MarchA {
+    filter: blur(0px);
+}
+
+.wednesdayContainerInactive_MarchA {
+    filter: blur(15px);
+}
+
+.wednesdayTitleStrip_MarchA {
+    background: linear-gradient(90deg, #c1bca9, #98a1a0, #768588, #121d19, transparent);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Bellota Text', cursive;
+    height: auto;
+    justify-content: flex-start;
+    opacity: 1;
+    padding: 4px 2vw 4px 2vw;
+    width: 100%;
+}
+
+.wednesdayLogo_MarchA {
+    cursor: pointer;
+    filter: brightness(130%);
+    max-width: 75px;
+}
+
+.wednesdayReadingPlaylistTitle_MarchA {
+    color: #000000;
+    filter: brightness(200%);
+    font-size: 42px;
+    margin: 15px 0 0 96px;
+}
+
+.wednesdayTabStrip_MarchA {
+    background: #121d19;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Bellota Text', cursive;
+    height: auto;
+    padding: 0 10px;
+    width: 100%;
+}
+
+.wednesdayTabActive_MarchA {
+    background: #c1bca9;
+    color: #000000;
+    cursor: none;
+    font-size: 30px;
+    padding: 5px 45px;
+    transition: all 0.5s linear;
+}
+
+.wednesdayTabInactive_MarchA {
+    background: #121d19;
+    color: #e0ded4;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 5px 25px;
+    transition: all 0.5s linear;
+}
+
+.wednesdayContent_MarchA {
+    background: transparent;
+    height: 80vh;
+    width: 100%;
+}
+
+.wednesdayContentContent_MarchA {
+    background: linear-gradient(90deg, #e3e8eb, #c1bca9, #c1bca9, transparent);
+    height: 80vh;
+    opacity: 0.95;
+    overflow-x: hidden;
+    overflow-Y: auto;
+    width: 105%;
+}
+
+.wednesdayReaderNavigationButtons_MarchA {
+    background: #768588;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: flex-start;
+    margin: 0 0 0 0;
+    position: fixed;
+    width: 100%;
+    z-index: 15;
+}
+
+.markAllReadTextWednesday_MarchA {
+    color: #000000;
+    font-family: 'Bellota Text', cursive;
+    font-size: 18px;
+    margin: 35px 10px 0 40px;
+}
+
+.wednesdayTrackProgress_MarchA {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    cursor: pointer;
+    display: block;
+    font-size: 48px;
+    margin: 15px 1px 15px 5px;
+    padding-left: 35px;
+    position: relative;
+    user-select: none;
+}
+
+.wednesdayTrackProgress_MarchA input {
+    cursor: pointer;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    width: 0;
+}
+
+.wednesdayCheckbox_MarchAtrue {
+    background-color: #070b0a;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    top: 18px;
+    transition: all 0.3s linear;
+    width: 50px;
+}
+
+.wednesdayCheckbox_MarchAfalse {
+    background-color: #070b0a;
+    border: none;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    top: 18px;
+    transition: all 0.3s linear;
+    width: 50px;
+}
+
+.wednesdaySwitchUnchecked_MarchAtrue {
+    background-color: #e0ded4;
+    border: 2px solid #070b0a;
+    box-sizing: border-box;
+    height: 20px;
+    left: 25px;
+    position: absolute;
+    top: 0;
+    transition: all 0.2s linear;
+    width: 25px;
+}
+
+.wednesdaySwitchUnchecked_MarchAfalse {
+    background-color: #e0ded4;
+    border: 2px solid #070b0a;
+    box-sizing: border-box;
+    height: 20px;
+    left: 0px;
+    position: absolute;
+    top: 0;
+    transition: all 0.2s linear;
+    width: 25px;
+}
+
+.wednesdayReadAll_MarchA {
+    color: #000000;
+    font-family: 'Bellota Text', cursive;
+    font-size: 24px;
+    margin: 14px 0 14px 25px;
+}
+
+.wednesdayReadAllButton_MarchA {
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/wednesday/march/connie-perez-hCKppMX5rcU-unsplash.jpg) 10% stretch;
+    box-sizing: border-box;
+    color: #e3e8eb;
+    cursor: pointer;
+    filter: drop-shadow(8px 8px 4px #070b0a);
+    font-family: 'Bellota Text', cursive;
+    font-size: 36px;
+    height: auto;
+    outline-color: #898e8c;
+    padding: 4px 0;
+    transition: all 0.5s linear;
+    width: 60px;
+}
+
+.wednesdayReadAllButton_MarchA:hover {
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/wednesday/march/connie-perez-hCKppMX5rcU-unsplash.jpg) 30% stretch;
+    color: #2d2614;
+    filter: drop-shadow(4px 4px 4px #070b0a);
+    transition: all 0.5s linear;
+}
+
+.wednesdayReadAllButton_MarchA:active {
+    filter: drop-shadow(0px 0px 4px #070b0a) invert(100%);
+    transition: all 0.1s linear;
+}
+
+.wednesdaySorting_MarchA {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 14px 0 14px 100px;
+}
+
+.wednesdaySorting_MarchA p {
+    color: #000000;
+    font-family: 'Bellota Text', cursive;
+    font-size: 18px;
+    margin: 20px 20px 0 0;
+}
+
+.wednesdaySorting_MarchA button {
+    margin: 0 5px;
+}
+
+.wednesdayFeedsDiv_MarchA {
+    height: auto;
+    margin: 110px 50px 0 50px;
+    width: 90%;
+}
+
+.wednesdaySubscriptions_MarchA {
+    cursor: pointer;
+    margin: 10px;
+}
+
+.wednesdayBuffer_MarchA {
+    height: 20px;
+    width: 100%;
+}
+
+.wednesdayFeedContainer_MarchA {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 15px 5px 5px -15px;
+}
+
+.wednesdaySubIcon_MarchA {
+    height: 65px;
+    margin-right: 20px;
+    margin-top: 10px;
+    transition: all 0.5s linear;
+    width: 65px;
+}
+
+.wednesdaySubscriptionTitle_MarchA {
+    color: #000000;
+    font-family: 'Bellota Text', cursive;
+    font-size: 18px;
+    line-height: 1.2;
+    margin: 5px 0 10px 0;
+    width: 650px;
+}
+
+.wednesdayUnreadText_MarchA {
+    color: #000000;
+    font-family: 'Bellota Text', cursive;
+    font-size: 18px;
+    margin: 10px 40px 0 30px;
+    width: 35px;
+}
+
+.wednesdayReadText_MarchA {
+    color: #000000;
+    font-family: 'Bellota Text', cursive;
+    font-size: 18px;
+    margin: 10px 40px 0 30px;
+    width: 35px;
+}
+
+.wednesdayManageTabsButton_MarchA {
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/wednesday/march/connie-perez-hCKppMX5rcU-unsplash.jpg) 10% stretch;
+    box-sizing: border-box;
+    color: #e3e8eb;
+    cursor: pointer;
+    filter: drop-shadow(8px 8px 4px #070b0a);
+    font-family: 'Bellota Text', cursive;
+    font-size: 24px;
+    height: auto;
+    margin: 36px 0 12px 20%;
+    outline-color: #898e8c;
+    padding: 1px 6px;
+    position: relative;
+    transition: all 0.5s linear;
+    width: auto;
+}
+
+.wednesdayManageTabsButton_MarchA:hover {
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/wednesday/march/connie-perez-hCKppMX5rcU-unsplash.jpg) 30% stretch;
+    color: #2d2614;
+    filter: drop-shadow(4px 4px 4px #070b0a);
+    transition: all 0.5s linear;
+}
+
+.wednesdayManageTabsButton_MarchA:active {
+    filter: drop-shadow(0px 0px 4px #070b0a) invert(100%);
+    transition: all 0.1s linear;
+}
+
+.wednesdayManageTabsSubsModal_MarchA {
+    background: #e0ded4;
+    filter: blur(0px);
+    height: 90vh;
+    left: 2%;
+    opacity: 1;
+    position: absolute;
+    top: 5vh;
+    transition: all 0.4s linear;
+    width: 95%;
+    z-index: 50;
+}
+
+.wednesdayManageTabsSubsModalBlur_MarchA {
+    background: #e0ded4;
+    filter: blur(5px);
+    height: 90vh;
+    left: 2%;
+    opacity: 0.4;
+    position: absolute;
+    top: 5vh;
+    transition: all 0.4s linear;
+    width: 95%;
+    z-index: 50;
+}
+
+.wednesdayManageTabsSubsModalInactive_MarchA {
+    opacity: 0;
+    top: -80vh;
+    transition: all 0.4s linear;
+    z-index: -5;
+}
+
+.wednesdayManageTitleBar_MarchA {
+    background: #121d19;
+    color: #edf4f9;
+    font-family: 'Bellota Text', cursive;
+    height: 6vh;
+    opacity: 0.9;
+    position: relative;
+    padding: 1vh 0 2vh 1vw;
+    width: 99%;
+}
+
+.wednesdayModalExit_MarchA {
+    color: #edf4f9;
+    cursor: pointer;
+    font-family: 'Bellota Text', cursive;
+    font-size: 48px;
+    float: left;
+    left: 94%;
+    position: relative;
+    top: 1%;
+}
+
+.wednesdayManageTitle_MarchA {
+    color: #edf4f9;
+    font-family: 'Bellota Text', cursive;
+    font-size: 30px;
+    margin: 20px 0 0 0;
+}
+
+.wednesdayManagerModalContainer_MarchA {
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    height: 81vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.wednesdayManagerTabsSection_MarchA {
+    height: auto;
+    padding: 15px;
+    position: relative;
+    width: 30%;
+}
+
+.wednesdayTabsManageTitle_MarchA {
+    color: #000000;
+    font-family: 'Bellota Text', cursive;
+    font-size: 24px;
+}
+
+.wednesdayManageTabsContainer_MarchA {
+    margin: 40px 8%;
+}
+
+.wednesdayTabManageTab_MarchA {
+    color: #000000;
+    cursor: pointer;
+    font-family: 'Bellota Text', cursive;
+    font-size: 24px;
+    margin: 15px 0 15px 10px;
+}
+
+.wednesdayTabManageSubTab_MarchA {
+    color: #000000;
+    cursor: pointer;
+    font-family: 'Bellota Text', cursive;
+    font-size: 15px;
+    margin: 1px 0 30px 40px;
+    width: 10%;
+}
+
+.wednesdayManagerSubscriptionsSection_MarchA {
+    height: auto;
+    padding: 15px;
+    position: relative;
+    width: 30%;
+}
+
+.wednesdayTabsSubscriptionTitle_MarchA {
+    color: #000000;
+    font-family: 'Bellota Text', cursive;
+    font-size: 24px;
+}
+
+.wednesdayManageSubIcon_MarchA {
+    height: 40px;
+    width: 40px;
+}
+
+.wednesdaySubManageSubTab_MarchA {
+    color: #000000;
+    cursor: pointer;
+    font-family: 'Bellota Text', cursive;
+    font-size: 15px;
+    margin: 4px 0 1px 10px;
+    transform: translateX(100px) translateY(-40px);
+    width: 10%;
+}
+
+.wednesdayManageSubsTitles_MarchA {
+    color: #000000;
+    font-family: 'Bellota Text', cursive;
+    font-size: 18px;
+    margin: -15px 0 30px 1px;
+}
+
+.wednesdayManagerFeedsSection_MarchA {
+    height: auto;
+    padding: 15px;
+    position: relative;
+    width: 30%;
+}
+
+.wednesdayManagerFeedsTitle_MarchA {
+    color: #000000;
+    font-family: 'Bellota Text', cursive;
+    font-size: 24px;
+}
+
+.wednesdayManageSearch_MarchA {
+    background: #c1bca9;
+    border: none;
+    color: #000000;
+    float: left;
+    font-family: 'Bellota Text', cursive;
+    font-size: 18px;
+    margin-top: 3px;
+    outline-color: #898e8c;
+    padding-left: 5px;
+    width: 100%;
+}
+
+.wednesdayManageSubsTitlesFeeds_MarchA {
+    color: #000000;
+    font-family: 'Bellota Text', cursive;
+    font-size: 18px;
+    margin: -15px 0 30px 1px;
+}
+
+.wednesdayCreateEditTabManagement_MarchA {
+    background: #768588;
+    height: auto;
+    left: 22%;
+    opacity: 1;
+    padding: 45px;
+    position: absolute;
+    top: 25vh;
+    transition: all 0.4s linear;
+    width: 50%;
+    z-index: 60;
+}
+
+.wednesdayCreateEditTabTitle_MarchA {
+    color: #000000;
+    font-family: 'Bellota Text', cursive;
+    font-size: 24px;
+    margin: 15px 0 30px 25px;
+}
+
+.wednesdayTabEditorFields_MarchA {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin: 10px 0 0 60px;
+}
+
+.wednesdayTabNameLabel_MarchA {
+    color: #000000;
+    font-family: 'Bellota Text', cursive;
+    font-size: 18px;
+    margin: 0 9px 0 0;
+}
+
+.wednesdayTabNameInput_MarchA {
+    background: #c1bca9;
+    border: none;
+    color: #000000;
+    font-family: 'Bellota Text', cursive;
+    font-size: 18px;
+    height: 21px;
+    margin: 0 9px;
+    outline-color: #898e8c;
+    width: 350px;
+}
+
+.wednesdayTabEditorPodcastBlogStatus_MarchA {
+    margin: -13px 0 0 40px;
+}
+
+#wednesdayUnreadText_MarchA {
+    color: #000000;
+}
+
+#wednesdayReadText_MarchA {
+    color: #000000;
+}
+
+.wednesdayTabEditorFields_MarchA {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin: 10px 0 0 60px;
+}
+
+.wednesdayTabEditorErrorMessage_MarchA {
+    color: #ff0000;
+    font-family: 'Bellota Text', cursive;
+    font-size: 18px;
+    margin-left: 120px;
+    margin-top: 20px;
+}
+
+.wednesdayManageTabsConfirmButton_MarchA {
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/wednesday/march/connie-perez-hCKppMX5rcU-unsplash.jpg) 10% stretch;
+    box-sizing: border-box;
+    color: #e3e8eb;
+    cursor: pointer;
+    filter: drop-shadow(8px 8px 4px #070b0a);
+    font-family: 'Bellota Text', cursive;
+    font-size: 18px;
+    height: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    outline-color: #898e8c;
+    padding: 4px 4px;
+    position: relative;
+    transition: all 0.5s linear;
+    width: auto;
+}
+
+.wednesdayManageTabsConfirmButton_MarchA:hover {
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/wednesday/march/connie-perez-hCKppMX5rcU-unsplash.jpg) 30% stretch;
+    color: #2d2614;
+    filter: drop-shadow(4px 4px 4px #070b0a);
+    transition: all 0.5s linear;
+}
+
+.wednesdayManageTabsConfirmButton_MarchA:active {
+    filter: drop-shadow(0px 0px 4px #070b0a) invert(100%);
+    transition: all 0.1s linear;
+}
+
+.wednesdayManageTabsSubmitCancelButton_MarchA {
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/wednesday/march/connie-perez-hCKppMX5rcU-unsplash.jpg) 10% stretch;
+    box-sizing: border-box;
+    color: #e3e8eb;
+    cursor: pointer;
+    filter: drop-shadow(8px 8px 4px #070b0a);
+    font-family: 'Bellota Text', cursive;
+    font-size: 18px;
+    height: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    outline-color: #898e8c;
+    padding: 4px 4px;
+    position: relative;
+    transition: all 0.5s linear;
+    width: auto;
+}
+
+.wednesdayManageTabsSubmitCancelButton_MarchA:hover {
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/wednesday/march/connie-perez-hCKppMX5rcU-unsplash.jpg) 30% stretch;
+    color: #2d2614;
+    filter: drop-shadow(4px 4px 4px #070b0a);
+    transition: all 0.5s linear;
+}
+
+.wednesdayManageTabsSubmitCancelButton_MarchA:active {
+    filter: drop-shadow(0px 0px 4px #070b0a) invert(100%);
+    transition: all 0.1s linear;
+}
+
+.wednesdayGuardRail_MarchA {
+    background: #c6d1d7;
+    height: auto;
+    left: 32%;
+    opacity: 1;
+    padding: 45px;
+    position: absolute;
+    top: 25vh;
+    transition: all 0.4s linear;
+    width: 30%;
+    z-index: 60;
+}
+
+.wednesdayGuardRailText_MarchA {
+    color: #000000;
+    font-family: 'Bellota Text', cursive;
+    font-size: 24px;
+    margin: 15px 0 30px 25px;
+}
+
+.wednesdayGuardRailButtons_MarchA {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin: 10px 0 0 60px;
+}
+
+.hubReaderDay1WednesdayActive_MarchA {
+      background: #82a1b5;
+      background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/wednesday/march/connie-perez-hCKppMX5rcU-unsplash.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 25vh;
+      margin: 1.2%;
+      padding: 10px 15px;
+      opacity: 1;
+      transform: translateX(0px);
+      transition: all 0.5s;
+      transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+      width: 8%;
+      z-index: 1;
+}
+
+.hubReaderDay1WednesdayInactive_MarchA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/wednesday/march/connie-perez-hCKppMX5rcU-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-115%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay2WednesdayActive_MarchA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/wednesday/march/connie-perez-hCKppMX5rcU-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay2WednesdayInactive_MarchA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/wednesday/march/connie-perez-hCKppMX5rcU-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-230%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay3WednesdayActive_MarchA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/wednesday/march/connie-perez-hCKppMX5rcU-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay3WednesdayInactive_MarchA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/wednesday/march/connie-perez-hCKppMX5rcU-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-345%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay4WednesdayActive_MarchA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/wednesday/march/connie-perez-hCKppMX5rcU-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay4WednesdayInactive_MarchA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/wednesday/march/connie-perez-hCKppMX5rcU-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-460%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay5WednesdayActive_MarchA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/wednesday/march/connie-perez-hCKppMX5rcU-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 3;
+}
+
+.hubReaderDay5WednesdayInactive_MarchA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/wednesday/march/connie-perez-hCKppMX5rcU-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-575%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay6WednesdayActive_MarchA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/wednesday/march/connie-perez-hCKppMX5rcU-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay6WednesdayInactive_MarchA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/wednesday/march/connie-perez-hCKppMX5rcU-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-690%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
+
+.hubReaderDay7WednesdayActive_MarchA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/wednesday/march/connie-perez-hCKppMX5rcU-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  padding: 10px 15px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: 1;
+}
+
+.hubReaderDay7WednesdayInactive_MarchA {
+  background: #82a1b5;
+  background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/wednesday/march/connie-perez-hCKppMX5rcU-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  margin: 1.2%;
+  opacity: 0;
+  padding: 10px 15px;
+  transform: translateX(-705%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+  width: 8%;
+  z-index: -1;
+}
