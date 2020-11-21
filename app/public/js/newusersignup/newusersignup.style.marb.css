@@ -1,0 +1,221 @@
+.newUserContainerActive_MarchB {
+    filter: blur(0);
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.newUserContainerBlur_MarchB {
+    filter: blur(13px);
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.newUserSignupImageDiv_MarchB {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/newusersignup/march/ricardo-gomez-angel-LsJpi7bH8L4-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.newUserNavbar_MarchB {
+    backdrop-filter: blur(5px) hue-rotate(15deg) saturate(210%);
+    border-bottom: 2px groove #bec5c8;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Kufam', cursive;
+    height: 12vh;
+    justify-content: left;
+    left: 0;
+    padding-left: 25px;
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+
+.newUserLogoNav_MarchB {
+    cursor: pointer;
+    filter: brightness(100%);
+    margin-top: 0.5vh;
+    max-height: 11vh;
+    max-width: 155px;
+    z-index: 55;
+}
+
+.newUserSignupTitle_MarchB {
+    color: #050604;
+    font-family: 'Kufam', cursive;
+    font-size: 48px;
+    margin: 3vh 0 3vh 30%;
+}
+
+.newUserMasterFormDiv_MarchB {
+    backdrop-filter: blur(3px) brightness(30%) sepia(50%);
+    border: 3px groove transparent;
+    border-image: url() 5 stretch;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: [col1] 1fr [col2] 1fr [col3] 1fr [col4] 1fr [col5] 1fr [col6] 1fr [col7] 1fr [col8] 1fr [col9] 1fr [col10] 1fr [col11] 1fr [colEnd];
+    grid-template-rows: [row1] 1fr [row2] 1fr [row3] 1fr [row4] 1fr [row5] 1fr [row6] 1fr [row7] 1fr [row8] 1fr [row9] 1fr [row10] 1fr [row11] 1fr [rowEnd];
+    height: 70vh;
+    left: 10%;
+    position: relative;
+    top: 10vh;
+    width: 80%;
+}
+
+.newUserSignupFormWelcomeLine_MarchB {
+    color: #ccd3d7;
+    filter: brightness(200%) saturate(300%);
+    font-family: 'Kufam', cursive;
+    font-size: 24px;
+    grid-column: col2 / col12;
+    grid-row: row2 / row3;
+}
+
+.newUserTextBoxFirstName_MarchB {
+    background: #d4cdc0;
+    border: none;
+    color: #050604;
+    font-family: 'Kufam', cursive;
+    font-size: 18px;
+    height: 24px;
+    grid-column: col3 / col6;
+    grid-row: row4 / row5;
+    outline-color: #949592;
+}
+
+.newUserTextBoxFirstName_MarchB::placeholder {
+    color: #43443c;
+}
+
+.newUserTextBoxLastName_MarchB {
+    background: #d4cdc0;
+    border: none;
+    color: #050604;
+    font-family: 'Kufam', cursive;
+    font-size: 18px;
+    height: 24px;
+    grid-column: col7 / col10;
+    grid-row: row4 / row5;
+    outline-color: #949592;
+}
+
+.newUserTextBoxLastName_MarchB::placeholder {
+    color: #43443c;
+}
+
+.newUserTextBoxEmail_MarchB {
+    background: #d4cdc0;
+    border: none;
+    color: #050604;
+    font-family: 'Kufam', cursive;
+    font-size: 18px;
+    height: 24px;
+    grid-column: col3 / col6;
+    grid-row: row5 / row6;
+    outline-color: #949592;
+}
+
+.newUserTextBoxEmail_MarchB::placeholder {
+    color: #43443c;
+}
+
+.newUserTextBoxPassword_MarchB {
+    background: #d4cdc0;
+    border: none;
+    color: #050604;
+    font-family: 'Kufam', cursive;
+    font-size: 18px;
+    height: 24px;
+    grid-column: col7 / col10;
+    grid-row: row5 / row6;
+    outline-color: #949592;
+}
+
+.newUserTextBoxPassword_MarchB::placeholder {
+    color: #43443c;
+}
+
+.newUserTextBoxConfirmPassword_MarchB {
+    background: #d4cdc0;
+    border: none;
+    color: #050604;
+    font-family: 'Kufam', cursive;
+    font-size: 18px;
+    height: 24px;
+    grid-column: col7 / col10;
+    grid-row: row6 / row7;
+    outline-color: #949592;
+}
+
+.newUserTextBoxConfirmPassword_MarchB::placeholder {
+    color: #43443c;
+}
+
+.newUserSignupFormErrorMessageing_MarchB {
+    color: #d4cdc0;
+    filter: brightness(500%) contrast(200%) saturate(300%);
+    font-family: 'Kufam', cursive;
+    font-size: 24px;
+    grid-column: col3 / col10;
+    grid-row: row8 / row9;
+}
+
+.newUserSignupFormMessaging_MarchB {
+    color: #ccd3d7;
+    filter: brightness(500%) contrast(200%) saturate(300%);
+    font-family: 'Kufam', cursive;
+    font-size: 24px;
+    grid-column: col3 / col10;
+    grid-row: row9 / row10;
+}
+
+.newUserSignupSubmitButton_MarchB {
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/newusersignup/march/ricardo-gomez-angel-LsJpi7bH8L4-unsplash.jpg) 5 stretch;
+    box-sizing: border-box;
+    color: #ccd3d7;
+    cursor: pointer;
+    filter: brightness(100%);
+    font-family: 'Padauk', sans-serif;
+    font-size: 30px;
+    grid-column: col6 / col7;
+    grid-row: row10 / row11;
+    margin: 0 10px;
+    outline-color: #949592;
+    padding: 5px 15px;
+    transition: all 0.3s linear;
+}
+
+.newUserSignupSubmitButton_MarchB:hover {
+    filter: brightness(310%);
+    transition: all 0.3s linear;
+}
+
+.newUserSignupSubmitButton_MarchB:active {
+    filter: invert(100%);
+    transition: all 0.2s linear;
+}
