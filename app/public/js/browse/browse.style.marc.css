@@ -140,10 +140,9 @@
 }
 
 .browsePodcastsByCategory_MarchC {
-    display: none;
     backdrop-filter: blur(8px);
-    background: #b4bec1;
-    border-right: 1px solid #44a7bc;
+    background: #9a9f9e;
+    border-right: 1px solid #202328;
     height: 77vh;
     margin: 15px;
     opacity: 0.8;
@@ -209,7 +208,6 @@
 }
 
 .browsePodCategoricalFeeds_generic_MarchC {
-    display: none;
     backdrop-filter: blur(8px);
     background: #9a9f9e;
     border-right: 1px solid #202328;
@@ -222,10 +220,9 @@
 }
 
 .browsePodCategoricalFeeds_MarchC {
-    display: none;
     backdrop-filter: blur(8px);
-    background: #b4bec1;
-    border-right: 1px solid #44a7bc;
+    background: #9a9f9e;
+    border-right: 1px solid #202328;
     height: 77vh;
     margin: 15px;
     opacity: 0.8;
@@ -244,9 +241,8 @@
 }
 
 .browseFeedsPodcastContainer_generic_MarchC {
-    display: none;
     cursor: pointer;
-/*    display: flex;*/
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -254,8 +250,7 @@
 }
 
 .browseFeedsPodcastContainer_generic_MarchC img {
-    display: none;
-    filter: brightness(100%) drop-shadow(5px 5px 3px #101a1a);
+    filter: brightness(100%) drop-shadow(5px 5px 3px #001226);
     height: 50px;
     margin: 0 15px 0 0;
     width: 50px;
@@ -269,8 +264,7 @@
 }
 
 .browsePodCategoricalFeeds_generic_MarchC p {
-    display: none;
-    color: #040100;
+    color: #000000;
     font-family: 'Jost', sans-serif;
     font-size: 18px;
 }
@@ -347,10 +341,9 @@
 }
 
 .browseIndividualPodFeedData_generic_MarchC {
-    display: none;
     backdrop-filter: blur(8px);
-    background: #b4bec1;
-    border-right: 1px solid #44a7bc;
+    background: #9a9f9e;
+    border-right: 1px solid #202328;
     height: 77vh;
     margin: 15px;
     opacity: 0.8;
@@ -360,15 +353,13 @@
 }
 
 .browseIndividualPodFeedData_generic_MarchC img {
-    display: none;
-    filter: brightness(100%) drop-shadow(5px 5px 3px #101a1a);
+    filter: brightness(100%) drop-shadow(5px 5px 3px #001226);
     margin: 10px 15%;
     width: 70%;
 }
 
 .browseIndividualPodFeedData_generic_MarchC h3 {
-    display: none;
-    color: #040100;
+    color: #000000;
     font-family: 'Jost', sans-serif;
     font-size: 36px;
     margin: 5px 10%;
@@ -376,8 +367,7 @@
 }
 
 .browseIndividualPodFeedData_generic_MarchC p {
-    display: none;
-    color: #040100;
+    color: #000000;
     font-family: 'Jost', sans-serif;
     font-size: 18px;
     margin: 15px 10%;
@@ -385,14 +375,13 @@
 }
 
 .browseIndividualPodFeedData_generic_MarchC button {
-    display: none;
     background: transparent;
     border: 2px solid transparent;
-    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/march/nathan-watson-7XsjdiNT1fU-unsplash.jpg) 5% stretch;
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/march/skyscraper-5571465_1920.jpg) 5% stretch;
     box-sizing: border-box;
-    color: #0b0301;
+    color: #000000;
     cursor: pointer;
-    filter: drop-shadow(8px 8px 8px #101a1a);
+    filter: drop-shadow(8px 8px 8px #001226);
     font-family: 'Jost', sans-serif;
     font-size: 24px;
     margin: 30px 35%;
@@ -401,14 +390,14 @@
 }
 
 .browseIndividualPodFeedData_generic_MarchC button:hover {
-    border-image: url() 15% stretch;
-    color: #16272a;
-    filter: drop-shadow(3px 6px 8px #190f10);
+    border-image: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/march/skyscraper-5571465_1920.jpg) 15% stretch;
+    color: #001d49;
+    filter: drop-shadow(3px 6px 8px #001226);
     transition: all 0.4s linear;
 }
 
 .browseIndividualPodFeedData_generic_MarchC button:active {
-    filter: drop-shadow(0 0 0 #190f10);
+    filter: drop-shadow(0 0 0 #001226);
     transition: all 0.4s linear;
 }
 
