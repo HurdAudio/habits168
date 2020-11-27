@@ -275,7 +275,7 @@
             .then(hubSkinResponseData => {
                 const hubSkinResponse = hubSkinResponseData.data;
                 vm.dailiesMonth = hubSkinResponse.dailies;
-//                vm.dailiesMonth = '_AprilB';
+//                vm.dailiesMonth = '_AprilC';
                 vm.dailiesContainer = 'dailiesContainerActive' + vm.dailiesMonth;
                 
                 switch (vm.dailiesMonth) {
