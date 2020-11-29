@@ -163,7 +163,7 @@ exports.seed = function (knex, Promise) {
                             "february": [29, '_FebruaryC', '_FebruaryB', '_FebruaryB', '_FebruaryA', '_FebruaryA', '_FebruaryA', '_FebruaryC', '_FebruaryC', '_FebruaryA', '_FebruaryA', '_FebruaryC', '_FebruaryA', '_FebruaryB', '_FebruaryC', '_FebruaryC', '_FebruaryA', '_FebruaryB', '_FebruaryA', '_FebruaryC', '_FebruaryC', '_FebruaryC', '_FebruaryC', '_FebruaryB', '_FebruaryB', '_FebruaryB', '_FebruaryB', '_FebruaryB', '_FebruaryB', '_FebruaryA'],
                             "march": [ 31, '_MarchC', '_MarchB', '_MarchB', '_MarchB', '_MarchC', '_MarchA', '_MarchA', '_MarchB', '_MarchA', '_MarchA', '_MarchC', '_MarchB', '_MarchC', '_MarchB', '_MarchA', '_MarchA', '_MarchC', '_MarchB', '_MarchB', '_MarchC', '_MarchB', '_MarchC', '_MarchC', '_MarchA', '_MarchC', '_MarchA', '_MarchA', '_MarchB', '_MarchA', '_MarchC', '_MarchA' ],
                             "april": [ 30, '_AprilA', '_AprilA', '_AprilA', '_AprilC', '_AprilB', '_AprilA', '_AprilA', '_AprilC', '_AprilB', '_AprilC', '_AprilA', '_AprilC', '_AprilB', '_AprilB', '_AprilC', '_AprilB', '_AprilC', '_AprilA', '_AprilA', '_AprilC', '_AprilB', '_AprilA', '_AprilB', '_AprilB', '_AprilC', '_AprilC', '_AprilB', '_AprilB', '_AprilA', '_AprilC' ],
-                            "may": [31],
+                            "may": [ 31, '_MayC', '_MayB', '_MayC', '_MayA', '_MayC', '_MayA', '_MayB', '_MayA', '_MayB', '_MayA', '_MayB', '_MayA', '_MayA', '_MayA', '_MayC', '_MayA', '_MayA', '_MayB', '_MayB', '_MayC', '_MayC', '_MayC', '_MayB', '_MayB', '_MayC', '_MayC', '_MayB', '_MayA', '_MayB', '_MayA', '_MayC' ],
                             "june": [30],
                             "july": [31],
                             "august": [31],
