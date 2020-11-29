@@ -1,5 +1,5 @@
-.hubBackgroundDiv_MayA {
-    background: url(https://habits168-hurdaudio.s3.amazonaws.com/hub/may/presentsquare-0_fhco1lRqo-unsplash.jpg);
+.hubBackgroundDiv_MayB {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/hub/may/plant-5635067_1920.jpg);
     background-size: cover;
     filter: brightness(100%);
     height: 100%;
@@ -14,79 +14,79 @@
     z-index: -1;
 }
 
-.hubTitleFlex_MayA {
-    background: #909a80;
+.hubTitleFlex_MayB {
+    background: #435e3f;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    font-family: 'Piazzolla', serif;
+    font-family: 'Do Hyeon', sans-serif;
     height: auto;
     justify-content: flex-start;
     opacity: 0.9;
     width: 100%;
 }
 
-.hubLogo_MayA {
-    filter: brightness(100%);
+.hubLogo_MayB {
+    filter: brightness(120%);
     height: 80px;
     margin: 4px 36px 4px 26px;
     width: 80px;
 }
 
-.hubTitleDiv_MayA {
+.hubTitleDiv_MayB {
     padding: 10px 4px 16px 88px;
 }
 
-.hubTitle_MayA {
-    color: #000102;
+.hubTitle_MayB {
+    color: #000000;
     filter: brightness(100%);
-    font-family: 'Piazzolla', serif;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 66px;
     font-weight: bolder;
 }
 
-.hubSignoutDiv_MayA {
+.hubSignoutDiv_MayB {
     padding: 3vh 40px;
     position: fixed;
     right: 4%;
 }
 
-.hubSignoutButton_MayA {
-    background: #003346;
+.hubSignoutButton_MayB {
+    background: #6d856f;
     border-bottom: none;
-    border-left: 4px solid #376757;
-    border-right: 4px solid #376757;
+    border-left: 4px solid #000201;
+    border-right: 4px solid #000201;
     border-top: none;
     box-sizing: border-box;
-    color: #9f9a8b;
+    color: #000201;
     cursor: pointer;
     filter: brightness(100%) invert(0%);
-    font-family: 'Piazzolla', serif;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 24px;
     outline-color: #80909c;
-    padding-bottom: 8px;
+    padding: 8px 12px;
     transition: all 0.4s linear;
 }
 
-.hubSignoutButton_MayA:hover {
-    background: #809da7;
-    border-left: 15px solid #376757;
-    border-right: 1px solid #376757;
-    color: #080e03;
+.hubSignoutButton_MayB:hover {
+    background: #2b412c;
+    border-left: 15px solid #000201;
+    border-right: 1px solid #000201;
+    color: #b6c2b7;
     transition: all 0.4s linear;
 }
 
-.hubSignoutButton_MayA:active {
+.hubSignoutButton_MayB:active {
     filter: invert(100%);
     transition: all 0.2s linear;
 }
 
-.hubTabsBar_MayA {
-    background: linear-gradient(90deg, #808282, #8b9184, #8099a3, transparent);
+.hubTabsBar_MayB {
+    background: linear-gradient(90deg, #a1af9f, #95a096, #6d856f, transparent);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    font-family: 'Piazzolla', serif;
+    font-family: 'Do Hyeon', sans-serif;
     height: 5.25vh;
     justify-content: flex-start;
     opacity: 1;
@@ -94,8 +94,8 @@
     width: 100%;
 }
 
-.hubTabActive_MayA {
-    color: #000102;
+.hubTabActive_MayB {
+    color: #000000;
     padding: 8px 0 0 15px;
     transition: all 0.6s;
     transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
@@ -103,8 +103,8 @@
     z-index: 0;
 }
 
-.hubTabInactive_MayA {
-    color: #013b4f;
+.hubTabInactive_MayB {
+    color: #2b412c;
     cursor: pointer;
     padding: 8px 0 0 15px;
     transition: all 0.6s;
@@ -113,24 +113,24 @@
     z-index: 10;
 }
 
-.hubTabLabel_MayA {
-    font-family: 'Piazzolla', serif;
+.hubTabLabel_MayB {
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 30px;
 }
 
-.hubTabInactive_MayA p {
+.hubTabInactive_MayB p {
     cursor: pointer;
     z-index: 8;
 }
 
-.hubTabActive_MayA p {
+.hubTabActive_MayB p {
     cursor: none;
     z-index: 0;
 }
 
-.hubShare_MayA {
-    background: #9f9a8b;
-    filter: drop-shadow(10px 1px 4px #191408);
+.hubShare_MayB {
+    background: #b6c2b7;
+    filter: drop-shadow(10px 1px 4px #111a11);
     height: 5vh;
     left: 0;
     position: absolute;
@@ -140,9 +140,9 @@
     width: 18%;
 }
 
-.hubReader_MayA {
-    background: #9f9a8b;
-    filter: drop-shadow(10px 1px 4px #191408);
+.hubReader_MayB {
+    background: #b6c2b7;
+    filter: drop-shadow(10px 1px 4px #111a11);
     height: 5vh;
     left: 19%;
     position: absolute;
@@ -152,9 +152,9 @@
     width: 18%;
 }
 
-.hubBlogs_MayA {
-    background: #9f9a8b;
-    filter: drop-shadow(10px 1px 4px #191408);
+.hubBlogs_MayB {
+    background: #b6c2b7;
+    filter: drop-shadow(10px 1px 4px #111a11);
     height: 5vh;
     left: 36%;
     position: absolute;
@@ -164,9 +164,9 @@
     width: 18%;
 }
 
-.hubProfile_MayA {
-    background: #9f9a8b;
-    filter: drop-shadow(10px 1px 4px #191408);
+.hubProfile_MayB {
+    background: #b6c2b7;
+    filter: drop-shadow(10px 1px 4px #111a11);
     height: 5vh;
     left: 54%;
     position: absolute;
@@ -176,13 +176,13 @@
     width: 18%;
 }
 
-.hubContentContainer_MayA {
+.hubContentContainer_MayB {
     height: 81vh;
     width: 100%;
 }
 
-.hubShareDashboard_MayA {
-    background: linear-gradient(90deg, #9f9a8b, #809da7, #809da7, transparent);
+.hubShareDashboard_MayB {
+    background: linear-gradient(90deg, #6d856f, #b6c2b7, #b6c2b7, transparent);
     height: 81vh;
     opacity: 0.97;
     overflow-x: hidden;
@@ -190,15 +190,15 @@
     width: 105%;
 }
 
-.hubReaderDashboard_MayA {
-    background: linear-gradient(90deg, #3f3416, #213400, #213400, transparent);
+.hubReaderDashboard_MayB {
+    background: linear-gradient(90deg, #435e3f, #162218, #162218, transparent);
     height: 81vh;
     opacity: 0.95;
     width: 100%;
 }
 
-.hubBlogsDashboard_MayA {
-    background: linear-gradient(90deg, #191408, #00141c, #00141c, transparent);
+.hubBlogsDashboard_MayB {
+    background: linear-gradient(90deg, #080d09, #2b352c, #2b352c, transparent);
     height: 81vh;
     opacity: 0.95;
     overflow-x: hidden;
@@ -206,14 +206,14 @@
     width: 104%;
 }
 
-.hubProfileDashboard_MayA {
-    background: linear-gradient(90deg, #909a80, #8099a3, #8099a3, transparent);
+.hubProfileDashboard_MayB {
+    background: linear-gradient(90deg, #b6c2b7, #a1af9f, #a1af9f, transparent);
     height: 81vh;
     opacity: 0.95;
     width: 103%;
 }
 
-.hubShareContainer_MayA {
+.hubShareContainer_MayB {
     display: flex;
     flex-direction: row;
     flex-wrap: no-wrap;
@@ -223,153 +223,153 @@
     width: 96%;
 }
 
-.hubShareByline_MayA {
-    border-right: 2px solid #000102;
+.hubShareByline_MayB {
+    border-right: 2px solid #000000;
     float: left;
     padding: 5vh 3% 15px 3%;
     width: 20%;
 
 }
 
-.hubShareBylineAvatar_MayA {
+.hubShareBylineAvatar_MayB {
     cursor: pointer;
-    filter: drop-shadow(5px 5px 2px #191408);
+    filter: drop-shadow(5px 5px 2px #1a2519);
     width: 20%;
 }
 
-.hubBylineName_MayA {
-    color: #000102;
+.hubBylineName_MayB {
+    color: #000000;
     cursor: pointer;
-    font-family: 'Piazzolla', serif;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 18px;
     margin: 5px 0 35px 0;
 }
 
-.hubShareComments_MayA {
-    color: #000102;
-    font-family: 'Piazzolla', serif;
+.hubShareComments_MayB {
+    color: #000000;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 18px;
     line-height: 1.3;
 }
 
-.hubShareBody_MayA {
-    border-left: 1px solid #000102;
+.hubShareBody_MayB {
+    border-left: 1px solid #000000;
     float: left;
     height: auto;
     padding: 0 1%;
     width: 70%;
 }
 
-.hubShareSourceIcon_MayA {
-    filter: drop-shadow(5px 5px 2px #191408);
+.hubShareSourceIcon_MayB {
+    filter: drop-shadow(5px 5px 2px #1a2519);
     float: left;
     max-width: 70px;
 }
 
-.hubShareViaDescription_MayA {
-    color: #000102;
+.hubShareViaDescription_MayB {
+    color: #000000;
     float: left;
-    font-family: 'Piazzolla', serif;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 18px;
     margin: 10px 0 0 30px;
     max-width: 700px;
 }
 
-.hubShareBody_MayA a {
-    color: #002039;
+.hubShareBody_MayB a {
+    color: #2b412c;
     text-decoration: none;
 }
 
-.hubShareBody_MayA a:visited {
-    color: #3f3416;
+.hubShareBody_MayB a:visited {
+    color: #808180;
 }
 
-.hubShareBody_MayA a:hover {
-    color: #00171f;
+.hubShareBody_MayB a:hover {
+    color: #435e3f;
 }
 
-.hubShareHeadline_MayA {
-    color: #000102;
-    font-family: 'Piazzolla', serif;
+.hubShareHeadline_MayB {
+    color: #000000;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 30px;
     margin-bottom: 20px;
     max-width: 800px;
 }
 
-.hubShareArticleImage_MayA {
-    filter: drop-shadow(5px 5px 2px #191408);
+.hubShareArticleImage_MayB {
+    filter: drop-shadow(5px 5px 2px #1a2519);
     margin-bottom: 9px;
     margin-left: 9px;
     margin-right: 12px;
     max-width: 25%;
 }
 
-.hubSharePostTimestamp_MayA {
-    color: #000102;
-    font-family: 'Piazzolla', serif;
+.hubSharePostTimestamp_MayB {
+    color: #000000;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 18px;
     margin: 4px 0 6px 24px;
 }
 
-.hubShareAuthor_MayA {
-    color: #000102;
-    font-family: 'Piazzolla', serif;
+.hubShareAuthor_MayB {
+    color: #000000;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 18px;
     margin: 10px 0 0 24px;
 }
 
-.hubShareDescription_MayA {
-    color: #000102;
-    font-family: 'Piazzolla', serif;
+.hubShareDescription_MayB {
+    color: #000000;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 18px;
     line-height: 1.5;
     margin: 30px 0;
     max-width: 750px;
 }
 
-.hubSharedAt_MayA {
-    color: #000102;
-    font-family: 'Piazzolla', serif;
+.hubSharedAt_MayB {
+    color: #000000;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 12px;
     margin: 0 0 10px 0;
 }
 
-.hubShareReactions_MayA {
+.hubShareReactions_MayB {
     padding: 10px 5px;
     width: 100%;
 }
 
-.hubShareReactionEmoji_MayA {
+.hubShareReactionEmoji_MayB {
     float: left;
     margin: 3px 3px 11px 3px;
     padding: 1px;
     width: 24%;
 }
 
-.hubShareReactionTally_MayA {
-    color: #000102;
+.hubShareReactionTally_MayB {
+    color: #000000;
     float: left;
-    font-family: 'Piazzolla', serif;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 24px;
     margin: 3px 2px 11px 5px;
 }
 
-.hubShareReactionDelete_MayA {
-    color: #000102;
+.hubShareReactionDelete_MayB {
+    color: #000000;
     cursor: pointer;
-    font-family: 'Piazzolla', serif;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 21px;
     margin: 3px 17px 11px 4px;
 }
 
-.hubReactionGestalt_MayA {
+.hubReactionGestalt_MayB {
     float: left;
     margin: 5px;
     width: 28%;
 }
 
-.hubShareAddReactionDiv_MayA {
-    background: #9f9a8b;
+.hubShareAddReactionDiv_MayB {
+    background: #a1af9f;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -379,29 +379,29 @@
     width: 350px;
 }
 
-.hubShareAddReactionDiv_MayA img {
+.hubShareAddReactionDiv_MayB img {
     cursor: pointer;
     margin: 4px;
     width: 30px;
 }
 
-.hubShareAddReactionsToggle_MayA {
+.hubShareAddReactionsToggle_MayB {
     padding: 0 0 5px 35%;
     width: 100%;
 }
 
-.hubShareAddReactionsToggle_MayA p {
-    color: #000102;
+.hubShareAddReactionsToggle_MayB p {
+    color: #000000;
     cursor: pointer;
-    font-family: 'Piazzolla', serif;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 18px;
 }
 
-.hubShareReactionsHoverText_MayA {
-    background: #9f9a8b;
+.hubShareReactionsHoverText_MayB {
+    background: #b6c2b7;
     bottom: 10%;
-    color: #000102;
-    font-family: 'Piazzolla', serif;
+    color: #000000;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 18px;
     max-width: 180px;
     opacity: 0;
@@ -412,11 +412,11 @@
     z-index: -10;
 }
 
-.hubShareReactionsHoverTextHover_MayA {
-    background: #809da7;
+.hubShareReactionsHoverTextHover_MayB {
+    background: #b6c2b7;
     bottom: 10%;
-    color: #000102;
-    font-family: 'Piazzolla', serif;
+    color: #000000;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 18px;
     max-width: 180px;
     opacity: 1;
@@ -427,61 +427,61 @@
     z-index: 10;
 }
 
-.hubShareCommentsLabel_MayA {
-    color: #000102;
-    font-family: 'Piazzolla', serif;
+.hubShareCommentsLabel_MayB {
+    color: #000000;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 18px;
     margin: 40px 80% 5px 0;
 }
 
-.hubShareCommenterAvatar_MayA {
+.hubShareCommenterAvatar_MayB {
     cursor: pointer;
     float: left;
     max-width: 30px;
 }
 
-.hubShareCommenterName_MayA {
-    color: #000102;
+.hubShareCommenterName_MayB {
+    color: #000000;
     cursor: pointer;
-    font-family: 'Piazzolla', serif;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 18px;
     position: relative;
     transform: translateX(7px) translateY(13px);
 
 }
 
-.hubShareCommentDateStamp_MayA {
-    color: #000102;
-    font-family: 'Piazzolla', serif;
+.hubShareCommentDateStamp_MayB {
+    color: #000000;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 12px;
     margin: 3px 0 3px 0;
 }
 
-.hubShareCommentComment_MayA {
-    color: #000102;
-    font-family: 'Piazzolla', serif;
+.hubShareCommentComment_MayB {
+    color: #000000;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 18px;
 }
 
-.hubShareNewComments_MayA p {
-    color: #000102;
-    font-family: 'Piazzolla', serif;
+.hubShareNewComments_MayB p {
+    color: #000000;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 18px;
     margin: 40px 60% 5px 0;
 }
 
-.hubShareCommentTextArea_MayA {
-    background: #809da7;
+.hubShareCommentTextArea_MayB {
+    background: #a1af9f;
     border: none;
-    color: #000102;
-    filter: drop-shadow(5px 5px 2px #191408);
-    font-family: 'Piazzolla', serif;
+    color: #000000;
+    filter: drop-shadow(5px 5px 2px #1a2519);
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 18px;
     outline-color: #80909c;
     width: 100%;
 }
 
-.hubShareNewComments_MayA button {
+.hubShareNewComments_MayB button {
     margin: 4px 35% 1px 35%;
 }
 
@@ -489,15 +489,15 @@
     width: 100%;
 }
 
-.hubTodayIsDisplay_MayA {
-    color: #9f9a8b;
-    font-family: 'Piazzolla', serif;
+.hubTodayIsDisplay_MayB {
+    color: #b6c2b7;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 36px;
     margin-right: 50px;
     width: 60%;
 }
 
-.hubTodayIsDiv_MayA {
+.hubTodayIsDiv_MayB {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -506,19 +506,19 @@
     padding: 1% 5%;
 }
 
-.hubReaderWeekly_MayA {
+.hubReaderWeekly_MayB {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    font-family: 'Piazzolla', serif;
+    font-family: 'Do Hyeon', sans-serif;
     height: auto;
     justify-content: flex-start;
     width: 100%;
 }
 
-.hubReaderTodayBlock_MayA {
+.hubReaderTodayBlock_MayB {
     background: #93bac4;
-    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/espresso-5414471_1920.jpg);
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_city_by_pushok_12_dyr0lf-fullview.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -528,21 +528,21 @@
     width: 8%;
 }
 
-.hubReaderTodayLabel_MayA {
+.hubReaderTodayLabel_MayB {
     background: #a1a4b5;
     border: none;
     color: #0a080c;
-    font-family: 'Piazzolla', serif;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 18px;
 }
 
-.hubReaderDayButton_MayA {
+.hubReaderDayButton_MayB {
     background: #93bac4;
     border: none;
     color: #0a080c;
     cursor: pointer;
     filter: drop-shadow(10px 15px 4px #1a1d2a);
-    font-family: 'Piazzolla', serif;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 24px;
     left: 12%;
     outline-color: #8d9396;
@@ -551,21 +551,20 @@
     z-index: 20;
 }
 
-.hubReaderDayButton_MayA:hover {
-    background: #040402;
+.hubReaderDayButton_MayB:hover {
     color: #0a080c;
     filter: brightness(110%) drop-shadow(9px 14px 3px #1a1d2a);
     outline-color: #c3b6a3;
     transition: all 0.4s linear;
 }
 
-.hubReaderWeekButton_MayA {
+.hubReaderWeekButton_MayB {
     background: #93bac4;
     border: none;
     color: #0a080c;
     cursor: pointer;
     filter: drop-shadow(10px 15px 4px #1a1d2a);
-    font-family: 'Piazzolla', serif;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 24px;
     left: 25%;
     outline-color: #8d9396;
@@ -575,7 +574,7 @@
     z-index: 20;
 }
 
-.hubReaderWeekButton_MayA:hover {
+.hubReaderWeekButton_MayB:hover {
     background: #040402;
     color: #0a080c;
     filter: brightness(110%) drop-shadow(9px 14px 3px #1a1d2a);
@@ -583,15 +582,15 @@
     transition: all 0.4s linear;
 }
 
-.hubReaderBlankLabel_MayA {
+.hubReaderBlankLabel_MayB {
     color: transparent;
-    font-family: 'Piazzolla', serif;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 30px;
 }
 
-.hubReaderDay1BlockActive_MayA {
+.hubReaderDay1BlockActive_MayB {
     background: #93bac4;
-    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/espresso-5414471_1920.jpg);
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_city_by_pushok_12_dyr0lf-fullview.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -606,9 +605,9 @@
     z-index: 1;
 }
 
-.hubReaderDay1BlockInactive_MayA {
+.hubReaderDay1BlockInactive_MayB {
     background: #93bac4;
-    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/espresso-5414471_1920.jpg);
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_city_by_pushok_12_dyr0lf-fullview.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -623,9 +622,9 @@
     z-index: -1;
 }
 
-.hubReaderDay2BlockActive_MayA {
+.hubReaderDay2BlockActive_MayB {
     background: #93bac4;
-    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/espresso-5414471_1920.jpg);
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_city_by_pushok_12_dyr0lf-fullview.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -640,9 +639,9 @@
     z-index: 1;
 }
 
-.hubReaderDay2BlockInactive_MayA {
+.hubReaderDay2BlockInactive_MayB {
     background: #93bac4;
-    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/espresso-5414471_1920.jpg);
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_city_by_pushok_12_dyr0lf-fullview.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -657,9 +656,9 @@
     z-index: -1;
 }
 
-.hubReaderDay3BlockActive_MayA {
+.hubReaderDay3BlockActive_MayB {
     background: #93bac4;
-    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/espresso-5414471_1920.jpg);
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_city_by_pushok_12_dyr0lf-fullview.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -674,9 +673,9 @@
     z-index: 1;
 }
 
-.hubReaderDay3BlockInactive_MayA {
+.hubReaderDay3BlockInactive_MayB {
     background: #93bac4;
-    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/espresso-5414471_1920.jpg);
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_city_by_pushok_12_dyr0lf-fullview.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -691,9 +690,9 @@
     z-index: -1;
 }
 
-.hubReaderDay4BlockActive_MayA {
+.hubReaderDay4BlockActive_MayB {
     background: #93bac4;
-    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/espresso-5414471_1920.jpg);
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_city_by_pushok_12_dyr0lf-fullview.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -708,9 +707,9 @@
     z-index: 1;
 }
 
-.hubReaderDay4BlockInactive_MayA {
+.hubReaderDay4BlockInactive_MayB {
     background: #93bac4;
-    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/espresso-5414471_1920.jpg);
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_city_by_pushok_12_dyr0lf-fullview.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -725,9 +724,9 @@
     z-index: -1;
 }
 
-.hubReaderDay5BlockActive_MayA {
+.hubReaderDay5BlockActive_MayB {
     background: #93bac4;
-    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/espresso-5414471_1920.jpg);
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_city_by_pushok_12_dyr0lf-fullview.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -742,9 +741,9 @@
     z-index: 1;
 }
 
-.hubReaderDay5BlockInactive_MayA {
+.hubReaderDay5BlockInactive_MayB {
     background: #93bac4;
-    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/espresso-5414471_1920.jpg);
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_city_by_pushok_12_dyr0lf-fullview.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -759,9 +758,9 @@
     z-index: -1;
 }
 
-.hubReaderDay6BlockActive_MayA {
+.hubReaderDay6BlockActive_MayB {
     background: #93bac4;
-    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/espresso-5414471_1920.jpg);
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_city_by_pushok_12_dyr0lf-fullview.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -776,9 +775,9 @@
     z-index: 1;
 }
 
-.hubReaderDay6BlockInactive_MayA {
+.hubReaderDay6BlockInactive_MayB {
     background: #93bac4;
-    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/espresso-5414471_1920.jpg);
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_city_by_pushok_12_dyr0lf-fullview.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -793,9 +792,9 @@
     z-index: -1;
 }
 
-.hubReaderDay7BlockActive_MayA {
+.hubReaderDay7BlockActive_MayB {
     background: #93bac4;
-    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/espresso-5414471_1920.jpg);
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_city_by_pushok_12_dyr0lf-fullview.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -810,9 +809,9 @@
     z-index: 1;
 }
 
-.hubReaderDay7BlockInactive_MayA {
+.hubReaderDay7BlockInactive_MayB {
     background: #93bac4;
-    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/espresso-5414471_1920.jpg);
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_city_by_pushok_12_dyr0lf-fullview.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -827,17 +826,17 @@
     z-index: -1;
 }
 
-.hubReaderManagementRow_MayA {
+.hubReaderManagementRow_MayB {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    font-family: 'Piazzolla', serif;
+    font-family: 'Do Hyeon', sans-serif;
     height: auto;
     justify-content: flex-start;
     width: 100%;
 }
 
-.hubShareShareSaveButtonsDiv_MayA {
+.hubShareShareSaveButtonsDiv_MayB {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -846,41 +845,41 @@
     width: 100%;
 }
 
-.hubShareShareSaveButtonsDiv_MayA button {
-    background: #003346;
+.hubShareShareSaveButtonsDiv_MayB button {
+    background: #6d856f;
     border-bottom: none;
-    border-left: 4px solid #376757;
-    border-right: 4px solid #376757;
+    border-left: 4px solid #000201;
+    border-right: 4px solid #000201;
     border-top: none;
     box-sizing: border-box;
-    color: #9f9a8b;
+    color: #000201;
     cursor: pointer;
     filter: brightness(100%) invert(0%);
-    font-family: 'Piazzolla', serif;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 24px;
     margin: 10px 35px;
     outline-color: #80909c;
-    padding-bottom: 8px;
+    padding: 4px 12px;
     transition: all 0.4s linear;
 }
 
-.hubShareShareSaveButtonsDiv_MayA button:hover {
-    background: #809da7;
-    border-left: 15px solid #376757;
-    border-right: 1px solid #376757;
-    color: #080e03;
+.hubShareShareSaveButtonsDiv_MayB button:hover {
+    background: #2b412c;
+    border-left: 15px solid #000201;
+    border-right: 1px solid #000201;
+    color: #b6c2b7;
     transition: all 0.4s linear;
 }
 
-.hubShareShareSaveButtonsDiv_MayA button:active {
+.hubShareShareSaveButtonsDiv_MayB button:active {
     filter: invert(100%);
     transition: all 0.2s linear;
 }
 
-.hubShareShareSaveModalActive_MayA {
-    background: #909a80;
+.hubShareShareSaveModalActive_MayB {
+    background: #95a096;
     color: #000000;
-    filter: drop-shadow(10px 15px 4px #191408);
+    filter: drop-shadow(10px 15px 4px #1a2519);
     left: 35%;
     opacity: 1;
     padding: 1% 3%;
@@ -891,63 +890,63 @@
     z-index: 55;
 }
 
-.hubShareShareSaveModalActive_MayA img {
+.hubShareShareSaveModalActive_MayB img {
     max-width: 20%;
 }
 
-.hubShareShareSaveModalActive_MayA p {
-    color: #000102;
-    font-family: 'Piazzolla', serif;
+.hubShareShareSaveModalActive_MayB p {
+    color: #000000;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 18px;
     margin: 15px 0;
 }
 
-.hubShareShareSaveModalActive_MayA textarea {
-    background: #9f9a8b;
+.hubShareShareSaveModalActive_MayB textarea {
+    background: #b6c2b7;
     border: none;
-    color: #000102;
-    font-family: 'Piazzolla', serif;
+    color: #000000;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 18px;
-    outline-color: #80909c;
+    outline-color: #8b918c;
     width: 100%;
 }
 
-.hubShareShareSaveModalActive_MayA button {
-    background: #003346;
+.hubShareShareSaveModalActive_MayB button {
+    background: #6d856f;
     border-bottom: none;
-    border-left: 4px solid #376757;
-    border-right: 4px solid #376757;
+    border-left: 4px solid #000201;
+    border-right: 4px solid #000201;
     border-top: none;
     box-sizing: border-box;
-    color: #9f9a8b;
+    color: #000201;
     cursor: pointer;
     filter: brightness(100%) invert(0%);
-    font-family: 'Piazzolla', serif;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 24px;
     margin: 5px 45px;
     outline-color: #80909c;
-    padding-bottom: 8px;
+    padding: 4px 12px;
     transition: all 0.4s linear;
 }
 
-.hubShareShareSaveModalActive_MayA button:hover {
-    background: #809da7;
-    border-left: 15px solid #376757;
-    border-right: 1px solid #376757;
-    color: #080e03;
+.hubShareShareSaveModalActive_MayB button:hover {
+    background: #2b412c;
+    border-left: 15px solid #000201;
+    border-right: 1px solid #000201;
+    color: #b6c2b7;
     transition: all 0.4s linear;
 }
 
-.hubShareShareSaveModalActive_MayA button:active {
+.hubShareShareSaveModalActive_MayB button:active {
     filter: invert(100%);
     transition: all 0.2s linear;
 }
 
-.hubShareShareSaveModalInactive_MayA {
-    background: #909a80;
-    filter: drop-shadow(10px 15px 4px #191408);
+.hubShareShareSaveModalInactive_MayB {
+    background: #95a096;
+    filter: drop-shadow(10px 15px 4px #1a2519);
     color: #000000;
-    font-family: 'Piazzolla', serif;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 18px;
     left: -135%;
     opacity: 0;
@@ -959,220 +958,220 @@
     z-index: -55;
 }
 
-.hubShareShareSaveModalInactive_MayA img {
+.hubShareShareSaveModalInactive_MayB img {
     max-width: 20%;
 }
 
-.hubShareShareSaveModalInactive_MayA p {
-    color: #000102;
-    font-family: 'Piazzolla', serif;
+.hubShareShareSaveModalInactive_MayB p {
+    color: #000000;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 18px;
     margin: 15px 0;
 }
 
-.hubShareShareSaveModalInactive_MayA textarea {
-    background: #9f9a8b;
+.hubShareShareSaveModalInactive_MayB textarea {
+    background: #b6c2b7;
     border: none;
-    color: #000102;
-    font-family: 'Piazzolla', serif;
+    color: #000000;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 18px;
-    outline-color: #80909c;
+    outline-color: #8b918c;
     width: 100%;
 }
 
-.hubShareShareSaveModalInactive_MayA button {
-    background: #003346;
+.hubShareShareSaveModalInactive_MayB button {
+    background: #6d856f;
     border-bottom: none;
-    border-left: 4px solid #376757;
-    border-right: 4px solid #376757;
+    border-left: 4px solid #000201;
+    border-right: 4px solid #000201;
     border-top: none;
     box-sizing: border-box;
-    color: #9f9a8b;
+    color: #000201;
     cursor: pointer;
     filter: brightness(100%) invert(0%);
-    font-family: 'Piazzolla', serif;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 24px;
     margin: 5px 45px;
     outline-color: #80909c;
-    padding-bottom: 8px;
+    padding: 4px 12px;
     transition: all 0.4s linear;
 }
 
-.hubDialogHeadline_MayA {
-    color: #000102;
-    font-family: 'Piazzolla', serif;
+.hubDialogHeadline_MayB {
+    color: #000000;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 24px;
     margin: 0 0 20px 0;
 }
 
-.hubRadioButtons_MayA {
-    color: #000102;
-    font-family: 'Piazzolla', serif;
+.hubRadioButtons_MayB {
+    color: #000000;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 18px;
     margin: 5px 5px 15px 5px;
 }
 
-.hubContainer_MayA {
+.hubContainer_MayB {
     filter: blur(0px);
     transition: all 0.4s linear;
 }
 
-.hubContainerBlur_MayA {
+.hubContainerBlur_MayB {
     filter: blur(10px);
     transition: all 0.4s linear;
 }
 
-.hubUserBlogList_MayA {
-    border-right: 1px solid #9f9a8b;
+.hubUserBlogList_MayB {
+    border-right: 1px solid #b6c2b7;
     float: left;
     height: 81vh;
     padding: 50px 15px;
     width: 30%;
 }
 
-.hubUserBlogData_MayA {
-    border-left: 1px solid #9f9a8b;
+.hubUserBlogData_MayB {
+    border-left: 1px solid #b6c2b7;
     float: left;
     height: 81vh;
     width: 60%;
 }
 
-.hubMyBlogsLabel_MayA {
-    color: #9f9a8b;
-    font-family: 'Piazzolla', serif;
+.hubMyBlogsLabel_MayB {
+    color: #b6c2b7;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 36px;
 }
 
-.hubBlogListEntry_MayA {
-    color: #9f9a8b;
+.hubBlogListEntry_MayB {
+    color: #b6c2b7;
     cursor: pointer;
-    font-family: 'Piazzolla', serif;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 30px;
     margin: 30px;
     transition: all 0.5s linear;
 }
 
-.hubBlogListEntry_MayA:hover {
+.hubBlogListEntry_MayB:hover {
     filter: brightness(190%);
     transition: all 0.5s linear;
 }
 
-.hubNewBlogButton_MayA {
-    background: #003346;
+.hubNewBlogButton_MayB {
+    background: #6d856f;
     border-bottom: none;
-    border-left: 4px solid #376757;
-    border-right: 4px solid #376757;
+    border-left: 4px solid #000201;
+    border-right: 4px solid #000201;
     border-top: none;
     box-sizing: border-box;
-    color: #9f9a8b;
+    color: #000201;
     cursor: pointer;
     filter: brightness(100%) invert(0%);
-    font-family: 'Piazzolla', serif;
-    font-size: 18px;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 24px;
     margin: 35px 75px;
     outline-color: #80909c;
-    padding-bottom: 8px;
+    padding: 4px 12px;
     transition: all 0.4s linear;
 }
 
-.hubNewBlogButton_MayA:hover {
-    background: #809da7;
-    border-left: 15px solid #376757;
-    border-right: 1px solid #376757;
-    color: #080e03;
+.hubNewBlogButton_MayB:hover {
+    background: #2b412c;
+    border-left: 15px solid #000201;
+    border-right: 1px solid #000201;
+    color: #b6c2b7;
     transition: all 0.4s linear;
 }
 
-.hubNewBlogButton_MayA:active {
+.hubNewBlogButton_MayB:active {
     filter: invert(100%);
     transition: all 0.2s linear;
 }
 
-.hubBlogLogoTitleDescription_MayA {
+.hubBlogLogoTitleDescription_MayB {
     cursor: pointer;
     padding: 2vh 20px;
     width: 100%;
 }
 
-.currentBlogLogoImage_MayA {
+.currentBlogLogoImage_MayB {
     float: left;
     height: 120px;
     max-width: 25%;
 }
 
-.currentBlogName_MayA {
-    color: #9f9a8b;
+.currentBlogName_MayB {
+    color: #b6c2b7;
     float: left;
-    font-family: 'Piazzolla', serif;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 48px;
     margin: 72px 0 0 40px;
 }
 
-.currentBlogTagline_MayA {
-    color: #9f9a8b;
+.currentBlogTagline_MayB {
+    color: #b6c2b7;
     float: left;
-    font-family: 'Piazzolla', serif;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 18px;
     margin: 10px 0 0 28.5%;
     position: relative;
     width: 90%;
 }
 
-.currentBlogContributersDiv_MayA {
+.currentBlogContributersDiv_MayB {
     float: left;
     padding: 20px 0 0 50px;
     width: 100%;
 }
 
-.contributerInfo_MayA {
+.contributerInfo_MayB {
     cursor: pointer;
 }
 
-.hubBlogContributerAvatar_MayA {
+.hubBlogContributerAvatar_MayB {
     float: left;
     max-width: 7%;
     margin: 1px 1px 1px 15px;
     position: relative;
 }
 
-.hubContributersLabel_MayA {
-    color: #9f9a8b;
-    font-family: 'Piazzolla', serif;
+.hubContributersLabel_MayB {
+    color: #b6c2b7;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 24px;
     margin-bottom: 10px;
 }
 
-.hubBlogContributerName_MayA {
-    color: #9f9a8b;
+.hubBlogContributerName_MayB {
+    color: #b6c2b7;
     float: left;
-    font-family: 'Piazzolla', serif;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 24px;
     margin: 30px 1px 1px 30px;
     width: 85%;
 }
 
-.hubBlogDataDiv_MayA {
+.hubBlogDataDiv_MayB {
     float: left;
     padding: 150px 0 0 70px;
     width: 100%;
 }
 
-.hubBlogDataPosts_MayA {
-    color: #9f9a8b;
-    font-family: 'Piazzolla', serif;
+.hubBlogDataPosts_MayB {
+    color: #b6c2b7;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 18px;
     width: 85%;
 }
 
-.hubUserProfileBasicsPane_MayA {
-    border-right: 1px solid #000102;
+.hubUserProfileBasicsPane_MayB {
+    border-right: 1px solid #000000;
     float: left;
     height: 81vh;
     width: 30%;
 }
 
-.hubPublicPrivateProfilePane_MayA {
-    border-left: 1px solid #000102;
+.hubPublicPrivateProfilePane_MayB {
+    border-left: 1px solid #000000;
     float: left;
     height: 81vh;
     overflow-x: hidden;
@@ -1180,7 +1179,7 @@
     width: 68%;
 }
 
-.hubBasicUserData_MayA {
+.hubBasicUserData_MayB {
     height: 90%;
     left: 5%;
     position: relative;
@@ -1188,44 +1187,44 @@
     width: 88%;
 }
 
-.hubLoggedInAsLabel_MayA {
-    color: #000102;
-    font-family: 'Piazzolla', serif;
+.hubLoggedInAsLabel_MayB {
+    color: #000000;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 24px;
 }
 
-.hubLoggedInAsAvatar_MayA {
-    filter: drop-shadow(5px 5px 2px #191408);
+.hubLoggedInAsAvatar_MayB {
+    filter: drop-shadow(5px 5px 2px #1a2519);
     margin-top: 5px;
     max-width: 150px;
 }
 
-.hubProfileUserName_MayA {
-    color: #000102;
-    font-family: 'Piazzolla', serif;
+.hubProfileUserName_MayB {
+    color: #000000;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 24px;
     margin: 5px 0 25px 0;
 }
 
-.hubUserDatas_MayA {
-    color: #000102;
-    font-family: 'Piazzolla', serif;
+.hubUserDatas_MayB {
+    color: #000000;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 18px;
 }
 
-.hubEditProfileButton_MayA {
-    background: #003346;
+.hubEditProfileButton_MayB {
+    background: #6d856f;
     border-bottom: none;
-    border-left: 4px solid #376757;
-    border-right: 4px solid #376757;
+    border-left: 4px solid #000201;
+    border-right: 4px solid #000201;
     border-top: none;
     box-sizing: border-box;
-    color: #9f9a8b;
+    color: #000201;
     cursor: pointer;
     filter: brightness(100%) invert(0%);
     float: right;
-    font-family: 'Piazzolla', serif;
-    font-size: 18px;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 24px;
     margin: 5px 15px;
     outline-color: #80909c;
     padding: 3px;
@@ -1233,20 +1232,20 @@
     transition: all 0.4s linear;
 }
 
-.hubEditProfileButton_MayA:hover {
-    background: #809da7;
-    border-left: 15px solid #376757;
-    border-right: 1px solid #376757;
-    color: #080e03;
+.hubEditProfileButton_MayB:hover {
+    background: #2b412c;
+    border-left: 15px solid #000201;
+    border-right: 1px solid #000201;
+    color: #b6c2b7;
     transition: all 0.4s linear;
 }
 
-.hubEditProfileButton_MayA:active {
+.hubEditProfileButton_MayB:active {
     filter: invert(100%);
     transition: all 0.2s linear;
 }
 
-.hubUserProfileNavigation_MayA {
+.hubUserProfileNavigation_MayB {
     height: auto;
     left: 60%;
     position: relative;
@@ -1254,7 +1253,7 @@
     width: 40%;
 }
 
-.hubUserProfileNavigationActive_MayA {
+.hubUserProfileNavigationActive_MayB {
     filter: blur(0px) opacity(1);
     height: 50px;
     transition: all 1s linear;
@@ -1262,16 +1261,16 @@
     z-index: 11;
 }
 
-.hubUserProfileNavigationActive_MayA p {
-    color: #000102;
+.hubUserProfileNavigationActive_MayB p {
+    color: #000000;
     filter: contrast(200%);
-    font-family: 'Piazzolla', serif;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 24px;
     transform: translateX(15px) translateY(10px);
     z-index: 111;
 }
 
-.hubUserProfileNavigationInactive_MayA {
+.hubUserProfileNavigationInactive_MayB {
     cursor: pointer;
     filter: blur(1px) opacity(0.7);
     height: 50px;
@@ -1279,19 +1278,19 @@
     width: 100%;
 }
 
-.hubUserProfileNavigationInactive_MayA p {
-    color: #3f3416;
+.hubUserProfileNavigationInactive_MayB p {
+    color: #162218;
     filter: contrast(40%);
-    font-family: 'Piazzolla', serif;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 24px;
     transform: translateX(15px) translateY(10px);
     z-index: 11;
 }
 
-.hubUserProfileNavigationSlidePublicState_MayA {
-    background: #a78637;
-    border-bottom: 1px inset #213400;
-    border-top: 1px inset #213400;
+.hubUserProfileNavigationSlidePublicState_MayB {
+    background: #a1af9f;
+    border-bottom: 1px inset #435e3f;
+    border-left: 1px inset #435e3f;
     box-sizing: border-box;
     height: 42px;
     left: 0;
@@ -1303,10 +1302,10 @@
     z-index: -1;
 }
 
-.hubUserProfileNavigationSlidePrivateState_MayA {
-    background: #a78637;
-    border-bottom: 1px inset #213400;
-    border-top: 1px inset #213400;
+.hubUserProfileNavigationSlidePrivateState_MayB {
+    background: #a1af9f;
+    border-bottom: 1px inset #435e3f;
+    border-left: 1px inset #435e3f;
     box-sizing: border-box;
     height: 42px;
     left: 0;
@@ -1318,10 +1317,10 @@
     z-index: -1;
 }
 
-.hubUserProfileNavigationSlideMessagesState_MayA {
-    background: #a78637;
-    border-bottom: 1px inset #213400;
-    border-top: 1px inset #213400;
+.hubUserProfileNavigationSlideMessagesState_MayB {
+    background: #a1af9f;
+    border-bottom: 1px inset #435e3f;
+    border-left: 1px inset #435e3f;
     box-sizing: border-box;
     height: 42px;
     left: 0;
@@ -1333,10 +1332,10 @@
     z-index: -1;
 }
 
-.hubUserProfileNavigationSlideFriendsState_MayA {
-    background: #a78637;
-    border-bottom: 1px inset #213400;
-    border-top: 1px inset #213400;
+.hubUserProfileNavigationSlideFriendsState_MayB {
+    background: #a1af9f;
+    border-bottom: 1px inset #435e3f;
+    border-left: 1px inset #435e3f;
     box-sizing: border-box;
     height: 42px;
     left: 0;
@@ -1348,10 +1347,10 @@
     z-index: -1;
 }
 
-.hubUserProfileNavigationSlideContactState_MayA {
-    background: #a78637;
-    border-bottom: 1px inset #213400;
-    border-top: 1px inset #213400;
+.hubUserProfileNavigationSlideContactState_MayB {
+    background: #a1af9f;
+    border-bottom: 1px inset #435e3f;
+    border-left: 1px inset #435e3f;
     box-sizing: border-box;
     height: 42px;
     left: 0;
@@ -1363,118 +1362,118 @@
     z-index: -1;
 }
 
-.hubPublicProfileDeets_MayA {
+.hubPublicProfileDeets_MayB {
     height: auto;
     width: 100%;
 }
 
-.hubUserPublicStats_MayA {
+.hubUserPublicStats_MayB {
     max-width: 750px;
     padding: 5%;
 }
 
-.hubUserLocationStat_MayA {
-    color: #000102;
-    font-family: 'Piazzolla', serif;
+.hubUserLocationStat_MayB {
+    color: #000000;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 18px;
     margin: 9px 0;
     max-width: 750px;
 }
 
-.hubUserLocationMap_MayA {
-    filter: drop-shadow(5px 5px 2px #191408);
+.hubUserLocationMap_MayB {
+    filter: drop-shadow(5px 5px 2px #1a2519);
     max-width: 50%;
 }
 
-.hubPhotoAttribution_MayA {
-    color: #000102;
-    font-family: 'Piazzolla', serif;
+.hubPhotoAttribution_MayB {
+    color: #000000;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 12px;
     margin: 5px 0;
 }
 
-.hubUserDescriptionStat_MayA {
-    color: #000102;
-    font-family: 'Piazzolla', serif;
+.hubUserDescriptionStat_MayB {
+    color: #000000;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 18px;
     margin: 30px 0 0 0;
 }
 
-.hubUserOccupationStat_MayA {
-    color: #000102;
-    font-family: 'Piazzolla', serif;
+.hubUserOccupationStat_MayB {
+    color: #000000;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 18px;
     margin: 50px 0 0 0;
 }
 
-.hubUserEmployerStat_MayA {
-    color: #000102;
-    font-family: 'Piazzolla', serif;
+.hubUserEmployerStat_MayB {
+    color: #000000;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 18px;
     margin: 10px 0 0 0;
 }
 
-.hubUserEducationStatLabel_MayA {
-    color: #000102;
-    font-family: 'Piazzolla', serif;
+.hubUserEducationStatLabel_MayB {
+    color: #000000;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 24px;
     margin: 60px 0 0 0;
 }
 
-.hubUserEducationStat_MayA {
-    color: #000102;
-    font-family: 'Piazzolla', serif;
+.hubUserEducationStat_MayB {
+    color: #000000;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 18px;
     margin: 10px 0 0 0;
 }
 
-.hubUserEmailStat_MayA {
-    color: #000102;
-    font-family: 'Piazzolla', serif;
+.hubUserEmailStat_MayB {
+    color: #000000;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 18px;
     margin: 40px 0 0 0;
 }
 
-.hubUserPhoneStat_MayA {
-    color: #000102;
-    font-family: 'Piazzolla', serif;
+.hubUserPhoneStat_MayB {
+    color: #000000;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 18px;
     margin: 10px 0 0 0;
 }
 
-.hubUserBirthdate_MayA {
-    color: #000102;
-    font-family: 'Piazzolla', serif;
+.hubUserBirthdate_MayB {
+    color: #000000;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 18px;
     margin: 10px 0 5px 0;
 }
 
-.hubMessageCenter_MayA {
+.hubMessageCenter_MayB {
     padding: 3%;
     width: 100%;
 }
 
-.hubMessageCenter_MayA i {
-    color: #000102;
+.hubMessageCenter_MayB i {
+    color: #000000;
 }
 
-.hubMessageScroll_MayA {
+.hubMessageScroll_MayB {
     height: 76vh;
     overflow-x: hidden;
     overflow-y: auto;
     width: 100%;
 }
 
-.hubMessageCenterLabel_MayA {
-    color: #000102;
-    font-family: 'Piazzolla', serif;
+.hubMessageCenterLabel_MayB {
+    color: #000000;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 30px;
     margin: 15px 0 15px 0;
 }
 
-.hubMainMessageContainer_MayA {
-    border-top: 3px solid #000102;
-    color: #000102;
+.hubMainMessageContainer_MayB {
+    border-top: 3px solid #000000;
+    color: #000000;
     cursor: pointer;
     margin-top: 5px;
     max-width: 750px;
@@ -1482,254 +1481,254 @@
     width: 100%;
 }
 
-.unreadIcon_MayA {
+.unreadIcon_MayB {
     float: left;
     font-size: 42px;
     margin: 8px 0;
 }
 
-.hubMessageFromSubjectfalse_MayA {
-    color: #000102;
+.hubMessageFromSubjectfalse_MayB {
+    color: #000000;
     float: left;
-    font-family: 'Piazzolla', serif;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 18px;
     margin: 0 10px 0 5px;
 }
 
-/* .hubMessageFromSubjectfalse_MayA:hover {
+/* .hubMessageFromSubjectfalse_MayB:hover {
   color: #e3e6eb;
 } */
 
-.hubMessageFromSubjecttrue_MayA {
-    color: #000102;
+.hubMessageFromSubjecttrue_MayB {
+    color: #000000;
     float: left;
-    font-family: 'Piazzolla', serif;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 18px;
     margin: 10px 10px 0 10px;
 }
 
-/* .hubMessageFromSubjecttrue_MayA:hover {
+/* .hubMessageFromSubjecttrue_MayB:hover {
   color: #e3e6eb;
 } */
 
-.hubExpandedMessageContainer_MayA {
+.hubExpandedMessageContainer_MayB {
     margin-left: 30px;
     max-width: 900px;
 }
 
-.hubMessageAvatar_MayA {
+.hubMessageAvatar_MayB {
     float: left;
     margin: 4px 1px 0 15px;
     max-width: 3%;
 }
 
-.hubMessageMessage_MayA {
-    color: #000102;
-    font-family: 'Piazzolla', serif;
+.hubMessageMessage_MayB {
+    color: #000000;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 18px;
     margin: 10px 0 5px 0;
     max-width: 750px;
 }
 
 
-.hubReplyNameDate_MayA {
-    color: #000102;
+.hubReplyNameDate_MayB {
+    color: #000000;
     float: left;
-    font-family: 'Piazzolla', serif;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 18px;
     margin: 3px 10px 0 5px;
 }
 
-.hubReplyText_MayA {
-    background: #9f9a8b;
+.hubReplyText_MayB {
+    background: #b6c2b7;
     border: none;
-    color: #000102;
-    font-family: 'Piazzolla', serif;
+    color: #000000;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 18px;
     margin-bottom: 35px;
     max-width: 750px;
-    outline-color: #80909c;
+    outline-color: #8b918c;
     rows: 3;
     width: 80%;
 }
 
-.hubReplyResponseText_MayA {
-    background: #9f9a8b;
+.hubReplyResponseText_MayB {
+    background: #b6c2b7;
     border: none;
-    color: #000102;
-    font-family: 'Piazzolla', serif;
+    color: #000000;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 18px;
     max-width: 750px;
     rows: 3;
     width: 80%;
 }
 
-.hubReplyResponseText_MayA::-webkit-input-placeholder {
-    color: #013b4f;
+.hubReplyResponseText_MayB::-webkit-input-placeholder {
+    color: #2b412c;
 }
 
-.hubReplyResponseText_MayA:-moz-placeholder {
-    color: #013b4f;
+.hubReplyResponseText_MayB:-moz-placeholder {
+    color: #2b412c;
 }
 
-.hubReplyResponseText_MayA::-moz-placeholder {
-    color: #013b4f;
+.hubReplyResponseText_MayB::-moz-placeholder {
+    color: #2b412c;
 }
 
-.hubReplyResponseText_MayA::-moz-placeholder {
-    color: #013b4f;
+.hubReplyResponseText_MayB::-moz-placeholder {
+    color: #2b412c;
 }
 
-.hubReplyResponseText_MayA:-ms-input-placeholder {
-    color: #013b4f;
+.hubReplyResponseText_MayB:-ms-input-placeholder {
+    color: #2b412c;
 }
 
-.hubReplyResponseText_MayA::placeholder {
-    color: #013b4f;
+.hubReplyResponseText_MayB::placeholder {
+    color: #2b412c;
 }
 
-.hubReplySubmit_MayA {
-    background: #003346;
+.hubReplySubmit_MayB {
+    background: #6d856f;
     border-bottom: none;
-    border-left: 4px solid #376757;
-    border-right: 4px solid #376757;
+    border-left: 4px solid #000201;
+    border-right: 4px solid #000201;
     border-top: none;
     box-sizing: border-box;
-    color: #9f9a8b;
+    color: #000201;
     cursor: pointer;
     filter: brightness(100%) invert(0%);
-    font-family: 'Piazzolla', serif;
-    font-size: 18px;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 24px;
     margin: 1px 2px 15px 5px;
     outline-color: #80909c;
-    padding-bottom: 8px;
+    padding: 8px;
     transition: all 0.4s linear;
 }
 
-.hubReplySubmit_MayA:hover {
-    background: #809da7;
-    border-left: 15px solid #376757;
-    border-right: 1px solid #376757;
-    color: #080e03;
+.hubReplySubmit_MayB:hover {
+    background: #2b412c;
+    border-left: 15px solid #000201;
+    border-right: 1px solid #000201;
+    color: #b6c2b7;
     transition: all 0.4s linear;
 }
 
-.hubReplySubmit_MayA:active {
+.hubReplySubmit_MayB:active {
     filter: invert(100%);
     transition: all 0.2s linear;
 }
 
-.hubFriendsCenter_MayA {
+.hubFriendsCenter_MayB {
     padding: 3%;
     width: 100%;
 }
 
-.hubFriendsCenterLabel_MayA {
-    color: #000102;
-    font-family: 'Piazzolla', serif;
+.hubFriendsCenterLabel_MayB {
+    color: #000000;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 30px;
     margin: 15px 0 15px 0;
 }
 
-.hubFriendsScroll_MayA {
+.hubFriendsScroll_MayB {
     height: 76vh;
     overflow-x: hidden;
     overflow-y: auto;
     width: 100%;
 }
 
-.hubFriendsFilter_MayA {
-    background: #9f9a8b;
+.hubFriendsFilter_MayB {
+    background: #b6c2b7;
     border: none;
-    color: #000102;
-    font-family: 'Piazzolla', serif;
+    color: #000000;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 18px;
-    outline-color: #80909c;
+    outline-color: #8b918c;
     width: 50%;
 }
 
-.hubFriendsFilter_MayA::-webkit-input-placeholder {
+.hubFriendsFilter_MayB::-webkit-input-placeholder {
+    color: #2b412c;
+}
+
+.hubFriendsFilter_MayB:-moz-placeholder {
+    color: #2b412c;
+}
+
+.hubFriendsFilter_MayB::-moz-placeholder {
     color: #013b4f;
 }
 
-.hubFriendsFilter_MayA:-moz-placeholder {
-    color: #013b4f;
+.hubFriendsFilter_MayB::-moz-placeholder {
+    color: #2b412c;
 }
 
-.hubFriendsFilter_MayA::-moz-placeholder {
-    color: #013b4f;
+.hubFriendsFilter_MayB:-ms-input-placeholder {
+    color: #2b412c;
 }
 
-.hubFriendsFilter_MayA::-moz-placeholder {
-    color: #013b4f;
+.hubFriendsFilter_MayB::placeholder {
+    color: #2b412c;
 }
 
-.hubFriendsFilter_MayA:-ms-input-placeholder {
-    color: #013b4f;
-}
-
-.hubFriendsFilter_MayA::placeholder {
-    color: #013b4f;
-}
-
-.hubSearchIcon_MayA {
-    color: #000102;
+.hubSearchIcon_MayB {
+    color: #000000;
     font-size: 18px;
     margin: 5px 15px 0 0;
 }
 
-.hubFriendRollEntry_MayA {
+.hubFriendRollEntry_MayB {
     cursor: pointer;
     margin: 20px 0 0 50px;
     max-width: 750px;
 }
 
-.hubFriendsRollAvatar_MayA {
-    filter: drop-shadow(5px 5px 2px #191408);
+.hubFriendsRollAvatar_MayB {
+    filter: drop-shadow(5px 5px 2px #1a2519);
     margin-bottom: 7px;
     max-height: 50px;
     max-width: 50px;
 }
 
-.hubFriendsNameListing_MayA {
-    color: #000102;
-    font-family: 'Piazzolla', serif;
+.hubFriendsNameListing_MayB {
+    color: #000000;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 18px;
 }
 
-.hubFriendMessageButton_MayA {
-    background: #003346;
+.hubFriendMessageButton_MayB {
+    background: #6d856f;
     border-bottom: none;
-    border-left: 4px solid #376757;
-    border-right: 4px solid #376757;
+    border-left: 4px solid #000201;
+    border-right: 4px solid #000201;
     border-top: none;
     box-sizing: border-box;
-    color: #9f9a8b;
+    color: #000201;
     cursor: pointer;
     filter: brightness(100%) invert(0%);
-    font-family: 'Piazzolla', serif;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 24px;
     margin: 9px 5px 15px 50px;
     outline-color: #80909c;
-    padding-bottom: 8px;
+    padding: 8px;
     transition: all 0.4s linear;
 }
 
-.hubFriendMessageButton_MayA:hover {
-    background: #809da7;
-    border-left: 15px solid #376757;
-    border-right: 1px solid #376757;
-    color: #080e03;
+.hubFriendMessageButton_MayB:hover {
+    background: #2b412c;
+    border-left: 15px solid #000201;
+    border-right: 1px solid #000201;
+    color: #b6c2b7;
     transition: all 0.4s linear;
 }
 
-.hubFriendMessageButton_MayA:active {
+.hubFriendMessageButton_MayB:active {
     filter: invert(100%);
     transition: all 0.2s linear;
 }
 
-.hubProfileDisplayerActive_MayA {
-    background: #9f9a8b;
+.hubProfileDisplayerActive_MayB {
+    background: #b6c2b7;
     height: auto;
     left: 15%;
     opacity: 1;
@@ -1740,8 +1739,8 @@
     z-index: 100;
 }
 
-.hubProfileDisplayerInactive_MayA {
-    background: #9f9a8b;
+.hubProfileDisplayerInactive_MayB {
+    background: #b6c2b7;
     height: auto;
     left: 145%;
     opacity: 0;
@@ -1752,64 +1751,64 @@
     z-index: -6;
 }
 
-.hubProfileDisplayCloseButton_MayA {
-    background: #003346;
+.hubProfileDisplayCloseButton_MayB {
+    background: #6d856f;
     border-bottom: none;
-    border-left: 4px solid #376757;
-    border-right: 4px solid #376757;
+    border-left: 4px solid #000201;
+    border-right: 4px solid #000201;
     border-top: none;
     box-sizing: border-box;
-    color: #9f9a8b;
+    color: #000201;
     cursor: pointer;
     filter: brightness(100%) invert(0%);
     float: right;
-    font-family: 'Piazzolla', serif;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 24px;
     margin: 15px;
     outline-color: #80909c;
-    padding-bottom: 8px;
+    padding: 8px;
     transition: all 0.4s linear;
 }
 
-.hubProfileDisplayCloseButton_MayA:hover {
-    background: #809da7;
-    border-left: 15px solid #376757;
-    border-right: 1px solid #376757;
-    color: #080e03;
+.hubProfileDisplayCloseButton_MayB:hover {
+    background: #2b412c;
+    border-left: 15px solid #000201;
+    border-right: 1px solid #000201;
+    color: #b6c2b7;
     transition: all 0.4s linear;
 }
 
-.hubProfileDisplayCloseButton_MayA:active {
+.hubProfileDisplayCloseButton_MayB:active {
     filter: invert(100%);
     transition: all 0.2s linear;
 }
 
-.hubProfileDisplayAvatar_MayA {
-    filter: drop-shadow(10px 15px 4px #191408);
+.hubProfileDisplayAvatar_MayB {
+    filter: drop-shadow(10px 15px 4px #1a2519);
     float: left;
     margin: 15px;
     max-width: 200px;
 }
 
-.hubProfileDisplayDataContainer_MayA {
+.hubProfileDisplayDataContainer_MayB {
     padding: 15px;
 }
 
-.hubProfileDisplayName_MayA {
-    color: #000102;
+.hubProfileDisplayName_MayB {
+    color: #000000;
     float: left;
-    font-family: 'Piazzolla', serif;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 36px;
 }
 
-.hubProfileDisplayDescritors_MayA {
-    color: #000102;
+.hubProfileDisplayDescritors_MayB {
+    color: #000000;
     float: left;
-    font-family: 'Piazzolla', serif;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 24px;
 }
 
-.hubDisplayContainer2_MayA {
+.hubDisplayContainer2_MayB {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -1817,74 +1816,74 @@
     width: 100%;
 }
 
-.profileDisplayStats_MayA {
-    color: #000102;
+.profileDisplayStats_MayB {
+    color: #000000;
     float: left;
-    font-family: 'Piazzolla', serif;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 18px;
     width: 70%;
 }
 
-.hubProfileDisplayBioBlock_MayA {
+.hubProfileDisplayBioBlock_MayB {
     padding: 15px;
     min-width: 215px;
     width: 30%;
 
 }
 
-.hubProfileDisplayBioImage_MayA {
-    filter: drop-shadow(10px 15px 4px #191408);
+.hubProfileDisplayBioImage_MayB {
+    filter: drop-shadow(10px 15px 4px #1a2519);
     max-width: 200px;
 }
 
-.hubProfileDisplayUserDatas_MayA {
+.hubProfileDisplayUserDatas_MayB {
     float: left;
     padding: 15px;
     width: 60%;
 }
 
-.hubProfileDisplayDescritors2_MayA {
-    color: #000102;
+.hubProfileDisplayDescritors2_MayB {
+    color: #000000;
     float: left;
-    font-family: 'Piazzolla', serif;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 18px;
     width: 70%;
 }
 
-.hubDisplayMessageButton_MayA {
-    background: #003346;
+.hubDisplayMessageButton_MayB {
+    background: #6d856f;
     border-bottom: none;
-    border-left: 4px solid #376757;
-    border-right: 4px solid #376757;
+    border-left: 4px solid #000201;
+    border-right: 4px solid #000201;
     border-top: none;
     box-sizing: border-box;
-    color: #9f9a8b;
+    color: #000201;
     cursor: pointer;
     filter: brightness(100%) invert(0%);
     float: right;
-    font-family: 'Piazzolla', serif;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 24px;
     margin: 15px;
     outline-color: #80909c;
-    padding-bottom: 8px;
+    padding: 8px;
     transition: all 0.4s linear;
 }
 
-.hubDisplayMessageButton_MayA:hover {
-    background: #809da7;
-    border-left: 15px solid #376757;
-    border-right: 1px solid #376757;
-    color: #080e03;
+.hubDisplayMessageButton_MayB:hover {
+    background: #2b412c;
+    border-left: 15px solid #000201;
+    border-right: 1px solid #000201;
+    color: #b6c2b7;
     transition: all 0.4s linear;    
 }
 
-.hubDisplayMessageButton_MayA:active {
+.hubDisplayMessageButton_MayB:active {
     filter: invert(100%);
     transition: all 0.2s linear;
 }
 
-.hubDisplayMessageModalActive_MayA {
-    background: #809da7;
+.hubDisplayMessageModalActive_MayB {
+    background: #b6c2b7;
     height: auto;
     left: 15%;
     opacity: 1;
@@ -1895,8 +1894,8 @@
     z-index: 100;
 }
 
-.hubDisplayMessageModalInactive_MayA {
-    background: #809da7;
+.hubDisplayMessageModalInactive_MayB {
+    background: #b6c2b7;
     height: auto;
     left: -45%;
     opacity: 0;
@@ -1907,76 +1906,76 @@
     z-index: -6;
 }
 
-.hubMessageModalLabel_MayA {
-    color: #000102;
-    font-family: 'Piazzolla', serif;
+.hubMessageModalLabel_MayB {
+    color: #000000;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 24px;
     margin: 30px;
 }
 
-.hubMessageModalButtonFields_MayA {
+.hubMessageModalButtonFields_MayB {
     padding: 15px 30% 45px 15%;
 }
 
-.hubMessageModalButton_MayA {
-    background: #003346;
+.hubMessageModalButton_MayB {
+    background: #6d856f;
     border-bottom: none;
-    border-left: 4px solid #376757;
-    border-right: 4px solid #376757;
+    border-left: 4px solid #000201;
+    border-right: 4px solid #000201;
     border-top: none;
     box-sizing: border-box;
-    color: #9f9a8b;
+    color: #000201;
     cursor: pointer;
     filter: brightness(100%) invert(0%);
     float: right;
-    font-family: 'Piazzolla', serif;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 24px;
     margin: 15px;
     outline-color: #80909c;
-    padding-bottom: 8px;
+    padding: 8px;
     transition: all 0.4s linear;
 }
 
-.hubMessageModalButton_MayA:hover {
-    background: #809da7;
-    border-left: 15px solid #376757;
-    border-right: 1px solid #376757;
-    color: #080e03;
-    transition: all 0.4s linear; 
+.hubMessageModalButton_MayB:hover {
+    background: #2b412c;
+    border-left: 15px solid #000201;
+    border-right: 1px solid #000201;
+    color: #b6c2b7;
+    transition: all 0.4s linear;  
 }
 
-.hubMessageModalButton_MayA:active {
+.hubMessageModalButton_MayB:active {
     filter: invert(100%);
     transition: all 0.2s linear;
 }
 
-.hubMessageModalInputs_MayA {
+.hubMessageModalInputs_MayB {
     padding: 15px 45px 0 45px;
 }
 
-.hubMessageModalSubjectInput_MayA {
-    background: #9f9a8b;
+.hubMessageModalSubjectInput_MayB {
+    background: #a1af9f;
     border: none;
-    color: #000102;
-    font-family: 'Piazzolla', serif;
+    color: #000000;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 18px;
     margin: 0 0 0 8%;
-    outline-color: #80909c;
+    outline-color: #8b918c;
     width: 80%;
 }
 
-.hubMessageModalMessageInput_MayA {
-    background: #9f9a8b;
+.hubMessageModalMessageInput_MayB {
+    background: #a1af9f;
     border: none;
-    color: #000102;
-    font-family: 'Piazzolla', serif;
+    color: #000000;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 18px;
     margin: 5px 0 0 8%;
-    outline-color: #80909c;
+    outline-color: #8b918c;
     width: 80%;
 }
 
-.hubMessageModalToFields_MayA {
+.hubMessageModalToFields_MayB {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -1985,22 +1984,22 @@
     width: 100%;
 }
 
-.hubRecipientAvatar_MayA {
-    filter: drop-shadow(10px 15px 4px #191408);
+.hubRecipientAvatar_MayB {
+    filter: drop-shadow(10px 15px 4px #1a2519);
     float: left;
     max-width: 50px;
 }
 
-.hubRecipientName_MayA {
+.hubRecipientName_MayB {
     float: left;
-    color: #000102;
-    font-family: 'Piazzolla', serif;
+    color: #000000;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 24px;
     margin: 12px 0 8px 15px;
 }
 
-.hubRemoveGuardrailActive_MayA {
-    background: #002039;
+.hubRemoveGuardrailActive_MayB {
+    background: #6d856f;
     height: auto;
     left: 25%;
     opacity: 1;
@@ -2011,8 +2010,8 @@
     z-index: 100;
 }
 
-.hubRemoveGuardrailInactive_MayA {
-    background: #002039;
+.hubRemoveGuardrailInactive_MayB {
+    background: #6d856f;
     height: auto;
     left: -45%;
     opacity: 0;
@@ -2023,58 +2022,58 @@
     z-index: -6;
 }
 
-.hubGuardrailText_MayA {
-    color: #9f9a8b;
-    font-family: 'Piazzolla', serif;
+.hubGuardrailText_MayB {
+    color: #000000;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 24px;
     margin: 24px 10% 8px 10%;
 }
 
-.hubGuardrailButton_MayA {
-    background: #003346;
+.hubGuardrailButton_MayB {
+    background: #6d856f;
     border-bottom: none;
-    border-left: 4px solid #376757;
-    border-right: 4px solid #376757;
+    border-left: 4px solid #000201;
+    border-right: 4px solid #000201;
     border-top: none;
     box-sizing: border-box;
-    color: #9f9a8b;
+    color: #000201;
     cursor: pointer;
     filter: brightness(100%) invert(0%);
-    font-family: 'Piazzolla', serif;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 24px;
     margin: 15px;
     outline-color: #80909c;
-    padding-bottom: 8px;
+    padding: 8px;
     transition: all 0.4s linear;
 }
 
-.hubGuardrailButton_MayA:hover {
-    background: #809da7;
-    border-left: 15px solid #376757;
-    border-right: 1px solid #376757;
-    color: #080e03;
+.hubGuardrailButton_MayB:hover {
+    background: #2b412c;
+    border-left: 15px solid #000201;
+    border-right: 1px solid #000201;
+    color: #b6c2b7;
     transition: all 0.4s linear; 
 }
 
-.hubGuardrailButton_MayA:active {
+.hubGuardrailButton_MayB:active {
     filter: invert(100%);
     transition: all 0.2s linear;
 }
 
-.hubGuardrailButtonsDiv_MayA {
+.hubGuardrailButtonsDiv_MayB {
     float: left;
     margin-left: 35%;
 }
 
-.hubOtherProfileEditButton_MayA {
+.hubOtherProfileEditButton_MayB {
     float: right;
     padding: 30px 45px;
 }
 
-.pendingFriendRequests_MayA {
-    color: #000102;
+.pendingFriendRequests_MayB {
+    color: #000000;
     float: right;
-    font-family: 'Piazzolla', serif;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 18px;
     left: 80%;
     margin: 1%;
@@ -2082,97 +2081,97 @@
     top: 20%;
 }
 
-.hubContactCenter_MayA {
+.hubContactCenter_MayB {
     padding: 10%;
     width: 100%;
 }
 
-.hubContactLabel_MayA {
-    color: #000102;
-    font-family: 'Piazzolla', serif;
+.hubContactLabel_MayB {
+    color: #000000;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 30px;
 }
 
-.hubFooter_MayA {
+.hubFooter_MayB {
     bottom: 3px;
-    color: #9f9a8b;
+    color: #000000;
     filter: brightness(300%);
-    font-family: 'Piazzolla', serif;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 13px;
     left: 80%;
     position: absolute;
 }
 
-.hubContactFormField_MayA {
+.hubContactFormField_MayB {
     margin: 25px 0;
 }
 
-.hubContactSubjectInput_MayA {
-    background: #9f9a8b;
+.hubContactSubjectInput_MayB {
+    background: #6d856f;
     border: none;
-    color: #000102;
-    font-family: 'Piazzolla', serif;
+    color: #000000;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 18px;
     margin: 5px 0 5px 0;
     max-width: 750px;
-    outline-color: #80909c;
+    outline-color: #8b918c;
     width: 80%;
 }
 
-.hubContactMessageInput_MayA {
-    background: #9f9a8b;
+.hubContactMessageInput_MayB {
+    background: #6d856f;
     border: none;
-    color: #000102;
-    font-family: 'Piazzolla', serif;
+    color: #000000;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 18px;
     margin: 5px 0 5px 0;
     max-width: 750px;
-    outline-color: #80909c;
+    outline-color: #8b918c;
     width: 80%;
 }
 
-.hubContactAdminSubmitButton_MayA {
-    background: #003346;
+.hubContactAdminSubmitButton_MayB {
+    background: #6d856f;
     border-bottom: none;
-    border-left: 4px solid #376757;
-    border-right: 4px solid #376757;
+    border-left: 4px solid #000201;
+    border-right: 4px solid #000201;
     border-top: none;
     box-sizing: border-box;
-    color: #9f9a8b;
+    color: #000201;
     cursor: pointer;
     filter: brightness(100%) invert(0%);
-    font-family: 'Piazzolla', serif;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 18px;
     margin: 5px 0;
     outline-color: #80909c;
-    padding-bottom: 8px;
+    padding: 8px;
     position: relative;
     transition: all 0.4s linear;
     width: 76%;
 }
 
-.hubContactAdminSubmitButton_MayA:hover {
-    background: #809da7;
-    border-left: 15px solid #376757;
-    border-right: 1px solid #376757;
-    color: #080e03;
-    transition: all 0.4s linear;
+.hubContactAdminSubmitButton_MayB:hover {
+    background: #2b412c;
+    border-left: 15px solid #000201;
+    border-right: 1px solid #000201;
+    color: #b6c2b7;
+    transition: all 0.4s linear; 
 }
 
-.hubContactAdminSubmitButton_MayA:active {
+.hubContactAdminSubmitButton_MayB:active {
     filter: invert(100%);
     transition: all 0.2s linear;
 }
 
-.removeShare_MayA {
-    color: #000102;
+.removeShare_MayB {
+    color: #000000;
     cursor: pointer;
     float: right;
     font-size: 30px;
 }
 
-.deleteGuardrailActive_MayA {
-    background: #002039;
+.deleteGuardrailActive_MayB {
+    background: #b6c2b7;
     height: auto;
     left: 25%;
     opacity: 1;
@@ -2183,8 +2182,8 @@
     z-index: 100;
 }
 
-.deleteGuardrailInactive_MayA {
-    background: #002039;
+.deleteGuardrailInactive_MayB {
+    background: #b6c2b7;
     height: auto;
     left: -45%;
     opacity: 0;
@@ -2195,8 +2194,8 @@
     z-index: -6;
 }
 
-.deleteCommentGuardrailActive_MayA {
-    background: #002039;
+.deleteCommentGuardrailActive_MayB {
+    background: #b6c2b7;
     height: auto;
     left: 25%;
     opacity: 1;
@@ -2207,8 +2206,8 @@
     z-index: 100;
 }
 
-.deleteCommentGuardrailInactive_MayA {
-    background: #002039;
+.deleteCommentGuardrailInactive_MayB {
+    background: #b6c2b7;
     height: auto;
     left: -45%;
     opacity: 0;
@@ -2219,15 +2218,15 @@
     z-index: -6;
 }
 
-.editComment_MayA {
-    color: #000102;
+.editComment_MayB {
+    color: #000000;
     cursor: pointer;
     float: right;
     font-size: 18px;
 }
 
-.hubEditMessageInactive_MayA {
-    background: #9f9a8b;
+.hubEditMessageInactive_MayB {
+    background: #b6c2b7;
     left: -35%;
     opacity: 0;
     padding: 1% 3%;
@@ -2238,8 +2237,8 @@
     z-index: -55;
 }
 
-.hubEditMessageActive_MayA {
-    background: #9f9a8b;
+.hubEditMessageActive_MayB {
+    background: #b6c2b7;
     left: 35%;
     opacity: 1;
     padding: 1% 3%;
@@ -2250,64 +2249,63 @@
     z-index: 55;
 }
 
-.hubEditMessageActive_MayA img {
-    filter: drop-shadow(10px 15px 4px #191408);
+.hubEditMessageActive_MayB img {
+    filter: drop-shadow(10px 15px 4px #1a2519);
     max-width: 15%;
 }
 
-.hubEditMessageActive_MayA p {
-    color: #000102;
-    font-family: 'Piazzolla', serif;
+.hubEditMessageActive_MayB p {
+    color: #000000;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 18px;
     margin: 15px 0;
 }
 
-.hubEditMessageActive_MayA textarea {
-    background: #809da7;
+.hubEditMessageActive_MayB textarea {
+    background: #95a096;
     border: none;
-    color: #000102;
-    font-family: 'Piazzolla', serif;
+    color: #000000;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 18px;
-    outline-color: #80909c;
+    outline-color: #8b918c;
     width: 100%;
 }
 
-.hubEditMessageActive_MayA button {
-    background: #003346;
+.hubEditMessageActive_MayB button {
+    background: #6d856f;
     border-bottom: none;
-    border-left: 4px solid #376757;
-    border-right: 4px solid #376757;
+    border-left: 4px solid #000201;
+    border-right: 4px solid #000201;
     border-top: none;
     box-sizing: border-box;
-    color: #9f9a8b;
+    color: #000201;
     cursor: pointer;
     filter: brightness(100%) invert(0%);
     float: right;
-    font-family: 'Piazzolla', serif;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 24px;
     margin: 5px 45px;
     outline-color: #80909c;
-    padding-bottom: 8px;
+    padding: 8px;
     position: relative;
     transition: all 0.4s linear;
-
 }
 
-.hubEditMessageActive_MayA button:hover {
-    background: #809da7;
-    border-left: 15px solid #376757;
-    border-right: 1px solid #376757;
-    color: #080e03;
+.hubEditMessageActive_MayB button:hover {
+    background: #2b412c;
+    border-left: 15px solid #000201;
+    border-right: 1px solid #000201;
+    color: #b6c2b7;
     transition: all 0.4s linear;
 }
 
-.hubEditMessageActive_MayA button:active {
+.hubEditMessageActive_MayB button:active {
     filter: invert(100%);
     transition: all 0.2s linear;
 }
 
-.hubEditMessageInactive_MayA {
-    background: #809da7;
+.hubEditMessageInactive_MayB {
+    background: #b6c2b7;
     left: -135%;
     opacity: 0;
     padding: 1% 3%;
@@ -2318,228 +2316,228 @@
     z-index: -55;
 }
 
-.hubEditMessageInactive_MayA img {
+.hubEditMessageInactive_MayB img {
     max-width: 15%;
 }
 
-.hubEditMessageInactive_MayA p {
-    color: #000102;
-    font-family: 'Piazzolla', serif;
+.hubEditMessageInactive_MayB p {
+    color: #000000;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 18px;
     margin: 15px 0;
 }
 
-.hubEditMessageInactive_MayA textarea {
-    background: #809da7;
+.hubEditMessageInactive_MayB textarea {
+    background: #6d856f;
     border: none;
-    color: #000102;
-    font-family: 'Piazzolla', serif;
+    color: #000000;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 18px;
-    outline-color: #80909c;
+    outline-color: #8b918c;
     width: 100%;
 }
 
-.hubEditMessageInactive_MayA button {
-    background: #003346;
+.hubEditMessageInactive_MayB button {
+    background: #6d856f;
     border-bottom: none;
-    border-left: 4px solid #376757;
-    border-right: 4px solid #376757;
+    border-left: 4px solid #000201;
+    border-right: 4px solid #000201;
     border-top: none;
     box-sizing: border-box;
-    color: #9f9a8b;
+    color: #000201;
     cursor: pointer;
     filter: brightness(100%) invert(0%);
     float: right;
-    font-family: 'Piazzolla', serif;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 24px;
     margin: 5px 45px;
     outline-color: #80909c;
-    padding-bottom: 8px;
+    padding: 8px;
     position: relative;
     transition: all 0.4s linear;
 }
 
-.removeShareComment_MayA {
+.removeShareComment_MayB {
     cursor: pointer;
     float: right;
     margin: 0 5px;
 }
 
 @media only screen and (max-width: 768px) {
-    .hubReactionGestalt_MayA {
+    .hubReactionGestalt_MayB {
         margin: 4px;
         width: 25%;
     }
 
-    .hubShareReactionTally_MayA {
+    .hubShareReactionTally_MayB {
         font-size: 18px;
         margin: 3px 1px 10px 4px;
     }
 
-    .hubShareReactionDelete_MayA {
+    .hubShareReactionDelete_MayB {
         margin: 3px 4px 10px 0;
     }
 
-    .hubReaderTodayBlock_MayA {
+    .hubReaderTodayBlock_MayB {
         width: 5%;
     }
 
-    .currentBlogTagline_MayA {
+    .currentBlogTagline_MayB {
         width: 80%;
     }
 
-    .hubUserProfileNavigation_MayA {
+    .hubUserProfileNavigation_MayB {
         transform: scale(0.9) translateX(-25px);
     }
 }
 
 @media only screen and (max-width: 414px) {
 
-    .hubBlogsDashboard_MayA {
+    .hubBlogsDashboard_MayB {
         width: 99%;
     }
 
-    .hubPublicPrivateProfilePane_MayA {
+    .hubPublicPrivateProfilePane_MayB {
         width: 60%;
     }
 
-    .hubTitleFlex_MayA {
+    .hubTitleFlex_MayB {
         transform: scale(0.9);
     }
 
-    .hubBylineName_MayA {
+    .hubBylineName_MayB {
         font-size: 18px;
     }
 
-    .hubShareComments_MayA {
+    .hubShareComments_MayB {
         font-size: 18px;
     }
 
-    .hubShareAddReactionsToggle_MayA p {
+    .hubShareAddReactionsToggle_MayB p {
         font-size: 13px;
         transform: translateX(-10px);
     }
 
-    .hubReactionGestalt_MayA {
+    .hubReactionGestalt_MayB {
         width: 40%;
     }
 
-    .hubShareReactionEmoji_MayA {
+    .hubShareReactionEmoji_MayB {
         width: 50%;
     }
 
-    .hubTabLabel_MayA {
+    .hubTabLabel_MayB {
         font-size: 13px;
     }
 
-    .hubShareCommentsLabel_MayA {
+    .hubShareCommentsLabel_MayB {
         font-size: 13px;
     }
 
-    .hubShareCommenterName_MayA {
+    .hubShareCommenterName_MayB {
         font-size: 18px;
         margin-bottom: 20px;
     }
 
-    .hubShareCommentComment_MayA {
+    .hubShareCommentComment_MayB {
         font-size: 13px;
     }
 
-    .hubSignoutButton_MayA {
+    .hubSignoutButton_MayB {
         transform: translateX(-30px);
     }
 
-    .hubShareNewComments_MayA {
+    .hubShareNewComments_MayB {
         font-size: 13px;
     }
 
-    .hubShareHeadline_MayA {
+    .hubShareHeadline_MayB {
         font-size: 30px;
     }
 
-    .hubReaderDashboard_MayA {
+    .hubReaderDashboard_MayB {
         overflow-x: hidden;
         overflow-y: scroll;
     }
 
-    .hubMyBlogsLabel_MayA {
+    .hubMyBlogsLabel_MayB {
         font-size: 30px;
     }
 
-    .hubBlogListEntry_MayA {
+    .hubBlogListEntry_MayB {
         font-size: 18px;
     }
 
-    .hubNewBlogButton_MayA {
+    .hubNewBlogButton_MayB {
         font-size: 12px;
         transform: translateX(-20px);
     }
 
-    .currentBlogLogoImage_MayA {
+    .currentBlogLogoImage_MayB {
         max-width: 100px;
     }
 
-    .currentBlogName_MayA {
+    .currentBlogName_MayB {
         font-size: 30px;
     }
 
-    .currentBlogTagline_MayA {
+    .currentBlogTagline_MayB {
         font-size: 18px;
     }
 
-    .hubContributersLabel_MayA {
+    .hubContributersLabel_MayB {
         font-size: 18px;
     }
 
-    .hubBlogContributerName_MayA {
+    .hubBlogContributerName_MayB {
         font-size: 18px;
     }
 
-    .hubBlogDataPosts_MayA {
+    .hubBlogDataPosts_MayB {
         font-size: 18px;
     }
 
-    .hubBlogDataDiv_MayA {
+    .hubBlogDataDiv_MayB {
         padding-left: 30px;
     }
 
-    .hubLoggedInAsAvatar_MayA {
+    .hubLoggedInAsAvatar_MayB {
         max-width: 70px;
     }
 
-    .hubUserProfileNavigation_MayA {
+    .hubUserProfileNavigation_MayB {
         transform: translateX(-70px) translateY(-50px) scale(0.6);
     }
 
-    .hubMessageMessage_MayA {
+    .hubMessageMessage_MayB {
         font-size: 18px;
     }
 
-    .hubMessageFromSubjecttrue_MayA {
+    .hubMessageFromSubjecttrue_MayB {
         font-size: 18px;
     }
 
-    .hubMessageFromSubjectfalse_MayA {
+    .hubMessageFromSubjectfalse_MayB {
         font-size: 18px;
     }
 
-    .hubReplyText_MayA {
+    .hubReplyText_MayB {
         font-size: 18px;
     }
 
-    .hubReplyResponseText_MayA {
+    .hubReplyResponseText_MayB {
         font-size: 18px;
     }
 
-    .hubProfileDisplayName_MayA {
+    .hubProfileDisplayName_MayB {
         font-size: 18px;
     }
 
-    .profileDisplayStats_MayA {
+    .profileDisplayStats_MayB {
         font-size: 18px;
     }
 
-    .hubProfileDisplayUserDatas_MayA {
+    .hubProfileDisplayUserDatas_MayB {
         padding: 3px;
         width: 80%;
     }

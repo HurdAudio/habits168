@@ -1741,7 +1741,7 @@
             .then(hubSkinResponseData => {
                 const hubSkinResponse = hubSkinResponseData.data;
                 vm.monthSelect = hubSkinResponse.user_hub;
-//                vm.monthSelect = '_MayA';
+//                vm.monthSelect = '_MayB';
                 vm.mondayMonth = hubSkinResponse.monday_skin;
                 vm.externalsMonth = hubSkinResponse.externals;
                 vm.dailiesMonth = hubSkinResponse.dailies;
