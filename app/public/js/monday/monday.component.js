@@ -790,7 +790,7 @@
             .then(hubSkinResponseData => {
                 const hubSkinResponse = hubSkinResponseData.data;
                 vm.mondayMonth = hubSkinResponse.monday;
-//                vm.mondayMonth = '_AprilC';
+//                vm.mondayMonth = '_MayA';
                 vm.mondayContainerState = 'mondayContainerActive' + vm.mondayMonth;
                 vm.managerModalState = 'mondayManageTabsSubsModalInactive' + vm.mondayMonth;
                 
@@ -830,6 +830,15 @@
                     break;
                 case('_AprilC'):
                     vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/d7z2x8u-2a1dd6ee-67da-4329-9441-747411452f31.png';
+                    break;
+                case('_MayA'):
+                    vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/espresso-5414471_1920.jpg';
+                    break;
+                case('_MayB'):
+                    vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/coffee_city_by_pushok_12_dyr0lf-fullview.jpg';
+                    break;
+                case('_MayC'):
+                    vm.logoPath = 'https://habits168-hurdaudio.s3.amazonaws.com/img/d3dc9l7-867ffd43-ebb6-4ed4-87b0-163c5f0bfae4.jpg';
                     break;
                 default:
                     alert('UNSUPPORTED MONTH SELECT for LOGO');

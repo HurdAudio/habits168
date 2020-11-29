@@ -1,0 +1,960 @@
+.mondayBackgroundDiv_MayA {
+    background: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/may/grass-5722205_1920.jpg);
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.mondayTitleStrip_MayA {
+    background: linear-gradient(90deg, #9fc993, #3f9226, #193a0f, transparent);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Goldman', cursive;
+    height: auto;
+    justify-content: flex-start;
+    opacity: 1;
+    padding: 0 3vw 0 1vw;
+    width: 100%;
+    z-index: 1;
+}
+
+.mondayLogo_MayA {
+    cursor: pointer;
+    filter: drop-shadow(5px 5px 4px #0e2d4a);
+    margin: 5px 48px 5px -5px;
+    opacity: 1;
+    width: 5%;
+}
+
+.mondayLabel_MayA {
+    color: #050b02;
+    font-family: 'Goldman', cursive;
+    font-size: 42px;
+    margin: 32px 0 0 0;
+}
+
+.mondayTabsStrip_MayA {
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Goldman', cursive;
+    height: auto;
+    justify-content: flex-start;
+    opacity: 0.85;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-left: 3%;
+    width: 100%;
+}
+
+.mondayTabActive_MayA {
+    background: #9fc993;
+    color: #050b02;
+    cursor: none;
+    filter: drop-shadow(10px 15px 4px #0e2d4a);
+    font-family: 'Goldman', cursive;
+    font-size: 24px;
+    padding: 6px 48px 4px 4px;
+    perspective: 5.5cm;
+    transition: all 0.5s linear;
+    z-index: 5;
+}
+
+.mondayTabInactive_MayA {
+    background: transparent;
+    color: #878e82;
+    cursor: pointer;
+    font-family: 'Goldman', cursive;
+    font-size: 24px;
+    padding: 6px 20px 4px 10px;
+    perspective: none;
+    transition: all 0.5s linear;
+    z-index: 5;
+}
+
+.mondayContent_MayA {
+    background: transparent;
+    height: 80vh;
+    width: 100%;
+}
+
+.mondayContentContent_MayA {
+    background: linear-gradient(90deg, #9eb29e, #b0ba9c, #92b9dd, transparent);
+    height: 83vh;
+    opacity: 0.95;
+    overflow-x: hidden;
+    overflow-Y: auto;
+    width: 105%;
+}
+
+.mondayFeedsDiv_MayA {
+    height: auto;
+    margin: 90px 50px 0 50px;
+    width: 90%;
+}
+
+.mondayFeedContainer_MayA {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 5px 50px;
+}
+
+.mondaySubscriptions_MayA {
+    cursor: pointer;
+}
+
+.mondaySubIcon_MayA {
+    filter: drop-shadow(10px 15px 4px #0e2d4a);
+    height: 65px;
+    margin-right: 20px;
+    transition: all 0.5s linear;
+    width: 65px;
+}
+
+.mondaySubscriptionTitle_MayA {
+    color: #050b02;
+    font-family: 'Goldman', cursive;
+    font-size: 21px;
+    line-height: 1.2;
+    margin: 5px 0 10px 0;
+    width: 750px;
+}
+
+.mondayTrackProgress_MayA {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    cursor: pointer;
+    display: block;
+    font-size: 48px;
+    margin: 15px 100px 15px 5px;
+    padding-left: 35px;
+    position: relative;
+    user-select: none;
+}
+
+.mondayTrackProgress_MayA input {
+    cursor: pointer;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    width: 0;
+}
+
+.mondayCheckbox_MayAfalse {
+    background-color: #263b28;
+    height: 18px;
+    left: 0;
+    position: absolute;
+    top: 18px;
+    transition: all 0.3s linear;
+    width: 50px;
+}
+
+.mondayCheckbox_MayAtrue {
+    background-color: #263b28;
+    height: 18px;
+    left: 0;
+    position: absolute;
+    top: 18px;
+    transition: all 0.3s linear;
+    width: 50px;
+}
+
+.mondayCheckbox_MayAfalse:hover {
+    filter: hue-rotate(45deg);
+}
+
+.mondayCheckbox_MayAtrue:hover {
+    filter: hue-rotate(-45deg);
+}
+
+.mondaySwitchUnchecked_MayAfalse {
+    background-color: #2472ba;
+    filter: brightness(100%);
+    height: 35px;
+    left: 0px;
+    position: absolute;
+    top: -10px;
+    transition: all 0.2s linear;
+    width: 20px;
+}
+
+.mondaySwitchUnchecked_MayAtrue {
+    background-color: #2472ba;
+    filter: brightness(110%);
+    height: 35px;
+    left: 30px;
+    position: absolute;
+    top: -10px;
+    transition: all 0.2s linear;
+    width: 20px;
+}
+
+.mondayReadAllButton_MayA {
+    background: #96ae83;
+    border-bottom: none;
+    border-left: 2px solid #193a0f;
+    border-right: 2px solid #193a0f;
+    border-top: none;
+    box-shadow: 5px 5px 14px #0e2d4a;
+    color: #050b02;
+    cursor: pointer;
+    font-family: 'Varta', sans-serif;
+    font-size: 36px;
+    outline-color: #939d94;
+    padding: 10px;
+    perspective: 50px;
+    transition: all 0.3s linear;
+    width: 68px;
+}
+
+.mondayReadAllButton_MayA:hover {
+    background: #9fc993;
+    border-left: 18px solid #193a0f;
+    border-right: none;
+    box-shadow: 8px 8px 20px #0e2d4a;
+    color: #92b9dd;
+    transition: all 0.3s linear;
+}
+
+.mondayReadAllButton_MayA:active {
+    box-shadow: 0 0 0 #0e2d4a;
+    filter: invert(100%);
+    transition: all 0.2s linear;
+}
+
+.mondayReaderNavigationButtons_MayA {
+    background: linear-gradient(90deg, #3f9226, #9eb29e, #9eb29e, transparent);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: flex-start;
+    margin: 0 0 0 0;
+    position: fixed;
+    width: 100%;
+    z-index: 15;
+}
+
+.mondayReadAll_MayA {
+    color: #050b02;
+    font-family: 'Goldman', cursive;
+    font-size: 24px;
+    margin: 14px 0 14px 25px;
+}
+
+.mondaySorting_MayA {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 14px 0 14px 100px;
+}
+
+.mondaySorting_MayA p {
+    color: #050b02;
+    font-family: 'Goldman', cursive;
+    font-size: 21px;
+    margin: 20px 20px 0 0;
+}
+
+.mondaySortingButton_MayA {
+    margin-right: 20px;
+}
+
+.markAllReadText_MayA {
+    color: #050b02;
+    font-family: 'Goldman', cursive;
+    font-size: 21px;
+    margin: 35px 10px 0 40px;
+}
+
+.mondayUnreadText_MayA {
+    color: #050b02;
+    font-family: 'Goldman', cursive;
+    font-size: 21px;
+    margin: 10px 0 0 30px;
+    width: 35px;
+}
+
+.mondayReadText_MayA {
+    color: #050b02;
+    font-family: 'Goldman', cursive;
+    font-size: 21px;
+    margin: 10px 0 0 30px;
+    width: 35px;
+}
+
+.mondayBuffer_MayA {
+    height: 20px;
+    width: 100%;
+}
+
+.mondayManageTabsButton_MayA {
+    background: #96ae83;
+    border-bottom: none;
+    border-left: 2px solid #193a0f;
+    border-right: 2px solid #193a0f;
+    border-top: none;
+    box-shadow: 5px 5px 14px #0e2d4a;
+    color: #050b02;
+    cursor: pointer;
+    font-family: 'Varta', sans-serif;
+    font-size: 18px;
+    height: auto;
+    margin: 56px 0 20px 20%;
+    outline-color: #939d94;
+    padding: 10px;
+    position: relative;
+    transition: all 0.3s linear;
+    width: auto;
+}
+
+.mondayManageTabsButton_MayA:hover {
+    background: #9fc993;
+    border-left: 18px solid #193a0f;
+    border-right: none;
+    box-shadow: 8px 8px 20px #0e2d4a;
+    color: #92b9dd;
+    transition: all 0.3s linear;
+}
+
+.mondayManageTabsButton_MayA:active {
+    box-shadow: 0 0 0 #0e2d4a;
+    filter: invert(100%);
+    transition: all 0.2s linear;
+}
+
+.mondayContainerActive_MayA {
+    filter: blur(0px);
+}
+
+.mondayContainerInactive_MayA {
+    filter: blur(15px);
+}
+
+.mondayManageTabsSubsModal_MayA {
+    background: #9eb29e;
+    filter: blur(0px) drop-shadow(10px 15px 4px #0e2d4a);
+    height: 91vh;
+    left: 2%;
+    opacity: 1;
+    position: absolute;
+    top: 5vh;
+    transition: all 0.4s linear;
+    width: 95%;
+    z-index: 50;
+}
+
+.mondayManageTabsSubsModalBlur_MayA {
+    background: #9eb29e;
+    filter: blur(0px) drop-shadow(10px 15px 4px #0e2d4a);
+    height: 91vh;
+    left: 2%;
+    opacity: 0.4;
+    position: absolute;
+    top: 5vh;
+    transition: all 0.4s linear;
+    width: 95%;
+    z-index: 50;
+}
+
+.mondayManageTitleBar_MayA {
+    background: #0f1710;
+    font-family: 'Goldman', cursive;
+    height: auto;
+    opacity: 0.9;
+    position: relative;
+    padding: 1vh 0 1vh 1vw;
+    width: 99%;
+}
+
+.mondayManageTitle_MayA {
+    color: #b0ba9c;
+    font-family: 'Goldman', cursive;
+    font-size: 30px;
+}
+
+.mondayModalExit_MayA {
+    color: #b0ba9c;
+    cursor: pointer;
+    font-family: 'Goldman', cursive;
+    font-size: 48px;
+    float: left;
+    left: 97%;
+    position: relative;
+    top: -2%;
+    transform: translateY(-10px);
+}
+
+.mondayManageTabsSubsModalInactive_MayA {
+    opacity: 0;
+    top: -90vh;
+    transition: all 0.4s linear;
+}
+
+.mondayManagerModalContainer_MayA {
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    height: 82.7vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.mondayManagerTabsSection_MayA {
+    height: auto;
+    padding: 15px;
+    position: relative;
+    width: 30%;
+}
+
+.mondayTabsManageTitle_MayA {
+    color: #060404;
+    font-family: 'Goldman', cursive;
+    font-size: 30px;
+}
+
+.mondayManagerSubscriptionsSection_MayA {
+    height: auto;
+    padding: 15px;
+    position: relative;
+    width: 30%;
+}
+
+.mondayTabsSubscriptionTitle_MayA {
+    color: #050b02;
+    font-family: 'Goldman', cursive;
+    font-size: 30px;
+}
+
+.mondayManagerFeedsSection_MayA {
+    height: auto;
+    padding: 15px;
+    position: relative;
+    width: 30%;
+}
+
+.mondayManagerFeedsTitle_MayA {
+    color: #050b02;
+    font-family: 'Goldman', cursive;
+    font-size: 30px;
+}
+
+.mondayManageTabsContainer_MayA {
+    margin: 40px 8%;
+}
+
+.mondayTabManageTab_MayA {
+    color: #050b02;
+    cursor: pointer;
+    font-family: 'Goldman', cursive;
+    font-size: 30px;
+    margin: 15px 0 15px 10px;
+}
+
+.mondayManageSubIcon_MayA {
+    height: 40px;
+    width: 40px;
+}
+
+.mondayManageSubsTitles_MayA {
+    color: #050b02;
+    font-family: 'Goldman', cursive;
+    font-size: 18px;
+    margin: 1px 0 30px 1px;
+}
+
+.mondayManageSearch_MayA {
+    background: #b0ba9c;
+    border: none;
+    color: #050b02;
+    float: left;
+    font-family: 'Goldman', cursive;
+    font-size: 18px;
+    height: 21px;
+    margin-top: 3px;
+    outline-color: #939d94;
+    width: 100%;
+}
+
+.mondayTabManageSubTab_MayA {
+    color: #050b02;
+    cursor: pointer;
+    font-family: 'Goldman', cursive;
+    font-size: 15px;
+    margin: 1px 0 30px 40px;
+    width: 10%;
+}
+
+.mondaySubManageSubTab_MayA {
+    color: #050b02;
+    cursor: pointer;
+    font-family: 'Goldman', cursive;
+    font-size: 15px;
+    margin: 4px 0 1px 10px;
+    transform: translateX(100px) translateY(-40px);
+    width: 10%;
+}
+
+.mondayManageSubsTitlesFeeds_MayA {
+    color: #050b02;
+    font-family: 'Goldman', cursive;
+    font-size: 18px;
+    margin: -15px 0 30px 1px;
+}
+
+.mondayCreateEditTabManagement_MayA {
+    background: #92b9dd;
+    filter: drop-shadow(10px 15px 4px #0e2d4a);
+    height: auto;
+    left: 22%;
+    opacity: 1;
+    padding: 45px;
+    position: absolute;
+    top: 25vh;
+    transition: all 0.4s linear;
+    width: 50%;
+    z-index: 60;
+}
+
+.mondayCreateEditTabTitle_MayA {
+    color: #050b02;
+    font-family: 'Goldman', cursive;
+    font-size: 24px;
+    margin: 15px 0 30px 25px;
+}
+
+.mondayTabEditorFields_MayA {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin: 10px 0 0 60px;
+}
+
+.mondayTabNameLabel_MayA {
+    color: #050b02;
+    font-family: 'Goldman', cursive;
+    font-size: 18px;
+    margin: 0 9px 0 0;
+}
+
+.mondayTabNameInput_MayA {
+    background: #9eb29e;
+    border: none;
+    color: #050b02;
+    float: left;
+    font-family: 'Goldman', cursive;
+    font-size: 18px;
+    height: 21px;
+    margin: 0 9px;
+    outline-color: #939d94;
+    width: 350px;
+}
+
+#mondayTabEditorPodcastBlogStatus_MayA {
+    margin: -13px 0 0 40px;
+}
+
+.mondayTabEditorErrorMessage_MayA {
+    color: #ff0000;
+    font-family: 'Goldman', cursive;
+    font-size: 21px;
+    margin-left: 120px;
+    margin-top: 20px;
+}
+
+.mondayManageTabsConfirmButton_MayA {
+    background: #96ae83;
+    border-bottom: none;
+    border-left: 2px solid #193a0f;
+    border-right: 2px solid #193a0f;
+    border-top: none;
+    box-shadow: 5px 5px 14px #0e2d4a;
+    color: #050b02;
+    cursor: pointer;
+    font-family: 'Varta', sans-serif;
+    font-size: 18px;
+    height: auto;
+    margin: 10px 0 0 15px;
+    outline-color: #939d94;
+    padding: 10px 20px;
+    position: relative;
+    transition: all 0.3s linear;
+    width: auto;
+}
+
+
+.mondayManageTabsConfirmButton_MayA:hover {
+    background: #9fc993;
+    border-left: 18px solid #193a0f;
+    border-right: none;
+    box-shadow: 8px 8px 20px #0e2d4a;
+    color: #92b9dd;
+    transition: all 0.3s linear;
+}
+
+.mondayManageTabsConfirmButton_MayA:active {
+    box-shadow: 0 0 0 #0e2d4a;
+    filter: invert(100%);
+    transition: all 0.2s linear;
+}
+
+.mondayManageTabsSubmitCancelButton_MayA {
+    background: #96ae83;
+    border-bottom: none;
+    border-left: 2px solid #193a0f;
+    border-right: 2px solid #193a0f;
+    border-top: none;
+    box-shadow: 5px 5px 14px #0e2d4a;
+    color: #050b02;
+    cursor: pointer;
+    font-family: 'Varta', sans-serif;
+    font-size: 18px;
+    height: auto;
+    margin: 30px 0 0 70px;
+    outline-color: #939d94;
+    padding: 10px 20px;
+    position: relative;
+    transition: all 0.3s linear;
+    width: auto;
+}
+
+.mondayManageTabsSubmitCancelButton_MayA:hover {
+    background: #9fc993;
+    border-left: 18px solid #193a0f;
+    border-right: none;
+    box-shadow: 8px 8px 20px #0e2d4a;
+    color: #92b9dd;
+    transition: all 0.3s linear;
+}
+
+.mondayManageTabsSubmitCancelButton_MayA:active {
+    box-shadow: 0 0 0 #0e2d4a;
+    filter: invert(100%);
+    transition: all 0.2s linear;
+}
+
+.mondayGuardRail_MayA {
+    background: #878e82;
+    filter: drop-shadow(10px 15px 4px #0e2d4a);
+    height: auto;
+    left: 32%;
+    opacity: 1;
+    padding: 45px;
+    position: absolute;
+    top: 25vh;
+    transition: all 0.4s linear;
+    width: 30%;
+    z-index: 60;
+}
+
+.guardRailText_MayA {
+    color: #050b02;
+    font-family: 'Goldman', cursive;
+    font-size: 24px;
+    margin: 15px 0 30px 25px;
+}
+
+.guardRailButtons_MayA {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin: 10px 0 0 60px;
+}
+
+.hubReaderDay1MondayActive_MayA {
+    background: #a5a5a3;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/may/grass-5722205_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px) translateY(0px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.1, 0.1, 0.58, 1.0);
+    width: 8%;
+    z-index: 1;
+}
+
+.hubReaderDay1MondayInactive_MayA {
+    background: #a5a5a3;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/may/grass-5722205_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(-115%) translateY(200%);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+    width: 8%;
+    z-index: -1;
+}
+
+.hubReaderDay2MondayActive_MayA {
+    background: #a5a5a3;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/may/grass-5722205_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px) translateY(0px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+    width: 8%;
+    z-index: 1;
+}
+
+.hubReaderDay2MondayInactive_MayA {
+    background: #a5a5a3;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/may/grass-5722205_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(250%) translateY(-500%);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+    width: 8%;
+    z-index: -1;
+}
+
+.hubReaderDay3MondayActive_MayA {
+    background: #a5a5a3;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/may/grass-5722205_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px) translateY(0px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+    width: 8%;
+    z-index: 1;
+}
+
+.hubReaderDay3MondayInactive_MayA {
+    background: #a5a5a3;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/may/grass-5722205_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(800%) translateY(-50%);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+    width: 8%;
+    z-index: -1;
+}
+
+.hubReaderDay4MondayActive_MayA {
+    background: #a5a5a3;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/may/grass-5722205_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px) translateY(0px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+    width: 8%;
+    z-index: 1;
+}
+
+.hubReaderDay4MondayInactive_MayA {
+    background: #a5a5a3;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/may/grass-5722205_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(-460%) translateY(-550%);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+    width: 8%;
+    z-index: -1;
+}
+
+.hubReaderDay5MondayActive_MayA {
+    background: #a5a5a3;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/may/grass-5722205_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px) translateY(0px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+    width: 8%;
+    z-index: 3;
+}
+
+.hubReaderDay5MondayInactive_MayA {
+    background: #a5a5a3;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/may/grass-5722205_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(575%) translateY(1000%);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+    width: 8%;
+    z-index: -1;
+}
+
+.hubReaderDay6MondayActive_MayA {
+    background: #a5a5a3;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/may/grass-5722205_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px) translateY(0px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+    width: 8%;
+    z-index: 1;
+}
+
+.hubReaderDay6MondayInactive_MayA {
+    background: #a5a5a3;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/may/grass-5722205_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(690%) translateY(-200%);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+    width: 8%;
+    z-index: -1;
+}
+
+.hubReaderDay7MondayActive_MayA {
+    background: #a5a5a3;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/may/grass-5722205_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    padding: 10px 15px;
+    opacity: 1;
+    transform: translateX(0px) translateY(0px);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+    width: 8%;
+    z-index: 1;
+}
+
+.hubReaderDay7MondayInactive_MayA {
+    background: #a5a5a3;
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/monday/may/grass-5722205_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin: 1.2%;
+    opacity: 0;
+    padding: 10px 15px;
+    transform: translateX(-15%) translateY(-433%);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.1, 0.1, 0.7, 1.0);
+    width: 8%;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 414px) {
+
+    .mondayReaderNavigationButtons_MayA {
+        display: none;
+    }
+
+    .mondayLabel_MayA {
+        font-size: 24px;
+    }
+
+    .mondayTrackProgress_MayA {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        cursor: pointer;
+        display: block;
+        font-size: 48px;
+        margin: 15px 1px 15px 5px;
+        padding-left: 35px;
+        position: relative;
+        user-select: none;
+    }
+
+    .mondaySorting_MayA {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin: 14px 0 14px 10px;
+    }
+
+    .mondaySorting_MayA p {
+        font-size: 12px;
+        margin: 5px 15px 0 0;
+    }
+
+    .mondayFeedContainer_MayA {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 5px 5px 5px -15px;
+    }
+
+    .mondaySubIcon_MayA {
+        filter: invert(0%);
+        height: 65px;
+        margin-right: 20px;
+        transform: skewX(-15deg) translateX(55px);
+        transition: all 0.5s linear;
+        width: 65px;
+    }
+
+}
