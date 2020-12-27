@@ -298,8 +298,8 @@
             $http.get('/skins/landing')
                 .then(skinData => {
                     let skin = skinData.data;
-//                    vm.monthSelect = skin.landing;
-                    vm.monthSelect = '_JuneA';
+                    vm.monthSelect = skin.landing;
+//                    vm.monthSelect = '_JuneA';
                     vm.landingLoginBoxClass = 'landingLoginInactive' + vm.monthSelect;
                     vm.linkSharesClass = 'landingRecentlySharedLinksUncollapsed' + vm.monthSelect;
                     vm.postSharesClass = 'landingRecentlySharedPostsCollapsed' + vm.monthSelect;
