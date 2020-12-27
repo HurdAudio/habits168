@@ -1,0 +1,209 @@
+.browseCategoricalFeeds_music_JanuaryA {
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/music/charles_ives___a_reflection_from_the_past__updated_by_les_allsopp_dbznlm4-pre.jpg);
+    background-position: center;
+    background-size: cover;
+    border: none;
+    filter: brightness(100%);
+    height: 77vh;
+    margin: 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 34%;
+}
+
+/*
+music januaryA === American Maverick
+*/
+
+.browsePodCategoricalFeeds_music_JanuaryA {
+    display: none;
+    background-image: url();
+    background-size: cover;
+    border: none;
+    filter: brightness(100%);
+    height: 77vh;
+    margin: 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 34%;
+}
+
+.browsePodCategoricalFeeds_music_JanuaryA img {
+    display: none;
+    filter: brightness(120%) drop-shadow(5px 5px 5px #2a333c);
+    height: 50px;
+    margin: 0 15px 0 0;
+    width: 50px;
+}
+
+.browseIndividualPodFeedData_music_JanuaryA {
+    display: none;
+    background-image: url();
+    background-size: cover;
+    border: none;
+    filter: brightness(100%);
+    height: 77vh;
+    margin: 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 34%;
+}
+
+.browseIndividualPodFeedData_music_JanuaryA img {
+    display: none;
+    filter: brightness(120%) drop-shadow(5px 5px 5px #2a333c);
+    margin: 10px 15%;
+    width: 70%;
+}
+
+.browseIndividualPodFeedData_music_JanuaryA h3 {
+    display: none;
+    background: #e5d6d9;
+    color: #22282f;
+    filter: brightness(100%);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 36px;
+    margin: 5px 10%;
+    width: 80%;
+}
+
+.browseIndividualPodFeedData_music_JanuaryA p {
+    display: none;
+    background: #e5d6d9;
+    color: #22282f;
+    filter: brightness(100%);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 30px;
+    margin: 15px 10%;
+    width: 80%;
+}
+
+.browseIndividualPodFeedData_music_JanuaryA button {
+    display: none;
+    background: #556676;
+    border: none;
+    color: #fcf8fc;
+    cursor: pointer;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 36px;
+    margin: 30px 35%;
+    outline-color: #b5c0cc;
+    transform: skew(-15deg);
+    transition: all 0.4s linear;
+}
+
+.browseIndividualPodFeedData_music_JanuaryA button:hover {
+    background: #fcf8fc;
+    color: #556676;
+    transform: skew(-5deg);
+    transition: all 0.4s linear;
+}
+
+.browseIndividualPodFeedData_music_JanuaryA button:active {
+    background: #636063;
+    color: #5f7990;
+    transition: all 0.4s linear;
+}
+
+
+.browseFeedsContainer_music_JanuaryA {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 5px 15px;
+}
+
+.browseFeedsContainer_music_JanuaryA img {
+    filter: brightness(120%) drop-shadow(5px 5px 5px #341c1d);
+    height: 50px;
+    margin: 0 15px 0 0;
+    width: 50px;
+}
+
+.browsePodCategoricalFeeds_music_JanuaryA p {
+    display: none;
+    background: #e5d6d9;
+    color: #22282f;
+    filter: brightness(100%);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 30px;
+}
+
+.browseFeedsTitleDiv_music_JanuaryA {
+    width: 75%;
+}
+
+.browseFeedsTitleDiv_music_JanuaryA p {
+    background: transparent;
+    color: #c0bbc0;
+    filter: brightness(160%);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 30px;
+}
+
+.browseIndividualFeedData_music_JanuaryA {
+    background-image: url(https://habits168-hurdaudio.s3.amazonaws.com/browse/music/charles_ives___a_reflection_from_the_past__updated_by_les_allsopp_dbznlm4-pre.jpg);
+    background-position: center;
+    background-size: cover;
+    border: none;
+    filter: brightness(100%);
+    height: 77vh;
+    margin: 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 34%;
+}
+
+.browseIndividualFeedData_music_JanuaryA img {
+    filter: brightness(120%) drop-shadow(5px 5px 5px #341c1d);
+    margin: 10px 15%;
+    width: 70%;
+}
+
+.browseIndividualFeedData_music_JanuaryA h3 {
+    background: transparent;
+    color: #c0bbc0;
+    filter: brightness(160%);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 36px;
+    margin: 5px 10%;
+    width: 80%;
+}
+
+.browseIndividualFeedData_music_JanuaryA p {
+    background: transparent;
+    color: #c0bbc0;
+    filter: brightness(160%);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 30px;
+    margin: 15px 10%;
+    width: 80%;
+}
+
+.browseIndividualFeedData_music_JanuaryA button {
+    background: #615964;
+    border: none;
+    color: #020202;
+    cursor: pointer;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 36px;
+    margin: 30px 35%;
+    outline-color: #8c8d95;
+    transform: skew(-15deg);
+    transition: all 0.4s linear;
+}
+
+.browseIndividualFeedData_music_JanuaryA button:hover {
+    background: #834749;
+    color: #060606;
+    transform: skew(-5deg);
+    transition: all 0.4s linear;
+}
+
+.browseIndividualFeedData_music_JanuaryA button:active {
+    background: #060606;
+    color: #834749;
+    transition: all 0.4s linear;
+}

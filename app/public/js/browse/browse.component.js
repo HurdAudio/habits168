@@ -96,6 +96,128 @@
 //                title: 'Artzine'
 //            }
 //        ];
+        vm.musicBlogs = [
+            {
+                uuid: '8555fac3-8c0a-42c7-b71a-9ae836a615a9',
+                    author: null,
+                    description: 'Synthesizer and electronic music news, synth and music software reviews and more!',
+                    link: 'http://www.synthtopia.com/',
+                    image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/press-synthtopia-logo.jpg',
+                    items: null,
+                    rss: 'http://www.synthtopia.com/feed',
+                    title: 'Synthtopia'
+            },
+            {
+                    uuid: 'b1c2eff2-81e8-4f19-a1ba-8fff123fb89a',
+                    author: null,
+                    description: 'A source for news on music that is challenging, interesting, different, progressive, introspective, or just plain weird',
+                    link: 'https://avantmusicnews.com/',
+                    image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/cropped-cropped-amnbanner1.jpg',
+                    items: null,
+                    rss: 'https://avantmusicnews.com/rss',
+                    title: 'Avant Music News'
+            },
+            {
+                    uuid: '09689d96-f0fb-4a3e-ad8c-1d71cb9545a8',
+                    author: null,
+                    description: 'Fostering connections, deepening knowledge, encouraging appreciation, and providing financial support for new music created in the United States',
+                    link: 'https://www.newmusicusa.org/',
+                    image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/newmusicbox.png',
+                    items: null,
+                    rss: 'https://nmbx.newmusicusa.org/rss',
+                    title: 'NewMusicBox – NewMusicBox'
+            },
+            {
+                    uuid: '4de05f59-d8df-49a0-9ad7-4cc9b80f15ae',
+                    author: null,
+                    description: 'New classical music, art, and technology',
+                    link: 'https://www.icareifyoulisten.com/',
+                    image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/TvlOzOKS_400x400.jpg',
+                    items: null,
+                    rss: 'https://www.icareifyoulisten.com/rss',
+                    title: 'I CARE IF YOU LISTEN'
+            },
+            {
+                    uuid: '79f05037-72d3-497e-a57a-54012a79407b',
+                    author: null,
+                    description: 'Books, articles, and a blog by the music critic of The New Yorker',
+                    link: 'https://www.therestisnoise.com/',
+                    image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/41qc8pZFMcL._SL500_.jpg',
+                    items: null,
+                    rss: 'https://www.therestisnoise.com/atom.xml',
+                    title: 'Alex Ross: The Rest Is Noise'
+            },
+            {
+                    uuid: '009b6c3f-14a2-4add-abc2-4ea3380ae67c',
+                    author: null,
+                    description: 'Reviews of Free Jazz and Improvised Music',
+                    link: 'http://www.freejazzblog.org/',
+                    image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/RQxWDoWr_400x400.jpg',
+                    items: null,
+                    rss: 'http://www.freejazzblog.org/atom.xml',
+                    title: 'The Free Jazz Collective'
+            },
+            {
+                    uuid: 'c1979d0e-d388-44ca-8ab0-a41d422c831a',
+                    author: null,
+                    description: 'The Contemporary Classical Music Community',
+                    link: 'http://www.sequenza21.com/',
+                    image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/seq21logo1.jpg',
+                    items: null,
+                    rss: 'http://www.sequenza21.com/feed',
+                    title: 'Sequenza21/'
+            },
+            {
+                    uuid: '5adac099-58c6-4389-a3c5-dc3d54244f57',
+                    author: null,
+                    description: 'Album Reviews content RSS feed',
+                    link: 'https://pitchfork.com/feed-album-reviews',
+                    image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/4e1863811e5488433270988ae82a928f.jpg',
+                    items: null,
+                    rss: 'https://pitchfork.com/rss/reviews/albums',
+                    title: 'RSS: Album Reviews'
+            },
+            {
+                    uuid: '98f44d3e-ce0d-4c44-831f-52ee4d398b10',
+                    author: null,
+                    description: '',
+                    link: 'https://www.overgrownpath.com/',
+                    image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/8fb5bfc367dfb6ce1ab767cc4e4e92fd.jpg',
+                    items: null,
+                    rss: 'https://www.overgrownpath.com/feeds/posts/default',
+                    title: 'On An Overgrown Path'
+            },
+            {
+                    uuid: '50a91935-083c-4b0f-9ec0-211569ec1b00',
+                    author: null,
+                    description: 'Tim Rutherford-Johnson',
+                    link: 'https://johnsonsrambler.wordpress.com/',
+                    image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/rambler.png',
+                    items: null,
+                    rss: 'https://johnsonsrambler.wordpress.com/feed/',
+                    title: 'The Rambler'
+            },
+            {
+                    uuid: 'd6413817-60c2-4809-b3e0-b907186b9d4f',
+                    author: null,
+                    description: 'Superconductor offers music reviews, opera reviews, concert reviews, news articles and criticism in and around New York City. Written and edited by Paul J. Pelkonen.',
+                    link: 'http://super-conductor.blogspot.com/',
+                    image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/thank-you-from-christian-vision-alliance.jpg',
+                    items: null,
+                    rss: 'https://super-conductor.blogspot.com/feeds/posts/default',
+                    title: 'Superconductor Classical and Opera'
+            },
+            {
+                    uuid: '679aba68-dbbb-4957-b889-5eadd7b7e061',
+                    author: null,
+                    description: 'Tiny Mix Tapes is a music and film webzine featuring news, reviews, features, and hot replica watches.',
+                    link: 'https://www.tinymixtapes.com/',
+                    image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/tmt2_logo.png',
+                    items: null,
+                    rss: 'https://www.tinymixtapes.com/feed.xml',
+                    title: 'Tiny Mix Tapes'
+            }
+        ];
         vm.artPodcasts = [
             {
                 uuid: 'ef83f6e1-9cde-4a2f-bfd2-b3d299ab0f27',
@@ -178,250 +300,7 @@
                 title: 'The Thriving Artist'
             }
         ];
-//        vm.techBlogs = [
-//            {
-//                uuid: '2c7be513-9083-439c-937f-42bbe95c0cb9',
-//                author: null,
-//                description: 'Links for the intellectually curious, ranked by readers.',
-//                link: 'https://news.ycombinator.com/',
-//                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/hacker-news-2-569388.png',
-//                items: null,
-//                rss: 'https://news.ycombinator.com/rss',
-//                title: 'Hacker News'
-//            },
-//            {
-//                uuid: '3b7cdbfa-751e-4622-85e2-31c17abd351f',
-//                author: null,
-//                description: 'A community for the awesome MVC JS framework.',
-//                link: 'https://www.reddit.com/r/angularjs/',
-//                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/Z4ki_RNzhlka_Gnb.png',
-//                items: null,
-//                rss: 'https://reddit.com/r/angularjs/.rss',
-//                title: 'angular.js'
-//            },
-//            {
-//                uuid: 'a10dc8ef-98ec-4b9e-b5f3-3c4705cb13f2',
-//                author: null,
-//                description: 'Node.js Support, Training and Consulting for the Enterprise, Worldwide',
-//                link: 'https://nodesource.com/blog',
-//                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/nodesource-512x512.png',
-//                items: null,
-//                rss: 'https://nodesource.com/blog/rss',
-//                title: 'The NodeSource Blog'
-//            },
-//            {
-//                uuid: 'a4e7fedd-46fb-4d9f-9c17-e8593c0c949b',
-//                author: null,
-//                description: 'Curious Perversions in Information Technology',
-//                link: 'http://thedailywtf.com',
-//                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/logoWTF.png',
-//                items: null,
-//                rss: 'http://syndication.thedailywtf.com/TheDailyWtf',
-//                title: 'The Daily WTF'
-//            },
-//            {
-//                uuid: '25243f5e-e861-4252-abc5-ccf7aa5c8f8b',
-//                author: null,
-//                description: 'Helping you become a better engineer',
-//                link: 'https://swizec.com/blog',
-//                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/swiz.png',
-//                items: null,
-//                rss: 'http://swizec.com/blog/feed',
-//                title: 'A geek with a hat'
-//            },
-//            {
-//                uuid: 'f9bc3d9c-5960-4fa6-aa28-1b43a01cc73f',
-//                author: null,
-//                description: 'A blog featuring tutorials about JavaScript, HTML5, AJAX, PHP, CSS, WordPress, and everything else development.',
-//                link: 'https://davidwalsh.name/',
-//                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/dwblogo.png',
-//                items: null,
-//                rss: 'https://davidwalsh.name/feed',
-//                title: 'David Walsh Blog'
-//            },
-//            {
-//                uuid: '99f6b8cc-dbde-4757-abb3-e46cf6a1ecb1',
-//                author: null,
-//                description: 'NodeJS Subreddit',
-//                link: 'https://www.reddit.com/r/node/',
-//                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/nodejssubreddit.png',
-//                items: null,
-//                rss: 'https://reddit.com/r/node/.rss',
-//                title: 'node.js'
-//            },
-//            {
-//                uuid: 'e8249664-185f-444e-acd0-20928581bfb8',
-//                author: null,
-//                description: 'The latest news and tips from the Angular team - Medium',
-//                link: 'https://blog.angular.io/',
-//                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/1_TGH72Nnw24QL3iV9IOm4VA.png',
-//                items: null,
-//                rss: 'https://blog.angular.io/rss',
-//                title: 'Angular Blog - Medium'
-//            },
-//            {
-//                uuid: '83cfdddd-a5f7-4f46-b4db-c698f082def7',
-//                author: null,
-//                description: 'A website powered by alien technology from the future.',
-//                link: 'https://catonmat.net/',
-//                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/catonmat-logo-powered-by-alien-technology.png',
-//                items: null,
-//                rss: 'https://catonmat.net/feed',
-//                title: 'catonmat.net – less is more'
-//            },
-//            {
-//                uuid: '33ce0ce6-7f8e-4e1a-919e-035719852076',
-//                author: null,
-//                description: 'Essays, opinions, and advice on the act of computer programming from Stack Overflow.',
-//                link: 'https://stackoverflow.blog/',
-//                image: 'https://habits168-hurdaudio.s3.amazonaws.com/blog_logos/cropped-SO_Logo_glyph-use-this-one-smaller-32x32.jpg',
-//                items: null,
-//                rss: 'https://stackoverflow.blog/rss',
-//                title: 'Stack Overflow Blog'
-//            },
-//            {
-//                uuid: 'c2f08cfd-3860-490b-b1ed-c3810c800289',
-//                author: null,
-//                description: 'Online reference, blog and news source for the Web as Platform. Because the world\'s your programmable oyster.',
-//                link: 'https://www.programmableweb.com/rss_blog',
-//                image: 'https://habits168-hurdaudio.s3.amazonaws.com/blog_logos/programmableWebPiece.jpeg',
-//                items: null,
-//                rss: 'https://feeds.feedburner.com/ProgrammableWeb',
-//                title: 'ProgrammableWeb'
-//            },
-//            {
-//                uuid: '017317fd-72bf-411f-a41a-401b4fff5043',
-//                author: null,
-//                description: 'Scott Hanselman on Programming, User Experience, The Zen of Computers and Life in General',
-//                link: 'https://www.hanselman.com/blog/',
-//                image: 'https://habits168-hurdaudio.s3.amazonaws.com/blog_logos/tinyheadshot2.jpg',
-//                items: null,
-//                rss: 'https://hanselman.com/blog/feed',
-//                title: 'Scott Hanselman\'s Blog'
-//            },
-//            {
-//                uuid: 'b1ea9fb5-378a-4616-8142-f5db5a953adf',
-//                author: null,
-//                description: 'Recent content in Articles on Smashing Magazine — For Web Designers And Developers',
-//                link: 'https://www.smashingmagazine.com/articles/',
-//                image: 'https://habits168-hurdaudio.s3.amazonaws.com/blog_logos/smashing-logo-avatar-opt.png',
-//                items: null,
-//                rss: 'https://smashingmagazine.com/feed',
-//                title: 'Articles on Smashing Magazine — For Web Designers And Developers'
-//            },
-//            {
-//                uuid: '460065c7-f949-4bbb-9397-8a0b2193baf4',
-//                author: null,
-//                description: 'CSS Architecture, Web Performance Optimisation, and more, by Harry Roberts',
-//                link: 'https://csswizardry.com/',
-//                image: 'https://habits168-hurdaudio.s3.amazonaws.com/blog_logos/cssWizardryLogo.png',
-//                items: null,
-//                rss: 'https://csswizardry.com/feed',
-//                title: 'CSS Wizardry'
-//            },
-//            {
-//                uuid: '5efd84d8-4155-421e-8f00-eaad72d4ea9d',
-//                author: null,
-//                description: 'Weekly e-mail roundup of latest CSS articles, tutorials, tools and experiments',
-//                link: 'https://css-weekly.com/',
-//                image: 'https://habits168-hurdaudio.s3.amazonaws.com/blog_logos/css_weekly_shirt.png',
-//                items: null,
-//                rss: 'https://css-weekly.com/feed',
-//                title: 'CSS WeeklyCSS Weekly'
-//            },
-//            {
-//                uuid: 'af66bdc7-e46c-43b8-a39c-878d80f01b6b',
-//                author: null,
-//                description: 'All about the JavaScript programming language!',
-//                link: 'https://www.reddit.com/r/javascript/',
-//                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/5589238-reddit-icon-vector-images-icon-sign-and-symbols-reddit-logo-png-300_300_preview.png',
-//                items: null,
-//                rss: 'https://reddit.com/r/javascript/.rss',
-//                title: '𝚓𝚊𝚟𝚊𝚜𝚌𝚛𝚒𝚙𝚝'
-//            },
-//            {
-//                uuid: 'f99c2c48-c52c-4d9d-8d60-8756a61620a6',
-//                author: null,
-//                description: 'Learn CSS | HTML5 | JavaScript | Wordpress | Tutorials-Web Development | Reference | Books and More',
-//                link: 'https://www.sitepoint.com/',
-//                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/58482e76cef1014c0b5e4a6c.png',
-//                items: null,
-//                rss: 'https://sitepoint.com/feed',
-//                title: 'SitePoint'
-//            },
-//            {
-//                uuid: 'fceb9120-e6a1-4be1-bbe5-aef9db874440',
-//                author: null,
-//                description: 'Where programmers share ideas and help each other grow—A constructive and inclusive social network.',
-//                link: 'https://dev.to/',
-//                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/devtorainbow.png',
-//                items: null,
-//                rss: 'https://dev.to/feed',
-//                title: 'DEV Community'
-//            },
-//            {
-//                uuid: 'cce488c6-e563-4de3-b6bc-266ba896ce61',
-//                author: null,
-//                description: 'Description pending',
-//                link: 'http://www.echojs.com/',
-//                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/acdaff17c49fc10cfb43a2e557804099_400x400.png',
-//                items: null,
-//                rss: 'https://www.echojs.com/rss',
-//                title: 'Echo JS'
-//            },
-//            {
-//                uuid: '03520f1f-b069-4a3d-9329-69451cf9c9e6',
-//                author: null,
-//                description: 'A free, once–weekly e-mail round-up of Node.js news and articles.',
-//                link: 'https://nodeweekly.com/',
-//                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/qzlqdaj4qzm2bzcdliyp.png',
-//                items: null,
-//                rss: 'https://nodeweekly.com/rss/12acdl5j',
-//                title: 'Node Weekly'
-//            },
-//            {
-//                uuid: '6ba1eb91-375b-4d49-b47a-f9661682f9ba',
-//                author: null,
-//                description: 'Google News',
-//                link: 'https://news.google.com/search?q=javascript&hl=en-US&gl=US&ceid=US%3Aen',
-//                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/1200px-Google_News_icon.svg.png',
-//                items: null,
-//                rss: 'https://news.google.com/rss/search?pz=1&cf=all&topic=topics&q=javascript&hl=en-US&num=10&gl=US&ceid=US:en',
-//                title: 'Google News - Javascript'
-//            },
-//            {
-//                uuid: '66a55437-b871-43c3-b420-fb4fd4b3105f',
-//                author: 'JSConf',
-//                description: '',
-//                link: 'https://www.youtube.com/channel/UCzoVCacndDCfGDf41P-z0iA',
-//                image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/jsconf_eu.png',
-//                items: null,
-//                rss: 'https://www.youtube.com/channel/UCzoVCacndDCfGDf41P-z0iA',
-//                title: 'JSConf'
-//            }
-//        ];
-//        vm.techPodcasts = [
-//            {
-//                  uuid: '7f5aca06-17bf-4c99-8c8f-af561999498c',
-//                  author: 'DevChat.tv',
-//                  description: 'Weekly podcast discussion about Javascript on the front and back ends. Also discuss programming practices, coding environments, and the communities related to the technology.',
-//                  link: 'http://javascriptjabber.com/',
-//                  image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/javascript_jabber_thumb.jpg',
-//                  items: null,
-//                  rss: 'https://feeds.feedwrench.com/js-jabber.rss',
-//                  title: 'JavaScript Jabber'
-//            },
-//            {
-//                  uuid: 'ced9116d-00e6-4b86-b99a-b50c65b1be7b',
-//                  author: 'Devchat.tv',
-//                  description: 'A weekly exploration into the people who make JavaScript what it is.',
-//                  link: 'http://devchat.tv/my-js-story',
-//                  image: 'https://habits168-hurdaudio.s3.amazonaws.com/feed_icons/MyJSStory.jpg',
-//                  items: null,
-//                  rss: 'https://feeds.feedwrench.com/my-js-story.rss',
-//                  title: 'My JavaScript Story'
-//            }
-//        ];
+
 
         function removeSubscription() {
             // TODO: wire subscription removal into the backend
@@ -707,13 +586,16 @@
                 case('_art'):
                     tableName = 'art_blogs/assembled';
                     break;
+                case('_music'):
+                    tableName = 'music';
+                    break;
                 default:
                     alert('non-supported blog category');
             }
-//            if (tableName === 'art_blogs') {
-//                vm.viewBlogFeeds = vm.artBlogs;
-//                return;
-//            }
+            if (tableName === 'music') {
+                vm.viewBlogFeeds = vm.musicBlogs;
+                return;
+            }
             if (tableName !== '') {  
                 $http.get(`/${tableName}`)
                 .then(allFeeds => {
@@ -931,7 +813,7 @@
                 .then(skinData => {
                     let skin = skinData.data;
                     vm.browseMonth = skin.browse;
-//                    vm.browseMonth = '_MarchC';
+//                    vm.browseMonth = '_JanuaryA';
                     vm.browseContainer = 'browseActive' + vm.browseMonth;
                     vm.blogFeedTabState = 'browseTabActive' + vm.browseMonth;
                     vm.podcastFeedTabState = 'browseTabInactive' + vm.browseMonth;
