@@ -42,6 +42,7 @@ const tech_blogs = require('./routes/tech_blogs.js');
 const tech_podcasts = require('./routes/tech_podcasts.js');
 const thursday_subscriptions = require('./routes/thursday_subscriptions.js');
 const art_blogs = require('./routes/art_blogs.js');
+const art_podcasts = require('./routes/art_podcasts.js');
 
 const port = process.env.PORT || 3037;
 
@@ -83,6 +84,7 @@ app.use('/tech_blogs', tech_blogs);
 app.use('/tech_podcasts', tech_podcasts);
 app.use('/thursday_subscriptions', thursday_subscriptions);
 app.use('/art_blogs', art_blogs);
+app.use('/art_podcasts', art_podcasts);
 
 
 app.get('/rss_reader/:rss', (req, res, next) => {
