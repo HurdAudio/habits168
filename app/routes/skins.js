@@ -188,7 +188,7 @@ router.get('/user_hub', (req, res, next) => {
         if (skinsTable.skins.dailies[months[now.getMonth()]].length === 1) {
             dailiesSkin = skinsTable.skins.dailies.available[Math.floor(Math.random() * skinsTable.skins.dailies.available.length)];
         } else {
-            dailiesSkin = skinsTabl.skins.dailies[months[now.getMonth()]][now.getDate()];
+            dailiesSkin = skinsTable.skins.dailies[months[now.getMonth()]][now.getDate()];
         }
         if (skinsTable.skins.tuesday[months[now.getMonth()]].length === 1) {
             tuesdaySkin = skinsTable.skins.tuesday.available[Math.floor(Math.random() * skinsTable.skins.tuesday.available.length)];
