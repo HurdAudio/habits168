@@ -1,0 +1,206 @@
+.browseCategoricalFeeds_art_FebruaryA {
+    background-image: url(https://s3.amazonaws.com/hours168-hurdaudio/img/february/flexible.jpg);
+    background-size: cover;
+    border: none;
+    filter: brightness(100%);
+    height: 77vh;
+    margin: 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 34%;
+}
+
+/*
+art january === Abstract Art
+art february === Black History Month
+*/
+
+.browsePodCategoricalFeeds_art_FebruaryA {
+    display: none;
+    background-image: url();
+    background-size: cover;
+    border: none;
+    filter: brightness(100%);
+    height: 77vh;
+    margin: 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 34%;
+}
+
+.browsePodCategoricalFeeds_art_FebruaryA img {
+    display: none;
+    filter: brightness(120%) drop-shadow(5px 5px 5px #2a333c);
+    height: 50px;
+    margin: 0 15px 0 0;
+    width: 50px;
+}
+
+.browseIndividualPodFeedData_art_FebruaryA {
+    display: none;
+    background-image: url();
+    background-size: cover;
+    border: none;
+    filter: brightness(100%);
+    height: 77vh;
+    margin: 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 34%;
+}
+
+.browseIndividualPodFeedData_art_FebruaryA img {
+    display: none;
+    filter: brightness(120%) drop-shadow(5px 5px 5px #2a333c);
+    margin: 10px 15%;
+    width: 70%;
+}
+
+.browseIndividualPodFeedData_art_FebruaryA h3 {
+    display: none;
+    background: #e5d6d9;
+    color: #22282f;
+    filter: brightness(100%);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 36px;
+    margin: 5px 10%;
+    width: 80%;
+}
+
+.browseIndividualPodFeedData_art_FebruaryA p {
+    display: none;
+    background: #e5d6d9;
+    color: #22282f;
+    filter: brightness(100%);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 30px;
+    margin: 15px 10%;
+    width: 80%;
+}
+
+.browseIndividualPodFeedData_art_FebruaryA button {
+    display: none;
+    background: #556676;
+    border: none;
+    color: #fcf8fc;
+    cursor: pointer;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 36px;
+    margin: 30px 35%;
+    outline-color: #b5c0cc;
+    transform: skew(-15deg);
+    transition: all 0.4s linear;
+}
+
+.browseIndividualPodFeedData_art_FebruaryA button:hover {
+    background: #fcf8fc;
+    color: #556676;
+    transform: skew(-5deg);
+    transition: all 0.4s linear;
+}
+
+.browseIndividualPodFeedData_art_FebruaryA button:active {
+    background: #636063;
+    color: #5f7990;
+    transition: all 0.4s linear;
+}
+
+
+.browseFeedsContainer_art_FebruaryA {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 5px 15px;
+}
+
+.browseFeedsContainer_art_FebruaryA img {
+    filter: brightness(120%) drop-shadow(5px 5px 5px #d3cdc5);
+    height: 50px;
+    margin: 0 15px 0 0;
+    width: 50px;
+}
+
+.browsePodCategoricalFeeds_art_FebruaryA p {
+    background: #b4b1ab;
+    color: #030200;
+    filter: brightness(100%);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 30px;
+}
+
+.browseFeedsTitleDiv_art_FebruaryA {
+    width: 75%;
+}
+
+.browseFeedsTitleDiv_art_FebruaryA p {
+    background: #b4b1ab;
+    color: #030200;
+    filter: brightness(100%);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 30px;
+}
+
+.browseIndividualFeedData_art_FebruaryA {
+    background-image: url(https://s3.amazonaws.com/hours168-hurdaudio/img/february/flexible.jpg);
+    background-size: cover;
+    border: none;
+    filter: brightness(100%);
+    height: 77vh;
+    margin: 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 34%;
+}
+
+.browseIndividualFeedData_art_FebruaryA img {
+    filter: brightness(120%) drop-shadow(5px 5px 5px #d3cdc5);
+    margin: 10px 15%;
+    width: 70%;
+}
+
+.browseIndividualFeedData_art_FebruaryA h3 {
+    background: #b4b1ab;
+    color: #030200;
+    filter: brightness(100%);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 36px;
+    margin: 5px 10%;
+    width: 80%;
+}
+
+.browseIndividualFeedData_art_FebruaryA p {
+    background: #b4b1ab;
+    color: #030200;
+    filter: brightness(100%);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 30px;
+    margin: 15px 10%;
+    width: 80%;
+}
+
+.browseIndividualFeedData_art_FebruaryA button {
+    background: #3c1e09;
+    border: none;
+    color: #d3cdc5;
+    cursor: pointer;
+    filter: drop-shadow(6px 6px 6px #292722);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 36px;
+    margin: 30px 35%;
+    outline-color: #b5c0cc;
+    transition: all 0.4s linear;
+}
+
+.browseIndividualFeedData_art_FebruaryA button:hover {
+    background: #964d18;
+    color: #030200;
+    filter: drop-shadow(2px 2px 6px #292722);
+    transition: all 0.4s linear;
+}
+
+.browseIndividualFeedData_art_FebruaryA button:active {
+    filter: invert(100%);
+    transition: all 0.4s linear;
+}
